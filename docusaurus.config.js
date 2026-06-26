@@ -22,14 +22,14 @@
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'knowledge',
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
@@ -73,7 +73,7 @@
           ],
         },
       ],
-      copyright: Copyright ©  Youngsun Kang. Enterprise Microsoft Platform.,
+      copyright: `Copyright © ${new Date().getFullYear()} Youngsun Kang. Enterprise Microsoft Platform.`,
     },
   },
 };
