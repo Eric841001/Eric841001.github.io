@@ -1,6 +1,6 @@
 ﻿module.exports = {
   title: 'Youngsun Kang',
-  tagline: 'Microsoft Enterprise Platform',
+  tagline: 'Enterprise Microsoft Platform',
   favicon: 'img/favicon.ico',
 
   url: 'https://eric841001.github.io',
@@ -23,6 +23,7 @@
       {
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: 'knowledge',
         },
         blog: {
           showReadingTime: true,
@@ -38,8 +39,12 @@
     navbar: {
       title: 'Youngsun Kang',
       items: [
-        {to: '/docs/intro', label: 'Knowledge', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/knowledge/intro', label: 'Knowledge', position: 'left'},
+        {to: '/knowledge/microsoft365/e3-vs-e5', label: 'Microsoft 365', position: 'left'},
+        {to: '/knowledge/architecture/overview', label: 'Architecture', position: 'left'},
+        {to: '/knowledge/projects/overview', label: 'Projects', position: 'left'},
+        {to: '/knowledge/proposal/overview', label: 'Proposal Center', position: 'left'},
+        {to: '/knowledge/about', label: 'About', position: 'right'},
         {href: 'https://github.com/Eric841001', label: 'GitHub', position: 'right'},
       ],
     },
@@ -47,10 +52,18 @@
       style: 'dark',
       links: [
         {
-          title: 'Platform',
+          title: 'Knowledge',
           items: [
-            {label: 'Knowledge', to: '/docs/intro'},
-            {label: 'Blog', to: '/blog'},
+            {label: 'Microsoft 365', to: '/knowledge/microsoft365/e3-vs-e5'},
+            {label: 'Architecture', to: '/knowledge/architecture/overview'},
+            {label: 'Projects', to: '/knowledge/projects/overview'},
+          ],
+        },
+        {
+          title: 'Consulting Assets',
+          items: [
+            {label: 'Proposal Center', to: '/knowledge/proposal/overview'},
+            {label: 'About', to: '/knowledge/about'},
           ],
         },
         {
@@ -60,7 +73,7 @@
           ],
         },
       ],
-      copyright: Copyright ©  Youngsun Kang.,
+      copyright: Copyright ©  Youngsun Kang. Enterprise Microsoft Platform.,
     },
   },
 };
