@@ -1,18 +1,46 @@
-﻿---
-sidebar_position: 1
+﻿# Proposal Center
+
+Enterprise consulting proposal assets for Microsoft 365, Azure, Security and Copilot engagements.
+
 ---
 
-# Proposal Center
+## Available Assets
 
-Reusable consulting assets for Microsoft enterprise projects.
+### Executive Summary
 
-## Assets
+C-Level business proposal structure and executive messaging framework.
 
-- Executive Summary
-- Scope of Work
-- WBS
-- Architecture Proposal
-- Migration Proposal
-- Security Proposal
-- Copilot Adoption Proposal
-- Risk and Assumption Template
+### Assessment Framework
+
+Discovery workshop, current state assessment and gap analysis templates.
+
+### Statement of Work
+
+Scope, deliverables, assumptions and exclusions structure.
+
+### Work Breakdown Structure
+
+Project planning and execution framework.
+
+### Risk Register
+
+Project risk identification and mitigation model.
+
+### Timeline Template
+
+Standard project timeline and milestone planning.
+
+### Governance Model
+
+Project governance and stakeholder management structure.
+
+---
+
+## Intended Audience
+
+- CIO
+- CISO
+- IT Director
+- Infrastructure Manager
+- Collaboration Manager
+- PMO
