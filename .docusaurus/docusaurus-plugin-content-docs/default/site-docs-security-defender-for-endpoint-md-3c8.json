@@ -1,0 +1,25 @@
+{
+  "id": "security/defender-for-endpoint",
+  "title": "Defender for Endpoint",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/defender-for-endpoint.md",
+  "sourceDirName": "security",
+  "slug": "/security/defender-for-endpoint",
+  "permalink": "/knowledge/security/defender-for-endpoint",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Defender for Endpoint"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Defender",
+    "permalink": "/knowledge/security/defender"
+  },
+  "next": {
+    "title": "Defender for Office 365",
+    "permalink": "/knowledge/security/defender-for-office365"
+  }
+}

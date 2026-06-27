@@ -1,0 +1,27 @@
+{
+  "id": "copilot/overview",
+  "title": "Copilot",
+  "description": "Microsoft 365 Copilot Knowledge Base",
+  "source": "@site/docs/copilot/overview.md",
+  "sourceDirName": "copilot",
+  "slug": "/copilot/overview",
+  "permalink": "/knowledge/copilot/overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Copilot"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Security Architecture",
+    "permalink": "/knowledge/security/security-architecture"
+  },
+  "next": {
+    "title": "Copilot Readiness Assessment",
+    "permalink": "/knowledge/copilot/readiness"
+  }
+}

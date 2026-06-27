@@ -1,0 +1,27 @@
+{
+  "id": "downloads/discovery-questionnaire",
+  "title": "Discovery Questionnaire",
+  "description": "Executive Summary",
+  "source": "@site/docs/downloads/discovery-questionnaire.md",
+  "sourceDirName": "downloads",
+  "slug": "/downloads/discovery-questionnaire",
+  "permalink": "/knowledge/downloads/discovery-questionnaire",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "discovery-questionnaire",
+    "title": "Discovery Questionnaire",
+    "sidebar_label": "Discovery Questionnaire"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Risk Register",
+    "permalink": "/knowledge/downloads/risk-register-template"
+  },
+  "next": {
+    "title": "Assessment Workbook",
+    "permalink": "/knowledge/downloads/m365-assessment-workbook"
+  }
+}

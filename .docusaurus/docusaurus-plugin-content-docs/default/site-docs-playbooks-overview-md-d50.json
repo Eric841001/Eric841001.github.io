@@ -1,0 +1,27 @@
+{
+  "id": "playbooks/overview",
+  "title": "Playbooks",
+  "description": "Enterprise Operational Playbooks",
+  "source": "@site/docs/playbooks/overview.md",
+  "sourceDirName": "playbooks",
+  "slug": "/playbooks/overview",
+  "permalink": "/knowledge/playbooks/overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Playbooks"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Governance Architecture",
+    "permalink": "/knowledge/architecture/governance-architecture"
+  },
+  "next": {
+    "title": "M365 Assessment",
+    "permalink": "/knowledge/playbooks/m365-assessment-playbook"
+  }
+}

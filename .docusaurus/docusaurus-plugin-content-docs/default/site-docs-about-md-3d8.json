@@ -1,0 +1,22 @@
+{
+  "id": "about",
+  "title": "About",
+  "description": "Youngsun Kang is an IT Consulting Manager focused on Microsoft 365, Azure, Security, Copilot, Enterprise Architecture, Presales and Project Management.",
+  "source": "@site/docs/about.md",
+  "sourceDirName": ".",
+  "slug": "/about",
+  "permalink": "/knowledge/about",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 99,
+  "frontMatter": {
+    "sidebar_position": 99
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Assessment Workbook",
+    "permalink": "/knowledge/downloads/m365-assessment-workbook"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "microsoft365/sharepoint",
+  "title": "SharePoint Online Architecture and Governance Guide",
+  "description": "Executive Summary",
+  "source": "@site/docs/microsoft365/sharepoint.md",
+  "sourceDirName": "microsoft365",
+  "slug": "/microsoft365/sharepoint",
+  "permalink": "/knowledge/microsoft365/sharepoint",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "sharepoint",
+    "title": "SharePoint Online Architecture and Governance Guide",
+    "sidebar_label": "SharePoint Online"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Teams Governance",
+    "permalink": "/knowledge/microsoft365/teams"
+  },
+  "next": {
+    "title": "Onedrive",
+    "permalink": "/knowledge/microsoft365/onedrive"
+  }
+}

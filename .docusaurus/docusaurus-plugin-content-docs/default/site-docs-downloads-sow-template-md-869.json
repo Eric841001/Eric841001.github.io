@@ -1,0 +1,27 @@
+{
+  "id": "downloads/downloads-sow-template",
+  "title": "SOW Template",
+  "description": "Project Information",
+  "source": "@site/docs/downloads/sow-template.md",
+  "sourceDirName": "downloads",
+  "slug": "/downloads/downloads-sow-template",
+  "permalink": "/knowledge/downloads/downloads-sow-template",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "downloads-sow-template",
+    "title": "SOW Template",
+    "sidebar_label": "SOW Template"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Downloads Center",
+    "permalink": "/knowledge/downloads/overview"
+  },
+  "next": {
+    "title": "WBS Template",
+    "permalink": "/knowledge/downloads/downloads-wbs-template"
+  }
+}

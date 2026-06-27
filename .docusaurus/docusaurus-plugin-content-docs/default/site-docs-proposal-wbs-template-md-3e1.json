@@ -1,0 +1,23 @@
+{
+  "id": "proposal/wbs-template",
+  "title": "Work Breakdown Structure",
+  "description": "| Phase | Activity |",
+  "source": "@site/docs/proposal/wbs-template.md",
+  "sourceDirName": "proposal",
+  "slug": "/proposal/wbs-template",
+  "permalink": "/knowledge/proposal/wbs-template",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Statement of Work Template",
+    "permalink": "/knowledge/proposal/sow-template"
+  },
+  "next": {
+    "title": "Risk Register",
+    "permalink": "/knowledge/proposal/risk-register"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "azure/landing-zone",
+  "title": "Landing Zone",
+  "description": "Executive Summary",
+  "source": "@site/docs/azure/landing-zone.md",
+  "sourceDirName": "azure",
+  "slug": "/azure/landing-zone",
+  "permalink": "/knowledge/azure/landing-zone",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Landing Zone"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Azure",
+    "permalink": "/knowledge/azure/overview"
+  },
+  "next": {
+    "title": "Virtual Machines",
+    "permalink": "/knowledge/azure/virtual-machines"
+  }
+}

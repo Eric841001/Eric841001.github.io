@@ -1,0 +1,27 @@
+{
+  "id": "playbooks/m365-assessment-playbook",
+  "title": "Microsoft 365 Assessment Playbook",
+  "description": "Executive Summary",
+  "source": "@site/docs/playbooks/m365-assessment-playbook.md",
+  "sourceDirName": "playbooks",
+  "slug": "/playbooks/m365-assessment-playbook",
+  "permalink": "/knowledge/playbooks/m365-assessment-playbook",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "m365-assessment-playbook",
+    "title": "Microsoft 365 Assessment Playbook",
+    "sidebar_label": "M365 Assessment"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Playbooks",
+    "permalink": "/knowledge/playbooks/overview"
+  },
+  "next": {
+    "title": "Tenant Migration",
+    "permalink": "/knowledge/playbooks/tenant-to-tenant-migration-playbook"
+  }
+}

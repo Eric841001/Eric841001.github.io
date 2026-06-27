@@ -1,0 +1,25 @@
+{
+  "id": "security/dlp",
+  "title": "Dlp",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/dlp.md",
+  "sourceDirName": "security",
+  "slug": "/security/dlp",
+  "permalink": "/knowledge/security/dlp",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Dlp"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Purview Information Protection",
+    "permalink": "/knowledge/security/purview-information-protection"
+  },
+  "next": {
+    "title": "Insider Risk Management",
+    "permalink": "/knowledge/security/insider-risk"
+  }
+}

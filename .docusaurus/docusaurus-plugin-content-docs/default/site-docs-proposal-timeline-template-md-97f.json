@@ -1,0 +1,27 @@
+{
+  "id": "proposal/timeline-template",
+  "title": "Timeline Template",
+  "description": "Executive Summary",
+  "source": "@site/docs/proposal/timeline-template.md",
+  "sourceDirName": "proposal",
+  "slug": "/proposal/timeline-template",
+  "permalink": "/knowledge/proposal/timeline-template",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "timeline-template",
+    "title": "Timeline Template",
+    "sidebar_label": "Timeline Template"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Risk Register",
+    "permalink": "/knowledge/proposal/risk-register"
+  },
+  "next": {
+    "title": "Governance Model",
+    "permalink": "/knowledge/proposal/governance-model"
+  }
+}

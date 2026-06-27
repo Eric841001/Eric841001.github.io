@@ -1,0 +1,27 @@
+{
+  "id": "architecture/m365-reference-architecture",
+  "title": "Microsoft 365 Reference Architecture",
+  "description": "---------------------------------------",
+  "source": "@site/docs/architecture/m365-reference-architecture.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/m365-reference-architecture",
+  "permalink": "/knowledge/architecture/m365-reference-architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "m365-reference-architecture",
+    "title": "Microsoft 365 Reference Architecture",
+    "sidebar_label": "M365 Reference Architecture"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Architecture Center",
+    "permalink": "/knowledge/architecture/overview"
+  },
+  "next": {
+    "title": "Security Architecture",
+    "permalink": "/knowledge/architecture/security-reference-architecture"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "copilot/readiness",
+  "title": "Microsoft 365 Copilot Readiness Assessment Framework",
+  "description": "Executive Summary",
+  "source": "@site/docs/copilot/readiness.md",
+  "sourceDirName": "copilot",
+  "slug": "/copilot/readiness",
+  "permalink": "/knowledge/copilot/readiness",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "readiness",
+    "title": "Microsoft 365 Copilot Readiness Assessment Framework",
+    "sidebar_label": "Copilot Readiness Assessment"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Copilot",
+    "permalink": "/knowledge/copilot/overview"
+  },
+  "next": {
+    "title": "Governance",
+    "permalink": "/knowledge/copilot/governance"
+  }
+}

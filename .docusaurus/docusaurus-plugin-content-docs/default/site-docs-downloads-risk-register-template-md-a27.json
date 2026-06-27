@@ -1,0 +1,27 @@
+{
+  "id": "downloads/risk-register-template",
+  "title": "Risk Register Template",
+  "description": "Executive Summary",
+  "source": "@site/docs/downloads/risk-register-template.md",
+  "sourceDirName": "downloads",
+  "slug": "/downloads/risk-register-template",
+  "permalink": "/knowledge/downloads/risk-register-template",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "risk-register-template",
+    "title": "Risk Register Template",
+    "sidebar_label": "Risk Register"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "WBS Template",
+    "permalink": "/knowledge/downloads/downloads-wbs-template"
+  },
+  "next": {
+    "title": "Discovery Questionnaire",
+    "permalink": "/knowledge/downloads/discovery-questionnaire"
+  }
+}

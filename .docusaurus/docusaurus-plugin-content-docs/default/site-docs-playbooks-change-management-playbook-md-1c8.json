@@ -1,0 +1,27 @@
+{
+  "id": "playbooks/change-management-playbook",
+  "title": "Change Management Playbook",
+  "description": "Executive Summary",
+  "source": "@site/docs/playbooks/change-management-playbook.md",
+  "sourceDirName": "playbooks",
+  "slug": "/playbooks/change-management-playbook",
+  "permalink": "/knowledge/playbooks/change-management-playbook",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "change-management-playbook",
+    "title": "Change Management Playbook",
+    "sidebar_label": "Change Management"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Intune Deployment",
+    "permalink": "/knowledge/playbooks/intune-deployment-playbook"
+  },
+  "next": {
+    "title": "Proposal Center",
+    "permalink": "/knowledge/proposal/overview"
+  }
+}

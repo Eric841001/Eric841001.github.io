@@ -1,0 +1,25 @@
+{
+  "id": "security/insider-risk",
+  "title": "Insider Risk Management",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/insider-risk.md",
+  "sourceDirName": "security",
+  "slug": "/security/insider-risk",
+  "permalink": "/knowledge/security/insider-risk",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Insider Risk Management"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Dlp",
+    "permalink": "/knowledge/security/dlp"
+  },
+  "next": {
+    "title": "Data Lifecycle Management",
+    "permalink": "/knowledge/security/data-lifecycle"
+  }
+}

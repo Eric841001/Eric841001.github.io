@@ -1,0 +1,18 @@
+{
+  "id": "downloads",
+  "title": "Downloads",
+  "description": "Enterprise assets, templates, scripts and tools.",
+  "source": "@site/docs/downloads.md",
+  "sourceDirName": ".",
+  "slug": "/downloads",
+  "permalink": "/knowledge/downloads",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 99,
+  "frontMatter": {
+    "sidebar_position": 99,
+    "title": "Downloads"
+  }
+}

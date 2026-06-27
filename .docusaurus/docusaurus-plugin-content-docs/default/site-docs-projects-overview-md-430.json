@@ -1,0 +1,26 @@
+{
+  "id": "projects/overview",
+  "title": "Projects Library",
+  "description": "This section captures anonymized enterprise project experience and lessons learned.",
+  "source": "@site/docs/projects/overview.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/overview",
+  "permalink": "/knowledge/projects/overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Prompt Library",
+    "permalink": "/knowledge/toolkit/prompt-library"
+  },
+  "next": {
+    "title": "Enterprise AI Adoption Program",
+    "permalink": "/knowledge/projects/enterprise-ai-adoption-program"
+  }
+}

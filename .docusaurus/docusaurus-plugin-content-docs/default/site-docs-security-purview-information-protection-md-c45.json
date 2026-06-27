@@ -1,0 +1,27 @@
+{
+  "id": "security/purview-information-protection",
+  "title": "Microsoft Purview Information Protection and Data Governance Guide",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/purview-information-protection.md",
+  "sourceDirName": "security",
+  "slug": "/security/purview-information-protection",
+  "permalink": "/knowledge/security/purview-information-protection",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "purview-information-protection",
+    "title": "Microsoft Purview Information Protection and Data Governance Guide",
+    "sidebar_label": "Purview Information Protection"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Purview",
+    "permalink": "/knowledge/security/purview"
+  },
+  "next": {
+    "title": "Dlp",
+    "permalink": "/knowledge/security/dlp"
+  }
+}

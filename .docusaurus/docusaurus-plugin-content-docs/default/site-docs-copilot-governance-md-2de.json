@@ -1,0 +1,25 @@
+{
+  "id": "copilot/governance",
+  "title": "Governance",
+  "description": "Executive Summary",
+  "source": "@site/docs/copilot/governance.md",
+  "sourceDirName": "copilot",
+  "slug": "/copilot/governance",
+  "permalink": "/knowledge/copilot/governance",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Governance"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Copilot Readiness Assessment",
+    "permalink": "/knowledge/copilot/readiness"
+  },
+  "next": {
+    "title": "Migration",
+    "permalink": "/knowledge/migration/overview"
+  }
+}

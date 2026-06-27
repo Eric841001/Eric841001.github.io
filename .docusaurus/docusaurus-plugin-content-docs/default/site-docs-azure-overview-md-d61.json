@@ -1,0 +1,27 @@
+{
+  "id": "azure/overview",
+  "title": "Azure",
+  "description": "Enterprise Azure Knowledge Base",
+  "source": "@site/docs/azure/overview.md",
+  "sourceDirName": "azure",
+  "slug": "/azure/overview",
+  "permalink": "/knowledge/azure/overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Azure"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Onedrive",
+    "permalink": "/knowledge/microsoft365/onedrive"
+  },
+  "next": {
+    "title": "Landing Zone",
+    "permalink": "/knowledge/azure/landing-zone"
+  }
+}

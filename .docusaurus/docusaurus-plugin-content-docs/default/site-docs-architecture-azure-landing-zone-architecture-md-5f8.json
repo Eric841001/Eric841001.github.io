@@ -1,0 +1,27 @@
+{
+  "id": "architecture/azure-landing-zone-architecture",
+  "title": "Azure Landing Zone Architecture",
+  "description": "Executive Summary",
+  "source": "@site/docs/architecture/azure-landing-zone-architecture.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/azure-landing-zone-architecture",
+  "permalink": "/knowledge/architecture/azure-landing-zone-architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "azure-landing-zone-architecture",
+    "title": "Azure Landing Zone Architecture",
+    "sidebar_label": "Azure Landing Zone"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Copilot Architecture",
+    "permalink": "/knowledge/architecture/copilot-architecture"
+  },
+  "next": {
+    "title": "Migration Architecture",
+    "permalink": "/knowledge/architecture/migration-architecture"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "proposal/governance-model",
+  "title": "Governance Model",
+  "description": "Executive Steering Committee",
+  "source": "@site/docs/proposal/governance-model.md",
+  "sourceDirName": "proposal",
+  "slug": "/proposal/governance-model",
+  "permalink": "/knowledge/proposal/governance-model",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Timeline Template",
+    "permalink": "/knowledge/proposal/timeline-template"
+  },
+  "next": {
+    "title": "Toolkit",
+    "permalink": "/knowledge/toolkit/overview"
+  }
+}

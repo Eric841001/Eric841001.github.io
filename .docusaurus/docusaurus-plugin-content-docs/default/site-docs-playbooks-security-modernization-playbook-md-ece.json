@@ -1,0 +1,27 @@
+{
+  "id": "playbooks/security-modernization-playbook",
+  "title": "Security Modernization Playbook",
+  "description": "Executive Summary",
+  "source": "@site/docs/playbooks/security-modernization-playbook.md",
+  "sourceDirName": "playbooks",
+  "slug": "/playbooks/security-modernization-playbook",
+  "permalink": "/knowledge/playbooks/security-modernization-playbook",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "security-modernization-playbook",
+    "title": "Security Modernization Playbook",
+    "sidebar_label": "Security Modernization"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Copilot Readiness",
+    "permalink": "/knowledge/playbooks/copilot-readiness-playbook"
+  },
+  "next": {
+    "title": "Intune Deployment",
+    "permalink": "/knowledge/playbooks/intune-deployment-playbook"
+  }
+}

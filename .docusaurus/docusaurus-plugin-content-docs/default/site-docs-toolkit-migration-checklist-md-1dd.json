@@ -1,0 +1,27 @@
+{
+  "id": "toolkit/migration-checklist",
+  "title": "Migration Checklist",
+  "description": "Executive Summary",
+  "source": "@site/docs/toolkit/migration-checklist.md",
+  "sourceDirName": "toolkit",
+  "slug": "/toolkit/migration-checklist",
+  "permalink": "/knowledge/toolkit/migration-checklist",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "migration-checklist",
+    "title": "Migration Checklist",
+    "sidebar_label": "Migration Checklist"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Assessment Checklist",
+    "permalink": "/knowledge/toolkit/assessment-checklist"
+  },
+  "next": {
+    "title": "Architecture Builder",
+    "permalink": "/knowledge/toolkit/architecture-builder"
+  }
+}

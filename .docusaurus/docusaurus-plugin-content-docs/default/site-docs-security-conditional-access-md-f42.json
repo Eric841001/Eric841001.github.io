@@ -1,0 +1,27 @@
+{
+  "id": "security/conditional-access",
+  "title": "Conditional Access Architecture and Design Guide",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/conditional-access.md",
+  "sourceDirName": "security",
+  "slug": "/security/conditional-access",
+  "permalink": "/knowledge/security/conditional-access",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "conditional-access",
+    "title": "Conditional Access Architecture and Design Guide",
+    "sidebar_label": "Conditional Access"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Zero Trust Framework",
+    "permalink": "/knowledge/security/zero-trust-framework"
+  },
+  "next": {
+    "title": "Defender",
+    "permalink": "/knowledge/security/defender"
+  }
+}

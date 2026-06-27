@@ -1,0 +1,27 @@
+{
+  "id": "architecture/copilot-architecture",
+  "title": "Microsoft Copilot Architecture",
+  "description": "Executive Summary",
+  "source": "@site/docs/architecture/copilot-architecture.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/copilot-architecture",
+  "permalink": "/knowledge/architecture/copilot-architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "copilot-architecture",
+    "title": "Microsoft Copilot Architecture",
+    "sidebar_label": "Copilot Architecture"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Security Architecture",
+    "permalink": "/knowledge/architecture/security-reference-architecture"
+  },
+  "next": {
+    "title": "Azure Landing Zone",
+    "permalink": "/knowledge/architecture/azure-landing-zone-architecture"
+  }
+}

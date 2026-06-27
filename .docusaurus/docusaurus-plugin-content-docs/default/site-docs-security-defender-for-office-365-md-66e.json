@@ -1,0 +1,25 @@
+{
+  "id": "security/defender-for-office365",
+  "title": "Defender for Office 365",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/defender-for-office365.md",
+  "sourceDirName": "security",
+  "slug": "/security/defender-for-office365",
+  "permalink": "/knowledge/security/defender-for-office365",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Defender for Office 365"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Defender for Endpoint",
+    "permalink": "/knowledge/security/defender-for-endpoint"
+  },
+  "next": {
+    "title": "Defender XDR",
+    "permalink": "/knowledge/security/defender-xdr"
+  }
+}

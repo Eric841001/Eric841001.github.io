@@ -1,0 +1,27 @@
+{
+  "id": "toolkit/license-advisor",
+  "title": "License Advisor",
+  "description": "Executive Summary",
+  "source": "@site/docs/toolkit/license-advisor.md",
+  "sourceDirName": "toolkit",
+  "slug": "/toolkit/license-advisor",
+  "permalink": "/knowledge/toolkit/license-advisor",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "license-advisor",
+    "title": "License Advisor",
+    "sidebar_label": "License Advisor"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Toolkit",
+    "permalink": "/knowledge/toolkit/overview"
+  },
+  "next": {
+    "title": "Assessment Checklist",
+    "permalink": "/knowledge/toolkit/assessment-checklist"
+  }
+}

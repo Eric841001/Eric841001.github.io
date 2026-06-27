@@ -1,0 +1,27 @@
+{
+  "id": "downloads/m365-assessment-workbook",
+  "title": "M365 Assessment Workbook",
+  "description": "Executive Summary",
+  "source": "@site/docs/downloads/m365-assessment-workbook.md",
+  "sourceDirName": "downloads",
+  "slug": "/downloads/m365-assessment-workbook",
+  "permalink": "/knowledge/downloads/m365-assessment-workbook",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "m365-assessment-workbook",
+    "title": "M365 Assessment Workbook",
+    "sidebar_label": "Assessment Workbook"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Discovery Questionnaire",
+    "permalink": "/knowledge/downloads/discovery-questionnaire"
+  },
+  "next": {
+    "title": "About",
+    "permalink": "/knowledge/about"
+  }
+}

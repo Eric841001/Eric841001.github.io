@@ -1,0 +1,25 @@
+{
+  "id": "security/data-lifecycle",
+  "title": "Data Lifecycle Management",
+  "description": "Executive Summary",
+  "source": "@site/docs/security/data-lifecycle.md",
+  "sourceDirName": "security",
+  "slug": "/security/data-lifecycle",
+  "permalink": "/knowledge/security/data-lifecycle",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data Lifecycle Management"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Insider Risk Management",
+    "permalink": "/knowledge/security/insider-risk"
+  },
+  "next": {
+    "title": "Compliance Manager",
+    "permalink": "/knowledge/security/compliance-manager"
+  }
+}

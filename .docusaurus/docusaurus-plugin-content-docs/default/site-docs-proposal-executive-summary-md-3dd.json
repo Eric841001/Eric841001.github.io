@@ -1,0 +1,23 @@
+{
+  "id": "proposal/executive-summary",
+  "title": "Executive Summary Template",
+  "description": "Executive Overview",
+  "source": "@site/docs/proposal/executive-summary.md",
+  "sourceDirName": "proposal",
+  "slug": "/proposal/executive-summary",
+  "permalink": "/knowledge/proposal/executive-summary",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Proposal Center",
+    "permalink": "/knowledge/proposal/overview"
+  },
+  "next": {
+    "title": "Assessment Framework",
+    "permalink": "/knowledge/proposal/assessment"
+  }
+}

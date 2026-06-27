@@ -1,0 +1,26 @@
+{
+  "id": "architecture/overview",
+  "title": "Architecture Center",
+  "description": "Enterprise architecture library for Microsoft 365, Azure, Security, Copilot and Hybrid environments.",
+  "source": "@site/docs/architecture/overview.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/overview",
+  "permalink": "/knowledge/architecture/overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Business Premium",
+    "permalink": "/knowledge/licensing/business-premium"
+  },
+  "next": {
+    "title": "M365 Reference Architecture",
+    "permalink": "/knowledge/architecture/m365-reference-architecture"
+  }
+}

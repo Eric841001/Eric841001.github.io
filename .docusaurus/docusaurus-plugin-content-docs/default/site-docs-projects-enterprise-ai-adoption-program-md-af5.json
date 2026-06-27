@@ -1,0 +1,27 @@
+{
+  "id": "projects/enterprise-ai-adoption-program",
+  "title": "Enterprise AI Adoption Program",
+  "description": "Enterprise AI Adoption Program",
+  "source": "@site/docs/projects/enterprise-ai-adoption-program.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/enterprise-ai-adoption-program",
+  "permalink": "/knowledge/projects/enterprise-ai-adoption-program",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "enterprise-ai-adoption-program",
+    "title": "Enterprise AI Adoption Program",
+    "sidebar_label": "Enterprise AI Adoption Program"
+  },
+  "sidebar": "platformSidebar",
+  "previous": {
+    "title": "Projects Library",
+    "permalink": "/knowledge/projects/overview"
+  },
+  "next": {
+    "title": "Microsoft 365 Optimization Program",
+    "permalink": "/knowledge/projects/m365-optimization-program"
+  }
+}
