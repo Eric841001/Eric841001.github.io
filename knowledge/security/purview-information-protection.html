@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-security/purview-information-protection" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.1">
+<title data-rh="true">Microsoft Purview Information Protection and Data Governance Guide | Youngsun Kang</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://eric841001.github.io/knowledge/security/purview-information-protection"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Microsoft Purview Information Protection and Data Governance Guide | Youngsun Kang"><meta data-rh="true" name="description" content="Executive Summary"><meta data-rh="true" property="og:description" content="Executive Summary"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eric841001.github.io/knowledge/security/purview-information-protection"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/security/purview-information-protection" hreflang="en"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/security/purview-information-protection" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Purview Information Protection","item":"https://eric841001.github.io/knowledge/security/purview-information-protection"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Youngsun Kang RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Youngsun Kang Atom Feed"><link rel="stylesheet" href="/assets/css/styles.6d28d3c0.css">
+<script src="/assets/js/runtime~main.9861a987.js" defer="defer"></script>
+<script src="/assets/js/main.a66c8a4b.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><b class="navbar__title text--truncate">Youngsun Kang</b></a><a class="navbar__item navbar__link" href="/knowledge/intro">Knowledge</a><a class="navbar__item navbar__link" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a><a class="navbar__item navbar__link" href="/knowledge/architecture/overview">Architecture</a><a class="navbar__item navbar__link" href="/knowledge/projects/overview">Projects</a><a class="navbar__item navbar__link" href="/knowledge/proposal/overview">Proposal Center</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><a class="navbar__item navbar__link" href="/knowledge/about">About</a><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/knowledge/intro"><span title="Youngsun Kang Enterprise Platform" class="linkLabel_WmDU">Youngsun Kang Enterprise Platform</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/knowledge/knowledge-center/overview"><span title="Knowledge Center" class="categoryLinkLabel_W154">Knowledge Center</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/knowledge-center/overview"><span title="Knowledge Center" class="linkLabel_WmDU">Knowledge Center</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" tabindex="0" href="/knowledge/microsoft365/overview"><span title="Microsoft 365" class="categoryLinkLabel_W154">Microsoft 365</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/overview"><span title="Microsoft 365 Overview" class="linkLabel_WmDU">Microsoft 365 Overview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/e3-vs-e5"><span title="E3 vs E5 Decision Guide" class="linkLabel_WmDU">E3 vs E5 Decision Guide</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/licensing"><span title="Licensing" class="linkLabel_WmDU">Licensing</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/exchange-online"><span title="Exchange Online" class="linkLabel_WmDU">Exchange Online</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/teams"><span title="Teams Governance" class="linkLabel_WmDU">Teams Governance</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/sharepoint"><span title="SharePoint Online" class="linkLabel_WmDU">SharePoint Online</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/microsoft365/onedrive"><span title="Onedrive" class="linkLabel_WmDU">Onedrive</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/knowledge/azure/overview"><span title="Azure" class="categoryLinkLabel_W154">Azure</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/knowledge/security/overview"><span title="Security" class="categoryLinkLabel_W154">Security</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/overview"><span title="Security" class="linkLabel_WmDU">Security</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/zero-trust-framework"><span title="Zero Trust Framework" class="linkLabel_WmDU">Zero Trust Framework</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/conditional-access"><span title="Conditional Access" class="linkLabel_WmDU">Conditional Access</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/defender"><span title="Defender" class="linkLabel_WmDU">Defender</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/defender-for-endpoint"><span title="Defender for Endpoint" class="linkLabel_WmDU">Defender for Endpoint</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/defender-for-office365"><span title="Defender for Office 365" class="linkLabel_WmDU">Defender for Office 365</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/defender-xdr"><span title="Defender XDR" class="linkLabel_WmDU">Defender XDR</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/purview"><span title="Purview" class="linkLabel_WmDU">Purview</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/knowledge/security/purview-information-protection"><span title="Purview Information Protection" class="linkLabel_WmDU">Purview Information Protection</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/dlp"><span title="Dlp" class="linkLabel_WmDU">Dlp</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/insider-risk"><span title="Insider Risk Management" class="linkLabel_WmDU">Insider Risk Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/data-lifecycle"><span title="Data Lifecycle Management" class="linkLabel_WmDU">Data Lifecycle Management</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/compliance-manager"><span title="Compliance Manager" class="linkLabel_WmDU">Compliance Manager</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/security/security-architecture"><span title="Security Architecture" class="linkLabel_WmDU">Security Architecture</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/knowledge/copilot/overview"><span title="Copilot" class="categoryLinkLabel_W154">Copilot</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/knowledge/migration/overview"><span title="Migration" class="categoryLinkLabel_W154">Migration</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/knowledge/licensing/overview"><span title="Licensing" class="categoryLinkLabel_W154">Licensing</span></a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/knowledge/architecture/overview"><span title="Architecture" class="categoryLinkLabel_W154">Architecture</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/overview"><span title="Architecture Center" class="linkLabel_WmDU">Architecture Center</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/m365-reference-architecture"><span title="M365 Reference Architecture" class="linkLabel_WmDU">M365 Reference Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/security-reference-architecture"><span title="Security Architecture" class="linkLabel_WmDU">Security Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/copilot-architecture"><span title="Copilot Architecture" class="linkLabel_WmDU">Copilot Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/azure-landing-zone-architecture"><span title="Azure Landing Zone" class="linkLabel_WmDU">Azure Landing Zone</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/migration-architecture"><span title="Migration Architecture" class="linkLabel_WmDU">Migration Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/architecture/governance-architecture"><span title="Governance Architecture" class="linkLabel_WmDU">Governance Architecture</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/knowledge/playbooks/overview"><span title="Playbooks" class="categoryLinkLabel_W154">Playbooks</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/overview"><span title="Playbooks" class="linkLabel_WmDU">Playbooks</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/m365-assessment-playbook"><span title="M365 Assessment" class="linkLabel_WmDU">M365 Assessment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/tenant-to-tenant-migration-playbook"><span title="Tenant Migration" class="linkLabel_WmDU">Tenant Migration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/copilot-readiness-playbook"><span title="Copilot Readiness" class="linkLabel_WmDU">Copilot Readiness</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/security-modernization-playbook"><span title="Security Modernization" class="linkLabel_WmDU">Security Modernization</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/intune-deployment-playbook"><span title="Intune Deployment" class="linkLabel_WmDU">Intune Deployment</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/playbooks/change-management-playbook"><span title="Change Management" class="linkLabel_WmDU">Change Management</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/knowledge/proposal/overview"><span title="Proposal Center" class="categoryLinkLabel_W154">Proposal Center</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/overview"><span title="Proposal Center" class="linkLabel_WmDU">Proposal Center</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/executive-summary"><span title="Executive Summary Template" class="linkLabel_WmDU">Executive Summary Template</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/assessment"><span title="Assessment Framework" class="linkLabel_WmDU">Assessment Framework</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/sow-template"><span title="Statement of Work Template" class="linkLabel_WmDU">Statement of Work Template</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/wbs-template"><span title="Work Breakdown Structure" class="linkLabel_WmDU">Work Breakdown Structure</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/risk-register"><span title="Risk Register" class="linkLabel_WmDU">Risk Register</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/timeline-template"><span title="Timeline Template" class="linkLabel_WmDU">Timeline Template</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/proposal/governance-model"><span title="Governance Model" class="linkLabel_WmDU">Governance Model</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/knowledge/toolkit/overview"><span title="Toolkit" class="categoryLinkLabel_W154">Toolkit</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/toolkit/overview"><span title="Toolkit" class="linkLabel_WmDU">Toolkit</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/toolkit/license-advisor"><span title="License Advisor" class="linkLabel_WmDU">License Advisor</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/toolkit/assessment-checklist"><span title="Assessment Checklist" class="linkLabel_WmDU">Assessment Checklist</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/toolkit/migration-checklist"><span title="Migration Checklist" class="linkLabel_WmDU">Migration Checklist</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/toolkit/architecture-builder"><span title="Architecture Builder" class="linkLabel_WmDU">Architecture Builder</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/toolkit/prompt-library"><span title="Prompt Library" class="linkLabel_WmDU">Prompt Library</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/knowledge/projects/overview"><span title="Projects" class="categoryLinkLabel_W154">Projects</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/projects/overview"><span title="Projects Library" class="linkLabel_WmDU">Projects Library</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/projects/enterprise-ai-adoption-program"><span title="Enterprise AI Adoption Program" class="linkLabel_WmDU">Enterprise AI Adoption Program</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/projects/m365-optimization-program"><span title="Microsoft 365 Optimization Program" class="linkLabel_WmDU">Microsoft 365 Optimization Program</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/projects/multi-tenant-governance-strategy"><span title="Multi-Tenant Governance Strategy" class="linkLabel_WmDU">Multi-Tenant Governance Strategy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/projects/security-modernization-program"><span title="Security Modernization Program" class="linkLabel_WmDU">Security Modernization Program</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/knowledge/downloads/overview"><span title="Downloads" class="categoryLinkLabel_W154">Downloads</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/downloads/overview"><span title="Downloads Center" class="linkLabel_WmDU">Downloads Center</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/downloads/downloads-sow-template"><span title="SOW Template" class="linkLabel_WmDU">SOW Template</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/downloads/downloads-wbs-template"><span title="WBS Template" class="linkLabel_WmDU">WBS Template</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/downloads/risk-register-template"><span title="Risk Register" class="linkLabel_WmDU">Risk Register</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/downloads/discovery-questionnaire"><span title="Discovery Questionnaire" class="linkLabel_WmDU">Discovery Questionnaire</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/knowledge/downloads/m365-assessment-workbook"><span title="Assessment Workbook" class="linkLabel_WmDU">Assessment Workbook</span></a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/knowledge/about"><span title="About" class="linkLabel_WmDU">About</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Knowledge Center</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Security</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Purview Information Protection</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Microsoft Purview Information Protection and Data Governance Guide</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="executive-summary">Executive Summary<a href="#executive-summary" class="hash-link" aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary" translate="no">​</a></h2>
+<p>Microsoft Purview provides enterprise-wide data protection, governance and compliance capabilities across Microsoft 365, endpoints, cloud applications and AI services.</p>
+<p>The objective is to classify, protect, monitor and govern information throughout its lifecycle.</p>
+<p>Purview is a critical foundation for:</p>
+<ul>
+<li class="">Zero Trust</li>
+<li class="">Data Protection</li>
+<li class="">Regulatory Compliance</li>
+<li class="">Insider Risk Management</li>
+<li class="">Microsoft 365 Copilot</li>
+</ul>
+<p>Without proper data governance, AI initiatives often increase organizational risk rather than productivity.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="business-scenario">Business Scenario<a href="#business-scenario" class="hash-link" aria-label="Direct link to Business Scenario" title="Direct link to Business Scenario" translate="no">​</a></h2>
+<p>Organizations typically deploy Purview when facing:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenario-1">Scenario 1<a href="#scenario-1" class="hash-link" aria-label="Direct link to Scenario 1" title="Direct link to Scenario 1" translate="no">​</a></h3>
+<p>Sensitive information is stored across:</p>
+<ul>
+<li class="">SharePoint</li>
+<li class="">OneDrive</li>
+<li class="">Teams</li>
+<li class="">Exchange Online</li>
+</ul>
+<p>without classification or protection.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenario-2">Scenario 2<a href="#scenario-2" class="hash-link" aria-label="Direct link to Scenario 2" title="Direct link to Scenario 2" translate="no">​</a></h3>
+<p>Users can freely download and share corporate data.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenario-3">Scenario 3<a href="#scenario-3" class="hash-link" aria-label="Direct link to Scenario 3" title="Direct link to Scenario 3" translate="no">​</a></h3>
+<p>Compliance requirements demand:</p>
+<ul>
+<li class="">Auditability</li>
+<li class="">Data retention</li>
+<li class="">Legal hold</li>
+<li class="">eDiscovery</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scenario-4">Scenario 4<a href="#scenario-4" class="hash-link" aria-label="Direct link to Scenario 4" title="Direct link to Scenario 4" translate="no">​</a></h3>
+<p>Microsoft 365 Copilot deployment requires:</p>
+<ul>
+<li class="">Content governance</li>
+<li class="">Permission review</li>
+<li class="">Data classification</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="information-protection-architecture">Information Protection Architecture<a href="#information-protection-architecture" class="hash-link" aria-label="Direct link to Information Protection Architecture" title="Direct link to Information Protection Architecture" translate="no">​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">User</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  |</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Microsoft 365</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  |</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Sensitivity Labels</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  |</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Encryption</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  |</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">DLP</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  |</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Monitoring</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  |</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Purview Portal</span><br></div></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-components">Core Components<a href="#core-components" class="hash-link" aria-label="Direct link to Core Components" title="Direct link to Core Components" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensitivity-labels">Sensitivity Labels<a href="#sensitivity-labels" class="hash-link" aria-label="Direct link to Sensitivity Labels" title="Direct link to Sensitivity Labels" translate="no">​</a></h3>
+<p>Purpose:</p>
+<p>Classify and protect information.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Public</li>
+<li class="">Internal</li>
+<li class="">Confidential</li>
+<li class="">Highly Confidential</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="encryption">Encryption<a href="#encryption" class="hash-link" aria-label="Direct link to Encryption" title="Direct link to Encryption" translate="no">​</a></h3>
+<p>Protection follows the document regardless of location.</p>
+<p>Capabilities:</p>
+<ul>
+<li class="">View Only</li>
+<li class="">No Print</li>
+<li class="">No Copy</li>
+<li class="">No Forward</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="auto-labeling">Auto Labeling<a href="#auto-labeling" class="hash-link" aria-label="Direct link to Auto Labeling" title="Direct link to Auto Labeling" translate="no">​</a></h3>
+<p>Automatically classify content based on:</p>
+<ul>
+<li class="">Credit Card Numbers</li>
+<li class="">Resident Registration Numbers</li>
+<li class="">Passport Numbers</li>
+<li class="">Financial Data</li>
+<li class="">Custom Keywords</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-loss-prevention">Data Loss Prevention<a href="#data-loss-prevention" class="hash-link" aria-label="Direct link to Data Loss Prevention" title="Direct link to Data Loss Prevention" translate="no">​</a></h3>
+<p>Prevent unauthorized sharing of sensitive information.</p>
+<p>Locations:</p>
+<ul>
+<li class="">Exchange Online</li>
+<li class="">Teams</li>
+<li class="">SharePoint</li>
+<li class="">OneDrive</li>
+<li class="">Endpoint</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-label-framework">Recommended Label Framework<a href="#recommended-label-framework" class="hash-link" aria-label="Direct link to Recommended Label Framework" title="Direct link to Recommended Label Framework" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="public">Public<a href="#public" class="hash-link" aria-label="Direct link to Public" title="Direct link to Public" translate="no">​</a></h3>
+<p>Examples:</p>
+<ul>
+<li class="">Marketing Materials</li>
+<li class="">Public Website Content</li>
+</ul>
+<p>Protection:</p>
+<p>None</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="internal">Internal<a href="#internal" class="hash-link" aria-label="Direct link to Internal" title="Direct link to Internal" translate="no">​</a></h3>
+<p>Examples:</p>
+<ul>
+<li class="">Internal Announcements</li>
+<li class="">Operational Documents</li>
+</ul>
+<p>Protection:</p>
+<p>Internal Users Only</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="confidential">Confidential<a href="#confidential" class="hash-link" aria-label="Direct link to Confidential" title="Direct link to Confidential" translate="no">​</a></h3>
+<p>Examples:</p>
+<ul>
+<li class="">Customer Information</li>
+<li class="">Financial Data</li>
+<li class="">Internal Reports</li>
+</ul>
+<p>Protection:</p>
+<p>Encryption Enabled</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="highly-confidential">Highly Confidential<a href="#highly-confidential" class="hash-link" aria-label="Direct link to Highly Confidential" title="Direct link to Highly Confidential" translate="no">​</a></h3>
+<p>Examples:</p>
+<ul>
+<li class="">Executive Documents</li>
+<li class="">M&amp;A Information</li>
+<li class="">Source Code</li>
+<li class="">R&amp;D Documents</li>
+</ul>
+<p>Protection:</p>
+<p>Restricted Access
+No External Sharing</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dlp-architecture">DLP Architecture<a href="#dlp-architecture" class="hash-link" aria-label="Direct link to DLP Architecture" title="Direct link to DLP Architecture" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="exchange-online">Exchange Online<a href="#exchange-online" class="hash-link" aria-label="Direct link to Exchange Online" title="Direct link to Exchange Online" translate="no">​</a></h3>
+<p>Detect:</p>
+<ul>
+<li class="">Credit Card Numbers</li>
+<li class="">Personal Information</li>
+<li class="">Financial Data</li>
+</ul>
+<p>Actions:</p>
+<ul>
+<li class="">Block</li>
+<li class="">Warn</li>
+<li class="">Audit</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sharepoint-and-onedrive">SharePoint and OneDrive<a href="#sharepoint-and-onedrive" class="hash-link" aria-label="Direct link to SharePoint and OneDrive" title="Direct link to SharePoint and OneDrive" translate="no">​</a></h3>
+<p>Detect:</p>
+<ul>
+<li class="">Sensitive Files</li>
+<li class="">External Sharing</li>
+</ul>
+<p>Actions:</p>
+<ul>
+<li class="">Restrict Access</li>
+<li class="">Block Sharing</li>
+<li class="">Notify User</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="endpoint-dlp">Endpoint DLP<a href="#endpoint-dlp" class="hash-link" aria-label="Direct link to Endpoint DLP" title="Direct link to Endpoint DLP" translate="no">​</a></h3>
+<p>Detect:</p>
+<ul>
+<li class="">USB Copy</li>
+<li class="">Print</li>
+<li class="">Clipboard</li>
+<li class="">Upload to Web</li>
+</ul>
+<p>Actions:</p>
+<ul>
+<li class="">Block</li>
+<li class="">Audit</li>
+<li class="">Warn</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-readiness-perspective">Copilot Readiness Perspective<a href="#copilot-readiness-perspective" class="hash-link" aria-label="Direct link to Copilot Readiness Perspective" title="Direct link to Copilot Readiness Perspective" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="before-copilot">Before Copilot<a href="#before-copilot" class="hash-link" aria-label="Direct link to Before Copilot" title="Direct link to Before Copilot" translate="no">​</a></h3>
+<p>Questions:</p>
+<ul>
+<li class="">Who can access sensitive data?</li>
+<li class="">Which documents are unclassified?</li>
+<li class="">Are permissions governed?</li>
+<li class="">Are labels deployed?</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-controls">Recommended Controls<a href="#recommended-controls" class="hash-link" aria-label="Direct link to Recommended Controls" title="Direct link to Recommended Controls" translate="no">​</a></h3>
+<ul>
+<li class="">Sensitivity Labels</li>
+<li class="">DLP</li>
+<li class="">Data Classification</li>
+<li class="">Access Review</li>
+<li class="">SharePoint Permission Review</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="regulatory-compliance-mapping">Regulatory Compliance Mapping<a href="#regulatory-compliance-mapping" class="hash-link" aria-label="Direct link to Regulatory Compliance Mapping" title="Direct link to Regulatory Compliance Mapping" translate="no">​</a></h2>
+<table><thead><tr><th>Requirement</th><th>Purview Capability</th></tr></thead><tbody><tr><td>GDPR</td><td>Data Classification, DLP</td></tr><tr><td>ISO27001</td><td>Information Protection</td></tr><tr><td>SOX</td><td>Audit and Retention</td></tr><tr><td>PCI-DSS</td><td>Sensitive Data Detection</td></tr><tr><td>Financial Regulation</td><td>DLP and eDiscovery</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="licensing-requirements">Licensing Requirements<a href="#licensing-requirements" class="hash-link" aria-label="Direct link to Licensing Requirements" title="Direct link to Licensing Requirements" translate="no">​</a></h2>
+<table><thead><tr><th>Capability</th><th>License</th></tr></thead><tbody><tr><td>Manual Labeling</td><td>Microsoft 365 E3</td></tr><tr><td>Auto Labeling</td><td>Microsoft 365 E5</td></tr><tr><td>Endpoint DLP</td><td>Microsoft 365 E5</td></tr><tr><td>Insider Risk</td><td>Microsoft 365 E5</td></tr><tr><td>Communication Compliance</td><td>Microsoft 365 E5</td></tr><tr><td>eDiscovery Premium</td><td>Microsoft 365 E5</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="enterprise-deployment-approach">Enterprise Deployment Approach<a href="#enterprise-deployment-approach" class="hash-link" aria-label="Direct link to Enterprise Deployment Approach" title="Direct link to Enterprise Deployment Approach" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-1">Phase 1<a href="#phase-1" class="hash-link" aria-label="Direct link to Phase 1" title="Direct link to Phase 1" translate="no">​</a></h3>
+<p>Assessment</p>
+<p>Activities:</p>
+<ul>
+<li class="">Data Discovery</li>
+<li class="">Classification Workshop</li>
+<li class="">Regulatory Review</li>
+</ul>
+<p>Deliverables:</p>
+<ul>
+<li class="">Data Classification Matrix</li>
+<li class="">Governance Strategy</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-2">Phase 2<a href="#phase-2" class="hash-link" aria-label="Direct link to Phase 2" title="Direct link to Phase 2" translate="no">​</a></h3>
+<p>Label Design</p>
+<p>Activities:</p>
+<ul>
+<li class="">Label Taxonomy Design</li>
+<li class="">Protection Policy Design</li>
+</ul>
+<p>Deliverables:</p>
+<ul>
+<li class="">Label Architecture</li>
+<li class="">Protection Model</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-3">Phase 3<a href="#phase-3" class="hash-link" aria-label="Direct link to Phase 3" title="Direct link to Phase 3" translate="no">​</a></h3>
+<p>Pilot</p>
+<p>Activities:</p>
+<ul>
+<li class="">Department Pilot</li>
+<li class="">User Feedback</li>
+</ul>
+<p>Deliverables:</p>
+<ul>
+<li class="">Pilot Report</li>
+<li class="">Optimized Policy</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="phase-4">Phase 4<a href="#phase-4" class="hash-link" aria-label="Direct link to Phase 4" title="Direct link to Phase 4" translate="no">​</a></h3>
+<p>Production Rollout</p>
+<p>Activities:</p>
+<ul>
+<li class="">Organization-wide Deployment</li>
+<li class="">User Communication</li>
+</ul>
+<p>Deliverables:</p>
+<ul>
+<li class="">Production Labels</li>
+<li class="">Governance Procedures</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-integration">Security Integration<a href="#security-integration" class="hash-link" aria-label="Direct link to Security Integration" title="Direct link to Security Integration" translate="no">​</a></h2>
+<p>Purview should integrate with:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="entra-id">Entra ID<a href="#entra-id" class="hash-link" aria-label="Direct link to Entra ID" title="Direct link to Entra ID" translate="no">​</a></h3>
+<ul>
+<li class="">Conditional Access</li>
+<li class="">Identity Protection</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="intune">Intune<a href="#intune" class="hash-link" aria-label="Direct link to Intune" title="Direct link to Intune" translate="no">​</a></h3>
+<ul>
+<li class="">Device Compliance</li>
+<li class="">MAM</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="defender-xdr">Defender XDR<a href="#defender-xdr" class="hash-link" aria-label="Direct link to Defender XDR" title="Direct link to Defender XDR" translate="no">​</a></h3>
+<ul>
+<li class="">Incident Correlation</li>
+<li class="">Insider Risk Investigation</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot">Copilot<a href="#copilot" class="hash-link" aria-label="Direct link to Copilot" title="Direct link to Copilot" translate="no">​</a></h3>
+<ul>
+<li class="">Content Protection</li>
+<li class="">Access Governance</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kpi-framework">KPI Framework<a href="#kpi-framework" class="hash-link" aria-label="Direct link to KPI Framework" title="Direct link to KPI Framework" translate="no">​</a></h2>
+<table><thead><tr><th>KPI</th><th>Target</th></tr></thead><tbody><tr><td>Labeled Documents</td><td>&gt; 90%</td></tr><tr><td>Sensitive Data Coverage</td><td>&gt; 95%</td></tr><tr><td>DLP Incidents Reviewed</td><td>100%</td></tr><tr><td>External Sharing Review</td><td>Monthly</td></tr><tr><td>Permission Review Completion</td><td>&gt; 95%</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practice">Best Practice<a href="#best-practice" class="hash-link" aria-label="Direct link to Best Practice" title="Direct link to Best Practice" translate="no">​</a></h2>
+<ul>
+<li class="">Keep label taxonomy simple</li>
+<li class="">Start with 4-level classification</li>
+<li class="">Use manual labeling before auto-labeling</li>
+<li class="">Pilot DLP in audit mode first</li>
+<li class="">Review SharePoint permissions before Copilot rollout</li>
+<li class="">Align labels with business processes</li>
+<li class="">Establish governance ownership</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting">Troubleshooting<a href="#troubleshooting" class="hash-link" aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate="no">​</a></h2>
+<table><thead><tr><th>Issue</th><th>Cause</th><th>Resolution</th></tr></thead><tbody><tr><td>Users ignore labels</td><td>Complex taxonomy</td><td>Simplify labels</td></tr><tr><td>Excessive DLP alerts</td><td>Overly broad conditions</td><td>Tune policies</td></tr><tr><td>Copilot exposes sensitive content</td><td>Missing labels</td><td>Expand classification coverage</td></tr><tr><td>External sharing bypass</td><td>Governance gap</td><td>Review sharing policies</td></tr><tr><td>Label adoption low</td><td>Lack of user education</td><td>Conduct awareness training</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lessons-learned">Lessons Learned<a href="#lessons-learned" class="hash-link" aria-label="Direct link to Lessons Learned" title="Direct link to Lessons Learned" translate="no">​</a></h2>
+<ul>
+<li class="">Data governance projects fail when treated purely as technical implementations</li>
+<li class="">Classification must be owned by business stakeholders</li>
+<li class="">Permission governance is often a larger risk than missing labels</li>
+<li class="">Copilot readiness depends heavily on information governance maturity</li>
+<li class="">Simple label structures outperform complex taxonomies</li>
+<li class="">DLP success requires phased rollout and user education</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<ul>
+<li class="">Microsoft Learn</li>
+<li class="">Microsoft Purview Documentation</li>
+<li class="">Microsoft Information Protection Documentation</li>
+<li class="">Microsoft Compliance Center Guidance</li>
+<li class="">Microsoft Copilot Readiness Guidance</li>
+<li class="">Microsoft Zero Trust Framework</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/security/purview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Purview</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/security/dlp"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Dlp</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a><ul><li><a href="#scenario-1" class="table-of-contents__link toc-highlight">Scenario 1</a></li><li><a href="#scenario-2" class="table-of-contents__link toc-highlight">Scenario 2</a></li><li><a href="#scenario-3" class="table-of-contents__link toc-highlight">Scenario 3</a></li><li><a href="#scenario-4" class="table-of-contents__link toc-highlight">Scenario 4</a></li></ul></li><li><a href="#information-protection-architecture" class="table-of-contents__link toc-highlight">Information Protection Architecture</a></li><li><a href="#core-components" class="table-of-contents__link toc-highlight">Core Components</a><ul><li><a href="#sensitivity-labels" class="table-of-contents__link toc-highlight">Sensitivity Labels</a></li><li><a href="#encryption" class="table-of-contents__link toc-highlight">Encryption</a></li><li><a href="#auto-labeling" class="table-of-contents__link toc-highlight">Auto Labeling</a></li><li><a href="#data-loss-prevention" class="table-of-contents__link toc-highlight">Data Loss Prevention</a></li></ul></li><li><a href="#recommended-label-framework" class="table-of-contents__link toc-highlight">Recommended Label Framework</a><ul><li><a href="#public" class="table-of-contents__link toc-highlight">Public</a></li><li><a href="#internal" class="table-of-contents__link toc-highlight">Internal</a></li><li><a href="#confidential" class="table-of-contents__link toc-highlight">Confidential</a></li><li><a href="#highly-confidential" class="table-of-contents__link toc-highlight">Highly Confidential</a></li></ul></li><li><a href="#dlp-architecture" class="table-of-contents__link toc-highlight">DLP Architecture</a><ul><li><a href="#exchange-online" class="table-of-contents__link toc-highlight">Exchange Online</a></li><li><a href="#sharepoint-and-onedrive" class="table-of-contents__link toc-highlight">SharePoint and OneDrive</a></li><li><a href="#endpoint-dlp" class="table-of-contents__link toc-highlight">Endpoint DLP</a></li></ul></li><li><a href="#copilot-readiness-perspective" class="table-of-contents__link toc-highlight">Copilot Readiness Perspective</a><ul><li><a href="#before-copilot" class="table-of-contents__link toc-highlight">Before Copilot</a></li><li><a href="#recommended-controls" class="table-of-contents__link toc-highlight">Recommended Controls</a></li></ul></li><li><a href="#regulatory-compliance-mapping" class="table-of-contents__link toc-highlight">Regulatory Compliance Mapping</a></li><li><a href="#licensing-requirements" class="table-of-contents__link toc-highlight">Licensing Requirements</a></li><li><a href="#enterprise-deployment-approach" class="table-of-contents__link toc-highlight">Enterprise Deployment Approach</a><ul><li><a href="#phase-1" class="table-of-contents__link toc-highlight">Phase 1</a></li><li><a href="#phase-2" class="table-of-contents__link toc-highlight">Phase 2</a></li><li><a href="#phase-3" class="table-of-contents__link toc-highlight">Phase 3</a></li><li><a href="#phase-4" class="table-of-contents__link toc-highlight">Phase 4</a></li></ul></li><li><a href="#security-integration" class="table-of-contents__link toc-highlight">Security Integration</a><ul><li><a href="#entra-id" class="table-of-contents__link toc-highlight">Entra ID</a></li><li><a href="#intune" class="table-of-contents__link toc-highlight">Intune</a></li><li><a href="#defender-xdr" class="table-of-contents__link toc-highlight">Defender XDR</a></li><li><a href="#copilot" class="table-of-contents__link toc-highlight">Copilot</a></li></ul></li><li><a href="#kpi-framework" class="table-of-contents__link toc-highlight">KPI Framework</a></li><li><a href="#best-practice" class="table-of-contents__link toc-highlight">Best Practice</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
+</body>
+</html>
