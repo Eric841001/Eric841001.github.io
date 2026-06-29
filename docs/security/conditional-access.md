@@ -1,273 +1,203 @@
 ﻿---
 id: conditional-access
-title: Conditional Access Architecture and Design Guide
+title: Conditional Access
 sidebar_label: Conditional Access
 ---
 
-# Conditional Access Architecture and Design Guide
+# Conditional Access
 
 ## Executive Summary
 
-Conditional Access is Microsoft's policy enforcement engine for Zero Trust security.
+Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture.
 
-Rather than trusting users based on network location alone, Conditional Access continuously evaluates:
+Conditional Access evaluates user identity, device posture, location, application, risk signals, and session context before granting access to corporate resources.
 
-- User Identity
-- Device Trust
-- Application Access
-- Location Risk
-- Sign-in Risk
-- Session Risk
-
-before granting access to Microsoft 365 resources.
-
-A properly designed Conditional Access architecture significantly reduces account compromise, ransomware exposure and unauthorized data access.
+This document provides an enterprise design methodology used in Microsoft 365, Azure, Security, and Copilot deployments.
 
 ---
 
-## Business Scenario
+# Why Conditional Access Matters
 
-Typical customer requirements include:
+Traditional security models assume trust after successful authentication.
 
-### Scenario 1
+Modern attacks target:
 
-Allow access only from managed devices.
+- Credential Theft
+- Session Hijacking
+- Phishing
+- Token Replay
+- Legacy Authentication Abuse
+- Unmanaged Device Access
 
-Examples:
-
-- SharePoint Online
-- OneDrive
-- Teams
-
----
-
-### Scenario 2
-
-Block access from foreign countries.
-
-Examples:
-
-- Korea-based organizations
-- Financial institutions
-- Manufacturing companies
+Conditional Access enables organizations to continuously validate trust before granting access.
 
 ---
 
-### Scenario 3
+# Zero Trust Architecture
 
-Require MFA for administrators.
+```mermaid
+flowchart LR
 
-Examples:
+USER[User]
+DEVICE[Device]
+ENTRA[Microsoft Entra ID]
+CA[Conditional Access]
+APP[Microsoft 365 Application]
 
-- Global Administrators
-- Exchange Administrators
-- Security Administrators
-
----
-
-### Scenario 4
-
-Protect Microsoft 365 Copilot.
-
-Examples:
-
-- Sensitive document environments
-- Executive users
-- R&D departments
-
----
-
-### Scenario 5
-
-Enable secure remote work.
-
-Examples:
-
-- Hybrid workforce
-- Mobile workforce
-- Global subsidiaries
-
----
-
-## Zero Trust Architecture
-
-### Traditional Model
-
-```text
-User
- |
-VPN
- |
-Internal Network
- |
-Access Granted
+USER --> ENTRA
+DEVICE --> ENTRA
+ENTRA --> CA
+CA --> APP
 ```
 
-Trust is based primarily on network location.
-
 ---
 
-### Zero Trust Model
+# Core Evaluation Signals
 
-```text
-User
- |
-Identity
- |
-Device
- |
-Risk
- |
-Application
- |
-Conditional Access
- |
-Access Granted
-```
-
-Trust is continuously evaluated.
-
----
-
-## Core Components
-
-### Identity
-
-Evaluates:
-
-- User account
-- User group
-- Authentication method
+## Identity
 
 Examples:
 
-- Employee
-- Contractor
-- Guest
+- User
+- Group Membership
+- Role Membership
 
 ---
 
-### Device
+## Device
 
-Evaluates:
+Examples:
 
 - Entra Joined
 - Hybrid Joined
 - Intune Compliant
 
-Examples:
-
-- Corporate Laptop
-- Managed Mobile Device
-
 ---
 
-### Location
-
-Evaluates:
-
-- Trusted Locations
-- Named Locations
-- Country
+## Location
 
 Examples:
 
 - Korea
 - Germany
-- Vietnam
+- Trusted Network
+- Unknown Country
 
 ---
 
-### Risk
+## Application
 
-Evaluates:
+Examples:
+
+- Exchange Online
+- SharePoint Online
+- Teams
+- Microsoft 365 Copilot
+
+---
+
+## Risk
+
+Examples:
 
 - User Risk
-- Sign-in Risk
-
-Requires:
-
-- Microsoft Entra ID P2
+- Sign-In Risk
+- Defender Device Risk
 
 ---
 
-### Session
+# Enterprise Conditional Access Framework
 
-Evaluates:
+## Layer 1
 
-- Browser Session
-- Download Activity
-- Continuous Access Evaluation
+Identity Protection
+
+Purpose:
+
+Protect against compromised credentials.
+
+Controls:
+
+- MFA
+- Risk Policies
+- Passwordless Authentication
 
 ---
 
-## Recommended Enterprise Baseline
+## Layer 2
 
-### Policy 1
+Device Protection
 
-Require MFA for All Users
+Purpose:
 
-Target:
+Allow access only from trusted devices.
 
-```text
+Controls:
+
+- Require Compliant Device
+- Device Risk Evaluation
+- Defender Integration
+
+---
+
+## Layer 3
+
+Data Protection
+
+Purpose:
+
+Protect corporate data.
+
+Controls:
+
+- App Enforced Restrictions
+- Session Control
+- Download Restrictions
+
+---
+
+# Recommended Enterprise Policies
+
+## Policy 1
+
+### Require MFA for All Users
+
+Scope:
+
 All Users
-```
 
 Exclude:
 
-```text
-Break Glass Account
-```
+- Break Glass Accounts
 
 Control:
 
-```text
 Require MFA
-```
 
 Priority:
 
-Critical
+Highest
 
 ---
 
-### Policy 2
+## Policy 2
 
-Require MFA for Administrators
+### Block Legacy Authentication
 
-Target:
+Scope:
 
-```text
-Administrative Roles
-```
-
-Control:
-
-```text
-Require MFA
-```
-
-Priority:
-
-Critical
-
----
-
-### Policy 3
-
-Block Legacy Authentication
-
-Target:
-
-```text
 All Users
-```
+
+Protocols:
+
+- POP3
+- IMAP
+- SMTP AUTH
+- Basic Authentication
 
 Control:
 
-```text
 Block Access
-```
 
 Priority:
 
@@ -275,23 +205,20 @@ Critical
 
 ---
 
-### Policy 4
+## Policy 3
 
-Require Compliant Device
+### Require Compliant Device
 
-Target:
+Applications:
 
-```text
-SharePoint
-OneDrive
-Teams
-```
+- Exchange Online
+- SharePoint Online
+- Teams
+- OneDrive
 
 Control:
 
-```text
 Require Compliant Device
-```
 
 Priority:
 
@@ -299,266 +226,315 @@ High
 
 ---
 
-### Policy 5
+## Policy 4
 
-Country-Based Restriction
+### Administrative Account Protection
 
-Target:
+Scope:
 
-```text
-All Users
-```
-
-Control:
-
-```text
-Block High Risk Countries
-```
-
-Priority:
-
-High
-
----
-
-## Secure SharePoint Access Design
-
-Customer Requirement:
-
-> Users must access SharePoint only from corporate devices.
-
-Recommended Policy:
-
-```text
-Users
-  |
-Conditional Access
-  |
-Require Compliant Device
-  |
-SharePoint Online
-```
-
-Result:
-
-- Personal PC blocked
-- Managed PC allowed
-- Intune compliance enforced
-
----
-
-## Executive Access Model
-
-Target:
-
-- CEO
-- CFO
-- CIO
-- Board Members
+- Global Administrator
+- Security Administrator
+- Exchange Administrator
+- SharePoint Administrator
 
 Controls:
 
 - MFA
 - Compliant Device
-- Defender Risk Evaluation
-- Session Monitoring
+- PIM
 
-Recommended License:
+Priority:
 
-```text
-Microsoft 365 E5
-```
+Critical
 
 ---
 
-## Administrator Protection Model
+## Policy 5
 
-Target Roles:
+### High Risk User Protection
 
-- Global Administrator
-- Security Administrator
-- Exchange Administrator
+Condition:
+
+User Risk = High
+
+Controls:
+
+- Block Access
+
+or
+
+- Password Change Required
+
+Priority:
+
+Critical
+
+---
+
+## Policy 6
+
+### High Risk Sign-In Protection
+
+Condition:
+
+Sign-In Risk = High
+
+Controls:
+
+- Block Access
+
+Priority:
+
+Critical
+
+---
+
+# Break Glass Account Design
+
+## Purpose
+
+Provide emergency access when Conditional Access or MFA becomes unavailable.
+
+---
+
+## Recommended Configuration
+
+Accounts:
+
+Minimum 2
 
 Requirements:
 
-- MFA
-- PIM
-- Sign-in Risk Evaluation
+- Cloud Only
+- Excluded from CA
+- Excluded from MFA
+- Long Complex Password
 
-Recommended Architecture:
+Monitoring:
 
-```text
-Admin
- |
-PIM
- |
-MFA
- |
-Conditional Access
- |
-Administrative Access
-```
+Mandatory
 
 ---
 
-## Copilot Protection Design
+## Security Controls
 
-Microsoft 365 Copilot should be protected through:
+- No Mailbox
+- No Daily Usage
+- Alert on Sign-In
+- Quarterly Validation
 
-### Identity
+---
+
+# Device Compliance Design
+
+## Compliant Device Requirements
+
+### Windows
+
+- BitLocker Enabled
+- Defender Active
+- Latest Updates Installed
+
+### macOS
+
+- Defender Active
+- Encryption Enabled
+
+### Mobile
+
+- Passcode Enabled
+- Not Rooted
+- Not Jailbroken
+
+---
+
+# SharePoint and OneDrive Protection
+
+## Managed Device
+
+Allow:
+
+- Download
+- Sync
+- Print
+
+---
+
+## Unmanaged Device
+
+Allow:
+
+- Browser View
+
+Block:
+
+- Download
+- Sync
+- Print
+
+---
+
+# Copilot Security Integration
+
+Copilot inherits user permissions.
+
+Conditional Access should protect:
+
+- SharePoint Online
+- OneDrive
+- Teams
+- Exchange Online
+
+before Copilot deployment.
+
+---
+
+## Recommended Copilot Controls
+
+Required:
 
 - MFA
-- PIM
+- Compliant Device
 
-### Device
-
-- Intune Compliance
-
-### Data
+Recommended:
 
 - Sensitivity Labels
 - DLP
-
-### Session
-
-- Browser Session Control
-
-### Access
-
-- Conditional Access
+- Defender Device Risk
 
 ---
 
-## Global Enterprise Design
+# Global Secure Access Integration
 
-Example:
+## Use Cases
 
-### Headquarters
-
-Korea
-
-### Subsidiaries
-
-- Germany
-- Vietnam
-- Bangladesh
-- USA
-
-Policy Recommendations:
-
-| Region | Policy |
-|----------|----------|
-| Korea | Standard Access |
-| Germany | GDPR Review |
-| Vietnam | Standard Access |
-| Bangladesh | Standard Access |
-| USA | Standard Access |
-
-Additional controls may be required depending on local regulations.
+- Tenant Restriction
+- Microsoft Traffic Control
+- Corporate Access Enforcement
 
 ---
 
-## Licensing Requirements
+## Recommended Design
 
-| Feature | License |
-|-----------|-----------|
-| Conditional Access | Entra ID P1 |
-| Device Compliance | Intune |
-| Sign-in Risk | Entra ID P2 |
-| User Risk | Entra ID P2 |
-| PIM | Entra ID P2 |
-| Identity Protection | Entra ID P2 |
+Allow:
+
+- Corporate Tenant
+
+Block:
+
+- Personal Microsoft Accounts
+- Unauthorized Tenants
 
 ---
 
-## Implementation Approach
+# Deployment Methodology
 
-### Phase 1
+## Phase 1
 
 Assessment
 
 Activities:
 
-- User review
-- Device review
-- Application review
+- Identity Review
+- Device Review
+- Application Review
 
 ---
 
-### Phase 2
+## Phase 2
 
 Pilot
 
 Activities:
 
-- IT Team Pilot
-- Security Team Pilot
+- IT Team
+- Security Team
+- Executive Validation
 
 ---
 
-### Phase 3
+## Phase 3
 
 Production Rollout
 
 Activities:
 
-- MFA Enforcement
-- Device Compliance Enforcement
+- User Communication
+- Monitoring
+- Incident Support
 
 ---
 
-### Phase 4
+# Common Mistakes
 
-Optimization
+## No Break Glass Account
 
-Activities:
+Risk:
 
-- Risk Policy
-- Session Policy
-- Copilot Security Policy
+Tenant Lockout
 
 ---
 
-## Best Practice
+## No Pilot Group
 
-- Deploy in Report-Only mode first
-- Protect administrators before users
-- Implement MFA before device restrictions
-- Maintain emergency accounts
-- Review exclusions regularly
-- Integrate with Intune compliance
-- Align Conditional Access with Zero Trust roadmap
+Risk:
+
+Business Disruption
 
 ---
 
-## Troubleshooting
+## Legacy Authentication Not Blocked
 
-| Issue | Cause | Resolution |
-|---------|---------|---------|
-| Users blocked unexpectedly | Incorrect assignment | Review targeting |
-| SharePoint inaccessible | Device non-compliant | Validate Intune compliance |
-| MFA loop | Authentication conflict | Review authentication methods |
-| Guest access failure | Policy overlap | Review guest exclusions |
-| Administrator lockout | Emergency account missing | Create Break Glass account |
-| Country restriction failure | IP geolocation issue | Review Named Locations |
+Risk:
+
+Credential Attack
 
 ---
 
-## Lessons Learned
+## Broad Exclusions
 
-- Most Conditional Access incidents are caused by poor policy design rather than platform limitations
-- Report-Only mode significantly reduces deployment risk
-- Device compliance is often the most effective control
-- Administrative accounts require stronger controls than standard users
-- Conditional Access is the foundation of Zero Trust architecture
-- Copilot deployments should always include Conditional Access review
+Risk:
+
+Security Gaps
 
 ---
 
-## References
+## Missing Device Compliance
 
-- Microsoft Learn
-- Microsoft Entra Conditional Access Documentation
-- Microsoft Zero Trust Deployment Guide
-- Microsoft Security Best Practices
-- Microsoft Copilot Security Guidance
+Risk:
+
+Unmanaged Access
+
+---
+
+# Operational KPIs
+
+| KPI | Target |
+|-------|---------|
+| MFA Adoption | 100% |
+| Legacy Authentication | 0% |
+| Compliant Devices | >95% |
+| High Risk Sign-Ins | Monitor |
+| Break Glass Validation | Quarterly |
+
+---
+
+# Deliverables
+
+- Conditional Access Assessment
+- Policy Design Matrix
+- Break Glass Design
+- Deployment Plan
+- Validation Report
+- Operational Runbook
+
+---
+
+# Related Documents
+
+- Zero Trust Framework
+- Security Architecture
+- Microsoft Defender
+- Microsoft Intune
+- Copilot Readiness
+- Global Secure Access

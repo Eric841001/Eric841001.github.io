@@ -1,498 +1,402 @@
 ﻿---
 id: sharepoint
-title: SharePoint Online Architecture and Governance Guide
-sidebar_label: SharePoint Online
+title: SharePoint Information Architecture Framework
+sidebar_label: SharePoint
 ---
 
-# SharePoint Online Architecture and Governance Guide
+# SharePoint Information Architecture Framework
 
 ## Executive Summary
 
-SharePoint Online is Microsoft's enterprise content management and collaboration platform.
+SharePoint Online should not be positioned as a simple file server replacement.
 
-In modern Microsoft 365 environments, SharePoint serves as the foundation for:
+A successful SharePoint implementation requires a well-designed information architecture, governance model, permission strategy, lifecycle policy and data protection framework.
 
-- Document Management
-- Knowledge Management
-- Intranet
-- Collaboration
-- Information Governance
-- Microsoft 365 Copilot
-
-A successful SharePoint deployment is not a file migration project.
-
-It is an information architecture and governance transformation initiative.
+This framework provides a practical approach for designing SharePoint Online as an enterprise content and knowledge platform.
 
 ---
 
 ## Business Scenario
 
-Organizations typically deploy SharePoint Online when:
+Typical SharePoint initiatives include:
 
-### Scenario 1
-
-Legacy File Servers
-
-Examples:
-
-- Windows File Server
-- NAS Storage
-- DFS Environment
-
-Challenges:
-
-- Permission complexity
-- Lack of search
-- Remote access limitations
+- File server or NAS modernization
+- Department document management
+- Intranet implementation
+- Project collaboration
+- Enterprise knowledge management
+- Microsoft 365 Copilot readiness
+- Information protection and DLP implementation
+- Global collaboration standardization
 
 ---
 
-### Scenario 2
+## Reference Architecture
 
-Global Collaboration
+```mermaid
+flowchart TB
+    ORG[Organization] --> HUB[Hub Sites]
 
-Requirements:
+    HUB --> CORP[Corporate Hub]
+    HUB --> DEPT[Department Hubs]
+    HUB --> PROJ[Project Hubs]
+    HUB --> REGION[Regional Hubs]
 
-- Global document sharing
-- Version control
-- Secure access
+    DEPT --> HR[HR Site]
+    DEPT --> FIN[Finance Site]
+    DEPT --> IT[IT Site]
+    DEPT --> SALES[Sales Site]
 
----
+    PROJ --> PA[Project A]
+    PROJ --> PB[Project B]
 
-### Scenario 3
+    REGION --> KR[Korea]
+    REGION --> EU[Europe]
+    REGION --> US[United States]
 
-Document Governance
-
-Requirements:
-
-- Information classification
-- Retention
-- Auditability
-
----
-
-### Scenario 4
-
-Microsoft 365 Copilot
-
-Requirements:
-
-- Knowledge discovery
-- Content governance
-- Permission optimization
-
----
-
-## Architecture Overview
-
-### Logical Architecture
-
-```text
-Microsoft 365
-      |
-SharePoint Online
-      |
-Hub Sites
-      |
-Department Sites
-      |
-Document Libraries
-      |
-Documents
+    CORP --> PURVIEW[Purview Labels and DLP]
+    DEPT --> PURVIEW
+    PROJ --> PURVIEW
+    REGION --> PURVIEW
 ```
 
 ---
 
-## Information Architecture
+## Design Principles
 
-### Hub Site Layer
-
-Examples:
-
-- Corporate Portal
-- Global IT
-- Global HR
-- Security
-
-Purpose:
-
-Enterprise Navigation
+| Principle | Description |
+|---|---|
+| Business Ownership | Each site must have an accountable business owner |
+| Governed Provisioning | Sites should be created through a defined process |
+| Least Privilege | Permissions should be granted based on business need |
+| Metadata First | Use metadata to improve search and lifecycle management |
+| Security by Design | Apply sensitivity labels and DLP where required |
+| Lifecycle Management | Sites and content must be reviewed, archived or deleted |
 
 ---
 
-### Department Site Layer
+## Site Architecture Model
 
-Examples:
+### Hub Sites
 
-- Finance
-- HR
-- Manufacturing
-- Procurement
+Hub Sites should be used to organize related sites and provide:
 
-Purpose:
+- Common navigation
+- Search scope
+- Branding
+- Governance alignment
+- Logical grouping
 
-Department Collaboration
+Recommended hub models:
 
----
-
-### Team Site Layer
-
-Examples:
-
-- Project A
-- Project B
-- PMO
-
-Purpose:
-
-Working Collaboration Space
+| Hub Type | Purpose |
+|---|---|
+| Corporate Hub | Company-wide information and policies |
+| Department Hub | Department collaboration and knowledge |
+| Project Hub | Program and project collaboration |
+| Regional Hub | Country or regional operations |
+| Community Hub | Practice communities and knowledge sharing |
 
 ---
 
-## Recommended Site Hierarchy
+## Department Site Model
+
+Department sites should be used for long-term business ownership.
+
+Recommended structure:
 
 ```text
-Corporate Hub
-
- ├ HR
- ├ Finance
- ├ Procurement
- ├ Manufacturing
- ├ IT
-
-Project Hub
-
- ├ Project A
- ├ Project B
- ├ Project C
-
-Regional Hub
-
- ├ Korea
- ├ Germany
- ├ Vietnam
- ├ Bangladesh
+Department Hub
+├── Policies
+├── Procedures
+├── Templates
+├── Working Documents
+├── Reports
+└── Archive
 ```
+
+Design considerations:
+
+- Define site owner and backup owner
+- Define member groups
+- Define external sharing policy
+- Apply sensitivity label where required
+- Apply retention policy where required
 
 ---
 
-## Permission Model
+## Project Site Model
 
-### Recommended Principle
+Project sites should be used for temporary collaboration.
 
-Permissions should be assigned to groups.
-
-Avoid:
+Recommended structure:
 
 ```text
-User → Permission
+Project Site
+├── 01_Project Management
+├── 02_Working Documents
+├── 03_Deliverables
+├── 04_Meeting Notes
+├── 05_Risks and Issues
+└── 99_Archive
 ```
 
-Preferred:
+Design considerations:
 
-```text
-User
- |
-Group
- |
-Permission
-```
+- Define project owner
+- Define project end date
+- Define archive policy
+- Define external participant policy
+- Review site after project closure
 
 ---
 
-## Permission Levels
+## Permission Architecture
 
-| Permission | Usage |
-|------------|------------|
-| Full Control | Site Owners |
-| Edit | Contributors |
-| Read | Viewers |
-| Restricted View | Sensitive Areas |
+Recommended model:
+
+```mermaid
+flowchart TB
+    USER[User] --> GROUP[Microsoft 365 Group or Security Group]
+    GROUP --> ROLE[SharePoint Permission Role]
+    ROLE --> SITE[SharePoint Site]
+    SITE --> LIB[Document Library]
+```
+
+Avoid assigning permissions directly to individual users unless there is a documented business reason.
+
+---
+
+## Permission Roles
+
+| Role | Recommended Usage |
+|---|---|
+| Owner | Site administration and permission management |
+| Member | Content contribution |
+| Visitor | Read-only access |
+| Restricted Access | Sensitive libraries or controlled content |
+| External Guest | Partner or vendor collaboration |
 
 ---
 
 ## External Sharing Strategy
 
-### Internal Only
+External sharing should be controlled based on sensitivity.
 
-Suitable for:
-
-- Financial Data
-- Executive Documents
-
----
-
-### Selected External Users
-
-Suitable for:
-
-- Vendors
-- Partners
-- Consultants
+| Content Type | Recommended Sharing |
+|---|---|
+| Public content | External sharing allowed where approved |
+| Internal documents | Internal only |
+| Customer documents | Selected external users |
+| Financial documents | Internal only or restricted |
+| Executive documents | Restricted access |
+| Regulated data | External sharing disabled unless approved |
 
 ---
 
-### Anyone Links
+## Information Architecture
 
-Recommended:
+Information architecture should define:
 
-```text
-Disabled
-```
+- Site hierarchy
+- Navigation
+- Document libraries
+- Metadata
+- Content types
+- Naming standards
+- Search experience
+- Retention strategy
 
-for most enterprise customers.
+### Recommended Metadata
 
----
-
-## Document Management Architecture
-
-### Standard Library Structure
-
-```text
-Policies
-Procedures
-Templates
-Projects
-Reports
-Archive
-```
-
----
-
-### Metadata Strategy
-
-Recommended Metadata:
-
-- Department
-- Region
-- Document Type
-- Classification
-- Owner
+| Metadata | Purpose |
+|---|---|
+| Department | Ownership and filtering |
+| Region | Regional search and governance |
+| Document Type | Classification and lifecycle |
+| Confidentiality | Security and DLP |
+| Owner | Accountability |
+| Retention Category | Lifecycle management |
 
 ---
 
-### Version Control
+## Document Library Strategy
 
-Recommended:
+Recommended library types:
 
-```text
-Major Version Enabled
-```
-
-Examples:
-
-- 1.0
-- 2.0
-- 3.0
+| Library | Purpose |
+|---|---|
+| Working Documents | Active collaboration |
+| Policies | Controlled official documents |
+| Templates | Standard forms and reusable assets |
+| Reports | Periodic business reporting |
+| Archive | Closed or historical content |
 
 ---
 
-## Microsoft Purview Integration
+## Naming Convention
 
-### Sensitivity Labels
+Recommended naming examples:
 
-Examples:
-
-- Public
-- Internal
-- Confidential
-- Highly Confidential
-
----
-
-### DLP
-
-Locations:
-
-- SharePoint
-- Teams
-- OneDrive
+| Site Type | Naming Example |
+|---|---|
+| Department | HR-Global |
+| Region | Region-Korea |
+| Project | PRJ-Copilot-Adoption |
+| Community | CoP-Security-Champions |
+| Archive | ARCH-Finance-2025 |
 
 ---
 
-### Retention
+## Purview Integration
 
-Examples:
+SharePoint should be integrated with Microsoft Purview for:
 
-- 3 Years
-- 5 Years
-- 7 Years
+- Sensitivity labels
+- Data Loss Prevention
+- Retention policies
+- Audit
+- eDiscovery
+- Insider risk investigation
 
----
+Recommended label model:
 
-## Conditional Access Integration
-
-Recommended Controls:
-
-### Standard Users
-
-- MFA
-
----
-
-### Sensitive Sites
-
-- Require Compliant Device
+| Label | Example |
+|---|---|
+| Public | Marketing material |
+| Internal | Internal working document |
+| Confidential | Customer or financial data |
+| Highly Confidential | Executive, legal, M&A, R&D |
 
 ---
 
-### Executive Sites
+## Copilot Readiness
 
-- MFA
-- Compliant Device
-- Session Restriction
+SharePoint is one of the most important readiness areas for Microsoft 365 Copilot.
 
----
+Before enabling Copilot, review:
 
-## Copilot Readiness Assessment
+- Overshared sites
+- Anonymous links
+- External sharing
+- Sensitive libraries
+- Site ownership
+- Stale content
+- Metadata quality
+- Search quality
+- Permission inheritance breaks
 
-Before enabling Copilot:
+Copilot readiness architecture:
 
-### Review Permissions
-
-Questions:
-
-- Who can access what?
-- Are permissions inherited correctly?
-- Are sensitive sites protected?
-
----
-
-### Review Sharing
-
-Questions:
-
-- External sharing enabled?
-- Anonymous links present?
-
----
-
-### Review Labels
-
-Questions:
-
-- Is classification implemented?
-- Are sensitive files protected?
-
----
-
-## Migration Strategy
-
-### Discovery
-
-Activities:
-
-- File Inventory
-- Permission Review
-- Data Volume Analysis
-
----
-
-### Assessment
-
-Activities:
-
-- Information Architecture Review
-- Governance Assessment
-
----
-
-### Design
-
-Activities:
-
-- Site Structure Design
-- Metadata Design
-- Permission Design
-
----
-
-### Migration
-
-Activities:
-
-- Pilot Migration
-- Production Migration
-- Validation
-
----
-
-## Governance Framework
-
-### Site Provisioning
-
-Recommended:
-
-Approval Workflow
-
----
-
-### Naming Convention
-
-Example:
-
-```text
-HR-KR
-FIN-Global
-IT-Security
+```mermaid
+flowchart LR
+    IA[Information Architecture] --> COP[Copilot Quality]
+    PERM[Permission Review] --> COP
+    META[Metadata and Search] --> COP
+    LABEL[Sensitivity Labels] --> COP
+    DLP[DLP Policies] --> COP
+    OWNER[Content Ownership] --> COP
 ```
 
 ---
 
-### Lifecycle Management
+## Migration Considerations
 
-Policies:
+When migrating from file server or NAS to SharePoint, avoid a direct lift-and-shift approach.
 
-- Site Review
-- Archive
-- Deletion
+Recommended approach:
+
+| Step | Description |
+|---|---|
+| Inventory | Identify source folders, owners and data volume |
+| Rationalization | Remove obsolete or duplicate content |
+| IA Design | Define target site and library structure |
+| Permission Review | Redesign permissions where needed |
+| Pilot Migration | Validate mapping and user experience |
+| Production Migration | Execute wave-based migration |
+| Hypercare | Support users and resolve issues |
+
+---
+
+## Governance Operating Model
+
+| Role | Responsibility |
+|---|---|
+| Business Owner | Content ownership and access approval |
+| Site Owner | Site operation and membership review |
+| M365 Admin | Platform configuration |
+| Security Team | External sharing and access risk |
+| Compliance Team | Retention, DLP and labels |
+| Help Desk | User support |
 
 ---
 
 ## KPI Framework
 
-| KPI | Target |
-|------|------|
-| Active Sites | Monitored |
-| Orphan Sites | < 5% |
-| External Sharing Review | Monthly |
-| Permission Review Completion | > 95% |
-| Copilot Ready Content | > 80% |
+| KPI | Purpose |
+|---|---|
+| Ownerless Sites | Governance risk |
+| External Sharing Links | Data exposure risk |
+| Anonymous Links | High-risk sharing |
+| Inactive Sites | Lifecycle risk |
+| Sensitive Data Locations | Compliance risk |
+| Permission Review Completion | Governance maturity |
+| Copilot Ready Sites | AI readiness |
 
 ---
 
-## Best Practice
+## Risk Register
 
-- Design Information Architecture before migration
-- Use Hub Sites strategically
-- Minimize permission inheritance breaks
-- Govern external sharing
-- Use metadata instead of folders where possible
-- Review permissions before Copilot rollout
-- Align SharePoint governance with business ownership
-
----
-
-## Troubleshooting
-
-| Issue | Cause | Resolution |
-|---------|---------|---------|
-| Permission confusion | Broken inheritance | Simplify permission model |
-| Duplicate content | Multiple repositories | Establish source of truth |
-| Search results poor | Missing metadata | Improve content classification |
-| Copilot returns irrelevant content | Weak information architecture | Review site structure |
-| Excessive external sharing | Governance gap | Review sharing policy |
+| Risk | Impact | Mitigation |
+|---|---|---|
+| Direct file server lift-and-shift | Poor search and governance | Redesign information architecture |
+| Excessive permissions | Oversharing risk | Permission review |
+| Anonymous links enabled | Data leakage | Restrict sharing policy |
+| No site owners | Operational risk | Assign primary and secondary owners |
+| No metadata | Poor search experience | Define metadata standards |
+| Stale content | Poor Copilot responses | Archive or delete obsolete content |
 
 ---
 
-## Lessons Learned
+## Implementation Roadmap
 
-- SharePoint projects fail when treated as storage migrations
-- Information architecture is more important than migration tooling
-- Governance should be established before rollout
-- Metadata improves search and Copilot effectiveness
-- Permission reviews significantly reduce security risk
-- Copilot success depends heavily on SharePoint maturity
+```mermaid
+gantt
+    title SharePoint Information Architecture Roadmap
+    dateFormat  YYYY-MM-DD
+
+    section Assessment
+    Source Inventory           :a1, 2026-01-01, 2w
+    Permission Review          :a2, after a1, 2w
+
+    section Design
+    Information Architecture    :b1, after a2, 3w
+    Governance Model           :b2, after b1, 2w
+
+    section Pilot
+    Pilot Site Build           :c1, after b2, 2w
+    Pilot Migration            :c2, after c1, 2w
+
+    section Rollout
+    Production Migration       :d1, after c2, 6w
+    Hypercare                  :d2, after d1, 2w
+```
+
+---
+
+## Deliverables
+
+SharePoint architecture engagement should produce:
+
+- Current State Assessment
+- Source Inventory
+- Information Architecture Design
+- Permission Model
+- Metadata Model
+- Governance Model
+- Migration Plan
+- Risk Register
+- Copilot Readiness Summary
 
 ---
 
@@ -500,7 +404,6 @@ Policies:
 
 - Microsoft Learn
 - SharePoint Online Documentation
-- Microsoft Information Architecture Guidance
 - Microsoft Purview Documentation
-- Microsoft Copilot Readiness Guidance
+- Microsoft 365 Copilot Documentation
 - Microsoft Cloud Adoption Framework
