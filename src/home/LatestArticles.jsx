@@ -4,6 +4,14 @@ import styles from './LatestArticles.module.css';
 
 const articles = [
   {
+    category: 'Projects',
+    title: 'Customer Success Reference Patterns',
+    description:
+      'Anonymized industry patterns for Microsoft 365, Copilot, Security, Entra ID, Intune and migration programs.',
+    path: '/knowledge/projects/customer-success-reference-patterns',
+    meta: 'Customer Success · Field Patterns',
+  },
+  {
     category: 'Copilot',
     title: 'Copilot Cowork Cost Governance',
     description:
