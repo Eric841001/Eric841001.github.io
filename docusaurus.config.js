@@ -58,7 +58,7 @@
   ],
 
   themeConfig: {
-    image: 'img/youngsun-social-card.svg',
+    image: 'img/youngsun-social-card.jpg',
     metadata: [
       {
         name: 'description',
