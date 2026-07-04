@@ -42,7 +42,7 @@
 .roadmapCard {
   min-height: 280px;
   padding: 32px;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid #dbeafe;
   background: #ffffff;
   transition: 0.25s;

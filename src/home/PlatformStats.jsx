@@ -3,24 +3,24 @@ import styles from './PlatformStats.module.css';
 
 const stats = [
   {
+    value: '8',
+    title: 'Architecture Domains',
+    description: 'M365, Azure, Security, Copilot, AI Agents, Migration, Licensing and Governance.',
+  },
+  {
     value: '6',
-    title: 'Knowledge Domains',
-    description: 'Microsoft 365, Azure, Security, Copilot, Migration and Licensing.',
+    title: 'Reference Patterns',
+    description: 'Anonymized success patterns across manufacturing, finance, logistics and enterprise groups.',
   },
   {
-    value: '4',
-    title: 'Consulting Asset Areas',
-    description: 'Architecture, Proposal Center, Toolkit and Customer Scenarios.',
+    value: '30+',
+    title: 'Delivery Assets',
+    description: 'Playbooks, SOW, WBS, checklists, architecture notes and governance templates.',
   },
   {
-    value: '10',
-    title: 'Article Sections',
-    description: 'Standardized document structure for reusable consulting knowledge.',
-  },
-  {
-    value: '100%',
+    value: 'Field',
     title: 'Customer-Ready',
-    description: 'Designed for presales, delivery, executive reporting and handover.',
+    description: 'Structured for presales, delivery, executive reporting and operational handover.',
   },
 ];
 

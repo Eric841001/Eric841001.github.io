@@ -20,6 +20,8 @@ export default function Home() {
 
       <PlatformStats />
 
+      <CustomerScenarios />
+
       <ExecutiveDashboard />
 
       <DocsQuickAccess />
@@ -31,8 +33,6 @@ export default function Home() {
       <LatestArticles />
 
       <FeaturedTemplates />
-
-      <CustomerScenarios />
 
       <OperatingModel />
 

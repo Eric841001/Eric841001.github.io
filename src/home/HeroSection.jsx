@@ -2,43 +2,72 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './HeroSection.module.css';
 
+const capabilities = [
+  { label: 'Microsoft 365', value: 'Architecture' },
+  { label: 'Security', value: 'Zero Trust' },
+  { label: 'Copilot', value: 'Adoption' },
+  { label: 'AI Agents', value: 'Governance' },
+];
+
 export default function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <div className={styles.heroContent}>
-          <p className={styles.eyebrow}>Enterprise Microsoft Knowledge Center</p>
+          <p className={styles.eyebrow}>Enterprise Architect Portfolio</p>
 
           <h1>
-            Youngsun Kang Enterprise Microsoft Knowledge Center
+            Microsoft 365, Security, Copilot and AI Agent Architecture
           </h1>
 
           <p className={styles.subtitle}>
-            Practical Microsoft 365, Security, Copilot, Azure and AI Agent architecture
-            knowledge for enterprise consulting, presales and delivery.
+            A field-tested Microsoft knowledge platform for enterprise architecture,
+            security governance, Copilot adoption, migration planning and consulting delivery.
           </p>
 
           <div className={styles.heroActions}>
-            <Link className={styles.primaryButton} to="/knowledge/knowledge-center/overview">
-              Explore Knowledge Center
+            <Link className={styles.primaryButton} to="/knowledge/projects/customer-success-reference-patterns">
+              View Success References
             </Link>
 
-            <Link className={styles.secondaryButton} to="/knowledge/proposal/overview">
-              Open Proposal Center
+            <Link className={styles.secondaryButton} to="/knowledge/knowledge-center/overview">
+              Explore Knowledge Center
             </Link>
+          </div>
+
+          <div className={styles.signalRow} aria-label="Portfolio focus areas">
+            <span>Microsoft 365</span>
+            <span>Security</span>
+            <span>Copilot</span>
+            <span>AI Agents</span>
+            <span>Migration</span>
           </div>
         </div>
 
         <div className={styles.heroPanel}>
-          <span>Platform Coverage</span>
+          <div className={styles.panelHeader}>
+            <span>Architecture Portfolio</span>
+            <strong>Customer-ready</strong>
+          </div>
 
-          <ul>
-            <li>Microsoft 365 Architecture</li>
-            <li>Security & Zero Trust</li>
-            <li>Copilot & AI Agents</li>
-            <li>Migration Playbooks</li>
-            <li>Proposal / SOW / WBS</li>
-          </ul>
+          <div className={styles.capabilityGrid}>
+            {capabilities.map((item) => (
+              <div key={item.label} className={styles.capability}>
+                <small>{item.label}</small>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.deliveryStack}>
+            <p>Delivery assets</p>
+            <ul>
+              <li>Readiness assessment</li>
+              <li>Reference architecture</li>
+              <li>SOW, WBS and risk register</li>
+              <li>Executive governance roadmap</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

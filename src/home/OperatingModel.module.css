@@ -42,7 +42,7 @@
 .card {
   padding: 32px;
   min-height: 260px;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid #e5e7eb;
   background: #ffffff;
   transition: 0.25s;
@@ -61,7 +61,7 @@
   width: 46px;
   height: 46px;
   margin-bottom: 22px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: #174a84;
   color: #ffffff;
   font-size: 16px;

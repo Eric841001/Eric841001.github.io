@@ -1,6 +1,6 @@
 .scenarios {
   max-width: 1200px;
-  margin: 100px auto 120px auto;
+  margin: 74px auto 104px auto;
   padding: 0 24px;
 }
 
@@ -11,7 +11,7 @@
 
 .header p {
   margin: 0 0 10px 0;
-  color: #2563eb;
+  color: #0f766e;
   font-size: 15px;
   font-weight: 900;
   letter-spacing: 1.8px;
@@ -46,8 +46,8 @@
   min-height: 330px;
   padding: 34px;
   border-radius: 8px;
-  border: 1px solid #dbeafe;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #d1fae5;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fffc 100%);
   color: inherit;
   text-decoration: none;
   transition: 0.25s;
@@ -56,14 +56,14 @@
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 34px rgba(15, 49, 87, 0.14);
-  border-color: #2563eb;
+  border-color: #0f766e;
   text-decoration: none;
 }
 
 .industry {
   display: inline-block;
   margin-bottom: 18px;
-  color: #2563eb;
+  color: #0f766e;
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 1.2px;
@@ -86,9 +86,9 @@
 .focus {
   margin-top: 24px;
   padding: 12px 14px;
-  border-radius: 10px;
-  background: #eff6ff;
-  color: #174a84;
+  border-radius: 8px;
+  background: #ecfdf5;
+  color: #0f766e;
   font-size: 14px;
   font-weight: 800;
 }
@@ -96,7 +96,7 @@
 .card strong {
   margin-top: auto;
   padding-top: 24px;
-  color: #2563eb;
+  color: #0f766e;
   font-size: 15px;
   font-weight: 900;
 }

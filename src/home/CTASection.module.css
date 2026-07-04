@@ -6,7 +6,7 @@
 
 .inner {
   padding: 64px;
-  border-radius: 26px;
+  border-radius: 8px;
   background: linear-gradient(135deg, #0f3157 0%, #155fa3 100%);
   color: #ffffff;
   text-align: center;
@@ -52,7 +52,7 @@
   justify-content: center;
   min-width: 210px;
   padding: 16px 28px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 800;
   text-decoration: none;
   transition: 0.25s;

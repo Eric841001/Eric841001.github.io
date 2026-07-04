@@ -45,7 +45,7 @@
   flex-direction: column;
   min-height: 170px;
   padding: 28px;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid #dbeafe;
   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
   color: inherit;
