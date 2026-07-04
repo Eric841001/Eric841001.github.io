@@ -7,15 +7,15 @@ export default function HeroSection() {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <div className={styles.heroContent}>
-          <p className={styles.eyebrow}>Microsoft Enterprise Consulting Platform</p>
+          <p className={styles.eyebrow}>Enterprise Microsoft Knowledge Center</p>
 
           <h1>
-            Build Microsoft cloud consulting assets that scale.
+            Youngsun Kang Enterprise Microsoft Knowledge Center
           </h1>
 
           <p className={styles.subtitle}>
-            A field-proven platform for Microsoft 365, Azure, Security, Copilot,
-            migration, licensing, proposal and delivery excellence.
+            Practical Microsoft 365, Security, Copilot, Azure and AI Agent architecture
+            knowledge for enterprise consulting, presales and delivery.
           </p>
 
           <div className={styles.heroActions}>
@@ -35,7 +35,7 @@ export default function HeroSection() {
           <ul>
             <li>Microsoft 365 Architecture</li>
             <li>Security & Zero Trust</li>
-            <li>Copilot Readiness</li>
+            <li>Copilot & AI Agents</li>
             <li>Migration Playbooks</li>
             <li>Proposal / SOW / WBS</li>
           </ul>

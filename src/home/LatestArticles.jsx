@@ -4,6 +4,14 @@ import styles from './LatestArticles.module.css';
 
 const articles = [
   {
+    category: 'Copilot',
+    title: 'Copilot Cowork Cost Governance',
+    description:
+      'Plan Copilot Cowork licensing, usage-based billing, Copilot Credits, spending controls and governance before rollout.',
+    path: '/knowledge/copilot/copilot-cowork-cost-governance',
+    meta: 'Copilot · Cost Governance',
+  },
+  {
     category: 'Microsoft 365',
     title: 'E3 vs E5 Licensing Decision Guide',
     description:
@@ -18,14 +26,6 @@ const articles = [
       'Establish identity, device, access and data protection controls for enterprise Microsoft environments.',
     path: '/knowledge/security/overview',
     meta: 'Security · Baseline',
-  },
-  {
-    category: 'Migration',
-    title: 'Enterprise Migration Readiness',
-    description:
-      'Prepare tenant, mail, file and collaboration migration projects with practical assessment checkpoints.',
-    path: '/knowledge/migration/overview',
-    meta: 'Migration · Readiness',
   },
 ];
 
