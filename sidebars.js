@@ -81,6 +81,7 @@
         'copilot/microsoft-scout',
         'copilot/prompt-engineering',
         'copilot/copilot-studio',
+        'copilot/copilot-cowork-cost-governance',
         'copilot/agentic-ai-architecture',
         'copilot/multi-agent-framework',
         'copilot/agent-factory-operating-model',
