@@ -8,7 +8,21 @@ sidebar_label: Downloads Center
 
 The Downloads Center organizes reusable consulting assets that can support presales, assessment, architecture, delivery and operational handover.
 
-The files listed here are represented as reusable asset patterns. Customer-specific names, project identifiers and commercial terms are intentionally excluded.
+The public pages describe the structure and purpose of each asset. Customer-specific versions, editable templates and delivery-ready documents are intentionally not posted publicly because they may require context, tailoring and confidentiality review.
+
+For access to reusable templates or sample deliverables, contact **Youngsun Kang** through GitHub or the profile contact channels. The documents can be shared after confirming the intended use case, customer context and confidentiality boundary.
+
+## Sharing Policy
+
+| Asset Type | Public Site | Shared After Contact |
+|---|---|---|
+| Methodology overview | Available | Available |
+| Template structure | Available | Available |
+| Editable DOCX/XLSX/PPTX files | Not public | Available when appropriate |
+| Customer-specific deliverables | Not public | Sanitized version only |
+| Pricing, commercial terms or named references | Not public | Case-by-case review |
+
+This approach keeps the Knowledge Center useful while avoiding accidental exposure of customer names, commercial details or internal delivery artifacts.
 
 ## Asset Categories
 
@@ -28,6 +42,14 @@ The files listed here are represented as reusable asset patterns. Customer-speci
 - [SOW Template](./downloads-sow-template)
 - [WBS Template](./downloads-wbs-template)
 - [Risk Register Template](./risk-register-template)
+
+## Request Flow
+
+1. Review the public asset pattern.
+2. Identify the scenario: Microsoft 365, Security, Copilot, Azure, Migration or Proposal.
+3. Contact Youngsun Kang with the intended use case.
+4. Receive a sanitized or reusable version where appropriate.
+5. Tailor the document to the customer environment before use.
 
 ## Field-Informed Download Ideas
 

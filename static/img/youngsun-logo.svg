@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Youngsun Kang Knowledge Center logo</title>
+  <desc id="desc">A professional monogram logo for Microsoft enterprise architecture, security, Copilot and AI agent knowledge.</desc>
+  <rect width="128" height="128" rx="28" fill="#101828"/>
+  <path d="M26 30h76c8.8 0 16 7.2 16 16v36c0 8.8-7.2 16-16 16H66l-21 18v-18H26c-8.8 0-16-7.2-16-16V46c0-8.8 7.2-16 16-16Z" fill="#ffffff" opacity=".08"/>
+  <path d="M31 38h66c7.2 0 13 5.8 13 13v25c0 7.2-5.8 13-13 13H72l-24 19V89H31c-7.2 0-13-5.8-13-13V51c0-7.2 5.8-13 13-13Z" fill="#0ea5e9"/>
+  <path d="M39 56h13l12 16 12-16h13L70 81v13H58V81L39 56Z" fill="#ffffff"/>
+  <path d="M89 55h12v39H89z" fill="#ffffff" opacity=".9"/>
+  <path d="M89 41h12v10H89z" fill="#ffffff" opacity=".9"/>
+</svg>

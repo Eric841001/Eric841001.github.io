@@ -13,10 +13,12 @@
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
 
   themes: ['@docusaurus/theme-mermaid'],
@@ -56,6 +58,7 @@
   ],
 
   themeConfig: {
+    image: 'img/youngsun-social-card.svg',
     metadata: [
       {
         name: 'description',
@@ -70,6 +73,10 @@
     ],
     navbar: {
       title: 'Youngsun Kang',
+      logo: {
+        alt: 'Youngsun Kang Knowledge Center',
+        src: 'img/youngsun-logo.svg',
+      },
       items: [
         {to: '/knowledge/intro', label: 'Knowledge', position: 'left'},
         {to: '/knowledge/microsoft365/e3-vs-e5', label: 'Microsoft 365', position: 'left'},

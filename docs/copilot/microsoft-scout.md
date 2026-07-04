@@ -8,9 +8,9 @@ sidebar_label: Microsoft Scout
 
 ## Executive Summary
 
-Microsoft Scout is Microsoft's first always-on personal agent announced at Microsoft Build 2026.
+Microsoft Scout is Microsoft's always-on personal agent concept introduced for the next stage of Microsoft 365 AI experiences.
 
-Unlike traditional Copilot experiences that require direct user interaction, Scout operates continuously in the background and proactively assists users by coordinating tasks, monitoring communications, preparing meetings and managing commitments. :contentReference[oaicite:1]{index=1}
+Unlike traditional Copilot experiences that require direct user interaction, Scout represents a more proactive agent pattern: coordinating tasks, monitoring communications, preparing meetings and helping users manage commitments.
 
 ---
 
@@ -27,7 +27,7 @@ Scout continuously monitors:
 - Tasks
 - Commitments
 
-and proactively assists users without requiring explicit prompts. :contentReference[oaicite:2]{index=2}
+and proactively assists users without requiring every action to start from a manual prompt.
 
 ---
 
@@ -59,7 +59,7 @@ C --> D
 | Scheduling | User Driven | Autonomous |
 | Proactive Actions | Limited | High |
 
-Scout represents Microsoft's move from Assistive AI toward Agentic AI. :contentReference[oaicite:3]{index=3}
+Scout represents Microsoft's broader move from assistive AI toward agentic AI.
 
 ---
 
@@ -104,7 +104,7 @@ Scout continuously analyzes:
 - Escalations
 - Outstanding requests
 
-and highlights items requiring attention. :contentReference[oaicite:4]{index=4}
+and highlights items requiring attention.
 
 ---
 
@@ -119,7 +119,7 @@ Work IQ provides:
 - Enterprise knowledge grounding
 - Business relationship mapping
 
-This enables Scout to understand not only data but also business context. :contentReference[oaicite:5]{index=5}
+This enables Scout-like agent experiences to understand not only data but also business context.
 
 ---
 
@@ -188,7 +188,7 @@ Controls include:
 - Audit Logging
 - Enterprise Compliance Controls
 
-Scout runs within Microsoft security boundaries and governance frameworks. :contentReference[oaicite:6]{index=6}
+Scout-style enterprise agents should run within Microsoft security boundaries and governance frameworks.
 
 ---
 
@@ -198,13 +198,13 @@ Microsoft Scout represents a significant shift in enterprise productivity.
 
 Traditional model:
 
-User → AI
+User -> AI
 
 Future model:
 
-AI → User
+AI -> User
 
-The agent continuously works on behalf of the employee and surfaces only the information requiring human attention. :contentReference[oaicite:7]{index=7}
+The agent continuously works on behalf of the employee and surfaces only the information requiring human attention.
 
 ---
 
