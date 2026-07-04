@@ -1,6 +1,6 @@
 ﻿module.exports = {
-  title: 'Youngsun Kang',
-  tagline: 'Enterprise Microsoft Platform',
+  title: 'Youngsun Kang | Microsoft 365, Security, Copilot & AI Architect',
+  tagline: 'Enterprise Microsoft Architecture, Security, Copilot and AI Agent Knowledge Center',
   favicon: 'img/favicon.ico',
 
   url: 'https://eric841001.github.io',
@@ -8,6 +8,7 @@
 
   organizationName: 'Eric841001',
   projectName: 'Eric841001.github.io',
+  deploymentBranch: 'gh-pages',
 
   trailingSlash: false,
 
@@ -55,6 +56,18 @@
   ],
 
   themeConfig: {
+    metadata: [
+      {
+        name: 'description',
+        content:
+          'Youngsun Kang Enterprise Microsoft Architecture portfolio covering Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Proposal assets and anonymized customer success references.',
+      },
+      {
+        name: 'keywords',
+        content:
+          'Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS',
+      },
+    ],
     navbar: {
       title: 'Youngsun Kang',
       items: [

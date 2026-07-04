@@ -25,6 +25,10 @@ export default function HeroSection() {
             security governance, Copilot adoption, migration planning and consulting delivery.
           </p>
 
+          <p className={styles.byline}>
+            Curated by Youngsun Kang, Enterprise Microsoft Architect.
+          </p>
+
           <div className={styles.heroActions}>
             <Link className={styles.primaryButton} to="/knowledge/projects/customer-success-reference-patterns">
               View Success References

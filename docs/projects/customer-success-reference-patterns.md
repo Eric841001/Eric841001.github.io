@@ -29,6 +29,13 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 ## Success Story Templates
 
+For more detailed examples, see:
+
+- [Manufacturing Copilot Adoption Case Study](./case-study-manufacturing-copilot-adoption)
+- [Financial SaaS Security Case Study](./case-study-financial-saas-security)
+- [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
+- [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
+
 ### Manufacturing: Copilot Adoption Operating Model
 
 **Challenge:** The organization wanted to introduce Microsoft 365 Copilot while controlling data exposure, license value and executive expectations.

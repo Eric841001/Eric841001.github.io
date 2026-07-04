@@ -5,11 +5,19 @@ import styles from './LatestArticles.module.css';
 const articles = [
   {
     category: 'Projects',
-    title: 'Customer Success Reference Patterns',
+    title: 'Manufacturing Copilot Adoption Case Study',
     description:
-      'Anonymized industry patterns for Microsoft 365, Copilot, Security, Entra ID, Intune and migration programs.',
-    path: '/knowledge/projects/customer-success-reference-patterns',
-    meta: 'Customer Success · Field Patterns',
+      'Anonymized Copilot adoption operating model for readiness, governance, pilot planning and value tracking.',
+    path: '/knowledge/projects/case-study-manufacturing-copilot-adoption',
+    meta: 'Customer Success · Copilot Adoption',
+  },
+  {
+    category: 'Security',
+    title: 'Financial SaaS Security Case Study',
+    description:
+      'Zero Trust, Conditional Access, Defender, Purview and SaaS access readiness for regulated environments.',
+    path: '/knowledge/projects/case-study-financial-saas-security',
+    meta: 'Security · Zero Trust',
   },
   {
     category: 'Copilot',
@@ -26,14 +34,6 @@ const articles = [
       'Compare Microsoft 365 E3 and E5 from security, compliance, governance and business value perspectives.',
     path: '/knowledge/microsoft365/e3-vs-e5',
     meta: 'Licensing · Decision Guide',
-  },
-  {
-    category: 'Security',
-    title: 'Zero Trust Security Baseline',
-    description:
-      'Establish identity, device, access and data protection controls for enterprise Microsoft environments.',
-    path: '/knowledge/security/overview',
-    meta: 'Security · Baseline',
   },
 ];
 

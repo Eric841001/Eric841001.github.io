@@ -9,7 +9,7 @@ const scenarios = [
     description:
       'Readiness, governance, pilot planning and value tracking for large Microsoft 365 Copilot rollouts.',
     focus: 'Copilot · Adoption · Governance',
-    path: '/knowledge/projects/enterprise-ai-adoption-program',
+    path: '/knowledge/projects/case-study-manufacturing-copilot-adoption',
   },
   {
     industry: 'Financial',
@@ -17,7 +17,7 @@ const scenarios = [
     description:
       'Conditional Access, Defender, Purview and SaaS access controls for regulated enterprise networks.',
     focus: 'Zero Trust · Compliance · Risk Control',
-    path: '/knowledge/projects/security-modernization-program',
+    path: '/knowledge/projects/case-study-financial-saas-security',
   },
   {
     industry: 'Logistics',
@@ -25,7 +25,7 @@ const scenarios = [
     description:
       'Mail, collaboration and security modernization with assessment, cutover planning and admin handover.',
     focus: 'Migration · Exchange Online · Operations',
-    path: '/knowledge/projects/m365-optimization-program',
+    path: '/knowledge/projects/case-study-logistics-exchange-modernization',
   },
   {
     industry: 'Enterprise Group',
@@ -33,7 +33,7 @@ const scenarios = [
     description:
       'Tenant role model, cross-tenant access, security baseline and consolidation roadmap for group companies.',
     focus: 'Tenant Strategy · Identity · Governance',
-    path: '/knowledge/projects/multi-tenant-governance-strategy',
+    path: '/knowledge/projects/case-study-enterprise-group-governance',
   },
 ];
 

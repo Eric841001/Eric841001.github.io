@@ -41,6 +41,10 @@ Each project will be documented with:
 ## Recommended Reading
 
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
+- [Manufacturing Copilot Adoption Case Study](./case-study-manufacturing-copilot-adoption)
+- [Financial SaaS Security Case Study](./case-study-financial-saas-security)
+- [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
+- [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
 - [Microsoft 365 Optimization Program](./m365-optimization-program)
 - [Security Modernization Program](./security-modernization-program)
 - [Enterprise AI Adoption Program](./enterprise-ai-adoption-program)
