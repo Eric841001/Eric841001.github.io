@@ -2,6 +2,7 @@
 id: intune-macos-usb-control
 title: Intune macOS USB Device Control
 sidebar_label: Intune macOS USB Control
+description: Intune and Microsoft Defender for Endpoint macOS USB device control guide for removable media governance, audit mode and enforcement rollout.
 ---
 
 # Intune macOS USB Device Control
@@ -11,6 +12,14 @@ sidebar_label: Intune macOS USB Control
 macOS endpoints require a different device control model compared to Windows.
 
 Defender for Endpoint and Intune can provide USB governance and removable media restrictions.
+
+The design should start with audit mode, approved device requirements and user exception handling before enforcement. macOS controls must be tested carefully because user productivity, creative workflows and device ownership models vary widely.
+
+## 한국어 요약
+
+Intune macOS USB Device Control은 macOS 환경에서 USB storage와 removable media 사용을 통제하기 위한 보안 설계입니다.
+
+Defender for Endpoint와 Intune 정책을 함께 사용해 audit, block, read-only, approved device list 방식으로 단계적으로 운영하는 것이 좋습니다.
 
 ---
 
@@ -74,3 +83,28 @@ flowchart LR
 - macOS Device Control Policy
 - Compliance Report
 - Validation Report
+
+## Decision Checklist
+
+| Decision | Recommended Question |
+|---|---|
+| Scope | Which macOS devices and user groups are in scope? |
+| Mode | Should the first phase run in audit-only mode? |
+| Allow list | Which USB devices are business-approved? |
+| Exceptions | Who approves temporary USB access exceptions? |
+| Evidence | Which reports prove policy enforcement and user impact? |
+
+## Common Risks
+
+- Enforcing USB block without knowing business-critical devices
+- Treating macOS and Windows device control as identical
+- Not documenting exception approval and expiry
+- Missing user communication for blocked removable media
+
+## 검색 키워드
+
+- Intune macOS USB control
+- Defender for Endpoint device control macOS
+- macOS removable media control
+- Intune USB policy
+- macOS USB 차단 정책

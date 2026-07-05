@@ -2,6 +2,7 @@
 id: mde-windows-offboarding
 title: Microsoft Defender for Endpoint Windows Offboarding
 sidebar_label: Windows Offboarding
+description: Microsoft Defender for Endpoint Windows offboarding guide using Intune deployment, validation, audit record and device lifecycle governance.
 ---
 
 # Microsoft Defender for Endpoint Windows Offboarding
@@ -11,6 +12,14 @@ sidebar_label: Windows Offboarding
 This guide explains how to remove Windows endpoints from Microsoft Defender for Endpoint using Intune deployment.
 
 Offboarding should be performed in a controlled manner to maintain security visibility and audit integrity.
+
+The process should be connected to device retirement, tenant migration, security tool transition and asset inventory updates. Uncontrolled offboarding can create unmanaged endpoint risk.
+
+## 한국어 요약
+
+Microsoft Defender for Endpoint Windows Offboarding은 Windows device를 Defender for Endpoint 관리 범위에서 제거하는 절차입니다.
+
+Device retirement, tenant migration, security tool transition 상황에서 사용되며, Intune deployment, validation, asset update, audit record를 함께 관리해야 합니다.
 
 ---
 
@@ -90,3 +99,28 @@ Verify:
 - Deployment Package
 - Validation Report
 - Asset Update Record
+
+## Decision Checklist
+
+| Decision | Recommended Question |
+|---|---|
+| Scope | Which devices are approved for offboarding? |
+| Timing | Is offboarding aligned with retirement, migration or tool transition? |
+| Security gap | What protects the device after Defender offboarding? |
+| Validation | How is sensor removal and portal inventory update confirmed? |
+| Evidence | Which records are retained for audit or asset management? |
+
+## Common Risks
+
+- Offboarding active production devices by mistake
+- Removing Defender before replacement protection is ready
+- Failing to update asset inventory
+- Not validating portal reporting after package deployment
+
+## 검색 키워드
+
+- Microsoft Defender for Endpoint offboarding
+- MDE Windows offboarding
+- Intune offboarding package
+- Defender sensor removal
+- Defender for Endpoint 제거
