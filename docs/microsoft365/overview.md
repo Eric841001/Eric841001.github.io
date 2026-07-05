@@ -206,3 +206,22 @@ This guidance can be used for:
 - Microsoft Learn
 - Microsoft Cloud Adoption Framework
 - Microsoft Zero Trust guidance
+
+## MVP and Community-Informed Operating Notes
+
+Public Microsoft 365 MVP and community blogs are especially valuable because they reveal the operational details that are often discovered after go-live.
+
+For Microsoft 365 consulting, convert that field knowledge into these operating checks:
+
+- Tenant administration should include PowerShell and Microsoft Graph repeatability, not only portal screenshots.
+- Teams, Exchange, SharePoint and OneDrive governance should be reviewed as one collaboration model.
+- License optimization should be connected to inactive accounts, persona design and feature usage.
+- Copilot readiness should include permissions, labels, DLP, audit and support process.
+- Change management should include admin handover, user communication and exception handling.
+- Search-friendly documentation should contain both English product terms and Korean consulting terms.
+
+## Community and Official References
+
+- [Microsoft 365 for IT Pros](https://office365itpros.com/)
+- [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)
+- [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)

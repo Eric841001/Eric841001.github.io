@@ -61,3 +61,33 @@ Copilot governance depends on Microsoft 365 licensing, Copilot licensing and com
 ## Lessons Learned
 
 Successful Copilot adoption starts with a narrow, high-value pilot. Broad rollout without data readiness creates trust issues and increases support load.
+
+## MVP and Community-Informed Quality Notes
+
+Public Microsoft 365 community discussions repeatedly reinforce one important point: Copilot governance is mostly a data access and operating model problem before it is an AI feature problem.
+
+For enterprise projects, convert that insight into these practical controls:
+
+- Treat SharePoint, Teams and OneDrive oversharing review as a required Copilot readiness gate.
+- Define whether Copilot access is unrestricted, restricted to pilot groups, or restricted by data domain.
+- Review sensitivity labels, DLP policies, retention and audit readiness before broad rollout.
+- Decide how Copilot agents, Graph connectors and third-party extensions are approved.
+- Prepare a support model for inaccurate responses, unexpected content discovery and user feedback.
+- Track prompt usage, business scenarios and adoption outcomes without turning governance into surveillance.
+
+## Korean Search Expansion
+
+This page also supports Korean searches such as:
+
+- Microsoft 365 Copilot 거버넌스
+- Copilot 데이터 접근 제어
+- Copilot 오버쉐어링 점검
+- Copilot 도입 전 SharePoint 권한 검토
+- Copilot 보안 준비도
+- Copilot Agent 거버넌스
+
+## Community and Official References
+
+- [Microsoft 365 for IT Pros](https://office365itpros.com/)
+- [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)
+- [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)

@@ -203,8 +203,6 @@ Priority:
 
 Critical
 
----
-
 ## Policy 3
 
 ### Require Compliant Device
@@ -527,6 +525,38 @@ Unmanaged Access
 - Deployment Plan
 - Validation Report
 - Operational Runbook
+
+---
+
+# MVP and Community-Informed Design Notes
+
+Microsoft security community patterns consistently show that Conditional Access should be designed as a layered control model, not as a collection of isolated policies.
+
+Practical enterprise design principles:
+
+- Keep break-glass accounts excluded from normal enforcement but monitored separately.
+- Start with report-only mode or scoped pilots for disruptive controls.
+- Separate baseline security policies from high-risk user, privileged role and unmanaged device policies.
+- Validate each policy with sign-in logs before broad rollout.
+- Avoid uncontrolled policy sprawl by documenting purpose, owner, scope, exclusion and review date.
+- Align Conditional Access with Intune compliance, Defender device risk and Copilot access requirements.
+
+## Korean Search Expansion
+
+This page also supports Korean searches such as:
+
+- Entra ID 조건부 액세스
+- Conditional Access 설계
+- Zero Trust 조건부 액세스
+- MFA 정책 설계
+- Intune 준수 디바이스 접근 제어
+- Copilot 접근 제어 정책
+
+## Community and Official References
+
+- [Daniel Chronlund Cloud Security Blog](https://danielchronlund.com/)
+- [Microsoft Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)
+- [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
 
 ---
 
