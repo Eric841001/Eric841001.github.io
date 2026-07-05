@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.1">
 <title data-rh="true">Microsoft 365 Overview | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" property="og:url" content="https://eric841001.github.io/knowledge/microsoft365/overview"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Microsoft 365 Overview | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect"><meta data-rh="true" name="description" content="Executive Summary"><meta data-rh="true" property="og:description" content="Executive Summary"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eric841001.github.io/knowledge/microsoft365/overview"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/microsoft365/overview" hreflang="en"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/microsoft365/overview" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Microsoft 365 Overview","item":"https://eric841001.github.io/knowledge/microsoft365/overview"}]}</script><link rel="stylesheet" href="/assets/css/styles.3561d68e.css">
-<script src="/assets/js/runtime~main.e1268984.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.a94452d1.js" defer="defer"></script>
 <script src="/assets/js/main.d3d41bcc.js" defer="defer"></script>
 </head>
 <body>
@@ -16,10 +16,10 @@
 <p>Microsoft 365 is the core productivity, collaboration, security and compliance platform for modern enterprises.<br>
 <!-- -->In enterprise consulting projects, Microsoft 365 should not be positioned only as a collection of productivity applications. It should be designed as an integrated operating platform that connects identity, device, collaboration, information protection, compliance and security controls.</p>
 <p>This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="korean-summary">Korean Summary<a href="#korean-summary" class="hash-link" aria-label="Direct link to Korean Summary" title="Direct link to Korean Summary" translate="no">​</a></h2>
-<p>Microsoft 365는 단순한 Office 앱 묶음이 아니라 기업의 협업, 보안, 거버넌스, 컴플라이언스, AI 활용을 연결하는 엔터프라이즈 운영 플랫폼입니다.</p>
-<p>이 문서는 Microsoft 365 아키텍처 설계, 테넌트 거버넌스, Teams/SharePoint/OneDrive 협업 구조, Exchange Online 마이그레이션, Entra ID 조건부 액세스, Intune 디바이스 관리, Purview 데이터 보호, Defender 보안 체계를 함께 검토해야 하는 이유를 설명합니다.</p>
-<p>특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스만 배정하기 전에 데이터 권한, 외부 공유, 민감정보 보호, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="한국어-요약">한국어 요약<a href="#한국어-요약" class="hash-link" aria-label="Direct link to 한국어 요약" title="Direct link to 한국어 요약" translate="no">​</a></h2>
+<p>Microsoft 365는 단순한 Office 앱 묶음이 아니라, 기업의 협업, 보안, governance, compliance, AI 활용을 하나로 연결하는 enterprise 운영 플랫폼입니다.</p>
+<p>이 문서는 Microsoft 365 architecture 설계, tenant governance, Teams/SharePoint/OneDrive 협업 구조, Exchange Online migration, Entra ID Conditional Access, Intune device management, Purview data protection, Defender 보안 체계를 함께 검토해야 하는 이유를 정리합니다.</p>
+<p>특히 Microsoft 365 Copilot을 도입하려는 조직은 license를 배정하기 전에 data permission, external sharing, sensitivity label, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="business-scenario">Business Scenario<a href="#business-scenario" class="hash-link" aria-label="Direct link to Business Scenario" title="Direct link to Business Scenario" translate="no">​</a></h2>
 <p>Organizations typically engage Microsoft 365 consulting when they need to:</p>
 <ul>
@@ -149,30 +149,30 @@
 <li class="">Overly restrictive policies without communication create user resistance</li>
 <li class="">Executive reporting should focus on risk reduction, productivity and operating model maturity</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-topics">Search Topics<a href="#search-topics" class="hash-link" aria-label="Direct link to Search Topics" title="Direct link to Search Topics" translate="no">​</a></h2>
-<p>This page is relevant for searches such as:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="검색-키워드">검색 키워드<a href="#검색-키워드" class="hash-link" aria-label="Direct link to 검색 키워드" title="Direct link to 검색 키워드" translate="no">​</a></h2>
+<p>이 문서는 다음과 같은 검색어와 관련됩니다.</p>
 <ul>
-<li class="">Microsoft 365 아키텍처</li>
-<li class="">Microsoft 365 컨설팅</li>
-<li class="">Microsoft 365 테넌트 설계</li>
-<li class="">Microsoft 365 보안 설정</li>
-<li class="">Microsoft 365 Copilot 준비도</li>
-<li class="">Microsoft 365 마이그레이션</li>
-<li class="">Teams SharePoint OneDrive 거버넌스</li>
-<li class="">Exchange Online 마이그레이션</li>
-<li class="">Entra ID 조건부 액세스</li>
-<li class="">Intune 디바이스 관리</li>
-<li class="">Purview DLP 데이터 보호</li>
+<li class="">Microsoft 365 architecture</li>
+<li class="">Microsoft 365 consulting</li>
+<li class="">Microsoft 365 tenant design</li>
+<li class="">Microsoft 365 security baseline</li>
+<li class="">Microsoft 365 Copilot readiness</li>
+<li class="">Microsoft 365 migration</li>
+<li class="">Teams, SharePoint, OneDrive governance</li>
+<li class="">Exchange Online migration</li>
+<li class="">Entra ID Conditional Access</li>
+<li class="">Intune device management</li>
+<li class="">Purview DLP data protection</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="consulting-use-cases">Consulting Use Cases<a href="#consulting-use-cases" class="hash-link" aria-label="Direct link to Consulting Use Cases" title="Direct link to Consulting Use Cases" translate="no">​</a></h2>
-<p>This guidance can be used for:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="컨설팅-활용-사례">컨설팅 활용 사례<a href="#컨설팅-활용-사례" class="hash-link" aria-label="Direct link to 컨설팅 활용 사례" title="Direct link to 컨설팅 활용 사례" translate="no">​</a></h2>
+<p>이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.</p>
 <ul>
 <li class="">Microsoft 365 신규 도입 제안</li>
 <li class="">Google Workspace에서 Microsoft 365로 전환</li>
-<li class="">Exchange Online 및 Teams 중심 협업 현대화</li>
-<li class="">Copilot 도입 전 데이터/보안 준비도 진단</li>
-<li class="">E3/E5/Business Premium 라이선스 최적화</li>
-<li class="">글로벌 또는 계열사 테넌트 거버넌스 정리</li>
+<li class="">Exchange Online과 Teams 중심의 collaboration modernization</li>
+<li class="">Copilot 도입 전 data/security readiness assessment</li>
+<li class="">Microsoft 365 E3/E5/Business Premium license optimization</li>
+<li class="">글로벌 조직 또는 계열사의 tenant governance 정비</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
 <ul>
@@ -185,22 +185,22 @@
 <li class="">Microsoft Cloud Adoption Framework</li>
 <li class="">Microsoft Zero Trust guidance</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mvp-and-community-informed-operating-notes">MVP and Community-Informed Operating Notes<a href="#mvp-and-community-informed-operating-notes" class="hash-link" aria-label="Direct link to MVP and Community-Informed Operating Notes" title="Direct link to MVP and Community-Informed Operating Notes" translate="no">​</a></h2>
-<p>Public Microsoft 365 MVP and community blogs are especially valuable because they reveal the operational details that are often discovered after go-live.</p>
-<p>For Microsoft 365 consulting, convert that field knowledge into these operating checks:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="mvp-커뮤니티-기반-운영-메모">MVP 커뮤니티 기반 운영 메모<a href="#mvp-커뮤니티-기반-운영-메모" class="hash-link" aria-label="Direct link to MVP 커뮤니티 기반 운영 메모" title="Direct link to MVP 커뮤니티 기반 운영 메모" translate="no">​</a></h2>
+<p>Public Microsoft 365 MVP와 community blog는 go-live 이후에야 드러나는 운영 이슈를 미리 확인하는 데 도움이 됩니다.</p>
+<p>Microsoft 365 consulting에서는 이러한 field knowledge를 다음과 같은 운영 점검 항목으로 바꾸는 것이 좋습니다.</p>
 <ul>
-<li class="">Tenant administration should include PowerShell and Microsoft Graph repeatability, not only portal screenshots.</li>
-<li class="">Teams, Exchange, SharePoint and OneDrive governance should be reviewed as one collaboration model.</li>
-<li class="">License optimization should be connected to inactive accounts, persona design and feature usage.</li>
-<li class="">Copilot readiness should include permissions, labels, DLP, audit and support process.</li>
-<li class="">Change management should include admin handover, user communication and exception handling.</li>
-<li class="">Search-friendly documentation should contain both English product terms and Korean consulting terms.</li>
+<li class="">Tenant administration은 portal screenshot뿐 아니라 PowerShell과 Microsoft Graph 기반의 반복 가능성까지 포함해야 합니다.</li>
+<li class="">Teams, Exchange, SharePoint, OneDrive governance는 하나의 collaboration model로 함께 검토해야 합니다.</li>
+<li class="">License optimization은 inactive account, persona design, feature usage와 연결해야 합니다.</li>
+<li class="">Copilot readiness는 permission, label, DLP, audit, support process까지 포함해야 합니다.</li>
+<li class="">Change management에는 admin handover, user communication, exception handling이 포함되어야 합니다.</li>
+<li class="">검색 친화적인 문서는 영어 product term과 자연스러운 한국어 consulting term을 함께 포함해야 합니다.</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="community-and-official-references">Community and Official References<a href="#community-and-official-references" class="hash-link" aria-label="Direct link to Community and Official References" title="Direct link to Community and Official References" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="커뮤니티-및-공식-참고-자료">커뮤니티 및 공식 참고 자료<a href="#커뮤니티-및-공식-참고-자료" class="hash-link" aria-label="Direct link to 커뮤니티 및 공식 참고 자료" title="Direct link to 커뮤니티 및 공식 참고 자료" translate="no">​</a></h2>
 <ul>
 <li class=""><a href="https://office365itpros.com/" target="_blank" rel="noopener noreferrer" class="">Microsoft 365 for IT Pros</a></li>
 <li class=""><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy" target="_blank" rel="noopener noreferrer" class="">Microsoft 365 Copilot data, privacy and security</a></li>
 <li class=""><a class="" href="/knowledge/knowledge-center/mvp-community-research-map">MVP and Community Research Map</a></li>
-</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/knowledge-center/powerautomate-junkmail-alert"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Junk Mail Alert</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/microsoft365/e3-vs-e5"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">E3 vs E5 Decision Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#korean-summary" class="table-of-contents__link toc-highlight">Korean Summary</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a></li><li><a href="#architecture" class="table-of-contents__link toc-highlight">Architecture</a></li><li><a href="#implementation" class="table-of-contents__link toc-highlight">Implementation</a></li><li><a href="#licensing" class="table-of-contents__link toc-highlight">Licensing</a></li><li><a href="#security" class="table-of-contents__link toc-highlight">Security</a></li><li><a href="#best-practice" class="table-of-contents__link toc-highlight">Best Practice</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#search-topics" class="table-of-contents__link toc-highlight">Search Topics</a></li><li><a href="#consulting-use-cases" class="table-of-contents__link toc-highlight">Consulting Use Cases</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li><li><a href="#mvp-and-community-informed-operating-notes" class="table-of-contents__link toc-highlight">MVP and Community-Informed Operating Notes</a></li><li><a href="#community-and-official-references" class="table-of-contents__link toc-highlight">Community and Official References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/knowledge-center/powerautomate-junkmail-alert"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Junk Mail Alert</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/microsoft365/e3-vs-e5"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">E3 vs E5 Decision Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#한국어-요약" class="table-of-contents__link toc-highlight">한국어 요약</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a></li><li><a href="#architecture" class="table-of-contents__link toc-highlight">Architecture</a></li><li><a href="#implementation" class="table-of-contents__link toc-highlight">Implementation</a></li><li><a href="#licensing" class="table-of-contents__link toc-highlight">Licensing</a></li><li><a href="#security" class="table-of-contents__link toc-highlight">Security</a></li><li><a href="#best-practice" class="table-of-contents__link toc-highlight">Best Practice</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#검색-키워드" class="table-of-contents__link toc-highlight">검색 키워드</a></li><li><a href="#컨설팅-활용-사례" class="table-of-contents__link toc-highlight">컨설팅 활용 사례</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li><li><a href="#mvp-커뮤니티-기반-운영-메모" class="table-of-contents__link toc-highlight">MVP 커뮤니티 기반 운영 메모</a></li><li><a href="#커뮤니티-및-공식-참고-자료" class="table-of-contents__link toc-highlight">커뮤니티 및 공식 참고 자료</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
 </body>
 </html>
