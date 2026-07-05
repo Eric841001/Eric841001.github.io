@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.1">
-<title data-rh="true">Security Reference Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" property="og:url" content="https://eric841001.github.io/knowledge/architecture/security-reference-architecture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS, Microsoft 365 컨설팅, Copilot 도입, 보안 아키텍처, Azure Landing Zone, 제안서, 고객 성공 사례"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Security Reference Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect"><meta data-rh="true" name="description" content="Executive Summary"><meta data-rh="true" property="og:description" content="Executive Summary"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eric841001.github.io/knowledge/architecture/security-reference-architecture"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/security-reference-architecture" hreflang="en"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/security-reference-architecture" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Security Architecture","item":"https://eric841001.github.io/knowledge/architecture/security-reference-architecture"}]}</script><link rel="stylesheet" href="/assets/css/styles.3561d68e.css">
-<script src="/assets/js/runtime~main.103c285b.js" defer="defer"></script>
-<script src="/assets/js/main.08a31586.js" defer="defer"></script>
+<title data-rh="true">Security Reference Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" property="og:url" content="https://eric841001.github.io/knowledge/architecture/security-reference-architecture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS, Microsoft 365 컨설팅, Copilot 도입, 보안 아키텍처, Azure Landing Zone, 제안서, 고객 성공 사례"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Security Reference Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect"><meta data-rh="true" name="description" content="Microsoft Security reference architecture for Zero Trust, Entra ID, Conditional Access, Defender, Purview, DLP and security operations."><meta data-rh="true" property="og:description" content="Microsoft Security reference architecture for Zero Trust, Entra ID, Conditional Access, Defender, Purview, DLP and security operations."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eric841001.github.io/knowledge/architecture/security-reference-architecture"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/security-reference-architecture" hreflang="en"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/security-reference-architecture" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Security Architecture","item":"https://eric841001.github.io/knowledge/architecture/security-reference-architecture"}]}</script><link rel="stylesheet" href="/assets/css/styles.3561d68e.css">
+<script src="/assets/js/runtime~main.5c188cab.js" defer="defer"></script>
+<script src="/assets/js/main.6902fe2f.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -15,8 +15,10 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="executive-summary">Executive Summary<a href="#executive-summary" class="hash-link" aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary" translate="no">​</a></h2>
 <p>Enterprise security architecture should be designed using a Zero Trust model.</p>
 <p>The objective is to continuously verify users, devices, applications and data access while reducing cyber risk and enabling secure productivity.</p>
-<p>Microsoft security architecture integrates identity, endpoint, email, collaboration, cloud applications, data protection and security operations into a unified model.</p>
-<hr>
+<p>Microsoft security architecture integrates identity, endpoint, email, collaboration, cloud applications, data protection and security operations into a unified operating model.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="한국어-요약">한국어 요약<a href="#한국어-요약" class="hash-link" aria-label="Direct link to 한국어 요약" title="Direct link to 한국어 요약" translate="no">​</a></h2>
+<p>이 문서는 Microsoft Security architecture를 Zero Trust 관점으로 정리한 reference architecture입니다.</p>
+<p>Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Sentinel, security operation을 따로 보는 것이 아니라 하나의 security operating model로 연결합니다.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="business-scenario">Business Scenario<a href="#business-scenario" class="hash-link" aria-label="Direct link to Business Scenario" title="Direct link to Business Scenario" translate="no">​</a></h2>
 <p>Typical security initiatives include:</p>
 <ul>
@@ -30,107 +32,57 @@
 <li class="">Security operations improvement</li>
 <li class="">Copilot security readiness</li>
 </ul>
-<hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-architecture-overview">Security Architecture Overview<a href="#security-architecture-overview" class="hash-link" aria-label="Direct link to Security Architecture Overview" title="Direct link to Security Architecture Overview" translate="no">​</a></h2>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">Users</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Microsoft Entra ID</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ MFA</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Conditional Access</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Identity Protection</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ PIM</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Endpoint &amp; Device Security</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Microsoft Intune</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Defender for Endpoint</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Email &amp; Collaboration Security</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Defender for Office 365</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Exchange Online Protection</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Teams Protection</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Data Protection</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Microsoft Purview</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Sensitivity Labels</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ DLP</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Security Operations</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Defender XDR</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  ├─ Microsoft Sentinel</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  └─ Incident Response</span><br></div></code></pre></div></div>
-<hr>
+<!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-domains">Security Domains<a href="#security-domains" class="hash-link" aria-label="Direct link to Security Domains" title="Direct link to Security Domains" translate="no">​</a></h2>
-<table><thead><tr><th>Domain</th><th>Microsoft Capability</th></tr></thead><tbody><tr><td>Identity Security</td><td>Entra ID, MFA, Conditional Access, PIM</td></tr><tr><td>Endpoint Security</td><td>Intune, Defender for Endpoint</td></tr><tr><td>Email Security</td><td>Defender for Office 365, EOP</td></tr><tr><td>Collaboration Security</td><td>Teams, SharePoint, OneDrive controls</td></tr><tr><td>Data Security</td><td>Purview, DLP, Sensitivity Labels</td></tr><tr><td>Cloud App Security</td><td>Defender for Cloud Apps</td></tr><tr><td>Security Operations</td><td>Defender XDR, Sentinel</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="identity-security">Identity Security<a href="#identity-security" class="hash-link" aria-label="Direct link to Identity Security" title="Direct link to Identity Security" translate="no">​</a></h2>
-<p>Recommended controls:</p>
+<table><thead><tr><th>Domain</th><th>Microsoft Capability</th><th>Design Focus</th></tr></thead><tbody><tr><td>Identity Security</td><td>Entra ID, MFA, Conditional Access, PIM</td><td>Verify user, role, risk and session</td></tr><tr><td>Endpoint Security</td><td>Intune, Defender for Endpoint</td><td>Validate device trust and posture</td></tr><tr><td>Email Security</td><td>Defender for Office 365, EOP</td><td>Reduce phishing and malicious content</td></tr><tr><td>Collaboration Security</td><td>Teams, SharePoint, OneDrive controls</td><td>Control external sharing and access</td></tr><tr><td>Data Security</td><td>Purview, DLP, Sensitivity Labels</td><td>Protect sensitive information</td></tr><tr><td>Cloud App Security</td><td>Defender for Cloud Apps</td><td>Control SaaS and session risk</td></tr><tr><td>Security Operations</td><td>Defender XDR, Sentinel</td><td>Detect, investigate and respond</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="decision-checklist">Decision Checklist<a href="#decision-checklist" class="hash-link" aria-label="Direct link to Decision Checklist" title="Direct link to Decision Checklist" translate="no">​</a></h2>
+<table><thead><tr><th>Decision</th><th>Recommended Question</th></tr></thead><tbody><tr><td>Identity baseline</td><td>Are MFA, Conditional Access and break-glass accounts defined?</td></tr><tr><td>Device trust</td><td>Which workloads require compliant or managed devices?</td></tr><tr><td>Email protection</td><td>Which users require Defender for Office 365 P2 controls?</td></tr><tr><td>Data protection</td><td>Which information types require labels, DLP or encryption?</td></tr><tr><td>SOC process</td><td>Who triages Defender XDR alerts and how are incidents escalated?</td></tr><tr><td>Exception handling</td><td>Who approves security exceptions and when are they reviewed?</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="anti-patterns">Anti-Patterns<a href="#anti-patterns" class="hash-link" aria-label="Direct link to Anti-Patterns" title="Direct link to Anti-Patterns" translate="no">​</a></h2>
 <ul>
-<li class="">MFA for all users</li>
-<li class="">Conditional Access baseline</li>
-<li class="">Legacy authentication blocking</li>
-<li class="">Privileged Identity Management</li>
-<li class="">Access reviews</li>
-<li class="">Break-glass account management</li>
+<li class="">Enforcing every security control at once without pilot validation</li>
+<li class="">Allowing broad Conditional Access exclusions without owner and expiry date</li>
+<li class="">Treating DLP as a technical setting instead of a business policy</li>
+<li class="">Deploying Defender without alert triage ownership</li>
+<li class="">Running security assessment without documenting risk acceptance</li>
 </ul>
-<p>Identity should be treated as the primary security boundary.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="endpoint-security">Endpoint Security<a href="#endpoint-security" class="hash-link" aria-label="Direct link to Endpoint Security" title="Direct link to Endpoint Security" translate="no">​</a></h2>
-<p>Endpoint protection should include:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="delivery-artifacts">Delivery Artifacts<a href="#delivery-artifacts" class="hash-link" aria-label="Direct link to Delivery Artifacts" title="Direct link to Delivery Artifacts" translate="no">​</a></h2>
 <ul>
-<li class="">Device enrollment</li>
-<li class="">Compliance policy</li>
-<li class="">Defender for Endpoint onboarding</li>
-<li class="">Attack Surface Reduction</li>
-<li class="">BitLocker</li>
-<li class="">Windows Update for Business</li>
-<li class="">Device risk-based access control</li>
+<li class="">Security reference architecture</li>
+<li class="">Conditional Access policy matrix</li>
+<li class="">Defender onboarding plan</li>
+<li class="">Purview and DLP readiness matrix</li>
+<li class="">Security exception register</li>
+<li class="">Incident response operating model</li>
+<li class="">Executive security review pack</li>
 </ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-and-collaboration-security">Email and Collaboration Security<a href="#email-and-collaboration-security" class="hash-link" aria-label="Direct link to Email and Collaboration Security" title="Direct link to Email and Collaboration Security" translate="no">​</a></h2>
-<p>Recommended controls:</p>
-<ul>
-<li class="">Defender for Office 365</li>
-<li class="">Safe Links</li>
-<li class="">Safe Attachments</li>
-<li class="">Anti-phishing policy</li>
-<li class="">External forwarding control</li>
-<li class="">Teams external access governance</li>
-<li class="">SharePoint external sharing governance</li>
-</ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-protection">Data Protection<a href="#data-protection" class="hash-link" aria-label="Direct link to Data Protection" title="Direct link to Data Protection" translate="no">​</a></h2>
-<p>Microsoft Purview should be used to protect sensitive information.</p>
-<p>Core controls:</p>
-<ul>
-<li class="">Sensitivity labels</li>
-<li class="">Data Loss Prevention</li>
-<li class="">Retention policies</li>
-<li class="">Insider Risk Management</li>
-<li class="">Audit</li>
-<li class="">eDiscovery</li>
-</ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-operations">Security Operations<a href="#security-operations" class="hash-link" aria-label="Direct link to Security Operations" title="Direct link to Security Operations" translate="no">​</a></h2>
-<p>Recommended SOC model:</p>
-<table><thead><tr><th>Level</th><th>Responsibility</th></tr></thead><tbody><tr><td>L1</td><td>Alert triage and initial review</td></tr><tr><td>L2</td><td>Incident investigation and response</td></tr><tr><td>L3</td><td>Threat hunting and advanced analysis</td></tr><tr><td>Security Architect</td><td>Policy, architecture and control improvement</td></tr></tbody></table>
-<p>Recommended platforms:</p>
-<ul>
-<li class="">Microsoft Defender XDR</li>
-<li class="">Microsoft Sentinel</li>
-<li class="">Microsoft Defender for Cloud</li>
-</ul>
-<hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="licensing-considerations">Licensing Considerations<a href="#licensing-considerations" class="hash-link" aria-label="Direct link to Licensing Considerations" title="Direct link to Licensing Considerations" translate="no">​</a></h2>
-<table><thead><tr><th>Capability</th><th>License</th></tr></thead><tbody><tr><td>Conditional Access</td><td>Entra ID P1</td></tr><tr><td>Identity Protection</td><td>Entra ID P2</td></tr><tr><td>PIM</td><td>Entra ID P2</td></tr><tr><td>Defender for Endpoint P2</td><td>Microsoft 365 E5</td></tr><tr><td>Defender for Office 365 P2</td><td>Microsoft 365 E5</td></tr><tr><td>Defender XDR</td><td>Microsoft 365 E5</td></tr><tr><td>Purview advanced compliance</td><td>Microsoft 365 E5</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
-<ul>
-<li class="">Start with identity security</li>
-<li class="">Enforce MFA and Conditional Access</li>
-<li class="">Block legacy authentication</li>
-<li class="">Protect privileged accounts first</li>
-<li class="">Deploy endpoint compliance before data access restriction</li>
-<li class="">Use DLP in audit mode before enforcement</li>
-<li class="">Integrate Defender signals into SOC operations</li>
-<li class="">Review policies regularly</li>
-</ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-risks">Common Risks<a href="#common-risks" class="hash-link" aria-label="Direct link to Common Risks" title="Direct link to Common Risks" translate="no">​</a></h2>
-<table><thead><tr><th>Risk</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td>MFA exceptions</td><td>Account compromise</td><td>Minimize and review exceptions</td></tr><tr><td>Excessive admin rights</td><td>Privilege abuse</td><td>Use PIM and RBAC</td></tr><tr><td>Unmanaged devices</td><td>Data leakage</td><td>Require compliant devices</td></tr><tr><td>Weak email protection</td><td>Phishing risk</td><td>Enable Defender for Office 365</td></tr><tr><td>No data classification</td><td>Compliance gap</td><td>Deploy sensitivity labels</td></tr><tr><td>No SOC workflow</td><td>Slow response</td><td>Define incident operating model</td></tr></tbody></table>
-<hr>
+<table><thead><tr><th>Capability</th><th>Typical License Dependency</th></tr></thead><tbody><tr><td>Conditional Access</td><td>Microsoft Entra ID P1</td></tr><tr><td>Identity Protection</td><td>Microsoft Entra ID P2</td></tr><tr><td>Privileged Identity Management</td><td>Microsoft Entra ID P2</td></tr><tr><td>Defender for Endpoint P2</td><td>Microsoft 365 E5 or security add-on</td></tr><tr><td>Defender for Office 365 P2</td><td>Microsoft 365 E5 or security add-on</td></tr><tr><td>Defender XDR</td><td>Microsoft 365 E5 security capabilities</td></tr><tr><td>Purview advanced compliance</td><td>Microsoft 365 E5 compliance capabilities</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lessons-learned">Lessons Learned<a href="#lessons-learned" class="hash-link" aria-label="Direct link to Lessons Learned" title="Direct link to Lessons Learned" translate="no">​</a></h2>
 <ul>
-<li class="">Identity security is the foundation of Zero Trust</li>
-<li class="">Conditional Access policies must be deployed in phases</li>
-<li class="">Device compliance improves data protection significantly</li>
-<li class="">DLP requires business alignment and tuning</li>
-<li class="">Security operations need both technology and process</li>
-<li class="">E5 value increases when Defender and Purview are integrated</li>
+<li class="">Identity security is the foundation of Zero Trust.</li>
+<li class="">Conditional Access policies must be deployed in phases.</li>
+<li class="">Device compliance improves data protection significantly.</li>
+<li class="">DLP requires business alignment and tuning.</li>
+<li class="">Security operations need both technology and process.</li>
+<li class="">E5 value increases when Defender and Purview are integrated into one operating model.</li>
 </ul>
-<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="검색-키워드">검색 키워드<a href="#검색-키워드" class="hash-link" aria-label="Direct link to 검색 키워드" title="Direct link to 검색 키워드" translate="no">​</a></h2>
+<ul>
+<li class="">Microsoft Security architecture</li>
+<li class="">Zero Trust architecture</li>
+<li class="">Entra ID Conditional Access</li>
+<li class="">Defender XDR architecture</li>
+<li class="">Microsoft Purview DLP</li>
+<li class="">Microsoft 365 보안 아키텍처</li>
+<li class="">Copilot data protection</li>
+</ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
 <ul>
-<li class="">Microsoft Zero Trust Guidance</li>
-<li class="">Microsoft Defender Documentation</li>
-<li class="">Microsoft Entra Documentation</li>
-<li class="">Microsoft Purview Documentation</li>
-<li class="">Microsoft Cloud Adoption Framework</li>
-<li class="">Microsoft Security Adoption Framework</li>
-</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/architecture/migration-architecture"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Migration Architecture</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/playbooks/overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Playbooks</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a></li><li><a href="#security-architecture-overview" class="table-of-contents__link toc-highlight">Security Architecture Overview</a></li><li><a href="#security-domains" class="table-of-contents__link toc-highlight">Security Domains</a></li><li><a href="#identity-security" class="table-of-contents__link toc-highlight">Identity Security</a></li><li><a href="#endpoint-security" class="table-of-contents__link toc-highlight">Endpoint Security</a></li><li><a href="#email-and-collaboration-security" class="table-of-contents__link toc-highlight">Email and Collaboration Security</a></li><li><a href="#data-protection" class="table-of-contents__link toc-highlight">Data Protection</a></li><li><a href="#security-operations" class="table-of-contents__link toc-highlight">Security Operations</a></li><li><a href="#licensing-considerations" class="table-of-contents__link toc-highlight">Licensing Considerations</a></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li><li><a href="#common-risks" class="table-of-contents__link toc-highlight">Common Risks</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
+<li class=""><a class="" href="/knowledge/security/overview">Security Overview</a></li>
+<li class=""><a class="" href="/knowledge/security/conditional-access">Conditional Access</a></li>
+<li class=""><a class="" href="/knowledge/security/purview">Purview</a></li>
+<li class=""><a class="" href="/knowledge/architecture/executive-architecture-blueprint">Executive Architecture Blueprint</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/architecture/migration-architecture"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Migration Architecture</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/playbooks/overview"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Playbooks</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#한국어-요약" class="table-of-contents__link toc-highlight">한국어 요약</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a></li><li><a href="#security-architecture-overview" class="table-of-contents__link toc-highlight">Security Architecture Overview</a></li><li><a href="#security-domains" class="table-of-contents__link toc-highlight">Security Domains</a></li><li><a href="#decision-checklist" class="table-of-contents__link toc-highlight">Decision Checklist</a></li><li><a href="#anti-patterns" class="table-of-contents__link toc-highlight">Anti-Patterns</a></li><li><a href="#delivery-artifacts" class="table-of-contents__link toc-highlight">Delivery Artifacts</a></li><li><a href="#licensing-considerations" class="table-of-contents__link toc-highlight">Licensing Considerations</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#검색-키워드" class="table-of-contents__link toc-highlight">검색 키워드</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.10.1">
-<title data-rh="true">Microsoft Copilot Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" property="og:url" content="https://eric841001.github.io/knowledge/architecture/copilot-architecture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS, Microsoft 365 컨설팅, Copilot 도입, 보안 아키텍처, Azure Landing Zone, 제안서, 고객 성공 사례"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Microsoft Copilot Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect"><meta data-rh="true" name="description" content="Executive Summary"><meta data-rh="true" property="og:description" content="Executive Summary"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eric841001.github.io/knowledge/architecture/copilot-architecture"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/copilot-architecture" hreflang="en"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/copilot-architecture" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Copilot Architecture","item":"https://eric841001.github.io/knowledge/architecture/copilot-architecture"}]}</script><link rel="stylesheet" href="/assets/css/styles.3561d68e.css">
-<script src="/assets/js/runtime~main.103c285b.js" defer="defer"></script>
-<script src="/assets/js/main.08a31586.js" defer="defer"></script>
+<title data-rh="true">Microsoft Copilot Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://eric841001.github.io/img/youngsun-social-card.jpg"><meta data-rh="true" property="og:url" content="https://eric841001.github.io/knowledge/architecture/copilot-architecture"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="keywords" content="Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS, Microsoft 365 컨설팅, Copilot 도입, 보안 아키텍처, Azure Landing Zone, 제안서, 고객 성공 사례"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Microsoft Copilot Architecture | Youngsun Kang | Microsoft 365, Security, Copilot &amp; AI Architect"><meta data-rh="true" name="description" content="Microsoft 365 Copilot architecture guide for Graph, permissions, Purview, DLP, Copilot Studio, AI Agents and adoption governance."><meta data-rh="true" property="og:description" content="Microsoft 365 Copilot architecture guide for Graph, permissions, Purview, DLP, Copilot Studio, AI Agents and adoption governance."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eric841001.github.io/knowledge/architecture/copilot-architecture"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/copilot-architecture" hreflang="en"><link data-rh="true" rel="alternate" href="https://eric841001.github.io/knowledge/architecture/copilot-architecture" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Copilot Architecture","item":"https://eric841001.github.io/knowledge/architecture/copilot-architecture"}]}</script><link rel="stylesheet" href="/assets/css/styles.3561d68e.css">
+<script src="/assets/js/runtime~main.5c188cab.js" defer="defer"></script>
+<script src="/assets/js/main.6902fe2f.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -16,7 +16,9 @@
 <p>Microsoft 365 Copilot is not simply an AI assistant.</p>
 <p>Successful adoption requires a secure architecture that combines identity, permissions, information architecture, governance, compliance and change management.</p>
 <p>This reference architecture provides a framework for enterprise Copilot readiness and long-term AI adoption.</p>
-<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="한국어-요약">한국어 요약<a href="#한국어-요약" class="hash-link" aria-label="Direct link to 한국어 요약" title="Direct link to 한국어 요약" translate="no">​</a></h2>
+<p>Copilot architecture는 license 배정이나 기능 활성화가 아니라 Microsoft Graph, permission, Purview, DLP, Conditional Access, adoption, AI Agent governance를 하나로 연결하는 설계입니다.</p>
+<p>Copilot은 사용자가 이미 접근 가능한 Microsoft 365 데이터를 기반으로 작동하므로, data readiness와 permission cleanup이 architecture의 핵심입니다.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="business-scenario">Business Scenario<a href="#business-scenario" class="hash-link" aria-label="Direct link to Business Scenario" title="Direct link to Business Scenario" translate="no">​</a></h2>
 <p>Typical Copilot initiatives include:</p>
 <ul>
@@ -29,126 +31,56 @@
 <li class="">Copilot governance implementation</li>
 <li class="">Global AI rollout</li>
 </ul>
-<hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-architecture-overview">Copilot Architecture Overview<a href="#copilot-architecture-overview" class="hash-link" aria-label="Direct link to Copilot Architecture Overview" title="Direct link to Copilot Architecture Overview" translate="no">​</a></h2>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">Business Users</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Microsoft 365 Copilot</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Microsoft Graph</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Exchange Online</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Teams</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ SharePoint Online</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ OneDrive</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Planner</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Security &amp; Compliance</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Entra ID</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Conditional Access</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Purview</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Sensitivity Labels</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ DLP</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ▼</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">Governance &amp; Operations</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      │</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Adoption Program</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Champion Network</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Training</span><br></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      ├─ Usage Analytics</span><br></div></code></pre></div></div>
-<hr>
+<!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="core-components">Core Components<a href="#core-components" class="hash-link" aria-label="Direct link to Core Components" title="Direct link to Core Components" translate="no">​</a></h2>
-<table><thead><tr><th>Component</th><th>Purpose</th></tr></thead><tbody><tr><td>Microsoft Graph</td><td>Data access layer</td></tr><tr><td>Copilot Service</td><td>AI orchestration</td></tr><tr><td>Exchange Online</td><td>Email intelligence</td></tr><tr><td>Teams</td><td>Meeting and collaboration intelligence</td></tr><tr><td>SharePoint Online</td><td>Organizational knowledge</td></tr><tr><td>OneDrive</td><td>Personal knowledge repository</td></tr><tr><td>Purview</td><td>Data governance and protection</td></tr><tr><td>Entra ID</td><td>Identity and access control</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="identity-and-access-architecture">Identity and Access Architecture<a href="#identity-and-access-architecture" class="hash-link" aria-label="Direct link to Identity and Access Architecture" title="Direct link to Identity and Access Architecture" translate="no">​</a></h2>
-<p>Required controls:</p>
+<table><thead><tr><th>Component</th><th>Purpose</th><th>Architecture Concern</th></tr></thead><tbody><tr><td>Microsoft Graph</td><td>Data access layer</td><td>Permission and content quality</td></tr><tr><td>Copilot Service</td><td>AI orchestration</td><td>User experience and response quality</td></tr><tr><td>Exchange Online</td><td>Email intelligence</td><td>Mailbox governance and retention</td></tr><tr><td>Teams</td><td>Meeting and collaboration intelligence</td><td>Team lifecycle and external access</td></tr><tr><td>SharePoint Online</td><td>Organizational knowledge</td><td>Oversharing and information architecture</td></tr><tr><td>OneDrive</td><td>Personal knowledge repository</td><td>Sharing, retention and ownership</td></tr><tr><td>Purview</td><td>Data governance and protection</td><td>Labels, DLP, audit and compliance</td></tr><tr><td>Entra ID</td><td>Identity and access control</td><td>MFA, Conditional Access and risk</td></tr><tr><td>Copilot Studio</td><td>Agent extension model</td><td>Approval, lifecycle and ownership</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="decision-checklist">Decision Checklist<a href="#decision-checklist" class="hash-link" aria-label="Direct link to Decision Checklist" title="Direct link to Decision Checklist" translate="no">​</a></h2>
+<table><thead><tr><th>Decision</th><th>Recommended Question</th></tr></thead><tbody><tr><td>Pilot scope</td><td>Which user personas and departments validate Copilot first?</td></tr><tr><td>Data readiness</td><td>Which SharePoint and Teams areas need permission cleanup before rollout?</td></tr><tr><td>Security baseline</td><td>Are Conditional Access, Purview, DLP and audit controls ready?</td></tr><tr><td>Agent governance</td><td>Who can create, approve, publish and retire Copilot Studio agents?</td></tr><tr><td>Adoption model</td><td>Which training, champion and office-hour model supports users?</td></tr><tr><td>Value tracking</td><td>Which business scenarios prove measurable Copilot value?</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="anti-patterns">Anti-Patterns<a href="#anti-patterns" class="hash-link" aria-label="Direct link to Anti-Patterns" title="Direct link to Anti-Patterns" translate="no">​</a></h2>
 <ul>
-<li class="">Multi-Factor Authentication</li>
-<li class="">Conditional Access</li>
-<li class="">RBAC model</li>
-<li class="">Guest governance</li>
-<li class="">Access reviews</li>
-<li class="">Identity lifecycle management</li>
+<li class="">Assigning Copilot licenses before permission and data readiness review</li>
+<li class="">Treating Copilot as a generic training program instead of role-based adoption</li>
+<li class="">Allowing agent creation without approval, lifecycle and ownership rules</li>
+<li class="">Measuring only active users without business outcome metrics</li>
+<li class="">Ignoring user trust issues caused by overshared or outdated content</li>
 </ul>
-<p>Copilot inherits user permissions.</p>
-<p>Users can only access information already available to them.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="information-architecture">Information Architecture<a href="#information-architecture" class="hash-link" aria-label="Direct link to Information Architecture" title="Direct link to Information Architecture" translate="no">​</a></h2>
-<p>High-quality search results require high-quality content structure.</p>
-<p>Recommended design:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sharepoint">SharePoint<a href="#sharepoint" class="hash-link" aria-label="Direct link to SharePoint" title="Direct link to SharePoint" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="delivery-artifacts">Delivery Artifacts<a href="#delivery-artifacts" class="hash-link" aria-label="Direct link to Delivery Artifacts" title="Direct link to Delivery Artifacts" translate="no">​</a></h2>
 <ul>
-<li class="">Information architecture review</li>
-<li class="">Site ownership definition</li>
-<li class="">Metadata standardization</li>
-<li class="">Lifecycle management</li>
+<li class="">Copilot readiness assessment</li>
+<li class="">Oversharing and permission review report</li>
+<li class="">Copilot governance charter</li>
+<li class="">Agent lifecycle and approval model</li>
+<li class="">Adoption roadmap and champion plan</li>
+<li class="">Use case prioritization matrix</li>
+<li class="">Value tracking dashboard</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="teams">Teams<a href="#teams" class="hash-link" aria-label="Direct link to Teams" title="Direct link to Teams" translate="no">​</a></h3>
-<ul>
-<li class="">Team lifecycle governance</li>
-<li class="">External access governance</li>
-<li class="">Private channel review</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="onedrive">OneDrive<a href="#onedrive" class="hash-link" aria-label="Direct link to OneDrive" title="Direct link to OneDrive" translate="no">​</a></h3>
-<ul>
-<li class="">Ownership management</li>
-<li class="">Sharing governance</li>
-<li class="">Retention alignment</li>
-</ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="security-architecture">Security Architecture<a href="#security-architecture" class="hash-link" aria-label="Direct link to Security Architecture" title="Direct link to Security Architecture" translate="no">​</a></h2>
-<p>Recommended controls:</p>
-<ul>
-<li class="">Sensitivity Labels</li>
-<li class="">Data Loss Prevention</li>
-<li class="">Conditional Access</li>
-<li class="">Defender for Cloud Apps</li>
-<li class="">Insider Risk Management</li>
-<li class="">Audit Logging</li>
-</ul>
-<p>Security controls should be implemented before large-scale Copilot rollout.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="copilot-readiness-assessment">Copilot Readiness Assessment<a href="#copilot-readiness-assessment" class="hash-link" aria-label="Direct link to Copilot Readiness Assessment" title="Direct link to Copilot Readiness Assessment" translate="no">​</a></h2>
-<p>Assessment categories:</p>
-<table><thead><tr><th>Area</th><th>Assessment Focus</th></tr></thead><tbody><tr><td>Identity</td><td>Access control maturity</td></tr><tr><td>Collaboration</td><td>Teams and SharePoint governance</td></tr><tr><td>Security</td><td>Purview and Defender readiness</td></tr><tr><td>Compliance</td><td>Data protection requirements</td></tr><tr><td>User Readiness</td><td>Skills and adoption readiness</td></tr><tr><td>Operations</td><td>Support and governance model</td></tr></tbody></table>
-<hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="adoption-operating-model">Adoption Operating Model<a href="#adoption-operating-model" class="hash-link" aria-label="Direct link to Adoption Operating Model" title="Direct link to Adoption Operating Model" translate="no">​</a></h2>
-<p>Successful deployment requires:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="executive-sponsorship">Executive Sponsorship<a href="#executive-sponsorship" class="hash-link" aria-label="Direct link to Executive Sponsorship" title="Direct link to Executive Sponsorship" translate="no">​</a></h3>
-<ul>
-<li class="">Leadership communication</li>
-<li class="">Business objective alignment</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="champion-program">Champion Program<a href="#champion-program" class="hash-link" aria-label="Direct link to Champion Program" title="Direct link to Champion Program" translate="no">​</a></h3>
-<ul>
-<li class="">Department champions</li>
-<li class="">Use case development</li>
-<li class="">Local support model</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="education">Education<a href="#education" class="hash-link" aria-label="Direct link to Education" title="Direct link to Education" translate="no">​</a></h3>
-<ul>
-<li class="">Executive training</li>
-<li class="">End-user training</li>
-<li class="">Advanced user workshops</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="office-hours">Office Hours<a href="#office-hours" class="hash-link" aria-label="Direct link to Office Hours" title="Direct link to Office Hours" translate="no">​</a></h3>
-<ul>
-<li class="">Prompt coaching</li>
-<li class="">Use case support</li>
-<li class="">Business consulting</li>
-</ul>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="analytics-and-success-measurement">Analytics and Success Measurement<a href="#analytics-and-success-measurement" class="hash-link" aria-label="Direct link to Analytics and Success Measurement" title="Direct link to Analytics and Success Measurement" translate="no">​</a></h2>
-<p>Key metrics:</p>
-<table><thead><tr><th>Category</th><th>KPI</th></tr></thead><tbody><tr><td>Adoption</td><td>Active Copilot users</td></tr><tr><td>Usage</td><td>Weekly active usage</td></tr><tr><td>Productivity</td><td>Time saved</td></tr><tr><td>Quality</td><td>User satisfaction</td></tr><tr><td>Support</td><td>Help desk volume</td></tr><tr><td>Business Value</td><td>Use case realization</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-risks">Common Risks<a href="#common-risks" class="hash-link" aria-label="Direct link to Common Risks" title="Direct link to Common Risks" translate="no">​</a></h2>
-<table><thead><tr><th>Risk</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td>Poor permissions</td><td>Oversharing concerns</td><td>Access review</td></tr><tr><td>Weak governance</td><td>Content sprawl</td><td>Governance program</td></tr><tr><td>Low adoption</td><td>ROI reduction</td><td>Champion model</td></tr><tr><td>Insufficient training</td><td>Poor user experience</td><td>Structured education</td></tr><tr><td>Weak information architecture</td><td>Poor Copilot responses</td><td>Content cleanup</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
-<ul>
-<li class="">Secure before scaling</li>
-<li class="">Clean up permissions first</li>
-<li class="">Establish governance early</li>
-<li class="">Create a Champion Network</li>
-<li class="">Measure adoption continuously</li>
-<li class="">Align Copilot with business outcomes</li>
-<li class="">Build reusable use cases</li>
-</ul>
-<hr>
+<table><thead><tr><th>Workstream</th><th>Focus</th></tr></thead><tbody><tr><td>Executive sponsorship</td><td>Business priority, communication and funding support</td></tr><tr><td>Champion network</td><td>Department use cases, local support and feedback</td></tr><tr><td>Training</td><td>Role-based prompt and workflow enablement</td></tr><tr><td>Office hours</td><td>Prompt coaching and use case support</td></tr><tr><td>Governance forum</td><td>Security, compliance, agent and adoption decisions</td></tr><tr><td>Analytics</td><td>Usage, satisfaction, use case value and support trends</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="lessons-learned">Lessons Learned<a href="#lessons-learned" class="hash-link" aria-label="Direct link to Lessons Learned" title="Direct link to Lessons Learned" translate="no">​</a></h2>
 <ul>
-<li class="">Copilot projects are business transformation projects</li>
-<li class="">Security and governance are prerequisites</li>
-<li class="">SharePoint quality directly impacts Copilot value</li>
-<li class="">Executive sponsorship drives adoption success</li>
-<li class="">Champions accelerate organizational change</li>
-<li class="">Continuous education is required</li>
+<li class="">Secure before scaling.</li>
+<li class="">Clean up permissions before broad license assignment.</li>
+<li class="">Establish governance before agent creation.</li>
+<li class="">Treat adoption as role-based behavior change.</li>
+<li class="">Measure business value, not only usage.</li>
 </ul>
-<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="검색-키워드">검색 키워드<a href="#검색-키워드" class="hash-link" aria-label="Direct link to 검색 키워드" title="Direct link to 검색 키워드" translate="no">​</a></h2>
+<ul>
+<li class="">Microsoft 365 Copilot architecture</li>
+<li class="">Copilot readiness architecture</li>
+<li class="">Copilot governance</li>
+<li class="">Copilot Studio Agent governance</li>
+<li class="">Microsoft Graph Copilot data access</li>
+<li class="">Copilot data protection</li>
+<li class="">Copilot 도입 아키텍처</li>
+</ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
 <ul>
-<li class="">Microsoft 365 Copilot Documentation</li>
-<li class="">Microsoft Copilot Adoption Framework</li>
-<li class="">Microsoft Graph Documentation</li>
-<li class="">Microsoft Learn</li>
-<li class="">Microsoft AI Transformation Guidance</li>
-</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/architecture/azure-landing-zone-architecture"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Azure Landing Zone</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/architecture/executive-architecture-blueprint"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Executive Blueprint</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a></li><li><a href="#copilot-architecture-overview" class="table-of-contents__link toc-highlight">Copilot Architecture Overview</a></li><li><a href="#core-components" class="table-of-contents__link toc-highlight">Core Components</a></li><li><a href="#identity-and-access-architecture" class="table-of-contents__link toc-highlight">Identity and Access Architecture</a></li><li><a href="#information-architecture" class="table-of-contents__link toc-highlight">Information Architecture</a><ul><li><a href="#sharepoint" class="table-of-contents__link toc-highlight">SharePoint</a></li><li><a href="#teams" class="table-of-contents__link toc-highlight">Teams</a></li><li><a href="#onedrive" class="table-of-contents__link toc-highlight">OneDrive</a></li></ul></li><li><a href="#security-architecture" class="table-of-contents__link toc-highlight">Security Architecture</a></li><li><a href="#copilot-readiness-assessment" class="table-of-contents__link toc-highlight">Copilot Readiness Assessment</a></li><li><a href="#adoption-operating-model" class="table-of-contents__link toc-highlight">Adoption Operating Model</a><ul><li><a href="#executive-sponsorship" class="table-of-contents__link toc-highlight">Executive Sponsorship</a></li><li><a href="#champion-program" class="table-of-contents__link toc-highlight">Champion Program</a></li><li><a href="#education" class="table-of-contents__link toc-highlight">Education</a></li><li><a href="#office-hours" class="table-of-contents__link toc-highlight">Office Hours</a></li></ul></li><li><a href="#analytics-and-success-measurement" class="table-of-contents__link toc-highlight">Analytics and Success Measurement</a></li><li><a href="#common-risks" class="table-of-contents__link toc-highlight">Common Risks</a></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
+<li class=""><a class="" href="/knowledge/copilot/overview">Copilot Overview</a></li>
+<li class=""><a class="" href="/knowledge/copilot/governance">Copilot Governance</a></li>
+<li class=""><a class="" href="/knowledge/copilot/agent-factory-operating-model">Agent Factory Operating Model</a></li>
+<li class=""><a class="" href="/knowledge/architecture/executive-architecture-blueprint">Executive Architecture Blueprint</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/knowledge/architecture/azure-landing-zone-architecture"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Azure Landing Zone</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/knowledge/architecture/executive-architecture-blueprint"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Executive Blueprint</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a></li><li><a href="#한국어-요약" class="table-of-contents__link toc-highlight">한국어 요약</a></li><li><a href="#business-scenario" class="table-of-contents__link toc-highlight">Business Scenario</a></li><li><a href="#copilot-architecture-overview" class="table-of-contents__link toc-highlight">Copilot Architecture Overview</a></li><li><a href="#core-components" class="table-of-contents__link toc-highlight">Core Components</a></li><li><a href="#decision-checklist" class="table-of-contents__link toc-highlight">Decision Checklist</a></li><li><a href="#anti-patterns" class="table-of-contents__link toc-highlight">Anti-Patterns</a></li><li><a href="#delivery-artifacts" class="table-of-contents__link toc-highlight">Delivery Artifacts</a></li><li><a href="#adoption-operating-model" class="table-of-contents__link toc-highlight">Adoption Operating Model</a></li><li><a href="#lessons-learned" class="table-of-contents__link toc-highlight">Lessons Learned</a></li><li><a href="#검색-키워드" class="table-of-contents__link toc-highlight">검색 키워드</a></li><li><a href="#references" class="table-of-contents__link toc-highlight">References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Knowledge</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/microsoft365/e3-vs-e5">Microsoft 365</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/architecture/overview">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/projects/overview">Projects</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Consulting Assets</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/knowledge/proposal/overview">Proposal Center</a></li><li class="footer__item"><a class="footer__link-item" href="/knowledge/about">About</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Eric841001" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Youngsun Kang. Enterprise Microsoft Platform.</div></div></div></footer></div>
 </body>
 </html>
