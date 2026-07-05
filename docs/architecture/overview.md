@@ -32,6 +32,7 @@ Architecture content here is intended to be practical. Each topic connects busin
 
 ## Recommended Reading
 
+- [Executive Architecture Blueprint](./executive-architecture-blueprint)
 - [Microsoft 365 Reference Architecture](./m365-reference-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Copilot Architecture](./copilot-architecture)

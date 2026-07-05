@@ -62,6 +62,28 @@ This Knowledge Center also supports a long-term Microsoft MVP journey. The goal 
 - proposal, SOW, WBS and delivery templates
 - anonymized customer success reference patterns
 
+## MVP Contribution Roadmap
+
+The roadmap is focused on public contribution quality rather than title chasing. Each milestone is designed to create reusable value for Microsoft customers, consultants and technical communities.
+
+| Area | Contribution Direction |
+|---|---|
+| Public Knowledge | Publish practical Microsoft 365, Security, Copilot and Azure architecture references |
+| Field Lessons | Convert anonymized project experience into repeatable customer success patterns |
+| Community Utility | Provide checklists, proposal structures, playbooks and governance models |
+| Technical Depth | Expand implementation notes for Entra ID, Intune, Defender, Purview and Copilot Studio |
+| Executive Communication | Translate technical architecture into business-ready decision materials |
+| Continuous Improvement | Keep Search Console, Naver indexing, sitemap quality and content freshness under review |
+
+## Signature Knowledge Assets
+
+- [Executive Architecture Blueprint](./architecture/executive-architecture-blueprint)
+- [MVP and Community Research Map](./knowledge-center/mvp-community-research-map)
+- [Customer Success Reference Patterns](./projects/customer-success-reference-patterns)
+- [Copilot Governance](./copilot/governance)
+- [Security Reference Architecture](./architecture/security-reference-architecture)
+- [Proposal Center](./proposal/overview)
+
 ## Connect
 
 - GitHub: [https://github.com/Eric841001](https://github.com/Eric841001)

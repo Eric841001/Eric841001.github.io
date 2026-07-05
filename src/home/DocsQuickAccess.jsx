@@ -9,6 +9,11 @@ const links = [
     path: '/knowledge/knowledge-center/overview',
   },
   {
+    label: 'Blueprint',
+    title: 'Executive Architecture',
+    path: '/knowledge/architecture/executive-architecture-blueprint',
+  },
+  {
     label: 'Presales',
     title: 'Proposal Center',
     path: '/knowledge/proposal/overview',
