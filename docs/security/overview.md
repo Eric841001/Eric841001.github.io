@@ -9,13 +9,13 @@ This Security section organizes Microsoft security architecture, Zero Trust cont
 
 The guidance is shaped around field scenarios such as regulated SaaS access, Microsoft 365 security review, Exchange Online protection, endpoint onboarding, Purview readiness, DLP design and Copilot data protection.
 
-## Korean Summary
+## 한국어 요약
 
-Microsoft Security는 Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Audit, Compliance 기능을 하나의 보안 운영 모델로 연결해야 효과가 있습니다.
+Microsoft Security는 Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Audit, Compliance 기능을 하나의 security operating model로 연결할 때 효과가 커집니다.
 
-이 섹션은 Microsoft 365 보안 점검, Zero Trust 아키텍처, 조건부 액세스 정책, Defender XDR, Defender for Endpoint, Defender for Office 365, Purview 정보보호, DLP, Insider Risk, Copilot 데이터 보호를 실무 관점에서 정리합니다.
+이 섹션은 Microsoft 365 security assessment, Zero Trust architecture, Conditional Access policy, Defender XDR, Defender for Endpoint, Defender for Office 365, Purview information protection, DLP, Insider Risk, Copilot data protection을 실무 관점에서 정리합니다.
 
-기업 보안 프로젝트에서는 기술 설정만큼 중요한 것이 승인 절차, 예외 관리, 운영자 역할, 감사 증적, 사용자 영향도입니다. 특히 금융, SaaS, 제조, 유통, 글로벌 조직처럼 규제와 운영 안정성이 중요한 환경에서는 보안 정책을 단계적으로 적용해야 합니다.
+Enterprise security 프로젝트에서는 기술 설정만큼 approval process, exception management, administrator role, audit evidence, user impact가 중요합니다. 특히 금융, SaaS, 제조, 유통, 글로벌 조직처럼 규제와 운영 안정성이 중요한 환경에서는 security policy를 단계적으로 적용해야 합니다.
 
 ## Security Domains
 
@@ -56,29 +56,29 @@ Microsoft Security는 Entra ID, Conditional Access, Intune, Defender, Purview, D
 - risk register and exception workflow
 - executive security review pack
 
-## Search Topics
+## 검색 키워드
 
-This page is relevant for searches such as:
+이 문서는 다음과 같은 검색어와 관련됩니다.
 
-- Microsoft 365 보안
+- Microsoft 365 security
 - Microsoft Security Architecture
-- Zero Trust 아키텍처
-- Entra ID 조건부 액세스
-- Conditional Access 정책
+- Zero Trust architecture
+- Entra ID Conditional Access
+- Conditional Access policy
 - Microsoft Defender XDR
-- Defender for Endpoint 구축
+- Defender for Endpoint deployment
 - Defender for Office 365
-- Microsoft Purview 정보보호
-- DLP 정책 설계
-- Copilot 데이터 보호
+- Microsoft Purview information protection
+- DLP policy design
+- Copilot data protection
 
-## Consulting Use Cases
+## 컨설팅 활용 사례
 
-This guidance can be used for:
+이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- Microsoft 365 보안 진단
+- Microsoft 365 security assessment
 - CISO 보고용 security baseline 작성
-- 조건부 액세스 정책 설계 및 예외 관리
-- Defender/Purview 기반 보안 현대화
-- Copilot 도입 전 데이터 보안 검토
-- 금융/제조/SaaS 환경의 감사 대응 보안 설계
+- Conditional Access policy 설계 및 exception management
+- Defender/Purview 기반 security modernization
+- Copilot 도입 전 data security review
+- 금융/제조/SaaS 환경의 audit-ready security design

@@ -11,11 +11,11 @@ This page organizes public Microsoft MVP and community knowledge sources into a 
 
 The goal is not to copy external articles. The goal is to monitor respected community patterns, translate them into consulting-ready checklists, and connect them with Microsoft official documentation and real delivery experience.
 
-## Korean Summary
+## 한국어 요약
 
-이 페이지는 Microsoft MVP 및 Microsoft 커뮤니티 전문가들이 공개적으로 공유하는 블로그, 기술 글, 운영 경험을 Enterprise Knowledge Center 관점으로 재분류한 리서치 맵입니다.
+이 페이지는 Microsoft MVP와 Microsoft community 전문가들이 공개적으로 공유하는 블로그, 기술 글, 운영 경험을 Enterprise Knowledge Center 관점으로 다시 분류한 research map입니다.
 
-외부 글을 그대로 복사하지 않고, 반복적으로 등장하는 설계 관점과 운영 리스크를 Microsoft 365 컨설팅, Copilot 도입, 보안 아키텍처, Purview 데이터 보호, Azure Landing Zone 설계에 맞게 재구성합니다.
+외부 글을 그대로 복사하지 않고, 반복적으로 등장하는 design pattern과 운영 risk를 Microsoft 365 consulting, Copilot adoption, security architecture, Purview data protection, Azure Landing Zone design에 맞게 재구성합니다.
 
 ## Research Principles
 
@@ -71,18 +71,18 @@ When a useful community article is found, translate it into this structure:
 | Delivery Asset | Does it become a checklist, runbook, design note, proposal section or risk register item? |
 | Korean Search Terms | What Korean terms should help customers find the page? |
 
-## Search Topics
+## 검색 키워드
 
-This page is relevant for searches such as:
+이 문서는 다음과 같은 검색어와 관련됩니다.
 
 - Microsoft MVP 블로그
 - Microsoft 365 MVP 블로그
-- Microsoft 365 커뮤니티 자료
-- Microsoft 365 Copilot 거버넌스 사례
-- Microsoft Purview 컴플라이언스 블로그
+- Microsoft 365 community reference
+- Microsoft 365 Copilot governance 사례
+- Microsoft Purview compliance 블로그
 - Conditional Access Zero Trust 블로그
-- Microsoft 365 운영 자동화 PowerShell
-- Microsoft 365 컨설팅 리서치
+- Microsoft 365 operations automation PowerShell
+- Microsoft 365 consulting research
 - Enterprise Microsoft Architecture reference
 
 ## Next Update Candidates

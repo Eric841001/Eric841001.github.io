@@ -62,31 +62,31 @@ Copilot governance depends on Microsoft 365 licensing, Copilot licensing and com
 
 Successful Copilot adoption starts with a narrow, high-value pilot. Broad rollout without data readiness creates trust issues and increases support load.
 
-## MVP and Community-Informed Quality Notes
+## MVP 커뮤니티 기반 설계 메모
 
-Public Microsoft 365 community discussions repeatedly reinforce one important point: Copilot governance is mostly a data access and operating model problem before it is an AI feature problem.
+Public Microsoft 365 community에서 반복적으로 강조되는 핵심은 분명합니다. Copilot governance는 AI 기능을 켜는 문제가 아니라, data access와 operating model을 먼저 정리하는 문제입니다.
 
-For enterprise projects, convert that insight into these practical controls:
+Enterprise 프로젝트에서는 이 관점을 다음과 같은 실행 항목으로 바꾸는 것이 좋습니다.
 
-- Treat SharePoint, Teams and OneDrive oversharing review as a required Copilot readiness gate.
-- Define whether Copilot access is unrestricted, restricted to pilot groups, or restricted by data domain.
-- Review sensitivity labels, DLP policies, retention and audit readiness before broad rollout.
-- Decide how Copilot agents, Graph connectors and third-party extensions are approved.
-- Prepare a support model for inaccurate responses, unexpected content discovery and user feedback.
-- Track prompt usage, business scenarios and adoption outcomes without turning governance into surveillance.
+- SharePoint, Teams, OneDrive oversharing review를 Copilot readiness의 필수 gate로 둡니다.
+- Copilot access를 전체 허용할지, pilot group으로 제한할지, data domain 기준으로 제한할지 결정합니다.
+- 전체 배포 전에 sensitivity label, DLP policy, retention, audit readiness를 확인합니다.
+- Copilot agent, Graph connector, third-party extension의 승인 기준을 정합니다.
+- 부정확한 답변, 예상하지 못한 content discovery, 사용자 feedback을 처리할 support model을 준비합니다.
+- prompt usage, business scenario, adoption outcome을 추적하되 사용자 감시처럼 보이지 않도록 운영 기준을 명확히 합니다.
 
-## Korean Search Expansion
+## 한국어 검색 키워드
 
-This page also supports Korean searches such as:
+이 문서는 다음과 같은 한국어 검색어와도 관련됩니다.
 
-- Microsoft 365 Copilot 거버넌스
-- Copilot 데이터 접근 제어
-- Copilot 오버쉐어링 점검
-- Copilot 도입 전 SharePoint 권한 검토
-- Copilot 보안 준비도
-- Copilot Agent 거버넌스
+- Microsoft 365 Copilot governance
+- Copilot data access control
+- Copilot oversharing review
+- Copilot 도입 전 SharePoint permission review
+- Copilot security readiness
+- Copilot Agent governance
 
-## Community and Official References
+## 커뮤니티 및 공식 참고 자료
 
 - [Microsoft 365 for IT Pros](https://office365itpros.com/)
 - [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)

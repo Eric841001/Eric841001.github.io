@@ -9,13 +9,13 @@ This Copilot section covers Microsoft 365 Copilot, Copilot Studio, AI agents and
 
 The focus is practical adoption: readiness, data protection, license value, use case prioritization, change management, agent lifecycle, cost control and executive decision support.
 
-## Korean Summary
+## 한국어 요약
 
-Microsoft Copilot 도입은 단순히 라이선스를 구매하고 사용자를 활성화하는 작업이 아닙니다. 성공적인 Copilot 도입은 데이터 준비도, 권한 정리, 보안 정책, 사용자 시나리오, 교육, 비용 관리, 효과 측정이 함께 설계되어야 합니다.
+Microsoft Copilot 도입은 단순히 license를 구매하고 사용자를 활성화하는 작업이 아닙니다. 성공적인 Copilot 도입을 위해서는 data readiness, permission cleanup, security policy, business scenario, user training, cost management, value measurement가 함께 설계되어야 합니다.
 
-이 섹션은 Microsoft 365 Copilot 준비도 진단, Copilot 도입 전략, Copilot Governance, Copilot Studio, AI Agent, Agent Factory, Multi-Agent Framework, Prompt Engineering, ROI 측정과 같은 실무 주제를 다룹니다.
+이 섹션은 Microsoft 365 Copilot readiness assessment, Copilot adoption strategy, Copilot Governance, Copilot Studio, AI Agent, Agent Factory, Multi-Agent Framework, Prompt Engineering, ROI measurement 같은 실무 주제를 다룹니다.
 
-기업 환경에서는 Copilot이 기존 Microsoft 365 데이터 권한을 기반으로 답변하므로, SharePoint/Teams/OneDrive 권한 과다 부여, 민감정보 노출, DLP 정책, Purview 라벨, Defender 보안 신호를 함께 검토해야 합니다.
+Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기반으로 답변합니다. 따라서 SharePoint/Teams/OneDrive permission sprawl, sensitive information exposure, DLP policy, Purview label, Defender security signal을 함께 점검해야 합니다.
 
 ## Copilot Adoption Model
 
@@ -58,29 +58,29 @@ Microsoft Copilot 도입은 단순히 라이선스를 구매하고 사용자를 
 - agent governance checklist
 - license and cost tracking model
 
-## Search Topics
+## 검색 키워드
 
-This page is relevant for searches such as:
+이 문서는 다음과 같은 검색어와 관련됩니다.
 
-- Microsoft Copilot 도입
-- Microsoft 365 Copilot 준비도
+- Microsoft Copilot adoption
+- Microsoft 365 Copilot readiness
 - Copilot Governance
-- Copilot 보안
+- Copilot security
 - Copilot Studio Agent
-- AI Agent 아키텍처
-- Agent Factory 운영 모델
+- AI Agent architecture
+- Agent Factory operating model
 - Multi-Agent Framework
 - Prompt Engineering
 - Copilot ROI
-- Copilot 라이선스 비용 관리
+- Copilot license cost management
 
-## Consulting Use Cases
+## 컨설팅 활용 사례
 
-This guidance can be used for:
+이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
 - Copilot 도입 전 readiness assessment
 - 임원 보고용 Copilot adoption roadmap 작성
 - 부서별 Copilot use case 발굴
-- Copilot Studio 기반 업무 Agent 설계
-- Copilot 사용량과 라이선스 가치 측정
+- Copilot Studio 기반 business Agent 설계
+- Copilot usage와 license value 측정
 - 데이터 유출 위험을 줄이기 위한 Purview/DLP 연계 설계

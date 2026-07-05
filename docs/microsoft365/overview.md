@@ -12,13 +12,13 @@ In enterprise consulting projects, Microsoft 365 should not be positioned only a
 
 This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.
 
-## Korean Summary
+## 한국어 요약
 
-Microsoft 365는 단순한 Office 앱 묶음이 아니라 기업의 협업, 보안, 거버넌스, 컴플라이언스, AI 활용을 연결하는 엔터프라이즈 운영 플랫폼입니다.
+Microsoft 365는 단순한 Office 앱 묶음이 아니라, 기업의 협업, 보안, governance, compliance, AI 활용을 하나로 연결하는 enterprise 운영 플랫폼입니다.
 
-이 문서는 Microsoft 365 아키텍처 설계, 테넌트 거버넌스, Teams/SharePoint/OneDrive 협업 구조, Exchange Online 마이그레이션, Entra ID 조건부 액세스, Intune 디바이스 관리, Purview 데이터 보호, Defender 보안 체계를 함께 검토해야 하는 이유를 설명합니다.
+이 문서는 Microsoft 365 architecture 설계, tenant governance, Teams/SharePoint/OneDrive 협업 구조, Exchange Online migration, Entra ID Conditional Access, Intune device management, Purview data protection, Defender 보안 체계를 함께 검토해야 하는 이유를 정리합니다.
 
-특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스만 배정하기 전에 데이터 권한, 외부 공유, 민감정보 보호, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
+특히 Microsoft 365 Copilot을 도입하려는 조직은 license를 배정하기 전에 data permission, external sharing, sensitivity label, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
 
 ## Business Scenario
 
@@ -169,32 +169,32 @@ Key lessons from enterprise Microsoft 365 projects:
 - Overly restrictive policies without communication create user resistance
 - Executive reporting should focus on risk reduction, productivity and operating model maturity
 
-## Search Topics
+## 검색 키워드
 
-This page is relevant for searches such as:
+이 문서는 다음과 같은 검색어와 관련됩니다.
 
-- Microsoft 365 아키텍처
-- Microsoft 365 컨설팅
-- Microsoft 365 테넌트 설계
-- Microsoft 365 보안 설정
-- Microsoft 365 Copilot 준비도
-- Microsoft 365 마이그레이션
-- Teams SharePoint OneDrive 거버넌스
-- Exchange Online 마이그레이션
-- Entra ID 조건부 액세스
-- Intune 디바이스 관리
-- Purview DLP 데이터 보호
+- Microsoft 365 architecture
+- Microsoft 365 consulting
+- Microsoft 365 tenant design
+- Microsoft 365 security baseline
+- Microsoft 365 Copilot readiness
+- Microsoft 365 migration
+- Teams, SharePoint, OneDrive governance
+- Exchange Online migration
+- Entra ID Conditional Access
+- Intune device management
+- Purview DLP data protection
 
-## Consulting Use Cases
+## 컨설팅 활용 사례
 
-This guidance can be used for:
+이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
 - Microsoft 365 신규 도입 제안
 - Google Workspace에서 Microsoft 365로 전환
-- Exchange Online 및 Teams 중심 협업 현대화
-- Copilot 도입 전 데이터/보안 준비도 진단
-- E3/E5/Business Premium 라이선스 최적화
-- 글로벌 또는 계열사 테넌트 거버넌스 정리
+- Exchange Online과 Teams 중심의 collaboration modernization
+- Copilot 도입 전 data/security readiness assessment
+- Microsoft 365 E3/E5/Business Premium license optimization
+- 글로벌 조직 또는 계열사의 tenant governance 정비
 
 ## References
 
@@ -207,20 +207,20 @@ This guidance can be used for:
 - Microsoft Cloud Adoption Framework
 - Microsoft Zero Trust guidance
 
-## MVP and Community-Informed Operating Notes
+## MVP 커뮤니티 기반 운영 메모
 
-Public Microsoft 365 MVP and community blogs are especially valuable because they reveal the operational details that are often discovered after go-live.
+Public Microsoft 365 MVP와 community blog는 go-live 이후에야 드러나는 운영 이슈를 미리 확인하는 데 도움이 됩니다.
 
-For Microsoft 365 consulting, convert that field knowledge into these operating checks:
+Microsoft 365 consulting에서는 이러한 field knowledge를 다음과 같은 운영 점검 항목으로 바꾸는 것이 좋습니다.
 
-- Tenant administration should include PowerShell and Microsoft Graph repeatability, not only portal screenshots.
-- Teams, Exchange, SharePoint and OneDrive governance should be reviewed as one collaboration model.
-- License optimization should be connected to inactive accounts, persona design and feature usage.
-- Copilot readiness should include permissions, labels, DLP, audit and support process.
-- Change management should include admin handover, user communication and exception handling.
-- Search-friendly documentation should contain both English product terms and Korean consulting terms.
+- Tenant administration은 portal screenshot뿐 아니라 PowerShell과 Microsoft Graph 기반의 반복 가능성까지 포함해야 합니다.
+- Teams, Exchange, SharePoint, OneDrive governance는 하나의 collaboration model로 함께 검토해야 합니다.
+- License optimization은 inactive account, persona design, feature usage와 연결해야 합니다.
+- Copilot readiness는 permission, label, DLP, audit, support process까지 포함해야 합니다.
+- Change management에는 admin handover, user communication, exception handling이 포함되어야 합니다.
+- 검색 친화적인 문서는 영어 product term과 자연스러운 한국어 consulting term을 함께 포함해야 합니다.
 
-## Community and Official References
+## 커뮤니티 및 공식 참고 자료
 
 - [Microsoft 365 for IT Pros](https://office365itpros.com/)
 - [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)

@@ -528,31 +528,31 @@ Unmanaged Access
 
 ---
 
-# MVP and Community-Informed Design Notes
+# MVP 커뮤니티 기반 설계 메모
 
-Microsoft security community patterns consistently show that Conditional Access should be designed as a layered control model, not as a collection of isolated policies.
+Microsoft security community에서 반복적으로 확인되는 패턴은 Conditional Access를 개별 policy 모음이 아니라 layered control model로 설계해야 한다는 것입니다.
 
-Practical enterprise design principles:
+Enterprise 환경에서는 다음 원칙을 기준으로 설계하는 것이 좋습니다.
 
-- Keep break-glass accounts excluded from normal enforcement but monitored separately.
-- Start with report-only mode or scoped pilots for disruptive controls.
-- Separate baseline security policies from high-risk user, privileged role and unmanaged device policies.
-- Validate each policy with sign-in logs before broad rollout.
-- Avoid uncontrolled policy sprawl by documenting purpose, owner, scope, exclusion and review date.
-- Align Conditional Access with Intune compliance, Defender device risk and Copilot access requirements.
+- break-glass account는 일반 enforcement에서 제외하되 별도로 모니터링합니다.
+- 업무 영향이 큰 control은 report-only mode 또는 scoped pilot으로 시작합니다.
+- baseline security policy, high-risk user policy, privileged role policy, unmanaged device policy를 분리합니다.
+- 전체 배포 전에 sign-in log로 각 policy의 영향을 검증합니다.
+- policy purpose, owner, scope, exclusion, review date를 기록해 policy sprawl을 방지합니다.
+- Conditional Access를 Intune compliance, Defender device risk, Copilot access requirement와 함께 설계합니다.
 
-## Korean Search Expansion
+## 한국어 검색 키워드
 
-This page also supports Korean searches such as:
+이 문서는 다음과 같은 한국어 검색어와도 관련됩니다.
 
-- Entra ID 조건부 액세스
+- Entra ID Conditional Access
 - Conditional Access 설계
-- Zero Trust 조건부 액세스
-- MFA 정책 설계
-- Intune 준수 디바이스 접근 제어
-- Copilot 접근 제어 정책
+- Zero Trust Conditional Access
+- MFA policy design
+- Intune compliant device access control
+- Copilot access control policy
 
-## Community and Official References
+## 커뮤니티 및 공식 참고 자료
 
 - [Daniel Chronlund Cloud Security Blog](https://danielchronlund.com/)
 - [Microsoft Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)

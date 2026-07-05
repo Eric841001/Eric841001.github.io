@@ -103,31 +103,31 @@ Purview adoption is partly technical and partly behavioral. Policies that are to
 - Microsoft 365 audit and eDiscovery documentation
 - Microsoft Copilot data protection guidance
 
-## MVP and Community-Informed Quality Notes
+## MVP 커뮤니티 기반 설계 메모
 
-Public Microsoft 365 compliance practitioners often emphasize that Purview succeeds when policy design is understandable to business owners, not only technically correct.
+Public Microsoft 365 compliance 전문가들이 자주 강조하는 점은, Purview가 성공하려면 policy design이 기술적으로 정확할 뿐 아니라 business owner가 이해할 수 있어야 한다는 것입니다.
 
-For enterprise delivery, the strongest pattern is:
+Enterprise delivery에서는 다음 패턴이 가장 안정적입니다.
 
-- Start with a small label taxonomy that users can actually understand.
-- Use DLP in test mode before enforcement and tune false positives with evidence.
-- Map sensitivity labels to real business data categories, not only generic security levels.
-- Keep exception approval, policy ownership and review cadence visible.
-- Align Purview rollout with Copilot readiness because Copilot inherits existing access and protection boundaries.
-- Include legal, security, IT and business stakeholders in the same decision table.
+- 사용자가 실제로 이해할 수 있는 작은 sensitivity label taxonomy부터 시작합니다.
+- DLP는 바로 차단하지 말고 test mode에서 false positive를 확인한 뒤 조정합니다.
+- sensitivity label을 일반적인 보안 등급이 아니라 실제 business data category와 연결합니다.
+- exception approval, policy ownership, review cadence를 문서화합니다.
+- Copilot은 기존 access/protection boundary를 따르므로 Purview rollout과 Copilot readiness를 함께 봅니다.
+- Legal, Security, IT, Business stakeholder가 같은 decision table에서 의사결정하도록 합니다.
 
-## Korean Search Expansion
+## 한국어 검색 키워드
 
-This page also supports Korean searches such as:
+이 문서는 다음과 같은 한국어 검색어와도 관련됩니다.
 
-- Microsoft Purview 도입
-- Purview DLP 정책 설계
-- 민감도 레이블 설계
-- Microsoft 365 데이터 보호
-- Copilot 데이터 보호
-- Purview 컴플라이언스 컨설팅
+- Microsoft Purview adoption
+- Purview DLP policy design
+- sensitivity label design
+- Microsoft 365 data protection
+- Copilot data protection
+- Purview compliance consulting
 
-## Community and Official References
+## 커뮤니티 및 공식 참고 자료
 
 - [Joanne C Klein](https://joannecklein.com/)
 - [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/)
