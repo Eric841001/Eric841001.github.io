@@ -12,6 +12,14 @@ In enterprise consulting projects, Microsoft 365 should not be positioned only a
 
 This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.
 
+## Korean Summary
+
+Microsoft 365는 단순한 Office 앱 묶음이 아니라 기업의 협업, 보안, 거버넌스, 컴플라이언스, AI 활용을 연결하는 엔터프라이즈 운영 플랫폼입니다.
+
+이 문서는 Microsoft 365 아키텍처 설계, 테넌트 거버넌스, Teams/SharePoint/OneDrive 협업 구조, Exchange Online 마이그레이션, Entra ID 조건부 액세스, Intune 디바이스 관리, Purview 데이터 보호, Defender 보안 체계를 함께 검토해야 하는 이유를 설명합니다.
+
+특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스만 배정하기 전에 데이터 권한, 외부 공유, 민감정보 보호, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
+
 ## Business Scenario
 
 Organizations typically engage Microsoft 365 consulting when they need to:
@@ -160,6 +168,33 @@ Key lessons from enterprise Microsoft 365 projects:
 - Global subsidiaries require local constraints, time zone and language considerations
 - Overly restrictive policies without communication create user resistance
 - Executive reporting should focus on risk reduction, productivity and operating model maturity
+
+## Search Topics
+
+This page is relevant for searches such as:
+
+- Microsoft 365 아키텍처
+- Microsoft 365 컨설팅
+- Microsoft 365 테넌트 설계
+- Microsoft 365 보안 설정
+- Microsoft 365 Copilot 준비도
+- Microsoft 365 마이그레이션
+- Teams SharePoint OneDrive 거버넌스
+- Exchange Online 마이그레이션
+- Entra ID 조건부 액세스
+- Intune 디바이스 관리
+- Purview DLP 데이터 보호
+
+## Consulting Use Cases
+
+This guidance can be used for:
+
+- Microsoft 365 신규 도입 제안
+- Google Workspace에서 Microsoft 365로 전환
+- Exchange Online 및 Teams 중심 협업 현대화
+- Copilot 도입 전 데이터/보안 준비도 진단
+- E3/E5/Business Premium 라이선스 최적화
+- 글로벌 또는 계열사 테넌트 거버넌스 정리
 
 ## References
 

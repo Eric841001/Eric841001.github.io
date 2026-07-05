@@ -9,6 +9,14 @@ sidebar_position: 2
 
 This page summarizes anonymized customer success patterns derived from enterprise proposal, WBS, SOW, security review, migration and enablement assets. Customer names, account identifiers and project-specific commercial details are intentionally excluded.
 
+## Korean Summary
+
+이 페이지는 실제 고객 프로젝트 경험을 외부에 공개 가능한 형태로 익명화한 Customer Success Reference Pattern입니다. 고객명, 프로젝트명, 계약 정보, 내부 파일명은 포함하지 않고, 업종과 업무 상황 중심으로 성공 패턴을 정리합니다.
+
+제조, 금융, 물류, 유통, 건설, 헬스케어와 같은 산업군에서 Microsoft 365, Security, Copilot, Azure, Migration, Governance 프로젝트를 수행할 때 반복적으로 활용할 수 있는 접근 방식과 산출물 구조를 제공합니다.
+
+검색 사용자 입장에서는 "Microsoft 365 고객 성공 사례", "Copilot 도입 사례", "보안 아키텍처 레퍼런스", "Microsoft 365 마이그레이션 사례", "SOW/WBS 산출물 예시"와 같은 주제로 이 페이지를 활용할 수 있습니다.
+
 ## Reference Principles
 
 - Describe the customer only by industry, scale and operating context.
@@ -133,3 +141,28 @@ When publishing these references externally:
 - Use industry descriptors such as "manufacturing group", "regulated financial institution" or "logistics enterprise".
 - Describe concrete delivery patterns without exposing customer-specific architecture diagrams.
 - Keep the story focused on problem, approach, reusable asset and business outcome.
+
+## Search Topics
+
+This page is relevant for searches such as:
+
+- Microsoft 365 고객 성공 사례
+- Microsoft Copilot 도입 사례
+- Microsoft Security 고객 사례
+- Azure Landing Zone 사례
+- Microsoft 365 마이그레이션 사례
+- 제조업 Copilot adoption
+- 금융 SaaS 보안 아키텍처
+- 물류 Exchange Online 마이그레이션
+- Enterprise Governance 사례
+- SOW WBS 고객 레퍼런스
+
+## Consulting Use Cases
+
+This guidance can be used for:
+
+- 제안서에 포함할 익명화 고객 성공 패턴 작성
+- Microsoft 365/Copilot/Security 프로젝트 레퍼런스 정리
+- 업종별 pain point와 delivery approach 매핑
+- SOW, WBS, risk register, governance model 산출물 재사용
+- 고객명 없이도 신뢰 가능한 portfolio narrative 구성
