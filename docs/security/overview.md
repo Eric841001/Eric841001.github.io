@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Security
+description: Microsoft Security architecture guide covering Zero Trust, Conditional Access, Defender, Purview, DLP and Copilot data protection.
 ---
 
 # Security

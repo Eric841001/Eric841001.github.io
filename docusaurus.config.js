@@ -68,7 +68,7 @@
       {
         name: 'keywords',
         content:
-          'Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS',
+          'Microsoft 365, Security, Copilot, AI Agent, Azure, Enterprise Architecture, Zero Trust, Entra ID, Intune, Purview, Defender, Migration, SOW, WBS, Microsoft 365 컨설팅, Copilot 도입, 보안 아키텍처, Azure Landing Zone, 제안서, 고객 성공 사례',
       },
     ],
     navbar: {

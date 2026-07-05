@@ -3,6 +3,7 @@ id: customer-success-reference-patterns
 title: Customer Success Reference Patterns
 sidebar_label: Customer Success Reference Patterns
 sidebar_position: 2
+description: Anonymized customer success reference patterns for Microsoft 365, Security, Copilot, Azure, migration and governance projects.
 ---
 
 # Customer Success Reference Patterns

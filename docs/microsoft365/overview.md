@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Microsoft 365 Overview
+description: Microsoft 365 architecture, tenant governance, security, migration and Copilot readiness guide for enterprise consulting.
 ---
 
 # Microsoft 365 Overview

@@ -79,7 +79,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Youngsun Kang, Microsoft 365 architecture, Microsoft Copilot adoption, Microsoft Security, Microsoft Purview, Microsoft Defender, Azure Landing Zone, AI Agent Architecture, SOW, WBS, Microsoft 365 migration"
+          content="Youngsun Kang, Microsoft 365 architecture, Microsoft Copilot adoption, Microsoft Security, Microsoft Purview, Microsoft Defender, Azure Landing Zone, AI Agent Architecture, SOW, WBS, Microsoft 365 migration, Microsoft 365 컨설팅, Copilot 도입, Security architecture, 제안서 산출물"
         />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}

@@ -1,3 +1,8 @@
+---
+title: Proposal Center
+description: Reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security and Copilot engagements.
+---
+
 # Proposal Center
 
 Enterprise consulting proposal assets for Microsoft 365, Azure, Security and Copilot engagements.

@@ -1,6 +1,7 @@
 ---
 title: MVP and Community Research Map
 sidebar_label: MVP / Community Research Map
+description: Research map for Microsoft MVP and community sources covering Microsoft 365, Copilot, Purview, Security, Zero Trust and Azure architecture.
 ---
 
 # MVP and Community Research Map

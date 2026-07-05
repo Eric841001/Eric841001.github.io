@@ -1,5 +1,6 @@
 ---
 title: Landing Zone
+description: Azure Landing Zone architecture guide for enterprise subscription governance, security baseline, networking, policy and cost control.
 ---
 
 # Landing Zone

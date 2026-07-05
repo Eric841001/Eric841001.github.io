@@ -1,5 +1,6 @@
 ---
 title: Copilot Governance
+description: Microsoft 365 Copilot governance guide for data access, oversharing review, Purview, DLP, agents, audit and adoption operations.
 ---
 
 # Copilot Governance

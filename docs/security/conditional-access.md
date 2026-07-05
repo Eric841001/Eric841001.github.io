@@ -2,6 +2,7 @@
 id: conditional-access
 title: Conditional Access
 sidebar_label: Conditional Access
+description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA, compliant devices, risk policies and Copilot access control.
 ---
 
 # Conditional Access

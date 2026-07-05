@@ -1,5 +1,6 @@
 ---
 title: Purview
+description: Microsoft Purview guide for sensitivity labels, DLP, retention, audit, eDiscovery and Copilot data protection readiness.
 ---
 
 # Purview

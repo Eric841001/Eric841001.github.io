@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Copilot
+description: Microsoft 365 Copilot readiness, adoption, governance, AI Agent, Copilot Studio and ROI guide for enterprise programs.
 ---
 
 # Copilot
