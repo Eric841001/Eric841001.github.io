@@ -2,6 +2,7 @@
 id: m365-reference-architecture
 title: Microsoft 365 Reference Architecture
 sidebar_label: M365 Reference Architecture
+description: Microsoft 365 reference architecture for Entra ID, Exchange, Teams, SharePoint, OneDrive, Security, Purview, Copilot readiness and governance.
 ---
 
 # Microsoft 365 Reference Architecture
@@ -15,6 +16,14 @@ Enterprise success requires an integrated architecture spanning identity, collab
 This reference architecture provides a standardized framework for Microsoft 365 modernization, security transformation, migration and Copilot readiness programs.
 
 The objective is to establish a scalable, secure and operationally sustainable digital workplace platform that aligns with business objectives while reducing operational complexity and security risk.
+
+---
+
+## 한국어 요약
+
+Microsoft 365 Reference Architecture는 Exchange, Teams, SharePoint, OneDrive를 개별 서비스로 보는 것이 아니라 Entra ID, Intune, Defender, Purview, Copilot readiness, governance와 연결된 enterprise digital workplace architecture로 설계하는 방식입니다.
+
+핵심은 생산성 도구를 빠르게 배포하는 것이 아니라 identity, device, data, security, collaboration, adoption, operation이 함께 작동하는 운영 가능한 플랫폼을 만드는 것입니다.
 
 ---
 
@@ -307,6 +316,44 @@ Recommended phased approach:
 
 ---
 
+## Decision Checklist
+
+| Decision | Recommended Question |
+|---|---|
+| Tenant model | Is the tenant designed for global, subsidiary or M&A requirements? |
+| Identity baseline | Are MFA, Conditional Access, guest access and PIM standards defined? |
+| Collaboration model | How are Teams, SharePoint sites, groups and external sharing governed? |
+| Security baseline | Which Defender, Intune and Purview controls are mandatory before rollout? |
+| Copilot readiness | Which SharePoint permissions, labels and DLP controls must be remediated first? |
+| Operating model | Who owns lifecycle, policy, incidents, support and continuous improvement? |
+
+---
+
+## Anti-Patterns
+
+- Deploying Microsoft 365 as only email and collaboration tools
+- Enabling Teams or SharePoint broadly without lifecycle ownership
+- Treating external sharing as a one-time setting instead of a governance process
+- Assigning Copilot licenses before permission and data readiness review
+- Operating Defender and Purview as separate tools without integrated reporting
+- Measuring platform success only by active users or license assignment
+
+---
+
+## Delivery Artifacts
+
+- Microsoft 365 target-state architecture
+- Tenant governance model
+- Identity and Conditional Access baseline
+- Teams and SharePoint lifecycle policy
+- External sharing and guest access policy
+- Purview label and DLP readiness matrix
+- Copilot readiness assessment
+- Microsoft 365 operating model and RACI
+- Executive platform roadmap
+
+---
+
 ## Risks and Considerations
 
 | Risk | Impact | Mitigation |
@@ -320,10 +367,23 @@ Recommended phased approach:
 
 ---
 
+## 검색 키워드
+
+- Microsoft 365 reference architecture
+- Microsoft 365 enterprise architecture
+- Entra ID Conditional Access
+- Teams SharePoint governance
+- Microsoft Purview DLP
+- Microsoft 365 Copilot readiness
+- Microsoft 365 보안 아키텍처
+- Microsoft 365 거버넌스
+
+---
+
 ## References
 
-- Microsoft Learn
-- Microsoft Cloud Adoption Framework
-- Microsoft Well-Architected Framework
-- Microsoft Zero Trust Guidance
-- Microsoft 365 Enterprise Documentation
+- [Security Reference Architecture](./security-reference-architecture)
+- [Copilot Architecture](./copilot-architecture)
+- [Governance Architecture](./governance-architecture)
+- [Migration Architecture](./migration-architecture)
+- [Executive Architecture Blueprint](./executive-architecture-blueprint)

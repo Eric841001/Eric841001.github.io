@@ -95,6 +95,25 @@ For customer workshops, use this sequence:
 6. Convert decisions into proposal scope, SOW, WBS and risk register.
 7. Agree on pilot, rollout and operating model.
 
+## Executive Anti-Patterns
+
+- Starting with product features before business outcomes are agreed
+- Discussing Copilot without data, identity and security readiness
+- Building an architecture without delivery artifacts such as SOW, WBS and risk register
+- Treating governance as a policy document instead of an operating rhythm
+- Measuring success only by deployment completion rather than adoption, risk reduction and business value
+
+## Executive Delivery Artifacts
+
+- Executive architecture one-page brief
+- Business outcome and success metric definition
+- Target-state architecture diagram
+- Governance decision log
+- Security and data readiness summary
+- Copilot or Azure readiness roadmap
+- Proposal scope, SOW, WBS and risk register
+- Executive steering committee status pack
+
 ## 검색 키워드
 
 이 문서는 다음과 같은 검색어와 관련됩니다.
