@@ -1,4 +1,5 @@
-﻿import React from 'react';
+import React from 'react';
+import Head from '@docusaurus/Head';
 
 import HeroSection from '../home/HeroSection';
 import PlatformStats from '../home/PlatformStats';
@@ -13,32 +14,103 @@ import OperatingModel from '../home/OperatingModel';
 import EnterpriseRoadmap from '../home/EnterpriseRoadmap';
 import CTASection from '../home/CTASection';
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://eric841001.github.io/#website',
+      url: 'https://eric841001.github.io/',
+      name: 'Youngsun Kang Enterprise Microsoft Knowledge Center',
+      description:
+        'Enterprise Microsoft architecture knowledge center covering Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, Proposal assets and customer success reference patterns.',
+      inLanguage: ['en', 'ko'],
+      publisher: {
+        '@id': 'https://eric841001.github.io/#person',
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://eric841001.github.io/#person',
+      name: 'Youngsun Kang',
+      alternateName: ['Kang Youngsun', 'Youngsun Kang'],
+      url: 'https://eric841001.github.io/',
+      sameAs: ['https://github.com/Eric841001'],
+      jobTitle: 'Enterprise Microsoft Architect',
+      knowsAbout: [
+        'Microsoft 365 Architecture',
+        'Microsoft Security',
+        'Microsoft Copilot',
+        'AI Agents',
+        'Azure Architecture',
+        'Microsoft Purview',
+        'Microsoft Defender',
+        'Microsoft Entra ID',
+        'Microsoft Intune',
+        'Migration Architecture',
+        'Proposal and SOW Design',
+      ],
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': 'https://eric841001.github.io/#professional-service',
+      name: 'Youngsun Kang Enterprise Architecture Portfolio',
+      url: 'https://eric841001.github.io/',
+      areaServed: ['Korea', 'Enterprise Microsoft Customers'],
+      serviceType: [
+        'Microsoft 365 Architecture',
+        'Microsoft Security Architecture',
+        'Copilot Readiness and Governance',
+        'Azure Landing Zone Architecture',
+        'Microsoft 365 Migration Planning',
+        'Enterprise Proposal and Delivery Assets',
+      ],
+    },
+  ],
+};
+
 export default function Home() {
   return (
-    <main>
-      <HeroSection />
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Youngsun Kang Enterprise Microsoft Knowledge Center for Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, SOW and WBS consulting assets."
+        />
+        <meta
+          name="keywords"
+          content="Youngsun Kang, Microsoft 365 architecture, Microsoft Copilot adoption, Microsoft Security, Microsoft Purview, Microsoft Defender, Azure Landing Zone, AI Agent Architecture, SOW, WBS, Microsoft 365 migration"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Head>
 
-      <PlatformStats />
+      <main>
+        <HeroSection />
 
-      <CustomerScenarios />
+        <PlatformStats />
 
-      <ExecutiveDashboard />
+        <CustomerScenarios />
 
-      <DocsQuickAccess />
+        <ExecutiveDashboard />
 
-      <FeatureCards />
+        <DocsQuickAccess />
 
-      <KnowledgeGrid />
+        <FeatureCards />
 
-      <LatestArticles />
+        <KnowledgeGrid />
 
-      <FeaturedTemplates />
+        <LatestArticles />
 
-      <OperatingModel />
+        <FeaturedTemplates />
 
-      <EnterpriseRoadmap />
+        <OperatingModel />
 
-      <CTASection />
-    </main>
+        <EnterpriseRoadmap />
+
+        <CTASection />
+      </main>
+    </>
   );
 }

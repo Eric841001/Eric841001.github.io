@@ -12,6 +12,7 @@
       collapsed: false,
       items: [
         'knowledge-center/overview',
+        'search/enterprise-microsoft-architecture-keywords',
         'knowledge-center/exchange-online-download-restriction',
         'knowledge-center/exchange-online-message-recall-purge',
         'knowledge-center/exchange-online-omev2-remove',
