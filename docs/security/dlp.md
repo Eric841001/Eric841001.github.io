@@ -1,5 +1,6 @@
 ---
 title: Data Loss Prevention
+description: Microsoft Purview Data Loss Prevention guide for policy design, sensitive information types, endpoint DLP, user coaching, exceptions and Copilot data protection.
 ---
 
 # Data Loss Prevention
@@ -54,6 +55,59 @@ Advanced DLP across Microsoft 365 workloads and endpoints may require higher com
 - Route alerts to a named review owner.
 - Keep policy exceptions time-bound and auditable.
 
+## Decision Checklist
+
+| Decision | Recommended Question |
+|---|---|
+| Data scope | Which sensitive data categories require DLP protection? |
+| Workload scope | Should policies cover Exchange, Teams, SharePoint, OneDrive and endpoint? |
+| Enforcement mode | Which scenarios start in audit, warn or block mode? |
+| Exception model | Who approves temporary exceptions and how are they reviewed? |
+| User coaching | What policy tip explains the business reason to users? |
+| Alert review | Who reviews DLP alerts and tunes false positives? |
+
+## Anti-Patterns
+
+- Starting with broad block policies before audit evidence exists
+- Designing DLP without business data owners
+- Ignoring user education and policy tips
+- Treating false positives as a reason to abandon DLP instead of tuning
+- Separating DLP design from Copilot data protection planning
+
+## Delivery Artifacts
+
+- DLP policy design matrix
+- Sensitive information type mapping
+- Endpoint DLP scenario plan
+- Exception and approval workflow
+- Alert review and tuning runbook
+- Copilot data protection readiness summary
+
+## Customer Success Pattern
+
+| Industry | Scenario | Pattern |
+|---|---|---|
+| Financial Services | Customer data protection | Audit-first rollout, high-confidence block policy and exception workflow |
+| Manufacturing | Intellectual property protection | Endpoint DLP and SharePoint external sharing review |
+| Retail | Personal data control | Policy tips, user education and staged enforcement |
+
 ## Lessons Learned
 
 DLP programs fail when policies are enforced before users understand the business reason. A phased approach with user tips, pilot groups and evidence-based tuning produces better adoption.
+
+## 검색 키워드
+
+- Microsoft Purview DLP
+- Data Loss Prevention policy
+- Endpoint DLP
+- Microsoft 365 DLP
+- Copilot data protection
+- Microsoft 365 데이터 유출 방지
+- DLP 정책 설계
+
+## Related Documents
+
+- [Purview](./purview)
+- [Purview Information Protection](./purview-information-protection)
+- [Data Lifecycle Management](./data-lifecycle)
+- [Copilot Architecture](../architecture/copilot-architecture)
