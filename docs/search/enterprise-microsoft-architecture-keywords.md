@@ -86,6 +86,12 @@ The site also targets English enterprise architecture and delivery terms:
 - Customer Success Reference Patterns
 - Contact and Asset Request
 
+## Search Landing Pages
+
+- [Microsoft 365 Consulting](./microsoft-365-consulting)
+- [Copilot Adoption](./copilot-adoption)
+- [AI Agent Factory](./ai-agent-factory)
+
 ## Main Knowledge Areas
 
 | Area | What This Site Covers |
@@ -128,9 +134,9 @@ Visitors who arrive from an email signature usually need a fast path. The recomm
 
 | Search Intent | Natural Korean Query Examples | Suggested Destination |
 |---|---|---|
-| Microsoft 365 architecture | Microsoft 365 아키텍처, Microsoft 365 컨설팅, Microsoft 365 보안 설계 | [Architecture Center](../architecture/overview) |
-| Copilot adoption | Copilot 도입, Copilot readiness, Copilot 거버넌스 | [Copilot Overview](../copilot/overview) |
-| AI Agent operating model | Copilot Studio Agent, AI Agent Factory, AI Agent 거버넌스 | [Agentic AI Architecture](../copilot/agentic-ai-architecture) |
+| Microsoft 365 architecture | Microsoft 365 아키텍처, Microsoft 365 컨설팅, Microsoft 365 보안 설계 | [Microsoft 365 Consulting](./microsoft-365-consulting) |
+| Copilot adoption | Copilot 도입, Copilot readiness, Copilot 거버넌스 | [Copilot Adoption](./copilot-adoption) |
+| AI Agent operating model | Copilot Studio Agent, AI Agent Factory, AI Agent 거버넌스 | [AI Agent Factory](./ai-agent-factory) |
 | Security modernization | Entra ID Conditional Access, Defender XDR, Purview DLP, Intune 보안 | [Security Overview](../security/overview) |
 | Migration planning | Microsoft 365 migration, tenant to tenant migration, Google Workspace migration | [Migration Overview](../migration/overview) |
 | Proposal assets | Microsoft 365 제안서, SOW template, WBS template, risk register | [Proposal Center](../proposal/overview) |

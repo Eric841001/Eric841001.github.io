@@ -1,0 +1,153 @@
+.preview {
+  margin: 84px 0 44px;
+  padding: 72px 24px;
+  border-top: 1px solid #e5edf7;
+  border-bottom: 1px solid #e5edf7;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr);
+  gap: 42px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copy p {
+  margin: 0 0 10px;
+  color: #0f5ea8;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.copy h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.12;
+}
+
+.copy span {
+  display: block;
+  margin-top: 16px;
+  color: #4b5563;
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid #bdd7f1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0f5ea8;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.actions a:hover {
+  border-color: #0f5ea8;
+  text-decoration: none;
+}
+
+.diagram {
+  display: grid;
+  gap: 14px;
+}
+
+.layer {
+  padding: 18px;
+  border: 1px solid #d8e2ef;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+}
+
+.layerHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.layerHeader strong {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 8px;
+  background: #0f5ea8;
+  color: #ffffff;
+  font-size: 0.86rem;
+}
+
+.layerHeader h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 1.2rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.items span,
+.backbone span {
+  min-height: 38px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  background: #f3f7fb;
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.backbone {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  background: #eef2ff;
+}
+
+.backbone strong {
+  color: #1e1b4b;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 996px) {
+  .preview {
+    padding: 52px 18px;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .items {
+    grid-template-columns: 1fr;
+  }
+}

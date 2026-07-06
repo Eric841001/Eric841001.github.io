@@ -43,6 +43,17 @@ Typical request examples:
 - SOW, WBS, risk register or executive summary template
 - Sanitized customer success reference pattern
 
+## Request Menu
+
+| Request Type | Best For | Typical Output |
+|---|---|---|
+| Copilot Readiness Workbook | organizations preparing Microsoft 365 Copilot pilot or expansion | readiness checklist, adoption WBS, governance review items |
+| Security Baseline Checklist | teams reviewing Microsoft 365, Entra ID, Intune, Defender and Purview controls | control matrix, policy checklist, evidence pack outline |
+| Agent Factory Template | teams planning Copilot Studio, AI Agent or multi-agent initiatives | agent intake, prioritization matrix, lifecycle and ownership model |
+| SOW / WBS Sample | presales, proposal or delivery planning discussions | sanitized SOW structure, WBS pattern, assumptions and risk structure |
+| Migration Assessment Pack | Exchange, Google Workspace, file server or tenant migration planning | pre-assessment checklist, cutover plan, rollback and hypercare pattern |
+| Customer Success Pattern | executive briefing or reference discussion without customer names | anonymized industry pattern, approach, deliverables and lessons learned |
+
 ## Request Information to Include
 
 When requesting a document or discussion, include the following context:

@@ -13,6 +13,9 @@
       items: [
         'knowledge-center/overview',
         'search/enterprise-microsoft-architecture-keywords',
+        'search/microsoft-365-consulting',
+        'search/copilot-adoption',
+        'search/ai-agent-factory',
         'knowledge-center/mvp-community-research-map',
         'knowledge-center/exchange-online-download-restriction',
         'knowledge-center/exchange-online-message-recall-purge',
