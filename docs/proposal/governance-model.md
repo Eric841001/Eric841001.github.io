@@ -88,7 +88,7 @@ flowchart TB
 
 ## 문서 요청 안내
 
-Editable governance templates are not published directly. To request a customer-ready governance model, contact **Youngsun Kang** with the project type, target workload and proposal purpose.
+Editable governance templates are not published directly. To request a customer-ready governance model, use [Contact and Asset Request](../contact) with the project type, target workload and proposal purpose.
 
 ## 검색 키워드
 

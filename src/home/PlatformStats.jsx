@@ -8,14 +8,14 @@ const stats = [
     description: 'M365, Azure, Security, Copilot, AI Agents, Migration, Licensing and Governance.',
   },
   {
-    value: '6',
+    value: '10+',
     title: 'Reference Patterns',
-    description: 'Anonymized success patterns across manufacturing, finance, logistics and enterprise groups.',
+    description: 'Anonymized patterns across manufacturing, finance, logistics, enterprise groups and AI programs.',
   },
   {
-    value: '30+',
-    title: 'Delivery Assets',
-    description: 'Playbooks, SOW, WBS, checklists, architecture notes and governance templates.',
+    value: '100+',
+    title: 'Knowledge Assets',
+    description: 'Architecture notes, playbooks, SOW, WBS, checklists, templates and governance guides.',
   },
   {
     value: 'Field',

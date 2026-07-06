@@ -72,7 +72,7 @@ Avoid this style:
 
 ## 문서 요청 안내
 
-Customer-ready executive summary samples are not published directly. To request a reusable executive summary template, contact **Youngsun Kang** with the target workload, industry and proposal objective.
+Customer-ready executive summary samples are not published directly. To request a reusable executive summary template, use [Contact and Asset Request](../contact) with the target workload, industry and proposal objective.
 
 ## 검색 키워드
 

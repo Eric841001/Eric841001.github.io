@@ -27,7 +27,7 @@ export default function ExecutiveDashboard() {
         {items.map((item) => (
           <Link key={item.title} to={item.path} className={styles.card}>
             <h3>{item.title}</h3>
-            <span>Open Asset →</span>
+            <span>Open Asset -&gt;</span>
           </Link>
         ))}
       </div>

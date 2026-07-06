@@ -10,7 +10,7 @@ This page provides a quick entry point to reusable enterprise consulting assets.
 
 Use the [Downloads Center](./downloads/overview) for structured templates, assessment assets and delivery workbooks.
 
-The public pages explain the asset structure. Editable files and customer-ready samples are not published directly. To request reusable documents, contact **Youngsun Kang** through GitHub or the profile contact channels with the intended use case.
+The public pages explain the asset structure. Editable files and customer-ready samples are not published directly. To request reusable documents, contact **Youngsun Kang** through [Contact and Asset Request](./contact) with the intended use case.
 
 ## 한국어 요약
 
@@ -33,6 +33,7 @@ Downloads 페이지는 실제 파일을 직접 배포하기보다 consulting ass
 3. Use SOW and WBS templates to align scope, deliverables, timeline and acceptance.
 4. Use Risk Register to maintain decision visibility during delivery.
 5. Request editable templates only after confirming the target scenario and confidentiality boundary.
+6. Use [Contact and Asset Request](./contact) when you need a sanitized or reusable document sample.
 
 ## Request Guidance
 

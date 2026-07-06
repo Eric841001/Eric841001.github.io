@@ -23,7 +23,7 @@ const structuredData = {
       url: 'https://eric841001.github.io/',
       name: 'Youngsun Kang Enterprise Microsoft Knowledge Center',
       description:
-        'Enterprise Microsoft architecture knowledge center covering Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, Proposal assets and customer success reference patterns.',
+        'Enterprise Microsoft architecture knowledge center covering Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, Proposal assets, delivery templates and customer success reference patterns.',
       inLanguage: ['en', 'ko'],
       publisher: {
         '@id': 'https://eric841001.github.io/#person',
@@ -35,7 +35,10 @@ const structuredData = {
       name: 'Youngsun Kang',
       alternateName: ['Kang Youngsun', 'Youngsun Kang'],
       url: 'https://eric841001.github.io/',
-      sameAs: ['https://github.com/Eric841001'],
+      sameAs: [
+        'https://github.com/Eric841001',
+        'https://www.linkedin.com/in/young-sun-kang-a51b26356',
+      ],
       jobTitle: 'Enterprise Microsoft Architect',
       knowsAbout: [
         'Microsoft 365 Architecture',
@@ -63,6 +66,7 @@ const structuredData = {
         'Copilot Readiness and Governance',
         'Azure Landing Zone Architecture',
         'Microsoft 365 Migration Planning',
+        'Copilot Studio and AI Agent Workshops',
         'Enterprise Proposal and Delivery Assets',
       ],
     },
@@ -75,7 +79,7 @@ export default function Home() {
       <Head>
         <meta
           name="description"
-          content="Youngsun Kang Enterprise Microsoft Knowledge Center for Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, SOW and WBS consulting assets."
+          content="Youngsun Kang Enterprise Microsoft Knowledge Center for Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, SOW, WBS, delivery templates and anonymized customer success patterns."
         />
         <meta
           name="keywords"

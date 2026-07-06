@@ -6,22 +6,23 @@ export default function CTASection() {
   return (
     <section className={styles.cta}>
       <div className={styles.inner}>
-        <p className={styles.label}>Next Action</p>
+        <p className={styles.label}>For Visitors from Email Signature</p>
 
-        <h2>Start building reusable enterprise consulting assets.</h2>
+        <h2>Review the portfolio, then request the right consulting asset.</h2>
 
         <span>
-          Move from one-time proposal work to a structured Microsoft Enterprise
-          Consulting Platform that supports presales, architecture, delivery and customer enablement.
+          Public pages explain the architecture, governance and delivery approach. Editable
+          templates or customer-ready samples can be shared after confirming the use case,
+          confidentiality boundary and target Microsoft workload.
         </span>
 
         <div className={styles.actions}>
-          <Link className={styles.primary} to="/knowledge/proposal/overview">
-            Open Proposal Center
+          <Link className={styles.primary} to="/knowledge/contact">
+            Contact / Request Assets
           </Link>
 
-          <Link className={styles.secondary} to="/knowledge/toolkit/overview">
-            Explore Toolkit
+          <Link className={styles.secondary} to="/knowledge/projects/customer-success-reference-patterns">
+            View Success References
           </Link>
         </div>
       </div>

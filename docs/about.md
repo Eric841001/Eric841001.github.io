@@ -50,6 +50,7 @@ The references on this site are anonymized. Customer names, project identifiers 
 | Enterprise group | Entra ID, Intune, multi-tenant governance, device compliance and operating model |
 | Construction and engineering | file collaboration modernization, SharePoint and Teams information architecture |
 | Healthcare and life sciences | M365 deployment, policy workbook, administrator guide and operational transition |
+| Enterprise AI programs | Copilot Studio workshops, AI Agent portfolio discovery, Agent Factory operating model and governance |
 
 ## Microsoft MVP Journey
 
@@ -80,12 +81,16 @@ The roadmap is focused on public contribution quality rather than title chasing.
 - [Executive Architecture Blueprint](./architecture/executive-architecture-blueprint)
 - [MVP and Community Research Map](./knowledge-center/mvp-community-research-map)
 - [Customer Success Reference Patterns](./projects/customer-success-reference-patterns)
+- [Enterprise AI Agent Factory Case Study](./projects/case-study-enterprise-ai-agent-factory)
 - [Copilot Governance](./copilot/governance)
 - [Security Reference Architecture](./architecture/security-reference-architecture)
 - [Proposal Center](./proposal/overview)
+- [Contact and Asset Request](./contact)
 
 ## Connect
 
 - GitHub: [https://github.com/Eric841001](https://github.com/Eric841001)
+- LinkedIn: [Youngsun Kang](https://www.linkedin.com/in/young-sun-kang-a51b26356)
 - Knowledge Center: [https://eric841001.github.io](https://eric841001.github.io)
+- Contact / Asset Request: [Contact](./contact)
 - Focus: Microsoft 365, Security, Copilot, AI Agents, Azure and Enterprise Architecture

@@ -10,7 +10,7 @@ The Downloads Center organizes reusable consulting assets that can support presa
 
 The public pages describe the structure and purpose of each asset. Customer-specific versions, editable templates and delivery-ready documents are intentionally not posted publicly because they may require context, tailoring and confidentiality review.
 
-For access to reusable templates or sample deliverables, contact **Youngsun Kang** through GitHub or the profile contact channels. The documents can be shared after confirming the intended use case, customer context and confidentiality boundary.
+For access to reusable templates or sample deliverables, contact **Youngsun Kang** through [Contact and Asset Request](../contact). The documents can be shared after confirming the intended use case, customer context and confidentiality boundary.
 
 ## Sharing Policy
 
@@ -47,7 +47,7 @@ This approach keeps the Knowledge Center useful while avoiding accidental exposu
 
 1. Review the public asset pattern.
 2. Identify the scenario: Microsoft 365, Security, Copilot, Azure, Migration or Proposal.
-3. Contact Youngsun Kang with the intended use case.
+3. Contact Youngsun Kang through [Contact and Asset Request](../contact) with the intended use case.
 4. Receive a sanitized or reusable version where appropriate.
 5. Tailor the document to the customer environment before use.
 

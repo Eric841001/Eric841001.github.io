@@ -63,7 +63,7 @@ Microsoft 365, Security, Copilot, Azure, Migration 프로젝트에서는 scope, 
 
 ## 문서 요청 안내
 
-The public page explains the SOW structure only. Editable SOW files and customer-ready samples are shared by request after confirming the project scenario and confidentiality boundary. Contact **Youngsun Kang** through the profile contact channels.
+The public page explains the SOW structure only. Editable SOW files and customer-ready samples are shared by request after confirming the project scenario and confidentiality boundary. Use [Contact and Asset Request](../contact) to request a reusable version.
 
 ## 검색 키워드
 

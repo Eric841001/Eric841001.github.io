@@ -73,7 +73,7 @@ export default function KnowledgeGrid() {
               ))}
             </div>
 
-            <strong>Open Documentation →</strong>
+            <strong>Open Documentation -&gt;</strong>
           </Link>
         ))}
       </div>

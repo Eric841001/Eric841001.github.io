@@ -67,7 +67,7 @@ export default function FeaturedTemplates() {
 
             <p>{template.description}</p>
 
-            <strong>Open Template →</strong>
+            <strong>Open Template -&gt;</strong>
           </Link>
         ))}
       </div>

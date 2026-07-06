@@ -1,6 +1,6 @@
 ﻿module.exports = {
   title: 'Youngsun Kang | Microsoft 365, Security, Copilot & AI Architect',
-  tagline: 'Enterprise Microsoft Architecture, Security, Copilot and AI Agent Knowledge Center',
+  tagline: 'Enterprise Microsoft Architecture, Security, Copilot, AI Agent and Delivery Asset Knowledge Center',
   favicon: 'img/favicon.ico',
 
   url: 'https://eric841001.github.io',
@@ -63,7 +63,7 @@
       {
         name: 'description',
         content:
-          'Youngsun Kang Enterprise Microsoft Architecture portfolio covering Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Proposal assets and anonymized customer success references.',
+          'Youngsun Kang Enterprise Microsoft Architecture portfolio covering Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Proposal assets, delivery templates and anonymized customer success references.',
       },
       {
         name: 'keywords',
@@ -85,6 +85,7 @@
         {to: '/knowledge/proposal/overview', label: 'Proposal Center', position: 'left'},
         {type: 'search', position: 'right'},
         {to: '/knowledge/about', label: 'About', position: 'right'},
+        {to: '/knowledge/contact', label: 'Contact', position: 'right'},
         {href: 'https://github.com/Eric841001', label: 'GitHub', position: 'right'},
       ],
     },
@@ -103,6 +104,8 @@
           title: 'Consulting Assets',
           items: [
             {label: 'Proposal Center', to: '/knowledge/proposal/overview'},
+            {label: 'Downloads Center', to: '/knowledge/downloads/overview'},
+            {label: 'Contact / Request Assets', to: '/knowledge/contact'},
             {label: 'About', to: '/knowledge/about'},
           ],
         },
@@ -110,6 +113,7 @@
           title: 'Connect',
           items: [
             {label: 'GitHub', href: 'https://github.com/Eric841001'},
+            {label: 'LinkedIn', href: 'https://www.linkedin.com/in/young-sun-kang-a51b26356'},
           ],
         },
       ],

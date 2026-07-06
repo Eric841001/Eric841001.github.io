@@ -22,7 +22,8 @@ export default function HeroSection() {
 
           <p className={styles.subtitle}>
             A field-tested Microsoft knowledge platform for enterprise architecture,
-            security governance, Copilot adoption, migration planning and consulting delivery.
+            security governance, Copilot adoption, AI Agent strategy, migration planning
+            and consulting delivery.
           </p>
 
           <p className={styles.byline}>
@@ -36,6 +37,10 @@ export default function HeroSection() {
 
             <Link className={styles.secondaryButton} to="/knowledge/knowledge-center/overview">
               Explore Knowledge Center
+            </Link>
+
+            <Link className={styles.secondaryButton} to="/knowledge/contact">
+              Contact / Request Assets
             </Link>
           </div>
 
@@ -69,6 +74,7 @@ export default function HeroSection() {
               <li>Readiness assessment</li>
               <li>Reference architecture</li>
               <li>SOW, WBS and risk register</li>
+              <li>Anonymized customer success patterns</li>
               <li>Executive governance roadmap</li>
             </ul>
           </div>
