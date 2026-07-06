@@ -1,6 +1,7 @@
 ---
 id: multi-tenant-governance-strategy
 title: Multi-Tenant Governance Strategy
+description: "Multi Tenant Governance Strategy - Multi tenant governance is required when an enterprise group, holding company or acquisition driven organization..."
 sidebar_label: Multi-Tenant Governance Strategy
 sidebar_position: 6
 ---

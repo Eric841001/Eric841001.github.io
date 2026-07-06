@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Migration
+description: "Migration - This Migration section provides enterprise migration guidance for Microsoft 365, Exchange Online, Google Workspace, file server,..."
 ---
 
 # Migration

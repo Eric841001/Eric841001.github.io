@@ -1,5 +1,6 @@
 ---
 title: E3 vs E5
+description: "Microsoft 365 E3 vs E5 - Microsoft 365 E3 provides the enterprise productivity, identity, device and collaboration foundation. Microsoft 365 E5 adds..."
 ---
 
 # Microsoft 365 E3 vs E5

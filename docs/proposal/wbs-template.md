@@ -1,3 +1,8 @@
+---
+title: "Work Breakdown Structure"
+description: "Work Breakdown Structure - The WBS is the delivery control layer that connects proposal scope, technical work, acceptance criteria and project governance."
+---
+
 # Work Breakdown Structure
 
 The WBS is the delivery control layer that connects proposal scope, technical work, acceptance criteria and project governance.

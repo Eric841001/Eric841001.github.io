@@ -1,6 +1,7 @@
 ---
 id: security-modernization-playbook
 title: Security Modernization Playbook
+description: "Security Modernization Playbook - Security modernization is not a product deployment initiative."
 sidebar_label: Security Modernization
 ---
 

@@ -1,6 +1,7 @@
-﻿---
+---
 id: tenant-to-tenant
 title: Microsoft 365 Tenant-to-Tenant Migration Playbook
+description: "Microsoft 365 Tenant to Tenant Migration Playbook - Tenant to Tenant Migration is the process of moving users, identities, mailboxes, files,..."
 sidebar_label: Tenant-to-Tenant Migration
 ---
 

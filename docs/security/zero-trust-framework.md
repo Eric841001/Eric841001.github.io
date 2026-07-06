@@ -1,6 +1,7 @@
-﻿---
+---
 id: zero-trust-framework
 title: Zero Trust Reference Architecture
+description: "Zero Trust Reference Architecture - It is an enterprise security architecture based on continuous verification, least privilege access, device trust,..."
 sidebar_label: Zero Trust Framework
 ---
 

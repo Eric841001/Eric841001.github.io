@@ -1,6 +1,7 @@
 ---
 id: migration-checklist
 title: Migration Checklist
+description: "Enterprise Migration Checklist - This checklist provides a standardized migration validation framework for Microsoft 365 transformation, tenant to..."
 sidebar_label: Migration Checklist
 ---
 

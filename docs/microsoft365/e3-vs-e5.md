@@ -1,6 +1,7 @@
-﻿---
+---
 id: e3-vs-e5
 title: Microsoft 365 E3 vs E5 Enterprise Decision Guide
+description: "Microsoft 365 E3 vs E5 Enterprise Decision Guide - Microsoft 365 E3 and E5 selection should not be evaluated only by license price."
 sidebar_label: E3 vs E5 Decision Guide
 ---
 

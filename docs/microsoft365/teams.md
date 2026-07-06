@@ -1,6 +1,7 @@
-﻿---
+---
 id: teams
 title: Microsoft Teams Governance Framework
+description: "Microsoft Teams Governance Framework - Microsoft Teams is the primary collaboration platform within Microsoft 365."
 sidebar_label: Teams Governance
 ---
 

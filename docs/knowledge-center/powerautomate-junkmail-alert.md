@@ -1,6 +1,7 @@
 ---
 id: powerautomate-junkmail-alert
 title: Power Automate Junk Mail Alert
+description: "Power Automate Junk Mail Alert - This guide describes how Power Automate can monitor Exchange Online Junk Email folders and generate automated..."
 sidebar_label: Junk Mail Alert
 ---
 

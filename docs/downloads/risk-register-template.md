@@ -1,6 +1,7 @@
 ---
 id: risk-register-template
 title: Risk Register Template
+description: "Risk Register Template - This Risk Register provides a structured framework for identifying, assessing, tracking and mitigating project risks."
 sidebar_label: Risk Register
 ---
 

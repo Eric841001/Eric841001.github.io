@@ -1,6 +1,7 @@
 ---
 sidebar_position: 99
 title: About Youngsun Kang
+description: "About Youngsun Kang - Youngsun Kang is an enterprise Microsoft architect focused on Microsoft 365, Security, Copilot, Azure, AI agents, presales..."
 ---
 
 # About Youngsun Kang

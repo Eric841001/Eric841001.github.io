@@ -1,5 +1,6 @@
 ---
 title: Business Premium
+description: "Microsoft 365 Business Premium - Microsoft 365 Business Premium is a strong option for small and mid sized organizations that need productivity,..."
 ---
 
 # Microsoft 365 Business Premium

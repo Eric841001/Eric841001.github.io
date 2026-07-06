@@ -1,6 +1,7 @@
 ---
 id: architecture-builder
 title: Architecture Builder
+description: "Enterprise Architecture Builder - This architecture builder provides a standardized framework for designing Microsoft 365, Azure, Security and Copilot..."
 sidebar_label: Architecture Builder
 ---
 

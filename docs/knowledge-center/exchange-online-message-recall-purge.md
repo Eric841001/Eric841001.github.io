@@ -1,6 +1,7 @@
 ---
 id: exchange-online-message-recall-purge
 title: Exchange Online Message Search and Purge
+description: "Exchange Online Message Search and Purge - This guide describes how to search and purge incorrectly sent or risky email messages from Exchange Online..."
 sidebar_label: EXO Message Search and Purge
 ---
 

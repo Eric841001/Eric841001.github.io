@@ -1,6 +1,7 @@
 ---
 id: risk-register
 title: Risk Register
+description: "Risk Register - A Risk Register is used to identify, assess, track and mitigate risks throughout a Microsoft cloud consulting engagement."
 sidebar_label: Risk Register
 ---
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Playbooks
+description: "Playbooks - The Playbooks section provides repeatable delivery guidance for Microsoft 365 assessment, Copilot readiness, Intune deployment, security..."
 ---
 
 # Playbooks

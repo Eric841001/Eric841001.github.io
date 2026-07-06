@@ -1,6 +1,7 @@
-﻿---
+---
 id: security-architecture
 title: Enterprise Security Architecture
+description: "Enterprise Security Architecture - Modern enterprise security requires an integrated platform approach rather than isolated security products."
 sidebar_label: Security Architecture
 ---
 

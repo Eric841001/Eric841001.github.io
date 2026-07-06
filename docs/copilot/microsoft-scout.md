@@ -1,6 +1,7 @@
 ---
 id: microsoft-scout
 title: Microsoft Scout
+description: "Microsoft Scout - Microsoft Scout is Microsoft's always on personal agent concept introduced for the next stage of Microsoft 365 AI experiences."
 sidebar_label: Microsoft Scout
 ---
 

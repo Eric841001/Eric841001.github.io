@@ -1,6 +1,7 @@
 ---
 id: discovery-questionnaire
 title: Discovery Questionnaire
+description: "Discovery Questionnaire - This questionnaire is used during discovery workshops for Microsoft 365, Azure, Security, Copilot and migration engagements."
 sidebar_label: Discovery Questionnaire
 ---
 

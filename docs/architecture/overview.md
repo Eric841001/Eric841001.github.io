@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Architecture Center
+description: "Architecture Center - The Architecture Center organizes Microsoft cloud reference architectures, design patterns and decision frameworks for enterprise..."
 ---
 
 # Architecture Center

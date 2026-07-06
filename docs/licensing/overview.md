@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Licensing
+description: "Licensing - This Licensing section helps compare Microsoft 365, Security, Compliance, Entra, Intune, Defender, Purview and Copilot licensing decisions..."
 ---
 
 # Licensing

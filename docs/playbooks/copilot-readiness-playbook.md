@@ -1,6 +1,7 @@
 ---
 id: copilot-readiness-playbook
 title: Copilot Readiness Playbook
+description: "Microsoft 365 Copilot Readiness Playbook - Microsoft 365 Copilot readiness is not a technical deployment activity."
 sidebar_label: Copilot Readiness
 ---
 

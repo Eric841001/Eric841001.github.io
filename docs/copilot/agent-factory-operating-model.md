@@ -1,6 +1,7 @@
 ---
 id: agent-factory-operating-model
 title: Agent Factory and AI Operating Model
+description: "Agent Factory and AI Operating Model - The challenge is not creating one successful agent."
 sidebar_label: Agent Factory
 ---
 

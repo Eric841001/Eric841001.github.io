@@ -1,6 +1,7 @@
 ---
 id: m365-assessment-playbook
 title: Microsoft 365 Assessment Playbook
+description: "Microsoft 365 Assessment Playbook - The Microsoft 365 Assessment Playbook provides a structured methodology for evaluating tenant configuration,..."
 sidebar_label: M365 Assessment
 ---
 

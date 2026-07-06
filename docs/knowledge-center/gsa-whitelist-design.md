@@ -1,6 +1,7 @@
 ---
 id: gsa-whitelist-design
 title: Global Secure Access Whitelist Design
+description: "Global Secure Access Whitelist Design - This document describes how Microsoft Global Secure Access (GSA) can be used to enforce tenant restrictions,..."
 sidebar_label: GSA Whitelist Design
 ---
 

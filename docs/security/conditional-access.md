@@ -1,4 +1,4 @@
-﻿---
+---
 id: conditional-access
 title: Conditional Access
 sidebar_label: Conditional Access

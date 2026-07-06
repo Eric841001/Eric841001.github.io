@@ -1,6 +1,7 @@
 ---
 id: intune-deployment-playbook
 title: Intune Deployment Playbook
+description: "Microsoft Intune Deployment Playbook - Microsoft Intune provides a cloud native endpoint management platform for securing and managing corporate devices."
 sidebar_label: Intune Deployment
 ---
 

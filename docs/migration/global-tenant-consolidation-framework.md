@@ -1,6 +1,7 @@
 ---
 id: global-tenant-consolidation-framework
 title: Global Tenant Consolidation Framework
+description: "Global Tenant Consolidation Framework - Global tenant consolidation is not only a migration project."
 sidebar_label: Global Tenant Consolidation
 ---
 

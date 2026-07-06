@@ -1,6 +1,7 @@
 ---
 id: m365-assessment-workbook
 title: M365 Assessment Workbook
+description: "Microsoft 365 Assessment Workbook - This workbook provides a structured framework for assessing Microsoft 365 environments across identity,..."
 sidebar_label: Assessment Workbook
 ---
 

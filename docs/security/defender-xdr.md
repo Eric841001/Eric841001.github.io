@@ -1,6 +1,7 @@
-﻿---
+---
 id: defender-xdr
 title: Microsoft Defender XDR Architecture and SOC Operations Guide
+description: "Microsoft Defender XDR Architecture and SOC Operations Guide - Microsoft Defender XDR Architecture and SOC Operations Guide"
 sidebar_label: Defender XDR
 ---
 

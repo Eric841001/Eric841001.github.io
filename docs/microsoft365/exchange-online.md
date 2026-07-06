@@ -1,6 +1,7 @@
-﻿---
+---
 id: exchange-online
 title: Exchange Online Architecture and Migration Guide
+description: "Exchange Online Architecture and Migration Guide - Exchange Online is Microsoft's enterprise cloud messaging platform and serves as the foundation for..."
 sidebar_label: Exchange Online
 ---
 

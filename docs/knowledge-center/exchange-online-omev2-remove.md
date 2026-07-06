@@ -1,6 +1,7 @@
 ---
 id: exchange-online-omev2-remove
 title: Exchange Online OMEv2 and RMS Attachment Decryption Rule
+description: "Exchange Online OMEv2 and RMS Attachment Decryption Rule - Exchange Online OMEv2 and RMS Attachment Decryption Rule"
 sidebar_label: EXO OMEv2 Remove Rule
 ---
 

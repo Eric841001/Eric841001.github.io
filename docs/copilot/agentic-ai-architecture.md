@@ -1,6 +1,7 @@
 ---
 id: agentic-ai-architecture
 title: Agentic AI Architecture
+description: "Agentic AI Architecture - Agentic AI represents the shift from prompt based assistance to goal oriented, context aware and action capable AI systems."
 sidebar_label: Agentic AI Architecture
 ---
 

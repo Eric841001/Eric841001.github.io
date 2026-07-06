@@ -1,6 +1,7 @@
 ---
 id: downloads-sow-template
 title: SOW Template
+description: "Statement of Work (SOW) - Item Description Customer Project Name Project Sponsor Project Manager Start Date End Date Duration"
 sidebar_label: SOW Template
 ---
 

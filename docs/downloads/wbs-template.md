@@ -1,6 +1,7 @@
 ---
 id: downloads-wbs-template
 title: WBS Template
+description: "Work Breakdown Structure (WBS) Template - Item Description Customer Project Name Project Manager Start Date End Date Duration"
 sidebar_label: WBS Template
 ---
 

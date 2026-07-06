@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Toolkit
+description: "Toolkit - The Toolkit section contains practical assets for assessment, architecture, migration, licensing, prompt design and delivery planning."
 ---
 
 # Toolkit

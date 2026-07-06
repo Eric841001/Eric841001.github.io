@@ -1,6 +1,7 @@
-﻿---
+---
 id: purview-information-protection
 title: Microsoft Purview Information Protection and Data Governance Guide
+description: "Microsoft Purview Information Protection and Data Governance Guide - Microsoft Purview Information Protection and Data Governance Guide"
 sidebar_label: Purview Information Protection
 ---
 

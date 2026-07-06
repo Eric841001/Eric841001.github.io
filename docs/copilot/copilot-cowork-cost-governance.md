@@ -1,6 +1,7 @@
 ---
 id: copilot-cowork-cost-governance
 title: Copilot Cowork Cost and Governance Guide
+description: "Copilot Cowork Cost and Governance Guide - Microsoft 365 Copilot Cowork is not just another chat interface. It is an agentic work execution capability..."
 sidebar_label: Copilot Cowork Cost Governance
 ---
 

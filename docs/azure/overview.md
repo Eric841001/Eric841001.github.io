@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Azure
+description: "Azure - This Azure section focuses on enterprise cloud architecture patterns that commonly support Microsoft 365, Security, Copilot and migration programs."
 ---
 
 # Azure

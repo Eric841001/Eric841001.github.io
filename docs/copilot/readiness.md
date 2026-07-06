@@ -1,6 +1,7 @@
-﻿---
+---
 id: readiness
 title: Copilot Readiness Assessment Framework
+description: "Copilot Readiness Assessment Framework - Microsoft 365 Copilot adoption should not begin with license assignment."
 sidebar_label: Copilot Readiness
 ---
 

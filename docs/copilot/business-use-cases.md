@@ -1,6 +1,7 @@
 ---
 id: business-use-cases
 title: Copilot Business Use Cases
+description: "Copilot Business Use Cases - Microsoft 365 Copilot delivers measurable business value when aligned to real business processes."
 sidebar_label: Business Use Cases
 ---
 

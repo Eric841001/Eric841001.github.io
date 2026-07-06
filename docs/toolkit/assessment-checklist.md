@@ -1,6 +1,7 @@
 ---
 id: assessment-checklist
 title: Assessment Checklist
+description: "Assessment Checklist - This checklist provides a standardized assessment structure for Microsoft 365, Azure, Security, Copilot and migration projects."
 sidebar_label: Assessment Checklist
 ---
 

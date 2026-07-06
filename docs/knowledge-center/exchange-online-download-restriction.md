@@ -1,6 +1,7 @@
 ---
 id: exchange-online-download-restriction
 title: Exchange Online Attachment Download Restriction
+description: "Exchange Online Attachment Download Restriction - This guide describes how to restrict users from directly downloading email attachments from Outlook..."
 sidebar_label: EXO Attachment Download Restriction
 ---
 

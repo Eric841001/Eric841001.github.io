@@ -1,6 +1,7 @@
 ---
 id: copilot-studio
 title: Microsoft Copilot Studio
+description: "Microsoft Copilot Studio - Microsoft Copilot Studio is the enterprise platform for building, extending, deploying and governing AI agents."
 sidebar_label: Copilot Studio
 ---
 

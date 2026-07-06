@@ -1,6 +1,7 @@
 ---
 id: license-advisor
 title: License Advisor
+description: "Microsoft License Advisor - Microsoft licensing decisions should be aligned with business requirements, security objectives, compliance obligations and..."
 sidebar_label: License Advisor
 ---
 

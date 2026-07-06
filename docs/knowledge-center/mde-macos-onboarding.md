@@ -1,6 +1,7 @@
 ---
 id: mde-macos-onboarding
 title: Microsoft Defender for Endpoint macOS Onboarding
+description: "Microsoft Defender for Endpoint macOS Onboarding - This guide describes the onboarding process for macOS devices into Microsoft Defender for Endpoint..."
 sidebar_label: macOS Onboarding
 ---
 

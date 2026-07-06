@@ -1,6 +1,7 @@
 ---
 id: enterprise-ai-adoption-program
 title: Enterprise AI Adoption Program
+description: "Enterprise AI Adoption Program - The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent initiatives into a governed business..."
 sidebar_label: Enterprise AI Adoption Program
 sidebar_position: 5
 ---

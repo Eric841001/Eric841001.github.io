@@ -1,6 +1,7 @@
 ---
 id: excel-copilot-skills
 title: Excel Copilot Skills and Frontier Finance
+description: "Excel Copilot Skills and Frontier Finance - Microsoft has introduced Skills for Excel Copilot, enabling reusable task specific capabilities that extend..."
 sidebar_label: Excel Copilot Skills
 ---
 

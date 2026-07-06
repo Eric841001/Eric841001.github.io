@@ -1,6 +1,7 @@
 ---
 id: assessment
 title: Assessment Framework
+description: "Assessment Framework - The Assessment Framework is used to evaluate the current state of a customer environment before defining a Microsoft 365, Azure,..."
 sidebar_label: Assessment Framework
 ---
 

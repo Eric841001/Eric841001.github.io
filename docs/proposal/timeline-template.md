@@ -1,6 +1,7 @@
 ---
 id: timeline-template
 title: Timeline Template
+description: "Timeline Template - The Timeline Template provides a standard project schedule structure for Microsoft 365, Azure, Security, Copilot and migration..."
 sidebar_label: Timeline Template
 ---
 

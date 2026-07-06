@@ -1,6 +1,7 @@
-﻿---
+---
 id: sharepoint
 title: SharePoint Information Architecture Framework
+description: "SharePoint Information Architecture Framework - SharePoint Online should not be positioned as a simple file server replacement."
 sidebar_label: SharePoint
 ---
 

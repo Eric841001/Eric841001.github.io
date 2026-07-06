@@ -1,6 +1,7 @@
 ---
 id: prompt-library
 title: Prompt Library
+description: "Enterprise Prompt Library - This library contains reusable enterprise prompts designed for Microsoft consulting, architecture design, proposal..."
 sidebar_label: Prompt Library
 ---
 
@@ -11,6 +12,25 @@ sidebar_label: Prompt Library
 This library contains reusable enterprise prompts designed for Microsoft consulting, architecture design, proposal development, security assessment and Copilot transformation engagements.
 
 Prompts are intended to accelerate consulting delivery while maintaining consistent quality standards.
+
+Use these prompts as structured starting points, not as final customer deliverables. A consultant should always add customer context, industry constraints, current-state findings, risk decisions and implementation assumptions before sharing the output externally. For Microsoft terminology, keep product names such as Microsoft 365, Entra ID, Intune, Defender, Purview and Copilot in English, while writing the surrounding explanation in natural Korean or concise business English depending on the audience.
+
+## Prompt Quality Rules
+
+- define the role, audience and expected output format before asking for analysis
+- separate facts, assumptions, risks and recommendations
+- ask for tables only when comparison or decision tracking is needed
+- request executive summaries for leadership-facing outputs
+- remove customer names, tenant IDs, commercial pricing and confidential architecture details before reusing prompts
+- review generated content against Microsoft Learn and current customer requirements before publishing
+
+## Recommended Review Flow
+
+1. Draft the prompt with role, scope, audience and output structure.
+2. Run the prompt with sanitized customer context.
+3. Review technical accuracy, terminology and confidentiality.
+4. Convert the response into a customer-ready deliverable.
+5. Store reusable prompt patterns in this library only after removing sensitive details.
 
 ---
 

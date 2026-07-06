@@ -1,6 +1,7 @@
 ---
 id: tenant-to-tenant-migration-playbook
 title: Tenant-to-Tenant Migration Playbook
+description: "Tenant to Tenant Migration Playbook - Tenant to tenant migration is not a simple data transfer project."
 sidebar_label: Tenant Migration
 ---
 

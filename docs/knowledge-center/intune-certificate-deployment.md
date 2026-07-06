@@ -1,6 +1,7 @@
 ---
 id: intune-certificate-deployment
 title: Intune Trusted Certificate Deployment
+description: "Intune Trusted Certificate Deployment - Trusted Root CA certificates must be deployed before PKCS, SCEP, or imported certificate profiles can be used..."
 sidebar_label: Certificate Deployment
 ---
 
@@ -92,6 +93,20 @@ Verify:
 
 - Trusted Root Certification Authorities
 - Intermediate Certification Authorities
+
+---
+
+## Deployment Decision Points
+
+Certificate deployment should be treated as an identity and device trust dependency. Before assigning a Trusted Certificate profile broadly, confirm which downstream scenario needs the certificate: Wi-Fi, VPN, SCEP, PKCS, email signing, browser trust or line-of-business application access. The assignment scope should match that scenario rather than every managed device by default.
+
+Key decisions:
+
+- whether the certificate is required for user devices, shared devices or servers
+- whether the profile should target users, devices or dynamic groups
+- whether the CA chain requires both root and intermediate certificates
+- how renewal, revocation and CA rollover will be handled
+- who owns validation when certificate-dependent services fail
 
 ---
 

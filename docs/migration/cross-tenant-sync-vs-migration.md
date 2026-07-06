@@ -1,6 +1,7 @@
 ---
 id: cross-tenant-sync-vs-migration
 title: Cross-Tenant Synchronization vs Full Tenant Migration
+description: "Cross Tenant Synchronization vs Full Tenant Migration - Cross Tenant Synchronization vs Full Tenant Migration"
 sidebar_label: Cross-Tenant Sync vs Migration
 ---
 

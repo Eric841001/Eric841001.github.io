@@ -1,6 +1,7 @@
 ---
 id: change-management-playbook
 title: Change Management Playbook
+description: "Enterprise Change Management Playbook - Technology deployment does not guarantee business adoption."
 sidebar_label: Change Management
 ---
 

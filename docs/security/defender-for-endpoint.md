@@ -1,5 +1,6 @@
 ---
 title: Defender for Endpoint
+description: "Defender for Endpoint - Microsoft Defender for Endpoint provides endpoint detection, response, vulnerability management and attack surface reduction..."
 ---
 
 # Defender for Endpoint

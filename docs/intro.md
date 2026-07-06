@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Enterprise Microsoft Knowledge Center
+description: "Enterprise Microsoft Knowledge Center - This site is a practical Microsoft Enterprise Knowledge Center for architecture, presales, delivery and..."
 ---
 
 # Enterprise Microsoft Knowledge Center

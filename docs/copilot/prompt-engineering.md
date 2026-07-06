@@ -1,6 +1,7 @@
 ---
 id: prompt-engineering
 title: Enterprise Prompt Engineering Framework
+description: "Enterprise Prompt Engineering Framework - Prompt Engineering is the foundation of successful Microsoft Copilot adoption."
 sidebar_label: Prompt Engineering
 ---
 
