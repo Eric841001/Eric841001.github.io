@@ -40,6 +40,14 @@ Visitors may find this site through Korean search queries such as:
 - Microsoft 365 마이그레이션
 - Google Workspace Microsoft 365 전환
 - Tenant to Tenant Migration
+- Microsoft 365 라이선스 전략
+- Microsoft 365 E3 E5 비교
+- Copilot 라이선스 관리
+- Enterprise AI 도입 전략
+- Copilot Studio Agent 도입
+- AI Agent 거버넌스
+- Agent Factory 운영 모델
+- Microsoft 365 고객 성공 사례
 - SOW 템플릿
 - WBS 템플릿
 - 제안서 산출물
@@ -62,12 +70,17 @@ The site also targets English enterprise architecture and delivery terms:
 - Azure Landing Zone Architecture
 - AI Agent Architecture
 - Copilot Studio Agent Factory
+- Copilot Studio Agent Governance
+- Enterprise AI Adoption Program
+- Microsoft 365 License Optimization
+- Microsoft 365 E3 E5 Decision Guide
 - Microsoft 365 Migration Strategy
 - Google Workspace to Microsoft 365 Migration
 - SOW Template for Microsoft 365
 - WBS Template for Cloud Migration
 - Enterprise Architecture Reference
 - Customer Success Reference Patterns
+- Contact and Asset Request
 
 ## Main Knowledge Areas
 
@@ -92,6 +105,8 @@ The site also targets English enterprise architecture and delivery terms:
 - [Migration Overview](../migration/overview)
 - [Proposal Center](../proposal/overview)
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
+- [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
+- [Contact and Asset Request](../contact)
 
 ## Search Engine Notes
 
