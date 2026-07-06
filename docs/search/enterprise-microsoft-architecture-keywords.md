@@ -29,6 +29,10 @@ Visitors may find this site through Korean search queries such as:
 - Youngsun Kang Copilot
 - Microsoft 365 아키텍처
 - Microsoft 365 보안 설계
+- Microsoft 365 컨설팅
+- Microsoft 365 제안서
+- Microsoft 365 SOW
+- Microsoft 365 WBS
 - Microsoft Copilot 도입
 - Copilot 거버넌스
 - Copilot 준비도 진단
@@ -107,6 +111,30 @@ The site also targets English enterprise architecture and delivery terms:
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
 - [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
 - [Contact and Asset Request](../contact)
+
+## Signature Visitor Search Paths
+
+Visitors who arrive from an email signature usually need a fast path. The recommended starting points are:
+
+| Visitor Intent | Recommended Page |
+|---|---|
+| Understand overall capability | [Executive Architecture Blueprint](../architecture/executive-architecture-blueprint) |
+| Review customer success style | [Customer Success Reference Patterns](../projects/customer-success-reference-patterns) |
+| Explore Copilot and AI Agent practice | [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory) |
+| Request sample assets | [Contact and Asset Request](../contact) |
+| Find reusable templates | [Downloads Center](../downloads/overview) |
+
+## Korean Consulting Search Map
+
+| Search Intent | Natural Korean Query Examples | Suggested Destination |
+|---|---|---|
+| Microsoft 365 architecture | Microsoft 365 아키텍처, Microsoft 365 컨설팅, Microsoft 365 보안 설계 | [Architecture Center](../architecture/overview) |
+| Copilot adoption | Copilot 도입, Copilot readiness, Copilot 거버넌스 | [Copilot Overview](../copilot/overview) |
+| AI Agent operating model | Copilot Studio Agent, AI Agent Factory, AI Agent 거버넌스 | [Agentic AI Architecture](../copilot/agentic-ai-architecture) |
+| Security modernization | Entra ID Conditional Access, Defender XDR, Purview DLP, Intune 보안 | [Security Overview](../security/overview) |
+| Migration planning | Microsoft 365 migration, tenant to tenant migration, Google Workspace migration | [Migration Overview](../migration/overview) |
+| Proposal assets | Microsoft 365 제안서, SOW template, WBS template, risk register | [Proposal Center](../proposal/overview) |
+| Download request | Copilot readiness workbook, Microsoft 365 security baseline checklist | [Downloads Center](../downloads/overview) |
 
 ## Search Engine Notes
 

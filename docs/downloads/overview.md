@@ -35,6 +35,20 @@ This approach keeps the Knowledge Center useful while avoiding accidental exposu
 | Migration | define source inventory, batch plan, cutover and rollback | Exchange, Google Workspace, file server and tenant migration |
 | Governance | define owner model, policy workbook and operating rhythm | post-deployment operation and handover |
 
+## Requestable Asset Catalog
+
+The following assets are intentionally described publicly but shared only after contact. This protects customer confidentiality while still showing the practical structure of the Knowledge Center.
+
+| Asset | What It Helps With | Public Sharing Position |
+|---|---|---|
+| Copilot Readiness Workbook | data readiness, security readiness, use case prioritization and adoption planning | description public, editable workbook by request |
+| Agent Factory Operating Model Template | Copilot Studio and AI Agent portfolio governance, ownership and lifecycle model | description public, sanitized template by request |
+| Microsoft 365 Security Baseline Checklist | MFA, Conditional Access, Defender, Purview, Intune and admin role review | checklist structure public, editable version by request |
+| Exchange Online Security Review Template | mail flow, authentication, anti-phishing, transport rule and external sender review | methodology public, customer-ready version by request |
+| Migration Pre-Assessment Checklist | source inventory, identity, coexistence, cutover and rollback planning | structure public, workbook by request |
+| SOW / WBS / Risk Register Templates | proposal scope, timeline, workstream, assumption and risk alignment | sample structure public, editable files by request |
+| Executive Steering Committee Template | executive status, decision log, issue escalation and value tracking | format described publicly, template by request |
+
 ## Recommended Assets
 
 - [Discovery Questionnaire](./discovery-questionnaire)
@@ -51,6 +65,12 @@ This approach keeps the Knowledge Center useful while avoiding accidental exposu
 4. Receive a sanitized or reusable version where appropriate.
 5. Tailor the document to the customer environment before use.
 
+## Contact Path
+
+When requesting documents, include the intended scenario, customer industry, target Microsoft workload and preferred output format. Customer names, commercial details and confidential project information are not required for the first request.
+
+Start here: [Contact and Asset Request](../contact)
+
 ## Field-Informed Download Ideas
 
 These are recommended next additions based on recurring delivery patterns:
@@ -63,3 +83,15 @@ These are recommended next additions based on recurring delivery patterns:
 - Migration pre-assessment checklist
 - Cutover and rollback runbook
 - Executive steering committee status template
+
+## 검색 키워드
+
+- Microsoft 365 template
+- Copilot readiness workbook
+- Agent Factory template
+- Microsoft 365 SOW template
+- Microsoft 365 WBS template
+- risk register template
+- migration checklist
+- security baseline checklist
+- Microsoft 365 제안서 산출물

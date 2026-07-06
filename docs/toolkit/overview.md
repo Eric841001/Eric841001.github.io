@@ -9,6 +9,12 @@ The Toolkit section contains practical assets for assessment, architecture, migr
 
 These tools are designed to support repeatable consulting work. They help convert field knowledge into consistent discovery, design, proposal and implementation outputs.
 
+## 한국어 요약
+
+Toolkit은 제안, 진단, 아키텍처 설계, migration, licensing, delivery planning을 반복 가능한 산출물로 만들기 위한 실무 도구 모음입니다.
+
+고객에게 바로 공개하는 완성 문서가 아니라, workshop, assessment, SOW, WBS, risk register, architecture decision record를 빠르게 만들기 위한 컨설팅 운영 체계로 이해하면 됩니다.
+
 ## Toolkit Areas
 
 | Tool | Purpose |
@@ -26,6 +32,29 @@ These tools are designed to support repeatable consulting work. They help conver
 3. Use license advisor to map required capabilities to license options.
 4. Use migration checklist if workload movement or tenant consolidation is involved.
 5. Use prompt library to accelerate repeatable documentation work.
+
+## Consulting Workflow
+
+| Phase | Toolkit Use | Output |
+|---|---|---|
+| Discover | Assessment Checklist, Discovery Questionnaire | current-state view, risk list, stakeholder questions |
+| Design | Architecture Builder, License Advisor | target architecture, license decision, control model |
+| Propose | SOW, WBS, Risk Register patterns | delivery scope, timeline, assumptions, exclusions |
+| Deliver | Migration Checklist, Security Checklist | workstream plan, cutover plan, readiness evidence |
+| Handover | Governance and operations templates | owner model, policy rhythm, support transition |
+
+## Requestable Assets
+
+The public pages explain the structure and recommended usage. Editable source files can be requested through the [Downloads Center](../downloads/overview) after confirming the intended scenario and confidentiality boundary.
+
+Typical requestable assets include:
+
+- Copilot readiness workbook
+- Microsoft 365 assessment workbook
+- security baseline checklist
+- migration pre-assessment checklist
+- SOW / WBS / Risk Register templates
+- executive status and steering committee templates
 
 ## Recommended Reading
 
@@ -46,3 +75,14 @@ This toolkit is informed by recurring enterprise delivery patterns:
 - Entra ID and Intune implementation guides
 - migration pre-assessment and cutover planning
 - proposal SOW, WBS, risk and timeline structures
+
+## 검색 키워드
+
+- Microsoft 365 컨설팅 도구
+- Microsoft 365 assessment checklist
+- Copilot readiness workbook
+- Microsoft 365 SOW template
+- Microsoft 365 WBS template
+- migration checklist
+- security baseline checklist
+- proposal asset library
