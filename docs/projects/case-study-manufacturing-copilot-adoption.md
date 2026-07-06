@@ -3,11 +3,18 @@ id: case-study-manufacturing-copilot-adoption
 title: Manufacturing Copilot Adoption Case Study
 sidebar_label: Manufacturing Copilot Adoption
 sidebar_position: 7
+description: Anonymized manufacturing Copilot adoption case study covering readiness, governance, pilot planning, WBS, adoption metrics and value tracking.
 ---
 
 # Manufacturing Copilot Adoption Case Study
 
 This anonymized case study summarizes a manufacturing-sector Copilot adoption pattern. Customer names, internal project names and commercial details are intentionally excluded.
+
+## 한국어 요약
+
+이 사례는 제조업 환경에서 Microsoft 365 Copilot을 도입할 때 readiness, security, license value, user enablement, executive reporting을 함께 설계한 익명화된 customer success pattern입니다.
+
+제조 조직은 본사, 현업, 생산/운영 조직의 업무 패턴이 다르기 때문에 단순한 기능 교육보다 role-based use case, data protection, phased pilot, adoption metric이 중요합니다.
 
 ## Business Context
 
@@ -58,6 +65,27 @@ The strongest pattern is to treat Copilot as a governed adoption program rather 
 
 ## Lessons Learned
 
+- Start with business scenarios, not only Copilot feature demonstrations.
+- Review data exposure and oversharing before assigning licenses broadly.
+- Use champions and pilot users to refine prompts, use cases and training assets.
+- Report value through use case maturity, user confidence and measurable time savings.
+
+## 검색 키워드
+
+- Manufacturing Copilot adoption
+- Microsoft 365 Copilot case study
+- Copilot readiness
+- Copilot adoption WBS
+- Copilot governance
+- 제조업 Copilot 도입
+- Copilot 도입 사례
+
+## Related Documents
+
+- [Copilot Adoption Program](../copilot/adoption-program)
+- [Copilot Readiness](../copilot/readiness)
+- [Copilot ROI Framework](../copilot/roi-framework)
+- [Customer Success Reference Patterns](./customer-success-reference-patterns)
 - Start with data and identity readiness before user excitement.
 - Use role-based scenarios to make Copilot value concrete.
 - Track license value through prioritized use cases and adoption signals.

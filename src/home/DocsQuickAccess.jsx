@@ -31,7 +31,7 @@ const links = [
   {
     label: 'Assets',
     title: 'Downloads',
-    path: '/knowledge/downloads',
+    path: '/knowledge/downloads/overview',
   },
 ];
 

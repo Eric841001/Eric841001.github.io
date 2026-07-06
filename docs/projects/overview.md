@@ -1,10 +1,18 @@
 ---
 sidebar_position: 1
+title: Projects Library
+description: Anonymized Microsoft 365, Security, Copilot, Azure, migration and governance project patterns with reusable consulting assets and customer success references.
 ---
 
 # Projects Library
 
 This section captures anonymized enterprise project experience and reusable delivery patterns from Microsoft cloud consulting work. Customer names are intentionally omitted. References are grouped by industry, workload and delivery pattern so they can be reused safely for architecture, presales and governance discussions.
+
+## 한국어 요약
+
+Projects Library는 실제 고객 경험을 고객명 없이 업종, 과제, delivery pattern 중심으로 재구성한 공간입니다.
+
+Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance 프로젝트에서 반복적으로 사용되는 assessment, SOW, WBS, architecture, risk register, operating model 구조를 확인할 수 있습니다.
 
 ## Project Categories
 
@@ -59,3 +67,14 @@ Each project will be documented with:
 - [Security Modernization Program](./security-modernization-program)
 - [Enterprise AI Adoption Program](./enterprise-ai-adoption-program)
 - [Multi-Tenant Governance Strategy](./multi-tenant-governance-strategy)
+
+## 검색 키워드
+
+- Microsoft 365 customer success
+- Copilot adoption case study
+- Microsoft Security reference
+- Microsoft 365 migration case
+- AI Agent Factory case
+- Microsoft 365 고객 성공 사례
+- Copilot 도입 사례
+- Microsoft 365 제안 산출물

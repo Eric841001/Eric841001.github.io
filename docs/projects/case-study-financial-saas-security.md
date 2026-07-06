@@ -3,11 +3,18 @@ id: case-study-financial-saas-security
 title: Financial SaaS Security Case Study
 sidebar_label: Financial SaaS Security
 sidebar_position: 8
+description: Anonymized financial services SaaS security case study for Microsoft 365, Conditional Access, Defender, Purview, Intune, Global Secure Access and evidence-ready governance.
 ---
 
 # Financial SaaS Security Case Study
 
 This anonymized case study summarizes a financial-services pattern for Microsoft 365, SaaS access and Zero Trust readiness in a regulated environment.
+
+## 한국어 요약
+
+이 사례는 금융권 또는 규제 산업 환경에서 Microsoft 365와 SaaS access를 승인 가능한 보안 구조로 정리한 익명화된 customer success pattern입니다.
+
+핵심은 Conditional Access, device compliance, Defender, Purview, Global Secure Access, exception workflow를 각각의 설정이 아니라 security committee가 검토할 수 있는 evidence-ready architecture로 묶는 것입니다.
 
 ## Business Context
 
@@ -58,5 +65,25 @@ For regulated environments, success depends on evidence-ready governance. Archit
 
 - Treat approval evidence as a deliverable from day one.
 - Connect identity, endpoint, data and network controls in one architecture.
+- Assign owner, expiry date and compensating control to every exception.
+- Make the architecture readable for security, infrastructure and business reviewers.
+
+## 검색 키워드
+
+- financial SaaS security
+- Microsoft 365 security case study
+- Conditional Access architecture
+- Global Secure Access
+- Microsoft Purview DLP
+- Defender XDR
+- 금융권 Microsoft 365 보안
+- SaaS 보안 승인
+
+## Related Documents
+
+- [Security Modernization Program](./security-modernization-program)
+- [Security Reference Architecture](../architecture/security-reference-architecture)
+- [Conditional Access](../security/conditional-access)
+- [Zero Trust Framework](../security/zero-trust-framework)
 - Avoid permanent exceptions; every exception needs owner and expiry.
 - Copilot adoption should wait until oversharing and DLP risks are understood.
