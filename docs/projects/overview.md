@@ -15,6 +15,15 @@ This section captures anonymized enterprise project experience and reusable deli
 - Construction and engineering
 - Healthcare and life sciences
 - Enterprise groups and holding companies
+- Enterprise AI Agent and Copilot Studio programs
+
+## Featured Customer Success Patterns
+
+- [Customer Success Reference Patterns](./customer-success-reference-patterns)
+- [Manufacturing Copilot Adoption Case Study](./case-study-manufacturing-copilot-adoption)
+- [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
+- [Financial SaaS Security Case Study](./case-study-financial-saas-security)
+- [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
 
 ## Reference Themes
 
@@ -42,6 +51,7 @@ Each project will be documented with:
 
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
 - [Manufacturing Copilot Adoption Case Study](./case-study-manufacturing-copilot-adoption)
+- [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
 - [Financial SaaS Security Case Study](./case-study-financial-saas-security)
 - [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
 - [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)

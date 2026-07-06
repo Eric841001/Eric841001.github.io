@@ -5,11 +5,19 @@ import styles from './LatestArticles.module.css';
 const articles = [
   {
     category: 'Projects',
+    title: 'Enterprise AI Agent Factory Case Study',
+    description:
+      'Anonymized Copilot Studio and AI Agent portfolio pattern for research, pricing, HR, ESG and presales scenarios.',
+    path: '/knowledge/projects/case-study-enterprise-ai-agent-factory',
+    meta: 'Customer Success / AI Agents',
+  },
+  {
+    category: 'Projects',
     title: 'Manufacturing Copilot Adoption Case Study',
     description:
       'Anonymized Copilot adoption operating model for readiness, governance, pilot planning and value tracking.',
     path: '/knowledge/projects/case-study-manufacturing-copilot-adoption',
-    meta: 'Customer Success · Copilot Adoption',
+    meta: 'Customer Success / Copilot Adoption',
   },
   {
     category: 'Security',
@@ -17,7 +25,7 @@ const articles = [
     description:
       'Zero Trust, Conditional Access, Defender, Purview and SaaS access readiness for regulated environments.',
     path: '/knowledge/projects/case-study-financial-saas-security',
-    meta: 'Security · Zero Trust',
+    meta: 'Security / Zero Trust',
   },
   {
     category: 'Copilot',
@@ -25,7 +33,7 @@ const articles = [
     description:
       'Plan Copilot Cowork licensing, usage-based billing, Copilot Credits, spending controls and governance before rollout.',
     path: '/knowledge/copilot/copilot-cowork-cost-governance',
-    meta: 'Copilot · Cost Governance',
+    meta: 'Copilot / Cost Governance',
   },
   {
     category: 'Microsoft 365',
@@ -33,7 +41,7 @@ const articles = [
     description:
       'Compare Microsoft 365 E3 and E5 from security, compliance, governance and business value perspectives.',
     path: '/knowledge/microsoft365/e3-vs-e5',
-    meta: 'Licensing · Decision Guide',
+    meta: 'Licensing / Decision Guide',
   },
 ];
 

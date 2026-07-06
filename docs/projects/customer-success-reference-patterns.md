@@ -41,6 +41,7 @@ This page summarizes anonymized customer success patterns derived from enterpris
 For more detailed examples, see:
 
 - [Manufacturing Copilot Adoption Case Study](./case-study-manufacturing-copilot-adoption)
+- [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
 - [Financial SaaS Security Case Study](./case-study-financial-saas-security)
 - [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
 - [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
@@ -63,6 +64,28 @@ For more detailed examples, see:
 - governance operating model
 - use case prioritization model
 - cost and license governance framework
+
+### Enterprise AI Agent Factory: Copilot Studio and Agent Portfolio
+
+**Challenge:** The organization wanted to move from general Copilot interest to practical AI Agent prototypes across business functions such as research reporting, pricing analysis, HR inquiry, market intelligence, ESG risk review and proposal support.
+
+**Approach:**
+
+- Collect candidate Agent ideas from business teams and normalize them into a common intake format.
+- Prioritize Agent candidates by business value, data readiness, risk, complexity and reuse potential.
+- Separate knowledge-only Agents from action-capable Agents that require stronger approval and audit controls.
+- Define Agent ownership, knowledge source, permission boundary, human review point and lifecycle model.
+- Build pilot Agents using Copilot Studio or Agent Builder and connect them to an Agent Factory operating model.
+
+**Reusable Outcome:**
+
+- AI Agent opportunity assessment
+- Agent prioritization matrix
+- Copilot Studio pilot plan
+- Agent governance model
+- enterprise Agent catalog
+- Agent Factory operating model
+- executive AI Agent roadmap
 
 ### Financial Services: SaaS and Microsoft 365 Security Architecture
 
@@ -149,6 +172,8 @@ When publishing these references externally:
 
 - Microsoft 365 customer success
 - Microsoft Copilot adoption case
+- Copilot Studio Agent case
+- AI Agent Factory case
 - Microsoft Security customer reference
 - Azure Landing Zone 사례
 - Microsoft 365 migration case
@@ -156,6 +181,8 @@ When publishing these references externally:
 - 금융 SaaS security architecture
 - 물류 Exchange Online migration
 - Enterprise Governance 사례
+- Copilot Studio 고객 사례
+- AI Agent 도입 사례
 - SOW WBS customer reference
 
 ## 컨설팅 활용 사례

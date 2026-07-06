@@ -46,6 +46,7 @@ Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기�
 - [Business Use Cases](./business-use-cases)
 - [Copilot Governance](./governance)
 - [Agent Factory Operating Model](./agent-factory-operating-model)
+- [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
 - [Copilot Cowork Cost Governance](./copilot-cowork-cost-governance)
 - [Enterprise AI Adoption Program](../projects/enterprise-ai-adoption-program)
 

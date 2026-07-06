@@ -4,11 +4,19 @@ import styles from './CustomerScenarios.module.css';
 
 const scenarios = [
   {
+    industry: 'Enterprise AI',
+    title: 'AI Agent Factory Operating Model',
+    description:
+      'Copilot Studio and AI Agent portfolio pattern for research reporting, pricing, HR inquiry, ESG review and proposal support.',
+    focus: 'Copilot Studio / AI Agents / Governance',
+    path: '/knowledge/projects/case-study-enterprise-ai-agent-factory',
+  },
+  {
     industry: 'Manufacturing',
     title: 'Copilot Adoption Operating Model',
     description:
       'Readiness, governance, pilot planning and value tracking for large Microsoft 365 Copilot rollouts.',
-    focus: 'Copilot · Adoption · Governance',
+    focus: 'Copilot / Adoption / Governance',
     path: '/knowledge/projects/case-study-manufacturing-copilot-adoption',
   },
   {
@@ -16,7 +24,7 @@ const scenarios = [
     title: 'SaaS Security and Zero Trust Readiness',
     description:
       'Conditional Access, Defender, Purview and SaaS access controls for regulated enterprise networks.',
-    focus: 'Zero Trust · Compliance · Risk Control',
+    focus: 'Zero Trust / Compliance / Risk Control',
     path: '/knowledge/projects/case-study-financial-saas-security',
   },
   {
@@ -24,7 +32,7 @@ const scenarios = [
     title: 'Exchange Online and M365 Modernization',
     description:
       'Mail, collaboration and security modernization with assessment, cutover planning and admin handover.',
-    focus: 'Migration · Exchange Online · Operations',
+    focus: 'Migration / Exchange Online / Operations',
     path: '/knowledge/projects/case-study-logistics-exchange-modernization',
   },
   {
@@ -32,7 +40,7 @@ const scenarios = [
     title: 'Multi-Tenant Governance Strategy',
     description:
       'Tenant role model, cross-tenant access, security baseline and consolidation roadmap for group companies.',
-    focus: 'Tenant Strategy · Identity · Governance',
+    focus: 'Tenant Strategy / Identity / Governance',
     path: '/knowledge/projects/case-study-enterprise-group-governance',
   },
 ];
@@ -55,7 +63,7 @@ export default function CustomerScenarios() {
             <h3>{scenario.title}</h3>
             <p>{scenario.description}</p>
             <div className={styles.focus}>{scenario.focus}</div>
-            <strong>Open Scenario →</strong>
+            <strong>Open Scenario -&gt;</strong>
           </Link>
         ))}
       </div>
