@@ -28,6 +28,14 @@ const scenarios = [
     path: '/knowledge/projects/case-study-financial-saas-security',
   },
   {
+    industry: 'Retail',
+    title: 'M365 Security Policy Modernization',
+    description:
+      'Security and policy modernization pattern across Entra ID, Conditional Access, Intune, Defender, Purview, collaboration and Power Platform governance.',
+    focus: 'Microsoft 365 / Security Policy / Governance',
+    path: '/knowledge/projects/case-study-retail-m365-security-policy',
+  },
+  {
     industry: 'Logistics',
     title: 'Exchange Online and M365 Modernization',
     description:

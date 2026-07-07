@@ -32,6 +32,7 @@ Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance 프로�
 - [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
 - [Financial SaaS Security Case Study](./case-study-financial-saas-security)
 - [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
+- [Retail Microsoft 365 Security Policy Modernization Case Study](./case-study-retail-m365-security-policy)
 
 ## Reference Themes
 
@@ -40,6 +41,7 @@ Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance 프로�
 | Microsoft 365 deployment | Exchange Online, Teams, SharePoint, OneDrive, endpoint readiness | WBS, rollout plan, policy workbook, administrator guide |
 | Copilot adoption | Readiness, governance, user enablement, adoption operating model | SOW, adoption roadmap, use case catalog, value tracking |
 | Security modernization | Conditional Access, Defender, Purview, DLP, audit readiness | security baseline, risk register, executive review |
+| Retail Microsoft 365 security policy | Entra ID, Conditional Access, Intune, Defender, Purview, collaboration policy, Power Platform governance | license-to-capability map, improvement backlog, prerequisite roadmap, results-report structure |
 | Entra ID and Intune | identity governance, device registration, compliance policy, dynamic groups | implementation guide, troubleshooting guide, policy matrix |
 | Migration | Google Workspace, legacy mail, file server, tenant and workload migration | assessment checklist, migration factory plan, cutover runbook |
 | Network and SaaS access | firewall allowlist, Global Secure Access, internal network SaaS control | architecture note, exception approval list, operations guide |
@@ -62,6 +64,7 @@ Each project will be documented with:
 - [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
 - [Financial SaaS Security Case Study](./case-study-financial-saas-security)
 - [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
+- [Retail Microsoft 365 Security Policy Modernization Case Study](./case-study-retail-m365-security-policy)
 - [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
 - [Microsoft 365 Optimization Program](./m365-optimization-program)
 - [Security Modernization Program](./security-modernization-program)

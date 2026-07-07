@@ -32,7 +32,7 @@ This page summarizes anonymized customer success patterns derived from enterpris
 | Manufacturing and automotive | Large workforce, mixed office and plant environments, strict governance needs | Microsoft 365, Copilot, Teams, SharePoint, OneDrive, Entra ID, Intune | Build a phased adoption model that separates executive alignment, technical readiness, pilot enablement and operating governance. |
 | Financial services | Regulated network, SaaS access controls, audit and exception management | Conditional Access, Defender, Purview, Global Secure Access, M365 security baseline | Treat security architecture, approval workflow and compensating controls as first-class deliverables before production rollout. |
 | Logistics and distribution | Large distributed teams, mail and collaboration modernization, operational continuity | Exchange Online, Teams, SharePoint, Defender for Office 365 | Pair migration planning with security review, admin guide and post-cutover support to reduce operational disruption. |
-| Retail and consumer goods | Collaboration standardization across headquarters and field teams | Teams, SharePoint, OneDrive, M365 governance, change management | Standardize workspace lifecycle, ownership, permissions and training before broad collaboration expansion. |
+| Retail and consumer goods | Microsoft 365 security and policy modernization across headquarters, field and collaboration environments | Entra ID, Conditional Access, Intune, Defender, Purview, SharePoint, OneDrive, Teams, Exchange, Power Platform | Convert license capability, current-state assessment and policy gaps into a prioritized security improvement backlog and prerequisite roadmap. |
 | Construction and engineering | Heavy file collaboration, legacy storage, permission complexity | SharePoint, Teams, OneDrive, file migration, information architecture | Redesign information architecture and permissions before moving data to avoid simply transferring legacy sprawl. |
 | Healthcare and life sciences | Identity, device and compliance controls for sensitive business processes | Entra ID, Intune, Defender, Purview, DLP | Implement baseline controls with evidence-ready policy documentation and operational ownership. |
 
@@ -45,6 +45,7 @@ For more detailed examples, see:
 - [Financial SaaS Security Case Study](./case-study-financial-saas-security)
 - [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
 - [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
+- [Retail Microsoft 365 Security Policy Modernization Case Study](./case-study-retail-m365-security-policy)
 
 ### Manufacturing: Copilot Adoption Operating Model
 
@@ -105,6 +106,29 @@ For more detailed examples, see:
 - network allowlist and exception workflow
 - risk register
 - compliance review package
+
+### Retail: Microsoft 365 Security Policy Modernization
+
+**Challenge:** The organization needed to assess Microsoft 365 security and policy configuration across identity, access, collaboration, endpoint, data protection and Power Platform governance.
+
+**Approach:**
+
+- Map license capabilities to feasible Microsoft 365 security and management controls.
+- Review Entra ID, admin roles, guest access, authentication and Conditional Access policy posture.
+- Assess SharePoint, OneDrive, Teams and Exchange governance boundaries.
+- Define prerequisites for Entra ID join, Intune enrollment, device classification and endpoint security policy rollout.
+- Review Purview Information Protection, sensitivity labeling, DLP and Power Platform governance direction.
+- Convert findings into prioritized improvement items with prerequisite, owner, impact and validation criteria.
+
+**Reusable Outcome:**
+
+- Microsoft 365 license-to-capability analysis
+- identity and access policy assessment
+- collaboration governance review
+- Intune and endpoint security roadmap
+- Purview Information Protection and DLP planning guide
+- Power Platform governance checklist
+- security improvement backlog and follow-up roadmap
 
 ### Logistics: Exchange Online and Collaboration Modernization
 
