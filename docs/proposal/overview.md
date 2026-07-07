@@ -7,6 +7,8 @@ description: Reusable proposal, SOW, WBS, risk register, assessment and governan
 
 Enterprise consulting proposal assets for Microsoft 365, Azure, Security and Copilot engagements.
 
+The Proposal Center is organized as a delivery-ready presales system. It connects discovery, executive messaging, technical scope, delivery workstreams, timeline, assumptions, risk and governance into one coherent proposal package.
+
 ## 한국어 요약
 
 Proposal Center는 Microsoft 365, Azure, Security, Copilot, AI Agent, Migration 프로젝트 제안에 필요한 실무 산출물 구조를 정리한 공간입니다.
@@ -49,6 +51,42 @@ Project governance and stakeholder management structure.
 
 ---
 
+## Proposal Delivery Flow
+
+| Stage | Purpose | Main Output |
+|---|---|---|
+| 1. Discover | understand business driver, current environment and decision timeline | discovery notes and qualification summary |
+| 2. Assess | identify readiness, gaps, dependencies and risks | assessment summary and recommendation path |
+| 3. Shape | define target scope, assumptions, exclusions and success criteria | solution outline and executive summary |
+| 4. Plan | convert the scope into workstreams, activities, timeline and roles | SOW, WBS and milestone plan |
+| 5. Govern | define decision body, escalation path, reporting rhythm and acceptance criteria | governance model and risk register |
+| 6. Handover | prepare delivery team and customer stakeholders for execution | kickoff pack and handover checklist |
+
+## Proposal Package Anatomy
+
+| Section | What It Should Answer |
+|---|---|
+| Executive Summary | why this project matters now and what decision is required |
+| Business Drivers | what business, security, compliance or AI adoption pressure created the need |
+| Current State | what is known, unknown and assumed about the customer environment |
+| Target Architecture | what Microsoft capabilities and operating model will be used |
+| Scope | what will be delivered, excluded and dependent on customer readiness |
+| WBS | how the work is structured by phase, workstream and activity |
+| Timeline | when key workshops, implementation steps, validation and handover occur |
+| Risk Register | what may affect delivery and how it will be mitigated |
+| Governance | who approves, who executes and how issues are escalated |
+| Acceptance Criteria | how the customer and delivery team know the work is complete |
+
+## Public-Safe Proposal Principle
+
+Public proposal examples should show structure and thinking, not customer-sensitive information.
+
+Do not publish customer names, contract value, discount assumptions, internal architecture diagrams, tenant IDs, source system inventory, project code names or customer-specific security exceptions.
+
+When a customer-ready sample is needed, share a sanitized version through [Contact and Asset Request](../contact).
+
+---
+
 ## Intended Audience
 
 - CIO
@@ -57,6 +95,16 @@ Project governance and stakeholder management structure.
 - Infrastructure Manager
 - Collaboration Manager
 - PMO
+
+## Role-Based Starting Points
+
+| Visitor | Start With | Useful Follow-Up |
+|---|---|---|
+| CIO / Executive Sponsor | [Executive Summary](./executive-summary) | [Governance Model](./governance-model), [Timeline Template](./timeline-template) |
+| CISO / Security Leader | [Risk Register](./risk-register) | [Assessment Framework](./assessment), [Security Modernization Playbook](../playbooks/security-modernization-playbook) |
+| IT Director | [Assessment Framework](./assessment) | [SOW Template](./sow-template), [WBS Template](./wbs-template) |
+| PMO / Project Manager | [WBS Template](./wbs-template) | [Timeline Template](./timeline-template), [Risk Register](./risk-register) |
+| Presales / Architect | [Executive Summary](./executive-summary) | [SOW Template](./sow-template), [Downloads Center](../downloads/overview) |
 
 ## 검색 키워드
 

@@ -33,6 +33,17 @@ It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migrati
 
 ## Recommended Paths
 
+### Start Here By Role
+
+| Visitor | Best First Page | Why |
+|---|---|---|
+| CIO / Executive Sponsor | [Executive Architecture Blueprint](./architecture/executive-architecture-blueprint) | connects Microsoft cloud architecture to business value, risk and roadmap decisions |
+| CISO / Security Leader | [Security](./security/overview) | starts with Zero Trust, Defender, Purview, Conditional Access and risk governance |
+| IT Director / Platform Owner | [Microsoft 365](./microsoft365/overview) | reviews tenant, collaboration, endpoint, identity and operations decisions |
+| Copilot / AI Program Owner | [Copilot](./copilot/overview) | connects Copilot readiness, adoption, governance, ROI and AI Agent architecture |
+| Presales / PMO | [Proposal Center](./proposal/overview) | organizes executive summary, SOW, WBS, risk, timeline and governance materials |
+| Delivery Consultant | [Playbooks](./playbooks/overview) | provides repeatable execution patterns for assessment, migration, security and adoption |
+
 ### For Architecture Review
 
 Start with [Architecture](./architecture/overview), then review [Security](./security/overview), [Microsoft 365](./microsoft365/overview) and [Azure](./azure/overview).
@@ -57,3 +68,9 @@ Every section is intended to answer four questions:
 2. What Microsoft capabilities are involved?
 3. What architecture or governance decisions are required?
 4. What reusable assets can help deliver the work?
+
+## Public-Safe Knowledge Principle
+
+The Knowledge Center is designed to be publicly shareable. Customer names, tenant IDs, project code names, commercial terms and customer-specific architecture details are not published.
+
+Customer success examples are intentionally anonymized by industry, scenario and delivery pattern. Editable templates and customer-ready deliverables can be requested through [Contact and Asset Request](./contact) after confirming the use case and confidentiality boundary.

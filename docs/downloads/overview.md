@@ -25,6 +25,20 @@ For access to reusable templates or sample deliverables, contact **Youngsun Kang
 
 This approach keeps the Knowledge Center useful while avoiding accidental exposure of customer names, commercial details or internal delivery artifacts.
 
+## Confidentiality Guardrails
+
+The Downloads Center follows a public-safe sharing model.
+
+| Guardrail | Rule |
+|---|---|
+| Customer identity | customer names, tenant names, project code names and named references are not published |
+| Architecture details | tenant IDs, domains, IP ranges, policy IDs, security exceptions and internal diagrams are removed |
+| Commercial information | pricing, discount, contract terms and internal cost assumptions are not posted publicly |
+| Editable files | DOCX, XLSX and PPTX versions are shared only after confirming the intended use case |
+| Reusable patterns | public pages describe structure, decision logic and sanitized examples |
+
+If a document is shared externally, it should be sanitized first and reviewed against the intended audience.
+
 ## Asset Categories
 
 | Category | Purpose | Typical Use |
@@ -66,11 +80,33 @@ The following assets are intentionally described publicly but shared only after 
 4. Receive a sanitized or reusable version where appropriate.
 5. Tailor the document to the customer environment before use.
 
+## Request Triage Matrix
+
+| Request Situation | Recommended Asset | Review Before Sharing |
+|---|---|---|
+| early presales discussion | discovery questionnaire and executive summary structure | remove customer names and commercial assumptions |
+| technical assessment workshop | assessment workbook and control checklist | confirm target workload, scope and audience |
+| Copilot or AI Agent planning | Copilot readiness workbook and Agent Factory template | confirm data readiness, governance owner and risk boundary |
+| migration planning | migration pre-assessment, cutover and rollback checklist | remove tenant details and migration wave names |
+| executive steering review | status template, decision log and risk register | sanitize issues, owners and internal escalations |
+
 ## Contact Path
 
 When requesting documents, include the intended scenario, customer industry, target Microsoft workload and preferred output format. Customer names, commercial details and confidential project information are not required for the first request.
 
 Start here: [Contact and Asset Request](../contact)
+
+## Quality Standard
+
+Requestable assets should be usable in real consulting work. A strong asset should include:
+
+- business context and target audience
+- scope and out-of-scope boundary
+- required inputs and assumptions
+- decision criteria or acceptance criteria
+- owner, reviewer and approval model
+- risk, dependency and follow-up section
+- public-safe version and customer-specific editable version separation
 
 ## Field-Informed Download Ideas
 

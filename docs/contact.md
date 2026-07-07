@@ -78,6 +78,28 @@ Customer names, project code names, commercial terms, internal filenames and cus
 
 Public content is written as reusable architecture and consulting patterns. Customer-specific material is sanitized before it is shared externally.
 
+## Sharing Levels
+
+| Level | Description | Example |
+|---|---|---|
+| Public Pattern | safe for public website and search engines | anonymized architecture pattern, generic checklist, decision framework |
+| Sanitized Sample | safe to share after contact | edited SOW/WBS structure with customer names and sensitive values removed |
+| Internal Review Only | requires confirmed business context | editable delivery template, workshop deck, assessment workbook |
+| Customer-Specific | not shared publicly | tenant-specific diagrams, policy exports, commercial terms, named reference material |
+
+## Do Not Include In First Request
+
+For the first asset request, do not send confidential information. The following details are not required:
+
+- customer legal name
+- tenant ID, domain list or user export
+- contract value, discount or price assumption
+- internal project code name
+- security exception details
+- architecture diagrams with real IP ranges or system names
+
+Use industry, workload, project phase and desired output type instead.
+
 ## Recommended Starting Points
 
 - [Enterprise Microsoft Knowledge Center](./intro)

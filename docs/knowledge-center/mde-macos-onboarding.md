@@ -28,6 +28,18 @@ Organizations commonly require:
 
 ---
 
+## Customer Impact
+
+| Issue | Business Impact |
+|---|---|
+| unmanaged Mac devices | weak visibility for executives, developers and creative teams using macOS |
+| no unified endpoint signal | Defender XDR incidents may miss macOS context |
+| inconsistent security baseline | antivirus, EDR, network protection and device control may vary by device |
+| manual onboarding | rollout quality depends on local administrator action |
+| missing validation evidence | security and audit teams cannot prove coverage |
+
+---
+
 ## Supported Platforms
 
 | Platform | Supported |
@@ -58,23 +70,11 @@ flowchart LR
 
 ## Deployment Models
 
-### Option 1
-
-Intune Managed Deployment
-
-Recommended
-
-### Option 2
-
-Manual Deployment
-
-Pilot environments only
-
-### Option 3
-
-Jamf + Defender Integration
-
-Enterprise macOS environments
+| Model | Best For | Notes |
+|---|---|---|
+| Intune Managed Deployment | Microsoft 365 managed endpoint environments | recommended default for policy consistency and reporting |
+| Manual Deployment | small pilots or break-glass validation | not recommended for production scale |
+| Jamf + Defender Integration | established Jamf-based macOS fleets | align Jamf ownership with Defender security operations |
 
 ---
 
@@ -117,6 +117,20 @@ Verify:
 - AV enabled
 - EDR enabled
 - Device inventory updated
+- device risk signal available for Conditional Access scenario
+- test detection or test alert reviewed by security operations
+
+---
+
+## Acceptance Criteria
+
+| Area | Acceptance Criteria |
+|---|---|
+| onboarding | target macOS devices appear in Microsoft Defender portal with healthy sensor state |
+| policy | antivirus, EDR and relevant configuration profiles are assigned successfully |
+| operations | security team can review device timeline, alerts and vulnerability data |
+| compliance | device inventory and risk signals can support Zero Trust access decisions |
+| documentation | pilot validation report and operations runbook are handed over |
 
 ---
 
@@ -127,6 +141,8 @@ Verify:
 - Tamper protection enabled
 - Vulnerability assessment active
 - Test alert generated
+- ownership model confirmed between endpoint, security and helpdesk teams
+- exception process documented for unsupported or unmanaged devices
 
 ---
 
@@ -136,3 +152,22 @@ Verify:
 - Pilot Validation Report
 - Security Baseline
 - Operations Runbook
+
+## Requestable Assets
+
+Editable or customer-ready versions can be requested through [Contact and Asset Request](../contact).
+
+- macOS onboarding checklist
+- Intune configuration profile review sheet
+- Jamf integration decision matrix
+- pilot validation report template
+- Defender for Endpoint operations handover checklist
+
+## Search Keywords
+
+- Microsoft Defender for Endpoint macOS onboarding
+- MDE macOS Intune deployment
+- Jamf Defender integration
+- macOS endpoint security baseline
+- Defender XDR macOS visibility
+- Zero Trust macOS compliance
