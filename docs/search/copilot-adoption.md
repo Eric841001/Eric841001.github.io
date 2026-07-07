@@ -20,7 +20,7 @@ This page is a search landing page for visitors looking for Microsoft 365 Copilo
 
 Copilot adoption programs now need to connect Microsoft 365 Copilot usage, Copilot Studio agents, license value, Copilot Credit forecasting, Security, Purview and measurable business scenarios.
 
-Before scaling, review [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update) and [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update).
+Before scaling, review [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update) and [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update).
 
 ## 한국어 요약
 
@@ -47,7 +47,7 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
 - [Copilot Adoption Program](../copilot/adoption-program)
 - [Copilot ROI Framework](../copilot/roi-framework)
 - [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update)
-- [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update)
+- [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update)
 - [Manufacturing Copilot Adoption Case Study](../projects/case-study-manufacturing-copilot-adoption)
 - [Contact and Asset Request](../contact)
 

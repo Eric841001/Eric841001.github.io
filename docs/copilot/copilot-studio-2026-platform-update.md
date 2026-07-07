@@ -36,6 +36,19 @@ Copilot Studio는 더 이상 단순 chatbot builder로 보기 어렵습니다.
 | Entra agent identities | preview pattern for scoping permissions and Conditional Access to individual agents |
 | A2A protocol | agent-to-agent connectivity for multi-agent scenarios |
 | Copilot Credit estimator | consumption forecasting before scale-out |
+| Workflows | public preview flow model with improved designer, testing, prompts, agent calls and human review steps |
+| Teams classic chatbot shift | makers should plan around Copilot Studio web app and avoid new dependency on the Teams app for classic chatbot creation |
+
+## Platform Migration Checkpoints
+
+| Checkpoint | Why It Matters |
+|---|---|
+| Classic chatbot dependency | After the end of June 2026, the Copilot Studio for Teams app can no longer be used to create classic chatbots. Existing strategy should move toward the Copilot Studio web app and new agent experience. |
+| Maker licensing | Agent makers need Copilot Studio user licensing; published agent users do not need a special license just to interact with an accessible agent. |
+| Tenant licensing | Copilot Studio tenant licensing and user licensing are separate checks. Procurement and admin teams should validate both. |
+| Capacity model | Purchased capacity is pooled at tenant level, but consumption should be reviewed per agent. |
+| Agent flows and workflows | Workflows can run prompts, call agents and include human review, so agent architecture is now closer to an operational workflow platform. |
+| Governance telemetry | Agent inventory, readiness status, analytics and evaluations should be part of the release gate. |
 
 ## Updated Agent Architecture
 
@@ -73,6 +86,7 @@ flowchart TB
 | Agent-to-agent | Which agent owns orchestration and which agents are specialist agents? |
 | Cost | How many Copilot Credits or billed sessions could this scenario consume? |
 | Operations | Who reviews failed responses, tool errors and quality regressions? |
+| Migration | Does the design depend on classic chatbot authoring or Teams-only publishing? |
 
 ## Governance Checklist
 
@@ -130,4 +144,3 @@ flowchart TB
 - [Multi-Agent Framework](./multi-agent-framework)
 - [Agentic AI Architecture](./agentic-ai-architecture)
 - [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
-

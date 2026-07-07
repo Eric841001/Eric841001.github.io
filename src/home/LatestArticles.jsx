@@ -5,11 +5,11 @@ import styles from './LatestArticles.module.css';
 const articles = [
   {
     category: 'Licensing',
-    title: 'July 2026 Microsoft Licensing Update',
+    title: 'Microsoft Licensing Feature Update',
     description:
-      'Executive-ready licensing watch for Microsoft 365 commercial pricing, Copilot value governance and renewal planning.',
+      'Feature entitlement review for Office 365 E3, Microsoft 365 E3, Defender, Purview, Entra, Intune and Copilot Studio.',
     path: '/knowledge/licensing/july-2026-microsoft-licensing-update',
-    meta: 'Licensing / 2026 Update',
+    meta: 'Licensing / Feature Entitlement',
   },
   {
     category: 'Copilot Studio',

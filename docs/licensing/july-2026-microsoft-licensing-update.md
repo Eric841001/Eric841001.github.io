@@ -1,123 +1,141 @@
 ---
 id: july-2026-microsoft-licensing-update
-title: July 2026 Microsoft Licensing Update
-description: July 2026 Microsoft licensing update guide for Microsoft 365 commercial pricing, Copilot value governance, security capability mapping and renewal planning.
-sidebar_label: July 2026 Licensing Update
+title: Microsoft Licensing Feature Update
+description: Microsoft licensing feature update guide for Microsoft 365, Office 365 E3, Microsoft 365 E3, Defender, Purview, Copilot Studio and service plan validation.
+sidebar_label: Licensing Feature Update
 ---
 
-# July 2026 Microsoft Licensing Update
+# Microsoft Licensing Feature Update
 
 ## Executive Summary
 
-Microsoft licensing decisions in 2026 should be treated as a business architecture decision, not a product SKU comparison.
+Microsoft licensing decisions should be reviewed as a feature entitlement and control-mapping exercise.
 
-Recent market guidance indicates that Microsoft 365 commercial subscription pricing is changing effective July 1, 2026, while Copilot pricing requires separate value governance. This means customers should prepare renewal, procurement and adoption conversations with a clear link between cost, security capability, AI readiness and measurable business outcomes.
+The important question is not "how much did the SKU change?" The important question is "which capabilities are actually included, which service plans are enabled, and which security or AI controls can now be designed without an additional product assumption?"
 
-The practical consulting message is simple: do not approve a license increase or Copilot expansion without a utilization model, control mapping and adoption plan.
+This is especially important when comparing Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender, Microsoft Purview, Microsoft Entra, Intune, Microsoft 365 Copilot and Copilot Studio.
 
 ## 한국어 요약
 
-2026년 Microsoft licensing 검토는 단순 가격 비교가 아니라 CFO, CIO, CISO가 함께 보는 의사결정 주제입니다.
+Microsoft licensing 검토에서 가장 중요한 것은 가격 변화가 아니라 포함 기능의 변화입니다.
 
-특히 2026년 7월 1일 기준 Microsoft 365 commercial subscription 가격 변화가 논의되는 상황에서는 기존 license 수량을 그대로 갱신하기보다, 사용자 유형별 필요 기능, 보안/컴플라이언스 통제, Copilot readiness, 실제 사용률을 함께 검토해야 합니다.
+예를 들어 고객이 "E3를 사용 중"이라고 말하더라도 그것이 Office 365 E3인지, Microsoft 365 E3인지에 따라 포함되는 security, device management, identity, compliance capability가 달라질 수 있습니다. 또한 Microsoft 문서에서는 Microsoft 365 E3 같은 일부 subscription에 Defender for Office 365 Plan 1이 포함될 수 있다고 설명하므로, 단순 SKU 이름만 보고 아키텍처를 판단하면 위험합니다.
 
-핵심은 “얼마나 올랐는가”가 아니라 “증가한 비용이 어떤 위험을 줄이고, 어떤 업무 가치를 만들며, 어떤 AI 활용 기반을 제공하는가”입니다.
+따라서 license 검토는 SKU 이름이 아니라 service plan identifier, 포함 기능, 실제 enable 상태, 보안 정책 적용 가능 여부를 기준으로 수행해야 합니다.
 
-## What Changed For Planning
+## Feature Change Watch
 
-| Area | Planning Impact |
-|---|---|
-| Microsoft 365 commercial pricing | renewal scenarios should include baseline, optimized and strategic options |
-| Security and management value | E3, E5 and add-ons should be justified by controls, not feature names |
-| Copilot licensing | assignment should be linked to use cases, readiness and value tracking |
-| Copilot Studio and agents | agent consumption and Copilot Credits must be forecast before scale-out |
-| Procurement review | finance needs utilization, reclaim and adoption evidence |
-
-## Executive Conversation Model
-
-Use the following model when preparing a July 2026 licensing discussion.
-
-| Question | Evidence Required | Output |
+| Area | What To Check | Architecture Impact |
 |---|---|---|
-| Which users need which capabilities? | persona, workload, risk and compliance mapping | role-based license model |
-| Which security controls are mandatory? | Defender, Purview, Entra ID, Intune and audit requirements | control-to-license matrix |
-| Which Copilot users are ready? | data readiness, permission review, training and business scenario | phased Copilot assignment plan |
-| Which licenses are underused? | assignment, usage and feature consumption data | reclaim and reallocation plan |
-| Which costs are variable? | Copilot Studio, agent, connector and Azure consumption estimates | cost governance dashboard |
+| Office 365 E3 vs Microsoft 365 E3 | service plans included and enabled | same "E3" label can mean different security and device control capability |
+| Defender for Office 365 Plan 1 | Safe Links, Safe Attachments, anti-phishing, real-time detections | email and collaboration security baseline may be stronger than assumed |
+| Defender for Office 365 Plan 2 | Threat Explorer, AIR, attack simulation, advanced investigation | SOC and response automation design changes |
+| Purview capability | information protection, audit, DLP, retention, eDiscovery | compliance architecture depends on enabled service plans |
+| Entra capability | P1/P2, Conditional Access, identity governance, privileged identity | identity control mapping must follow actual entitlement |
+| Intune and endpoint | MDM, app protection, compliance, Defender integration | endpoint governance depends on Microsoft 365 plan family |
+| Copilot Studio | tenant license, user license, Copilot Credits, agent capacity | agent program must include maker access and consumption governance |
+
+## Why SKU Names Are Not Enough
+
+The Microsoft 365 admin center, PowerShell and Microsoft Graph can show the same product using different identifiers.
+
+For example, Office 365 E3 can appear as a friendly product name, as the `ENTERPRISEPACK` string ID, or as a GUID in Graph. The real design work starts when the architect reviews the service plans included in that SKU and confirms whether the required service plans are enabled for the target users.
+
+## E3 Review Pattern
+
+Use this pattern when a customer says they have "E3".
+
+| Question | Why It Matters |
+|---|---|
+| Is it Office 365 E3 or Microsoft 365 E3? | Microsoft 365 E3 includes additional identity, endpoint and security capabilities compared with Office 365 productivity-only positioning. |
+| Which service plans are enabled? | A purchased license does not guarantee every service plan is enabled for every user. |
+| Is Defender for Office 365 Plan 1 included or separately licensed? | Email security architecture changes if Safe Links, Safe Attachments and impersonation protection are available. |
+| Is Microsoft Defender for Endpoint Plan 1 included? | Endpoint protection baseline changes if MDE P1 capability is available. |
+| Which Purview features are available? | DLP, retention, audit and information protection depend on actual plan capability. |
+| Are add-ons overlapping with bundled capability? | Some add-ons may no longer be needed if the bundled entitlement already covers the control. |
+
+## Defender Feature Decision
+
+| Capability Layer | Practical Meaning |
+|---|---|
+| Built-in security for cloud mailboxes | baseline anti-malware, anti-spam, anti-phishing, quarantine, submissions, message trace |
+| Defender for Office 365 Plan 1 | Safe Links, Safe Attachments, impersonation protection, real-time detections, user tags and Teams protection features |
+| Defender for Office 365 Plan 2 | Threat Explorer, attack simulation training, Threat Trackers, AIR and advanced hunting/investigation patterns |
+
+## Copilot Studio Licensing And Feature Shift
+
+Copilot Studio should be reviewed across two dimensions:
+
+1. Maker access: tenant license and Copilot Studio User License.
+2. Runtime and scale: billed sessions, Copilot Credits, agent type, orchestration, knowledge and tools.
+
+The platform itself has also changed. New agent experience, Microsoft IQ, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, A2A and automated evaluations now affect governance design.
 
 ## Recommended License Architecture
 
 ```mermaid
 flowchart TB
-  Persona[User Personas] --> Controls[Security and Compliance Controls]
-  Controls --> License[License and Add-on Mapping]
-  License --> Adoption[Adoption and Utilization Plan]
-  Adoption --> Cost[Cost Governance]
-  Cost --> Review[Quarterly License Review]
+  SKU[SKU Name] --> Plans[Service Plans]
+  Plans --> Enabled[Enabled Per User]
+  Enabled --> Controls[Control Mapping]
+  Controls --> Architecture[Target Architecture]
+  Architecture --> Adoption[Adoption and Operations]
 
-  Copilot[Copilot Use Cases] --> Readiness[Data and Permission Readiness]
-  Readiness --> Adoption
-
-  Agents[Copilot Studio Agents] --> Credits[Copilot Credit Forecast]
-  Credits --> Cost
+  Defender[Defender Capability] --> Controls
+  Purview[Purview Capability] --> Controls
+  Entra[Entra Capability] --> Controls
+  Intune[Intune Capability] --> Controls
+  Copilot[Copilot and Agent Capability] --> Adoption
 ```
 
-## Renewal Readiness Checklist
+## Review Checklist
 
-- Export current license assignment and usage data.
-- Identify unused, duplicate or misassigned licenses.
-- Segment users by role, workload, risk level and Copilot readiness.
-- Map required controls to Microsoft 365 E3, E5, Business Premium and add-ons.
-- Separate mandatory security controls from optional productivity features.
-- Build a Copilot assignment plan based on use case value, not executive interest alone.
-- Forecast Copilot Studio and agent consumption before approving broad agent rollout.
-- Define reclaim, reallocation and quarterly review rules.
-
-## CFO-Ready Output
-
-A strong licensing recommendation should include:
-
-- current spend baseline
-- optimized spend scenario
-- strategic AI and security scenario
-- risk reduction rationale
-- license reclaim opportunity
-- Copilot adoption and ROI assumptions
-- agent consumption governance model
+- Export subscribed SKU and service plan information from Microsoft 365 admin center, PowerShell or Microsoft Graph.
+- Confirm whether the customer means Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Business Premium or add-on bundles.
+- Review service plan enabled state for representative user groups.
+- Map Defender, Purview, Entra ID, Intune and Copilot capabilities to required security controls.
+- Identify add-ons that duplicate bundled capability.
+- Identify missing features that block the target architecture.
+- Confirm Copilot Studio maker licensing, tenant licensing and consumption governance.
+- Document the final license-to-control matrix for CIO/CISO/CFO review.
 
 ## Customer Success Pattern
 
 | Industry | Situation | Practical Pattern |
 |---|---|---|
-| Finance | strict security and audit requirements | justify E5 or compliance add-ons with control evidence |
-| Manufacturing | mixed office, field and plant users | separate knowledge workers, frontline users and privileged admins |
-| Retail | cost-sensitive broad user base | start with license reclaim and Business Premium/E3 segmentation |
-| SaaS | security-sensitive external collaboration | connect Conditional Access, Defender, Purview and guest governance to licensing |
+| Finance | strong email security and audit requirement | verify Defender for Office 365 Plan 1/Plan 2, audit and Purview entitlement before recommending add-ons |
+| Manufacturing | office, plant and frontline user mix | separate Office 365 E3, Microsoft 365 E3, frontline and privileged admin groups |
+| Retail | broad user base with cost sensitivity | remove duplicate add-ons only after confirming bundled service plans are enabled |
+| SaaS | external collaboration and data protection | map Entra, Defender, Purview and DLP controls to actual service plans |
+| Enterprise AI | Copilot Studio and agent scale-out | combine maker license, tenant capacity, Copilot Credits and agent governance model |
 
 ## Common Mistakes
 
-| Mistake | Why It Fails |
+| Mistake | Better Approach |
 |---|---|
-| Treating renewal as a price negotiation only | misses security, compliance and AI readiness value |
-| Assigning Copilot broadly before readiness | creates cost without measurable business impact |
-| Ignoring add-on sprawl | increases operational complexity and procurement confusion |
-| Not tracking utilization | weakens future CFO and procurement review |
-| Separating license review from architecture | hides whether required controls are actually enabled |
+| Comparing only SKU names | compare service plans and enabled states |
+| Treating E3 as one universal capability set | distinguish Office 365 E3, Microsoft 365 E3 and add-on bundles |
+| Assuming purchased means enabled | verify user-level service plan enablement |
+| Recommending add-ons before entitlement review | check bundled features first |
+| Ignoring Copilot Studio runtime consumption | forecast Copilot Credits and billed sessions before scale-out |
+| Treating Defender Plan 1 and Plan 2 as similar | separate prevention/detection from advanced investigation and automation |
 
 ## Recommended Next Steps
 
-1. Run a license assignment and utilization review.
-2. Build a control-to-license matrix.
-3. Define Copilot-ready user personas.
-4. Estimate Copilot Studio and agent consumption.
-5. Prepare a CFO-ready renewal scenario deck.
-6. Establish a quarterly license governance rhythm.
+1. Build a service plan inventory.
+2. Identify the customer's real E3/E5/Business Premium mix.
+3. Map each required control to an included or missing feature.
+4. Validate Defender, Purview, Entra and Intune entitlement before add-on recommendations.
+5. Update Copilot Studio governance for new agent experience, Microsoft IQ, skills, memory, computer use, A2A, agent inventory and Entra agent identities.
+6. Produce an executive license-to-control matrix.
 
 ## References
 
-- [Microsoft Copilot Studio licensing and access](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing)
-- [Microsoft Copilot Studio agent usage estimator](https://microsoft.github.io/copilot-studio-agent-usage-estimator/)
-- [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+- [Microsoft 365 and Office 365 plan options](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+- [Product names and service plan identifiers for licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-service-plan-reference)
+- [Microsoft Defender for Office 365 overview](https://learn.microsoft.com/en-us/defender-office-365/mdo-about)
+- [Copilot Studio licensing and access](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing)
+- [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
 
 ## Related Pages
 
@@ -126,4 +144,3 @@ A strong licensing recommendation should include:
 - [E3 vs E5](./e3-vs-e5)
 - [Copilot ROI Framework](../copilot/roi-framework)
 - [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update)
-

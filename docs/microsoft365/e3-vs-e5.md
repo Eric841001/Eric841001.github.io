@@ -1,7 +1,7 @@
 ---
 id: e3-vs-e5
 title: Microsoft 365 E3 vs E5 Enterprise Decision Guide
-description: "Microsoft 365 E3 vs E5 Enterprise Decision Guide - Microsoft 365 E3 and E5 selection should not be evaluated only by license price."
+description: "Microsoft 365 E3 vs E5 Enterprise Decision Guide for service plan entitlement, Defender, Purview, Entra, Intune, Copilot readiness and Zero Trust decisions."
 sidebar_label: E3 vs E5 Decision Guide
 ---
 
@@ -9,11 +9,13 @@ sidebar_label: E3 vs E5 Decision Guide
 
 ## Executive Summary
 
-Microsoft 365 E3 and E5 selection should not be evaluated only by license price.
+Microsoft 365 E3 and E5 selection should be evaluated by service plan entitlement, enabled controls, security maturity, compliance requirements and operational risk.
 
 The decision should be based on security maturity, compliance requirements, operational risk, regulatory exposure, and business transformation objectives.
 
 In most enterprise environments, Microsoft 365 E3 provides a strong productivity and governance baseline, while Microsoft 365 E5 becomes necessary when the organization requires advanced security, identity protection, compliance, analytics, and Zero Trust capabilities.
+
+Before making a recommendation, confirm whether the customer is using Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, or a mixed model with add-ons. Similar names can hide materially different security, endpoint, identity and compliance capabilities.
 
 ---
 
@@ -117,6 +119,19 @@ Typical E5 scenarios:
 
 ---
 
+## Service Plan Entitlement Check
+
+| Check | Why It Matters |
+|---|---|
+| Office 365 E3 vs Microsoft 365 E3 | Office 365 E3 is productivity-centered, while Microsoft 365 E3 adds broader identity, endpoint and security capability. |
+| Defender for Office 365 Plan 1 | If included and enabled, Safe Links, Safe Attachments and impersonation protection can change the email security baseline. |
+| Defender for Endpoint Plan 1 | If included and enabled, endpoint protection architecture can start from a stronger Microsoft baseline. |
+| Entra ID P1/P2 | Conditional Access and identity governance decisions depend on actual entitlement. |
+| Purview capability | DLP, information protection, audit, retention and eDiscovery must be mapped to enabled service plans. |
+| Intune capability | Device compliance, app protection and endpoint governance require explicit enablement and policy ownership. |
+
+---
+
 ## E3 + Add-on Strategy
 
 E3 with selected add-ons can be appropriate when only specific advanced capabilities are required.
@@ -200,7 +215,7 @@ It is suitable when the customer wants to modernize collaboration, standardize M
 
 ### E5 Positioning
 
-Microsoft 365 E5 is recommended when the customer’s business priority includes security transformation, compliance modernization, Zero Trust, SOC visibility, and Copilot readiness.
+Microsoft 365 E5 is recommended when the customer's business priority includes security transformation, compliance modernization, Zero Trust, SOC visibility, and Copilot readiness.
 
 E5 should be positioned as a risk reduction and security modernization investment, not only as a license upgrade.
 
@@ -228,15 +243,15 @@ For most enterprise customers:
 - Use E3 as the baseline for productivity, collaboration, and governance.
 - Use E5 when security, compliance, Zero Trust, or Copilot readiness is a strategic priority.
 - Use E3 + add-ons only when requirements are narrow and clearly defined.
-- Avoid deciding based on license price alone.
+- Avoid deciding based on SKU names alone.
 - Evaluate risk reduction, operational simplification, and executive visibility as part of the business case.
 
 ---
 
 ## References
 
-- Microsoft 365 Licensing Guidance
+- [Microsoft 365 and Office 365 plan options](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+- [Product names and service plan identifiers for licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-service-plan-reference)
+- [Microsoft Defender for Office 365 overview](https://learn.microsoft.com/en-us/defender-office-365/mdo-about)
 - Microsoft Product Terms
-- Microsoft Learn
-- Microsoft Security Adoption Framework
 - Microsoft Zero Trust Guidance

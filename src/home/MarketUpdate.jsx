@@ -5,9 +5,9 @@ import styles from './MarketUpdate.module.css';
 const updates = [
   {
     label: 'Licensing',
-    title: 'July 2026 commercial licensing watch',
+    title: 'Licensing feature entitlement changed',
     body:
-      'Microsoft 365 licensing now needs a CFO-ready model that connects price movement, security value, AI readiness and license utilization.',
+      'Microsoft 365 licensing now needs service plan validation across Office 365 E3, Microsoft 365 E3, Defender, Purview, Entra and Intune.',
     path: '/knowledge/licensing/july-2026-microsoft-licensing-update',
   },
   {
@@ -31,12 +31,12 @@ export default function MarketUpdate() {
     <section className={styles.update}>
       <div className={styles.inner}>
         <div className={styles.copy}>
-          <p>2026 Market & Platform Update</p>
-          <h2>Licensing, Copilot Studio and AI agents are moving together</h2>
+          <p>2026 Feature & Platform Update</p>
+          <h2>Licensing features, Copilot Studio and AI agents are moving together</h2>
           <span>
             The next Microsoft architecture conversation is no longer only about
-            workloads. It is about license value, agent consumption, security
-            controls and measurable business outcomes.
+            workloads. It is about included service plans, enabled controls,
+            agent consumption and measurable business outcomes.
           </span>
         </div>
 

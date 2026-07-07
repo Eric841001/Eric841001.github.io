@@ -17,11 +17,11 @@ Microsoft 365 licensing은 비용 절감표가 아니라 business requirement와
 
 Business Premium, E3, E5, security add-on, compliance add-on, Copilot license를 사용자 유형과 risk level에 맞게 설계해야 합니다.
 
-## July 2026 Renewal Watch
+## Feature Entitlement Review
 
-Microsoft 365 commercial licensing discussions should now include a July 2026 renewal scenario. The key question is not only whether pricing changes, but whether the organization can prove usage, security value, Copilot readiness and agent consumption governance.
+Microsoft 365 licensing discussions should include a feature entitlement review. The key question is not only which SKU is purchased, but which service plans are included, enabled and usable for the required security, compliance, endpoint, Copilot and agent controls.
 
-Use this page for the current planning model: [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update)
+Use this page for the current planning model: [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update)
 
 ## Business Scenario
 
@@ -51,8 +51,8 @@ flowchart TB
 
 1. Segment users by role, risk and workload need.
 2. Map required capabilities to license plans.
-3. Identify add-ons and overlapping products.
-4. Build baseline, recommended and premium scenarios.
+3. Confirm included service plans and enabled state per user group.
+4. Identify add-ons and overlapping products.
 5. Validate with IT, security, compliance and finance.
 6. Define license assignment and review process.
 
@@ -73,11 +73,12 @@ Licensing must be checked against required security controls such as Defender, P
 ## Delivery Artifacts
 
 - License requirement matrix
+- Service plan inventory
 - User segmentation model
 - E3/E5/Business Premium comparison
 - Security and compliance capability mapping
 - Copilot license readiness plan
-- CFO cost scenario summary
+- Executive license-to-control matrix
 
 ## Customer Success Pattern
 
@@ -89,7 +90,7 @@ Licensing must be checked against required security controls such as Defender, P
 
 ## Lessons Learned
 
-Executive stakeholders respond better to licensing proposals that connect cost to risk reduction, operational efficiency and adoption value.
+Executive stakeholders respond better to licensing proposals that connect included capabilities to risk reduction, operational efficiency, Copilot readiness and adoption value.
 
 ## 검색 키워드
 

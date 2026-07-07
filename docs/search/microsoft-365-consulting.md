@@ -20,7 +20,7 @@ This page is a search landing page for visitors looking for Microsoft 365 consul
 
 Microsoft 365 consulting should include a renewal review that connects license scope, security baseline, Copilot adoption, Copilot Studio agents, storage usage, endpoint management and measurable business value.
 
-For the current planning model, see [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update).
+For the current planning model, see [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update).
 
 ## 한국어 요약
 
@@ -47,7 +47,7 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 - [Microsoft 365 Optimization Program](../projects/m365-optimization-program)
 - [M365 Assessment Playbook](../playbooks/m365-assessment-playbook)
 - [M365 Assessment Workbook](../downloads/m365-assessment-workbook)
-- [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update)
+- [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update)
 - [Contact and Asset Request](../contact)
 
 ## Requestable Assets
