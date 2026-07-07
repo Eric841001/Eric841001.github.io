@@ -17,6 +17,12 @@ Microsoft 365 licensing은 비용 절감표가 아니라 business requirement와
 
 Business Premium, E3, E5, security add-on, compliance add-on, Copilot license를 사용자 유형과 risk level에 맞게 설계해야 합니다.
 
+## July 2026 Renewal Watch
+
+Microsoft 365 commercial licensing discussions should now include a July 2026 renewal scenario. The key question is not only whether pricing changes, but whether the organization can prove usage, security value, Copilot readiness and agent consumption governance.
+
+Use this page for the current planning model: [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update)
+
 ## Business Scenario
 
 - Compare Business Premium, E3, E5 and add-ons

@@ -5,6 +5,7 @@ import HeroSection from '../home/HeroSection';
 import PlatformStats from '../home/PlatformStats';
 import SignatureEntryPoints from '../home/SignatureEntryPoints';
 import ArchitecturePreview from '../home/ArchitecturePreview';
+import MarketUpdate from '../home/MarketUpdate';
 import ExecutiveDashboard from '../home/ExecutiveDashboard';
 import DocsQuickAccess from '../home/DocsQuickAccess';
 import FeatureCards from '../home/FeatureCards';
@@ -100,6 +101,8 @@ export default function Home() {
         <SignatureEntryPoints />
 
         <ArchitecturePreview />
+
+        <MarketUpdate />
 
         <CustomerScenarios />
 

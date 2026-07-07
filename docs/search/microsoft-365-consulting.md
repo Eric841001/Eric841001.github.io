@@ -16,6 +16,12 @@ keywords:
 
 This page is a search landing page for visitors looking for Microsoft 365 consulting, architecture, governance, security, migration and delivery assets.
 
+## 2026 Renewal Context
+
+Microsoft 365 consulting should include a renewal review that connects license scope, security baseline, Copilot adoption, Copilot Studio agents, storage usage, endpoint management and measurable business value.
+
+For the current planning model, see [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update).
+
 ## 한국어 요약
 
 Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDrive를 구축하는 일이 아닙니다. 실제 기업 환경에서는 Entra ID, Intune, Defender, Purview, Conditional Access, collaboration governance, migration, 운영 인수인계까지 함께 설계해야 안정적인 결과가 나옵니다.
@@ -41,6 +47,7 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 - [Microsoft 365 Optimization Program](../projects/m365-optimization-program)
 - [M365 Assessment Playbook](../playbooks/m365-assessment-playbook)
 - [M365 Assessment Workbook](../downloads/m365-assessment-workbook)
+- [July 2026 Microsoft Licensing Update](../licensing/july-2026-microsoft-licensing-update)
 - [Contact and Asset Request](../contact)
 
 ## Requestable Assets
@@ -61,3 +68,7 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 - Microsoft 365 SOW
 - Microsoft 365 WBS
 - Microsoft 365 운영 개선
+- Microsoft 365 licensing update
+- Microsoft 365 renewal assessment
+- Copilot license value
+- Microsoft 365 cost optimization

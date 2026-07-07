@@ -17,6 +17,14 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 
 ---
 
+## 2026 Platform Shift
+
+Copilot Studio has changed materially in 2026. The platform now needs to be discussed in terms of new agent experience, Microsoft IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
+
+For the current architecture and governance implications, start here: [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
+
+---
+
 ## Business Context
 
 Many organizations want to introduce "one agent per user" or department-level AI agents, but they face practical challenges.
@@ -596,6 +604,7 @@ A Copilot Studio engagement should produce:
 
 - Microsoft Learn
 - Microsoft Copilot Studio Documentation
+- [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
 - Power Platform Documentation
 - Microsoft 365 Agents SDK
 - Microsoft Foundry

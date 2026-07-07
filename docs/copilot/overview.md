@@ -10,6 +10,14 @@ This Copilot section covers Microsoft 365 Copilot, Copilot Studio, AI agents and
 
 The focus is practical adoption: readiness, data protection, license value, use case prioritization, change management, agent lifecycle, cost control and executive decision support.
 
+## 2026 Copilot Studio Update
+
+Copilot Studio should now be treated as an enterprise agent platform, not only a chatbot builder.
+
+The latest planning model includes new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, Microsoft Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
+
+Start with [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update) before designing a large-scale agent program.
+
 ## 한국어 요약
 
 Microsoft Copilot 도입은 단순히 license를 구매하고 사용자를 활성화하는 작업이 아닙니다. 성공적인 Copilot 도입을 위해서는 data readiness, permission cleanup, security policy, business scenario, user training, cost management, value measurement가 함께 설계되어야 합니다.
@@ -45,6 +53,7 @@ Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기�
 - [Adoption Program](./adoption-program)
 - [Business Use Cases](./business-use-cases)
 - [Copilot Governance](./governance)
+- [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
 - [Agent Factory Operating Model](./agent-factory-operating-model)
 - [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
 - [Copilot Cowork Cost Governance](./copilot-cowork-cost-governance)

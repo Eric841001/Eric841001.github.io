@@ -16,6 +16,12 @@ Licensing 검토는 단순히 Microsoft 365 E3, E5, Business Premium, Defender, 
 
 기업 환경에서는 license가 security control, compliance requirement, AI readiness, device management, migration scope, 운영 조직의 책임 범위와 직접 연결됩니다. 따라서 어떤 license를 선택할지는 기능 목록이 아니라 “어떤 위험을 줄이고, 어떤 업무 가치를 만들고, 어떤 운영 모델을 유지할 것인가”라는 관점에서 판단해야 합니다.
 
+## 2026 Licensing Watch
+
+Microsoft 365 renewal and Copilot expansion conversations should now include a July 2026 licensing watch. Customers need a CFO-ready view of price movement, utilization, security controls, Copilot readiness and agent consumption.
+
+Start here: [July 2026 Microsoft Licensing Update](./july-2026-microsoft-licensing-update)
+
 ## Executive Decision Model
 
 Use this model when preparing an executive licensing discussion:
@@ -62,6 +68,7 @@ Use this model when preparing an executive licensing discussion:
 
 - [E3 vs E5](./e3-vs-e5)
 - [Business Premium](./business-premium)
+- [July 2026 Microsoft Licensing Update](./july-2026-microsoft-licensing-update)
 - [Microsoft 365 E3 vs E5 Decision Guide](../microsoft365/e3-vs-e5)
 - [Copilot ROI Framework](../copilot/roi-framework)
 - [Copilot Cowork Cost Governance](../copilot/copilot-cowork-cost-governance)

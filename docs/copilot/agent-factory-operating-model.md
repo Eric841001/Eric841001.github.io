@@ -21,6 +21,25 @@ The objective is to establish an Enterprise AI Operating System.
 
 ---
 
+# 2026 Agent Platform Controls
+
+Copilot Studio has moved from simple chatbot creation toward a governed enterprise agent platform.
+
+Agent Factory design should now include:
+
+- New agent experience and enhanced orchestration
+- Microsoft IQ / Work IQ grounding strategy
+- Reusable skills and memory controls
+- Computer use and UI automation risk review
+- Agent inventory and readiness status
+- Microsoft Entra agent identities
+- Agent-to-agent (A2A) integration model
+- Copilot Credit forecasting and consumption monitoring
+
+Use [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update) as the current baseline before approving enterprise-scale agent delivery.
+
+---
+
 # Why Agent Factory
 
 Without an operating model:
@@ -159,6 +178,9 @@ quadrantChart
 - Security Model
 - Knowledge Architecture
 - Tool Architecture
+- Agent identity and permission boundary
+- Copilot Credit consumption model
+- Evaluation and test-set strategy
 - Governance Controls
 - KPI Framework
 
@@ -172,6 +194,8 @@ quadrantChart
 | Data Architecture | Knowledge sources |
 | Security Design | Access model |
 | Governance Plan | Ownership and controls |
+| Cost Forecast | Copilot Credit and capacity estimate |
+| Evaluation Pack | Test sets, expected answers and release criteria |
 
 ---
 
@@ -185,6 +209,7 @@ quadrantChart
 | Team Agent | Agent Builder |
 | Business Agent | Copilot Studio |
 | Enterprise Agent | Foundry |
+| Agent Identity | Microsoft Entra |
 | Automation | Power Automate |
 | Integration | Logic Apps |
 | Data | Fabric |
@@ -203,6 +228,19 @@ quadrantChart
 - Data Quality
 - User Acceptance
 - Performance
+- Grounding quality
+- Action safety
+- Cost and capacity impact
+
+## Release Gates
+
+| Gate | Evidence |
+|---|---|
+| Knowledge quality | approved source list, freshness check, answer citation review |
+| Permission safety | least privilege, Entra identity, Conditional Access and DLP review |
+| Action safety | tool scope, approval step, rollback or exception handling |
+| Evaluation | test set, pass threshold, regression comparison |
+| Cost control | usage estimate, budget owner, monitoring rhythm |
 
 ---
 

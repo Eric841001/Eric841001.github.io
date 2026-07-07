@@ -4,6 +4,22 @@ import styles from './LatestArticles.module.css';
 
 const articles = [
   {
+    category: 'Licensing',
+    title: 'July 2026 Microsoft Licensing Update',
+    description:
+      'Executive-ready licensing watch for Microsoft 365 commercial pricing, Copilot value governance and renewal planning.',
+    path: '/knowledge/licensing/july-2026-microsoft-licensing-update',
+    meta: 'Licensing / 2026 Update',
+  },
+  {
+    category: 'Copilot Studio',
+    title: 'Copilot Studio 2026 Platform Update',
+    description:
+      'New agent experience, Microsoft IQ, skills, memory, computer use, A2A and agent inventory implications for enterprise design.',
+    path: '/knowledge/copilot/copilot-studio-2026-platform-update',
+    meta: 'Copilot Studio / Agent Platform',
+  },
+  {
     category: 'Projects',
     title: 'Enterprise AI Agent Factory Case Study',
     description:

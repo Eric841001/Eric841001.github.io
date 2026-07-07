@@ -86,6 +86,7 @@
         'copilot/microsoft-scout',
         'copilot/prompt-engineering',
         'copilot/copilot-studio',
+        'copilot/copilot-studio-2026-platform-update',
         'copilot/copilot-cowork-cost-governance',
         'copilot/agentic-ai-architecture',
         'copilot/multi-agent-framework',
@@ -115,6 +116,7 @@
       collapsed: false,
       items: [
         'licensing/overview',
+        'licensing/july-2026-microsoft-licensing-update',
         'licensing/e3-vs-e5',
         'licensing/business-premium',
       ],
