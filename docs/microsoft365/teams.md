@@ -21,6 +21,7 @@ A successful Teams deployment requires governance across:
 - Guest Access
 - External Collaboration
 - Information Protection
+- Information Barriers
 - Lifecycle Management
 - Microsoft 365 Copilot
 
@@ -65,6 +66,19 @@ Examples:
 - Sensitive documents shared in Teams
 - Unclassified content
 - Unmanaged file storage
+
+---
+
+### Scenario 3A
+
+Segment-based communication restriction
+
+Examples:
+
+- regulated departments that must not start 1:1 chat with each other
+- group chat invitations blocked by Information Barriers
+- Team member additions limited by Segment policy
+- validation evidence required for allowed and blocked communication paths
 
 ---
 

@@ -11,6 +11,8 @@ OneDrive provides personal work file storage, synchronization and sharing in Mic
 
 In enterprise design, OneDrive should be governed as part of the collaboration and data protection architecture. It affects external sharing, device sync, retention, DLP, migration and Copilot readiness.
 
+For regulated collaboration boundaries, OneDrive should also be reviewed with Microsoft Purview Information Barriers. Segment-based policies can affect file sharing, direct link access and search behavior when users belong to separated business groups.
+
 ## 한국어 요약
 
 OneDrive는 개인 업무 파일 저장소이지만 enterprise architecture에서는 data protection과 collaboration governance의 일부로 설계해야 합니다.
@@ -55,6 +57,7 @@ flowchart LR
 - Restrict sync to managed devices if required.
 - Review anonymous and external sharing.
 - Apply sensitivity labels and DLP.
+- Validate Information Barriers behavior for Segment-based sharing restrictions where required.
 - Use retention for user departure scenarios.
 - Monitor risky sharing and oversharing.
 
@@ -64,6 +67,7 @@ flowchart LR
 |---|---|
 | Sync policy | Can users sync to unmanaged or personal devices? |
 | Sharing | Which external sharing options are allowed? |
+| Information Barriers | Are any users restricted from sharing with other business Segments? |
 | Migration | Which personal drives or local folders move to OneDrive? |
 | Retention | What happens to OneDrive data after user departure? |
 | Copilot readiness | Which personal work files need cleanup or labeling? |

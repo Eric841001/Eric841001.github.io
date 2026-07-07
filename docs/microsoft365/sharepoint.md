@@ -28,6 +28,7 @@ Typical SharePoint initiatives include:
 - Enterprise knowledge management
 - Microsoft 365 Copilot readiness
 - Information protection and DLP implementation
+- Information Barriers for regulated collaboration boundaries
 - Global collaboration standardization
 
 ---
@@ -72,6 +73,7 @@ flowchart TB
 | Least Privilege | Permissions should be granted based on business need |
 | Metadata First | Use metadata to improve search and lifecycle management |
 | Security by Design | Apply sensitivity labels and DLP where required |
+| Segmented Collaboration | Use Information Barriers when sites must be limited to approved Segments |
 | Lifecycle Management | Sites and content must be reviewed, archived or deleted |
 
 ---

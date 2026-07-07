@@ -20,6 +20,7 @@ Purview is a critical foundation for:
 - Regulatory Compliance
 - Insider Risk Management
 - Microsoft 365 Copilot
+- Information Barriers
 
 Without proper data governance, AI initiatives often increase organizational risk rather than productivity.
 
@@ -66,6 +67,19 @@ Microsoft 365 Copilot deployment requires:
 - Content governance
 - Permission review
 - Data classification
+
+---
+
+### Scenario 5
+
+Regulated collaboration requires department or user groups to be separated by policy.
+
+Examples:
+
+- investment and advisory teams requiring Chinese Wall separation
+- sensitive project groups requiring controlled Teams communication
+- SharePoint and OneDrive sites that should only be accessible by matching Segments
+- audit evidence for allowed and blocked collaboration paths
 
 ---
 
@@ -451,6 +465,7 @@ Purview should integrate with:
 
 - Microsoft Learn
 - Microsoft Purview Documentation
+- [Microsoft Purview Information Barriers](./information-barriers)
 - Microsoft Information Protection Documentation
 - Microsoft Compliance Center Guidance
 - Microsoft Copilot Readiness Guidance

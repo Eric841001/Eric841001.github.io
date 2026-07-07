@@ -28,6 +28,7 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 | Data protection | Purview, sensitivity labels, DLP | classification, sharing control and Copilot data readiness |
 | Compliance | audit, retention, insider risk, compliance manager | evidence, policy ownership and operating procedure |
 | SaaS access | Global Secure Access, network exception model | controlled access for regulated or separated networks |
+| Information barriers | Purview Information Barriers, Teams, SharePoint, OneDrive | segment-based collaboration restriction and evidence-ready validation |
 
 ## Typical Field Scenarios
 
@@ -36,6 +37,7 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 - Exchange Online security review before or after migration
 - Defender and Intune onboarding for endpoint compliance
 - Purview and DLP readiness before Copilot rollout
+- Information Barrier design for regulated collaboration boundaries
 - security committee evidence pack for approval gates
 
 ## Recommended Reading
@@ -45,6 +47,7 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 - [Defender XDR](./defender-xdr)
 - [Defender for Office 365](./defender-for-office365)
 - [Purview](./purview)
+- [Microsoft Purview Information Barriers](./information-barriers)
 - [DLP](./dlp)
 - [Security Modernization Program](../projects/security-modernization-program)
 
@@ -54,6 +57,7 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 - Conditional Access policy design
 - Defender onboarding plan
 - Purview and DLP readiness matrix
+- Information Barrier Segment Matrix and validation checklist
 - risk register and exception workflow
 - executive security review pack
 
@@ -70,6 +74,9 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 - Defender for Endpoint deployment
 - Defender for Office 365
 - Microsoft Purview information protection
+- Microsoft Purview Information Barriers
+- Teams Information Barriers
+- SharePoint OneDrive Information Barriers
 - DLP policy design
 - Copilot data protection
 
