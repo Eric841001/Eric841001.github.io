@@ -1,0 +1,3 @@
+GitHub Pages refresh marker
+Source commit: 3fc6faa70482c19e50e1ac832955fb616139718c
+Reason: force Pages publishing layer to refresh after verified gh-pages/public CDN mismatch
