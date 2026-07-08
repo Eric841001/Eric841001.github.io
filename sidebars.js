@@ -11,16 +11,11 @@
       label: 'Knowledge Center',
       collapsed: false,
       items: [
-        {
-          type: 'category',
-          label: 'Start Here',
-          collapsed: false,
-          items: ['knowledge-center/overview'],
-        },
+        'knowledge-center/overview',
         {
           type: 'category',
           label: 'Search & Topic Landing',
-          collapsed: false,
+          collapsed: true,
           items: [
             'search/enterprise-microsoft-architecture-keywords',
             'search/microsoft-365-consulting',
@@ -31,7 +26,7 @@
         {
           type: 'category',
           label: 'Microsoft 365 Operations',
-          collapsed: false,
+          collapsed: true,
           items: [
             'knowledge-center/exchange-online-download-restriction',
             'knowledge-center/exchange-online-message-recall-purge',
@@ -42,13 +37,13 @@
         {
           type: 'category',
           label: 'Security & Access Controls',
-          collapsed: false,
+          collapsed: true,
           items: ['knowledge-center/gsa-whitelist-design'],
         },
         {
           type: 'category',
           label: 'Intune Endpoint Management',
-          collapsed: false,
+          collapsed: true,
           items: [
             'knowledge-center/intune-0x80180031',
             'knowledge-center/intune-usb-whitelist',
@@ -60,7 +55,7 @@
         {
           type: 'category',
           label: 'Defender Endpoint Operations',
-          collapsed: false,
+          collapsed: true,
           items: [
             'knowledge-center/mde-macos-onboarding',
             'knowledge-center/mde-linux-onboarding',
@@ -71,7 +66,7 @@
         {
           type: 'category',
           label: 'Research & Community',
-          collapsed: false,
+          collapsed: true,
           items: ['knowledge-center/mvp-community-research-map'],
         },
       ],
