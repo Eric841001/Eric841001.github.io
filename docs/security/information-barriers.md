@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 title: Microsoft Purview Information Barriers
+sidebar_label: Purview Information Barriers
 description: Microsoft Purview Information Barriers implementation guide for segment design, policy activation, Teams validation, SharePoint and OneDrive controls, rollback and audit evidence.
 ---
 
