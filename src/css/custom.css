@@ -212,6 +212,25 @@ body {
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
+.theme-doc-markdown .mermaid,
+.theme-doc-markdown div[class*='mermaid'] {
+  margin: 1.8rem 0 2.2rem;
+  padding: 1.25rem;
+  border: 1px solid #cfe0f3;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7fbff 100%),
+    radial-gradient(circle at 16px 16px, rgba(8, 145, 178, 0.08) 0 1px, transparent 1px);
+  background-size: auto, 20px 20px;
+  box-shadow: 0 14px 30px rgba(15, 49, 87, 0.08);
+}
+
+[data-theme='dark'] .theme-doc-markdown .mermaid,
+[data-theme='dark'] .theme-doc-markdown div[class*='mermaid'] {
+  border-color: #334a64;
+  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+}
+
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--kc-border);
   background:

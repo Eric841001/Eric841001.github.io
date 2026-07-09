@@ -13,6 +13,17 @@ The public pages describe the structure and purpose of each asset. Customer-spec
 
 For access to reusable templates or sample deliverables, contact **Youngsun Kang** through [Contact and Asset Request](../contact). The documents can be shared after confirming the intended use case, customer context and confidentiality boundary.
 
+## Public-to-Private Sharing Model
+
+```mermaid
+flowchart LR
+  PublicPage["Public Page\nasset purpose and structure"] --> Request["Contact Youngsun Kang\nscenario and intended use"]
+  Request --> Review["Confidentiality Review\nremove names, tenant IDs, commercial terms"]
+  Review --> Sanitize["Sanitized Version\npublic-safe sample or reusable template"]
+  Sanitize --> Share["Share Editable Asset\nDOCX, XLSX, PPTX when appropriate"]
+  Share --> Tailor["Tailor for Customer\nscope, assumptions, controls, owners"]
+```
+
 ## Sharing Policy
 
 | Asset Type | Public Site | Shared After Contact |
@@ -73,6 +84,18 @@ The following assets are intentionally described publicly but shared only after 
 - [Risk Register Template](./risk-register-template)
 
 ## Request Flow
+
+```mermaid
+sequenceDiagram
+  participant Visitor
+  participant YSK as Youngsun Kang
+  participant Asset as Requestable Asset
+  Visitor->>YSK: Explain scenario, industry, workload and format
+  YSK->>YSK: Check confidentiality boundary and intended use
+  YSK->>Asset: Select sanitized template or sample deliverable
+  Asset-->>YSK: Public-safe reusable version
+  YSK-->>Visitor: Share appropriate asset and tailoring guidance
+```
 
 1. Review the public asset pattern.
 2. Identify the scenario: Microsoft 365, Security, Copilot, Azure, Migration or Proposal.

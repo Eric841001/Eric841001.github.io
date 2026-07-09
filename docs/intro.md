@@ -10,6 +10,28 @@ This site is a practical Microsoft Enterprise Knowledge Center for architecture,
 
 It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migration scenarios where enterprise customers need more than product documentation. The goal is to connect field-tested consulting patterns with reusable assets that support assessment, architecture, proposal, implementation and operational handover.
 
+## Platform Map
+
+The Knowledge Center is organized as a consulting platform, not a flat document archive.
+
+```mermaid
+flowchart TB
+  Visitor["Visitor / Customer Context"] --> Discover["Discover\nBusiness need, industry, scenario"]
+  Discover --> Assess["Assess\nReadiness, risk, license, data"]
+  Assess --> Architect["Architect\nMicrosoft 365, Security, Copilot, Azure"]
+  Architect --> Deliver["Deliver\nSOW, WBS, migration, adoption, governance"]
+  Deliver --> Operate["Operate\nHandover, controls, improvement backlog"]
+
+  Architect --> M365["Microsoft 365"]
+  Architect --> Security["Security / Purview / Defender"]
+  Architect --> Copilot["Copilot / AI Agents"]
+  Architect --> Azure["Azure Landing Zone"]
+
+  Deliver --> Proposal["Proposal Center"]
+  Deliver --> Playbooks["Playbooks"]
+  Deliver --> Downloads["Requestable Assets"]
+```
+
 ## Who This Is For
 
 - Enterprise architects designing Microsoft cloud platforms
@@ -32,6 +54,16 @@ It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migrati
 | Projects | anonymized customer success patterns and reusable field lessons |
 
 ## Recommended Paths
+
+```mermaid
+flowchart LR
+  Executive["Executive Sponsor"] --> Blueprint["Executive Architecture Blueprint"]
+  SecurityLead["CISO / Security Leader"] --> SecurityPath["Security Overview"]
+  PlatformOwner["IT Director / Platform Owner"] --> M365Path["Microsoft 365 Overview"]
+  AILead["Copilot / AI Program Owner"] --> CopilotPath["Copilot Overview"]
+  Presales["Presales / PMO"] --> ProposalPath["Proposal Center"]
+  Consultant["Delivery Consultant"] --> PlaybookPath["Playbooks"]
+```
 
 ### Start Here By Role
 

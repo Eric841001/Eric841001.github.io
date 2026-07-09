@@ -10,6 +10,18 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 이 영역은 단순한 기술 메모가 아니라 실제 고객 제안, architecture design, implementation, governance, 운영 handover에 바로 재사용할 수 있는 Enterprise Knowledge Base로 구성됩니다.
 
+## Knowledge Operating Model
+
+```mermaid
+flowchart TB
+  Source["Field Experience\nproposal, assessment, delivery"] --> Sanitize["Public-Safe Sanitization\nremove customer names, tenant IDs, commercial data"]
+  Sanitize --> Structure["Reusable Structure\narchitecture, playbook, checklist, template"]
+  Structure --> Publish["Knowledge Center\npublic guidance and reference patterns"]
+  Publish --> Reuse["Consulting Reuse\npresales, workshop, design, delivery"]
+  Reuse --> Improve["Lessons Learned\nupdate backlog and quality review"]
+  Improve --> Source
+```
+
 ---
 
 ## Knowledge Domains
@@ -28,6 +40,16 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 ## Standard Article Framework
 
 모든 문서는 아래 구조를 기준으로 작성합니다.
+
+```mermaid
+flowchart LR
+  Summary["Executive Summary"] --> Scenario["Business Scenario"]
+  Scenario --> Architecture["Architecture"]
+  Architecture --> Implementation["Implementation"]
+  Implementation --> Security["Security / Licensing"]
+  Security --> Lessons["Best Practice / Lessons Learned"]
+  Lessons --> References["References"]
+```
 
 | Section | Description |
 |---|---|

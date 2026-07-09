@@ -14,6 +14,19 @@ Projects Library는 실제 고객 경험을 고객명 없이 업종, 과제, del
 
 Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance 프로젝트에서 반복적으로 사용되는 assessment, SOW, WBS, architecture, risk register, operating model 구조를 확인할 수 있습니다.
 
+## Project Pattern Map
+
+```mermaid
+flowchart TB
+  Industry["Industry Context\nmanufacturing, finance, retail, logistics"] --> Challenge["Business Challenge\nrisk, adoption, migration, governance"]
+  Challenge --> Scope["Technical Scope\nMicrosoft 365, Security, Copilot, Azure"]
+  Scope --> Delivery["Delivery Pattern\nassessment, design, rollout, handover"]
+  Delivery --> Assets["Reusable Assets\nSOW, WBS, workbook, risk register"]
+  Delivery --> Lessons["Lessons Learned\ncontrols, dependencies, adoption signals"]
+  Assets --> Reference["Public Reference Pattern\nanonymized and reusable"]
+  Lessons --> Reference
+```
+
 ## Project Categories
 
 - Manufacturing and automotive
