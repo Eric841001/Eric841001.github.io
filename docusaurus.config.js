@@ -14,6 +14,11 @@
 
   onBrokenLinks: 'throw',
 
+  future: {
+    v4: true,
+    faster: true,
+  },
+
   markdown: {
     mermaid: true,
     hooks: {
