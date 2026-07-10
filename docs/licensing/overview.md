@@ -10,6 +10,24 @@ This Licensing section helps compare Microsoft 365, Security, Compliance, Entra,
 
 Licensing guidance should connect cost to architecture, security controls, adoption readiness and operational value. A license decision is weak if it only compares product names.
 
+## Visual License Decision Map
+
+```mermaid
+flowchart LR
+  Driver["Business Driver<br/>security, compliance, AI, migration, renewal"]:::start
+  Persona["User Segmentation<br/>executive, knowledge worker, frontline, admin"]:::stage
+  Controls["Required Controls<br/>Entra, Intune, Defender, Purview, DLP"]:::stage
+  Adoption["Adoption Readiness<br/>training, support, use case value"]:::stage
+  Cost["Cost Governance<br/>assignment, utilization, review cadence"]:::stage
+  Decision["License Decision<br/>baseline, add-on, phased rollout"]:::start
+
+  Driver --> Persona --> Controls --> Adoption --> Cost --> Decision
+  Decision -. optimization cycle .-> Persona
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 Licensing 검토는 단순히 Microsoft 365 E3, E5, Business Premium, Defender, Purview, Copilot 가격을 비교하는 작업이 아닙니다.

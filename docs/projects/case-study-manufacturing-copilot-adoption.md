@@ -10,6 +10,24 @@ description: Anonymized manufacturing Copilot adoption case study covering readi
 
 This anonymized case study summarizes a manufacturing-sector Copilot adoption pattern. Customer names, internal project names and commercial details are intentionally excluded.
 
+## Visual Success Pattern
+
+```mermaid
+flowchart TB
+  Challenge["Manufacturing Challenge<br/>mixed office, plant and operation roles"]:::start
+  Readiness["Readiness Review<br/>identity, data, security, license baseline"]:::stage
+  Scenarios["Role-Based Scenarios<br/>meeting, report, proposal, knowledge search"]:::stage
+  Pilot["Controlled Pilot<br/>champions, support, feedback, KPI"]:::stage
+  Governance["Governance Model<br/>data protection, owner, escalation, roadmap"]:::stage
+  Value["Executive Value Story<br/>confidence, productivity, measurable adoption"]:::start
+
+  Challenge --> Readiness --> Scenarios --> Pilot --> Governance --> Value
+  Value -. scale decision .-> Scenarios
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 이 사례는 제조업 환경에서 Microsoft 365 Copilot을 도입할 때 readiness, security, license value, user enablement, executive reporting을 함께 설계한 익명화된 customer success pattern입니다.

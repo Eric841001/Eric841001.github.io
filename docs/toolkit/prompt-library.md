@@ -15,6 +15,24 @@ Prompts are intended to accelerate consulting delivery while maintaining consist
 
 Use these prompts as structured starting points, not as final customer deliverables. A consultant should always add customer context, industry constraints, current-state findings, risk decisions and implementation assumptions before sharing the output externally. For Microsoft terminology, keep product names such as Microsoft 365, Entra ID, Intune, Defender, Purview and Copilot in English, while writing the surrounding explanation in natural Korean or concise business English depending on the audience.
 
+## Visual Prompt Delivery Loop
+
+```mermaid
+flowchart LR
+  Context["Sanitized Context<br/>industry, workload, scope, constraints"]:::stage
+  Prompt["Structured Prompt<br/>role, audience, output, quality bar"]:::stage
+  Draft["AI Draft<br/>summary, options, risks, next actions"]:::stage
+  Review["Consultant Review<br/>accuracy, terminology, confidentiality"]:::gate
+  Deliverable["Customer-Ready Output<br/>proposal, assessment, architecture note"]:::stage
+  Library["Reusable Pattern<br/>remove sensitive details and store template"]:::gate
+
+  Context --> Prompt --> Draft --> Review --> Deliverable --> Library
+  Library -. improve prompt .-> Prompt
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef gate fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
+
 ## Prompt Quality Rules
 
 - define the role, audience and expected output format before asking for analysis

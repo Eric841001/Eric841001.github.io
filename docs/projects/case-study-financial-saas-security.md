@@ -10,6 +10,24 @@ description: Anonymized financial services SaaS security case study for Microsof
 
 This anonymized case study summarizes a financial-services pattern for Microsoft 365, SaaS access and Zero Trust readiness in a regulated environment.
 
+## Visual Control Pattern
+
+```mermaid
+flowchart TB
+  Requirement["Regulated SaaS Requirement<br/>controlled access and approval evidence"]:::start
+  Identity["Identity and Device Control<br/>Entra ID, Conditional Access, Intune"]:::stage
+  Network["Network Boundary<br/>Global Secure Access, allowlist, exception path"]:::stage
+  Data["Data Protection<br/>Purview, DLP, sensitivity, Copilot readiness"]:::stage
+  Exception["Exception Governance<br/>owner, expiry, compensating control"]:::stage
+  Committee["Security Committee Evidence<br/>decision pack and review cadence"]:::start
+
+  Requirement --> Identity --> Network --> Data --> Exception --> Committee
+  Committee -. policy refinement .-> Identity
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 이 사례는 금융권 또는 규제 산업 환경에서 Microsoft 365와 SaaS access를 승인 가능한 보안 구조로 정리한 익명화된 customer success pattern입니다.

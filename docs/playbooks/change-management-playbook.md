@@ -19,23 +19,20 @@ This playbook provides a framework for driving user adoption and realizing busin
 
 ## Change Management Framework
 
-```text
-Leadership Alignment
-        │
-        ▼
-Communication Strategy
-        │
-        ▼
-Education Program
-        │
-        ▼
-Champion Network
-        │
-        ▼
-Adoption Support
-        │
-        ▼
-Analytics & Improvement
+```mermaid
+flowchart TB
+  Leadership["Leadership Alignment<br/>why change, expected outcome, sponsorship"]:::lead
+  Communication["Communication Strategy<br/>message, timing, audience, channel"]:::stage
+  Education["Education Program<br/>role-based learning and hands-on practice"]:::stage
+  Champions["Champion Network<br/>department support and peer influence"]:::stage
+  Support["Adoption Support<br/>office hours, helpdesk, prompt coaching"]:::stage
+  Analytics["Analytics and Improvement<br/>usage, VOC, blockers, value signals"]:::lead
+
+  Leadership --> Communication --> Education --> Champions --> Support --> Analytics
+  Analytics -. improvement loop .-> Communication
+
+  classDef lead fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

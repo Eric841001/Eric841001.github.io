@@ -17,20 +17,20 @@ This framework provides a structured approach for recommending Microsoft 365 lic
 
 ## Licensing Decision Framework
 
-```text
-Business Requirement
-        │
-        ▼
-Security Requirement
-        │
-        ▼
-Compliance Requirement
-        │
-        ▼
-Operational Requirement
-        │
-        ▼
-License Recommendation
+```mermaid
+flowchart LR
+  Persona["User Persona<br/>role, workload, device, collaboration pattern"]:::input
+  Business["Business Requirement<br/>productivity, frontline, executive, field"]:::stage
+  Security["Security Requirement<br/>identity, endpoint, Defender, Zero Trust"]:::stage
+  Compliance["Compliance Requirement<br/>Purview, DLP, audit, retention"]:::stage
+  AI["AI Requirement<br/>Copilot, agent use case, data readiness"]:::stage
+  Recommendation["License Recommendation<br/>fit, gap, risk, next action"]:::input
+
+  Persona --> Business --> Security --> Compliance --> AI --> Recommendation
+  Recommendation -. validate value .-> Persona
+
+  classDef input fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

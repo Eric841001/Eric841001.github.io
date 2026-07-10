@@ -10,6 +10,23 @@ description: Microsoft Security modernization program for Zero Trust, Conditiona
 
 The Security Modernization Program helps organizations move from basic Microsoft 365 usage to an evidence-ready security operating model across identity, endpoint, collaboration, data protection and SaaS access.
 
+## Visual Modernization Roadmap
+
+```mermaid
+flowchart TB
+  Baseline["Baseline Review<br/>identity, endpoint, data, messaging, SaaS"]:::stage
+  Architecture["Reference Architecture<br/>Zero Trust, Defender, Purview, Intune"]:::stage
+  Policy["Policy Design<br/>mandatory controls and exception rules"]:::stage
+  Evidence["Evidence Pack<br/>committee, audit, executive review"]:::gate
+  Operations["Security Operations<br/>owners, cadence, incident workflow"]:::gate
+
+  Baseline --> Architecture --> Policy --> Evidence --> Operations
+  Operations -. control tuning .-> Baseline
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef gate fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
+
 ## 한국어 요약
 
 Security Modernization Program은 Microsoft 365 보안 설정을 단순 점검하는 작업이 아니라, Zero Trust, Conditional Access, Defender, Purview, Intune, SaaS access control, security committee evidence를 하나의 운영 모델로 묶는 프로그램입니다.

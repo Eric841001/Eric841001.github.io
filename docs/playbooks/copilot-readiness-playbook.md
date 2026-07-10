@@ -32,26 +32,21 @@ The readiness assessment should answer:
 
 ## Readiness Framework
 
-```text
-Business Alignment
-       │
-       ▼
-Identity Assessment
-       │
-       ▼
-Security Assessment
-       │
-       ▼
-Governance Assessment
-       │
-       ▼
-Information Architecture Review
-       │
-       ▼
-Adoption Readiness
-       │
-       ▼
-Roadmap Development
+```mermaid
+flowchart TB
+  Business["Business Alignment<br/>AI goals, use cases, success metrics"]:::start
+  Identity["Identity Assessment<br/>MFA, Conditional Access, admin roles"]:::stage
+  Security["Security Assessment<br/>Defender, endpoint, audit, risk posture"]:::stage
+  Governance["Governance Assessment<br/>policy, owner, exception, lifecycle"]:::stage
+  Information["Information Architecture<br/>SharePoint, Teams, OneDrive, oversharing"]:::stage
+  Adoption["Adoption Readiness<br/>champions, training, support, VOC"]:::stage
+  Roadmap["Roadmap Development<br/>pilot, remediation, rollout, KPI"]:::start
+
+  Business --> Identity --> Security --> Governance --> Information --> Adoption --> Roadmap
+  Roadmap -. readiness backlog .-> Governance
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

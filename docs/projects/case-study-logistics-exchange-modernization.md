@@ -10,6 +10,23 @@ description: Anonymized logistics Exchange Online modernization case study cover
 
 This anonymized case study summarizes a logistics-sector Microsoft 365 modernization pattern centered on Exchange Online, security review and operational continuity.
 
+## Visual Modernization Pattern
+
+```mermaid
+flowchart LR
+  Readiness["Readiness<br/>source mail, identity, DNS, dependencies"]:::stage
+  Design["Target Design<br/>mail flow, security baseline, coexistence"]:::stage
+  Pilot["Pilot<br/>selected users, validation, issue log"]:::stage
+  Cutover["Cutover<br/>batch migration, rollback, communication"]:::stage
+  Hypercare["Hypercare<br/>support, admin guide, handover"]:::stage
+  Operate["Operate<br/>stable mail, security review, runbook"]:::stage
+
+  Readiness --> Design --> Pilot --> Cutover --> Hypercare --> Operate
+  Hypercare -. issue learning .-> Design
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.5px
+```
+
 ## 한국어 요약
 
 이 사례는 물류/유통형 조직에서 Exchange Online과 Microsoft 365 collaboration을 현대화하면서 업무 연속성, mail flow, security review, cutover, rollback, hypercare를 함께 설계한 익명화된 customer success pattern입니다.

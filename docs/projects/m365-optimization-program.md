@@ -10,6 +10,24 @@ description: Microsoft 365 optimization engagement model for tenant governance, 
 
 The Microsoft 365 Optimization Program is a reusable engagement model for organizations that already own Microsoft 365 but need stronger governance, security, adoption and operating discipline.
 
+## Visual Optimization Loop
+
+```mermaid
+flowchart TB
+  Assess["Assess Current State<br/>tenant, identity, devices, collaboration, security"]:::stage
+  Prioritize["Prioritize Backlog<br/>risk, impact, effort, dependency"]:::stage
+  Design["Design Governance<br/>policy baseline, owner model, exception process"]:::stage
+  Pilot["Pilot Remediation<br/>controlled validation and communication"]:::stage
+  Handover["Operations Handover<br/>admin guide, workbook, review rhythm"]:::gate
+  Improve["Continuous Improvement<br/>roadmap and quarterly review"]:::gate
+
+  Assess --> Prioritize --> Design --> Pilot --> Handover --> Improve
+  Improve -. next maturity cycle .-> Assess
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef gate fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
+
 ## 한국어 요약
 
 Microsoft 365 Optimization Program은 이미 Microsoft 365를 사용 중인 조직이 tenant governance, identity, endpoint, collaboration, messaging, security, operations를 다시 정렬하기 위한 개선 프로그램입니다.

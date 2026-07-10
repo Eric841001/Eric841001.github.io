@@ -10,6 +10,24 @@ description: Anonymized enterprise group governance case study for Entra ID, Int
 
 This anonymized case study summarizes an enterprise group pattern involving Entra ID, Intune, Microsoft 365 governance and multi-tenant operating decisions.
 
+## Visual Governance Pattern
+
+```mermaid
+flowchart TB
+  Group["Enterprise Group Context<br/>multiple business units and policy variants"]:::start
+  Identity["Identity Governance<br/>roles, groups, MFA, Conditional Access"]:::stage
+  Device["Device Governance<br/>Intune enrollment, compliance, platform policy"]:::stage
+  Collaboration["Collaboration Governance<br/>Teams, SharePoint, guest, lifecycle"]:::stage
+  Tenant["Tenant Strategy<br/>strategic, transitional, regulated, legacy"]:::stage
+  Operations["Operations Model<br/>exception, support, review cadence"]:::start
+
+  Group --> Identity --> Device --> Collaboration --> Tenant --> Operations
+  Operations -. policy renewal .-> Identity
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 이 사례는 여러 사업부 또는 계열사가 Microsoft 365, Entra ID, Intune, Teams, SharePoint, Defender, Purview를 서로 다른 기준으로 운영하는 상황에서 공통 governance model을 수립한 익명화된 customer success pattern입니다.
