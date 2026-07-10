@@ -5,23 +5,31 @@ import styles from './AtAGlance.module.css';
 
 const focusAreas = [
   {
-    label: '01. Copilot',
-    title: 'Start with everyday knowledge work and adoption',
+    step: '01',
+    label: 'Copilot',
+    title: 'Start with everyday knowledge work',
+    detail: 'Prompts, meetings, documents and team-level adoption patterns.',
     path: '/knowledge/copilot/overview',
   },
   {
-    label: '02. Copilot Studio',
-    title: 'Build governed business agents and workflows',
+    step: '02',
+    label: 'Copilot Studio',
+    title: 'Build governed business agents',
+    detail: 'Reusable workflows with knowledge sources, actions and owner rules.',
     path: '/knowledge/copilot/copilot-studio-2026-platform-update',
   },
   {
-    label: '03. M365 Agents',
-    title: 'Extend Microsoft 365 with contextual agents',
+    step: '03',
+    label: 'M365 Agents',
+    title: 'Extend Microsoft 365 in context',
+    detail: 'Agents embedded around identity, content, collaboration and governance.',
     path: '/knowledge/copilot/agentic-ai-architecture',
   },
   {
-    label: '04. Copilot Cowork',
-    title: 'Operate long-running work with approval and cost control',
+    step: '04',
+    label: 'Copilot Cowork',
+    title: 'Operate long-running work',
+    detail: 'Approval, exception handling, cost controls and measurable outcomes.',
     path: '/knowledge/copilot/copilot-cowork-cost-governance',
   },
 ];
@@ -66,8 +74,11 @@ export default function AtAGlance() {
         <div className={styles.topicMap} aria-label="Primary knowledge areas">
           {focusAreas.map((area) => (
             <Link className={styles.topic} to={area.path} key={area.label}>
-              <strong>{area.label}</strong>
-              <span>{area.title}</span>
+              <span className={styles.topicStep}>{area.step}</span>
+              <span className={styles.topicLabel}>{area.label}</span>
+              <strong>{area.title}</strong>
+              <span className={styles.topicDetail}>{area.detail}</span>
+              <span className={styles.topicAction}>Open guide</span>
             </Link>
           ))}
         </div>

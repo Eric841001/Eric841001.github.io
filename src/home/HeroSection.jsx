@@ -3,10 +3,26 @@ import Link from '@docusaurus/Link';
 import styles from './HeroSection.module.css';
 
 const capabilities = [
-  { label: 'Copilot', value: 'Work AI entry point' },
-  { label: 'Copilot Studio', value: 'Business agents' },
-  { label: 'M365 Agents', value: 'In-context automation' },
-  { label: 'Copilot Cowork', value: 'Long-running work' },
+  {
+    label: 'Copilot',
+    value: 'Work AI entry point',
+    path: '/knowledge/copilot/overview',
+  },
+  {
+    label: 'Copilot Studio',
+    value: 'Business agents',
+    path: '/knowledge/copilot/copilot-studio-2026-platform-update',
+  },
+  {
+    label: 'M365 Agents',
+    value: 'In-context automation',
+    path: '/knowledge/copilot/agentic-ai-architecture',
+  },
+  {
+    label: 'Copilot Cowork',
+    value: 'Long-running work',
+    path: '/knowledge/copilot/copilot-cowork-cost-governance',
+  },
 ];
 
 export default function HeroSection() {
@@ -61,10 +77,11 @@ export default function HeroSection() {
 
           <div className={styles.capabilityGrid}>
             {capabilities.map((item) => (
-              <div key={item.label} className={styles.capability}>
+              <Link key={item.label} className={styles.capability} to={item.path}>
                 <small>{item.label}</small>
                 <strong>{item.value}</strong>
-              </div>
+                <span>Open</span>
+              </Link>
             ))}
           </div>
 
