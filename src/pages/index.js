@@ -3,6 +3,7 @@ import Head from '@docusaurus/Head';
 
 import HeroSection from '../home/HeroSection';
 import PlatformStats from '../home/PlatformStats';
+import AtAGlance from '../home/AtAGlance';
 import SignatureEntryPoints from '../home/SignatureEntryPoints';
 import ArchitecturePreview from '../home/ArchitecturePreview';
 import MarketUpdate from '../home/MarketUpdate';
@@ -97,6 +98,8 @@ export default function Home() {
         <HeroSection />
 
         <PlatformStats />
+
+        <AtAGlance />
 
         <SignatureEntryPoints />
 
