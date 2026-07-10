@@ -33,20 +33,18 @@ The deployment should achieve:
 
 ## Deployment Framework
 
-```text
-Assessment
-     │
-     ▼
-Design
-     │
-     ▼
-Pilot
-     │
-     ▼
-Production Rollout
-     │
-     ▼
-Operational Handover
+```mermaid
+flowchart LR
+  Assessment["Assessment<br/>identity, devices, security, BYOD"]:::stage
+  Design["Design<br/>enrollment, compliance, profiles, apps"]:::stage
+  Pilot["Pilot<br/>user group, device validation, issue log"]:::stage
+  Rollout["Production Rollout<br/>waves, support, communications"]:::stage
+  Handover["Operational Handover<br/>runbook, owners, support model"]:::stage
+
+  Assessment --> Design --> Pilot --> Rollout --> Handover
+  Handover -. improvement .-> Design
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---
@@ -105,17 +103,25 @@ Supported methods:
 
 ### Device Management Model
 
-```text
-Entra ID
-      │
-      ▼
-Microsoft Intune
-      │
-      ├─ Compliance Policies
-      ├─ Configuration Profiles
-      ├─ Application Deployment
-      ├─ Update Management
-      └─ Security Baselines
+```mermaid
+flowchart TB
+  Entra["Entra ID<br/>users, groups, device identity"]:::core
+  Intune["Microsoft Intune<br/>endpoint management plane"]:::core
+  Compliance["Compliance Policies<br/>access readiness and device health"]:::branch
+  Config["Configuration Profiles<br/>platform settings and restrictions"]:::branch
+  Apps["Application Deployment<br/>required, available, protected apps"]:::branch
+  Updates["Update Management<br/>rings, deadlines, reporting"]:::branch
+  Security["Security Baselines<br/>Defender, hardening, attack surface"]:::branch
+
+  Entra --> Intune
+  Intune --> Compliance
+  Intune --> Config
+  Intune --> Apps
+  Intune --> Updates
+  Intune --> Security
+
+  classDef core fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef branch fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---
@@ -215,14 +221,17 @@ Integrate:
 
 Example:
 
-```text
-Compliant Device
-        +
-MFA
-        +
-Approved Location
-        =
-Access Granted
+```mermaid
+flowchart LR
+  Device["Compliant Device"]:::signal
+  MFA["MFA"]:::signal
+  Location["Approved Location"]:::signal
+  Access["Access Granted"]:::result
+
+  Device --> MFA --> Location --> Access
+
+  classDef signal fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
 ```
 
 ---

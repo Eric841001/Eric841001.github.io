@@ -30,23 +30,19 @@ The assessment should answer:
 
 ## Assessment Framework
 
-```text
-Discovery
-    │
-    ▼
-Current State Assessment
-    │
-    ▼
-Gap Analysis
-    │
-    ▼
-Risk Assessment
-    │
-    ▼
-Target State Design
-    │
-    ▼
-Roadmap Development
+```mermaid
+flowchart TB
+  Discovery["Discovery<br/>stakeholders, scope, inventory"]:::stage
+  Current["Current State Assessment<br/>tenant, license, identity, workloads"]:::stage
+  Gap["Gap Analysis<br/>risk, control, adoption, operations"]:::stage
+  Risk["Risk Assessment<br/>impact, likelihood, owner, mitigation"]:::stage
+  Target["Target State Design<br/>governance, security, collaboration"]:::stage
+  Roadmap["Roadmap Development<br/>priority, timeline, quick wins"]:::stage
+
+  Discovery --> Current --> Gap --> Risk --> Target --> Roadmap
+  Roadmap -. reassess .-> Current
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

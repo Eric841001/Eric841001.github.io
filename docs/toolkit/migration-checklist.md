@@ -17,26 +17,20 @@ The objective is to reduce migration risk while ensuring business continuity and
 
 ## Migration Lifecycle
 
-```text
-Discovery
-    │
-    ▼
-Assessment
-    │
-    ▼
-Design
-    │
-    ▼
-Pilot
-    │
-    ▼
-Migration
-    │
-    ▼
-Validation
-    │
-    ▼
-Hypercare
+```mermaid
+flowchart TB
+  Discovery["Discovery<br/>scope, inventory, stakeholders"]:::stage
+  Assessment["Assessment<br/>risk, dependency, readiness"]:::stage
+  Design["Design<br/>target architecture and migration method"]:::stage
+  Pilot["Pilot<br/>validation, issue log, user feedback"]:::stage
+  Migration["Migration<br/>waves, cutover, rollback"]:::stage
+  Validation["Validation<br/>data, access, mail flow, experience"]:::stage
+  Hypercare["Hypercare<br/>support, stabilization, handover"]:::stage
+
+  Discovery --> Assessment --> Design --> Pilot --> Migration --> Validation --> Hypercare
+  Hypercare -. lessons learned .-> Design
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

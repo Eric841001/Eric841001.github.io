@@ -17,23 +17,19 @@ The objective is to ensure consistency, scalability, security and operational ex
 
 ## Architecture Design Methodology
 
-```text
-Business Requirements
-        │
-        ▼
-Current State Assessment
-        │
-        ▼
-Gap Analysis
-        │
-        ▼
-Target Architecture
-        │
-        ▼
-Implementation Roadmap
-        │
-        ▼
-Operational Model
+```mermaid
+flowchart TB
+  Business["Business Requirements<br/>goals, constraints, stakeholders"]:::stage
+  Current["Current State Assessment<br/>tenant, identity, workload, risk"]:::stage
+  Gap["Gap Analysis<br/>control gaps and dependencies"]:::stage
+  Target["Target Architecture<br/>Microsoft 365, Azure, Security, Copilot"]:::stage
+  Roadmap["Implementation Roadmap<br/>phases, workstreams, milestones"]:::stage
+  Operations["Operational Model<br/>owners, cadence, handover"]:::stage
+
+  Business --> Current --> Gap --> Target --> Roadmap --> Operations
+  Operations -. review cycle .-> Current
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

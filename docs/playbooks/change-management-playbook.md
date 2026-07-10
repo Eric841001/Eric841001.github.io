@@ -298,22 +298,18 @@ Track:
 
 ## Continuous Improvement Model
 
-```text
-Education
-     │
-     ▼
-Usage
-     │
-     ▼
-Feedback
-     │
-     ▼
-Insights
-     │
-     ▼
-Optimization
-     │
-     └──► Education
+```mermaid
+flowchart LR
+  Education["Education<br/>role-based learning"]:::stage
+  Usage["Usage<br/>real work scenarios"]:::stage
+  Feedback["Feedback<br/>VOC, tickets, champions"]:::stage
+  Insights["Insights<br/>patterns, blockers, opportunities"]:::stage
+  Optimization["Optimization<br/>content, support, governance updates"]:::stage
+
+  Education --> Usage --> Feedback --> Insights --> Optimization
+  Optimization -. refresh curriculum .-> Education
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---

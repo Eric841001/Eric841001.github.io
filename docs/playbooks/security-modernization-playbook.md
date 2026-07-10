@@ -33,23 +33,19 @@ The program should achieve:
 
 ## Modernization Framework
 
-```text
-Current State Assessment
-        │
-        ▼
-Risk Identification
-        │
-        ▼
-Target Security Architecture
-        │
-        ▼
-Implementation Roadmap
-        │
-        ▼
-Deployment
-        │
-        ▼
-Operationalization
+```mermaid
+flowchart TB
+  Current["Current State Assessment<br/>identity, endpoint, data, threat posture"]:::stage
+  Risk["Risk Identification<br/>exposure, impact, control gap"]:::stage
+  Target["Target Security Architecture<br/>Zero Trust, Defender, Purview, Intune"]:::stage
+  Roadmap["Implementation Roadmap<br/>phases, dependencies, owners"]:::stage
+  Deploy["Deployment<br/>policy, onboarding, validation"]:::stage
+  Operate["Operationalization<br/>SOC, review cadence, evidence"]:::stage
+
+  Current --> Risk --> Target --> Roadmap --> Deploy --> Operate
+  Operate -. tuning feedback .-> Risk
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
 ```
 
 ---
