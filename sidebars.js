@@ -9,7 +9,7 @@
     {
       type: 'category',
       label: 'Knowledge Center',
-      collapsed: false,
+      collapsed: true,
       items: [
         'knowledge-center/overview',
         {
