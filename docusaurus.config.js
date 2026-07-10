@@ -63,6 +63,39 @@
   ],
 
   themeConfig: {
+    mermaid: {
+      theme: {light: 'base', dark: 'base'},
+      options: {
+        flowchart: {
+          curve: 'basis',
+          htmlLabels: true,
+          nodeSpacing: 50,
+          rankSpacing: 62,
+          padding: 14,
+        },
+        themeVariables: {
+          fontFamily: '"Segoe UI", "Noto Sans KR", Inter, system-ui, sans-serif',
+          fontSize: '16px',
+          background: 'transparent',
+          primaryColor: '#f8fbff',
+          primaryTextColor: '#102033',
+          primaryBorderColor: '#38bdf8',
+          lineColor: '#536276',
+          secondaryColor: '#ecfeff',
+          tertiaryColor: '#eff6ff',
+          mainBkg: '#f8fbff',
+          secondBkg: '#ecfeff',
+          tertiaryBkg: '#eff6ff',
+          nodeBorder: '#7dd3fc',
+          clusterBkg: '#f8fbff',
+          clusterBorder: '#cfe0f3',
+          edgeLabelBackground: '#ffffff',
+          textColor: '#102033',
+          titleColor: '#0f3157',
+          darkMode: false,
+        },
+      },
+    },
     image: 'img/youngsun-social-card.jpg',
     metadata: [
       {

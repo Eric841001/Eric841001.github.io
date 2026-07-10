@@ -73,15 +73,35 @@ For more detailed examples, see:
 
 ```mermaid
 flowchart TB
-  Challenge["Customer Challenge"] --> Assessment["Assessment Workbook"]
-  Challenge --> SOW["SOW / WBS"]
-  Assessment --> Architecture["Reference Architecture"]
-  SOW --> Delivery["Delivery Plan"]
-  Architecture --> Controls["Security / Governance Controls"]
-  Delivery --> Runbook["Runbook / Handover Guide"]
-  Controls --> Metrics["Executive Metrics"]
-  Runbook --> Metrics
-  Metrics --> Reference["Anonymized Reference Pattern"]
+  Challenge["Customer Challenge<br/>business risk, adoption target, migration scope"]:::source
+
+  subgraph Discovery["Discovery and Architecture"]
+    Assessment["Assessment Workbook<br/>current state, gap, readiness"]:::asset
+    Architecture["Reference Architecture<br/>identity, data, endpoint, workload"]:::design
+    Controls["Security / Governance Controls<br/>policy, exception, evidence"]:::control
+  end
+
+  subgraph Delivery["Delivery and Enablement"]
+    SOW["SOW / WBS<br/>scope, milestone, role, dependency"]:::asset
+    Plan["Delivery Plan<br/>wave, pilot, rollout, hypercare"]:::design
+    Runbook["Runbook / Handover Guide<br/>operation, ownership, escalation"]:::control
+  end
+
+  Metrics["Executive Metrics<br/>risk reduction, adoption, stability"]:::metric
+  Reference["Anonymized Reference Pattern<br/>industry + scenario + reusable asset"]:::reference
+
+  Challenge --> Assessment
+  Challenge --> SOW
+  Assessment --> Architecture --> Controls --> Metrics
+  SOW --> Plan --> Runbook --> Metrics
+  Metrics --> Reference
+
+  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
+  classDef asset fill:#ecfeff,stroke:#22d3ee,color:#102033,stroke-width:1.6px
+  classDef design fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
+  classDef control fill:#f8fafc,stroke:#94a3b8,color:#102033,stroke-width:1.6px
+  classDef metric fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.8px
+  classDef reference fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:2px
 ```
 
 ### Manufacturing: Copilot Adoption Operating Model
