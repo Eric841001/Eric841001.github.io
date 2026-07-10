@@ -54,24 +54,56 @@ Copilot Studio는 더 이상 단순 chatbot builder로 보기 어렵습니다.
 
 ```mermaid
 flowchart TB
-  User[User or Trigger] --> Agent[Copilot Studio Agent]
-  Agent --> Orchestration[Enhanced Orchestration]
-  Orchestration --> IQ[Microsoft IQ / Work IQ]
-  Orchestration --> Skills[Reusable Skills]
-  Orchestration --> Memory[Memory]
-  Orchestration --> Tools[Tools and Workflows]
+  User["User or<br/>business trigger"]:::entry --> Agent["Copilot Studio<br/>Agent"]:::core
 
-  Tools --> Flow[Agent Flow / Workflow]
-  Tools --> Computer[Computer Use]
-  Tools --> Connector[Connector or API]
-  Tools --> A2A[Agent-to-Agent]
+  Agent --> Orchestration["Enhanced<br/>orchestration"]:::plane
+  Agent --> Governance["Governance<br/>control plane"]:::plane
 
-  Agent --> Governance[Governance Control Plane]
-  Governance --> Inventory[Agent Inventory]
-  Governance --> Identity[Entra Agent Identity]
-  Governance --> DLP[Power Platform DLP]
-  Governance --> Credits[Copilot Credit Forecast]
-  Governance --> Analytics[Analytics and Evaluation]
+  subgraph Runtime["Runtime capabilities"]
+    direction LR
+    IQ["Microsoft IQ<br/>Work IQ"]:::runtime
+    Skills["Reusable<br/>skills"]:::runtime
+    Memory["Memory"]:::runtime
+    Tools["Tools and<br/>workflows"]:::runtime
+  end
+
+  subgraph Execution["Execution channels"]
+    direction LR
+    Flow["Agent flow<br/>workflow"]:::exec
+    Computer["Computer<br/>use"]:::exec
+    Connector["Connector<br/>API"]:::exec
+    A2A["Agent-to-agent"]:::exec
+  end
+
+  subgraph Controls["Governance controls"]
+    direction LR
+    Inventory["Agent<br/>inventory"]:::control
+    Identity["Entra agent<br/>identity"]:::control
+    DLP["Power Platform<br/>DLP"]:::control
+    Credits["Credit<br/>forecast"]:::control
+    Analytics["Analytics<br/>evaluation"]:::control
+  end
+
+  Orchestration --> IQ
+  Orchestration --> Skills
+  Orchestration --> Memory
+  Orchestration --> Tools
+  Tools --> Flow
+  Tools --> Computer
+  Tools --> Connector
+  Tools --> A2A
+  Governance --> Inventory
+  Governance --> Identity
+  Governance --> DLP
+  Governance --> Credits
+  Governance --> Analytics
+
+  classDef entry fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.6px
+  classDef core fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:2px
+  classDef plane fill:#eef6ff,stroke:#2563eb,color:#102033,stroke-width:1.8px
+  classDef runtime fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef exec fill:#fff7ed,stroke:#f59e0b,color:#102033,stroke-width:1.4px
+  classDef control fill:#f5f3ff,stroke:#7c3aed,color:#102033,stroke-width:1.4px
 ```
 
 ## Design Implications

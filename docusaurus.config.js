@@ -28,6 +28,13 @@
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  scripts: [
+    {
+      src: '/js/mermaid-zoom.js',
+      defer: true,
+    },
+  ],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
