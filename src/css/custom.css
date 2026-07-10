@@ -255,8 +255,8 @@ body {
   min-width: min(1420px, 100%);
 }
 
-.theme-doc-markdown .kc-mermaid-frame::after {
-  content: "Click to enlarge";
+.theme-doc-markdown .kc-visual-frame::after {
+  content: "⤢ Enlarge";
   position: sticky;
   left: calc(100% - 9.2rem);
   bottom: 0.6rem;
@@ -345,7 +345,7 @@ body {
   color: #e5edf7 !important;
 }
 
-[data-theme='dark'] .theme-doc-markdown .kc-mermaid-frame::after {
+[data-theme='dark'] .theme-doc-markdown .kc-visual-frame::after {
   border-color: #334a64;
   background: rgba(15, 23, 42, 0.92);
   color: #bae6fd;
@@ -423,7 +423,8 @@ body.kc-diagram-modal-open {
   padding: clamp(1rem, 2vw, 1.6rem);
 }
 
-.kc-diagram-modal__canvas svg {
+.kc-diagram-modal__canvas svg,
+.kc-diagram-modal__canvas img {
   display: block;
   width: max-content;
   min-width: min(1280px, 100%);
@@ -431,6 +432,14 @@ body.kc-diagram-modal-open {
   height: auto;
   margin: 0 auto;
   overflow: visible;
+}
+
+.kc-diagram-modal__canvas img {
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  max-height: calc(90vh - 7rem);
+  object-fit: contain;
 }
 
 .kc-diagram-modal__canvas svg text,
@@ -476,7 +485,7 @@ body.kc-diagram-modal-open {
     min-width: 760px;
   }
 
-  .theme-doc-markdown .kc-mermaid-frame::after {
+  .theme-doc-markdown .kc-visual-frame::after {
     left: 0.75rem;
   }
 

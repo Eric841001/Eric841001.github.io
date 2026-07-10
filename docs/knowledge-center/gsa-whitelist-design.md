@@ -89,8 +89,8 @@ flowchart LR
   Request["User sign-in request"]:::request
   Device["Managed device<br/>Entra joined + Intune compliant"]:::control
   Tenant["Tenant validation<br/>corporate and approved partner tenants"]:::control
-  Allow["Allowed<br/>corporate tenant, subsidiary tenant, approved partner tenant"]:::allow
-  Block["Blocked<br/>personal Microsoft account, unapproved external tenant, consumer OneDrive"]:::block
+  Allow["Allowed tenants<br/>corporate, subsidiary,<br/>approved partner"]:::allow
+  Block["Blocked access<br/>personal account,<br/>external tenant,<br/>consumer OneDrive"]:::block
 
   Request --> Device --> Tenant
   Tenant --> Allow
