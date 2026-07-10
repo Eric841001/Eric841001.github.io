@@ -15,7 +15,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Customer Information
+## Customer Information
 
 | Item | Value |
 |---|---|
@@ -30,7 +30,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Assessment Scope
+## Assessment Scope
 
 ## Included Areas
 
@@ -47,7 +47,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Identity Assessment
+## Identity Assessment
 
 ## Environment Summary
 
@@ -78,7 +78,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Exchange Online Assessment
+## Exchange Online Assessment
 
 ## Review Areas
 
@@ -109,7 +109,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Microsoft Teams Assessment
+## Microsoft Teams Assessment
 
 ## Review Areas
 
@@ -140,7 +140,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# SharePoint Online Assessment
+## SharePoint Online Assessment
 
 ## Review Areas
 
@@ -171,7 +171,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# OneDrive Assessment
+## OneDrive Assessment
 
 ## Review Areas
 
@@ -201,7 +201,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Security Assessment
+## Security Assessment
 
 ## Microsoft Defender
 
@@ -231,7 +231,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Compliance Assessment
+## Compliance Assessment
 
 ## Microsoft Purview
 
@@ -261,7 +261,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Intune Assessment
+## Intune Assessment
 
 ## Review Areas
 
@@ -291,7 +291,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Governance Assessment
+## Governance Assessment
 
 ## Review Areas
 
@@ -321,7 +321,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Copilot Readiness Assessment
+## Copilot Readiness Assessment
 
 ## Readiness Scorecard
 
@@ -348,7 +348,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Risk Register
+## Risk Register
 
 | ID | Risk | Impact | Mitigation |
 |---|---|---|---|
@@ -358,7 +358,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Executive Recommendations
+## Executive Recommendations
 
 ## Priority 1 – Critical Actions
 
@@ -374,7 +374,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-# Roadmap
+## Roadmap
 
 ## Phase 1
 
@@ -398,7 +398,7 @@ Copilot Readiness
 
 ---
 
-# Deliverables
+## Deliverables
 
 Assessment output should include:
 
@@ -413,7 +413,7 @@ Assessment output should include:
 
 ---
 
-# References
+## References
 
 - Microsoft Cloud Adoption Framework
 - Microsoft Well-Architected Framework

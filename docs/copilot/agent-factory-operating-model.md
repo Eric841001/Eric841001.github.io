@@ -21,7 +21,7 @@ The objective is to establish an Enterprise AI Operating System.
 
 ---
 
-# 2026 Agent Platform Controls
+## 2026 Agent Platform Controls
 
 Copilot Studio has moved from simple chatbot creation toward a governed enterprise agent platform.
 
@@ -40,7 +40,7 @@ Use [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
 
 ---
 
-# Why Agent Factory
+## Why Agent Factory
 
 Without an operating model:
 
@@ -54,7 +54,7 @@ Agent Factory provides structure.
 
 ---
 
-# Enterprise AI Operating System
+## Enterprise AI Operating System
 
 ```mermaid
 flowchart TB
@@ -76,7 +76,7 @@ flowchart TB
 
 ---
 
-# Agent Factory Lifecycle
+## Agent Factory Lifecycle
 
 ```mermaid
 flowchart LR
@@ -106,7 +106,7 @@ OPERATE --> IMPROVE
 
 ---
 
-# Stage 1 - Idea Intake
+## Stage 1 - Idea Intake
 
 ## Sources
 
@@ -135,7 +135,7 @@ OPERATE --> IMPROVE
 
 ---
 
-# Stage 2 - Assessment
+## Stage 2 - Assessment
 
 ## Assessment Dimensions
 
@@ -150,7 +150,7 @@ OPERATE --> IMPROVE
 
 ---
 
-# Stage 3 - Prioritization
+## Stage 3 - Prioritization
 
 ## Value vs Complexity
 
@@ -168,7 +168,7 @@ quadrantChart
 
 ---
 
-# Stage 4 - Design
+## Stage 4 - Design
 
 ## Design Components
 
@@ -199,7 +199,7 @@ quadrantChart
 
 ---
 
-# Stage 5 - Build
+## Stage 5 - Build
 
 ## Microsoft Technology Stack
 
@@ -218,7 +218,7 @@ quadrantChart
 
 ---
 
-# Stage 6 - Test
+## Stage 6 - Test
 
 ## Validation Areas
 
@@ -244,7 +244,7 @@ quadrantChart
 
 ---
 
-# Stage 7 - Deploy
+## Stage 7 - Deploy
 
 ## Deployment Channels
 
@@ -257,7 +257,7 @@ quadrantChart
 
 ---
 
-# Stage 8 - Operate
+## Stage 8 - Operate
 
 ## Managed Service Model
 
@@ -279,7 +279,7 @@ L3[Engineering Team]
 
 ---
 
-# Stage 9 - Improve
+## Stage 9 - Improve
 
 ## Continuous Improvement Loop
 
@@ -299,7 +299,7 @@ ADOPTION --> USAGE
 
 ---
 
-# Agent Portfolio Management
+## Agent Portfolio Management
 
 ## Portfolio Categories
 
@@ -315,7 +315,7 @@ ADOPTION --> USAGE
 
 ---
 
-# AI PMO Structure
+## AI PMO Structure
 
 ## Governance Board
 
@@ -337,7 +337,7 @@ ADOPTION --> USAGE
 
 ---
 
-# Agent Factory Organization
+## Agent Factory Organization
 
 ```mermaid
 flowchart TB
@@ -355,7 +355,7 @@ PMO --> ANALYTICS
 
 ---
 
-# Adoption Operating Model
+## Adoption Operating Model
 
 ## Components
 
@@ -370,7 +370,7 @@ PMO --> ANALYTICS
 
 ---
 
-# AI Community Framework
+## AI Community Framework
 
 ## Community Hub
 
@@ -383,7 +383,7 @@ PMO --> ANALYTICS
 
 ---
 
-# Promptathon
+## Promptathon
 
 Purpose:
 
@@ -393,7 +393,7 @@ Purpose:
 
 ---
 
-# Agentathon
+## Agentathon
 
 Purpose:
 
@@ -403,7 +403,7 @@ Purpose:
 
 ---
 
-# KPI Framework
+## KPI Framework
 
 ## Adoption KPIs
 
@@ -428,7 +428,7 @@ Purpose:
 
 ---
 
-# AI Maturity Model
+## AI Maturity Model
 
 ## Level 1
 
@@ -460,7 +460,7 @@ Enterprise AI Operating System
 
 ---
 
-# Recommended Roadmap
+## Recommended Roadmap
 
 ```mermaid
 gantt
@@ -492,7 +492,7 @@ AI Operating System
 
 ---
 
-# Executive Dashboard
+## Executive Dashboard
 
 Track:
 
@@ -506,7 +506,7 @@ Track:
 
 ---
 
-# Executive Recommendations
+## Executive Recommendations
 
 1. Establish AI PMO.
 2. Build Agent Factory.
@@ -519,7 +519,7 @@ Track:
 
 ---
 
-# Deliverables
+## Deliverables
 
 - AI Strategy
 - Agent Factory Framework
@@ -533,7 +533,7 @@ Track:
 
 ---
 
-# Strategic Positioning
+## Strategic Positioning
 
 The future state is not:
 

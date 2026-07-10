@@ -17,7 +17,7 @@ This document provides an enterprise design methodology used in Microsoft 365, A
 
 ---
 
-# Why Conditional Access Matters
+## Why Conditional Access Matters
 
 Traditional security models assume trust after successful authentication.
 
@@ -34,7 +34,7 @@ Conditional Access enables organizations to continuously validate trust before g
 
 ---
 
-# Zero Trust Architecture
+## Zero Trust Architecture
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ CA --> APP
 
 ---
 
-# Core Evaluation Signals
+## Core Evaluation Signals
 
 ## Identity
 
@@ -107,7 +107,7 @@ Examples:
 
 ---
 
-# Enterprise Conditional Access Framework
+## Enterprise Conditional Access Framework
 
 ## Layer 1
 
@@ -157,7 +157,7 @@ Controls:
 
 ---
 
-# Recommended Enterprise Policies
+## Recommended Enterprise Policies
 
 ## Policy 1
 
@@ -288,7 +288,7 @@ Critical
 
 ---
 
-# Break Glass Account Design
+## Break Glass Account Design
 
 ## Purpose
 
@@ -324,7 +324,7 @@ Mandatory
 
 ---
 
-# Device Compliance Design
+## Device Compliance Design
 
 ## Compliant Device Requirements
 
@@ -347,7 +347,7 @@ Mandatory
 
 ---
 
-# SharePoint and OneDrive Protection
+## SharePoint and OneDrive Protection
 
 ## Managed Device
 
@@ -373,7 +373,7 @@ Block:
 
 ---
 
-# Copilot Security Integration
+## Copilot Security Integration
 
 Copilot inherits user permissions.
 
@@ -403,7 +403,7 @@ Recommended:
 
 ---
 
-# Global Secure Access Integration
+## Global Secure Access Integration
 
 ## Use Cases
 
@@ -426,7 +426,7 @@ Block:
 
 ---
 
-# Deployment Methodology
+## Deployment Methodology
 
 ## Phase 1
 
@@ -464,7 +464,7 @@ Activities:
 
 ---
 
-# Common Mistakes
+## Common Mistakes
 
 ## No Break Glass Account
 
@@ -506,7 +506,7 @@ Unmanaged Access
 
 ---
 
-# Operational KPIs
+## Operational KPIs
 
 | KPI | Target |
 |-------|---------|
@@ -518,7 +518,7 @@ Unmanaged Access
 
 ---
 
-# Deliverables
+## Deliverables
 
 - Conditional Access Assessment
 - Policy Design Matrix
@@ -529,7 +529,7 @@ Unmanaged Access
 
 ---
 
-# MVP 커뮤니티 기반 설계 메모
+## MVP 커뮤니티 기반 설계 메모
 
 Microsoft security community에서 반복적으로 확인되는 패턴은 Conditional Access를 개별 policy 모음이 아니라 layered control model로 설계해야 한다는 것입니다.
 
@@ -561,7 +561,7 @@ Enterprise 환경에서는 다음 원칙을 기준으로 설계하는 것이 좋
 
 ---
 
-# Related Documents
+## Related Documents
 
 - Zero Trust Framework
 - Security Architecture

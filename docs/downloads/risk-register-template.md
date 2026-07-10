@@ -15,30 +15,27 @@ The objective is to improve project predictability, support executive decision-m
 
 ---
 
-# Risk Management Process
+## Risk Management Process
 
-```text
-Identify Risk
-      │
-      ▼
-Assess Impact
-      │
-      ▼
-Define Mitigation
-      │
-      ▼
-Assign Owner
-      │
-      ▼
-Track Status
-      │
-      ▼
-Close Risk
+```mermaid
+flowchart LR
+  Identify["Identify Risk<br/>source, trigger, affected workstream"]:::step
+  Assess["Assess Impact<br/>probability, severity, exposure"]:::step
+  Mitigate["Define Mitigation<br/>action, fallback, decision point"]:::step
+  Owner["Assign Owner<br/>accountability and due date"]:::step
+  Track["Track Status<br/>trend, escalation, residual risk"]:::step
+  Close["Close Risk<br/>evidence and lessons learned"]:::result
+
+  Identify --> Assess --> Mitigate --> Owner --> Track --> Close
+  Track -. re-assess .-> Assess
+
+  classDef step fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
 ```
 
 ---
 
-# Risk Classification
+## Risk Classification
 
 | Level | Description |
 |---|---|
@@ -49,7 +46,7 @@ Close Risk
 
 ---
 
-# Probability Rating
+## Probability Rating
 
 | Score | Description |
 |---|---|
@@ -61,7 +58,7 @@ Close Risk
 
 ---
 
-# Impact Rating
+## Impact Rating
 
 | Score | Description |
 |---|---|
@@ -73,7 +70,7 @@ Close Risk
 
 ---
 
-# Risk Matrix
+## Risk Matrix
 
 | Impact \ Probability | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|
@@ -85,7 +82,7 @@ Close Risk
 
 ---
 
-# Project Risk Register
+## Project Risk Register
 
 | ID | Risk Description | Probability | Impact | Rating | Mitigation | Owner | Status |
 |---|---|---:|---:|---|---|---|---|
@@ -97,7 +94,7 @@ Close Risk
 
 ---
 
-# Common Microsoft 365 Risks
+## Common Microsoft 365 Risks
 
 ## Identity Risks
 
@@ -156,7 +153,7 @@ Close Risk
 
 ---
 
-# Risk Escalation Model
+## Risk Escalation Model
 
 ## Level 1
 
@@ -195,7 +192,7 @@ Examples:
 
 ---
 
-# Weekly Risk Review
+## Weekly Risk Review
 
 Review the following:
 
@@ -207,7 +204,7 @@ Review the following:
 
 ---
 
-# Risk Dashboard
+## Risk Dashboard
 
 | Category | Open | Mitigated | Closed |
 |---|---:|---:|---:|
@@ -220,7 +217,7 @@ Review the following:
 
 ---
 
-# Lessons Learned
+## Lessons Learned
 
 - Risks should be identified early
 - Mitigation should be assigned to specific owners
@@ -231,7 +228,7 @@ Review the following:
 
 ---
 
-# References
+## References
 
 - PMBOK Risk Management
 - Microsoft Cloud Adoption Framework

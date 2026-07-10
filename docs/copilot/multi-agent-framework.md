@@ -257,7 +257,7 @@ flowchart LR
 
 ---
 
-# Microsoft Agent Platform Mapping
+## Microsoft Agent Platform Mapping
 
 | Agent Type | Microsoft Technology |
 |------------|---------------------|

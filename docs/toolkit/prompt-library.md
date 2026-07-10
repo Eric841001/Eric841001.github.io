@@ -52,7 +52,7 @@ flowchart LR
 
 ---
 
-# Microsoft 365 Assessment Prompt
+## Microsoft 365 Assessment Prompt
 
 ## Purpose
 
@@ -80,7 +80,7 @@ Include Executive Summary, Findings, Risks, Recommendations and Next Actions.
 
 ---
 
-# Executive Proposal Prompt
+## Executive Proposal Prompt
 
 ## Purpose
 
@@ -118,7 +118,7 @@ Use executive-level language and consulting methodology.
 
 ---
 
-# SOW Generation Prompt
+## SOW Generation Prompt
 
 ## Purpose
 
@@ -150,7 +150,7 @@ The output should be customer-ready.
 
 ---
 
-# WBS Generation Prompt
+## WBS Generation Prompt
 
 ## Purpose
 
@@ -178,7 +178,7 @@ Structure the WBS for enterprise consulting engagements.
 
 ---
 
-# Microsoft 365 Copilot Strategy Prompt
+## Microsoft 365 Copilot Strategy Prompt
 
 ## Purpose
 
@@ -220,7 +220,7 @@ Business Stakeholders
 
 ---
 
-# Security Assessment Prompt
+## Security Assessment Prompt
 
 ## Purpose
 
@@ -257,7 +257,7 @@ Use Microsoft security best practices.
 
 ---
 
-# Architecture Design Prompt
+## Architecture Design Prompt
 
 ## Purpose
 
@@ -285,7 +285,7 @@ Provide diagrams and implementation guidance where applicable.
 
 ---
 
-# Executive Briefing Prompt
+## Executive Briefing Prompt
 
 ## Purpose
 
@@ -320,7 +320,7 @@ Use concise executive language.
 
 ---
 
-# Change Management Prompt
+## Change Management Prompt
 
 ## Purpose
 
@@ -348,7 +348,7 @@ Focus on user adoption and business value realization.
 
 ---
 
-# Proposal Review Prompt
+## Proposal Review Prompt
 
 ## Purpose
 

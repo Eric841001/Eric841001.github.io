@@ -21,7 +21,7 @@ sidebar_label: SOW Template
 
 ---
 
-# 1. Executive Summary
+## 1. Executive Summary
 
 The purpose of this engagement is to assess, design and implement a modern Microsoft-based digital workplace platform that improves collaboration, security, governance and operational efficiency.
 
@@ -29,7 +29,7 @@ The engagement will be delivered through a structured methodology covering asses
 
 ---
 
-# 2. Business Objectives
+## 2. Business Objectives
 
 The project objectives include:
 
@@ -43,7 +43,7 @@ The project objectives include:
 
 ---
 
-# 3. Project Scope
+## 3. Project Scope
 
 ## Included Scope
 
@@ -85,7 +85,7 @@ The following activities are excluded unless otherwise stated:
 
 ---
 
-# 4. Deliverables
+## 4. Deliverables
 
 | Deliverable | Description |
 |------------|------------|
@@ -98,7 +98,7 @@ The following activities are excluded unless otherwise stated:
 
 ---
 
-# 5. Project Approach
+## 5. Project Approach
 
 ## Phase 1 – Discovery
 
@@ -162,7 +162,7 @@ Output:
 
 ---
 
-# 6. Roles and Responsibilities
+## 6. Roles and Responsibilities
 
 ## Customer
 
@@ -182,7 +182,7 @@ Output:
 
 ---
 
-# 7. Assumptions
+## 7. Assumptions
 
 The following assumptions apply:
 
@@ -194,7 +194,7 @@ The following assumptions apply:
 
 ---
 
-# 8. Risks
+## 8. Risks
 
 Potential project risks include:
 
@@ -207,7 +207,7 @@ Potential project risks include:
 
 ---
 
-# 9. Timeline
+## 9. Timeline
 
 | Phase | Duration |
 |---------|---------|
@@ -218,7 +218,7 @@ Potential project risks include:
 
 ---
 
-# 10. Acceptance Criteria
+## 10. Acceptance Criteria
 
 The engagement will be considered complete when:
 
@@ -229,13 +229,13 @@ The engagement will be considered complete when:
 
 ---
 
-# 11. Commercial Terms
+## 11. Commercial Terms
 
 Commercial terms, pricing and payment conditions are governed by the executed service agreement.
 
 ---
 
-# 12. Approval
+## 12. Approval
 
 | Role | Name | Signature |
 |--------|--------|--------|

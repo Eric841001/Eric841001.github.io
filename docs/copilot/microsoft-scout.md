@@ -15,7 +15,7 @@ Unlike traditional Copilot experiences that require direct user interaction, Sco
 
 ---
 
-# What is Microsoft Scout
+## What is Microsoft Scout
 
 Microsoft Scout is an autonomous personal work agent.
 
@@ -32,7 +32,7 @@ and proactively assists users without requiring every action to start from a man
 
 ---
 
-# Evolution of Microsoft AI
+## Evolution of Microsoft AI
 
 ```mermaid
 flowchart LR
@@ -49,7 +49,7 @@ C --> D
 
 ---
 
-# Copilot vs Scout
+## Copilot vs Scout
 
 | Area | Copilot | Scout |
 |--------|--------|--------|
@@ -64,7 +64,7 @@ Scout represents Microsoft's broader move from assistive AI toward agentic AI.
 
 ---
 
-# Core Capabilities
+## Core Capabilities
 
 ## Meeting Preparation
 
@@ -109,7 +109,7 @@ and highlights items requiring attention.
 
 ---
 
-# Work IQ Integration
+## Work IQ Integration
 
 Microsoft Scout is powered by Work IQ.
 
@@ -124,7 +124,7 @@ This enables Scout-like agent experiences to understand not only data but also b
 
 ---
 
-# Enterprise Use Cases
+## Enterprise Use Cases
 
 ## Executive Assistant
 
@@ -158,7 +158,7 @@ This enables Scout-like agent experiences to understand not only data but also b
 
 ---
 
-# Governance Model
+## Governance Model
 
 ```mermaid
 flowchart TB
@@ -177,7 +177,7 @@ B --> E
 
 ---
 
-# Security and Compliance
+## Security and Compliance
 
 Microsoft positions Scout as an enterprise-grade agent.
 
@@ -193,7 +193,7 @@ Scout-style enterprise agents should run within Microsoft security boundaries an
 
 ---
 
-# Strategic Impact
+## Strategic Impact
 
 Microsoft Scout represents a significant shift in enterprise productivity.
 
@@ -209,7 +209,7 @@ The agent continuously works on behalf of the employee and surfaces only the inf
 
 ---
 
-# Future Outlook
+## Future Outlook
 
 Expected evolution:
 
@@ -223,7 +223,7 @@ Scout is likely to become a foundational component of Microsoft's Agentic AI str
 
 ---
 
-# Related Articles
+## Related Articles
 
 - Copilot Readiness Assessment
 - Copilot Adoption Program

@@ -17,7 +17,7 @@ This document presents an enterprise security reference architecture used for Mi
 
 ---
 
-# Security Vision
+## Security Vision
 
 ## Business Objectives
 
@@ -32,7 +32,7 @@ Organizations must achieve:
 
 ---
 
-# Security Reference Architecture
+## Security Reference Architecture
 
 ```mermaid
 flowchart TD
@@ -68,7 +68,7 @@ COPILOT --> SOC
 
 ---
 
-# Security Domains
+## Security Domains
 
 | Domain | Platform |
 |----------|----------|
@@ -84,7 +84,7 @@ COPILOT --> SOC
 
 ---
 
-# Identity Security
+## Identity Security
 
 Identity is the primary security perimeter.
 
@@ -123,7 +123,7 @@ Required
 
 ---
 
-# Device Security
+## Device Security
 
 ## Microsoft Intune
 
@@ -157,7 +157,7 @@ Mobile
 
 ---
 
-# Endpoint Protection
+## Endpoint Protection
 
 ## Microsoft Defender for Endpoint
 
@@ -187,7 +187,7 @@ Respond:
 
 ---
 
-# Email Security
+## Email Security
 
 ## Microsoft Defender for Office 365
 
@@ -209,7 +209,7 @@ Protects:
 
 ---
 
-# Data Protection
+## Data Protection
 
 ## Microsoft Purview
 
@@ -241,7 +241,7 @@ Investigation
 
 ---
 
-# Information Classification Model
+## Information Classification Model
 
 | Classification | Example |
 |--------------|----------|
@@ -252,7 +252,7 @@ Investigation
 
 ---
 
-# Copilot Security Architecture
+## Copilot Security Architecture
 
 ## Security Principle
 
@@ -322,7 +322,7 @@ Missing Classification
 
 ---
 
-# Conditional Access Architecture
+## Conditional Access Architecture
 
 ## Core Policies
 
@@ -350,7 +350,7 @@ Verify every access request before granting access.
 
 ---
 
-# Global Secure Access
+## Global Secure Access
 
 ## Purpose
 
@@ -379,7 +379,7 @@ ENTRA --> M365
 
 ---
 
-# Security Operations
+## Security Operations
 
 ## Microsoft Defender XDR
 
@@ -404,7 +404,7 @@ Provides:
 
 ---
 
-# Incident Response Framework
+## Incident Response Framework
 
 ```mermaid
 flowchart TD
@@ -418,7 +418,7 @@ RECOVER --> REVIEW
 
 ---
 
-# Recommended Security Baseline
+## Recommended Security Baseline
 
 ## Identity
 
@@ -456,7 +456,7 @@ RECOVER --> REVIEW
 
 ---
 
-# Security Maturity Model
+## Security Maturity Model
 
 | Level | Description |
 |---------|---------|
@@ -468,7 +468,7 @@ RECOVER --> REVIEW
 
 ---
 
-# Key Metrics
+## Key Metrics
 
 | KPI | Target |
 |---------|---------|
@@ -480,7 +480,7 @@ RECOVER --> REVIEW
 
 ---
 
-# Deliverables
+## Deliverables
 
 - Security Assessment
 - Security Architecture Design
@@ -494,7 +494,7 @@ RECOVER --> REVIEW
 
 ---
 
-# Related Documents
+## Related Documents
 
 - Zero Trust Framework
 - Conditional Access

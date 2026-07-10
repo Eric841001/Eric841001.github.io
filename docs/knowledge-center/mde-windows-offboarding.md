@@ -50,25 +50,20 @@ flowchart LR
 
 ## Offboarding Workflow
 
-### Step 1
+```mermaid
+flowchart LR
+  Approval["Approval<br/>retirement, migration or tool transition"]:::step
+  Package["Offboarding package<br/>Microsoft Defender portal"]:::step
+  Intune["Intune deployment<br/>package and assignment group"]:::step
+  Device["Target devices<br/>controlled rollout"]:::step
+  Validate["Validation<br/>sensor state and portal inventory"]:::result
+  Record["Audit record<br/>asset update and evidence"]:::result
 
-Download offboarding package from Microsoft Defender Portal.
+  Approval --> Package --> Intune --> Device --> Validate --> Record
 
-### Step 2
-
-Create Intune deployment package.
-
-### Step 3
-
-Assign deployment group.
-
-### Step 4
-
-Deploy package.
-
-### Step 5
-
-Validate removal.
+  classDef step fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
 
 ---
 

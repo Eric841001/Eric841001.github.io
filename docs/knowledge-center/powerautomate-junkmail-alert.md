@@ -15,7 +15,7 @@ The objective is to improve visibility of potentially malicious email activity a
 
 ---
 
-# Business Scenario
+## Business Scenario
 
 Users often fail to review Junk Email folders.
 
@@ -31,7 +31,7 @@ Organizations require:
 
 ---
 
-# Solution Architecture
+## Solution Architecture
 
 ```mermaid
 flowchart LR
@@ -48,7 +48,7 @@ FLOW --> MAIL
 
 ---
 
-# Workflow Overview
+## Workflow Overview
 
 ```mermaid
 flowchart TD
@@ -69,7 +69,7 @@ D --> F
 
 ---
 
-# Trigger Design
+## Trigger Design
 
 ## Exchange Online Trigger
 
@@ -83,7 +83,7 @@ folder.
 
 ---
 
-# Notification Content
+## Notification Content
 
 Recommended fields:
 
@@ -97,7 +97,7 @@ Recommended fields:
 
 ---
 
-# Teams Alert Example
+## Teams Alert Example
 
 ```text
 New Junk Mail Detected
@@ -117,7 +117,7 @@ user@company.com
 
 ---
 
-# Advanced Enhancements
+## Advanced Enhancements
 
 ## Security Correlation
 
@@ -139,7 +139,7 @@ High-risk senders can trigger:
 
 ---
 
-# Operational Benefits
+## Operational Benefits
 
 - Faster awareness
 - Reduced missed messages
@@ -148,7 +148,7 @@ High-risk senders can trigger:
 
 ---
 
-# Governance Considerations
+## Governance Considerations
 
 | Area | Recommendation |
 |---------|---------|
@@ -159,7 +159,7 @@ High-risk senders can trigger:
 
 ---
 
-# Deliverables
+## Deliverables
 
 - Power Automate Flow
 - Teams Notification Template

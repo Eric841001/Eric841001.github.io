@@ -15,7 +15,15 @@ The objective is to ensure that users access only approved corporate tenants and
 
 ---
 
-# Business Scenario
+## 한국어 요약
+
+Global Secure Access Whitelist Design은 사용자가 승인된 Microsoft 365 tenant와 업무용 application에만 접근하도록 제어하는 Zero Trust 기반 접근 통제 설계입니다.
+
+Entra Conditional Access, Intune compliance, tenant restriction, Global Secure Access policy를 함께 설계해야 개인 tenant 사용, Shadow IT, 비관리 device 접속, 데이터 유출 위험을 줄일 수 있습니다.
+
+---
+
+## Business Scenario
 
 Organizations frequently face challenges such as:
 
@@ -35,7 +43,7 @@ Typical customer requirements include:
 
 ---
 
-# Architecture Overview
+## Architecture Overview
 
 ```mermaid
 flowchart LR
@@ -54,7 +62,7 @@ ENTRA --> M365
 
 ---
 
-# Core Components
+## Core Components
 
 | Component | Purpose |
 |------------|------------|
@@ -66,7 +74,7 @@ ENTRA --> M365
 
 ---
 
-# Tenant Restriction Design
+## Tenant Restriction Design
 
 ## Objective
 
@@ -76,26 +84,27 @@ Prevent users from signing into unauthorized Microsoft 365 tenants.
 
 ## Recommended Model
 
-### Allowed
+```mermaid
+flowchart LR
+  Request["User sign-in request"]:::request
+  Device["Managed device<br/>Entra joined + Intune compliant"]:::control
+  Tenant["Tenant validation<br/>corporate and approved partner tenants"]:::control
+  Allow["Allowed<br/>corporate tenant, subsidiary tenant, approved partner tenant"]:::allow
+  Block["Blocked<br/>personal Microsoft account, unapproved external tenant, consumer OneDrive"]:::block
 
-```text
-contoso.com
-subsidiary.contoso.com
-partner-a.com
-```
+  Request --> Device --> Tenant
+  Tenant --> Allow
+  Tenant --> Block
 
-### Blocked
-
-```text
-gmail.com tenant
-personal Microsoft Account
-external M365 tenant
-consumer OneDrive
+  classDef request fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef control fill:#eef6ff,stroke:#2563eb,color:#102033,stroke-width:1.4px
+  classDef allow fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef block fill:#fff1f2,stroke:#e11d48,color:#102033,stroke-width:1.8px
 ```
 
 ---
 
-# Access Flow
+## Access Flow
 
 ```mermaid
 flowchart TD
@@ -116,7 +125,7 @@ E --> F
 
 ---
 
-# Device Requirements
+## Device Requirements
 
 ## Managed Devices
 
@@ -136,7 +145,7 @@ Restricted
 
 ---
 
-# Recommended Conditional Access Policies
+## Recommended Conditional Access Policies
 
 | Policy | Recommendation |
 |----------|----------|
@@ -148,7 +157,7 @@ Restricted
 
 ---
 
-# Operational Benefits
+## Operational Benefits
 
 - Tenant Governance
 - Data Protection
@@ -158,7 +167,7 @@ Restricted
 
 ---
 
-# Risks
+## Risks
 
 | Risk | Mitigation |
 |---------|---------|
@@ -168,7 +177,7 @@ Restricted
 
 ---
 
-# Deliverables
+## Deliverables
 
 - GSA Architecture Design
 - Tenant Restriction Design
@@ -176,3 +185,14 @@ Restricted
 - Intune Compliance Design
 - Deployment Runbook
 - Validation Report
+
+---
+
+## 검색 키워드
+
+- Global Secure Access whitelist
+- Microsoft tenant restriction
+- Entra Conditional Access tenant control
+- Intune compliant device access
+- Zero Trust tenant restriction
+- Global Secure Access 허용 목록 설계

@@ -108,14 +108,26 @@ Department sites should be used for long-term business ownership.
 
 Recommended structure:
 
-```text
-Department Hub
-├── Policies
-├── Procedures
-├── Templates
-├── Working Documents
-├── Reports
-└── Archive
+```mermaid
+flowchart TB
+  Hub["Department Hub<br/>long-term business ownership"]:::hub
+  Policies["Policies"]:::node
+  Procedures["Procedures"]:::node
+  Templates["Templates"]:::node
+  Working["Working Documents"]:::node
+  Reports["Reports"]:::node
+  Archive["Archive"]:::archive
+
+  Hub --> Policies
+  Hub --> Procedures
+  Hub --> Templates
+  Hub --> Working
+  Hub --> Reports
+  Hub --> Archive
+
+  classDef hub fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef node fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef archive fill:#f8fafc,stroke:#94a3b8,color:#102033,stroke-width:1.2px
 ```
 
 Design considerations:
@@ -134,14 +146,26 @@ Project sites should be used for temporary collaboration.
 
 Recommended structure:
 
-```text
-Project Site
-├── 01_Project Management
-├── 02_Working Documents
-├── 03_Deliverables
-├── 04_Meeting Notes
-├── 05_Risks and Issues
-└── 99_Archive
+```mermaid
+flowchart TB
+  Site["Project Site<br/>temporary collaboration workspace"]:::hub
+  PM["01 Project Management"]:::node
+  Work["02 Working Documents"]:::node
+  Deliverables["03 Deliverables"]:::node
+  Notes["04 Meeting Notes"]:::node
+  Risks["05 Risks and Issues"]:::node
+  Archive["99 Archive"]:::archive
+
+  Site --> PM
+  Site --> Work
+  Site --> Deliverables
+  Site --> Notes
+  Site --> Risks
+  Site --> Archive
+
+  classDef hub fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef node fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef archive fill:#f8fafc,stroke:#94a3b8,color:#102033,stroke-width:1.2px
 ```
 
 Design considerations:

@@ -27,7 +27,7 @@ It is a business capability.
 
 ---
 
-# Why Prompt Engineering Matters
+## Why Prompt Engineering Matters
 
 ## Common Failure Patterns
 
@@ -43,7 +43,7 @@ These issues are usually caused by poor prompt design rather than AI limitations
 
 ---
 
-# Enterprise Prompt Maturity Model
+## Enterprise Prompt Maturity Model
 
 | Level | Description |
 |---------|------------|
@@ -55,7 +55,7 @@ These issues are usually caused by poor prompt design rather than AI limitations
 
 ---
 
-# Enterprise Prompt Architecture
+## Enterprise Prompt Architecture
 
 ```mermaid
 flowchart LR
@@ -75,7 +75,7 @@ VALIDATION --> BUSINESS_ACTION
 
 ---
 
-# Recommended Prompt Framework
+## Recommended Prompt Framework
 
 ## R-T-C-O-C Model
 
@@ -142,7 +142,7 @@ Do not assume unsupported features.
 
 ---
 
-# Enterprise Prompt Template
+## Enterprise Prompt Template
 
 ```text
 Role:
@@ -158,7 +158,7 @@ Constraints:
 
 ---
 
-# Executive Prompt Library
+## Executive Prompt Library
 
 ## Executive Briefing
 
@@ -184,7 +184,7 @@ Next Actions
 
 ---
 
-# Microsoft 365 Architect Prompt
+## Microsoft 365 Architect Prompt
 
 ```text
 Act as a Microsoft 365 Enterprise Architect.
@@ -204,7 +204,7 @@ Roadmap
 
 ---
 
-# Security Architect Prompt
+## Security Architect Prompt
 
 ```text
 Act as a Microsoft Security Architect.
@@ -225,7 +225,7 @@ Provide phased implementation guidance.
 
 ---
 
-# Copilot Readiness Prompt
+## Copilot Readiness Prompt
 
 ```text
 Act as a Microsoft Copilot Readiness Consultant.
@@ -249,7 +249,7 @@ Remediation Plan
 
 ---
 
-# Copilot Adoption Prompt
+## Copilot Adoption Prompt
 
 ```text
 Act as a Change Management Consultant.
@@ -268,7 +268,7 @@ Communication Plan
 
 ---
 
-# Proposal Development Prompt
+## Proposal Development Prompt
 
 ```text
 Act as a Microsoft Consulting Director.
@@ -290,7 +290,7 @@ Next Steps
 
 ---
 
-# Presales Discovery Prompt
+## Presales Discovery Prompt
 
 ```text
 Generate discovery workshop questions.
@@ -308,7 +308,7 @@ Governance
 
 ---
 
-# Executive Interview Prompt
+## Executive Interview Prompt
 
 ```text
 Generate executive interview questions.
@@ -324,7 +324,7 @@ Expected Outcomes
 
 ---
 
-# Project Management Prompt
+## Project Management Prompt
 
 ```text
 Act as a Senior Project Manager.
@@ -341,7 +341,7 @@ Project Timeline
 
 ---
 
-# Copilot Studio Prompt Design
+## Copilot Studio Prompt Design
 
 ## Prompt → Skill → Agent
 
@@ -361,7 +361,7 @@ Prompt
 
 ---
 
-# Agent Design Principles
+## Agent Design Principles
 
 Effective agents require:
 
@@ -373,7 +373,7 @@ Effective agents require:
 
 ---
 
-# Prompt Quality Framework
+## Prompt Quality Framework
 
 Evaluate prompts using:
 
@@ -388,7 +388,7 @@ Evaluate prompts using:
 
 ---
 
-# Prompt Review Checklist
+## Prompt Review Checklist
 
 Before publishing enterprise prompts:
 
@@ -402,7 +402,7 @@ Before publishing enterprise prompts:
 
 ---
 
-# Enterprise Prompt Library Structure
+## Enterprise Prompt Library Structure
 
 Recommended categories:
 
@@ -419,7 +419,7 @@ Recommended categories:
 
 ---
 
-# Prompt Governance
+## Prompt Governance
 
 ## Ownership Model
 
@@ -449,7 +449,7 @@ USE --> IMPROVE
 
 ---
 
-# Prompt Center of Excellence
+## Prompt Center of Excellence
 
 Recommended responsibilities:
 
@@ -462,7 +462,7 @@ Recommended responsibilities:
 
 ---
 
-# Future State
+## Future State
 
 Prompt Engineering will evolve into:
 
@@ -486,7 +486,7 @@ Enterprise AI Operating System
 
 ---
 
-# Executive Recommendations
+## Executive Recommendations
 
 1. Standardize Prompt Design.
 2. Build Enterprise Prompt Libraries.
@@ -499,7 +499,7 @@ Enterprise AI Operating System
 
 ---
 
-# References
+## References
 
 - Microsoft Copilot Adoption Framework
 - Microsoft Learn

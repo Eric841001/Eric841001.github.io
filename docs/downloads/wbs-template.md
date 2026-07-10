@@ -20,7 +20,7 @@ sidebar_label: WBS Template
 
 ---
 
-# WBS Structure
+## WBS Structure
 
 ## Phase 1. Project Initiation
 
@@ -123,7 +123,7 @@ sidebar_label: WBS Template
 
 ---
 
-# Optional Intune Workstream
+## Optional Intune Workstream
 
 | WBS ID | Task | Deliverable |
 |---|---|---|
@@ -136,7 +136,7 @@ sidebar_label: WBS Template
 
 ---
 
-# Optional Copilot Workstream
+## Optional Copilot Workstream
 
 | WBS ID | Task | Deliverable |
 |---|---|---|
@@ -148,7 +148,7 @@ sidebar_label: WBS Template
 
 ---
 
-# Optional Migration Workstream
+## Optional Migration Workstream
 
 | WBS ID | Task | Deliverable |
 |---|---|---|
@@ -160,7 +160,7 @@ sidebar_label: WBS Template
 
 ---
 
-# Success Criteria
+## Success Criteria
 
 - Discovery completed
 - Assessment completed

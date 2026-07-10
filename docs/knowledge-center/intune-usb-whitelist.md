@@ -68,17 +68,20 @@ flowchart LR
 
 ## Implementation Approach
 
-### Phase 1
+```mermaid
+flowchart LR
+  Audit["Phase 1<br/>Audit USB activity"]:::phase
+  Inventory["Phase 2<br/>Build approved device inventory"]:::phase
+  Pilot["Phase 3<br/>Pilot allow, block and read-only rules"]:::phase
+  Enforce["Phase 4<br/>Deploy enforcement policy"]:::phase
+  Operate["Phase 5<br/>Monitor exceptions and policy bypass"]:::result
 
-Audit USB activity
+  Audit --> Inventory --> Pilot --> Enforce --> Operate
+  Operate -. refine allow list .-> Inventory
 
-### Phase 2
-
-Create allow list
-
-### Phase 3
-
-Deploy enforcement policy
+  classDef phase fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
 
 ---
 

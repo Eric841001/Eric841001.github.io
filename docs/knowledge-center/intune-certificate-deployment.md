@@ -15,6 +15,14 @@ This guide explains the deployment process using Intune Trusted Certificate Prof
 
 ---
 
+## 한국어 요약
+
+Intune Trusted Certificate Deployment는 Wi-Fi, VPN, SCEP, PKCS, email signing, line-of-business application 접속처럼 인증서 신뢰 체인이 필요한 시나리오의 선행 작업입니다.
+
+Root CA와 Intermediate CA를 올바른 형식으로 배포하고, 대상 그룹과 검증 책임을 명확히 정의해야 인증서 기반 인증 장애를 줄일 수 있습니다.
+
+---
+
 ## Prerequisites
 
 Required certificates:
@@ -48,36 +56,27 @@ flowchart LR
 
 ## Deployment Process
 
-### Step 1
+```mermaid
+flowchart TB
+  Admin["Intune Admin Center<br/>Devices > Configuration Profiles"]:::step
+  Profile["Create Profile<br/>Windows > Trusted Certificate"]:::step
+  Upload["Upload Certificate<br/>DER encoded .CER only"]:::step
+  Assign["Assign Target Group<br/>device, user or dynamic group"]:::step
+  Deploy["Deploy Policy<br/>sync, monitor, troubleshoot"]:::step
+  Validate["Validate Trust Chain<br/>root and intermediate stores"]:::result
 
-Intune Admin Center
+  Admin --> Profile --> Upload --> Assign --> Deploy --> Validate
 
-Devices → Configuration Profiles
+  classDef step fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
 
-### Step 2
+Recommended execution notes:
 
-Create Profile
-
-Platform → Windows
-
-Template → Trusted Certificate
-
-### Step 3
-
-Upload Root CA Certificate
-
-.cer file only
-
-### Step 4
-
-Assign Target Group
-
-- Device Group
-- User Group
-
-### Step 5
-
-Deploy Policy
+- Start with a pilot group before broad assignment.
+- Deploy the root and intermediate chain in the correct order.
+- Keep certificate owner, renewal date and dependent service documented.
+- Validate both device certificate store and application behavior.
 
 ---
 
@@ -136,3 +135,14 @@ Key decisions:
 - Root CA Inventory
 - Validation Report
 - Operational Runbook
+
+---
+
+## 검색 키워드
+
+- Intune certificate deployment
+- Intune Trusted Certificate profile
+- Root CA certificate Intune
+- Intermediate CA deployment
+- SCEP PKCS certificate prerequisite
+- Intune 인증서 배포
