@@ -10,6 +10,31 @@ This Copilot section covers Microsoft 365 Copilot, Copilot Studio, AI agents and
 
 The focus is practical adoption: readiness, data protection, license value, use case prioritization, change management, agent lifecycle, cost control and executive decision support.
 
+## Visual Adoption Journey
+
+```mermaid
+flowchart LR
+  Work["Real Work<br/>meetings, documents, analysis, response"]:::work
+  Copilot["Copilot<br/>personal productivity and knowledge work"]:::ai
+  Studio["Copilot Studio<br/>business agents and workflows"]:::ai
+  Agents["M365 Agents<br/>in-context task assistance"]:::ai
+  Cowork["Copilot Cowork<br/>long-running work with approvals"]:::ai
+  Governance["Governance Spine<br/>identity, data, DLP, owner, cost, telemetry"]:::gov
+  Adoption["Change Management<br/>champions, training, VOC, KPI"]:::gov
+
+  Work --> Copilot --> Studio --> Agents --> Cowork
+  Governance -. controls .-> Copilot
+  Governance -. controls .-> Studio
+  Governance -. controls .-> Agents
+  Governance -. controls .-> Cowork
+  Adoption -. behavior change .-> Copilot
+  Adoption -. scale .-> Cowork
+
+  classDef work fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef ai fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.6px
+  classDef gov fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 2026 Copilot Studio Update
 
 Copilot Studio should now be treated as an enterprise agent platform, not only a chatbot builder.

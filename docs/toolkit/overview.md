@@ -10,6 +10,23 @@ The Toolkit section contains practical assets for assessment, architecture, migr
 
 These tools are designed to support repeatable consulting work. They help convert field knowledge into consistent discovery, design, proposal and implementation outputs.
 
+## Visual Toolkit Flow
+
+```mermaid
+flowchart LR
+  Discover["Discover<br/>questionnaire and assessment checklist"]:::tool
+  Design["Design<br/>architecture builder and decision log"]:::tool
+  License["Validate<br/>license advisor and capability fit"]:::tool
+  Plan["Plan<br/>SOW, WBS, risk register"]:::tool
+  Deliver["Deliver<br/>migration and security checklist"]:::tool
+  Handover["Handover<br/>runbook, owners, operating rhythm"]:::tool
+
+  Discover --> Design --> License --> Plan --> Deliver --> Handover
+  Handover -. lessons learned .-> Discover
+
+  classDef tool fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.5px
+```
+
 ## 한국어 요약
 
 Toolkit은 제안, 진단, 아키텍처 설계, migration, licensing, delivery planning을 반복 가능한 산출물로 만들기 위한 실무 도구 모음입니다.

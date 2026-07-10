@@ -10,6 +10,27 @@ This Security section organizes Microsoft security architecture, Zero Trust cont
 
 The guidance is shaped around field scenarios such as regulated SaaS access, Microsoft 365 security review, Exchange Online protection, endpoint onboarding, Purview readiness, DLP design and Copilot data protection.
 
+## Visual Security Control Map
+
+```mermaid
+flowchart TB
+  Access["Access Control<br/>Entra ID, MFA, Conditional Access"]:::control
+  Device["Device Trust<br/>Intune, compliance, Defender for Endpoint"]:::control
+  Data["Data Protection<br/>Purview, labels, DLP, retention"]:::control
+  Threat["Threat Protection<br/>Defender XDR, Defender for Office 365"]:::control
+  Boundary["Collaboration Boundary<br/>Information Barriers, guest, sharing"]:::control
+  Evidence["Audit Evidence<br/>logs, exceptions, approvals, review cadence"]:::evidence
+  Copilot["Copilot Data Readiness<br/>permission cleanup and sensitive data control"]:::evidence
+
+  Access --> Device --> Data --> Threat --> Evidence
+  Data --> Boundary --> Evidence
+  Evidence --> Copilot
+  Copilot -. risk feedback .-> Access
+
+  classDef control fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef evidence fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
+
 ## 한국어 요약
 
 Microsoft Security는 Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Audit, Compliance 기능을 하나의 security operating model로 연결할 때 효과가 커집니다.

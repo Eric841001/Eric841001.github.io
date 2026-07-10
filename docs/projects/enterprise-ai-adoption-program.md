@@ -10,6 +10,25 @@ sidebar_position: 5
 
 The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent initiatives into a governed business transformation program rather than a tool rollout.
 
+## Visual Program Story
+
+```mermaid
+flowchart TB
+  Ask["Leadership Ask<br/>How should we use AI?"]:::start
+  Scenarios["Business Scenarios<br/>prioritize real work and measurable value"]:::stage
+  Readiness["Readiness<br/>identity, data, security, licensing, support"]:::stage
+  Pilot["Pilot<br/>selected users, clear success metrics, VOC"]:::stage
+  Agents["Agent Portfolio<br/>Copilot Studio, M365 Agents, human review"]:::stage
+  Change["Adoption Engine<br/>champions, training, manager routines"]:::stage
+  Scale["Governed Scale<br/>owner model, cost controls, KPI reporting"]:::start
+
+  Ask --> Scenarios --> Readiness --> Pilot --> Agents --> Change --> Scale
+  Scale -. new scenarios .-> Scenarios
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 Enterprise AI Adoption Program은 Copilot license 배포나 단순 prompt 교육이 아니라, 기업의 실제 업무 시나리오를 AI use case와 Agent portfolio로 전환하는 프로그램입니다.

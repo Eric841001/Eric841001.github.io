@@ -13,6 +13,32 @@ In enterprise consulting projects, Microsoft 365 should not be positioned only a
 
 This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.
 
+## Visual Platform Map
+
+```mermaid
+flowchart TB
+  Outcome["Business Outcomes<br/>productivity, security, compliance, AI readiness"]:::outcome
+  Identity["Identity<br/>Entra ID, MFA, Conditional Access"]:::layer
+  Endpoint["Endpoint<br/>Intune, compliance, app protection"]:::layer
+  Collaboration["Collaboration<br/>Exchange, Teams, SharePoint, OneDrive"]:::layer
+  Data["Data Protection<br/>Purview, labels, DLP, retention"]:::layer
+  Security["Security Operations<br/>Defender, audit, incident response"]:::layer
+  Adoption["Adoption<br/>training, champions, support, analytics"]:::layer
+  Copilot["Copilot Readiness<br/>permissions, content quality, governance"]:::outcome
+
+  Outcome --> Identity
+  Identity --> Endpoint
+  Endpoint --> Collaboration
+  Collaboration --> Data
+  Data --> Security
+  Security --> Adoption
+  Adoption --> Copilot
+  Copilot -. continuous improvement .-> Outcome
+
+  classDef outcome fill:#ecfeff,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef layer fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 Microsoft 365는 단순한 Office 앱 묶음이 아니라, 기업의 협업, 보안, governance, compliance, AI 활용을 하나로 연결하는 enterprise 운영 플랫폼입니다.

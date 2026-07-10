@@ -10,6 +10,25 @@ This Azure section focuses on enterprise cloud architecture patterns that common
 
 Azure work in enterprise consulting is rarely isolated. It often supports identity, network, landing zone, secure access, monitoring, migration staging, application modernization and cost governance decisions.
 
+## Visual Azure Foundation Map
+
+```mermaid
+flowchart TB
+  Governance["Governance<br/>management groups, policy, tagging"]:::foundation
+  Identity["Identity<br/>Entra ID, RBAC, PIM, break-glass"]:::foundation
+  Network["Network<br/>hub-spoke, DNS, firewall, private access"]:::foundation
+  Security["Security<br/>Defender, logging, vulnerability management"]:::foundation
+  Operations["Operations<br/>monitoring, backup, patching, incident process"]:::foundation
+  Cost["FinOps<br/>budget, reservation, rightsizing, chargeback"]:::foundation
+  Workload["Workload Landing<br/>VMs, apps, migration staging, AI services"]:::workload
+
+  Governance --> Identity --> Network --> Security --> Operations --> Cost --> Workload
+  Workload -. operational feedback .-> Governance
+
+  classDef foundation fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef workload fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+```
+
 ## 한국어 요약
 
 Azure는 단독 인프라 구축 과제가 아니라 Microsoft 365, Security, Copilot, migration program을 안정적으로 받쳐주는 enterprise cloud foundation으로 보는 것이 좋습니다.

@@ -10,6 +10,24 @@ The Playbooks section provides repeatable delivery guidance for Microsoft 365 as
 
 Playbooks are designed to bridge consulting strategy and real execution. They define workstreams, checkpoints, deliverables, risks and handover expectations.
 
+## Visual Playbook System
+
+```mermaid
+flowchart TB
+  Scenario["Customer Scenario<br/>assessment, security, Copilot, migration, change"]:::start
+  Playbook["Select Playbook<br/>method, phases, checkpoints"]:::stage
+  Workstreams["Workstreams<br/>identity, data, endpoint, adoption, governance"]:::stage
+  Evidence["Evidence<br/>decisions, risks, test results, acceptance"]:::stage
+  Handover["Handover<br/>runbook, owner model, support rhythm"]:::stage
+  Improvement["Reusable Pattern<br/>update checklist, proposal, template"]:::start
+
+  Scenario --> Playbook --> Workstreams --> Evidence --> Handover --> Improvement
+  Improvement -. reuse .-> Playbook
+
+  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+```
+
 ## 한국어 요약
 
 Playbooks는 전략 문서를 실제 delivery workstream으로 바꾸기 위한 실행 가이드입니다.

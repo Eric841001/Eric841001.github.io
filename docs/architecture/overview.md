@@ -10,6 +10,25 @@ The Architecture Center organizes Microsoft cloud reference architectures, desig
 
 Architecture content here is intended to be practical. Each topic connects business requirements, Microsoft capabilities, governance decisions and delivery outputs.
 
+## Visual Architecture Map
+
+```mermaid
+flowchart TB
+  Business["Business Driver<br/>risk, growth, productivity, AI adoption"]:::driver
+  Requirements["Requirements<br/>security, compliance, user experience, cost"]:::stage
+  Decisions["Architecture Decisions<br/>identity, data, network, workload, governance"]:::stage
+  Blueprint["Target Blueprint<br/>Microsoft 365, Security, Copilot, Azure, Migration"]:::blueprint
+  Delivery["Delivery Assets<br/>SOW, WBS, risk register, runbook"]:::stage
+  Operations["Operating Model<br/>owners, cadence, exception, KPI"]:::driver
+
+  Business --> Requirements --> Decisions --> Blueprint --> Delivery --> Operations
+  Operations -. feedback and improvement .-> Decisions
+
+  classDef driver fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
+  classDef blueprint fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.8px
+```
+
 ## 한국어 요약
 
 Architecture Center는 Microsoft 365, Security, Copilot, Azure, Migration, Governance를 각각의 제품 설명이 아니라 하나의 enterprise architecture 관점으로 연결합니다.

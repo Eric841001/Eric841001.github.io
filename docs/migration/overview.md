@@ -10,6 +10,23 @@ This Migration section provides enterprise migration guidance for Microsoft 365,
 
 Migration is treated as a business continuity program, not a file-copy activity. The key work is assessment, target design, batching, communication, security validation, cutover, rollback and hypercare.
 
+## Visual Migration Control Flow
+
+```mermaid
+flowchart LR
+  Source["Source Discovery<br/>inventory, identity, permissions, dependencies"]:::stage
+  Target["Target Design<br/>tenant, workload, security, coexistence"]:::stage
+  Waves["Wave Plan<br/>pilot, early adopter, main waves, sensitive users"]:::stage
+  Cutover["Cutover<br/>go/no-go, DNS, validation, rollback"]:::stage
+  Hypercare["Hypercare<br/>support, issue triage, adoption signal"]:::stage
+  Handover["Operations Handover<br/>runbook, owners, closure evidence"]:::stage
+
+  Source --> Target --> Waves --> Cutover --> Hypercare --> Handover
+  Hypercare -. lessons learned .-> Waves
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.5px
+```
+
 ## 한국어 요약
 
 Migration은 데이터를 옮기는 작업만이 아니라 업무 연속성, 보안, 커뮤니케이션, cutover, rollback, hypercare가 결합된 프로그램입니다.
