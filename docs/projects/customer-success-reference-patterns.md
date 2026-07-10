@@ -18,6 +18,18 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 검색 사용자 입장에서는 "Microsoft 365 고객 성공 사례", "Copilot 도입 사례", "Security architecture reference", "Microsoft 365 migration 사례", "SOW/WBS 산출물 예시"와 같은 주제로 이 페이지를 찾을 수 있습니다.
 
+## Reference Pattern Map
+
+```mermaid
+flowchart TB
+  Industry["Industry Context\nmanufacturing, finance, retail, logistics"] --> Situation["Business Situation\nrisk, adoption, migration, governance"]
+  Situation --> Workloads["Microsoft Workloads\nM365, Security, Copilot, Azure"]
+  Workloads --> Delivery["Delivery Approach\nassessment, design, rollout, handover"]
+  Delivery --> Assets["Reusable Assets\nSOW, WBS, workbook, runbook, risk register"]
+  Assets --> Outcome["Business Outcome\nreadiness, control, adoption, stability"]
+  Outcome --> Story["Public-Safe Reference Story\nindustry + scenario + pattern"]
+```
+
 ## Reference Principles
 
 - Describe the customer only by industry, scale and operating context.
@@ -26,6 +38,16 @@ This page summarizes anonymized customer success patterns derived from enterpris
 - Keep success measures business-readable: risk reduction, adoption readiness, migration control, service stability and governance maturity.
 
 ## Industry Patterns
+
+```mermaid
+flowchart LR
+  Manufacturing["Manufacturing"] --> Copilot["Copilot Adoption\nreadiness, pilot, governance"]
+  Finance["Financial Services"] --> Security["Security Architecture\nSaaS control, audit, exception"]
+  Logistics["Logistics"] --> Migration["Exchange / Collaboration\nmigration, cutover, hypercare"]
+  Retail["Retail"] --> Policy["M365 Security Policy\nidentity, endpoint, data, Power Platform"]
+  Construction["Construction"] --> IA["SharePoint / File Governance\ninformation architecture"]
+  Healthcare["Healthcare"] --> Compliance["Compliance Baseline\nidentity, device, DLP, evidence"]
+```
 
 | Industry | Business Situation | Microsoft Workloads | Success Pattern |
 |---|---|---|---|
@@ -46,6 +68,21 @@ For more detailed examples, see:
 - [Logistics Exchange Online Modernization Case Study](./case-study-logistics-exchange-modernization)
 - [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
 - [Retail Microsoft 365 Security Policy Modernization Case Study](./case-study-retail-m365-security-policy)
+
+## Pattern-to-Asset Mapping
+
+```mermaid
+flowchart TB
+  Challenge["Customer Challenge"] --> Assessment["Assessment Workbook"]
+  Challenge --> SOW["SOW / WBS"]
+  Assessment --> Architecture["Reference Architecture"]
+  SOW --> Delivery["Delivery Plan"]
+  Architecture --> Controls["Security / Governance Controls"]
+  Delivery --> Runbook["Runbook / Handover Guide"]
+  Controls --> Metrics["Executive Metrics"]
+  Runbook --> Metrics
+  Metrics --> Reference["Anonymized Reference Pattern"]
+```
 
 ### Manufacturing: Copilot Adoption Operating Model
 

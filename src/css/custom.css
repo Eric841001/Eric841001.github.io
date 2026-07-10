@@ -361,15 +361,63 @@ body {
 }
 
 .theme-doc-sidebar-container .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
-  color: #4a5b72;
+  min-height: 2.85rem;
+  padding: 0.62rem 0.72rem;
+  color: #24384f;
   font-size: 0.98rem;
   font-weight: 850;
+  line-height: 1.2;
 }
 
 .theme-doc-sidebar-container .theme-doc-sidebar-item-category-level-1:not(:first-child) {
-  margin-top: 1rem;
-  padding-top: 0.8rem;
-  border-top: 1px solid #e3edf8;
+  margin-top: 0.86rem;
+  padding-top: 0.86rem;
+  border-top: 1px solid rgba(203, 220, 236, 0.72);
+}
+
+.theme-doc-sidebar-container .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
+  margin: 0.16rem 0 0.36rem;
+  border: 1px solid rgba(196, 211, 230, 0.92);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0) 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 251, 255, 0.96) 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 8px 18px rgba(15, 49, 87, 0.06);
+}
+
+.theme-doc-sidebar-container .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible:hover {
+  border-color: #9cc7ef;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 12px 24px rgba(15, 49, 87, 0.1);
+}
+
+.theme-doc-sidebar-container .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible .menu__link--sublist-caret::after {
+  opacity: 0.72;
+}
+
+.theme-doc-sidebar-container .theme-doc-sidebar-item-link-level-2 .menu__link {
+  margin: 0.08rem 0 0.08rem 0.74rem;
+  padding: 0.42rem 0.68rem 0.42rem 0.86rem;
+  border-left: 1px solid #d8e6f4;
+  border-radius: 0 7px 7px 0;
+  color: #506078;
+  font-size: 0.91rem;
+  font-weight: 650;
+}
+
+.theme-doc-sidebar-container .theme-doc-sidebar-item-link-level-2 .menu__link:hover {
+  border-left-color: #38bdf8;
+  background: rgba(238, 246, 255, 0.82);
+  color: #0f3157;
+}
+
+.theme-doc-sidebar-container .theme-doc-sidebar-item-link-level-2 .menu__link--active {
+  border-left-color: #0891b2;
+  background: linear-gradient(90deg, rgba(224, 242, 254, 0.95), rgba(255, 255, 255, 0.78));
+  color: #075985;
 }
 
 .theme-doc-sidebar-container .theme-doc-sidebar-item-link-level-1:first-child .menu__link {
