@@ -1,13 +1,20 @@
 (function () {
-  const diagramSelector = '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"]';
+  const visualSelector =
+    '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom)';
   let activeDialog = null;
 
-  function getSvg(frame) {
+  function getVisual(frame) {
+    if (frame.tagName === 'IMG') return frame;
     return frame.querySelector('svg');
   }
 
-  function getAspectRatio(svg) {
-    const viewBox = svg.getAttribute('viewBox');
+  function getAspectRatio(visual) {
+    if (visual.tagName === 'IMG') {
+      const width = visual.naturalWidth || visual.width;
+      const height = visual.naturalHeight || visual.height;
+      return width && height ? width / height : 1;
+    }
+    const viewBox = visual.getAttribute('viewBox');
     if (!viewBox) return 1;
     const parts = viewBox.split(/\s+/).map(Number);
     if (parts.length !== 4 || !parts[2] || !parts[3]) return 1;
@@ -16,17 +23,18 @@
 
   function ensureFrameState(frame) {
     if (frame.dataset.kcZoomReady === 'true') return;
-    const svg = getSvg(frame);
-    if (!svg) return;
+    const visual = getVisual(frame);
+    if (!visual) return;
 
     frame.dataset.kcZoomReady = 'true';
-    frame.classList.add('kc-mermaid-frame');
+    frame.classList.add('kc-visual-frame');
+    if (visual.tagName !== 'IMG') frame.classList.add('kc-mermaid-frame');
     frame.setAttribute('role', 'button');
     frame.setAttribute('tabindex', '0');
-    frame.setAttribute('aria-label', 'Open diagram in a larger view');
-    frame.title = 'Click to enlarge diagram';
+    frame.setAttribute('aria-label', 'Open visual in a larger view');
+    frame.title = 'Click to enlarge visual';
 
-    const aspectRatio = getAspectRatio(svg);
+    const aspectRatio = getAspectRatio(visual);
     if (aspectRatio > 2.2) frame.classList.add('kc-mermaid-wide');
     if (aspectRatio > 3.6) frame.classList.add('kc-mermaid-ultrawide');
 
@@ -40,19 +48,19 @@
   }
 
   function enhanceDiagrams(root) {
-    root.querySelectorAll(diagramSelector).forEach(ensureFrameState);
+    root.querySelectorAll(visualSelector).forEach(ensureFrameState);
   }
 
   function openDialog(frame) {
-    const svg = getSvg(frame);
-    if (!svg) return;
+    const visual = getVisual(frame);
+    if (!visual) return;
     closeDialog();
 
     const overlay = document.createElement('div');
     overlay.className = 'kc-diagram-modal';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-label', 'Expanded architecture diagram');
+    overlay.setAttribute('aria-label', 'Expanded visual');
 
     const panel = document.createElement('div');
     panel.className = 'kc-diagram-modal__panel';
@@ -74,10 +82,16 @@
     const canvas = document.createElement('div');
     canvas.className = 'kc-diagram-modal__canvas';
 
-    const clone = svg.cloneNode(true);
-    clone.removeAttribute('width');
-    clone.removeAttribute('height');
-    clone.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    const clone = visual.cloneNode(true);
+    if (clone.tagName === 'IMG') {
+      clone.removeAttribute('width');
+      clone.removeAttribute('height');
+      clone.setAttribute('alt', clone.getAttribute('alt') || 'Expanded visual');
+    } else {
+      clone.removeAttribute('width');
+      clone.removeAttribute('height');
+      clone.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    }
     canvas.appendChild(clone);
 
     toolbar.append(title, closeButton);
