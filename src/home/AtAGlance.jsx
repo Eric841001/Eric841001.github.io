@@ -5,47 +5,47 @@ import styles from './AtAGlance.module.css';
 
 const focusAreas = [
   {
-    label: 'Microsoft 365',
-    title: 'Tenant, collaboration and operations',
-    path: '/knowledge/microsoft365/overview',
-  },
-  {
-    label: 'Security',
-    title: 'Zero Trust, Defender, Purview and governance',
-    path: '/knowledge/security/overview',
-  },
-  {
-    label: 'Copilot',
-    title: 'Readiness, adoption and data protection',
+    label: '01. Copilot',
+    title: 'Start with everyday knowledge work and adoption',
     path: '/knowledge/copilot/overview',
   },
   {
-    label: 'AI Agent',
-    title: 'Agent Factory, operating model and controls',
-    path: '/knowledge/search/ai-agent-factory',
+    label: '02. Copilot Studio',
+    title: 'Build governed business agents and workflows',
+    path: '/knowledge/copilot/copilot-studio-2026-platform-update',
+  },
+  {
+    label: '03. M365 Agents',
+    title: 'Extend Microsoft 365 with contextual agents',
+    path: '/knowledge/copilot/agentic-ai-architecture',
+  },
+  {
+    label: '04. Copilot Cowork',
+    title: 'Operate long-running work with approval and cost control',
+    path: '/knowledge/copilot/copilot-cowork-cost-governance',
   },
 ];
 
 const journey = [
-  'Assess',
-  'Design',
-  'Govern',
-  'Deliver',
-  'Reference',
+  'Prioritize use cases',
+  'Secure data boundaries',
+  'Build agents',
+  'Operate with telemetry',
+  'Scale the portfolio',
 ];
 
 const shortcuts = [
   {
-    title: 'I need an executive view',
-    path: '/knowledge/architecture/executive-architecture-blueprint',
+    title: 'I need the AI Agent Factory map',
+    path: '/knowledge/search/ai-agent-factory',
   },
   {
-    title: 'I need customer proof',
-    path: '/knowledge/projects/customer-success-reference-patterns',
+    title: 'I need Copilot Studio 2026 changes',
+    path: '/knowledge/copilot/copilot-studio-2026-platform-update',
   },
   {
-    title: 'I need delivery assets',
-    path: '/knowledge/downloads/overview',
+    title: 'I need Cowork cost governance',
+    path: '/knowledge/copilot/copilot-cowork-cost-governance',
   },
 ];
 
@@ -53,11 +53,12 @@ export default function AtAGlance() {
   return (
     <section className={styles.glance} aria-labelledby="at-a-glance-title">
       <div className={styles.header}>
-        <p>At a glance</p>
-        <h2 id="at-a-glance-title">Choose the right architecture path in seconds</h2>
+        <p>AI adoption path</p>
+        <h2 id="at-a-glance-title">Start with Copilot, then scale to governed agents</h2>
         <span>
-          The Knowledge Center is organized around the decisions enterprise visitors
-          usually need to make first: scope, risk, operating model and delivery assets.
+          Enterprise AI adoption now moves from personal productivity to business
+          agents, Microsoft 365 contextual agents and Copilot Cowork. The critical
+          question is not which tool to buy, but how to govern work, data, cost and value.
         </span>
       </div>
 
@@ -73,8 +74,8 @@ export default function AtAGlance() {
 
         <div className={styles.flow} aria-label="Architecture delivery journey">
           <div className={styles.flowHeader}>
-            <span>Delivery logic</span>
-            <strong>From question to reusable reference</strong>
+            <span>Operating model</span>
+            <strong>From AI interest to governed enterprise execution</strong>
           </div>
 
           <ol>

@@ -3,10 +3,10 @@ import Link from '@docusaurus/Link';
 import styles from './HeroSection.module.css';
 
 const capabilities = [
-  { label: 'Microsoft 365', value: 'Architecture' },
-  { label: 'Security', value: 'Zero Trust' },
-  { label: 'Copilot', value: 'Adoption' },
-  { label: 'AI Agents', value: 'Governance' },
+  { label: 'Copilot', value: 'Work AI entry point' },
+  { label: 'Copilot Studio', value: 'Business agents' },
+  { label: 'M365 Agents', value: 'In-context automation' },
+  { label: 'Copilot Cowork', value: 'Long-running work' },
 ];
 
 export default function HeroSection() {
@@ -14,16 +14,16 @@ export default function HeroSection() {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <div className={styles.heroContent}>
-          <p className={styles.eyebrow}>Enterprise Architect Portfolio</p>
+          <p className={styles.eyebrow}>Enterprise AI Adoption Architecture</p>
 
           <h1>
-            Microsoft 365, Security, Copilot and AI Agent Architecture
+            From Copilot to Agents: how enterprise AI becomes real work
           </h1>
 
           <p className={styles.subtitle}>
-            A field-tested Microsoft knowledge platform for enterprise architecture,
-            security governance, Copilot adoption, AI Agent strategy, migration planning
-            and consulting delivery.
+            A practical Microsoft AI adoption platform that connects Microsoft 365
+            Copilot, Copilot Studio, Microsoft 365 Agents, Copilot Cowork, security
+            governance and measurable business outcomes.
           </p>
 
           <p className={styles.byline}>
@@ -31,32 +31,32 @@ export default function HeroSection() {
           </p>
 
           <div className={styles.heroActions}>
-            <Link className={styles.primaryButton} to="/knowledge/projects/customer-success-reference-patterns">
-              View Success References
+            <Link className={styles.primaryButton} to="/knowledge/search/ai-agent-factory">
+              Explore AI Adoption Path
             </Link>
 
-            <Link className={styles.secondaryButton} to="/knowledge/knowledge-center/overview">
-              Explore Knowledge Center
+            <Link className={styles.secondaryButton} to="/knowledge/copilot/copilot-studio-2026-platform-update">
+              Copilot Studio Update
             </Link>
 
-            <Link className={styles.secondaryButton} to="/knowledge/contact">
-              Contact / Request Assets
+            <Link className={styles.secondaryButton} to="/knowledge/copilot/copilot-cowork-cost-governance">
+              Cowork Governance
             </Link>
           </div>
 
           <div className={styles.signalRow} aria-label="Portfolio focus areas">
-            <span>Microsoft 365</span>
-            <span>Security</span>
             <span>Copilot</span>
+            <span>Copilot Studio</span>
+            <span>M365 Agents</span>
+            <span>Copilot Cowork</span>
             <span>AI Agents</span>
-            <span>Migration</span>
           </div>
         </div>
 
         <div className={styles.heroPanel}>
           <div className={styles.panelHeader}>
-            <span>Architecture Portfolio</span>
-            <strong>Customer-ready</strong>
+            <span>AI Adoption Journey</span>
+            <strong>Governed scale</strong>
           </div>
 
           <div className={styles.capabilityGrid}>
@@ -69,13 +69,13 @@ export default function HeroSection() {
           </div>
 
           <div className={styles.deliveryStack}>
-            <p>Delivery assets</p>
+            <p>Enterprise guardrails</p>
             <ul>
-              <li>Readiness assessment</li>
-              <li>Reference architecture</li>
-              <li>SOW, WBS and risk register</li>
-              <li>Anonymized customer success patterns</li>
-              <li>Executive governance roadmap</li>
+              <li>Use case portfolio and value criteria</li>
+              <li>Data, identity and permission boundary</li>
+              <li>Agent lifecycle, owner and approval model</li>
+              <li>Cost, quality and adoption telemetry</li>
+              <li>Human review for sensitive actions</li>
             </ul>
           </div>
         </div>
