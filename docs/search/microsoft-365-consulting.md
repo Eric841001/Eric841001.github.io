@@ -28,6 +28,26 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 
 이 Knowledge Center는 Microsoft 365 architecture, security baseline, tenant governance, SOW, WBS, assessment workbook, migration planning을 연결해 실무형 컨설팅 산출물로 정리합니다.
 
+## Consulting Journey Map
+
+```mermaid
+flowchart LR
+  Search["Search Intent<br/>Microsoft 365 consulting"]:::source
+  Assess["Assessment<br/>tenant, identity, security, collaboration"]:::step
+  Design["Architecture<br/>governance, workload, operating model"]:::step
+  Deliver["Delivery Assets<br/>SOW, WBS, risk register, handover"]:::asset
+  Optimize["Optimization<br/>license value, Copilot readiness, security posture"]:::outcome
+  Contact["Asset Request<br/>scenario-based template sharing"]:::cta
+
+  Search --> Assess --> Design --> Deliver --> Optimize --> Contact
+
+  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
+  classDef step fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
+  classDef asset fill:#ecfeff,stroke:#22d3ee,color:#102033,stroke-width:1.6px
+  classDef outcome fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
+  classDef cta fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.8px
+```
+
 ## Consulting Scope
 
 | Area | What To Review |
@@ -39,6 +59,16 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 | Endpoint | Intune enrollment, compliance policy, app protection and device governance |
 | Migration | Exchange, Google Workspace, file server, SharePoint and tenant transition |
 | Delivery Assets | assessment report, SOW, WBS, risk register and handover guide |
+
+## Visitor Routing
+
+| If You Are Looking For | Start Here | Next Step |
+|---|---|---|
+| Microsoft 365 architecture design | [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture) | request architecture review or tenant assessment |
+| Security and governance baseline | [Security Reference Architecture](../architecture/security-reference-architecture) | review Defender, Purview, Conditional Access and Intune scope |
+| License and renewal value | [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update) | map license capability to security and Copilot readiness |
+| Migration or tenant transition | [Migration Architecture](../architecture/migration-architecture) | prepare inventory, wave plan and rollback governance |
+| Proposal or delivery package | [Proposal Center](../proposal/overview) | request SOW, WBS, risk register or assessment workbook |
 
 ## Recommended Entry Points
 

@@ -28,6 +28,25 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
 
 특히 기업 환경에서는 “누가 사용할 것인가”보다 “어떤 업무 시나리오에서 반복 가능한 가치를 만들 것인가”가 더 중요합니다.
 
+## Adoption Journey Map
+
+```mermaid
+flowchart LR
+  Interest["Executive Interest<br/>Copilot value and AI readiness"]:::source
+  Readiness["Readiness<br/>data, security, license, user scope"]:::step
+  Pilot["Pilot Design<br/>roles, use cases, measurement"]:::step
+  Governance["Governance<br/>Purview, DLP, acceptable use"]:::control
+  Scale["Scale-Out<br/>champions, training, support rhythm"]:::outcome
+  Measure["ROI Signal<br/>usage, quality, time saved, adoption maturity"]:::outcome
+
+  Interest --> Readiness --> Pilot --> Governance --> Scale --> Measure
+
+  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
+  classDef step fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
+  classDef control fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
+  classDef outcome fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
+```
+
 ## Adoption Workstreams
 
 | Workstream | Focus |
@@ -39,6 +58,16 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
 | Enablement | training, prompt guidance, champions and office hours |
 | ROI | baseline measurement, productivity signal, quality and adoption maturity |
 | Scale-Out | rollout roadmap, risk control and operating rhythm |
+
+## Adoption Readiness Questions
+
+| Question | Why It Matters |
+|---|---|
+| Which business roles will create measurable value first? | prevents license assignment without use case value |
+| Are SharePoint, OneDrive, Teams and Exchange permissions ready? | reduces oversharing and Copilot answer quality risk |
+| Which data protection controls must be in place before rollout? | aligns Copilot with Purview, DLP and security requirements |
+| How will pilot feedback become a backlog? | turns user feedback into governed expansion decisions |
+| What metric proves progress to executives? | connects adoption to business value, not only usage count |
 
 ## Recommended Entry Points
 

@@ -28,6 +28,26 @@ AI Agent Factory는 부서별로 agent를 무작정 만드는 방식이 아니�
 
 Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 활용하더라도 enterprise 환경에서는 owner, permission boundary, knowledge source, audit, lifecycle, cost control이 먼저 정리되어야 합니다.
 
+## Agent Factory Journey Map
+
+```mermaid
+flowchart LR
+  Demand["Business Demand<br/>agent idea and process pain"]:::source
+  Intake["Intake<br/>value, data, risk, owner"]:::step
+  Pattern["Build Pattern<br/>Copilot Studio, Agent Builder, SDK, Foundry"]:::step
+  Guardrail["Guardrails<br/>identity, permission, audit, cost"]:::control
+  Catalog["Agent Catalog<br/>inventory, lifecycle, ownership"]:::asset
+  Operate["Operate<br/>quality, usage, incident, retirement"]:::outcome
+
+  Demand --> Intake --> Pattern --> Guardrail --> Catalog --> Operate
+
+  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
+  classDef step fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
+  classDef control fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
+  classDef asset fill:#ecfeff,stroke:#22d3ee,color:#102033,stroke-width:1.6px
+  classDef outcome fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
+```
+
 ## Factory Operating Model
 
 | Stage | Decision Focus |
@@ -39,6 +59,16 @@ Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 �
 | Approve | Who reviews risk, data access, security and business ownership? |
 | Operate | How will usage, quality, cost and incidents be monitored? |
 | Retire | When should agents be updated, consolidated or removed? |
+
+## Platform Fit Guide
+
+| Agent Pattern | Good Fit | Governance Focus |
+|---|---|---|
+| Copilot Studio agent | business-owned workflow, knowledge-grounded assistant, low-code iteration | connector permissions, publishing approval, usage monitoring |
+| Agent Builder / Microsoft 365 agent | productivity scenario inside Microsoft 365 user flow | data boundary, user education, lifecycle ownership |
+| Microsoft 365 Agents SDK | custom enterprise app or deeper application integration | identity, API permission, source control and DevSecOps |
+| Microsoft Foundry agent | advanced AI workflow, model orchestration or broader Azure AI integration | model governance, cost control, evaluation and monitoring |
+| Multi-agent pattern | coordinated tasks across specialist agents | orchestration boundary, human review, failure handling |
 
 ## Recommended Entry Points
 
