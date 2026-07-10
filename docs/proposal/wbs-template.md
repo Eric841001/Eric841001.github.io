@@ -9,6 +9,25 @@ The WBS is the delivery control layer that connects proposal scope, technical wo
 
 For Microsoft 365, Security, Copilot and migration engagements, the WBS should not be a simple task list. It should show how discovery findings become architecture decisions, how implementation tasks are validated, and how customer acceptance is collected.
 
+## WBS Control Flow
+
+```mermaid
+flowchart LR
+  Scope["SOW Scope<br/>deliverables, assumptions, exclusions"]:::source
+  Workstreams["Workstreams<br/>identity, endpoint, security, collaboration"]:::work
+  Packages["Work Packages<br/>owner, activity, dependency"]:::work
+  Evidence["Evidence<br/>test result, export, workshop record"]:::evidence
+  Acceptance["Acceptance<br/>customer review and sign-off"]:::accept
+  Handover["Handover<br/>operation guide and backlog"]:::accept
+
+  Scope --> Workstreams --> Packages --> Evidence --> Acceptance --> Handover
+
+  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
+  classDef work fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
+  classDef evidence fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
+  classDef accept fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
+```
+
 ## Recommended WBS Model
 
 | Phase | Objective | Representative Activities | Key Deliverables |
@@ -41,6 +60,17 @@ For Microsoft 365, Security, Copilot and migration engagements, the WBS should n
 | Migration | Inventory, batch plan, cutover, rollback | Migration report, reconciliation result |
 | Governance | RACI, approval model, operation rhythm | Governance workbook, meeting cadence |
 
+## WBS Quality Criteria
+
+| Criteria | Good WBS Behavior | Risk if Missing |
+|---|---|---|
+| Traceability | Every task maps back to SOW scope or accepted change request | delivery team performs unapproved work |
+| Ownership | Each work package has accountable owner and customer dependency | tasks wait without escalation |
+| Evidence | Validation output is defined before implementation starts | completion becomes subjective |
+| Phase control | Discovery, design, build, validate, deploy and close are separated | project jumps to configuration too early |
+| Governance | Decision gates and escalation points are visible | risks are discovered late |
+| Adoption | Communication, training and handover are included where user impact exists | technical success does not translate into adoption |
+
 ## Customer Success Reference Pattern
 
 For a manufacturing group rollout, a phased WBS separated identity, security, collaboration and adoption workstreams. This helped the customer approve security policy changes independently from user adoption tasks, reducing decision delay during pilot expansion.
@@ -55,3 +85,5 @@ For a regulated financial SaaS environment, the WBS included explicit evidence t
 - Are rollback and exception processes included?
 - Does the WBS distinguish pilot, production and handover activities?
 - Can the project manager derive status reporting directly from the WBS?
+- Can each workstream produce evidence that the customer can review?
+- Are Security, Copilot and migration tasks separated enough to avoid ownership confusion?

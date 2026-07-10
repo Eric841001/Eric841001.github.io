@@ -19,6 +19,24 @@ Proposal Center는 Microsoft 365, Azure, Security, Copilot, AI Agent, Migration 
 
 ---
 
+## Proposal Operating Model
+
+```mermaid
+flowchart LR
+  Discovery["Discovery<br/>business goal, pain point, stakeholder"]:::stage
+  Assessment["Assessment<br/>current state, gap, dependency"]:::stage
+  Strategy["Proposal Strategy<br/>value story, risk, scope boundary"]:::stage
+  Scope["SOW / WBS<br/>deliverables, timeline, acceptance"]:::stage
+  Governance["Governance<br/>RACI, escalation, change control"]:::stage
+  Handover["Delivery Handover<br/>kickoff pack, assumptions, risk log"]:::stage
+
+  Discovery --> Assessment --> Strategy --> Scope --> Governance --> Handover
+
+  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.6px
+```
+
+Proposal work should not be treated as a document-writing task. It is a decision-design process. A strong proposal makes the business case, delivery model, technical risk and customer responsibilities visible before the project starts.
+
 ## Available Assets
 
 ### Executive Summary
@@ -77,6 +95,17 @@ Project governance and stakeholder management structure.
 | Governance | who approves, who executes and how issues are escalated |
 | Acceptance Criteria | how the customer and delivery team know the work is complete |
 
+## Proposal Quality Scorecard
+
+| Quality Area | What Good Looks Like | Review Signal |
+|---|---|---|
+| Business clarity | The executive can understand why the project matters without reading technical appendices | clear current challenge, target outcome and decision request |
+| Scope control | Included, excluded and dependent work are separated | no hidden adjacent workload or undefined customer task |
+| Delivery readiness | SOW, WBS, timeline and governance align with each other | same phases, milestones, roles and acceptance language |
+| Risk visibility | Technical, operational and customer-side risks are explicit | risk register has owner, mitigation and escalation path |
+| Evidence orientation | Completion can be proven through reviewable outputs | deliverables, test evidence, handover guide and acceptance record |
+| Public safety | Examples are reusable without exposing customer-sensitive details | no customer names, tenant IDs, internal filenames or commercial terms |
+
 ## Public-Safe Proposal Principle
 
 Public proposal examples should show structure and thinking, not customer-sensitive information.
@@ -84,6 +113,20 @@ Public proposal examples should show structure and thinking, not customer-sensit
 Do not publish customer names, contract value, discount assumptions, internal architecture diagrams, tenant IDs, source system inventory, project code names or customer-specific security exceptions.
 
 When a customer-ready sample is needed, share a sanitized version through [Contact and Asset Request](../contact).
+
+## Asset Request Guidance
+
+This public page explains the proposal structure and reusable thinking. Editable templates, customer-ready samples and detailed worksheets are shared by request after confirming the project scenario and confidentiality boundary.
+
+Use [Contact and Asset Request](../contact) when you need a reusable proposal package for:
+
+- Microsoft 365 implementation or optimization
+- Security baseline, Defender, Purview or Conditional Access projects
+- Copilot readiness, adoption and governance
+- Copilot Studio or AI Agent Factory proposals
+- Azure Landing Zone and migration engagements
+- Tenant-to-tenant, Google Workspace or file server migration
+- PMO governance, risk register, WBS and timeline design
 
 ---
 
