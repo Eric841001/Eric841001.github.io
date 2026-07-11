@@ -517,9 +517,9 @@ body {
 .theme-doc-markdown div[class*='mermaid'] foreignObject span,
 .theme-doc-markdown div[class*='mermaid'] foreignObject p {
   font-family: "Segoe UI", "Noto Sans KR", Inter, system-ui, sans-serif !important;
-  font-size: 12.2px !important;
+  font-size: 11.4px !important;
   font-weight: 660 !important;
-  line-height: 1.24 !important;
+  line-height: 1.2 !important;
   letter-spacing: 0 !important;
   overflow: visible !important;
   overflow-wrap: normal !important;
@@ -670,9 +670,9 @@ body.kc-diagram-modal-open {
 .kc-diagram-modal__canvas foreignObject span,
 .kc-diagram-modal__canvas foreignObject p {
   font-family: "Segoe UI", "Noto Sans KR", Inter, system-ui, sans-serif !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 680 !important;
-  line-height: 1.25 !important;
+  line-height: 1.2 !important;
   letter-spacing: 0 !important;
   overflow: visible !important;
   overflow-wrap: normal !important;
