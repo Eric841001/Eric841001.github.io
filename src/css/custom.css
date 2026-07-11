@@ -245,6 +245,163 @@ body {
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
+.kc-ai-journey {
+  margin: 1.8rem 0 2.4rem;
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  border: 1px solid #cfe0f3;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(14, 165, 233, 0.1), rgba(37, 99, 235, 0.08) 34%, transparent 68%),
+    linear-gradient(135deg, #ffffff 0%, #f7fbff 52%, #eef6ff 100%);
+  box-shadow: 0 18px 42px rgba(15, 49, 87, 0.11);
+}
+
+.kc-ai-journey__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.kc-ai-journey__header span {
+  color: #0f5ea8;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kc-ai-journey__header strong {
+  color: #0f3157;
+  font-size: 0.94rem;
+}
+
+.kc-ai-journey__track {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  position: relative;
+}
+
+.kc-ai-journey__track::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 2.35rem;
+  height: 2px;
+  background: linear-gradient(90deg, #0f766e, #0ea5e9, #2563eb);
+  opacity: 0.38;
+}
+
+.kc-ai-journey__card {
+  position: relative;
+  z-index: 1;
+  min-height: 180px;
+  padding: 1rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 26px rgba(15, 49, 87, 0.09);
+}
+
+.kc-ai-journey__card--work {
+  border-color: #99f6e4;
+  background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
+}
+
+.kc-ai-journey__card small {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.kc-ai-journey__card--work small {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+.kc-ai-journey__card strong {
+  display: block;
+  color: #0f3157;
+  font-size: 1.08rem;
+  line-height: 1.22;
+}
+
+.kc-ai-journey__card p {
+  margin: 0.7rem 0 0;
+  color: #526174;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.kc-ai-journey__rails {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.kc-ai-journey__rails div {
+  padding: 1rem;
+  border: 1px solid #d5e6f7;
+  border-radius: 8px;
+  background: rgba(248, 251, 255, 0.9);
+}
+
+.kc-ai-journey__rails strong {
+  display: block;
+  color: #0f3157;
+  font-size: 0.94rem;
+}
+
+.kc-ai-journey__rails span {
+  display: block;
+  margin-top: 0.35rem;
+  color: #526174;
+  font-size: 0.86rem;
+  line-height: 1.48;
+}
+
+@media (max-width: 1100px) {
+  .kc-ai-journey__track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kc-ai-journey__track::before {
+    display: none;
+  }
+
+  .kc-ai-journey__card {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kc-ai-journey__header,
+  .kc-ai-journey__rails {
+    grid-template-columns: 1fr;
+  }
+
+  .kc-ai-journey__header {
+    display: grid;
+  }
+
+  .kc-ai-journey__track {
+    grid-template-columns: 1fr;
+  }
+}
+
 .theme-doc-markdown .mermaid,
 .theme-doc-markdown div[class*='mermaid'] {
   position: relative;

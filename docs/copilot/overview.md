@@ -12,28 +12,49 @@ The focus is practical adoption: readiness, data protection, license value, use 
 
 ## Visual Adoption Journey
 
-```mermaid
-flowchart TB
-  Work["Real work<br/>meetings, docs,<br/>analysis"]:::work
-  Copilot["Copilot<br/>personal<br/>productivity"]:::ai
-  Studio["Copilot Studio<br/>business<br/>agents"]:::ai
-  Agents["M365 Agents<br/>in-context<br/>automation"]:::ai
-  Cowork["Copilot Cowork<br/>long-running<br/>work"]:::ai
-  Governance["Governance<br/>identity<br/>data<br/>cost"]:::gov
-  Adoption["Change<br/>champions<br/>KPI"]:::gov
-
-  Work --> Copilot --> Studio --> Agents --> Cowork
-  Governance -.-> Copilot
-  Governance -.-> Studio
-  Governance -.-> Agents
-  Governance -.-> Cowork
-  Adoption -.-> Copilot
-  Adoption -.-> Cowork
-
-  classDef work fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef ai fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.6px
-  classDef gov fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-ai-journey" aria-label="AI adoption journey from real work to governed Cowork">
+  <div class="kc-ai-journey__header">
+    <span>Enterprise AI Adoption Journey</span>
+    <strong>From daily work to governed scale</strong>
+  </div>
+  <div class="kc-ai-journey__track">
+    <div class="kc-ai-journey__card kc-ai-journey__card--work">
+      <small>01</small>
+      <strong>Real Work</strong>
+      <p>Meetings, documents, analysis and response work become the first AI scenarios.</p>
+    </div>
+    <div class="kc-ai-journey__card">
+      <small>02</small>
+      <strong>Copilot</strong>
+      <p>Start with personal productivity and everyday Microsoft 365 knowledge work.</p>
+    </div>
+    <div class="kc-ai-journey__card">
+      <small>03</small>
+      <strong>Copilot Studio</strong>
+      <p>Convert repeatable business scenarios into governed agents and workflows.</p>
+    </div>
+    <div class="kc-ai-journey__card">
+      <small>04</small>
+      <strong>M365 Agents</strong>
+      <p>Extend Microsoft 365 with contextual task assistance and in-flow automation.</p>
+    </div>
+    <div class="kc-ai-journey__card">
+      <small>05</small>
+      <strong>Copilot Cowork</strong>
+      <p>Operate long-running work with approval, ownership, cost and outcome controls.</p>
+    </div>
+  </div>
+  <div class="kc-ai-journey__rails">
+    <div>
+      <strong>Governance Spine</strong>
+      <span>Identity, data boundary, DLP, owner model, cost and telemetry</span>
+    </div>
+    <div>
+      <strong>Change Management</strong>
+      <span>Champions, manager routines, training, VOC, KPI and value storytelling</span>
+    </div>
+  </div>
+</div>
 
 | Journey Layer | What It Means |
 |---|---|
