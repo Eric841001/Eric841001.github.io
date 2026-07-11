@@ -20,6 +20,22 @@ sidebar_label: WBS Template
 
 ---
 
+```mermaid
+flowchart LR
+  Initiate["1. Initiation<br/>kickoff, governance,<br/>baseline schedule"]:::phase
+  Discover["2. Discovery<br/>workshops, interviews,<br/>environment review"]:::phase
+  Assess["3. Assessment<br/>findings, risks,<br/>recommendations"]:::phase
+  Design["4. Design<br/>target architecture,<br/>roadmap, controls"]:::phase
+  Deliver["5. Delivery<br/>implementation,<br/>handover, closure"]:::outcome
+
+  Initiate --> Discover --> Assess --> Design --> Deliver
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
+---
+
 ## WBS Structure
 
 ## Phase 1. Project Initiation

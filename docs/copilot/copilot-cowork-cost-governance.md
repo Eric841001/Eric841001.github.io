@@ -21,6 +21,21 @@ This guide summarizes the practical questions that typically appear during Copil
 - Can administrators set user, group, or tenant-level spending limits?
 - What technical environment is required for pilot or field delivery execution?
 
+```mermaid
+flowchart TB
+  UseCase["Cowork use case<br/>long-running work,<br/>multi-tool execution"]:::input
+  Access["Access decision<br/>pilot group, roles,<br/>discoverability"]:::phase
+  Billing["Credit model<br/>pay-as-you-go,<br/>pre-purchase plan"]:::phase
+  Guardrails["Governance guardrails<br/>spending limits,<br/>alerts, approvals"]:::phase
+  Review["Value review<br/>usage, risk, outcome,<br/>scale decision"]:::outcome
+
+  UseCase --> Access --> Billing --> Guardrails --> Review
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## 1. Cowork Requires Usage-Based Billing Planning

@@ -13,6 +13,21 @@ Microsoft 365 Copilot delivers measurable business value when aligned to real bu
 
 This document provides practical enterprise use cases across major business functions.
 
+```mermaid
+flowchart TB
+  Work["Business work<br/>finance, HR, sales,<br/>legal, operations"]:::input
+  Pattern["Reusable AI pattern<br/>summarize, analyze,<br/>draft, automate"]:::phase
+  Control["Governed adoption<br/>data access, prompt quality,<br/>change management"]:::phase
+  Measure["Value measurement<br/>time saved, cycle time,<br/>quality, risk reduction"]:::phase
+  Scale["Scale playbook<br/>champions, templates,<br/>agent opportunities"]:::outcome
+
+  Work --> Pattern --> Control --> Measure --> Scale
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Finance

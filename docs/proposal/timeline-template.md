@@ -13,6 +13,21 @@ The Timeline Template provides a standard project schedule structure for Microso
 
 The objective is to define realistic phases, milestones, dependencies and decision points so that both customer and delivery teams can align on scope, timeline and responsibilities.
 
+```mermaid
+flowchart LR
+  Discovery["Discovery<br/>requirements,<br/>current state"]:::phase
+  Assessment["Assessment<br/>findings, risks,<br/>readiness"]:::phase
+  Design["Design<br/>architecture,<br/>policy, roadmap"]:::phase
+  Build["Build and pilot<br/>configuration,<br/>validation"]:::phase
+  Rollout["Rollout<br/>production waves,<br/>change support"]:::phase
+  Handover["Handover<br/>runbook, training,<br/>stabilization"]:::outcome
+
+  Discovery --> Assessment --> Design --> Build --> Rollout --> Handover
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ## Business Scenario
 
 This timeline is typically used for:

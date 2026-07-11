@@ -13,6 +13,20 @@ This checklist provides a standardized assessment structure for Microsoft 365, A
 
 It is designed to support discovery workshops, current-state reviews, proposal preparation and consulting delivery planning.
 
+```mermaid
+flowchart TB
+  Inputs["Inputs<br/>workshops, tenant review,<br/>documents, stakeholder needs"]:::input
+  Checklist["Checklist review<br/>business, identity,<br/>M365, security, endpoint"]:::phase
+  Findings["Findings<br/>strengths, gaps,<br/>risks, dependencies"]:::phase
+  Actions["Actions<br/>quick wins, roadmap,<br/>proposal scope"]:::outcome
+
+  Inputs --> Checklist --> Findings --> Actions
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Assessment Categories

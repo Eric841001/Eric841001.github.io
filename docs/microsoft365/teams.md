@@ -27,6 +27,22 @@ A successful Teams deployment requires governance across:
 
 The objective is to balance collaboration agility with security and operational control.
 
+```mermaid
+flowchart TB
+  Request["Collaboration request<br/>team, channel, guest,<br/>shared workspace"]:::input
+  Provision["Provisioning policy<br/>naming, template,<br/>owner requirement"]:::control
+  Access["Access governance<br/>members, guests,<br/>external collaboration"]:::control
+  Protect["Information protection<br/>sensitivity label,<br/>retention, DLP"]:::control
+  Lifecycle["Lifecycle operations<br/>review, archive,<br/>delete, renewal"]:::control
+  Copilot["Copilot readiness<br/>permission hygiene<br/>and content quality"]:::outcome
+
+  Request --> Provision --> Access --> Protect --> Lifecycle --> Copilot
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef control fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Business Scenario

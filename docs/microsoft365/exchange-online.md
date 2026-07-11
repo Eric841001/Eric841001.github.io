@@ -25,6 +25,22 @@ Organizations must evaluate:
 
 The objective is to establish a secure, resilient and globally scalable messaging platform.
 
+```mermaid
+flowchart LR
+  Source["Current messaging estate<br/>Exchange, Google,<br/>multi-tenant"]:::source
+  Identity["Identity and domains<br/>Entra ID, DNS,<br/>accepted domains"]:::phase
+  Flow["Mail flow design<br/>MX, connectors,<br/>SMTP relay, hybrid"]:::phase
+  Secure["Security controls<br/>Defender, SPF/DKIM/DMARC,<br/>transport rules"]:::phase
+  Migrate["Migration waves<br/>mailboxes, archives,<br/>shared resources"]:::phase
+  Operate["Operations model<br/>monitoring, compliance,<br/>support handover"]:::outcome
+
+  Source --> Identity --> Flow --> Secure --> Migrate --> Operate
+
+  classDef source fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Business Scenario

@@ -27,6 +27,21 @@ The purpose of this engagement is to assess, design and implement a modern Micro
 
 The engagement will be delivered through a structured methodology covering assessment, architecture design, implementation planning and knowledge transfer.
 
+```mermaid
+flowchart LR
+  Objectives["Business objectives<br/>outcomes, scope,<br/>success criteria"]:::input
+  Scope["Engagement scope<br/>included, excluded,<br/>assumptions"]:::phase
+  Method["Delivery method<br/>assessment, design,<br/>implementation, handover"]:::phase
+  Plan["Commercial plan<br/>timeline, roles,<br/>milestones, risks"]:::phase
+  Approval["Approved SOW<br/>decision-ready<br/>delivery baseline"]:::outcome
+
+  Objectives --> Scope --> Method --> Plan --> Approval
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## 2. Business Objectives

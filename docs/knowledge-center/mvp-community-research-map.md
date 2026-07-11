@@ -12,6 +12,20 @@ This page organizes public Microsoft MVP and community knowledge sources into a 
 
 The goal is not to copy external articles. The goal is to monitor respected community patterns, translate them into consulting-ready checklists, and connect them with Microsoft official documentation and real delivery experience.
 
+```mermaid
+flowchart LR
+  Monitor["Monitor public sources<br/>MVP blogs, community posts,<br/>official Microsoft docs"]:::phase
+  Extract["Extract field signals<br/>patterns, caveats,<br/>operational risks"]:::phase
+  Translate["Translate to assets<br/>checklists, runbooks,<br/>architecture notes"]:::phase
+  Validate["Validate against delivery<br/>customer scenarios,<br/>support boundaries"]:::phase
+  Publish["Publish original guidance<br/>Knowledge Center pages<br/>and update backlog"]:::outcome
+
+  Monitor --> Extract --> Translate --> Validate --> Publish
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ## 한국어 요약
 
 이 페이지는 Microsoft MVP와 Microsoft community 전문가들이 공개적으로 공유하는 블로그, 기술 글, 운영 경험을 Enterprise Knowledge Center 관점으로 다시 분류한 research map입니다.

@@ -13,6 +13,21 @@ This workbook provides a structured framework for assessing Microsoft 365 enviro
 
 The objective is to identify risks, optimization opportunities and strategic recommendations that support business transformation and cloud modernization.
 
+```mermaid
+flowchart LR
+  Scope["Assessment scope<br/>identity, devices,<br/>collaboration, security"]:::input
+  Collect["Evidence collection<br/>tenant settings,<br/>licenses, policies,<br/>stakeholder inputs"]:::phase
+  Score["Maturity scoring<br/>risk, readiness,<br/>operational gaps"]:::phase
+  Recommend["Recommendations<br/>quick wins,<br/>roadmap, priorities"]:::phase
+  Handover["Executive workbook<br/>findings, decisions,<br/>next actions"]:::outcome
+
+  Scope --> Collect --> Score --> Recommend --> Handover
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Customer Information

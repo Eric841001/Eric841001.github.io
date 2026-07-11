@@ -13,6 +13,20 @@ The Assessment Framework is used to evaluate the current state of a customer env
 
 The objective is to identify business requirements, technical gaps, operational risks and licensing considerations before proposing a target architecture or implementation scope.
 
+```mermaid
+flowchart LR
+  Discover["Discovery<br/>business goals,<br/>technical baseline"]:::phase
+  Analyze["Analysis<br/>risks, gaps,<br/>license fit"]:::phase
+  Design["Target direction<br/>architecture options,<br/>roadmap"]:::phase
+  Align["Stakeholder alignment<br/>priorities, scope,<br/>success measures"]:::phase
+  Proposal["Proposal input<br/>SOW, WBS,<br/>risk register"]:::outcome
+
+  Discover --> Analyze --> Design --> Align --> Proposal
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ## Business Scenario
 
 This assessment is typically used when a customer needs to:

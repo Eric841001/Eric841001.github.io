@@ -23,6 +23,22 @@ Unlike simple mailbox migrations, Tenant-to-Tenant projects impact identity, col
 
 The objective is to minimize business disruption while preserving data integrity, permissions and governance.
 
+```mermaid
+flowchart LR
+  Driver["Business driver<br/>M&A, divestiture,<br/>consolidation"]:::driver
+  Assess["Assessment<br/>identity, domains,<br/>workloads, risk"]:::phase
+  Design["Target design<br/>tenant, identity,<br/>security, coexistence"]:::phase
+  Pilot["Pilot migration<br/>representative users<br/>and workloads"]:::phase
+  Cutover["Migration waves<br/>mail, files, Teams,<br/>devices"]:::phase
+  Stabilize["Stabilization<br/>support, governance,<br/>decommission"]:::outcome
+
+  Driver --> Assess --> Design --> Pilot --> Cutover --> Stabilize
+
+  classDef driver fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Business Scenarios

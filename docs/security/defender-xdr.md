@@ -22,6 +22,21 @@ Rather than operating multiple disconnected security tools, Defender XDR provide
 
 Defender XDR is a core component of Microsoft's Zero Trust architecture and Microsoft 365 E5 security strategy.
 
+```mermaid
+flowchart LR
+  Signals["Security signals<br/>identity, endpoint,<br/>email, cloud apps"]:::source
+  Correlate["Incident correlation<br/>entity graph and<br/>attack story"]:::phase
+  Investigate["SOC investigation<br/>timeline, evidence,<br/>threat hunting"]:::phase
+  Respond["Automated response<br/>isolate, contain,<br/>remediate"]:::phase
+  Improve["Continuous improvement<br/>detections, playbooks,<br/>executive metrics"]:::outcome
+
+  Signals --> Correlate --> Investigate --> Respond --> Improve
+
+  classDef source fill:#fef2f2,stroke:#dc2626,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Business Scenario

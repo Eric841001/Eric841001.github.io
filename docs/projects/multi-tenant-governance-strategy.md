@@ -10,11 +10,25 @@ sidebar_position: 6
 
 Multi-tenant governance is required when an enterprise group, holding company or acquisition-driven organization operates more than one Microsoft 365 or Azure tenant.
 
+```mermaid
+flowchart LR
+  Inventory["Tenant inventory<br/>domains, workloads,<br/>licenses, ownership"]:::phase
+  Classify["Tenant role model<br/>strategic, transitional,<br/>regulated, legacy"]:::phase
+  Baseline["Minimum baseline<br/>identity, security,<br/>collaboration, audit"]:::phase
+  Decide["Governance decisions<br/>consolidate, federate,<br/>isolate, migrate"]:::phase
+  Roadmap["Roadmap<br/>migration waves,<br/>operating model,<br/>executive reporting"]:::outcome
+
+  Inventory --> Classify --> Baseline --> Decide --> Roadmap
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ## 한국어 요약
 
 Multi-Tenant Governance는 여러 계열사, 인수합병 조직, 지역 법인, 분리 운영 조직이 Microsoft 365 또는 Azure tenant를 동시에 운영할 때 필요한 전략입니다.
 
-단순히 tenant를 하나로 합칠지 말지를 결정하는 문제가 아니라, identity, security baseline, collaboration, external sharing, license ownership, support model, migration roadmap을 함께 정리해야 합니다. 잘못 접근하면 tenant consolidation 비용만 커지고, 보안/운영 표준은 여전히 분산된 상태로 남을 수 있습니다.
+이 주제는 단순히 tenant를 하나로 통합할지 말지를 결정하는 문제가 아닙니다. identity, security baseline, collaboration, external sharing, license ownership, support model, migration roadmap을 함께 정리해야 합니다. 잘못 접근하면 tenant consolidation 비용만 커지고, 보안 및 운영 표준은 여전히 분산된 상태로 남을 수 있습니다.
 
 ## Governance Challenges
 

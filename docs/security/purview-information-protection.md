@@ -24,6 +24,20 @@ Purview is a critical foundation for:
 
 Without proper data governance, AI initiatives often increase organizational risk rather than productivity.
 
+```mermaid
+flowchart LR
+  Discover["Discover data<br/>SharePoint, OneDrive,<br/>Teams, Exchange"]:::phase
+  Classify["Classify sensitivity<br/>labels, trainable classifiers,<br/>data map"]:::phase
+  Protect["Protect access<br/>encryption, DLP,<br/>endpoint controls"]:::phase
+  Govern["Govern lifecycle<br/>retention, eDiscovery,<br/>audit evidence"]:::phase
+  EnableAI["Enable trusted AI<br/>Copilot readiness<br/>and risk reduction"]:::outcome
+
+  Discover --> Classify --> Protect --> Govern --> EnableAI
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Business Scenario

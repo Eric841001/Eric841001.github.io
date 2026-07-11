@@ -13,6 +13,21 @@ This questionnaire is used during discovery workshops for Microsoft 365, Azure, 
 
 The objective is to capture business context, technical environment, risks, constraints and success criteria before proposal, assessment or implementation planning.
 
+```mermaid
+flowchart LR
+  Context["Business context<br/>objective, sponsor,<br/>timeline, success"]:::input
+  Baseline["Technical baseline<br/>tenant, identity,<br/>workloads, licenses"]:::phase
+  Risk["Risk discovery<br/>security, compliance,<br/>migration constraints"]:::phase
+  Priority["Priority alignment<br/>must-have, nice-to-have,<br/>decision criteria"]:::phase
+  Output["Engagement input<br/>assessment, proposal,<br/>roadmap"]:::outcome
+
+  Context --> Baseline --> Risk --> Priority --> Output
+
+  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## 1. Business Context
