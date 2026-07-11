@@ -17,6 +17,8 @@ In most enterprise environments, Microsoft 365 E3 provides a strong productivity
 
 Before making a recommendation, confirm whether the customer is using Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, or a mixed model with add-ons. Similar names can hide materially different security, endpoint, identity and compliance capabilities.
 
+> **Executive lens:** The E3 vs E5 decision should be framed around risk and required controls, not only license price. Confirm the current SKU, missing service plans, required security outcomes and operational maturity before recommending an upgrade.
+
 ---
 
 ## Decision Framework

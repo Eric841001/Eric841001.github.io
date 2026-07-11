@@ -13,6 +13,8 @@ A Risk Register is used to identify, assess, track and mitigate risks throughout
 
 For Microsoft 365, Azure, Security, Copilot and migration projects, risk management must cover not only technical issues but also licensing, business readiness, change management, operational ownership and executive decision dependencies.
 
+> **Asset preview:** Use this page to understand the risk model. For an editable risk register file or customer-ready sample, request the asset through [Contact and Asset Request](../contact) with the project type and target workload.
+
 ```mermaid
 flowchart LR
   Identify["Identify<br/>technical, business,<br/>license, change risks"]:::phase

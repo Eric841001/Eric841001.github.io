@@ -13,6 +13,10 @@ This Risk Register provides a structured framework for identifying, assessing, t
 
 The objective is to improve project predictability, support executive decision-making and reduce delivery risk.
 
+> **Executive lens:** A risk register is not a passive list. It should connect risk level, owner, mitigation, decision trigger and escalation path so executives can act before delivery is blocked.
+
+> **Asset preview:** Public examples show the structure and risk logic. Editable risk register workbooks should be requested through [Contact and Asset Request](../contact) when the project scenario and confidentiality boundary are clear.
+
 ---
 
 ## Risk Management Process

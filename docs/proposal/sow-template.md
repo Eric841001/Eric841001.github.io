@@ -19,6 +19,8 @@ Microsoft 365, Security, Copilot, Azure, Migration 프로젝트에서는 scope, 
 
 SOW는 고객에게 "무엇을 제공하는가"만 설명하는 문서가 아닙니다. 어떤 조건에서 시작하고, 어떤 산출물로 검토하며, 어떤 기준으로 완료를 승인할지 합의하는 delivery contract입니다.
 
+> **Asset preview:** This page explains the SOW design model. Editable SOW templates and sanitized customer-ready examples are shared by request after confirming scope, audience and confidentiality requirements.
+
 ## SOW Design Flow
 
 ```mermaid

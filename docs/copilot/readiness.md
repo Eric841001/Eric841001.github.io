@@ -15,6 +15,8 @@ Successful Copilot adoption requires readiness across identity, security, data g
 
 This framework provides a standardized assessment model to evaluate enterprise readiness before Copilot pilot or enterprise rollout.
 
+> **Executive lens:** Copilot readiness should prove that people, data and controls are ready for AI-assisted work. License assignment should follow readiness evidence, not replace it.
+
 ---
 
 ## Readiness Architecture

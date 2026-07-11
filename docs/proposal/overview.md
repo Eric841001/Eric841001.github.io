@@ -15,7 +15,9 @@ Proposal Center는 Microsoft 365, Azure, Security, Copilot, AI Agent, Migration 
 
 제안서 작성은 단순한 문서 작업이 아닙니다. 고객의 business goal, technical scope, security requirement, 일정, 역할, risk, cost, approval structure를 하나의 실행 가능한 delivery model로 연결하는 작업입니다.
 
-이 섹션은 Executive Summary, Assessment Framework, Statement of Work, Work Breakdown Structure, Risk Register, Timeline, Governance Model 같은 제안/수행 산출물을 재사용 가능한 구조로 제공합니다.
+이 섹션은 Executive Summary, Assessment Framework, Statement of Work, Work Breakdown Structure, Risk Register, Timeline, Governance Model 같은 제안 및 수행 산출물을 재사용 가능한 구조로 제공합니다.
+
+> **Asset preview:** Public pages show the structure and decision logic. Editable DOCX/XLSX/PPTX versions or customer-ready samples should be requested through [Contact and Asset Request](../contact) after confirming the scenario and confidentiality boundary.
 
 ---
 
@@ -39,33 +41,15 @@ Proposal work should not be treated as a document-writing task. It is a decision
 
 ## Available Assets
 
-### Executive Summary
-
-C-Level business proposal structure and executive messaging framework.
-
-### Assessment Framework
-
-Discovery workshop, current state assessment and gap analysis templates.
-
-### Statement of Work
-
-Scope, deliverables, assumptions and exclusions structure.
-
-### Work Breakdown Structure
-
-Project planning and execution framework.
-
-### Risk Register
-
-Project risk identification and mitigation model.
-
-### Timeline Template
-
-Standard project timeline and milestone planning.
-
-### Governance Model
-
-Project governance and stakeholder management structure.
+| Asset | Purpose | When to Use |
+|---|---|---|
+| Executive Summary | C-Level business proposal structure and executive messaging | when the decision maker needs a concise value story |
+| Assessment Framework | Discovery workshop, current state assessment and gap analysis | before defining target architecture or scope |
+| Statement of Work | Scope, deliverables, assumptions and exclusions structure | when project boundaries must be contract-ready |
+| Work Breakdown Structure | Project planning and execution framework | when delivery phases and activities must be visible |
+| Risk Register | Project risk identification and mitigation model | when risk ownership and escalation must be explicit |
+| Timeline Template | Standard project timeline and milestone planning | when stakeholders need schedule alignment |
+| Governance Model | Project governance and stakeholder management structure | when decisions, approvals and reporting cadence must be defined |
 
 ---
 

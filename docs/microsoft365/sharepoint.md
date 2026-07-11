@@ -15,6 +15,8 @@ A successful SharePoint implementation requires a well-designed information arch
 
 This framework provides a practical approach for designing SharePoint Online as an enterprise content and knowledge platform.
 
+> **Executive lens:** SharePoint design should start with information architecture and governance, not site creation. Hub structure, permissions, labels, lifecycle and Copilot readiness must be designed together.
+
 ---
 
 ## Business Scenario

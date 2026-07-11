@@ -7,6 +7,8 @@ sidebar_label: SOW Template
 
 # Statement of Work (SOW)
 
+> **Asset preview:** This page explains the public-safe SOW structure. Editable SOW files or customer-ready examples should be requested through [Contact and Asset Request](../contact) after confirming project scope, workload and confidentiality boundary.
+
 ## Project Information
 
 | Item | Description |

@@ -7,6 +7,8 @@ sidebar_label: WBS Template
 
 # Work Breakdown Structure (WBS) Template
 
+> **Asset preview:** This page shows the WBS structure and delivery logic. Editable project planning files can be shared by request after confirming the engagement type, workstreams and target Microsoft workload.
+
 ## Project Information
 
 | Item | Description |
@@ -19,6 +21,8 @@ sidebar_label: WBS Template
 | Duration | |
 
 ---
+
+> **Executive lens:** A WBS should make delivery ownership visible. Each phase should connect activity, deliverable, dependency and acceptance evidence so the project can be governed instead of merely tracked.
 
 ```mermaid
 flowchart LR

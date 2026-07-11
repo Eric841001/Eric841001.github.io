@@ -15,6 +15,8 @@ It requires coordinated design across identity, domain, mail coexistence, securi
 
 A successful tenant consolidation program should define whether the organization needs full migration, long-term coexistence or a hybrid multi-tenant operating model.
 
+> **Executive lens:** Global tenant consolidation is a business operating model decision first and a migration decision second. The key question is which tenants should consolidate, federate, remain isolated or become transitional.
+
 ---
 
 ## Business Scenario

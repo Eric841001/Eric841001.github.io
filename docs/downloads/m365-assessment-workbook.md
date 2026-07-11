@@ -13,6 +13,8 @@ This workbook provides a structured framework for assessing Microsoft 365 enviro
 
 The objective is to identify risks, optimization opportunities and strategic recommendations that support business transformation and cloud modernization.
 
+> **Executive lens:** Use this workbook to move from raw tenant observations to a decision-ready assessment. Scope, evidence, maturity score, risk, recommendation and roadmap should stay connected.
+
 ```mermaid
 flowchart LR
   Scope["Assessment scope<br/>identity, devices,<br/>collaboration, security"]:::input
