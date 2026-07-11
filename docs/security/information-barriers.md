@@ -194,6 +194,32 @@ IB를 설계할 때 Exchange Online까지 동일한 방식으로 제어된다고
 - Evidence package template
 - Rollback and exception management procedure
 
+## Frequently Asked Questions
+
+### Is Information Barriers only a Teams feature?
+
+No. Information Barriers should be treated as a collaboration boundary model. Teams behavior is important, but SharePoint, OneDrive, group membership and workload-specific validation must also be reviewed.
+
+### What should be designed first?
+
+Start with a collaboration restriction matrix. Define which groups can communicate or collaborate, which exceptions are allowed and who approves changes.
+
+### How does Information Barriers affect Copilot readiness?
+
+Copilot follows Microsoft 365 permissions and collaboration boundaries. Information Barriers can help reduce unintended collaboration paths in regulated or conflict-of-interest scenarios, but they must be validated with workload-specific tests.
+
+### What evidence is required?
+
+Prepare segment matrix, policy list, policy application status, allowed/blocked Teams tests, SharePoint/OneDrive validation, exception register and rollback plan.
+
+## Common Mistakes
+
+- Creating segments before the business restriction matrix is approved
+- Testing only Teams chat and ignoring SharePoint or OneDrive behavior
+- Forgetting symmetric policy requirements
+- Keeping exception users without expiry or owner
+- Publishing screenshots with real UPNs, domains or customer identifiers
+
 ## Search Keywords
 
 - Microsoft Purview Information Barriers

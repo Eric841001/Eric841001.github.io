@@ -5,21 +5,27 @@ import styles from './CTASection.module.css';
 const paths = [
   {
     label: '01',
+    title: 'Start with AI Adoption',
+    text: 'Begin with Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork guidance.',
+    path: '/knowledge/search/how-to-use-ai-in-enterprise',
+  },
+  {
+    label: '02',
+    title: 'Review Microsoft 365 Security',
+    text: 'Map identity, device, Defender, Purview, DLP and Copilot data protection controls.',
+    path: '/knowledge/search/microsoft-365-security',
+  },
+  {
+    label: '03',
     title: 'Request Assets',
     text: 'Ask for reusable SOW, WBS, checklist or workbook samples after confirming the use case.',
     path: '/knowledge/contact',
   },
   {
-    label: '02',
+    label: '04',
     title: 'Review Success Patterns',
     text: 'Explore anonymized reference patterns by industry, workload and delivery scenario.',
     path: '/knowledge/projects/customer-success-reference-patterns',
-  },
-  {
-    label: '03',
-    title: 'Start with AI Adoption',
-    text: 'Jump into Copilot, Copilot Studio, M365 Agents and Cowork operating guidance.',
-    path: '/knowledge/search/ai-agent-factory',
   },
 ];
 
@@ -30,7 +36,7 @@ export default function CTASection() {
         <div className={styles.copy}>
           <p className={styles.label}>For Visitors from Email Signature</p>
 
-          <h2>Choose the next path: asset request, reference review or AI adoption.</h2>
+          <h2>Choose the next path: AI adoption, security, assets or success patterns.</h2>
 
           <span>
             Public pages explain the architecture, governance and delivery approach. Editable

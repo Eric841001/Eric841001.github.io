@@ -98,6 +98,24 @@ An anonymized enterprise group governance engagement typically follows this patt
 5. Build a roadmap for identity, collaboration, security and migration workstreams.
 6. Create executive reporting that explains risk, cost and operational impact.
 
+## Success Metrics
+
+| Metric | What To Track |
+|---|---|
+| Tenant classification | all tenants assigned strategic, transitional, regulated, legacy or innovation role |
+| Baseline alignment | minimum identity, security and collaboration controls defined for each tenant |
+| Exception control | exceptions documented with owner, reason, expiry and compensating control |
+| Migration clarity | workloads mapped to consolidate, federate, isolate or migrate decisions |
+| Operating ownership | platform owner, support path and review cadence assigned |
+
+## Lessons Learned
+
+- Do not treat tenant consolidation as a purely technical decision.
+- Classify tenants before planning migration waves.
+- Define a minimum security baseline even for transitional or legacy tenants.
+- Keep regulated or business-separated tenants explicit in the roadmap.
+- Report tenant strategy as business risk, cost and operating model, not only architecture.
+
 ## 검색 키워드
 
 - multi-tenant governance
@@ -115,3 +133,4 @@ An anonymized enterprise group governance engagement typically follows this patt
 - [Tenant-to-Tenant Migration](../migration/tenant-to-tenant)
 - [Global Tenant Consolidation](../migration/global-tenant-consolidation-framework)
 - [Enterprise Group Governance Case Study](./case-study-enterprise-group-governance)
+- [Contact and Asset Request](../contact)

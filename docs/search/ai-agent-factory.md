@@ -62,6 +62,16 @@ flowchart LR
 | Operate | How will usage, quality, cost and incidents be monitored? |
 | Retire | When should agents be updated, consolidated or removed? |
 
+## What Good Looks Like
+
+| Maturity Level | Observable Signal |
+|---|---|
+| Idea Collection | business teams submit agent ideas, but risk and value are not yet normalized |
+| Governed Intake | every agent candidate has owner, value hypothesis, data source and risk profile |
+| Pilot Factory | selected agents are built with reusable patterns, approval gates and evaluation criteria |
+| Agent Portfolio | agents are tracked in a catalog with lifecycle, cost, quality and incident signals |
+| Operating Model | intake, build, publish, monitor, improve and retire processes run as a repeatable platform capability |
+
 ## Platform Fit Guide
 
 | Agent Pattern | Good Fit | Governance Focus |
@@ -71,6 +81,28 @@ flowchart LR
 | Microsoft 365 Agents SDK | custom enterprise app or deeper application integration | identity, API permission, source control and DevSecOps |
 | Microsoft Foundry agent | advanced AI workflow, model orchestration or broader Azure AI integration | model governance, cost control, evaluation and monitoring |
 | Multi-agent pattern | coordinated tasks across specialist agents | orchestration boundary, human review, failure handling |
+
+## Frequently Asked Questions
+
+### What is an AI Agent Factory?
+
+An AI Agent Factory is an operating model for turning business agent ideas into governed, reusable and measurable agents. It includes intake, prioritization, design, approval, build, publishing, monitoring and retirement.
+
+### Is Agent Factory only about Copilot Studio?
+
+No. Copilot Studio is a strong fit for many business-owned agent scenarios, but an enterprise Agent Factory can also include Microsoft 365 Agents, Microsoft 365 Agents SDK, Microsoft Foundry and multi-agent patterns.
+
+### What should be reviewed before building an agent?
+
+Review business value, data source, permission boundary, action risk, human approval, owner, cost model, lifecycle and evaluation criteria before build starts.
+
+### When should an agent not be built?
+
+Do not build an agent when the process is unclear, data ownership is weak, approval responsibility is missing, or the same result can be achieved with a simpler Copilot prompt or workflow.
+
+### How is agent success measured?
+
+Measure reuse, task completion, quality, user satisfaction, incident count, cost consumption, review effort and whether the agent reduces manual work without increasing risk.
 
 ## Recommended Entry Points
 
@@ -91,6 +123,10 @@ flowchart LR
 - Agent governance and approval model
 - Enterprise Agent catalog
 - Agent Factory operating model
+
+## Contact Path
+
+For an editable Agent intake template, prioritization matrix, governance checklist or executive Agent Factory roadmap, use [Contact and Asset Request](../contact). Public pages explain the method; customer-ready artifacts should be shared only after the business scenario and confidentiality boundary are confirmed.
 
 ## 검색 키워드
 

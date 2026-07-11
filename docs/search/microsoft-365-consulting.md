@@ -61,6 +61,16 @@ flowchart LR
 | Migration | Exchange, Google Workspace, file server, SharePoint and tenant transition |
 | Delivery Assets | assessment report, SOW, WBS, risk register and handover guide |
 
+## What Good Looks Like
+
+| Maturity Level | Observable Signal |
+|---|---|
+| Issue-Based Support | work is handled as isolated requests without a target architecture |
+| Structured Assessment | tenant, identity, collaboration, security and operations are assessed together |
+| Architecture-Led Delivery | design decisions are documented before implementation and migration |
+| Governed Operation | ownership, exception process, security review and handover are part of delivery |
+| Business Value Review | license value, Copilot readiness, risk reduction and user productivity are measured together |
+
 ## Visitor Routing
 
 | If You Are Looking For | Start Here | Next Step |
@@ -71,6 +81,28 @@ flowchart LR
 | Copilot or AI adoption | [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | connect Copilot, GPT-5.6, Copilot Studio and Cowork |
 | Migration or tenant transition | [Migration Architecture](../architecture/migration-architecture) | prepare inventory, wave plan and rollback governance |
 | Proposal or delivery package | [Proposal Center](../proposal/overview) | request SOW, WBS, risk register or assessment workbook |
+
+## Frequently Asked Questions
+
+### What does Microsoft 365 consulting include?
+
+It includes tenant architecture, identity, collaboration, security, endpoint management, migration, Copilot readiness, operating model and delivery asset design.
+
+### Why is Microsoft 365 consulting not only technical implementation?
+
+Enterprise projects require decisions about ownership, governance, security, user impact, change management, support handover and measurable business value.
+
+### What should be reviewed before a Microsoft 365 renewal?
+
+Review license entitlement, enabled service plans, security baseline, Purview/Defender/Intune usage, Copilot readiness, storage growth, adoption and support cost.
+
+### Which documents are typically useful?
+
+Common assets include assessment workbook, executive summary, SOW, WBS, risk register, architecture note, migration plan, security checklist and handover guide.
+
+### How should customer references be handled?
+
+Use industry and scenario-level patterns only. Do not expose customer names, tenant IDs, internal filenames, commercial terms or customer-specific architecture details.
 
 ## Recommended Entry Points
 
@@ -90,6 +122,10 @@ flowchart LR
 - Exchange Online security review template
 - Entra ID and Intune policy matrix
 - Microsoft 365 SOW / WBS sample
+
+## Contact Path
+
+For a customer-ready Microsoft 365 assessment workbook, SOW/WBS sample, security review template or architecture workshop outline, use [Contact and Asset Request](../contact). Public pages describe the method; editable delivery assets should be shared after scope and confidentiality are confirmed.
 
 ## 검색 키워드
 

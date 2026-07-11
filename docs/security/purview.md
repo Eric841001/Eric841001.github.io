@@ -98,6 +98,35 @@ Security design should focus on:
 
 Purview adoption is partly technical and partly behavioral. Policies that are too strict from day one are often bypassed. The stronger pattern is to start with visibility, tune policies with evidence, and then enforce controls in waves.
 
+## Frequently Asked Questions
+
+### Where should Purview adoption start?
+
+Start with business data categories, a small sensitivity label taxonomy and priority DLP scenarios. Avoid launching too many labels or block policies before user behavior and false positives are understood.
+
+### How does Purview support Copilot readiness?
+
+Purview helps classify, protect, audit and govern sensitive information that Copilot may reason over through Microsoft 365 permissions. It should be paired with oversharing review and site ownership cleanup.
+
+### Who should own Purview policy decisions?
+
+Security, compliance, legal, IT and business data owners should make policy decisions together. Technical administrators should not define sensitive data categories alone.
+
+### What evidence should be prepared?
+
+Prepare label taxonomy, policy publishing scope, DLP test results, exception process, audit configuration, retention decisions and Copilot data protection notes.
+
+## Evidence Checklist
+
+| Evidence | Purpose |
+|---|---|
+| Label taxonomy | show business-readable classification structure |
+| Label policy scope | prove who receives which labels and why |
+| DLP test result | validate policy effect before enforcement |
+| Exception register | document approvals, reasons and expiry |
+| Oversharing review | identify sensitive repositories before Copilot expansion |
+| Review cadence | define how policies are tuned and approved over time |
+
 ## References
 
 - Microsoft Purview compliance portal

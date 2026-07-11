@@ -37,6 +37,16 @@ flowchart TB
 - Convert project artifacts into repeatable frameworks: assessment, architecture, governance, rollout and operation.
 - Keep success measures business-readable: risk reduction, adoption readiness, migration control, service stability and governance maturity.
 
+## Executive Review Lens
+
+| Executive Question | How This Page Helps |
+|---|---|
+| Can this experience be reused safely? | customer names, account identifiers and commercial details are excluded |
+| Which industries are represented? | manufacturing, finance, logistics, retail, construction, healthcare and enterprise group patterns |
+| What is reusable? | assessment model, architecture pattern, SOW/WBS structure, governance checklist and handover approach |
+| What outcome should be expected? | better readiness, lower risk, clearer operating ownership and more repeatable delivery |
+| How can a private reference be requested? | use [Contact and Asset Request](../contact) with industry, workload and desired output type |
+
 ## Industry Patterns
 
 ```mermaid
@@ -103,6 +113,18 @@ flowchart TB
   classDef metric fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.8px
   classDef reference fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:2px
 ```
+
+## Reference Request Checklist
+
+When requesting a deeper customer success reference, provide only public-safe context:
+
+| Item | Example |
+|---|---|
+| Industry | manufacturing, finance, logistics, retail, healthcare, enterprise group |
+| Workload | Microsoft 365, Security, Copilot, AI Agent, Azure, Migration |
+| Purpose | executive briefing, proposal support, architecture workshop, delivery planning |
+| Desired asset | case study summary, WBS sample, risk register, roadmap, architecture note |
+| Confidentiality boundary | public pattern, sanitized sample, internal review only |
 
 ### Manufacturing: Copilot Adoption Operating Model
 

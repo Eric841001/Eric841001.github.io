@@ -529,6 +529,37 @@ Unmanaged Access
 
 ---
 
+## Frequently Asked Questions
+
+### What is the most important Conditional Access design principle?
+
+Design Conditional Access as a layered control model, not as a random collection of policies. Baseline, privileged access, unmanaged device, risk-based and workload-specific controls should each have a clear purpose and owner.
+
+### Should policies be enforced immediately?
+
+High-impact policies should usually start with report-only mode or a scoped pilot group. Review sign-in logs, user impact and service dependencies before broad enforcement.
+
+### How does Conditional Access affect Copilot?
+
+Copilot follows Microsoft 365 access boundaries. Conditional Access should ensure that Copilot users access data from trusted identities, compliant devices and approved session conditions.
+
+### What evidence should be prepared?
+
+Prepare policy list, assignments, exclusions, report-only impact, sign-in log validation, break-glass test result, pilot approval and rollback plan.
+
+## Evidence Checklist
+
+| Evidence | Purpose |
+|---|---|
+| Policy matrix | explain purpose, scope, condition, control and owner |
+| Sign-in impact review | validate report-only or pilot impact before enforcement |
+| Break-glass validation | prove emergency access still works and is monitored |
+| Device compliance result | confirm managed device requirement is enforceable |
+| Exception register | keep exclusions time-bound, approved and reviewable |
+| Copilot access validation | confirm Copilot access follows intended identity and device controls |
+
+---
+
 ## MVP 커뮤니티 기반 설계 메모
 
 Microsoft security community에서 반복적으로 확인되는 패턴은 Conditional Access를 개별 policy 모음이 아니라 layered control model로 설계해야 한다는 것입니다.

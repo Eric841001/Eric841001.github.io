@@ -103,6 +103,24 @@ In finance, healthcare, manufacturing and regulated SaaS environments, security 
 - Microsoft 365 and Copilot adoption can proceed with clear data protection guardrails.
 - Security and IT operations share the same control language.
 
+## Executive Metrics
+
+| Metric | What To Track |
+|---|---|
+| Control maturity | identity, endpoint, threat, data and SaaS controls mapped to current state |
+| Evidence readiness | audit, committee and executive review materials prepared |
+| Exception hygiene | owner, expiry, reason and compensating control documented |
+| Copilot readiness | oversharing, Purview, DLP and audit prerequisites reviewed |
+| Operations readiness | incident workflow, review cadence and control owner defined |
+
+## Lessons Learned
+
+- Security modernization succeeds when evidence is planned from the beginning.
+- Conditional Access, Defender, Purview and Intune should be explained as one control model.
+- Copilot and AI adoption make permission cleanup and data protection more urgent.
+- Exception governance is often more important than the initial policy setting.
+- Executive reports should translate configuration into risk, decision and operating impact.
+
 ## 검색 키워드
 
 - Microsoft Security modernization
@@ -121,3 +139,5 @@ In finance, healthcare, manufacturing and regulated SaaS environments, security 
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 - [Zero Trust Framework](../security/zero-trust-framework)
 - [Security Modernization Playbook](../playbooks/security-modernization-playbook)
+- [Microsoft 365 Security](../search/microsoft-365-security)
+- [Contact and Asset Request](../contact)

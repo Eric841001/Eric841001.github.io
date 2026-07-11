@@ -502,6 +502,37 @@ Activities:
 
 ---
 
+## Frequently Asked Questions
+
+### Why is Defender XDR important for Microsoft 365 security?
+
+Defender XDR correlates identity, endpoint, email, cloud app and collaboration signals so security teams can investigate incidents as connected attack stories rather than isolated alerts.
+
+### What should be validated before production rollout?
+
+Validate endpoint onboarding, email protection, identity sensor coverage, alert routing, incident ownership, automated investigation settings and SOC escalation workflow.
+
+### How does Defender XDR support Copilot and AI readiness?
+
+Copilot and AI adoption increase the importance of identity, endpoint and data protection telemetry. Defender XDR helps detect compromised users, risky devices and suspicious activity that can affect Microsoft 365 data access.
+
+### What evidence should executives see?
+
+Executives should see coverage, incident trend, mean time to triage, high-risk users, unresolved incidents, automation impact and top remediation themes.
+
+## Evidence Checklist
+
+| Evidence | Purpose |
+|---|---|
+| Workload coverage map | confirm Defender for Endpoint, Office 365, Identity and Cloud Apps scope |
+| Onboarding status | prove endpoint and identity visibility is complete enough |
+| Incident workflow | define owner, escalation, severity and response path |
+| Alert tuning log | show false positive reduction and detection quality improvement |
+| KPI dashboard | track MTTA, MTTR, incident volume and automation impact |
+| Copilot risk signal review | connect risky identity/device signals to AI data access readiness |
+
+---
+
 ## References
 
 - Microsoft Learn

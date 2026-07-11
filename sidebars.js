@@ -18,6 +18,7 @@
           collapsed: true,
           items: [
             'search/enterprise-microsoft-architecture-keywords',
+            'search/search-index-url-hub',
             'search/how-to-use-ai-in-enterprise',
             'search/microsoft-365-consulting',
             'search/microsoft-365-security',

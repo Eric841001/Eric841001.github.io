@@ -83,6 +83,35 @@ Advanced DLP across Microsoft 365 workloads and endpoints may require higher com
 - Alert review and tuning runbook
 - Copilot data protection readiness summary
 
+## Frequently Asked Questions
+
+### Should DLP start in block mode?
+
+Usually no. Start with audit or test mode for priority scenarios, review false positives and user impact, then move high-confidence rules to warn or block.
+
+### How does DLP relate to Copilot?
+
+Copilot can surface content that users already have access to. DLP helps reduce accidental sharing and exfiltration risk, while Purview labels and permission cleanup help define safer data boundaries.
+
+### What makes a DLP policy usable?
+
+A usable DLP policy has a clear data owner, meaningful condition logic, user coaching text, exception process, alert owner and tuning cadence.
+
+### What evidence should be captured?
+
+Capture policy scope, test results, false positive review, exception approvals, alert triage records and final enforcement decision.
+
+## Evidence Checklist
+
+| Evidence | Purpose |
+|---|---|
+| Data category map | connect sensitive information types to business data owners |
+| Test mode report | prove policy impact before enforcement |
+| False positive log | show tuning decisions and threshold changes |
+| Exception register | keep temporary exceptions approved and auditable |
+| User coaching text | explain business reason behind warning or block |
+| Copilot readiness note | connect DLP scope to AI data protection concerns |
+
 ## Customer Success Pattern
 
 | Industry | Scenario | Pattern |

@@ -271,6 +271,37 @@ Zero Trust engagement should produce:
 
 ---
 
+## Frequently Asked Questions
+
+### What is the practical starting point for Zero Trust?
+
+Start with identity and device trust. MFA, legacy authentication blocking, Conditional Access, privileged access and device compliance create the foundation for the rest of the program.
+
+### Is Zero Trust a single project?
+
+No. Zero Trust is an operating model. It should be implemented in phases across identity, endpoint, data, threat protection, application access and governance.
+
+### How does Zero Trust support Copilot and AI adoption?
+
+Copilot and AI agents rely on Microsoft 365 access boundaries. Zero Trust reduces the risk of compromised identities, unmanaged devices and overshared data being used in AI-assisted work.
+
+### What should executives approve?
+
+Executives should approve target maturity, risk tolerance, device scope, external sharing posture, monitoring model, licensing assumptions and phased roadmap.
+
+## Evidence Checklist
+
+| Evidence | Purpose |
+|---|---|
+| Current-state assessment | establish identity, endpoint, data and threat baseline |
+| Zero Trust gap analysis | explain priority gaps and business risk |
+| Roadmap | sequence implementation by impact, dependency and adoption risk |
+| Control owner map | assign accountable owners for each control layer |
+| Risk register | track implementation, exception and operational risks |
+| Executive decision log | preserve leadership decisions and accepted risk |
+
+---
+
 ## References
 
 - Microsoft Zero Trust Guidance

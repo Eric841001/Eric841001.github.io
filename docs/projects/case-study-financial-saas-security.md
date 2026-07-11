@@ -75,9 +75,23 @@ A regulated financial organization needed to validate Microsoft 365 and SaaS usa
 - risk register and exception workflow
 - security committee approval pack
 
+## Executive Summary Pattern
+
+This pattern is best presented as a regulated access modernization program. The business value is the ability to use Microsoft 365 and SaaS capabilities while maintaining approval evidence, exception ownership and security committee visibility.
+
 ## Success Pattern
 
 For regulated environments, success depends on evidence-ready governance. Architecture diagrams alone are not enough. The delivery must include control ownership, exception handling and operational review rhythm.
+
+## Success Metrics
+
+| Metric | What To Track |
+|---|---|
+| Control coverage | identity, endpoint, network, data and SaaS controls mapped to risks |
+| Exception hygiene | exceptions with owner, expiry, approval evidence and compensating control |
+| Evidence readiness | committee-ready pack prepared before production approval |
+| Copilot readiness | oversharing, Purview, DLP and audit posture reviewed before broad AI use |
+| Review cadence | recurring security review and policy refinement rhythm established |
 
 ## Lessons Learned
 
@@ -103,5 +117,5 @@ For regulated environments, success depends on evidence-ready governance. Archit
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 - [Conditional Access](../security/conditional-access)
 - [Zero Trust Framework](../security/zero-trust-framework)
-- Avoid permanent exceptions; every exception needs owner and expiry.
-- Copilot adoption should wait until oversharing and DLP risks are understood.
+- [Microsoft 365 Security](../search/microsoft-365-security)
+- [Contact and Asset Request](../contact)

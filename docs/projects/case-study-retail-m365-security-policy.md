@@ -130,6 +130,25 @@ Large-scale Microsoft 365 security modernization often depends on prerequisites 
 | Power Platform | environment and connector governance should be defined before uncontrolled app and flow growth |
 | operations | improvement items should include owner, prerequisite, impact and validation criteria |
 
+## Success Metrics
+
+| Metric | What To Track |
+|---|---|
+| Capability mapping | security controls mapped to actual license entitlement and enabled service plans |
+| Backlog quality | improvement items include priority, prerequisite, owner, impact and validation criteria |
+| Identity readiness | admin roles, guest access and authentication posture reviewed |
+| Endpoint readiness | device ownership, Entra ID join and Intune enrollment prerequisites clarified |
+| Data protection readiness | Purview, DLP and sensitivity label path defined with user impact |
+| Executive actionability | results report converted into phased roadmap and decision items |
+
+## Lessons Learned
+
+- Start from license entitlement and current-state evidence before recommending controls.
+- Separate prerequisites from implementation tasks so the roadmap is realistic.
+- Treat endpoint readiness and data classification as adoption blockers, not side topics.
+- Include Power Platform governance before uncontrolled app, connector and flow growth.
+- Keep public references anonymous and industry-level.
+
 ## Public Reference Positioning
 
 Use this reference when discussing:

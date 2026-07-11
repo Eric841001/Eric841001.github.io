@@ -64,6 +64,16 @@ flowchart LR
 | ROI | baseline measurement, productivity signal, quality and adoption maturity |
 | Scale-Out | rollout roadmap, risk control and operating rhythm |
 
+## What Good Looks Like
+
+| Maturity Level | Observable Signal |
+|---|---|
+| License Enablement | Copilot licenses are assigned, but role scenarios and value measures are weak |
+| Guided Pilot | pilot users, use cases, training, support and feedback channels are defined |
+| Governed Adoption | data protection, acceptable use, champion network and support model are operating |
+| Value Tracking | productivity, quality, satisfaction, rework reduction and business outcomes are reviewed |
+| AI Operating Model | Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork are connected to a repeatable change model |
+
 ## Adoption Readiness Questions
 
 | Question | Why It Matters |
@@ -74,6 +84,28 @@ flowchart LR
 | When should GPT-5.6 be selected? | helps users choose deeper reasoning only when the task needs it |
 | When should work move to Copilot Studio or Cowork? | separates quick assistance from governed long-running work |
 | What metric proves progress to executives? | connects adoption to business value, not only usage count |
+
+## Frequently Asked Questions
+
+### What is the first step for Copilot adoption?
+
+Start with readiness and role-based scenarios. License assignment should follow a clear pilot scope, data protection review, support model and value measurement plan.
+
+### How should GPT-5.6 be explained to users?
+
+Explain GPT-5.6 as a deeper reasoning option for complex writing, analysis, presentation, comparison and decision-support scenarios where the model selector is available.
+
+### Why do many Copilot programs fail?
+
+They focus on feature training rather than real work. Adoption improves when training is scenario-based, champions collect feedback, and governance defines what users can safely do.
+
+### When should Copilot Studio be introduced?
+
+Introduce Copilot Studio when a repeatable business process needs structured knowledge, actions, approvals, ownership and monitoring beyond personal Copilot usage.
+
+### What should executives see?
+
+Executives should see readiness status, business scenarios, risk controls, adoption metrics, user feedback, license value and the roadmap from Copilot to agents.
 
 ## Recommended Entry Points
 
@@ -95,6 +127,10 @@ flowchart LR
 - Copilot pilot scorecard
 - Copilot use case prioritization matrix
 - executive adoption roadmap
+
+## Contact Path
+
+For a Copilot readiness workbook, adoption WBS, champion program plan, pilot scorecard or executive roadmap, use [Contact and Asset Request](../contact). Share the industry, target users, workloads and expected output type without exposing confidential customer information.
 
 ## 검색 키워드
 
