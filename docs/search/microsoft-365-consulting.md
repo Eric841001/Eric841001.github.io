@@ -24,7 +24,7 @@ For the current planning model, see [Microsoft Licensing Feature Update](../lice
 
 ## 한국어 요약
 
-Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDrive를 구축하는 일이 아닙니다. 실제 기업 환경에서는 Entra ID, Intune, Defender, Purview, Conditional Access, collaboration governance, migration, 운영 인수인계까지 함께 설계해야 안정적인 결과가 나옵니다.
+Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDrive를 구축하는 일이 아닙니다. 실제 enterprise 환경에서는 Entra ID, Intune, Defender, Purview, Conditional Access, collaboration governance, migration, 운영 인수인계까지 함께 설계해야 안정적인 결과가 나옵니다.
 
 이 Knowledge Center는 Microsoft 365 architecture, security baseline, tenant governance, SOW, WBS, assessment workbook, migration planning을 연결해 실무형 컨설팅 산출물로 정리합니다.
 
@@ -32,12 +32,12 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 
 ```mermaid
 flowchart LR
-  Search["Search Intent<br/>Microsoft 365 consulting"]:::source
-  Assess["Assessment<br/>tenant, identity, security, collaboration"]:::step
-  Design["Architecture<br/>governance, workload, operating model"]:::step
-  Deliver["Delivery Assets<br/>SOW, WBS, risk register, handover"]:::asset
-  Optimize["Optimization<br/>license value, Copilot readiness, security posture"]:::outcome
-  Contact["Asset Request<br/>scenario-based template sharing"]:::cta
+  Search["Search intent<br/>M365 consulting"]:::source
+  Assess["Assessment<br/>tenant, identity,<br/>security"]:::step
+  Design["Architecture<br/>governance,<br/>workload"]:::step
+  Deliver["Delivery assets<br/>SOW, WBS,<br/>risk"]:::asset
+  Optimize["Optimization<br/>license, Copilot,<br/>security"]:::outcome
+  Contact["Asset request<br/>scenario-based<br/>sharing"]:::cta
 
   Search --> Assess --> Design --> Deliver --> Optimize --> Contact
 
@@ -57,6 +57,7 @@ flowchart LR
 | Collaboration | Teams, SharePoint, OneDrive, external sharing and workspace lifecycle |
 | Security | Defender, Purview, DLP, audit, retention and Zero Trust control alignment |
 | Endpoint | Intune enrollment, compliance policy, app protection and device governance |
+| Copilot | readiness, GPT-5.6 guidance, adoption, agent governance and ROI |
 | Migration | Exchange, Google Workspace, file server, SharePoint and tenant transition |
 | Delivery Assets | assessment report, SOW, WBS, risk register and handover guide |
 
@@ -65,8 +66,9 @@ flowchart LR
 | If You Are Looking For | Start Here | Next Step |
 |---|---|---|
 | Microsoft 365 architecture design | [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture) | request architecture review or tenant assessment |
-| Security and governance baseline | [Security Reference Architecture](../architecture/security-reference-architecture) | review Defender, Purview, Conditional Access and Intune scope |
+| Security and governance baseline | [Microsoft 365 Security](./microsoft-365-security) | review Defender, Purview, Conditional Access and Intune scope |
 | License and renewal value | [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update) | map license capability to security and Copilot readiness |
+| Copilot or AI adoption | [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | connect Copilot, GPT-5.6, Copilot Studio and Cowork |
 | Migration or tenant transition | [Migration Architecture](../architecture/migration-architecture) | prepare inventory, wave plan and rollback governance |
 | Proposal or delivery package | [Proposal Center](../proposal/overview) | request SOW, WBS, risk register or assessment workbook |
 
@@ -74,8 +76,8 @@ flowchart LR
 
 - [Microsoft 365 Overview](../microsoft365/overview)
 - [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture)
+- [Microsoft 365 Security](./microsoft-365-security)
 - [Microsoft 365 Optimization Program](../projects/m365-optimization-program)
-- [M365 Assessment Playbook](../playbooks/m365-assessment-playbook)
 - [M365 Assessment Workbook](../downloads/m365-assessment-workbook)
 - [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update)
 - [Contact and Asset Request](../contact)

@@ -18,7 +18,9 @@
           collapsed: true,
           items: [
             'search/enterprise-microsoft-architecture-keywords',
+            'search/how-to-use-ai-in-enterprise',
             'search/microsoft-365-consulting',
+            'search/microsoft-365-security',
             'search/copilot-adoption',
             'search/ai-agent-factory',
           ],

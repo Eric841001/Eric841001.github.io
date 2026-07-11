@@ -20,11 +20,13 @@ This page is a search landing page for visitors looking for AI Agent Factory, Co
 
 Modern Agent Factory programs should include Copilot Studio new agent experience, Microsoft IQ, skills, memory, computer use, Microsoft Entra agent identities, agent inventory, A2A integration and Copilot Credit forecasting.
 
+The practical goal is not to create many agents. The goal is to create a governed system for identifying, approving, building, monitoring and retiring agents.
+
 For the latest platform baseline, see [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update).
 
 ## 한국어 요약
 
-AI Agent Factory는 부서별로 agent를 무작정 만드는 방식이 아니라, agent idea intake, prioritization, design, approval, publishing, monitoring, retirement를 반복 가능한 운영 모델로 만드는 접근입니다.
+AI Agent Factory는 부서별로 agent를 무작정 만드는 방식이 아닙니다. agent idea intake, prioritization, design, approval, publishing, monitoring, retirement를 반복 가능한 운영 모델로 만드는 접근입니다.
 
 Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 활용하더라도 enterprise 환경에서는 owner, permission boundary, knowledge source, audit, lifecycle, cost control이 먼저 정리되어야 합니다.
 
@@ -32,12 +34,12 @@ Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 �
 
 ```mermaid
 flowchart LR
-  Demand["Business Demand<br/>agent idea and process pain"]:::source
-  Intake["Intake<br/>value, data, risk, owner"]:::step
-  Pattern["Build Pattern<br/>Copilot Studio, Agent Builder, SDK, Foundry"]:::step
-  Guardrail["Guardrails<br/>identity, permission, audit, cost"]:::control
-  Catalog["Agent Catalog<br/>inventory, lifecycle, ownership"]:::asset
-  Operate["Operate<br/>quality, usage, incident, retirement"]:::outcome
+  Demand["Business demand<br/>agent idea,<br/>process pain"]:::source
+  Intake["Intake<br/>value, data,<br/>risk owner"]:::step
+  Pattern["Build pattern<br/>Studio, SDK,<br/>Foundry"]:::step
+  Guardrail["Guardrails<br/>identity, audit,<br/>cost"]:::control
+  Catalog["Agent catalog<br/>inventory,<br/>lifecycle"]:::asset
+  Operate["Operate<br/>quality, usage,<br/>retirement"]:::outcome
 
   Demand --> Intake --> Pattern --> Guardrail --> Catalog --> Operate
 
@@ -99,12 +101,8 @@ flowchart LR
 - Agentic AI architecture
 - Multi-Agent Framework
 - Agent Factory 운영 모델
-
-## 2026 Search Keywords
-
 - Copilot Studio new agent experience
 - Microsoft IQ
-- Work IQ
 - Copilot Studio skills
 - Copilot Studio memory
 - Computer use agents

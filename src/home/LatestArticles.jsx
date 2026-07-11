@@ -4,6 +4,22 @@ import styles from './LatestArticles.module.css';
 
 const articles = [
   {
+    category: 'AI Adoption',
+    title: 'How to Use AI in Enterprise',
+    description:
+      'A practical journey from Copilot and GPT-5.6 to Copilot Studio, Microsoft 365 Agents, Cowork and change management.',
+    path: '/knowledge/search/how-to-use-ai-in-enterprise',
+    meta: 'AI Usage / Adoption Journey',
+  },
+  {
+    category: 'Security',
+    title: 'Microsoft 365 Security',
+    description:
+      'Zero Trust, Entra ID, Conditional Access, Defender, Purview, Intune and Copilot data protection in one control map.',
+    path: '/knowledge/search/microsoft-365-security',
+    meta: 'Security / Control Architecture',
+  },
+  {
     category: 'Licensing',
     title: 'Microsoft Licensing Feature Update',
     description:
