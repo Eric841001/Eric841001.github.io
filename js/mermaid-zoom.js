@@ -1,10 +1,18 @@
 (function () {
   const visualSelector =
-    '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom)';
+    '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom), .theme-doc-markdown .kc-ai-journey, .theme-doc-markdown .kc-signal-grid, .theme-doc-markdown .kc-asset-catalog, .theme-doc-markdown .kc-pathway';
   let activeDialog = null;
 
   function getVisual(frame) {
     if (frame.tagName === 'IMG') return frame;
+    if (
+      frame.classList.contains('kc-ai-journey') ||
+      frame.classList.contains('kc-signal-grid') ||
+      frame.classList.contains('kc-asset-catalog') ||
+      frame.classList.contains('kc-pathway')
+    ) {
+      return frame;
+    }
     return frame.querySelector('svg');
   }
 
@@ -14,6 +22,8 @@
       const height = visual.naturalHeight || visual.height;
       return width && height ? width / height : 1;
     }
+    const rect = visual.getBoundingClientRect();
+    if (rect.width && rect.height) return rect.width / rect.height;
     const viewBox = visual.getAttribute('viewBox');
     if (!viewBox) return 1;
     const parts = viewBox.split(/\s+/).map(Number);
@@ -28,7 +38,8 @@
 
     frame.dataset.kcZoomReady = 'true';
     frame.classList.add('kc-visual-frame');
-    if (visual.tagName !== 'IMG') frame.classList.add('kc-mermaid-frame');
+    if (visual.tagName !== 'IMG' && visual !== frame) frame.classList.add('kc-mermaid-frame');
+    if (visual === frame) frame.classList.add('kc-html-visual-frame');
     frame.setAttribute('role', 'button');
     frame.setAttribute('tabindex', '0');
     frame.setAttribute('aria-label', 'Open visual in a larger view');
@@ -87,10 +98,15 @@
       clone.removeAttribute('width');
       clone.removeAttribute('height');
       clone.setAttribute('alt', clone.getAttribute('alt') || 'Expanded visual');
-    } else {
+    } else if (clone.tagName === 'svg') {
       clone.removeAttribute('width');
       clone.removeAttribute('height');
       clone.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    } else {
+      clone.removeAttribute('role');
+      clone.removeAttribute('tabindex');
+      clone.removeAttribute('title');
+      clone.classList.remove('kc-visual-frame', 'kc-html-visual-frame');
     }
     canvas.appendChild(clone);
 
