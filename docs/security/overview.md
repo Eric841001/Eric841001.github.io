@@ -10,6 +10,24 @@ This Security section organizes Microsoft security architecture, Zero Trust cont
 
 The guidance is shaped around field scenarios such as regulated SaaS access, Microsoft 365 security review, Exchange Online protection, endpoint onboarding, Purview readiness, DLP design and Copilot data protection.
 
+<div class="kc-signal-grid" aria-label="Security architecture entry points">
+  <a class="kc-signal-card" href="./conditional-access">
+    <small>ACCESS</small>
+    <strong>Identity and Conditional Access</strong>
+    <span>Start with Entra ID, MFA, device trust, guest access and policy exception control.</span>
+  </a>
+  <a class="kc-signal-card" href="./defender-xdr">
+    <small>THREAT</small>
+    <strong>Defender XDR Operations</strong>
+    <span>Connect endpoint, email, identity and incident response into a measurable security operation.</span>
+  </a>
+  <a class="kc-signal-card" href="./information-barriers">
+    <small>DATA</small>
+    <strong>Purview Information Barriers</strong>
+    <span>Design segment-based collaboration boundaries for Teams, SharePoint and OneDrive.</span>
+  </a>
+</div>
+
 ## Visual Security Control Map
 
 ```mermaid

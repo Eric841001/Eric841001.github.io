@@ -63,6 +63,32 @@ Copilot governance depends on Microsoft 365 licensing, Copilot licensing and com
 
 Successful Copilot adoption starts with a narrow, high-value pilot. Broad rollout without data readiness creates trust issues and increases support load.
 
+## 한국어 요약
+
+Copilot Governance는 Microsoft 365 Copilot을 안전하게 배포하기 위한 data access, identity, Purview, DLP, audit, agent lifecycle, adoption 운영 모델입니다.
+
+핵심은 Copilot license를 배정하기 전에 SharePoint, Teams, OneDrive의 permission sprawl과 oversharing risk를 정리하고, pilot user, business scenario, support model, value measurement를 함께 설계하는 것입니다. Copilot Studio agent와 Graph connector까지 확장되는 환경에서는 agent approval, owner, telemetry, cost control도 governance에 포함되어야 합니다.
+
+## Governance Control Matrix
+
+| Control Area | Practical Decision |
+|---|---|
+| Data readiness | overshared site, sensitive content, permission inheritance를 어떻게 정리할 것인가? |
+| Identity | pilot group, privileged role, guest access, Conditional Access 기준은 무엇인가? |
+| Purview / DLP | sensitivity label, retention, DLP, audit가 Copilot 사용 시나리오와 맞는가? |
+| Agent governance | Copilot Studio agent 생성, 승인, 배포, 폐기 기준은 무엇인가? |
+| Adoption | champion, training, prompt guide, VOC, KPI를 어떻게 운영할 것인가? |
+| Value tracking | license usage가 아니라 업무 성과와 시간 절감 기준으로 측정하는가? |
+
+## Related Documents
+
+- [Copilot Overview](./overview)
+- [Copilot Readiness](./readiness)
+- [Copilot Adoption Program](./adoption-program)
+- [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
+- [Agent Factory Operating Model](./agent-factory-operating-model)
+- [Contact and Asset Request](../contact)
+
 ## MVP 커뮤니티 기반 설계 메모
 
 Public Microsoft 365 community에서 반복적으로 강조되는 핵심은 분명합니다. Copilot governance는 AI 기능을 켜는 문제가 아니라, data access와 operating model을 먼저 정리하는 문제입니다.

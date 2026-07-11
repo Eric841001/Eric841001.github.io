@@ -8,6 +8,24 @@ description: Anonymized Microsoft 365, Security, Copilot, Azure, migration and g
 
 This section captures anonymized enterprise project experience and reusable delivery patterns from Microsoft cloud consulting work. Customer names are intentionally omitted. References are grouped by industry, workload and delivery pattern so they can be reused safely for architecture, presales and governance discussions.
 
+<div class="kc-signal-grid" aria-label="Project library entry points">
+  <a class="kc-signal-card" href="./customer-success-reference-patterns">
+    <small>REFERENCE</small>
+    <strong>Customer Success Patterns</strong>
+    <span>Anonymized patterns for executive discussion, architecture framing and public-safe reference storytelling.</span>
+  </a>
+  <a class="kc-signal-card" href="./case-study-enterprise-ai-agent-factory">
+    <small>AI AGENT</small>
+    <strong>Enterprise AI Agent Factory</strong>
+    <span>Agent portfolio governance, Copilot Studio operating model and reusable delivery structure.</span>
+  </a>
+  <a class="kc-signal-card" href="./case-study-retail-m365-security-policy">
+    <small>SECURITY</small>
+    <strong>Retail M365 Security Policy</strong>
+    <span>Policy modernization pattern across Entra ID, Intune, Defender, Purview and collaboration controls.</span>
+  </a>
+</div>
+
 ## 한국어 요약
 
 Projects Library는 실제 고객 경험을 고객명 없이 업종, 과제, delivery pattern 중심으로 재구성한 공간입니다.

@@ -146,3 +146,46 @@ Validate with test messages:
 - Office Message Encryption
 - Microsoft Purview Information Protection
 - RMS Attachment Encryption
+
+---
+
+## 한국어 요약
+
+이 문서는 Exchange Online transport rule을 사용해 승인된 예외 상황에서 OMEv2 또는 RMS attachment encryption을 제거하는 설계 패턴을 설명합니다.
+
+이 기능은 편의 기능이 아니라 보안 예외 관리 대상입니다. recipient, sender, domain, business justification, approval owner, review schedule이 명확하지 않으면 data leakage risk가 커질 수 있습니다.
+
+## Exception Approval Checklist
+
+| Checkpoint | Required Evidence |
+|---|---|
+| Business reason | 암호화 제거가 필요한 업무 사유 |
+| Recipient trust | 승인된 외부 수신자 또는 도메인 검증 |
+| Rule scope | sender, recipient, condition, exception 범위 |
+| Security approval | 보안 또는 compliance 승인 기록 |
+| Test evidence | approved recipient와 non-approved recipient 테스트 결과 |
+| Review cadence | 예외 rule의 정기 검토 주기 |
+
+## Related Documents
+
+- [Exchange Online Message Search and Purge](./exchange-online-message-recall-purge)
+- [Purview Information Protection](../security/purview-information-protection)
+- [Data Loss Prevention](../security/dlp)
+- [Contact and Asset Request](../contact)
+
+## Search Keywords
+
+이 문서는 다음 검색 의도에 답합니다.
+
+- Exchange Online RemoveOMEv2
+- Remove RMS attachment encryption
+- Office Message Encryption exception
+- Exchange Online transport rule encryption
+- Microsoft Purview Information Protection exception
+- Exchange Online 암호화 제거
+- OMEv2 예외 정책
+- RMS attachment encryption 제거
+
+## Contact / Asset Request
+
+암호화 예외 요청서, transport rule design sheet, 승인 evidence template이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

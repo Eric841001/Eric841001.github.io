@@ -21,6 +21,34 @@ Proposal Center는 Microsoft 365, Azure, Security, Copilot, AI Agent, Migration 
 
 ---
 
+<div class="kc-pathway" aria-label="Proposal center pathway">
+  <a class="kc-pathway-step" href="./executive-summary">
+    <small>01</small>
+    <strong>Executive Story</strong>
+    <span>Clarify why the project matters, what outcome is expected and what decision is needed.</span>
+  </a>
+  <a class="kc-pathway-step" href="./assessment">
+    <small>02</small>
+    <strong>Assessment</strong>
+    <span>Turn current state, risk, gap and dependency into a practical recommendation path.</span>
+  </a>
+  <a class="kc-pathway-step" href="./sow-template">
+    <small>03</small>
+    <strong>SOW</strong>
+    <span>Define scope, deliverables, assumptions, exclusions and acceptance criteria.</span>
+  </a>
+  <a class="kc-pathway-step" href="./wbs-template">
+    <small>04</small>
+    <strong>WBS</strong>
+    <span>Convert proposal scope into delivery phases, workstreams, activities and owners.</span>
+  </a>
+  <a class="kc-pathway-step" href="./governance-model">
+    <small>05</small>
+    <strong>Governance</strong>
+    <span>Align decision body, escalation, reporting rhythm, risk and handover control.</span>
+  </a>
+</div>
+
 ## Proposal Operating Model
 
 ```mermaid

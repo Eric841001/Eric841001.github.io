@@ -13,6 +13,51 @@ The public pages describe the structure and purpose of each asset. Customer-spec
 
 For access to reusable templates or sample deliverables, contact **Youngsun Kang** through [Contact and Asset Request](../contact). The documents can be shared after confirming the intended use case, customer context and confidentiality boundary.
 
+<div class="kc-asset-catalog" aria-label="Requestable consulting asset catalog">
+  <div class="kc-asset-catalog__header">
+    <strong>Requestable Asset Catalog</strong>
+    <span>Public description first, editable document after contact and confidentiality review</span>
+  </div>
+  <div class="kc-asset-catalog__grid">
+    <a class="kc-asset-card" href="./m365-assessment-workbook">
+      <small>ASSESSMENT</small>
+      <strong>M365 Assessment Workbook</strong>
+      <span>Tenant, security, endpoint, migration and governance readiness workbook.</span>
+      <em>Editable by request</em>
+    </a>
+    <a class="kc-asset-card" href="../copilot/readiness">
+      <small>COPILOT</small>
+      <strong>Copilot Readiness Pack</strong>
+      <span>Data readiness, security readiness, use case priority and adoption planning.</span>
+      <em>Sanitized sample</em>
+    </a>
+    <a class="kc-asset-card" href="../copilot/agent-factory-operating-model">
+      <small>AI AGENT</small>
+      <strong>Agent Factory Model</strong>
+      <span>Agent portfolio governance, owner model, lifecycle and operating cadence.</span>
+      <em>Template by request</em>
+    </a>
+    <a class="kc-asset-card" href="./downloads-sow-template">
+      <small>PROPOSAL</small>
+      <strong>SOW Template</strong>
+      <span>Scope, deliverables, assumptions, exclusions and acceptance structure.</span>
+      <em>DOCX by request</em>
+    </a>
+    <a class="kc-asset-card" href="./downloads-wbs-template">
+      <small>DELIVERY</small>
+      <strong>WBS Template</strong>
+      <span>Workstream, activity, owner, milestone and dependency planning model.</span>
+      <em>XLSX by request</em>
+    </a>
+    <a class="kc-asset-card" href="../contact">
+      <small>REQUEST</small>
+      <strong>Contact Youngsun Kang</strong>
+      <span>Share the scenario, industry, workload and preferred output format.</span>
+      <em>Start request</em>
+    </a>
+  </div>
+</div>
+
 ## Public-to-Private Sharing Model
 
 ```mermaid

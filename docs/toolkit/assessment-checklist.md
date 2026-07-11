@@ -176,3 +176,46 @@ Assessment outputs should include:
 - Microsoft Well-Architected Framework
 - Microsoft Security Adoption Framework
 - Microsoft Learn
+
+---
+
+## 한국어 요약
+
+이 문서는 Microsoft 365, Security, Endpoint, Migration, Governance 관점에서 assessment workshop을 준비하고 실행하기 위한 체크리스트입니다.
+
+좋은 assessment는 단순한 현황 조사표가 아니라 executive summary, risk register, gap analysis, roadmap, licensing recommendation으로 이어져야 합니다. 특히 고객 환경에서는 tenant configuration, security control, adoption readiness, migration dependency를 함께 보아야 실제 제안서와 WBS로 연결됩니다.
+
+## Assessment Output Model
+
+| Output | Purpose |
+|---|---|
+| Current State Summary | 현재 tenant, security, device, migration 상태 요약 |
+| Risk Register | 보안, 운영, 일정, 비용 리스크 분류 |
+| Gap Analysis | 목표 상태와 현재 상태의 차이 |
+| Roadmap | phase, owner, dependency, timeline 정의 |
+| Executive Summary | 임원 보고용 핵심 메시지 |
+| Next Action Plan | workshop 이후 실행 항목과 책임자 |
+
+## Related Documents
+
+- [M365 Assessment Workbook](../downloads/m365-assessment-workbook)
+- [Assessment Framework](../proposal/assessment)
+- [Architecture Builder](./architecture-builder)
+- [Contact and Asset Request](../contact)
+
+## Search Keywords
+
+이 문서는 다음 검색 의도에 답합니다.
+
+- Microsoft 365 assessment checklist
+- M365 security assessment
+- Microsoft 365 readiness assessment
+- Copilot readiness checklist
+- tenant assessment workbook
+- Microsoft 365 진단 체크리스트
+- 보안 진단 체크리스트
+- Microsoft 365 컨설팅 assessment
+
+## Contact / Asset Request
+
+실제 workshop에서 사용할 editable assessment workbook, risk register, executive summary template이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
