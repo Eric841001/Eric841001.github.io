@@ -13,7 +13,7 @@ The focus is practical adoption: readiness, data protection, license value, use 
 ## Visual Adoption Journey
 
 ```mermaid
-flowchart LR
+flowchart TB
   Work["Real work<br/>meetings, docs,<br/>analysis"]:::work
   Copilot["Copilot<br/>personal<br/>productivity"]:::ai
   Studio["Copilot Studio<br/>business<br/>agents"]:::ai
@@ -23,12 +23,12 @@ flowchart LR
   Adoption["Change<br/>champions<br/>KPI"]:::gov
 
   Work --> Copilot --> Studio --> Agents --> Cowork
-  Governance -.-> Copilot
-  Governance -.-> Studio
-  Governance -.-> Agents
-  Governance -.-> Cowork
-  Adoption -.-> Copilot
-  Adoption -.-> Cowork
+  Governance -. guardrails .-> Copilot
+  Governance -. guardrails .-> Studio
+  Governance -. guardrails .-> Agents
+  Governance -. guardrails .-> Cowork
+  Adoption -. enablement .-> Copilot
+  Adoption -. scale .-> Cowork
 
   classDef work fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
   classDef ai fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.6px

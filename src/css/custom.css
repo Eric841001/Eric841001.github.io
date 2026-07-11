@@ -285,9 +285,9 @@ body {
 .theme-doc-markdown .mermaid svg,
 .theme-doc-markdown div[class*='mermaid'] svg {
   display: block;
-  width: max-content;
-  min-width: min(860px, 100%);
-  max-width: none;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   overflow: visible;
@@ -299,11 +299,11 @@ body {
 }
 
 .theme-doc-markdown .kc-mermaid-wide svg {
-  min-width: min(1180px, 100%);
+  min-width: 0;
 }
 
 .theme-doc-markdown .kc-mermaid-ultrawide svg {
-  min-width: min(1420px, 100%);
+  min-width: 0;
 }
 
 .theme-doc-markdown .kc-visual-frame::after {
