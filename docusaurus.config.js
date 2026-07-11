@@ -78,11 +78,11 @@
           htmlLabels: true,
           nodeSpacing: 50,
           rankSpacing: 62,
-          padding: 14,
+          padding: 20,
         },
         themeVariables: {
           fontFamily: '"Segoe UI", "Noto Sans KR", Inter, system-ui, sans-serif',
-          fontSize: '16px',
+          fontSize: '14px',
           background: 'transparent',
           primaryColor: '#f8fbff',
           primaryTextColor: '#102033',

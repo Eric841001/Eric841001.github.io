@@ -15,11 +15,13 @@ The most important design shift is this: an agent is no longer just a conversati
 
 ## 한국어 요약
 
-Copilot Studio는 더 이상 단순 chatbot builder로 보기 어렵습니다.
+Copilot Studio는 더 이상 단순한 chatbot builder로 보기 어렵습니다.
 
 2026년 기준 Copilot Studio는 new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, A2A protocol, Entra agent identity 같은 기능을 통해 enterprise agent platform에 가까워지고 있습니다.
 
-따라서 기업 고객에게는 “agent를 만들 수 있다”보다 “누가 소유하고, 어떤 데이터에 접근하며, 어떤 도구를 실행하고, 비용과 품질을 어떻게 관리할 것인가”를 먼저 설계해야 합니다.
+따라서 기업 고객에게는 "agent를 만들 수 있다"보다 "누가 소유하고, 어떤 데이터에 접근하며, 어떤 도구를 실행하고, 비용과 품질을 어떻게 관리할 것인가"를 먼저 설계해야 합니다.
+
+GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 adoption journey로 설명하는 것이 더 중요해졌습니다. 더 강한 reasoning 모델은 사용자 경험을 좋게 만들 수 있지만, enterprise 환경에서는 model selection, data boundary, approval, cost control, evaluation 기준이 함께 준비되어야 합니다.
 
 ## 2026 Capabilities To Track
 
@@ -54,24 +56,24 @@ Copilot Studio는 더 이상 단순 chatbot builder로 보기 어렵습니다.
 
 ```mermaid
 flowchart TB
-  User["User or<br/>business trigger"]:::entry --> Agent["Copilot Studio<br/>Agent"]:::core
+  User["User or<br/>trigger"]:::entry --> Agent["Copilot Studio<br/>Agent"]:::core
 
-  Agent --> Orchestration["Enhanced<br/>orchestration"]:::plane
-  Agent --> Governance["Governance<br/>control plane"]:::plane
+  Agent --> Orchestration["Orchestration<br/>plane"]:::plane
+  Agent --> Governance["Governance<br/>plane"]:::plane
 
   subgraph Runtime["Runtime capabilities"]
     direction LR
     IQ["Microsoft IQ<br/>Work IQ"]:::runtime
     Skills["Reusable<br/>skills"]:::runtime
     Memory["Memory"]:::runtime
-    Tools["Tools and<br/>workflows"]:::runtime
+    Tools["Tools<br/>workflows"]:::runtime
   end
 
   subgraph Execution["Execution channels"]
     direction LR
-    Flow["Agent flow<br/>workflow"]:::exec
-    Computer["Computer<br/>use"]:::exec
-    Connector["Connector<br/>API"]:::exec
+    Flow["Agent flow"]:::exec
+    Computer["Computer use"]:::exec
+    Connector["Connector API"]:::exec
     A2A["Agent-to-agent"]:::exec
   end
 
@@ -105,6 +107,28 @@ flowchart TB
   classDef exec fill:#fff7ed,stroke:#f59e0b,color:#102033,stroke-width:1.4px
   classDef control fill:#f5f3ff,stroke:#7c3aed,color:#102033,stroke-width:1.4px
 ```
+
+| Layer | Design Detail |
+|---|---|
+| User or trigger | human request, workflow trigger, business event or scheduled task |
+| Copilot Studio Agent | the visible agent experience and orchestration boundary |
+| Orchestration plane | reasoning, routing, memory, skills and tool selection |
+| Runtime capabilities | Microsoft IQ, reusable skills, memory and tool/workflow execution |
+| Execution channels | agent flow, computer use, connectors, APIs and agent-to-agent collaboration |
+| Governance plane | inventory, identity, DLP, credit forecasting, analytics and evaluation |
+
+## GPT-5.6 Planning Impact
+
+GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning because users will expect richer reasoning across daily Copilot experiences and agent workflows.
+
+| Impact Area | What To Update |
+|---|---|
+| Adoption story | Explain the journey from Copilot personal productivity to Copilot Studio business agents and Copilot Cowork. |
+| Model selection | Add user guidance for selecting GPT-5.6 where it is available in the tenant. |
+| Agent design | Use stronger reasoning for higher-value scenarios, but keep approvals for sensitive actions. |
+| Evaluation | Update test sets to include document quality, analysis accuracy, task completion and escalation behavior. |
+| Change management | Train champions on business scenarios rather than isolated prompts. |
+| Governance | Keep security, privacy, compliance, cost and lifecycle controls in the rollout message. |
 
 ## Design Implications
 

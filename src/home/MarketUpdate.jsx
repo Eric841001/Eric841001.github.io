@@ -4,6 +4,13 @@ import styles from './MarketUpdate.module.css';
 
 const updates = [
   {
+    label: 'Copilot',
+    title: 'GPT-5.6 reaches Microsoft 365 Copilot',
+    body:
+      'The July 2026 model update changes how adoption, model selection, Cowork scenarios and enterprise governance should be explained.',
+    path: '/knowledge/copilot/overview#gpt-56-update-for-microsoft-365-copilot',
+  },
+  {
     label: 'Licensing',
     title: 'Licensing feature entitlement changed',
     body:
@@ -32,11 +39,11 @@ export default function MarketUpdate() {
       <div className={styles.inner}>
         <div className={styles.copy}>
           <p>2026 Feature & Platform Update</p>
-          <h2>Licensing features, Copilot Studio and AI agents are moving together</h2>
+          <h2>GPT-5.6, Copilot Studio and AI agents are moving together</h2>
           <span>
             The next Microsoft architecture conversation is no longer only about
-            workloads. It is about included service plans, enabled controls,
-            agent consumption and measurable business outcomes.
+            workloads. It is about model selection, included service plans,
+            enabled controls, agent consumption and measurable business outcomes.
           </span>
         </div>
 
