@@ -54,6 +54,17 @@ flowchart LR
 | Copilot Protection | permission cleanup, oversharing review, data classification, user guidance |
 | Operations | incident workflow, exception process, evidence package and review cadence |
 
+## Security Modernization Path
+
+| Phase | Outcome |
+|---|---|
+| Baseline | confirm identity, device, threat and data protection controls |
+| Prioritize | select high-risk workloads, sensitive repositories and user groups |
+| Design | align Conditional Access, Intune, Defender, Purview, DLP and sharing policy |
+| Validate | test allowed and blocked paths, alert visibility and audit evidence |
+| Operate | define exception process, review cadence, incident workflow and executive reporting |
+| Extend to AI | apply permission cleanup, label strategy and Copilot data protection guidance |
+
 ## Security Questions For AI Era
 
 | Question | Why It Matters |
@@ -64,6 +75,28 @@ flowchart LR
 | Is external sharing reviewed? | Teams, SharePoint and OneDrive sharing affect data exposure |
 | Are Information Barriers required? | regulated or conflict-of-interest scenarios need segment-based restrictions |
 | Is audit evidence ready? | security architecture must be provable, not only configured |
+
+## Frequently Asked Questions
+
+### Why does Copilot make Microsoft 365 security more important?
+
+Copilot answers from content a user can already access. If SharePoint, Teams or OneDrive permissions are too broad, Copilot can make overshared information easier to discover. Security readiness should therefore include permission cleanup, Purview labels, DLP and audit review.
+
+### What should be reviewed before Copilot rollout?
+
+Review Entra ID, Conditional Access, Intune compliance, Defender coverage, Purview labels, DLP, external sharing, guest access, ownerless sites and sensitive repositories.
+
+### Is Information Barriers only for Teams chat?
+
+No. Information Barriers should be treated as a segmentation model that can affect collaboration boundaries across users, groups, Teams, SharePoint and OneDrive depending on workload behavior and configuration.
+
+### What evidence should security teams prepare?
+
+Prepare policy screenshots or exports, allowed and blocked test results, audit logs, exception approvals, rollback notes and ownership records. Security architecture must be reviewable by executives, auditors and operations teams.
+
+### How should AI security be communicated to business users?
+
+Use simple guidance: use approved work accounts, store sensitive content in governed locations, avoid oversharing, follow label and DLP policy, and escalate unusual Copilot answers or exposed content.
 
 ## Recommended Entry Points
 
@@ -86,6 +119,10 @@ flowchart LR
 - Copilot data protection review checklist
 - Information Barriers validation plan
 - executive security modernization roadmap
+
+## Contact Path
+
+For a customer-ready security assessment workbook, Conditional Access review matrix or Copilot data protection checklist, use [Contact and Asset Request](../contact). Public pages provide the method; editable documents and customer-specific examples should be shared only after the confidentiality boundary is confirmed.
 
 ## 검색 키워드
 

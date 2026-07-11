@@ -61,6 +61,16 @@ flowchart LR
 | Work runs across multiple tools and needs approval | evaluate Copilot Cowork with cost and approval governance |
 | Security is concerned about data exposure | review permissions, Purview, DLP, audit and acceptable use |
 
+## What Good Looks Like
+
+| Maturity Level | Observable Signal |
+|---|---|
+| Feature Trial | users test Copilot but business scenarios are not yet defined |
+| Guided Adoption | role-based scenarios, champion training and prompt patterns are available |
+| Governed Agent Use | Copilot Studio agents have owners, approvals, knowledge boundaries and monitoring |
+| Scaled AI Work | Copilot, GPT-5.6, M365 Agents and Copilot Cowork are connected to measurable business outcomes |
+| Continuous Improvement | VOC, analytics, cost, security signals and scenario backlog are reviewed regularly |
+
 ## AI Adoption Operating Model
 
 | Layer | Practical Decision |
@@ -71,6 +81,28 @@ flowchart LR
 | Agent Pattern | Is this personal assistance, business agent, M365 Agent or Cowork? |
 | Governance | Who owns policy, approval, cost, risk and lifecycle? |
 | Change Management | How will users learn, trust, measure and improve the new way of working? |
+
+## Frequently Asked Questions
+
+### What is the best first step for enterprise AI adoption?
+
+Start with real business scenarios, not with the tool list. Identify where users spend time on drafting, summarizing, analysis, meetings, reporting or follow-up work, then map those scenarios to Copilot, GPT-5.6, Copilot Studio or Cowork.
+
+### When should GPT-5.6 be used?
+
+Use GPT-5.6 where deeper reasoning is useful: document critique, spreadsheet analysis, presentation refinement, decision support, comparison, planning and synthesis. Keep simple tasks in standard Copilot interaction when deeper reasoning is not needed.
+
+### When does a Copilot scenario become an agent scenario?
+
+If the same request is repeated, requires structured inputs, touches business systems, needs approval or creates an output that must be tracked, evaluate Copilot Studio Agent or M365 Agent patterns.
+
+### When should Copilot Cowork be considered?
+
+Consider Copilot Cowork when the work is long-running, multi-step, approval-driven or spans several Microsoft 365 tools. Cowork should be introduced with budget, owner, approval and monitoring rules.
+
+### How should change management be handled?
+
+Treat AI adoption as behavior change. Training should show real work before and after, champion communities should capture feedback, and KPI should measure quality, time saved, confidence and rework reduction.
 
 ## Recommended Entry Points
 
@@ -92,6 +124,10 @@ flowchart LR
 - Copilot Studio Agent intake template
 - Copilot Cowork governance checklist
 - executive AI adoption briefing
+
+## Contact Path
+
+If you need a customer-ready workbook, workshop outline or executive briefing, use [Contact and Asset Request](../contact). Share only the industry, workload, project phase and desired output type. Do not send confidential customer names, tenant IDs or internal architecture details through the public site.
 
 ## 검색 키워드
 
