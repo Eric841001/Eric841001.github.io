@@ -90,7 +90,7 @@ flowchart LR
   Device["Managed device<br/>Entra joined + Intune compliant"]:::control
   Tenant["Tenant validation<br/>corporate and approved partner tenants"]:::control
   Allow["Allowed tenants<br/>corporate, subsidiary,<br/>approved partner"]:::allow
-  Block["Blocked access<br/>personal account,<br/>external tenant,<br/>consumer OneDrive"]:::block
+  Block["Blocked access<br/>personal tenant,<br/>external tenant"]:::block
 
   Request --> Device --> Tenant
   Tenant --> Allow

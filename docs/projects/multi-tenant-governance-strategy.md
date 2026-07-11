@@ -16,7 +16,7 @@ flowchart LR
   Classify["Tenant role model<br/>strategic, transitional,<br/>regulated, legacy"]:::phase
   Baseline["Minimum baseline<br/>identity, security,<br/>collaboration, audit"]:::phase
   Decide["Governance decisions<br/>consolidate, federate,<br/>isolate, migrate"]:::phase
-  Roadmap["Roadmap<br/>migration waves,<br/>operating model,<br/>executive reporting"]:::outcome
+  Roadmap["Roadmap<br/>migration waves,<br/>operating model"]:::outcome
 
   Inventory --> Classify --> Baseline --> Decide --> Roadmap
 

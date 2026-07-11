@@ -18,7 +18,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 ```mermaid
 flowchart LR
   Scope["Assessment scope<br/>identity, devices,<br/>collaboration, security"]:::input
-  Collect["Evidence collection<br/>tenant settings,<br/>licenses, policies,<br/>stakeholder inputs"]:::phase
+  Collect["Evidence<br/>tenant, licenses,<br/>policies"]:::phase
   Score["Maturity scoring<br/>risk, readiness,<br/>operational gaps"]:::phase
   Recommend["Recommendations<br/>quick wins,<br/>roadmap, priorities"]:::phase
   Handover["Executive workbook<br/>findings, decisions,<br/>next actions"]:::outcome

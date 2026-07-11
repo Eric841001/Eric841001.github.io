@@ -17,6 +17,23 @@ This framework provides a reusable operating model for planning, scaling and sus
 
 > **Executive lens:** Copilot adoption should be managed as a repeatable change system: business scenarios, champions, governance, support, measurement and continuous improvement must move together.
 
+## GPT-5.6 Adoption Signal
+
+GPT-5.6 changes the adoption conversation from "Can users prompt Copilot?" to "Can users apply stronger reasoning to real work with the right model, data boundary and review behavior?"
+
+For enterprise rollout, treat GPT-5.6 as a change-management moment:
+
+| Adoption Area | What To Update |
+|---|---|
+| User guidance | Explain when to use GPT-5.6 through the model selector where it is available. |
+| Scenario library | Add deeper reasoning scenarios for document drafting, spreadsheet analysis, presentation refinement and decision support. |
+| Champion enablement | Train champions to demonstrate before/after work patterns rather than isolated prompt tricks. |
+| Governance message | Reinforce that enterprise security, compliance and privacy controls still apply inside Microsoft 365 Copilot. |
+| Measurement | Track task quality, decision speed, rework reduction and user confidence, not only active usage. |
+| Cowork bridge | Explain when work should move from Copilot chat to Copilot Studio agents or Copilot Cowork. |
+
+The best message for users is simple: start with everyday work, use the right model for deeper reasoning, and escalate repeatable or long-running work into governed agents.
+
 ```mermaid
 flowchart LR
   Scenario["Business scenario<br/>real work, role fit,<br/>value hypothesis"]:::phase

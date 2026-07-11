@@ -19,6 +19,25 @@ This framework provides a standardized assessment model to evaluate enterprise r
 
 ---
 
+## GPT-5.6 Readiness Addendum
+
+GPT-5.6 raises the quality ceiling for Microsoft 365 Copilot, but it also raises the importance of readiness. Stronger reasoning can produce better documents, analysis and decisions only when the underlying data, permission model and user behavior are ready.
+
+Add the following checks before broad communication or executive demonstrations:
+
+| Readiness Check | Why It Matters |
+|---|---|
+| Model selector guidance | Users need to know when GPT-5.6 is appropriate and when standard Copilot interaction is enough. |
+| Data boundary review | Stronger reasoning may combine more context, so overshared SharePoint, Teams and OneDrive content must be reviewed. |
+| Prompt pattern update | Training should include reasoning tasks such as compare, synthesize, critique, plan and decide. |
+| Executive demo control | Demonstrations should use sanitized data and realistic scenarios, not confidential customer files. |
+| Evaluation baseline | Measure output quality, rework reduction, analysis accuracy and user trust. |
+| Cowork escalation rule | Define when a request becomes long-running work that needs Copilot Cowork approval, owner and cost controls. |
+
+The readiness question is no longer only "Can we enable Copilot?" It is "Can we safely scale AI-assisted reasoning across real business work?"
+
+---
+
 ## Readiness Architecture
 
 ```mermaid

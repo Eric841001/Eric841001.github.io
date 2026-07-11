@@ -92,7 +92,7 @@ flowchart TB
   Segment["User Segment"]:::control
   Teams["Teams<br/>chat, group chat,<br/>team membership"]:::workload
   SharePoint["SharePoint<br/>site access,<br/>membership, sharing"]:::workload
-  OneDrive["OneDrive<br/>direct link,<br/>folder sharing,<br/>same-segment access"]:::workload
+  OneDrive["OneDrive<br/>links, sharing,<br/>segment access"]:::workload
   Exchange["Exchange<br/>mail flow rules<br/>and transport controls"]:::workload
   Evidence["Validation Evidence<br/>allowed and blocked paths"]:::outcome
 

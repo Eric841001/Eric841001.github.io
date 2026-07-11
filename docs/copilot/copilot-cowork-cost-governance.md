@@ -21,6 +21,20 @@ This guide summarizes the practical questions that typically appear during Copil
 - Can administrators set user, group, or tenant-level spending limits?
 - What technical environment is required for pilot or field delivery execution?
 
+## GPT-5.6 and Cowork Planning
+
+GPT-5.6 makes Copilot Cowork more important because users will naturally expect Copilot to handle more complex, multi-step work. That expectation should be guided into a controlled operating model.
+
+| Planning Question | Governance Response |
+|---|---|
+| Is this a quick reasoning task or long-running work? | Keep quick tasks in Copilot Chat; route multi-step execution to Cowork only when ownership and cost are defined. |
+| Does the task need approval? | Require human approval for external communication, file changes, sensitive analysis or business-system actions. |
+| Which model should be used? | Provide model selection guidance where GPT-5.6 is available, but do not let model choice bypass policy. |
+| How is value measured? | Compare task completion, rework reduction, user time saved and credit consumption. |
+| Who owns the outcome? | Assign a business owner and operations reviewer before scaling Cowork scenarios. |
+
+The practical rule is simple: stronger reasoning increases opportunity, but long-running work still needs budget, ownership, approval and monitoring.
+
 ```mermaid
 flowchart TB
   UseCase["Cowork use case<br/>long-running work,<br/>multi-tool execution"]:::input
