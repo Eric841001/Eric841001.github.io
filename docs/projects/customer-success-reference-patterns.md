@@ -22,12 +22,12 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 ```mermaid
 flowchart TB
-  Industry["Industry Context\nmanufacturing, finance, retail, logistics"] --> Situation["Business Situation\nrisk, adoption, migration, governance"]
-  Situation --> Workloads["Microsoft Workloads\nM365, Security, Copilot, Azure"]
-  Workloads --> Delivery["Delivery Approach\nassessment, design, rollout, handover"]
-  Delivery --> Assets["Reusable Assets\nSOW, WBS, workbook, runbook, risk register"]
-  Assets --> Outcome["Business Outcome\nreadiness, control, adoption, stability"]
-  Outcome --> Story["Public-Safe Reference Story\nindustry + scenario + pattern"]
+  Industry["Industry Context<br/>manufacturing, finance<br/>retail, logistics"] --> Situation["Business Situation<br/>risk, adoption<br/>migration, governance"]
+  Situation --> Workloads["Microsoft Workloads<br/>M365, Security<br/>Copilot, Azure"]
+  Workloads --> Delivery["Delivery Approach<br/>assessment, design<br/>rollout, handover"]
+  Delivery --> Assets["Reusable Assets<br/>SOW, WBS<br/>workbook, runbook"]
+  Assets --> Outcome["Business Outcome<br/>readiness, control<br/>adoption, stability"]
+  Outcome --> Story["Public-Safe Story<br/>industry<br/>scenario<br/>pattern"]
 ```
 
 ## Reference Principles
@@ -51,12 +51,12 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-  Manufacturing["Manufacturing"] --> Copilot["Copilot Adoption\nreadiness, pilot, governance"]
-  Finance["Financial Services"] --> Security["Security Architecture\nSaaS control, audit, exception"]
-  Logistics["Logistics"] --> Migration["Exchange / Collaboration\nmigration, cutover, hypercare"]
-  Retail["Retail"] --> Policy["M365 Security Policy\nidentity, endpoint, data, Power Platform"]
-  Construction["Construction"] --> IA["SharePoint / File Governance\ninformation architecture"]
-  Healthcare["Healthcare"] --> Compliance["Compliance Baseline\nidentity, device, DLP, evidence"]
+  Manufacturing["Manufacturing"] --> Copilot["Copilot Adoption<br/>readiness<br/>pilot<br/>governance"]
+  Finance["Financial Services"] --> Security["Security Architecture<br/>SaaS control<br/>audit<br/>exception"]
+  Logistics["Logistics"] --> Migration["Exchange and<br/>Collaboration<br/>migration<br/>hypercare"]
+  Retail["Retail"] --> Policy["M365 Security<br/>Policy<br/>identity<br/>endpoint<br/>data"]
+  Construction["Construction"] --> IA["SharePoint and<br/>File Governance<br/>information<br/>architecture"]
+  Healthcare["Healthcare"] --> Compliance["Compliance<br/>Baseline<br/>identity<br/>device<br/>evidence"]
 ```
 
 | Industry | Business Situation | Microsoft Workloads | Success Pattern |
@@ -83,22 +83,22 @@ For more detailed examples, see:
 
 ```mermaid
 flowchart TB
-  Challenge["Customer Challenge<br/>business risk, adoption target, migration scope"]:::source
+  Challenge["Customer Challenge<br/>business risk<br/>adoption target<br/>migration scope"]:::source
 
   subgraph Discovery["Discovery and Architecture"]
-    Assessment["Assessment Workbook<br/>current state, gap, readiness"]:::asset
-    Architecture["Reference Architecture<br/>identity, data, endpoint, workload"]:::design
-    Controls["Security / Governance Controls<br/>policy, exception, evidence"]:::control
+    Assessment["Assessment Workbook<br/>current state<br/>gap<br/>readiness"]:::asset
+    Architecture["Reference Architecture<br/>identity<br/>data<br/>endpoint"]:::design
+    Controls["Security and<br/>Governance Controls<br/>policy<br/>evidence"]:::control
   end
 
   subgraph Delivery["Delivery and Enablement"]
-    SOW["SOW / WBS<br/>scope, milestone, role, dependency"]:::asset
-    Plan["Delivery Plan<br/>wave, pilot, rollout, hypercare"]:::design
-    Runbook["Runbook / Handover Guide<br/>operation, ownership, escalation"]:::control
+    SOW["SOW / WBS<br/>scope<br/>milestone<br/>dependency"]:::asset
+    Plan["Delivery Plan<br/>wave<br/>pilot<br/>rollout"]:::design
+    Runbook["Runbook / Handover<br/>operation<br/>ownership<br/>escalation"]:::control
   end
 
-  Metrics["Executive Metrics<br/>risk reduction, adoption, stability"]:::metric
-  Reference["Anonymized Reference Pattern<br/>industry + scenario + reusable asset"]:::reference
+  Metrics["Executive Metrics<br/>risk reduction<br/>adoption<br/>stability"]:::metric
+  Reference["Anonymized<br/>Reference Pattern<br/>industry<br/>scenario<br/>asset"]:::reference
 
   Challenge --> Assessment
   Challenge --> SOW

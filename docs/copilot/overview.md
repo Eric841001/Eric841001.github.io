@@ -19,16 +19,16 @@ flowchart LR
   Studio["Copilot Studio<br/>business<br/>agents"]:::ai
   Agents["M365 Agents<br/>in-context<br/>automation"]:::ai
   Cowork["Copilot Cowork<br/>long-running<br/>work"]:::ai
-  Governance["Governance<br/>identity, data,<br/>cost"]:::gov
-  Adoption["Adoption<br/>champions,<br/>KPI"]:::gov
+  Governance["Governance<br/>identity<br/>data<br/>cost"]:::gov
+  Adoption["Change<br/>champions<br/>KPI"]:::gov
 
   Work --> Copilot --> Studio --> Agents --> Cowork
-  Governance -. control .-> Copilot
-  Governance -. control .-> Studio
-  Governance -. control .-> Agents
-  Governance -. control .-> Cowork
-  Adoption -. change .-> Copilot
-  Adoption -. scale .-> Cowork
+  Governance -.-> Copilot
+  Governance -.-> Studio
+  Governance -.-> Agents
+  Governance -.-> Cowork
+  Adoption -.-> Copilot
+  Adoption -.-> Cowork
 
   classDef work fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
   classDef ai fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.6px

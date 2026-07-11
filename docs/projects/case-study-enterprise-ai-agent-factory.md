@@ -47,15 +47,15 @@ The objective was to convert scattered AI ideas into a governed Agent portfolio 
 
 ```mermaid
 flowchart TB
-  Intake[Use Case Intake]
-  Prioritize[Value, Risk and Feasibility Scoring]
-  Design[Agent Design Document]
-  Data[Data and Knowledge Readiness]
-  Build[Copilot Studio or Agent Builder Prototype]
-  Review[Security, Compliance and Business Review]
-  Pilot[Pilot and User Validation]
-  Catalog[Enterprise Agent Catalog]
-  Operate[Lifecycle, Monitoring and Retirement]
+  Intake["Use Case<br/>Intake"]
+  Prioritize["Value / Risk<br/>Feasibility"]
+  Design["Agent Design<br/>Document"]
+  Data["Knowledge<br/>Readiness"]
+  Build["Copilot Studio<br/>Prototype"]
+  Review["Security and<br/>Business Review"]
+  Pilot["Pilot and<br/>Validation"]
+  Catalog["Enterprise<br/>Agent Catalog"]
+  Operate["Lifecycle<br/>Monitoring"]
 
   Intake --> Prioritize
   Prioritize --> Design

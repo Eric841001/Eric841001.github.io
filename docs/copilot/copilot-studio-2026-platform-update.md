@@ -66,14 +66,14 @@ flowchart TB
     IQ["Microsoft IQ<br/>Work IQ"]:::runtime
     Skills["Reusable<br/>skills"]:::runtime
     Memory["Memory"]:::runtime
-    Tools["Tools<br/>workflows"]:::runtime
+    Tools["Tools and<br/>workflows"]:::runtime
   end
 
   subgraph Execution["Execution channels"]
     direction LR
     Flow["Agent flow"]:::exec
     Computer["Computer use"]:::exec
-    Connector["Connector API"]:::exec
+    Connector["Connector<br/>API"]:::exec
     A2A["Agent-to-agent"]:::exec
   end
 
@@ -83,7 +83,7 @@ flowchart TB
     Identity["Entra agent<br/>identity"]:::control
     DLP["Power Platform<br/>DLP"]:::control
     Credits["Credit<br/>forecast"]:::control
-    Analytics["Analytics<br/>evaluation"]:::control
+    Analytics["Analytics and<br/>evaluation"]:::control
   end
 
   Orchestration --> IQ
