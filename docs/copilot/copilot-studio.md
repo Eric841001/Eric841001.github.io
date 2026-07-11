@@ -15,6 +15,22 @@ It enables business users, power users and developers to create agents that conn
 
 Copilot Studio should not be positioned only as a chatbot builder. It is a core component of the Microsoft Agent Platform for enabling enterprise-scale Agentic AI.
 
+> **Executive lens:** Copilot Studio should be governed like an enterprise application platform: every agent needs an owner, knowledge boundary, action boundary, lifecycle rule and measurement model.
+
+```mermaid
+flowchart LR
+  Idea["Agent idea<br/>business problem<br/>and user journey"]:::phase
+  Design["Agent design<br/>knowledge, tools,<br/>identity, channels"]:::phase
+  Govern["Governance gate<br/>security, DLP,<br/>owner, lifecycle"]:::phase
+  Publish["Publish and operate<br/>monitoring, feedback,<br/>change control"]:::phase
+  Portfolio["Agent portfolio<br/>reuse, retirement,<br/>value tracking"]:::outcome
+
+  Idea --> Design --> Govern --> Publish --> Portfolio
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## 2026 Platform Shift

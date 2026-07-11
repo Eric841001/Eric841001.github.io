@@ -15,6 +15,22 @@ Successful enterprise adoption requires a sustainable operating model that combi
 
 This framework provides a reusable operating model for planning, scaling and sustaining Copilot adoption across large enterprise organizations.
 
+> **Executive lens:** Copilot adoption should be managed as a repeatable change system: business scenarios, champions, governance, support, measurement and continuous improvement must move together.
+
+```mermaid
+flowchart LR
+  Scenario["Business scenario<br/>real work, role fit,<br/>value hypothesis"]:::phase
+  Enable["Enablement<br/>training, prompt patterns,<br/>manager reinforcement"]:::phase
+  Support["Managed support<br/>Q&A, coaching,<br/>issue handling"]:::phase
+  Measure["Measurement<br/>usage, satisfaction,<br/>time saved, quality"]:::phase
+  Scale["Scale loop<br/>champions, playbooks,<br/>new use cases"]:::outcome
+
+  Scenario --> Enable --> Support --> Measure --> Scale --> Scenario
+
+  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Why Copilot Adoption Fails

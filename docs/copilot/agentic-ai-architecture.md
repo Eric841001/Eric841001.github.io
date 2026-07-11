@@ -15,6 +15,27 @@ In the Microsoft ecosystem, Agentic AI is enabled through Microsoft 365 Copilot,
 
 The objective is not simply to create many agents. The objective is to establish a governed enterprise agent platform that can safely automate work, support decision-making, orchestrate business processes and continuously improve through feedback and analytics.
 
+> **Executive lens:** Agentic AI architecture is the bridge between AI experimentation and operational automation. The architecture must explain who the agent serves, what it can know, what it can do and how it is governed.
+
+```mermaid
+flowchart TB
+  Experience["Experience<br/>Copilot, Teams,<br/>business apps"]:::layer
+  Agent["Agent layer<br/>skills, memory,<br/>tools, orchestration"]:::layer
+  Control["Control plane<br/>identity, policy,<br/>approval, telemetry"]:::control
+  Data["Knowledge boundary<br/>Graph, SharePoint,<br/>Dataverse, Fabric"]:::layer
+  Outcome["Business outcome<br/>automation, insight,<br/>decision support"]:::outcome
+
+  Experience --> Agent
+  Agent --> Data
+  Agent --> Control
+  Control --> Agent
+  Agent --> Outcome
+
+  classDef layer fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef control fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## From Copilot to Agentic AI

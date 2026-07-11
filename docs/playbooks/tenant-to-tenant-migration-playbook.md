@@ -15,6 +15,34 @@ It requires coordinated planning across identity, domain, mail flow, Teams, Shar
 
 This playbook provides a structured delivery model for Microsoft 365 tenant migration programs.
 
+> **Executive lens:** Tenant migration succeeds when identity, mail, collaboration, security and user communication are treated as one business cutover program rather than separate technical workstreams.
+
+```mermaid
+flowchart TB
+  Control["Migration control tower"]:::control
+  Identity["Identity and access<br/>users, groups, domains,<br/>cross-tenant access"]:::work
+  Mail["Exchange Online<br/>mailboxes, routing,<br/>shared resources"]:::work
+  Collab["Collaboration<br/>Teams, SharePoint,<br/>OneDrive permissions"]:::work
+  Security["Security and compliance<br/>policies, labels,<br/>audit readiness"]:::work
+  Change["User change<br/>communications,<br/>pilot, hypercare"]:::work
+  Outcome["Business cutover<br/>validated, supported,<br/>governed"]:::outcome
+
+  Control --> Identity
+  Control --> Mail
+  Control --> Collab
+  Control --> Security
+  Control --> Change
+  Identity --> Outcome
+  Mail --> Outcome
+  Collab --> Outcome
+  Security --> Outcome
+  Change --> Outcome
+
+  classDef control fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
+  classDef work fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
+  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
+```
+
 ---
 
 ## Migration Scope
