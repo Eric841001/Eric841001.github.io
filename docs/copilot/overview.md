@@ -23,12 +23,12 @@ flowchart TB
   Adoption["Change<br/>champions<br/>KPI"]:::gov
 
   Work --> Copilot --> Studio --> Agents --> Cowork
-  Governance -. guardrails .-> Copilot
-  Governance -. guardrails .-> Studio
-  Governance -. guardrails .-> Agents
-  Governance -. guardrails .-> Cowork
-  Adoption -. enablement .-> Copilot
-  Adoption -. scale .-> Cowork
+  Governance -.-> Copilot
+  Governance -.-> Studio
+  Governance -.-> Agents
+  Governance -.-> Cowork
+  Adoption -.-> Copilot
+  Adoption -.-> Cowork
 
   classDef work fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
   classDef ai fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.6px
