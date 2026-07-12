@@ -8,24 +8,41 @@ toc_max_heading_level: 2
 
 # Enterprise Copilot Adoption Program Framework
 
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Enterprise Copilot adoption hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">AI Adoption and Change Management</span>
+    <h2>Move from Copilot usage to measurable behavior change</h2>
+    <p>Copilot adoption succeeds when employees change how they run meetings, write documents, analyze data, respond to customers and escalate repeatable work into governed agents. The program must connect AI capability, change management, champions, support and executive value measurement.</p>
+    <div class="kc-hero-signal-row" aria-label="Copilot adoption signals">
+      <span>Scenario</span>
+      <span>Champion</span>
+      <span>Support</span>
+      <span>Value</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Copilot adoption related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/copilot-adoption">Copilot Adoption Landing</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Readiness</a>
+      <a class="kc-topic-button" href="/knowledge/playbooks/change-management-playbook">Change Playbook</a>
+    </div>
+  </div>
 
-<div class="kc-outcome-grid" aria-label="Copilot adoption quick read cards">
-  <div class="kc-outcome-card">
-    <small>WHY</small>
-    <strong>Adoption is behavior change</strong>
-    <span>Copilot value appears when users change meeting, document, analysis and response routines.</span>
+  <div class="kc-factory-panel" aria-label="Copilot adoption system visual">
+    <div class="kc-factory-panel__header">
+      <span>Adoption System</span>
+      <strong>Behavior to business value</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#why-copilot-adoption-fails" class="kc-factory-card"><small>01</small><strong>Reality</strong><span>Understand why feature training alone does not create value.</span></a>
+      <a href="#operating-model-components" class="kc-factory-card"><small>02</small><strong>System</strong><span>Combine education, champions, support, VOC and analytics.</span></a>
+      <a href="#managed-service-framework" class="kc-factory-card"><small>03</small><strong>Support</strong><span>Operate Q&A, coaching, issue handling and improvement loops.</span></a>
+      <a href="#adoption-analytics-and-kpi-framework" class="kc-factory-card"><small>04</small><strong>Value</strong><span>Measure quality, confidence, time saved and business outcomes.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Change principle</strong>
+      <span>Do not sell Copilot as a feature. Show how work changes, how users get help and how leaders see value.</span>
+    </div>
   </div>
-  <div class="kc-outcome-card">
-    <small>DESIGN</small>
-    <strong>Build enablement system</strong>
-    <span>Use champions, role-based scenarios, training, feedback, communications and support model.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>OPERATE</small>
-    <strong>Measure value and scale</strong>
-    <span>Track use case maturity, confidence, time savings, license value and governance readiness.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -54,19 +71,20 @@ For enterprise rollout, treat GPT-5.6 as a change-management moment:
 
 The best message for users is simple: start with everyday work, use the right model for deeper reasoning, and escalate repeatable or long-running work into governed agents.
 
-```mermaid
-flowchart LR
-  Scenario["Business scenario<br/>real work, role fit,<br/>value hypothesis"]:::phase
-  Enable["Enablement<br/>training, prompt patterns,<br/>manager reinforcement"]:::phase
-  Support["Managed support<br/>Q&A, coaching,<br/>issue handling"]:::phase
-  Measure["Measurement<br/>usage, satisfaction,<br/>time saved, quality"]:::phase
-  Scale["Scale loop<br/>champions, playbooks,<br/>new use cases"]:::outcome
-
-  Scenario --> Enable --> Support --> Measure --> Scale --> Scenario
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Copilot adoption loop">
+  <div class="kc-journey-map__header">
+    <span>Adoption Loop</span>
+    <strong>Scenario to scaled behavior change</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Scenario</strong><span>Real work, role fit and value hypothesis.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Enable</strong><span>Training, prompt patterns and manager reinforcement.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Support</strong><span>Q&A, coaching, issue handling and guided practice.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Measure</strong><span>Usage, satisfaction, quality, confidence and time saved.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Improve</strong><span>VOC insights, content updates and scenario refinement.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Scale</strong><span>Champion playbooks, new use cases and executive storytelling.</span></div>
+  </div>
+</div>
 
 ---
 
