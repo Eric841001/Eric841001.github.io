@@ -1,13 +1,33 @@
 ---
 title: Proposal Center
-description: Reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security and Copilot engagements.
+description: Reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security, Copilot and AI Agent engagements.
 ---
 
 # Proposal Center
 
-Enterprise consulting proposal assets for Microsoft 365, Azure, Security and Copilot engagements.
+<section class="kc-topic-hero" aria-label="Proposal Center landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Presales and Delivery Asset System</span>
+    <h2>Turn discovery into a decision-ready proposal and a delivery-ready operating model</h2>
+    <p>The Proposal Center organizes reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security, Copilot, AI Agent and migration engagements.</p>
+    <div class="kc-topic-hero__actions" aria-label="Proposal Center actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/proposal/executive-summary">Executive Summary</a>
+      <a class="kc-topic-button" href="/knowledge/proposal/sow-template">SOW Template</a>
+      <a class="kc-topic-button" href="/knowledge/downloads/overview">Request Editable Assets</a>
+    </div>
+  </div>
 
-The Proposal Center is organized as a delivery-ready presales system. It connects discovery, executive messaging, technical scope, delivery workstreams, timeline, assumptions, risk and governance into one coherent proposal package.
+  <div class="kc-factory-panel" aria-label="Proposal Center asset pathway">
+    <div class="kc-factory-panel__header"><span>Proposal Pathway</span><strong>Decision-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="/knowledge/proposal/executive-summary" class="kc-factory-card"><small>01</small><strong>Executive story</strong><span>Clarify why the project matters, target outcome and decision request.</span></a>
+      <a href="/knowledge/proposal/assessment" class="kc-factory-card"><small>02</small><strong>Assessment</strong><span>Convert current state, gap, risk and dependency into recommendation path.</span></a>
+      <a href="/knowledge/proposal/sow-template" class="kc-factory-card"><small>03</small><strong>SOW</strong><span>Define scope, deliverables, assumptions, exclusions and acceptance criteria.</span></a>
+      <a href="/knowledge/proposal/wbs-template" class="kc-factory-card"><small>04</small><strong>WBS</strong><span>Convert scope into delivery phases, workstreams, activities and owners.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Proposal work is decision design</strong><span>A strong proposal makes the business case, delivery model, technical risk and customer responsibilities visible before the project starts.</span></div>
+  </div>
+</section>
 
 ## 한국어 요약
 
@@ -17,120 +37,89 @@ Proposal Center는 Microsoft 365, Azure, Security, Copilot, AI Agent, Migration 
 
 이 섹션은 Executive Summary, Assessment Framework, Statement of Work, Work Breakdown Structure, Risk Register, Timeline, Governance Model 같은 제안 및 수행 산출물을 재사용 가능한 구조로 제공합니다.
 
-> **Asset preview:** Public pages show the structure and decision logic. Editable DOCX/XLSX/PPTX versions or customer-ready samples should be requested through [Contact and Asset Request](../contact) after confirming the scenario and confidentiality boundary.
-
----
-
-<div class="kc-pathway" aria-label="Proposal center pathway">
-  <a class="kc-pathway-step" href="./executive-summary">
-    <small>01</small>
-    <strong>Executive Story</strong>
-    <span>Clarify why the project matters, what outcome is expected and what decision is needed.</span>
-  </a>
-  <a class="kc-pathway-step" href="./assessment">
-    <small>02</small>
-    <strong>Assessment</strong>
-    <span>Turn current state, risk, gap and dependency into a practical recommendation path.</span>
-  </a>
-  <a class="kc-pathway-step" href="./sow-template">
-    <small>03</small>
-    <strong>SOW</strong>
-    <span>Define scope, deliverables, assumptions, exclusions and acceptance criteria.</span>
-  </a>
-  <a class="kc-pathway-step" href="./wbs-template">
-    <small>04</small>
-    <strong>WBS</strong>
-    <span>Convert proposal scope into delivery phases, workstreams, activities and owners.</span>
-  </a>
-  <a class="kc-pathway-step" href="./governance-model">
-    <small>05</small>
-    <strong>Governance</strong>
-    <span>Align decision body, escalation, reporting rhythm, risk and handover control.</span>
-  </a>
-</div>
-
 ## Proposal Operating Model
 
-```mermaid
-flowchart LR
-  Discovery["Discovery<br/>business goal, pain point, stakeholder"]:::stage
-  Assessment["Assessment<br/>current state, gap, dependency"]:::stage
-  Strategy["Proposal Strategy<br/>value story, risk, scope boundary"]:::stage
-  Scope["SOW / WBS<br/>deliverables, timeline, acceptance"]:::stage
-  Governance["Governance<br/>RACI, escalation, change control"]:::stage
-  Handover["Delivery Handover<br/>kickoff pack, assumptions, risk log"]:::stage
-
-  Discovery --> Assessment --> Strategy --> Scope --> Governance --> Handover
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.6px
-```
-
-Proposal work should not be treated as a document-writing task. It is a decision-design process. A strong proposal makes the business case, delivery model, technical risk and customer responsibilities visible before the project starts.
+<div class="kc-journey-map kc-ai-journey" aria-label="Proposal operating model">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discovery</strong><span>Business goal, pain point, stakeholder, decision timeline and constraints.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Current state, readiness, gap, dependency and risk evidence.</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Proposal strategy</strong><span>Value story, solution direction, scope boundary and customer responsibility.</span></div>
+  <div class="kc-journey-node"><small>04</small><strong>SOW / WBS</strong><span>Deliverables, phases, timeline, owner, assumptions and acceptance criteria.</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>05</small><strong>Governance</strong><span>RACI, decision body, escalation, change control, risk and reporting cadence.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Handover</strong><span>Kickoff pack, delivery baseline, risk log, assumptions and validation evidence.</span></div>
+</div>
 
 ## Available Assets
 
-| Asset | Purpose | When to Use |
-|---|---|---|
-| Executive Summary | C-Level business proposal structure and executive messaging | when the decision maker needs a concise value story |
-| Assessment Framework | Discovery workshop, current state assessment and gap analysis | before defining target architecture or scope |
-| Statement of Work | Scope, deliverables, assumptions and exclusions structure | when project boundaries must be contract-ready |
-| Work Breakdown Structure | Project planning and execution framework | when delivery phases and activities must be visible |
-| Risk Register | Project risk identification and mitigation model | when risk ownership and escalation must be explicit |
-| Timeline Template | Standard project timeline and milestone planning | when stakeholders need schedule alignment |
-| Governance Model | Project governance and stakeholder management structure | when decisions, approvals and reporting cadence must be defined |
-
----
+<div class="kc-entry-hub" aria-label="Proposal Center available assets">
+  <a href="/knowledge/proposal/executive-summary"><small>Executive</small><strong>Executive Summary</strong><span>C-level business proposal structure and executive messaging.</span></a>
+  <a href="/knowledge/proposal/assessment"><small>Assessment</small><strong>Assessment Framework</strong><span>Discovery workshop, current-state assessment and gap analysis structure.</span></a>
+  <a href="/knowledge/proposal/sow-template"><small>SOW</small><strong>Statement of Work</strong><span>Scope, deliverables, assumptions, exclusions and acceptance structure.</span></a>
+  <a href="/knowledge/proposal/wbs-template"><small>WBS</small><strong>Work Breakdown Structure</strong><span>Project planning and execution framework by phase, workstream and owner.</span></a>
+  <a href="/knowledge/proposal/risk-register"><small>Risk</small><strong>Risk Register</strong><span>Risk identification, mitigation, owner, escalation and decision model.</span></a>
+  <a href="/knowledge/proposal/timeline-template"><small>Timeline</small><strong>Timeline Template</strong><span>Standard milestone, workshop, validation and handover planning.</span></a>
+  <a href="/knowledge/proposal/governance-model"><small>Governance</small><strong>Governance Model</strong><span>Stakeholder, RACI, escalation, reporting cadence and acceptance control.</span></a>
+  <a href="/knowledge/downloads/overview"><small>Downloads</small><strong>Requestable Assets</strong><span>Editable DOCX, XLSX or PPTX versions can be requested after context review.</span></a>
+  <a href="/knowledge/contact"><small>Request</small><strong>Contact and Asset Request</strong><span>Request a sanitized proposal package for a specific scenario.</span></a>
+</div>
 
 ## Proposal Delivery Flow
 
-| Stage | Purpose | Main Output |
-|---|---|---|
-| 1. Discover | understand business driver, current environment and decision timeline | discovery notes and qualification summary |
-| 2. Assess | identify readiness, gaps, dependencies and risks | assessment summary and recommendation path |
-| 3. Shape | define target scope, assumptions, exclusions and success criteria | solution outline and executive summary |
-| 4. Plan | convert the scope into workstreams, activities, timeline and roles | SOW, WBS and milestone plan |
-| 5. Govern | define decision body, escalation path, reporting rhythm and acceptance criteria | governance model and risk register |
-| 6. Handover | prepare delivery team and customer stakeholders for execution | kickoff pack and handover checklist |
+<div class="kc-maturity-ladder" aria-label="Proposal delivery flow">
+  <div class="kc-maturity-step"><small>Discover</small><strong>Understand the decision context</strong><span>Business driver, current environment, stakeholders, constraints and decision timeline.</span></div>
+  <div class="kc-maturity-step"><small>Assess</small><strong>Identify readiness and gaps</strong><span>Assessment summary, risk view, dependency map and recommendation path.</span></div>
+  <div class="kc-maturity-step"><small>Shape</small><strong>Define the value story and scope</strong><span>Target outcome, solution outline, assumptions, exclusions and success criteria.</span></div>
+  <div class="kc-maturity-step"><small>Plan</small><strong>Convert scope into delivery model</strong><span>SOW, WBS, timeline, milestone plan, roles and acceptance evidence.</span></div>
+  <div class="kc-maturity-step"><small>Govern</small><strong>Define control rhythm</strong><span>Decision body, escalation path, reporting cadence, risk register and acceptance criteria.</span></div>
+  <div class="kc-maturity-step"><small>Handover</small><strong>Prepare execution</strong><span>Kickoff pack, handover checklist, assumptions log and delivery baseline.</span></div>
+</div>
 
 ## Proposal Package Anatomy
 
-| Section | What It Should Answer |
-|---|---|
-| Executive Summary | why this project matters now and what decision is required |
-| Business Drivers | what business, security, compliance or AI adoption pressure created the need |
-| Current State | what is known, unknown and assumed about the customer environment |
-| Target Architecture | what Microsoft capabilities and operating model will be used |
-| Scope | what will be delivered, excluded and dependent on customer readiness |
-| WBS | how the work is structured by phase, workstream and activity |
-| Timeline | when key workshops, implementation steps, validation and handover occur |
-| Risk Register | what may affect delivery and how it will be mitigated |
-| Governance | who approves, who executes and how issues are escalated |
-| Acceptance Criteria | how the customer and delivery team know the work is complete |
+<div class="kc-platform-fit" aria-label="Proposal package anatomy">
+  <div class="kc-platform-fit__card"><small>Executive Summary</small><strong>Why this project matters now</strong><span>Clarifies the business decision, urgency, expected outcome and executive ask.</span></div>
+  <div class="kc-platform-fit__card"><small>Business Drivers</small><strong>What pressure created the need</strong><span>Security, compliance, productivity, migration, AI adoption or operational risk.</span></div>
+  <div class="kc-platform-fit__card"><small>Current State</small><strong>What is known and assumed</strong><span>Known facts, unknowns, dependencies, customer inputs and assumptions.</span></div>
+  <div class="kc-platform-fit__card"><small>Target Architecture</small><strong>What Microsoft capabilities will be used</strong><span>Target platform, operating model, security posture and delivery approach.</span></div>
+  <div class="kc-platform-fit__card"><small>Scope</small><strong>What will and will not be delivered</strong><span>Deliverables, exclusions, assumptions, dependencies and customer responsibilities.</span></div>
+  <div class="kc-platform-fit__card"><small>Acceptance</small><strong>How completion will be proven</strong><span>Acceptance criteria, validation evidence, handover artifacts and sign-off model.</span></div>
+</div>
 
 ## Proposal Quality Scorecard
 
-| Quality Area | What Good Looks Like | Review Signal |
-|---|---|---|
-| Business clarity | The executive can understand why the project matters without reading technical appendices | clear current challenge, target outcome and decision request |
-| Scope control | Included, excluded and dependent work are separated | no hidden adjacent workload or undefined customer task |
-| Delivery readiness | SOW, WBS, timeline and governance align with each other | same phases, milestones, roles and acceptance language |
-| Risk visibility | Technical, operational and customer-side risks are explicit | risk register has owner, mitigation and escalation path |
-| Evidence orientation | Completion can be proven through reviewable outputs | deliverables, test evidence, handover guide and acceptance record |
-| Public safety | Examples are reusable without exposing customer-sensitive details | no customer names, tenant IDs, internal filenames or commercial terms |
+<div class="kc-context-panel" aria-label="Proposal quality scorecard">
+  <div class="kc-context-panel__lead"><small>Quality Standard</small><strong>A proposal should reduce ambiguity before delivery starts.</strong><span>The best proposal assets make the decision, scope, risk, responsibility and acceptance model visible to both customer and delivery team.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/proposal/executive-summary"><small>Business</small><strong>Business clarity</strong><span>Clear current challenge, target outcome and decision request.</span></a>
+    <a href="/knowledge/proposal/sow-template"><small>Scope</small><strong>Scope control</strong><span>Included, excluded and dependent work are separated.</span></a>
+    <a href="/knowledge/proposal/wbs-template"><small>Delivery</small><strong>Delivery readiness</strong><span>SOW, WBS, timeline and governance use the same phases and acceptance language.</span></a>
+    <a href="/knowledge/proposal/risk-register"><small>Risk</small><strong>Risk visibility</strong><span>Risk register has owner, mitigation, trigger and escalation path.</span></a>
+    <a href="/knowledge/downloads/overview"><small>Evidence</small><strong>Evidence orientation</strong><span>Completion can be proven through deliverables, tests, handover and acceptance record.</span></a>
+    <a href="/knowledge/contact"><small>Safety</small><strong>Public-safe versioning</strong><span>No customer names, tenant IDs, internal filenames or commercial terms in public examples.</span></a>
+  </div>
+</div>
+
+## Role-Based Starting Points
+
+<div class="kc-entry-hub" aria-label="Proposal Center role-based starting points">
+  <a href="/knowledge/proposal/executive-summary"><small>CIO</small><strong>Executive Sponsor</strong><span>Start with executive summary, governance model and timeline template.</span></a>
+  <a href="/knowledge/proposal/risk-register"><small>CISO</small><strong>Security Leader</strong><span>Start with risk register, assessment framework and security modernization playbook.</span></a>
+  <a href="/knowledge/proposal/assessment"><small>IT Director</small><strong>Technical Decision Owner</strong><span>Start with assessment framework, SOW template and WBS template.</span></a>
+  <a href="/knowledge/proposal/wbs-template"><small>PMO</small><strong>Project Manager</strong><span>Start with WBS, timeline, risk register and governance model.</span></a>
+  <a href="/knowledge/proposal/sow-template"><small>Presales</small><strong>Architect</strong><span>Start with executive summary, SOW, Downloads Center and customer success references.</span></a>
+  <a href="/knowledge/contact"><small>Request</small><strong>Asset Request</strong><span>Request a proposal package aligned to Microsoft 365, Security, Copilot, Azure or migration scenario.</span></a>
+</div>
 
 ## Public-Safe Proposal Principle
 
-Public proposal examples should show structure and thinking, not customer-sensitive information.
+Public proposal examples should show structure and thinking, not customer-sensitive information. Do not publish customer names, contract value, discount assumptions, internal architecture diagrams, tenant IDs, source system inventory, project code names or customer-specific security exceptions.
 
-Do not publish customer names, contract value, discount assumptions, internal architecture diagrams, tenant IDs, source system inventory, project code names or customer-specific security exceptions.
-
-When a customer-ready sample is needed, share a sanitized version through [Contact and Asset Request](../contact).
+When a customer-ready sample is needed, share a sanitized version through [Contact and Asset Request](/knowledge/contact).
 
 ## Asset Request Guidance
 
-This public page explains the proposal structure and reusable thinking. Editable templates, customer-ready samples and detailed worksheets are shared by request after confirming the project scenario and confidentiality boundary.
+This public page explains proposal structure and reusable thinking. Editable templates, customer-ready samples and detailed worksheets are shared by request after confirming the project scenario and confidentiality boundary.
 
-Use [Contact and Asset Request](../contact) when you need a reusable proposal package for:
+Use [Contact and Asset Request](/knowledge/contact) when you need a reusable proposal package for:
 
 - Microsoft 365 implementation or optimization
 - Security baseline, Defender, Purview or Conditional Access projects
@@ -140,30 +129,7 @@ Use [Contact and Asset Request](../contact) when you need a reusable proposal pa
 - Tenant-to-tenant, Google Workspace or file server migration
 - PMO governance, risk register, WBS and timeline design
 
----
-
-## Intended Audience
-
-- CIO
-- CISO
-- IT Director
-- Infrastructure Manager
-- Collaboration Manager
-- PMO
-
-## Role-Based Starting Points
-
-| Visitor | Start With | Useful Follow-Up |
-|---|---|---|
-| CIO / Executive Sponsor | [Executive Summary](./executive-summary) | [Governance Model](./governance-model), [Timeline Template](./timeline-template) |
-| CISO / Security Leader | [Risk Register](./risk-register) | [Assessment Framework](./assessment), [Security Modernization Playbook](../playbooks/security-modernization-playbook) |
-| IT Director | [Assessment Framework](./assessment) | [SOW Template](./sow-template), [WBS Template](./wbs-template) |
-| PMO / Project Manager | [WBS Template](./wbs-template) | [Timeline Template](./timeline-template), [Risk Register](./risk-register) |
-| Presales / Architect | [Executive Summary](./executive-summary) | [SOW Template](./sow-template), [Downloads Center](../downloads/overview) |
-
 ## 검색 키워드
-
-이 문서는 다음과 같은 검색어와 관련됩니다.
 
 - Microsoft 365 proposal
 - Microsoft 365 SOW
@@ -173,7 +139,7 @@ Use [Contact and Asset Request](../contact) when you need a reusable proposal pa
 - Security proposal
 - Cloud migration WBS
 - Project Risk Register
-- Executive Summary 템플릿
+- Executive Summary template
 - 제안서 delivery asset
 - PMO governance model
 
@@ -182,8 +148,8 @@ Use [Contact and Asset Request](../contact) when you need a reusable proposal pa
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
 - Microsoft 365 implementation proposal 작성
-- Copilot readiness/adoption proposal 작성
+- Copilot readiness / adoption proposal 작성
 - Azure Landing Zone 또는 migration SOW 작성
-- Security assessment/implementation WBS 작성
+- Security assessment / implementation WBS 작성
 - 고객 의사결정을 위한 executive summary 구성
 - PMO와 고객 담당자가 공유할 risk register 및 governance model 작성
