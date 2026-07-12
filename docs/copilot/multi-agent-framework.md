@@ -273,25 +273,19 @@ Generate:
 
 ## Enterprise Agent Taxonomy
 
-```mermaid
-flowchart LR
-
-    Strategic --> Executive
-    Strategic --> Planning
-
-    Operational --> ServiceDesk
-    Operational --> HR
-    Operational --> Finance
-
-    Knowledge --> Policy
-    Knowledge --> Architecture
-
-    Compliance --> Security
-    Compliance --> Privacy
-
-    Delivery --> Project
-    Delivery --> Proposal
-```
+<div class="kc-journey-map" aria-label="Enterprise agent taxonomy">
+  <div class="kc-journey-map__header">
+    <span>Enterprise Agent Taxonomy</span>
+    <strong>Group agents by business capability and control needs</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Strategic</strong><span>Executive briefing, planning, portfolio and decision-support agents.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Operational</strong><span>Service desk, HR, finance and repeatable work execution agents.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Knowledge</strong><span>Policy, architecture, standards, proposal and reusable asset agents.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Compliance</strong><span>Security, privacy, audit, exception and control-review agents.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Delivery</strong><span>Project, migration, proposal, handover and reporting agents.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -323,16 +317,19 @@ Scout can:
 
 In future architectures:
 
-```mermaid
-flowchart TB
-
-    Scout --> Coordinator
-
-    Coordinator --> Knowledge
-    Coordinator --> Task
-    Coordinator --> Compliance
-    Coordinator --> Reporting
-```
+<div class="kc-journey-map" aria-label="Microsoft Scout multi-agent integration">
+  <div class="kc-journey-map__header">
+    <span>Microsoft Scout Integration</span>
+    <strong>Personal orchestration layer for specialist agents</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Scout</strong><span>Tracks personal work, priorities, meetings, risk and next actions.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Coordinator</strong><span>Routes intent to the right specialist agent and keeps task context.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Specialists</strong><span>Knowledge, task, compliance and reporting agents execute scoped work.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Review</strong><span>Human approval and governance controls apply before sensitive actions.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Outcome</strong><span>Meeting prep, risk summary, draft output or work package is returned.</span></div>
+  </div>
+</div>
 
 Scout becomes the user's personal orchestration layer.
 
@@ -344,11 +341,18 @@ Scout becomes the user's personal orchestration layer.
 
 Sequential
 
-```mermaid
-flowchart LR
-
-A --> B --> C --> D
-```
+<div class="kc-journey-map" aria-label="Sequential agent communication pattern">
+  <div class="kc-journey-map__header">
+    <span>Pattern 1</span>
+    <strong>Sequential handoff</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>A</small><strong>Research</strong><span>Collect facts, source material and business context.</span></div>
+    <div class="kc-journey-node"><small>B</small><strong>Draft</strong><span>Create the first output from the research package.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>C</small><strong>Review</strong><span>Check quality, policy, risk and missing assumptions.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>D</small><strong>Deliver</strong><span>Publish the approved output or hand it to the next workflow.</span></div>
+  </div>
+</div>
 
 Example:
 
@@ -360,17 +364,19 @@ Research → Draft → Review → Deliver
 
 Parallel
 
-```mermaid
-flowchart LR
-
-A --> B
-A --> C
-A --> D
-
-B --> E
-C --> E
-D --> E
-```
+<div class="kc-journey-map" aria-label="Parallel agent communication pattern">
+  <div class="kc-journey-map__header">
+    <span>Pattern 2</span>
+    <strong>Parallel specialist review</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>A</small><strong>Shared input</strong><span>One work package is distributed to multiple specialist agents.</span></div>
+    <div class="kc-journey-node"><small>B</small><strong>Policy</strong><span>Policy and governance review.</span></div>
+    <div class="kc-journey-node"><small>C</small><strong>Security</strong><span>Security and risk review.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>D</small><strong>Architecture</strong><span>Technical fit and integration review.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>E</small><strong>Consolidate</strong><span>Combine findings into one decision-ready output.</span></div>
+  </div>
+</div>
 
 Example:
 
@@ -390,13 +396,19 @@ then consolidate.
 
 Hierarchical
 
-```mermaid
-flowchart TB
-
-Master --> Team1
-Master --> Team2
-Master --> Team3
-```
+<div class="kc-journey-map" aria-label="Hierarchical agent communication pattern">
+  <div class="kc-journey-map__header">
+    <span>Pattern 3</span>
+    <strong>Hierarchical orchestration</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Master agent</strong><span>Owns goal, decomposition, dependency handling and final synthesis.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Team agent A</strong><span>Executes a domain-specific workstream.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Team agent B</strong><span>Handles a second workstream with its own tools and knowledge.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Team agent C</strong><span>Reviews risk, governance or quality before completion.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Final output</strong><span>The master agent combines workstreams into one governed result.</span></div>
+  </div>
+</div>
 
 Used for enterprise orchestration.
 
@@ -415,19 +427,19 @@ Benefits:
 
 Example:
 
-```mermaid
-flowchart TB
-
-AgentA --> MCP
-
-AgentB --> MCP
-
-AgentC --> MCP
-
-MCP --> SAP
-MCP --> ServiceNow
-MCP --> Salesforce
-```
+<div class="kc-journey-map" aria-label="MCP in multi-agent systems">
+  <div class="kc-journey-map__header">
+    <span>MCP Integration</span>
+    <strong>Shared tool layer for consistent agent actions</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent A</strong><span>Requests a business system action through a standard interface.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Agent B</strong><span>Uses the same tool contract for a different workflow.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>MCP</strong><span>Standardizes tool access, permission checks and integration patterns.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Systems</strong><span>SAP, ServiceNow, Salesforce and internal APIs stay behind governed connectors.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Result</strong><span>Agents act consistently without duplicating integration logic.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -473,17 +485,18 @@ Examples:
 
 ## Human-in-the-Loop Architecture
 
-```mermaid
-flowchart LR
-
-Agent --> Review
-
-Review --> Human
-
-Human --> Approve
-
-Approve --> Execute
-```
+<div class="kc-journey-map" aria-label="Human in the loop architecture">
+  <div class="kc-journey-map__header">
+    <span>Human-in-the-Loop</span>
+    <strong>Sensitive actions stay reviewable and auditable</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent proposal</strong><span>The agent prepares a recommendation, draft, action or exception request.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Policy review</strong><span>Rules, confidence, data sensitivity and business risk are checked.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Human approval</strong><span>Named owner approves, rejects or requests changes.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>04</small><strong>Execute</strong><span>The approved action runs with audit trail and rollback path.</span></div>
+  </div>
+</div>
 
 Critical actions should remain reviewable.
 
@@ -543,25 +556,19 @@ Responsible for:
 
 ## Enterprise Operating Model
 
-```mermaid
-flowchart TB
-
-IDEA[Business Idea]
-
-IDEA --> ASSESS
-
-ASSESS --> DESIGN
-
-DESIGN --> BUILD
-
-BUILD --> TEST
-
-TEST --> DEPLOY
-
-DEPLOY --> OPERATE
-
-OPERATE --> IMPROVE
-```
+<div class="kc-journey-map" aria-label="Multi-agent enterprise operating model">
+  <div class="kc-journey-map__header">
+    <span>Enterprise Operating Model</span>
+    <strong>Business idea to continuously improved agent portfolio</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Idea</strong><span>Business unit submits an agent opportunity with expected value.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Assess</strong><span>Review feasibility, data, permissions, security, cost and owner model.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Define agent roles, tools, memory, guardrails and human review points.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Build and test</strong><span>Validate accuracy, safety, latency, UX and escalation behavior.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operate</strong><span>Deploy, monitor, improve, retire or scale the agent portfolio.</span></div>
+  </div>
+</div>
 
 ---
 
