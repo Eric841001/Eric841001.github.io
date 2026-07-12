@@ -4,9 +4,46 @@ title: Customer Success Reference Patterns
 sidebar_label: Customer Success Reference Patterns
 sidebar_position: 2
 description: Anonymized customer success reference patterns for Microsoft 365, Security, Copilot, Azure, migration and governance projects.
+toc_max_heading_level: 2
 ---
 
 # Customer Success Reference Patterns
+
+<section class="kc-topic-hero" aria-label="Customer success reference patterns hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Anonymized Enterprise Reference Patterns</span>
+    <h2>Turn real delivery experience into reusable success patterns</h2>
+    <p>This page summarizes public-safe customer success patterns across Microsoft 365, Security, Copilot, AI Agents, Azure, migration and governance projects. Customer names, account identifiers, project names, commercial details and internal file names are intentionally excluded.</p>
+    <div class="kc-hero-signal-row" aria-label="Reference pattern signals">
+      <span>Industry</span>
+      <span>Scenario</span>
+      <span>Approach</span>
+      <span>Outcome</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Customer success related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/projects/case-study-retail-m365-security-policy">Retail Security Pattern</a>
+      <a class="kc-topic-button" href="/knowledge/projects/case-study-enterprise-ai-agent-factory">Agent Factory Pattern</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request Private Reference</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Reference pattern operating model">
+    <div class="kc-factory-panel__header">
+      <span>Reference Model</span>
+      <strong>Safe, reusable, executive-ready</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#industry-patterns" class="kc-factory-card"><small>01</small><strong>Industry</strong><span>Manufacturing, finance, logistics, retail, construction and healthcare.</span></a>
+      <a href="#reference-principles" class="kc-factory-card"><small>02</small><strong>Boundary</strong><span>Customer names, project names and commercial details are removed.</span></a>
+      <a href="#pattern-to-asset-mapping" class="kc-factory-card"><small>03</small><strong>Assets</strong><span>Assessment, architecture, SOW, WBS, runbook and governance outputs.</span></a>
+      <a href="#reference-metrics" class="kc-factory-card"><small>04</small><strong>Value</strong><span>Readiness, control, adoption, stability and delivery repeatability.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Confidentiality rule</strong>
+      <span>Public pages explain the repeatable pattern. Detailed customer evidence and document samples should be shared only through direct request and appropriate confidentiality boundaries.</span>
+    </div>
+  </div>
+</section>
 
 This page summarizes anonymized customer success patterns derived from enterprise proposal, WBS, SOW, security review, migration and enablement assets. Customer names, account identifiers and project-specific commercial details are intentionally excluded.
 
@@ -20,15 +57,20 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 ## Reference Pattern Map
 
-```mermaid
-flowchart TB
-  Industry["Industry Context<br/>manufacturing, finance<br/>retail, logistics"] --> Situation["Business Situation<br/>risk, adoption<br/>migration, governance"]
-  Situation --> Workloads["Microsoft Workloads<br/>M365, Security<br/>Copilot, Azure"]
-  Workloads --> Delivery["Delivery Approach<br/>assessment, design<br/>rollout, handover"]
-  Delivery --> Assets["Reusable Assets<br/>SOW, WBS<br/>workbook, runbook"]
-  Assets --> Outcome["Business Outcome<br/>readiness, control<br/>adoption, stability"]
-  Outcome --> Story["Public-Safe Story<br/>industry<br/>scenario<br/>pattern"]
-```
+<div class="kc-journey-map" aria-label="Customer success reference pattern map">
+  <div class="kc-journey-map__header">
+    <span>Reference Pattern Map</span>
+    <strong>From private delivery to public-safe reference</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Industry Context</strong><span>Manufacturing, finance, retail, logistics and other enterprise patterns.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Business Situation</strong><span>Risk, adoption, migration, governance or modernization need.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Microsoft Workloads</strong><span>M365, Security, Copilot, Azure, migration and governance workloads.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Delivery Approach</strong><span>Assessment, design, rollout, handover and operating model.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Reusable Assets</strong><span>SOW, WBS, workbook, runbook, risk register and executive report.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Public-Safe Story</strong><span>Industry, scenario, approach and outcome without customer identifiers.</span></div>
+  </div>
+</div>
 
 ## Reference Principles
 
@@ -49,15 +91,14 @@ flowchart TB
 
 ## Industry Patterns
 
-```mermaid
-flowchart LR
-  Manufacturing["Manufacturing"] --> Copilot["Copilot Adoption<br/>readiness<br/>pilot<br/>governance"]
-  Finance["Financial Services"] --> Security["Security Architecture<br/>SaaS control<br/>audit<br/>exception"]
-  Logistics["Logistics"] --> Migration["Exchange and<br/>Collaboration<br/>migration<br/>hypercare"]
-  Retail["Retail"] --> Policy["M365 Security<br/>Policy<br/>identity<br/>endpoint<br/>data"]
-  Construction["Construction"] --> IA["SharePoint and<br/>File Governance<br/>information<br/>architecture"]
-  Healthcare["Healthcare"] --> Compliance["Compliance<br/>Baseline<br/>identity<br/>device<br/>evidence"]
-```
+<div class="kc-platform-fit" aria-label="Customer success industry patterns">
+  <div class="kc-platform-fit__card"><small>Manufacturing</small><strong>Copilot adoption</strong><span>Readiness, pilot, governance, role-based scenarios and executive value reporting.</span></div>
+  <div class="kc-platform-fit__card"><small>Financial Services</small><strong>Security architecture</strong><span>SaaS control, audit evidence, exception management and approval workflow.</span></div>
+  <div class="kc-platform-fit__card"><small>Logistics</small><strong>Exchange modernization</strong><span>Migration planning, collaboration continuity, security review and hypercare.</span></div>
+  <div class="kc-platform-fit__card"><small>Retail</small><strong>M365 security policy</strong><span>Identity, endpoint, data protection, policy gaps and prioritized roadmap.</span></div>
+  <div class="kc-platform-fit__card"><small>Construction</small><strong>SharePoint governance</strong><span>File governance, information architecture, permissions and lifecycle control.</span></div>
+  <div class="kc-platform-fit__card"><small>Healthcare</small><strong>Compliance baseline</strong><span>Identity, device, DLP, evidence-ready policy documentation and operations ownership.</span></div>
+</div>
 
 | Industry | Business Situation | Microsoft Workloads | Success Pattern |
 |---|---|---|---|
