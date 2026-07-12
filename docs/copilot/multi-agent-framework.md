@@ -7,6 +7,42 @@ sidebar_label: Multi-Agent Framework
 
 # Multi-Agent Framework
 
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Multi-agent framework hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Multi-Agent Architecture</span>
+    <h2>Coordinate specialist agents without losing control</h2>
+    <p>Multi-agent systems become valuable when complex work is divided across specialist agents and governed through a coordinator, policy boundary, human review and measurable outcomes.</p>
+    <div class="kc-hero-signal-row" aria-label="Multi-agent operating signals">
+      <span>Coordinate</span>
+      <span>Specialize</span>
+      <span>Review</span>
+      <span>Measure</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Multi-agent related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/copilot/agentic-ai-architecture">Agentic AI Architecture</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/agent-factory-operating-model">Agent Factory</a>
+      <a class="kc-topic-button" href="/knowledge/projects/case-study-enterprise-ai-agent-factory">Customer Pattern</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Multi-agent system visual">
+    <div class="kc-factory-panel__header">
+      <span>Agent Team</span>
+      <strong>Specialists with control</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#coordinator-agent" class="kc-factory-card"><small>01</small><strong>Coordinator</strong><span>Decomposes work, assigns agents and consolidates response.</span></a>
+      <a href="#knowledge-agent" class="kc-factory-card"><small>02</small><strong>Knowledge</strong><span>Retrieves policies, history, reference assets and enterprise context.</span></a>
+      <a href="#task-agent" class="kc-factory-card"><small>03</small><strong>Task</strong><span>Executes workflow, ticket, CRM, proposal or system actions.</span></a>
+      <a href="#review-agent" class="kc-factory-card"><small>04</small><strong>Review</strong><span>Checks quality, completeness, compliance and business fit.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Control point</strong>
+      <span>Multi-agent design should reduce complexity for users, not hide complexity from governance owners.</span>
+    </div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Enterprise AI is rapidly evolving from single-agent experiences toward coordinated multi-agent systems.
@@ -55,35 +91,36 @@ A multi-agent architecture distributes responsibilities across specialized agent
 
 ## Core Architecture
 
-```mermaid
-flowchart TB
+<div class="kc-journey-map" aria-label="Multi-agent core architecture">
+  <div class="kc-journey-map__header">
+    <span>Core Architecture</span>
+    <strong>User request to governed response</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User Request</strong><span>Business question, workflow request or executive task.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>02</small><strong>Coordinator</strong><span>Plans work, assigns specialists and owns final orchestration.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Specialists</strong><span>Knowledge, task, review, compliance and reporting agents.</span></div>
+    <div class="kc-journey-node"><small>04</small><strong>Human Review</strong><span>Approves sensitive actions, exceptions and external-facing outputs.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Control Plane</strong><span>Identity, DLP, audit, telemetry, cost and evaluation signals.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Final Response</strong><span>Consolidated answer, action result, report or decision support.</span></div>
+  </div>
+</div>
 
-    USER[User]
-
-    USER --> COORD
-
-    COORD[Coordinator Agent]
-
-    COORD --> KNOW
-    COORD --> TASK
-    COORD --> REVIEW
-    COORD --> COMP
-    COORD --> REPORT
-
-    KNOW[Knowledge Agent]
-    TASK[Task Agent]
-    REVIEW[Review Agent]
-    COMP[Compliance Agent]
-    REPORT[Reporting Agent]
-
-    KNOW --> COORD
-    TASK --> COORD
-    REVIEW --> COORD
-    COMP --> COORD
-    REPORT --> COORD
-
-    COORD --> RESPONSE[Final Response]
-```
+<div class="kc-context-panel" aria-label="Multi-agent responsibility model">
+  <div class="kc-context-panel__lead">
+    <small>Responsibility Model</small>
+    <strong>Each specialist should have a narrow purpose and an explicit boundary.</strong>
+    <span>The coordinator should not become an uncontrolled super-agent. It should route work, enforce policy and explain how final outputs were assembled.</span>
+  </div>
+  <div class="kc-context-panel__grid">
+    <a href="#coordinator-agent"><small>Coordinate</small><strong>Task decomposition</strong><span>Break complex requests into specialist work packets.</span></a>
+    <a href="#knowledge-agent"><small>Ground</small><strong>Enterprise knowledge</strong><span>Retrieve approved information from Microsoft 365 and business systems.</span></a>
+    <a href="#task-agent"><small>Act</small><strong>Workflow execution</strong><span>Trigger tools, APIs, approvals and business actions within scope.</span></a>
+    <a href="#review-agent"><small>Review</small><strong>Quality and consistency</strong><span>Check completeness, format, accuracy and business alignment.</span></a>
+    <a href="#compliance-agent"><small>Control</small><strong>Compliance review</strong><span>Evaluate policy, data handling and risk before delivery.</span></a>
+    <a href="#reporting-agent"><small>Report</small><strong>Executive output</strong><span>Create summaries, dashboards and stakeholder-ready narratives.</span></a>
+  </div>
+</div>
 
 ---
 
