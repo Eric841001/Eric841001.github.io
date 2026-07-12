@@ -7,619 +7,149 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 
 # Conditional Access
 
+<section class="kc-topic-hero" aria-label="Conditional Access design landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Identity and Access Control</span>
+    <h2>Design Conditional Access as the policy engine for Zero Trust and Copilot-ready Microsoft 365</h2>
+    <p>Conditional Access decides who can access what, from where, on which device and under which risk. A good design protects users and data without locking out business-critical work.</p>
+    <div class="kc-topic-hero__actions" aria-label="Conditional Access actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/microsoft-365-security">Security Landing</a>
+      <a class="kc-topic-button" href="/knowledge/security/zero-trust-framework">Zero Trust</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request CA Matrix</a>
+    </div>
+  </div>
 
-<div class="kc-outcome-grid" aria-label="Conditional Access quick read cards">
-  <div class="kc-outcome-card">
-    <small>WHY</small>
-    <strong>Policy is the new perimeter</strong>
-    <span>Conditional Access decides who can access what, from where, on which device and under which risk.</span>
+  <div class="kc-factory-panel" aria-label="Conditional Access design model">
+    <div class="kc-factory-panel__header"><span>Design Model</span><strong>Report-only first</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#policy-layer-model" class="kc-factory-card"><small>01</small><strong>Layer</strong><span>Separate baseline MFA, admin protection, device, app and risk policies.</span></a>
+      <a href="#deployment-journey" class="kc-factory-card"><small>02</small><strong>Deploy</strong><span>Use report-only, pilot scope, exclusions, sign-in logs and staged enforcement.</span></a>
+      <a href="#exception-and-lockout-control" class="kc-factory-card"><small>03</small><strong>Protect</strong><span>Keep emergency access, exception ownership and expiry under governance.</span></a>
+      <a href="#copilot-access-control" class="kc-factory-card"><small>04</small><strong>Copilot</strong><span>Align Copilot access with identity, device, session and data protection policy.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Policy is the new perimeter</strong><span>Conditional Access should continuously validate identity, device, location, application, risk and session context before access is granted.</span></div>
   </div>
-  <div class="kc-outcome-card">
-    <small>DESIGN</small>
-    <strong>Use staged policy layers</strong>
-    <span>Separate baseline MFA, admin protection, device compliance, app control and risk policies.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>OPERATE</small>
-    <strong>Avoid lockout and noise</strong>
-    <span>Use report-only, exclusions, break-glass accounts, sign-in logs and exception governance.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
-Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture.
+Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture. It evaluates user identity, device posture, location, application, risk signals and session context before granting access to corporate resources.
 
-Conditional Access evaluates user identity, device posture, location, application, risk signals, and session context before granting access to corporate resources.
+This document provides an enterprise design methodology for Microsoft 365, Azure, Security and Copilot deployments.
 
-This document provides an enterprise design methodology used in Microsoft 365, Azure, Security, and Copilot deployments.
+## 한국어 요약
 
----
+Conditional Access는 Microsoft Entra ID 기반의 접근 제어 정책 엔진입니다. 사용자가 누구인지, 어떤 device에서 접속하는지, 어떤 location인지, 어떤 application에 접근하는지, risk signal이 있는지에 따라 접근을 허용하거나 차단합니다.
+
+실무에서는 모든 사용자를 한 번에 차단하는 방식보다 report-only, pilot group, exclusion, break-glass account, sign-in log 분석을 통해 단계적으로 적용하는 것이 안전합니다.
+
+Copilot 도입 시에도 Conditional Access는 중요합니다. Copilot은 Microsoft 365 data permission을 기반으로 동작하므로, identity, device, session, data protection 정책이 함께 정리되어야 합니다.
 
 ## Why Conditional Access Matters
 
-Traditional security models assume trust after successful authentication.
+<div class="kc-platform-fit" aria-label="Why Conditional Access matters">
+  <div class="kc-platform-fit__card"><small>Credential</small><strong>Credential theft</strong><span>Require MFA, sign-in risk controls and strong authentication for risky access.</span></div>
+  <div class="kc-platform-fit__card"><small>Session</small><strong>Session hijacking and token replay</strong><span>Use risk signals, session controls and device conditions where appropriate.</span></div>
+  <div class="kc-platform-fit__card"><small>Legacy</small><strong>Legacy authentication abuse</strong><span>Block protocols that cannot satisfy modern authentication and MFA requirements.</span></div>
+  <div class="kc-platform-fit__card"><small>Device</small><strong>Unmanaged device access</strong><span>Require compliant or managed devices for sensitive workloads and admin access.</span></div>
+  <div class="kc-platform-fit__card"><small>Location</small><strong>Unexpected location or network</strong><span>Use named locations, country rules and trusted network logic carefully.</span></div>
+  <div class="kc-platform-fit__card"><small>AI</small><strong>Copilot data exposure risk</strong><span>Align Copilot readiness with permission hygiene, device posture and session controls.</span></div>
+</div>
 
-Modern attacks target:
+## Zero Trust Evaluation Flow
 
-- Credential Theft
-- Session Hijacking
-- Phishing
-- Token Replay
-- Legacy Authentication Abuse
-- Unmanaged Device Access
+<div class="kc-journey-map kc-ai-journey" aria-label="Conditional Access Zero Trust evaluation flow">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User</strong><span>User, group, role, guest status and privileged access context.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Device</strong><span>Registered, hybrid joined, Entra joined, Intune compliant or unmanaged.</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Context</strong><span>Location, application, platform, client app, risk and session state.</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Policy</strong><span>Conditional Access evaluates conditions, exclusions and grant controls.</span></div>
+  <div class="kc-journey-node"><small>05</small><strong>Control</strong><span>Require MFA, compliant device, app protection, session control or block access.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Access</strong><span>Access is granted, limited, monitored or blocked with audit evidence.</span></div>
+</div>
 
-Conditional Access enables organizations to continuously validate trust before granting access.
+## Policy Layer Model
 
----
-
-## Zero Trust Architecture
-
-```mermaid
-flowchart LR
-
-USER[User]
-DEVICE[Device]
-ENTRA[Microsoft Entra ID]
-CA[Conditional Access]
-APP[Microsoft 365 Application]
-
-USER --> ENTRA
-DEVICE --> ENTRA
-ENTRA --> CA
-CA --> APP
-```
-
----
-
-## Core Evaluation Signals
-
-## Identity
-
-Examples:
-
-- User
-- Group Membership
-- Role Membership
-
----
-
-## Device
-
-Examples:
-
-- Entra Joined
-- Hybrid Joined
-- Intune Compliant
-
----
-
-## Location
-
-Examples:
-
-- Korea
-- Germany
-- Trusted Network
-- Unknown Country
-
----
-
-## Application
-
-Examples:
-
-- Exchange Online
-- SharePoint Online
-- Teams
-- Microsoft 365 Copilot
-
----
-
-## Risk
-
-Examples:
-
-- User Risk
-- Sign-In Risk
-- Defender Device Risk
-
----
-
-## Enterprise Conditional Access Framework
-
-## Layer 1
-
-Identity Protection
-
-Purpose:
-
-Protect against compromised credentials.
-
-Controls:
-
-- MFA
-- Risk Policies
-- Passwordless Authentication
-
----
-
-## Layer 2
-
-Device Protection
-
-Purpose:
-
-Allow access only from trusted devices.
-
-Controls:
-
-- Require Compliant Device
-- Device Risk Evaluation
-- Defender Integration
-
----
-
-## Layer 3
-
-Data Protection
-
-Purpose:
-
-Protect corporate data.
-
-Controls:
-
-- App Enforced Restrictions
-- Session Control
-- Download Restrictions
-
----
+<div class="kc-maturity-ladder" aria-label="Conditional Access policy layer model">
+  <div class="kc-maturity-step"><small>Layer 1</small><strong>Baseline MFA</strong><span>Require MFA for users, exclude emergency access accounts and validate user impact.</span></div>
+  <div class="kc-maturity-step"><small>Layer 2</small><strong>Admin protection</strong><span>Apply stricter controls to privileged roles, admin portals and management workloads.</span></div>
+  <div class="kc-maturity-step"><small>Layer 3</small><strong>Legacy authentication block</strong><span>Block POP, IMAP, SMTP AUTH, Basic Authentication and unsupported clients where applicable.</span></div>
+  <div class="kc-maturity-step"><small>Layer 4</small><strong>Device and app control</strong><span>Require compliant devices, approved apps or app protection for sensitive workloads.</span></div>
+  <div class="kc-maturity-step"><small>Layer 5</small><strong>Risk and session control</strong><span>Use user risk, sign-in risk, Defender device risk, app-enforced restrictions and session controls.</span></div>
+  <div class="kc-maturity-step"><small>Layer 6</small><strong>Workload-specific policies</strong><span>Apply tailored controls for Exchange, SharePoint, Teams, OneDrive, Azure and Copilot scenarios.</span></div>
+</div>
 
 ## Recommended Enterprise Policies
 
-## Policy 1
-
-### Require MFA for All Users
-
-Scope:
-
-All Users
-
-Exclude:
-
-- Break Glass Accounts
-
-Control:
-
-Require MFA
-
-Priority:
-
-Highest
-
----
-
-## Policy 2
-
-### Block Legacy Authentication
-
-Scope:
-
-All Users
-
-Protocols:
-
-- POP3
-- IMAP
-- SMTP AUTH
-- Basic Authentication
-
-Control:
-
-Block Access
-
-Priority:
-
-Critical
-
-## Policy 3
-
-### Require Compliant Device
-
-Applications:
-
-- Exchange Online
-- SharePoint Online
-- Teams
-- OneDrive
-
-Control:
-
-Require Compliant Device
-
-Priority:
-
-High
-
----
-
-## Policy 4
-
-### Administrative Account Protection
-
-Scope:
-
-- Global Administrator
-- Security Administrator
-- Exchange Administrator
-- SharePoint Administrator
-
-Controls:
-
-- MFA
-- Compliant Device
-- PIM
-
-Priority:
-
-Critical
-
----
-
-## Policy 5
-
-### High Risk User Protection
-
-Condition:
-
-User Risk = High
-
-Controls:
-
-- Block Access
-
-or
-
-- Password Change Required
-
-Priority:
-
-Critical
-
----
-
-## Policy 6
-
-### High Risk Sign-In Protection
-
-Condition:
-
-Sign-In Risk = High
-
-Controls:
-
-- Block Access
-
-Priority:
-
-Critical
-
----
-
-## Break Glass Account Design
-
-## Purpose
-
-Provide emergency access when Conditional Access or MFA becomes unavailable.
-
----
-
-## Recommended Configuration
-
-Accounts:
-
-Minimum 2
-
-Requirements:
-
-- Cloud Only
-- Excluded from CA
-- Excluded from MFA
-- Long Complex Password
-
-Monitoring:
-
-Mandatory
-
----
-
-## Security Controls
-
-- No Mailbox
-- No Daily Usage
-- Alert on Sign-In
-- Quarterly Validation
-
----
-
-## Device Compliance Design
-
-## Compliant Device Requirements
-
-### Windows
-
-- BitLocker Enabled
-- Defender Active
-- Latest Updates Installed
-
-### macOS
-
-- Defender Active
-- Encryption Enabled
-
-### Mobile
-
-- Passcode Enabled
-- Not Rooted
-- Not Jailbroken
-
----
-
-## SharePoint and OneDrive Protection
-
-## Managed Device
-
-Allow:
-
-- Download
-- Sync
-- Print
-
----
-
-## Unmanaged Device
-
-Allow:
-
-- Browser View
-
-Block:
-
-- Download
-- Sync
-- Print
-
----
-
-## Copilot Security Integration
-
-Copilot inherits user permissions.
-
-Conditional Access should protect:
-
-- SharePoint Online
-- OneDrive
-- Teams
-- Exchange Online
-
-before Copilot deployment.
-
----
-
-## Recommended Copilot Controls
-
-Required:
-
-- MFA
-- Compliant Device
-
-Recommended:
-
-- Sensitivity Labels
-- DLP
-- Defender Device Risk
-
----
-
-## Global Secure Access Integration
-
-## Use Cases
-
-- Tenant Restriction
-- Microsoft Traffic Control
-- Corporate Access Enforcement
-
----
-
-## Recommended Design
-
-Allow:
-
-- Corporate Tenant
-
-Block:
-
-- Personal Microsoft Accounts
-- Unauthorized Tenants
-
----
-
-## Deployment Methodology
-
-## Phase 1
-
-Assessment
-
-Activities:
-
-- Identity Review
-- Device Review
-- Application Review
-
----
-
-## Phase 2
-
-Pilot
-
-Activities:
-
-- IT Team
-- Security Team
-- Executive Validation
-
----
-
-## Phase 3
-
-Production Rollout
-
-Activities:
-
-- User Communication
-- Monitoring
-- Incident Support
-
----
+<div class="kc-entry-hub" aria-label="Recommended Conditional Access policies">
+  <a href="/knowledge/security/zero-trust-framework"><small>MFA</small><strong>Require MFA for all users</strong><span>Scope all users, exclude emergency access accounts and monitor report-only impact first.</span></a>
+  <a href="/knowledge/microsoft365/exchange-online"><small>Legacy</small><strong>Block legacy authentication</strong><span>Block protocols and clients that bypass modern authentication controls.</span></a>
+  <a href="/knowledge/knowledge-center/intune-ios-compliance"><small>Device</small><strong>Require compliant device</strong><span>Apply to Exchange, SharePoint, Teams and OneDrive after device readiness is validated.</span></a>
+  <a href="/knowledge/security/security-architecture"><small>Admin</small><strong>Protect administrative accounts</strong><span>Require MFA, compliant device, trusted location and stronger session controls for privileged roles.</span></a>
+  <a href="/knowledge/security/purview"><small>Data</small><strong>Restrict unmanaged device downloads</strong><span>Use app-enforced restrictions and session controls for sensitive SharePoint and OneDrive access.</span></a>
+  <a href="/knowledge/copilot/readiness"><small>Copilot</small><strong>Control Copilot access</strong><span>Align Copilot pilot groups, device posture, data permission and session policies.</span></a>
+</div>
+
+## Deployment Journey
+
+<div class="kc-operating-model" aria-label="Conditional Access deployment journey">
+  <div class="kc-operating-stage"><small>Design</small><strong>Policy matrix</strong><span>Define user scope, application, condition, control, exclusion, owner and validation method.</span></div>
+  <div class="kc-operating-stage"><small>Simulate</small><strong>Report-only mode</strong><span>Run policy in report-only mode and review sign-in logs before enforcement.</span></div>
+  <div class="kc-operating-stage"><small>Pilot</small><strong>Controlled pilot group</strong><span>Apply to pilot users, admin roles or selected workloads with support readiness.</span></div>
+  <div class="kc-operating-stage"><small>Enforce</small><strong>Staged rollout</strong><span>Expand by group, workload or risk level, then monitor support tickets and sign-in failures.</span></div>
+</div>
+
+## Exception and Lockout Control
+
+<div class="kc-context-panel" aria-label="Conditional Access exception and lockout control">
+  <div class="kc-context-panel__lead"><small>Lockout Prevention</small><strong>Every Conditional Access program needs emergency access and exception governance.</strong><span>Security posture improves only if the policy can be operated. Break-glass accounts, exclusions, owner review and expiry dates prevent accidental business outages.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/security/security-architecture"><small>Break-glass</small><strong>Emergency access accounts</strong><span>Exclude emergency accounts, monitor them and test access periodically.</span></a>
+    <a href="/knowledge/downloads/risk-register-template"><small>Exception</small><strong>Exception register</strong><span>Track reason, owner, expiry, compensating control and review cadence.</span></a>
+    <a href="/knowledge/security/defender-xdr"><small>Monitoring</small><strong>Sign-in and incident review</strong><span>Review sign-in logs, failure patterns, risky users and Defender signals.</span></a>
+    <a href="/knowledge/contact"><small>Support</small><strong>Support readiness</strong><span>Prepare user communication, help desk scripts and rollback path before enforcement.</span></a>
+    <a href="/knowledge/proposal/governance-model"><small>Governance</small><strong>Approval model</strong><span>Define who approves policy, exceptions, changes and emergency rollback.</span></a>
+    <a href="/knowledge/downloads/overview"><small>Asset</small><strong>Request policy matrix</strong><span>Request a Conditional Access matrix, rollout checklist or exception register template.</span></a>
+  </div>
+</div>
+
+## Copilot Access Control
+
+Copilot access control should not be designed as a standalone AI policy. It should inherit the Microsoft 365 access baseline while adding AI-specific readiness checks.
+
+<div class="kc-platform-fit" aria-label="Copilot Conditional Access considerations">
+  <div class="kc-platform-fit__card"><small>Identity</small><strong>Pilot group and role scope</strong><span>Start with selected Copilot users, privileged roles and business scenarios.</span></div>
+  <div class="kc-platform-fit__card"><small>Device</small><strong>Compliant or managed device</strong><span>Review whether Copilot access should require managed devices for sensitive roles.</span></div>
+  <div class="kc-platform-fit__card"><small>Session</small><strong>Session and download restrictions</strong><span>Align SharePoint, OneDrive and Teams access restrictions with Copilot data exposure risk.</span></div>
+  <div class="kc-platform-fit__card"><small>Data</small><strong>Permission hygiene</strong><span>Conditional Access does not fix oversharing. Review data permissions and information architecture.</span></div>
+  <div class="kc-platform-fit__card"><small>Risk</small><strong>Risk-based controls</strong><span>Use user risk, sign-in risk and device risk signals for sensitive access paths.</span></div>
+  <div class="kc-platform-fit__card"><small>Adoption</small><strong>User guidance</strong><span>Explain why access controls exist so adoption does not become a support problem.</span></div>
+</div>
 
 ## Common Mistakes
 
-## No Break Glass Account
+<div class="kc-platform-fit" aria-label="Conditional Access common mistakes">
+  <div class="kc-platform-fit__card"><small>Scope</small><strong>Applying broad policies too quickly</strong><span>Use report-only and pilot scope before organization-wide enforcement.</span></div>
+  <div class="kc-platform-fit__card"><small>Exclusions</small><strong>Permanent broad exclusions</strong><span>Every exclusion should have owner, reason, expiry and compensating control.</span></div>
+  <div class="kc-platform-fit__card"><small>Admin</small><strong>Not separating admin policies</strong><span>Privileged roles need stronger controls and different monitoring than standard users.</span></div>
+  <div class="kc-platform-fit__card"><small>Device</small><strong>Requiring compliance before readiness</strong><span>Confirm Intune enrollment, device inventory and support path before enforcing device controls.</span></div>
+  <div class="kc-platform-fit__card"><small>Communication</small><strong>No user communication</strong><span>Restrictive policies without explanation create support load and user resistance.</span></div>
+  <div class="kc-platform-fit__card"><small>Copilot</small><strong>Treating Copilot as only a license issue</strong><span>Copilot readiness also needs identity, device, data and session control alignment.</span></div>
+</div>
 
-Risk:
+## Search Keywords
 
-Tenant Lockout
-
----
-
-## No Pilot Group
-
-Risk:
-
-Business Disruption
-
----
-
-## Legacy Authentication Not Blocked
-
-Risk:
-
-Credential Attack
-
----
-
-## Broad Exclusions
-
-Risk:
-
-Security Gaps
-
----
-
-## Missing Device Compliance
-
-Risk:
-
-Unmanaged Access
-
----
-
-## Operational KPIs
-
-| KPI | Target |
-|-------|---------|
-| MFA Adoption | 100% |
-| Legacy Authentication | 0% |
-| Compliant Devices | >95% |
-| High Risk Sign-Ins | Monitor |
-| Break Glass Validation | Quarterly |
-
----
-
-## Deliverables
-
-- Conditional Access Assessment
-- Policy Design Matrix
-- Break Glass Design
-- Deployment Plan
-- Validation Report
-- Operational Runbook
-
----
-
-## Frequently Asked Questions
-
-### What is the most important Conditional Access design principle?
-
-Design Conditional Access as a layered control model, not as a random collection of policies. Baseline, privileged access, unmanaged device, risk-based and workload-specific controls should each have a clear purpose and owner.
-
-### Should policies be enforced immediately?
-
-High-impact policies should usually start with report-only mode or a scoped pilot group. Review sign-in logs, user impact and service dependencies before broad enforcement.
-
-### How does Conditional Access affect Copilot?
-
-Copilot follows Microsoft 365 access boundaries. Conditional Access should ensure that Copilot users access data from trusted identities, compliant devices and approved session conditions.
-
-### What evidence should be prepared?
-
-Prepare policy list, assignments, exclusions, report-only impact, sign-in log validation, break-glass test result, pilot approval and rollback plan.
-
-## Evidence Checklist
-
-| Evidence | Purpose |
-|---|---|
-| Policy matrix | explain purpose, scope, condition, control and owner |
-| Sign-in impact review | validate report-only or pilot impact before enforcement |
-| Break-glass validation | prove emergency access still works and is monitored |
-| Device compliance result | confirm managed device requirement is enforceable |
-| Exception register | keep exclusions time-bound, approved and reviewable |
-| Copilot access validation | confirm Copilot access follows intended identity and device controls |
-
----
-
-## MVP 커뮤니티 기반 설계 메모
-
-Microsoft security community에서 반복적으로 확인되는 패턴은 Conditional Access를 개별 policy 모음이 아니라 layered control model로 설계해야 한다는 것입니다.
-
-Enterprise 환경에서는 다음 원칙을 기준으로 설계하는 것이 좋습니다.
-
-- break-glass account는 일반 enforcement에서 제외하되 별도로 모니터링합니다.
-- 업무 영향이 큰 control은 report-only mode 또는 scoped pilot으로 시작합니다.
-- baseline security policy, high-risk user policy, privileged role policy, unmanaged device policy를 분리합니다.
-- 전체 배포 전에 sign-in log로 각 policy의 영향을 검증합니다.
-- policy purpose, owner, scope, exclusion, review date를 기록해 policy sprawl을 방지합니다.
-- Conditional Access를 Intune compliance, Defender device risk, Copilot access requirement와 함께 설계합니다.
-
-## 한국어 검색 키워드
-
-이 문서는 다음과 같은 한국어 검색어와도 관련됩니다.
-
-- Entra ID Conditional Access
-- Conditional Access 설계
-- Zero Trust Conditional Access
-- MFA policy design
-- Intune compliant device access control
-- Copilot access control policy
-
-## 커뮤니티 및 공식 참고 자료
-
-- [Daniel Chronlund Cloud Security Blog](https://danielchronlund.com/)
-- [Microsoft Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)
-- [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
-
----
-
-## Related Documents
-
-- Zero Trust Framework
-- Security Architecture
-- Microsoft Defender
-- Microsoft Intune
-- Copilot Readiness
-- Global Secure Access
+- Microsoft Entra Conditional Access
+- Conditional Access design
+- Conditional Access policy matrix
+- MFA enforcement
+- compliant device policy
+- Zero Trust access control
+- Copilot access control
+- Conditional Access report-only
+- Conditional Access break glass account
+- Entra ID 보안 정책
+- Conditional Access 컨설팅
 
 ## Contact / Asset Request
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+For Conditional Access policy matrices, report-only rollout checklists, exception registers or Copilot access-control templates, use [Contact and Asset Request](/knowledge/contact).
