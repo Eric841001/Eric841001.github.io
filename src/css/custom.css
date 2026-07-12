@@ -606,6 +606,44 @@ a.kc-pathway-step:hover {
   line-height: 1.62;
 }
 
+.kc-topic-hero--agent {
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.86fr);
+  align-items: stretch;
+}
+
+.kc-topic-hero--agent h2 {
+  max-width: 680px;
+  font-size: clamp(2.45rem, 4.1vw, 3.85rem);
+  line-height: 1.04;
+}
+
+.kc-topic-hero--agent p {
+  max-width: 720px;
+}
+
+.kc-hero-signal-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  max-width: 620px;
+  margin-top: 1.15rem;
+}
+
+.kc-hero-signal-row span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #cfe0f3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  color: #0f3157;
+  font-size: 0.82rem;
+  font-weight: 900;
+  box-shadow: 0 10px 22px rgba(15, 49, 87, 0.07);
+}
+
 .kc-topic-hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1217,6 +1255,10 @@ a.kc-pathway-step:hover {
 
   .kc-topic-hero h2 {
     font-size: 2.35rem;
+  }
+
+  .kc-hero-signal-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .kc-topic-button,

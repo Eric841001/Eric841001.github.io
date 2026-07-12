@@ -17,8 +17,14 @@ keywords:
 <section class="kc-topic-hero kc-topic-hero--agent" aria-label="AI Agent Factory landing hero">
   <div class="kc-topic-hero__content">
     <span class="kc-topic-hero__eyebrow">AI Agent Factory Operating Model</span>
-    <h2>From agent ideas to governed enterprise AI operations</h2>
-    <p>AI Agent Factory는 Copilot, Copilot Studio, Microsoft 365 Agents, SDK, Foundry와 multi-agent pattern을 하나의 운영 모델로 연결해 business value, security, approval, lifecycle, cost, telemetry를 함께 관리하는 접근입니다.</p>
+    <h2>Build governed AI agents, not one-off bots</h2>
+    <p>AI Agent Factory connects Copilot, Copilot Studio, Microsoft 365 Agents, SDK, Foundry and multi-agent patterns into one operating model. The goal is not to create many agents. The goal is to manage value, security, approval, lifecycle, cost and telemetry together.</p>
+    <div class="kc-hero-signal-row" aria-label="Agent Factory operating signals">
+      <span>Intake</span>
+      <span>Design</span>
+      <span>Govern</span>
+      <span>Operate</span>
+    </div>
     <div class="kc-topic-hero__actions" aria-label="AI Agent Factory entry points">
       <a class="kc-topic-button kc-topic-button--primary" href="../copilot/agent-factory-operating-model">Operating Model</a>
       <a class="kc-topic-button" href="../copilot/copilot-studio-2026-platform-update">2026 Platform Update</a>
@@ -35,22 +41,22 @@ keywords:
       <a href="#agent-factory-journey-map" class="kc-factory-card">
         <small>01</small>
         <strong>Intake</strong>
-        <span>Idea, value, owner, data readiness</span>
+        <span>Idea, value, owner and data readiness</span>
       </a>
       <a href="#platform-fit-guide" class="kc-factory-card">
         <small>02</small>
         <strong>Design</strong>
-        <span>Platform fit, actions, permission boundary</span>
+        <span>Platform fit, actions and permission boundary</span>
       </a>
       <a href="#factory-operating-model" class="kc-factory-card">
         <small>03</small>
         <strong>Govern</strong>
-        <span>Approval, audit, risk, cost forecast</span>
+        <span>Approval, audit, risk and cost forecast</span>
       </a>
       <a href="#what-good-looks-like" class="kc-factory-card">
         <small>04</small>
         <strong>Operate</strong>
-        <span>Quality, telemetry, incident, retirement</span>
+        <span>Quality, telemetry, incident and retirement</span>
       </a>
     </div>
     <div class="kc-guardrail-panel">
@@ -64,7 +70,7 @@ keywords:
   <div class="kc-context-panel__lead">
     <small>2026 Platform Context</small>
     <strong>Agent Factory is not a document library. It is an operating system for enterprise AI demand.</strong>
-    <span>The goal is not to create many agents. The goal is to create a governed system for identifying, approving, building, publishing, monitoring and retiring agents with measurable business value.</span>
+    <span>Teams need one path for capturing agent ideas, approving risk, choosing the right platform, measuring value and retiring weak agents.</span>
   </div>
   <div class="kc-context-panel__grid">
     <a href="../copilot/copilot-studio-2026-platform-update">
@@ -94,35 +100,17 @@ Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 �
 ## Agent Factory Journey Map
 
 <div class="kc-journey-map" aria-label="AI Agent Factory journey map">
-  <div class="kc-journey-node kc-journey-node--demand">
-    <small>01</small>
-    <strong>Business Demand</strong>
-    <span>Agent idea, process pain, repeated manual work</span>
+  <div class="kc-journey-map__header">
+    <span>Agent Factory Journey</span>
+    <strong>Business demand to governed operation</strong>
   </div>
-  <div class="kc-journey-node">
-    <small>02</small>
-    <strong>Governed Intake</strong>
-    <span>Value, owner, data source, risk profile</span>
-  </div>
-  <div class="kc-journey-node">
-    <small>03</small>
-    <strong>Build Pattern</strong>
-    <span>Copilot Studio, M365 Agents, SDK, Foundry</span>
-  </div>
-  <div class="kc-journey-node kc-journey-node--control">
-    <small>04</small>
-    <strong>Guardrails</strong>
-    <span>Identity, audit, approval, cost, telemetry</span>
-  </div>
-  <div class="kc-journey-node">
-    <small>05</small>
-    <strong>Agent Catalog</strong>
-    <span>Inventory, lifecycle, usage and quality signals</span>
-  </div>
-  <div class="kc-journey-node kc-journey-node--outcome">
-    <small>06</small>
-    <strong>Operate & Improve</strong>
-    <span>Review, optimize, consolidate, retire</span>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Demand</strong><span>Agent idea, process pain and repeated manual work.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Governed Intake</strong><span>Value, owner, data source, risk profile and approval path.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Build Pattern</strong><span>Copilot Studio, M365 Agents, SDK, Foundry or multi-agent architecture.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Guardrails</strong><span>Identity, audit, approval, cost and telemetry.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Agent Catalog</strong><span>Inventory, lifecycle, usage, owner and quality signal.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate & Improve</strong><span>Review, optimize, consolidate and retire.</span></div>
   </div>
 </div>
 
@@ -154,31 +142,11 @@ Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 �
 ## What Good Looks Like
 
 <div class="kc-maturity-ladder" aria-label="AI Agent Factory maturity ladder">
-  <div class="kc-maturity-step">
-    <small>Level 1</small>
-    <strong>Idea Collection</strong>
-    <span>Business teams submit agent ideas, but risk and value are not normalized yet.</span>
-  </div>
-  <div class="kc-maturity-step">
-    <small>Level 2</small>
-    <strong>Governed Intake</strong>
-    <span>Every candidate has owner, value hypothesis, data source, risk profile and approval path.</span>
-  </div>
-  <div class="kc-maturity-step">
-    <small>Level 3</small>
-    <strong>Pilot Factory</strong>
-    <span>Selected agents are built with reusable patterns, evaluation criteria and security gates.</span>
-  </div>
-  <div class="kc-maturity-step">
-    <small>Level 4</small>
-    <strong>Agent Portfolio</strong>
-    <span>Agents are tracked in a catalog with lifecycle, cost, quality and incident signals.</span>
-  </div>
-  <div class="kc-maturity-step">
-    <small>Level 5</small>
-    <strong>Operating Model</strong>
-    <span>Intake, build, publish, monitor, improve and retire run as repeatable platform capability.</span>
-  </div>
+  <div class="kc-maturity-step"><small>Level 1</small><strong>Idea Collection</strong><span>Business teams submit agent ideas, but risk and value are not normalized yet.</span></div>
+  <div class="kc-maturity-step"><small>Level 2</small><strong>Governed Intake</strong><span>Every candidate has owner, value hypothesis, data source, risk profile and approval path.</span></div>
+  <div class="kc-maturity-step"><small>Level 3</small><strong>Pilot Factory</strong><span>Selected agents are built with reusable patterns, evaluation criteria and security gates.</span></div>
+  <div class="kc-maturity-step"><small>Level 4</small><strong>Agent Portfolio</strong><span>Agents are tracked in a catalog with lifecycle, cost, quality and incident signals.</span></div>
+  <div class="kc-maturity-step"><small>Level 5</small><strong>Operating Model</strong><span>Intake, build, publish, monitor, improve and retire run as repeatable platform capability.</span></div>
 </div>
 
 ## Platform Fit Guide
@@ -187,7 +155,7 @@ Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 �
   <div class="kc-platform-fit__card">
     <small>Business-owned workflow</small>
     <strong>Copilot Studio agent</strong>
-    <span>Good for knowledge-grounded assistant and low-code iteration. Focus on connector permissions, publishing approval and usage monitoring.</span>
+    <span>Good for knowledge-grounded assistants and low-code iteration. Focus on connector permissions, publishing approval and usage monitoring.</span>
   </div>
   <div class="kc-platform-fit__card">
     <small>Microsoft 365 flow</small>
@@ -236,30 +204,12 @@ Measure reuse, task completion, quality, user satisfaction, incident count, cost
 ## Recommended Entry Points
 
 <div class="kc-entry-hub" aria-label="Recommended AI Agent Factory entry points">
-  <a href="../copilot/agentic-ai-architecture">
-    <small>Architecture</small>
-    <strong>Agentic AI Architecture</strong>
-  </a>
-  <a href="../copilot/copilot-studio">
-    <small>Build</small>
-    <strong>Copilot Studio</strong>
-  </a>
-  <a href="../copilot/copilot-studio-2026-platform-update">
-    <small>Update</small>
-    <strong>Copilot Studio 2026 Platform Update</strong>
-  </a>
-  <a href="../copilot/multi-agent-framework">
-    <small>Pattern</small>
-    <strong>Multi-Agent Framework</strong>
-  </a>
-  <a href="../copilot/agent-factory-operating-model">
-    <small>Operate</small>
-    <strong>Agent Factory Operating Model</strong>
-  </a>
-  <a href="../projects/case-study-enterprise-ai-agent-factory">
-    <small>Reference</small>
-    <strong>Enterprise AI Agent Factory Case Study</strong>
-  </a>
+  <a href="../copilot/agentic-ai-architecture"><small>Architecture</small><strong>Agentic AI Architecture</strong><span>Reference architecture for agents, orchestration and governed automation.</span></a>
+  <a href="../copilot/copilot-studio"><small>Build</small><strong>Copilot Studio</strong><span>Low-code agent creation, connectors, topics, actions and publishing model.</span></a>
+  <a href="../copilot/copilot-studio-2026-platform-update"><small>Update</small><strong>Copilot Studio 2026 Platform Update</strong><span>Latest platform context for skills, memory, computer use, A2A and governance.</span></a>
+  <a href="../copilot/multi-agent-framework"><small>Pattern</small><strong>Multi-Agent Framework</strong><span>Specialist agents, coordination boundaries, human review and failure handling.</span></a>
+  <a href="../copilot/agent-factory-operating-model"><small>Operate</small><strong>Agent Factory Operating Model</strong><span>Intake, approval, catalog, telemetry, incident response and retirement.</span></a>
+  <a href="../projects/case-study-enterprise-ai-agent-factory"><small>Reference</small><strong>Enterprise AI Agent Factory Case Study</strong><span>Anonymized customer success pattern for governed enterprise agents.</span></a>
 </div>
 
 ## Requestable Assets
