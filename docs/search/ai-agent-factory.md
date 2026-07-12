@@ -14,11 +14,11 @@ keywords:
 
 # AI Agent Factory
 
-<section class="kc-topic-hero kc-topic-hero--agent" aria-label="AI Agent Factory landing hero">
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="AI Agent Factory landing hero">
   <div class="kc-topic-hero__content">
     <span class="kc-topic-hero__eyebrow">AI Agent Factory Operating Model</span>
-    <h2>Build governed AI agents, not one-off bots</h2>
-    <p>AI Agent Factory connects Copilot, Copilot Studio, Microsoft 365 Agents, SDK, Foundry and multi-agent patterns into one operating model. The goal is not to create many agents. The goal is to manage value, security, approval, lifecycle, cost and telemetry together.</p>
+    <h2>From agent ideas to governed enterprise AI operations</h2>
+    <p>AI Agent Factory connects Copilot, Copilot Studio, Microsoft 365 Agents, SDK, Foundry and multi-agent patterns into one operating model. The goal is to manage value, security, approval, lifecycle, cost and telemetry together.</p>
     <div class="kc-hero-signal-row" aria-label="Agent Factory operating signals">
       <span>Intake</span>
       <span>Design</span>

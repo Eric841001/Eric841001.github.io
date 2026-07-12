@@ -623,6 +623,70 @@ a.kc-pathway-step:hover {
   max-width: 720px;
 }
 
+.kc-topic-hero--compact-agent {
+  grid-template-columns: minmax(0, 0.98fr) minmax(360px, 0.82fr);
+  align-items: center;
+  padding: clamp(1.35rem, 2.8vw, 2rem);
+  gap: clamp(1.1rem, 2.4vw, 2rem);
+}
+
+.kc-topic-hero--compact-agent h2 {
+  max-width: 780px;
+  margin-bottom: 0.85rem;
+  font-size: clamp(2.25rem, 3.4vw, 3.35rem);
+  line-height: 1.08;
+}
+
+.kc-topic-hero--compact-agent p {
+  max-width: 760px;
+  font-size: clamp(1rem, 1.45vw, 1.12rem);
+  line-height: 1.58;
+}
+
+.kc-topic-hero--compact-agent .kc-topic-hero__eyebrow {
+  margin-bottom: 0.8rem;
+}
+
+.kc-topic-hero--compact-agent .kc-hero-signal-row {
+  max-width: 680px;
+  margin-top: 1rem;
+}
+
+.kc-topic-hero--compact-agent .kc-topic-hero__actions {
+  margin-top: 1.15rem;
+}
+
+.kc-topic-hero--compact-agent .kc-factory-panel {
+  padding: 1rem;
+}
+
+.kc-topic-hero--compact-agent .kc-factory-grid {
+  gap: 0.62rem;
+  margin-top: 0.8rem;
+}
+
+.kc-topic-hero--compact-agent .kc-factory-card {
+  min-height: 118px;
+  padding: 0.88rem;
+}
+
+.kc-topic-hero--compact-agent .kc-factory-card strong {
+  font-size: 1.05rem;
+}
+
+.kc-topic-hero--compact-agent .kc-factory-card span {
+  font-size: 0.82rem;
+  line-height: 1.38;
+}
+
+.kc-topic-hero--compact-agent .kc-guardrail-panel {
+  padding: 0.9rem;
+}
+
+.kc-topic-hero--compact-agent .kc-guardrail-panel span {
+  font-size: 0.86rem;
+}
+
 .kc-hero-signal-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
