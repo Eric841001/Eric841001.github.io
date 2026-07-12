@@ -3,28 +3,46 @@ id: security-architecture
 title: Enterprise Security Architecture
 description: "Enterprise Security Architecture - Modern enterprise security requires an integrated platform approach rather than isolated security products."
 sidebar_label: Security Architecture
+toc_max_heading_level: 2
 ---
 
 # Enterprise Security Architecture
 
+<section class="kc-topic-hero" aria-label="Enterprise security architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft Security Reference Architecture</span>
+    <h2>Make risk visible across identity, endpoint, data and AI</h2>
+    <p>Modern enterprise security requires an integrated platform approach. Identity, device, endpoint, email, data, AI and security operations controls should work as one architecture with measurable evidence, exception handling and response ownership.</p>
+    <div class="kc-hero-signal-row" aria-label="Security architecture signals">
+      <span>Identity</span>
+      <span>Endpoint</span>
+      <span>Data</span>
+      <span>SOC</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Security architecture related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/security/conditional-access">Conditional Access</a>
+      <a class="kc-topic-button" href="/knowledge/security/defender-xdr">Defender XDR</a>
+      <a class="kc-topic-button" href="/knowledge/security/purview">Purview</a>
+    </div>
+  </div>
 
-<div class="kc-outcome-grid" aria-label="Security architecture quick read cards">
-  <div class="kc-outcome-card">
-    <small>WHY</small>
-    <strong>Make risk visible</strong>
-    <span>Security architecture should explain which risks are reduced and which controls prove it.</span>
+  <div class="kc-factory-panel" aria-label="Enterprise security control model">
+    <div class="kc-factory-panel__header">
+      <span>Security Control Plane</span>
+      <strong>Zero Trust to operations</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#identity-security" class="kc-factory-card"><small>01</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access and risk-based policies.</span></a>
+      <a href="#device-security" class="kc-factory-card"><small>02</small><strong>Device</strong><span>Intune compliance, configuration, application and platform controls.</span></a>
+      <a href="#endpoint-protection" class="kc-factory-card"><small>03</small><strong>Defender</strong><span>Endpoint, email, XDR, vulnerability and incident response.</span></a>
+      <a href="#data-protection" class="kc-factory-card"><small>04</small><strong>Purview</strong><span>Labels, DLP, audit, insider risk and Copilot data protection.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Security architecture should prove which risks are reduced, which controls enforce them and who operates the response when controls trigger.</span>
+    </div>
   </div>
-  <div class="kc-outcome-card">
-    <small>DESIGN</small>
-    <strong>Layer Microsoft controls</strong>
-    <span>Connect identity, endpoint, email, data, cloud app, audit and response controls.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>OPERATE</small>
-    <strong>Own the response model</strong>
-    <span>Define SOC triage, exception handling, evidence, escalation and improvement cadence.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -53,37 +71,20 @@ Organizations must achieve:
 
 ## Security Reference Architecture
 
-```mermaid
-flowchart TD
-
-USER[Users]
-
-IDENTITY[Entra ID]
-
-DEVICE[Intune]
-
-ENDPOINT[Defender for Endpoint]
-
-EMAIL[Defender for Office 365]
-
-DATA[Purview]
-
-COPILOT[Microsoft 365 Copilot]
-
-SOC[Defender XDR & Sentinel]
-
-USER --> IDENTITY
-IDENTITY --> DEVICE
-DEVICE --> ENDPOINT
-IDENTITY --> EMAIL
-IDENTITY --> DATA
-IDENTITY --> COPILOT
-
-ENDPOINT --> SOC
-EMAIL --> SOC
-DATA --> SOC
-COPILOT --> SOC
-```
+<div class="kc-journey-map" aria-label="Enterprise security reference architecture">
+  <div class="kc-journey-map__header">
+    <span>Reference Architecture</span>
+    <strong>User access to detection and response</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User</strong><span>Workforce, admin, guest, partner and service identities.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Entra ID</strong><span>Authentication, Conditional Access, identity governance and risk signals.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Intune</strong><span>Device compliance, configuration, app protection and platform baselines.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Defender & Purview</strong><span>Endpoint, email, data protection, DLP, audit and insider risk controls.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Copilot Security</strong><span>Permission boundary, data protection, prompt behavior and AI governance.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>SOC</strong><span>Defender XDR, Sentinel, triage, incident response and evidence.</span></div>
+  </div>
+</div>
 
 ---
 
