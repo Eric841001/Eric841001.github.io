@@ -382,14 +382,19 @@ a.kc-pathway-step:hover {
 
 .kc-pathway {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+  gap: 1px;
+  background: #dbeafe;
 }
 
 .kc-pathway-step {
   position: relative;
   min-height: 190px;
-  padding: 1.1rem;
-  border-right: 1px solid #dbeafe;
+  min-width: 0;
+  padding: 1.15rem;
+  border-right: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 251, 255, 0.82));
+  overflow-wrap: anywhere;
 }
 
 .kc-pathway-step:last-child {
@@ -397,7 +402,7 @@ a.kc-pathway-step:hover {
 }
 
 .kc-pathway-step::after {
-  content: "";
+  content: none;
   position: absolute;
   top: 2.2rem;
   right: -0.45rem;
