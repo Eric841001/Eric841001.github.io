@@ -82,7 +82,12 @@
                 continue;
               }
 
-              const target = path.join(dir, basename);
+              const targetDir = path.join(dir, basename);
+              const target = path.join(targetDir, 'index.html');
+              if (!fs.existsSync(targetDir)) {
+                fs.mkdirSync(targetDir);
+              }
+
               if (!fs.existsSync(target)) {
                 fs.copyFileSync(source, target);
               }
