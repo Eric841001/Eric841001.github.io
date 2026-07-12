@@ -3,9 +3,46 @@ id: cross-tenant-sync-vs-migration
 title: Cross-Tenant Synchronization vs Full Tenant Migration
 description: "Cross Tenant Synchronization vs Full Tenant Migration - Cross Tenant Synchronization vs Full Tenant Migration"
 sidebar_label: Cross-Tenant Sync vs Migration
+toc_max_heading_level: 2
 ---
 
 # Cross-Tenant Synchronization vs Full Tenant Migration
+
+<section class="kc-topic-hero" aria-label="Cross-tenant strategy hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Tenant Strategy Decision</span>
+    <h2>Decide whether to connect tenants or consolidate them</h2>
+    <p>Cross-Tenant Synchronization and full tenant migration solve different business problems. The right answer depends on identity experience, data residency, collaboration model, Copilot readiness, security ownership and the future operating model.</p>
+    <div class="kc-hero-signal-row" aria-label="Cross-tenant decision signals">
+      <span>Identity</span>
+      <span>Data residency</span>
+      <span>UX</span>
+      <span>Copilot</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Cross-tenant related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/migration/global-tenant-consolidation-framework">Global Consolidation</a>
+      <a class="kc-topic-button" href="/knowledge/playbooks/tenant-to-tenant-migration-playbook">Migration Playbook</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Copilot Readiness</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Cross-tenant strategy visual">
+    <div class="kc-factory-panel__header">
+      <span>Decision Lens</span>
+      <strong>Connect, coexist or migrate</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#cross-tenant-synchronization" class="kc-factory-card"><small>01</small><strong>Sync</strong><span>Keep tenants separate while enabling identity-based collaboration.</span></a>
+      <a href="#full-tenant-migration" class="kc-factory-card"><small>02</small><strong>Migrate</strong><span>Move users and workloads into a target tenant for unified operations.</span></a>
+      <a href="#comparison-matrix" class="kc-factory-card"><small>03</small><strong>Compare</strong><span>Balance speed, risk, cost, governance and user experience.</span></a>
+      <a href="#real-world-recommendation" class="kc-factory-card"><small>04</small><strong>Decide</strong><span>Choose a path based on future operating model and Copilot strategy.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Do not choose migration only because it feels cleaner. Choose it when the future business model requires one tenant, one policy plane and one knowledge boundary.</span>
+    </div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -65,17 +102,20 @@ Examples:
 
 ## Decision Framework
 
-```mermaid
-flowchart TD
-
-A[Business Requirement]
-
-A --> B[Need Single Identity?]
-A --> C[Need Data Separation?]
-
-B --> D[Migration]
-C --> E[Cross Tenant Sync]
-```
+<div class="kc-journey-map" aria-label="Cross-tenant strategy decision framework">
+  <div class="kc-journey-map__header">
+    <span>Decision Framework</span>
+    <strong>Business requirement to architecture path</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business driver</strong><span>M&A, divestiture, regional compliance or global operating model.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Identity model</strong><span>One user experience or controlled multi-tenant collaboration.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Data boundary</strong><span>Local residency, legal entity autonomy and compliance ownership.</span></div>
+    <div class="kc-journey-node"><small>04</small><strong>Workload scope</strong><span>Exchange, SharePoint, OneDrive, Teams and shared applications.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>AI readiness</strong><span>Graph boundary, search, permissions and Copilot knowledge quality.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Decision</strong><span>Cross-Tenant Sync, coexistence runway or full tenant migration.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -95,18 +135,18 @@ Data remains in its original tenant.
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-TENANTA[HQ Tenant]
-
-TENANTB[Regional Tenant]
-
-SYNC[Cross Tenant Sync]
-
-TENANTA --> SYNC
-SYNC --> TENANTB
-```
+<div class="kc-journey-map" aria-label="Cross-tenant synchronization architecture">
+  <div class="kc-journey-map__header">
+    <span>Cross-Tenant Synchronization</span>
+    <strong>Identity connection while data remains separated</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>A</small><strong>Home tenant</strong><span>Users, mailboxes, files, Teams data and regional policies remain local.</span></div>
+    <div class="kc-journey-node"><small>B</small><strong>Entra Sync</strong><span>Cross-tenant access settings, inbound/outbound trust and user synchronization.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>C</small><strong>Policy boundary</strong><span>Conditional Access, MFA, guest controls and compliance rules remain tenant-aware.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>D</small><strong>Resource tenant</strong><span>Collaboration access improves without moving workload data.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -194,15 +234,19 @@ The source tenant is eventually decommissioned.
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-SOURCE[Source Tenant]
-
-TARGET[Target Tenant]
-
-SOURCE --> TARGET
-```
+<div class="kc-journey-map" aria-label="Full tenant migration architecture">
+  <div class="kc-journey-map__header">
+    <span>Full Tenant Migration</span>
+    <strong>Workloads move into one operating tenant</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assess</strong><span>Identity, Exchange, SharePoint, OneDrive, Teams, apps and compliance dependencies.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Target tenant, security baseline, governance model and migration waves.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Migrate</strong><span>Users, mailboxes, files, Teams, permissions and shared services.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Validate</strong><span>Access, data integrity, compliance, labels, DLP and support readiness.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Decommission</strong><span>Retire source tenant services after audit, support and exception closure.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -556,6 +600,9 @@ Activities:
 - migration rollback
 - Microsoft 365 마이그레이션
 - 마이그레이션 체크리스트
+- Cross-Tenant Synchronization
+- Entra ID 테넌트 동기화
+- Microsoft 365 Copilot tenant readiness
 
 ## Contact / Asset Request
 
