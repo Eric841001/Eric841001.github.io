@@ -3,6 +3,7 @@ id: zero-trust-framework
 title: Zero Trust Reference Architecture
 description: "Zero Trust Reference Architecture - It is an enterprise security architecture based on continuous verification, least privilege access, device trust,..."
 sidebar_label: Zero Trust Framework
+toc_max_heading_level: 2
 ---
 
 # Zero Trust Reference Architecture
@@ -14,6 +15,52 @@ Zero Trust is not a single product implementation.
 It is an enterprise security architecture based on continuous verification, least privilege access, device trust, data protection and security monitoring.
 
 For Microsoft cloud environments, Zero Trust should be designed across Microsoft Entra ID, Conditional Access, Intune, Defender, Purview and Microsoft 365 workloads.
+
+<section className="kc-topic-hero" aria-label="Zero Trust hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Zero Trust Reference Architecture</span>
+    <h2>Verify access, protect data and operate response continuously</h2>
+    <div className="kc-topic-hero__lede">Zero Trust becomes practical when identity, device trust, Conditional Access, Defender, Purview, Microsoft 365 workloads and operations evidence are designed together.</div>
+    <div className="kc-hero-signal-row" aria-label="Zero Trust signals">
+      <span>Verify</span>
+      <span>Limit</span>
+      <span>Protect</span>
+      <span>Respond</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Zero Trust operating model">
+    <div className="kc-factory-panel__header">
+      <span>Security Control Plane</span>
+      <strong>Identity to operations evidence</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#identity-security" className="kc-factory-card">
+        <small>01</small>
+        <strong>Identity</strong>
+        <span>Enforce MFA, Conditional Access, privileged access and guest lifecycle controls.</span>
+      </a>
+      <a href="#device-trust" className="kc-factory-card">
+        <small>02</small>
+        <strong>Device</strong>
+        <span>Use Intune compliance, security baseline and Defender for Endpoint signals.</span>
+      </a>
+      <a href="#data-protection" className="kc-factory-card">
+        <small>03</small>
+        <strong>Data</strong>
+        <span>Classify, label, retain and protect information with Microsoft Purview.</span>
+      </a>
+      <a href="#threat-protection" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Correlate incidents, tune alerts, define response process and review evidence.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Zero Trust rule</strong>
+      <span>Do not treat Zero Trust as a product rollout. Treat it as a phased control and evidence operating model.</span>
+    </div>
+  </div>
+</section>
 
 ---
 
@@ -29,34 +76,39 @@ For Microsoft cloud environments, Zero Trust should be designed across Microsoft
 
 ## Reference Architecture
 
-```mermaid
-flowchart TB
-    USER[Users] --> ID[Microsoft Entra ID]
-    DEVICE[Devices] --> INTUNE[Microsoft Intune]
-    APP[Applications] --> CA[Conditional Access]
-    DATA[Data] --> PURVIEW[Microsoft Purview]
-
-    ID --> CA
-    INTUNE --> CA
-    CA --> M365[Microsoft 365 Services]
-
-    M365 --> EXO[Exchange Online]
-    M365 --> TEAMS[Microsoft Teams]
-    M365 --> SPO[SharePoint Online]
-    M365 --> ODB[OneDrive]
-
-    DEFENDER[Microsoft Defender] --> XDR[Defender XDR]
-    EXO --> XDR
-    TEAMS --> XDR
-    SPO --> XDR
-    DEVICE --> XDR
-
-    PURVIEW --> DLP[Data Loss Prevention]
-    PURVIEW --> LABEL[Sensitivity Labels]
-    PURVIEW --> AUDIT[Audit and Compliance]
-
-    XDR --> SOC[Security Operations]
-```
+<div className="kc-journey-map" aria-label="Zero Trust reference architecture">
+  <div className="kc-journey-map__header">
+    <span>Reference Architecture</span>
+    <strong>Identity, device, data and operations as one control loop</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Users and apps</strong>
+      <span>Employees, guests, administrators, applications and workloads request access.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Entra and Intune</strong>
+      <span>Identity, risk, MFA, privileged access and device compliance create trust signals.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Conditional Access</strong>
+      <span>Policies evaluate user, device, location, application, risk and session context.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Data protection</strong>
+      <span>Purview labels, DLP, retention, audit and sharing controls protect information.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Security operations</strong>
+      <span>Defender XDR and Sentinel support detection, response, tuning and evidence review.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -201,31 +253,39 @@ Conditional Access should evaluate:
 
 ## Implementation Roadmap
 
-```mermaid
-gantt
-    title Zero Trust Implementation Roadmap
-    dateFormat  YYYY-MM-DD
-
-    section Identity Foundation
-    MFA and Legacy Auth Review        :a1, 2026-01-01, 2w
-    Conditional Access Baseline       :a2, after a1, 3w
-
-    section Device Trust
-    Intune Enrollment Strategy        :b1, after a1, 3w
-    Compliance Policy Deployment      :b2, after b1, 3w
-
-    section Data Protection
-    Sensitivity Label Design          :c1, after a2, 3w
-    DLP Policy Baseline               :c2, after c1, 3w
-
-    section Threat Protection
-    Defender Deployment Review        :d1, after b2, 3w
-    XDR Operations Model              :d2, after d1, 3w
-
-    section Governance
-    Operating Model                   :e1, after c2, 3w
-    Executive Review                  :e2, after e1, 1w
-```
+<div className="kc-journey-map" aria-label="Zero Trust implementation roadmap">
+  <div className="kc-journey-map__header">
+    <span>Implementation Roadmap</span>
+    <strong>Phase controls by dependency, risk and adoption impact</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Identity foundation</strong>
+      <span>MFA, legacy authentication review, Conditional Access baseline and privileged access.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Device trust</strong>
+      <span>Enrollment strategy, compliance policy, platform baseline and endpoint protection.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Data protection</strong>
+      <span>Sensitivity labels, DLP priority policy, retention and external sharing control.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Threat protection</strong>
+      <span>Defender review, XDR incident process, alert tuning and response ownership.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Governance</strong>
+      <span>Operating model, exception register, metrics, evidence pack and executive review.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

@@ -3,6 +3,7 @@ id: change-management-playbook
 title: Change Management Playbook
 description: "Enterprise Change Management Playbook - Technology deployment does not guarantee business adoption."
 sidebar_label: Change Management
+toc_max_heading_level: 2
 ---
 
 # Enterprise Change Management Playbook
@@ -15,25 +16,89 @@ Successful transformation requires structured change management that aligns lead
 
 This playbook provides a framework for driving user adoption and realizing business value from Microsoft 365, Copilot, Security and Digital Workplace initiatives.
 
+<section className="kc-topic-hero" aria-label="Change management hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Change Management</span>
+    <h2>Move from deployment to measurable adoption</h2>
+    <div className="kc-topic-hero__lede">Successful adoption connects leadership alignment, role-based communication, education, champion networks, office hours, support and continuous improvement.</div>
+    <div className="kc-hero-signal-row" aria-label="Change management signals">
+      <span>Leadership</span>
+      <span>Education</span>
+      <span>Champions</span>
+      <span>Analytics</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Change adoption operating model">
+    <div className="kc-factory-panel__header">
+      <span>Adoption Operating Model</span>
+      <strong>Business change to sustained usage</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#stakeholder-model" className="kc-factory-card">
+        <small>01</small>
+        <strong>Align</strong>
+        <span>Set sponsorship, steering committee, business leader and champion responsibilities.</span>
+      </a>
+      <a href="#communication-strategy" className="kc-factory-card">
+        <small>02</small>
+        <strong>Communicate</strong>
+        <span>Explain why the change matters and what each audience should do next.</span>
+      </a>
+      <a href="#education-framework" className="kc-factory-card">
+        <small>03</small>
+        <strong>Enable</strong>
+        <span>Deliver role-based learning, prompt clinics, use case workshops and office hours.</span>
+      </a>
+      <a href="#adoption-analytics" className="kc-factory-card">
+        <small>04</small>
+        <strong>Measure</strong>
+        <span>Use usage, VOC, ticket, training and business outcome signals to improve.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Adoption rule</strong>
+      <span>Do not measure success by license assignment alone. Measure behavior change, confidence, support demand and business outcomes.</span>
+    </div>
+  </div>
+</section>
+
 ---
 
 ## Change Management Framework
 
-```mermaid
-flowchart TB
-  Leadership["Leadership Alignment<br/>why change, expected outcome, sponsorship"]:::lead
-  Communication["Communication Strategy<br/>message, timing, audience, channel"]:::stage
-  Education["Education Program<br/>role-based learning and hands-on practice"]:::stage
-  Champions["Champion Network<br/>department support and peer influence"]:::stage
-  Support["Adoption Support<br/>office hours, helpdesk, prompt coaching"]:::stage
-  Analytics["Analytics and Improvement<br/>usage, VOC, blockers, value signals"]:::lead
-
-  Leadership --> Communication --> Education --> Champions --> Support --> Analytics
-  Analytics -. improvement loop .-> Communication
-
-  classDef lead fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div className="kc-journey-map" aria-label="Change management framework">
+  <div className="kc-journey-map__header">
+    <span>Change Management Framework</span>
+    <strong>Leadership signal to adoption improvement loop</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Leadership</strong>
+      <span>Confirm why change is needed, expected outcome and sponsorship behavior.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Communication</strong>
+      <span>Tailor message, timing, audience and channel by adoption phase.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Education</strong>
+      <span>Use role-based learning, hands-on practice and prompt coaching.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Champions</strong>
+      <span>Support departments, collect feedback and reinforce practical use cases.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Improve</strong>
+      <span>Use adoption analytics, VOC, blockers and value signals to refresh the program.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -298,19 +363,39 @@ Track:
 
 ## Continuous Improvement Model
 
-```mermaid
-flowchart LR
-  Education["Education<br/>role-based learning"]:::stage
-  Usage["Usage<br/>real work scenarios"]:::stage
-  Feedback["Feedback<br/>VOC, tickets, champions"]:::stage
-  Insights["Insights<br/>patterns, blockers, opportunities"]:::stage
-  Optimization["Optimization<br/>content, support, governance updates"]:::stage
-
-  Education --> Usage --> Feedback --> Insights --> Optimization
-  Optimization -. refresh curriculum .-> Education
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div className="kc-journey-map" aria-label="Continuous improvement model">
+  <div className="kc-journey-map__header">
+    <span>Continuous Improvement Model</span>
+    <strong>Learning, usage and feedback refresh the adoption system</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Education</strong>
+      <span>Role-based learning, scenario practice and prompt coaching.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Usage</strong>
+      <span>Real work scenarios in meetings, documents, analysis and collaboration.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Feedback</strong>
+      <span>VOC, ticket trends, champion input and office-hour questions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Insights</strong>
+      <span>Patterns, blockers, confidence gaps and use case opportunities.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Optimization</strong>
+      <span>Refresh content, support model, governance messages and next wave plan.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

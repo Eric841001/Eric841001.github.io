@@ -3,6 +3,7 @@ id: prompt-engineering
 title: Enterprise Prompt Engineering Framework
 description: "Enterprise Prompt Engineering Framework - Prompt Engineering is the foundation of successful Microsoft Copilot adoption."
 sidebar_label: Prompt Engineering
+toc_max_heading_level: 2
 ---
 
 # Enterprise Prompt Engineering Framework
@@ -24,6 +25,52 @@ They establish:
 Prompt Engineering is not a technical skill.
 
 It is a business capability.
+
+<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Prompt engineering hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Prompt Engineering</span>
+    <h2>Turn better prompts into governed AI work patterns</h2>
+    <div className="kc-topic-hero__lede">Prompt Engineering should connect business intent, trusted context, reusable output patterns, validation and the path from Copilot prompt to Copilot Studio agent.</div>
+    <div className="kc-hero-signal-row" aria-label="Prompt engineering signals">
+      <span>Intent</span>
+      <span>Context</span>
+      <span>Output</span>
+      <span>Governance</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Prompt operating model">
+    <div className="kc-factory-panel__header">
+      <span>Prompt Operating Model</span>
+      <strong>Reusable prompts to governed agents</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#r-t-c-o-c-model" className="kc-factory-card">
+        <small>01</small>
+        <strong>Design</strong>
+        <span>Define role, task, context, output and constraints before asking Copilot to act.</span>
+      </a>
+      <a href="#executive-prompt-library" className="kc-factory-card">
+        <small>02</small>
+        <strong>Reuse</strong>
+        <span>Package proven prompts for executive, architecture, security, adoption and proposal work.</span>
+      </a>
+      <a href="#prompt-quality-framework" className="kc-factory-card">
+        <small>03</small>
+        <strong>Review</strong>
+        <span>Check clarity, context, structure, constraints, output and repeatability.</span>
+      </a>
+      <a href="#prompt-governance" className="kc-factory-card">
+        <small>04</small>
+        <strong>Govern</strong>
+        <span>Assign owners, reviewers, approval path, library lifecycle and adoption measurement.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Prompt rule</strong>
+      <span>Do not publish enterprise prompts without an owner, validation criteria, sensitive-data boundary and reuse purpose.</span>
+    </div>
+  </div>
+</section>
 
 ---
 
@@ -57,21 +104,39 @@ These issues are usually caused by poor prompt design rather than AI limitations
 
 ## Enterprise Prompt Architecture
 
-```mermaid
-flowchart LR
-
-USER --> PROMPT
-
-PROMPT --> CONTEXT
-
-CONTEXT --> COPILOT
-
-COPILOT --> RESPONSE
-
-RESPONSE --> VALIDATION
-
-VALIDATION --> BUSINESS_ACTION
-```
+<div className="kc-journey-map" aria-label="Enterprise prompt architecture">
+  <div className="kc-journey-map__header">
+    <span>Enterprise Prompt Architecture</span>
+    <strong>User intent to validated business action</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User intent</strong>
+      <span>Business user defines the decision, document, analysis or action required.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Prompt structure</strong>
+      <span>Role, task, context, output and constraints shape the request.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Copilot response</strong>
+      <span>Copilot uses permitted Microsoft 365 context and instruction boundaries.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Validation</strong>
+      <span>Human reviewer checks accuracy, sensitivity, assumptions and completeness.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Business action</strong>
+      <span>Approved output becomes a decision, proposal, design, playbook or agent candidate.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -433,19 +498,39 @@ Every enterprise prompt should have:
 
 ## Lifecycle
 
-```mermaid
-flowchart LR
-
-CREATE --> REVIEW
-
-REVIEW --> APPROVE
-
-APPROVE --> PUBLISH
-
-PUBLISH --> USE
-
-USE --> IMPROVE
-```
+<div className="kc-journey-map" aria-label="Prompt lifecycle">
+  <div className="kc-journey-map__header">
+    <span>Prompt Lifecycle</span>
+    <strong>Create, review, publish, measure and improve</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Create</strong>
+      <span>Draft prompt with business purpose, audience, context and expected output.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Review</strong>
+      <span>Check quality, security, privacy, compliance and repeatability.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Approve</strong>
+      <span>Confirm owner, usage boundary, publication channel and change process.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Publish</strong>
+      <span>Release into prompt library, training material or Copilot Studio backlog.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Improve</strong>
+      <span>Use feedback, telemetry and quality review to update the prompt pattern.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
