@@ -3,6 +3,7 @@ id: multi-agent-framework
 title: Multi-Agent Framework
 description: "Multi Agent Framework - Enterprise AI is rapidly evolving from single agent experiences toward coordinated multi agent systems."
 sidebar_label: Multi-Agent Framework
+toc_max_heading_level: 2
 ---
 
 # Multi-Agent Framework

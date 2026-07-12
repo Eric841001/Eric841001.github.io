@@ -3,6 +3,7 @@ id: adoption-program
 title: Enterprise Copilot Adoption Program Framework
 description: "Enterprise Copilot Adoption Program Framework - Microsoft 365 Copilot adoption is not a one time training program."
 sidebar_label: Copilot Adoption Program
+toc_max_heading_level: 2
 ---
 
 # Enterprise Copilot Adoption Program Framework
