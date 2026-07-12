@@ -1,15 +1,12 @@
 (function () {
   const visualSelector =
-    '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom), .theme-doc-markdown .kc-ai-journey, .theme-doc-markdown .kc-signal-grid, .theme-doc-markdown .kc-asset-catalog, .theme-doc-markdown .kc-pathway';
+    '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom), .theme-doc-markdown .kc-ai-journey';
   let activeDialog = null;
 
   function getVisual(frame) {
     if (frame.tagName === 'IMG') return frame;
     if (
-      frame.classList.contains('kc-ai-journey') ||
-      frame.classList.contains('kc-signal-grid') ||
-      frame.classList.contains('kc-asset-catalog') ||
-      frame.classList.contains('kc-pathway')
+      frame.classList.contains('kc-ai-journey')
     ) {
       return frame;
     }
