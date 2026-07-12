@@ -3,6 +3,7 @@ id: e3-vs-e5
 title: Microsoft 365 E3 vs E5 Enterprise Decision Guide
 description: "Microsoft 365 E3 vs E5 Enterprise Decision Guide for service plan entitlement, Defender, Purview, Entra, Intune, Copilot readiness and Zero Trust decisions."
 sidebar_label: E3 vs E5 Decision Guide
+toc_max_heading_level: 2
 ---
 
 # Microsoft 365 E3 vs E5 Enterprise Decision Guide
@@ -21,19 +22,87 @@ Before making a recommendation, confirm whether the customer is using Office 365
 
 ---
 
+<section className="kc-topic-hero" aria-label="E3 vs E5 decision guide hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Licensing Decision</span>
+    <h2>Choose E3, E5 or add-ons based on required controls</h2>
+    <div className="kc-topic-hero__lede">The decision should connect actual service plan entitlement, security outcomes, compliance exposure, Copilot readiness, operational maturity and investment constraints.</div>
+    <div className="kc-hero-signal-row" aria-label="E3 vs E5 decision signals">
+      <span>Entitlement</span>
+      <span>Risk</span>
+      <span>Controls</span>
+      <span>Value</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="E3 vs E5 decision operating model">
+    <div className="kc-factory-panel__header">
+      <span>License Decision Model</span>
+      <strong>Current SKU to executive recommendation</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#service-plan-entitlement-check" className="kc-factory-card">
+        <small>01</small>
+        <strong>Verify</strong>
+        <span>Confirm Office 365 E3, Microsoft 365 E3, E5, add-ons and enabled service plans.</span>
+      </a>
+      <a href="#when-e3-is-appropriate" className="kc-factory-card">
+        <small>02</small>
+        <strong>Baseline</strong>
+        <span>Use E3 when productivity, collaboration and baseline governance are the main goals.</span>
+      </a>
+      <a href="#when-e5-is-appropriate" className="kc-factory-card">
+        <small>03</small>
+        <strong>Advance</strong>
+        <span>Use E5 when Zero Trust, XDR, compliance, identity protection or Copilot readiness are strategic.</span>
+      </a>
+      <a href="#e3--add-on-strategy" className="kc-factory-card">
+        <small>04</small>
+        <strong>Target</strong>
+        <span>Use add-ons only when the missing capability is narrow, justified and operationally owned.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Licensing rule</strong>
+      <span>Do not recommend a SKU by name alone. Validate actual service plans, enabled controls and operational ownership.</span>
+    </div>
+  </div>
+</section>
+
 ## Decision Framework
 
-```mermaid
-flowchart TB
-    BIZ[Business Requirements] --> SEC[Security Requirements]
-    SEC --> COMP[Compliance Requirements]
-    COMP --> OPS[Operational Maturity]
-    OPS --> COST[Cost and Investment Review]
-
-    COST --> E3[Microsoft 365 E3]
-    COST --> E5[Microsoft 365 E5]
-    COST --> HYBRID[E3 + Add-ons]
-```
+<div className="kc-journey-map" aria-label="E3 vs E5 decision framework">
+  <div className="kc-journey-map__header">
+    <span>Decision Framework</span>
+    <strong>Business requirement to SKU and add-on recommendation</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Business requirements</strong>
+      <span>Clarify modernization, security, compliance, Copilot and operational objectives.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Security requirements</strong>
+      <span>Map identity, endpoint, email, data, XDR, SOC and Zero Trust needs.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Compliance requirements</strong>
+      <span>Confirm DLP, labels, retention, audit, eDiscovery and insider risk expectations.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Operational maturity</strong>
+      <span>Assess who will own, monitor, tune and report each enabled control.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Decision</strong>
+      <span>Recommend E3, E5 or E3 plus targeted add-ons with business rationale.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -225,16 +294,39 @@ E5 should be positioned as a risk reduction and security modernization investmen
 
 ## Executive Recommendation Model
 
-```mermaid
-flowchart LR
-    E3[Microsoft 365 E3] --> BASE[Productivity and Governance Baseline]
-    E5[Microsoft 365 E5] --> SEC[Security and Compliance Modernization]
-    ADD[E3 + Add-ons] --> TARGET[Targeted Capability Expansion]
-
-    BASE --> DECIDE[Executive Decision]
-    SEC --> DECIDE
-    TARGET --> DECIDE
-```
+<div className="kc-journey-map" aria-label="Executive recommendation model">
+  <div className="kc-journey-map__header">
+    <span>Executive Recommendation Model</span>
+    <strong>Three paths to a defensible licensing decision</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>E3 baseline</strong>
+      <span>Productivity, collaboration and governance baseline with cost control.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>E5 modernization</strong>
+      <span>Security, compliance, Zero Trust, XDR, analytics and Copilot readiness.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>E3 plus add-ons</strong>
+      <span>Targeted capability expansion when requirements are narrow and owned.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Business case</strong>
+      <span>Compare risk reduction, tool consolidation, operating effort and adoption impact.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Executive decision</strong>
+      <span>Approve SKU direction, enablement sequence, owners, risks and review cadence.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

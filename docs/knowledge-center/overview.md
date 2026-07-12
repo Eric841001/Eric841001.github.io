@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Knowledge Center
 description: Microsoft 365, Azure, Security, Copilot, Migration and Licensing knowledge hub for enterprise consulting.
+toc_max_heading_level: 2
 ---
 
 # Knowledge Center
@@ -10,35 +11,87 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 이 영역은 단순한 기술 메모가 아니라 실제 고객 제안, architecture design, implementation, governance, 운영 handover에 바로 재사용할 수 있는 Enterprise Knowledge Base로 구성됩니다.
 
-<div class="kc-signal-grid" aria-label="Knowledge center navigation cards">
-  <a class="kc-signal-card" href="../copilot/overview">
-    <small>AI</small>
-    <strong>Start with Copilot and Agents</strong>
-    <span>Move from Copilot adoption to Copilot Studio, M365 Agents, AI Agent Factory and Cowork governance.</span>
-  </a>
-  <a class="kc-signal-card" href="../security/overview">
-    <small>SECURITY</small>
-    <strong>Secure the Platform</strong>
-    <span>Use Entra ID, Conditional Access, Defender, Purview, DLP and Information Barriers as one control model.</span>
-  </a>
-  <a class="kc-signal-card" href="../downloads/overview">
-    <small>ASSETS</small>
-    <strong>Reuse Delivery Assets</strong>
-    <span>Find public-safe templates, assessment patterns, SOW/WBS structures and requestable documents.</span>
-  </a>
-</div>
+<section className="kc-topic-hero" aria-label="Knowledge Center overview hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Knowledge Center</span>
+    <h2>Use Microsoft cloud knowledge as a reusable consulting system</h2>
+    <div className="kc-topic-hero__lede">This hub connects Microsoft 365, Security, Copilot, Azure, Migration, Licensing and Proposal assets into a public-safe reference platform for presales, architecture and delivery.</div>
+    <div className="kc-hero-signal-row" aria-label="Knowledge Center signals">
+      <span>AI</span>
+      <span>Security</span>
+      <span>Delivery</span>
+      <span>Assets</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Knowledge Center operating model">
+    <div className="kc-factory-panel__header">
+      <span>Knowledge Operating Model</span>
+      <strong>Field experience to reusable public-safe guidance</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="../copilot/overview" className="kc-factory-card">
+        <small>01</small>
+        <strong>AI adoption</strong>
+        <span>Start with Copilot, Copilot Studio, M365 Agents, AI Agent Factory and Cowork governance.</span>
+      </a>
+      <a href="../security/overview" className="kc-factory-card">
+        <small>02</small>
+        <strong>Security</strong>
+        <span>Use Entra ID, Conditional Access, Defender, Purview, DLP and Information Barriers together.</span>
+      </a>
+      <a href="../proposal/overview" className="kc-factory-card">
+        <small>03</small>
+        <strong>Proposal</strong>
+        <span>Translate knowledge into executive summary, SOW, WBS, risk and timeline assets.</span>
+      </a>
+      <a href="../downloads/overview" className="kc-factory-card">
+        <small>04</small>
+        <strong>Assets</strong>
+        <span>Request editable workbooks, templates, checklists and customer-ready examples.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Publishing rule</strong>
+      <span>Public pages explain reusable methods. Customer names, tenant IDs, commercial terms and internal files stay excluded.</span>
+    </div>
+  </div>
+</section>
 
 ## Knowledge Operating Model
 
-```mermaid
-flowchart TB
-  Source["Field Experience\nproposal, assessment, delivery"] --> Sanitize["Public-Safe Sanitization\nremove customer names, tenant IDs, commercial data"]
-  Sanitize --> Structure["Reusable Structure\narchitecture, playbook, checklist, template"]
-  Structure --> Publish["Knowledge Center\npublic guidance and reference patterns"]
-  Publish --> Reuse["Consulting Reuse\npresales, workshop, design, delivery"]
-  Reuse --> Improve["Lessons Learned\nupdate backlog and quality review"]
-  Improve --> Source
-```
+<div className="kc-journey-map kc-pathway" aria-label="Knowledge operating model">
+  <div className="kc-journey-map__header">
+    <span>Knowledge Operating Model</span>
+    <strong>Field experience to quality-reviewed reusable guidance</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Field experience</strong>
+      <span>Proposal, assessment, architecture, delivery and handover experience.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Sanitize</strong>
+      <span>Remove customer names, tenant IDs, commercial data and internal identifiers.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Structure</strong>
+      <span>Convert lessons into architecture, playbook, checklist, template or reference pattern.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Publish</strong>
+      <span>Release public-safe guidance, diagrams, decision models and asset request paths.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Improve</strong>
+      <span>Use feedback, search behavior, project lessons and quality review to update the hub.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -59,15 +112,39 @@ flowchart TB
 
 모든 문서는 아래 구조를 기준으로 작성합니다.
 
-```mermaid
-flowchart LR
-  Summary["Executive Summary"] --> Scenario["Business Scenario"]
-  Scenario --> Architecture["Architecture"]
-  Architecture --> Implementation["Implementation"]
-  Implementation --> Security["Security / Licensing"]
-  Security --> Lessons["Best Practice / Lessons Learned"]
-  Lessons --> References["References"]
-```
+<div className="kc-journey-map" aria-label="Standard article framework">
+  <div className="kc-journey-map__header">
+    <span>Standard Article Framework</span>
+    <strong>Executive context to references and asset request path</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Summary</strong>
+      <span>Executive conclusion, business impact and decision context.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Scenario</strong>
+      <span>Customer situation, pain point, requirement and success criteria.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Architecture</strong>
+      <span>Recommended design, control model, implementation and operating pattern.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Controls</strong>
+      <span>Security, licensing, cost, governance, risk and operation considerations.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Reuse</strong>
+      <span>Lessons learned, references, templates and Contact / Asset Request path.</span>
+    </div>
+  </div>
+</div>
 
 | Section | Description |
 |---|---|
