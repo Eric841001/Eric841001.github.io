@@ -1,221 +1,147 @@
 ---
 id: copilot-cowork-cost-governance
 title: Copilot Cowork Cost and Governance Guide
-description: "Copilot Cowork Cost and Governance Guide - Microsoft 365 Copilot Cowork is not just another chat interface. It is an agentic work execution capability..."
+description: Microsoft 365 Copilot Cowork governance guide for long-running work, Copilot Credits, access control, cost management, approval and value measurement.
 sidebar_label: Copilot Cowork Cost Governance
 ---
 
 # Copilot Cowork Cost and Governance Guide
 
+<section class="kc-topic-hero" aria-label="Copilot Cowork governance landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Long-Running AI Work Governance</span>
+    <h2>Move from chat to action only when ownership, approval and cost controls are ready</h2>
+    <p>Copilot Cowork is designed for complex, long-running, multi-tool work. That makes it powerful, but it also means organizations need access control, budget guardrails, security review, value measurement and operating ownership before broad rollout.</p>
+    <div class="kc-topic-hero__actions" aria-label="Copilot Cowork actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/copilot-adoption">Adoption Path</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/copilot-studio-2026-platform-update">Platform Update</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request Governance Checklist</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Copilot Cowork governance model">
+    <div class="kc-factory-panel__header"><span>Cowork Control Model</span><strong>Control first</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#when-to-use-cowork" class="kc-factory-card"><small>01</small><strong>Use case</strong><span>Reserve Cowork for work that is multi-step, long-running or crosses tools.</span></a>
+      <a href="#cost-and-billing-control-plane" class="kc-factory-card"><small>02</small><strong>Credits</strong><span>Plan Copilot Credits, budgets, alerts, hard caps and reporting.</span></a>
+      <a href="#approval-and-security-model" class="kc-factory-card"><small>03</small><strong>Approvals</strong><span>Require human review for sensitive actions, external communication and file changes.</span></a>
+      <a href="#value-review-model" class="kc-factory-card"><small>04</small><strong>Value</strong><span>Compare completed work, rework reduction, time saved, quality and credit consumption.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Cowork should not be the default for every prompt</strong><span>Keep quick reasoning in Copilot Chat. Use Cowork when the task needs sustained execution, tool use, approvals, cost visibility and an accountable owner.</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
-Microsoft 365 Copilot Cowork is not just another chat interface. It is an agentic work execution capability designed to run complex, long-running, multi-tool tasks across Microsoft 365 context and business workflows.
+Microsoft 365 Copilot Cowork is not just another chat interface. It is an agentic work execution capability for complex, long-running, multi-tool tasks across Microsoft 365 context and business workflows.
 
-That means adoption planning should not start with feature enablement alone. Organizations need to prepare licensing, usage-based billing, Copilot Credits, spending controls, security governance, and operating ownership before broad rollout.
+Adoption planning should therefore start with operating controls, not feature excitement. Organizations need to prepare access scope, usage-based billing, Copilot Credits, spending limits, budget alerts, security governance, approval workflows and ownership before broad rollout.
 
-This guide summarizes the practical questions that typically appear during Copilot Cowork planning:
+## 한국어 요약
 
-- Can Cowork be used with only a Microsoft 365 Copilot license?
-- How are Copilot Credits consumed?
-- How should Pay-as-you-go and prepaid credit models be compared?
-- Can administrators set user, group, or tenant-level spending limits?
-- What technical environment is required for pilot or field delivery execution?
+Copilot Cowork는 단순한 chat 기능이 아니라, 장기 실행 업무를 여러 도구와 Microsoft 365 context를 활용해 수행하는 agentic work execution 기능으로 보아야 합니다.
 
-## GPT-5.6 and Cowork Planning
+따라서 도입 시에는 "누가 사용할 수 있는가", "어떤 업무를 맡길 것인가", "비용은 누가 승인하는가", "민감한 작업은 누가 검토하는가", "성과는 어떻게 측정할 것인가"를 먼저 정해야 합니다.
 
-GPT-5.6 makes Copilot Cowork more important because users will naturally expect Copilot to handle more complex, multi-step work. That expectation should be guided into a controlled operating model.
+GPT-5.6처럼 reasoning이 강해질수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 enterprise 환경에서는 reasoning 성능보다 더 중요한 것이 approval, ownership, budget, security, monitoring입니다.
 
-| Planning Question | Governance Response |
-|---|---|
-| Is this a quick reasoning task or long-running work? | Keep quick tasks in Copilot Chat; route multi-step execution to Cowork only when ownership and cost are defined. |
-| Does the task need approval? | Require human approval for external communication, file changes, sensitive analysis or business-system actions. |
-| Which model should be used? | Provide model selection guidance where GPT-5.6 is available, but do not let model choice bypass policy. |
-| How is value measured? | Compare task completion, rework reduction, user time saved and credit consumption. |
-| Who owns the outcome? | Assign a business owner and operations reviewer before scaling Cowork scenarios. |
+## When To Use Cowork
 
-The practical rule is simple: stronger reasoning increases opportunity, but long-running work still needs budget, ownership, approval and monitoring.
+<div class="kc-platform-fit" aria-label="When to use Copilot Cowork">
+  <div class="kc-platform-fit__card"><small>Use Cowork</small><strong>Long-running work</strong><span>The task runs beyond a quick chat, needs intermediate steps, or continues while the user is not actively prompting.</span></div>
+  <div class="kc-platform-fit__card"><small>Use Cowork</small><strong>Multi-tool execution</strong><span>The task spans Microsoft 365 content, business files, plugins, browser use or workflow actions.</span></div>
+  <div class="kc-platform-fit__card"><small>Use Cowork</small><strong>Approval-driven work</strong><span>The task may change files, communicate externally, generate artifacts or affect downstream decisions.</span></div>
+  <div class="kc-platform-fit__card"><small>Stay in Chat</small><strong>Quick reasoning</strong><span>Simple summarization, brainstorming, drafting or Q&A should usually remain in Copilot Chat.</span></div>
+</div>
 
-```mermaid
-flowchart TB
-  UseCase["Cowork use case<br/>long-running work,<br/>multi-tool execution"]:::input
-  Access["Access decision<br/>pilot group, roles,<br/>discoverability"]:::phase
-  Billing["Credit model<br/>pay-as-you-go,<br/>pre-purchase plan"]:::phase
-  Guardrails["Governance guardrails<br/>spending limits,<br/>alerts, approvals"]:::phase
-  Review["Value review<br/>usage, risk, outcome,<br/>scale decision"]:::outcome
+## Cost and Billing Control Plane
 
-  UseCase --> Access --> Billing --> Guardrails --> Review
+Microsoft describes usage-based billing as actual usage measured in Copilot Credits. For Cowork planning, the cost discussion should focus on control, visibility and efficiency rather than price alone.
 
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-context-panel" aria-label="Copilot Cowork cost control plane">
+  <div class="kc-context-panel__lead"><small>Cost Control</small><strong>Budgeting must happen before adoption scales.</strong><span>Copilot Credits create flexibility, but long-running agentic work can consume variable resources. Teams should define budget owner, usage scope, reporting cadence and approval thresholds before expanding access.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/licensing/july-2026-microsoft-licensing-update"><small>Access</small><strong>Who can use Cowork?</strong><span>Limit access by pilot group, role, business scenario and readiness level.</span></a>
+    <a href="/knowledge/downloads/overview"><small>Budget</small><strong>How much can be spent?</strong><span>Define tenant, group or user budget limits, hard caps and alert thresholds.</span></a>
+    <a href="/knowledge/contact"><small>Request</small><strong>How are more credits approved?</strong><span>Create a credit request process before users hit limits during active work.</span></a>
+    <a href="/knowledge/copilot/governance"><small>Reporting</small><strong>Who reviews consumption?</strong><span>Review usage by user, group, feature, task type and value signal.</span></a>
+    <a href="/knowledge/copilot/roi-framework"><small>Value</small><strong>Was it worth the credits?</strong><span>Compare cost with task completion, quality, time saved and rework reduction.</span></a>
+    <a href="/knowledge/security/purview"><small>Compliance</small><strong>What needs retention?</strong><span>Review generated artifacts, prompts, responses, audit, eDiscovery and compliance needs.</span></a>
+  </div>
+</div>
 
----
+## Cost Drivers
 
-## 1. Cowork Requires Usage-Based Billing Planning
+<div class="kc-operating-model" aria-label="Copilot Cowork cost drivers">
+  <div class="kc-operating-stage"><small>Model</small><strong>Model use</strong><span>Reasoning depth and model selection can affect the resource profile of the task.</span></div>
+  <div class="kc-operating-stage"><small>Context</small><strong>Context retrieval</strong><span>Organizational context, files, Work IQ signals and knowledge search add work to the task.</span></div>
+  <div class="kc-operating-stage"><small>Tools</small><strong>Tool calls</strong><span>Plugins, browser use, business systems and workflow steps can increase cost and risk.</span></div>
+  <div class="kc-operating-stage"><small>Runtime</small><strong>Long-running orchestration</strong><span>Longer task duration, retry, evaluation and orchestration increase operational weight.</span></div>
+</div>
 
-Microsoft 365 Copilot user licensing is an entry point, but Copilot Cowork usage is billed through Copilot Credits. The cost is not based only on the number of prompts.
+## Task Complexity Model
 
-Microsoft describes Cowork pricing as usage-based, with task cost calculated from four primary inputs:
+<div class="kc-maturity-ladder" aria-label="Copilot Cowork task complexity model">
+  <div class="kc-maturity-step"><small>Light</small><strong>Focused task</strong><span>Small number of sources, limited reasoning and one primary output. Good for early pilot validation.</span></div>
+  <div class="kc-maturity-step"><small>Medium</small><strong>Structured business task</strong><span>Multiple sources, structured reasoning, several outputs and a clear reviewer. Good for role-based scenarios.</span></div>
+  <div class="kc-maturity-step"><small>Heavy</small><strong>Broad multi-step work</strong><span>Many sources, deep reasoning, many outputs, plugin or browser use and strong governance requirements.</span></div>
+  <div class="kc-maturity-step"><small>Restricted</small><strong>Sensitive or regulated work</strong><span>Requires human approval, legal/security review, retention decision and explicit value justification.</span></div>
+</div>
 
-| Cost Factor | Meaning |
-|---|---|
-| Model use | AI model resources selected for the task |
-| Context retrieval | Organizational context used during the task |
-| Tool calls | Actions performed across connected systems |
-| Runtime | Time and orchestration required to complete the work |
+## Approval and Security Model
 
-This is important because two requests that look similar to a user can consume different levels of credits depending on the number of systems, sources, actions, and reasoning steps involved.
+<div class="kc-journey-map" aria-label="Copilot Cowork approval and security journey">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User request</strong><span>User describes the long-running work and expected output.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Scope check</strong><span>Classify source data, target actions, external impact and expected cost.</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Approval gate</strong><span>Require review for file changes, external communication or sensitive analysis.</span></div>
+  <div class="kc-journey-node"><small>04</small><strong>Execution</strong><span>Cowork performs the task with Microsoft 365 context, tools and configured policies.</span></div>
+  <div class="kc-journey-node"><small>05</small><strong>Review</strong><span>Reviewer checks output quality, policy alignment, cost and follow-up actions.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Decision</strong><span>Accept, revise, escalate, reuse as pattern or retire the scenario.</span></div>
+</div>
 
----
+## Pilot Readiness
 
-## 2. Payment Options: Pay-as-you-go and P3
+<div class="kc-platform-fit" aria-label="Copilot Cowork pilot readiness">
+  <div class="kc-platform-fit__card"><small>Tenant</small><strong>Copilot and Cowork test tenant</strong><span>Tenant, user licensing, service availability and Microsoft 365 data readiness are prepared.</span></div>
+  <div class="kc-platform-fit__card"><small>Billing</small><strong>Usage-based billing configured</strong><span>Prepaid, pay-as-you-go or existing capacity model is understood and connected to billing ownership.</span></div>
+  <div class="kc-platform-fit__card"><small>Users</small><strong>Pilot groups selected</strong><span>Pilot users are mapped to light, medium and heavy task scenarios by role.</span></div>
+  <div class="kc-platform-fit__card"><small>Governance</small><strong>Spending policies and alerts</strong><span>Budget limits, alert recipients, credit request flow and expansion criteria are defined.</span></div>
+  <div class="kc-platform-fit__card"><small>Security</small><strong>Purview and compliance review</strong><span>Retention, audit, eDiscovery, sensitivity labels, DLP and compliance requirements are reviewed.</span></div>
+  <div class="kc-platform-fit__card"><small>Scenarios</small><strong>Measurable business workflows</strong><span>Scenarios are selected with success criteria, expected effort, owner and reviewer.</span></div>
+</div>
 
-Copilot Cowork cost planning should compare two common payment approaches.
+## Value Review Model
 
-| Option | Best Fit | Notes |
-|---|---|---|
-| Pay-as-you-go | Early pilots, variable demand, uncertain adoption | Flexible model based on actual usage |
-| Pre-purchase Plan (P3) | Predictable or high-volume usage | Prepaid credits with volume planning and discount considerations |
+<div class="kc-maturity-ladder" aria-label="Copilot Cowork value review model">
+  <div class="kc-maturity-step"><small>Value</small><strong>Meaningful workflow</strong><span>Does the workflow reduce effort, improve quality, shorten cycle time or reduce operational risk?</span></div>
+  <div class="kc-maturity-step"><small>Usage</small><strong>Credit consumption pattern</strong><span>Which personas and task types consume the most credits, and do they produce measurable outcomes?</span></div>
+  <div class="kc-maturity-step"><small>Quality</small><strong>Output review</strong><span>How often does the output need correction, escalation or additional human review?</span></div>
+  <div class="kc-maturity-step"><small>Risk</small><strong>Policy and data boundary</strong><span>Did the task stay within data, security, compliance and approval boundaries?</span></div>
+  <div class="kc-maturity-step"><small>Scale</small><strong>Expansion decision</strong><span>Expand only when value, usage, cost, risk and owner model are acceptable.</span></div>
+</div>
 
-Pay-as-you-go is usually easier for early experimentation because usage is not yet predictable. P3 can become more attractive when the organization has enough pilot data to estimate monthly or annual usage patterns.
+## Workshop Questions
 
-Before choosing a model, clarify these points:
-
-- Expected number of users
-- Expected task volume by persona
-- Light, medium, and heavy task mix
-- Budget owner
-- Azure subscription or billing account linkage
-- What happens when prepaid credits are exhausted
-- Whether unused prepaid credits expire at contract end
-
----
-
-## 3. Cost Controls Should Be Designed Before Enablement
-
-Agentic workloads can grow quickly once users discover valuable workflows. Cost governance should therefore be part of the activation plan, not a later operational cleanup.
-
-Recommended controls include:
-
-- Tenant-level spending limits
-- Group-level budgets
-- User-level credit limits
-- Monthly credit hard caps
-- Budget threshold alerts
-- Usage reporting by user, group, service, and agent
-- Credit request and approval workflow
-- Defined process for overage handling
-
-The Microsoft 365 admin center Cost Management experience is designed to help administrators allocate Copilot Credits, apply policy-based access and limits, monitor consumption, and prevent overspending.
-
----
-
-## 4. Discoverability and Access Scope
-
-Cowork discoverability is also an operating decision. Organizations should decide whether Cowork is visible to all Copilot users or limited to selected pilot groups.
-
-A conservative rollout model is recommended:
-
-1. Confirm billing and credit configuration.
-2. Define pilot users and groups.
-3. Configure access and discoverability.
-4. Set spending limits and alert thresholds.
-5. Run controlled business scenarios.
-6. Review usage, value, and risk signals.
-7. Expand only after the operating model is validated.
-
-This approach helps prevent uncontrolled usage while still allowing business teams to test realistic workflows.
-
----
-
-## 5. Pilot and FDE Readiness
-
-A Copilot Cowork pilot or field delivery execution effort requires more than documentation review. The team needs a testable environment where licensing, permissions, billing, governance, and workload scenarios can be validated.
-
-Recommended readiness items:
-
-| Area | Requirement |
-|---|---|
-| Tenant | Microsoft 365 tenant available for Copilot and Cowork testing |
-| Permissions | Admin or delegated access for billing, Copilot, and policy validation |
-| Billing | Usage-based billing configured with Pay-as-you-go or prepaid credits |
-| Users | Pilot users and test groups prepared |
-| Governance | Spending policies, credit limits, and approval model defined |
-| Security | Purview, audit, retention, and compliance requirements reviewed |
-| Scenarios | Business workflows selected for light, medium, and heavy task testing |
-
-If governance is part of the customer scope, the pilot should include policy validation, not just end-user task execution.
-
----
-
-## 6. Governance Questions for Customer Workshops
-
-Use the following questions in discovery or adoption workshops.
-
-### Licensing and Billing
-
-- Which users have Microsoft 365 Copilot licenses?
-- Which billing model will be used for Cowork?
-- Is an Azure subscription or billing account ready?
-- Who owns Copilot Credit budget approval?
-
-### Usage and Cost Control
-
-- Which groups can access Cowork first?
-- What is the monthly budget limit?
-- Are user-level or group-level hard caps required?
-- Who receives budget threshold alerts?
-- What is the process when users request more credits?
-
-### Security and Compliance
-
-- Does the organization require retention or eDiscovery coverage for Cowork artifacts?
-- Are Purview policies already defined?
-- Are sensitivity labels and DLP policies ready?
-- Are audit and compliance teams involved in pilot approval?
-
-### Operating Model
-
-- Who owns Copilot Cowork administration?
-- Who reviews usage reports?
-- Who approves expansion from pilot to production?
-- How will business value be measured?
-
----
-
-## 7. Practical Rollout Checklist
-
-Before enabling Copilot Cowork broadly, confirm the following:
-
-- Microsoft 365 Copilot user subscription licenses are assigned.
-- Usage-based billing is configured.
-- Pay-as-you-go or P3 model is selected.
-- Azure billing linkage is validated where required.
-- Pilot groups are defined.
-- Cowork discoverability is controlled.
-- Spending limits are configured.
-- Alert recipients are defined.
-- Usage reports are reviewed during pilot.
-- Purview and compliance requirements are assessed.
-- Business scenarios are categorized by expected effort.
-- Expansion criteria are agreed with stakeholders.
-
----
+<div class="kc-entry-hub" aria-label="Copilot Cowork workshop questions">
+  <a href="/knowledge/licensing/overview"><small>Licensing</small><strong>Who is eligible?</strong><span>Which users have Microsoft 365 Copilot licenses and which groups should see Cowork first?</span></a>
+  <a href="/knowledge/copilot/roi-framework"><small>Cost</small><strong>Who owns the budget?</strong><span>Who approves credit consumption, limits, alerts and overage handling?</span></a>
+  <a href="/knowledge/security/purview"><small>Compliance</small><strong>What must be retained?</strong><span>Which prompts, responses, artifacts, audit events or generated files require retention or eDiscovery?</span></a>
+  <a href="/knowledge/security/dlp"><small>Data</small><strong>Which data can be used?</strong><span>Are sensitivity labels, DLP policies and Microsoft 365 data boundaries ready?</span></a>
+  <a href="/knowledge/copilot/adoption-program"><small>Adoption</small><strong>Which workflows matter?</strong><span>Which role-based scenarios justify long-running AI work instead of simple chat?</span></a>
+  <a href="/knowledge/contact"><small>Operating Model</small><strong>Who runs the program?</strong><span>Who reviews usage reports, approves expansion and retires low-value scenarios?</span></a>
+</div>
 
 ## Recommended Adoption Pattern
 
-Start small, measure carefully, then expand.
+Start small, measure carefully, then expand. A strong first phase is not a full enterprise rollout. It is a controlled pilot with clear cost boundaries, selected users and measurable scenarios.
 
-A good first phase is not a full enterprise rollout. It is a controlled pilot with clear cost boundaries, selected users, and measurable scenarios. The pilot should answer three questions:
+The pilot should answer three questions:
 
 1. Which workflows create meaningful business value?
 2. How much credit consumption does each workflow pattern create?
 3. What governance controls are required before scale-out?
 
 Once these answers are available, the organization can move from technical enablement to a sustainable operating model.
-
----
 
 ## References
 
@@ -225,13 +151,16 @@ Once these answers are available, the organization can move from technical enabl
 ## 검색 키워드
 
 - Microsoft 365 Copilot
-- Copilot Studio
-- AI Agent governance
+- Copilot Cowork
+- Copilot Credits
+- usage-based billing
+- Copilot cost management
 - Copilot adoption
-- Copilot readiness
+- Copilot governance
 - Copilot 도입
 - AI Agent 운영 모델
+- 장기 실행 AI 업무
 
 ## Contact / Asset Request
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+For Copilot readiness workbooks, adoption roadmaps, Cowork governance checklists, cost models or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
