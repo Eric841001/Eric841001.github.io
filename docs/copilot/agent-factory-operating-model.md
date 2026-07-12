@@ -1,558 +1,204 @@
 ---
 id: agent-factory-operating-model
 title: Agent Factory and AI Operating Model
-description: "Agent Factory and AI Operating Model - The challenge is not creating one successful agent."
+description: Agent Factory operating model for governed enterprise AI agents, Copilot Studio, Microsoft 365 Agents, portfolio governance, release gates, adoption and value measurement.
 sidebar_label: Agent Factory
 ---
 
 # Agent Factory and AI Operating Model
 
-## Executive Summary
-
-Most organizations approach AI as isolated pilots.
-
-The challenge is not creating one successful agent.
-
-The challenge is creating, governing, operating and continuously improving hundreds of agents across the enterprise.
-
-Agent Factory provides a repeatable operating model for discovering, prioritizing, designing, deploying and managing enterprise AI agents.
-
-The objective is to establish an Enterprise AI Operating System.
-
----
-
-## 2026 Agent Platform Controls
-
-Copilot Studio has moved from simple chatbot creation toward a governed enterprise agent platform.
-
-Agent Factory design should now include:
-
-- New agent experience and enhanced orchestration
-- Microsoft IQ / Work IQ grounding strategy
-- Reusable skills and memory controls
-- Computer use and UI automation risk review
-- Agent inventory and readiness status
-- Microsoft Entra agent identities
-- Agent-to-agent (A2A) integration model
-- Copilot Credit forecasting and consumption monitoring
-
-Use [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update) as the current baseline before approving enterprise-scale agent delivery.
-
----
-
-## Why Agent Factory
-
-Without an operating model:
-
-- Agents are duplicated
-- Governance becomes inconsistent
-- Security risks increase
-- Business value is difficult to measure
-- Adoption becomes fragmented
-
-Agent Factory provides structure.
-
----
-
-## Enterprise AI Operating System
-
-```mermaid
-flowchart TB
-
-    STRATEGY[AI Strategy]
-
-    STRATEGY --> FACTORY[Agent Factory]
-
-    FACTORY --> PORTFOLIO[Agent Portfolio]
-
-    FACTORY --> GOVERNANCE[Governance]
-
-    FACTORY --> DELIVERY[Delivery]
-
-    FACTORY --> ANALYTICS[Analytics]
-
-    FACTORY --> VALUE[Business Value]
-```
-
----
-
-## Agent Factory Lifecycle
-
-```mermaid
-flowchart LR
-
-IDEA[Idea]
-
-IDEA --> ASSESS
-
-ASSESS[Assessment]
-
-ASSESS --> PRIORITY
-
-PRIORITY[Prioritization]
-
-PRIORITY --> DESIGN
-
-DESIGN --> BUILD
-
-BUILD --> TEST
-
-TEST --> DEPLOY
-
-DEPLOY --> OPERATE
-
-OPERATE --> IMPROVE
-```
-
----
-
-## Stage 1 - Idea Intake
-
-## Sources
-
-- Business Units
-- IT
-- Security
-- HR
-- Operations
-- Executive Requests
-- Innovation Programs
-- Promptathon
-- Agentathon
-
----
-
-## Intake Template
-
-| Item | Description |
-|--------|-------------|
-| Business Problem | What issue are we solving? |
-| Users | Who benefits? |
-| Current Process | Existing workflow |
-| Expected Benefit | Productivity, quality, cost |
-| Risk Level | Low / Medium / High |
-| Systems Required | Applications and data |
-
----
-
-## Stage 2 - Assessment
-
-## Assessment Dimensions
-
-| Area | Weight |
-|---------|--------|
-| Business Value | 30% |
-| Feasibility | 20% |
-| Adoption Potential | 15% |
-| Risk | 15% |
-| Data Readiness | 10% |
-| Strategic Alignment | 10% |
-
----
-
-## Stage 3 - Prioritization
-
-## Value vs Complexity
-
-```mermaid
-quadrantChart
-    title Agent Prioritization
-    x-axis Low Complexity --> High Complexity
-    y-axis Low Value --> High Value
-
-    quadrant-1 Invest
-    quadrant-2 Strategic
-    quadrant-3 Ignore
-    quadrant-4 Evaluate
-```
-
----
-
-## Stage 4 - Design
-
-## Design Components
-
-- Business Process
-- Agent Scope
-- Data Sources
-- Security Model
-- Knowledge Architecture
-- Tool Architecture
-- Agent identity and permission boundary
-- Copilot Credit consumption model
-- Evaluation and test-set strategy
-- Governance Controls
-- KPI Framework
-
----
-
-## Architecture Deliverables
-
-| Deliverable | Description |
-|------------|-------------|
-| Agent Design Document | Functional design |
-| Data Architecture | Knowledge sources |
-| Security Design | Access model |
-| Governance Plan | Ownership and controls |
-| Cost Forecast | Copilot Credit and capacity estimate |
-| Evaluation Pack | Test sets, expected answers and release criteria |
-
----
-
-## Stage 5 - Build
-
-## Microsoft Technology Stack
-
-| Layer | Technology |
-|---------|------------|
-| Personal Agent | Scout |
-| Team Agent | Agent Builder |
-| Business Agent | Copilot Studio |
-| Enterprise Agent | Foundry |
-| Agent Identity | Microsoft Entra |
-| Automation | Power Automate |
-| Integration | Logic Apps |
-| Data | Fabric |
-| Security | Defender |
-| Compliance | Purview |
-
----
-
-## Stage 6 - Test
-
-## Validation Areas
-
-- Functional
-- Security
-- Compliance
-- Data Quality
-- User Acceptance
-- Performance
-- Grounding quality
-- Action safety
-- Cost and capacity impact
-
-## Release Gates
-
-| Gate | Evidence |
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Agent Factory operating model hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Enterprise AI Operating Model</span>
+    <h2>Turn agent demand into a governed delivery system</h2>
+    <p>The hard part is not creating one useful agent. The hard part is discovering, approving, building, operating and retiring many agents without losing control of data, cost, ownership, quality and adoption.</p>
+    <div class="kc-hero-signal-row" aria-label="Agent Factory control signals">
+      <span>Intake</span>
+      <span>Release Gate</span>
+      <span>Portfolio</span>
+      <span>Value</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Agent Factory actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/copilot/copilot-studio-2026-platform-update">2026 Platform Baseline</a>
+      <a class="kc-topic-button" href="/knowledge/search/ai-agent-factory">AI Agent Factory</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request Templates</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Agent Factory executive visual">
+    <div class="kc-factory-panel__header">
+      <span>Factory System</span>
+      <strong>Governed enterprise scale</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#intake-and-prioritization" class="kc-factory-card"><small>01</small><strong>Intake</strong><span>Capture ideas, value, owner, users, data source and risk.</span></a>
+      <a href="#design-and-release-gates" class="kc-factory-card"><small>02</small><strong>Gate</strong><span>Review data, identity, actions, cost, evaluation and support model.</span></a>
+      <a href="#portfolio-operations" class="kc-factory-card"><small>03</small><strong>Operate</strong><span>Manage catalog, incidents, telemetry, lifecycle and retirement.</span></a>
+      <a href="#adoption-and-value-model" class="kc-factory-card"><small>04</small><strong>Measure</strong><span>Connect adoption, quality, hours saved and business outcomes.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Operating principle</strong>
+      <span>Build only the agents that have a clear owner, business value, knowledge boundary, approval path, monitoring signal and retirement rule.</span>
+    </div>
+  </div>
+</section>
+
+## 한국어 요약
+
+Agent Factory는 agent를 많이 만드는 공장이 아닙니다. business demand를 받아서 value, risk, owner, data boundary, approval, cost, telemetry를 확인한 뒤 운영 가능한 agent만 production으로 보내는 enterprise AI 운영 모델입니다.
+
+Copilot Studio, Microsoft 365 Agents, SDK, Foundry, multi-agent framework를 함께 쓰더라도 핵심은 동일합니다. agent idea가 들어오면 누가 책임지는지, 어떤 데이터에 접근하는지, 어떤 action을 실행하는지, 비용과 품질을 어떻게 볼 것인지가 먼저 정리되어야 합니다.
+
+## 2026 Platform Controls
+
+Agent Factory design should treat Copilot Studio and Microsoft 365 agent capabilities as governed platform components, not isolated tools.
+
+<div class="kc-platform-fit" aria-label="2026 platform controls">
+  <div class="kc-platform-fit__card"><small>Grounding</small><strong>Microsoft IQ and knowledge boundary</strong><span>Confirm whether the agent uses Microsoft 365 context, SharePoint, Dataverse, Fabric or external data.</span></div>
+  <div class="kc-platform-fit__card"><small>Runtime</small><strong>Skills, memory and workflows</strong><span>Reusable skills, persistent context and workflow actions need reuse, privacy and lifecycle rules.</span></div>
+  <div class="kc-platform-fit__card"><small>Automation</small><strong>Computer use and connectors</strong><span>UI automation, APIs and connectors require approval, rollback and audit design.</span></div>
+  <div class="kc-platform-fit__card"><small>Identity</small><strong>Entra agent identities</strong><span>Agent-level identity and permission models should be reviewed with least privilege and Conditional Access.</span></div>
+  <div class="kc-platform-fit__card"><small>Scale</small><strong>A2A and multi-agent patterns</strong><span>Agent-to-agent designs need orchestration boundaries, failure handling and human escalation.</span></div>
+  <div class="kc-platform-fit__card"><small>Cost</small><strong>Copilot Credit forecasting</strong><span>Estimate consumption before pilot expansion and review usage by scenario, owner and value.</span></div>
+</div>
+
+## Factory Lifecycle
+
+<div class="kc-journey-map" aria-label="Agent Factory lifecycle">
+  <div class="kc-journey-map__header">
+    <span>Factory Lifecycle</span>
+    <strong>Demand to measurable operation</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Idea</strong><span>Business pain, repeated work, user group and value hypothesis.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Assess</strong><span>Feasibility, data readiness, risk, adoption potential and strategic fit.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Platform pattern, knowledge boundary, actions, identity and evaluation data.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Approve</strong><span>Security, compliance, cost, owner, support and release gate evidence.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Operate</strong><span>Catalog, telemetry, incidents, quality, cost and usage review.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Improve</strong><span>Optimize, consolidate, scale, redesign or retire based on evidence.</span></div>
+  </div>
+</div>
+
+## Intake and Prioritization
+
+<div class="kc-context-panel" aria-label="Agent intake and prioritization model">
+  <div class="kc-context-panel__lead">
+    <small>Intake Model</small>
+    <strong>Every candidate should be comparable before the build starts.</strong>
+    <span>Agent demand should be normalized into a short opportunity card so leaders can decide what to build, defer, combine or reject.</span>
+  </div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/toolkit/assessment-checklist"><small>Value</small><strong>Business problem</strong><span>What work is slow, repetitive, risky or quality-sensitive?</span></a>
+    <a href="/knowledge/security/purview"><small>Data</small><strong>Knowledge boundary</strong><span>Which data sources are required and who owns them?</span></a>
+    <a href="/knowledge/security/conditional-access"><small>Risk</small><strong>Permission and action scope</strong><span>What can the agent see, decide, write, send or trigger?</span></a>
+    <a href="/knowledge/copilot/copilot-cowork-cost-governance"><small>Cost</small><strong>Consumption forecast</strong><span>What volume, credit, license or support cost is expected?</span></a>
+    <a href="/knowledge/playbooks/change-management-playbook"><small>Adoption</small><strong>User behavior change</strong><span>Who must change their work pattern for value to appear?</span></a>
+    <a href="/knowledge/contact"><small>Owner</small><strong>Business accountability</strong><span>Who approves, funds, supports and retires the agent?</span></a>
+  </div>
+</div>
+
+## Design and Release Gates
+
+<div class="kc-operating-model" aria-label="Agent release gate model">
+  <div class="kc-operating-stage">
+    <small>Gate 1</small>
+    <strong>Opportunity approved</strong>
+    <span>Business problem, value hypothesis, users, owner, data sources and risk level are documented.</span>
+  </div>
+  <div class="kc-operating-stage">
+    <small>Gate 2</small>
+    <strong>Architecture reviewed</strong>
+    <span>Platform fit, identity, permissions, knowledge boundary, actions, DLP and cost model are reviewed.</span>
+  </div>
+  <div class="kc-operating-stage">
+    <small>Gate 3</small>
+    <strong>Pilot validated</strong>
+    <span>Response quality, action safety, evaluation set, user feedback and support model are tested.</span>
+  </div>
+  <div class="kc-operating-stage">
+    <small>Gate 4</small>
+    <strong>Production controlled</strong>
+    <span>Owner, telemetry, incident path, change process, budget owner and retirement rule are confirmed.</span>
+  </div>
+</div>
+
+## Portfolio Operations
+
+Agent Factory needs an operating cadence after agents go live. A production agent should have:
+
+| Operating Area | Required Evidence |
 |---|---|
-| Knowledge quality | approved source list, freshness check, answer citation review |
-| Permission safety | least privilege, Entra identity, Conditional Access and DLP review |
-| Action safety | tool scope, approval step, rollback or exception handling |
-| Evaluation | test set, pass threshold, regression comparison |
-| Cost control | usage estimate, budget owner, monitoring rhythm |
+| Inventory | Name, purpose, owner, platform, environment, users and status |
+| Knowledge boundary | Approved data sources, labels, permissions and freshness rule |
+| Action boundary | Connectors, APIs, workflow actions, approval steps and rollback path |
+| Quality | Evaluation set, pass threshold, user feedback and regression checks |
+| Cost | Consumption assumption, budget owner and monthly review cadence |
+| Support | L1/L2/L3 support path, incident type and escalation rule |
+| Lifecycle | Review date, redesign condition, consolidation trigger and retirement rule |
 
----
+## Adoption and Value Model
 
-## Stage 7 - Deploy
-
-## Deployment Channels
-
-- Microsoft Teams
-- Microsoft 365 Copilot
-- SharePoint
-- Web Portal
-- Mobile
-- Business Applications
-
----
-
-## Stage 8 - Operate
-
-## Managed Service Model
-
-```mermaid
-flowchart TB
-
-USER --> L1
-
-L1[User Support]
-
-L1 --> L2
-
-L2[Agent Specialists]
-
-L2 --> L3
-
-L3[Engineering Team]
-```
-
----
-
-## Stage 9 - Improve
-
-## Continuous Improvement Loop
-
-```mermaid
-flowchart LR
-
-USAGE --> ANALYSIS
-
-ANALYSIS --> INSIGHT
-
-INSIGHT --> IMPROVEMENT
-
-IMPROVEMENT --> ADOPTION
-
-ADOPTION --> USAGE
-```
-
----
-
-## Agent Portfolio Management
-
-## Portfolio Categories
-
-| Category | Example |
-|-----------|---------|
-| Personal Productivity | Scout |
-| Department Operations | HR Agent |
-| Service Delivery | IT Agent |
-| Sales Enablement | Proposal Agent |
-| Finance | FP&A Agent |
-| Security | Security Advisor |
-| Executive Support | Executive Agent |
-
----
-
-## AI PMO Structure
-
-## Governance Board
-
-- CIO
-- CTO
-- Security
-- Compliance
-- Business Leaders
-
----
-
-## PMO Responsibilities
-
-- Prioritization
-- Funding
-- KPI Review
-- Risk Management
-- Executive Reporting
-
----
-
-## Agent Factory Organization
-
-```mermaid
-flowchart TB
-
-PMO --> STRATEGY
-
-PMO --> ADOPTION
-
-PMO --> DELIVERY
-
-PMO --> SUPPORT
-
-PMO --> ANALYTICS
-```
-
----
-
-## Adoption Operating Model
-
-## Components
-
-| Area | Purpose |
-|---------|---------|
-| Education | Capability building |
-| Champion Network | Scale adoption |
-| Managed Service | User support |
-| Community | Knowledge sharing |
-| Analytics | Visibility |
-| VOC | Improvement |
-
----
-
-## AI Community Framework
-
-## Community Hub
-
-- Tips
-- FAQ
-- Prompt Library
-- Agent Catalog
-- Champion Activities
-- Innovation Events
-
----
-
-## Promptathon
-
-Purpose:
-
-- Discover prompts
-- Share knowledge
-- Create use cases
-
----
-
-## Agentathon
-
-Purpose:
-
-- Build agents
-- Validate business value
-- Scale innovation
-
----
+<div class="kc-maturity-ladder" aria-label="Agent Factory adoption maturity">
+  <div class="kc-maturity-step"><small>Level 1</small><strong>Copilot usage</strong><span>Users adopt everyday Copilot patterns for meetings, documents, analysis and communication.</span></div>
+  <div class="kc-maturity-step"><small>Level 2</small><strong>Department agents</strong><span>Teams create governed agents for repeatable local processes with clear owners.</span></div>
+  <div class="kc-maturity-step"><small>Level 3</small><strong>Agent portfolio</strong><span>Agents are cataloged, monitored and compared by value, quality, cost and risk.</span></div>
+  <div class="kc-maturity-step"><small>Level 4</small><strong>Multi-agent operations</strong><span>Coordinator and specialist agents support complex work with human review.</span></div>
+  <div class="kc-maturity-step"><small>Level 5</small><strong>Enterprise AI operating system</strong><span>AI demand, governance, delivery, support and value realization run as one operating model.</span></div>
+</div>
 
 ## KPI Framework
 
-## Adoption KPIs
+| KPI Category | Example Metrics |
+|---|---|
+| Adoption | Active users, repeat usage, training completion, champion participation |
+| Quality | Task completion, citation quality, escalation rate, user satisfaction |
+| Productivity | Hours saved, cycle time reduction, manual steps removed |
+| Risk | Policy exceptions, incident count, unauthorized action attempts |
+| Cost | Credit consumption, cost per successful task, support effort |
+| Portfolio | Agents approved, retired, consolidated, redesigned or scaled |
 
-| KPI | Target |
-|--------|--------|
-| Active Users | >70% |
-| Monthly Usage | Growth |
-| Satisfaction | >85% |
-| Training Completion | >90% |
+## Customer Success Pattern
 
----
+Anonymized enterprise AI programs show the same pattern: the first successful agent is not the end state. The durable value appears when the organization creates a repeatable path for intake, design review, release gates, adoption enablement, telemetry and continuous improvement. This is why Agent Factory should be positioned as operating model work, not only Copilot Studio build work.
 
-## Business KPIs
+## Common Mistakes
 
-| KPI | Example |
-|---------|---------|
-| Hours Saved | Productivity |
-| Cost Reduction | Operations |
-| Ticket Reduction | Service Desk |
-| Faster Delivery | Projects |
-| Revenue Impact | Sales |
-
----
-
-## AI Maturity Model
-
-## Level 1
-
-Copilot Usage
-
----
-
-## Level 2
-
-Department Agents
-
----
-
-## Level 3
-
-Enterprise Agents
-
----
-
-## Level 4
-
-Multi-Agent Systems
-
----
-
-## Level 5
-
-Enterprise AI Operating System
-
----
+- Running agent creation as isolated innovation events without portfolio governance.
+- Building before business owner, support owner and retirement rule are assigned.
+- Treating stronger models as a substitute for data governance and evaluation.
+- Allowing agents to use connectors or computer use without approval and rollback design.
+- Reporting only usage counts instead of outcome, quality, risk and cost signals.
 
 ## Recommended Roadmap
 
-```mermaid
-gantt
-title Enterprise AI Roadmap
-dateFormat YYYY-MM-DD
-
-section Foundation
-
-Strategy
-Governance
-Readiness
-
-section Pilot
-
-Copilot
-Agent Builder
-Copilot Studio
-
-section Scale
-
-Department Agents
-Agent Factory
-
-section Enterprise
-
-Multi-Agent
-AI Operating System
-```
-
----
-
-## Executive Dashboard
-
-Track:
-
-- Active Users
-- Agent Utilization
-- Business Value
-- Cost Savings
-- Adoption Rate
-- Risk Events
-- AI ROI
-
----
-
-## Executive Recommendations
-
-1. Establish AI PMO.
-2. Build Agent Factory.
-3. Govern before scale.
-4. Prioritize business value.
-5. Measure outcomes.
-6. Create reusable agents.
-7. Develop AI champions.
-8. Operate continuously.
-
----
-
-## Deliverables
-
-- AI Strategy
-- Agent Factory Framework
-- AI PMO Model
-- Governance Framework
-- Agent Portfolio
-- KPI Dashboard
-- Adoption Framework
-- AI Roadmap
-- Executive Reporting Model
-
----
-
-## Strategic Positioning
-
-The future state is not:
-
-"Deploying Copilot"
-
-The future state is:
-
-"Operating an Enterprise AI Platform"
+<div class="kc-entry-hub" aria-label="Agent Factory roadmap">
+  <a href="/knowledge/copilot/readiness"><small>Phase 1</small><strong>Readiness</strong><span>Confirm Microsoft 365 data, permissions, security baseline and adoption readiness.</span></a>
+  <a href="/knowledge/copilot/copilot-studio-2026-platform-update"><small>Phase 2</small><strong>Platform baseline</strong><span>Align the organization on Copilot Studio, agent identity, skills, memory and cost controls.</span></a>
+  <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory"><small>Phase 3</small><strong>Pilot factory</strong><span>Build a limited set of high-value agents with release gates and measurable outcomes.</span></a>
+  <a href="/knowledge/copilot/multi-agent-framework"><small>Phase 4</small><strong>Multi-agent design</strong><span>Introduce coordinator and specialist agents only after control patterns are proven.</span></a>
+  <a href="/knowledge/copilot/copilot-cowork-cost-governance"><small>Phase 5</small><strong>Operate at scale</strong><span>Manage long-running work, approvals, telemetry and cost control.</span></a>
+  <a href="/knowledge/contact"><small>Assets</small><strong>Request templates</strong><span>Request intake cards, design review templates, release gates and executive dashboards.</span></a>
+</div>
 
 ## 검색 키워드
 
-- Microsoft 365 Copilot
-- Copilot Studio
-- AI Agent governance
-- Copilot adoption
-- Copilot readiness
-- Copilot 도입
+- Agent Factory
+- AI Agent Factory
+- AI operating model
+- Copilot Studio governance
+- Microsoft 365 Agents
+- agent lifecycle management
+- AI Agent 거버넌스
 - AI Agent 운영 모델
+- Copilot Studio release gate
+- multi-agent operating model
+- Copilot Credit forecasting
+- enterprise AI adoption
 
-## Contact / Asset Request
+## References
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+- [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+- [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
+- [Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/)
+- [Microsoft 365 Copilot extensibility overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)
+- [Contact and Asset Request](/knowledge/contact)
