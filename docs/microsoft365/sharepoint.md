@@ -135,27 +135,19 @@ Department sites should be used for long-term business ownership.
 
 Recommended structure:
 
-```mermaid
-flowchart TB
-  Hub["Department Hub<br/>long-term business ownership"]:::hub
-  Policies["Policies"]:::node
-  Procedures["Procedures"]:::node
-  Templates["Templates"]:::node
-  Working["Working Documents"]:::node
-  Reports["Reports"]:::node
-  Archive["Archive"]:::archive
-
-  Hub --> Policies
-  Hub --> Procedures
-  Hub --> Templates
-  Hub --> Working
-  Hub --> Reports
-  Hub --> Archive
-
-  classDef hub fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef node fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef archive fill:#f8fafc,stroke:#94a3b8,color:#102033,stroke-width:1.2px
-```
+<div class="kc-journey-map" aria-label="SharePoint department site model">
+  <div class="kc-journey-map__header">
+    <span>Department Site Model</span>
+    <strong>Long-term business ownership with governed content areas</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Department hub</strong><span>Primary business-owned site for long-term departmental knowledge.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Controlled content</strong><span>Policies, procedures, templates and official reference materials.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Working content</strong><span>Active documents, reports and collaboration libraries.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance</strong><span>Owner, member groups, sharing policy, sensitivity label and retention.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Archive</strong><span>Closed or historical content with lifecycle and discovery controls.</span></div>
+  </div>
+</div>
 
 Design considerations:
 
@@ -173,27 +165,19 @@ Project sites should be used for temporary collaboration.
 
 Recommended structure:
 
-```mermaid
-flowchart TB
-  Site["Project Site<br/>temporary collaboration workspace"]:::hub
-  PM["01 Project Management"]:::node
-  Work["02 Working Documents"]:::node
-  Deliverables["03 Deliverables"]:::node
-  Notes["04 Meeting Notes"]:::node
-  Risks["05 Risks and Issues"]:::node
-  Archive["99 Archive"]:::archive
-
-  Site --> PM
-  Site --> Work
-  Site --> Deliverables
-  Site --> Notes
-  Site --> Risks
-  Site --> Archive
-
-  classDef hub fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef node fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef archive fill:#f8fafc,stroke:#94a3b8,color:#102033,stroke-width:1.2px
-```
+<div class="kc-journey-map" aria-label="SharePoint project site model">
+  <div class="kc-journey-map__header">
+    <span>Project Site Model</span>
+    <strong>Temporary collaboration workspace with closure discipline</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Project site</strong><span>Temporary workspace with project owner, end date and participant model.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Management</strong><span>Project management, meeting notes, decisions, risks and issues.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Delivery</strong><span>Working documents, deliverables, review material and handover assets.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>External access</strong><span>Guest access, partner policy and sensitivity controls are reviewed.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Closure</strong><span>After project end, review, archive and remove unnecessary access.</span></div>
+  </div>
+</div>
 
 Design considerations:
 
@@ -209,13 +193,19 @@ Design considerations:
 
 Recommended model:
 
-```mermaid
-flowchart TB
-    USER[User] --> GROUP[Microsoft 365 Group or Security Group]
-    GROUP --> ROLE[SharePoint Permission Role]
-    ROLE --> SITE[SharePoint Site]
-    SITE --> LIB[Document Library]
-```
+<div class="kc-journey-map" aria-label="SharePoint permission architecture">
+  <div class="kc-journey-map__header">
+    <span>Permission Architecture</span>
+    <strong>Group-based access before direct user assignment</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User</strong><span>Employee, guest, partner or service account needs access.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Group</strong><span>Microsoft 365 group or security group represents the access population.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Role</strong><span>Owner, member, visitor, restricted access or external guest role.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Scope</strong><span>Site, library or sensitive content area receives the access assignment.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Review</strong><span>Access review, owner approval and lifecycle process keep permissions clean.</span></div>
+  </div>
+</div>
 
 Avoid assigning permissions directly to individual users unless there is a documented business reason.
 
@@ -342,15 +332,19 @@ Before enabling Copilot, review:
 
 Copilot readiness architecture:
 
-```mermaid
-flowchart LR
-    IA[Information Architecture] --> COP[Copilot Quality]
-    PERM[Permission Review] --> COP
-    META[Metadata and Search] --> COP
-    LABEL[Sensitivity Labels] --> COP
-    DLP[DLP Policies] --> COP
-    OWNER[Content Ownership] --> COP
-```
+<div class="kc-journey-map" aria-label="SharePoint Copilot readiness architecture">
+  <div class="kc-journey-map__header">
+    <span>Copilot Readiness Architecture</span>
+    <strong>Better content governance produces better Copilot answers</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Information architecture</strong><span>Sites, libraries, metadata, content types and navigation are rationalized.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Permission review</strong><span>Oversharing, anonymous links, guests and inheritance breaks are cleaned up.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Purview controls</strong><span>Sensitivity labels, DLP, retention and audit are applied where required.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Ownership</strong><span>Site owners, content owners and lifecycle responsibilities are assigned.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Copilot quality</strong><span>Search, grounding and answers improve because source content is trusted.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -414,27 +408,19 @@ Recommended approach:
 
 ## Implementation Roadmap
 
-```mermaid
-gantt
-    title SharePoint Information Architecture Roadmap
-    dateFormat  YYYY-MM-DD
-
-    section Assessment
-    Source Inventory           :a1, 2026-01-01, 2w
-    Permission Review          :a2, after a1, 2w
-
-    section Design
-    Information Architecture    :b1, after a2, 3w
-    Governance Model           :b2, after b1, 2w
-
-    section Pilot
-    Pilot Site Build           :c1, after b2, 2w
-    Pilot Migration            :c2, after c1, 2w
-
-    section Rollout
-    Production Migration       :d1, after c2, 6w
-    Hypercare                  :d2, after d1, 2w
-```
+<div class="kc-journey-map" aria-label="SharePoint implementation roadmap">
+  <div class="kc-journey-map__header">
+    <span>Implementation Roadmap</span>
+    <strong>Inventory, design, pilot, rollout and hypercare</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assessment</strong><span>Source inventory, site discovery, permission review and risk baseline.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Information architecture, metadata, naming, sharing and governance model.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot</strong><span>Pilot site build, migration test, user validation and search quality review.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Rollout</strong><span>Production migration, communications, owner onboarding and support readiness.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Hypercare</strong><span>Issue resolution, permission fixes, adoption coaching and governance reporting.</span></div>
+  </div>
+</div>
 
 ---
 
