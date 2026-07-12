@@ -3,9 +3,46 @@ id: sharepoint
 title: SharePoint Information Architecture Framework
 description: "SharePoint Information Architecture Framework - SharePoint Online should not be positioned as a simple file server replacement."
 sidebar_label: SharePoint
+toc_max_heading_level: 2
 ---
 
 # SharePoint Information Architecture Framework
+
+<section class="kc-topic-hero" aria-label="SharePoint information architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft 365 Content and Knowledge Architecture</span>
+    <h2>Design SharePoint as a governed knowledge platform</h2>
+    <p>SharePoint Online should not be treated as a file server replacement. It should be designed as an enterprise content platform with hub architecture, ownership, permissions, metadata, lifecycle, Purview controls and Copilot readiness working together.</p>
+    <div class="kc-hero-signal-row" aria-label="SharePoint architecture signals">
+      <span>Hub</span>
+      <span>Owner</span>
+      <span>Policy</span>
+      <span>Copilot</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="SharePoint related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/security/purview">Purview</a>
+      <a class="kc-topic-button" href="/knowledge/security/information-barriers">Information Barriers</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Copilot Readiness</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="SharePoint operating model visual">
+    <div class="kc-factory-panel__header">
+      <span>IA Control Loop</span>
+      <strong>Content to AI readiness</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#site-architecture-model" class="kc-factory-card"><small>01</small><strong>Structure</strong><span>Hub, department, project, regional and community site model.</span></a>
+      <a href="#permission-architecture" class="kc-factory-card"><small>02</small><strong>Access</strong><span>Owners, members, visitors, external sharing and review cadence.</span></a>
+      <a href="#information-architecture" class="kc-factory-card"><small>03</small><strong>Metadata</strong><span>Content types, document types, lifecycle, search and retention.</span></a>
+      <a href="#copilot-readiness" class="kc-factory-card"><small>04</small><strong>AI Ready</strong><span>Oversharing, labels, stale content and knowledge quality.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Copilot readiness starts with SharePoint readiness: clean permissions, accountable owners, meaningful metadata and governed lifecycle.</span>
+    </div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -37,32 +74,20 @@ Typical SharePoint initiatives include:
 
 ## Reference Architecture
 
-```mermaid
-flowchart TB
-    ORG[Organization] --> HUB[Hub Sites]
-
-    HUB --> CORP[Corporate Hub]
-    HUB --> DEPT[Department Hubs]
-    HUB --> PROJ[Project Hubs]
-    HUB --> REGION[Regional Hubs]
-
-    DEPT --> HR[HR Site]
-    DEPT --> FIN[Finance Site]
-    DEPT --> IT[IT Site]
-    DEPT --> SALES[Sales Site]
-
-    PROJ --> PA[Project A]
-    PROJ --> PB[Project B]
-
-    REGION --> KR[Korea]
-    REGION --> EU[Europe]
-    REGION --> US[United States]
-
-    CORP --> PURVIEW[Purview Labels and DLP]
-    DEPT --> PURVIEW
-    PROJ --> PURVIEW
-    REGION --> PURVIEW
-```
+<div class="kc-journey-map" aria-label="SharePoint reference architecture">
+  <div class="kc-journey-map__header">
+    <span>Reference Architecture</span>
+    <strong>Hub model with security and AI controls</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Organization</strong><span>Business units, regions, projects and communities.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Hub Sites</strong><span>Corporate, department, project, regional and community hubs.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Sites</strong><span>Owned workspaces with member groups and lifecycle rules.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Purview</strong><span>Sensitivity labels, DLP, retention and audit controls.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Search</strong><span>Metadata, content types and navigable knowledge structure.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Copilot Ready</strong><span>Clean permissions, relevant content and accountable owners.</span></div>
+  </div>
+</div>
 
 ---
 
