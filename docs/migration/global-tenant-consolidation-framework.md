@@ -3,9 +3,46 @@ id: global-tenant-consolidation-framework
 title: Global Tenant Consolidation Framework
 description: "Global Tenant Consolidation Framework - Global tenant consolidation is not only a migration project."
 sidebar_label: Global Tenant Consolidation
+toc_max_heading_level: 2
 ---
 
 # Global Tenant Consolidation Framework
+
+<section class="kc-topic-hero" aria-label="Global tenant consolidation hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Global Microsoft 365 Operating Model</span>
+    <h2>Decide what to consolidate, federate or keep separate</h2>
+    <p>Global tenant consolidation is a business operating model decision before it is a migration decision. The architecture must define which tenants should merge, coexist, federate, remain isolated or become transitional.</p>
+    <div class="kc-hero-signal-row" aria-label="Global tenant consolidation signals">
+      <span>Tenant</span>
+      <span>Domain</span>
+      <span>Policy</span>
+      <span>Region</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Global tenant consolidation related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/playbooks/tenant-to-tenant-migration-playbook">Tenant Migration Playbook</a>
+      <a class="kc-topic-button" href="/knowledge/migration/cross-tenant-sync-vs-migration">Sync vs Migration</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request Consolidation Assets</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Global tenant consolidation model">
+    <div class="kc-factory-panel__header">
+      <span>Decision Model</span>
+      <strong>Consolidate with control</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#consolidation-scope" class="kc-factory-card"><small>01</small><strong>Scope</strong><span>Domain, identity, mail, collaboration, security and compliance.</span></a>
+      <a href="#mail-coexistence-strategy" class="kc-factory-card"><small>02</small><strong>Coexist</strong><span>Legacy mail, alternate SMTP, forwarding and staged routing.</span></a>
+      <a href="#regional-policy-separation" class="kc-factory-card"><small>03</small><strong>Separate</strong><span>Regional Conditional Access, Intune, Purview and admin delegation.</span></a>
+      <a href="#consolidation-decision-framework" class="kc-factory-card"><small>04</small><strong>Decide</strong><span>Full migration, cross-tenant sync, coexistence or hybrid governance.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Consolidation should reduce operating complexity without erasing legitimate regional security, compliance and administrative requirements.</span>
+    </div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -50,26 +87,20 @@ Typical scenarios include:
 
 ## Target Architecture
 
-```mermaid
-flowchart TB
-    HQ[Headquarters Tenant] --> GOV[Global Governance]
-    REG[Regional Tenant or Legacy Environment] --> GOV
-
-    GOV --> ID[Identity Integration]
-    GOV --> DOMAIN[Domain Strategy]
-    GOV --> MAIL[Mail Coexistence]
-    GOV --> SEC[Security Policy]
-    GOV --> COMP[Compliance Policy]
-    GOV --> ADMIN[Regional Administration]
-
-    ID --> ENTRA[Microsoft Entra ID]
-    DOMAIN --> DNS[DNS and SMTP Domains]
-    MAIL --> EXO[Exchange Online]
-    SEC --> CA[Conditional Access]
-    SEC --> INTUNE[Intune]
-    COMP --> PURVIEW[Microsoft Purview]
-    ADMIN --> AU[Administrative Units]
-```
+<div class="kc-journey-map" aria-label="Global tenant consolidation target architecture">
+  <div class="kc-journey-map__header">
+    <span>Target Architecture</span>
+    <strong>Global governance with regional control</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Tenant Landscape</strong><span>Headquarters tenant, regional tenants and legacy environments.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Global Governance</strong><span>Decision model for consolidation, coexistence, federation or isolation.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Identity & Domain</strong><span>Entra ID, DNS, SMTP domains, UPN, routing and cross-tenant access.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security & Compliance</strong><span>Conditional Access, Intune, Defender, Purview, DLP and audit.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Regional Admin</strong><span>Administrative Units, role delegation and country-specific policy separation.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operating Model</strong><span>Reduced complexity with controlled regional exceptions.</span></div>
+  </div>
+</div>
 
 ---
 
