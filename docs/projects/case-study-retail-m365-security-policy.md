@@ -7,13 +7,35 @@ description: Anonymized retail Microsoft 365 security policy modernization case 
 
 # Retail Microsoft 365 Security Policy Modernization Case Study
 
+<section class="kc-topic-hero" aria-label="Retail Microsoft 365 security policy case study landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Anonymized Customer Success Pattern</span>
+    <h2>Retail Microsoft 365 security policy modernization without exposing customer identity</h2>
+    <p>This reference summarizes a retail-industry Microsoft 365 security and policy modernization pattern across identity, access, collaboration, endpoint, data protection and Power Platform governance. Customer names, domains, user counts and commercial details are intentionally excluded.</p>
+    <div class="kc-topic-hero__actions" aria-label="Retail case study actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/microsoft-365-security">Security Landing</a>
+      <a class="kc-topic-button" href="/knowledge/projects/customer-success-reference-patterns">Reference Patterns</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request Sanitized Assets</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Retail M365 security case snapshot">
+    <div class="kc-factory-panel__header"><span>Reference Snapshot</span><strong>Public safe</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-challenge" class="kc-factory-card"><small>01</small><strong>Challenge</strong><span>Security, collaboration, endpoint and data policies needed integrated review.</span></a>
+      <a href="#consulting-scope" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>License capability, current-state evidence, backlog and prerequisite roadmap.</span></a>
+      <a href="#delivery-pattern" class="kc-factory-card"><small>03</small><strong>Delivery</strong><span>Assess, analyze, prioritize, guide and hand over with owner and validation criteria.</span></a>
+      <a href="#requestable-assets" class="kc-factory-card"><small>04</small><strong>Assets</strong><span>Security assessment, policy backlog, endpoint checklist and executive summary.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>No customer-specific details are published</strong><span>The page exposes reusable consulting patterns only. Customer names, domains, user counts, internal files, architecture details and commercial terms are removed.</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 A retail enterprise needed to review Microsoft 365 security and policy configuration across identity, access, collaboration, endpoint, data protection and Power Platform governance.
 
-The engagement focused on converting Microsoft 365 license capabilities and current-state findings into a practical security improvement backlog, prerequisite roadmap and implementation guidance.
-
-This reference is anonymized. Customer names, domains, user counts, internal department names, commercial terms, internal filenames and customer-specific architecture details are intentionally excluded.
+The engagement converted Microsoft 365 license capabilities and current-state findings into a practical security improvement backlog, prerequisite roadmap and implementation guidance.
 
 ## Korean Summary
 
@@ -21,125 +43,95 @@ This reference is anonymized. Customer names, domains, user counts, internal dep
 
 핵심은 단순한 보안 기능 목록 정리가 아니라, 보유 license에서 사용 가능한 기능, 현재 활성화 상태, 개선 과제, 선행 요건, 적용 영향도를 하나의 실행 가능한 보안 정책 개선 로드맵으로 정리하는 것이었습니다.
 
-공개 레퍼런스에는 고객명, 실제 사용자 수, 도메인, 내부 부서명, 기존 솔루션명, 세부 일정과 내부 파일명은 포함하지 않습니다.
+공개 레퍼런스에는 고객명, 실제 사용자 수, domain, 내부 부서명, 기존 솔루션명, 세부 일정, 내부 파일명은 포함하지 않습니다.
 
 ## Business Challenge
 
-| Challenge | Practical Meaning |
-|---|---|
-| Microsoft 365 security posture review | identify which security capabilities are available, enabled or underused |
-| identity and access governance | review admin roles, guest access, authentication and Conditional Access policy direction |
-| collaboration data protection | review SharePoint, OneDrive, Teams and Exchange policy posture |
-| endpoint and device governance | define prerequisites for device classification, Intune enrollment and security policy rollout |
-| document protection | evaluate Microsoft Purview Information Protection and sensitivity labeling direction |
-| Power Platform governance | review environment policy, connector control, DLP policy and lifecycle management |
+<div class="kc-platform-fit" aria-label="Retail M365 security business challenge">
+  <div class="kc-platform-fit__card"><small>Security posture</small><strong>Microsoft 365 security review</strong><span>Identify available, enabled and underused security capabilities across the tenant.</span></div>
+  <div class="kc-platform-fit__card"><small>Identity</small><strong>Identity and access governance</strong><span>Review admin roles, guest access, authentication and Conditional Access direction.</span></div>
+  <div class="kc-platform-fit__card"><small>Collaboration</small><strong>Collaboration data protection</strong><span>Review SharePoint, OneDrive, Teams and Exchange policy posture.</span></div>
+  <div class="kc-platform-fit__card"><small>Endpoint</small><strong>Device governance prerequisites</strong><span>Define device classification, Intune enrollment and security policy rollout prerequisites.</span></div>
+  <div class="kc-platform-fit__card"><small>Purview</small><strong>Document protection direction</strong><span>Evaluate Purview Information Protection, sensitivity labels and DLP adoption path.</span></div>
+  <div class="kc-platform-fit__card"><small>Power Platform</small><strong>Low-code governance</strong><span>Review environment policy, connector control, DLP policy and lifecycle management.</span></div>
+</div>
 
 ## Consulting Scope
 
-| Workstream | Scope |
-|---|---|
-| License and capability review | map Microsoft 365 license families to usable security and management capabilities |
-| Current-state assessment | review identity, mail, collaboration, endpoint, data protection and Power Platform policy posture |
-| Security improvement backlog | define improvement items by priority, prerequisite and execution owner model |
-| Prerequisite roadmap | identify Entra ID join, Intune, device classification, license readiness and change-management requirements |
-| Implementation guidance | provide staged guidance for policy configuration, validation and operational handover |
+<div class="kc-operating-model" aria-label="Retail M365 security consulting scope">
+  <div class="kc-operating-stage"><small>License</small><strong>Capability review</strong><span>Map Microsoft 365 license families to usable security and management capabilities.</span></div>
+  <div class="kc-operating-stage"><small>Assessment</small><strong>Current-state review</strong><span>Review identity, mail, collaboration, endpoint, data protection and Power Platform policy posture.</span></div>
+  <div class="kc-operating-stage"><small>Backlog</small><strong>Improvement backlog</strong><span>Define improvement items by priority, prerequisite and execution owner model.</span></div>
+  <div class="kc-operating-stage"><small>Roadmap</small><strong>Implementation guidance</strong><span>Stage policy configuration, validation, operational handover and change-management impacts.</span></div>
+</div>
 
 ## Reference Architecture View
 
-```mermaid
-flowchart TB
-  Identity[Identity and Access] --> CA[Conditional Access]
-  Identity --> Admin[Admin Role Governance]
-  Identity --> Guest[Guest and External User Control]
-
-  Endpoint[Endpoint and Device] --> Intune[Intune Policy]
-  Endpoint --> Defender[Defender Signal]
-  Endpoint --> Compliance[Device Compliance]
-
-  Collaboration[Collaboration Services] --> SPO[SharePoint and OneDrive]
-  Collaboration --> Teams[Teams]
-  Collaboration --> Exchange[Exchange Online]
-
-  Data[Data Protection] --> Purview[Purview Information Protection]
-  Data --> DLP[DLP and Sharing Control]
-
-  PowerPlatform[Power Platform] --> Env[Environment Governance]
-  PowerPlatform --> Connector[Connector and DLP Policy]
-
-  CA --> Roadmap[Security Improvement Roadmap]
-  Intune --> Roadmap
-  Purview --> Roadmap
-  Env --> Roadmap
-```
+<div class="kc-journey-map" aria-label="Retail Microsoft 365 security reference architecture">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>License and evidence</strong><span>Start from entitlement, enabled service plans and current policy evidence.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Identity and access</strong><span>Admin role governance, authentication, guest access and Conditional Access.</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Endpoint and device</strong><span>Device ownership, Entra ID join, Intune readiness and compliance policy.</span></div>
+  <div class="kc-journey-node"><small>04</small><strong>Collaboration controls</strong><span>SharePoint, OneDrive, Teams, Exchange Online and external sharing boundary.</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>05</small><strong>Data and platform governance</strong><span>Purview, DLP, sensitivity labels, Power Platform environments and connectors.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Improvement roadmap</strong><span>Prioritized backlog, prerequisites, owner model, validation criteria and executive actions.</span></div>
+</div>
 
 ## Improvement Themes
 
-| Theme | Example Improvements |
-|---|---|
-| identity and access | admin role review, guest user governance, authentication policy alignment, Conditional Access refinement |
-| endpoint management | device classification, Entra ID join strategy, Intune policy rollout, Windows security baseline |
-| collaboration governance | SharePoint and OneDrive sharing boundary, Teams policy review, Exchange access and authentication review |
-| information protection | sensitivity label design, MIP/Purview adoption path, document protection prerequisites |
-| Defender and XDR readiness | endpoint signal, mail protection, operational monitoring and response ownership |
-| Power Platform governance | environment separation, connector restriction, DLP policy and lifecycle management |
+<div class="kc-context-panel" aria-label="Retail M365 security improvement themes">
+  <div class="kc-context-panel__lead"><small>Reusable Pattern</small><strong>Security recommendations should be tied to entitlement, evidence and execution readiness.</strong><span>Strong recommendations separate what is available, what is enabled, what is risky, what requires prerequisites and who owns the next step.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/security/conditional-access"><small>Identity</small><strong>Conditional Access refinement</strong><span>Admin roles, guest users, authentication policy and exception model.</span></a>
+    <a href="/knowledge/knowledge-center/intune-ios-compliance"><small>Endpoint</small><strong>Device policy rollout</strong><span>Device classification, Entra ID join strategy, Intune readiness and Windows baseline.</span></a>
+    <a href="/knowledge/microsoft365/sharepoint"><small>Collaboration</small><strong>Sharing boundary</strong><span>SharePoint, OneDrive, Teams and Exchange access policy review.</span></a>
+    <a href="/knowledge/security/purview-information-protection"><small>Information Protection</small><strong>Labels and DLP</strong><span>Sensitivity labels, MIP/Purview adoption path and document protection prerequisites.</span></a>
+    <a href="/knowledge/security/defender-xdr"><small>Defender</small><strong>XDR readiness</strong><span>Endpoint signal, mail protection, monitoring and response ownership.</span></a>
+    <a href="/knowledge/security/dlp"><small>Power Platform</small><strong>Connector governance</strong><span>Environment separation, connector restriction, DLP policy and lifecycle model.</span></a>
+  </div>
+</div>
 
 ## Delivery Pattern
 
-| Phase | Key Activities | Output |
-|---|---|---|
-| Assess | collect current-state data and license capability information | current-state assessment and capability map |
-| Analyze | compare current settings against target Microsoft 365 security posture | gap analysis and issue list |
-| Prioritize | classify improvements by impact, prerequisite and execution complexity | prioritized security improvement backlog |
-| Guide | define implementation approach and operational considerations | configuration guide and roadmap |
-| Handover | document validation criteria and operating ownership | handover guide and follow-up action list |
+<div class="kc-maturity-ladder" aria-label="Retail M365 security delivery pattern">
+  <div class="kc-maturity-step"><small>Assess</small><strong>Collect current-state evidence</strong><span>License capability, policy state, identity, endpoint, collaboration and data protection evidence.</span></div>
+  <div class="kc-maturity-step"><small>Analyze</small><strong>Compare against target posture</strong><span>Gap analysis, issue list, risk view and dependency identification.</span></div>
+  <div class="kc-maturity-step"><small>Prioritize</small><strong>Classify by impact and prerequisite</strong><span>Improvement backlog with priority, prerequisite, owner, impact and validation criteria.</span></div>
+  <div class="kc-maturity-step"><small>Guide</small><strong>Define implementation path</strong><span>Configuration approach, sequencing, user impact, pilot plan and operating considerations.</span></div>
+  <div class="kc-maturity-step"><small>Handover</small><strong>Document ownership and follow-up</strong><span>Validation guide, handover note, roadmap and follow-up action list.</span></div>
+</div>
 
 ## Prerequisite Planning
 
-Large-scale Microsoft 365 security modernization often depends on prerequisites that must be reviewed before policy deployment.
-
-| Prerequisite | Why It Matters |
-|---|---|
-| device ownership model | company-owned, shared, field and partner devices may require different policy paths |
-| Entra ID join strategy | access control and device identity depend on clear join and registration model |
-| Intune readiness | endpoint configuration and compliance policies require enrollment and policy ownership |
-| license capability mapping | E3, F3, E5 and add-on differences affect which controls are feasible |
-| collaboration ownership | SharePoint, OneDrive, Teams and Exchange policies need service owner agreement |
-| data classification model | information protection and DLP require business-approved classification logic |
-| change management | endpoint, authentication and document protection changes affect users directly |
+<div class="kc-platform-fit" aria-label="Retail M365 security prerequisites">
+  <div class="kc-platform-fit__card"><small>Device ownership</small><strong>Policy paths differ by device type</strong><span>Company-owned, shared, field and partner devices may require different control models.</span></div>
+  <div class="kc-platform-fit__card"><small>Entra ID join</small><strong>Device identity affects access</strong><span>Access control and compliance depend on clear join and registration strategy.</span></div>
+  <div class="kc-platform-fit__card"><small>Intune</small><strong>Enrollment and ownership readiness</strong><span>Endpoint configuration and compliance policies require enrollment, scope and owner model.</span></div>
+  <div class="kc-platform-fit__card"><small>Licensing</small><strong>Capability feasibility</strong><span>E3, F3, E5 and add-on differences affect which controls are feasible.</span></div>
+  <div class="kc-platform-fit__card"><small>Classification</small><strong>Business-approved data logic</strong><span>Information protection and DLP require classification logic the business can understand.</span></div>
+  <div class="kc-platform-fit__card"><small>Change</small><strong>User impact planning</strong><span>Endpoint, authentication and document protection changes affect users directly.</span></div>
+</div>
 
 ## Reusable Deliverables
 
-- Microsoft 365 license-to-capability analysis
-- identity and access policy assessment
-- Conditional Access improvement guide
-- SharePoint, OneDrive, Teams and Exchange policy review
-- Intune and endpoint security policy roadmap
-- Purview Information Protection and DLP planning guide
-- Power Platform governance assessment
-- improvement backlog and prerequisite roadmap
-- implementation impact and validation checklist
-
-## Customer Success Pattern
-
-| Area | Reusable Lesson |
-|---|---|
-| license planning | security recommendations should start with actual entitlement and enabled service plans |
-| identity | guest access, admin roles and authentication policy should be reviewed before broad access control changes |
-| endpoint | Intune and device identity design should precede large-scale security policy rollout |
-| data protection | MIP/Purview planning should include user experience, external collaboration and existing document workflows |
-| Power Platform | environment and connector governance should be defined before uncontrolled app and flow growth |
-| operations | improvement items should include owner, prerequisite, impact and validation criteria |
+<div class="kc-entry-hub" aria-label="Retail M365 security reusable deliverables">
+  <a href="/knowledge/downloads/m365-assessment-workbook"><small>Workbook</small><strong>License-to-capability analysis</strong><span>Map entitlement, enabled service plans and feasible controls.</span></a>
+  <a href="/knowledge/security/conditional-access"><small>Identity</small><strong>Identity and access policy assessment</strong><span>Admin roles, guest access, MFA, Conditional Access and authentication posture.</span></a>
+  <a href="/knowledge/knowledge-center/intune-usb-whitelist"><small>Endpoint</small><strong>Intune policy roadmap</strong><span>Device ownership, enrollment, compliance, security baseline and rollout sequence.</span></a>
+  <a href="/knowledge/security/purview-information-protection"><small>Data</small><strong>Purview and DLP planning guide</strong><span>Sensitivity labels, DLP policy, external sharing and document protection prerequisites.</span></a>
+  <a href="/knowledge/security/dlp"><small>Platform</small><strong>Power Platform governance checklist</strong><span>Environment, connector, DLP, owner and lifecycle review items.</span></a>
+  <a href="/knowledge/downloads/risk-register-template"><small>Roadmap</small><strong>Improvement backlog template</strong><span>Priority, prerequisite, impact, owner, validation and follow-up action structure.</span></a>
+</div>
 
 ## Success Metrics
 
-| Metric | What To Track |
-|---|---|
-| Capability mapping | security controls mapped to actual license entitlement and enabled service plans |
-| Backlog quality | improvement items include priority, prerequisite, owner, impact and validation criteria |
-| Identity readiness | admin roles, guest access and authentication posture reviewed |
-| Endpoint readiness | device ownership, Entra ID join and Intune enrollment prerequisites clarified |
-| Data protection readiness | Purview, DLP and sensitivity label path defined with user impact |
-| Executive actionability | results report converted into phased roadmap and decision items |
+<div class="kc-maturity-ladder" aria-label="Retail M365 security success metrics">
+  <div class="kc-maturity-step"><small>Capability</small><strong>Controls mapped to entitlement</strong><span>Recommendations are tied to actual license entitlement and enabled service plans.</span></div>
+  <div class="kc-maturity-step"><small>Backlog</small><strong>Actionable improvement items</strong><span>Backlog includes priority, prerequisite, owner, impact and validation criteria.</span></div>
+  <div class="kc-maturity-step"><small>Identity</small><strong>Access readiness clarified</strong><span>Admin roles, guest access and authentication posture are reviewed.</span></div>
+  <div class="kc-maturity-step"><small>Endpoint</small><strong>Device prerequisites defined</strong><span>Device ownership, Entra ID join and Intune enrollment prerequisites are clarified.</span></div>
+  <div class="kc-maturity-step"><small>Data</small><strong>Purview path defined</strong><span>DLP, sensitivity labels and information protection path include user impact.</span></div>
+  <div class="kc-maturity-step"><small>Executive</small><strong>Roadmap ready for decision</strong><span>Results report becomes phased roadmap and decision items.</span></div>
+</div>
 
 ## Lessons Learned
 
@@ -163,15 +155,16 @@ Use this reference when discussing:
 
 ## Requestable Assets
 
-Editable or customer-ready versions are not published publicly. Sanitized versions can be requested through [Contact and Asset Request](../contact).
+Editable or customer-ready versions are not published publicly. Sanitized versions can be requested through [Contact and Asset Request](/knowledge/contact).
 
-- Microsoft 365 security policy assessment template
-- license-to-capability mapping workbook
-- security improvement backlog template
-- Intune and endpoint policy rollout checklist
-- Purview Information Protection planning checklist
-- Power Platform governance checklist
-- executive summary and results-report structure
+<div class="kc-entry-hub" aria-label="Retail M365 security requestable assets">
+  <a href="/knowledge/contact"><small>Assessment</small><strong>M365 security policy assessment template</strong><span>Request a sanitized structure for identity, endpoint, collaboration and data protection review.</span></a>
+  <a href="/knowledge/contact"><small>Workbook</small><strong>License-to-capability mapping workbook</strong><span>Request an editable workbook structure for entitlement and control feasibility review.</span></a>
+  <a href="/knowledge/contact"><small>Backlog</small><strong>Security improvement backlog template</strong><span>Request a backlog model with priority, prerequisite, owner, impact and validation fields.</span></a>
+  <a href="/knowledge/contact"><small>Endpoint</small><strong>Intune rollout checklist</strong><span>Request a rollout checklist for device ownership, enrollment and compliance readiness.</span></a>
+  <a href="/knowledge/contact"><small>Purview</small><strong>Information protection checklist</strong><span>Request sensitivity label, DLP and user-impact planning structure.</span></a>
+  <a href="/knowledge/contact"><small>Executive</small><strong>Results-report structure</strong><span>Request an executive summary and decision roadmap format.</span></a>
+</div>
 
 ## Search Keywords
 
@@ -186,25 +179,13 @@ Editable or customer-ready versions are not published publicly. Sanitized versio
 - 유통 Microsoft 365 보안 정책
 - Microsoft 365 보안 정책 컨설팅
 
-## 한국어 요약
-
-이 사례는 유통 업종에서 Microsoft 365 보안 및 정책 구성을 정비한 익명화된 customer success pattern입니다. 고객명, 프로젝트명, 내부 세부 정보는 공개하지 않고, 업종과 반복 가능한 보안 정책 설계 패턴만 정리합니다.
-
-핵심은 Entra ID, Conditional Access, Intune, Defender, Purview, collaboration policy, Power Platform governance를 따로 보지 않고 하나의 Microsoft 365 security baseline으로 묶어 개선 backlog와 운영 기준을 만든다는 점입니다.
-
-## Reference Snapshot
-
-<div class="kc-outcome-grid" aria-label="Retail Microsoft 365 security policy reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Policy consistency</strong><span>Retail operations require secure access and collaboration without slowing store, office and partner work.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Baseline and backlog</strong><span>Review identity, endpoint, collaboration, data protection and governance controls as one policy model.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Actionable roadmap</strong><span>Findings become a prioritized improvement backlog, prerequisite roadmap and executive reporting structure.</span></div>
-</div>
-
 ## Related Pages
 
-- [Customer Success Reference Patterns](./customer-success-reference-patterns)
-- [Microsoft 365 Licensing](../microsoft365/licensing)
-- [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update)
-- [Security Modernization Playbook](../playbooks/security-modernization-playbook)
-- [Microsoft 365 Assessment Playbook](../playbooks/m365-assessment-playbook)
-- [Contact and Asset Request](../contact)
+<div class="kc-entry-hub" aria-label="Retail M365 security related pages">
+  <a href="/knowledge/projects/customer-success-reference-patterns"><small>Reference</small><strong>Customer Success Reference Patterns</strong><span>Additional anonymized customer success patterns by industry and scenario.</span></a>
+  <a href="/knowledge/microsoft365/licensing"><small>Licensing</small><strong>Microsoft 365 Licensing</strong><span>License planning and capability alignment for Microsoft 365 programs.</span></a>
+  <a href="/knowledge/licensing/july-2026-microsoft-licensing-update"><small>Licensing</small><strong>Microsoft Licensing Feature Update</strong><span>Current licensing feature context for Microsoft 365 security and governance planning.</span></a>
+  <a href="/knowledge/playbooks/security-modernization-playbook"><small>Playbook</small><strong>Security Modernization Playbook</strong><span>Reusable security modernization delivery pattern.</span></a>
+  <a href="/knowledge/playbooks/m365-assessment-playbook"><small>Assessment</small><strong>Microsoft 365 Assessment Playbook</strong><span>Assessment approach for current-state review and improvement planning.</span></a>
+  <a href="/knowledge/contact"><small>Request</small><strong>Contact and Asset Request</strong><span>Request sanitized templates or discussion materials.</span></a>
+</div>
