@@ -3,9 +3,46 @@ id: readiness
 title: Copilot Readiness Assessment Framework
 description: "Copilot Readiness Assessment Framework - Microsoft 365 Copilot adoption should not begin with license assignment."
 sidebar_label: Copilot Readiness
+toc_max_heading_level: 2
 ---
 
 # Copilot Readiness Assessment Framework
+
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Copilot readiness assessment hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft 365 Copilot Readiness</span>
+    <h2>Prove readiness before assigning licenses</h2>
+    <p>Copilot readiness should prove that people, data and controls are ready for AI-assisted work. License assignment should follow evidence across identity, security, data governance, compliance, adoption and operating support.</p>
+    <div class="kc-hero-signal-row" aria-label="Copilot readiness signals">
+      <span>Identity</span>
+      <span>Data</span>
+      <span>Security</span>
+      <span>Adoption</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Copilot readiness related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/copilot/adoption-program">Adoption Program</a>
+      <a class="kc-topic-button" href="/knowledge/security/purview">Purview</a>
+      <a class="kc-topic-button" href="/knowledge/microsoft365/sharepoint">SharePoint IA</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Copilot readiness domain visual">
+    <div class="kc-factory-panel__header">
+      <span>Readiness Domains</span>
+      <strong>AI-safe rollout evidence</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#1-identity-readiness" class="kc-factory-card"><small>15%</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access and privileged access.</span></a>
+      <a href="#2-security-readiness" class="kc-factory-card"><small>20%</small><strong>Security</strong><span>Defender, device compliance, monitoring and incident response.</span></a>
+      <a href="#3-data-readiness" class="kc-factory-card"><small>25%</small><strong>Data</strong><span>SharePoint, Teams, OneDrive, permissions and content quality.</span></a>
+      <a href="#5-adoption-readiness" class="kc-factory-card"><small>15%</small><strong>Adoption</strong><span>Training, champions, support, use cases and user confidence.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Readiness rule</strong>
+      <span>Do not use Copilot as a shortcut around data governance. Stronger reasoning makes clean permissions, labels and ownership more important.</span>
+    </div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -40,22 +77,20 @@ The readiness question is no longer only "Can we enable Copilot?" It is "Can we 
 
 ## Readiness Architecture
 
-```mermaid
-flowchart TB
-    BIZ[Business Objectives] --> READY[Copilot Readiness]
-
-    ID[Identity Readiness] --> READY
-    SEC[Security Readiness] --> READY
-    DATA[Data Governance] --> READY
-    SPO[SharePoint Permission Review] --> READY
-    PUR[Purview Labels and DLP] --> READY
-    ADOPT[User Adoption Readiness] --> READY
-    OPS[Operational Support Model] --> READY
-
-    READY --> PILOT[Copilot Pilot]
-    PILOT --> INSIGHT[Usage and Risk Insights]
-    INSIGHT --> SCALE[Enterprise Rollout]
-```
+<div class="kc-journey-map" aria-label="Copilot readiness architecture">
+  <div class="kc-journey-map__header">
+    <span>Readiness Architecture</span>
+    <strong>Business objective to controlled rollout</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Objectives</strong><span>Target roles, scenarios, value hypothesis and pilot scope.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Identity & Security</strong><span>Entra ID, Conditional Access, Defender and device controls.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Data Governance</strong><span>SharePoint permissions, Purview labels, DLP and content quality.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Adoption & Support</strong><span>Training, champions, help desk, VOC and communications.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Pilot Insights</strong><span>Usage, risk, quality, satisfaction and improvement backlog.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Enterprise Rollout</strong><span>Scaled adoption with governance, measurement and support cadence.</span></div>
+  </div>
+</div>
 
 ---
 
