@@ -3,6 +3,7 @@ id: microsoft-scout
 title: Microsoft Scout
 description: "Microsoft Scout - Microsoft Scout is Microsoft's always on personal agent concept introduced for the next stage of Microsoft 365 AI experiences."
 sidebar_label: Microsoft Scout
+toc_max_heading_level: 2
 ---
 
 # Microsoft Scout
@@ -12,6 +13,52 @@ sidebar_label: Microsoft Scout
 Microsoft Scout is Microsoft's always-on personal agent concept introduced for the next stage of Microsoft 365 AI experiences.
 
 Unlike traditional Copilot experiences that require direct user interaction, Scout represents a more proactive agent pattern: coordinating tasks, monitoring communications, preparing meetings and helping users manage commitments.
+
+<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Microsoft Scout hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft Scout Concept</span>
+    <h2>From user-initiated Copilot to proactive work agents</h2>
+    <div className="kc-topic-hero__lede">Scout-style agents point toward always-on work assistance that prepares meetings, tracks commitments, coordinates follow-up and surfaces decisions inside Microsoft 365 governance boundaries.</div>
+    <div className="kc-hero-signal-row" aria-label="Microsoft Scout signals">
+      <span>Context</span>
+      <span>Commitments</span>
+      <span>Follow-up</span>
+      <span>Controls</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Scout operating model">
+    <div className="kc-factory-panel__header">
+      <span>Personal Agent Operating Model</span>
+      <strong>Work IQ to governed proactive assistance</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#meeting-preparation" className="kc-factory-card">
+        <small>01</small>
+        <strong>Prepare</strong>
+        <span>Review meetings, related emails, Teams context and required materials.</span>
+      </a>
+      <a href="#task-management" className="kc-factory-card">
+        <small>02</small>
+        <strong>Track</strong>
+        <span>Monitor commitments, action items, follow-up requests and risks.</span>
+      </a>
+      <a href="#work-iq-integration" className="kc-factory-card">
+        <small>03</small>
+        <strong>Ground</strong>
+        <span>Use organizational context, relationships and enterprise knowledge safely.</span>
+      </a>
+      <a href="#security-and-compliance" className="kc-factory-card">
+        <small>04</small>
+        <strong>Govern</strong>
+        <span>Apply Purview, Defender, policy enforcement, audit and compliance controls.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Agent rule</strong>
+      <span>Proactive agents need clear action boundaries, user control, audit trail and human approval for sensitive work.</span>
+    </div>
+  </div>
+</section>
 
 ---
 
@@ -34,18 +81,39 @@ and proactively assists users without requiring every action to start from a man
 
 ## Evolution of Microsoft AI
 
-```mermaid
-flowchart LR
-
-A[Copilot Chat]
-B[Copilot Studio]
-C[AI Agents]
-D[Microsoft Scout]
-
-A --> B
-B --> C
-C --> D
-```
+<div className="kc-journey-map" aria-label="Evolution of Microsoft AI">
+  <div className="kc-journey-map__header">
+    <span>Evolution of Microsoft AI</span>
+    <strong>Assisted chat to proactive personal agents</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Copilot Chat</strong>
+      <span>User asks, Copilot responds with grounded assistance.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Copilot Studio</strong>
+      <span>Teams build business agents, workflows and governed skills.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>AI Agents</strong>
+      <span>Agents work with memory, tools, business context and task boundaries.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Scout pattern</strong>
+      <span>Personal agent monitors work context and prepares proactive assistance.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Governed work AI</strong>
+      <span>Human control, compliance, audit and measurable outcomes keep trust intact.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -160,20 +228,39 @@ This enables Scout-like agent experiences to understand not only data but also b
 
 ## Governance Model
 
-```mermaid
-flowchart TB
-
-A[User]
-B[Scout Agent]
-C[Microsoft 365]
-D[Work IQ]
-E[Compliance]
-
-A --> B
-B --> C
-B --> D
-B --> E
-```
+<div className="kc-journey-map" aria-label="Scout governance model">
+  <div className="kc-journey-map__header">
+    <span>Governance Model</span>
+    <strong>User control, Microsoft 365 context and compliance boundaries</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User</strong>
+      <span>Owns preferences, permissions, sensitive decisions and final approval.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Scout agent</strong>
+      <span>Coordinates context, commitments, meetings, tasks and proactive suggestions.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Microsoft 365</strong>
+      <span>Outlook, Teams, Calendar, SharePoint, OneDrive and tasks provide work signals.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Work IQ</strong>
+      <span>Organizational context and relationship signals improve relevance.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Compliance</strong>
+      <span>Purview, Defender, audit, policy and approval controls preserve trust.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

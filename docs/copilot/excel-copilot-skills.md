@@ -3,6 +3,7 @@ id: excel-copilot-skills
 title: Excel Copilot Skills and Frontier Finance
 description: "Excel Copilot Skills and Frontier Finance - Microsoft has introduced Skills for Excel Copilot, enabling reusable task specific capabilities that extend..."
 sidebar_label: Excel Copilot Skills
+toc_max_heading_level: 2
 ---
 
 # Excel Copilot Skills and Frontier Finance
@@ -14,6 +15,52 @@ Microsoft has introduced Skills for Excel Copilot, enabling reusable task-specif
 Skills allow organizations to standardize financial analysis, planning, forecasting, valuation and reporting workflows while maintaining transparency, auditability and governance.
 
 This capability represents a major evolution of Copilot for Finance scenarios and establishes a foundation for Enterprise Finance AI.
+
+<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Excel Copilot Skills hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Excel Copilot Skills</span>
+    <h2>Standardize finance work with reusable Copilot skills</h2>
+    <div className="kc-topic-hero__lede">Excel Copilot Skills move finance AI from one-off prompts to reusable analysis patterns with governed data, workbook rules, traceability and reviewable outputs.</div>
+    <div className="kc-hero-signal-row" aria-label="Excel Copilot Skills signals">
+      <span>Skill</span>
+      <span>Data</span>
+      <span>Model</span>
+      <span>Evidence</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Excel Copilot Skills operating model">
+    <div className="kc-factory-panel__header">
+      <span>Finance AI Operating Model</span>
+      <strong>Skill definition to validated workbook output</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#what-is-a-skill" className="kc-factory-card">
+        <small>01</small>
+        <strong>Define</strong>
+        <span>Package repeatable analysis tasks such as variance, forecast, DCF and close review.</span>
+      </a>
+      <a href="#data-connectors" className="kc-factory-card">
+        <small>02</small>
+        <strong>Connect</strong>
+        <span>Use trusted financial data sources, workbook rules and enterprise context.</span>
+      </a>
+      <a href="#traceability-and-governance" className="kc-factory-card">
+        <small>03</small>
+        <strong>Govern</strong>
+        <span>Review planned changes, show changes, validate assumptions and keep audit trail.</span>
+      </a>
+      <a href="#strategic-impact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Scale</strong>
+        <span>Turn individual productivity into finance operating model improvement.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Finance AI rule</strong>
+      <span>Do not automate financial analysis without source traceability, approval boundaries and workbook change evidence.</span>
+    </div>
+  </div>
+</section>
 
 ---
 
@@ -28,13 +75,39 @@ Traditional prompting creates challenges:
 
 Skills introduce reusable business logic.
 
-```mermaid
-flowchart LR
-    USER[User]
-    USER --> SKILL[Excel Skill]
-    SKILL --> DATA[Financial Data]
-    DATA --> RESULT[Validated Output]
-```
+<div className="kc-journey-map" aria-label="Excel skill execution model">
+  <div className="kc-journey-map__header">
+    <span>Skill Execution Model</span>
+    <strong>User request to validated finance output</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User request</strong>
+      <span>Analyst asks for variance, forecast, valuation, close review or reporting support.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Excel skill</strong>
+      <span>Reusable task definition applies controlled finance logic and output structure.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Financial data</strong>
+      <span>Workbook data, connector data, assumptions and model rules provide context.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Review</strong>
+      <span>Plan with Copilot, show changes and workbook rules support validation.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Output</strong>
+      <span>Approved analysis, report, model update or executive finance package.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -69,21 +142,39 @@ Examples:
 
 ## Frontier Finance Architecture
 
-```mermaid
-flowchart TB
-
-A[Excel Copilot]
-B[Skills]
-C[Enterprise Data]
-D[Finance Models]
-E[Business Output]
-
-A --> B
-B --> C
-B --> D
-C --> E
-D --> E
-```
+<div className="kc-journey-map" aria-label="Frontier finance architecture">
+  <div className="kc-journey-map__header">
+    <span>Frontier Finance Architecture</span>
+    <strong>Excel Copilot, skills, data and models into business output</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Excel Copilot</strong>
+      <span>Finance users work inside the spreadsheet interface they already use.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Skills</strong>
+      <span>Task-specific skills standardize repeatable financial workflows.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Enterprise data</strong>
+      <span>Trusted workbook, connector and business data provide controlled grounding.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Finance models</strong>
+      <span>DCF, forecast, variance, portfolio and close models create decision logic.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Business output</strong>
+      <span>Validated analysis, management reporting and finance decision support.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

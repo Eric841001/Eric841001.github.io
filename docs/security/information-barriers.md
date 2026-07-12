@@ -3,6 +3,7 @@ sidebar_position: 9
 title: Microsoft Purview Information Barriers
 sidebar_label: Purview Information Barriers
 description: Microsoft Purview Information Barriers implementation guide for segment design, policy activation, Teams validation, SharePoint and OneDrive controls, rollback and audit evidence.
+toc_max_heading_level: 2
 ---
 
 # Microsoft Purview Information Barriers
@@ -13,24 +14,51 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 > **Executive lens:** Information Barriers are not just a Teams chat restriction. They are a segmentation model across users, groups, sites and collaboration workloads that must be validated with both allowed and blocked communication evidence.
 
-
-<div class="kc-outcome-grid" aria-label="Information Barriers quick read cards">
-  <div class="kc-outcome-card">
-    <small>WHY</small>
-    <strong>Prevent restricted collaboration</strong>
-    <span>Information Barriers help separate users, groups and workloads where communication must be controlled.</span>
+<section className="kc-topic-hero" aria-label="Information Barriers hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Purview Information Barriers</span>
+    <h2>Design collaboration boundaries with evidence, not guesswork</h2>
+    <div className="kc-topic-hero__lede">Information Barriers should connect business restriction matrix, segment design, policy activation, workload validation, exceptions, rollback and audit evidence.</div>
+    <div className="kc-hero-signal-row" aria-label="Information Barriers signals">
+      <span>Matrix</span>
+      <span>Segment</span>
+      <span>Policy</span>
+      <span>Evidence</span>
+    </div>
   </div>
-  <div class="kc-outcome-card">
-    <small>DESIGN</small>
-    <strong>Model segments carefully</strong>
-    <span>Design segment membership, policies, Teams, SharePoint, OneDrive and Exchange impact together.</span>
+  <div className="kc-factory-panel" aria-label="Information Barriers operating model">
+    <div className="kc-factory-panel__header">
+      <span>Collaboration Control Model</span>
+      <strong>Business restriction to workload evidence</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#적용-시나리오" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Identify conflict-of-interest, subsidiary, regulated, project and Copilot data boundaries.</span>
+      </a>
+      <a href="#segment-design" className="kc-factory-card">
+        <small>02</small>
+        <strong>Segment</strong>
+        <span>Model departments, projects, subsidiaries, exceptions and regulated groups.</span>
+      </a>
+      <a href="#teams-검증" className="kc-factory-card">
+        <small>03</small>
+        <strong>Validate</strong>
+        <span>Test Teams, SharePoint, OneDrive, Exchange and allowed or blocked paths.</span>
+      </a>
+      <a href="#evidence-package" className="kc-factory-card">
+        <small>04</small>
+        <strong>Evidence</strong>
+        <span>Keep matrix, policy status, validation screenshots, exception register and rollback plan.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>IB rule</strong>
+      <span>Never publish validation evidence with real UPNs, tenant domains, customer names or user-identifying screenshots.</span>
+    </div>
   </div>
-  <div class="kc-outcome-card">
-    <small>OPERATE</small>
-    <strong>Validate with evidence</strong>
-    <span>Keep test cases, workload evidence, exception process, rollback plan and owner approvals.</span>
-  </div>
-</div>
+</section>
 
 ## 적용 시나리오
 
@@ -44,31 +72,39 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 ## 구현 아키텍처
 
-```mermaid
-flowchart LR
-  Matrix["Collaboration Restriction Matrix"]:::plan
-  Segment["IB Segment"]:::plan
-  Policy["IB Policy"]:::control
-  Activate["Policy Activation"]:::control
-  Apply["Start Policy Application"]:::control
-  Teams["Teams Validation"]:::workload
-  SPO["SharePoint Site IB"]:::workload
-  ODB["OneDrive IB"]:::workload
-  Evidence["Audit Evidence Package"]:::outcome
-
-  Matrix --> Segment --> Policy --> Activate --> Apply
-  Apply --> Teams
-  Apply --> SPO
-  Apply --> ODB
-  Teams --> Evidence
-  SPO --> Evidence
-  ODB --> Evidence
-
-  classDef plan fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef control fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef workload fill:#fff7ed,stroke:#f97316,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Information Barriers implementation architecture">
+  <div className="kc-journey-map__header">
+    <span>구현 아키텍처</span>
+    <strong>Restriction matrix to audit-ready evidence package</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Matrix</strong>
+      <span>Define who can collaborate, who must be blocked and who approves exceptions.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Segment</strong>
+      <span>Create IB segments based on business boundaries, attributes and exception model.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Policy</strong>
+      <span>Configure policy direction, activation state and application process.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Workloads</strong>
+      <span>Validate Teams, SharePoint, OneDrive and Exchange-specific behavior.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Evidence</strong>
+      <span>Package allowed and blocked tests, status, exceptions, rollback and owner approval.</span>
+    </div>
+  </div>
+</div>
 
 ## 설계 원칙
 
@@ -106,28 +142,39 @@ Segment는 단순 부서명이 아니라 정책 경계를 표현하는 단위입
 
 ## Workload Control Pattern
 
-```mermaid
-flowchart TB
-  Segment["User Segment"]:::control
-  Teams["Teams<br/>chat, group chat,<br/>team membership"]:::workload
-  SharePoint["SharePoint<br/>site access,<br/>membership, sharing"]:::workload
-  OneDrive["OneDrive<br/>links, sharing,<br/>segment access"]:::workload
-  Exchange["Exchange<br/>mail flow rules<br/>and transport controls"]:::workload
-  Evidence["Validation Evidence<br/>allowed and blocked paths"]:::outcome
-
-  Segment --> Teams
-  Segment --> SharePoint
-  Segment --> OneDrive
-  Segment -. separate design .-> Exchange
-  Teams --> Evidence
-  SharePoint --> Evidence
-  OneDrive --> Evidence
-  Exchange --> Evidence
-
-  classDef control fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef workload fill:#fff7ed,stroke:#f97316,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Information Barriers workload control pattern">
+  <div className="kc-journey-map__header">
+    <span>Workload Control Pattern</span>
+    <strong>One segment model, multiple workload validation paths</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User segment</strong>
+      <span>Segment membership expresses the business restriction boundary.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Teams</strong>
+      <span>Validate chat, group chat, team membership and allowed collaboration paths.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>SharePoint / OneDrive</strong>
+      <span>Validate site access, sharing links, membership and direct file access.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Exchange</strong>
+      <span>Review separate mail flow, transport rule, moderation and DLP design.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Evidence</strong>
+      <span>Keep screenshots and logs for both allowed and blocked collaboration paths.</span>
+    </div>
+  </div>
+</div>
 
 ## Teams 검증
 
