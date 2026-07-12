@@ -1,173 +1,137 @@
 ---
 sidebar_position: 1
 title: Copilot
-description: Microsoft 365 Copilot readiness, adoption, governance, AI Agent, Copilot Studio and ROI guide for enterprise programs.
+description: Microsoft 365 Copilot readiness, GPT-5.6 adoption, Copilot Studio, AI Agent, Copilot Cowork, governance and ROI guide for enterprise programs.
 ---
 
 # Copilot
 
-This Copilot section covers Microsoft 365 Copilot, Copilot Studio, AI agents and enterprise AI governance.
+<section class="kc-topic-hero" aria-label="Copilot enterprise AI adoption landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Enterprise AI Adoption</span>
+    <h2>Start with Copilot, then scale into governed agents and real business outcomes</h2>
+    <p>Microsoft 365 Copilot adoption is not just license activation. It is a business change program that connects data readiness, security, role-based scenarios, Copilot Studio, M365 Agents, Copilot Cowork, cost control and measurable value.</p>
+    <div class="kc-topic-hero__actions" aria-label="Copilot overview entry actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/copilot-adoption">Adoption Path</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/copilot-studio-2026-platform-update">Copilot Studio Update</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/copilot-cowork-cost-governance">Cowork Governance</a>
+    </div>
+  </div>
 
-The focus is practical adoption: readiness, data protection, license value, use case prioritization, change management, agent lifecycle, cost control and executive decision support.
+  <div class="kc-factory-panel" aria-label="Copilot to agent journey">
+    <div class="kc-factory-panel__header"><span>AI Adoption Journey</span><strong>Governed scale</strong></div>
+    <div class="kc-factory-grid">
+      <a href="/knowledge/copilot/readiness" class="kc-factory-card"><small>01</small><strong>Copilot</strong><span>Daily knowledge work: meetings, documents, analysis, email and response.</span></a>
+      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" class="kc-factory-card"><small>02</small><strong>Copilot Studio</strong><span>Governed business agents, skills, memory, workflow and orchestration.</span></a>
+      <a href="/knowledge/search/ai-agent-factory" class="kc-factory-card"><small>03</small><strong>M365 Agents</strong><span>Contextual task assistance inside Microsoft 365 work patterns.</span></a>
+      <a href="/knowledge/copilot/copilot-cowork-cost-governance" class="kc-factory-card"><small>04</small><strong>Copilot Cowork</strong><span>Long-running work with approval, ownership, cost and monitoring controls.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Change management turns AI usage into adoption</strong><span>Champions, manager routines, training, VOC, KPI and value storytelling are what turn a feature rollout into a business capability.</span></div>
+  </div>
+</section>
 
 ## Visual Adoption Journey
 
-<div class="kc-ai-journey" aria-label="AI adoption journey from real work to governed Cowork">
-  <div class="kc-ai-journey__header">
-    <span>Enterprise AI Adoption Journey</span>
-    <strong>From daily work to governed scale</strong>
-  </div>
-  <div class="kc-ai-journey__track">
-    <div class="kc-ai-journey__card kc-ai-journey__card--work">
-      <small>01</small>
-      <strong>Real Work</strong>
-      <p>Meetings, documents, analysis and response work become the first AI scenarios.</p>
-    </div>
-    <div class="kc-ai-journey__card">
-      <small>02</small>
-      <strong>Copilot</strong>
-      <p>Start with personal productivity and everyday Microsoft 365 knowledge work.</p>
-    </div>
-    <div class="kc-ai-journey__card">
-      <small>03</small>
-      <strong>Copilot Studio</strong>
-      <p>Convert repeatable business scenarios into governed agents and workflows.</p>
-    </div>
-    <div class="kc-ai-journey__card">
-      <small>04</small>
-      <strong>M365 Agents</strong>
-      <p>Extend Microsoft 365 with contextual task assistance and in-flow automation.</p>
-    </div>
-    <div class="kc-ai-journey__card">
-      <small>05</small>
-      <strong>Copilot Cowork</strong>
-      <p>Operate long-running work with approval, ownership, cost and outcome controls.</p>
-    </div>
-  </div>
-  <div class="kc-ai-journey__rails">
-    <div>
-      <strong>Governance Spine</strong>
-      <span>Identity, data boundary, DLP, owner model, cost and telemetry</span>
-    </div>
-    <div>
-      <strong>Change Management</strong>
-      <span>Champions, manager routines, training, VOC, KPI and value storytelling</span>
-    </div>
-  </div>
+<div class="kc-journey-map kc-ai-journey" aria-label="Copilot adoption journey from real work to governed scale">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Real work</strong><span>Meetings, documents, analysis, decisions, follow-up and response work.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Copilot</strong><span>Personal productivity and everyday Microsoft 365 knowledge work.</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Copilot Studio</strong><span>Repeatable business scenarios become governed agents and workflows.</span></div>
+  <div class="kc-journey-node"><small>04</small><strong>M365 Agents</strong><span>Contextual task assistance and in-flow automation inside work patterns.</span></div>
+  <div class="kc-journey-node"><small>05</small><strong>Cowork</strong><span>Long-running work with owners, approvals, cost and quality telemetry.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Business value</strong><span>Time saved, quality improved, risk reduced and decisions accelerated.</span></div>
 </div>
 
-| Journey Layer | What It Means |
-|---|---|
-| Real work | meetings, documents, analysis, response and daily knowledge work |
-| Copilot | personal productivity entry point across Microsoft 365 apps |
-| Copilot Studio | governed business agents and workflow automation |
-| M365 Agents | contextual task assistance inside Microsoft 365 work patterns |
-| Copilot Cowork | longer-running work with approvals, cost control and ownership |
-| Governance / Adoption | identity, data protection, DLP, owner model, champions, training, VOC and KPI |
-
-<div class="kc-outcome-grid" aria-label="Copilot adoption outcome model">
-  <div class="kc-outcome-card">
-    <small>START</small>
-    <strong>Make AI useful in daily work</strong>
-    <span>Begin with meetings, documents, analysis and response tasks where users can feel value quickly.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>CHANGE</small>
-    <strong>Turn use into adoption</strong>
-    <span>Build champions, manager routines, training, feedback loops and measurable use case maturity.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>SCALE</small>
-    <strong>Govern agents and Cowork</strong>
-    <span>Expand into Copilot Studio, M365 Agents and Copilot Cowork with owner, approval, cost and telemetry controls.</span>
+<div class="kc-context-panel" aria-label="Copilot governance and adoption spine">
+  <div class="kc-context-panel__lead"><small>Operating Principle</small><strong>Governance and adoption must move together.</strong><span>Copilot becomes valuable when users change behavior and the organization controls identity, data boundary, DLP, owner model, cost and telemetry at the same time.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/copilot/governance"><small>Governance</small><strong>Data and policy boundary</strong><span>Permission cleanup, DLP, Purview, Defender signals, owner model and approval path.</span></a>
+    <a href="/knowledge/copilot/adoption-program"><small>Adoption</small><strong>Behavior change</strong><span>Role-based scenarios, champions, manager routines, training and value storytelling.</span></a>
+    <a href="/knowledge/downloads/overview"><small>Assets</small><strong>Reusable templates</strong><span>Readiness checklist, adoption WBS, executive review pack and agent governance checklist.</span></a>
   </div>
 </div>
 
 ## GPT-5.6 Update for Microsoft 365 Copilot
 
-> **Update note:** Based on the July 9, 2026 Microsoft 365 Copilot update shared for review, GPT-5.6 should be treated as a reasoning-model upgrade that affects adoption design, model selection guidance and governance communication.
+Based on the July 9, 2026 Microsoft 365 Copilot update shared for review, GPT-5.6 should be treated as a reasoning-model upgrade that affects adoption design, model selection guidance and governance communication.
 
-GPT-5.6 expands the way Microsoft 365 Copilot can support end-to-end knowledge work across Word, Excel, PowerPoint, Chat and Copilot Cowork. The practical consulting implication is not only "a better model is available." It changes how users should be guided to use Copilot for document drafting, spreadsheet analysis, presentation refinement, conversation-based reasoning and long-running agentic work.
-
-Enterprise rollout should communicate the following points:
-
-| Area | Planning Implication |
-|---|---|
-| User experience | Users may see stronger reasoning quality in writing, analysis, presentation and chat scenarios. |
-| Model selection | Where available, users can select GPT-5.6 directly through the model selector depending on tenant and regional rollout status. |
-| Adoption | Training should move from feature explanation to outcome scenarios such as "draft, analyze, decide and follow up." |
-| Governance | Security, compliance and privacy controls remain part of the Microsoft 365 enterprise boundary. |
-| Rollout | Availability can be phased by region, tenant configuration and service rollout schedule. |
-| Cowork | Longer-running Copilot Cowork scenarios need owner, approval, cost and monitoring rules before scale-out. |
+<div class="kc-platform-fit" aria-label="GPT-5.6 planning implications">
+  <div class="kc-platform-fit__card"><small>User Experience</small><strong>Stronger reasoning scenarios</strong><span>Users should be guided toward drafting, analysis, presentation refinement, comparison, decision support and follow-up work.</span></div>
+  <div class="kc-platform-fit__card"><small>Model Selection</small><strong>Clear model guidance</strong><span>Where available, model selection guidance should explain when to use GPT-5.6 for deeper reasoning tasks.</span></div>
+  <div class="kc-platform-fit__card"><small>Adoption</small><strong>Scenario-based training</strong><span>Training should move from feature explanation to outcome scenarios such as draft, analyze, decide and follow up.</span></div>
+  <div class="kc-platform-fit__card"><small>Governance</small><strong>Enterprise boundary</strong><span>Security, compliance, privacy, data protection and tenant controls remain part of the Microsoft 365 enterprise boundary.</span></div>
+  <div class="kc-platform-fit__card"><small>Rollout</small><strong>Phased availability</strong><span>Availability can depend on region, tenant configuration, service rollout and model selection experience.</span></div>
+  <div class="kc-platform-fit__card"><small>Cowork</small><strong>Long-running work controls</strong><span>Copilot Cowork scenarios need owner, approval, cost and monitoring rules before scale-out.</span></div>
+</div>
 
 For adoption programs, this update should be reflected in champion training, executive demos, prompt patterns, model selection guidance and post-launch value measurement.
 
 ## 2026 Copilot Studio Update
 
-Copilot Studio should now be treated as an enterprise agent platform, not only a chatbot builder.
+Copilot Studio should be treated as an enterprise agent platform, not only a chatbot builder. Modern planning should include the new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, Microsoft Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
 
-The latest planning model includes new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, Microsoft Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
+<div class="kc-operating-model" aria-label="Copilot Studio planning model">
+  <div class="kc-operating-stage"><small>Discover</small><strong>Agent portfolio intake</strong><span>Collect agent ideas, business owners, data sources, expected value and risk level.</span></div>
+  <div class="kc-operating-stage"><small>Design</small><strong>Skills and workflow</strong><span>Define reusable skills, memory boundary, connectors, tools, workflow and escalation path.</span></div>
+  <div class="kc-operating-stage"><small>Govern</small><strong>Identity and policy</strong><span>Review Entra agent identities, access, DLP, environment strategy, approval and audit needs.</span></div>
+  <div class="kc-operating-stage"><small>Operate</small><strong>Cost and telemetry</strong><span>Track usage, Copilot Credit forecasting, quality, owner review and retirement criteria.</span></div>
+</div>
 
-Start with [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update) before designing a large-scale agent program.
+Start with [Copilot Studio 2026 Platform Update](/knowledge/copilot/copilot-studio-2026-platform-update) before designing a large-scale agent program.
+
+## Copilot Adoption Model
+
+<div class="kc-maturity-ladder" aria-label="Copilot adoption model">
+  <div class="kc-maturity-step"><small>Readiness</small><strong>Tenant, data and security baseline</strong><span>Produce readiness report, risk log, oversharing review and pilot criteria.</span></div>
+  <div class="kc-maturity-step"><small>Use Case</small><strong>Role and business scenario design</strong><span>Build use case backlog, persona map, value hypothesis and prompt patterns.</span></div>
+  <div class="kc-maturity-step"><small>Pilot</small><strong>Validate value and support needs</strong><span>Run pilot plan, training assets, feedback dashboard and issue triage rhythm.</span></div>
+  <div class="kc-maturity-step"><small>Governance</small><strong>Control data, prompts, agents and licenses</strong><span>Create governance charter, policy model, owner model and cost tracking approach.</span></div>
+  <div class="kc-maturity-step"><small>Scale</small><strong>Expand without losing control</strong><span>Use rollout roadmap, KPI model, operating rhythm and executive value reporting.</span></div>
+</div>
+
+## Topics Covered
+
+<div class="kc-entry-hub" aria-label="Copilot topics covered">
+  <a href="/knowledge/copilot/readiness"><small>Readiness</small><strong>Microsoft 365 Copilot readiness</strong><span>Tenant, data, permission, security and pilot readiness review.</span></a>
+  <a href="/knowledge/copilot/adoption-program"><small>Adoption</small><strong>Adoption program design</strong><span>Use case mapping, champion model, manager routines and value measurement.</span></a>
+  <a href="/knowledge/copilot/governance"><small>Governance</small><strong>Copilot governance</strong><span>Data protection, policy, owner model, prompt guidance and control rhythm.</span></a>
+  <a href="/knowledge/copilot/copilot-studio-2026-platform-update"><small>Studio</small><strong>Copilot Studio platform update</strong><span>Agent platform planning, skills, memory, inventory, identities and cost forecasting.</span></a>
+  <a href="/knowledge/search/ai-agent-factory"><small>Agent</small><strong>AI Agent operating model</strong><span>Agent Factory, lifecycle, portfolio governance and multi-agent framework.</span></a>
+  <a href="/knowledge/copilot/copilot-cowork-cost-governance"><small>Cowork</small><strong>Cowork cost governance</strong><span>Long-running work, approval, owner, cost and telemetry controls.</span></a>
+</div>
+
+## Recommended Reading
+
+<div class="kc-entry-hub" aria-label="Copilot recommended reading">
+  <a href="/knowledge/copilot/readiness"><small>Start</small><strong>Copilot Readiness</strong><span>Prepare tenant, security, data and pilot criteria.</span></a>
+  <a href="/knowledge/copilot/business-use-cases"><small>Use Cases</small><strong>Business Use Cases</strong><span>Translate features into business scenarios and adoption stories.</span></a>
+  <a href="/knowledge/copilot/agent-factory-operating-model"><small>Agents</small><strong>Agent Factory Operating Model</strong><span>Build a governed agent portfolio instead of disconnected experiments.</span></a>
+  <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory"><small>Reference</small><strong>Enterprise AI Agent Factory Case Study</strong><span>Anonymized delivery pattern for enterprise agent programs.</span></a>
+  <a href="/knowledge/projects/enterprise-ai-adoption-program"><small>Program</small><strong>Enterprise AI Adoption Program</strong><span>Connect strategy, change management and measurable outcomes.</span></a>
+  <a href="/knowledge/contact"><small>Request</small><strong>Contact and Asset Request</strong><span>Request readiness workbooks, adoption roadmaps or executive AI value materials.</span></a>
+</div>
+
+## Delivery Assets
+
+<div class="kc-platform-fit" aria-label="Copilot delivery assets">
+  <div class="kc-platform-fit__card"><small>Readiness</small><strong>Copilot readiness checklist</strong><span>Tenant, data, permission, security, pilot group and risk review.</span></div>
+  <div class="kc-platform-fit__card"><small>Adoption</small><strong>Adoption WBS and milestone plan</strong><span>Workstreams, schedule, training, champions, communication and value tracking.</span></div>
+  <div class="kc-platform-fit__card"><small>GPT-5.6</small><strong>Model selection guide</strong><span>Executive message, champion training and scenario guidance for reasoning-model use.</span></div>
+  <div class="kc-platform-fit__card"><small>Governance</small><strong>Data protection checklist</strong><span>Oversharing, Purview, DLP, Defender signals, owner and approval controls.</span></div>
+  <div class="kc-platform-fit__card"><small>Agent</small><strong>Agent governance checklist</strong><span>Agent intake, owner, lifecycle, environment, connector, cost and monitoring controls.</span></div>
+  <div class="kc-platform-fit__card"><small>Value</small><strong>ROI and value tracking model</strong><span>Time saved, quality, usage, confidence, business outcome and risk reduction measures.</span></div>
+</div>
 
 ## 한국어 요약
 
-Microsoft Copilot 도입은 단순히 license를 구매하고 사용자를 활성화하는 작업이 아닙니다. 성공적인 Copilot 도입을 위해서는 data readiness, permission cleanup, security policy, business scenario, user training, cost management, value measurement가 함께 설계되어야 합니다.
-
-이 섹션은 Microsoft 365 Copilot readiness assessment, Copilot adoption strategy, Copilot Governance, Copilot Studio, AI Agent, Agent Factory, Multi-Agent Framework, Prompt Engineering, ROI measurement 같은 실무 주제를 다룹니다.
+Microsoft 365 Copilot 도입은 단순히 license를 구매하고 사용자를 활성화하는 작업이 아닙니다. 성공적인 Copilot 도입을 위해서는 data readiness, permission cleanup, security policy, business scenario, user training, cost management, value measurement가 함께 설계되어야 합니다.
 
 Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기반으로 답변합니다. 따라서 SharePoint, Teams, OneDrive의 permission sprawl, sensitive information exposure, DLP policy, Purview label, Defender security signal을 함께 점검해야 합니다.
 
 2026년 7월 GPT-5.6 업데이트 이후에는 "AI 기능을 켜는 것"보다 "어떤 업무에서 더 깊은 reasoning을 활용하고, 어떤 모델을 선택하며, 어떤 governance boundary 안에서 확장할 것인가"가 adoption의 핵심 질문이 됩니다.
 
-## Copilot Adoption Model
-
-| Phase | Key Question | Outputs |
-|---|---|---|
-| Readiness | Is the tenant, data and security baseline ready? | readiness report, risk log, pilot criteria |
-| Use case design | Which roles and business scenarios create measurable value? | use case backlog, persona map, adoption hypothesis |
-| Pilot | Can selected users validate value and support needs? | pilot plan, training assets, feedback dashboard |
-| Governance | How will data, prompts, agents and licenses be controlled? | governance charter, policy, owner model |
-| Scale | How will adoption expand without losing control? | rollout roadmap, KPI model, operating rhythm |
-
-## Topics Covered
-
-- Microsoft 365 Copilot readiness
-- GPT-5.6 model selection and adoption messaging
-- Copilot adoption program design
-- business use case mapping
-- prompt engineering guidance
-- Copilot Studio and agent architecture
-- AI agent operating model
-- Copilot Cowork and usage-based cost governance
-- ROI and value realization framework
-
-## Recommended Reading
-
-- [Copilot Readiness](./readiness)
-- [Adoption Program](./adoption-program)
-- [Business Use Cases](./business-use-cases)
-- [Copilot Governance](./governance)
-- [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
-- [Agent Factory Operating Model](./agent-factory-operating-model)
-- [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
-- [Copilot Cowork Cost Governance](./copilot-cowork-cost-governance)
-- [Enterprise AI Adoption Program](../projects/enterprise-ai-adoption-program)
-
-## Delivery Assets
-
-- Copilot readiness checklist
-- adoption WBS and milestone plan
-- GPT-5.6 adoption message and model selection guide
-- executive review pack
-- use case prioritization model
-- data protection and oversharing risk checklist
-- agent governance checklist
-- license and cost tracking model
+Copilot Studio와 M365 Agents는 단순한 실험이 아니라 agent portfolio, owner model, lifecycle, cost, security, monitoring을 포함한 운영 모델로 설계해야 합니다. Copilot Cowork처럼 장기 실행 업무로 확장될수록 approval, 책임자, 비용 통제, 품질 측정이 더 중요해집니다.
 
 ## 검색 키워드
-
-이 문서는 다음과 같은 검색어와 관련됩니다.
 
 - Microsoft Copilot adoption
 - Microsoft 365 Copilot readiness
@@ -191,10 +155,10 @@ Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기�
 - 임원 보고용 Copilot adoption roadmap 작성
 - GPT-5.6 기반 모델 선택 및 사용자 안내 자료 정리
 - 부서별 Copilot use case 발굴
-- Copilot Studio 기반 business Agent 설계
+- Copilot Studio 기반 business agent 설계
 - Copilot usage와 license value 측정
-- 데이터 유출 위험을 줄이기 위한 Purview/DLP 연계 설계
+- 데이터 유출 위험을 줄이기 위한 Purview / DLP 연계 설계
 
 ## Contact / Asset Request
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
