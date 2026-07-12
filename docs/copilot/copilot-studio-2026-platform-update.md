@@ -7,184 +7,134 @@ sidebar_label: 2026 Platform Update
 
 # Copilot Studio 2026 Platform Update
 
+<section class="kc-topic-hero" aria-label="Copilot Studio 2026 platform update landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">2026 Agent Platform Baseline</span>
+    <h2>Copilot Studio is now an enterprise agent platform, not just a chatbot builder</h2>
+    <p>The 2026 planning baseline should treat every agent as an operational object with identity, owner, knowledge boundary, reusable skills, workflow actions, cost forecasting, evaluation and retirement rules.</p>
+    <div class="kc-topic-hero__actions" aria-label="Copilot Studio 2026 actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/ai-agent-factory">AI Agent Factory</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/agent-factory-operating-model">Operating Model</a>
+      <a class="kc-topic-button" href="/knowledge/contact">Request Agent Assets</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Copilot Studio 2026 capability map">
+    <div class="kc-factory-panel__header"><span>Platform Shift</span><strong>Governed agents</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#2026-capability-map" class="kc-factory-card"><small>01</small><strong>Build</strong><span>New agent experience, Microsoft IQ, skills, memory and workflows.</span></a>
+      <a href="#updated-agent-architecture" class="kc-factory-card"><small>02</small><strong>Execute</strong><span>Computer use, agent flows, connectors, APIs and agent-to-agent scenarios.</span></a>
+      <a href="#governance-control-plane" class="kc-factory-card"><small>03</small><strong>Govern</strong><span>Inventory, readiness status, Entra Agent IDs, DLP, analytics and evaluations.</span></a>
+      <a href="#release-gate-model" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Cost forecasting, owner review, telemetry, retirement and continuous improvement.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Do not build agents faster than governance can absorb</strong><span>The practical goal is not to create many agents. The goal is to create a repeatable system for approving, publishing, monitoring and retiring agents.</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Copilot Studio has moved beyond chatbot authoring. In 2026, it should be positioned as an enterprise agent platform that combines low-code agent design, workflow automation, Microsoft 365 grounding, reusable skills, computer use, agent-to-agent connectivity and governance telemetry.
 
-The most important design shift is this: an agent is no longer just a conversational interface. It is an operational object that needs identity, ownership, knowledge boundaries, tools, cost forecasting, monitoring and retirement rules.
+The design shift is simple but important: an agent is no longer just a conversational interface. It is an operational object that needs identity, ownership, knowledge boundaries, tools, cost forecasting, monitoring and retirement rules.
 
 ## 한국어 요약
 
-Copilot Studio는 더 이상 단순한 chatbot builder로 보기 어렵습니다.
-
-2026년 기준 Copilot Studio는 new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, A2A protocol, Entra agent identity 같은 기능을 통해 enterprise agent platform에 가까워지고 있습니다.
+Copilot Studio는 더 이상 단순한 chatbot builder로 보기 어렵습니다. 2026년 기준 Copilot Studio는 new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, A2A protocol, Entra Agent ID 같은 기능을 통해 enterprise agent platform에 가까워지고 있습니다.
 
 따라서 기업 고객에게는 "agent를 만들 수 있다"보다 "누가 소유하고, 어떤 데이터에 접근하며, 어떤 도구를 실행하고, 비용과 품질을 어떻게 관리할 것인가"를 먼저 설계해야 합니다.
 
-GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 adoption journey로 설명하는 것이 더 중요해졌습니다. 더 강한 reasoning 모델은 사용자 경험을 좋게 만들 수 있지만, enterprise 환경에서는 model selection, data boundary, approval, cost control, evaluation 기준이 함께 준비되어야 합니다.
+GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 adoption journey로 설명하는 것이 더 중요해졌습니다. 더 강한 reasoning model은 사용자 경험을 좋게 만들 수 있지만, enterprise 환경에서는 model selection, data boundary, approval, cost control, evaluation 기준이 함께 준비되어야 합니다.
 
-## 2026 Capabilities To Track
+## 2026 Capability Map
 
-| Capability | Enterprise Meaning |
-|---|---|
-| New agent experience | enhanced orchestration runtime and improved reasoning for agent design |
-| Microsoft IQ | grounding agents with Microsoft 365 emails, calendar, files, Teams messages and people context |
-| Skills | reusable instruction packages that can be added to multiple agents |
-| Memory | persistent per-user context for more personalized responses |
-| Computer use | agents can automate browser and desktop application tasks |
-| Microsoft 365 Copilot node | workflows can call Microsoft 365 Copilot or a specific agent |
-| Agent inventory schema | organizations can discover and audit agents centrally |
-| Agent readiness status | consolidated status page for runtime, publishing and configuration issues |
-| Entra agent identities | preview pattern for scoping permissions and Conditional Access to individual agents |
-| A2A protocol | agent-to-agent connectivity for multi-agent scenarios |
-| Copilot Credit estimator | consumption forecasting before scale-out |
-| Workflows | public preview flow model with improved designer, testing, prompts, agent calls and human review steps |
-| Teams classic chatbot shift | makers should plan around Copilot Studio web app and avoid new dependency on the Teams app for classic chatbot creation |
+<div class="kc-platform-fit" aria-label="Copilot Studio 2026 capability map">
+  <div class="kc-platform-fit__card"><small>June 2026</small><strong>New agent experience</strong><span>Enhanced orchestration runtime improves agent design, response quality and reasoning while classic experience remains available.</span></div>
+  <div class="kc-platform-fit__card"><small>June 2026</small><strong>Microsoft IQ</strong><span>Agents can connect to organizational context such as email, calendar, files, Teams messages and people information.</span></div>
+  <div class="kc-platform-fit__card"><small>June 2026</small><strong>Skills and memory</strong><span>Reusable instruction packages and per-user persistent context require clear reuse, privacy and lifecycle rules.</span></div>
+  <div class="kc-platform-fit__card"><small>May 2026</small><strong>Computer use GA</strong><span>Agents can automate browser and desktop tasks, so UI automation needs approval, observability and recovery design.</span></div>
+  <div class="kc-platform-fit__card"><small>May 2026</small><strong>Agent inventory and readiness</strong><span>Central discovery, audit, publishing errors, runtime issues and configuration blocks become release-gate signals.</span></div>
+  <div class="kc-platform-fit__card"><small>May 2026</small><strong>Entra Agent IDs</strong><span>Preview identity model can help scope connector permissions, Conditional Access and DLP governance to individual agents.</span></div>
+  <div class="kc-platform-fit__card"><small>April 2026</small><strong>A2A protocol and estimator</strong><span>Agent-to-agent connectivity and Copilot Credit estimation support multi-agent design and scale-out planning.</span></div>
+  <div class="kc-platform-fit__card"><small>2026 Flow Model</small><strong>Workflows and agent flows</strong><span>Prompts, agent calls, human review and asynchronous responses make agent design closer to an operational workflow platform.</span></div>
+</div>
 
 ## Platform Migration Checkpoints
 
-| Checkpoint | Why It Matters |
-|---|---|
-| Classic chatbot dependency | After the end of June 2026, the Copilot Studio for Teams app can no longer be used to create classic chatbots. Existing strategy should move toward the Copilot Studio web app and new agent experience. |
-| Maker licensing | Agent makers need Copilot Studio user licensing; published agent users do not need a special license just to interact with an accessible agent. |
-| Tenant licensing | Copilot Studio tenant licensing and user licensing are separate checks. Procurement and admin teams should validate both. |
-| Capacity model | Purchased capacity is pooled at tenant level, but consumption should be reviewed per agent. |
-| Agent flows and workflows | Workflows can run prompts, call agents and include human review, so agent architecture is now closer to an operational workflow platform. |
-| Governance telemetry | Agent inventory, readiness status, analytics and evaluations should be part of the release gate. |
+<div class="kc-maturity-ladder" aria-label="Copilot Studio migration checkpoints">
+  <div class="kc-maturity-step"><small>Authoring</small><strong>Move from classic chatbot dependency</strong><span>After June 2026, makers should plan around the Copilot Studio web app and the new agent experience.</span></div>
+  <div class="kc-maturity-step"><small>Licensing</small><strong>Separate maker and tenant checks</strong><span>Validate maker licensing, tenant licensing and consumption model before enabling broad agent creation.</span></div>
+  <div class="kc-maturity-step"><small>Capacity</small><strong>Forecast pooled consumption</strong><span>Capacity can be pooled at tenant level, but consumption should be reviewed per agent and business scenario.</span></div>
+  <div class="kc-maturity-step"><small>Workflows</small><strong>Design beyond chat</strong><span>Workflows can run prompts, call agents and include human review, so release gates must include process risk.</span></div>
+  <div class="kc-maturity-step"><small>Telemetry</small><strong>Use readiness and evaluation signals</strong><span>Agent inventory, readiness status, analytics, evaluations and cost signals should decide production approval.</span></div>
+</div>
 
 ## Updated Agent Architecture
 
-```mermaid
-flowchart TB
-  User["User or<br/>trigger"]:::entry --> Agent["Copilot Studio<br/>Agent"]:::core
+<div class="kc-journey-map" aria-label="Copilot Studio agent architecture model">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User or trigger</strong><span>Human request, workflow trigger, business event or scheduled task.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Agent boundary</strong><span>Copilot Studio agent, instructions, context, knowledge, tools and channel.</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Orchestration</strong><span>Reasoning, routing, reusable skills, memory and workflow selection.</span></div>
+  <div class="kc-journey-node"><small>04</small><strong>Execution</strong><span>Agent flow, workflow, connector, API, computer use or agent-to-agent call.</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>05</small><strong>Control plane</strong><span>Inventory, Entra Agent ID, DLP, credit forecast, analytics and evaluations.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Outcome</strong><span>Task completion, decision support, operational insight and measured value.</span></div>
+</div>
 
-  Agent --> Orchestration["Orchestration<br/>plane"]:::plane
-  Agent --> Governance["Governance<br/>plane"]:::plane
+## Governance Control Plane
 
-  subgraph Runtime["Runtime capabilities"]
-    direction LR
-    IQ["Microsoft IQ<br/>Work IQ"]:::runtime
-    Skills["Reusable<br/>skills"]:::runtime
-    Memory["Memory"]:::runtime
-    Tools["Tools and<br/>workflows"]:::runtime
-  end
-
-  subgraph Execution["Execution channels"]
-    direction LR
-    Flow["Agent flow"]:::exec
-    Computer["Computer use"]:::exec
-    Connector["Connector<br/>API"]:::exec
-    A2A["Agent-to-agent"]:::exec
-  end
-
-  subgraph Controls["Governance controls"]
-    direction LR
-    Inventory["Agent<br/>inventory"]:::control
-    Identity["Entra agent<br/>identity"]:::control
-    DLP["Power Platform<br/>DLP"]:::control
-    Credits["Credit<br/>forecast"]:::control
-    Analytics["Analytics and<br/>evaluation"]:::control
-  end
-
-  Orchestration --> IQ
-  Orchestration --> Skills
-  Orchestration --> Memory
-  Orchestration --> Tools
-  Tools --> Flow
-  Tools --> Computer
-  Tools --> Connector
-  Tools --> A2A
-  Governance --> Inventory
-  Governance --> Identity
-  Governance --> DLP
-  Governance --> Credits
-  Governance --> Analytics
-
-  classDef entry fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.6px
-  classDef core fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:2px
-  classDef plane fill:#eef6ff,stroke:#2563eb,color:#102033,stroke-width:1.8px
-  classDef runtime fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef exec fill:#fff7ed,stroke:#f59e0b,color:#102033,stroke-width:1.4px
-  classDef control fill:#f5f3ff,stroke:#7c3aed,color:#102033,stroke-width:1.4px
-```
-
-| Layer | Design Detail |
-|---|---|
-| User or trigger | human request, workflow trigger, business event or scheduled task |
-| Copilot Studio Agent | the visible agent experience and orchestration boundary |
-| Orchestration plane | reasoning, routing, memory, skills and tool selection |
-| Runtime capabilities | Microsoft IQ, reusable skills, memory and tool/workflow execution |
-| Execution channels | agent flow, computer use, connectors, APIs and agent-to-agent collaboration |
-| Governance plane | inventory, identity, DLP, credit forecasting, analytics and evaluation |
+<div class="kc-context-panel" aria-label="Copilot Studio governance control plane">
+  <div class="kc-context-panel__lead"><small>Control Plane</small><strong>Every production agent needs owner, boundary, cost and evaluation evidence.</strong><span>Governance should be designed before scale-out, especially when agents use organizational data, connectors, computer use or long-running workflows.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/security/conditional-access"><small>Identity</small><strong>Agent identity and access</strong><span>Review Entra Agent IDs, connector permissions, Conditional Access and least privilege.</span></a>
+    <a href="/knowledge/security/dlp"><small>Data</small><strong>DLP and knowledge boundary</strong><span>Define Power Platform DLP, data source scope, sensitivity labels and allowed actions.</span></a>
+    <a href="/knowledge/copilot/copilot-cowork-cost-governance"><small>Cost</small><strong>Consumption forecast</strong><span>Estimate Copilot Credits, billed sessions, volume assumptions and cost ownership.</span></a>
+    <a href="/knowledge/copilot/governance"><small>Quality</small><strong>Evaluation model</strong><span>Create test sets, review response quality, escalation behavior and regression signals.</span></a>
+    <a href="/knowledge/contact"><small>Owner</small><strong>Business owner model</strong><span>Assign owner, reviewer, support path, retirement rule and periodic review cadence.</span></a>
+    <a href="/knowledge/downloads/overview"><small>Asset</small><strong>Request templates</strong><span>Use intake, governance checklist, operating model and release-gate templates.</span></a>
+  </div>
+</div>
 
 ## GPT-5.6 Planning Impact
 
 GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning because users will expect richer reasoning across daily Copilot experiences and agent workflows.
 
-| Impact Area | What To Update |
-|---|---|
-| Adoption story | Explain the journey from Copilot personal productivity to Copilot Studio business agents and Copilot Cowork. |
-| Model selection | Add user guidance for selecting GPT-5.6 where it is available in the tenant. |
-| Agent design | Use stronger reasoning for higher-value scenarios, but keep approvals for sensitive actions. |
-| Evaluation | Update test sets to include document quality, analysis accuracy, task completion and escalation behavior. |
-| Change management | Train champions on business scenarios rather than isolated prompts. |
-| Governance | Keep security, privacy, compliance, cost and lifecycle controls in the rollout message. |
+<div class="kc-operating-model" aria-label="GPT-5.6 planning impact for Copilot Studio">
+  <div class="kc-operating-stage"><small>Story</small><strong>Connect the journey</strong><span>Explain the path from Copilot personal productivity to Copilot Studio business agents and Copilot Cowork.</span></div>
+  <div class="kc-operating-stage"><small>Model</small><strong>Guide model selection</strong><span>Add user and maker guidance for selecting GPT-5.6 where it is available in the tenant.</span></div>
+  <div class="kc-operating-stage"><small>Design</small><strong>Use reasoning carefully</strong><span>Use stronger reasoning for higher-value scenarios while keeping approval gates for sensitive actions.</span></div>
+  <div class="kc-operating-stage"><small>Evaluate</small><strong>Test real outcomes</strong><span>Update test sets for document quality, analysis accuracy, task completion and escalation behavior.</span></div>
+</div>
 
-## Design Implications
+## Release Gate Model
 
-| Design Area | New Question |
-|---|---|
-| Identity | Does the agent need its own scoped identity and access boundary? |
-| Knowledge | Which Microsoft 365 context can the agent use through Microsoft IQ or Work IQ? |
-| Skills | Which instructions should be reusable across agents? |
-| Memory | Is persistent context appropriate for this scenario and user group? |
-| Computer use | Is UI automation allowed, monitored and recoverable? |
-| Agent-to-agent | Which agent owns orchestration and which agents are specialist agents? |
-| Cost | How many Copilot Credits or billed sessions could this scenario consume? |
-| Operations | Who reviews failed responses, tool errors and quality regressions? |
-| Migration | Does the design depend on classic chatbot authoring or Teams-only publishing? |
-
-## Governance Checklist
-
-- Define business owner, technical owner and security reviewer.
-- Register the agent in an inventory before production rollout.
-- Review connected knowledge sources and Microsoft 365 data scope.
-- Review tools, workflows, connectors, APIs and computer use permissions.
-- Forecast Copilot Credit or billed session consumption.
-- Apply DLP policies by environment and connector group.
-- Define evaluation test sets before pilot.
-- Monitor usage, failure, escalation and user feedback.
-- Retire agents that no longer have an owner or measurable value.
-
-## Delivery Pattern
-
-| Phase | Activities | Output |
-|---|---|---|
-| Discover | identify use case, user group, knowledge and action scope | agent opportunity card |
-| Design | map instructions, knowledge, skills, tools, identity and cost model | agent design document |
-| Build | create agent, skills, workflows and connector actions | pilot agent |
-| Validate | test response quality, permissions, cost and safety | evaluation report |
-| Operate | monitor inventory, usage, failures, cost and business value | agent operations dashboard |
+<div class="kc-maturity-ladder" aria-label="Copilot Studio release gate model">
+  <div class="kc-maturity-step"><small>Gate 1</small><strong>Opportunity card</strong><span>Business problem, user group, value hypothesis, knowledge sources, actions and risk level are documented.</span></div>
+  <div class="kc-maturity-step"><small>Gate 2</small><strong>Design review</strong><span>Instructions, skills, memory, tools, identity, DLP, data boundary and cost assumptions are reviewed.</span></div>
+  <div class="kc-maturity-step"><small>Gate 3</small><strong>Pilot validation</strong><span>Response quality, permission boundary, action safety, evaluation results and support needs are tested.</span></div>
+  <div class="kc-maturity-step"><small>Gate 4</small><strong>Production approval</strong><span>Owner, monitoring, escalation, usage threshold, cost owner and retirement rule are confirmed.</span></div>
+  <div class="kc-maturity-step"><small>Gate 5</small><strong>Operate and retire</strong><span>Review analytics, failure patterns, business value, cost and continued ownership on a regular cadence.</span></div>
+</div>
 
 ## Customer Success Pattern
 
-| Scenario | Recommended Pattern |
-|---|---|
-| HR policy assistant | knowledge agent with approved SharePoint sources and no high-risk actions |
-| IT service request | transaction agent with connector/tool review and escalation path |
-| Sales preparation | Microsoft 365 grounding with strict permission review and value tracking |
-| Security intake | workflow agent with human review, audit and incident routing |
-| Multi-agent proposal support | coordinator agent plus specialist research, pricing and review agents |
+<div class="kc-entry-hub" aria-label="Copilot Studio customer success patterns">
+  <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory"><small>Agent Factory</small><strong>Multi-agent program</strong><span>Coordinator agent plus specialist agents for research, drafting, review and governance.</span></a>
+  <a href="/knowledge/projects/enterprise-ai-adoption-program"><small>Adoption</small><strong>Enterprise AI adoption</strong><span>Connect business scenarios, change management, champions, KPI and executive value reporting.</span></a>
+  <a href="/knowledge/copilot/business-use-cases"><small>Use Case</small><strong>Sales preparation</strong><span>Microsoft 365 grounding with strict permission review and measurable preparation quality.</span></a>
+  <a href="/knowledge/security/defender-xdr"><small>Security</small><strong>Security intake workflow</strong><span>Workflow agent with human review, audit trail, incident routing and escalation path.</span></a>
+  <a href="/knowledge/copilot/agent-factory-operating-model"><small>Governance</small><strong>Agent portfolio governance</strong><span>Agent intake, prioritization, build standard, operating cadence and retirement rules.</span></a>
+  <a href="/knowledge/copilot/copilot-cowork-cost-governance"><small>Cowork</small><strong>Long-running work</strong><span>Approval, ownership, quality, telemetry and cost control for longer-running AI work.</span></a>
+</div>
 
 ## Common Mistakes
 
-| Mistake | Better Approach |
-|---|---|
-| Building agents before ownership is clear | require owner and lifecycle before build |
-| Treating computer use as a shortcut | classify it as high-governance automation |
-| Allowing every maker to publish freely | use environment strategy, DLP and approval |
-| Ignoring cost forecasting | estimate consumption before pilot expansion |
-| Designing one large agent | use specialist agents and reusable skills |
+<div class="kc-platform-fit" aria-label="Common Copilot Studio mistakes">
+  <div class="kc-platform-fit__card"><small>Ownership</small><strong>Building before ownership is clear</strong><span>Require business owner, technical owner, reviewer and retirement rule before build.</span></div>
+  <div class="kc-platform-fit__card"><small>Automation</small><strong>Treating computer use as a shortcut</strong><span>Classify UI automation as high-governance automation with audit and recovery design.</span></div>
+  <div class="kc-platform-fit__card"><small>Publishing</small><strong>Allowing unmanaged publishing</strong><span>Use environment strategy, DLP, release gates and approval before production exposure.</span></div>
+  <div class="kc-platform-fit__card"><small>Cost</small><strong>Ignoring cost forecasting</strong><span>Estimate usage and credits before pilot expansion, then monitor per agent.</span></div>
+  <div class="kc-platform-fit__card"><small>Design</small><strong>Designing one large agent</strong><span>Prefer specialist agents, reusable skills and a coordinator pattern when work is complex.</span></div>
+  <div class="kc-platform-fit__card"><small>Evaluation</small><strong>Skipping test sets</strong><span>Use evaluation data, realistic conversations and regression checks before rollout.</span></div>
+</div>
 
 ## References
 
@@ -195,22 +145,30 @@ GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning 
 
 ## Related Pages
 
-- [Microsoft Copilot Studio](./copilot-studio)
-- [Agent Factory Operating Model](./agent-factory-operating-model)
-- [Multi-Agent Framework](./multi-agent-framework)
-- [Agentic AI Architecture](./agentic-ai-architecture)
-- [Enterprise AI Agent Factory Case Study](../projects/case-study-enterprise-ai-agent-factory)
+<div class="kc-entry-hub" aria-label="Related Copilot Studio pages">
+  <a href="/knowledge/copilot/copilot-studio"><small>Overview</small><strong>Microsoft Copilot Studio</strong><span>Core Copilot Studio concepts and enterprise usage model.</span></a>
+  <a href="/knowledge/copilot/agent-factory-operating-model"><small>Operating Model</small><strong>Agent Factory Operating Model</strong><span>Repeatable operating model for agent intake, governance and lifecycle.</span></a>
+  <a href="/knowledge/copilot/multi-agent-framework"><small>Architecture</small><strong>Multi-Agent Framework</strong><span>Coordinator and specialist agent patterns for enterprise scenarios.</span></a>
+  <a href="/knowledge/copilot/agentic-ai-architecture"><small>Architecture</small><strong>Agentic AI Architecture</strong><span>Architecture model for agentic systems, control planes and business outcomes.</span></a>
+  <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory"><small>Case Study</small><strong>Enterprise AI Agent Factory Case Study</strong><span>Anonymized customer success pattern for governed enterprise agent programs.</span></a>
+  <a href="/knowledge/contact"><small>Request</small><strong>Contact and Asset Request</strong><span>Request agent governance templates, intake forms or executive briefing materials.</span></a>
+</div>
 
 ## 검색 키워드
 
 - Microsoft 365 Copilot
 - Copilot Studio
+- Copilot Studio 2026
 - AI Agent governance
 - Copilot adoption
 - Copilot readiness
 - Copilot 도입
 - AI Agent 운영 모델
+- Copilot Studio Agent
+- Microsoft IQ
+- Entra Agent ID
+- Copilot Credit estimator
 
 ## Contact / Asset Request
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
