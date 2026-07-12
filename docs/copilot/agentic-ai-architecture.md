@@ -7,24 +7,41 @@ sidebar_label: Agentic AI Architecture
 
 # Agentic AI Architecture
 
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Agentic AI architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Agentic AI Reference Architecture</span>
+    <h2>Design agents as controlled business systems</h2>
+    <p>Agentic AI moves beyond prompt assistance into systems that can reason, use tools, maintain context, coordinate work and produce measurable business outcomes. The architecture must explain what the agent can know, what it can do, who owns it and how it is governed.</p>
+    <div class="kc-hero-signal-row" aria-label="Agentic architecture signals">
+      <span>Goal</span>
+      <span>Grounding</span>
+      <span>Action</span>
+      <span>Control</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Agentic AI entry points">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/ai-agent-factory">AI Agent Factory</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/copilot-studio-2026-platform-update">Copilot Studio Update</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/multi-agent-framework">Multi-Agent Framework</a>
+    </div>
+  </div>
 
-<div class="kc-outcome-grid" aria-label="Agentic AI architecture quick read cards">
-  <div class="kc-outcome-card">
-    <small>WHY</small>
-    <strong>Move beyond chatbot thinking</strong>
-    <span>Agentic AI requires goals, tools, grounding, memory, evaluation and owner controls.</span>
+  <div class="kc-factory-panel" aria-label="Agentic AI architecture visual">
+    <div class="kc-factory-panel__header">
+      <span>Architecture Spine</span>
+      <strong>Human-guided autonomy</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#core-architecture" class="kc-factory-card"><small>01</small><strong>Experience</strong><span>Copilot, Teams, business apps and workflow triggers.</span></a>
+      <a href="#core-architecture" class="kc-factory-card"><small>02</small><strong>Agent</strong><span>Instructions, skills, memory, tools and orchestration.</span></a>
+      <a href="#security-control-plane" class="kc-factory-card"><small>03</small><strong>Control</strong><span>Identity, policy, approval, audit, telemetry and cost.</span></a>
+      <a href="#kpi-framework" class="kc-factory-card"><small>04</small><strong>Outcome</strong><span>Automation, insight, decision support and measured value.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Design rule</strong>
+      <span>Autonomy should increase only when grounding, permission, approval, monitoring and rollback are already designed.</span>
+    </div>
   </div>
-  <div class="kc-outcome-card">
-    <small>DESIGN</small>
-    <strong>Design the control plane</strong>
-    <span>Connect Microsoft 365 data, Copilot Studio, connectors, MCP, identity and approval paths.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>OPERATE</small>
-    <strong>Run as a governed portfolio</strong>
-    <span>Track agent inventory, lifecycle, telemetry, cost, risk and value realization.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -36,24 +53,21 @@ The objective is not simply to create many agents. The objective is to establish
 
 > **Executive lens:** Agentic AI architecture is the bridge between AI experimentation and operational automation. The architecture must explain who the agent serves, what it can know, what it can do and how it is governed.
 
-```mermaid
-flowchart TB
-  Experience["Experience<br/>Copilot, Teams,<br/>business apps"]:::layer
-  Agent["Agent layer<br/>skills, memory,<br/>tools, orchestration"]:::layer
-  Control["Control plane<br/>identity, policy,<br/>approval, telemetry"]:::control
-  Data["Knowledge boundary<br/>Graph, SharePoint,<br/>Dataverse, Fabric"]:::layer
-  Outcome["Business outcome<br/>automation, insight,<br/>decision support"]:::outcome
-
-  Experience --> Agent
-  Agent --> Data
-  Agent --> Control
-  Control --> Agent
-  Agent --> Outcome
-
-  classDef layer fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef control fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-context-panel" aria-label="Agentic AI executive architecture">
+  <div class="kc-context-panel__lead">
+    <small>Executive Architecture</small>
+    <strong>Experience, agent, data, control and outcome should be designed together.</strong>
+    <span>An agent is not just a chat surface. It is a governed operating object connected to users, data, tools, policy and measurable business value.</span>
+  </div>
+  <div class="kc-context-panel__grid">
+    <a href="#core-architecture"><small>Experience</small><strong>Where work starts</strong><span>Microsoft 365 Copilot, Teams, business apps, workflow triggers and user requests.</span></a>
+    <a href="#core-architecture"><small>Agent layer</small><strong>How work is reasoned</strong><span>Instructions, skills, memory, routing, orchestration and specialist agents.</span></a>
+    <a href="#knowledge-grounding"><small>Knowledge</small><strong>What the agent can know</strong><span>Microsoft Graph, SharePoint, Dataverse, Fabric and approved external data.</span></a>
+    <a href="#tool-use-and-action-execution"><small>Tools</small><strong>What the agent can do</strong><span>Connectors, APIs, Power Automate, Logic Apps, MCP and computer use patterns.</span></a>
+    <a href="#security-control-plane"><small>Control</small><strong>How risk is governed</strong><span>Entra ID, Purview, Defender, DLP, audit, approval and telemetry.</span></a>
+    <a href="#kpi-framework"><small>Outcome</small><strong>Why it exists</strong><span>Automation, insight, decision support, quality improvement and business value.</span></a>
+  </div>
+</div>
 
 ---
 
@@ -61,82 +75,35 @@ flowchart TB
 
 Traditional Copilot usage is primarily user-initiated.
 
-Agentic AI introduces agents that can:
+Agentic AI introduces agents that can understand goals, maintain context, use enterprise knowledge, call tools, coordinate with other agents, escalate exceptions and improve through telemetry.
 
-- Understand goals
-- Maintain context
-- Use enterprise knowledge
-- Call tools and workflows
-- Coordinate with other agents
-- Trigger actions
-- Monitor outcomes
-- Escalate exceptions
-- Improve over time
-
-```mermaid
-flowchart LR
-    CHAT[Copilot Chat] --> ASSIST[Assistant Experience]
-    ASSIST --> AGENT[Task Agent]
-    AGENT --> AUTO[Autonomous Agent]
-    AUTO --> MULTI[Multi-Agent System]
-    MULTI --> OPS[Enterprise AI Operating Model]
-```
+<div class="kc-journey-map" aria-label="From Copilot to Agentic AI journey">
+  <div class="kc-journey-map__header">
+    <span>Adoption Journey</span>
+    <strong>From assistance to governed automation</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Copilot Chat</strong><span>User-led prompts for everyday work.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Assistant</strong><span>Reusable work patterns for meetings, documents and analysis.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Task Agent</strong><span>Grounded agent with tools and a defined business scope.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governed Agent</strong><span>Owner, policy, approval, cost and telemetry are in place.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Multi-Agent</strong><span>Coordinator and specialist agents work together with boundaries.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>AI Operating Model</strong><span>Portfolio governance, adoption and value realization run continuously.</span></div>
+  </div>
+</div>
 
 ---
 
 ## Core Architecture
 
-```mermaid
-flowchart TB
-    USER[Users] --> EXPERIENCE[Experience Layer]
-
-    EXPERIENCE --> M365COP[Microsoft 365 Copilot]
-    EXPERIENCE --> TEAMS[Microsoft Teams]
-    EXPERIENCE --> APPS[Business Apps]
-    EXPERIENCE --> SCOUT[Always-on Personal Agent]
-
-    M365COP --> AGENT[Agent Layer]
-    TEAMS --> AGENT
-    APPS --> AGENT
-    SCOUT --> AGENT
-
-    AGENT --> BUILDER[Agent Builder]
-    AGENT --> STUDIO[Copilot Studio]
-    AGENT --> FOUNDRY[Microsoft Foundry]
-    AGENT --> SDK[Microsoft 365 Agents SDK]
-
-    STUDIO --> ORCH[Orchestration Layer]
-    FOUNDRY --> ORCH
-    SDK --> ORCH
-
-    ORCH --> KNOW[Knowledge]
-    ORCH --> TOOLS[Tools]
-    ORCH --> FLOW[Workflows]
-    ORCH --> MEMORY[Context and Memory]
-
-    KNOW --> GRAPH[Microsoft Graph]
-    KNOW --> SPO[SharePoint]
-    KNOW --> DATAVERSE[Dataverse]
-    KNOW --> FABRIC[Microsoft Fabric]
-    KNOW --> EXTDATA[External Data]
-
-    TOOLS --> CONNECTORS[Connectors]
-    TOOLS --> API[APIs]
-    TOOLS --> MCP[MCP Servers]
-
-    FLOW --> PA[Power Automate]
-    FLOW --> LOGIC[Logic Apps]
-
-    MEMORY --> WIQ[Work IQ]
-
-    ORCH --> CONTROL[Control Plane]
-    CONTROL --> ENTRA[Microsoft Entra ID]
-    CONTROL --> PURVIEW[Microsoft Purview]
-    CONTROL --> DEFENDER[Microsoft Defender]
-    CONTROL --> DLP[DLP Policies]
-    CONTROL --> AUDIT[Audit and Monitoring]
-    CONTROL --> AGENT365[Agent365]
-```
+<div class="kc-platform-fit" aria-label="Agentic AI core architecture layers">
+  <div class="kc-platform-fit__card"><small>Experience Layer</small><strong>Where users meet AI</strong><span>Microsoft 365 Copilot, Teams, Outlook, business apps and workflow triggers.</span></div>
+  <div class="kc-platform-fit__card"><small>Agent Layer</small><strong>Where tasks are interpreted</strong><span>Agent Builder, Copilot Studio, Microsoft Foundry and Microsoft 365 Agents SDK.</span></div>
+  <div class="kc-platform-fit__card"><small>Orchestration Layer</small><strong>Where work is routed</strong><span>Reasoning, instructions, skills, memory, tool selection and multi-agent coordination.</span></div>
+  <div class="kc-platform-fit__card"><small>Knowledge Layer</small><strong>Where context is grounded</strong><span>Microsoft Graph, SharePoint, Dataverse, Fabric, business systems and approved external data.</span></div>
+  <div class="kc-platform-fit__card"><small>Action Layer</small><strong>Where work happens</strong><span>Connectors, APIs, Power Automate, Logic Apps, MCP servers and computer use.</span></div>
+  <div class="kc-platform-fit__card"><small>Control Plane</small><strong>Where risk is managed</strong><span>Entra ID, Purview, Defender, DLP, approval, audit, telemetry and cost controls.</span></div>
+</div>
 
 ---
 
