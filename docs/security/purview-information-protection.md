@@ -3,6 +3,7 @@ id: purview-information-protection
 title: Microsoft Purview Information Protection and Data Governance Guide
 description: "Microsoft Purview Information Protection and Data Governance Guide - Microsoft Purview Information Protection and Data Governance Guide"
 sidebar_label: Purview Information Protection
+toc_max_heading_level: 2
 ---
 
 # Microsoft Purview Information Protection and Data Governance Guide
@@ -24,19 +25,85 @@ Purview is a critical foundation for:
 
 Without proper data governance, AI initiatives often increase organizational risk rather than productivity.
 
-```mermaid
-flowchart LR
-  Discover["Discover data<br/>SharePoint, OneDrive,<br/>Teams, Exchange"]:::phase
-  Classify["Classify sensitivity<br/>labels, trainable classifiers,<br/>data map"]:::phase
-  Protect["Protect access<br/>encryption, DLP,<br/>endpoint controls"]:::phase
-  Govern["Govern lifecycle<br/>retention, eDiscovery,<br/>audit evidence"]:::phase
-  EnableAI["Enable trusted AI<br/>Copilot readiness<br/>and risk reduction"]:::outcome
+<section className="kc-topic-hero" aria-label="Purview information protection hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft Purview Data Governance</span>
+    <h2>Classify, protect and govern data before AI scales it</h2>
+    <div className="kc-topic-hero__lede">Purview should connect discovery, sensitivity labels, DLP, retention, audit, eDiscovery, Information Barriers and Copilot readiness into one data control model.</div>
+    <div className="kc-hero-signal-row" aria-label="Purview information protection signals">
+      <span>Discover</span>
+      <span>Classify</span>
+      <span>Protect</span>
+      <span>Govern</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Purview information protection operating model">
+    <div className="kc-factory-panel__header">
+      <span>Data Protection Operating Model</span>
+      <strong>Information lifecycle to trusted AI readiness</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#recommended-label-framework" className="kc-factory-card">
+        <small>01</small>
+        <strong>Classify</strong>
+        <span>Define a simple label taxonomy that business users can understand and apply.</span>
+      </a>
+      <a href="#dlp-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Protect</strong>
+        <span>Use DLP across Exchange, Teams, SharePoint, OneDrive and Endpoint.</span>
+      </a>
+      <a href="#copilot-readiness-perspective" className="kc-factory-card">
+        <small>03</small>
+        <strong>Prepare AI</strong>
+        <span>Review access, labels, permissions and sensitive content before Copilot rollout.</span>
+      </a>
+      <a href="#enterprise-deployment-approach" className="kc-factory-card">
+        <small>04</small>
+        <strong>Deploy</strong>
+        <span>Run assessment, label design, pilot, production rollout and governance handover.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Data rule</strong>
+      <span>Do not expand Copilot or agents before oversharing, unlabeled data and DLP exceptions are understood.</span>
+    </div>
+  </div>
+</section>
 
-  Discover --> Classify --> Protect --> Govern --> EnableAI
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Purview data governance flow">
+  <div className="kc-journey-map__header">
+    <span>Data Governance Flow</span>
+    <strong>Discovery to trusted AI enablement</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Discover</strong>
+      <span>Find sensitive data across SharePoint, OneDrive, Teams, Exchange and endpoints.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Classify</strong>
+      <span>Use sensitivity labels, trainable classifiers and data map signals.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Protect</strong>
+      <span>Apply encryption, DLP, endpoint controls and external sharing restrictions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Govern</strong>
+      <span>Manage retention, audit, eDiscovery, evidence and exception review.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Enable AI</strong>
+      <span>Reduce risk before Copilot, agents and AI-assisted knowledge work scale.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

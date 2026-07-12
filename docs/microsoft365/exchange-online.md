@@ -3,6 +3,7 @@ id: exchange-online
 title: Exchange Online Architecture and Migration Guide
 description: "Exchange Online Architecture and Migration Guide - Exchange Online is Microsoft's enterprise cloud messaging platform and serves as the foundation for..."
 sidebar_label: Exchange Online
+toc_max_heading_level: 2
 ---
 
 # Exchange Online Architecture and Migration Guide
@@ -25,21 +26,85 @@ Organizations must evaluate:
 
 The objective is to establish a secure, resilient and globally scalable messaging platform.
 
-```mermaid
-flowchart LR
-  Source["Current messaging estate<br/>Exchange, Google,<br/>multi-tenant"]:::source
-  Identity["Identity and domains<br/>Entra ID, DNS,<br/>accepted domains"]:::phase
-  Flow["Mail flow design<br/>MX, connectors,<br/>SMTP relay, hybrid"]:::phase
-  Secure["Security controls<br/>Defender, SPF/DKIM/DMARC,<br/>transport rules"]:::phase
-  Migrate["Migration waves<br/>mailboxes, archives,<br/>shared resources"]:::phase
-  Operate["Operations model<br/>monitoring, compliance,<br/>support handover"]:::outcome
+<section className="kc-topic-hero" aria-label="Exchange Online architecture hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Exchange Online Architecture</span>
+    <h2>Modernize messaging with secure mail flow and controlled migration</h2>
+    <div className="kc-topic-hero__lede">Exchange Online architecture should connect identity, domains, mail routing, SMTP relay, security controls, coexistence, migration waves and operations handover.</div>
+    <div className="kc-hero-signal-row" aria-label="Exchange Online signals">
+      <span>Identity</span>
+      <span>Mail Flow</span>
+      <span>Security</span>
+      <span>Migration</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Exchange Online operating model">
+    <div className="kc-factory-panel__header">
+      <span>Messaging Control Tower</span>
+      <strong>Current estate to stable cloud messaging</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#identity-architecture" className="kc-factory-card">
+        <small>01</small>
+        <strong>Identity</strong>
+        <span>Confirm cloud-only or hybrid identity, domains, DNS and accepted domain model.</span>
+      </a>
+      <a href="#mail-flow-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Flow</strong>
+        <span>Design MX, connectors, hybrid routing, SMTP relay and external dependency handling.</span>
+      </a>
+      <a href="#security-architecture" className="kc-factory-card">
+        <small>03</small>
+        <strong>Secure</strong>
+        <span>Apply MFA, legacy auth block, Defender, SPF, DKIM, DMARC and transport policy.</span>
+      </a>
+      <a href="#migration-checklist" className="kc-factory-card">
+        <small>04</small>
+        <strong>Migrate</strong>
+        <span>Run discovery, pilot, production waves, validation, rollback and handover.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Mail rule</strong>
+      <span>Do not cut over DNS before mail flow, identity, security policy, rollback and user communication are validated.</span>
+    </div>
+  </div>
+</section>
 
-  Source --> Identity --> Flow --> Secure --> Migrate --> Operate
-
-  classDef source fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Exchange Online architecture flow">
+  <div className="kc-journey-map__header">
+    <span>Architecture Flow</span>
+    <strong>Current messaging estate to governed cloud operations</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Source estate</strong>
+      <span>Exchange, Google, multi-tenant or hybrid messaging environment.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Identity and domains</strong>
+      <span>Entra ID, DNS, accepted domains, aliases and address book design.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Mail flow</strong>
+      <span>MX, EOP, connectors, SMTP relay, hybrid routing and transport rules.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Security and migration</strong>
+      <span>Defender controls, authentication baseline, pilot migration and wave execution.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Operations</strong>
+      <span>Monitoring, compliance, admin runbook, support handover and hypercare closure.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

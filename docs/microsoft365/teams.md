@@ -3,6 +3,7 @@ id: teams
 title: Microsoft Teams Governance Framework
 description: "Microsoft Teams Governance Framework - Microsoft Teams is the primary collaboration platform within Microsoft 365."
 sidebar_label: Teams Governance
+toc_max_heading_level: 2
 ---
 
 # Microsoft Teams Governance Framework
@@ -27,21 +28,85 @@ A successful Teams deployment requires governance across:
 
 The objective is to balance collaboration agility with security and operational control.
 
-```mermaid
-flowchart TB
-  Request["Collaboration request<br/>team, channel, guest,<br/>shared workspace"]:::input
-  Provision["Provisioning policy<br/>naming, template,<br/>owner requirement"]:::control
-  Access["Access governance<br/>members, guests,<br/>external collaboration"]:::control
-  Protect["Information protection<br/>sensitivity label,<br/>retention, DLP"]:::control
-  Lifecycle["Lifecycle operations<br/>review, archive,<br/>delete, renewal"]:::control
-  Copilot["Copilot readiness<br/>permission hygiene<br/>and content quality"]:::outcome
+<section className="kc-topic-hero" aria-label="Teams governance hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft Teams Governance</span>
+    <h2>Keep collaboration fast without losing control</h2>
+    <div className="kc-topic-hero__lede">Teams governance should connect provisioning, ownership, guest access, Information Protection, Information Barriers, lifecycle and Copilot readiness.</div>
+    <div className="kc-hero-signal-row" aria-label="Teams governance signals">
+      <span>Provision</span>
+      <span>Access</span>
+      <span>Protect</span>
+      <span>Lifecycle</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Teams governance operating model">
+    <div className="kc-factory-panel__header">
+      <span>Collaboration Operating Model</span>
+      <strong>Team request to Copilot-ready workspace</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#provisioning-governance" className="kc-factory-card">
+        <small>01</small>
+        <strong>Provision</strong>
+        <span>Use naming, templates, approval, owner requirement and purpose clarity.</span>
+      </a>
+      <a href="#membership-governance" className="kc-factory-card">
+        <small>02</small>
+        <strong>Access</strong>
+        <span>Govern members, guests, external collaboration and access review cadence.</span>
+      </a>
+      <a href="#information-protection-integration" className="kc-factory-card">
+        <small>03</small>
+        <strong>Protect</strong>
+        <span>Apply sensitivity labels, DLP, retention and Information Barriers where required.</span>
+      </a>
+      <a href="#teams-lifecycle-management" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Review, archive, renew, delete and prepare content for Copilot readiness.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Teams rule</strong>
+      <span>Every Team should have owners, purpose, access boundary, lifecycle state and content governance before Copilot rollout.</span>
+    </div>
+  </div>
+</section>
 
-  Request --> Provision --> Access --> Protect --> Lifecycle --> Copilot
-
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef control fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Teams governance control flow">
+  <div className="kc-journey-map__header">
+    <span>Governance Control Flow</span>
+    <strong>Collaboration request to governed workspace lifecycle</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Request</strong>
+      <span>Team, channel, guest access or shared workspace request enters intake.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Provision</strong>
+      <span>Naming, template, owner requirement and business purpose are applied.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Access</strong>
+      <span>Membership, guest access, external collaboration and review policy are enforced.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Protect</strong>
+      <span>Sensitivity labels, DLP, retention and Information Barriers protect content.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Operate</strong>
+      <span>Lifecycle review, archive, deletion and Copilot readiness checks keep the workspace healthy.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
