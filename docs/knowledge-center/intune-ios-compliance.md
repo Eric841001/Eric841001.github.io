@@ -104,3 +104,23 @@ flowchart LR
 - Intune mobile compliance
 - iPhone compliance policy
 - Intune iOS 보안 정책
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| Policy assignment screenshot | Confirms the target user or device group |
+| Device compliance state | Shows the iOS/iPadOS device is compliant or non-compliant |
+| Conditional Access sign-in log | Verifies access control is enforced by compliance state |
+| User remediation message | Confirms the user understands how to fix non-compliance |
+
+## Related Documents
+
+- [Conditional Access](../security/conditional-access)
+- [Microsoft 365 Overview](../microsoft365/overview)
+- [Intune USB Whitelist](./intune-usb-whitelist)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For an editable iOS compliance policy matrix, pilot validation checklist or Conditional Access evidence template, use [Contact and Asset Request](../contact).

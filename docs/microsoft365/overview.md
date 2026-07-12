@@ -13,6 +13,24 @@ In enterprise consulting projects, Microsoft 365 should not be positioned only a
 
 This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.
 
+<div class="kc-signal-grid" aria-label="Microsoft 365 platform capability cards">
+  <a class="kc-signal-card" href="../security/conditional-access">
+    <small>IDENTITY</small>
+    <strong>Identity and Access</strong>
+    <span>Design Entra ID, MFA, Conditional Access, role control and guest access before broad rollout.</span>
+  </a>
+  <a class="kc-signal-card" href="./teams">
+    <small>COLLAB</small>
+    <strong>Collaboration Governance</strong>
+    <span>Align Exchange Online, Teams, SharePoint and OneDrive with ownership, lifecycle and sharing rules.</span>
+  </a>
+  <a class="kc-signal-card" href="../copilot/readiness">
+    <small>COPILOT</small>
+    <strong>Copilot Readiness</strong>
+    <span>Prepare data permissions, sensitive content, adoption scenarios and support model before license scale-out.</span>
+  </a>
+</div>
+
 ## Visual Platform Map
 
 ```mermaid
@@ -252,3 +270,7 @@ Microsoft 365 consulting에서는 이러한 field knowledge를 다음과 같은 
 - [Microsoft 365 for IT Pros](https://office365itpros.com/)
 - [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)
 - [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
+
+## Contact / Asset Request
+
+For a Microsoft 365 assessment workbook, tenant governance matrix, license-to-capability map or executive roadmap template, use [Contact and Asset Request](../contact).

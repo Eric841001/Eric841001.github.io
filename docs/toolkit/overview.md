@@ -10,6 +10,34 @@ The Toolkit section contains practical assets for assessment, architecture, migr
 
 These tools are designed to support repeatable consulting work. They help convert field knowledge into consistent discovery, design, proposal and implementation outputs.
 
+<div class="kc-pathway" aria-label="Toolkit delivery workflow">
+  <a class="kc-pathway-step" href="./assessment-checklist">
+    <small>01</small>
+    <strong>Assess</strong>
+    <span>Capture tenant, identity, security, endpoint, migration and governance readiness.</span>
+  </a>
+  <a class="kc-pathway-step" href="./architecture-builder">
+    <small>02</small>
+    <strong>Design</strong>
+    <span>Convert business requirements into target architecture and decision records.</span>
+  </a>
+  <a class="kc-pathway-step" href="./license-advisor">
+    <small>03</small>
+    <strong>Validate</strong>
+    <span>Map required capabilities to Microsoft 365, Security, Compliance and Copilot licenses.</span>
+  </a>
+  <a class="kc-pathway-step" href="../proposal/overview">
+    <small>04</small>
+    <strong>Plan</strong>
+    <span>Shape SOW, WBS, risk register, timeline, assumptions and governance structure.</span>
+  </a>
+  <a class="kc-pathway-step" href="../downloads/overview">
+    <small>05</small>
+    <strong>Request Assets</strong>
+    <span>Use public-safe descriptions and request editable templates when appropriate.</span>
+  </a>
+</div>
+
 ## Visual Toolkit Flow
 
 ```mermaid
@@ -104,3 +132,7 @@ This toolkit is informed by recurring enterprise delivery patterns:
 - migration checklist
 - security baseline checklist
 - proposal asset library
+
+## Contact / Asset Request
+
+For editable assessment checklists, architecture workbooks, license advisor sheets, migration checklists or prompt library templates, use [Contact and Asset Request](../contact).

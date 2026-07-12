@@ -274,6 +274,7 @@ a.kc-signal-card:hover,
 a.kc-asset-card:hover,
 a.kc-pathway-step:hover {
   transform: translateY(-2px);
+  border-color: #93c5fd;
   box-shadow: var(--kc-shadow-lift);
 }
 
@@ -306,6 +307,8 @@ a.kc-pathway-step:hover {
 .kc-asset-card small,
 .kc-pathway-step small {
   display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   margin-bottom: 0.7rem;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
@@ -314,6 +317,17 @@ a.kc-pathway-step:hover {
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.02em;
+}
+
+.kc-signal-card small::before,
+.kc-asset-card small::before,
+.kc-pathway-step small::before {
+  content: "";
+  width: 0.46rem;
+  height: 0.46rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0f766e, #38bdf8);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12);
 }
 
 .kc-asset-catalog {

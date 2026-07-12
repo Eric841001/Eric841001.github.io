@@ -96,3 +96,24 @@ File server migration is an information architecture project. Customers get bett
 - Azure Files migration
 - file share permission cleanup
 - 파일 서버 마이그레이션
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| Source inventory | Confirms size, owner, stale data and restricted content before migration |
+| Permission mapping | Shows how source ACLs are redesigned for SharePoint, OneDrive or Azure Files |
+| Pilot migration result | Verifies access, file fidelity and user experience |
+| Cutover approval | Confirms freeze, rollback and communication plan |
+
+## Related Documents
+
+- [Migration Overview](./overview)
+- [Tenant-to-Tenant Migration](./tenant-to-tenant)
+- [SharePoint](../microsoft365/sharepoint)
+- [OneDrive](../microsoft365/onedrive)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For a file server migration inventory workbook, permission mapping template or cutover runbook, use [Contact and Asset Request](../contact).

@@ -119,3 +119,23 @@ Verify:
 - Intune offboarding package
 - Defender sensor removal
 - Defender for Endpoint 제거
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| Offboarding approval | Confirms the device is approved for retirement or tool transition |
+| Intune assignment group | Shows the offboarding package was scoped correctly |
+| Defender portal inventory | Verifies device state after offboarding |
+| Asset record update | Confirms CMDB or device inventory is aligned |
+
+## Related Documents
+
+- [Defender for Endpoint](../security/defender-for-endpoint)
+- [Microsoft Defender Validation with Atomic Red Team](./mde-atomic-red-team)
+- [Security Modernization Program](../projects/security-modernization-program)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For a Defender offboarding runbook, validation report or asset handover checklist, use [Contact and Asset Request](../contact).

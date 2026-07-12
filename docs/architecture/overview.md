@@ -10,6 +10,34 @@ The Architecture Center organizes Microsoft cloud reference architectures, desig
 
 Architecture content here is intended to be practical. Each topic connects business requirements, Microsoft capabilities, governance decisions and delivery outputs.
 
+<div class="kc-pathway" aria-label="Architecture lifecycle pathway">
+  <a class="kc-pathway-step" href="./executive-architecture-blueprint">
+    <small>01</small>
+    <strong>Business Driver</strong>
+    <span>Clarify risk, growth, productivity, compliance or AI adoption pressure.</span>
+  </a>
+  <a class="kc-pathway-step" href="./m365-reference-architecture">
+    <small>02</small>
+    <strong>Reference Design</strong>
+    <span>Translate requirements into Microsoft 365, Security, Copilot, Azure and Migration architecture.</span>
+  </a>
+  <a class="kc-pathway-step" href="./security-reference-architecture">
+    <small>03</small>
+    <strong>Control Model</strong>
+    <span>Define identity, endpoint, data, threat protection and evidence-ready security controls.</span>
+  </a>
+  <a class="kc-pathway-step" href="../proposal/overview">
+    <small>04</small>
+    <strong>Delivery Assets</strong>
+    <span>Convert architecture decisions into SOW, WBS, risk register, runbook and governance outputs.</span>
+  </a>
+  <a class="kc-pathway-step" href="./governance-architecture">
+    <small>05</small>
+    <strong>Operating Model</strong>
+    <span>Assign owners, cadence, exception handling, KPI and continuous improvement rhythm.</span>
+  </a>
+</div>
+
 ## Visual Architecture Map
 
 ```mermaid
@@ -100,3 +128,7 @@ Good architecture is not only a diagram. It must explain why a design is needed,
 - Microsoft 보안 설계
 - Copilot 거버넌스
 - Zero Trust architecture
+
+## Contact / Asset Request
+
+For an executive architecture blueprint, reference architecture diagram, decision log or architecture review checklist, use [Contact and Asset Request](../contact).

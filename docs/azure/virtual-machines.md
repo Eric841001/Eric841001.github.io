@@ -99,3 +99,24 @@ VM migration is often a bridge to modernization. Document which workloads should
 - Azure VM backup monitoring
 - Azure IaaS architecture
 - Azure 가상 머신 설계
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| Sizing record | Confirms VM size is based on workload data rather than guesswork |
+| Network access design | Shows private access, Bastion, VPN or privileged admin path |
+| Backup and restore test | Proves RPO/RTO and operational recoverability |
+| Defender for Cloud recommendation review | Confirms security posture is tracked after deployment |
+
+## Related Documents
+
+- [Azure Overview](./overview)
+- [Azure Landing Zone](./landing-zone)
+- [Azure Identity](./identity)
+- [Azure Landing Zone Architecture](../architecture/azure-landing-zone-architecture)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For an Azure VM assessment workbook, backup validation checklist or IaaS security baseline, use [Contact and Asset Request](../contact).

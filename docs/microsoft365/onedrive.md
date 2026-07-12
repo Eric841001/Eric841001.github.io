@@ -101,3 +101,24 @@ OneDrive rollout succeeds when users understand what belongs in OneDrive versus 
 - OneDrive DLP retention
 - Copilot data readiness
 - OneDrive 거버넌스
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| Sync policy configuration | Confirms managed device and sync restrictions |
+| Known Folder Move pilot result | Verifies user impact and support readiness |
+| Sharing report | Shows external sharing and anonymous link exposure |
+| Retention and user departure procedure | Confirms lifecycle handling after account changes |
+
+## Related Documents
+
+- [SharePoint](./sharepoint)
+- [Microsoft 365 Overview](./overview)
+- [Purview Information Protection](../security/purview-information-protection)
+- [Copilot Readiness](../copilot/readiness)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For a OneDrive governance matrix, Known Folder Move rollout checklist or Copilot data readiness workbook, use [Contact and Asset Request](../contact).

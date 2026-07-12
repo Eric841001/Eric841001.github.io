@@ -118,3 +118,16 @@ Enterprise 프로젝트에서는 이 관점을 다음과 같은 실행 항목으
 - [Microsoft 365 for IT Pros](https://office365itpros.com/)
 - [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)
 - [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
+
+## Search Keywords
+
+This page is designed for the following search intents:
+
+- Microsoft 365 Copilot governance
+- Copilot data access control
+- Copilot oversharing review
+- Copilot security readiness
+- Copilot Studio agent governance
+- Microsoft 365 Copilot 보안
+- Copilot 도입 전 SharePoint permission review
+- Copilot Agent 거버넌스

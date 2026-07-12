@@ -10,6 +10,24 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 이 영역은 단순한 기술 메모가 아니라 실제 고객 제안, architecture design, implementation, governance, 운영 handover에 바로 재사용할 수 있는 Enterprise Knowledge Base로 구성됩니다.
 
+<div class="kc-signal-grid" aria-label="Knowledge center navigation cards">
+  <a class="kc-signal-card" href="../copilot/overview">
+    <small>AI</small>
+    <strong>Start with Copilot and Agents</strong>
+    <span>Move from Copilot adoption to Copilot Studio, M365 Agents, AI Agent Factory and Cowork governance.</span>
+  </a>
+  <a class="kc-signal-card" href="../security/overview">
+    <small>SECURITY</small>
+    <strong>Secure the Platform</strong>
+    <span>Use Entra ID, Conditional Access, Defender, Purview, DLP and Information Barriers as one control model.</span>
+  </a>
+  <a class="kc-signal-card" href="../downloads/overview">
+    <small>ASSETS</small>
+    <strong>Reuse Delivery Assets</strong>
+    <span>Find public-safe templates, assessment patterns, SOW/WBS structures and requestable documents.</span>
+  </a>
+</div>
+
 ## Knowledge Operating Model
 
 ```mermaid
@@ -150,3 +168,22 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 - [Microsoft 365 Overview](../microsoft365/overview.md)
 - [Security Overview](../security/overview.md)
 - [Licensing Overview](../licensing/overview.md)
+
+## Search Keywords
+
+This Knowledge Center is designed for the following search intents:
+
+- Microsoft 365 consulting knowledge center
+- Microsoft 365 보안 컨설팅
+- Copilot 도입 방법
+- Copilot Studio Agent 설계
+- Microsoft Security Architecture
+- Purview Information Barriers
+- Defender XDR 운영
+- Intune 배포 가이드
+- Microsoft 365 제안서 산출물
+- SOW WBS Risk Register template
+
+## Contact / Asset Request
+
+Public pages explain the methodology and reusable structure. For editable workbooks, proposal templates, security checklists, migration runbooks or customer-ready samples, use [Contact and Asset Request](../contact).

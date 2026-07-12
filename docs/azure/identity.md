@@ -96,3 +96,23 @@ Identity cleanup should happen before broad Azure expansion. Retrofitting RBAC a
 - Azure privileged access
 - managed identity governance
 - Azure 권한 관리
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| RBAC role matrix | Confirms platform, security and workload ownership |
+| PIM activation policy | Shows approval, duration and justification requirements |
+| Break-glass test record | Proves emergency access is protected and usable |
+| Service principal review | Confirms app permissions and managed identity usage are controlled |
+
+## Related Documents
+
+- [Azure Landing Zone](./landing-zone)
+- [Azure Landing Zone Architecture](../architecture/azure-landing-zone-architecture)
+- [Conditional Access](../security/conditional-access)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For an Azure RBAC/PIM role matrix, privileged access checklist or managed identity review template, use [Contact and Asset Request](../contact).

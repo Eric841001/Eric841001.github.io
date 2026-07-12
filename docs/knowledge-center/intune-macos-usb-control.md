@@ -108,3 +108,23 @@ flowchart LR
 - macOS removable media control
 - Intune USB policy
 - macOS USB 차단 정책
+
+## Validation Evidence
+
+| Evidence | Purpose |
+|---|---|
+| Audit-only result | Confirms which removable media would be blocked before enforcement |
+| Policy assignment | Shows the target device group and exclusion group |
+| Defender device control event | Proves device control telemetry is visible |
+| Exception register | Tracks approved USB devices, owners and expiry dates |
+
+## Related Documents
+
+- [Intune USB Whitelist](./intune-usb-whitelist)
+- [Defender for Endpoint](../security/defender-for-endpoint)
+- [Microsoft Defender Validation with Atomic Red Team](./mde-atomic-red-team)
+- [Contact and Asset Request](../contact)
+
+## Contact / Asset Request
+
+For a macOS removable media policy matrix, audit-mode workbook or exception approval template, use [Contact and Asset Request](../contact).

@@ -10,6 +10,24 @@ This site is a practical Microsoft Enterprise Knowledge Center for architecture,
 
 It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migration scenarios where enterprise customers need more than product documentation. The goal is to connect field-tested consulting patterns with reusable assets that support assessment, architecture, proposal, implementation and operational handover.
 
+<div class="kc-signal-grid" aria-label="Enterprise knowledge center start points">
+  <a class="kc-signal-card" href="./copilot/overview">
+    <small>AI FIRST</small>
+    <strong>How to Use AI in Enterprise Work</strong>
+    <span>Start with Copilot, Copilot Studio, M365 Agents and Copilot Cowork adoption scenarios.</span>
+  </a>
+  <a class="kc-signal-card" href="./security/overview">
+    <small>SECURE</small>
+    <strong>Build the Security Foundation</strong>
+    <span>Connect identity, endpoint, data protection, Defender, Purview and audit evidence.</span>
+  </a>
+  <a class="kc-signal-card" href="./proposal/overview">
+    <small>DELIVER</small>
+    <strong>Turn Strategy into Delivery Assets</strong>
+    <span>Use proposal, SOW, WBS, risk register, governance and downloadable asset patterns.</span>
+  </a>
+</div>
+
 ## Platform Map
 
 The Knowledge Center is organized as a consulting platform, not a flat document archive.
