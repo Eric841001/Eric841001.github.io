@@ -107,16 +107,19 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 
 ## Adoption Operating System
 
-```mermaid
-flowchart LR
-    EDU[Education] --> USE[Usage]
-    USE --> VOC[VOC Collection]
-    VOC --> INSIGHT[Insight Analysis]
-    INSIGHT --> IMPROVE[Improvement]
-    IMPROVE --> READOPT[Re-Adoption]
-    READOPT --> VALUE[Business Value]
-    VALUE --> EDU
-```
+<div class="kc-journey-map" aria-label="Copilot adoption operating system">
+  <div class="kc-journey-map__header">
+    <span>Adoption Operating System</span>
+    <strong>Capability building to measurable business value</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Educate</strong><span>Role-based training, scenarios, prompts and champion enablement.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Use</strong><span>Apply Copilot in meetings, documents, email, analysis and workflows.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Listen</strong><span>Collect VOC from helpdesk, champions, surveys and business reviews.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Improve</strong><span>Update training, prompt patterns, governance and support content.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Measure</strong><span>Track usage, satisfaction, productivity impact and validated business value.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -167,12 +170,18 @@ The adoption team should be structured by capability, not only by headcount.
 
 Adoption requires both top-down sponsorship and bottom-up engagement.
 
-```mermaid
-flowchart TB
-    EXEC[Executive Sponsor] --> COMMUNITY[Champion Community]
-    COMMUNITY --> BU[Business Unit Champions]
-    BU --> USERS[All Users]
-```
+<div class="kc-journey-map" aria-label="Copilot champion program framework">
+  <div class="kc-journey-map__header">
+    <span>Champion Program</span>
+    <strong>Executive sponsorship plus peer-led behavior change</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Executive sponsor</strong><span>Sets direction, value narrative, investment priority and leadership message.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Champion community</strong><span>Connects adoption PMO, business units and real user feedback.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>BU champions</strong><span>Translate Copilot into local scenarios, rituals and team coaching.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>04</small><strong>All users</strong><span>Adopt daily work patterns and feed new use cases back into the program.</span></div>
+  </div>
+</div>
 
 ### Champion Tiers
 
@@ -217,15 +226,19 @@ Copilot education should be customized by role, maturity and scenario.
 
 Training should be based on real business scenarios.
 
-```mermaid
-flowchart LR
-    INTERVIEW[Business Interview] --> SCENARIO[Scenario Discovery]
-    SCENARIO --> PROMPT[Prompt Design]
-    PROMPT --> TRAINING[Customized Training]
-    TRAINING --> WORKSHOP[Hands-on Workshop]
-    WORKSHOP --> FIELD[Field Adoption]
-    FIELD --> IMPROVE[Continuous Improvement]
-```
+<div class="kc-journey-map" aria-label="Copilot customized learning model">
+  <div class="kc-journey-map__header">
+    <span>Customized Learning Model</span>
+    <strong>Business interview to field adoption</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Interview</strong><span>Capture role, pain point, work artifact, data source and success criteria.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Scenario</strong><span>Convert pain points into Copilot use cases and prompt patterns.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Workshop</strong><span>Practice with real tasks, reusable examples and department context.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Adopt</strong><span>Embed the scenario into meetings, documents, reporting and collaboration routines.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Improve</strong><span>Use VOC and analytics to refine content and repeat the cycle.</span></div>
+  </div>
+</div>
 
 ### Learning Principles
 
@@ -252,14 +265,19 @@ flowchart LR
 
 A Copilot community should be operated as an always-on adoption hub.
 
-```mermaid
-flowchart TB
-    HUB[Copilot Community Hub] --> QA[Q&A]
-    HUB --> FAQ[Ticket and FAQ]
-    HUB --> TIPS[Tips and Best Practices]
-    HUB --> VIDEO[Video Library]
-    HUB --> CHAMP[Champion Activities]
-```
+<div class="kc-journey-map" aria-label="Copilot community engagement model">
+  <div class="kc-journey-map__header">
+    <span>Community Hub</span>
+    <strong>Always-on enablement instead of one-time training</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Q&A</strong><span>User questions, expert responses and champion-assisted troubleshooting.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>FAQ</strong><span>Reusable answers from tickets, training sessions and office hours.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Tips</strong><span>Prompt examples, best practices, scenario cards and productivity patterns.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Learning</strong><span>Micro videos, how-to guides, workshops and champion activities.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Scale</strong><span>Turn common questions into training updates and adoption campaigns.</span></div>
+  </div>
+</div>
 
 ### Community Pillars
 
@@ -277,14 +295,19 @@ flowchart TB
 
 Innovation programs can convert learning into business value.
 
-```mermaid
-flowchart LR
-    LEARN[Learn] --> PRACTICE[Practice]
-    PRACTICE --> PROMPTATHON[Promptathon]
-    PROMPTATHON --> AGENTATHON[Agentathon]
-    AGENTATHON --> SHOWCASE[Showcase]
-    SHOWCASE --> RECOGNITION[Recognition]
-```
+<div class="kc-journey-map" aria-label="Promptathon and Agentathon program">
+  <div class="kc-journey-map__header">
+    <span>Promptathon to Agentathon</span>
+    <strong>Turn learning energy into reusable business assets</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Learn</strong><span>Build shared AI literacy and Copilot work patterns.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Practice</strong><span>Apply prompts to real tasks and refine reusable examples.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Promptathon</strong><span>Discover high-value prompts and scenario templates.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Agentathon</strong><span>Identify automation candidates and Copilot Studio agent opportunities.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Showcase</strong><span>Recognize teams, publish assets and scale proven use cases.</span></div>
+  </div>
+</div>
 
 ### Program Stages
 
@@ -305,17 +328,19 @@ Managed service should not be limited to ticket processing.
 
 It should operate as an adoption enablement function.
 
-```mermaid
-flowchart TB
-    USER[User Inquiry] --> L1[L1 User Support]
-    L1 --> L2[L2 Copilot Specialist]
-    L2 --> L3[L3 Microsoft Escalation]
-    L1 --> VOC[VOC Collection]
-    L2 --> VOC
-    VOC --> INSIGHT[Insight Analysis]
-    INSIGHT --> TRAINING[Training Enhancement]
-    TRAINING --> USER
-```
+<div class="kc-journey-map" aria-label="Copilot managed service framework">
+  <div class="kc-journey-map__header">
+    <span>Managed Service Framework</span>
+    <strong>Support, coaching and feedback in one loop</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User inquiry</strong><span>Questions, prompt issues, scenario blockers, access issues and product feedback.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>L1 support</strong><span>Basic usage guidance, FAQ, known issues and prompt coaching triage.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>L2 specialist</strong><span>Advanced scenarios, adoption coaching, analytics review and pattern creation.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>L3 escalation</strong><span>Tenant, product, security or Microsoft escalation path.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Training update</strong><span>Feed common issues into content, workshops, FAQ and champion briefings.</span></div>
+  </div>
+</div>
 
 ### Support Levels
 
@@ -358,14 +383,19 @@ VOC should be treated as an adoption improvement engine.
 
 ### VOC Closed Loop
 
-```mermaid
-flowchart LR
-    VOC[VOC Collection] --> ANALYSIS[VOC Analysis]
-    ANALYSIS --> INSIGHT[Insight]
-    INSIGHT --> IMPROVE[Training Enhancement]
-    IMPROVE --> REDELIVERY[Re-Delivery]
-    REDELIVERY --> ADOPTION[Adoption Improvement]
-```
+<div class="kc-journey-map" aria-label="Copilot VOC closed loop">
+  <div class="kc-journey-map__header">
+    <span>VOC Closed Loop</span>
+    <strong>Feedback must create visible improvement</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Collect</strong><span>Tickets, Q&A, champion feedback, surveys, business reviews and analytics.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Analyze</strong><span>Group issues by role, app, scenario, permission, data quality and confidence.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Prioritize</strong><span>Separate training gaps, governance blockers, product issues and adoption opportunities.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Improve</strong><span>Update training, prompts, FAQ, policy guidance and support scripts.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Re-deliver</strong><span>Publish updates through champions, community, office hours and manager routines.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -398,35 +428,18 @@ Adoption must be measurable.
 
 ## 12-Month Adoption Roadmap
 
-```mermaid
-gantt
-    title Enterprise Copilot Adoption Roadmap
-    dateFormat YYYY-MM-DD
-
-    section Phase 1 - Foundation
-    PMO Setup                  :a1, 2026-01-01, 2w
-    Governance Setup           :a2, after a1, 2w
-    Scenario Discovery         :a3, after a1, 4w
-    Champion Selection         :a4, after a2, 2w
-
-    section Phase 2 - Pilot
-    Pilot User Operation       :b1, after a4, 4w
-    Champion Training          :b2, after a4, 3w
-    Helpdesk Launch            :b3, after a4, 4w
-    VOC Collection             :b4, after b1, 4w
-
-    section Phase 3 - Scale
-    Wave-based Rollout         :c1, after b4, 12w
-    End User Training          :c2, after b4, 12w
-    Community Operation        :c3, after b4, 12w
-    Analytics Review           :c4, after b4, 12w
-
-    section Phase 4 - Sustain
-    KPI Review                 :d1, after c4, 8w
-    Business Use Case Expansion:d2, after c4, 8w
-    Low Adoption Remediation   :d3, after c4, 8w
-    Value Realization Review   :d4, after d3, 4w
-```
+<div class="kc-journey-map" aria-label="12-month Copilot adoption roadmap">
+  <div class="kc-journey-map__header">
+    <span>12-Month Roadmap</span>
+    <strong>Foundation, pilot, scale and sustain</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>Q1</small><strong>Foundation</strong><span>PMO, governance, scenario discovery, champion selection and baseline communications.</span></div>
+    <div class="kc-journey-node"><small>Q2</small><strong>Pilot</strong><span>Pilot users, champion training, helpdesk launch, VOC capture and early value stories.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>Q3</small><strong>Scale</strong><span>Wave rollout, end-user training, community operations and analytics review.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>Q4</small><strong>Sustain</strong><span>KPI review, use case expansion, low-adoption remediation and value realization review.</span></div>
+  </div>
+</div>
 
 ---
 
