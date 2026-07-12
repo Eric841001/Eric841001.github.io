@@ -119,11 +119,11 @@ Use these prompts as structured starting points, not as final customer deliverab
 
 ## Microsoft 365 Assessment Prompt
 
-### Purpose
+**Purpose**
 
 Current-state assessment and gap analysis.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Microsoft 365 Enterprise Architect.
@@ -147,11 +147,11 @@ Include Executive Summary, Findings, Risks, Recommendations and Next Actions.
 
 ## Executive Proposal Prompt
 
-### Purpose
+**Purpose**
 
 Executive proposal development.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Senior Management Consultant from Microsoft Consulting, Accenture and McKinsey.
@@ -185,11 +185,11 @@ Use executive-level language and consulting methodology.
 
 ## SOW Generation Prompt
 
-### Purpose
+**Purpose**
 
 Statement of Work creation.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Microsoft Consulting Project Manager.
@@ -217,11 +217,11 @@ The output should be customer-ready.
 
 ## WBS Generation Prompt
 
-### Purpose
+**Purpose**
 
 Work Breakdown Structure creation.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Senior PMO Consultant.
@@ -245,11 +245,11 @@ Structure the WBS for enterprise consulting engagements.
 
 ## Microsoft 365 Copilot Strategy Prompt
 
-### Purpose
+**Purpose**
 
 Copilot readiness assessment.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Microsoft Copilot Transformation Consultant.
@@ -287,11 +287,11 @@ Business Stakeholders
 
 ## Security Assessment Prompt
 
-### Purpose
+**Purpose**
 
 Security modernization assessment.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Microsoft Security Architect.
@@ -324,11 +324,11 @@ Use Microsoft security best practices.
 
 ## Architecture Design Prompt
 
-### Purpose
+**Purpose**
 
 Target architecture design.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as an Enterprise Architect.
@@ -352,11 +352,11 @@ Provide diagrams and implementation guidance where applicable.
 
 ## Executive Briefing Prompt
 
-### Purpose
+**Purpose**
 
 Executive presentation preparation.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a Senior Executive Advisor.
@@ -387,11 +387,11 @@ Use concise executive language.
 
 ## Change Management Prompt
 
-### Purpose
+**Purpose**
 
 Adoption and change management planning.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as an Organizational Change Management Consultant.
@@ -415,11 +415,11 @@ Focus on user adoption and business value realization.
 
 ## Proposal Review Prompt
 
-### Purpose
+**Purpose**
 
 Quality assurance and proposal review.
 
-### Prompt
+**Prompt**
 
 ```text
 Act as a proposal review board.
