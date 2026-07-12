@@ -16,25 +16,41 @@ keywords:
 
 # Microsoft 365 Security
 
-This page is a search landing page for visitors looking for Microsoft 365 security architecture, Zero Trust, Defender, Purview, Conditional Access, Intune and Copilot data protection.
+<section class="kc-topic-hero" aria-label="Microsoft 365 Security landing hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft 365 Security Architecture</span>
+    <h2>Build the control plane before AI exposes the gaps</h2>
+    <p>Microsoft 365 security should connect Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Information Barriers, audit and Copilot data protection into one reviewable control architecture.</p>
+    <div class="kc-topic-hero__actions" aria-label="Microsoft 365 security entry points">
+      <a class="kc-topic-button kc-topic-button--primary" href="../security/overview">Security Overview</a>
+      <a class="kc-topic-button" href="../architecture/security-reference-architecture">Reference Architecture</a>
+      <a class="kc-topic-button" href="../security/information-barriers">Information Barriers</a>
+    </div>
+  </div>
 
+  <div class="kc-factory-panel" aria-label="Microsoft 365 security control visual">
+    <div class="kc-factory-panel__header"><span>Security Spine</span><strong>Evidence ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="../security/zero-trust-framework" class="kc-factory-card"><small>01</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access, PIM and guest access</span></a>
+      <a href="../security/defender-xdr" class="kc-factory-card"><small>02</small><strong>Threat</strong><span>Defender, XDR, alert visibility and incident workflow</span></a>
+      <a href="../security/purview" class="kc-factory-card"><small>03</small><strong>Data</strong><span>Purview, labels, DLP, audit, retention and eDiscovery</span></a>
+      <a href="../copilot/governance" class="kc-factory-card"><small>04</small><strong>AI</strong><span>Copilot permission, oversharing and user guidance</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Security must be provable</strong><span>Executives and auditors need evidence: policy state, blocked/allowed tests, ownership, exception approval and review cadence.</span></div>
+  </div>
+</section>
 
-<div class="kc-signal-grid" aria-label="M365 Security search landing cards">
-  <a class="kc-signal-card" href="../security/overview">
-    <small>SECURITY</small>
-    <strong>Security overview</strong>
-    <span>Connect Zero Trust, Conditional Access, Defender, Purview and endpoint controls.</span>
-  </a>
-  <a class="kc-signal-card" href="../projects/case-study-retail-m365-security-policy">
-    <small>REFERENCE</small>
-    <strong>Retail security policy</strong>
-    <span>Review an anonymized Microsoft 365 security policy modernization pattern.</span>
-  </a>
-  <a class="kc-signal-card" href="../contact">
-    <small>REQUEST</small>
-    <strong>Ask for reusable assets</strong>
-    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
-  </a>
+<div class="kc-context-panel" aria-label="Microsoft 365 security executive context">
+  <div class="kc-context-panel__lead">
+    <small>AI Security Context</small>
+    <strong>Copilot does not create new permissions, but it can make existing oversharing easier to discover.</strong>
+    <span>Security readiness should therefore connect permission cleanup, Purview labels, DLP, audit evidence, external sharing review and user guidance before broad AI adoption.</span>
+  </div>
+  <div class="kc-context-panel__grid">
+    <a href="../security/dlp"><small>Data</small><strong>DLP and labels</strong><span>Protect sensitive data before AI-assisted search and reasoning expands.</span></a>
+    <a href="../security/information-barriers"><small>Boundary</small><strong>Information Barriers</strong><span>Use segment-based restrictions where regulatory or conflict boundaries matter.</span></a>
+    <a href="../projects/case-study-retail-m365-security-policy"><small>Reference</small><strong>Retail security policy</strong><span>Review an anonymized Microsoft 365 security modernization pattern.</span></a>
+  </div>
 </div>
 
 ## 한국어 요약
@@ -45,55 +61,44 @@ Copilot과 GPT-5.6이 업무에 더 깊게 들어올수록 security architecture
 
 ## Security Control Map
 
-```mermaid
-flowchart LR
-  Identity["Identity<br/>Entra ID,<br/>CA, PIM"]:::control
-  Device["Device<br/>Intune,<br/>compliance"]:::control
-  Threat["Threat<br/>Defender,<br/>XDR"]:::control
-  Data["Data<br/>Purview,<br/>DLP, IB"]:::control
-  Copilot["Copilot<br/>permission,<br/>oversharing"]:::ai
-  Evidence["Evidence<br/>audit,<br/>review"]:::outcome
-
-  Identity --> Device --> Threat --> Data --> Copilot --> Evidence
-
-  classDef control fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.6px
-  classDef ai fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
-  classDef outcome fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
-```
+<div class="kc-journey-map" aria-label="Microsoft 365 security control map">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Identity</strong><span>Entra ID, Conditional Access, MFA, PIM and guest access</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Device</strong><span>Intune enrollment, compliance, app protection and device risk</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Threat</strong><span>Defender for Endpoint, Defender for Office 365 and Defender XDR</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Data</strong><span>Purview, DLP, Information Barriers, retention and audit</span></div>
+  <div class="kc-journey-node"><small>05</small><strong>Copilot</strong><span>Permission cleanup, oversharing review and AI user guidance</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Evidence</strong><span>Audit, exception approval, incident workflow and review cadence</span></div>
+</div>
 
 ## Security Domains
 
-| Domain | What To Review |
-|---|---|
-| Identity | Entra ID, MFA, Conditional Access, PIM, guest access |
-| Device | Intune enrollment, compliance, app protection, device risk |
-| Threat Protection | Defender for Endpoint, Defender for Office 365, Defender XDR |
-| Data Protection | Purview sensitivity labels, DLP, retention, audit, eDiscovery |
-| Collaboration Boundary | Teams, SharePoint, OneDrive sharing and Information Barriers |
-| Copilot Protection | permission cleanup, oversharing review, data classification, user guidance |
-| Operations | incident workflow, exception process, evidence package and review cadence |
+<div class="kc-platform-fit" aria-label="Microsoft 365 security domains">
+  <div class="kc-platform-fit__card"><small>Identity</small><strong>Entra ID and access</strong><span>MFA, Conditional Access, PIM and guest access.</span></div>
+  <div class="kc-platform-fit__card"><small>Device</small><strong>Intune and compliance</strong><span>Enrollment, compliance, app protection and device risk.</span></div>
+  <div class="kc-platform-fit__card"><small>Threat</small><strong>Defender protection</strong><span>Defender for Endpoint, Defender for Office 365 and Defender XDR.</span></div>
+  <div class="kc-platform-fit__card"><small>Data</small><strong>Purview protection</strong><span>Sensitivity labels, DLP, retention, audit and eDiscovery.</span></div>
+  <div class="kc-platform-fit__card"><small>Boundary</small><strong>Collaboration segmentation</strong><span>Teams, SharePoint, OneDrive sharing and Information Barriers.</span></div>
+  <div class="kc-platform-fit__card"><small>AI</small><strong>Copilot protection</strong><span>Permission cleanup, oversharing review, classification and user guidance.</span></div>
+</div>
 
 ## Security Modernization Path
 
-| Phase | Outcome |
-|---|---|
-| Baseline | confirm identity, device, threat and data protection controls |
-| Prioritize | select high-risk workloads, sensitive repositories and user groups |
-| Design | align Conditional Access, Intune, Defender, Purview, DLP and sharing policy |
-| Validate | test allowed and blocked paths, alert visibility and audit evidence |
-| Operate | define exception process, review cadence, incident workflow and executive reporting |
-| Extend to AI | apply permission cleanup, label strategy and Copilot data protection guidance |
+<div class="kc-maturity-ladder" aria-label="Microsoft 365 security modernization path">
+  <div class="kc-maturity-step"><small>Phase 1</small><strong>Baseline</strong><span>Confirm identity, device, threat and data protection controls.</span></div>
+  <div class="kc-maturity-step"><small>Phase 2</small><strong>Prioritize</strong><span>Select high-risk workloads, sensitive repositories and user groups.</span></div>
+  <div class="kc-maturity-step"><small>Phase 3</small><strong>Design</strong><span>Align Conditional Access, Intune, Defender, Purview, DLP and sharing policy.</span></div>
+  <div class="kc-maturity-step"><small>Phase 4</small><strong>Validate</strong><span>Test allowed and blocked paths, alert visibility and audit evidence.</span></div>
+  <div class="kc-maturity-step"><small>Phase 5</small><strong>Extend to AI</strong><span>Apply permission cleanup, label strategy and Copilot data protection guidance.</span></div>
+</div>
 
 ## Security Questions For AI Era
 
-| Question | Why It Matters |
-|---|---|
-| Can Copilot access more content than the user expects? | overshared data can become visible through AI-assisted answers |
-| Are sensitive repositories labeled and governed? | Purview labels and DLP reduce accidental exposure |
-| Are unmanaged devices restricted? | AI-assisted work can increase the value of stolen sessions or unmanaged access |
-| Is external sharing reviewed? | Teams, SharePoint and OneDrive sharing affect data exposure |
-| Are Information Barriers required? | regulated or conflict-of-interest scenarios need segment-based restrictions |
-| Is audit evidence ready? | security architecture must be provable, not only configured |
+<div class="kc-operating-model" aria-label="Security questions for AI era">
+  <div class="kc-operating-stage"><small>Access</small><strong>Can Copilot expose overshared content?</strong><span>Overshared data can become easier to discover through AI-assisted answers.</span></div>
+  <div class="kc-operating-stage"><small>Data</small><strong>Are sensitive repositories governed?</strong><span>Purview labels and DLP reduce accidental exposure.</span></div>
+  <div class="kc-operating-stage"><small>Device</small><strong>Are unmanaged devices restricted?</strong><span>AI-assisted work increases the value of stolen sessions or unmanaged access.</span></div>
+  <div class="kc-operating-stage"><small>Evidence</small><strong>Is audit evidence ready?</strong><span>Security architecture must be provable, not only configured.</span></div>
+</div>
 
 ## Frequently Asked Questions
 
@@ -119,29 +124,22 @@ Use simple guidance: use approved work accounts, store sensitive content in gove
 
 ## Recommended Entry Points
 
-- [Security Overview](../security/overview)
-- [Security Reference Architecture](../architecture/security-reference-architecture)
-- [Zero Trust Framework](../security/zero-trust-framework)
-- [Defender XDR](../security/defender-xdr)
-- [Microsoft Purview](../security/purview)
-- [Purview Information Barriers](../security/information-barriers)
-- [DLP](../security/dlp)
-- [Global Secure Access Whitelist Design](../knowledge-center/gsa-whitelist-design)
-- [Financial SaaS Security Case Study](../projects/case-study-financial-saas-security)
-- [Retail M365 Security Policy Case Study](../projects/case-study-retail-m365-security-policy)
+<div class="kc-entry-hub" aria-label="Microsoft 365 security recommended entry points">
+  <a href="../security/overview"><small>Start</small><strong>Security Overview</strong></a>
+  <a href="../architecture/security-reference-architecture"><small>Design</small><strong>Security Reference Architecture</strong></a>
+  <a href="../security/zero-trust-framework"><small>Identity</small><strong>Zero Trust Framework</strong></a>
+  <a href="../security/defender-xdr"><small>Threat</small><strong>Defender XDR</strong></a>
+  <a href="../security/purview"><small>Data</small><strong>Microsoft Purview</strong></a>
+  <a href="../security/information-barriers"><small>Boundary</small><strong>Purview Information Barriers</strong></a>
+</div>
 
 ## Requestable Assets
 
-- Microsoft 365 security assessment checklist
-- Conditional Access policy review matrix
-- Defender and Purview readiness checklist
-- Copilot data protection review checklist
-- Information Barriers validation plan
-- executive security modernization roadmap
-
-## Contact Path
-
-For a customer-ready security assessment workbook, Conditional Access review matrix or Copilot data protection checklist, use [Contact and Asset Request](../contact). Public pages provide the method; editable documents and customer-specific examples should be shared only after the confidentiality boundary is confirmed.
+<div class="kc-request-panel">
+  <small>Asset Request</small>
+  <strong>Security artifacts should be shared only after the confidentiality boundary is confirmed.</strong>
+  <span>Microsoft 365 security assessment checklist, Conditional Access policy review matrix, Defender and Purview readiness checklist, Copilot data protection review checklist, Information Barriers validation plan and executive security modernization roadmap can be requested through <a href="../contact">Contact and Asset Request</a>.</span>
+</div>
 
 ## 검색 키워드
 

@@ -15,34 +15,50 @@ keywords:
 
 # Copilot Adoption
 
-This page is a search landing page for visitors looking for Microsoft 365 Copilot adoption strategy, readiness assessment, governance, GPT-5.6 model guidance and rollout planning.
+<section class="kc-topic-hero" aria-label="Copilot Adoption landing hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Copilot Adoption Operating Model</span>
+    <h2>Turn Copilot rollout into measurable behavior change</h2>
+    <p>Copilot adoption is not license assignment or feature training. It is a change program that connects readiness, data protection, role scenarios, champions, GPT-5.6 guidance, agent escalation paths and executive value signals.</p>
+    <div class="kc-topic-hero__actions" aria-label="Copilot adoption entry points">
+      <a class="kc-topic-button kc-topic-button--primary" href="../copilot/adoption-program">Adoption Program</a>
+      <a class="kc-topic-button" href="../copilot/readiness">Readiness</a>
+      <a class="kc-topic-button" href="../projects/case-study-manufacturing-copilot-adoption">Customer Pattern</a>
+    </div>
+  </div>
 
-
-<div class="kc-signal-grid" aria-label="Copilot Adoption search landing cards">
-  <a class="kc-signal-card" href="../copilot/adoption-program">
-    <small>ADOPTION</small>
-    <strong>Adoption program</strong>
-    <span>Connect readiness, use cases, champions, training, governance and KPI measurement.</span>
-  </a>
-  <a class="kc-signal-card" href="../projects/case-study-manufacturing-copilot-adoption">
-    <small>CASE</small>
-    <strong>Manufacturing adoption</strong>
-    <span>Review a public-safe role-based Copilot adoption pattern.</span>
-  </a>
-  <a class="kc-signal-card" href="../contact">
-    <small>REQUEST</small>
-    <strong>Ask for reusable assets</strong>
-    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
-  </a>
-</div>
+  <div class="kc-factory-panel" aria-label="Copilot adoption operating visual">
+    <div class="kc-factory-panel__header">
+      <span>Adoption Loop</span>
+      <strong>Value tracked</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="../copilot/readiness" class="kc-factory-card"><small>01</small><strong>Ready</strong><span>Permissions, data, security and support baseline</span></a>
+      <a href="../copilot/adoption-program" class="kc-factory-card"><small>02</small><strong>Enable</strong><span>Role scenarios, champions, training and office hours</span></a>
+      <a href="../copilot/roi-framework" class="kc-factory-card"><small>03</small><strong>Measure</strong><span>Quality, time, confidence, rework and outcome signals</span></a>
+      <a href="./ai-agent-factory" class="kc-factory-card"><small>04</small><strong>Scale</strong><span>Move repeatable work to governed agent and Cowork paths</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Adoption must explain the next step</strong>
+      <span>Users should know when to use Copilot, when GPT-5.6 helps, when a process should become an agent and when Cowork needs governance.</span>
+    </div>
+  </div>
+</section>
 
 ## 2026 Adoption Context
 
-Copilot adoption now starts with a wider question: how should an organization use AI from everyday Copilot work to Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork?
-
-GPT-5.6 raises the quality ceiling for reasoning, drafting, analysis and presentation work, but enterprise value still depends on readiness, data protection, user behavior, governance and measurement.
-
-Before scaling, review [Copilot Overview](../copilot/overview), [Copilot Readiness](../copilot/readiness), [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update) and [Copilot Cowork Cost Governance](../copilot/copilot-cowork-cost-governance).
+<div class="kc-context-panel" aria-label="2026 Copilot adoption context">
+  <div class="kc-context-panel__lead">
+    <small>2026 Adoption Context</small>
+    <strong>Copilot adoption now spans everyday work, GPT-5.6 reasoning, Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork.</strong>
+    <span>GPT-5.6 raises the quality ceiling for reasoning, drafting, analysis and presentation work, but enterprise value still depends on readiness, data protection, user behavior, governance and measurement.</span>
+  </div>
+  <div class="kc-context-panel__grid">
+    <a href="../copilot/overview"><small>Start</small><strong>Copilot Overview</strong><span>Explain how Copilot changes everyday work before expanding to agents.</span></a>
+    <a href="../copilot/copilot-studio-2026-platform-update"><small>Build</small><strong>Copilot Studio Update</strong><span>Use the 2026 platform baseline for agent and workflow planning.</span></a>
+    <a href="../copilot/copilot-cowork-cost-governance"><small>Operate</small><strong>Cowork Governance</strong><span>Plan long-running work with owner, approval, cost and monitoring controls.</span></a>
+  </div>
+</div>
 
 ## 한국어 요약
 
@@ -54,55 +70,44 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
 
 ## AI Adoption Storyline
 
-```mermaid
-flowchart LR
-  Work["Real work<br/>draft, analyze,<br/>decide"]:::source
-  Model["Model choice<br/>GPT-5.6 where<br/>available"]:::step
-  Adopt["Adoption<br/>training,<br/>champions"]:::step
-  Agent["Agent path<br/>Studio, M365,<br/>Cowork"]:::control
-  Measure["Value signal<br/>quality, time,<br/>confidence"]:::outcome
-
-  Work --> Model --> Adopt --> Agent --> Measure
-
-  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
-  classDef step fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
-  classDef control fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
-  classDef outcome fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
-```
+<div class="kc-journey-map" aria-label="Copilot adoption storyline">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Real Work</strong><span>Draft, analyze, meet, decide and follow up</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Model Choice</strong><span>Use GPT-5.6 guidance where available and useful</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Enablement</strong><span>Training, champions, office hours and scenario library</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance</strong><span>Data protection, acceptable use, support and escalation</span></div>
+  <div class="kc-journey-node"><small>05</small><strong>Agent Path</strong><span>Studio, M365 Agents and Cowork for repeatable work</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Value Signal</strong><span>Quality, time saved, confidence and business outcome</span></div>
+</div>
 
 ## Adoption Workstreams
 
-| Workstream | Focus |
-|---|---|
-| Readiness | data exposure, permissions, security baseline, license scope |
-| GPT-5.6 Guidance | model selector guidance, reasoning scenarios, user communication |
-| Use Case Design | role-based scenarios, value hypothesis and pilot backlog |
-| Governance | owner model, acceptable use, DLP, audit and escalation |
-| Pilot | pilot group, communication, feedback, support and measurement |
-| Enablement | training, prompt guidance, champions and office hours |
-| ROI | baseline measurement, productivity signal, quality and adoption maturity |
-| Scale-Out | rollout roadmap, risk control and operating rhythm |
+<div class="kc-platform-fit" aria-label="Copilot adoption workstreams">
+  <div class="kc-platform-fit__card"><small>Readiness</small><strong>Data and security baseline</strong><span>Review data exposure, permissions, security baseline and license scope.</span></div>
+  <div class="kc-platform-fit__card"><small>Guidance</small><strong>GPT-5.6 model selector</strong><span>Define reasoning scenarios, user communication and model choice rules.</span></div>
+  <div class="kc-platform-fit__card"><small>Use Cases</small><strong>Role-based value design</strong><span>Build scenario backlog, value hypothesis and pilot priorities.</span></div>
+  <div class="kc-platform-fit__card"><small>Governance</small><strong>Owner and policy model</strong><span>Define acceptable use, DLP, audit, support and escalation.</span></div>
+  <div class="kc-platform-fit__card"><small>Enablement</small><strong>Champions and training</strong><span>Run prompt guidance, champions, office hours and feedback loop.</span></div>
+  <div class="kc-platform-fit__card"><small>ROI</small><strong>Value measurement</strong><span>Track productivity, quality, satisfaction, rework and maturity.</span></div>
+</div>
 
 ## What Good Looks Like
 
-| Maturity Level | Observable Signal |
-|---|---|
-| License Enablement | Copilot licenses are assigned, but role scenarios and value measures are weak |
-| Guided Pilot | pilot users, use cases, training, support and feedback channels are defined |
-| Governed Adoption | data protection, acceptable use, champion network and support model are operating |
-| Value Tracking | productivity, quality, satisfaction, rework reduction and business outcomes are reviewed |
-| AI Operating Model | Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork are connected to a repeatable change model |
+<div class="kc-maturity-ladder" aria-label="Copilot adoption maturity ladder">
+  <div class="kc-maturity-step"><small>Level 1</small><strong>License Enablement</strong><span>Copilot licenses are assigned, but role scenarios and value measures are weak.</span></div>
+  <div class="kc-maturity-step"><small>Level 2</small><strong>Guided Pilot</strong><span>Pilot users, use cases, training, support and feedback channels are defined.</span></div>
+  <div class="kc-maturity-step"><small>Level 3</small><strong>Governed Adoption</strong><span>Data protection, acceptable use, champion network and support model are operating.</span></div>
+  <div class="kc-maturity-step"><small>Level 4</small><strong>Value Tracking</strong><span>Productivity, quality, satisfaction, rework reduction and outcomes are reviewed.</span></div>
+  <div class="kc-maturity-step"><small>Level 5</small><strong>AI Operating Model</strong><span>Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork connect to a repeatable change model.</span></div>
+</div>
 
 ## Adoption Readiness Questions
 
-| Question | Why It Matters |
-|---|---|
-| Which business roles will create measurable value first? | prevents license assignment without use case value |
-| Are SharePoint, OneDrive, Teams and Exchange permissions ready? | reduces oversharing and Copilot answer quality risk |
-| Which data protection controls must be in place before rollout? | aligns Copilot with Purview, DLP and security requirements |
-| When should GPT-5.6 be selected? | helps users choose deeper reasoning only when the task needs it |
-| When should work move to Copilot Studio or Cowork? | separates quick assistance from governed long-running work |
-| What metric proves progress to executives? | connects adoption to business value, not only usage count |
+<div class="kc-operating-model" aria-label="Copilot adoption readiness questions">
+  <div class="kc-operating-stage"><small>Roles</small><strong>Where is measurable value first?</strong><span>Prevents license assignment without use case value.</span></div>
+  <div class="kc-operating-stage"><small>Data</small><strong>Are permissions ready?</strong><span>Reduces oversharing and Copilot answer quality risk.</span></div>
+  <div class="kc-operating-stage"><small>Security</small><strong>Which controls are required?</strong><span>Aligns Copilot with Purview, DLP and security requirements.</span></div>
+  <div class="kc-operating-stage"><small>Scale</small><strong>When does work become an agent?</strong><span>Separates quick assistance from governed long-running work.</span></div>
+</div>
 
 ## Frequently Asked Questions
 
@@ -128,28 +133,22 @@ Executives should see readiness status, business scenarios, risk controls, adopt
 
 ## Recommended Entry Points
 
-- [Copilot Overview](../copilot/overview)
-- [Copilot Readiness](../copilot/readiness)
-- [Copilot Adoption Program](../copilot/adoption-program)
-- [Copilot ROI Framework](../copilot/roi-framework)
-- [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update)
-- [Copilot Cowork Cost Governance](../copilot/copilot-cowork-cost-governance)
-- [Manufacturing Copilot Adoption Case Study](../projects/case-study-manufacturing-copilot-adoption)
-- [Contact and Asset Request](../contact)
+<div class="kc-entry-hub" aria-label="Copilot adoption recommended entry points">
+  <a href="../copilot/overview"><small>Start</small><strong>Copilot Overview</strong></a>
+  <a href="../copilot/readiness"><small>Ready</small><strong>Copilot Readiness</strong></a>
+  <a href="../copilot/adoption-program"><small>Adopt</small><strong>Copilot Adoption Program</strong></a>
+  <a href="../copilot/roi-framework"><small>Measure</small><strong>Copilot ROI Framework</strong></a>
+  <a href="../copilot/copilot-studio-2026-platform-update"><small>Build</small><strong>Copilot Studio 2026 Update</strong></a>
+  <a href="../copilot/copilot-cowork-cost-governance"><small>Operate</small><strong>Copilot Cowork Governance</strong></a>
+</div>
 
 ## Requestable Assets
 
-- Copilot readiness workbook
-- GPT-5.6 adoption message and model selector guide
-- Copilot adoption WBS
-- Copilot governance checklist
-- Copilot pilot scorecard
-- Copilot use case prioritization matrix
-- executive adoption roadmap
-
-## Contact Path
-
-For a Copilot readiness workbook, adoption WBS, champion program plan, pilot scorecard or executive roadmap, use [Contact and Asset Request](../contact). Share the industry, target users, workloads and expected output type without exposing confidential customer information.
+<div class="kc-request-panel">
+  <small>Asset Request</small>
+  <strong>Adoption assets should be shared after industry, users and confidentiality boundary are confirmed.</strong>
+  <span>Copilot readiness workbook, GPT-5.6 adoption message, model selector guide, adoption WBS, governance checklist, pilot scorecard, use case prioritization matrix and executive roadmap can be requested through <a href="../contact">Contact and Asset Request</a>.</span>
+</div>
 
 ## 검색 키워드
 
