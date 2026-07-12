@@ -1,168 +1,216 @@
 ---
 title: Purview
-description: Microsoft Purview guide for sensitivity labels, DLP, retention, audit, eDiscovery and Copilot data protection readiness.
+description: Microsoft Purview guide for sensitivity labels, DLP, retention, audit, eDiscovery, Insider Risk and Copilot data protection readiness.
 ---
 
 # Purview
 
-## Executive Summary
+<section class="kc-topic-hero" aria-label="Microsoft Purview hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft Purview Data Security and Governance</span>
+    <h2>Make data protection understandable before AI scales it</h2>
+    <p>Microsoft Purview gives Microsoft 365, Security, Compliance and Copilot programs a shared control layer for classification, protection, DLP, retention, audit, eDiscovery and insider risk. The practical goal is not only policy enforcement. The goal is a business-readable data governance model that users can follow and security teams can operate.</p>
+    <div class="kc-topic-hero__actions" aria-label="Purview related entry points">
+      <a class="kc-topic-button kc-topic-button--primary" href="./purview-information-protection">Information Protection</a>
+      <a class="kc-topic-button" href="./dlp">DLP</a>
+      <a class="kc-topic-button" href="../copilot/governance">Copilot Governance</a>
+    </div>
+  </div>
 
-Microsoft Purview provides the governance, compliance and data protection layer for Microsoft 365 and enterprise data environments.
+  <div class="kc-factory-panel" aria-label="Purview control model visual">
+    <div class="kc-factory-panel__header">
+      <span>Purview Control Loop</span>
+      <strong>AI-ready data boundary</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#classification-and-labels" class="kc-factory-card">
+        <small>01</small>
+        <strong>Classify</strong>
+        <span>Business-readable labels and sensitive data categories.</span>
+      </a>
+      <a href="#dlp-and-risk-control" class="kc-factory-card">
+        <small>02</small>
+        <strong>Protect</strong>
+        <span>DLP, encryption, endpoint controls and exception handling.</span>
+      </a>
+      <a href="#audit-retention-and-ediscovery" class="kc-factory-card">
+        <small>03</small>
+        <strong>Retain</strong>
+        <span>Retention, audit, eDiscovery and evidence readiness.</span>
+      </a>
+      <a href="#copilot-data-protection-readiness" class="kc-factory-card">
+        <small>04</small>
+        <strong>Prepare AI</strong>
+        <span>Oversharing review, labels, access boundary and monitoring.</span>
+      </a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Enterprise guardrail</strong>
+      <span>Copilot and agents inherit the data estate. Purview should make sensitive data visible, governed and explainable before broad AI adoption.</span>
+    </div>
+  </div>
+</section>
 
-For Copilot and AI adoption, Purview is especially important because AI experiences inherit existing permissions, labels, retention settings and data exposure patterns. A strong Purview foundation helps organizations control sensitive data before expanding Copilot, search and agent scenarios.
+## 한국어 요약
+
+Purview는 보안팀만 사용하는 compliance 도구가 아닙니다. Microsoft 365, Copilot, Security, Legal, IT, business owner가 같은 기준으로 “어떤 데이터를 보호해야 하는가”를 결정하게 만드는 enterprise data governance layer입니다.
+
+AI 도입 관점에서는 특히 중요합니다. Copilot과 agent는 기존 permission, sharing link, sensitivity label, retention, DLP 정책의 영향을 그대로 받습니다. 따라서 Purview 설계는 Copilot readiness, oversharing review, data owner 정비와 함께 진행되어야 합니다.
 
 ## Business Scenario
 
-Typical business drivers:
+Typical drivers for a Purview program:
 
-- Classify and protect sensitive documents
-- Reduce accidental data leakage through DLP
-- Prepare Microsoft 365 data for Copilot adoption
-- Support audit, retention and eDiscovery requirements
-- Govern insider risk and communication compliance
-- Establish information protection standards across departments
+- Classify and protect sensitive documents with a usable label taxonomy.
+- Reduce accidental leakage through DLP across Exchange, SharePoint, OneDrive, Teams, endpoint and cloud apps.
+- Prepare Microsoft 365 data for Copilot and agent adoption.
+- Support audit, retention, eDiscovery, insider risk and communication compliance.
+- Establish exception approval and policy review cadence across departments.
 
-For an enterprise group governance program, the practical value of Purview was not only policy enforcement. It created a common language between legal, security, IT and business owners for what data should be protected and how exceptions should be approved.
+For enterprise group governance programs, the value of Purview is often the common language it creates between legal, security, IT and business owners. Policy design becomes stronger when business owners can understand the categories, exceptions and expected user behavior.
 
-## Architecture
+## Purview Operating Model
 
-```mermaid
-flowchart TB
-  Data[Microsoft 365 Data]
-  Labels[Sensitivity Labels]
-  DLP[Data Loss Prevention]
-  Retention[Retention]
-  Audit[Audit and eDiscovery]
-  Copilot[Copilot Readiness]
+<div class="kc-journey-map" aria-label="Purview operating model">
+  <div class="kc-journey-map__header">
+    <span>Purview Operating Model</span>
+    <strong>From data inventory to AI-ready protection</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Data Inventory</strong><span>Identify sensitive repositories, data owners and priority business processes.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Classification</strong><span>Define sensitivity labels, business categories and publishing scope.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Protection</strong><span>Apply encryption, DLP, endpoint control and external sharing rules.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Evidence</strong><span>Configure audit, retention, eDiscovery and exception register.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>AI Readiness</strong><span>Review oversharing, Copilot data exposure and sensitive content access.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate</strong><span>Tune policies using alerts, false positives, user feedback and review cadence.</span></div>
+  </div>
+</div>
 
-  Data --> Labels
-  Labels --> DLP
-  Data --> Retention
-  Data --> Audit
-  Labels --> Copilot
-  DLP --> Copilot
-```
+## Classification and Labels
 
-Core components:
+<div class="kc-platform-fit" aria-label="Sensitivity label design model">
+  <div class="kc-platform-fit__card">
+    <small>Business-readable</small>
+    <strong>Small taxonomy first</strong>
+    <span>Start with a few labels that employees can understand. Too many labels reduce adoption and increase misclassification.</span>
+  </div>
+  <div class="kc-platform-fit__card">
+    <small>Policy-backed</small>
+    <strong>Publishing scope</strong>
+    <span>Decide which users receive which labels, whether defaults apply and which workloads are in scope.</span>
+  </div>
+  <div class="kc-platform-fit__card">
+    <small>Protection-ready</small>
+    <strong>Encryption and marking</strong>
+    <span>Use encryption, content marking and access restrictions only where business impact is clear.</span>
+  </div>
+  <div class="kc-platform-fit__card">
+    <small>AI-ready</small>
+    <strong>Copilot boundary</strong>
+    <span>Labels should help security and business owners reason about sensitive content exposure in Copilot and search.</span>
+  </div>
+</div>
 
-- Sensitivity labels for classification and encryption
-- DLP policies for Exchange, SharePoint, OneDrive, Teams and endpoints
-- Retention labels and policies
-- Audit, eDiscovery and communication compliance
-- Insider risk management
-- Data lifecycle management
+## DLP and Risk Control
 
-## Implementation
+DLP should not begin with aggressive blocking. A stronger delivery pattern is:
 
-Recommended implementation sequence:
+1. Define priority sensitive information types and scenarios.
+2. Run DLP in test mode and collect evidence.
+3. Tune false positives with business owners.
+4. Move from audit to warning and then to block only where justified.
+5. Record exception approvals, expiry and review owners.
 
-1. Identify sensitive data categories and business owners.
-2. Define classification taxonomy and label naming.
-3. Pilot labels with a small group before broad publishing.
-4. Configure DLP in test mode and review false positives.
-5. Align retention policy with legal and operational requirements.
-6. Validate Copilot readiness by reviewing oversharing and sensitive content exposure.
-7. Define exception, escalation and policy review cadence.
+<div class="kc-operating-model" aria-label="DLP operating model">
+  <div class="kc-operating-stage">
+    <small>Detect</small>
+    <strong>Find sensitive activity</strong>
+    <span>Use DLP matches, endpoint signals and sharing activity to understand risk before enforcement.</span>
+  </div>
+  <div class="kc-operating-stage">
+    <small>Tune</small>
+    <strong>Reduce false positives</strong>
+    <span>Adjust thresholds, conditions and exclusions with evidence from pilot users.</span>
+  </div>
+  <div class="kc-operating-stage">
+    <small>Enforce</small>
+    <strong>Apply the right control</strong>
+    <span>Choose audit, notify, justify, block or override based on business impact.</span>
+  </div>
+  <div class="kc-operating-stage">
+    <small>Review</small>
+    <strong>Operate as a program</strong>
+    <span>Track alerts, exceptions, repeat offenders, policy drift and adoption feedback.</span>
+  </div>
+</div>
 
-## Licensing
+## Audit, Retention and eDiscovery
 
-Purview capabilities depend on Microsoft 365 licensing. Advanced DLP, Insider Risk Management, eDiscovery Premium and some governance features generally require higher-tier compliance licensing. Licensing should be validated against the exact control requirements before proposal finalization.
+Purview programs should prepare evidence before a legal or executive request arrives. The baseline should include:
 
-## Security
+- Retention decisions tied to business, legal and regulatory requirements.
+- Audit configuration and access review for privileged compliance roles.
+- eDiscovery readiness, custodian workflow and case handover process.
+- Communication Compliance and Insider Risk scope where the organization has clear policy basis.
+- Evidence register showing why each policy exists and who approved it.
 
-Security design should focus on:
+## Copilot Data Protection Readiness
 
-- Who can create, publish and modify labels
-- Which data types require encryption
-- Which sharing scenarios require block, warning or audit-only behavior
-- How DLP alerts are triaged
-- How policy exceptions are approved and reviewed
-- How Copilot access is monitored against sensitive repositories
+Copilot readiness should combine Purview with access hygiene:
 
-## Best Practice
+| Readiness Area | What To Validate |
+|---|---|
+| Sensitivity labels | Are sensitive repositories labeled or discoverable through data classification? |
+| Permissions | Are SharePoint sites, Teams and OneDrive links over-shared? |
+| DLP | Are priority leakage paths monitored before broad Copilot rollout? |
+| Audit | Can security teams explain who accessed sensitive content and when? |
+| Data owner | Does each sensitive repository have an accountable owner? |
+| Exception handling | Are business exceptions approved, time-bound and reviewable? |
 
-- Do not start with too many labels. A small, usable taxonomy wins.
-- Use test mode for DLP before enforcement.
-- Include business owners in sensitive data definitions.
-- Review SharePoint oversharing before Copilot rollout.
-- Keep exception records auditable.
+## Customer Success Pattern
 
-## Troubleshooting
-
-- Label not visible: check label policy publishing and user scope.
-- DLP not triggering: confirm workload location, condition logic and test mode status.
-- Excessive false positives: tune sensitive information types and thresholds.
-- Copilot exposure concern: review permissions, labels, sharing links and site ownership.
-
-## Lessons Learned
-
-Purview adoption is partly technical and partly behavioral. Policies that are too strict from day one are often bypassed. The stronger pattern is to start with visibility, tune policies with evidence, and then enforce controls in waves.
-
-## Frequently Asked Questions
-
-### Where should Purview adoption start?
-
-Start with business data categories, a small sensitivity label taxonomy and priority DLP scenarios. Avoid launching too many labels or block policies before user behavior and false positives are understood.
-
-### How does Purview support Copilot readiness?
-
-Purview helps classify, protect, audit and govern sensitive information that Copilot may reason over through Microsoft 365 permissions. It should be paired with oversharing review and site ownership cleanup.
-
-### Who should own Purview policy decisions?
-
-Security, compliance, legal, IT and business data owners should make policy decisions together. Technical administrators should not define sensitive data categories alone.
-
-### What evidence should be prepared?
-
-Prepare label taxonomy, policy publishing scope, DLP test results, exception process, audit configuration, retention decisions and Copilot data protection notes.
+An anonymized enterprise group governance program used Purview not as a single technical deployment, but as a cross-functional operating model. Security, legal, IT and business owners agreed on a small label taxonomy, tested DLP before enforcement, documented exception handling and aligned Copilot readiness with oversharing review. The result was a governance model that could be explained to executives and operated by the security team after handover.
 
 ## Evidence Checklist
 
 | Evidence | Purpose |
 |---|---|
-| Label taxonomy | show business-readable classification structure |
-| Label policy scope | prove who receives which labels and why |
-| DLP test result | validate policy effect before enforcement |
-| Exception register | document approvals, reasons and expiry |
-| Oversharing review | identify sensitive repositories before Copilot expansion |
-| Review cadence | define how policies are tuned and approved over time |
+| Label taxonomy | Show business-readable classification structure |
+| Label policy scope | Prove who receives which labels and why |
+| DLP test results | Validate policy effect before enforcement |
+| Exception register | Document approvals, reasons, owner and expiry |
+| Oversharing review | Identify sensitive repositories before Copilot expansion |
+| Review cadence | Define how policies are tuned and approved over time |
+| Handover guide | Make operations repeatable after project closure |
+
+## Common Mistakes
+
+- Starting with too many labels instead of a simple taxonomy users understand.
+- Blocking DLP from day one without false-positive evidence.
+- Treating Copilot readiness as a license or model question instead of a data exposure question.
+- Leaving exception approval informal and unaudited.
+- Letting IT define sensitive data categories without business and legal owners.
+
+## 검색 키워드
+
+- Microsoft Purview
+- Microsoft Purview consulting
+- sensitivity label design
+- Microsoft 365 DLP policy
+- Copilot data protection
+- Copilot readiness data governance
+- Microsoft 365 compliance architecture
+- eDiscovery readiness
+- retention policy design
+- insider risk management
+- Purview 거버넌스
+- Microsoft 365 데이터 보호
+- Copilot 보안 준비
 
 ## References
 
-- Microsoft Purview compliance portal
-- Microsoft 365 audit and eDiscovery documentation
-- Microsoft Copilot data protection guidance
-
-## MVP 커뮤니티 기반 설계 메모
-
-Public Microsoft 365 compliance 전문가들이 자주 강조하는 점은, Purview가 성공하려면 policy design이 기술적으로 정확할 뿐 아니라 business owner가 이해할 수 있어야 한다는 것입니다.
-
-Enterprise delivery에서는 다음 패턴이 가장 안정적입니다.
-
-- 사용자가 실제로 이해할 수 있는 작은 sensitivity label taxonomy부터 시작합니다.
-- DLP는 바로 차단하지 말고 test mode에서 false positive를 확인한 뒤 조정합니다.
-- sensitivity label을 일반적인 보안 등급이 아니라 실제 business data category와 연결합니다.
-- exception approval, policy ownership, review cadence를 문서화합니다.
-- Copilot은 기존 access/protection boundary를 따르므로 Purview rollout과 Copilot readiness를 함께 봅니다.
-- Legal, Security, IT, Business stakeholder가 같은 decision table에서 의사결정하도록 합니다.
-
-## 한국어 검색 키워드
-
-이 문서는 다음과 같은 한국어 검색어와도 관련됩니다.
-
-- Microsoft Purview adoption
-- Purview DLP policy design
-- sensitivity label design
-- Microsoft 365 data protection
-- Copilot data protection
-- Purview compliance consulting
-
-## 커뮤니티 및 공식 참고 자료
-
-- [Joanne C Klein](https://joannecklein.com/)
 - [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/)
-- [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
-
-## Contact / Asset Request
-
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+- [Learn about sensitivity labels](https://learn.microsoft.com/en-us/purview/sensitivity-labels)
+- [Learn about data loss prevention](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp)
+- [Microsoft 365 Copilot data security and compliance](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy)
+- [Contact and Asset Request](../contact)
