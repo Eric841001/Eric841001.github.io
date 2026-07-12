@@ -3,33 +3,46 @@ id: azure-landing-zone-architecture
 title: Azure Landing Zone Architecture
 sidebar_label: Azure Landing Zone
 description: Azure Landing Zone architecture for management groups, subscriptions, identity, networking, security, monitoring, governance and FinOps.
+toc_max_heading_level: 2
 ---
 
 # Azure Landing Zone Architecture
 
+<section class="kc-topic-hero" aria-label="Azure landing zone architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Azure Enterprise Foundation</span>
+    <h2>Design Azure as a governed platform, not a collection of subscriptions</h2>
+    <p>Azure Landing Zone decisions should connect identity, management groups, subscriptions, network, policy, security, monitoring, cost and workload onboarding before migration or application modernization begins.</p>
+    <div class="kc-hero-signal-row" aria-label="Azure landing zone signals">
+      <span>Identity</span>
+      <span>Network</span>
+      <span>Policy</span>
+      <span>FinOps</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Azure landing zone related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="./governance-architecture">Governance</a>
+      <a class="kc-topic-button" href="./security-reference-architecture">Security</a>
+      <a class="kc-topic-button" href="./migration-architecture">Migration</a>
+    </div>
+  </div>
 
-<div class="kc-executive-strip" aria-label="Azure landing zone architecture decision summary">
-  <div class="kc-executive-strip__lead">
-    <small>ARCHITECTURE DECISION</small>
-    <strong>Design Azure as an enterprise foundation, not a subscription collection</strong>
-    <span>Landing zone decisions should connect identity, network, policy, security, cost and workload onboarding before application migration begins.</span>
+  <div class="kc-factory-panel" aria-label="Azure landing zone operating model">
+    <div class="kc-factory-panel__header">
+      <span>Landing Zone Control Plane</span>
+      <strong>Foundation before workload migration</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#landing-zone-architecture-overview" class="kc-factory-card"><small>01</small><strong>Hierarchy</strong><span>Management groups, subscriptions, sandbox and workload separation.</span></a>
+      <a href="#network-architecture" class="kc-factory-card"><small>02</small><strong>Connectivity</strong><span>Hub-spoke, DNS, routing, firewall, private access and inspection.</span></a>
+      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Govern</strong><span>Policy, RBAC, tags, cost controls, Defender and monitoring baselines.</span></a>
+      <a href="#operating-model" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Ownership, monitoring, FinOps, exception rhythm and workload onboarding.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Do not migrate workloads before identity, network, policy, logging and cost ownership are designed.</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Foundation</strong>
-    <span>Define management groups, subscriptions, policy and identity guardrails.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Connectivity</strong>
-    <span>Design hub-spoke, DNS, routing, private access and inspection patterns.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Operations</strong>
-    <span>Prepare monitoring, cost control, ownership, deployment and exception rhythm.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -60,36 +73,19 @@ Typical Azure initiatives include:
 
 ## Landing Zone Architecture Overview
 
-```mermaid
-flowchart TB
-  Tenant[Tenant Root Group]
-  Platform[Platform Management Group]
-  LandingZones[Landing Zones]
-  Sandbox[Sandbox]
-  Identity[Identity Subscription]
-  Connectivity[Connectivity Subscription]
-  Management[Management Subscription]
-  Prod[Production Subscriptions]
-  NonProd[Non-Production Subscriptions]
-  Workloads[Applications, Data, AI and Integration Workloads]
-  Policy[Azure Policy, RBAC, Tags, Cost Controls]
-  SecOps[Defender for Cloud, Azure Monitor, Log Analytics, Sentinel]
-
-  Tenant --> Platform
-  Tenant --> LandingZones
-  Tenant --> Sandbox
-  Platform --> Identity
-  Platform --> Connectivity
-  Platform --> Management
-  LandingZones --> Prod
-  LandingZones --> NonProd
-  Prod --> Workloads
-  NonProd --> Workloads
-  Policy --> Platform
-  Policy --> LandingZones
-  SecOps --> Management
-  SecOps --> Workloads
-```
+<div class="kc-journey-map" aria-label="Azure landing zone architecture overview">
+  <div class="kc-journey-map__header">
+    <span>Landing Zone Architecture Overview</span>
+    <strong>Tenant hierarchy to governed workload subscriptions</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Tenant root</strong><span>Root management group sets global policy, guardrails and inheritance model.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Platform</strong><span>Identity, connectivity and management subscriptions provide shared services.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Landing zones</strong><span>Production, non-production and sandbox subscriptions separate ownership and risk.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Controls</strong><span>Azure Policy, RBAC, tags, budgets, Defender, Monitor and Sentinel apply consistently.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Workloads</strong><span>Applications, data, AI and integration workloads onboard into a governed foundation.</span></div>
+  </div>
+</div>
 
 ## Core Components
 
@@ -106,25 +102,19 @@ flowchart TB
 
 ## Network Architecture
 
-```mermaid
-flowchart LR
-  OnPrem[On-Premises Network]
-  Hub[Hub VNet]
-  Firewall[Azure Firewall]
-  Gateway[VPN or ExpressRoute Gateway]
-  Shared[Shared Services]
-  AppSpoke[Application Spoke]
-  DataSpoke[Data Platform Spoke]
-  AISpoke[AI Services Spoke]
-
-  OnPrem --> Gateway
-  Gateway --> Hub
-  Hub --> Firewall
-  Hub --> Shared
-  Hub --> AppSpoke
-  Hub --> DataSpoke
-  Hub --> AISpoke
-```
+<div class="kc-journey-map" aria-label="Azure landing zone network architecture">
+  <div class="kc-journey-map__header">
+    <span>Network Architecture</span>
+    <strong>Hybrid connectivity, inspection and workload segmentation</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>On-premises</strong><span>Datacenter, branch, identity, DNS and legacy workload connectivity requirements.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Gateway</strong><span>ExpressRoute, VPN, routing and connectivity resilience pattern.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Hub VNet</strong><span>Shared services, DNS, firewall, private access and inspection point.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Spokes</strong><span>Application, data, AI and integration workloads are segmented by environment.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operations</strong><span>Flow logs, monitoring, security alerts and network change governance.</span></div>
+  </div>
+</div>
 
 ## Decision Checklist
 

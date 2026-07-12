@@ -2,6 +2,7 @@
 title: Executive Architecture Blueprint
 sidebar_label: Executive Blueprint
 description: Executive-level Microsoft enterprise architecture blueprint connecting Microsoft 365, Security, Copilot, Azure, Migration, Governance and delivery assets.
+toc_max_heading_level: 2
 ---
 
 # Executive Architecture Blueprint
@@ -10,29 +11,41 @@ This blueprint explains how the major areas of this Knowledge Center connect int
 
 It is designed for executive review, presales storytelling, architecture workshops and project kickoff discussions where business leaders, security owners, IT teams and delivery teams need the same view of the target platform.
 
+<section class="kc-topic-hero" aria-label="Executive architecture blueprint hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Executive Architecture Story</span>
+    <h2>Turn technical architecture into an executive decision roadmap</h2>
+    <p>Executive architecture should clarify business pressure, risk, investment sequence, governance ownership, delivery artifacts and measurable outcomes in language leaders can act on.</p>
+    <div class="kc-hero-signal-row" aria-label="Executive architecture signals">
+      <span>Context</span>
+      <span>Decision</span>
+      <span>Roadmap</span>
+      <span>Ownership</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Executive blueprint related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="./m365-reference-architecture">M365 Architecture</a>
+      <a class="kc-topic-button" href="./security-reference-architecture">Security Reference</a>
+      <a class="kc-topic-button" href="../projects/customer-success-reference-patterns">Reference Patterns</a>
+    </div>
+  </div>
 
-<div class="kc-executive-strip" aria-label="Executive blueprint architecture decision summary">
-  <div class="kc-executive-strip__lead">
-    <small>ARCHITECTURE DECISION</small>
-    <strong>Turn technical architecture into an executive decision story</strong>
-    <span>Executive architecture should clarify business pressure, risk, roadmap, investment sequence and operating model ownership.</span>
+  <div class="kc-factory-panel" aria-label="Executive architecture decision model">
+    <div class="kc-factory-panel__header">
+      <span>Decision Blueprint</span>
+      <strong>Business outcome to funded roadmap</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#executive-platform-view" class="kc-factory-card"><small>01</small><strong>Platform</strong><span>Connect Microsoft 365, Security, Copilot, Azure and Migration as one platform.</span></a>
+      <a href="#architecture-layers" class="kc-factory-card"><small>02</small><strong>Layers</strong><span>Show the business, governance, identity, data, AI and delivery layers.</span></a>
+      <a href="#executive-decision-checklist" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Clarify sponsorship, security controls, pilots, SOW, WBS and success metrics.</span></a>
+      <a href="#executive-delivery-artifacts" class="kc-factory-card"><small>04</small><strong>Artifacts</strong><span>Convert strategy into roadmap, review pack, proposal and governance outputs.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Executive rule</strong>
+      <span>Do not present architecture as a product map. Present it as a sequence of decisions, risks, owners and outcomes.</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Context</strong>
-    <span>Explain the business driver and risk in language leaders can act on.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Decision</strong>
-    <span>Show which architecture choices require sponsorship, funding or policy approval.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Roadmap</strong>
-    <span>Sequence initiatives into waves with measurable outcomes and owners.</span>
-  </div>
-</div>
+</section>
 
 ## 한국어 요약
 
@@ -42,31 +55,19 @@ It is designed for executive review, presales storytelling, architecture worksho
 
 ## Executive Platform View
 
-```mermaid
-flowchart TB
-  Business["Business Outcomes<br/>Productivity, Risk Reduction, AI Adoption"]
-  Governance["Governance<br/>Decision, Ownership, Exception, KPI"]
-  Identity["Identity and Access<br/>Entra ID, MFA, Conditional Access"]
-  Device["Device and Endpoint<br/>Intune, Defender for Endpoint"]
-  Data["Data Protection<br/>Purview, DLP, Labels, Retention"]
-  Collaboration["Collaboration Platform<br/>Exchange, Teams, SharePoint, OneDrive"]
-  Copilot["Copilot and AI Agents<br/>Readiness, Studio, Agent Factory"]
-  Azure["Azure Foundation<br/>Landing Zone, Network, Policy, Cost"]
-  Migration["Migration and Modernization<br/>Tenant, Mail, Files, Google Workspace"]
-  Delivery["Delivery Assets<br/>SOW, WBS, Risk Register, Playbooks"]
-
-  Business --> Governance
-  Governance --> Identity
-  Governance --> Data
-  Identity --> Collaboration
-  Device --> Collaboration
-  Data --> Collaboration
-  Collaboration --> Copilot
-  Azure --> Copilot
-  Migration --> Collaboration
-  Governance --> Delivery
-  Delivery --> Business
-```
+<div class="kc-journey-map" aria-label="Executive platform view">
+  <div class="kc-journey-map__header">
+    <span>Executive Platform View</span>
+    <strong>Business outcomes connected to platform, controls and delivery assets</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business outcomes</strong><span>Productivity, risk reduction, AI adoption, modernization and delivery speed.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Governance</strong><span>Decision rights, owners, exceptions, KPI and operating cadence.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Platform layers</strong><span>Identity, endpoint, data protection, collaboration, Azure and migration.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>AI readiness</strong><span>Copilot, Copilot Studio, agent factory, security and adoption controls.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Delivery assets</strong><span>SOW, WBS, risk register, playbooks, roadmap and handover pack.</span></div>
+  </div>
+</div>
 
 ## Architecture Layers
 
@@ -84,14 +85,19 @@ flowchart TB
 
 ## Readiness Sequence
 
-```mermaid
-flowchart LR
-  A["1. Assess<br/>Tenant, identity, data, security"] --> B["2. Design<br/>Target architecture and governance"]
-  B --> C["3. Pilot<br/>Users, workloads, controls"]
-  C --> D["4. Govern<br/>Policy, ownership, exceptions"]
-  D --> E["5. Scale<br/>Rollout, training, KPI"]
-  E --> F["6. Operate<br/>Runbook, monitoring, improvement"]
-```
+<div class="kc-journey-map" aria-label="Executive readiness sequence">
+  <div class="kc-journey-map__header">
+    <span>Readiness Sequence</span>
+    <strong>Assess, design, pilot, govern, scale and operate</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assess</strong><span>Tenant, identity, data, security, workload and business readiness.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Target architecture, governance model, delivery sequence and decision log.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot</strong><span>Validate users, workloads, controls, support and adoption assumptions.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Govern and scale</strong><span>Policy, ownership, exceptions, rollout waves, training and KPI.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operate</strong><span>Runbook, monitoring, improvement backlog and executive reporting.</span></div>
+  </div>
+</div>
 
 ## Executive Decision Checklist
 
