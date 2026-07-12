@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Playbooks
 description: "Playbooks - The Playbooks section provides repeatable delivery guidance for Microsoft 365 assessment, Copilot readiness, Intune deployment, security..."
+toc_max_heading_level: 2
 ---
 
 # Playbooks
@@ -10,46 +11,87 @@ The Playbooks section provides repeatable delivery guidance for Microsoft 365 as
 
 Playbooks are designed to bridge consulting strategy and real execution. They define workstreams, checkpoints, deliverables, risks and handover expectations.
 
-<div class="kc-executive-strip" aria-label="Playbook delivery operating model">
-  <div class="kc-executive-strip__lead">
-    <small>OPERATING MODEL</small>
-    <strong>From consulting strategy to repeatable delivery</strong>
-    <span>Each playbook converts a customer scenario into phases, workstreams, checkpoints, evidence and handover outputs.</span>
+<section className="kc-topic-hero" aria-label="Playbooks program hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Delivery Playbooks</span>
+    <h2>Convert consulting strategy into repeatable delivery</h2>
+    <p>Each playbook turns a customer scenario into phases, workstreams, checkpoints, acceptance evidence, risks, handover outputs and reusable delivery patterns.</p>
+    <div className="kc-hero-signal-row" aria-label="Playbook delivery signals">
+      <span>Assess</span>
+      <span>Design</span>
+      <span>Execute</span>
+      <span>Handover</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Assess</strong>
-    <span>Confirm current state, risk, stakeholder expectations and readiness gaps.</span>
+  <div className="kc-factory-panel" aria-label="Playbook operating model">
+    <div className="kc-factory-panel__header">
+      <span>Delivery Operating System</span>
+      <strong>Scenario to evidence-backed handover</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#playbook-categories" className="kc-factory-card">
+        <small>01</small>
+        <strong>Select</strong>
+        <span>Match the customer scenario to the right Microsoft 365, Copilot, Security or Migration playbook.</span>
+      </a>
+      <a href="#how-to-use" className="kc-factory-card">
+        <small>02</small>
+        <strong>Structure</strong>
+        <span>Turn strategy into workstreams, owners, checkpoints, acceptance criteria and WBS activities.</span>
+      </a>
+      <a href="#playbook-operating-model" className="kc-factory-card">
+        <small>03</small>
+        <strong>Run</strong>
+        <span>Operate delivery rhythm with risks, decisions, evidence, status and issue review.</span>
+      </a>
+      <a href="#field-informed-patterns" className="kc-factory-card">
+        <small>04</small>
+        <strong>Reuse</strong>
+        <span>Capture lessons learned into templates, proposal assets, checklists and executive packs.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Playbook rule</strong>
+      <span>A playbook is complete only when scope, owner, evidence, risk, handover and reuse path are clear.</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Execute</strong>
-    <span>Run workstreams with clear owners, checkpoints, acceptance criteria and issue rhythm.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Handover</strong>
-    <span>Close with runbooks, evidence, owner model and reusable lessons learned.</span>
-  </div>
-</div>
+</section>
 
 ## Visual Playbook System
 
-```mermaid
-flowchart TB
-  Scenario["Customer Scenario<br/>assessment, security, Copilot, migration, change"]:::start
-  Playbook["Select Playbook<br/>method, phases, checkpoints"]:::stage
-  Workstreams["Workstreams<br/>identity, data, endpoint, adoption, governance"]:::stage
-  Evidence["Evidence<br/>decisions, risks, test results, acceptance"]:::stage
-  Handover["Handover<br/>runbook, owner model, support rhythm"]:::stage
-  Improvement["Reusable Pattern<br/>update checklist, proposal, template"]:::start
-
-  Scenario --> Playbook --> Workstreams --> Evidence --> Handover --> Improvement
-  Improvement -. reuse .-> Playbook
-
-  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div className="kc-journey-map kc-pathway" aria-label="Visual playbook system">
+  <div className="kc-journey-map__header">
+    <span>Visual Playbook System</span>
+    <strong>Customer scenario to reusable delivery pattern</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Scenario</strong>
+      <span>Assessment, Security, Copilot, Migration, Intune or Change Management need.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Playbook</strong>
+      <span>Select method, phase model, readiness gates and required delivery assets.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Workstreams</strong>
+      <span>Identity, data, endpoint, adoption, governance, migration and operations owners.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Evidence</strong>
+      <span>Decisions, risks, test results, acceptance criteria and executive status.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Reuse</strong>
+      <span>Runbook, owner model, checklist, proposal pattern and lessons learned update.</span>
+    </div>
+  </div>
+</div>
 
 ## 한국어 요약
 

@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Migration
 description: "Migration - This Migration section provides enterprise migration guidance for Microsoft 365, Exchange Online, Google Workspace, file server,..."
+toc_max_heading_level: 2
 ---
 
 # Migration
@@ -10,45 +11,87 @@ This Migration section provides enterprise migration guidance for Microsoft 365,
 
 Migration is treated as a business continuity program, not a file-copy activity. The key work is assessment, target design, batching, communication, security validation, cutover, rollback and hypercare.
 
-<div class="kc-executive-strip" aria-label="Migration success control model">
-  <div class="kc-executive-strip__lead">
-    <small>MIGRATION CONTROL</small>
-    <strong>Move workloads without losing business continuity</strong>
-    <span>A strong migration program coordinates inventory, target design, wave planning, cutover, rollback, communication and hypercare.</span>
+<section className="kc-topic-hero" aria-label="Migration program hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Migration Program</span>
+    <h2>Move workloads without losing business continuity</h2>
+    <p>A strong migration program coordinates source discovery, target architecture, security validation, wave planning, cutover, rollback, user communication and operations handover.</p>
+    <div className="kc-hero-signal-row" aria-label="Migration success signals">
+      <span>Discover</span>
+      <span>Design</span>
+      <span>Cutover</span>
+      <span>Stabilize</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>DISCOVER</small>
-    <strong>Know the source</strong>
-    <span>Inventory identities, data, permissions, dependencies, mail flow and business-critical users.</span>
+  <div className="kc-factory-panel" aria-label="Migration operating model">
+    <div className="kc-factory-panel__header">
+      <span>Migration Control Tower</span>
+      <strong>Source environment to stable Microsoft 365 operations</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#migration-scenarios" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Clarify workloads, users, data locations, domains and coexistence requirements.</span>
+      </a>
+      <a href="#delivery-workstreams" className="kc-factory-card">
+        <small>02</small>
+        <strong>Plan</strong>
+        <span>Define assessment, target design, pilot, wave, communication and support streams.</span>
+      </a>
+      <a href="#migration-decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decide</strong>
+        <span>Set go/no-go criteria, security gates, rollback conditions and owner model.</span>
+      </a>
+      <a href="#wave-planning-model" className="kc-factory-card">
+        <small>04</small>
+        <strong>Execute</strong>
+        <span>Run controlled waves with validation, hypercare and operational handover.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Migration rule</strong>
+      <span>Do not start cutover before source ownership, permissions, rollback, communication and support paths are validated.</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>CUTOVER</small>
-    <strong>Control the switch</strong>
-    <span>Use go/no-go criteria, rollback plan, validation checklist and user communication rhythm.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>OPERATE</small>
-    <strong>Stabilize after move</strong>
-    <span>Close migration with hypercare evidence, issue trends, admin guide and owner handover.</span>
-  </div>
-</div>
+</section>
 
 ## Visual Migration Control Flow
 
-```mermaid
-flowchart LR
-  Source["Source Discovery<br/>inventory, identity, permissions, dependencies"]:::stage
-  Target["Target Design<br/>tenant, workload, security, coexistence"]:::stage
-  Waves["Wave Plan<br/>pilot, early adopter, main waves, sensitive users"]:::stage
-  Cutover["Cutover<br/>go/no-go, DNS, validation, rollback"]:::stage
-  Hypercare["Hypercare<br/>support, issue triage, adoption signal"]:::stage
-  Handover["Operations Handover<br/>runbook, owners, closure evidence"]:::stage
-
-  Source --> Target --> Waves --> Cutover --> Hypercare --> Handover
-  Hypercare -. lessons learned .-> Waves
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.5px
-```
+<div className="kc-journey-map kc-pathway" aria-label="Visual migration control flow">
+  <div className="kc-journey-map__header">
+    <span>Visual Migration Control Flow</span>
+    <strong>Discovery to handover with business continuity gates</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Source discovery</strong>
+      <span>Inventory identity, mail flow, files, permissions, dependencies and critical users.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Target design</strong>
+      <span>Define tenant, security, coexistence, workload architecture and validation plan.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Wave plan</strong>
+      <span>Sequence pilot, early adopters, main waves and sensitive executive groups.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Cutover control</strong>
+      <span>Run go/no-go, DNS, validation, rollback and user communication checkpoints.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Hypercare handover</strong>
+      <span>Track support issues, adoption signals, runbook ownership and closure evidence.</span>
+    </div>
+  </div>
+</div>
 
 ## 한국어 요약
 
