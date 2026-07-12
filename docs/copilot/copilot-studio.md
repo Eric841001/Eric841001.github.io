@@ -8,24 +8,41 @@ toc_max_heading_level: 2
 
 # Microsoft Copilot Studio
 
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Microsoft Copilot Studio hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Copilot Studio Enterprise Agent Platform</span>
+    <h2>Build business agents with governance from day one</h2>
+    <p>Copilot Studio turns repeatable business scenarios into governed agents, workflows and controlled actions. The enterprise design question is not only “can we build an agent?” It is “can we own, secure, publish, measure and retire it?”</p>
+    <div class="kc-hero-signal-row" aria-label="Copilot Studio operating signals">
+      <span>Build</span>
+      <span>Ground</span>
+      <span>Govern</span>
+      <span>Operate</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Copilot Studio related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/copilot/copilot-studio-2026-platform-update">2026 Platform Update</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/agent-factory-operating-model">Agent Factory</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/multi-agent-framework">Multi-Agent Framework</a>
+    </div>
+  </div>
 
-<div class="kc-outcome-grid" aria-label="Copilot Studio quick read cards">
-  <div class="kc-outcome-card">
-    <small>WHY</small>
-    <strong>Build governed business agents</strong>
-    <span>Copilot Studio turns repeatable business scenarios into agents, workflows and controlled actions.</span>
+  <div class="kc-factory-panel" aria-label="Copilot Studio operating model visual">
+    <div class="kc-factory-panel__header">
+      <span>Agent Delivery Loop</span>
+      <strong>Build to operate</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Idea</strong><span>Business problem, user journey and measurable value.</span></a>
+      <a href="#microsoft-agent-build-spectrum" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Platform fit, knowledge, tools, identity and channels.</span></a>
+      <a href="#security-and-governance" class="kc-factory-card"><small>03</small><strong>Gate</strong><span>Security, DLP, owner, lifecycle and release approval.</span></a>
+      <a href="#analytics-and-operations" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Monitoring, feedback, cost, portfolio and retirement.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Enterprise rule</strong>
+      <span>Every Copilot Studio agent should have owner, data boundary, action boundary, quality check, cost signal and support path before production exposure.</span>
+    </div>
   </div>
-  <div class="kc-outcome-card">
-    <small>DESIGN</small>
-    <strong>Ground with enterprise context</strong>
-    <span>Use knowledge, tools, connectors, topics, actions and identity boundaries deliberately.</span>
-  </div>
-  <div class="kc-outcome-card">
-    <small>OPERATE</small>
-    <strong>Manage lifecycle and cost</strong>
-    <span>Define owners, testing, publishing, analytics, credit forecasting and retirement.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -37,19 +54,20 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 
 > **Executive lens:** Copilot Studio should be governed like an enterprise application platform: every agent needs an owner, knowledge boundary, action boundary, lifecycle rule and measurement model.
 
-```mermaid
-flowchart LR
-  Idea["Agent idea<br/>business problem<br/>and user journey"]:::phase
-  Design["Agent design<br/>knowledge, tools,<br/>identity, channels"]:::phase
-  Govern["Governance gate<br/>security, DLP,<br/>owner, lifecycle"]:::phase
-  Publish["Publish and operate<br/>monitoring, feedback,<br/>change control"]:::phase
-  Portfolio["Agent portfolio<br/>reuse, retirement,<br/>value tracking"]:::outcome
-
-  Idea --> Design --> Govern --> Publish --> Portfolio
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
+  <div class="kc-journey-map__header">
+    <span>Agent Lifecycle</span>
+    <strong>Idea to governed portfolio</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Idea</strong><span>Business problem, user journey and value hypothesis.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Knowledge, tools, identity, channels and test criteria.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Govern</strong><span>Security, DLP, owner, lifecycle and release approval.</span></div>
+    <div class="kc-journey-node"><small>04</small><strong>Publish</strong><span>Environment, channel, support path and change control.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Operate</strong><span>Monitoring, feedback, analytics and cost review.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Portfolio</strong><span>Reuse, retirement, consolidation and value tracking.</span></div>
+  </div>
+</div>
 
 ---
 
