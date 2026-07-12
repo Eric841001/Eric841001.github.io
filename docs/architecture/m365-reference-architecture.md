@@ -3,33 +3,46 @@ id: m365-reference-architecture
 title: Microsoft 365 Reference Architecture
 sidebar_label: M365 Reference Architecture
 description: Microsoft 365 reference architecture for Entra ID, Exchange, Teams, SharePoint, OneDrive, Security, Purview, Copilot readiness and governance.
+toc_max_heading_level: 2
 ---
 
 # Microsoft 365 Reference Architecture
 
+<section class="kc-topic-hero" aria-label="Microsoft 365 reference architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Enterprise Digital Workplace Architecture</span>
+    <h2>Connect productivity, security, governance and AI readiness</h2>
+    <p>Microsoft 365 should be designed as one operating platform across identity, collaboration, endpoint, security, compliance, adoption and Copilot readiness. The architecture should explain how users work and how the organization controls risk.</p>
+    <div class="kc-hero-signal-row" aria-label="Microsoft 365 reference architecture signals">
+      <span>Tenant</span>
+      <span>Identity</span>
+      <span>Workloads</span>
+      <span>Operate</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Microsoft 365 reference architecture related pages">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/microsoft365/overview">M365 Overview</a>
+      <a class="kc-topic-button" href="/knowledge/security/security-architecture">Security Architecture</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Copilot Readiness</a>
+    </div>
+  </div>
 
-<div class="kc-executive-strip" aria-label="Microsoft 365 architecture decision summary">
-  <div class="kc-executive-strip__lead">
-    <small>ARCHITECTURE DECISION</small>
-    <strong>Microsoft 365 reference architecture connects productivity and control</strong>
-    <span>Tenant, identity, collaboration, endpoint, security, compliance and Copilot readiness should be designed as one operating platform.</span>
+  <div class="kc-factory-panel" aria-label="Microsoft 365 operating platform visual">
+    <div class="kc-factory-panel__header">
+      <span>Platform Architecture</span>
+      <strong>Productivity with control</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#identity-architecture" class="kc-factory-card"><small>01</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access, PIM and guest governance.</span></a>
+      <a href="#collaboration-architecture" class="kc-factory-card"><small>02</small><strong>Collaboration</strong><span>Exchange, Teams, SharePoint, OneDrive and information architecture.</span></a>
+      <a href="#security-architecture" class="kc-factory-card"><small>03</small><strong>Security</strong><span>Intune, Defender, Purview, DLP, labels and monitoring.</span></a>
+      <a href="#copilot-readiness-architecture" class="kc-factory-card"><small>04</small><strong>AI Ready</strong><span>Microsoft Graph, permissions, content quality and adoption readiness.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Do not deploy workloads in isolation. Tenant, identity, collaboration, security, compliance and Copilot readiness must be designed together.</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Tenant</strong>
-    <span>Set identity, admin role, baseline policy and collaboration governance.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Workloads</strong>
-    <span>Align Exchange, Teams, SharePoint, OneDrive, Intune, Defender and Purview.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Operate</strong>
-    <span>Define lifecycle, support, reporting, adoption and improvement ownership.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -117,43 +130,20 @@ Architecture must support global subsidiaries and regional requirements.
 
 ## Reference Architecture Overview
 
-```mermaid
-flowchart TB
-    U[Users] --> E[Microsoft Entra ID]
-
-    E --> MFA[MFA]
-    E --> CA[Conditional Access]
-    E --> IG[Identity Governance]
-    E --> PIM[Privileged Identity Management]
-
-    E --> M365[Microsoft 365 Services]
-
-    M365 --> EXO[Exchange Online]
-    M365 --> TEAMS[Microsoft Teams]
-    M365 --> SPO[SharePoint Online]
-    M365 --> ODB[OneDrive for Business]
-
-    M365 --> SEC[Security and Compliance]
-
-    SEC --> DEF[Microsoft Defender]
-    SEC --> MDO[Defender for Office 365]
-    SEC --> MDE[Defender for Endpoint]
-    SEC --> PUR[Microsoft Purview]
-    SEC --> DLP[Data Loss Prevention]
-    SEC --> LABEL[Sensitivity Labels]
-
-    M365 --> COP[Microsoft 365 Copilot]
-
-    COP --> GRAPH[Microsoft Graph]
-    GRAPH --> EXO
-    GRAPH --> TEAMS
-    GRAPH --> SPO
-    GRAPH --> ODB
-
-    INTUNE[Microsoft Intune] --> DEVICE[Managed Devices]
-    DEVICE --> CA
-    DEF --> XDR[Defender XDR]
-```
+<div class="kc-journey-map" aria-label="Microsoft 365 reference architecture overview">
+  <div class="kc-journey-map__header">
+    <span>Reference Architecture</span>
+    <strong>User productivity to governed AI readiness</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Users</strong><span>Employees, admins, guests, partners and frontline workers.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Entra ID</strong><span>MFA, Conditional Access, identity governance and PIM.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>M365 Workloads</strong><span>Exchange, Teams, SharePoint, OneDrive and Microsoft Graph.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security</strong><span>Intune, Defender, Purview, DLP, sensitivity labels and XDR.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Copilot</strong><span>Graph-grounded AI experiences with existing permission boundaries.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate</strong><span>Lifecycle, support, reporting, adoption and continuous improvement.</span></div>
+  </div>
+</div>
 
 ---
 
