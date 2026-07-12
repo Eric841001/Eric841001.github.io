@@ -5,6 +5,25 @@ description: "Microsoft 365 E3 vs E5 - Microsoft 365 E3 provides the enterprise 
 
 # Microsoft 365 E3 vs E5
 
+
+<div class="kc-outcome-grid" aria-label="E3 versus E5 licensing decision cards">
+  <div class="kc-outcome-card">
+    <small>PERSONA</small>
+    <strong>E3 baseline users</strong>
+    <span>Use E3 when productivity and baseline governance are the primary requirement.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>CAPABILITY</small>
+    <strong>E5 advanced controls</strong>
+    <span>Use E5 when advanced security, compliance, analytics and automation controls are required.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DECISION</small>
+    <strong>Hybrid licensing model</strong>
+    <span>Many enterprises need mixed assignment by persona, risk and workload maturity.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft 365 E3 provides the enterprise productivity, identity, device and collaboration foundation. Microsoft 365 E5 adds advanced security, compliance, analytics and voice capabilities that are often required for regulated or security-sensitive environments.
@@ -100,3 +119,7 @@ The best licensing proposal explains risk reduction and operational value. A fea
 - Microsoft 365 E3 E5 비교
 - E5 보안 컴플라이언스
 - Microsoft 365 라이선스 의사결정
+
+## Contact / Asset Request
+
+For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).

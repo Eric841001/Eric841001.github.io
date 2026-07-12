@@ -13,6 +13,25 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 > **Executive lens:** Information Barriers are not just a Teams chat restriction. They are a segmentation model across users, groups, sites and collaboration workloads that must be validated with both allowed and blocked communication evidence.
 
+
+<div class="kc-outcome-grid" aria-label="Information Barriers quick read cards">
+  <div class="kc-outcome-card">
+    <small>WHY</small>
+    <strong>Prevent restricted collaboration</strong>
+    <span>Information Barriers help separate users, groups and workloads where communication must be controlled.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DESIGN</small>
+    <strong>Model segments carefully</strong>
+    <span>Design segment membership, policies, Teams, SharePoint, OneDrive and Exchange impact together.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>OPERATE</small>
+    <strong>Validate with evidence</strong>
+    <span>Keep test cases, workload evidence, exception process, rollback plan and owner approvals.</span>
+  </div>
+</div>
+
 ## 적용 시나리오
 
 | Scenario | Typical Requirement | Design Focus |

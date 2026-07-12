@@ -5,6 +5,13 @@ description: Proposal governance model for Microsoft 365, Security, Copilot, Azu
 
 # Governance Model
 
+
+<div class="kc-request-panel" aria-label="Governance model editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Governance model template</strong>
+  <span>Use this asset to define owners, cadence, decision rights, exception handling and reporting rhythm. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## Executive Summary
 
 A governance model defines how project decisions are made, escalated, approved and tracked during Microsoft 365, Security, Copilot, Azure or migration engagements.
@@ -99,3 +106,7 @@ Editable governance templates are not published directly. To request a customer-
 - project decision log
 - 제안서 거버넌스 모델
 - 프로젝트 RACI
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).

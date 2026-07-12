@@ -18,6 +18,25 @@ keywords:
 
 This page is a search landing page for visitors looking for Microsoft 365 security architecture, Zero Trust, Defender, Purview, Conditional Access, Intune and Copilot data protection.
 
+
+<div class="kc-signal-grid" aria-label="M365 Security search landing cards">
+  <a class="kc-signal-card" href="../security/overview">
+    <small>SECURITY</small>
+    <strong>Security overview</strong>
+    <span>Connect Zero Trust, Conditional Access, Defender, Purview and endpoint controls.</span>
+  </a>
+  <a class="kc-signal-card" href="../projects/case-study-retail-m365-security-policy">
+    <small>REFERENCE</small>
+    <strong>Retail security policy</strong>
+    <span>Review an anonymized Microsoft 365 security policy modernization pattern.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## 한국어 요약
 
 Microsoft 365 보안은 개별 기능을 켜는 작업이 아닙니다. Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Information Barriers, audit, incident response를 하나의 control architecture로 연결해야 합니다.

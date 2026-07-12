@@ -5,6 +5,25 @@ description: "Microsoft 365 Business Premium - Microsoft 365 Business Premium is
 
 # Microsoft 365 Business Premium
 
+
+<div class="kc-outcome-grid" aria-label="Business Premium licensing decision cards">
+  <div class="kc-outcome-card">
+    <small>PERSONA</small>
+    <strong>SMB and mid-market</strong>
+    <span>Business Premium is strong when productivity, Intune, Entra ID P1 and Defender for Business are needed together.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>CAPABILITY</small>
+    <strong>Security baseline</strong>
+    <span>Review device management, MFA, Conditional Access, endpoint protection and data sharing controls.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DECISION</small>
+    <strong>Scale boundary</strong>
+    <span>Confirm user count, enterprise compliance needs, Copilot roadmap and add-on requirements.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft 365 Business Premium is a strong option for small and mid-sized organizations that need productivity, identity protection, endpoint management and baseline security in one package.
@@ -125,3 +144,7 @@ Business Premium can deliver strong value when implemented as a full security an
 - [Licensing Overview](./overview)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 - [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture)
+
+## Contact / Asset Request
+
+For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).

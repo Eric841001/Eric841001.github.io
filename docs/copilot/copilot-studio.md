@@ -7,6 +7,25 @@ sidebar_label: Copilot Studio
 
 # Microsoft Copilot Studio
 
+
+<div class="kc-outcome-grid" aria-label="Copilot Studio quick read cards">
+  <div class="kc-outcome-card">
+    <small>WHY</small>
+    <strong>Build governed business agents</strong>
+    <span>Copilot Studio turns repeatable business scenarios into agents, workflows and controlled actions.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DESIGN</small>
+    <strong>Ground with enterprise context</strong>
+    <span>Use knowledge, tools, connectors, topics, actions and identity boundaries deliberately.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>OPERATE</small>
+    <strong>Manage lifecycle and cost</strong>
+    <span>Define owners, testing, publishing, analytics, credit forecasting and retirement.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft Copilot Studio is the enterprise platform for building, extending, deploying and governing AI agents.

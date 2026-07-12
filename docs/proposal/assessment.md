@@ -7,6 +7,13 @@ sidebar_label: Assessment Framework
 
 # Assessment Framework
 
+
+<div class="kc-request-panel" aria-label="Assessment framework editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Assessment framework editable workbook</strong>
+  <span>Use this structure to capture current state, risks, assumptions, readiness and recommended roadmap. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## Executive Summary
 
 The Assessment Framework is used to evaluate the current state of a customer environment before defining a Microsoft 365, Azure, Security, Copilot or migration engagement.
@@ -186,3 +193,15 @@ Typical assessment deliverables include:
 - Microsoft Defender portal
 - Microsoft Purview compliance portal
 - Microsoft Learn
+
+## 검색 키워드
+
+- assessment framework
+- Microsoft 365 assessment
+- readiness assessment
+- assessment workbook
+- 진단 프레임워크
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).

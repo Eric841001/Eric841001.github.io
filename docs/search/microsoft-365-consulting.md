@@ -16,6 +16,25 @@ keywords:
 
 This page is a search landing page for visitors looking for Microsoft 365 consulting, architecture, governance, security, migration and delivery assets.
 
+
+<div class="kc-signal-grid" aria-label="M365 Consulting search landing cards">
+  <a class="kc-signal-card" href="../microsoft365/overview">
+    <small>M365</small>
+    <strong>Platform overview</strong>
+    <span>Review tenant, collaboration, security, migration and operations decisions.</span>
+  </a>
+  <a class="kc-signal-card" href="../proposal/overview">
+    <small>DELIVERY</small>
+    <strong>Proposal center</strong>
+    <span>Convert consulting strategy into SOW, WBS, risk and governance assets.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## 2026 Renewal Context
 
 Microsoft 365 consulting should include a renewal review that connects license scope, security baseline, Copilot adoption, Copilot Studio agents, storage usage, endpoint management and measurable business value.

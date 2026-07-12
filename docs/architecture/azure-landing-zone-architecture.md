@@ -7,6 +7,30 @@ description: Azure Landing Zone architecture for management groups, subscription
 
 # Azure Landing Zone Architecture
 
+
+<div class="kc-executive-strip" aria-label="Azure landing zone architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Design Azure as an enterprise foundation, not a subscription collection</strong>
+    <span>Landing zone decisions should connect identity, network, policy, security, cost and workload onboarding before application migration begins.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Foundation</strong>
+    <span>Define management groups, subscriptions, policy and identity guardrails.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Connectivity</strong>
+    <span>Design hub-spoke, DNS, routing, private access and inspection patterns.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Operations</strong>
+    <span>Prepare monitoring, cost control, ownership, deployment and exception rhythm.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Azure Landing Zone provides a scalable and governed foundation for enterprise cloud adoption.
@@ -170,3 +194,7 @@ flowchart LR
 - [Governance Architecture](./governance-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Migration Architecture](./migration-architecture)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

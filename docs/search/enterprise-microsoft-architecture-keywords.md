@@ -38,6 +38,25 @@ flowchart LR
   classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
 ```
 
+
+<div class="kc-signal-grid" aria-label="Architecture Keywords search landing cards">
+  <a class="kc-signal-card" href="../architecture/overview">
+    <small>ARCHITECTURE</small>
+    <strong>Architecture center</strong>
+    <span>Start from business driver, reference design, control model and operating model.</span>
+  </a>
+  <a class="kc-signal-card" href="../microsoft365/overview">
+    <small>M365</small>
+    <strong>Microsoft 365 platform</strong>
+    <span>Connect tenant, security, collaboration and Copilot readiness.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## Search Intent Map
 
 | Visitor Intent | Recommended Entry Point | What to Look For |
@@ -116,3 +135,10 @@ Search visibility still depends on external indexing by Google and Naver. For fa
 ```text
 https://eric841001.github.io/sitemap.xml
 ```
+
+## 검색 키워드
+
+- enterprise Microsoft architecture
+- Microsoft 365 architecture
+- security architecture
+- 엔터프라이즈 아키텍처

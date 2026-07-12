@@ -7,6 +7,25 @@ sidebar_label: Copilot Adoption Program
 
 # Enterprise Copilot Adoption Program Framework
 
+
+<div class="kc-outcome-grid" aria-label="Copilot adoption quick read cards">
+  <div class="kc-outcome-card">
+    <small>WHY</small>
+    <strong>Adoption is behavior change</strong>
+    <span>Copilot value appears when users change meeting, document, analysis and response routines.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DESIGN</small>
+    <strong>Build enablement system</strong>
+    <span>Use champions, role-based scenarios, training, feedback, communications and support model.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>OPERATE</small>
+    <strong>Measure value and scale</strong>
+    <span>Track use case maturity, confidence, time savings, license value and governance readiness.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft 365 Copilot adoption is not a one-time training program.

@@ -7,6 +7,13 @@ sidebar_label: Timeline Template
 
 # Timeline Template
 
+
+<div class="kc-request-panel" aria-label="Timeline editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Timeline and milestone planning template</strong>
+  <span>Use this asset to convert project phases, dependencies, review gates and stakeholder events into a delivery schedule. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## Executive Summary
 
 The Timeline Template provides a standard project schedule structure for Microsoft 365, Azure, Security, Copilot and migration engagements.
@@ -151,3 +158,15 @@ This timeline is typically used for:
 - Microsoft 365 deployment guidance
 - Microsoft Well-Architected Framework
 - Project management schedule planning practices
+
+## 검색 키워드
+
+- timeline template
+- project milestone
+- delivery schedule
+- migration timeline
+- 프로젝트 일정표
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).

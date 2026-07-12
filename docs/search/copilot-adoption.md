@@ -17,6 +17,25 @@ keywords:
 
 This page is a search landing page for visitors looking for Microsoft 365 Copilot adoption strategy, readiness assessment, governance, GPT-5.6 model guidance and rollout planning.
 
+
+<div class="kc-signal-grid" aria-label="Copilot Adoption search landing cards">
+  <a class="kc-signal-card" href="../copilot/adoption-program">
+    <small>ADOPTION</small>
+    <strong>Adoption program</strong>
+    <span>Connect readiness, use cases, champions, training, governance and KPI measurement.</span>
+  </a>
+  <a class="kc-signal-card" href="../projects/case-study-manufacturing-copilot-adoption">
+    <small>CASE</small>
+    <strong>Manufacturing adoption</strong>
+    <span>Review a public-safe role-based Copilot adoption pattern.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## 2026 Adoption Context
 
 Copilot adoption now starts with a wider question: how should an organization use AI from everyday Copilot work to Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork?

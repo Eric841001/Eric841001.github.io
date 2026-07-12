@@ -7,6 +7,30 @@ description: Microsoft 365 migration architecture for tenant-to-tenant, Google W
 
 # Migration Architecture
 
+
+<div class="kc-executive-strip" aria-label="Migration architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Migration architecture protects business continuity during change</strong>
+    <span>Successful migration design aligns source discovery, target state, coexistence, security validation, wave plan, cutover and hypercare.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Discover</strong>
+    <span>Inventory users, data, dependencies, permissions, mail flow and risk.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Transition</strong>
+    <span>Design coexistence, pilot, batch strategy, go/no-go and rollback.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Stabilize</strong>
+    <span>Close with hypercare, issue trend, operations guide and owner handover.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft 365 migration architecture should be designed as a business transition program, not only as a technical data transfer project.
@@ -137,3 +161,7 @@ flowchart TB
 - [Security Reference Architecture](./security-reference-architecture)
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

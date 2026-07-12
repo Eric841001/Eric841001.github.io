@@ -9,6 +9,13 @@ The WBS is the delivery control layer that connects proposal scope, technical wo
 
 For Microsoft 365, Security, Copilot and migration engagements, the WBS should not be a simple task list. It should show how discovery findings become architecture decisions, how implementation tasks are validated, and how customer acceptance is collected.
 
+
+<div class="kc-request-panel" aria-label="WBS editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Work Breakdown Structure template</strong>
+  <span>Use this asset to break work into workstreams, tasks, owners, dependencies, effort and acceptance checkpoints. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## WBS Control Flow
 
 ```mermaid
@@ -87,3 +94,15 @@ For a regulated financial SaaS environment, the WBS included explicit evidence t
 - Can the project manager derive status reporting directly from the WBS?
 - Can each workstream produce evidence that the customer can review?
 - Are Security, Copilot and migration tasks separated enough to avoid ownership confusion?
+
+## 검색 키워드
+
+- WBS template
+- work breakdown structure
+- project workstream
+- delivery planning
+- WBS 템플릿
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).

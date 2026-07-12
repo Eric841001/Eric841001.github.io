@@ -5,6 +5,13 @@ description: Executive summary template guidance for Microsoft 365, Security, Co
 
 # Executive Summary Template
 
+
+<div class="kc-request-panel" aria-label="Executive summary editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Executive summary narrative template</strong>
+  <span>Use this asset to translate technical scope, business driver, risk and roadmap into executive language. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## Executive Summary
 
 An executive summary translates technical scope into business outcomes, risk reduction, investment rationale and decision points.
@@ -121,3 +128,7 @@ Customer-ready executive summary samples are not published directly. To request 
 - security modernization proposal
 - 제안서 Executive Summary
 - 임원 보고 제안서
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).

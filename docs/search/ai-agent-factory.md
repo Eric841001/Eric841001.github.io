@@ -16,6 +16,25 @@ keywords:
 
 This page is a search landing page for visitors looking for AI Agent Factory, Copilot Studio Agent, Agentic AI architecture, multi-agent framework and enterprise AI governance.
 
+
+<div class="kc-signal-grid" aria-label="AI Agent Factory search landing cards">
+  <a class="kc-signal-card" href="../copilot/agent-factory-operating-model">
+    <small>AGENT FACTORY</small>
+    <strong>Operating model</strong>
+    <span>Move from individual agents to portfolio, owner, lifecycle, risk and cost governance.</span>
+  </a>
+  <a class="kc-signal-card" href="../projects/case-study-enterprise-ai-agent-factory">
+    <small>REFERENCE</small>
+    <strong>Customer pattern</strong>
+    <span>Use anonymized AI Agent Factory patterns for architecture and proposal discussions.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## 2026 Platform Context
 
 Modern Agent Factory programs should include Copilot Studio new agent experience, Microsoft IQ, skills, memory, computer use, Microsoft Entra agent identities, agent inventory, A2A integration and Copilot Credit forecasting.

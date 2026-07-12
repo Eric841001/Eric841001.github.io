@@ -10,6 +10,30 @@ This blueprint explains how the major areas of this Knowledge Center connect int
 
 It is designed for executive review, presales storytelling, architecture workshops and project kickoff discussions where business leaders, security owners, IT teams and delivery teams need the same view of the target platform.
 
+
+<div class="kc-executive-strip" aria-label="Executive blueprint architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Turn technical architecture into an executive decision story</strong>
+    <span>Executive architecture should clarify business pressure, risk, roadmap, investment sequence and operating model ownership.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Context</strong>
+    <span>Explain the business driver and risk in language leaders can act on.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Decision</strong>
+    <span>Show which architecture choices require sponsorship, funding or policy approval.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Roadmap</strong>
+    <span>Sequence initiatives into waves with measurable outcomes and owners.</span>
+  </div>
+</div>
+
 ## 한국어 요약
 
 이 문서는 Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance, Proposal asset을 하나의 enterprise architecture 관점으로 연결한 executive blueprint입니다.
@@ -135,3 +159,7 @@ For customer workshops, use this sequence:
 - [Azure Landing Zone Architecture](./azure-landing-zone-architecture)
 - [Proposal Center](../proposal/overview)
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

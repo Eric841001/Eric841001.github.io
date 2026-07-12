@@ -7,6 +7,30 @@ description: Enterprise governance architecture for Microsoft 365, Azure, Securi
 
 # Governance Architecture
 
+
+<div class="kc-executive-strip" aria-label="Governance architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Governance architecture defines how the platform stays healthy</strong>
+    <span>Good governance connects policy, ownership, exception handling, review cadence and evidence instead of relying on one-time configuration.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Owners</strong>
+    <span>Assign platform, security, data, workload and business ownership clearly.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Cadence</strong>
+    <span>Create review rhythm for changes, exceptions, incidents and improvement backlog.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Evidence</strong>
+    <span>Keep audit-ready records for decisions, risks, approvals and handover.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Governance architecture defines how Microsoft 365, Azure, Security and Copilot environments are controlled, operated and continuously improved.
@@ -143,3 +167,7 @@ flowchart TB
 - [Security Reference Architecture](./security-reference-architecture)
 - [Copilot Architecture](./copilot-architecture)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

@@ -7,6 +7,25 @@ sidebar_label: Agentic AI Architecture
 
 # Agentic AI Architecture
 
+
+<div class="kc-outcome-grid" aria-label="Agentic AI architecture quick read cards">
+  <div class="kc-outcome-card">
+    <small>WHY</small>
+    <strong>Move beyond chatbot thinking</strong>
+    <span>Agentic AI requires goals, tools, grounding, memory, evaluation and owner controls.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DESIGN</small>
+    <strong>Design the control plane</strong>
+    <span>Connect Microsoft 365 data, Copilot Studio, connectors, MCP, identity and approval paths.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>OPERATE</small>
+    <strong>Run as a governed portfolio</strong>
+    <span>Track agent inventory, lifecycle, telemetry, cost, risk and value realization.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Agentic AI represents the shift from prompt-based assistance to goal-oriented, context-aware and action-capable AI systems.

@@ -5,6 +5,13 @@ description: Statement of Work template guidance for Microsoft 365, Security, Co
 
 # Statement of Work Template
 
+
+<div class="kc-request-panel" aria-label="SOW editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Statement of Work editable structure</strong>
+  <span>Use this asset to align scope, deliverables, assumptions, exclusions, acceptance criteria and responsibilities. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## Executive Summary
 
 A Statement of Work defines the agreed scope, deliverables, assumptions, exclusions, responsibilities and acceptance criteria for a customer engagement.
@@ -123,3 +130,7 @@ The public page explains the SOW structure only. Editable SOW files and customer
 - Migration SOW
 - 제안서 SOW 템플릿
 - Microsoft 365 제안서 범위
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).

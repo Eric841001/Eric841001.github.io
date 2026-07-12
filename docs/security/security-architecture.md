@@ -7,6 +7,25 @@ sidebar_label: Security Architecture
 
 # Enterprise Security Architecture
 
+
+<div class="kc-outcome-grid" aria-label="Security architecture quick read cards">
+  <div class="kc-outcome-card">
+    <small>WHY</small>
+    <strong>Make risk visible</strong>
+    <span>Security architecture should explain which risks are reduced and which controls prove it.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DESIGN</small>
+    <strong>Layer Microsoft controls</strong>
+    <span>Connect identity, endpoint, email, data, cloud app, audit and response controls.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>OPERATE</small>
+    <strong>Own the response model</strong>
+    <span>Define SOC triage, exception handling, evidence, escalation and improvement cadence.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Modern enterprise security requires an integrated platform approach rather than isolated security products.

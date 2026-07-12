@@ -10,6 +10,25 @@ This Licensing section helps compare Microsoft 365, Security, Compliance, Entra,
 
 Licensing guidance should connect cost to architecture, security controls, adoption readiness and operational value. A license decision is weak if it only compares product names.
 
+
+<div class="kc-outcome-grid" aria-label="licensing overview licensing decision cards">
+  <div class="kc-outcome-card">
+    <small>PERSONA</small>
+    <strong>Start with user personas</strong>
+    <span>Map information worker, frontline, admin, security and Copilot users before selecting plans.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>CAPABILITY</small>
+    <strong>Map required features</strong>
+    <span>Compare identity, endpoint, Defender, Purview, collaboration and Copilot requirements.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DECISION</small>
+    <strong>Build a defensible roadmap</strong>
+    <span>Separate immediate needs, future roadmap, add-ons and operational prerequisites.</span>
+  </div>
+</div>
+
 ## Visual License Decision Map
 
 ```mermaid
@@ -110,3 +129,7 @@ Use this model when preparing an executive licensing discussion:
 - Microsoft 365 E3 E5 비교
 - Copilot 라이선스 관리
 - Microsoft 365 비용 최적화
+
+## Contact / Asset Request
+
+For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).

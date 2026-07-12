@@ -19,6 +19,25 @@ This page is a search landing page for visitors asking a practical question: how
 
 The answer should not start with tools alone. It should start with real work, then move through Copilot, GPT-5.6, Copilot Studio, Microsoft 365 Agents, Copilot Cowork and change management.
 
+
+<div class="kc-signal-grid" aria-label="How to use AI search landing cards">
+  <a class="kc-signal-card" href="../copilot/overview">
+    <small>AI JOURNEY</small>
+    <strong>Copilot to Cowork</strong>
+    <span>Frame AI from real work to Copilot, agents, Cowork and governance.</span>
+  </a>
+  <a class="kc-signal-card" href="../copilot/governance">
+    <small>GOVERNANCE</small>
+    <strong>AI governance</strong>
+    <span>Define data boundary, owner, policy, cost and adoption controls.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## 한국어 요약
 
 기업에서 AI를 활용한다는 것은 단순히 Chat이나 Copilot 기능을 켜는 일이 아닙니다. 실제 업무에서 문서 작성, 분석, 회의 요약, 의사결정, 후속 조치, 장기 실행 업무를 어떻게 바꿀 것인지 설계해야 합니다.

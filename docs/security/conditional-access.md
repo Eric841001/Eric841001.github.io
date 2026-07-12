@@ -7,6 +7,25 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 
 # Conditional Access
 
+
+<div class="kc-outcome-grid" aria-label="Conditional Access quick read cards">
+  <div class="kc-outcome-card">
+    <small>WHY</small>
+    <strong>Policy is the new perimeter</strong>
+    <span>Conditional Access decides who can access what, from where, on which device and under which risk.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DESIGN</small>
+    <strong>Use staged policy layers</strong>
+    <span>Separate baseline MFA, admin protection, device compliance, app control and risk policies.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>OPERATE</small>
+    <strong>Avoid lockout and noise</strong>
+    <span>Use report-only, exclusions, break-glass accounts, sign-in logs and exception governance.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture.

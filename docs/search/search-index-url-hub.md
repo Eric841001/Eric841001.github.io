@@ -18,6 +18,25 @@ This page lists the most important public URLs for search indexing, internal nav
 
 Use it as a lightweight checklist when reviewing Google Search Console, Naver Search Advisor, sitemap submission and core landing page coverage.
 
+
+<div class="kc-signal-grid" aria-label="Search index search landing cards">
+  <a class="kc-signal-card" href="../knowledge-center/overview">
+    <small>INDEX</small>
+    <strong>Knowledge Center</strong>
+    <span>Use this site as a public Microsoft consulting knowledge and architecture index.</span>
+  </a>
+  <a class="kc-signal-card" href="../downloads/overview">
+    <small>ASSETS</small>
+    <strong>Downloads Center</strong>
+    <span>Request editable templates after reviewing public-safe descriptions.</span>
+  </a>
+  <a class="kc-signal-card" href="../contact">
+    <small>REQUEST</small>
+    <strong>Ask for reusable assets</strong>
+    <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>
+  </a>
+</div>
+
 ## Indexing Checklist
 
 | Check | Target |
@@ -102,3 +121,10 @@ Review this hub after major content updates:
 - new anonymized customer success pattern
 - new downloadable asset request flow
 - Search Console or Naver indexing issue
+
+## 검색 키워드
+
+- Microsoft knowledge center
+- Microsoft consulting assets
+- search index
+- Microsoft 블로그 검색

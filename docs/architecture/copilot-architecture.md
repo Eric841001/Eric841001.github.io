@@ -7,6 +7,30 @@ description: Microsoft 365 Copilot architecture guide for Graph, permissions, Pu
 
 # Microsoft Copilot Architecture
 
+
+<div class="kc-executive-strip" aria-label="Copilot architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Copilot architecture starts with data boundary and adoption intent</strong>
+    <span>A strong Copilot design connects Microsoft 365 permissions, Purview, user scenarios, agent governance and measurable value.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Readiness</strong>
+    <span>Check identity, permissions, labels, sharing and sensitive content exposure.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Adoption</strong>
+    <span>Prioritize use cases, champions, training and measurable work outcomes.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Governance</strong>
+    <span>Define owner, approval, telemetry, cost and agent lifecycle controls.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft 365 Copilot is not simply an AI assistant.
@@ -144,3 +168,7 @@ flowchart TB
 - [Copilot Governance](../copilot/governance)
 - [Agent Factory Operating Model](../copilot/agent-factory-operating-model)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

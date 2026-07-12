@@ -7,6 +7,30 @@ description: Microsoft Security reference architecture for Zero Trust, Entra ID,
 
 # Security Reference Architecture
 
+
+<div class="kc-executive-strip" aria-label="Security architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Security architecture should make controls measurable and operable</strong>
+    <span>Zero Trust, identity, endpoint, email, data, cloud and monitoring controls must map to owners, evidence and response process.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Prevent</strong>
+    <span>Use identity, device, data and application controls to reduce exposure.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Detect</strong>
+    <span>Connect Defender, audit, alert tuning and signal quality to SOC process.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Respond</strong>
+    <span>Prepare triage, exception, escalation, reporting and continuous improvement.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Enterprise security architecture should be designed using a Zero Trust model.
@@ -141,3 +165,7 @@ flowchart TB
 - [Conditional Access](../security/conditional-access)
 - [Purview](../security/purview)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

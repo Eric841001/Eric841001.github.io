@@ -7,6 +7,30 @@ description: Microsoft 365 reference architecture for Entra ID, Exchange, Teams,
 
 # Microsoft 365 Reference Architecture
 
+
+<div class="kc-executive-strip" aria-label="Microsoft 365 architecture decision summary">
+  <div class="kc-executive-strip__lead">
+    <small>ARCHITECTURE DECISION</small>
+    <strong>Microsoft 365 reference architecture connects productivity and control</strong>
+    <span>Tenant, identity, collaboration, endpoint, security, compliance and Copilot readiness should be designed as one operating platform.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Tenant</strong>
+    <span>Set identity, admin role, baseline policy and collaboration governance.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Workloads</strong>
+    <span>Align Exchange, Teams, SharePoint, OneDrive, Intune, Defender and Purview.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Operate</strong>
+    <span>Define lifecycle, support, reporting, adoption and improvement ownership.</span>
+  </div>
+</div>
+
 ## Executive Summary
 
 Microsoft 365 should not be deployed as a standalone productivity platform.
@@ -387,3 +411,7 @@ Recommended phased approach:
 - [Governance Architecture](./governance-architecture)
 - [Migration Architecture](./migration-architecture)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
+
+## Contact / Asset Request
+
+For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

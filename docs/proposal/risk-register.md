@@ -7,6 +7,13 @@ sidebar_label: Risk Register
 
 # Risk Register
 
+
+<div class="kc-request-panel" aria-label="Risk register editable asset request">
+  <small>REQUESTABLE ASSET</small>
+  <strong>Risk register and issue control template</strong>
+  <span>Use this asset to document risk, likelihood, impact, owner, mitigation, decision status and escalation path. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
+</div>
+
 ## Executive Summary
 
 A Risk Register is used to identify, assess, track and mitigate risks throughout a Microsoft cloud consulting engagement.
@@ -122,3 +129,15 @@ Mitigation:
 Decision Required:
 Due Date:
 Status:
+
+## 검색 키워드
+
+- risk register template
+- issue register
+- project risk
+- risk mitigation
+- 리스크 관리표
+
+## Contact / Asset Request
+
+For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
