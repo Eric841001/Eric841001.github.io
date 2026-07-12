@@ -57,6 +57,42 @@
   ],
 
   plugins: [
+    function extensionlessRoutesPlugin() {
+      return {
+        name: 'extensionless-routes-for-github-pages',
+        async postBuild({outDir}) {
+          const fs = require('fs');
+          const path = require('path');
+
+          const copyExtensionless = (dir) => {
+            for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+              const source = path.join(dir, entry.name);
+
+              if (entry.isDirectory()) {
+                copyExtensionless(source);
+                continue;
+              }
+
+              if (!entry.isFile() || !entry.name.endsWith('.html')) {
+                continue;
+              }
+
+              const basename = path.basename(entry.name, '.html');
+              if (basename === 'index' || basename === '404') {
+                continue;
+              }
+
+              const target = path.join(dir, basename);
+              if (!fs.existsSync(target)) {
+                fs.copyFileSync(source, target);
+              }
+            }
+          };
+
+          copyExtensionless(outDir);
+        },
+      };
+    },
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
