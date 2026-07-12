@@ -3,6 +3,7 @@ id: m365-assessment-workbook
 title: M365 Assessment Workbook
 description: "Microsoft 365 Assessment Workbook - This workbook provides a structured framework for assessing Microsoft 365 environments across identity,..."
 sidebar_label: Assessment Workbook
+toc_max_heading_level: 2
 ---
 
 # Microsoft 365 Assessment Workbook
@@ -15,20 +16,85 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 > **Executive lens:** Use this workbook to move from raw tenant observations to a decision-ready assessment. Scope, evidence, maturity score, risk, recommendation and roadmap should stay connected.
 
-```mermaid
-flowchart LR
-  Scope["Assessment scope<br/>identity, devices,<br/>collaboration, security"]:::input
-  Collect["Evidence<br/>tenant, licenses,<br/>policies"]:::phase
-  Score["Maturity scoring<br/>risk, readiness,<br/>operational gaps"]:::phase
-  Recommend["Recommendations<br/>quick wins,<br/>roadmap, priorities"]:::phase
-  Handover["Executive workbook<br/>findings, decisions,<br/>next actions"]:::outcome
+<section className="kc-topic-hero" aria-label="M365 Assessment Workbook hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Assessment Workbook</span>
+    <h2>Turn tenant observations into a decision-ready roadmap</h2>
+    <div className="kc-topic-hero__lede">The workbook connects scope, tenant evidence, maturity scoring, risks, recommendations and executive roadmap into one reusable assessment structure.</div>
+    <div className="kc-hero-signal-row" aria-label="Assessment workbook signals">
+      <span>Scope</span>
+      <span>Evidence</span>
+      <span>Risk</span>
+      <span>Roadmap</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Assessment workbook operating model">
+    <div className="kc-factory-panel__header">
+      <span>Assessment Operating Model</span>
+      <strong>Evidence to executive recommendations</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#assessment-scope" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Confirm identity, collaboration, security, compliance, governance and Copilot readiness.</span>
+      </a>
+      <a href="#copilot-readiness-assessment" className="kc-factory-card">
+        <small>02</small>
+        <strong>Score</strong>
+        <span>Score readiness and maturity across identity, security, data and adoption domains.</span>
+      </a>
+      <a href="#risk-register" className="kc-factory-card">
+        <small>03</small>
+        <strong>Risk</strong>
+        <span>Track business impact, mitigation, owner, priority and executive decisions.</span>
+      </a>
+      <a href="#roadmap" className="kc-factory-card">
+        <small>04</small>
+        <strong>Roadmap</strong>
+        <span>Translate findings into remediation, governance, modernization and Copilot readiness waves.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Assessment rule</strong>
+      <span>Do not report observations without evidence, risk meaning, recommendation and owner-ready next action.</span>
+    </div>
+  </div>
+</section>
 
-  Scope --> Collect --> Score --> Recommend --> Handover
-
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Assessment workbook flow">
+  <div className="kc-journey-map__header">
+    <span>Assessment Flow</span>
+    <strong>Scope to executive workbook and next actions</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Scope</strong>
+      <span>Identity, devices, collaboration, security, compliance and Copilot readiness.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Collect</strong>
+      <span>Tenant settings, licenses, policies, evidence screenshots and stakeholder input.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Score</strong>
+      <span>Maturity, readiness, risk, dependency and operational gap scoring.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Recommend</strong>
+      <span>Quick wins, strategic improvements, priorities and licensing recommendations.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Handover</strong>
+      <span>Executive workbook with findings, decisions, roadmap and next actions.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

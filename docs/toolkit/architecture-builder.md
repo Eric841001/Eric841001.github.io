@@ -3,6 +3,7 @@ id: architecture-builder
 title: Architecture Builder
 description: "Enterprise Architecture Builder - This architecture builder provides a standardized framework for designing Microsoft 365, Azure, Security and Copilot..."
 sidebar_label: Architecture Builder
+toc_max_heading_level: 2
 ---
 
 # Enterprise Architecture Builder
@@ -15,22 +16,87 @@ The objective is to ensure consistency, scalability, security and operational ex
 
 ---
 
+<section className="kc-topic-hero" aria-label="Architecture Builder hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Architecture Builder</span>
+    <h2>Convert requirements into target architecture and delivery roadmap</h2>
+    <div className="kc-topic-hero__lede">Architecture Builder standardizes business requirements, current state, gap analysis, target design, governance, risk and operational handover across Microsoft cloud engagements.</div>
+    <div className="kc-hero-signal-row" aria-label="Architecture Builder signals">
+      <span>Business</span>
+      <span>Current</span>
+      <span>Target</span>
+      <span>Operate</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Architecture Builder operating model">
+    <div className="kc-factory-panel__header">
+      <span>Architecture Design Model</span>
+      <strong>Requirement to approved roadmap</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-requirements" className="kc-factory-card">
+        <small>01</small>
+        <strong>Business</strong>
+        <span>Capture drivers, constraints, stakeholders, compliance and transformation goals.</span>
+      </a>
+      <a href="#identity-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Foundation</strong>
+        <span>Design identity, collaboration, security, governance and Copilot foundations.</span>
+      </a>
+      <a href="#migration-architecture" className="kc-factory-card">
+        <small>03</small>
+        <strong>Transition</strong>
+        <span>Define source, target, migration strategy, cutover and hypercare model.</span>
+      </a>
+      <a href="#operational-model" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Assign owners, cadence, monitoring, handover and architecture review loop.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Architecture rule</strong>
+      <span>Do not draw target architecture without decisions, risks, owners, roadmap and operating model.</span>
+    </div>
+  </div>
+</section>
+
 ## Architecture Design Methodology
 
-```mermaid
-flowchart TB
-  Business["Business Requirements<br/>goals, constraints, stakeholders"]:::stage
-  Current["Current State Assessment<br/>tenant, identity, workload, risk"]:::stage
-  Gap["Gap Analysis<br/>control gaps and dependencies"]:::stage
-  Target["Target Architecture<br/>Microsoft 365, Azure, Security, Copilot"]:::stage
-  Roadmap["Implementation Roadmap<br/>phases, workstreams, milestones"]:::stage
-  Operations["Operational Model<br/>owners, cadence, handover"]:::stage
-
-  Business --> Current --> Gap --> Target --> Roadmap --> Operations
-  Operations -. review cycle .-> Current
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div className="kc-journey-map" aria-label="Architecture design methodology">
+  <div className="kc-journey-map__header">
+    <span>Architecture Design Methodology</span>
+    <strong>Business requirement to operational architecture</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Requirements</strong>
+      <span>Goals, constraints, stakeholders, compliance and business outcomes.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Current state</strong>
+      <span>Tenant, identity, workloads, security posture, governance and risks.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Gap analysis</strong>
+      <span>Control gaps, dependencies, licensing needs and operational blockers.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Target design</strong>
+      <span>Microsoft 365, Azure, Security, Copilot and Migration architecture decisions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Roadmap</strong>
+      <span>Implementation phases, workstreams, milestones, owners and handover cadence.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

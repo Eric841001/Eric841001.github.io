@@ -3,6 +3,7 @@ id: license-advisor
 title: License Advisor
 description: "Microsoft License Advisor - Microsoft licensing decisions should be aligned with business requirements, security objectives, compliance obligations and..."
 sidebar_label: License Advisor
+toc_max_heading_level: 2
 ---
 
 # Microsoft License Advisor
@@ -15,23 +16,87 @@ This framework provides a structured approach for recommending Microsoft 365 lic
 
 ---
 
+<section className="kc-topic-hero" aria-label="License Advisor hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft License Advisor</span>
+    <h2>Map user personas to capability, risk and AI readiness</h2>
+    <div className="kc-topic-hero__lede">License decisions should connect user role, workload pattern, security requirement, compliance obligation, Copilot roadmap and operational maturity before recommending a SKU.</div>
+    <div className="kc-hero-signal-row" aria-label="License Advisor signals">
+      <span>Persona</span>
+      <span>Security</span>
+      <span>Compliance</span>
+      <span>AI</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="License Advisor operating model">
+    <div className="kc-factory-panel__header">
+      <span>License Decision Model</span>
+      <strong>User requirement to capability recommendation</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#microsoft-365-license-overview" className="kc-factory-card">
+        <small>01</small>
+        <strong>Compare</strong>
+        <span>Review Business Basic, Standard, Premium, E3, E5 and F3 by user type.</span>
+      </a>
+      <a href="#common-licensing-scenarios" className="kc-factory-card">
+        <small>02</small>
+        <strong>Scenario</strong>
+        <span>Map SMB security, enterprise governance, advanced security and frontline needs.</span>
+      </a>
+      <a href="#copilot-readiness" className="kc-factory-card">
+        <small>03</small>
+        <strong>Copilot</strong>
+        <span>Review identity, SharePoint permissions, data governance and labels.</span>
+      </a>
+      <a href="#assessment-questions" className="kc-factory-card">
+        <small>04</small>
+        <strong>Validate</strong>
+        <span>Confirm users, devices, Intune, Defender, Purview, compliance and global operations.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Licensing rule</strong>
+      <span>Do not recommend licenses by price table alone. Map required capabilities to actual service plans and owners.</span>
+    </div>
+  </div>
+</section>
+
 ## Licensing Decision Framework
 
-```mermaid
-flowchart LR
-  Persona["User Persona<br/>role, workload, device, collaboration pattern"]:::input
-  Business["Business Requirement<br/>productivity, frontline, executive, field"]:::stage
-  Security["Security Requirement<br/>identity, endpoint, Defender, Zero Trust"]:::stage
-  Compliance["Compliance Requirement<br/>Purview, DLP, audit, retention"]:::stage
-  AI["AI Requirement<br/>Copilot, agent use case, data readiness"]:::stage
-  Recommendation["License Recommendation<br/>fit, gap, risk, next action"]:::input
-
-  Persona --> Business --> Security --> Compliance --> AI --> Recommendation
-  Recommendation -. validate value .-> Persona
-
-  classDef input fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div className="kc-journey-map" aria-label="Licensing decision framework">
+  <div className="kc-journey-map__header">
+    <span>Licensing Decision Framework</span>
+    <strong>User persona to license recommendation</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Persona</strong>
+      <span>Role, workload, device, collaboration pattern and frontline or knowledge worker type.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Business</strong>
+      <span>Productivity, field work, executive work, collaboration and operational goals.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Security</strong>
+      <span>Identity, endpoint, Defender, Conditional Access and Zero Trust requirements.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Compliance and AI</strong>
+      <span>Purview, DLP, audit, retention, Copilot and agent readiness requirements.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Recommendation</strong>
+      <span>License fit, capability gap, risk, owner and next action.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
