@@ -88,9 +88,7 @@
                 fs.mkdirSync(targetDir);
               }
 
-              if (!fs.existsSync(target)) {
-                fs.copyFileSync(source, target);
-              }
+              fs.copyFileSync(source, target);
             }
           };
 
