@@ -158,6 +158,7 @@ body {
 .theme-doc-markdown table {
   display: table;
   width: 100%;
+  max-width: 100%;
   margin: 1.6rem 0 2rem;
   border: 1px solid var(--kc-border-strong);
   border-collapse: separate;
@@ -752,6 +753,8 @@ a.kc-pathway-step:hover {
 .theme-doc-markdown .mermaid,
 .theme-doc-markdown div[class*='mermaid'] {
   position: relative;
+  max-width: 100%;
+  contain: layout paint;
   margin: 1.8rem 0 2.2rem;
   padding: 1.45rem;
   border: 1px solid #cfe0f3;
@@ -1071,14 +1074,35 @@ body.kc-diagram-modal-open {
 }
 
 @media (max-width: 640px) {
+  html,
+  body,
+  .theme-layout-main,
+  .theme-doc-markdown {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .theme-doc-markdown table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .theme-doc-markdown .mermaid,
   .theme-doc-markdown div[class*='mermaid'] {
     padding: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .theme-doc-markdown .mermaid svg,
   .theme-doc-markdown div[class*='mermaid'] svg {
+    width: 760px;
+    max-width: none;
     min-width: 760px;
+    overflow: hidden;
   }
 
   .theme-doc-markdown .kc-visual-frame::after {
