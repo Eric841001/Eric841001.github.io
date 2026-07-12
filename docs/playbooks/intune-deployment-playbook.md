@@ -334,3 +334,17 @@ Deliverables:
 - Microsoft Entra Documentation
 - Microsoft Defender Documentation
 - Microsoft Security Adoption Framework
+
+## 검색 키워드
+
+- Microsoft 365 playbook
+- Copilot readiness playbook
+- security modernization playbook
+- tenant migration playbook
+- change management playbook
+- Microsoft 365 구축 방법론
+- Copilot 도입 방법론
+
+## Contact / Asset Request
+
+For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).

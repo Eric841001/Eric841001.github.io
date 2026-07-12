@@ -297,3 +297,27 @@ When publishing these references externally:
 - 업종별 pain point와 delivery approach 매핑
 - SOW, WBS, risk register, governance model 산출물 재사용
 - 고객명을 공개하지 않고도 신뢰 가능한 portfolio narrative 구성
+
+## Executive Reference Model
+
+<div class="kc-outcome-grid" aria-label="Executive customer reference model">
+  <div class="kc-outcome-card">
+    <small>CONTEXT</small>
+    <strong>Industry and business pressure</strong>
+    <span>Explain the industry, operating environment and business challenge without revealing customer identity.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>METHOD</small>
+    <strong>Architecture and delivery pattern</strong>
+    <span>Connect Microsoft capabilities, consulting workstreams, decision points and reusable delivery assets.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>VALUE</small>
+    <strong>Reusable success narrative</strong>
+    <span>Describe outcomes as repeatable patterns: risk reduction, adoption, governance, migration stability or operational maturity.</span>
+  </div>
+</div>
+
+## Contact / Asset Request
+
+For proposal-ready reference narratives, sanitized case study structures or reusable customer success presentation pages, use [Contact and Asset Request](../contact).

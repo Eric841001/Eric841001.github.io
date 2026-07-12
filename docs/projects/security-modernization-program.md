@@ -133,6 +133,14 @@ In finance, healthcare, manufacturing and regulated SaaS environments, security 
 - 보안 현대화
 - Microsoft 365 보안 아키텍처
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Security modernization reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Control gaps across workloads</strong><span>Identity, endpoint, email, data and SaaS access controls are often improved separately.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Unified security program</strong><span>Connect Zero Trust, Defender, Purview, Intune, Conditional Access and governance evidence.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Executive-ready security story</strong><span>Security modernization becomes a phased roadmap with measurable risk reduction and operational ownership.</span></div>
+</div>
+
 ## Related Documents
 
 - [Security Overview](../security/overview)

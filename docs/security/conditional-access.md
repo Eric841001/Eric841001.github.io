@@ -600,3 +600,7 @@ Enterprise 환경에서는 다음 원칙을 기준으로 설계하는 것이 좋
 - Microsoft Intune
 - Copilot Readiness
 - Global Secure Access
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

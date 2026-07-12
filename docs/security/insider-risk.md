@@ -108,3 +108,7 @@ flowchart TB
 - [Data Lifecycle Management](./data-lifecycle)
 - [Compliance Manager](./compliance-manager)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
+
+## Contact / Asset Request
+
+For insider risk policy design notes, investigation workflow templates, evidence handling procedures or executive risk reporting structures, use [Contact and Asset Request](../contact).

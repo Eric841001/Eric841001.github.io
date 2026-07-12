@@ -186,6 +186,20 @@ Editable or customer-ready versions are not published publicly. Sanitized versio
 - 유통 Microsoft 365 보안 정책
 - Microsoft 365 보안 정책 컨설팅
 
+## 한국어 요약
+
+이 사례는 유통 업종에서 Microsoft 365 보안 및 정책 구성을 정비한 익명화된 customer success pattern입니다. 고객명, 프로젝트명, 내부 세부 정보는 공개하지 않고, 업종과 반복 가능한 보안 정책 설계 패턴만 정리합니다.
+
+핵심은 Entra ID, Conditional Access, Intune, Defender, Purview, collaboration policy, Power Platform governance를 따로 보지 않고 하나의 Microsoft 365 security baseline으로 묶어 개선 backlog와 운영 기준을 만든다는 점입니다.
+
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Retail Microsoft 365 security policy reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Policy consistency</strong><span>Retail operations require secure access and collaboration without slowing store, office and partner work.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Baseline and backlog</strong><span>Review identity, endpoint, collaboration, data protection and governance controls as one policy model.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Actionable roadmap</strong><span>Findings become a prioritized improvement backlog, prerequisite roadmap and executive reporting structure.</span></div>
+</div>
+
 ## Related Pages
 
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)

@@ -131,6 +131,14 @@ flowchart TB
 - AI Agent 도입 사례
 - Agent Factory 운영 모델
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="AI Agent Factory reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Agent sprawl risk</strong><span>Business teams want agents quickly, but ownership, security, lifecycle and cost controls must be defined first.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Factory operating model</strong><span>Prioritize use cases, define agent owner roles, review data boundary and create reusable delivery governance.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Governed scale</strong><span>Agent delivery becomes a managed portfolio instead of isolated experiments.</span></div>
+</div>
+
 ## Related Documents
 
 - [Copilot Studio](../copilot/copilot-studio)
@@ -138,3 +146,7 @@ flowchart TB
 - [Agent Factory Operating Model](../copilot/agent-factory-operating-model)
 - [Multi-Agent Framework](../copilot/multi-agent-framework)
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
+
+## Contact / Asset Request
+
+For sanitized AI Agent Factory reference narratives, agent portfolio templates or operating model workbooks, use [Contact and Asset Request](../contact).

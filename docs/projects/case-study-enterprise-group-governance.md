@@ -131,6 +131,14 @@ For executive review, this pattern should be positioned as a governance standard
 - Microsoft 365 운영 모델
 - tenant strategy
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Enterprise group governance reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Group-wide inconsistency</strong><span>Subsidiaries operate different policies, tenant settings and ownership models.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Governance baseline</strong><span>Define common tenant standards, exception process, policy workbook and operating cadence.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Reusable control model</strong><span>Central IT can guide local operations without blocking local business requirements.</span></div>
+</div>
+
 ## Related Documents
 
 - [Multi-Tenant Governance Strategy](./multi-tenant-governance-strategy)

@@ -107,3 +107,7 @@ flowchart LR
 - [Purview Information Protection](./purview-information-protection)
 - [Compliance Manager](./compliance-manager)
 - [Copilot Architecture](../architecture/copilot-architecture)
+
+## Contact / Asset Request
+
+For retention policy matrices, data lifecycle assessment sheets, records management checklists or Copilot data cleanup planning templates, use [Contact and Asset Request](../contact).

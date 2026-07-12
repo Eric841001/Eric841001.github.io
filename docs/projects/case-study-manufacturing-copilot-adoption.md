@@ -98,13 +98,21 @@ The strongest pattern is to treat Copilot as a governed adoption program rather 
 - 제조업 Copilot 도입
 - Copilot 도입 사례
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Manufacturing Copilot adoption reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Mixed work patterns</strong><span>Office, plant and operations roles need different Copilot use cases, training and support models.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Role-based adoption</strong><span>Design readiness, scenario priority, pilot users, governance and executive value tracking together.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Measurable adoption</strong><span>Copilot value is explained through role scenarios, confidence signals and reusable adoption assets.</span></div>
+</div>
+
 ## Related Documents
 
 - [Copilot Adoption Program](../copilot/adoption-program)
 - [Copilot Readiness](../copilot/readiness)
 - [Copilot ROI Framework](../copilot/roi-framework)
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
-- Start with data and identity readiness before user excitement.
-- Use role-based scenarios to make Copilot value concrete.
-- Track license value through prioritized use cases and adoption signals.
-- Prepare governance before scaling pilots into enterprise deployment.
+
+## Contact / Asset Request
+
+For sanitized manufacturing Copilot adoption narratives, adoption WBS templates, readiness checklists or executive value tracking structures, use [Contact and Asset Request](../contact).

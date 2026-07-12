@@ -221,3 +221,17 @@ Once these answers are available, the organization can move from technical enabl
 
 - [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/)
 - [Understand usage-based billing and cost management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
+
+## 검색 키워드
+
+- Microsoft 365 Copilot
+- Copilot Studio
+- AI Agent governance
+- Copilot adoption
+- Copilot readiness
+- Copilot 도입
+- AI Agent 운영 모델
+
+## Contact / Asset Request
+
+For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).

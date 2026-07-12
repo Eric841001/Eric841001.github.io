@@ -542,3 +542,17 @@ The future state is not:
 The future state is:
 
 "Operating an Enterprise AI Platform"
+
+## 검색 키워드
+
+- Microsoft 365 Copilot
+- Copilot Studio
+- AI Agent governance
+- Copilot adoption
+- Copilot readiness
+- Copilot 도입
+- AI Agent 운영 모델
+
+## Contact / Asset Request
+
+For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).

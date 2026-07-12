@@ -289,3 +289,23 @@ Copilot deployment should review:
 - Microsoft Product Terms
 - Microsoft Learn
 - Microsoft 365 Service Descriptions
+
+## 한국어 요약
+
+License Advisor는 Microsoft 365, Security, Compliance, Copilot license를 단순 가격 비교가 아니라 기능 요구사항과 사용자 persona 기준으로 검토하기 위한 도구입니다.
+
+실제 컨설팅에서는 user type, security requirement, Intune 필요 여부, Conditional Access, Defender, Purview, Copilot roadmap을 함께 검토해 license-to-capability map을 작성하는 데 활용합니다.
+
+## 검색 키워드
+
+- Microsoft 365 license advisor
+- M365 E3 E5 comparison
+- Business Premium licensing
+- Copilot license readiness
+- license to capability map
+- Microsoft 365 라이선스 비교
+- Copilot 라이선스 검토
+
+## Contact / Asset Request
+
+For license comparison workbooks, user persona matrices, capability maps or Copilot license readiness review templates, use [Contact and Asset Request](../contact).

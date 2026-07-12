@@ -152,3 +152,7 @@ Examples include executive meeting follow-up, proposal drafting support, report 
 - Microsoft 365 Copilot adoption guidance
 - Microsoft Viva and adoption measurement practices
 - Microsoft Purview and responsible AI governance guidance
+
+## Contact / Asset Request
+
+For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).

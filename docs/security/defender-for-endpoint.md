@@ -102,3 +102,17 @@ Endpoint security projects succeed faster when operations, help desk and securit
 - Microsoft Defender portal
 - Microsoft Intune admin center
 - Microsoft Entra Conditional Access
+
+## 검색 키워드
+
+- Microsoft Defender for Endpoint
+- Defender for Endpoint deployment
+- endpoint security baseline
+- attack surface reduction rules
+- device risk Conditional Access
+- MDE 운영 모델
+- 엔드포인트 보안 기준
+
+## Contact / Asset Request
+
+For Defender for Endpoint deployment plans, ASR rollout rings, exception matrices, pilot validation reports or operations handover checklists, use [Contact and Asset Request](../contact).

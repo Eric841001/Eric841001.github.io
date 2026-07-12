@@ -100,3 +100,7 @@ Executive stakeholders respond better to licensing proposals that connect includ
 - Copilot licensing
 - Microsoft 365 license optimization
 - Microsoft 365 라이선스
+
+## Contact / Asset Request
+
+For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).

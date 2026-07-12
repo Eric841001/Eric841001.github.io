@@ -259,3 +259,13 @@ Commercial terms, pricing and payment conditions are governed by the executed se
 | Customer Sponsor | | |
 | Customer PM | | |
 | Consulting PM | | |
+
+## 검색 키워드
+
+- Microsoft 365 template
+- consulting asset
+- SOW template
+- WBS template
+- assessment workbook
+- Microsoft 365 산출물
+- 컨설팅 템플릿

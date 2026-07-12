@@ -521,3 +521,17 @@ Validate:
 - Microsoft 365 Migration Guidance
 - Exchange Online Protection Documentation
 - Microsoft Entra Documentation
+
+## 검색 키워드
+
+- Microsoft 365 architecture
+- Microsoft 365 governance
+- Teams SharePoint OneDrive
+- Exchange Online
+- Microsoft 365 security
+- Microsoft 365 컨설팅
+- Microsoft 365 운영 모델
+
+## Contact / Asset Request
+
+For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).

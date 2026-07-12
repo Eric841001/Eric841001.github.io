@@ -180,3 +180,23 @@ Validate that:
 - Exchange Online PowerShell
 - New-ComplianceSearch
 - New-ComplianceSearchAction
+
+## 한국어 요약
+
+Exchange Online message recall 또는 purge 작업은 잘못 발송된 메일, 보안 사고, 민감정보 노출 가능성이 있는 메시지를 신속하게 검색하고 조치하기 위한 운영 절차입니다.
+
+실무에서는 검색 query, 승인 기록, 영향 범위, Purview retention, 감사 증적을 함께 관리해야 합니다. 잘못된 query로 메시지를 삭제하면 업무 기록 손상이나 compliance 이슈가 발생할 수 있으므로 peer review와 test search가 중요합니다.
+
+## 검색 키워드
+
+- Exchange Online message purge
+- Microsoft Purview Compliance Search
+- Exchange Online message recall
+- New-ComplianceSearchAction
+- email incident response
+- Exchange Online 메일 삭제
+- Purview 콘텐츠 검색
+
+## Contact / Asset Request
+
+For message purge approval templates, compliance search evidence logs, incident response runbooks or validation checklists, use [Contact and Asset Request](../contact).

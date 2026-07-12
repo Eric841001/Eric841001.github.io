@@ -249,3 +249,7 @@ Prepare segment matrix, policy list, policy application status, allowed/blocked 
 - [Microsoft Learn: Information barriers](https://learn.microsoft.com/en-us/purview/information-barriers)
 - [Microsoft Learn: Use information barriers with SharePoint](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint)
 - [Microsoft Learn: Use information barriers with OneDrive](https://learn.microsoft.com/en-us/purview/information-barriers-onedrive)
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

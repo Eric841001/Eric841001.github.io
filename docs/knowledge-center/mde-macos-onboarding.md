@@ -153,6 +153,12 @@ Verify:
 - Security Baseline
 - Operations Runbook
 
+## 한국어 요약
+
+MDE macOS onboarding은 macOS 장비를 Microsoft Defender for Endpoint와 Defender XDR 운영 체계에 연결하기 위한 보안 배포 작업입니다.
+
+Intune, Jamf, device compliance, network permission, privacy permission, sensor health, alert visibility를 함께 검토해야 하며, pilot validation과 help desk runbook을 준비해야 안정적으로 확산할 수 있습니다.
+
 ## Requestable Assets
 
 Editable or customer-ready versions can be requested through [Contact and Asset Request](../contact).

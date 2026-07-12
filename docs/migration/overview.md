@@ -10,6 +10,29 @@ This Migration section provides enterprise migration guidance for Microsoft 365,
 
 Migration is treated as a business continuity program, not a file-copy activity. The key work is assessment, target design, batching, communication, security validation, cutover, rollback and hypercare.
 
+<div class="kc-executive-strip" aria-label="Migration success control model">
+  <div class="kc-executive-strip__lead">
+    <small>MIGRATION CONTROL</small>
+    <strong>Move workloads without losing business continuity</strong>
+    <span>A strong migration program coordinates inventory, target design, wave planning, cutover, rollback, communication and hypercare.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>DISCOVER</small>
+    <strong>Know the source</strong>
+    <span>Inventory identities, data, permissions, dependencies, mail flow and business-critical users.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>CUTOVER</small>
+    <strong>Control the switch</strong>
+    <span>Use go/no-go criteria, rollback plan, validation checklist and user communication rhythm.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>OPERATE</small>
+    <strong>Stabilize after move</strong>
+    <span>Close migration with hypercare evidence, issue trends, admin guide and owner handover.</span>
+  </div>
+</div>
+
 ## Visual Migration Control Flow
 
 ```mermaid
@@ -93,6 +116,10 @@ Migration은 데이터를 옮기는 작업만이 아니라 업무 연속성, 보
 - rollback plan
 - communication template
 - hypercare and issue tracker
+
+## Contact / Asset Request
+
+For migration pre-assessment workbooks, cutover runbooks, rollback checklists, communication templates or executive migration status packs, use [Contact and Asset Request](../contact).
 
 ## 검색 키워드
 

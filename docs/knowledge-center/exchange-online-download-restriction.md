@@ -147,3 +147,22 @@ Review target policy settings before changing production configuration.
 - Outlook on the web mailbox policy
 - Microsoft Defender for Office 365
 - Microsoft Purview Data Loss Prevention
+
+## 한국어 요약
+
+Exchange Online download restriction은 Outlook on the web, attachment handling, DLP, browser access control을 함께 고려해 민감한 메일 첨부파일이 무분별하게 다운로드되는 것을 줄이기 위한 운영 설계입니다.
+
+정책 적용 전에는 사용자 영향, 예외 프로세스, 지원 범위, 클라이언트별 동작 차이를 반드시 검토해야 합니다. 특히 업무상 첨부파일 다운로드가 필요한 부서에는 pilot과 예외 승인 절차가 필요합니다.
+
+## 검색 키워드
+
+- Exchange Online download restriction
+- Outlook on the web mailbox policy
+- OWA attachment download control
+- Microsoft 365 DLP attachment
+- Exchange Online 보안 정책
+- Outlook 첨부파일 다운로드 제한
+
+## Contact / Asset Request
+
+For OWA policy designs, target user matrices, pilot validation sheets, exception process templates or user communication guides, use [Contact and Asset Request](../contact).

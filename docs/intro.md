@@ -10,6 +10,29 @@ This site is a practical Microsoft Enterprise Knowledge Center for architecture,
 
 It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migration scenarios where enterprise customers need more than product documentation. The goal is to connect field-tested consulting patterns with reusable assets that support assessment, architecture, proposal, implementation and operational handover.
 
+<div class="kc-executive-strip" aria-label="Enterprise AI adoption story">
+  <div class="kc-executive-strip__lead">
+    <small>AI ADOPTION STORY</small>
+    <strong>How should the enterprise use AI, and how does it become adoption?</strong>
+    <span>The starting point is not a model or license. It is real work: meetings, documents, analysis, response, decision support and long-running business processes.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>COPILOT</small>
+    <strong>Everyday work</strong>
+    <span>Use Microsoft 365 Copilot to improve individual and team knowledge work.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>AGENTS</small>
+    <strong>Repeatable work</strong>
+    <span>Use Copilot Studio and M365 Agents for governed business scenarios.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>ADOPTION</small>
+    <strong>Behavior change</strong>
+    <span>Scale through champions, training, feedback, KPI, governance and value storytelling.</span>
+  </div>
+</div>
+
 <div class="kc-signal-grid" aria-label="Enterprise knowledge center start points">
   <a class="kc-signal-card" href="./copilot/overview">
     <small>AI FIRST</small>

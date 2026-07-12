@@ -542,3 +542,17 @@ Executives should see coverage, incident trend, mean time to triage, high-risk u
 - Microsoft Defender for Endpoint Documentation
 - Microsoft Defender for Office 365 Documentation
 - Microsoft Defender for Identity Documentation
+
+## 검색 키워드
+
+- Microsoft security architecture
+- Zero Trust
+- Microsoft Defender
+- Microsoft Purview
+- Conditional Access
+- Microsoft 365 보안
+- 보안 아키텍처
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

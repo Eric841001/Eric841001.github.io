@@ -110,3 +110,7 @@ flowchart TB
 - [Microsoft Defender](./defender)
 - [Exchange Online](../microsoft365/exchange-online)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
+
+## Contact / Asset Request
+
+For email security baseline checklists, anti-phishing policy reviews, quarantine governance guides or incident triage runbooks, use [Contact and Asset Request](../contact).

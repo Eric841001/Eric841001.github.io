@@ -291,3 +291,23 @@ Migration projects should produce:
 - Microsoft SharePoint Migration Guidance
 - Microsoft Entra Documentation
 - Microsoft Cloud Adoption Framework
+
+## 한국어 요약
+
+Migration Checklist는 Exchange Online, Google Workspace, SharePoint, file server, tenant-to-tenant migration을 준비할 때 누락되기 쉬운 discovery, target design, pilot, cutover, rollback, hypercare 항목을 점검하기 위한 실무 체크리스트입니다.
+
+성공적인 migration은 데이터 이동만으로 끝나지 않습니다. 사용자 커뮤니케이션, 보안 검증, batch planning, 관리자 인수인계, 운영 안정화까지 함께 준비해야 합니다.
+
+## 검색 키워드
+
+- Microsoft 365 migration checklist
+- Exchange Online migration checklist
+- SharePoint migration planning
+- tenant migration runbook
+- migration cutover checklist
+- Microsoft 365 마이그레이션 체크리스트
+- Exchange Online 전환 계획
+
+## Contact / Asset Request
+
+For migration pre-assessment checklists, cutover runbooks, rollback plans, wave planning sheets or hypercare trackers, use [Contact and Asset Request](../contact).

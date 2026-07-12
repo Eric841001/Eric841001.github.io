@@ -386,3 +386,16 @@ Provide a final quality score from 1 to 100.
 - Microsoft Well-Architected Framework
 - Microsoft Security Adoption Framework
 - Microsoft Copilot Adoption Framework
+
+## 검색 키워드
+
+- Microsoft cloud architecture
+- Microsoft 365 consulting
+- enterprise governance
+- consulting asset
+- Microsoft 컨설팅
+- 엔터프라이즈 아키텍처
+
+## Contact / Asset Request
+
+For editable templates, assessment workbooks, architecture summaries or delivery-ready consulting assets, use [Contact and Asset Request](../contact).

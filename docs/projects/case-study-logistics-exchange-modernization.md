@@ -111,6 +111,14 @@ The most reusable pattern is to pair migration planning with security and operat
 - 물류 Microsoft 365 전환
 - Exchange Online 마이그레이션
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Logistics Exchange modernization reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Mail continuity risk</strong><span>Logistics operations depend on reliable mail flow, calendar coordination and rapid support during cutover.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Controlled migration</strong><span>Validate DNS, mail routing, security baseline, pilot users, rollback and help desk readiness.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Stable transition</strong><span>Cutover becomes an orchestrated business event rather than a technical switch.</span></div>
+</div>
+
 ## Related Documents
 
 - [Migration Overview](../migration/overview)

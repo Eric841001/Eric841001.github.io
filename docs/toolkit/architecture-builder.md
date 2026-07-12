@@ -302,3 +302,23 @@ Architecture outputs should include:
 - Microsoft Well-Architected Framework
 - Microsoft Learn
 - Microsoft Security Adoption Framework
+
+## 한국어 요약
+
+Architecture Builder는 고객 요구사항을 Microsoft 365, Security, Copilot, Azure, Migration 관점의 target architecture로 바꾸기 위한 실무 도구입니다. 단순한 구성도 작성이 아니라 business requirement, security requirement, governance owner, risk, roadmap을 함께 정리하는 데 목적이 있습니다.
+
+컨설팅에서는 이 문서를 사용해 current state, gap analysis, target state, decision log, risk register, executive summary를 일관된 구조로 만들 수 있습니다.
+
+## 검색 키워드
+
+- Microsoft architecture builder
+- Microsoft 365 architecture template
+- target architecture workshop
+- architecture decision record
+- Microsoft cloud architecture design
+- Microsoft 아키텍처 설계
+- Microsoft 365 아키텍처 템플릿
+
+## Contact / Asset Request
+
+For architecture workshop templates, decision logs, target architecture workbooks or executive architecture summary structures, use [Contact and Asset Request](../contact).

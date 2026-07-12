@@ -10,6 +10,29 @@ The Playbooks section provides repeatable delivery guidance for Microsoft 365 as
 
 Playbooks are designed to bridge consulting strategy and real execution. They define workstreams, checkpoints, deliverables, risks and handover expectations.
 
+<div class="kc-executive-strip" aria-label="Playbook delivery operating model">
+  <div class="kc-executive-strip__lead">
+    <small>OPERATING MODEL</small>
+    <strong>From consulting strategy to repeatable delivery</strong>
+    <span>Each playbook converts a customer scenario into phases, workstreams, checkpoints, evidence and handover outputs.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Assess</strong>
+    <span>Confirm current state, risk, stakeholder expectations and readiness gaps.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Execute</strong>
+    <span>Run workstreams with clear owners, checkpoints, acceptance criteria and issue rhythm.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Handover</strong>
+    <span>Close with runbooks, evidence, owner model and reusable lessons learned.</span>
+  </div>
+</div>
+
 ## Visual Playbook System
 
 ```mermaid
@@ -88,6 +111,10 @@ assessment, readiness, implementation, migration, adoption, handover 단계에�
 - Intune and Entra ID implementation policy workbook
 - security committee evidence pack
 - migration hypercare and operations handover
+
+## Contact / Asset Request
+
+For editable playbook workbooks, workshop agendas, delivery checklists or handover templates, use [Contact and Asset Request](../contact). Share the intended scenario, industry, Microsoft workload and preferred output format.
 
 ## 검색 키워드
 

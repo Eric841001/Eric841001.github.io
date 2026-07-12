@@ -13,6 +13,29 @@ The public pages describe the structure and purpose of each asset. Customer-spec
 
 For access to reusable templates or sample deliverables, contact **Youngsun Kang** through [Contact and Asset Request](../contact). The documents can be shared after confirming the intended use case, customer context and confidentiality boundary.
 
+<div class="kc-executive-strip" aria-label="Download center request journey">
+  <div class="kc-executive-strip__lead">
+    <small>REQUEST JOURNEY</small>
+    <strong>Public description first, editable asset after context review</strong>
+    <span>The site explains asset purpose and structure. Editable DOCX, XLSX or PPTX files are shared only after confirming scenario, audience and confidentiality boundary.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>01</small>
+    <strong>Preview</strong>
+    <span>Review the public-safe page to understand the asset structure and consulting use case.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>02</small>
+    <strong>Request</strong>
+    <span>Contact Youngsun Kang with the industry, workload, scenario and desired output format.</span>
+  </div>
+  <div class="kc-executive-strip__metric">
+    <small>03</small>
+    <strong>Tailor</strong>
+    <span>Use the sanitized asset as a starting point, then adapt scope, owners and assumptions.</span>
+  </div>
+</div>
+
 <div class="kc-asset-catalog" aria-label="Requestable consulting asset catalog">
   <div class="kc-asset-catalog__header">
     <strong>Requestable Asset Catalog</strong>

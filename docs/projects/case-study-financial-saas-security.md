@@ -111,6 +111,14 @@ For regulated environments, success depends on evidence-ready governance. Archit
 - 금융권 Microsoft 365 보안
 - SaaS 보안 승인
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Financial SaaS security reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Security assurance pressure</strong><span>Customer due diligence, identity controls and data protection evidence must be presented clearly.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Evidence-ready design</strong><span>Map Conditional Access, Defender, Purview, audit and exception process into an approval-ready story.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Faster review cycle</strong><span>Reusable evidence and governance artifacts reduce repeated security questionnaire effort.</span></div>
+</div>
+
 ## Related Documents
 
 - [Security Modernization Program](./security-modernization-program)

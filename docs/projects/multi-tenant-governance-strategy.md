@@ -127,6 +127,14 @@ An anonymized enterprise group governance engagement typically follows this patt
 - 다중 tenant governance
 - tenant-to-tenant migration strategy
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Multi-tenant governance strategy reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Fragmented tenant landscape</strong><span>Multiple tenants create inconsistent identity, collaboration, security and admin practices.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Decision framework</strong><span>Compare consolidation, coexistence, cross-tenant access, migration and regional governance options.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Governed roadmap</strong><span>Executives receive a sequenced strategy instead of isolated tenant cleanup tasks.</span></div>
+</div>
+
 ## Related Documents
 
 - [Migration Architecture](../architecture/migration-architecture)

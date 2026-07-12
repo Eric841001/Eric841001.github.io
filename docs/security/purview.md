@@ -162,3 +162,7 @@ Enterprise delivery에서는 다음 패턴이 가장 안정적입니다.
 - [Joanne C Klein](https://joannecklein.com/)
 - [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/)
 - [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

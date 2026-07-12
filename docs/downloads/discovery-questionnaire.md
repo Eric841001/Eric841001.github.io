@@ -185,3 +185,17 @@ The questionnaire should support creation of:
 - WBS
 - Roadmap
 - Executive Summary
+
+## 검색 키워드
+
+- Microsoft 365 template
+- consulting asset
+- SOW template
+- WBS template
+- assessment workbook
+- Microsoft 365 산출물
+- 컨설팅 템플릿
+
+## Contact / Asset Request
+
+For editable DOCX, XLSX or PPTX versions of this asset, use [Contact and Asset Request](../contact) and include the intended scenario, workload and audience.

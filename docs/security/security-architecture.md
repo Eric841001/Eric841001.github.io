@@ -504,3 +504,17 @@ RECOVER --> REVIEW
 - DLP
 - Insider Risk
 - Copilot Readiness
+
+## 검색 키워드
+
+- Microsoft security architecture
+- Zero Trust
+- Microsoft Defender
+- Microsoft Purview
+- Conditional Access
+- Microsoft 365 보안
+- 보안 아키텍처
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

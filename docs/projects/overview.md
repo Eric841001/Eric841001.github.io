@@ -8,6 +8,24 @@ description: Anonymized Microsoft 365, Security, Copilot, Azure, migration and g
 
 This section captures anonymized enterprise project experience and reusable delivery patterns from Microsoft cloud consulting work. Customer names are intentionally omitted. References are grouped by industry, workload and delivery pattern so they can be reused safely for architecture, presales and governance discussions.
 
+<div class="kc-outcome-grid" aria-label="Project reference quality dimensions">
+  <div class="kc-outcome-card">
+    <small>INDUSTRY</small>
+    <strong>Public-safe context</strong>
+    <span>References are described by industry, operating model and business scenario instead of customer names.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>DELIVERY</small>
+    <strong>Reusable pattern</strong>
+    <span>Each case connects challenge, Microsoft workload, delivery method, risk and handover output.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>ASSET</small>
+    <strong>Consulting artifact</strong>
+    <span>Patterns can be converted into SOW, WBS, assessment workbook, governance model and executive story.</span>
+  </div>
+</div>
+
 <div class="kc-signal-grid" aria-label="Project library entry points">
   <a class="kc-signal-card" href="./customer-success-reference-patterns">
     <small>REFERENCE</small>
@@ -88,6 +106,26 @@ Each project will be documented with:
 5. Risk
 6. Lessons Learned
 
+## Reference Quality Model
+
+<div class="kc-outcome-grid" aria-label="Case study structure model">
+  <div class="kc-outcome-card">
+    <small>01</small>
+    <strong>Challenge</strong>
+    <span>Describe the business pressure, risk or adoption goal in a way that is meaningful without customer identity.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>02</small>
+    <strong>Approach</strong>
+    <span>Explain the Microsoft capabilities, workstreams, governance decisions and delivery rhythm used.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>03</small>
+    <strong>Outcome</strong>
+    <span>Summarize reusable value such as reduced risk, clearer rollout control, stronger adoption or better handover.</span>
+  </div>
+</div>
+
 ## Recommended Reading
 
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
@@ -112,3 +150,7 @@ Each project will be documented with:
 - Microsoft 365 고객 성공 사례
 - Copilot 도입 사례
 - Microsoft 365 제안 산출물
+
+## Contact / Asset Request
+
+For sanitized reference narratives, proposal-ready customer success patterns or reusable project artifact structures, use [Contact and Asset Request](../contact). Customer names and confidential project details are not needed for the first discussion.

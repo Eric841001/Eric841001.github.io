@@ -546,3 +546,17 @@ Activities:
 - Security Architecture
 - Copilot Readiness
 - Global Secure Access
+
+## 검색 키워드
+
+- Microsoft 365 migration
+- tenant migration
+- Exchange Online migration
+- migration cutover
+- migration rollback
+- Microsoft 365 마이그레이션
+- 마이그레이션 체크리스트
+
+## Contact / Asset Request
+
+For migration assessment workbooks, wave planning sheets, cutover runbooks, rollback plans or hypercare trackers, use [Contact and Asset Request](../contact).

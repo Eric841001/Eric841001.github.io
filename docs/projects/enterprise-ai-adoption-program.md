@@ -125,9 +125,21 @@ For anonymized customer-facing references, position Enterprise AI adoption as a 
 - Copilot Studio Agent 도입
 - AI Agent 거버넌스
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Enterprise AI adoption program reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>AI enthusiasm without adoption</strong><span>Users are interested in AI, but business scenarios, governance and behavior change are not yet organized.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Adoption program</strong><span>Connect Copilot, Copilot Studio, agents, training, champion network, KPI and value storytelling.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Sustainable AI usage</strong><span>AI use moves from demos to repeatable work patterns with owner, measurement and governance.</span></div>
+</div>
+
 ## Related Documents
 
 - [Copilot Overview](../copilot/overview)
 - [Copilot Studio](../copilot/copilot-studio)
 - [Agent Factory Operating Model](../copilot/agent-factory-operating-model)
 - [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
+
+## Contact / Asset Request
+
+For AI adoption roadmaps, champion program templates, KPI models or executive AI adoption narratives, use [Contact and Asset Request](../contact).

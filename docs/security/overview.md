@@ -129,3 +129,7 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 - Defender/Purview 기반 security modernization
 - Copilot 도입 전 data security review
 - 금융/제조/SaaS 환경의 audit-ready security design
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

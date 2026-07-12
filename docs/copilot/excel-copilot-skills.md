@@ -253,3 +253,23 @@ Organizations can move beyond individual productivity gains and establish repeat
 - Microsoft Learn
 - Copilot in Excel Skills Documentation
 - Frontier Finance Initiative
+
+## 한국어 요약
+
+Excel Copilot Skills는 단순히 Excel 수식을 도와주는 기능을 넘어, 재무 분석, 보고, 예측, workbook rule, connector 기반 데이터 활용을 더 반복 가능하게 만드는 방향으로 발전하고 있습니다.
+
+기업에서는 이를 개인 생산성 기능이 아니라 finance operation, reporting automation, governance-ready workbook design 관점으로 검토해야 합니다. 중요한 workbook에는 데이터 출처, 승인 흐름, 변경 추적, 민감정보 처리 기준이 함께 필요합니다.
+
+## 검색 키워드
+
+- Excel Copilot Skills
+- Copilot in Excel
+- finance AI assistant
+- Excel automation governance
+- Microsoft 365 Copilot Excel
+- Excel Copilot 활용
+- 재무 분석 Copilot
+
+## Contact / Asset Request
+
+For Excel Copilot scenario maps, workbook governance checklists, finance reporting prompt libraries or adoption training examples, use [Contact and Asset Request](../contact).

@@ -238,3 +238,13 @@ Review the following:
 - Microsoft Cloud Adoption Framework
 - Microsoft Security Adoption Framework
 - Microsoft Well-Architected Framework
+
+## 검색 키워드
+
+- Microsoft 365 template
+- consulting asset
+- SOW template
+- WBS template
+- assessment workbook
+- Microsoft 365 산출물
+- 컨설팅 템플릿

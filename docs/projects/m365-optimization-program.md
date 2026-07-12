@@ -115,9 +115,21 @@ In manufacturing, logistics and enterprise group environments, the strongest out
 - Entra ID Intune policy matrix
 - Microsoft 365 security review
 
+## Reference Snapshot
+
+<div class="kc-outcome-grid" aria-label="Microsoft 365 optimization reference snapshot">
+  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Underused platform value</strong><span>Tenants often contain unused licenses, inconsistent governance and unclear collaboration ownership.</span></div>
+  <div class="kc-outcome-card"><small>APPROACH</small><strong>Assessment and roadmap</strong><span>Review tenant settings, collaboration, identity, endpoint, security and license-to-capability fit.</span></div>
+  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Prioritized improvement</strong><span>Optimization becomes a roadmap with quick wins, policy backlog and operating model decisions.</span></div>
+</div>
+
 ## Related Documents
 
 - [Microsoft 365 Overview](../microsoft365/overview)
 - [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture)
 - [M365 Assessment Playbook](../playbooks/m365-assessment-playbook)
 - [M365 Assessment Workbook](../downloads/m365-assessment-workbook)
+
+## Contact / Asset Request
+
+For Microsoft 365 optimization assessment workbooks, license-to-capability maps or tenant governance backlog templates, use [Contact and Asset Request](../contact).

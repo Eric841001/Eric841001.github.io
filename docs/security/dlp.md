@@ -140,3 +140,7 @@ DLP programs fail when policies are enforced before users understand the busines
 - [Purview Information Protection](./purview-information-protection)
 - [Data Lifecycle Management](./data-lifecycle)
 - [Copilot Architecture](../architecture/copilot-architecture)
+
+## Contact / Asset Request
+
+For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).

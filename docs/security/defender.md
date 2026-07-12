@@ -113,3 +113,7 @@ Defender projects work best when framed as an operating model. Tool enablement i
 - [Defender for Endpoint](./defender-for-endpoint)
 - [Defender for Office 365](./defender-for-office365)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
+
+## Contact / Asset Request
+
+For Defender XDR operating model templates, SOC triage matrices, alert tuning checklists or executive security reporting structures, use [Contact and Asset Request](../contact).

@@ -65,6 +65,24 @@ The focus is practical adoption: readiness, data protection, license value, use 
 | Copilot Cowork | longer-running work with approvals, cost control and ownership |
 | Governance / Adoption | identity, data protection, DLP, owner model, champions, training, VOC and KPI |
 
+<div class="kc-outcome-grid" aria-label="Copilot adoption outcome model">
+  <div class="kc-outcome-card">
+    <small>START</small>
+    <strong>Make AI useful in daily work</strong>
+    <span>Begin with meetings, documents, analysis and response tasks where users can feel value quickly.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>CHANGE</small>
+    <strong>Turn use into adoption</strong>
+    <span>Build champions, manager routines, training, feedback loops and measurable use case maturity.</span>
+  </div>
+  <div class="kc-outcome-card">
+    <small>SCALE</small>
+    <strong>Govern agents and Cowork</strong>
+    <span>Expand into Copilot Studio, M365 Agents and Copilot Cowork with owner, approval, cost and telemetry controls.</span>
+  </div>
+</div>
+
 ## GPT-5.6 Update for Microsoft 365 Copilot
 
 > **Update note:** Based on the July 9, 2026 Microsoft 365 Copilot update shared for review, GPT-5.6 should be treated as a reasoning-model upgrade that affects adoption design, model selection guidance and governance communication.
@@ -176,3 +194,7 @@ Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기�
 - Copilot Studio 기반 business Agent 설계
 - Copilot usage와 license value 측정
 - 데이터 유출 위험을 줄이기 위한 Purview/DLP 연계 설계
+
+## Contact / Asset Request
+
+For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
