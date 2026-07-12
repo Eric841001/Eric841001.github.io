@@ -101,27 +101,19 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 
 ## Microsoft Agent Build Spectrum
 
-```mermaid
-flowchart LR
-    A[Agent Builder] --> B[Copilot Studio]
-    B --> C[Power Automate]
-    C --> D[Power Apps]
-    D --> E[Microsoft Foundry]
-    E --> F[Logic Apps]
-    F --> G[Agents SDK]
-
-    A:::noCode
-    B:::lowCode
-    C:::lowCode
-    D:::lowCode
-    E:::proCode
-    F:::proCode
-    G:::proCode
-
-    classDef noCode fill:#eef6ff,stroke:#5b8def,color:#003366
-    classDef lowCode fill:#f0fff4,stroke:#2f9e44,color:#003b1f
-    classDef proCode fill:#fff4e6,stroke:#f08c00,color:#3b2500
-```
+<div class="kc-journey-map" aria-label="Microsoft agent build spectrum">
+  <div class="kc-journey-map__header">
+    <span>Microsoft Agent Build Spectrum</span>
+    <strong>No-code, low-code and pro-code agent delivery</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent Builder</strong><span>General users create simple personal or team agents.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Copilot Studio</strong><span>Business makers build governed business agents and workflows.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Power Platform</strong><span>Power Automate and Power Apps add workflow, approvals and app surfaces.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pro-code</strong><span>Foundry, Logic Apps and Agents SDK support complex integration and custom agents.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governance</strong><span>All build paths require owner, data, tool, security and lifecycle controls.</span></div>
+  </div>
+</div>
 
 | Platform | Primary User | Purpose |
 |---|---|---|
@@ -157,37 +149,19 @@ It supports:
 
 ## Core Architecture
 
-```mermaid
-flowchart TB
-    USER[Users] --> CHANNEL[Channels]
-
-    CHANNEL --> TEAMS[Microsoft Teams]
-    CHANNEL --> WEB[Website]
-    CHANNEL --> M365[Microsoft 365 Copilot]
-    CHANNEL --> APP[Custom App]
-
-    CHANNEL --> AGENT[Copilot Studio Agent]
-
-    AGENT --> ORCH[Orchestrator]
-    ORCH --> TOPIC[Topics]
-    ORCH --> KNOW[Knowledge]
-    ORCH --> TOOLS[Tools]
-    ORCH --> FLOW[Agent Flows]
-
-    KNOW --> SPO[SharePoint]
-    KNOW --> FILES[Files]
-    KNOW --> WEBKNOW[Public Websites]
-    KNOW --> DATAVERSE[Dataverse]
-    KNOW --> GRAPH[Microsoft Graph]
-
-    TOOLS --> CONNECTOR[Connectors]
-    TOOLS --> PROMPT[Prompts]
-    TOOLS --> REST[REST API]
-    TOOLS --> MCP[MCP Server]
-    TOOLS --> COMPUTER[Computer Use]
-
-    FLOW --> PA[Power Automate]
-```
+<div class="kc-journey-map" aria-label="Copilot Studio core architecture">
+  <div class="kc-journey-map__header">
+    <span>Core Architecture</span>
+    <strong>Channel, agent, knowledge, tools and automation in one platform</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Channels</strong><span>Teams, Microsoft 365 Copilot, website, demo site or custom app.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Agent</strong><span>Copilot Studio agent handles intent, orchestration, topics and user experience.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Knowledge</strong><span>SharePoint, files, websites, Dataverse, Microsoft Graph and enterprise sources.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Tools</strong><span>Connectors, prompts, REST APIs, MCP servers, computer use and agent flows.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Automation</strong><span>Power Automate and business systems complete the action loop.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -269,16 +243,19 @@ Examples:
 
 ## Agent Lifecycle
 
-```mermaid
-flowchart LR
-    DISCOVER[Discover] --> DESIGN[Design]
-    DESIGN --> BUILD[Build]
-    BUILD --> TEST[Test]
-    TEST --> PILOT[Pilot]
-    PILOT --> DEPLOY[Deploy]
-    DEPLOY --> MONITOR[Monitor]
-    MONITOR --> IMPROVE[Improve]
-```
+<div class="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
+  <div class="kc-journey-map__header">
+    <span>Agent Lifecycle</span>
+    <strong>Discover, design, build, validate, operate and improve</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discover</strong><span>Business problem, user group, value case and target scenario.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Agent scope, knowledge, tools, data boundary and governance model.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Build</strong><span>Agent, topics, actions, flows, prompts and deployment channel.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Validate</strong><span>Functional, security, permission, quality and pilot user validation.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operate</strong><span>Deploy, monitor, improve, retire or expand the agent.</span></div>
+  </div>
+</div>
 
 | Stage | Key Output |
 |---|---|
@@ -315,20 +292,19 @@ Recommended knowledge sources:
 
 Agents become more valuable when they can take action.
 
-```mermaid
-flowchart TB
-    AGENT[Copilot Studio Agent] --> TOOL[Tools]
-    TOOL --> FLOW[Power Automate Flow]
-    TOOL --> CONN[Connector]
-    TOOL --> API[REST API]
-    TOOL --> MCP[MCP Server]
-    TOOL --> PROMPT[Prompt Tool]
-
-    FLOW --> BUSINESS[Business Process]
-    CONN --> SYSTEM[Enterprise Systems]
-    API --> EXT[External Services]
-    MCP --> RESOURCE[External Tools and Resources]
-```
+<div class="kc-journey-map" aria-label="Copilot Studio tool and action architecture">
+  <div class="kc-journey-map__header">
+    <span>Tool and Action Architecture</span>
+    <strong>Agents create value when they can safely take action</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Intent</strong><span>User request or trigger identifies a business action.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Tool selection</strong><span>Agent chooses flow, connector, API, MCP server or prompt tool.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Execution</strong><span>Business process, enterprise system or external service is invoked.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Control</strong><span>Authentication, DLP, approval, logging and error handling are enforced.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Result</strong><span>User receives confirmation, output, escalation or next-step guidance.</span></div>
+  </div>
+</div>
 
 | Tool Type | Example |
 |---|---|
@@ -381,35 +357,19 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ## Enterprise Agent Platform View
 
-```mermaid
-flowchart TB
-    UI[User Experience Layer] --> M365COP[Microsoft 365 Copilot]
-    UI --> TEAMS[Teams]
-    UI --> APPS[Business Apps]
-
-    M365COP --> AGENT[Agents]
-
-    AGENT --> STUDIO[Copilot Studio]
-    AGENT --> FOUNDRY[Microsoft Foundry]
-    AGENT --> SDK[Microsoft 365 Agents SDK]
-
-    STUDIO --> DATA[Enterprise Data]
-    FOUNDRY --> DATA
-    SDK --> DATA
-
-    DATA --> GRAPH[Microsoft 365 Graph Data]
-    DATA --> FABRIC[Microsoft Fabric]
-    DATA --> DATAVERSE[Dataverse]
-    DATA --> LAKE[Lakehouse and Warehouse]
-    DATA --> EXT[External Systems]
-
-    AGENT --> CONTROL[Control Plane]
-    CONTROL --> ENTRA[Entra ID]
-    CONTROL --> PURVIEW[Purview]
-    CONTROL --> DEFENDER[Defender]
-    CONTROL --> ANALYTICS[Copilot Analytics]
-    CONTROL --> AGENT365[Agent365]
-```
+<div class="kc-journey-map" aria-label="Enterprise agent platform view">
+  <div class="kc-journey-map__header">
+    <span>Enterprise Agent Platform View</span>
+    <strong>Experience, agent platform, data and control plane</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Experience</strong><span>Microsoft 365 Copilot, Teams, websites and business apps.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Agent platform</strong><span>Copilot Studio, Foundry and Microsoft 365 Agents SDK.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Data</strong><span>Graph, Fabric, Dataverse, lakehouse, warehouse and external systems.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Control plane</strong><span>Entra ID, Purview, Defender, analytics and Agent365 governance.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Business outcome</strong><span>Governed agents automate work, answer questions and orchestrate processes.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -433,20 +393,19 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ## Agent Governance Model
 
-```mermaid
-flowchart TB
-    GOV[AI Governance Board] --> OWNER[Agent Owner]
-    GOV --> IT[IT Platform Team]
-    GOV --> SEC[Security Team]
-    GOV --> COMP[Compliance Team]
-    GOV --> DATA[Data Owner]
-
-    OWNER --> AGENT[Agent Lifecycle]
-    IT --> ENV[Environment Management]
-    SEC --> REVIEW[Security Review]
-    COMP --> POLICY[Compliance Review]
-    DATA --> KNOW[Knowledge Approval]
-```
+<div class="kc-journey-map" aria-label="Copilot Studio agent governance model">
+  <div class="kc-journey-map__header">
+    <span>Agent Governance Model</span>
+    <strong>Shared accountability before production release</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>AI governance board</strong><span>Sets policy, prioritization, risk appetite and operating cadence.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Agent owner</strong><span>Owns business value, requirements, adoption and lifecycle decisions.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Platform team</strong><span>Manages environments, connectors, capacity, deployment and operations.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security and compliance</strong><span>Reviews data, tools, permissions, DLP, audit and regulatory requirements.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Approved agent</strong><span>Agent is released with owner, policy, monitoring and retirement path.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -575,22 +534,19 @@ Consider:
 
 ## Decision Framework
 
-```mermaid
-flowchart TB
-    REQ[Business Requirement] --> SIMPLE{Simple knowledge agent?}
-    SIMPLE -->|Yes| BUILDER[Agent Builder]
-    SIMPLE -->|No| BUSINESS{Business process agent?}
-
-    BUSINESS -->|Yes| STUDIO[Copilot Studio]
-    BUSINESS -->|No| DEV{Complex AI or custom model?}
-
-    DEV -->|Yes| FOUNDRY[Microsoft Foundry]
-    DEV -->|No| STUDIO
-
-    STUDIO --> GOVERN[Governance Review]
-    FOUNDRY --> GOVERN
-    BUILDER --> GOVERN
-```
+<div class="kc-journey-map" aria-label="Copilot Studio decision framework">
+  <div class="kc-journey-map__header">
+    <span>Decision Framework</span>
+    <strong>Choose the simplest governed platform that can meet the requirement</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Requirement</strong><span>Clarify user group, business process, data source, action and risk level.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Simple agent</strong><span>Use Agent Builder for lightweight personal or team knowledge use cases.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Business agent</strong><span>Use Copilot Studio for governed knowledge, tools, flows and channels.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Complex AI</strong><span>Use Foundry, SDK or Logic Apps when model, integration or custom code depth is required.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governance review</strong><span>Every option passes owner, data, tool, security and lifecycle checks.</span></div>
+  </div>
+</div>
 
 ---
 
