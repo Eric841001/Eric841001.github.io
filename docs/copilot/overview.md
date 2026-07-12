@@ -52,7 +52,7 @@ description: Microsoft 365 Copilot readiness, GPT-5.6 adoption, Copilot Studio, 
 
 ## GPT-5.6 Update for Microsoft 365 Copilot
 
-Based on the July 9, 2026 Microsoft 365 Copilot update shared for review, GPT-5.6 should be treated as a reasoning-model upgrade that affects adoption design, model selection guidance and governance communication.
+Microsoft announced GPT-5.6 for Microsoft 365 Copilot on July 9, 2026, describing it as a frontier reasoning model for agentic, end-to-end work. The rollout spans Copilot Chat, Word, Excel, PowerPoint and Copilot Cowork, so organizations should treat it as a model upgrade that affects adoption design, model selection guidance and governance communication.
 
 <div class="kc-platform-fit" aria-label="GPT-5.6 planning implications">
   <div class="kc-platform-fit__card"><small>User Experience</small><strong>Stronger reasoning scenarios</strong><span>Users should be guided toward drafting, analysis, presentation refinement, comparison, decision support and follow-up work.</span></div>
@@ -64,6 +64,8 @@ Based on the July 9, 2026 Microsoft 365 Copilot update shared for review, GPT-5.
 </div>
 
 For adoption programs, this update should be reflected in champion training, executive demos, prompt patterns, model selection guidance and post-launch value measurement.
+
+**Official source (checked July 12, 2026, Asia/Seoul):** [Available today: OpenAI’s GPT-5.6 in Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152)
 
 ## 2026 Copilot Studio Update
 
