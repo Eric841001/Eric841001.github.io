@@ -3,6 +3,7 @@ id: prompt-library
 title: Prompt Library
 description: "Enterprise Prompt Library - This library contains reusable enterprise prompts designed for Microsoft consulting, architecture design, proposal..."
 sidebar_label: Prompt Library
+toc_max_heading_level: 2
 ---
 
 # Enterprise Prompt Library
@@ -15,23 +16,87 @@ Prompts are intended to accelerate consulting delivery while maintaining consist
 
 Use these prompts as structured starting points, not as final customer deliverables. A consultant should always add customer context, industry constraints, current-state findings, risk decisions and implementation assumptions before sharing the output externally. For Microsoft terminology, keep product names such as Microsoft 365, Entra ID, Intune, Defender, Purview and Copilot in English, while writing the surrounding explanation in natural Korean or concise business English depending on the audience.
 
+<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Prompt Library hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Prompt Library</span>
+    <h2>Turn reusable prompts into reviewed consulting assets</h2>
+    <div className="kc-topic-hero__lede">The library is useful only when prompts are grounded in sanitized context, reviewed by a consultant and converted into customer-ready deliverables with confidentiality controls.</div>
+    <div className="kc-hero-signal-row" aria-label="Prompt library signals">
+      <span>Sanitize</span>
+      <span>Prompt</span>
+      <span>Review</span>
+      <span>Reuse</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Prompt library operating model">
+    <div className="kc-factory-panel__header">
+      <span>Prompt Delivery Loop</span>
+      <strong>Context to reusable customer-safe pattern</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#prompt-quality-rules" className="kc-factory-card">
+        <small>01</small>
+        <strong>Quality</strong>
+        <span>Define role, audience, facts, assumptions, risks and output format.</span>
+      </a>
+      <a href="#microsoft-365-assessment-prompt" className="kc-factory-card">
+        <small>02</small>
+        <strong>Assess</strong>
+        <span>Use prompts for assessment, architecture, security and licensing analysis.</span>
+      </a>
+      <a href="#executive-proposal-prompt" className="kc-factory-card">
+        <small>03</small>
+        <strong>Propose</strong>
+        <span>Accelerate executive proposal, SOW, WBS and briefing development.</span>
+      </a>
+      <a href="#proposal-review-prompt" className="kc-factory-card">
+        <small>04</small>
+        <strong>Review</strong>
+        <span>Check quality, risk, missing elements and customer-readiness before delivery.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Prompt library rule</strong>
+      <span>Never reuse prompts with customer names, tenant IDs, pricing, confidential architecture or unverified assumptions.</span>
+    </div>
+  </div>
+</section>
+
 ## Visual Prompt Delivery Loop
 
-```mermaid
-flowchart LR
-  Context["Sanitized Context<br/>industry, workload, scope, constraints"]:::stage
-  Prompt["Structured Prompt<br/>role, audience, output, quality bar"]:::stage
-  Draft["AI Draft<br/>summary, options, risks, next actions"]:::stage
-  Review["Consultant Review<br/>accuracy, terminology, confidentiality"]:::gate
-  Deliverable["Customer-Ready Output<br/>proposal, assessment, architecture note"]:::stage
-  Library["Reusable Pattern<br/>remove sensitive details and store template"]:::gate
-
-  Context --> Prompt --> Draft --> Review --> Deliverable --> Library
-  Library -. improve prompt .-> Prompt
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef gate fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div className="kc-journey-map" aria-label="Visual prompt delivery loop">
+  <div className="kc-journey-map__header">
+    <span>Visual Prompt Delivery Loop</span>
+    <strong>Sanitized context to reusable prompt pattern</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Context</strong>
+      <span>Sanitized industry, workload, scope, constraints and known facts.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Prompt</strong>
+      <span>Structured role, audience, output format, quality bar and constraints.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Draft</strong>
+      <span>AI-generated summary, options, risks, recommendations and next actions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Review</strong>
+      <span>Consultant checks accuracy, terminology, confidentiality and customer fit.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Reuse</strong>
+      <span>Customer-safe pattern returns to the library after sensitive details are removed.</span>
+    </div>
+  </div>
+</div>
 
 ## Prompt Quality Rules
 

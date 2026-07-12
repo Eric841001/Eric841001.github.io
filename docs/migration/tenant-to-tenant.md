@@ -3,6 +3,7 @@ id: tenant-to-tenant
 title: Microsoft 365 Tenant-to-Tenant Migration Playbook
 description: "Microsoft 365 Tenant to Tenant Migration Playbook - Tenant to Tenant Migration is the process of moving users, identities, mailboxes, files,..."
 sidebar_label: Tenant-to-Tenant Migration
+toc_max_heading_level: 2
 ---
 
 # Microsoft 365 Tenant-to-Tenant Migration Playbook
@@ -23,21 +24,85 @@ Unlike simple mailbox migrations, Tenant-to-Tenant projects impact identity, col
 
 The objective is to minimize business disruption while preserving data integrity, permissions and governance.
 
-```mermaid
-flowchart LR
-  Driver["Business driver<br/>M&A, divestiture,<br/>consolidation"]:::driver
-  Assess["Assessment<br/>identity, domains,<br/>workloads, risk"]:::phase
-  Design["Target design<br/>tenant, identity,<br/>security, coexistence"]:::phase
-  Pilot["Pilot migration<br/>representative users<br/>and workloads"]:::phase
-  Cutover["Migration waves<br/>mail, files, Teams,<br/>devices"]:::phase
-  Stabilize["Stabilization<br/>support, governance,<br/>decommission"]:::outcome
+<section className="kc-topic-hero" aria-label="Tenant-to-tenant migration hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Tenant-to-Tenant Migration</span>
+    <h2>Move identity, data and collaboration without breaking business continuity</h2>
+    <div className="kc-topic-hero__lede">Tenant-to-tenant migration must coordinate business driver, identity, domains, mail, Teams, SharePoint, OneDrive, security controls, coexistence, cutover and hypercare.</div>
+    <div className="kc-hero-signal-row" aria-label="Tenant migration signals">
+      <span>Assess</span>
+      <span>Design</span>
+      <span>Pilot</span>
+      <span>Cutover</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Tenant migration operating model">
+    <div className="kc-factory-panel__header">
+      <span>Migration Control Tower</span>
+      <strong>Business driver to stabilized target tenant</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#migration-scope" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Map identity, messaging, Teams, SharePoint, OneDrive, security and governance.</span>
+      </a>
+      <a href="#migration-framework" className="kc-factory-card">
+        <small>02</small>
+        <strong>Plan</strong>
+        <span>Run assessment, architecture design, pilot, production waves and stabilization.</span>
+      </a>
+      <a href="#coexistence-strategy" className="kc-factory-card">
+        <small>03</small>
+        <strong>Coexist</strong>
+        <span>Design mail routing, free/busy, directory sync and source-target dependencies.</span>
+      </a>
+      <a href="#risk-register" className="kc-factory-card">
+        <small>04</small>
+        <strong>Control</strong>
+        <span>Track domain, license, permission, Teams, communication and cutover risks.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Migration rule</strong>
+      <span>Do not treat tenant-to-tenant migration as data copy. Identity, permissions and business communication drive success.</span>
+    </div>
+  </div>
+</section>
 
-  Driver --> Assess --> Design --> Pilot --> Cutover --> Stabilize
-
-  classDef driver fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Tenant-to-tenant migration flow">
+  <div className="kc-journey-map__header">
+    <span>Migration Flow</span>
+    <strong>Business driver to stabilized Microsoft 365 tenant</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Business driver</strong>
+      <span>M&amp;A, divestiture, consolidation, regulatory separation or rationalization.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assessment</strong>
+      <span>Review identity, domains, mailboxes, files, Teams, security and risk.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Target design</strong>
+      <span>Define tenant, identity, security, coexistence, governance and communication plan.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Pilot and waves</strong>
+      <span>Validate representative users and execute controlled migration waves.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Stabilize</strong>
+      <span>Operate hypercare, support, governance handover and source decommissioning.</span>
+    </div>
+  </div>
+</div>
 
 ---
 

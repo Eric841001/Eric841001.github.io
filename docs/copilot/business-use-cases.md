@@ -3,6 +3,7 @@ id: business-use-cases
 title: Copilot Business Use Cases
 description: "Copilot Business Use Cases - Microsoft 365 Copilot delivers measurable business value when aligned to real business processes."
 sidebar_label: Business Use Cases
+toc_max_heading_level: 2
 ---
 
 # Copilot Business Use Cases
@@ -13,20 +14,85 @@ Microsoft 365 Copilot delivers measurable business value when aligned to real bu
 
 This document provides practical enterprise use cases across major business functions.
 
-```mermaid
-flowchart TB
-  Work["Business work<br/>finance, HR, sales,<br/>legal, operations"]:::input
-  Pattern["Reusable AI pattern<br/>summarize, analyze,<br/>draft, automate"]:::phase
-  Control["Governed adoption<br/>data access, prompt quality,<br/>change management"]:::phase
-  Measure["Value measurement<br/>time saved, cycle time,<br/>quality, risk reduction"]:::phase
-  Scale["Scale playbook<br/>champions, templates,<br/>agent opportunities"]:::outcome
+<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Copilot business use cases hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Copilot Business Value</span>
+    <h2>Start with real work, then scale into governed AI patterns</h2>
+    <div className="kc-topic-hero__lede">Copilot value grows when use cases are tied to frequent business work, governed data access, adoption support, measurable outcomes and agent opportunities.</div>
+    <div className="kc-hero-signal-row" aria-label="Copilot use case signals">
+      <span>Work</span>
+      <span>Pattern</span>
+      <span>Measure</span>
+      <span>Scale</span>
+    </div>
+  </div>
+  <div className="kc-factory-panel" aria-label="Copilot use case operating model">
+    <div className="kc-factory-panel__header">
+      <span>Use Case Portfolio Model</span>
+      <strong>Business process to measurable AI adoption</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#finance" className="kc-factory-card">
+        <small>01</small>
+        <strong>Finance</strong>
+        <span>Reporting, variance, forecasting, DCF, portfolio and close support.</span>
+      </a>
+      <a href="#sales" className="kc-factory-card">
+        <small>02</small>
+        <strong>Sales</strong>
+        <span>Proposal development, account planning and customer meeting preparation.</span>
+      </a>
+      <a href="#it-operations" className="kc-factory-card">
+        <small>03</small>
+        <strong>Operations</strong>
+        <span>Incident summaries, change management, compliance and tenant assessment.</span>
+      </a>
+      <a href="#executive-recommendations" className="kc-factory-card">
+        <small>04</small>
+        <strong>Prioritize</strong>
+        <span>Focus on high-frequency, high-cost, reporting-intensive knowledge work.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Use case rule</strong>
+      <span>Do not start with features. Start with a process, a measurable pain point and a responsible owner.</span>
+    </div>
+  </div>
+</section>
 
-  Work --> Pattern --> Control --> Measure --> Scale
-
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div className="kc-journey-map" aria-label="Copilot business value flow">
+  <div className="kc-journey-map__header">
+    <span>Business Value Flow</span>
+    <strong>Real work to governed scale playbook</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Business work</strong>
+      <span>Finance, HR, sales, legal, operations, security and administration.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>AI pattern</strong>
+      <span>Summarize, analyze, draft, compare, prepare, automate and follow up.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Governed adoption</strong>
+      <span>Data access, prompt quality, training, champion network and change support.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Measure</strong>
+      <span>Time saved, cycle time, quality, risk reduction and user confidence.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Scale</strong>
+      <span>Templates, champions, prompt libraries, agent candidates and governance backlog.</span>
+    </div>
+  </div>
+</div>
 
 ---
 
