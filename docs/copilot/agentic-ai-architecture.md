@@ -211,15 +211,19 @@ Examples:
 
 ## Agent Build Spectrum
 
-```mermaid
-flowchart LR
-    USER[General User] --> BUILDER[Agent Builder]
-    MAKER[Power User / Maker] --> STUDIO[Copilot Studio]
-    AUTOMATION[Automation Owner] --> PA[Power Automate]
-    DEVELOPER[Developer] --> SDK[Microsoft 365 Agents SDK]
-    AIENG[AI Engineer] --> FOUNDRY[Microsoft Foundry]
-    INTEGRATION[Integration Team] --> LOGIC[Logic Apps]
-```
+<div class="kc-journey-map" aria-label="Agent build spectrum">
+  <div class="kc-journey-map__header">
+    <span>Agent Build Spectrum</span>
+    <strong>Match the platform to persona, complexity and control needs</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>General user</strong><span>Agent Builder for simple personal or team agents.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Power user</strong><span>Copilot Studio for business agents and low-code automation.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Automation owner</strong><span>Power Automate for workflow, approval and process automation.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Developer</strong><span>Microsoft 365 Agents SDK, Logic Apps and governed connectors.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>AI engineer</strong><span>Microsoft Foundry for advanced orchestration, model and agent engineering.</span></div>
+  </div>
+</div>
 
 | Persona | Platform | Primary Use Case |
 |---|---|---|
@@ -247,18 +251,19 @@ Work IQ provides organizational and work context such as:
 - Organizational relationships
 - Work patterns
 
-```mermaid
-flowchart TB
-    WORKIQ[Work IQ] --> PEOPLE[People]
-    WORKIQ --> MEETINGS[Meetings]
-    WORKIQ --> EMAIL[Email]
-    WORKIQ --> FILES[Files]
-    WORKIQ --> TEAMS[Teams]
-    WORKIQ --> CALENDAR[Calendar]
-    WORKIQ --> CONTEXT[Business Context]
-
-    CONTEXT --> AGENT[Agent Reasoning]
-```
+<div class="kc-journey-map" aria-label="Work IQ and agent context">
+  <div class="kc-journey-map__header">
+    <span>Work IQ and Context</span>
+    <strong>Organizational signals ground agent reasoning</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>People</strong><span>Roles, relationships, teams, ownership and collaboration patterns.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Work artifacts</strong><span>Meetings, email, files, Teams conversations and calendar context.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Business context</strong><span>Customer, project, policy, architecture and operating model knowledge.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Permission boundary</strong><span>Agents reason only over data the user or agent is allowed to access.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Agent reasoning</strong><span>Context is converted into recommendations, actions and outputs.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -284,14 +289,19 @@ Recommended grounding sources:
 
 Agents become business-relevant when they can take action.
 
-```mermaid
-flowchart TB
-    AGENT[Agent] --> DECIDE[Reason and Decide]
-    DECIDE --> TOOL[Select Tool]
-    TOOL --> ACTION[Execute Action]
-    ACTION --> RESULT[Return Result]
-    RESULT --> REVIEW[Human Review or Auto Complete]
-```
+<div class="kc-journey-map" aria-label="Agent tool use and action execution">
+  <div class="kc-journey-map__header">
+    <span>Tool Use and Action Execution</span>
+    <strong>Reason, choose a tool, act and review</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Intent</strong><span>User or workflow provides the objective, constraints and expected outcome.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Reason</strong><span>Agent interprets context, determines steps and selects the right tool.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Act</strong><span>Power Automate, connector, API, MCP server or Logic Apps executes the action.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Review</strong><span>Human confirmation or policy control applies to sensitive actions.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Result</strong><span>Outcome, audit signal and next-step recommendation are returned.</span></div>
+  </div>
+</div>
 
 Examples:
 
@@ -318,36 +328,37 @@ MCP is important because it can help organizations:
 - Reduce one-off integration patterns
 - Support scalable agent ecosystems
 
-```mermaid
-flowchart LR
-    AGENT[Agent] --> MCP[MCP Server]
-    MCP --> TOOL1[Enterprise Tool]
-    MCP --> TOOL2[Knowledge Resource]
-    MCP --> TOOL3[Business API]
-```
+<div class="kc-journey-map" aria-label="MCP in Agentic AI">
+  <div class="kc-journey-map__header">
+    <span>MCP in Agentic AI</span>
+    <strong>Reusable connector layer for enterprise tools and resources</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent</strong><span>Needs an approved tool or knowledge resource to complete work.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>MCP server</strong><span>Provides standardized tool contracts and resource access.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Enterprise tool</strong><span>CRM, ERP, ITSM, HR, finance or custom business systems.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance</strong><span>Permission, DLP, logging, approval and connector policy are enforced.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Reuse</strong><span>Multiple agents use the same governed integration pattern.</span></div>
+  </div>
+</div>
 
 ---
 
 ## Multi-Agent Reference Model
 
-```mermaid
-flowchart TB
-    USER[User Request] --> COORD[Coordinator Agent]
-
-    COORD --> KNOW[Knowledge Agent]
-    COORD --> TASK[Task Agent]
-    COORD --> REVIEW[Review Agent]
-    COORD --> COMP[Compliance Agent]
-    COORD --> REPORT[Reporting Agent]
-
-    KNOW --> COORD
-    TASK --> COORD
-    REVIEW --> COORD
-    COMP --> COORD
-    REPORT --> COORD
-
-    COORD --> OUTPUT[Final Response or Action]
-```
+<div class="kc-journey-map" aria-label="Multi-agent reference model">
+  <div class="kc-journey-map__header">
+    <span>Multi-Agent Reference Model</span>
+    <strong>Coordinator routes work to specialist agents and synthesizes the result</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User request</strong><span>Business user submits a goal, question, task or workflow trigger.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Coordinator</strong><span>Decomposes intent, assigns work and keeps shared context.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Specialists</strong><span>Knowledge, task, review, compliance and reporting agents execute scoped work.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Validation</strong><span>Quality, policy, data and risk checks are applied before output.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Final output</strong><span>Response, action, report, approval request or work package is returned.</span></div>
+  </div>
+</div>
 
 ### Agent Roles
 
@@ -366,20 +377,19 @@ flowchart TB
 
 Agentic AI requires stronger governance than simple chat experiences.
 
-```mermaid
-flowchart TB
-    AGENT[Agent] --> ID[Identity Control]
-    AGENT --> DATA[Data Control]
-    AGENT --> TOOL[Tool Control]
-    AGENT --> AUDIT[Audit Control]
-    AGENT --> RISK[Risk Control]
-
-    ID --> ENTRA[Entra ID]
-    DATA --> PURVIEW[Purview]
-    TOOL --> DLP[DLP and Connector Policy]
-    AUDIT --> LOGS[Audit Logs]
-    RISK --> DEFENDER[Defender]
-```
+<div class="kc-journey-map" aria-label="Agentic AI security control plane">
+  <div class="kc-journey-map__header">
+    <span>Security Control Plane</span>
+    <strong>Every agent needs identity, data, tool, audit and risk controls</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Identity</strong><span>Entra ID authentication, authorization, owner and least privilege.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Data</strong><span>Purview labels, DLP, retention and permission boundaries.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Tools</strong><span>Approved connectors, MCP servers, APIs, flows and action policies.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Audit and risk</strong><span>Logs, reviews, Defender signals, anomaly detection and escalation.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governed agent</strong><span>Agent can operate with traceability, monitoring and retirement path.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -476,27 +486,19 @@ Agentic AI adoption requires operating discipline.
 
 ## Agentic AI Roadmap
 
-```mermaid
-gantt
-    title Agentic AI Enterprise Roadmap
-    dateFormat YYYY-MM-DD
-
-    section Foundation
-    AI Strategy and Governance     :a1, 2026-01-01, 3w
-    Data and Security Readiness    :a2, after a1, 4w
-
-    section Pilot
-    Use Case Discovery             :b1, after a2, 3w
-    Agent Pilot                    :b2, after b1, 4w
-
-    section Scale
-    Agent Factory Setup            :c1, after b2, 6w
-    Department Agent Rollout       :c2, after c1, 8w
-
-    section Optimization
-    Multi-Agent Architecture       :d1, after c2, 8w
-    Agentic Operating Model        :d2, after d1, 8w
-```
+<div class="kc-journey-map" aria-label="Agentic AI enterprise roadmap">
+  <div class="kc-journey-map__header">
+    <span>Agentic AI Roadmap</span>
+    <strong>Governance first, agent factory next, multi-agent scale later</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Foundation</strong><span>AI strategy, governance, data readiness and security baseline.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Pilot</strong><span>Use case discovery, value criteria, pilot agents and human review process.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Factory</strong><span>Intake, assessment, design, build, validate and operate model.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Scale</strong><span>Department agent rollout, portfolio governance and cost monitoring.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Optimize</strong><span>Multi-agent architecture, operating model and continuous improvement loop.</span></div>
+  </div>
+</div>
 
 ---
 
