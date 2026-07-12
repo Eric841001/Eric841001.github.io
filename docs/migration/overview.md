@@ -15,7 +15,7 @@ Migration is treated as a business continuity program, not a file-copy activity.
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft 365 Migration Program</span>
     <h2>Move workloads without losing business continuity</h2>
-    <p>A strong migration program coordinates source discovery, target architecture, security validation, wave planning, cutover, rollback, user communication and operations handover.</p>
+    <div className="kc-topic-hero__lede">A strong migration program coordinates source discovery, target architecture, security validation, wave planning, cutover, rollback, user communication and operations handover.</div>
     <div className="kc-hero-signal-row" aria-label="Migration success signals">
       <span>Discover</span>
       <span>Design</span>

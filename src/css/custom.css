@@ -598,7 +598,8 @@ a.kc-pathway-step:hover {
   letter-spacing: 0;
 }
 
-.kc-topic-hero p {
+.kc-topic-hero p,
+.kc-topic-hero__lede {
   max-width: 700px;
   margin: 0;
   color: #42536a;
@@ -617,7 +618,8 @@ a.kc-pathway-step:hover {
   line-height: 1.04;
 }
 
-.kc-topic-hero--agent p {
+.kc-topic-hero--agent p,
+.kc-topic-hero--agent .kc-topic-hero__lede {
   max-width: 720px;
 }
 

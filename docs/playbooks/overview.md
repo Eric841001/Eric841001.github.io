@@ -15,7 +15,7 @@ Playbooks are designed to bridge consulting strategy and real execution. They de
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Enterprise Delivery Playbooks</span>
     <h2>Convert consulting strategy into repeatable delivery</h2>
-    <p>Each playbook turns a customer scenario into phases, workstreams, checkpoints, acceptance evidence, risks, handover outputs and reusable delivery patterns.</p>
+    <div className="kc-topic-hero__lede">Each playbook turns a customer scenario into phases, workstreams, checkpoints, acceptance evidence, risks, handover outputs and reusable delivery patterns.</div>
     <div className="kc-hero-signal-row" aria-label="Playbook delivery signals">
       <span>Assess</span>
       <span>Design</span>
