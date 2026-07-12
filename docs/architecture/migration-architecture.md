@@ -3,33 +3,35 @@ id: migration-architecture
 title: Migration Architecture
 sidebar_label: Migration Architecture
 description: Microsoft 365 migration architecture for tenant-to-tenant, Google Workspace, Exchange, Teams, SharePoint, OneDrive and file server modernization.
+toc_max_heading_level: 2
 ---
 
 # Migration Architecture
 
 
-<div class="kc-executive-strip" aria-label="Migration architecture decision summary">
-  <div class="kc-executive-strip__lead">
-    <small>ARCHITECTURE DECISION</small>
-    <strong>Migration architecture protects business continuity during change</strong>
-    <span>Successful migration design aligns source discovery, target state, coexistence, security validation, wave plan, cutover and hypercare.</span>
+<section class="kc-topic-hero" aria-label="Migration architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft 365 Migration Architecture</span>
+    <h2>Protect business continuity while changing identity, data and collaboration</h2>
+    <p>Successful migration design aligns source discovery, target state, coexistence, security validation, wave planning, cutover, communication and hypercare.</p>
+    <div class="kc-hero-signal-row" aria-label="Migration architecture signals">
+      <span>Discover</span>
+      <span>Transition</span>
+      <span>Cutover</span>
+      <span>Stabilize</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Discover</strong>
-    <span>Inventory users, data, dependencies, permissions, mail flow and risk.</span>
+  <div class="kc-factory-panel" aria-label="Migration architecture operating model">
+    <div class="kc-factory-panel__header"><span>Migration Control Tower</span><strong>Source discovery to stabilized operations</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#migration-architecture-overview" class="kc-factory-card"><small>01</small><strong>Map</strong><span>Users, identities, mail, files, Teams, permissions and dependencies.</span></a>
+      <a href="#migration-domains" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Target tenant, security baseline, wave plan and communication model.</span></a>
+      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Cutover</strong><span>Coexistence, pilot, go/no-go, rollback, DNS and service desk readiness.</span></a>
+      <a href="#customer-success-reference-patterns" class="kc-factory-card"><small>04</small><strong>Stabilize</strong><span>Hypercare, issue trend, handover, reporting and success pattern capture.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Migration rule</strong><span>Do not start migration before source ownership, permissions, security baseline and support path are validated.</span></div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Transition</strong>
-    <span>Design coexistence, pilot, batch strategy, go/no-go and rollback.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Stabilize</strong>
-    <span>Close with hypercare, issue trend, operations guide and owner handover.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -60,32 +62,16 @@ Typical migration scenarios include:
 
 ## Migration Architecture Overview
 
-```mermaid
-flowchart TB
-  Source[Source Environment]
-  Identity[Identity and User Mapping]
-  Mail[Mail and Domain Mapping]
-  Files[Files, Sites and Permissions]
-  Teams[Teams and Collaboration Mapping]
-  Assess[Assessment and Wave Planning]
-  Target[Target Microsoft 365 Tenant]
-  Security[Security, Purview and Defender Baseline]
-  Cutover[Cutover and Communication]
-  Stabilize[Stabilization and Hypercare]
-
-  Source --> Identity
-  Source --> Mail
-  Source --> Files
-  Source --> Teams
-  Identity --> Assess
-  Mail --> Assess
-  Files --> Assess
-  Teams --> Assess
-  Assess --> Target
-  Security --> Target
-  Target --> Cutover
-  Cutover --> Stabilize
-```
+<div class="kc-journey-map" aria-label="Migration architecture overview">
+  <div class="kc-journey-map__header"><span>Migration Architecture Overview</span><strong>Source environment to stabilized Microsoft 365 operations</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Source discovery</strong><span>Inventory users, aliases, domains, mail flow, files, Teams, sites and dependencies.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Mapping</strong><span>Identity, mailbox, permissions, collaboration and workload mapping.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Target design</strong><span>Microsoft 365 tenant, security, Purview, Defender and governance baseline.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Cutover</strong><span>Wave planning, coexistence, communication, go/no-go and rollback.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Hypercare</strong><span>Stabilization, support, issue trend, reporting and owner handover.</span></div>
+  </div>
+</div>
 
 ## Migration Domains
 

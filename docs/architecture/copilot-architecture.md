@@ -3,33 +3,35 @@ id: copilot-architecture
 title: Microsoft Copilot Architecture
 sidebar_label: Copilot Architecture
 description: Microsoft 365 Copilot architecture guide for Graph, permissions, Purview, DLP, Copilot Studio, AI Agents and adoption governance.
+toc_max_heading_level: 2
 ---
 
 # Microsoft Copilot Architecture
 
 
-<div class="kc-executive-strip" aria-label="Copilot architecture decision summary">
-  <div class="kc-executive-strip__lead">
-    <small>ARCHITECTURE DECISION</small>
-    <strong>Copilot architecture starts with data boundary and adoption intent</strong>
-    <span>A strong Copilot design connects Microsoft 365 permissions, Purview, user scenarios, agent governance and measurable value.</span>
+<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Copilot architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft Copilot Architecture</span>
+    <h2>Start with data boundaries, adoption intent and agent governance</h2>
+    <p>A strong Copilot design connects Microsoft Graph, permissions, Purview, user scenarios, Copilot Studio, AI agents, telemetry and measurable business value.</p>
+    <div class="kc-hero-signal-row" aria-label="Copilot architecture signals">
+      <span>Readiness</span>
+      <span>Adoption</span>
+      <span>Governance</span>
+      <span>Value</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Readiness</strong>
-    <span>Check identity, permissions, labels, sharing and sensitive content exposure.</span>
+  <div class="kc-factory-panel" aria-label="Copilot architecture operating model">
+    <div class="kc-factory-panel__header"><span>Copilot Control Plane</span><strong>Secure knowledge work to governed agents</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#copilot-architecture-overview" class="kc-factory-card"><small>01</small><strong>Ground</strong><span>Microsoft Graph, Exchange, Teams, SharePoint, OneDrive and Planner.</span></a>
+      <a href="#core-components" class="kc-factory-card"><small>02</small><strong>Protect</strong><span>Entra ID, Conditional Access, Purview, DLP, Defender and audit.</span></a>
+      <a href="#adoption-operating-model" class="kc-factory-card"><small>03</small><strong>Adopt</strong><span>Executive sponsorship, champions, training, office hours and analytics.</span></a>
+      <a href="#delivery-artifacts" class="kc-factory-card"><small>04</small><strong>Scale</strong><span>Agent lifecycle, governance charter, roadmap and value dashboard.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Copilot rule</strong><span>Do not assign broad licenses before permission cleanup, data protection and adoption ownership are ready.</span></div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Adoption</strong>
-    <span>Prioritize use cases, champions, training and measurable work outcomes.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Governance</strong>
-    <span>Define owner, approval, telemetry, cost and agent lifecycle controls.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -60,35 +62,16 @@ Typical Copilot initiatives include:
 
 ## Copilot Architecture Overview
 
-```mermaid
-flowchart TB
-  Users[Business Users]
-  Copilot[Microsoft 365 Copilot]
-  Graph[Microsoft Graph]
-  Exchange[Exchange Online]
-  Teams[Microsoft Teams]
-  SharePoint[SharePoint Online]
-  OneDrive[OneDrive]
-  Planner[Planner]
-  Identity[Entra ID and Conditional Access]
-  Purview[Purview, Labels, DLP, Audit]
-  Defender[Defender Security Signals]
-  Agents[Copilot Studio and AI Agents]
-  Governance[Adoption, Training, Champion Network, KPI]
-
-  Users --> Copilot
-  Copilot --> Graph
-  Graph --> Exchange
-  Graph --> Teams
-  Graph --> SharePoint
-  Graph --> OneDrive
-  Graph --> Planner
-  Identity --> Copilot
-  Purview --> Graph
-  Defender --> Governance
-  Agents --> Copilot
-  Governance --> Users
-```
+<div class="kc-journey-map" aria-label="Copilot architecture overview">
+  <div class="kc-journey-map__header"><span>Copilot Architecture Overview</span><strong>Graph-grounded AI with identity, data and adoption controls</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business users</strong><span>Users apply Copilot to meetings, documents, email, analysis and decision support.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Microsoft Graph</strong><span>Exchange, Teams, SharePoint, OneDrive, Planner and Microsoft 365 context.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Security boundary</strong><span>Entra ID, Conditional Access, permissions, Purview, DLP, labels and audit.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Agents</strong><span>Copilot Studio and AI agents extend scenarios with tools, workflows and governance.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Adoption value</strong><span>Training, champions, KPI, telemetry and business outcome measurement.</span></div>
+  </div>
+</div>
 
 ## Core Components
 

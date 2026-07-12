@@ -3,33 +3,35 @@ id: security-reference-architecture
 title: Security Reference Architecture
 sidebar_label: Security Architecture
 description: Microsoft Security reference architecture for Zero Trust, Entra ID, Conditional Access, Defender, Purview, DLP and security operations.
+toc_max_heading_level: 2
 ---
 
 # Security Reference Architecture
 
 
-<div class="kc-executive-strip" aria-label="Security architecture decision summary">
-  <div class="kc-executive-strip__lead">
-    <small>ARCHITECTURE DECISION</small>
-    <strong>Security architecture should make controls measurable and operable</strong>
-    <span>Zero Trust, identity, endpoint, email, data, cloud and monitoring controls must map to owners, evidence and response process.</span>
+<section class="kc-topic-hero" aria-label="Security reference architecture hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft Security Reference Architecture</span>
+    <h2>Make security controls measurable, operable and evidence-backed</h2>
+    <p>Zero Trust, identity, endpoint, email, data, cloud and monitoring controls should map to owners, evidence, response process and improvement cadence.</p>
+    <div class="kc-hero-signal-row" aria-label="Security reference signals">
+      <span>Prevent</span>
+      <span>Detect</span>
+      <span>Respond</span>
+      <span>Improve</span>
+    </div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>01</small>
-    <strong>Prevent</strong>
-    <span>Use identity, device, data and application controls to reduce exposure.</span>
+  <div class="kc-factory-panel" aria-label="Security reference operating model">
+    <div class="kc-factory-panel__header"><span>Security Control Plane</span><strong>Identity, data, endpoint and operations in one model</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#security-architecture-overview" class="kc-factory-card"><small>01</small><strong>Verify</strong><span>Entra ID, MFA, Conditional Access, PIM and device trust.</span></a>
+      <a href="#security-domains" class="kc-factory-card"><small>02</small><strong>Protect</strong><span>Defender, Purview, DLP, labels, email and collaboration controls.</span></a>
+      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Decide</strong><span>Security baseline, SOC process, exception and deployment sequence.</span></a>
+      <a href="#lessons-learned" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Alert triage, evidence, tuning, review and continuous improvement.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Security rule</strong><span>Do not deploy controls without owners, pilot validation, exception expiry and response process.</span></div>
   </div>
-  <div class="kc-executive-strip__metric">
-    <small>02</small>
-    <strong>Detect</strong>
-    <span>Connect Defender, audit, alert tuning and signal quality to SOC process.</span>
-  </div>
-  <div class="kc-executive-strip__metric">
-    <small>03</small>
-    <strong>Respond</strong>
-    <span>Prepare triage, exception, escalation, reporting and continuous improvement.</span>
-  </div>
-</div>
+</section>
 
 ## Executive Summary
 
@@ -61,31 +63,16 @@ Typical security initiatives include:
 
 ## Security Architecture Overview
 
-```mermaid
-flowchart TB
-  Users[Users and Workloads]
-  Identity[Microsoft Entra ID]
-  Access[MFA, Conditional Access, Identity Protection, PIM]
-  Endpoint[Intune and Defender for Endpoint]
-  Collaboration[Exchange, Teams, SharePoint, OneDrive]
-  Email[Defender for Office 365 and EOP]
-  Data[Microsoft Purview, Sensitivity Labels, DLP]
-  Operations[Defender XDR, Sentinel, Incident Response]
-  Governance[Policy, Exceptions, Evidence, Review Cadence]
-
-  Users --> Identity
-  Identity --> Access
-  Access --> Endpoint
-  Access --> Collaboration
-  Collaboration --> Email
-  Collaboration --> Data
-  Endpoint --> Operations
-  Email --> Operations
-  Data --> Operations
-  Governance --> Identity
-  Governance --> Data
-  Governance --> Operations
-```
+<div class="kc-journey-map" aria-label="Security architecture overview">
+  <div class="kc-journey-map__header"><span>Security Architecture Overview</span><strong>Verify access, protect data and operate response</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Users and workloads</strong><span>Employees, guests, devices, applications and cloud workloads request access.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Identity and access</strong><span>Entra ID, MFA, Conditional Access, Identity Protection and PIM verify context.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Endpoint and collaboration</strong><span>Intune, Defender, Exchange, Teams, SharePoint and OneDrive enforce trust.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Data and operations</strong><span>Purview, DLP, labels, Defender XDR, Sentinel and incident process.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governance</strong><span>Policy, exceptions, evidence, review cadence and continuous improvement.</span></div>
+  </div>
+</div>
 
 ## Security Domains
 
