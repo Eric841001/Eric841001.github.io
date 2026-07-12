@@ -6,217 +6,145 @@ description: Microsoft 365 architecture, tenant governance, security, migration 
 
 # Microsoft 365 Overview
 
+<section class="kc-topic-hero" aria-label="Microsoft 365 enterprise platform landing">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Enterprise Operating Platform</span>
+    <h2>Design Microsoft 365 as the foundation for secure collaboration and Copilot-ready work</h2>
+    <p>Microsoft 365 should not be treated as a collection of productivity apps. In enterprise consulting, it is an operating platform that connects identity, device, collaboration, information protection, compliance, security operations and AI readiness.</p>
+    <div class="kc-topic-hero__actions" aria-label="Microsoft 365 overview actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/microsoft-365-consulting">Consulting Path</a>
+      <a class="kc-topic-button" href="/knowledge/search/microsoft-365-security">Security Baseline</a>
+      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Copilot Readiness</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Microsoft 365 platform map">
+    <div class="kc-factory-panel__header"><span>Platform Map</span><strong>Copilot-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="/knowledge/security/conditional-access" class="kc-factory-card"><small>01</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access, role control and guest access.</span></a>
+      <a href="/knowledge/knowledge-center/intune-usb-whitelist" class="kc-factory-card"><small>02</small><strong>Endpoint</strong><span>Intune, compliance, app protection, Windows, macOS and mobile devices.</span></a>
+      <a href="/knowledge/microsoft365/teams" class="kc-factory-card"><small>03</small><strong>Collaboration</strong><span>Exchange, Teams, SharePoint, OneDrive, lifecycle and sharing governance.</span></a>
+      <a href="/knowledge/security/purview" class="kc-factory-card"><small>04</small><strong>Data Protection</strong><span>Purview, sensitivity labels, DLP, retention, audit and eDiscovery.</span></a>
+    </div>
+    <div class="kc-guardrail-panel"><strong>Copilot readiness starts before license assignment</strong><span>Permission hygiene, information architecture, DLP, sensitivity labels, support model and adoption scenarios should be reviewed before large-scale Copilot enablement.</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
-Microsoft 365 is the core productivity, collaboration, security and compliance platform for modern enterprises.  
-In enterprise consulting projects, Microsoft 365 should not be positioned only as a collection of productivity applications. It should be designed as an integrated operating platform that connects identity, device, collaboration, information protection, compliance and security controls.
+Microsoft 365 is the core productivity, collaboration, security and compliance platform for modern enterprises. This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.
 
-This knowledge domain provides practical guidance for Microsoft 365 consulting, presales, architecture design, migration planning and operational governance.
-
-<div class="kc-signal-grid" aria-label="Microsoft 365 platform capability cards">
-  <a class="kc-signal-card" href="../security/conditional-access">
-    <small>IDENTITY</small>
-    <strong>Identity and Access</strong>
-    <span>Design Entra ID, MFA, Conditional Access, role control and guest access before broad rollout.</span>
-  </a>
-  <a class="kc-signal-card" href="./teams">
-    <small>COLLAB</small>
-    <strong>Collaboration Governance</strong>
-    <span>Align Exchange Online, Teams, SharePoint and OneDrive with ownership, lifecycle and sharing rules.</span>
-  </a>
-  <a class="kc-signal-card" href="../copilot/readiness">
-    <small>COPILOT</small>
-    <strong>Copilot Readiness</strong>
-    <span>Prepare data permissions, sensitive content, adoption scenarios and support model before license scale-out.</span>
-  </a>
-</div>
-
-## Visual Platform Map
-
-```mermaid
-flowchart TB
-  Outcome["Business Outcomes<br/>productivity, security, compliance, AI readiness"]:::outcome
-  Identity["Identity<br/>Entra ID, MFA, Conditional Access"]:::layer
-  Endpoint["Endpoint<br/>Intune, compliance, app protection"]:::layer
-  Collaboration["Collaboration<br/>Exchange, Teams, SharePoint, OneDrive"]:::layer
-  Data["Data Protection<br/>Purview, labels, DLP, retention"]:::layer
-  Security["Security Operations<br/>Defender, audit, incident response"]:::layer
-  Adoption["Adoption<br/>training, champions, support, analytics"]:::layer
-  Copilot["Copilot Readiness<br/>permissions, content quality, governance"]:::outcome
-
-  Outcome --> Identity
-  Identity --> Endpoint
-  Endpoint --> Collaboration
-  Collaboration --> Data
-  Data --> Security
-  Security --> Adoption
-  Adoption --> Copilot
-  Copilot -. continuous improvement .-> Outcome
-
-  classDef outcome fill:#ecfeff,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef layer fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+Enterprise Microsoft 365 work should be framed around business outcomes: secure collaboration, risk reduction, productivity, governance maturity, migration continuity and AI readiness.
 
 ## 한국어 요약
 
 Microsoft 365는 단순한 Office 앱 묶음이 아니라, 기업의 협업, 보안, governance, compliance, AI 활용을 하나로 연결하는 enterprise 운영 플랫폼입니다.
 
-이 문서는 Microsoft 365 architecture 설계, tenant governance, Teams/SharePoint/OneDrive 협업 구조, Exchange Online migration, Entra ID Conditional Access, Intune device management, Purview data protection, Defender 보안 체계를 함께 검토해야 하는 이유를 정리합니다.
+이 문서는 Microsoft 365 architecture 설계, tenant governance, Teams / SharePoint / OneDrive 협업 구조, Exchange Online migration, Entra ID Conditional Access, Intune device management, Purview data protection, Defender 보안 체계를 함께 검토해야 하는 이유를 정리합니다.
 
 특히 Microsoft 365 Copilot을 도입하려는 조직은 license를 배정하기 전에 data permission, external sharing, sensitivity label, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
 
-## Business Scenario
+## Platform Architecture
 
-Organizations typically engage Microsoft 365 consulting when they need to:
+<div class="kc-journey-map kc-ai-journey" aria-label="Microsoft 365 platform architecture journey">
+  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business outcome</strong><span>Productivity, security, compliance, migration continuity and AI readiness.</span></div>
+  <div class="kc-journey-node"><small>02</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access, role governance and guest access.</span></div>
+  <div class="kc-journey-node"><small>03</small><strong>Endpoint</strong><span>Intune, device compliance, app protection and platform controls.</span></div>
+  <div class="kc-journey-node"><small>04</small><strong>Collaboration</strong><span>Exchange, Teams, SharePoint, OneDrive and lifecycle governance.</span></div>
+  <div class="kc-journey-node kc-journey-node--control"><small>05</small><strong>Data and security</strong><span>Purview, DLP, retention, Defender, audit and incident response.</span></div>
+  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Copilot readiness</strong><span>Permission hygiene, content quality, adoption scenario and operating model.</span></div>
+</div>
 
-- Modernize collaboration with Teams, SharePoint and OneDrive
-- Migrate from legacy mail, file server, NAS or Google Workspace environments
-- Improve security posture with Conditional Access, Defender and endpoint controls
-- Establish information protection with Purview, sensitivity labels and DLP
-- Optimize Microsoft 365 E3, E5, Business Premium, F3 or Copilot licensing
-- Prepare governance models for global subsidiaries and hybrid work
-- Assess Copilot readiness from security, data and adoption perspectives
+## Business Scenarios
 
-Microsoft 365 projects should be framed around business outcomes, not only technical enablement.
+<div class="kc-entry-hub" aria-label="Microsoft 365 business scenarios">
+  <a href="/knowledge/microsoft365/teams"><small>Collaboration</small><strong>Modernize collaboration</strong><span>Teams, SharePoint and OneDrive governance for ownership, lifecycle and external sharing.</span></a>
+  <a href="/knowledge/migration/overview"><small>Migration</small><strong>Move from legacy platforms</strong><span>Mail, file server, NAS, Google Workspace or tenant-to-tenant migration planning.</span></a>
+  <a href="/knowledge/search/microsoft-365-security"><small>Security</small><strong>Improve security posture</strong><span>Conditional Access, Defender, endpoint compliance, Purview and audit controls.</span></a>
+  <a href="/knowledge/security/purview"><small>Compliance</small><strong>Establish information protection</strong><span>Sensitivity labels, DLP, retention, eDiscovery and compliance readiness.</span></a>
+  <a href="/knowledge/microsoft365/licensing"><small>Licensing</small><strong>Optimize license fit</strong><span>E3, E5, Business Premium, F3 and Copilot licensing aligned to persona and risk.</span></a>
+  <a href="/knowledge/copilot/readiness"><small>Copilot</small><strong>Prepare for Copilot</strong><span>Data permission, information architecture, user training, support and governance readiness.</span></a>
+</div>
 
-## Architecture
+## Consulting Workstream Model
 
-A practical Microsoft 365 enterprise architecture should include the following layers:
+<div class="kc-operating-model" aria-label="Microsoft 365 consulting workstream model">
+  <div class="kc-operating-stage"><small>Discover</small><strong>Current-state discovery</strong><span>Tenant status, licenses, identity, mail, files, devices, security and compliance requirements.</span></div>
+  <div class="kc-operating-stage"><small>Assess</small><strong>Gap and risk review</strong><span>License fit-gap, security maturity, collaboration governance and migration readiness.</span></div>
+  <div class="kc-operating-stage"><small>Design</small><strong>Target architecture</strong><span>Governance model, security baseline, migration approach and operating model.</span></div>
+  <div class="kc-operating-stage"><small>Deliver</small><strong>Implementation and handover</strong><span>Policy configuration, pilot, migration, adoption support, admin guide and roadmap.</span></div>
+</div>
 
-| Layer | Key Components | Consulting Focus |
-|---|---|---|
-| Identity | Microsoft Entra ID, Hybrid Identity, MFA, Conditional Access | Access control and identity governance |
-| Endpoint | Intune, Windows, macOS, mobile devices | Device compliance and endpoint management |
-| Collaboration | Teams, SharePoint, OneDrive, Exchange Online | Productivity, file sharing and communication |
-| Security | Microsoft Defender, Secure Score, audit logs | Threat protection and security operations |
-| Compliance | Microsoft Purview, DLP, retention, eDiscovery | Data governance and regulatory readiness |
-| Adoption | Training, champions, help desk, usage analytics | User adoption and operational sustainability |
+## Architecture Layers
 
-## Implementation
+<div class="kc-platform-fit" aria-label="Microsoft 365 architecture layers">
+  <div class="kc-platform-fit__card"><small>Identity</small><strong>Access control and identity governance</strong><span>Microsoft Entra ID, Hybrid Identity, MFA, Conditional Access and admin role control.</span></div>
+  <div class="kc-platform-fit__card"><small>Endpoint</small><strong>Device compliance and endpoint management</strong><span>Intune, Windows, macOS, mobile devices, compliance policy and app protection.</span></div>
+  <div class="kc-platform-fit__card"><small>Collaboration</small><strong>Productivity and communication</strong><span>Exchange Online, Teams, SharePoint, OneDrive, lifecycle, external sharing and guest access.</span></div>
+  <div class="kc-platform-fit__card"><small>Security</small><strong>Threat protection and operations</strong><span>Microsoft Defender, Secure Score, audit logs, incident response and security reporting.</span></div>
+  <div class="kc-platform-fit__card"><small>Compliance</small><strong>Data governance and regulatory readiness</strong><span>Microsoft Purview, DLP, retention, eDiscovery, sensitivity labels and data lifecycle.</span></div>
+  <div class="kc-platform-fit__card"><small>Adoption</small><strong>Operational sustainability</strong><span>Training, champions, help desk, usage analytics, communication and support model.</span></div>
+</div>
 
-A Microsoft 365 implementation should generally follow this sequence:
-
-1. **Discovery**
-   - Current tenant status
-   - License inventory
-   - Identity architecture
-   - Mail and file environment
-   - Device management status
-   - Security and compliance requirements
-
-2. **Assessment**
-   - Gap analysis against target operating model
-   - License fit-gap review
-   - Security control maturity
-   - Collaboration governance maturity
-   - Migration readiness
-
-3. **Design**
-   - Target architecture
-   - Governance model
-   - Security baseline
-   - Migration approach
-   - Operating model and support structure
-
-4. **Implementation**
-   - Tenant configuration
-   - Policy configuration
-   - Pilot deployment
-   - Migration execution
-   - User communication and adoption support
-
-5. **Handover**
-   - Admin guide
-   - Operational runbook
-   - Policy documentation
-   - Risk register
-   - Roadmap and next actions
-
-## Licensing
+## Licensing Decision Model
 
 Microsoft 365 licensing should be reviewed based on business requirements, not only feature comparison.
 
-| License | Typical Use Case | Key Considerations |
-|---|---|---|
-| Microsoft 365 Business Premium | SMB and mid-market security baseline | Strong value for Intune, Defender for Business and Entra ID P1 |
-| Microsoft 365 E3 | Enterprise productivity and baseline security | Suitable for standard enterprise collaboration and governance |
-| Microsoft 365 E5 | Advanced security, compliance and analytics | Required for many advanced Defender, Purview and Entra capabilities |
-| Microsoft 365 F3 | Frontline worker scenarios | Limited desktop application and storage considerations |
-| Microsoft 365 Copilot | AI productivity and knowledge work | Requires readiness in data, identity, security and adoption |
+<div class="kc-maturity-ladder" aria-label="Microsoft 365 licensing decision model">
+  <div class="kc-maturity-step"><small>Persona</small><strong>Map users to work patterns</strong><span>Knowledge workers, frontline workers, admins, executives and regulated users need different controls.</span></div>
+  <div class="kc-maturity-step"><small>Security</small><strong>Match security requirements</strong><span>Baseline security, advanced threat protection, device management and identity controls drive license fit.</span></div>
+  <div class="kc-maturity-step"><small>Compliance</small><strong>Review compliance needs</strong><span>Purview, DLP, retention, eDiscovery, insider risk and audit requirements can change the target plan.</span></div>
+  <div class="kc-maturity-step"><small>Copilot</small><strong>Check AI readiness</strong><span>Copilot licensing should follow data, security, adoption and support readiness, not precede it.</span></div>
+  <div class="kc-maturity-step"><small>Roadmap</small><strong>Align migration and operations</strong><span>Migration plan, operating maturity and future roadmap should influence license sequencing.</span></div>
+</div>
 
-Licensing decisions should consider:
+## Security Baseline
 
-- User persona
-- Security requirements
-- Compliance requirements
-- Device management scope
-- Copilot readiness
-- Migration and adoption roadmap
-- Operational maturity
+<div class="kc-context-panel" aria-label="Microsoft 365 security baseline">
+  <div class="kc-context-panel__lead"><small>Security Baseline</small><strong>Security should be phased, measurable and aligned to business risk.</strong><span>Overly restrictive controls without communication can create resistance. A strong baseline balances identity, endpoint, collaboration, data protection and operations.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/security/conditional-access"><small>Identity</small><strong>MFA and Conditional Access</strong><span>Policy scope, exclusions, sign-in risk and admin access controls.</span></a>
+    <a href="/knowledge/security/defender-xdr"><small>Defender</small><strong>Threat protection</strong><span>Defender for Office 365, Endpoint, XDR, alerts and incident response.</span></a>
+    <a href="/knowledge/security/purview-information-protection"><small>Purview</small><strong>Labels and DLP</strong><span>Sensitivity labels, DLP policy, retention and information protection.</span></a>
+    <a href="/knowledge/microsoft365/sharepoint"><small>Sharing</small><strong>External sharing governance</strong><span>SharePoint, OneDrive, Teams guest access and device-based access controls.</span></a>
+    <a href="/knowledge/knowledge-center/intune-ios-compliance"><small>Endpoint</small><strong>Device compliance</strong><span>Enrollment, compliance policy, app protection and platform restrictions.</span></a>
+    <a href="/knowledge/copilot/readiness"><small>Copilot</small><strong>Data readiness</strong><span>Permission sprawl, content hygiene and sensitive data exposure before Copilot rollout.</span></a>
+  </div>
+</div>
 
-## Security
+## Troubleshooting Patterns
 
-Security design for Microsoft 365 should include:
-
-- MFA enforcement
-- Conditional Access policies
-- Identity protection
-- Privileged access control
-- Device compliance
-- External sharing governance
-- Teams guest access policy
-- SharePoint and OneDrive sharing policy
-- Sensitivity labels
-- DLP policies
-- Defender for Office 365
-- Defender for Endpoint
-- Secure Score improvement plan
-
-Security should be implemented in phases to reduce operational disruption.
-
-## Best Practice
-
-Recommended best practices:
-
-- Start with identity and access control before enabling broad collaboration
-- Define standard user personas before licensing design
-- Separate pilot, production and exception policies
-- Use group-based policy assignment where possible
-- Standardize Teams and SharePoint provisioning rules
-- Define external sharing and guest access governance early
-- Establish naming conventions for Teams, groups and SharePoint sites
-- Align Purview labels and DLP policies with business data classification
-- Prepare user communication before enforcing restrictive policies
-- Maintain an operational runbook for administrators
-
-## Troubleshooting
-
-Common Microsoft 365 project issues:
-
-| Issue | Typical Cause | Recommended Action |
-|---|---|---|
-| Users blocked by Conditional Access | Policy scope or exception not properly designed | Review assignments, exclusions and sign-in logs |
-| SharePoint access issue | External sharing or device access control conflict | Validate site policy, tenant policy and CA policy |
-| Teams guest access inconsistency | Teams, M365 Group and Entra settings mismatch | Review all guest access layers |
-| DLP false positives | Policy condition too broad | Pilot with audit mode and refine conditions |
-| Intune enrollment failure | Device platform restriction or user scope issue | Review enrollment restrictions and MDM user scope |
-| Copilot response quality issue | Poor content hygiene or permission sprawl | Review information architecture and access permissions |
+<div class="kc-platform-fit" aria-label="Microsoft 365 troubleshooting patterns">
+  <div class="kc-platform-fit__card"><small>Conditional Access</small><strong>Users blocked unexpectedly</strong><span>Review policy assignments, exclusions, sign-in logs and device state.</span></div>
+  <div class="kc-platform-fit__card"><small>SharePoint</small><strong>Access inconsistency</strong><span>Validate site policy, tenant sharing policy, device access control and Conditional Access.</span></div>
+  <div class="kc-platform-fit__card"><small>Teams</small><strong>Guest access mismatch</strong><span>Review Teams, Microsoft 365 Group, SharePoint and Entra guest access layers together.</span></div>
+  <div class="kc-platform-fit__card"><small>DLP</small><strong>False positives</strong><span>Pilot policies in audit mode, tune conditions and align rules with business data classification.</span></div>
+  <div class="kc-platform-fit__card"><small>Intune</small><strong>Enrollment failure</strong><span>Check device platform restrictions, MDM user scope, license assignment and compliance policy.</span></div>
+  <div class="kc-platform-fit__card"><small>Copilot</small><strong>Response quality issue</strong><span>Review content hygiene, information architecture, permission sprawl and authoritative sources.</span></div>
+</div>
 
 ## Lessons Learned
 
-Key lessons from enterprise Microsoft 365 projects:
+<div class="kc-maturity-ladder" aria-label="Microsoft 365 lessons learned">
+  <div class="kc-maturity-step"><small>Lesson 1</small><strong>License deployment is not transformation</strong><span>Microsoft 365 projects fail when treated only as license assignment or application rollout.</span></div>
+  <div class="kc-maturity-step"><small>Lesson 2</small><strong>Identity and device readiness decide security success</strong><span>Security projects depend on accurate identity, device compliance and policy scoping.</span></div>
+  <div class="kc-maturity-step"><small>Lesson 3</small><strong>Data governance must precede Copilot</strong><span>Permission cleanup, content ownership and Purview controls should be reviewed before AI scale-out.</span></div>
+  <div class="kc-maturity-step"><small>Lesson 4</small><strong>Migration needs business ownership</strong><span>Business continuity, rollback, communication and hypercare require owners beyond IT execution.</span></div>
+  <div class="kc-maturity-step"><small>Lesson 5</small><strong>Executive reporting should focus on outcomes</strong><span>Risk reduction, productivity, adoption and operating maturity matter more than technical task counts.</span></div>
+</div>
 
-- Microsoft 365 projects fail when treated only as license deployment
-- Identity and device readiness determine security project success
-- Data governance must be addressed before Copilot adoption
-- Migration projects require business-side ownership, not only IT execution
-- Global subsidiaries require local constraints, time zone and language considerations
-- Overly restrictive policies without communication create user resistance
-- Executive reporting should focus on risk reduction, productivity and operating model maturity
+## Recommended Reading
+
+<div class="kc-entry-hub" aria-label="Microsoft 365 recommended reading">
+  <a href="/knowledge/microsoft365/e3-vs-e5"><small>Decision</small><strong>E3 vs E5 Decision Guide</strong><span>Compare enterprise productivity, security, compliance and advanced control requirements.</span></a>
+  <a href="/knowledge/microsoft365/exchange-online"><small>Exchange</small><strong>Exchange Online</strong><span>Mail architecture, governance, security and modernization guidance.</span></a>
+  <a href="/knowledge/microsoft365/teams"><small>Teams</small><strong>Teams Governance</strong><span>Teams lifecycle, guest access, channels, meeting and collaboration governance.</span></a>
+  <a href="/knowledge/microsoft365/sharepoint"><small>SharePoint</small><strong>SharePoint</strong><span>Information architecture, sharing, permissions and content governance.</span></a>
+  <a href="/knowledge/microsoft365/onedrive"><small>OneDrive</small><strong>OneDrive</strong><span>Personal file collaboration, sync, sharing and governance guidance.</span></a>
+  <a href="/knowledge/downloads/m365-assessment-workbook"><small>Asset</small><strong>M365 Assessment Workbook</strong><span>Requestable workbook for current-state review and improvement roadmap.</span></a>
+</div>
 
 ## 검색 키워드
-
-이 문서는 다음과 같은 검색어와 관련됩니다.
 
 - Microsoft 365 architecture
 - Microsoft 365 consulting
@@ -237,8 +165,8 @@ Key lessons from enterprise Microsoft 365 projects:
 - Microsoft 365 신규 도입 제안
 - Google Workspace에서 Microsoft 365로 전환
 - Exchange Online과 Teams 중심의 collaboration modernization
-- Copilot 도입 전 data/security readiness assessment
-- Microsoft 365 E3/E5/Business Premium license optimization
+- Copilot 도입 전 data / security readiness assessment
+- Microsoft 365 E3 / E5 / Business Premium license optimization
 - 글로벌 조직 또는 계열사의 tenant governance 정비
 
 ## References
@@ -252,25 +180,6 @@ Key lessons from enterprise Microsoft 365 projects:
 - Microsoft Cloud Adoption Framework
 - Microsoft Zero Trust guidance
 
-## MVP 커뮤니티 기반 운영 메모
-
-Public Microsoft 365 MVP와 community blog는 go-live 이후에야 드러나는 운영 이슈를 미리 확인하는 데 도움이 됩니다.
-
-Microsoft 365 consulting에서는 이러한 field knowledge를 다음과 같은 운영 점검 항목으로 바꾸는 것이 좋습니다.
-
-- Tenant administration은 portal screenshot뿐 아니라 PowerShell과 Microsoft Graph 기반의 반복 가능성까지 포함해야 합니다.
-- Teams, Exchange, SharePoint, OneDrive governance는 하나의 collaboration model로 함께 검토해야 합니다.
-- License optimization은 inactive account, persona design, feature usage와 연결해야 합니다.
-- Copilot readiness는 permission, label, DLP, audit, support process까지 포함해야 합니다.
-- Change management에는 admin handover, user communication, exception handling이 포함되어야 합니다.
-- 검색 친화적인 문서는 영어 product term과 자연스러운 한국어 consulting term을 함께 포함해야 합니다.
-
-## 커뮤니티 및 공식 참고 자료
-
-- [Microsoft 365 for IT Pros](https://office365itpros.com/)
-- [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy)
-- [MVP and Community Research Map](../knowledge-center/mvp-community-research-map)
-
 ## Contact / Asset Request
 
-For a Microsoft 365 assessment workbook, tenant governance matrix, license-to-capability map or executive roadmap template, use [Contact and Asset Request](../contact).
+For Microsoft 365 assessment workbooks, security baseline checklists, migration planning templates or executive architecture materials, use [Contact and Asset Request](/knowledge/contact).
