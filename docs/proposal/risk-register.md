@@ -3,10 +3,28 @@ id: risk-register
 title: Risk Register
 description: "Risk Register - A Risk Register is used to identify, assess, track and mitigate risks throughout a Microsoft cloud consulting engagement."
 sidebar_label: Risk Register
+toc_max_heading_level: 2
 ---
 
 # Risk Register
 
+<section class="kc-topic-hero" aria-label="Proposal Risk Register hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+    <h2>Expose project risk, owner and escalation path before execution</h2>
+    <p>The proposal risk register connects technical, licensing, business readiness, change management and executive decision dependencies into one control model.</p>
+    <div class="kc-hero-signal-row" aria-label="Proposal Risk Register signals"><span>Identify</span><span>Classify</span><span>Owner</span><span>Report</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Proposal Risk Register model">
+    <div class="kc-factory-panel__header"><span>Risk Control</span><strong>Escalation-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-scenario" class="kc-factory-card"><small>01</small><strong>Scenario</strong><span>M365, Security, migration, Copilot, licensing and governance projects.</span></a>
+      <a href="#risk-classification" class="kc-factory-card"><small>02</small><strong>Classify</strong><span>Critical, high, medium and low risk levels.</span></a>
+      <a href="#standard-risk-register" class="kc-factory-card"><small>03</small><strong>Register</strong><span>Risk, category, impact, probability, level, mitigation and owner.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable risk register can be shared by project type.</span></a>
+    </div>
+  </div>
+</section>
 
 <div class="kc-request-panel" aria-label="Risk register editable asset request">
   <small>REQUESTABLE ASSET</small>
@@ -22,19 +40,16 @@ For Microsoft 365, Azure, Security, Copilot and migration projects, risk managem
 
 > **Asset preview:** Use this page to understand the risk model. For an editable risk register file or customer-ready sample, request the asset through [Contact and Asset Request](../contact) with the project type and target workload.
 
-```mermaid
-flowchart LR
-  Identify["Identify<br/>technical, business,<br/>license, change risks"]:::phase
-  Classify["Classify<br/>impact, probability,<br/>risk level"]:::phase
-  Own["Assign owner<br/>decision maker,<br/>mitigation lead"]:::phase
-  Mitigate["Mitigate<br/>actions, dates,<br/>dependencies"]:::phase
-  Report["Report<br/>status, escalation,<br/>executive decisions"]:::outcome
-
-  Identify --> Classify --> Own --> Mitigate --> Report
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Proposal risk register flow">
+  <div class="kc-journey-map__header"><span>Risk Register Flow</span><strong>Risk discovery to executive reporting</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Identify</strong><span>Technical, business, license, change, migration and governance risks.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Classify</strong><span>Impact, probability, risk level and escalation trigger.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Assign Owner</strong><span>Decision maker, mitigation lead, due date and dependency owner.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Mitigate</strong><span>Actions, fallback, dates, dependencies and residual exposure.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Report</strong><span>Status, escalation, executive decisions and closure evidence.</span></div>
+  </div>
+</div>
 
 ## Business Scenario
 

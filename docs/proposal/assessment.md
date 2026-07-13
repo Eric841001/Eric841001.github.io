@@ -3,10 +3,28 @@ id: assessment
 title: Assessment Framework
 description: "Assessment Framework - The Assessment Framework is used to evaluate the current state of a customer environment before defining a Microsoft 365, Azure,..."
 sidebar_label: Assessment Framework
+toc_max_heading_level: 2
 ---
 
 # Assessment Framework
 
+<section class="kc-topic-hero" aria-label="Assessment Framework hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+    <h2>Turn current-state findings into roadmap-ready proposal input</h2>
+    <p>The Assessment Framework captures business requirements, technical gaps, risks, readiness and licensing considerations before defining architecture or implementation scope.</p>
+    <div class="kc-hero-signal-row" aria-label="Assessment Framework signals"><span>Discover</span><span>Analyze</span><span>Design</span><span>Align</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Assessment Framework model">
+    <div class="kc-factory-panel__header"><span>Assessment Flow</span><strong>Roadmap-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-scenario" class="kc-factory-card"><small>01</small><strong>Scenario</strong><span>Modernization, security, licensing, migration or Copilot readiness.</span></a>
+      <a href="#assessment-scope" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Identity, collaboration, endpoint, security, compliance and operations.</span></a>
+      <a href="#discovery-questions" class="kc-factory-card"><small>03</small><strong>Questions</strong><span>Business and technical discovery inputs for proposal design.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable workbook can be shared after scenario confirmation.</span></a>
+    </div>
+  </div>
+</section>
 
 <div class="kc-request-panel" aria-label="Assessment framework editable asset request">
   <small>REQUESTABLE ASSET</small>
@@ -20,19 +38,16 @@ The Assessment Framework is used to evaluate the current state of a customer env
 
 The objective is to identify business requirements, technical gaps, operational risks and licensing considerations before proposing a target architecture or implementation scope.
 
-```mermaid
-flowchart LR
-  Discover["Discovery<br/>business goals,<br/>technical baseline"]:::phase
-  Analyze["Analysis<br/>risks, gaps,<br/>license fit"]:::phase
-  Design["Target direction<br/>architecture options,<br/>roadmap"]:::phase
-  Align["Stakeholder alignment<br/>priorities, scope,<br/>success measures"]:::phase
-  Proposal["Proposal input<br/>SOW, WBS,<br/>risk register"]:::outcome
-
-  Discover --> Analyze --> Design --> Align --> Proposal
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Assessment Framework flow">
+  <div class="kc-journey-map__header"><span>Assessment Flow</span><strong>Discovery to proposal input</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discovery</strong><span>Business goals, technical baseline, constraints and sponsor expectations.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Analysis</strong><span>Risks, gaps, license fit, dependency and maturity findings.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Target Direction</strong><span>Architecture options, roadmap, governance and delivery approach.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Stakeholder Alignment</strong><span>Priorities, scope, success measures and decision gates.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Proposal Input</strong><span>SOW, WBS, risk register, roadmap and executive summary.</span></div>
+  </div>
+</div>
 
 ## Business Scenario
 

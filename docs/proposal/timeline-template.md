@@ -3,10 +3,28 @@ id: timeline-template
 title: Timeline Template
 description: "Timeline Template - The Timeline Template provides a standard project schedule structure for Microsoft 365, Azure, Security, Copilot and migration..."
 sidebar_label: Timeline Template
+toc_max_heading_level: 2
 ---
 
 # Timeline Template
 
+<section class="kc-topic-hero" aria-label="Timeline Template hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+    <h2>Convert phases, dependencies and decision gates into a realistic schedule</h2>
+    <p>The Timeline Template aligns customer and delivery teams around phases, milestones, dependencies, stakeholder events and handover checkpoints.</p>
+    <div class="kc-hero-signal-row" aria-label="Timeline Template signals"><span>Discover</span><span>Design</span><span>Rollout</span><span>Handover</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Timeline Template model">
+    <div class="kc-factory-panel__header"><span>Timeline Model</span><strong>Milestone-driven</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-scenario" class="kc-factory-card"><small>01</small><strong>Scenario</strong><span>M365 assessment, security baseline, Intune, migration or Copilot project.</span></a>
+      <a href="#standard-project-timeline" class="kc-factory-card"><small>02</small><strong>Phases</strong><span>Discovery, assessment, design, build, pilot, rollout and handover.</span></a>
+      <a href="#example-12-week-timeline" class="kc-factory-card"><small>03</small><strong>Schedule</strong><span>Week-by-week structure for workstreams and approvals.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable timeline can be shared by engagement type.</span></a>
+    </div>
+  </div>
+</section>
 
 <div class="kc-request-panel" aria-label="Timeline editable asset request">
   <small>REQUESTABLE ASSET</small>
@@ -20,20 +38,17 @@ The Timeline Template provides a standard project schedule structure for Microso
 
 The objective is to define realistic phases, milestones, dependencies and decision points so that both customer and delivery teams can align on scope, timeline and responsibilities.
 
-```mermaid
-flowchart LR
-  Discovery["Discovery<br/>requirements,<br/>current state"]:::phase
-  Assessment["Assessment<br/>findings, risks,<br/>readiness"]:::phase
-  Design["Design<br/>architecture,<br/>policy, roadmap"]:::phase
-  Build["Build and pilot<br/>configuration,<br/>validation"]:::phase
-  Rollout["Rollout<br/>production waves,<br/>change support"]:::phase
-  Handover["Handover<br/>runbook, training,<br/>stabilization"]:::outcome
-
-  Discovery --> Assessment --> Design --> Build --> Rollout --> Handover
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Timeline Template flow">
+  <div class="kc-journey-map__header"><span>Timeline Flow</span><strong>Discovery to stabilization</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discovery</strong><span>Requirements, current state, stakeholders and constraints.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Findings, risks, readiness, license fit and dependency review.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Architecture, policy, roadmap, backlog and approval gates.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Build and Pilot</strong><span>Configuration, validation, pilot users and issue resolution.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Rollout</strong><span>Production waves, communication, change support and monitoring.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Handover</strong><span>Runbook, training, stabilization, closure report and backlog.</span></div>
+  </div>
+</div>
 
 ## Business Scenario
 
