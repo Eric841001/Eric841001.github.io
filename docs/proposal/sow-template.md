@@ -1,10 +1,33 @@
 ---
 title: SOW Template
 description: Statement of Work template guidance for Microsoft 365, Security, Copilot, Azure and migration proposals covering scope, deliverables, assumptions and acceptance criteria.
+toc_max_heading_level: 2
 ---
 
 # Statement of Work Template
 
+<section class="kc-topic-hero" aria-label="Statement of Work template hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+    <h2>Define scope, deliverables and acceptance before delivery starts</h2>
+    <p>A strong SOW connects business driver, workload scope, assumptions, exclusions, responsibilities, acceptance criteria and change control into a delivery contract.</p>
+    <div class="kc-hero-signal-row" aria-label="SOW template signals">
+      <span>Scope</span>
+      <span>Deliverables</span>
+      <span>Assumptions</span>
+      <span>Acceptance</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="SOW template design model">
+    <div class="kc-factory-panel__header"><span>SOW Design</span><strong>Scope-safe</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#recommended-sow-structure" class="kc-factory-card"><small>01</small><strong>Structure</strong><span>Background, objectives, scope, deliverables and roles.</span></a>
+      <a href="#delivery-scope-example" class="kc-factory-card"><small>02</small><strong>Workstreams</strong><span>Assessment, architecture, security, migration, adoption and handover.</span></a>
+      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Scope boundary, assumptions, exclusions, acceptance and change control.</span></a>
+      <a href="#quality-checklist" class="kc-factory-card"><small>04</small><strong>Quality</strong><span>Make reviewable outputs and approval criteria explicit.</span></a>
+    </div>
+  </div>
+</section>
 
 <div class="kc-request-panel" aria-label="SOW editable asset request">
   <small>REQUESTABLE ASSET</small>
@@ -30,27 +53,17 @@ SOW는 고객에게 "무엇을 제공하는가"만 설명하는 문서가 아닙
 
 ## SOW Design Flow
 
-```mermaid
-flowchart TB
-  Driver["Business Driver<br/>why now"]:::source
-  Scope["Scope Boundary<br/>workloads, users, tenants, regions"]:::core
-  Deliverables["Deliverables<br/>reviewable outputs"]:::core
-  Assumptions["Assumptions / Dependencies<br/>customer inputs and access"]:::risk
-  Exclusions["Exclusions<br/>out-of-scope requests"]:::risk
-  Acceptance["Acceptance Criteria<br/>evidence and approval"]:::accept
-  Change["Change Control<br/>additional scope decision"]:::accept
-
-  Driver --> Scope --> Deliverables --> Acceptance
-  Scope --> Assumptions
-  Scope --> Exclusions
-  Assumptions --> Change
-  Exclusions --> Change
-
-  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
-  classDef core fill:#ecfeff,stroke:#22d3ee,color:#102033,stroke-width:1.6px
-  classDef risk fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
-  classDef accept fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
-```
+<div class="kc-journey-map" aria-label="SOW design flow">
+  <div class="kc-journey-map__header"><span>SOW Design Flow</span><strong>Business driver to change control</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Driver</strong><span>Clarify why the engagement matters now.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Scope Boundary</strong><span>Workloads, users, tenants, regions, environments and responsibilities.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Deliverables</strong><span>Reviewable outputs, workshops, design documents and handover assets.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Assumptions / Exclusions</strong><span>Customer inputs, access, dependencies and out-of-scope requests.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Acceptance Criteria</strong><span>Evidence, review path, sign-off and completion definition.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Change Control</strong><span>Additional scope decision, approval and commercial handling.</span></div>
+  </div>
+</div>
 
 ## Recommended SOW Structure
 

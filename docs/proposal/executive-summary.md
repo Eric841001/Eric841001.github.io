@@ -1,10 +1,33 @@
 ---
 title: Executive Summary
 description: Executive summary template guidance for Microsoft 365, Security, Copilot, Azure and migration proposals focused on business outcome, risk reduction and investment decision.
+toc_max_heading_level: 2
 ---
 
 # Executive Summary Template
 
+<section class="kc-topic-hero" aria-label="Executive Summary template hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+    <h2>Translate technical scope into executive decision language</h2>
+    <p>Executive Summary should connect business pressure, risk, recommended approach, expected value and the decision required from leadership.</p>
+    <div class="kc-hero-signal-row" aria-label="Executive summary signals">
+      <span>Challenge</span>
+      <span>Objective</span>
+      <span>Value</span>
+      <span>Decision</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Executive Summary design model">
+    <div class="kc-factory-panel__header"><span>Narrative Flow</span><strong>Decision-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-drivers" class="kc-factory-card"><small>01</small><strong>Why now</strong><span>Business pressure, risk, inefficiency or strategic timing.</span></a>
+      <a href="#recommended-structure" class="kc-factory-card"><small>02</small><strong>Direction</strong><span>Target outcome, recommended approach and roadmap shape.</span></a>
+      <a href="#expected-business-outcomes" class="kc-factory-card"><small>03</small><strong>Value</strong><span>Productivity, security, governance, innovation and cost impact.</span></a>
+      <a href="#executive-message-patterns" class="kc-factory-card"><small>04</small><strong>Decision</strong><span>Approval, funding, pilot, assessment or next-step request.</span></a>
+    </div>
+  </div>
+</section>
 
 <div class="kc-request-panel" aria-label="Executive summary editable asset request">
   <small>REQUESTABLE ASSET</small>
@@ -28,21 +51,17 @@ Executive Summary는 기술 설명을 임원 의사결정 언어로 바꾸는 �
 
 ## Executive Narrative Flow
 
-```mermaid
-flowchart LR
-  Challenge["Current Challenge<br/>risk, inefficiency, adoption pressure"]:::risk
-  Objective["Strategic Objective<br/>business and security outcome"]:::strategy
-  Approach["Recommended Approach<br/>architecture and program direction"]:::strategy
-  Value["Expected Value<br/>productivity, security, governance"]:::value
-  Decision["Executive Decision<br/>approval, funding, next step"]:::decision
-
-  Challenge --> Objective --> Approach --> Value --> Decision
-
-  classDef risk fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
-  classDef strategy fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
-  classDef value fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
-  classDef decision fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
-```
+<div class="kc-journey-map" aria-label="Executive narrative flow">
+  <div class="kc-journey-map__header"><span>Executive Narrative Flow</span><strong>Problem to decision</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Current Challenge</strong><span>Risk, inefficiency, adoption pressure or migration complexity.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Strategic Objective</strong><span>Business, security, governance or productivity outcome.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Recommended Approach</strong><span>Architecture direction, program model and delivery path.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Delivery Roadmap</strong><span>Phases, decision gates, dependencies and acceptance checkpoints.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Expected Value</strong><span>Productivity, security, governance, innovation and cost impact.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Executive Decision</strong><span>Approval, funding, pilot, assessment or next step.</span></div>
+  </div>
+</div>
 
 ## Recommended Structure
 

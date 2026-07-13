@@ -1,9 +1,33 @@
 ---
 title: "Work Breakdown Structure"
 description: "Work Breakdown Structure - The WBS is the delivery control layer that connects proposal scope, technical work, acceptance criteria and project governance."
+toc_max_heading_level: 2
 ---
 
 # Work Breakdown Structure
+
+<section class="kc-topic-hero" aria-label="Work Breakdown Structure hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+    <h2>Convert proposal scope into controlled work packages and acceptance evidence</h2>
+    <p>The WBS is the delivery control layer that connects SOW scope, workstreams, owners, dependencies, validation evidence, customer acceptance and operations handover.</p>
+    <div class="kc-hero-signal-row" aria-label="WBS template signals">
+      <span>Scope</span>
+      <span>Owner</span>
+      <span>Evidence</span>
+      <span>Handover</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="WBS template control model">
+    <div class="kc-factory-panel__header"><span>Delivery Control</span><strong>Evidence-led</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#recommended-wbs-model" class="kc-factory-card"><small>01</small><strong>Phases</strong><span>Discover, analyze, design, build, validate, deploy and close.</span></a>
+      <a href="#work-package-design-principles" class="kc-factory-card"><small>02</small><strong>Packages</strong><span>Owner, activity, dependency, deliverable and acceptance condition.</span></a>
+      <a href="#enterprise-wbs-example" class="kc-factory-card"><small>03</small><strong>Evidence</strong><span>Policy export, test result, report, checklist and acceptance record.</span></a>
+      <a href="#wbs-quality-criteria" class="kc-factory-card"><small>04</small><strong>Quality</strong><span>Traceability, ownership, evidence, governance and adoption.</span></a>
+    </div>
+  </div>
+</section>
 
 The WBS is the delivery control layer that connects proposal scope, technical work, acceptance criteria and project governance.
 
@@ -18,22 +42,17 @@ For Microsoft 365, Security, Copilot and migration engagements, the WBS should n
 
 ## WBS Control Flow
 
-```mermaid
-flowchart LR
-  Scope["SOW Scope<br/>deliverables, assumptions, exclusions"]:::source
-  Workstreams["Workstreams<br/>identity, endpoint, security, collaboration"]:::work
-  Packages["Work Packages<br/>owner, activity, dependency"]:::work
-  Evidence["Evidence<br/>test result, export, workshop record"]:::evidence
-  Acceptance["Acceptance<br/>customer review and sign-off"]:::accept
-  Handover["Handover<br/>operation guide and backlog"]:::accept
-
-  Scope --> Workstreams --> Packages --> Evidence --> Acceptance --> Handover
-
-  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
-  classDef work fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
-  classDef evidence fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.6px
-  classDef accept fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:1.8px
-```
+<div class="kc-journey-map" aria-label="WBS control flow">
+  <div class="kc-journey-map__header"><span>WBS Control Flow</span><strong>SOW scope to operations handover</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>SOW Scope</strong><span>Deliverables, assumptions, exclusions and approved boundaries.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Workstreams</strong><span>Identity, endpoint, security, collaboration, Copilot or migration.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Work Packages</strong><span>Owner, activity, dependency, schedule and acceptance condition.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Evidence</strong><span>Test result, export, workshop record, report and validation artifact.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Acceptance</strong><span>Customer review, sign-off, issue handling and decision record.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Handover</strong><span>Operation guide, backlog, support model and closure report.</span></div>
+  </div>
+</div>
 
 ## Recommended WBS Model
 
