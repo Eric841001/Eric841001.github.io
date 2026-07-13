@@ -7,6 +7,20 @@ description: Microsoft 365 Copilot ROI framework for measuring productivity, qua
 
 # Copilot ROI Framework
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">COPILOT VALUE REALIZATION</span>
+    <h2>Measure Copilot by business outcomes, not license assignment</h2>
+    <p>ROI should combine time saved, work quality, decision speed, adoption maturity, governance signals and repeatable use cases.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Copilot ROI focus">
+    <div><strong>Time</strong><span>Saved</span></div>
+    <div><strong>Quality</strong><span>Output</span></div>
+    <div><strong>Adopt</strong><span>Usage</span></div>
+    <div><strong>ROI</strong><span>Value</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Microsoft 365 Copilot adoption should be measured through business outcomes, not only license assignment or active usage.
@@ -64,20 +78,21 @@ Before measuring Copilot value, define the current baseline.
 
 ## Value Model
 
-```mermaid
-flowchart LR
-    USE[Copilot Use Cases] --> TIME[Time Savings]
-    USE --> QUALITY[Work Quality]
-    USE --> SPEED[Decision Speed]
-    USE --> RISK[Risk Reduction]
-
-    TIME --> VALUE[Business Value]
-    QUALITY --> VALUE
-    SPEED --> VALUE
-    RISK --> VALUE
-
-    VALUE --> ROI[Copilot ROI]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>ROI measurement model</span>
+    <strong>Use case to measurable value</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Copilot ROI measurement model">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Copilot use cases</strong><span>Define role-based scenarios such as meetings, email, reports, proposals and analysis.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Outcome signals</strong><span>Measure time savings, output quality, decision speed, risk reduction and adoption maturity.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Business value</strong><span>Translate signals into productivity, quality, operational efficiency and governance value.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>ROI narrative</strong><span>Present executive-ready value story with baseline, evidence, assumptions and next actions.</span></div>
+  </div>
+</div>
 
 ---
 

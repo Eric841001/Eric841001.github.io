@@ -20,23 +20,39 @@ keywords:
 
 # Microsoft Enterprise Architecture Search Guide
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">SEARCH AND TOPIC LANDING</span>
+    <h2>Find the right Microsoft architecture path faster</h2>
+    <p>This page connects search intent to practical Microsoft 365, Security, Copilot, AI Agent, Azure, Migration and consulting asset pages.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Search guide focus">
+    <div><strong>Find</strong><span>Intent</span></div>
+    <div><strong>Map</strong><span>Topic</span></div>
+    <div><strong>Use</strong><span>Asset</span></div>
+    <div><strong>Ask</strong><span>Contact</span></div>
+  </div>
+</section>
+
 This page helps visitors and search engines understand the main topics covered by the Youngsun Kang Enterprise Microsoft Knowledge Center.
 
 The Knowledge Center focuses on practical enterprise consulting topics across Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, Proposal assets and customer success reference patterns.
 
-```mermaid
-flowchart LR
-  Intent["Search intent<br/>problem,<br/>technology"]:::phase
-  Landing["Topic landing<br/>M365, Security,<br/>Copilot"]:::phase
-  Guide["Practical guide<br/>architecture,<br/>governance"]:::phase
-  Asset["Reusable asset<br/>SOW, WBS,<br/>checklist"]:::phase
-  Contact["Contact path<br/>asset request,<br/>discussion"]:::outcome
-
-  Intent --> Landing --> Guide --> Asset --> Contact
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Search journey</span>
+    <strong>Intent to asset request</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Search guide journey">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Search intent</strong><span>Visitor starts with a problem, technology, architecture area or consulting deliverable.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Topic landing</strong><span>Route to Microsoft 365, Security, Copilot, Azure, Migration or Proposal Center.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Practical guide</strong><span>Read architecture, governance, adoption, risk or implementation guidance.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Asset request</strong><span>Use the contact path for SOW, WBS, checklist or review template discussion.</span></div>
+  </div>
+</div>
 
 
 <div class="kc-signal-grid" aria-label="Architecture Keywords search landing cards">

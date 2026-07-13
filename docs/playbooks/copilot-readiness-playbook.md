@@ -7,6 +7,20 @@ sidebar_label: Copilot Readiness
 
 # Microsoft 365 Copilot Readiness Playbook
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">COPILOT READINESS PLAYBOOK</span>
+    <h2>Make Copilot adoption a governed readiness program</h2>
+    <p>Readiness should align identity, security, data, compliance, adoption and governance before pilot and enterprise rollout.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Copilot readiness playbook focus">
+    <div><strong>ID</strong><span>Identity</span></div>
+    <div><strong>Data</strong><span>Sharing</span></div>
+    <div><strong>Adopt</strong><span>Change</span></div>
+    <div><strong>KPI</strong><span>Value</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Microsoft 365 Copilot readiness is not a technical deployment activity.
@@ -32,22 +46,21 @@ The readiness assessment should answer:
 
 ## Readiness Framework
 
-```mermaid
-flowchart TB
-  Business["Business Alignment<br/>AI goals, use cases, success metrics"]:::start
-  Identity["Identity Assessment<br/>MFA, Conditional Access, admin roles"]:::stage
-  Security["Security Assessment<br/>Defender, endpoint, audit, risk posture"]:::stage
-  Governance["Governance Assessment<br/>policy, owner, exception, lifecycle"]:::stage
-  Information["Information Architecture<br/>SharePoint, Teams, OneDrive, oversharing"]:::stage
-  Adoption["Adoption Readiness<br/>champions, training, support, VOC"]:::stage
-  Roadmap["Roadmap Development<br/>pilot, remediation, rollout, KPI"]:::start
-
-  Business --> Identity --> Security --> Governance --> Information --> Adoption --> Roadmap
-  Roadmap -. readiness backlog .-> Governance
-
-  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Readiness framework</span>
+    <strong>Business goal to rollout roadmap</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Copilot readiness framework">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Business alignment</strong><span>Clarify AI goals, priority use cases, executive sponsorship and success metrics.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Technical readiness</strong><span>Assess identity, security, compliance, SharePoint, Teams and OneDrive risk posture.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Adoption readiness</strong><span>Prepare champions, training, support, communications and feedback channels.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Roadmap development</strong><span>Build pilot, remediation, rollout, KPI and governance backlog for scale.</span></div>
+  </div>
+</div>
 
 ---
 
