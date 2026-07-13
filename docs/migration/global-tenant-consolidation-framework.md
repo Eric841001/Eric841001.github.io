@@ -117,16 +117,21 @@ This is especially important when:
 
 ### Common Pattern
 
-```mermaid
-flowchart LR
-    LEGACY[Legacy Mail System] --> ALT1[Alternate SMTP Address]
-    EXO[Exchange Online] --> ALT2[Alternate SMTP Address]
-
-    ALT1 --> ROUTE[Mail Routing]
-    ALT2 --> ROUTE
-
-    ROUTE --> USER[Target Recipient]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Mail coexistence pattern</span>
+    <strong>Shared routing without confusing users</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Mail coexistence routing pattern">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Legacy mail system</strong><span>Keep primary mailbox service stable while alternate routing addresses are prepared.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Exchange Online tenant</strong><span>Map Exchange Online recipients, contacts, forwarding and accepted domain behavior.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Mail routing control</strong><span>Use alternate SMTP, contacts, connectors or forwarding based on coexistence duration.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Target recipient experience</strong><span>Users receive mail consistently while migration, domain transfer or coexistence continues.</span></div>
+  </div>
+</div>
 
 ### Design Elements
 
@@ -326,23 +331,21 @@ Download restriction can be implemented through Conditional Access and SharePoin
 
 ## Consolidation Decision Framework
 
-```mermaid
-flowchart TB
-    START[Consolidation Requirement] --> Q1{Must retire regional tenant?}
-
-    Q1 -->|Yes| FULL[Full Tenant Migration]
-    Q1 -->|No| Q2{Need shared collaboration only?}
-
-    Q2 -->|Yes| SYNC[Cross-Tenant Sync and B2B]
-    Q2 -->|No| Q3{Need shared SMTP domain?}
-
-    Q3 -->|Yes| DOMAIN[Domain and Mail Coexistence Design]
-    Q3 -->|No| HYBRID[Hybrid Multi-Tenant Governance]
-
-    DOMAIN --> Q4{Can domain cutover be scheduled?}
-    Q4 -->|Yes| FULL
-    Q4 -->|No| COEX[Long-Term Mail Coexistence]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Consolidation decision framework</span>
+    <strong>Choose migration, sync, coexistence or governance</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Tenant consolidation decision framework">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Consolidation requirement</strong><span>Confirm whether the driver is tenant retirement, collaboration, shared domain or governance cleanup.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Migration decision</strong><span>Use full tenant migration when regional tenant retirement and domain cutover are required.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Coexistence decision</strong><span>Use cross-tenant sync, B2B or mail coexistence when collaboration or domain sharing must continue.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Operating model</strong><span>Define hybrid multi-tenant governance, owners, exceptions, risk reporting and review cadence.</span></div>
+  </div>
+</div>
 
 ---
 

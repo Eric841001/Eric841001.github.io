@@ -389,13 +389,21 @@ Extend Zero Trust beyond traditional network boundaries.
 
 ## Integration
 
-```mermaid
-flowchart LR
-
-USER --> GSA
-GSA --> ENTRA
-ENTRA --> M365
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Secure access integration</span>
+    <strong>User access through identity and network controls</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Secure access integration">
+    <div class="kc-journey-node is-source"><small>01</small><strong>User and device context</strong><span>User, location, device compliance, session risk and app sensitivity are evaluated together.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Global Secure Access</strong><span>Internet, private and Microsoft traffic can be routed through controlled access policy.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Microsoft Entra ID</strong><span>Conditional Access, MFA, risk signals and session controls decide access posture.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Microsoft 365 workload</strong><span>Exchange, Teams, SharePoint, OneDrive and Copilot receive governed access.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -426,15 +434,21 @@ Provides:
 
 ## Incident Response Framework
 
-```mermaid
-flowchart TD
-
-DETECT --> INVESTIGATE
-INVESTIGATE --> CONTAIN
-CONTAIN --> REMEDIATE
-REMEDIATE --> RECOVER
-RECOVER --> REVIEW
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Incident response framework</span>
+    <strong>Detect, contain, recover, improve</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Incident response framework">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Detect and investigate</strong><span>Correlate Defender XDR and Sentinel signals, validate scope and identify affected users or devices.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Contain</strong><span>Disable risky sessions, isolate devices, block malicious artifacts and protect privileged accounts.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Remediate and recover</strong><span>Remove persistence, restore configuration, validate business service recovery and document evidence.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Review and improve</strong><span>Update policies, playbooks, detections, training and executive risk reporting.</span></div>
+  </div>
+</div>
 
 ---
 
