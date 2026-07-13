@@ -3,9 +3,33 @@ id: downloads-sow-template
 title: SOW Template
 description: "Statement of Work (SOW) - Item Description Customer Project Name Project Sponsor Project Manager Start Date End Date Duration"
 sidebar_label: SOW Template
+toc_max_heading_level: 2
 ---
 
 # Statement of Work (SOW)
+
+<section class="kc-topic-hero" aria-label="Download SOW template hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Requestable Consulting Asset</span>
+    <h2>Use SOW as the delivery baseline, not just a proposal attachment</h2>
+    <p>The SOW structure aligns objectives, scope, method, commercial plan, milestones, assumptions and approval into a decision-ready delivery baseline.</p>
+    <div class="kc-hero-signal-row" aria-label="Download SOW template signals">
+      <span>Objective</span>
+      <span>Scope</span>
+      <span>Method</span>
+      <span>Approval</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Download SOW request model">
+    <div class="kc-factory-panel__header"><span>SOW Asset</span><strong>Request-based</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#2-business-objectives" class="kc-factory-card"><small>01</small><strong>Objectives</strong><span>Business outcomes, success criteria and Microsoft workload value.</span></a>
+      <a href="#3-project-scope" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Included scope, excluded scope, assumptions and dependencies.</span></a>
+      <a href="#delivery-methodology" class="kc-factory-card"><small>03</small><strong>Method</strong><span>Assessment, design, implementation, handover and governance.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable SOW can be shared after scope and confidentiality review.</span></a>
+    </div>
+  </div>
+</section>
 
 > **Asset preview:** This page explains the public-safe SOW structure. Editable SOW files or customer-ready examples should be requested through [Contact and Asset Request](../contact) after confirming project scope, workload and confidentiality boundary.
 
@@ -29,20 +53,16 @@ The purpose of this engagement is to assess, design and implement a modern Micro
 
 The engagement will be delivered through a structured methodology covering assessment, architecture design, implementation planning and knowledge transfer.
 
-```mermaid
-flowchart LR
-  Objectives["Business objectives<br/>outcomes, scope,<br/>success criteria"]:::input
-  Scope["Engagement scope<br/>included, excluded,<br/>assumptions"]:::phase
-  Method["Delivery method<br/>assessment, design,<br/>implementation, handover"]:::phase
-  Plan["Commercial plan<br/>timeline, roles,<br/>milestones, risks"]:::phase
-  Approval["Approved SOW<br/>decision-ready<br/>delivery baseline"]:::outcome
-
-  Objectives --> Scope --> Method --> Plan --> Approval
-
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Download SOW template flow">
+  <div class="kc-journey-map__header"><span>SOW Asset Flow</span><strong>Objectives to approved delivery baseline</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Objectives</strong><span>Outcomes, scope intent, success criteria and executive driver.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Engagement Scope</strong><span>Included work, excluded work, assumptions and dependencies.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Delivery Method</strong><span>Assessment, design, implementation, handover and governance rhythm.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Commercial Plan</strong><span>Timeline, roles, milestones, risks and decision gates.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Approved SOW</strong><span>Decision-ready delivery baseline and acceptance model.</span></div>
+  </div>
+</div>
 
 ---
 

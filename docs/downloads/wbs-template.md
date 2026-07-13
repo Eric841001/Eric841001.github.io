@@ -3,9 +3,33 @@ id: downloads-wbs-template
 title: WBS Template
 description: "Work Breakdown Structure (WBS) Template - Item Description Customer Project Name Project Manager Start Date End Date Duration"
 sidebar_label: WBS Template
+toc_max_heading_level: 2
 ---
 
 # Work Breakdown Structure (WBS) Template
+
+<section class="kc-topic-hero" aria-label="Download WBS template hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Requestable Consulting Asset</span>
+    <h2>Break delivery into phases, owners, evidence and handover outputs</h2>
+    <p>The WBS template makes delivery ownership visible by connecting phases, tasks, deliverables, dependencies and acceptance evidence.</p>
+    <div class="kc-hero-signal-row" aria-label="Download WBS template signals">
+      <span>Initiate</span>
+      <span>Discover</span>
+      <span>Design</span>
+      <span>Deliver</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Download WBS request model">
+    <div class="kc-factory-panel__header"><span>WBS Asset</span><strong>Delivery-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#phase-1-project-initiation" class="kc-factory-card"><small>01</small><strong>Initiation</strong><span>Kickoff, stakeholders, governance setup and baseline schedule.</span></a>
+      <a href="#phase-2-discovery" class="kc-factory-card"><small>02</small><strong>Discovery</strong><span>Workshops, interviews, environment review and reference documents.</span></a>
+      <a href="#phase-3-assessment" class="kc-factory-card"><small>03</small><strong>Assessment</strong><span>Findings, risks, recommendations and prioritized delivery plan.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable WBS can be shared after confirming workstreams.</span></a>
+    </div>
+  </div>
+</section>
 
 > **Asset preview:** This page shows the WBS structure and delivery logic. Editable project planning files can be shared by request after confirming the engagement type, workstreams and target Microsoft workload.
 
@@ -24,19 +48,16 @@ sidebar_label: WBS Template
 
 > **Executive lens:** A WBS should make delivery ownership visible. Each phase should connect activity, deliverable, dependency and acceptance evidence so the project can be governed instead of merely tracked.
 
-```mermaid
-flowchart LR
-  Initiate["1. Initiation<br/>kickoff, governance,<br/>baseline schedule"]:::phase
-  Discover["2. Discovery<br/>workshops, interviews,<br/>environment review"]:::phase
-  Assess["3. Assessment<br/>findings, risks,<br/>recommendations"]:::phase
-  Design["4. Design<br/>target architecture,<br/>roadmap, controls"]:::phase
-  Deliver["5. Delivery<br/>implementation,<br/>handover, closure"]:::outcome
-
-  Initiate --> Discover --> Assess --> Design --> Deliver
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Download WBS template flow">
+  <div class="kc-journey-map__header"><span>WBS Delivery Flow</span><strong>Initiation to handover closure</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Initiation</strong><span>Kickoff, governance, stakeholder register and baseline schedule.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Discovery</strong><span>Workshops, interviews, environment review and documentation collection.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Assessment</strong><span>Findings, risks, recommendations and workstream priorities.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Design</strong><span>Target architecture, roadmap, controls and acceptance criteria.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Delivery</strong><span>Implementation, validation, handover, closure and lessons learned.</span></div>
+  </div>
+</div>
 
 ---
 

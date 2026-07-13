@@ -3,9 +3,33 @@ id: discovery-questionnaire
 title: Discovery Questionnaire
 description: "Discovery Questionnaire - This questionnaire is used during discovery workshops for Microsoft 365, Azure, Security, Copilot and migration engagements."
 sidebar_label: Discovery Questionnaire
+toc_max_heading_level: 2
 ---
 
 # Discovery Questionnaire
+
+<section class="kc-topic-hero" aria-label="Discovery Questionnaire asset hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Requestable Consulting Asset</span>
+    <h2>Capture business context, technical baseline and decision criteria before proposal</h2>
+    <p>This questionnaire turns early discovery into structured inputs for Microsoft 365, Azure, Security, Copilot and migration assessment or proposal planning.</p>
+    <div class="kc-hero-signal-row" aria-label="Discovery questionnaire signals">
+      <span>Context</span>
+      <span>Baseline</span>
+      <span>Risk</span>
+      <span>Roadmap</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Discovery Questionnaire request model">
+    <div class="kc-factory-panel__header"><span>Discovery Flow</span><strong>Workshop-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#1-business-context" class="kc-factory-card"><small>01</small><strong>Business</strong><span>Objective, sponsor, departments, timeline, budget and success criteria.</span></a>
+      <a href="#2-current-microsoft-365-environment" class="kc-factory-card"><small>02</small><strong>Baseline</strong><span>Tenant, workloads, licenses, hybrid state and third-party dependencies.</span></a>
+      <a href="#7-security-and-compliance" class="kc-factory-card"><small>03</small><strong>Risk</strong><span>Security, compliance, migration constraints and governance gaps.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable questionnaire can be shared after confirming scenario and boundary.</span></a>
+    </div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -13,20 +37,16 @@ This questionnaire is used during discovery workshops for Microsoft 365, Azure, 
 
 The objective is to capture business context, technical environment, risks, constraints and success criteria before proposal, assessment or implementation planning.
 
-```mermaid
-flowchart LR
-  Context["Business context<br/>objective, sponsor,<br/>timeline, success"]:::input
-  Baseline["Technical baseline<br/>tenant, identity,<br/>workloads, licenses"]:::phase
-  Risk["Risk discovery<br/>security, compliance,<br/>migration constraints"]:::phase
-  Priority["Priority alignment<br/>must-have, nice-to-have,<br/>decision criteria"]:::phase
-  Output["Engagement input<br/>assessment, proposal,<br/>roadmap"]:::outcome
-
-  Context --> Baseline --> Risk --> Priority --> Output
-
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Discovery questionnaire flow">
+  <div class="kc-journey-map__header"><span>Discovery Flow</span><strong>Workshop input to engagement roadmap</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Context</strong><span>Objective, sponsor, timeline, impacted teams and success definition.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Technical Baseline</strong><span>Tenant, identity, workloads, licenses and hybrid dependencies.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Risk Discovery</strong><span>Security, compliance, migration constraints and operational blockers.</span></div>
+    <div class="kc-journey-node"><small>04</small><strong>Priority Alignment</strong><span>Must-have, nice-to-have, decision criteria and sponsor expectations.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Engagement Input</strong><span>Assessment, proposal, roadmap, WBS and risk register.</span></div>
+  </div>
+</div>
 
 ---
 
