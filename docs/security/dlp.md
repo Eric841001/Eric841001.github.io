@@ -1,9 +1,24 @@
 ---
 title: Data Loss Prevention
+toc_max_heading_level: 2
 description: Microsoft Purview Data Loss Prevention guide for policy design, sensitive information types, endpoint DLP, user coaching, exceptions and Copilot data protection.
 ---
 
 # Data Loss Prevention
+
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">PURVIEW DLP CONTROL MODEL</span>
+    <h2>Protect sensitive work without breaking business flow</h2>
+    <p>DLP succeeds when protected data, policy mode, user coaching, exception approval and alert tuning are treated as one adoption journey.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="DLP operating focus">
+    <div><strong>Data</strong><span>Scope</span></div>
+    <div><strong>Policy</strong><span>Mode</span></div>
+    <div><strong>User</strong><span>Coaching</span></div>
+    <div><strong>Audit</strong><span>Evidence</span></div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -21,19 +36,21 @@ DLP should be designed as a business control, not only a security rule. The stro
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  Data[Sensitive Data]
-  SIT[Sensitive Info Types]
-  Policy[DLP Policy]
-  Action[Block, Warn or Audit]
-  Review[Alert Review]
-
-  Data --> SIT
-  SIT --> Policy
-  Policy --> Action
-  Action --> Review
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>DLP adoption loop</span>
+    <strong>Audit before enforcement</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="DLP policy architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Classify data</strong><span>Map sensitive information types, trainable classifiers and business-owned data categories.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design policy</strong><span>Separate workload scope, conditions, user groups, unmanaged device rules and policy tips.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Tune impact</strong><span>Start in audit or test mode, review false positives and tune thresholds before enforcement.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Operate exceptions</strong><span>Use named reviewers, time-bound exceptions, alert evidence and Copilot data protection reporting.</span></div>
+  </div>
+</div>
 
 ## Implementation
 

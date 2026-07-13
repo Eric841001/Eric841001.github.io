@@ -1,10 +1,25 @@
 ---
 sidebar_position: 1
 title: Security
+toc_max_heading_level: 2
 description: Microsoft Security architecture guide covering Zero Trust, Conditional Access, Defender, Purview, DLP and Copilot data protection.
 ---
 
 # Security
+
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">MICROSOFT SECURITY OPERATING MODEL</span>
+    <h2>From identity control to data-aware security operations</h2>
+    <p>Security architecture becomes practical when Entra ID, Conditional Access, Intune, Defender, Purview, DLP and audit evidence operate as one measurable control system.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Security operating model focus">
+    <div><strong>01</strong><span>Access</span></div>
+    <div><strong>02</strong><span>Device</span></div>
+    <div><strong>03</strong><span>Data</span></div>
+    <div><strong>04</strong><span>Evidence</span></div>
+  </div>
+</section>
 
 This Security section organizes Microsoft security architecture, Zero Trust controls and compliance-ready delivery patterns for enterprise Microsoft environments.
 
@@ -30,24 +45,21 @@ The guidance is shaped around field scenarios such as regulated SaaS access, Mic
 
 ## Visual Security Control Map
 
-```mermaid
-flowchart TB
-  Access["Access Control<br/>Entra ID, MFA, Conditional Access"]:::control
-  Device["Device Trust<br/>Intune, compliance, Defender for Endpoint"]:::control
-  Data["Data Protection<br/>Purview, labels, DLP, retention"]:::control
-  Threat["Threat Protection<br/>Defender XDR, Defender for Office 365"]:::control
-  Boundary["Collaboration Boundary<br/>Information Barriers, guest, sharing"]:::control
-  Evidence["Audit Evidence<br/>logs, exceptions, approvals, review cadence"]:::evidence
-  Copilot["Copilot Data Readiness<br/>permission cleanup and sensitive data control"]:::evidence
-
-  Access --> Device --> Data --> Threat --> Evidence
-  Data --> Boundary --> Evidence
-  Evidence --> Copilot
-  Copilot -. risk feedback .-> Access
-
-  classDef control fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef evidence fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Control spine</span>
+    <strong>Zero Trust to Copilot readiness</strong>
+  </div>
+  <div class="kc-journey-map kc-journey-map--security" aria-label="Security control map">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Access control</strong><span>Entra ID, MFA, Conditional Access, guest access and privileged role review.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Device trust</strong><span>Intune compliance, Defender onboarding and managed endpoint posture.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Data protection</strong><span>Purview labels, DLP, retention, audit and sensitive content boundaries.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Evidence and Copilot readiness</strong><span>Exceptions, approvals, review cadence and permission cleanup before AI rollout.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 
