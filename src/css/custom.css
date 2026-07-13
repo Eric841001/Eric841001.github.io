@@ -1137,6 +1137,89 @@ a.kc-pathway-step:hover {
   line-height: 1.5;
 }
 
+.kc-agent-factory-journey {
+  display: block;
+  padding: 1.45rem;
+  overflow: hidden;
+  border-color: #b9d9f8;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(20, 184, 166, 0.13), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(37, 99, 235, 0.16), transparent 30%),
+    linear-gradient(135deg, #ffffff 0%, #f4fbff 48%, #eef7ff 100%);
+}
+
+.kc-agent-factory-journey .kc-journey-map__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.kc-agent-factory-journey .kc-journey-map__header span {
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kc-agent-factory-journey .kc-journey-map__header strong {
+  padding: 0.48rem 0.82rem;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #0f766e;
+  font-size: 0.82rem;
+  font-weight: 950;
+  white-space: nowrap;
+}
+
+.kc-agent-factory-journey .kc-journey-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.kc-agent-factory-journey .kc-journey-track::before {
+  content: "";
+  position: absolute;
+  top: 2.4rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 2px;
+  background: linear-gradient(90deg, #14b8a6, #38bdf8 45%, #2563eb);
+  opacity: 0.55;
+}
+
+.kc-agent-factory-journey .kc-journey-node {
+  z-index: 1;
+  min-height: 210px;
+  padding: 1.05rem 1rem;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(248, 251, 255, 0.96));
+}
+
+.kc-agent-factory-journey .kc-journey-node::after {
+  content: none;
+}
+
+.kc-agent-factory-journey .kc-journey-node small {
+  box-shadow: 0 0 0 8px rgba(239, 246, 255, 0.96);
+}
+
+.kc-agent-factory-journey .kc-journey-node strong {
+  font-size: 1rem;
+}
+
+.kc-agent-factory-journey .kc-journey-node span {
+  font-size: 0.84rem;
+}
+
 .kc-operating-model {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1361,6 +1444,14 @@ a.kc-pathway-step:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .kc-agent-factory-journey .kc-journey-track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .kc-agent-factory-journey .kc-journey-track::before {
+    display: none;
+  }
+
   .kc-journey-node:nth-child(3)::after {
     content: none;
   }
@@ -1420,6 +1511,27 @@ a.kc-pathway-step:hover {
   .kc-platform-fit,
   .kc-entry-hub {
     grid-template-columns: 1fr;
+  }
+
+  .kc-agent-factory-journey {
+    padding: 1rem;
+  }
+
+  .kc-agent-factory-journey .kc-journey-map__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .kc-agent-factory-journey .kc-journey-map__header strong {
+    white-space: normal;
+  }
+
+  .kc-agent-factory-journey .kc-journey-track {
+    grid-template-columns: 1fr;
+  }
+
+  .kc-agent-factory-journey .kc-journey-node {
+    min-height: 0;
   }
 
   .kc-journey-node::after {

@@ -99,7 +99,7 @@ Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundryë¥¼ í™
 
 ## Agent Factory Journey Map
 
-<div class="kc-journey-map" aria-label="AI Agent Factory journey map">
+<div class="kc-journey-map kc-agent-factory-journey" aria-label="AI Agent Factory journey map">
   <div class="kc-journey-map__header">
     <span>Agent Factory Journey</span>
     <strong>Business demand to governed operation</strong>
