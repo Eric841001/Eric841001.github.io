@@ -5,6 +5,20 @@ description: OneDrive enterprise architecture guide for personal work files, syn
 
 # OneDrive
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">ONEDRIVE ENTERPRISE GOVERNANCE</span>
+    <h2>Govern personal work files as part of the collaboration architecture</h2>
+    <p>OneDrive affects sync, external sharing, retention, DLP, user departure, migration and Copilot readiness, so it should be designed with enterprise controls.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="OneDrive governance focus">
+    <div><strong>Sync</strong><span>Device</span></div>
+    <div><strong>Share</strong><span>Control</span></div>
+    <div><strong>DLP</strong><span>Data</span></div>
+    <div><strong>AI</strong><span>Ready</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 OneDrive provides personal work file storage, synchronization and sharing in Microsoft 365.

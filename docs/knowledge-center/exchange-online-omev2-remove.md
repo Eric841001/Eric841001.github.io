@@ -7,6 +7,20 @@ sidebar_label: EXO OMEv2 Remove Rule
 
 # Exchange Online OMEv2 and RMS Attachment Decryption Rule
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">EXCHANGE ONLINE ENCRYPTION EXCEPTION</span>
+    <h2>Handle OMEv2 and RMS removal as a controlled exception</h2>
+    <p>Transport rules that remove encryption must be narrow, approved, auditable and tied to a clear business process because they can increase data leakage risk.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="OMEv2 removal focus">
+    <div><strong>Scope</strong><span>Narrow</span></div>
+    <div><strong>Rule</strong><span>EXO</span></div>
+    <div><strong>Risk</strong><span>Data</span></div>
+    <div><strong>Audit</strong><span>Evidence</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide describes how Exchange Online transport rules can be used to remove OMEv2 protection and RMS attachment encryption for specific outbound mail scenarios.

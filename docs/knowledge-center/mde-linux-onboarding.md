@@ -7,6 +7,20 @@ sidebar_label: Linux Onboarding
 
 # Microsoft Defender for Endpoint Linux Onboarding
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">MDE LINUX ONBOARDING</span>
+    <h2>Extend Defender visibility to Linux servers and workloads</h2>
+    <p>Linux onboarding should validate distribution support, connectivity, package deployment, sensor health and Defender portal visibility before operational handover.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Linux onboarding focus">
+    <div><strong>Linux</strong><span>Server</span></div>
+    <div><strong>Agent</strong><span>MDE</span></div>
+    <div><strong>Portal</strong><span>Signal</span></div>
+    <div><strong>Ops</strong><span>Owner</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide describes Linux onboarding procedures for Microsoft Defender for Endpoint.

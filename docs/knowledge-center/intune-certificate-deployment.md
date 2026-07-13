@@ -7,6 +7,20 @@ sidebar_label: Certificate Deployment
 
 # Intune Trusted Certificate Deployment
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">INTUNE CERTIFICATE TRUST DEPLOYMENT</span>
+    <h2>Build the trust chain before certificate-based access</h2>
+    <p>Trusted root and intermediate certificates must be delivered and validated before Wi-Fi, VPN, SCEP, PKCS or app authentication scenarios depend on them.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Certificate deployment focus">
+    <div><strong>CA</strong><span>Root</span></div>
+    <div><strong>CER</strong><span>DER</span></div>
+    <div><strong>Intune</strong><span>Deploy</span></div>
+    <div><strong>Trust</strong><span>Verify</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Trusted Root CA certificates must be deployed before PKCS, SCEP, or imported certificate profiles can be used successfully.

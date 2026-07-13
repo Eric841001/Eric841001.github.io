@@ -7,6 +7,20 @@ sidebar_label: EXO Message Search and Purge
 
 # Exchange Online Message Search and Purge
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">EXCHANGE ONLINE INCIDENT OPERATION</span>
+    <h2>Search, validate and purge risky mail with approval evidence</h2>
+    <p>Message purge should be treated as a controlled incident response procedure because it can permanently remove content from user mailboxes.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Message purge focus">
+    <div><strong>Find</strong><span>Query</span></div>
+    <div><strong>Check</strong><span>Result</span></div>
+    <div><strong>Approve</strong><span>Owner</span></div>
+    <div><strong>Purge</strong><span>Report</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide describes how to search and purge incorrectly sent or risky email messages from Exchange Online mailboxes using Microsoft Purview compliance search and PowerShell.
