@@ -27,17 +27,21 @@ File Server Migration은 파일 복사 작업이 아니라 information architect
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  Source[File Server]
-  Inventory[Inventory and Permission Review]
-  Target[SharePoint, OneDrive or Azure Files]
-  Governance[Information Governance]
-
-  Source --> Inventory
-  Inventory --> Target
-  Target --> Governance
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>File server migration architecture</span>
+    <strong>Copy less, govern more</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="File server migration architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>File server source</strong><span>Identify shares, owners, stale data, sensitive files and business-critical folders.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Inventory and permission review</strong><span>Clean duplicate data, inherited permissions, orphaned users and unclear ownership.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Target platform</strong><span>Choose SharePoint, OneDrive or Azure Files based on collaboration and access needs.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Information governance</strong><span>Apply lifecycle, permissions, labels, DLP, retention and Copilot readiness controls.</span></div>
+  </div>
+</div>
 
 ## Implementation
 

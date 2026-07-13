@@ -42,13 +42,21 @@ This should only be used with:
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    USER[Internal Sender] --> EXO[Exchange Online]
-    EXO --> RULE[Transport Rule]
-    RULE --> REMOVE[Remove OMEv2 / RMS Attachment Encryption]
-    REMOVE --> EXT[Approved External Recipient]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Encryption exception flow</span>
+    <strong>Narrow transport rule scope</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="OMEv2 and RMS decryption transport rule flow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Internal sender</strong><span>Approved sender or business process requires a controlled encryption exception.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Exchange Online</strong><span>Message is evaluated by mail flow and transport rule conditions.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Transport rule</strong><span>Rule removes OMEv2 or RMS attachment protection only for approved scope.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>External recipient</strong><span>Approved recipient receives usable content with audit and exception record.</span></div>
+  </div>
+</div>
 
 ---
 

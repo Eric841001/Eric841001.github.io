@@ -44,13 +44,21 @@ A safer approach is to restrict direct attachment download and encourage users t
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    MAIL[Exchange Online Mailbox] --> OWA[Outlook on the Web]
-    OWA --> POLICY[OWA Mailbox Policy]
-    POLICY --> BLOCK[Block Direct Download]
-    POLICY --> CLOUD[Open in Cloud Viewer]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Attachment access control</span>
+    <strong>Block local download, preserve cloud preview</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Exchange Online attachment download restriction">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Exchange mailbox</strong><span>External or internal attachment arrives in a user mailbox.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Outlook on the web</strong><span>User accesses the message through browser-based experience.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>OWA mailbox policy</strong><span>Policy restricts direct download for selected users or scenarios.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Cloud viewer</strong><span>Users preview or open files in a safer cloud-controlled flow.</span></div>
+  </div>
+</div>
 
 ---
 

@@ -27,21 +27,21 @@ Azure Virtual Machines는 IaaS 기반 workload를 운영하기 위한 compute �
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  VM[Azure VM]
-  Network[VNet and Subnet]
-  Disk[Managed Disk]
-  Backup[Backup]
-  Monitor[Monitoring]
-  Security[Defender for Cloud]
-
-  VM --> Network
-  VM --> Disk
-  VM --> Backup
-  VM --> Monitor
-  VM --> Security
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Azure VM architecture</span>
+    <strong>Compute with governance controls</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Azure virtual machine architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Azure VM</strong><span>Define workload purpose, operating system, sizing, image and ownership.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Network and storage</strong><span>Place VM in VNet, subnet, NSG, managed disk and private access design.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Backup and monitoring</strong><span>Enable backup, patching, monitoring, logging and incident ownership.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Security baseline</strong><span>Apply Defender for Cloud, vulnerability management, access review and cost controls.</span></div>
+  </div>
+</div>
 
 ## Implementation
 

@@ -29,19 +29,21 @@ Known Folder Move, sync restriction, external sharing, retention, DLP, user depa
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  User[User]
-  Device[Managed Device]
-  OneDrive[OneDrive]
-  Purview[Purview]
-  Intune[Intune]
-
-  User --> Device
-  Device --> OneDrive
-  OneDrive --> Purview
-  Intune --> Device
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>OneDrive governance architecture</span>
+    <strong>Personal work files under enterprise controls</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="OneDrive governance architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>User and device</strong><span>Users access work files from managed devices with sync and compliance controls.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>OneDrive</strong><span>Known Folder Move, sync, sharing and lifecycle rules govern personal work content.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Intune and Purview</strong><span>Device compliance, DLP, labels, retention and audit controls apply around the content.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Copilot readiness</strong><span>Permissions, sharing and sensitive data posture are reviewed before AI rollout.</span></div>
+  </div>
+</div>
 
 ## Implementation
 

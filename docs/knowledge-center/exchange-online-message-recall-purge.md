@@ -43,15 +43,21 @@ Before execution:
 
 ## Process Overview
 
-```mermaid
-flowchart LR
-    INCIDENT[Incident Reported] --> QUERY[Define Search Query]
-    QUERY --> SEARCH[Create Compliance Search]
-    SEARCH --> VALIDATE[Validate Results]
-    VALIDATE --> APPROVAL[Approval]
-    APPROVAL --> PURGE[Purge Message]
-    PURGE --> REPORT[Report Outcome]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Message purge control flow</span>
+    <strong>Validate before destructive action</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Exchange Online message search and purge flow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Incident reported</strong><span>Confirm business owner, risk type, sender, recipients and message identifiers.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Compliance search</strong><span>Define query, create search and validate matched items before purge.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Approval gate</strong><span>Obtain authorized approval because purge can permanently remove mailbox content.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Purge and report</strong><span>Execute controlled purge and document result, scope, timestamp and evidence.</span></div>
+  </div>
+</div>
 
 ---
 

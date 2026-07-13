@@ -43,16 +43,21 @@ Before onboarding, confirm whether the server is internet-connected, proxy-route
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-    LINUX[Linux Server]
-    MDE[Defender Agent]
-    PORTAL[Defender Portal]
-
-    LINUX --> MDE
-    MDE --> PORTAL
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Linux onboarding architecture</span>
+    <strong>Server signal to Defender portal</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Linux Defender onboarding architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Linux server</strong><span>Supported Linux workload is selected for Defender for Endpoint onboarding.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Prerequisite check</strong><span>Confirm distribution, package manager, Python, connectivity and proxy requirements.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Defender agent</strong><span>Install, onboard and validate sensor health and telemetry flow.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Defender portal</strong><span>Confirm device inventory, alerting, vulnerability data and operational ownership.</span></div>
+  </div>
+</div>
 
 ---
 
