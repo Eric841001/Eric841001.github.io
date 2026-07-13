@@ -4,28 +4,49 @@ title: Security Modernization Program
 sidebar_label: Security Modernization Program
 sidebar_position: 4
 description: Microsoft Security modernization program for Zero Trust, Conditional Access, Defender, Purview, Intune, SaaS access and evidence-ready governance.
+toc_max_heading_level: 2
 ---
 
 # Security Modernization Program
+
+<section class="kc-topic-hero" aria-label="Security Modernization Program hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Security Modernization Program</span>
+    <h2>Move Microsoft security from settings review to evidence-ready operations</h2>
+    <p>This program connects Zero Trust, Conditional Access, Defender, Purview, Intune, SaaS access and security committee evidence into one measurable operating model.</p>
+    <div class="kc-hero-signal-row" aria-label="Security modernization signals">
+      <span>Baseline</span>
+      <span>Architecture</span>
+      <span>Evidence</span>
+      <span>Operate</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Security Modernization Program model">
+    <div class="kc-factory-panel__header"><span>Security Flow</span><strong>Evidence-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#common-drivers" class="kc-factory-card"><small>01</small><strong>Drivers</strong><span>SaaS approval, Copilot readiness, audit evidence and control ownership.</span></a>
+      <a href="#reference-architecture" class="kc-factory-card"><small>02</small><strong>Architecture</strong><span>Identity, endpoint, data, messaging, SaaS access and operations.</span></a>
+      <a href="#modernization-roadmap" class="kc-factory-card"><small>03</small><strong>Roadmap</strong><span>Baseline, policy design, evidence pack and operating cadence.</span></a>
+      <a href="#deliverables" class="kc-factory-card"><small>04</small><strong>Assets</strong><span>Reference architecture, CA design, Defender plan and approval pack.</span></a>
+    </div>
+  </div>
+</section>
 
 The Security Modernization Program helps organizations move from basic Microsoft 365 usage to an evidence-ready security operating model across identity, endpoint, collaboration, data protection and SaaS access.
 
 ## Visual Modernization Roadmap
 
-```mermaid
-flowchart TB
-  Baseline["Baseline Review<br/>identity, endpoint, data, messaging, SaaS"]:::stage
-  Architecture["Reference Architecture<br/>Zero Trust, Defender, Purview, Intune"]:::stage
-  Policy["Policy Design<br/>mandatory controls and exception rules"]:::stage
-  Evidence["Evidence Pack<br/>committee, audit, executive review"]:::gate
-  Operations["Security Operations<br/>owners, cadence, incident workflow"]:::gate
-
-  Baseline --> Architecture --> Policy --> Evidence --> Operations
-  Operations -. control tuning .-> Baseline
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef gate fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-journey-map" aria-label="Security modernization roadmap">
+  <div class="kc-journey-map__header"><span>Visual Modernization Roadmap</span><strong>Control baseline to operating evidence</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Baseline Review</strong><span>Identity, endpoint, data, messaging, SaaS and operations maturity.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Reference Architecture</strong><span>Zero Trust, Defender, Purview, Intune and access control model.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Policy Design</strong><span>Mandatory controls, exception rules, ownership and approval path.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Evidence Pack</strong><span>Committee, audit, executive review and decision-ready documentation.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Security Operations</strong><span>Owners, cadence, incident workflow and risk review rhythm.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Control Tuning</strong><span>Metrics, findings, exceptions and continuous improvement backlog.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

@@ -876,8 +876,89 @@ a.kc-pathway-step:hover {
 .kc-operating-model,
 .kc-maturity-ladder,
 .kc-platform-fit,
-.kc-entry-hub {
+.kc-entry-hub,
+.kc-reference-flow {
   margin: 1.6rem 0 2.3rem;
+}
+
+.kc-reference-flow {
+  display: grid;
+  gap: 1rem;
+  padding: 1.1rem;
+  border: 1px solid #cfe0f3;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(242, 249, 255, 0.94)),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.055) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(14, 165, 233, 0.055) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+  box-shadow: var(--kc-shadow-soft);
+}
+
+.kc-reference-flow__source,
+.kc-reference-flow__lane,
+.kc-reference-flow__outcome > div {
+  min-width: 0;
+  border: 1px solid #d6e6f7;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.kc-reference-flow__source {
+  padding: 1.1rem;
+  border-left: 4px solid #0f766e;
+}
+
+.kc-reference-flow__columns,
+.kc-reference-flow__outcome {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.kc-reference-flow__lane {
+  padding: 1rem;
+}
+
+.kc-reference-flow__lane > div {
+  margin-top: 0.78rem;
+  padding: 0.82rem;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.kc-reference-flow__outcome > div {
+  padding: 1rem;
+}
+
+.kc-reference-flow small {
+  display: inline-flex;
+  margin-bottom: 0.48rem;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #075985;
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kc-reference-flow strong {
+  display: block;
+  color: #0f3157;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.kc-reference-flow span {
+  display: block;
+  margin-top: 0.42rem;
+  color: #526174;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .kc-context-panel {

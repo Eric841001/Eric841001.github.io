@@ -4,29 +4,49 @@ title: Microsoft 365 Optimization Program
 sidebar_label: Microsoft 365 Optimization Program
 sidebar_position: 3
 description: Microsoft 365 optimization engagement model for tenant governance, identity, device, collaboration, messaging, security and operations improvement.
+toc_max_heading_level: 2
 ---
 
 # Microsoft 365 Optimization Program
+
+<section class="kc-topic-hero" aria-label="Microsoft 365 Optimization Program hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft 365 Optimization Program</span>
+    <h2>Turn an already deployed tenant into a governed operating platform</h2>
+    <p>This program helps organizations convert fragmented Microsoft 365 usage into a practical improvement backlog, policy workbook, ownership model and operations roadmap.</p>
+    <div class="kc-hero-signal-row" aria-label="M365 optimization signals">
+      <span>Assess</span>
+      <span>Prioritize</span>
+      <span>Design</span>
+      <span>Handover</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Microsoft 365 Optimization Program model">
+    <div class="kc-factory-panel__header"><span>Optimization Loop</span><strong>Operations-ready</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#assessment-scope" class="kc-factory-card"><small>01</small><strong>Assess</strong><span>Tenant, identity, device, collaboration, messaging and security state.</span></a>
+      <a href="#engagement-structure" class="kc-factory-card"><small>02</small><strong>Prioritize</strong><span>Risk, business impact, effort, dependency and improvement backlog.</span></a>
+      <a href="#delivery-model" class="kc-factory-card"><small>03</small><strong>Design</strong><span>Governance model, policy baseline, exception process and roadmap.</span></a>
+      <a href="#deliverables" class="kc-factory-card"><small>04</small><strong>Handover</strong><span>Administrator guide, workbook, review rhythm and operating ownership.</span></a>
+    </div>
+  </div>
+</section>
 
 The Microsoft 365 Optimization Program is a reusable engagement model for organizations that already own Microsoft 365 but need stronger governance, security, adoption and operating discipline.
 
 ## Visual Optimization Loop
 
-```mermaid
-flowchart TB
-  Assess["Assess Current State<br/>tenant, identity, devices, collaboration, security"]:::stage
-  Prioritize["Prioritize Backlog<br/>risk, impact, effort, dependency"]:::stage
-  Design["Design Governance<br/>policy baseline, owner model, exception process"]:::stage
-  Pilot["Pilot Remediation<br/>controlled validation and communication"]:::stage
-  Handover["Operations Handover<br/>admin guide, workbook, review rhythm"]:::gate
-  Improve["Continuous Improvement<br/>roadmap and quarterly review"]:::gate
-
-  Assess --> Prioritize --> Design --> Pilot --> Handover --> Improve
-  Improve -. next maturity cycle .-> Assess
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef gate fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-journey-map" aria-label="Microsoft 365 optimization loop">
+  <div class="kc-journey-map__header"><span>Visual Optimization Loop</span><strong>Current state to continuous improvement</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assess Current State</strong><span>Tenant, identity, devices, collaboration, messaging and security.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Prioritize Backlog</strong><span>Risk, impact, effort, dependency and operational value.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Design Governance</strong><span>Policy baseline, owner model, exception process and decision log.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pilot Remediation</strong><span>Controlled validation, user communication and operational feedback.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Operations Handover</strong><span>Administrator guide, workbook, review rhythm and support ownership.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Improve</strong><span>Roadmap, quarterly review and next maturity cycle.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

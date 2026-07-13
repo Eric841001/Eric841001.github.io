@@ -4,30 +4,49 @@ title: Enterprise AI Adoption Program
 description: "Enterprise AI Adoption Program - The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent initiatives into a governed business..."
 sidebar_label: Enterprise AI Adoption Program
 sidebar_position: 5
+toc_max_heading_level: 2
 ---
 
 # Enterprise AI Adoption Program
+
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Enterprise AI Adoption Program hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Enterprise AI Adoption Program</span>
+    <h2>Turn Copilot and agents into a governed business transformation program</h2>
+    <p>The program connects leadership intent, business scenarios, readiness, pilot, Agent portfolio, change management and measurable scale into one operating model.</p>
+    <div class="kc-hero-signal-row" aria-label="Enterprise AI adoption signals">
+      <span>Scenario</span>
+      <span>Readiness</span>
+      <span>Agents</span>
+      <span>Scale</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Enterprise AI Adoption Program model">
+    <div class="kc-factory-panel__header"><span>Program Flow</span><strong>Adoption-first</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#target-customers" class="kc-factory-card"><small>01</small><strong>Demand</strong><span>Leadership asks how AI should be used in real work.</span></a>
+      <a href="#adoption-framework" class="kc-factory-card"><small>02</small><strong>Readiness</strong><span>Identity, data, security, licensing and support model.</span></a>
+      <a href="#ai-use-case-portfolio" class="kc-factory-card"><small>03</small><strong>Portfolio</strong><span>Copilot, Copilot Studio, M365 Agents and human review.</span></a>
+      <a href="#operating-model" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Champions, governance, cost control and KPI reporting.</span></a>
+    </div>
+  </div>
+</section>
 
 The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent initiatives into a governed business transformation program rather than a tool rollout.
 
 ## Visual Program Story
 
-```mermaid
-flowchart TB
-  Ask["Leadership Ask<br/>How should we use AI?"]:::start
-  Scenarios["Business Scenarios<br/>prioritize real work and measurable value"]:::stage
-  Readiness["Readiness<br/>identity, data, security, licensing, support"]:::stage
-  Pilot["Pilot<br/>selected users, clear success metrics, VOC"]:::stage
-  Agents["Agent Portfolio<br/>Copilot Studio, M365 Agents, human review"]:::stage
-  Change["Adoption Engine<br/>champions, training, manager routines"]:::stage
-  Scale["Governed Scale<br/>owner model, cost controls, KPI reporting"]:::start
-
-  Ask --> Scenarios --> Readiness --> Pilot --> Agents --> Change --> Scale
-  Scale -. new scenarios .-> Scenarios
-
-  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-journey-map" aria-label="Enterprise AI Adoption Program story">
+  <div class="kc-journey-map__header"><span>Visual Program Story</span><strong>Leadership ask to governed scale</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Leadership Ask</strong><span>How should we use AI in practical enterprise work?</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Business Scenarios</strong><span>Prioritize real work patterns and measurable value.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Readiness</strong><span>Identity, data, security, licensing and support model.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pilot</strong><span>Selected users, success metrics, VOC and support rhythm.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Agent Portfolio</strong><span>Copilot Studio, M365 Agents, human review and owner model.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Governed Scale</strong><span>Cost controls, KPI reporting, champions and continuous scenarios.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

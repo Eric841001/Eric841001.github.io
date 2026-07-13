@@ -4,25 +4,47 @@ title: Multi-Tenant Governance Strategy
 description: "Multi Tenant Governance Strategy - Multi tenant governance is required when an enterprise group, holding company or acquisition driven organization..."
 sidebar_label: Multi-Tenant Governance Strategy
 sidebar_position: 6
+toc_max_heading_level: 2
 ---
 
 # Multi-Tenant Governance Strategy
 
+<section class="kc-topic-hero" aria-label="Multi-Tenant Governance Strategy hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Multi-Tenant Governance Strategy</span>
+    <h2>Decide which tenants to standardize, isolate, federate or migrate</h2>
+    <p>Multi-tenant governance turns scattered tenant ownership into a business-aligned model for identity, security baseline, collaboration, licensing, support and migration roadmap.</p>
+    <div class="kc-hero-signal-row" aria-label="Multi-tenant governance signals">
+      <span>Inventory</span>
+      <span>Classify</span>
+      <span>Baseline</span>
+      <span>Roadmap</span>
+    </div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Multi-Tenant Governance Strategy model">
+    <div class="kc-factory-panel__header"><span>Tenant Strategy</span><strong>Business-aligned</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#governance-challenges" class="kc-factory-card"><small>01</small><strong>Challenge</strong><span>Different tenants, policies, guests, data sharing and operating ownership.</span></a>
+      <a href="#strategy-components" class="kc-factory-card"><small>02</small><strong>Components</strong><span>Tenant role, identity, collaboration, security baseline and roadmap.</span></a>
+      <a href="#tenant-role-model" class="kc-factory-card"><small>03</small><strong>Classify</strong><span>Strategic, transitional, regulated, legacy and innovation tenants.</span></a>
+      <a href="#recommended-approach" class="kc-factory-card"><small>04</small><strong>Decide</strong><span>Consolidate, federate, isolate or migrate through phased governance.</span></a>
+    </div>
+  </div>
+</section>
+
 Multi-tenant governance is required when an enterprise group, holding company or acquisition-driven organization operates more than one Microsoft 365 or Azure tenant.
 
-```mermaid
-flowchart LR
-  Inventory["Tenant inventory<br/>domains, workloads,<br/>licenses, ownership"]:::phase
-  Classify["Tenant role model<br/>strategic, transitional,<br/>regulated, legacy"]:::phase
-  Baseline["Minimum baseline<br/>identity, security,<br/>collaboration, audit"]:::phase
-  Decide["Governance decisions<br/>consolidate, federate,<br/>isolate, migrate"]:::phase
-  Roadmap["Roadmap<br/>migration waves,<br/>operating model"]:::outcome
-
-  Inventory --> Classify --> Baseline --> Decide --> Roadmap
-
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Multi-tenant governance strategy map">
+  <div class="kc-journey-map__header"><span>Strategy Map</span><strong>Inventory to migration roadmap</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Tenant Inventory</strong><span>Domains, workloads, licenses, ownership and operational dependencies.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Tenant Role Model</strong><span>Strategic, transitional, regulated, legacy or innovation tenant.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Minimum Baseline</strong><span>Identity, security, collaboration, audit, guest and support controls.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance Decisions</strong><span>Consolidate, federate, isolate, migrate or maintain with compensating controls.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Operating Model</strong><span>Governance board, exception process, platform ownership and reporting.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Roadmap</strong><span>Migration waves, coexistence, retirement and quarterly governance review.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

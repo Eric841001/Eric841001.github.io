@@ -2,9 +2,46 @@
 sidebar_position: 1
 title: Projects Library
 description: Anonymized Microsoft 365, Security, Copilot, Azure, migration and governance project patterns with reusable consulting assets and customer success references.
+toc_max_heading_level: 2
 ---
 
 # Projects Library
+
+<section class="kc-topic-hero" aria-label="Projects Library landing hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Anonymized Customer Success Portfolio</span>
+    <h2>Turn delivery experience into public-safe reference stories</h2>
+    <p>Projects Library organizes Microsoft 365, Security, Copilot, AI Agent, Azure, Migration and Governance experience into reusable customer success patterns without exposing customer names, project names or commercial details.</p>
+    <div class="kc-hero-signal-row" aria-label="Project library signals">
+      <span>Industry</span>
+      <span>Challenge</span>
+      <span>Delivery</span>
+      <span>Assets</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Projects Library entry actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="./customer-success-reference-patterns">Reference Patterns</a>
+      <a class="kc-topic-button" href="./case-study-enterprise-ai-agent-factory">AI Agent Factory</a>
+      <a class="kc-topic-button" href="../contact">Request Private Asset</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Projects Library operating model">
+    <div class="kc-factory-panel__header">
+      <span>Reference Flow</span>
+      <strong>Public-safe</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#project-pattern-map" class="kc-factory-card"><small>01</small><strong>Capture</strong><span>Industry, business challenge, workload scope and delivery context.</span></a>
+      <a href="#reference-themes" class="kc-factory-card"><small>02</small><strong>Normalize</strong><span>Convert lessons into repeatable architecture and governance patterns.</span></a>
+      <a href="#reference-quality-model" class="kc-factory-card"><small>03</small><strong>Package</strong><span>Map patterns to SOW, WBS, workbook, risk register and roadmap assets.</span></a>
+      <a href="#contact--asset-request" class="kc-factory-card"><small>04</small><strong>Share</strong><span>Explain public method first; share detailed documents only by request.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Confidentiality boundary</strong>
+      <span>Customer names, account identifiers, contract details and internal file names stay out of public reference pages.</span>
+    </div>
+  </div>
+</section>
 
 This section captures anonymized enterprise project experience and reusable delivery patterns from Microsoft cloud consulting work. Customer names are intentionally omitted. References are grouped by industry, workload and delivery pattern so they can be reused safely for architecture, presales and governance discussions.
 
@@ -52,16 +89,20 @@ Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance 프로�
 
 ## Project Pattern Map
 
-```mermaid
-flowchart TB
-  Industry["Industry Context\nmanufacturing, finance, retail, logistics"] --> Challenge["Business Challenge\nrisk, adoption, migration, governance"]
-  Challenge --> Scope["Technical Scope\nMicrosoft 365, Security, Copilot, Azure"]
-  Scope --> Delivery["Delivery Pattern\nassessment, design, rollout, handover"]
-  Delivery --> Assets["Reusable Assets\nSOW, WBS, workbook, risk register"]
-  Delivery --> Lessons["Lessons Learned\ncontrols, dependencies, adoption signals"]
-  Assets --> Reference["Public Reference Pattern\nanonymized and reusable"]
-  Lessons --> Reference
-```
+<div class="kc-journey-map" aria-label="Project pattern map">
+  <div class="kc-journey-map__header">
+    <span>Project Pattern Map</span>
+    <strong>Private delivery to reusable public reference</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Industry Context</strong><span>Manufacturing, finance, retail, logistics, healthcare or enterprise group.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Business Challenge</strong><span>Risk, adoption, migration, governance, modernization or cost control.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Technical Scope</strong><span>Microsoft 365, Security, Copilot, Azure, endpoint or migration workloads.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Delivery Pattern</strong><span>Assessment, design, rollout, validation, handover and operating model.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Reusable Assets</strong><span>SOW, WBS, workbook, risk register, architecture and executive roadmap.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Reference Story</strong><span>Public-safe success pattern with industry, approach and outcome.</span></div>
+  </div>
+</div>
 
 ## Project Categories
 

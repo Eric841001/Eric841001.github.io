@@ -122,38 +122,31 @@ For more detailed examples, see:
 
 ## Pattern-to-Asset Mapping
 
-```mermaid
-flowchart TB
-  Challenge["Customer Challenge<br/>business risk<br/>adoption target<br/>migration scope"]:::source
-
-  subgraph Discovery["Discovery and Architecture"]
-    Assessment["Assessment Workbook<br/>current state<br/>gap<br/>readiness"]:::asset
-    Architecture["Reference Architecture<br/>identity<br/>data<br/>endpoint"]:::design
-    Controls["Security and<br/>Governance Controls<br/>policy<br/>evidence"]:::control
-  end
-
-  subgraph Delivery["Delivery and Enablement"]
-    SOW["SOW / WBS<br/>scope<br/>milestone<br/>dependency"]:::asset
-    Plan["Delivery Plan<br/>wave<br/>pilot<br/>rollout"]:::design
-    Runbook["Runbook / Handover<br/>operation<br/>ownership<br/>escalation"]:::control
-  end
-
-  Metrics["Executive Metrics<br/>risk reduction<br/>adoption<br/>stability"]:::metric
-  Reference["Anonymized<br/>Reference Pattern<br/>industry<br/>scenario<br/>asset"]:::reference
-
-  Challenge --> Assessment
-  Challenge --> SOW
-  Assessment --> Architecture --> Controls --> Metrics
-  SOW --> Plan --> Runbook --> Metrics
-  Metrics --> Reference
-
-  classDef source fill:#0f3157,stroke:#0891b2,color:#ffffff,stroke-width:2px
-  classDef asset fill:#ecfeff,stroke:#22d3ee,color:#102033,stroke-width:1.6px
-  classDef design fill:#eff6ff,stroke:#60a5fa,color:#102033,stroke-width:1.6px
-  classDef control fill:#f8fafc,stroke:#94a3b8,color:#102033,stroke-width:1.6px
-  classDef metric fill:#fff7ed,stroke:#fb923c,color:#102033,stroke-width:1.8px
-  classDef reference fill:#ecfdf5,stroke:#10b981,color:#102033,stroke-width:2px
-```
+<div class="kc-reference-flow" aria-label="Pattern to asset mapping">
+  <div class="kc-reference-flow__source">
+    <small>Customer Challenge</small>
+    <strong>Business risk, adoption target or migration scope</strong>
+    <span>The public story starts from the problem pattern, not the customer identity.</span>
+  </div>
+  <div class="kc-reference-flow__columns">
+    <div class="kc-reference-flow__lane">
+      <small>Discovery and Architecture</small>
+      <div><strong>Assessment Workbook</strong><span>Current state, gap, readiness and risk register.</span></div>
+      <div><strong>Reference Architecture</strong><span>Identity, data, endpoint, workload and control model.</span></div>
+      <div><strong>Security / Governance Controls</strong><span>Policy, evidence, owner and exception process.</span></div>
+    </div>
+    <div class="kc-reference-flow__lane">
+      <small>Delivery and Enablement</small>
+      <div><strong>SOW / WBS</strong><span>Scope, milestone, dependency, owner and acceptance criteria.</span></div>
+      <div><strong>Delivery Plan</strong><span>Wave, pilot, rollout, change impact and validation plan.</span></div>
+      <div><strong>Runbook / Handover</strong><span>Operations, ownership, escalation and support rhythm.</span></div>
+    </div>
+  </div>
+  <div class="kc-reference-flow__outcome">
+    <div><small>Executive Metrics</small><strong>Risk reduction, adoption, stability and delivery repeatability</strong></div>
+    <div><small>Public Output</small><strong>Anonymized reference pattern by industry, scenario and asset type</strong></div>
+  </div>
+</div>
 
 ## Reference Request Checklist
 

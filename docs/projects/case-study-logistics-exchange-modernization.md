@@ -4,28 +4,58 @@ title: Logistics Exchange Online Modernization Case Study
 sidebar_label: Logistics Exchange Modernization
 sidebar_position: 9
 description: Anonymized logistics Exchange Online modernization case study covering migration readiness, mail flow, security review, cutover, rollback and operations handover.
+toc_max_heading_level: 2
 ---
 
 # Logistics Exchange Online Modernization Case Study
+
+<section class="kc-topic-hero" aria-label="Logistics Exchange Online modernization case study hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Logistics Collaboration Modernization</span>
+    <h2>Modernize Exchange Online without losing operational continuity</h2>
+    <p>This anonymized pattern frames mail modernization as a business continuity program across readiness, mail flow, security review, cutover, rollback, hypercare and operations handover.</p>
+    <div class="kc-hero-signal-row" aria-label="Logistics Exchange modernization signals">
+      <span>Readiness</span>
+      <span>Mail flow</span>
+      <span>Cutover</span>
+      <span>Handover</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Logistics Exchange modernization actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="#delivery-approach">Delivery Approach</a>
+      <a class="kc-topic-button" href="../microsoft365/exchange-online">Exchange Online</a>
+      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Logistics Exchange modernization operating model">
+    <div class="kc-factory-panel__header"><span>Modernization Flow</span><strong>Continuity-first</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Distributed logistics teams require stable mail and collaboration continuity.</span></a>
+      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Exchange Online, Defender for Office 365, Teams, SharePoint, OneDrive and Entra ID.</span></a>
+      <a href="#success-metrics" class="kc-factory-card"><small>03</small><strong>Control</strong><span>Readiness, pilot quality, cutover control, rollback and security review.</span></a>
+      <a href="#lessons-learned" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Administrator guide, support process and hypercare issue tracker.</span></a>
+    </div>
+  </div>
+</section>
 
 This anonymized case study summarizes a logistics-sector Microsoft 365 modernization pattern centered on Exchange Online, security review and operational continuity.
 
 ## Visual Modernization Pattern
 
-```mermaid
-flowchart LR
-  Readiness["Readiness<br/>source mail, identity, DNS, dependencies"]:::stage
-  Design["Target Design<br/>mail flow, security baseline, coexistence"]:::stage
-  Pilot["Pilot<br/>selected users, validation, issue log"]:::stage
-  Cutover["Cutover<br/>batch migration, rollback, communication"]:::stage
-  Hypercare["Hypercare<br/>support, admin guide, handover"]:::stage
-  Operate["Operate<br/>stable mail, security review, runbook"]:::stage
-
-  Readiness --> Design --> Pilot --> Cutover --> Hypercare --> Operate
-  Hypercare -. issue learning .-> Design
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Logistics Exchange Online modernization pattern">
+  <div class="kc-journey-map__header">
+    <span>Visual Modernization Pattern</span>
+    <strong>Readiness to stable operations</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Readiness</strong><span>Source mail, identity, DNS, network and dependency inventory.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Target Design</strong><span>Mail flow, security baseline, coexistence, routing and validation path.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot</strong><span>Selected users, issue log, coexistence validation and support learning.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Cutover</strong><span>Batch migration, communication, rollback readiness and checklist control.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Hypercare</strong><span>Issue handling, user support, administrator guide and operations handover.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate</strong><span>Stable mail, security review, runbook and continuous improvement.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

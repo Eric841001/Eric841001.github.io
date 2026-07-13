@@ -4,9 +4,46 @@ title: Enterprise AI Agent Factory Case Study
 sidebar_label: Enterprise AI Agent Factory
 sidebar_position: 8
 description: An anonymized customer success pattern for Copilot Studio, AI Agent prototyping, Agent Factory governance and enterprise AI adoption.
+toc_max_heading_level: 2
 ---
 
 # Enterprise AI Agent Factory Case Study
+
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Enterprise AI Agent Factory case study hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Anonymized AI Agent Reference Pattern</span>
+    <h2>Move from scattered agent ideas to a governed portfolio</h2>
+    <p>This public-safe case pattern shows how enterprise AI ideas can be converted into a repeatable Agent Factory model across intake, prioritization, pilot, governance, catalog and lifecycle operations.</p>
+    <div class="kc-hero-signal-row" aria-label="AI Agent Factory case signals">
+      <span>Use case</span>
+      <span>Data boundary</span>
+      <span>Approval</span>
+      <span>Telemetry</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="AI Agent Factory case entry actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="#agent-opportunity-patterns">Opportunity Patterns</a>
+      <a class="kc-topic-button" href="#agent-factory-architecture">Architecture</a>
+      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="AI Agent Factory case operating snapshot">
+    <div class="kc-factory-panel__header">
+      <span>Case Snapshot</span>
+      <strong>Customer-safe</strong>
+    </div>
+    <div class="kc-factory-grid">
+      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Enterprise teams needed practical agent candidates beyond generic Copilot training.</span></a>
+      <a href="#key-challenges" class="kc-factory-card"><small>02</small><strong>Challenge</strong><span>Ideas existed, but value, risk, owner and data readiness were inconsistent.</span></a>
+      <a href="#governance-model" class="kc-factory-card"><small>03</small><strong>Governance</strong><span>Each agent required owner, data boundary, approval, monitoring and lifecycle rules.</span></a>
+      <a href="#success-metrics" class="kc-factory-card"><small>04</small><strong>Outcome</strong><span>The program became a managed portfolio instead of isolated experiments.</span></a>
+    </div>
+    <div class="kc-guardrail-panel">
+      <strong>Reference boundary</strong>
+      <span>Customer names, source file names, internal project names, commercial terms and confidential architecture details are intentionally excluded.</span>
+    </div>
+  </div>
+</section>
 
 This anonymized case study summarizes an enterprise AI Agent and Copilot Studio enablement pattern. Customer names, internal project names, source file names, commercial terms and confidential architecture details are intentionally excluded.
 
@@ -45,27 +82,20 @@ The objective was to convert scattered AI ideas into a governed Agent portfolio 
 
 ## Agent Factory Architecture
 
-```mermaid
-flowchart TB
-  Intake["Use Case<br/>Intake"]
-  Prioritize["Value / Risk<br/>Feasibility"]
-  Design["Agent Design<br/>Document"]
-  Data["Knowledge<br/>Readiness"]
-  Build["Copilot Studio<br/>Prototype"]
-  Review["Security and<br/>Business Review"]
-  Pilot["Pilot and<br/>Validation"]
-  Catalog["Enterprise<br/>Agent Catalog"]
-  Operate["Lifecycle<br/>Monitoring"]
-
-  Intake --> Prioritize
-  Prioritize --> Design
-  Design --> Data
-  Data --> Build
-  Build --> Review
-  Review --> Pilot
-  Pilot --> Catalog
-  Catalog --> Operate
-```
+<div class="kc-journey-map" aria-label="Agent Factory architecture map">
+  <div class="kc-journey-map__header">
+    <span>Agent Factory Architecture</span>
+    <strong>Use case intake to lifecycle monitoring</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Use Case Intake</strong><span>Capture business pain, target users, expected value and repeated work pattern.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Value / Risk Fit</strong><span>Score feasibility, data sensitivity, action risk, reuse potential and pilot priority.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Agent Design</strong><span>Define knowledge sources, tools, permissions, human review and expected outputs.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security Review</strong><span>Validate identity, data boundary, DLP, audit, approval and publishing controls.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Pilot and Catalog</strong><span>Build limited pilots, collect feedback and register approved agents in a catalog.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate</strong><span>Monitor value, quality, incidents, usage, cost and retirement readiness.</span></div>
+  </div>
+</div>
 
 ## Delivery Approach
 

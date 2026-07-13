@@ -4,29 +4,58 @@ title: Manufacturing Copilot Adoption Case Study
 sidebar_label: Manufacturing Copilot Adoption
 sidebar_position: 7
 description: Anonymized manufacturing Copilot adoption case study covering readiness, governance, pilot planning, WBS, adoption metrics and value tracking.
+toc_max_heading_level: 2
 ---
 
 # Manufacturing Copilot Adoption Case Study
+
+<section class="kc-topic-hero kc-topic-hero--compact-agent" aria-label="Manufacturing Copilot adoption case study hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Manufacturing AI Adoption Pattern</span>
+    <h2>Make Copilot adoption measurable across office, plant and operations roles</h2>
+    <p>This anonymized pattern frames Copilot as a governed adoption program, connecting readiness, security, role-based scenarios, champions, feedback and executive value reporting.</p>
+    <div class="kc-hero-signal-row" aria-label="Manufacturing Copilot adoption signals">
+      <span>Readiness</span>
+      <span>Use cases</span>
+      <span>Pilot</span>
+      <span>Value</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Manufacturing Copilot adoption actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="#delivery-approach">Delivery Approach</a>
+      <a class="kc-topic-button" href="../copilot/adoption-program">Adoption Program</a>
+      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Manufacturing Copilot adoption operating model">
+    <div class="kc-factory-panel__header"><span>Adoption Flow</span><strong>Role-based</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Mixed office, plant and operations roles require different adoption paths.</span></a>
+      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Readiness</strong><span>Identity, security, data, license and Microsoft 365 workload readiness.</span></a>
+      <a href="#delivery-approach" class="kc-factory-card"><small>03</small><strong>Pilot</strong><span>Scenario priority, champions, training, feedback and support model.</span></a>
+      <a href="#success-pattern" class="kc-factory-card"><small>04</small><strong>Scale</strong><span>Value reporting, governance and repeatable adoption assets.</span></a>
+    </div>
+  </div>
+</section>
 
 This anonymized case study summarizes a manufacturing-sector Copilot adoption pattern. Customer names, internal project names and commercial details are intentionally excluded.
 
 ## Visual Success Pattern
 
-```mermaid
-flowchart TB
-  Challenge["Manufacturing Challenge<br/>mixed office, plant and operation roles"]:::start
-  Readiness["Readiness Review<br/>identity, data, security, license baseline"]:::stage
-  Scenarios["Role-Based Scenarios<br/>meeting, report, proposal, knowledge search"]:::stage
-  Pilot["Controlled Pilot<br/>champions, support, feedback, KPI"]:::stage
-  Governance["Governance Model<br/>data protection, owner, escalation, roadmap"]:::stage
-  Value["Executive Value Story<br/>confidence, productivity, measurable adoption"]:::start
-
-  Challenge --> Readiness --> Scenarios --> Pilot --> Governance --> Value
-  Value -. scale decision .-> Scenarios
-
-  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-journey-map" aria-label="Manufacturing Copilot adoption visual success pattern">
+  <div class="kc-journey-map__header">
+    <span>Visual Success Pattern</span>
+    <strong>Readiness to measurable adoption</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Manufacturing Challenge</strong><span>Mixed office, plant and operations roles with different work patterns.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Readiness Review</strong><span>Identity, data, security, license baseline and collaboration posture.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Role-Based Scenarios</strong><span>Meetings, reports, proposals, knowledge search and operational updates.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Controlled Pilot</strong><span>Champions, support, feedback, KPI and data protection guidance.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Governance Model</strong><span>Owner, escalation, roadmap, adoption rhythm and executive reporting.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Value Story</strong><span>Confidence, productivity, measurable adoption and scale decision.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

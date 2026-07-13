@@ -4,29 +4,58 @@ title: Enterprise Group Governance Case Study
 sidebar_label: Enterprise Group Governance
 sidebar_position: 10
 description: Anonymized enterprise group governance case study for Entra ID, Intune, Microsoft 365, multi-tenant operating model and policy workbook design.
+toc_max_heading_level: 2
 ---
 
 # Enterprise Group Governance Case Study
+
+<section class="kc-topic-hero" aria-label="Enterprise group governance case study hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Enterprise Group Governance Pattern</span>
+    <h2>Standardize identity, device and collaboration governance across business units</h2>
+    <p>This anonymized pattern shows how enterprise groups can convert scattered tenant, identity, Intune and collaboration decisions into a traceable policy workbook and operating model.</p>
+    <div class="kc-hero-signal-row" aria-label="Enterprise group governance signals">
+      <span>Identity</span>
+      <span>Device</span>
+      <span>Tenant</span>
+      <span>Exception</span>
+    </div>
+    <div class="kc-topic-hero__actions" aria-label="Enterprise group governance actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="#governance-decision-model">Decision Model</a>
+      <a class="kc-topic-button" href="../architecture/governance-architecture">Governance Architecture</a>
+      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    </div>
+  </div>
+
+  <div class="kc-factory-panel" aria-label="Enterprise group governance operating model">
+    <div class="kc-factory-panel__header"><span>Governance Flow</span><strong>Workbook-driven</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Multiple business units operate with different policy variants and maturity levels.</span></a>
+      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Baseline</strong><span>Entra ID, Intune, Microsoft 365, Teams, SharePoint, Defender and Purview.</span></a>
+      <a href="#governance-decision-model" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Standardization questions, exception questions and operating ownership.</span></a>
+      <a href="#business-outcome" class="kc-factory-card"><small>04</small><strong>Outcome</strong><span>Clearer tenant strategy, safer exceptions and repeatable governance review.</span></a>
+    </div>
+  </div>
+</section>
 
 This anonymized case study summarizes an enterprise group pattern involving Entra ID, Intune, Microsoft 365 governance and multi-tenant operating decisions.
 
 ## Visual Governance Pattern
 
-```mermaid
-flowchart TB
-  Group["Enterprise Group Context<br/>multiple business units and policy variants"]:::start
-  Identity["Identity Governance<br/>roles, groups, MFA, Conditional Access"]:::stage
-  Device["Device Governance<br/>Intune enrollment, compliance, platform policy"]:::stage
-  Collaboration["Collaboration Governance<br/>Teams, SharePoint, guest, lifecycle"]:::stage
-  Tenant["Tenant Strategy<br/>strategic, transitional, regulated, legacy"]:::stage
-  Operations["Operations Model<br/>exception, support, review cadence"]:::start
-
-  Group --> Identity --> Device --> Collaboration --> Tenant --> Operations
-  Operations -. policy renewal .-> Identity
-
-  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-journey-map" aria-label="Enterprise group governance visual pattern">
+  <div class="kc-journey-map__header">
+    <span>Visual Governance Pattern</span>
+    <strong>Policy variants to operating cadence</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Group Context</strong><span>Multiple business units, policy variants and different maturity levels.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Identity Governance</strong><span>Roles, groups, MFA, Conditional Access and privileged access decisions.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Device Governance</strong><span>Intune enrollment, compliance, platform policy and exception handling.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Collaboration Governance</strong><span>Teams, SharePoint, guests, external sharing and lifecycle ownership.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Tenant Strategy</strong><span>Strategic, transitional, regulated and legacy tenant decisions.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operations Model</strong><span>Exception, support, review cadence, renewal and escalation path.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 
