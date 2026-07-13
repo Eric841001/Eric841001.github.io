@@ -5,6 +5,20 @@ description: Microsoft 365 licensing architecture guide for Business Premium, E3
 
 # Microsoft 365 Licensing
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">MICROSOFT 365 LICENSING ARCHITECTURE</span>
+    <h2>Map business controls to the right license mix</h2>
+    <p>Licensing should connect user segmentation, security and compliance requirements, Copilot readiness, cost scenarios and governance cadence.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Microsoft 365 licensing focus">
+    <div><strong>Req</strong><span>Control</span></div>
+    <div><strong>User</strong><span>Persona</span></div>
+    <div><strong>Cost</strong><span>Scenario</span></div>
+    <div><strong>Gov</strong><span>Review</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Microsoft 365 licensing should translate business requirements into the right mix of productivity, security, compliance, device management and AI capabilities.
@@ -33,19 +47,21 @@ Use this page for the current planning model: [Microsoft Licensing Feature Updat
 
 ## Architecture
 
-```mermaid
-flowchart TB
-  Requirements[Business and Control Requirements]
-  License[License Mapping]
-  Users[User Segmentation]
-  Cost[Cost Scenario]
-  Governance[License Governance]
-
-  Requirements --> License
-  License --> Users
-  Users --> Cost
-  Cost --> Governance
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Licensing architecture</span>
+    <strong>Requirement to governance cycle</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Microsoft 365 licensing architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Business requirements</strong><span>Capture productivity, security, compliance, endpoint, Copilot and operational needs.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>License mapping</strong><span>Map features to Business Premium, E3, E5, add-ons and Copilot licenses.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>User segmentation</strong><span>Assign licenses by persona, risk, workload, geography and adoption maturity.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Cost governance</strong><span>Review cost scenarios, utilization, disabled plans and recurring optimization cadence.</span></div>
+  </div>
+</div>
 
 ## Implementation
 

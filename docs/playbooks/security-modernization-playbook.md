@@ -7,6 +7,20 @@ sidebar_label: Security Modernization
 
 # Security Modernization Playbook
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">SECURITY MODERNIZATION PLAYBOOK</span>
+    <h2>Move from product deployment to Zero Trust operating maturity</h2>
+    <p>Security modernization should connect identity, endpoint, data, threat detection, compliance and SOC operations into a phased roadmap.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Security modernization focus">
+    <div><strong>ID</strong><span>Identity</span></div>
+    <div><strong>EDR</strong><span>Endpoint</span></div>
+    <div><strong>Data</strong><span>Purview</span></div>
+    <div><strong>SOC</strong><span>Operate</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Security modernization is not a product deployment initiative.
@@ -33,20 +47,21 @@ The program should achieve:
 
 ## Modernization Framework
 
-```mermaid
-flowchart TB
-  Current["Current State Assessment<br/>identity, endpoint, data, threat posture"]:::stage
-  Risk["Risk Identification<br/>exposure, impact, control gap"]:::stage
-  Target["Target Security Architecture<br/>Zero Trust, Defender, Purview, Intune"]:::stage
-  Roadmap["Implementation Roadmap<br/>phases, dependencies, owners"]:::stage
-  Deploy["Deployment<br/>policy, onboarding, validation"]:::stage
-  Operate["Operationalization<br/>SOC, review cadence, evidence"]:::stage
-
-  Current --> Risk --> Target --> Roadmap --> Deploy --> Operate
-  Operate -. tuning feedback .-> Risk
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Modernization framework</span>
+    <strong>Assess, design, deploy, operate</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Security modernization framework">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Current state</strong><span>Assess identity, endpoint, data, threat posture, compliance and operational ownership.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Risk and target architecture</strong><span>Map exposure, impact, control gaps and target Zero Trust architecture.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Roadmap and deployment</strong><span>Plan phases, dependencies, policy rollout, onboarding, validation and owner alignment.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Operationalization</strong><span>Run SOC cadence, review exceptions, collect evidence and tune controls continuously.</span></div>
+  </div>
+</div>
 
 ---
 

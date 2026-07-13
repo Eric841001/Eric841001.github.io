@@ -7,6 +7,20 @@ sidebar_label: M365 Assessment
 
 # Microsoft 365 Assessment Playbook
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">M365 ASSESSMENT PLAYBOOK</span>
+    <h2>Turn tenant review into a prioritized modernization roadmap</h2>
+    <p>The assessment connects license use, identity, security, governance, collaboration and Copilot readiness into an actionable executive plan.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="M365 assessment focus">
+    <div><strong>Scope</strong><span>Inventory</span></div>
+    <div><strong>Risk</strong><span>Gap</span></div>
+    <div><strong>Design</strong><span>Target</span></div>
+    <div><strong>Plan</strong><span>Roadmap</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 The Microsoft 365 Assessment Playbook provides a structured methodology for evaluating tenant configuration, licensing, security posture, governance maturity and operational readiness.
@@ -30,20 +44,21 @@ The assessment should answer:
 
 ## Assessment Framework
 
-```mermaid
-flowchart TB
-  Discovery["Discovery<br/>stakeholders, scope, inventory"]:::stage
-  Current["Current State Assessment<br/>tenant, license, identity, workloads"]:::stage
-  Gap["Gap Analysis<br/>risk, control, adoption, operations"]:::stage
-  Risk["Risk Assessment<br/>impact, likelihood, owner, mitigation"]:::stage
-  Target["Target State Design<br/>governance, security, collaboration"]:::stage
-  Roadmap["Roadmap Development<br/>priority, timeline, quick wins"]:::stage
-
-  Discovery --> Current --> Gap --> Risk --> Target --> Roadmap
-  Roadmap -. reassess .-> Current
-
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Assessment framework</span>
+    <strong>Discovery to roadmap</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Microsoft 365 assessment framework">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Discovery</strong><span>Confirm stakeholders, tenant scope, workload inventory and assessment objectives.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Current state</strong><span>Review tenant configuration, licenses, identity, workloads and operations.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Gap and risk</strong><span>Identify control gaps, adoption issues, operational risk, owner and mitigation priority.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Target roadmap</strong><span>Define target state, quick wins, timeline, dependencies and executive decision points.</span></div>
+  </div>
+</div>
 
 ---
 

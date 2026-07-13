@@ -5,6 +5,20 @@ description: Microsoft 365 Copilot governance guide for data access, oversharing
 
 # Copilot Governance
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">COPILOT GOVERNANCE MODEL</span>
+    <h2>Launch Copilot as a governed business capability</h2>
+    <p>Copilot governance connects data access, identity, security, adoption, agent extensibility, audit and business value into one operating model.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Copilot governance focus">
+    <div><strong>Data</strong><span>Access</span></div>
+    <div><strong>Risk</strong><span>Policy</span></div>
+    <div><strong>Agent</strong><span>Control</span></div>
+    <div><strong>Value</strong><span>KPI</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Microsoft 365 Copilot governance defines how organizations control data access, user readiness, prompt behavior, extensibility, auditability and adoption.
@@ -21,21 +35,21 @@ Copilot should not be launched as a license assignment project. It should be lau
 
 ## Architecture
 
-```mermaid
-flowchart TB
-  Data[Data Governance]
-  Identity[Identity and Access]
-  Security[Security Controls]
-  Adoption[Adoption Program]
-  Agents[Agent Governance]
-  Copilot[Microsoft 365 Copilot]
-
-  Data --> Copilot
-  Identity --> Copilot
-  Security --> Copilot
-  Adoption --> Copilot
-  Agents --> Copilot
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Governance architecture</span>
+    <strong>Controls around Copilot usage</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Copilot governance architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Data governance</strong><span>Review SharePoint, Teams, OneDrive, sensitivity, DLP and oversharing risk.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Identity and security</strong><span>Use Entra ID, Conditional Access, Defender, audit and admin role controls.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Adoption and agents</strong><span>Govern prompt guidance, Copilot Studio, agent lifecycle and business champion feedback.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Copilot operation</strong><span>Measure usage, value, incidents, policy exceptions and continuous improvement.</span></div>
+  </div>
+</div>
 
 ## Implementation
 
