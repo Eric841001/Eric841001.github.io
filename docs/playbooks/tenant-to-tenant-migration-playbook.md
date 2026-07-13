@@ -92,33 +92,21 @@ Typical tenant-to-tenant migration scope includes:
 
 ## Migration Architecture
 
-```mermaid
-flowchart TB
-    SRC[Source Tenant] --> DISC[Discovery and Assessment]
-    DISC --> DESIGN[Migration Design]
-    DESIGN --> PILOT[Pilot Migration]
-    PILOT --> CUTOVER[Production Cutover]
-    CUTOVER --> VALIDATE[Validation]
-    VALIDATE --> HYPERCARE[Hypercare]
-
-    SRC --> S_ID[Source Identity]
-    SRC --> S_EXO[Source Exchange Online]
-    SRC --> S_TEAMS[Source Teams]
-    SRC --> S_SPO[Source SharePoint]
-    SRC --> S_OD[Source OneDrive]
-
-    TARGET[Target Tenant] --> T_ID[Target Identity]
-    TARGET --> T_EXO[Target Exchange Online]
-    TARGET --> T_TEAMS[Target Teams]
-    TARGET --> T_SPO[Target SharePoint]
-    TARGET --> T_OD[Target OneDrive]
-
-    S_ID --> T_ID
-    S_EXO --> T_EXO
-    S_TEAMS --> T_TEAMS
-    S_SPO --> T_SPO
-    S_OD --> T_OD
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Tenant-to-tenant migration architecture</span>
+    <strong>Source to target with controlled cutover</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Tenant migration architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Discovery and assessment</strong><span>Inventory identities, Exchange, Teams, SharePoint, OneDrive, policies and dependencies.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Migration design</strong><span>Map source to target, define coexistence, tooling, batch plan, DNS and rollback assumptions.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot and cutover</strong><span>Validate representative users, perform production cutover and stabilize mail flow and access.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Validation and hypercare</strong><span>Confirm workloads, permissions, mobile, Outlook, Teams, SharePoint and business process continuity.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -251,20 +239,21 @@ flowchart TB
 
 ### Domain Cutover Sequence
 
-```mermaid
-sequenceDiagram
-    participant SRC as Source Tenant
-    participant DNS as DNS Provider
-    participant TGT as Target Tenant
-    participant USER as Users
-
-    SRC->>SRC: Remove domain dependencies
-    SRC->>DNS: Lower DNS TTL
-    SRC->>SRC: Remove domain
-    TGT->>DNS: Verify domain
-    DNS->>TGT: Update MX / SPF / Autodiscover
-    TGT->>USER: Activate target mail flow
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Domain cutover sequence</span>
+    <strong>Lower risk before DNS changes</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Domain cutover sequence">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Prepare source tenant</strong><span>Remove domain dependencies, aliases, mail flow blockers and workload references.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Prepare DNS</strong><span>Lower TTL and confirm MX, SPF, DKIM, DMARC, Autodiscover and relay dependencies.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Verify target tenant</strong><span>Add and verify the domain in the target tenant, then activate target mail routing.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>User validation</strong><span>Confirm sign-in, Outlook, mobile access, internal and external mail flow after cutover.</span></div>
+  </div>
+</div>
 
 ---
 

@@ -236,21 +236,21 @@ Security controls should include:
 
 Recommended architecture:
 
-```mermaid
-flowchart LR
-    ID[Identity Signals] --> XDR[Microsoft Defender XDR]
-    DEV[Device Signals] --> XDR
-    MAIL[Email Signals] --> XDR
-    APP[Cloud App Signals] --> XDR
-
-    XDR --> SOC[Security Operations]
-    XDR --> IR[Incident Response]
-
-    PUR[Microsoft Purview] --> DATA[Data Protection]
-    DATA --> DLP[DLP Policies]
-    DATA --> LABEL[Sensitivity Labels]
-    DATA --> AUDIT[Audit and Compliance]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>M365 security architecture</span>
+    <strong>Signal, protect, respond</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Microsoft 365 security architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Security signals</strong><span>Identity, device, email and cloud app signals flow into Microsoft Defender XDR.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>XDR correlation</strong><span>Incidents are grouped with entities, severity, timeline and response guidance.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Data protection</strong><span>Microsoft Purview, sensitivity labels, DLP and audit protect collaboration data.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>SOC operation</strong><span>Security teams act through triage, incident response, evidence and improvement backlog.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -269,18 +269,21 @@ Successful Copilot adoption requires:
 
 Copilot readiness model:
 
-```mermaid
-flowchart TB
-    ID[Identity Readiness] --> READY[Copilot Readiness]
-    SEC[Security Readiness] --> READY
-    DATA[Data Governance] --> READY
-    SPO[SharePoint Permission Review] --> READY
-    PUR[Purview Labels and DLP] --> READY
-    ADOPT[User Adoption and Change Management] --> READY
-
-    READY --> PILOT[Copilot Pilot]
-    PILOT --> SCALE[Enterprise Rollout]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Copilot readiness architecture</span>
+    <strong>Data-safe adoption path</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Copilot readiness model">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Identity and security</strong><span>Entra ID, Conditional Access, Defender, device compliance and privileged access are reviewed first.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Data governance</strong><span>SharePoint permissions, Purview labels, DLP and content ownership are cleaned up.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot readiness</strong><span>Use cases, user groups, risk controls, help desk and adoption messaging are prepared.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Enterprise rollout</strong><span>Scale with adoption telemetry, policy review, champion feedback and governance cadence.</span></div>
+  </div>
+</div>
 
 ---
 

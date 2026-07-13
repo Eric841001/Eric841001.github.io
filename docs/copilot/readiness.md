@@ -300,17 +300,21 @@ Therefore, excessive permissions, poorly governed SharePoint sites and unmanaged
 
 ### Recommended Governance Model
 
-```mermaid
-flowchart LR
-    STEER[Executive Steering] --> GOV[AI Governance Board]
-    GOV --> IT[IT Platform Team]
-    GOV --> SEC[Security Team]
-    GOV --> COMP[Compliance Team]
-    GOV --> BIZ[Business Champions]
-    IT --> OPS[Operations and Support]
-    BIZ --> ADOPT[Adoption Feedback]
-    ADOPT --> GOV
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Copilot governance model</span>
+    <strong>Business adoption with accountable control</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Copilot governance model">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Executive steering</strong><span>Set value thesis, risk appetite, sponsorship, adoption priorities and decision rights.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>AI governance board</strong><span>Coordinate IT platform, security, compliance, privacy and business champions.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Operations and support</strong><span>Run help desk, policy exceptions, feedback intake, training and service improvement.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Adoption feedback loop</strong><span>Return usage, risk, satisfaction and business outcome signals to governance decisions.</span></div>
+  </div>
+</div>
 
 ### Key Questions
 
@@ -373,23 +377,21 @@ Recommended pilot group:
 
 ## Implementation Roadmap
 
-```mermaid
-gantt
-    title Copilot Readiness and Adoption Roadmap
-    dateFormat  YYYY-MM-DD
-    section Readiness
-    Assessment               :a1, 2026-01-01, 2w
-    Risk Remediation          :a2, after a1, 3w
-    section Governance
-    AI Policy and Governance  :b1, after a1, 3w
-    Label and DLP Review      :b2, after a1, 4w
-    section Pilot
-    Pilot Preparation         :c1, after a2, 2w
-    Copilot Pilot             :c2, after c1, 4w
-    section Rollout
-    Adoption Program          :d1, after c2, 4w
-    Enterprise Rollout        :d2, after d1, 8w
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Copilot readiness roadmap</span>
+    <strong>Assessment to enterprise rollout</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Copilot readiness roadmap">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Readiness assessment</strong><span>Score identity, security, data, compliance, adoption and governance readiness.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Risk remediation</strong><span>Clean permissions, tune labels and DLP, align AI policy and prepare support model.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot and adoption</strong><span>Run controlled pilot, collect feedback, train champions and prove business scenarios.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Enterprise rollout</strong><span>Scale by persona, measure outcomes, operate governance and continuously improve prompts and workflows.</span></div>
+  </div>
+</div>
 
 ---
 
