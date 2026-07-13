@@ -3,10 +3,28 @@ id: july-2026-microsoft-licensing-update
 title: Microsoft Licensing Feature Update
 description: Microsoft licensing feature update guide for Microsoft 365, Office 365 E3, Microsoft 365 E3, Defender, Purview, Copilot Studio and service plan validation.
 sidebar_label: Licensing Feature Update
+toc_max_heading_level: 2
 ---
 
 # Microsoft Licensing Feature Update
 
+<section class="kc-topic-hero" aria-label="Microsoft licensing feature update hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">2026 Licensing Feature Review</span>
+    <h2>Validate included service plans before making architecture assumptions</h2>
+    <p>Feature updates should be translated into service plan validation, control mapping, security baseline decisions, Copilot readiness and operational roadmap changes.</p>
+    <div class="kc-hero-signal-row" aria-label="Licensing feature update signals"><span>SKU</span><span>Plans</span><span>Controls</span><span>Roadmap</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Licensing feature update model">
+    <div class="kc-factory-panel__header"><span>Feature Review</span><strong>Service-plan first</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#feature-change-watch" class="kc-factory-card"><small>01</small><strong>Watch</strong><span>Office 365 E3, Microsoft 365 E3, Defender, Purview, Entra, Intune and Copilot Studio.</span></a>
+      <a href="#why-sku-names-are-not-enough" class="kc-factory-card"><small>02</small><strong>Validate</strong><span>SKU name, string ID, Graph ID and enabled service plans.</span></a>
+      <a href="#e3-review-pattern" class="kc-factory-card"><small>03</small><strong>Review</strong><span>Confirm whether E3 means Office 365 E3 or Microsoft 365 E3.</span></a>
+      <a href="../toolkit/license-advisor" class="kc-factory-card"><small>04</small><strong>Decide</strong><span>Map capability to architecture, risk and phased rollout.</span></a>
+    </div>
+  </div>
+</section>
 
 <div class="kc-outcome-grid" aria-label="July 2026 licensing licensing decision cards">
   <div class="kc-outcome-card">
@@ -92,20 +110,16 @@ The platform itself has also changed. New agent experience, Microsoft IQ, Work I
 
 ## Recommended License Architecture
 
-```mermaid
-flowchart TB
-  SKU[SKU Name] --> Plans[Service Plans]
-  Plans --> Enabled[Enabled Per User]
-  Enabled --> Controls[Control Mapping]
-  Controls --> Architecture[Target Architecture]
-  Architecture --> Adoption[Adoption and Operations]
-
-  Defender[Defender Capability] --> Controls
-  Purview[Purview Capability] --> Controls
-  Entra[Entra Capability] --> Controls
-  Intune[Intune Capability] --> Controls
-  Copilot[Copilot and Agent Capability] --> Adoption
-```
+<div class="kc-journey-map" aria-label="Recommended license architecture">
+  <div class="kc-journey-map__header"><span>Recommended License Architecture</span><strong>SKU name to target architecture</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>SKU Name</strong><span>Friendly product name, string ID or Graph identifier.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Service Plans</strong><span>Included service plans, prerequisites and plan-level capability.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Enabled Per User</strong><span>Assigned users, disabled service plans and actual availability.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Control Mapping</strong><span>Identity, endpoint, mail, data, audit, Copilot and agent controls.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Target Architecture</strong><span>Baseline design, add-on decision, rollout plan and governance model.</span></div>
+  </div>
+</div>
 
 ## Review Checklist
 

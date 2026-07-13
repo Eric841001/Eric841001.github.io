@@ -2,9 +2,28 @@
 sidebar_position: 1
 title: Licensing
 description: "Licensing - This Licensing section helps compare Microsoft 365, Security, Compliance, Entra, Intune, Defender, Purview and Copilot licensing decisions..."
+toc_max_heading_level: 2
 ---
 
 # Licensing
+
+<section class="kc-topic-hero" aria-label="Microsoft licensing overview hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Microsoft Licensing Architecture</span>
+    <h2>Connect license decisions to security, AI readiness and operating value</h2>
+    <p>Licensing decisions should start from personas, required controls, adoption readiness, service plan validation and cost governance rather than SKU names alone.</p>
+    <div class="kc-hero-signal-row" aria-label="Licensing overview signals"><span>Persona</span><span>Control</span><span>Adoption</span><span>Cost</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Microsoft licensing decision model">
+    <div class="kc-factory-panel__header"><span>Decision Model</span><strong>Capability-led</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#licensing-feature-watch" class="kc-factory-card"><small>01</small><strong>Feature Watch</strong><span>Included service plans, enabled features and roadmap changes.</span></a>
+      <a href="#executive-decision-model" class="kc-factory-card"><small>02</small><strong>Executive Model</strong><span>Business driver, control requirement, segmentation and adoption plan.</span></a>
+      <a href="#decision-areas" class="kc-factory-card"><small>03</small><strong>Decision Areas</strong><span>E3, E5, Business Premium, Defender, Purview, Entra and Copilot.</span></a>
+      <a href="../toolkit/license-advisor" class="kc-factory-card"><small>04</small><strong>Advisor</strong><span>Map personas and capabilities to license options.</span></a>
+    </div>
+  </div>
+</section>
 
 This Licensing section helps compare Microsoft 365, Security, Compliance, Entra, Intune, Defender, Purview and Copilot licensing decisions from a consulting and business value perspective.
 
@@ -31,21 +50,17 @@ Licensing guidance should connect cost to architecture, security controls, adopt
 
 ## Visual License Decision Map
 
-```mermaid
-flowchart LR
-  Driver["Business Driver<br/>security, compliance, AI, migration, renewal"]:::start
-  Persona["User Segmentation<br/>executive, knowledge worker, frontline, admin"]:::stage
-  Controls["Required Controls<br/>Entra, Intune, Defender, Purview, DLP"]:::stage
-  Adoption["Adoption Readiness<br/>training, support, use case value"]:::stage
-  Cost["Cost Governance<br/>assignment, utilization, review cadence"]:::stage
-  Decision["License Decision<br/>baseline, add-on, phased rollout"]:::start
-
-  Driver --> Persona --> Controls --> Adoption --> Cost --> Decision
-  Decision -. optimization cycle .-> Persona
-
-  classDef start fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-```
+<div class="kc-journey-map" aria-label="Visual license decision map">
+  <div class="kc-journey-map__header"><span>Visual License Decision Map</span><strong>Business driver to optimization cycle</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Driver</strong><span>Security, compliance, AI, migration, renewal or cost pressure.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>User Segmentation</strong><span>Executive, knowledge worker, frontline, admin and high-risk personas.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Required Controls</strong><span>Entra, Intune, Defender, Purview, DLP, audit and Copilot readiness.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Adoption Readiness</strong><span>Training, support, use case value and operational ownership.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Cost Governance</strong><span>Assignment, utilization, service plan validation and review cadence.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>License Decision</strong><span>Baseline, add-on, phased rollout and optimization cycle.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 
