@@ -1,10 +1,25 @@
 ---
 sidebar_position: 1
 title: Architecture Center
+toc_max_heading_level: 2
 description: "Architecture Center - The Architecture Center organizes Microsoft cloud reference architectures, design patterns and decision frameworks for enterprise..."
 ---
 
 # Architecture Center
+
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">ENTERPRISE ARCHITECTURE CENTER</span>
+    <h2>Turn business pressure into architecture decisions and delivery assets</h2>
+    <p>This center connects Microsoft 365, Security, Copilot, Azure, Migration and Governance into a practical consulting architecture flow.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Architecture center focus">
+    <div><strong>01</strong><span>Driver</span></div>
+    <div><strong>02</strong><span>Design</span></div>
+    <div><strong>03</strong><span>Assets</span></div>
+    <div><strong>04</strong><span>Operate</span></div>
+  </div>
+</section>
 
 The Architecture Center organizes Microsoft cloud reference architectures, design patterns and decision frameworks for enterprise consulting work.
 
@@ -40,22 +55,21 @@ Architecture content here is intended to be practical. Each topic connects busin
 
 ## Visual Architecture Map
 
-```mermaid
-flowchart TB
-  Business["Business Driver<br/>risk, growth, productivity, AI adoption"]:::driver
-  Requirements["Requirements<br/>security, compliance, user experience, cost"]:::stage
-  Decisions["Architecture Decisions<br/>identity, data, network, workload, governance"]:::stage
-  Blueprint["Target Blueprint<br/>Microsoft 365, Security, Copilot, Azure, Migration"]:::blueprint
-  Delivery["Delivery Assets<br/>SOW, WBS, risk register, runbook"]:::stage
-  Operations["Operating Model<br/>owners, cadence, exception, KPI"]:::driver
-
-  Business --> Requirements --> Decisions --> Blueprint --> Delivery --> Operations
-  Operations -. feedback and improvement .-> Decisions
-
-  classDef driver fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-  classDef stage fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef blueprint fill:#eff6ff,stroke:#2563eb,color:#102033,stroke-width:1.8px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Architecture consulting flow</span>
+    <strong>Decision to operating model</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Architecture consulting map">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Business driver</strong><span>Risk, growth, productivity, compliance, migration or AI adoption pressure.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Architecture decisions</strong><span>Identity, data, network, workload, tenant, security and governance choices.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Target blueprint</strong><span>Microsoft 365, Security, Copilot, Azure, Migration and Governance reference design.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Delivery assets</strong><span>SOW, WBS, risk register, runbook, decision log and operating cadence.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

@@ -1,10 +1,25 @@
 ---
 sidebar_position: 1
 title: Azure
+toc_max_heading_level: 2
 description: "Azure - This Azure section focuses on enterprise cloud architecture patterns that commonly support Microsoft 365, Security, Copilot and migration programs."
 ---
 
 # Azure
+
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">AZURE ENTERPRISE FOUNDATION</span>
+    <h2>Build the cloud foundation before workloads scale</h2>
+    <p>Azure architecture should connect landing zone, identity, network, security, operations and cost ownership before migration, AI or modernization programs expand.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Azure foundation focus">
+    <div><strong>LZ</strong><span>Foundation</span></div>
+    <div><strong>ID</strong><span>Access</span></div>
+    <div><strong>SEC</strong><span>Control</span></div>
+    <div><strong>FIN</strong><span>Cost</span></div>
+  </div>
+</section>
 
 This Azure section focuses on enterprise cloud architecture patterns that commonly support Microsoft 365, Security, Copilot and migration programs.
 
@@ -12,22 +27,21 @@ Azure work in enterprise consulting is rarely isolated. It often supports identi
 
 ## Visual Azure Foundation Map
 
-```mermaid
-flowchart TB
-  Governance["Governance<br/>management groups, policy, tagging"]:::foundation
-  Identity["Identity<br/>Entra ID, RBAC, PIM, break-glass"]:::foundation
-  Network["Network<br/>hub-spoke, DNS, firewall, private access"]:::foundation
-  Security["Security<br/>Defender, logging, vulnerability management"]:::foundation
-  Operations["Operations<br/>monitoring, backup, patching, incident process"]:::foundation
-  Cost["FinOps<br/>budget, reservation, rightsizing, chargeback"]:::foundation
-  Workload["Workload Landing<br/>VMs, apps, migration staging, AI services"]:::workload
-
-  Governance --> Identity --> Network --> Security --> Operations --> Cost --> Workload
-  Workload -. operational feedback .-> Governance
-
-  classDef foundation fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef workload fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Azure foundation map</span>
+    <strong>Governed workload landing</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Azure foundation map">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Governance baseline</strong><span>Management groups, subscription model, policy, naming, tagging and ownership.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Identity and network</strong><span>Entra ID, RBAC, PIM, hub-spoke, DNS, firewall and private access patterns.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Security and operations</strong><span>Defender, logging, monitoring, backup, patching and incident process.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Workload landing</strong><span>VMs, migration staging, applications, AI services and FinOps accountability.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 

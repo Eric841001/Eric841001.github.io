@@ -65,7 +65,7 @@ for (const file of files) {
     /docs\/(projects|security|toolkit|downloads|migration|playbooks|copilot|microsoft365)\//.test(rel);
   const isHub = /\/overview\.(md|mdx)$/.test(rel) || rel === 'docs/intro.md';
   const hasVisual =
-    /kc-signal-grid|kc-pathway|kc-asset-catalog|kc-ai-journey|kc-executive-strip|kc-outcome-grid|```mermaid/.test(
+    /kc-signal-grid|kc-pathway|kc-asset-catalog|kc-ai-journey|kc-executive-strip|kc-outcome-grid|kc-factory-panel|kc-journey-map|kc-reference-flow|```mermaid/.test(
       source,
     );
 
