@@ -7,6 +7,20 @@ sidebar_label: EXO Attachment Download Restriction
 
 # Exchange Online Attachment Download Restriction
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">EXCHANGE ONLINE ACCESS CONTROL</span>
+    <h2>Reduce attachment risk without blocking email productivity</h2>
+    <p>Attachment download restriction helps steer users toward safer browser or cloud-viewer experiences when endpoint trust or data leakage risk is a concern.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Attachment download restriction focus">
+    <div><strong>OWA</strong><span>Access</span></div>
+    <div><strong>Policy</strong><span>Control</span></div>
+    <div><strong>Cloud</strong><span>Viewer</span></div>
+    <div><strong>Risk</strong><span>Reduce</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide describes how to restrict users from directly downloading email attachments from Outlook on the web and guide them to open files through a safer cloud-based experience.

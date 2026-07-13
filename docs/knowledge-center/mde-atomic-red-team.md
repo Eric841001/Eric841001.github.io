@@ -7,6 +7,20 @@ sidebar_label: Atomic Red Team
 
 # Microsoft Defender Validation with Atomic Red Team
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">DEFENDER VALIDATION PLAYBOOK</span>
+    <h2>Prove detection coverage before real incidents occur</h2>
+    <p>Atomic Red Team validation connects safe adversary simulation, Defender XDR evidence, SOC triage and detection tuning into a repeatable assurance workflow.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Atomic Red Team validation focus">
+    <div><strong>Test</strong><span>Atomic</span></div>
+    <div><strong>XDR</strong><span>Signal</span></div>
+    <div><strong>SOC</strong><span>Review</span></div>
+    <div><strong>Tune</strong><span>Control</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Atomic Red Team provides safe adversary simulation tests used to validate Microsoft Defender detection and response capabilities.

@@ -7,6 +7,20 @@ description: Microsoft Defender for Endpoint Windows offboarding guide using Int
 
 # Microsoft Defender for Endpoint Windows Offboarding
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">MDE WINDOWS OFFBOARDING</span>
+    <h2>Remove Defender coverage only with lifecycle evidence</h2>
+    <p>Windows offboarding should connect approval, Intune deployment, sensor validation, inventory updates and audit records so unmanaged endpoint risk does not appear silently.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Windows offboarding focus">
+    <div><strong>Approve</strong><span>Scope</span></div>
+    <div><strong>Intune</strong><span>Deploy</span></div>
+    <div><strong>MDE</strong><span>State</span></div>
+    <div><strong>Audit</strong><span>Record</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide explains how to remove Windows endpoints from Microsoft Defender for Endpoint using Intune deployment.

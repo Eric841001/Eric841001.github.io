@@ -7,6 +7,20 @@ sidebar_label: macOS Onboarding
 
 # Microsoft Defender for Endpoint macOS Onboarding
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">MDE MACOS ONBOARDING</span>
+    <h2>Bring Mac endpoints into the same Defender operating model</h2>
+    <p>macOS onboarding should align Intune management, Defender sensor health, system extension permissions, inventory visibility and XDR incident context.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="macOS onboarding focus">
+    <div><strong>Mac</strong><span>Device</span></div>
+    <div><strong>MDM</strong><span>Intune</span></div>
+    <div><strong>MDE</strong><span>Sensor</span></div>
+    <div><strong>XDR</strong><span>Signal</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide describes the onboarding process for macOS devices into Microsoft Defender for Endpoint (MDE).

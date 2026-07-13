@@ -7,6 +7,20 @@ sidebar_label: Junk Mail Alert
 
 # Power Automate Junk Mail Alert
 
+<section class="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span class="kc-eyebrow">EXCHANGE ONLINE ALERT AUTOMATION</span>
+    <h2>Turn hidden Junk Email activity into visible security signals</h2>
+    <p>This pattern uses Power Automate to collect junk mail indicators and notify Teams or email channels before missed messages become operational risk.</p>
+  </div>
+  <div class="kc-hero-metrics" aria-label="Junk mail alert focus">
+    <div><strong>EXO</strong><span>Mailbox</span></div>
+    <div><strong>Flow</strong><span>Trigger</span></div>
+    <div><strong>Teams</strong><span>Alert</span></div>
+    <div><strong>Ops</strong><span>Review</span></div>
+  </div>
+</section>
+
 ## Executive Summary
 
 This guide describes how Power Automate can monitor Exchange Online Junk Email folders and generate automated notifications.
