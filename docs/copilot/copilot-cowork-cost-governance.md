@@ -37,6 +37,8 @@ Microsoft 365 Copilot Cowork is not just another chat interface. It is an agenti
 
 Adoption planning should therefore start with operating controls, not feature excitement. Organizations need to prepare access scope, usage-based billing, Copilot Credits, spending limits, budget alerts, security governance, approval workflows and ownership before broad rollout.
 
+Microsoft's June 30 update describes Copilot Cowork plugins as packages that can combine repeatable skills with secure connectors to business systems and be distributed through Microsoft Marketplace. Microsoft's June 16 GA announcement states that Cowork is generally available worldwide and requires a Microsoft 365 Copilot User Subscription License, with usage billed in Copilot Credits; individual plugin availability still varies, and capabilities marked as coming soon should not be treated as available. Before enabling a plugin, review its provider, requested data and actions, connector permissions, approval points for write or external actions, and the Microsoft 365 and Purview controls currently available for prompts, responses and generated artifacts. Do not present announced controls such as DLP as available when Microsoft marks them as coming soon.
+
 ## 한국어 요약
 
 Copilot Cowork는 단순한 chat 기능이 아니라, 장기 실행 업무를 여러 도구와 Microsoft 365 context를 활용해 수행하는 agentic work execution 기능으로 보아야 합니다.
@@ -44,6 +46,8 @@ Copilot Cowork는 단순한 chat 기능이 아니라, 장기 실행 업무를 �
 따라서 도입 시에는 "누가 사용할 수 있는가", "어떤 업무를 맡길 것인가", "비용은 누가 승인하는가", "민감한 작업은 누가 검토하는가", "성과는 어떻게 측정할 것인가"를 먼저 정해야 합니다.
 
 GPT-5.6처럼 reasoning이 강해질수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 enterprise 환경에서는 reasoning 성능보다 더 중요한 것이 approval, ownership, budget, security, monitoring입니다.
+
+Microsoft의 6월 30일 plugin 업데이트에 따르면 Copilot Cowork plugin은 반복 가능한 skill과 업무 시스템에 연결되는 secure connector를 함께 패키징하여 Microsoft Marketplace를 통해 배포할 수 있습니다. Microsoft의 6월 16일 GA 발표에 따르면 Cowork는 전 세계 GA 상태이며 Microsoft 365 Copilot User Subscription License가 필요하고 사용량은 Copilot Credits로 청구됩니다. 다만 개별 plugin의 제공 상태는 서로 다르므로 coming soon으로 표시된 기능을 현재 사용 가능한 것으로 안내하면 안 됩니다. Plugin을 활성화하기 전에는 제공자, 요청 데이터와 작업, connector 권한, 쓰기 또는 외부 작업의 승인 지점, prompt·response·생성 artifact에 현재 제공되는 Microsoft 365 및 Purview 통제를 검토해야 합니다. Microsoft가 DLP 등 coming soon으로 표시한 통제를 현재 제공되는 것으로 안내해서는 안 됩니다.
 
 ## When To Use Cowork
 
@@ -146,6 +150,7 @@ Once these answers are available, the organization can move from technical enabl
 ## References
 
 - [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/)
+- [The workflow is the product: Copilot Cowork plugins change what AI can do for businesses](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/the-workflow-is-the-product-copilot-cowork-plugins-change-what-ai-can-do-for-bus/4531933) — Microsoft 365 Copilot Blog, June 30, 2026; checked July 13, 2026 (Asia/Seoul).
 - [Understand usage-based billing and cost management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
 
 ## 검색 키워드
