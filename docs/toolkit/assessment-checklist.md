@@ -3,9 +3,28 @@ id: assessment-checklist
 title: Assessment Checklist
 description: "Assessment Checklist - This checklist provides a standardized assessment structure for Microsoft 365, Azure, Security, Copilot and migration projects."
 sidebar_label: Assessment Checklist
+toc_max_heading_level: 2
 ---
 
 # Assessment Checklist
+
+<section class="kc-topic-hero" aria-label="Assessment Checklist hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Toolkit Asset</span>
+    <h2>Standardize current-state review before architecture or proposal work</h2>
+    <p>This checklist converts workshop inputs, tenant review and stakeholder needs into findings, risks, dependencies and proposal-ready actions.</p>
+    <div class="kc-hero-signal-row" aria-label="Assessment Checklist signals"><span>Inputs</span><span>Review</span><span>Findings</span><span>Actions</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Assessment Checklist model">
+    <div class="kc-factory-panel__header"><span>Assessment Model</span><strong>Repeatable</strong></div>
+    <div class="kc-factory-grid">
+      <a href="#assessment-categories" class="kc-factory-card"><small>01</small><strong>Categories</strong><span>Business, identity, M365, security, endpoint, migration and governance.</span></a>
+      <a href="#business-assessment" class="kc-factory-card"><small>02</small><strong>Business</strong><span>Objective, sponsor, stakeholders, timeline, budget and success criteria.</span></a>
+      <a href="#identity-assessment" class="kc-factory-card"><small>03</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access, privileged roles and guests.</span></a>
+      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable checklist can be shared after confirming scenario.</span></a>
+    </div>
+  </div>
+</section>
 
 ## Executive Summary
 
@@ -13,19 +32,15 @@ This checklist provides a standardized assessment structure for Microsoft 365, A
 
 It is designed to support discovery workshops, current-state reviews, proposal preparation and consulting delivery planning.
 
-```mermaid
-flowchart TB
-  Inputs["Inputs<br/>workshops, tenant review,<br/>documents, stakeholder needs"]:::input
-  Checklist["Checklist review<br/>business, identity,<br/>M365, security, endpoint"]:::phase
-  Findings["Findings<br/>strengths, gaps,<br/>risks, dependencies"]:::phase
-  Actions["Actions<br/>quick wins, roadmap,<br/>proposal scope"]:::outcome
-
-  Inputs --> Checklist --> Findings --> Actions
-
-  classDef input fill:#ecfeff,stroke:#0891b2,color:#0f172a,stroke-width:1.5px
-  classDef phase fill:#eff6ff,stroke:#2563eb,color:#0f172a,stroke-width:1.5px
-  classDef outcome fill:#f0fdf4,stroke:#16a34a,color:#0f172a,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Assessment checklist flow">
+  <div class="kc-journey-map__header"><span>Assessment Checklist Flow</span><strong>Inputs to proposal-ready actions</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Inputs</strong><span>Workshops, tenant review, documents and stakeholder needs.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Checklist Review</strong><span>Business, identity, M365, security, endpoint and migration readiness.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Findings</strong><span>Strengths, gaps, risks, dependencies and maturity signals.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>04</small><strong>Actions</strong><span>Quick wins, roadmap, proposal scope and implementation priorities.</span></div>
+  </div>
+</div>
 
 ---
 

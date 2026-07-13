@@ -2,9 +2,28 @@
 sidebar_position: 1
 title: Toolkit
 description: "Toolkit - The Toolkit section contains practical assets for assessment, architecture, migration, licensing, prompt design and delivery planning."
+toc_max_heading_level: 2
 ---
 
 # Toolkit
+
+<section class="kc-topic-hero" aria-label="Toolkit overview hero">
+  <div class="kc-topic-hero__content">
+    <span class="kc-topic-hero__eyebrow">Consulting Toolkit</span>
+    <h2>Move from discovery to architecture, proposal and delivery assets</h2>
+    <p>The Toolkit connects assessment, architecture, licensing, migration, prompt design and delivery planning into a reusable consulting operating system.</p>
+    <div class="kc-hero-signal-row" aria-label="Toolkit signals"><span>Assess</span><span>Design</span><span>Plan</span><span>Deliver</span></div>
+  </div>
+  <div class="kc-factory-panel" aria-label="Toolkit operating model">
+    <div class="kc-factory-panel__header"><span>Asset Flow</span><strong>Reusable</strong></div>
+    <div class="kc-factory-grid">
+      <a href="./assessment-checklist" class="kc-factory-card"><small>01</small><strong>Assess</strong><span>Tenant, identity, security, endpoint, migration and governance readiness.</span></a>
+      <a href="./architecture-builder" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Business requirements to target architecture and decisions.</span></a>
+      <a href="./license-advisor" class="kc-factory-card"><small>03</small><strong>Validate</strong><span>Capabilities, risk, licensing and Copilot readiness fit.</span></a>
+      <a href="../proposal/overview" class="kc-factory-card"><small>04</small><strong>Plan</strong><span>SOW, WBS, risk register, timeline and governance structure.</span></a>
+    </div>
+  </div>
+</section>
 
 The Toolkit section contains practical assets for assessment, architecture, migration, licensing, prompt design and delivery planning.
 
@@ -40,20 +59,17 @@ These tools are designed to support repeatable consulting work. They help conver
 
 ## Visual Toolkit Flow
 
-```mermaid
-flowchart LR
-  Discover["Discover<br/>questionnaire and assessment checklist"]:::tool
-  Design["Design<br/>architecture builder and decision log"]:::tool
-  License["Validate<br/>license advisor and capability fit"]:::tool
-  Plan["Plan<br/>SOW, WBS, risk register"]:::tool
-  Deliver["Deliver<br/>migration and security checklist"]:::tool
-  Handover["Handover<br/>runbook, owners, operating rhythm"]:::tool
-
-  Discover --> Design --> License --> Plan --> Deliver --> Handover
-  Handover -. lessons learned .-> Discover
-
-  classDef tool fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.5px
-```
+<div class="kc-journey-map" aria-label="Toolkit flow">
+  <div class="kc-journey-map__header"><span>Visual Toolkit Flow</span><strong>Discover to handover</strong></div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discover</strong><span>Questionnaire, workshop inputs and assessment checklist.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Architecture builder, decision log and target-state model.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Validate</strong><span>License advisor, capability fit and risk alignment.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Plan</strong><span>SOW, WBS, risk register, timeline and governance model.</span></div>
+    <div class="kc-journey-node"><small>05</small><strong>Deliver</strong><span>Migration checklist, security checklist and implementation control.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Handover</strong><span>Runbook, owner model, operating rhythm and lessons learned.</span></div>
+  </div>
+</div>
 
 ## 한국어 요약
 
