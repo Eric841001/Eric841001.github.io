@@ -28,21 +28,21 @@ Retention, deletion, records management, ownership, audit evidence를 설계하�
 
 ## Lifecycle Architecture
 
-```mermaid
-flowchart LR
-  Create[Create]
-  Classify[Classify and Label]
-  Retain[Retain]
-  Review[Review]
-  Dispose[Dispose]
-  Evidence[Audit Evidence]
-
-  Create --> Classify
-  Classify --> Retain
-  Retain --> Review
-  Review --> Dispose
-  Review --> Evidence
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Data lifecycle architecture</span>
+    <strong>Create, retain, review, dispose</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Data lifecycle management architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Create and classify</strong><span>New content receives owner, location, label, sensitivity and business context.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Retain and protect</strong><span>Retention, records, DLP and access controls apply based on policy.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Review</strong><span>Owners and compliance teams review stale, sensitive, regulated or obsolete content.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Dispose or evidence</strong><span>Dispose content when allowed, preserve evidence when legal or audit requirements apply.</span></div>
+  </div>
+</div>
 
 ## Core Design Areas
 

@@ -28,22 +28,21 @@ Compliance Manager는 Microsoft cloud 환경의 compliance posture를 점검하�
 
 ## Compliance Operating Model
 
-```mermaid
-flowchart TB
-  Assessment[Compliance Assessment]
-  Actions[Improvement Actions]
-  Owner[Control Owner]
-  Evidence[Evidence Collection]
-  Review[Governance Review]
-  Report[Executive Reporting]
-
-  Assessment --> Actions
-  Actions --> Owner
-  Owner --> Evidence
-  Evidence --> Review
-  Review --> Report
-  Report --> Assessment
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Compliance operating model</span>
+    <strong>Action, evidence, review</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Compliance Manager operating model">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Compliance assessment</strong><span>Review current posture, assessment scope, control families and score drivers.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Improvement actions</strong><span>Assign control owners, remediation tasks, due dates and business priority.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Evidence collection</strong><span>Store configuration, approval, test result and policy evidence for audit readiness.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Governance review</strong><span>Report risk, progress, exceptions and next actions to governance or executives.</span></div>
+  </div>
+</div>
 
 ## Core Design Areas
 

@@ -45,16 +45,21 @@ Passcode, minimum OS version, jailbreak detection, encryption, device threat lev
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    IOS[iPhone/iPad]
-    INTUNE[Intune]
-    ENTRA[Conditional Access]
-
-    IOS --> INTUNE
-    INTUNE --> COMPLIANT
-    COMPLIANT --> ENTRA
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>iOS compliance control path</span>
+    <strong>Device trust before access</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Intune iOS compliance control path">
+    <div class="kc-journey-node is-source"><small>01</small><strong>iPhone or iPad</strong><span>Managed or enrolled mobile device requests access to corporate resources.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Intune compliance</strong><span>Evaluate passcode, OS version, jailbreak status, encryption and threat level.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Conditional Access</strong><span>Entra ID uses compliant state to allow, block or require remediation.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Governed access</strong><span>Users access Microsoft 365 only when mobile security posture is acceptable.</span></div>
+  </div>
+</div>
 
 ---
 

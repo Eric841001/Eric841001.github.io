@@ -27,17 +27,21 @@ Identity, domain, alias, group, calendar, Drive ownership, shared drive, externa
 
 ## Architecture
 
-```mermaid
-flowchart LR
-  Google[Google Workspace]
-  Assess[Assessment]
-  M365[Microsoft 365]
-  Adopt[User Adoption]
-
-  Google --> Assess
-  Assess --> M365
-  M365 --> Adopt
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Google Workspace migration path</span>
+    <strong>Identity, data, collaboration, adoption</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Google Workspace migration architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Google Workspace</strong><span>Inventory Gmail, Calendar, Drive, shared drives, groups, aliases and external collaborators.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Map identity, domain, mail, calendar, Drive ownership and coexistence complexity.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Microsoft 365 target</strong><span>Move to Exchange Online, Teams, SharePoint, OneDrive and security baseline.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>User adoption</strong><span>Support behavior change, training, migration waves and post-cutover hypercare.</span></div>
+  </div>
+</div>
 
 ## Implementation
 
@@ -86,6 +90,10 @@ flowchart LR
 ## Lessons Learned
 
 Drive ownership and shared drive structure often create more complexity than mailbox migration. Early inventory and business owner validation reduce cutover surprises.
+
+## Contact / Asset Request
+
+For Google Workspace assessment templates, user mapping workbooks, shared drive inventory models, cutover plans or adoption communication samples, use [Contact and Asset Request](../contact).
 
 ## 검색 키워드
 

@@ -28,23 +28,21 @@ Insider Risk Management는 내부자의 의도적 또는 비의도적 위험 행
 
 ## Insider Risk Architecture
 
-```mermaid
-flowchart TB
-  Signals[User and Data Activity Signals]
-  Policy[Insider Risk Policy]
-  Triage[Alert Triage]
-  Case[Case Investigation]
-  Legal[HR, Legal and Compliance Review]
-  Action[Remediation or Risk Acceptance]
-  Evidence[Evidence and Audit Trail]
-
-  Signals --> Policy
-  Policy --> Triage
-  Triage --> Case
-  Case --> Legal
-  Legal --> Action
-  Action --> Evidence
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Insider risk case model</span>
+    <strong>Privacy-aware investigation flow</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Insider Risk Management case model">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Activity signals</strong><span>User and data activity signals are evaluated within approved policy boundaries.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Alert triage</strong><span>Review context, severity, privacy rules, false positives and escalation criteria.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Case investigation</strong><span>Coordinate HR, legal, compliance and security review with role separation.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Action and evidence</strong><span>Apply remediation or risk acceptance and preserve audit trail responsibly.</span></div>
+  </div>
+</div>
 
 ## Core Design Areas
 
