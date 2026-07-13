@@ -40,36 +40,41 @@ Export requirements:
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    CA[Certificate Authority]
-    CER[Root CA Certificate]
-    INTUNE[Intune]
-    DEVICE[Managed Device]
-
-    CA --> CER
-    CER --> INTUNE
-    INTUNE --> DEVICE
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Certificate trust chain</span>
+    <strong>CA to managed device</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Certificate trust deployment">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Certificate Authority</strong><span>Confirm root and intermediate CA certificates that must be trusted by devices.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Export certificate</strong><span>Use DER encoded .CER format and public certificate only.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Deploy with Intune</strong><span>Create Trusted Certificate profile and assign to validated target groups.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Validate device trust</strong><span>Confirm root and intermediate stores before SCEP, PKCS, Wi-Fi or VPN rollout.</span></div>
+  </div>
+</div>
 
 ---
 
 ## Deployment Process
 
-```mermaid
-flowchart TB
-  Admin["Intune Admin Center<br/>Devices > Configuration Profiles"]:::step
-  Profile["Create Profile<br/>Windows > Trusted Certificate"]:::step
-  Upload["Upload Certificate<br/>DER encoded .CER only"]:::step
-  Assign["Assign Target Group<br/>device, user or dynamic group"]:::step
-  Deploy["Deploy Policy<br/>sync, monitor, troubleshoot"]:::step
-  Validate["Validate Trust Chain<br/>root and intermediate stores"]:::result
-
-  Admin --> Profile --> Upload --> Assign --> Deploy --> Validate
-
-  classDef step fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Deployment workflow</span>
+    <strong>Profile, assignment, validation</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Intune certificate deployment workflow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Create profile</strong><span>Use Intune Admin Center, Devices, Configuration Profiles, Trusted Certificate.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Upload and assign</strong><span>Upload the certificate and target user, device or dynamic groups.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Deploy and monitor</strong><span>Sync devices, review policy status and troubleshoot profile delivery.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Evidence</strong><span>Record validation result before enabling certificate-dependent services.</span></div>
+  </div>
+</div>
 
 Recommended execution notes:
 

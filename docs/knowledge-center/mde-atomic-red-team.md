@@ -29,20 +29,21 @@ Organizations require:
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-    TEST[Atomic Test]
-    DEVICE[Endpoint]
-    DEFENDER[Microsoft Defender]
-    XDR[Defender XDR]
-    SOC[SOC Team]
-
-    TEST --> DEVICE
-    DEVICE --> DEFENDER
-    DEFENDER --> XDR
-    XDR --> SOC
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Detection validation architecture</span>
+    <strong>Atomic test to SOC evidence</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Atomic Red Team validation architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Atomic test</strong><span>Select a scoped Atomic Red Team test mapped to expected MITRE behavior.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Endpoint execution</strong><span>Run safely on a test endpoint with rollback and monitoring in place.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Defender signal</strong><span>Validate alert, incident, timeline and entity evidence in Defender XDR.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>SOC review</strong><span>Document detection result, tuning action and executive-ready coverage evidence.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -71,22 +72,21 @@ flowchart LR
 
 ## Recommended Testing Process
 
-```mermaid
-flowchart TD
-
-A[Define Test Scope]
-B[Select Atomic Test]
-C[Execute Test]
-D[Review Alert]
-E[Review Incident]
-F[Tune Detection]
-
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Validation workflow</span>
+    <strong>Scope, execute, tune</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Atomic Red Team validation workflow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Define scope</strong><span>Confirm target device, test owner, detection expectation and change window.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Execute test</strong><span>Run the selected atomic test and capture command, timestamp and device context.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Review signal</strong><span>Check alert, incident, severity, entity mapping and investigation details.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Tune detection</strong><span>Adjust policy, analytics, SOC runbook or exception handling based on evidence.</span></div>
+  </div>
+</div>
 
 ## Safety Guardrails
 

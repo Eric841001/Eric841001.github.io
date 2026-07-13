@@ -53,18 +53,21 @@ Organizations commonly require:
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-    MAC[macOS Device]
-    INTUNE[Intune]
-    MDE[Defender for Endpoint]
-    XDR[Microsoft Defender XDR]
-
-    MAC --> INTUNE
-    INTUNE --> MDE
-    MDE --> XDR
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>macOS onboarding architecture</span>
+    <strong>Managed Mac to Defender XDR</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="macOS Defender onboarding architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>macOS device</strong><span>Corporate MacBook or managed macOS endpoint enters the onboarding scope.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Intune management</strong><span>Deploy configuration profiles, system extensions, permissions and compliance settings.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Defender sensor</strong><span>Install and validate Microsoft Defender for Endpoint sensor health and connectivity.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Defender XDR</strong><span>Confirm inventory, alerts, vulnerability signals and incident correlation.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -89,22 +92,21 @@ flowchart LR
 
 ## Onboarding Workflow
 
-```mermaid
-flowchart TD
-
-A[Prepare Tenant]
-B[Create Onboarding Package]
-C[Deploy MDE Client]
-D[Deploy System Extensions]
-E[Validate Device]
-F[Monitor Security Events]
-
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Onboarding workflow</span>
+    <strong>Prepare, deploy, validate</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="macOS onboarding workflow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Prepare tenant</strong><span>Confirm Defender portal settings, Intune enrollment, assignments and support scope.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Deploy client</strong><span>Create onboarding package and deploy Defender client with required profiles.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Validate device</strong><span>Check sensor health, system extensions, permissions and portal inventory.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Monitor events</strong><span>Review security events, vulnerability data, compliance status and support issues.</span></div>
+  </div>
+</div>
 
 ---
 

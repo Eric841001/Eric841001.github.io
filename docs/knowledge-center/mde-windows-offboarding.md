@@ -35,35 +35,41 @@ Device retirement, tenant migration, security tool transition 상황에서 사�
 
 ## Architecture
 
-```mermaid
-flowchart LR
-
-    INTUNE[Intune]
-    DEVICE[Windows Device]
-    MDE[Defender Sensor]
-
-    INTUNE --> DEVICE
-    DEVICE --> REMOVE[Offboarding]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Windows offboarding architecture</span>
+    <strong>Controlled removal from Defender scope</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Windows Defender offboarding architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Approval trigger</strong><span>Device retirement, tenant migration, lab cleanup or security tool transition is approved.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Intune assignment</strong><span>Deploy offboarding package only to controlled target groups.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Windows device</strong><span>Device processes offboarding package and sensor state changes are monitored.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Audit record</strong><span>Update inventory, evidence, exception register and post-offboarding risk status.</span></div>
+  </div>
+</div>
 
 ---
 
 ## Offboarding Workflow
 
-```mermaid
-flowchart LR
-  Approval["Approval<br/>retirement, migration or tool transition"]:::step
-  Package["Offboarding package<br/>Microsoft Defender portal"]:::step
-  Intune["Intune deployment<br/>package and assignment group"]:::step
-  Device["Target devices<br/>controlled rollout"]:::step
-  Validate["Validation<br/>sensor state and portal inventory"]:::result
-  Record["Audit record<br/>asset update and evidence"]:::result
-
-  Approval --> Package --> Intune --> Device --> Validate --> Record
-
-  classDef step fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Offboarding workflow</span>
+    <strong>Package to evidence</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Windows offboarding workflow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Package</strong><span>Generate Defender offboarding package and document expiry and scope.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Deploy</strong><span>Assign through Intune to selected devices using a staged rollout group.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Validate</strong><span>Confirm sensor state, portal inventory, device retirement and replacement protection.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Record</strong><span>Store audit evidence and update asset, support and security operations records.</span></div>
+  </div>
+</div>
 
 ---
 

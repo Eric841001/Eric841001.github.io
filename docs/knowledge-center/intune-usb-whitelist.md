@@ -37,19 +37,21 @@ Typical requirements:
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    USER[Endpoint User]
-    USB[USB Device]
-    INTUNE[Intune Policy]
-    DEFENDER[Defender Device Control]
-
-    USER --> USB
-    USB --> INTUNE
-    INTUNE --> DEFENDER
-    DEFENDER --> ALLOW[Approved Device]
-    DEFENDER --> BLOCK[Unauthorized Device]
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>USB device control path</span>
+    <strong>Approved media only</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="USB whitelist control path">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Endpoint user</strong><span>User connects removable media to a managed Windows device.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Intune policy</strong><span>Device Control settings are assigned through scoped groups and rollout rings.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Defender control</strong><span>Defender evaluates approved device identifiers, read/write rules and audit behavior.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Allow or block</strong><span>Approved USB devices continue; unauthorized devices are blocked or audited.</span></div>
+  </div>
+</div>
 
 ---
 
@@ -68,20 +70,21 @@ flowchart LR
 
 ## Implementation Approach
 
-```mermaid
-flowchart LR
-  Audit["Phase 1<br/>Audit USB activity"]:::phase
-  Inventory["Phase 2<br/>Build approved device inventory"]:::phase
-  Pilot["Phase 3<br/>Pilot allow, block and read-only rules"]:::phase
-  Enforce["Phase 4<br/>Deploy enforcement policy"]:::phase
-  Operate["Phase 5<br/>Monitor exceptions and policy bypass"]:::result
-
-  Audit --> Inventory --> Pilot --> Enforce --> Operate
-  Operate -. refine allow list .-> Inventory
-
-  classDef phase fill:#f8fbff,stroke:#38bdf8,color:#102033,stroke-width:1.4px
-  classDef result fill:#ecfdf5,stroke:#0f766e,color:#102033,stroke-width:1.8px
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Rollout model</span>
+    <strong>Audit before enforcement</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="USB whitelist rollout model">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Audit activity</strong><span>Collect USB usage evidence before blocking business workflows.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Build inventory</strong><span>Document approved devices, owners, serials, encryption and exception rules.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Pilot rules</strong><span>Test allow, block and read-only behavior with support and rollback paths.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Operate exceptions</strong><span>Monitor bypass attempts, approve exceptions and refine the allow list.</span></div>
+  </div>
+</div>
 
 ---
 

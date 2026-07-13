@@ -33,39 +33,41 @@ Organizations require:
 
 ## Solution Architecture
 
-```mermaid
-flowchart LR
-
-EXO[Exchange Online]
-FLOW[Power Automate]
-TEAMS[Microsoft Teams]
-MAIL[Notification Email]
-
-EXO --> FLOW
-FLOW --> TEAMS
-FLOW --> MAIL
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Junk mail alert architecture</span>
+    <strong>Exchange signal to team notification</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Junk mail alert architecture">
+    <div class="kc-journey-node is-source"><small>01</small><strong>Exchange Online</strong><span>Monitor selected Junk Email folders or mailbox signals for messages requiring visibility.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Power Automate</strong><span>Trigger workflow, collect message metadata and apply filtering logic.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Teams notification</strong><span>Notify a security, help desk or operations channel with actionable context.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Email summary</strong><span>Send summary or evidence record for follow-up, tuning and reporting.</span></div>
+  </div>
+</div>
 
 ---
 
 ## Workflow Overview
 
-```mermaid
-flowchart TD
-
-A[New Junk Email]
-B[Trigger Power Automate]
-C[Collect Message Data]
-D[Generate Alert]
-E[Teams Notification]
-F[Email Summary]
-
-A --> B
-B --> C
-C --> D
-D --> E
-D --> F
-```
+<div class="kc-factory-panel">
+  <div class="kc-panel-header">
+    <span>Alert workflow</span>
+    <strong>Detect, enrich, notify</strong>
+  </div>
+  <div class="kc-journey-map" aria-label="Junk mail alert workflow">
+    <div class="kc-journey-node is-source"><small>01</small><strong>New junk email</strong><span>A message lands in scope for monitoring based on mailbox or folder criteria.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>02</small><strong>Collect metadata</strong><span>Capture sender, subject, received time, recipient, classification and message indicators.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node"><small>03</small><strong>Generate alert</strong><span>Format relevant context for review without exposing unnecessary sensitive content.</span></div>
+    <div class="kc-journey-arrow" aria-hidden="true"></div>
+    <div class="kc-journey-node is-target"><small>04</small><strong>Notify and report</strong><span>Post to Teams, send email summary and maintain visibility for tuning.</span></div>
+  </div>
+</div>
 
 ---
 
