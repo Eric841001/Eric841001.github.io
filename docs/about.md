@@ -8,12 +8,14 @@ description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Mi
 
 <section class="kc-about-hero" aria-label="About Youngsun Kang">
   <div class="kc-about-hero__content">
-    <span class="kc-topic-hero__eyebrow">Enterprise Microsoft Architect</span>
+    <span class="kc-topic-hero__eyebrow">Who is Youngsun Kang?</span>
     <h2>Youngsun Kang</h2>
-    <p class="kc-about-hero__statement">I design secure, scalable and AI-ready Microsoft enterprise platforms that connect Microsoft 365, Security, Copilot, AI Agents, Azure, migration and governance into practical delivery outcomes.</p>
+    <p class="kc-about-hero__statement">Enterprise Microsoft Architect specializing in Microsoft 365, Security, Copilot, AI Agents, Azure, migration, governance and consulting delivery assets.</p>
+    <p class="kc-about-hero__statement kc-about-hero__statement--sub">I help organizations turn Microsoft technology decisions into secure architecture, adoption roadmaps, proposal structures, implementation plans and reusable operating models.</p>
     <div class="kc-about-hero__meta" aria-label="Profile highlights">
       <span>MegazoneCloud</span>
       <span>Seoul, South Korea</span>
+      <span>Enterprise Architecture</span>
       <span>Microsoft 365 / Security / Copilot / AI Agents</span>
     </div>
     <div class="kc-topic-hero__actions" aria-label="About page actions">
@@ -26,19 +28,28 @@ description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Mi
   <aside class="kc-about-card" aria-label="Professional snapshot">
     <img src="/knowledge/img/youngsun-social-card.jpg" alt="Youngsun Kang professional profile card" />
     <div class="kc-about-card__body">
-      <strong>Field experience into reusable knowledge</strong>
-      <span>This Knowledge Center turns public-safe field patterns into architecture notes, governance models, migration playbooks, proposal assets and AI adoption references.</span>
+      <small>Profile Snapshot</small>
+      <strong>Microsoft field architecture, made reusable.</strong>
+      <span>Architecture references, governance frameworks, migration playbooks, proposal assets and customer success patterns are organized here as public-safe knowledge.</span>
     </div>
   </aside>
 </section>
 
-## Who I Am
+## At A Glance
+
+<div class="kc-profile-strip" aria-label="Youngsun Kang at a glance">
+  <div><small>Role</small><strong>Enterprise Microsoft Architect</strong><span>Architecture, presales, delivery governance and implementation planning.</span></div>
+  <div><small>Core Platforms</small><strong>Microsoft 365, Security, Copilot, Azure</strong><span>From tenant and security baseline to AI adoption and migration roadmap.</span></div>
+  <div><small>Working Style</small><strong>Business outcome to operating model</strong><span>Convert requirements into designs, templates, risk decisions and handover-ready assets.</span></div>
+</div>
+
+## Professional Profile
 
 I am an enterprise Microsoft architect focused on helping organizations move from technology questions to executable architecture, secure operating models and measurable adoption.
 
 My work sits at the intersection of Microsoft 365, Security, Copilot, AI Agents, Azure, migration, presales and delivery governance. In practice, that means connecting executive intent, business requirements, technical controls, implementation plans and operational handover into one coherent path.
 
-저는 Microsoft 365, Security, Copilot, AI Agent, Azure, Migration 영역을 고객의 실제 업무 환경과 연결하여 설계하고 실행 가능한 산출물로 만드는 일을 합니다. 단순히 기능을 설명하는 것이 아니라, 고객이 의사결정하고 운영할 수 있는 구조로 정리하는 데 집중합니다.
+In Korean business terms: Microsoft 기술을 고객의 실제 업무, 보안 요구사항, 변화관리, 제안/수행 산출물과 연결하여 실행 가능한 architecture와 operating model로 만드는 역할입니다.
 
 ## What I Work On
 

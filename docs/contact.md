@@ -1,113 +1,84 @@
 ---
 id: contact
-title: Contact and Asset Request
+title: Contact Youngsun Kang
 sidebar_label: Contact
 description: Contact Youngsun Kang for Microsoft 365, Security, Copilot, AI Agent, Azure, migration, proposal and delivery asset discussions.
 ---
 
-# Contact and Asset Request
+# Contact Youngsun Kang
 
-<section class="kc-topic-hero" aria-label="Contact and consulting asset request gateway">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Contact and Asset Request</span>
-    <h2>Request the right Microsoft architecture asset without exposing confidential details</h2>
-    <p>This Knowledge Center is designed for visitors who reached the site from an email signature, GitHub profile, LinkedIn profile or shared project reference and want to review Microsoft 365, Security, Copilot, AI Agent and delivery assets.</p>
-    <div class="kc-topic-hero__actions" aria-label="Contact entry actions">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/downloads/overview">Review Asset Gateway</a>
-      <a class="kc-topic-button" href="/knowledge/projects/customer-success-reference-patterns">Reference Patterns</a>
-      <a class="kc-topic-button" href="https://www.linkedin.com/in/young-sun-kang-a51b26356">LinkedIn</a>
+<section class="kc-contact-hero" aria-label="Contact Youngsun Kang">
+  <div class="kc-contact-hero__content">
+    <span class="kc-topic-hero__eyebrow">Contact / Asset Request</span>
+    <h2>Start the right Microsoft architecture conversation</h2>
+    <p>Use this page when you want to discuss Microsoft 365, Security, Copilot, AI Agents, Azure, migration, governance, proposal assets or reusable consulting templates with Youngsun Kang.</p>
+    <div class="kc-contact-channels" aria-label="Public contact channels">
+      <a href="https://github.com/Eric841001"><small>GitHub</small><strong>github.com/Eric841001</strong></a>
+      <a href="https://www.linkedin.com/in/young-sun-kang-a51b26356"><small>LinkedIn</small><strong>Youngsun Kang</strong></a>
+      <a href="/knowledge/about"><small>Profile</small><strong>About Youngsun Kang</strong></a>
     </div>
   </div>
 
-  <div class="kc-factory-panel" aria-label="Asset request flow">
-    <div class="kc-factory-panel__header"><span>Request Flow</span><strong>Public safe</strong></div>
-    <div class="kc-factory-grid">
-      <a href="/knowledge/search/how-to-use-ai-in-enterprise" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Start from workload, business scenario, industry and project phase.</span></a>
-      <a href="/knowledge/contact#confidentiality-principle" class="kc-factory-card"><small>02</small><strong>Boundary</strong><span>Keep customer names, tenant identifiers and commercial terms out of the first request.</span></a>
-      <a href="/knowledge/downloads/overview" class="kc-factory-card"><small>03</small><strong>Asset</strong><span>Select checklist, workbook, SOW, WBS, risk register or workshop outline.</span></a>
-      <a href="/knowledge/projects/customer-success-reference-patterns" class="kc-factory-card"><small>04</small><strong>Follow-up</strong><span>Use anonymized success patterns for executive or delivery discussions.</span></a>
-    </div>
-    <div class="kc-guardrail-panel"><strong>First contact should be sanitized</strong><span>Industry, workload, desired output and business purpose are enough. Customer-specific files can be discussed only after the confidentiality boundary is clear.</span></div>
-  </div>
+  <aside class="kc-contact-card" aria-label="Best first message">
+    <small>Best first message</small>
+    <strong>Workload + purpose + expected output</strong>
+    <span>Example: "We are reviewing Microsoft 365 security baseline for a retail environment. We need an assessment checklist and executive summary structure."</span>
+    <a href="#what-to-include">What to include</a>
+  </aside>
 </section>
 
-## What You Can Review Publicly
+## When To Contact
 
-The public site provides architecture and consulting guidance that can be reviewed without exposing customer-specific information.
+Contact is useful when the public Knowledge Center gives you the direction, but you need the right discussion, template or sanitized asset for your business context.
 
-<div class="kc-platform-fit" aria-label="Publicly reviewable knowledge areas">
-  <div class="kc-platform-fit__card"><small>Microsoft 365</small><strong>Architecture and operating model</strong><span>Licensing, Teams, SharePoint, OneDrive, Exchange Online and governance guidance.</span></div>
-  <div class="kc-platform-fit__card"><small>Security</small><strong>Zero Trust and compliance patterns</strong><span>Conditional Access, Defender, Purview, DLP, evidence and policy review structures.</span></div>
-  <div class="kc-platform-fit__card"><small>Copilot</small><strong>Readiness to adoption</strong><span>Business use cases, data protection, value tracking, cost control and change management.</span></div>
-  <div class="kc-platform-fit__card"><small>AI Agents</small><strong>Agent Factory governance</strong><span>Copilot Studio, M365 Agents, multi-agent framework and lifecycle controls.</span></div>
-  <div class="kc-platform-fit__card"><small>Azure and Migration</small><strong>Foundation and transition planning</strong><span>Landing zone, identity, network, workload architecture, migration planning and hypercare.</span></div>
-  <div class="kc-platform-fit__card"><small>Proposal Assets</small><strong>Reusable delivery structure</strong><span>Executive summary, SOW, WBS, risk register, timeline and anonymized reference patterns.</span></div>
+<div class="kc-contact-usecases" aria-label="When to contact Youngsun Kang">
+  <a href="/knowledge/search/copilot-adoption"><small>Copilot</small><strong>Adoption planning</strong><span>Readiness, use cases, stakeholder enablement, value tracking and change management.</span></a>
+  <a href="/knowledge/search/ai-agent-factory"><small>AI Agent</small><strong>Agent Factory design</strong><span>Copilot Studio, Microsoft 365 Agents, intake, ownership, lifecycle, governance and cost controls.</span></a>
+  <a href="/knowledge/search/microsoft-365-security"><small>Security</small><strong>Microsoft 365 security review</strong><span>Entra ID, Conditional Access, Intune, Defender, Purview, DLP and evidence-based controls.</span></a>
+  <a href="/knowledge/migration/overview"><small>Migration</small><strong>Migration planning</strong><span>Exchange Online, Google Workspace, tenant, file server, SharePoint and Teams migration planning.</span></a>
+  <a href="/knowledge/proposal/overview"><small>Proposal</small><strong>SOW / WBS / risk register</strong><span>Presales structure, scope definition, timeline, assumptions, risks and delivery handover.</span></a>
+  <a href="/knowledge/projects/customer-success-reference-patterns"><small>Reference</small><strong>Anonymized success pattern</strong><span>Industry-level customer success patterns without customer names or commercial details.</span></a>
 </div>
 
 ## What Can Be Requested
 
-Editable or customer-ready materials are not posted directly on the public site. They can be shared after confirming the business context and confidentiality boundary.
+Editable or customer-ready materials are not posted directly on the public site. They can be shared after confirming the business purpose and confidentiality boundary.
 
-Typical request examples:
-
-<div class="kc-entry-hub" aria-label="Common request examples">
-  <a href="/knowledge/downloads/m365-assessment-workbook"><small>Assessment</small><strong>Microsoft 365 assessment workbook</strong><span>Current-state review, workload findings and improvement roadmap.</span></a>
-  <a href="/knowledge/search/copilot-adoption"><small>Copilot</small><strong>Readiness checklist and adoption WBS</strong><span>Scenario discovery, stakeholder enablement, rollout planning and KPI review.</span></a>
-  <a href="/knowledge/search/ai-agent-factory"><small>AI Agent</small><strong>Agent Factory operating model</strong><span>Agent intake, prioritization, ownership, lifecycle and cost governance.</span></a>
-  <a href="/knowledge/downloads/downloads-sow-template"><small>Proposal</small><strong>SOW, WBS and executive summary template</strong><span>Sanitized structure for presales and delivery planning.</span></a>
-  <a href="/knowledge/security/defender-xdr"><small>Security</small><strong>Security baseline checklist</strong><span>Entra ID, Intune, Defender, Purview and Exchange Online review items.</span></a>
-  <a href="/knowledge/projects/customer-success-reference-patterns"><small>Reference</small><strong>Customer success pattern</strong><span>Anonymized industry scenario, approach, deliverables and lessons learned.</span></a>
-</div>
-
-## Request Menu
-
-<div class="kc-context-panel" aria-label="Request menu">
-  <div class="kc-context-panel__lead"><small>Best Request</small><strong>Ask for an asset by business use, not by file name.</strong><span>The fastest path is to explain the workload, purpose, industry context, project phase and expected output. Then the right sanitized asset can be selected.</span></div>
+<div class="kc-context-panel" aria-label="Requestable assets">
+  <div class="kc-context-panel__lead"><small>Asset Request</small><strong>Ask for the business outcome, not just the file name.</strong><span>The fastest path is to describe the workload, project phase, intended audience and expected output.</span></div>
   <div class="kc-context-panel__grid">
-    <a href="/knowledge/search/copilot-adoption"><small>Copilot</small><strong>Readiness workbook</strong><span>For Copilot pilot, expansion, governance and adoption planning.</span></a>
-    <a href="/knowledge/search/microsoft-365-security"><small>Security</small><strong>Baseline checklist</strong><span>For Microsoft 365, Entra ID, Intune, Defender and Purview control reviews.</span></a>
-    <a href="/knowledge/search/ai-agent-factory"><small>Agent</small><strong>Factory template</strong><span>For Copilot Studio, AI Agent and multi-agent operating model discussions.</span></a>
-    <a href="/knowledge/downloads/downloads-sow-template"><small>Proposal</small><strong>SOW / WBS sample</strong><span>For presales, proposal and delivery planning discussions.</span></a>
-    <a href="/knowledge/migration/overview"><small>Migration</small><strong>Assessment pack</strong><span>For Exchange, Google Workspace, file server or tenant migration planning.</span></a>
-    <a href="/knowledge/projects/customer-success-reference-patterns"><small>Reference</small><strong>Success pattern</strong><span>For executive briefing without customer names or commercial details.</span></a>
+    <a href="/knowledge/downloads/m365-assessment-workbook"><small>Assessment</small><strong>Microsoft 365 assessment workbook</strong><span>Current-state review, workload findings, maturity scoring and roadmap.</span></a>
+    <a href="/knowledge/downloads/sow-template"><small>Proposal</small><strong>SOW template</strong><span>Scope, deliverables, assumptions, exclusions and acceptance criteria.</span></a>
+    <a href="/knowledge/downloads/wbs-template"><small>Delivery</small><strong>WBS template</strong><span>Workstream structure, dependencies, milestones and owner model.</span></a>
+    <a href="/knowledge/downloads/risk-register-template"><small>Risk</small><strong>Risk register template</strong><span>Project, security, adoption, migration and operational risk structure.</span></a>
+    <a href="/knowledge/search/ai-agent-factory"><small>AI Agent</small><strong>Agent Factory operating model</strong><span>Intake, prioritization, build pattern, approval, telemetry and retirement.</span></a>
+    <a href="/knowledge/projects/customer-success-reference-patterns"><small>Reference</small><strong>Customer success pattern</strong><span>Reusable anonymized approach by industry and scenario.</span></a>
   </div>
 </div>
 
-## Request Information to Include
+## What To Include
 
-When requesting a document or discussion, include the following context:
+When requesting a discussion or document, include only safe business context at first.
 
-<div class="kc-operating-model" aria-label="Request information to include">
-  <div class="kc-operating-stage"><small>Workload</small><strong>Target workload</strong><span>Microsoft 365, Security, Copilot, AI Agent, Azure or Migration.</span></div>
-  <div class="kc-operating-stage"><small>Purpose</small><strong>Business purpose</strong><span>Presales review, architecture workshop, proposal or implementation planning.</span></div>
-  <div class="kc-operating-stage"><small>Industry</small><strong>Industry context</strong><span>Manufacturing, finance, logistics, retail, healthcare or enterprise group.</span></div>
-  <div class="kc-operating-stage"><small>Output</small><strong>Expected output</strong><span>Checklist, SOW, WBS, architecture note, governance model or workshop deck.</span></div>
+<div class="kc-contact-brief" id="what-to-include" aria-label="Information to include in first request">
+  <div><small>01</small><strong>Workload</strong><span>Microsoft 365, Security, Copilot, AI Agent, Azure, Migration or Proposal.</span></div>
+  <div><small>02</small><strong>Purpose</strong><span>Presales, architecture workshop, assessment, proposal, implementation planning or handover.</span></div>
+  <div><small>03</small><strong>Industry</strong><span>Retail, manufacturing, finance, logistics, healthcare, construction or enterprise group.</span></div>
+  <div><small>04</small><strong>Expected Output</strong><span>Checklist, SOW, WBS, architecture note, governance model, workshop deck or executive summary.</span></div>
 </div>
 
-## Public Contact Channels
+## Confidentiality Boundary
 
-- GitHub: [https://github.com/Eric841001](https://github.com/Eric841001)
-- LinkedIn: [Youngsun Kang](https://www.linkedin.com/in/young-sun-kang-a51b26356)
-- Knowledge Center: [https://eric841001.github.io](https://eric841001.github.io)
+Customer names, tenant identifiers, project code names, commercial terms, internal filenames and customer-specific architecture details should not be included in the first public request.
 
-## Confidentiality Principle
-
-Customer names, project code names, commercial terms, internal filenames and customer-specific architecture details are not published on this site.
-
-Public content is written as reusable architecture and consulting patterns. Customer-specific material is sanitized before it is shared externally.
-
-## Sharing Levels
-
-<div class="kc-maturity-ladder" aria-label="Asset sharing levels">
-  <div class="kc-maturity-step"><small>Level 1</small><strong>Public Pattern</strong><span>Safe for public website and search engines: anonymized architecture pattern, generic checklist or decision framework.</span></div>
-  <div class="kc-maturity-step"><small>Level 2</small><strong>Sanitized Sample</strong><span>Safe to share after contact: edited SOW/WBS structure with customer names and sensitive values removed.</span></div>
-  <div class="kc-maturity-step"><small>Level 3</small><strong>Internal Review Only</strong><span>Requires confirmed business context: editable delivery template, workshop deck or assessment workbook.</span></div>
-  <div class="kc-maturity-step"><small>Level 4</small><strong>Customer-Specific</strong><span>Not shared publicly: tenant-specific diagrams, policy exports, commercial terms or named reference material.</span></div>
+<div class="kc-maturity-ladder" aria-label="Sharing levels">
+  <div class="kc-maturity-step"><small>Level 1</small><strong>Public Pattern</strong><span>Safe for public website and search engines: anonymized architecture pattern or generic decision framework.</span></div>
+  <div class="kc-maturity-step"><small>Level 2</small><strong>Sanitized Sample</strong><span>Safe after contact: edited SOW, WBS or checklist structure with sensitive details removed.</span></div>
+  <div class="kc-maturity-step"><small>Level 3</small><strong>Context Review</strong><span>Requires confirmed business context: editable template, workshop deck or assessment workbook.</span></div>
+  <div class="kc-maturity-step"><small>Level 4</small><strong>Customer-Specific</strong><span>Not shared publicly: tenant-specific diagrams, exports, security exceptions or commercial details.</span></div>
 </div>
 
-## Do Not Include In First Request
-
-For the first asset request, do not send confidential information. The following details are not required:
+## Do Not Include In The First Request
 
 - customer legal name
 - tenant ID, domain list or user export
@@ -121,10 +92,10 @@ Use industry, workload, project phase and desired output type instead.
 ## Recommended Starting Points
 
 <div class="kc-entry-hub" aria-label="Recommended starting points">
+  <a href="/knowledge/about"><small>Profile</small><strong>About Youngsun Kang</strong><span>Understand who maintains this Knowledge Center and what expertise it represents.</span></a>
   <a href="/knowledge/intro"><small>Start</small><strong>Enterprise Microsoft Knowledge Center</strong><span>The main map for architecture, delivery assets and consulting playbooks.</span></a>
   <a href="/knowledge/architecture/executive-architecture-blueprint"><small>Architecture</small><strong>Executive Architecture Blueprint</strong><span>Decision-level architecture view for Microsoft 365, Security, Copilot and Azure.</span></a>
   <a href="/knowledge/projects/customer-success-reference-patterns"><small>Reference</small><strong>Customer Success Reference Patterns</strong><span>Anonymized delivery patterns by industry and scenario.</span></a>
-  <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory"><small>Agent</small><strong>Enterprise AI Agent Factory Case Study</strong><span>Governed operating model for business agents and multi-agent initiatives.</span></a>
   <a href="/knowledge/downloads/overview"><small>Assets</small><strong>Downloads Center</strong><span>Public descriptions of requestable assessment, proposal and delivery templates.</span></a>
   <a href="/knowledge/search/how-to-use-ai-in-enterprise"><small>AI</small><strong>How to Use AI in Enterprise</strong><span>The AI adoption storyline from Copilot to agents, cowork and change management.</span></a>
 </div>
