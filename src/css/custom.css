@@ -2137,12 +2137,72 @@ body.kc-diagram-modal-open {
   box-shadow: 0 18px 42px rgba(15, 49, 87, 0.1);
 }
 
-.kc-about-card img {
+.kc-about-card__visual {
+  position: relative;
+  min-height: 245px;
+  padding: 1.35rem;
+  background:
+    radial-gradient(circle at 88% 22%, #0ea5e9 0 1.05rem, transparent 1.12rem),
+    radial-gradient(circle at 94% 38%, #22c55e 0 0.72rem, transparent 0.78rem),
+    radial-gradient(circle at 82% 39%, #f59e0b 0 0.58rem, transparent 0.64rem),
+    linear-gradient(135deg, #0f172a 0%, #10243d 100%);
+  color: #ffffff;
+}
+
+.kc-about-card__visual::after {
+  content: "";
+  position: absolute;
+  left: 1.35rem;
+  right: 1.35rem;
+  bottom: 1.18rem;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.42);
+}
+
+.kc-about-card__visual span {
   display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-bottom: 1px solid #dbeafe;
+  color: #38bdf8;
+  font-size: 0.78rem;
+  font-weight: 950;
+  line-height: 1.3;
+}
+
+.kc-about-card__visual strong {
+  display: block;
+  margin-top: 1.05rem;
+  color: #ffffff;
+  font-size: clamp(1.65rem, 2.6vw, 2.45rem);
+  line-height: 0.98;
+  font-weight: 950;
+}
+
+.kc-about-card__visual em {
+  display: block;
+  margin-top: 0.35rem;
+  color: #e2e8f0;
+  font-size: 0.82rem;
+  font-style: normal;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.kc-about-card__visual p {
+  max-width: 25rem;
+  margin: 1.05rem 0 0;
+  color: #cbd5e1;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.kc-about-card__visual b {
+  display: inline-flex;
+  margin-top: 0.9rem;
+  padding: 0.36rem 0.6rem;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: #ffffff;
+  font-size: 0.78rem;
+  line-height: 1;
 }
 
 .kc-about-card__body {
@@ -2174,6 +2234,26 @@ body.kc-diagram-modal-open {
   color: #526174;
   font-size: 0.9rem;
   line-height: 1.55;
+}
+
+.kc-about-card__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  margin-top: 0.95rem;
+}
+
+.kc-about-card__facts span {
+  display: inline-flex;
+  margin: 0;
+  padding: 0.36rem 0.56rem;
+  border: 1px solid #cfe0f3;
+  border-radius: 999px;
+  background: #f8fbff;
+  color: #0f3157;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
 .kc-about-focus {

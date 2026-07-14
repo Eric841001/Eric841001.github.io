@@ -25,12 +25,24 @@ description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Mi
     </div>
   </div>
 
-  <aside class="kc-about-card" aria-label="Professional snapshot">
-    <img src="/img/youngsun-social-card.jpg" alt="Youngsun Kang professional profile card" />
+  <aside class="kc-about-card" aria-label="Youngsun Kang profile snapshot">
+    <div class="kc-about-card__visual">
+      <span>Enterprise Microsoft Knowledge Center</span>
+      <strong>Youngsun Kang</strong>
+      <em>Microsoft 365 | Security | Copilot | Azure | AI Agents</em>
+      <p>Architecture references, governance frameworks, migration playbooks, proposal assets and customer success patterns.</p>
+      <b>eric841001.github.io</b>
+    </div>
     <div class="kc-about-card__body">
       <small>Profile Snapshot</small>
       <strong>Microsoft field architecture, made reusable.</strong>
-      <span>Architecture references, governance frameworks, migration playbooks, proposal assets and customer success patterns are organized here as public-safe knowledge.</span>
+      <span>Public-safe knowledge built from enterprise architecture, presales and delivery experience.</span>
+      <div class="kc-about-card__facts" aria-label="Profile facts">
+        <span>Enterprise Architect</span>
+        <span>Microsoft 365</span>
+        <span>Security</span>
+        <span>Copilot & AI Agents</span>
+      </div>
     </div>
   </aside>
 </section>
@@ -49,7 +61,7 @@ I am an enterprise Microsoft architect focused on helping organizations move fro
 
 My work sits at the intersection of Microsoft 365, Security, Copilot, AI Agents, Azure, migration, presales and delivery governance. In practice, that means connecting executive intent, business requirements, technical controls, implementation plans and operational handover into one coherent path.
 
-In Korean business terms: Microsoft 기술을 고객의 실제 업무, 보안 요구사항, 변화관리, 제안/수행 산출물과 연결하여 실행 가능한 architecture와 operating model로 만드는 역할입니다.
+In practical consulting terms, my role is to connect Microsoft technology with real business work, security requirements, change management, proposal assets and delivery outputs so that customers can make decisions and operate with confidence.
 
 ## What I Work On
 
