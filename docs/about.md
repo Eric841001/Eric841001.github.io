@@ -26,7 +26,7 @@ description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Mi
   </div>
 
   <aside class="kc-about-card" aria-label="Professional snapshot">
-    <img src="/knowledge/img/youngsun-social-card.jpg" alt="Youngsun Kang professional profile card" />
+    <img src="/img/youngsun-social-card.jpg" alt="Youngsun Kang professional profile card" />
     <div class="kc-about-card__body">
       <small>Profile Snapshot</small>
       <strong>Microsoft field architecture, made reusable.</strong>
