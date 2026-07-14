@@ -15,7 +15,7 @@ keywords:
 
 # Copilot Adoption
 
-<section class="kc-topic-hero" aria-label="Copilot Adoption landing hero">
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Copilot Adoption landing hero">
   <div class="kc-topic-hero__content">
     <span class="kc-topic-hero__eyebrow">Copilot Adoption Operating Model</span>
     <h2>Turn Copilot rollout into measurable behavior change</h2>

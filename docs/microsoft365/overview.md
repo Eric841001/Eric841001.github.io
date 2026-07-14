@@ -6,7 +6,7 @@ description: Microsoft 365 architecture, tenant governance, security, migration 
 
 # Microsoft 365 Overview
 
-<section class="kc-topic-hero" aria-label="Microsoft 365 enterprise platform landing">
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Microsoft 365 enterprise platform landing">
   <div class="kc-topic-hero__content">
     <span class="kc-topic-hero__eyebrow">Enterprise Operating Platform</span>
     <h2>Design Microsoft 365 as the foundation for secure collaboration and Copilot-ready work</h2>

@@ -16,7 +16,7 @@ keywords:
 
 # Microsoft 365 Security
 
-<section class="kc-topic-hero" aria-label="Microsoft 365 Security landing hero">
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Microsoft 365 Security landing hero">
   <div class="kc-topic-hero__content">
     <span class="kc-topic-hero__eyebrow">Microsoft 365 Security Architecture</span>
     <h2>Build the control plane before AI exposes the gaps</h2>

@@ -5,7 +5,7 @@ description: Reusable proposal, SOW, WBS, risk register, assessment and governan
 
 # Proposal Center
 
-<section class="kc-topic-hero" aria-label="Proposal Center landing">
+<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Proposal Center landing">
   <div class="kc-topic-hero__content">
     <span class="kc-topic-hero__eyebrow">Presales and Delivery Asset System</span>
     <h2>Turn discovery into a decision-ready proposal and a delivery-ready operating model</h2>
