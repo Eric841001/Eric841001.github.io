@@ -7,17 +7,30 @@ description: "Azure - This Azure section focuses on enterprise cloud architectur
 
 # Azure
 
-<section class="kc-topic-hero kc-topic-hero--compact">
-  <div>
-    <span class="kc-eyebrow">AZURE ENTERPRISE FOUNDATION</span>
+<section class="kc-azure-hero" aria-label="Azure enterprise foundation">
+  <div class="kc-azure-hero__content">
+    <span class="kc-topic-hero__eyebrow">Azure Enterprise Foundation</span>
     <h2>Build the cloud foundation before workloads scale</h2>
     <p>Azure architecture should connect landing zone, identity, network, security, operations and cost ownership before migration, AI or modernization programs expand.</p>
+    <div class="kc-topic-hero__actions" aria-label="Azure overview actions">
+      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/azure/landing-zone">Landing Zone</a>
+      <a class="kc-topic-button" href="/knowledge/azure/identity">Identity</a>
+      <a class="kc-topic-button" href="/knowledge/architecture/azure-landing-zone-architecture">Reference Architecture</a>
+    </div>
   </div>
-  <div class="kc-hero-metrics" aria-label="Azure foundation focus">
-    <div><strong>LZ</strong><span>Foundation</span></div>
-    <div><strong>ID</strong><span>Access</span></div>
-    <div><strong>SEC</strong><span>Control</span></div>
-    <div><strong>FIN</strong><span>Cost</span></div>
+  <div class="kc-azure-foundation-card" aria-label="Azure foundation layers">
+    <div class="kc-azure-foundation-card__header">
+      <span>Foundation Map</span>
+      <strong>Governed workload landing</strong>
+    </div>
+    <div class="kc-azure-foundation-grid">
+      <a href="/knowledge/azure/landing-zone"><small>01</small><strong>Landing Zone</strong><span>Management groups, subscriptions, policy, naming, tagging and ownership.</span></a>
+      <a href="/knowledge/azure/identity"><small>02</small><strong>Identity</strong><span>Entra ID, RBAC, PIM, break-glass accounts and privileged access model.</span></a>
+      <a href="/knowledge/architecture/azure-landing-zone-architecture"><small>03</small><strong>Network</strong><span>Hub-spoke, DNS, firewall, private endpoint and hybrid connectivity design.</span></a>
+      <a href="/knowledge/search/microsoft-365-security"><small>04</small><strong>Security</strong><span>Defender for Cloud, logging, policy evidence and compliance-ready controls.</span></a>
+      <a href="/knowledge/toolkit/assessment-checklist"><small>05</small><strong>Operations</strong><span>Monitoring, backup, patching, incident process and handover ownership.</span></a>
+      <a href="/knowledge/toolkit/license-advisor"><small>06</small><strong>FinOps</strong><span>Budget, tagging, right-sizing, reservation and showback accountability.</span></a>
+    </div>
   </div>
 </section>
 
