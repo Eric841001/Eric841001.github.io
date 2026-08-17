@@ -1,7 +1,7 @@
 ---
 id: copilot-studio-2026-platform-update
 title: Copilot Studio 2026 Platform Update
-description: Copilot Studio 2026 update guide covering new agent experience, Microsoft IQ, skills, memory, computer use, A2A, agent inventory, Entra agent identities and Copilot Credits.
+description: Copilot Studio 2026 update guide covering the GitHub Copilot harness, workflows, Microsoft IQ, skills, memory, computer use, A2A, agent inventory, Entra agent identities and Copilot Credits.
 sidebar_label: 2026 Platform Update
 ---
 
@@ -48,6 +48,8 @@ GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M36
 ## 2026 Capability Map
 
 <div class="kc-platform-fit" aria-label="Copilot Studio 2026 capability map">
+  <div class="kc-platform-fit__card"><small>August 2026</small><strong>GitHub Copilot harness GA</strong><span>Complex, long-horizon agents can plan, use skills and tools, connect to other agents, analyze files and produce multi-part outputs.</span></div>
+  <div class="kc-platform-fit__card"><small>August 2026</small><strong>Workflow designer</strong><span>A visual canvas supports agent nodes, multi-step process design and workflow evaluations; natural-language authoring was announced as upcoming.</span></div>
   <div class="kc-platform-fit__card"><small>June 2026</small><strong>New agent experience</strong><span>Enhanced orchestration runtime improves agent design, response quality and reasoning while classic experience remains available.</span></div>
   <div class="kc-platform-fit__card"><small>June 2026</small><strong>Microsoft IQ</strong><span>Agents can connect to organizational context such as email, calendar, files, Teams messages and people information.</span></div>
   <div class="kc-platform-fit__card"><small>June 2026</small><strong>Skills and memory</strong><span>Reusable instruction packages and per-user persistent context require clear reuse, privacy and lifecycle rules.</span></div>
@@ -57,6 +59,65 @@ GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M36
   <div class="kc-platform-fit__card"><small>April 2026</small><strong>A2A protocol and estimator</strong><span>Agent-to-agent connectivity and Copilot Credit estimation support multi-agent design and scale-out planning.</span></div>
   <div class="kc-platform-fit__card"><small>2026 Flow Model</small><strong>Workflows and agent flows</strong><span>Prompts, agent calls, human review and asynchronous responses make agent design closer to an operational workflow platform.</span></div>
 </div>
+
+## GitHub Copilot Harness and Workflows GA
+
+Microsoft announced the **GitHub Copilot harness in Copilot Studio** as generally available for production use on August 3, 2026. The harness brings coding and advanced reasoning capabilities into Copilot Studio for business processes that involve many steps, multiple sources, ambiguous decisions or rich multi-part outputs.
+
+기업 관점에서 중요한 변화는 단순히 더 강한 모델을 사용할 수 있다는 점이 아닙니다. Agent가 장시간 실행되는 업무를 계획하고, agentic loop를 수행하며, skills, workflows, tools, connectors, MCP servers와 외부 agent를 조합할 수 있는 실행 기반이 추가됐다는 점입니다.
+
+### Three Harness Options
+
+Copilot Studio now supports three harness choices. They are optimized for different outcomes rather than forming a simple maturity ladder.
+
+| Harness | Best Fit | Enterprise Planning Point |
+|---|---|---|
+| Copilot Chat | Microsoft 365 Copilot Chat customization | Validate Microsoft 365 context, user permissions and included-use boundaries. |
+| Standard | Conversational agents and rules-based topics | Keep topic design, connectors, environment strategy and fixed-rate usage assumptions explicit. |
+| GitHub Copilot | Complex, agentic business processes | Plan for usage-based billing, long-running execution, model choice, tool scope, evaluations and stronger operational controls. |
+
+The Copilot Chat and Standard harnesses remain supported for existing and new agents. Therefore, teams should not migrate every agent automatically. Select the harness based on process complexity, required autonomy, data volume, tool depth, latency, risk and cost.
+
+### What the New Harness Enables
+
+<div class="kc-context-panel" aria-label="GitHub Copilot harness capability model">
+  <div class="kc-context-panel__lead"><small>Execution Model</small><strong>Long-horizon work needs stronger runtime governance.</strong><span>The new harness can improve complex task performance, but production readiness still depends on scoped tools, evaluation evidence, cost limits, failure handling and human approval.</span></div>
+  <div class="kc-context-panel__grid">
+    <a href="/knowledge/copilot/agentic-ai-architecture"><small>Reason</small><strong>Plan and adapt</strong><span>Handle multi-step work and ambiguous decision points with frontier reasoning models.</span></a>
+    <a href="/knowledge/copilot/multi-agent-framework"><small>Connect</small><strong>Use tools and agents</strong><span>Combine skills, workflows, connectors, MCP servers and connected agents.</span></a>
+    <a href="/knowledge/copilot/governance"><small>Evaluate</small><strong>Measure quality</strong><span>Test multi-tool use, file analysis, knowledge quality and business-process outcomes.</span></a>
+    <a href="/knowledge/copilot/copilot-cowork-cost-governance"><small>Control</small><strong>Govern consumption</strong><span>Forecast model, organizational context, tool and runtime consumption before production rollout.</span></a>
+  </div>
+</div>
+
+### Workflow Designer Implications
+
+The workflow designer provides a visual canvas for editing multi-step workflows, adding agent nodes and running workflow evaluations. Microsoft also announced natural-language workflow authoring as an upcoming capability, so it should not yet be treated as generally available without tenant-level verification.
+
+For production workflows, define:
+
+- Input and output contracts between workflow and agent nodes
+- Idempotency and duplicate-action prevention
+- Timeout, retry, partial-failure and rollback behavior
+- Human approval for financial, identity, external-sharing or irreversible actions
+- Evaluation sets for end-to-end task completion, not only response quality
+- Telemetry that correlates model calls, tool use, workflow steps, cost and final outcome
+
+### Usage-Based Billing Boundary
+
+Agents using the GitHub Copilot harness are billed based on usage regardless of Microsoft 365 Copilot licensing. Consumption depends on selected models, organizational context, tools and runtime. AI-driven maker experiences such as natural-language authoring, evaluations and testing can also be usage-based when building with this harness.
+
+This makes harness selection an architecture and FinOps decision. Before pilot approval, document expected volume, average execution duration, model choice, tool calls, evaluation usage, monthly budget, owner and stop threshold.
+
+### Adoption Checklist
+
+- [ ] Confirm that the scenario genuinely requires long-horizon reasoning or complex tool orchestration.
+- [ ] Compare the same representative workload on Standard and GitHub Copilot harnesses.
+- [ ] Measure quality, completion rate, latency, consumption and recovery behavior.
+- [ ] Review every skill, connector, MCP server and connected agent for least privilege.
+- [ ] Add human approval and rollback for high-impact actions.
+- [ ] Verify current model availability, regional support and billing in the target tenant.
+- [ ] Record the selected harness and decision rationale in the agent catalog.
 
 ## Platform Migration Checkpoints
 
@@ -138,6 +199,8 @@ GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning 
 
 ## References
 
+- [More powerful agents and workflows for autonomous business processes: Introducing a new harness for Copilot Studio](https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969), Microsoft Copilot Studio Blog, published and checked August 3, 2026
+- [SUVE.ai LinkedIn post: GitHub Copilot harness and workflows](https://www.linkedin.com/feed/update/urn:li:activity:7490269110157762560), checked August 17, 2026
 - [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
 - [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
 - [Copilot Studio licensing and access](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing)
@@ -168,6 +231,9 @@ GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning 
 - Microsoft IQ
 - Entra Agent ID
 - Copilot Credit estimator
+- GitHub Copilot harness in Copilot Studio
+- Copilot Studio workflow designer
+- Copilot Studio usage-based billing
 
 ## Contact / Asset Request
 
