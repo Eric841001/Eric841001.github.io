@@ -267,6 +267,36 @@ Work IQ provides organizational and work context such as:
 
 ---
 
+## Microsoft IQ Solution Accelerator Pattern
+
+Microsoft의 **Microsoft IQ Solution Accelerator**는 Work IQ, Foundry IQ, Fabric IQ를 하나의 실무 시나리오에서 연결하는 참조 구현입니다. 단순히 세 가지 IQ를 소개하는 데 그치지 않고, 공급망 중단을 예로 들어 데이터 신호를 감지하고, 계약과 정책을 조회하고, 영향을 분석한 뒤, 사람과 에이전트가 대응 워크플로를 실행하는 전체 흐름을 보여줍니다.
+
+<div class="kc-journey-map" aria-label="Microsoft IQ solution accelerator flow">
+  <div class="kc-journey-map__header">
+    <span>Shared Intelligence Pattern</span>
+    <strong>데이터, 지식, 업무 맥락을 하나의 의사결정 흐름으로 연결</strong>
+  </div>
+  <div class="kc-journey-track">
+    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Fabric IQ</strong><span>Ontology와 Data Agent가 재고, 공급업체, 수요 등 구조화된 비즈니스 데이터를 분석합니다.</span></div>
+    <div class="kc-journey-node"><small>02</small><strong>Foundry IQ</strong><span>Foundry Agent가 계약, SLA, 정책과 같은 기업 지식을 검색하고 대안을 평가합니다.</span></div>
+    <div class="kc-journey-node"><small>03</small><strong>Work IQ</strong><span>Microsoft 365의 업무 맥락을 사용해 관련 사람, 대화, 회의와 문서를 연결합니다.</span></div>
+    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Copilot Studio</strong><span>Coordinator 역할의 Agent가 전문 Agent, 사람, 승인과 워크플로를 조정합니다.</span></div>
+    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Coordinated Action</strong><span>위험 평가, 대안 검토, 이해관계자 정렬과 후속 조치를 하나의 감사 가능한 흐름으로 만듭니다.</span></div>
+  </div>
+</div>
+
+이 패턴의 핵심은 모든 데이터를 한 시스템으로 복사하는 것이 아니라, 각 IQ가 담당하는 맥락 경계를 유지하면서 Copilot Studio가 필요한 시점에 전문 Agent를 호출하도록 설계하는 것입니다. 실제 적용 시에는 다음 항목을 먼저 확인해야 합니다.
+
+- Fabric ontology와 실제 데이터 모델의 차이
+- Foundry 지식 저장소에 넣을 계약, 정책, 운영 문서의 품질과 권한
+- Copilot Studio workflow의 승인 지점, 실패 처리와 재시도 정책
+- 사용자와 Agent identity별 최소 권한, 감사 로그와 비용 관찰성
+- 데모용 합성 데이터와 운영 데이터 사이의 보안·규제 차이
+
+> **상태 주의:** 공식 저장소는 일부 플랫폼 기능과 MCP 통합이 preview라고 명시합니다. 따라서 현재 템플릿은 운영 표준이라기보다 평가, 실험, 아키텍처 검증을 위한 출발점으로 보는 것이 안전합니다.
+
+---
+
 ## Knowledge Grounding
 
 Agents must be grounded in trusted knowledge.
@@ -590,9 +620,12 @@ An Agentic AI architecture engagement should produce:
 
 ## References
 
-- Microsoft Copilot Studio
-- Microsoft 365 Copilot
-- Microsoft Foundry
+- [SUVE.ai LinkedIn company posts](https://www.linkedin.com/company/suveai/posts/?feedView=all) — Microsoft IQ Solution Accelerator post, published August 26, 2026; checked August 31, 2026
+- [Microsoft IQ Solution Accelerator](https://github.com/microsoft/microsoft-iq-solution-accelerator) — official Microsoft reference implementation; checked August 31, 2026
+- [Microsoft Marketplace: AI and agent quick-start development toolkit](https://techcommunity.microsoft.com/blog/marketplace-blog/accelerate-your-ai-or-agent-build-to-sell-on-marketplace-with-quick-start-develo/4519029) — published June 1, 2026; checked August 31, 2026
+- [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+- [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview)
+- [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry)
 - Microsoft 365 Agents SDK
 - Microsoft Entra
 - Microsoft Purview
