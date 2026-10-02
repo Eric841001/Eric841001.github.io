@@ -192,6 +192,10 @@ Review planned changes before execution.
 
 Track all Copilot modifications.
 
+As of the September 23, 2026 Current Channel release notes, Copilot responses can link directly to the sheets, tables, ranges, charts and shapes they changed. The Show Changes pane also identifies Copilot edits and suggestions with attribution cards on Windows, Mac and the web.
+
+Use both views during review: follow response links to inspect the affected workbook objects, then use Show Changes to distinguish Copilot activity from manual edits before approval or downstream financial use.
+
 ### Workbook Rules
 
 Apply workbook-specific standards.
@@ -203,6 +207,12 @@ Support analyst-specific preferences.
 ---
 
 ## Supported Financial Scenarios
+
+### Python Analysis with Edit with Copilot
+
+As of the August 25, 2026 Current Channel release notes, Edit with Copilot can execute Python in Excel for advanced statistics, simulations, visualizations, data cleaning and transformation on Windows, Mac and the web.
+
+Treat generated Python as reviewable workbook logic: inspect the code and output, retain the source-data lineage, test important assumptions and preserve the organization's existing security and execution controls before relying on results for financial decisions.
 
 ### Variance Analysis
 
@@ -340,6 +350,8 @@ Organizations can move beyond individual productivity gains and establish repeat
 
 ## References
 
+- [Microsoft 365 Copilot release notes — September 23, 2026](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#september-23-2026)
+- [Microsoft 365 Copilot release notes — August 25, 2026](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-25-2026)
 - Microsoft 365 Blog
 - Microsoft Learn
 - Copilot in Excel Skills Documentation

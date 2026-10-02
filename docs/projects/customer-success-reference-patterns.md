@@ -9,36 +9,36 @@ toc_max_heading_level: 2
 
 # Customer Success Reference Patterns
 
-<section class="kc-topic-hero" aria-label="Customer success reference patterns hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Anonymized Enterprise Reference Patterns</span>
+<section className="kc-topic-hero" aria-label="Customer success reference patterns hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Anonymized Enterprise Reference Patterns</span>
     <h2>Turn real delivery experience into reusable success patterns</h2>
     <p>This page summarizes public-safe customer success patterns across Microsoft 365, Security, Copilot, AI Agents, Azure, migration and governance projects. Customer names, account identifiers, project names, commercial details and internal file names are intentionally excluded.</p>
-    <div class="kc-hero-signal-row" aria-label="Reference pattern signals">
+    <div className="kc-hero-signal-row" aria-label="Reference pattern signals">
       <span>Industry</span>
       <span>Scenario</span>
       <span>Approach</span>
       <span>Outcome</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Customer success related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/projects/case-study-retail-m365-security-policy">Retail Security Pattern</a>
-      <a class="kc-topic-button" href="/knowledge/projects/case-study-enterprise-ai-agent-factory">Agent Factory Pattern</a>
-      <a class="kc-topic-button" href="/knowledge/contact">Request Private Reference</a>
+    <div className="kc-topic-hero__actions" aria-label="Customer success related pages">
+      <a className="kc-topic-button kc-topic-button--primary" href="/knowledge/projects/case-study-retail-m365-security-policy">Retail Security Pattern</a>
+      <a className="kc-topic-button" href="/knowledge/projects/case-study-enterprise-ai-agent-factory">Agent Factory Pattern</a>
+      <a className="kc-topic-button" href="/knowledge/contact">Request Private Reference</a>
     </div>
   </div>
 
-  <div class="kc-factory-panel" aria-label="Reference pattern operating model">
-    <div class="kc-factory-panel__header">
+  <div className="kc-factory-panel" aria-label="Reference pattern operating model">
+    <div className="kc-factory-panel__header">
       <span>Reference Model</span>
       <strong>Safe, reusable, executive-ready</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#industry-patterns" class="kc-factory-card"><small>01</small><strong>Industry</strong><span>Manufacturing, finance, logistics, retail, construction and healthcare.</span></a>
-      <a href="#reference-principles" class="kc-factory-card"><small>02</small><strong>Boundary</strong><span>Customer names, project names and commercial details are removed.</span></a>
-      <a href="#pattern-to-asset-mapping" class="kc-factory-card"><small>03</small><strong>Assets</strong><span>Assessment, architecture, SOW, WBS, runbook and governance outputs.</span></a>
-      <a href="#reference-metrics" class="kc-factory-card"><small>04</small><strong>Value</strong><span>Readiness, control, adoption, stability and delivery repeatability.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#industry-patterns" className="kc-factory-card"><small>01</small><strong>Industry</strong><span>Manufacturing, finance, logistics, retail, construction and healthcare.</span></a>
+      <a href="#reference-principles" className="kc-factory-card"><small>02</small><strong>Boundary</strong><span>Customer names, project names and commercial details are removed.</span></a>
+      <a href="#pattern-to-asset-mapping" className="kc-factory-card"><small>03</small><strong>Assets</strong><span>Assessment, architecture, SOW, WBS, runbook and governance outputs.</span></a>
+      <a href="#reference-metrics" className="kc-factory-card"><small>04</small><strong>Value</strong><span>Readiness, control, adoption, stability and delivery repeatability.</span></a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Confidentiality rule</strong>
       <span>Public pages explain the repeatable pattern. Detailed customer evidence and document samples should be shared only through direct request and appropriate confidentiality boundaries.</span>
     </div>
@@ -57,20 +57,14 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 ## Reference Pattern Map
 
-<div class="kc-journey-map" aria-label="Customer success reference pattern map">
-  <div class="kc-journey-map__header">
-    <span>Reference Pattern Map</span>
-    <strong>From private delivery to public-safe reference</strong>
-  </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Industry Context</strong><span>Manufacturing, finance, retail, logistics and other enterprise patterns.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Business Situation</strong><span>Risk, adoption, migration, governance or modernization need.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Microsoft Workloads</strong><span>M365, Security, Copilot, Azure, migration and governance workloads.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Delivery Approach</strong><span>Assessment, design, rollout, handover and operating model.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Reusable Assets</strong><span>SOW, WBS, workbook, runbook, risk register and executive report.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Public-Safe Story</strong><span>Industry, scenario, approach and outcome without customer identifiers.</span></div>
-  </div>
-</div>
+| Step | Pattern Element | Public-Safe Reference Meaning |
+|---|---|---|
+| 01 | Industry Context | Manufacturing, finance, retail, logistics and other enterprise patterns. |
+| 02 | Business Situation | Risk, adoption, migration, governance or modernization need. |
+| 03 | Microsoft Workloads | M365, Security, Copilot, Azure, migration and governance workloads. |
+| 04 | Delivery Approach | Assessment, design, rollout, handover and operating model. |
+| 05 | Reusable Assets | SOW, WBS, workbook, runbook, risk register and executive report. |
+| 06 | Public-Safe Story | Industry, scenario, approach and outcome without customer identifiers. |
 
 ## Reference Principles
 
@@ -91,13 +85,13 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 ## Industry Patterns
 
-<div class="kc-platform-fit" aria-label="Customer success industry patterns">
-  <div class="kc-platform-fit__card"><small>Manufacturing</small><strong>Copilot adoption</strong><span>Readiness, pilot, governance, role-based scenarios and executive value reporting.</span></div>
-  <div class="kc-platform-fit__card"><small>Financial Services</small><strong>Security architecture</strong><span>SaaS control, audit evidence, exception management and approval workflow.</span></div>
-  <div class="kc-platform-fit__card"><small>Logistics</small><strong>Exchange modernization</strong><span>Migration planning, collaboration continuity, security review and hypercare.</span></div>
-  <div class="kc-platform-fit__card"><small>Retail</small><strong>M365 security policy</strong><span>Identity, endpoint, data protection, policy gaps and prioritized roadmap.</span></div>
-  <div class="kc-platform-fit__card"><small>Construction</small><strong>SharePoint governance</strong><span>File governance, information architecture, permissions and lifecycle control.</span></div>
-  <div class="kc-platform-fit__card"><small>Healthcare</small><strong>Compliance baseline</strong><span>Identity, device, DLP, evidence-ready policy documentation and operations ownership.</span></div>
+<div className="kc-platform-fit" aria-label="Customer success industry patterns">
+  <div className="kc-platform-fit__card"><small>Manufacturing</small><strong>Copilot adoption</strong><span>Readiness, pilot, governance, role-based scenarios and executive value reporting.</span></div>
+  <div className="kc-platform-fit__card"><small>Financial Services</small><strong>Security architecture</strong><span>SaaS control, audit evidence, exception management and approval workflow.</span></div>
+  <div className="kc-platform-fit__card"><small>Logistics</small><strong>Exchange modernization</strong><span>Migration planning, collaboration continuity, security review and hypercare.</span></div>
+  <div className="kc-platform-fit__card"><small>Retail</small><strong>M365 security policy</strong><span>Identity, endpoint, data protection, policy gaps and prioritized roadmap.</span></div>
+  <div className="kc-platform-fit__card"><small>Construction</small><strong>SharePoint governance</strong><span>File governance, information architecture, permissions and lifecycle control.</span></div>
+  <div className="kc-platform-fit__card"><small>Healthcare</small><strong>Compliance baseline</strong><span>Identity, device, DLP, evidence-ready policy documentation and operations ownership.</span></div>
 </div>
 
 | Industry | Business Situation | Microsoft Workloads | Success Pattern |
@@ -122,27 +116,27 @@ For more detailed examples, see:
 
 ## Pattern-to-Asset Mapping
 
-<div class="kc-reference-flow" aria-label="Pattern to asset mapping">
-  <div class="kc-reference-flow__source">
+<div className="kc-reference-flow" aria-label="Pattern to asset mapping">
+  <div className="kc-reference-flow__source">
     <small>Customer Challenge</small>
     <strong>Business risk, adoption target or migration scope</strong>
     <span>The public story starts from the problem pattern, not the customer identity.</span>
   </div>
-  <div class="kc-reference-flow__columns">
-    <div class="kc-reference-flow__lane">
+  <div className="kc-reference-flow__columns">
+    <div className="kc-reference-flow__lane">
       <small>Discovery and Architecture</small>
       <div><strong>Assessment Workbook</strong><span>Current state, gap, readiness and risk register.</span></div>
       <div><strong>Reference Architecture</strong><span>Identity, data, endpoint, workload and control model.</span></div>
       <div><strong>Security / Governance Controls</strong><span>Policy, evidence, owner and exception process.</span></div>
     </div>
-    <div class="kc-reference-flow__lane">
+    <div className="kc-reference-flow__lane">
       <small>Delivery and Enablement</small>
       <div><strong>SOW / WBS</strong><span>Scope, milestone, dependency, owner and acceptance criteria.</span></div>
       <div><strong>Delivery Plan</strong><span>Wave, pilot, rollout, change impact and validation plan.</span></div>
       <div><strong>Runbook / Handover</strong><span>Operations, ownership, escalation and support rhythm.</span></div>
     </div>
   </div>
-  <div class="kc-reference-flow__outcome">
+  <div className="kc-reference-flow__outcome">
     <div><small>Executive Metrics</small><strong>Risk reduction, adoption, stability and delivery repeatability</strong></div>
     <div><small>Public Output</small><strong>Anonymized reference pattern by industry, scenario and asset type</strong></div>
   </div>
@@ -334,18 +328,18 @@ When publishing these references externally:
 
 ## Executive Reference Model
 
-<div class="kc-outcome-grid" aria-label="Executive customer reference model">
-  <div class="kc-outcome-card">
+<div className="kc-outcome-grid" aria-label="Executive customer reference model">
+  <div className="kc-outcome-card">
     <small>CONTEXT</small>
     <strong>Industry and business pressure</strong>
     <span>Explain the industry, operating environment and business challenge without revealing customer identity.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>METHOD</small>
     <strong>Architecture and delivery pattern</strong>
     <span>Connect Microsoft capabilities, consulting workstreams, decision points and reusable delivery assets.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>VALUE</small>
     <strong>Reusable success narrative</strong>
     <span>Describe outcomes as repeatable patterns: risk reduction, adoption, governance, migration stability or operational maturity.</span>

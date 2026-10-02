@@ -1,4 +1,4 @@
-﻿module.exports = {
+module.exports = {
   docsSidebar: [
     {
       type: 'doc',
@@ -131,6 +131,7 @@
       collapsed: true,
       items: [
         'copilot/overview',
+        'copilot/official-update-catchup-2026-10',
         'copilot/readiness',
         'copilot/adoption-program',
         'copilot/business-use-cases',

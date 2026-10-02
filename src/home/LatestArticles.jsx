@@ -4,6 +4,13 @@ import styles from './LatestArticles.module.css';
 
 const articles = [
   {
+    category: 'Official Updates',
+    title: 'Copilot Update Review — October 2026',
+    description: 'Official release review covering the unpublished July–September changes, agent harnesses and rollout checks.',
+    path: '/knowledge/copilot/official-update-catchup-2026-10',
+    meta: 'Verified October 2, 2026',
+  },
+  {
     category: 'AI Adoption',
     title: 'How to Use AI in Enterprise',
     description:
