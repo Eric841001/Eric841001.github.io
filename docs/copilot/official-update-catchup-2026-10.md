@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 2일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 3일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -22,6 +22,17 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 | [9월 23일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#september-23-2026) | Excel 변경링크·AI기여표시, 라이선스요청, 검색첨부·메일정렬, 공간프로필, 회의주제검색, 분석필터, Planner채팅, Outlook 분류작업, People Skills삭제, GitHub 비용분석, 노트북 빠른참조·개편, CarPlay, 차단정책링크, Cowork 위임, Vision, Forms채팅, 연합커넥터 GA·관리개선, 클래식Outlook 에이전트확장, PowerPoint 사용자스킬, Glint 분류, 활용도·일별분석 |
 
 출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 이번 조회에서 최신 날짜는 9월 23일입니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
+
+## 9월 25일 새 Copilot 공식 발표
+
+Microsoft는 Copilot 앱의 새 작업 진입점으로 **Home, Code, Autopilot**을 발표했습니다. 이는 릴리스 노트의 전면 GA 목록이 아니라 단계적 공개 계획이므로, 도입 일정과 비용을 분리해서 판단해야 합니다.
+
+- **Home:** Chat과 Cowork를 한곳에 모으고 Word·Excel·PowerPoint 문서를 Copilot 안에서 만들고 편집하는 시작 화면입니다. 앞으로 수 주에 걸쳐 Frontier 프로그램부터 배포합니다.
+- **Code:** 자연어로 앱·대시보드·자동화·워크플로를 만드는 환경입니다. Frontier에 먼저 배포하고 Microsoft 365 Premium·Pro 구독자용 preview는 2026년 후반으로 안내했습니다. Copilot Managed Runtime은 현재 preview입니다.
+- **Autopilot:** 이전 명칭 Scout인 지속 실행형 개인 에이전트입니다. 테넌트 안에서 자체 ID·메모리·컴퓨터·작업 공간을 사용하며 9월 말 private preview 확대 대상으로 발표됐습니다.
+- **비용 구분:** 일반 Chat과 Microsoft 365 앱 내 Copilot은 사용자 구독 라이선스(USL), Cowork·Code·Autopilot 같은 장기 실행 작업은 Copilot Credits 기반 사용량 과금(UBB)으로 설명했습니다. 파일럿 전에 크레딧 한도·승인·모델 정책과 감사 범위를 함께 설계하세요.
+
+출처: [Microsoft 공식 블로그 — Introducing the new Copilot with Home, Code and Autopilot](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/).
 
 ## Copilot Studio와 에이전트
 
