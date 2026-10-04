@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 3일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 4일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -33,6 +33,16 @@ Microsoft는 Copilot 앱의 새 작업 진입점으로 **Home, Code, Autopilot**
 - **비용 구분:** 일반 Chat과 Microsoft 365 앱 내 Copilot은 사용자 구독 라이선스(USL), Cowork·Code·Autopilot 같은 장기 실행 작업은 Copilot Credits 기반 사용량 과금(UBB)으로 설명했습니다. 파일럿 전에 크레딧 한도·승인·모델 정책과 감사 범위를 함께 설계하세요.
 
 출처: [Microsoft 공식 블로그 — Introducing the new Copilot with Home, Code and Autopilot](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/).
+
+## 9월 30일 후속 업데이트
+
+Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 범위와 관리 지점을 보완했습니다.
+
+- **GPT-6.1 Sol·Claude Sonnet 5.5:** 9월 30일부터 Cowork와 Copilot Studio에 사용량 기반 과금(UBB)으로 배포를 시작했습니다. Word·Excel·PowerPoint·Chat은 Microsoft 365 Copilot 사용자 구독 라이선스(USL) 범위에서 다음 주부터 단계적으로 배포한다고 안내했습니다. Claude 또는 일부 GPT 화면을 사용하려면 조직의 Anthropic·OpenAI 하위 처리자 설정을 확인해야 하며, 앱 내 모델별 사용 한도가 적용될 수 있습니다. [모델 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801)
+- **Microsoft 플러그인 레지스트리:** Microsoft·파트너·조직 제작 플러그인을 Copilot 앱과 Microsoft 365 앱에서 함께 찾고 배포하는 통합 카탈로그가 9월에 배포됐습니다. 관리자는 Microsoft 365 관리 센터와 Agent 365에서 플러그인을 한 번 승인하고 중앙 관리할 수 있습니다. 도입 전에는 게시자 신뢰, 연결 권한, 데이터 처리 위치, 사용자 공개 범위를 승인 기준에 포함하세요. [플러그인 레지스트리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
+- **월간 배포 확인:** Teams·Outlook의 Copilot UI, 프롬프트 안 `/` 에이전트·`@` 스킬 호출, 스캔 PDF 검색, Android Office 편집, 모바일 Record가 9월 배포 항목으로 정리됐습니다. 관리 기능에는 Copilot Search의 신뢰할 수 있는 SharePoint 사이트를 최대 100개 지정하는 중앙 관리와 집계 단위 Pulse 설문이 포함됩니다. Edge 새 탭 통합은 10월 예정이며 일정은 변경될 수 있습니다. [9월 공식 월간 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107)
+
+월간 블로그의 배포 표현은 개별 테넌트의 즉시 사용 가능성을 보장하지 않습니다. 기능 표시, 라이선스, 하위 처리자·연결 정책과 메시지 센터 공지를 함께 확인하세요.
 
 ## Copilot Studio와 에이전트
 
