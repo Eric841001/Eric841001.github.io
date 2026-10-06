@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 4일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 6일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -47,8 +47,12 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 ## Copilot Studio와 에이전트
 
 - **GitHub Copilot harness:** 8월 3일 공식 발표에서 GA로 안내했습니다. Copilot Chat·Standard와 병행하는 실행 선택지이며, 복잡한 작업에 필요한 계획·도구·워크플로를 지원합니다. 포함 라이선스로 소비비용이 모두 면제된다고 가정하지 마세요. [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969), [상세 플랫폼 가이드](./copilot-studio-2026-platform-update.md).
+- **9월 워크플로·평가:** GitHub Copilot harness 워크플로에 PDF·Word·Excel·PowerPoint의 지정 값과 표를 구조화하는 Extract 노드가 추가됐습니다. Copilot Chat·Cowork·Researcher·Analyst 등을 호출하는 Copilot 노드는 preview이며, 연결된 Microsoft 365 사용자의 권한으로 메일·파일·일정·채팅에 접근합니다. 표준 harness에는 유해 콘텐츠 심각도 기준을 설정하는 평가 방식이 추가됐습니다. [9월 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new#september-2026), [Copilot 노드 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/workflows-experience/microsoft-365-copilot-node-workflow), [콘텐츠 안전 평가](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview).
+- **9월 파일·데이터:** GitHub Copilot harness 대화의 파일 첨부가 GA로 확대되어 Excel·PowerPoint·Word를 포함합니다. 첨부는 영구 지식 원본이 아니라 대화 입력이며 Purview 레이블을 지원하고, 공식 문서 기준 대화 마지막 활동 후 28일간 보관됩니다. Dataverse 테이블 지식과 Multiline Text·File 열의 비정형 추론은 상태가 다르므로 후자는 preview로 구분하세요. [첨부 파일 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/attachments-overview), [9월 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new#september-2026).
+- **8월 비용·보안:** GitHub Copilot harness 기반 에이전트·워크플로·앱은 제작·미리보기·테스트·평가 단계부터 Copilot Credits를 소비하며, 토큰·도구·harness 사용이 과금 범위에 포함됩니다. 관리자는 환경별 크레딧 할당과 소비 모니터링을 준비하세요. Power Platform 관리 센터에서는 환경·환경 그룹 단위로 응답의 이미지와 URL을 모두 차단하거나 문맥상 신뢰되지 않는 항목만 차단할 수 있습니다. [사용량 기반 과금](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-overview), [이미지·URL 제어](https://learn.microsoft.com/en-us/microsoft-copilot-studio/image-render-embedded-url).
+- **8월 지식 연결:** Azure SQL·SQL Server 테이블을 지식 원본으로 사용할 수 있지만, maker 연결 권한과 데이터베이스 읽기 권한·네트워크 접근을 먼저 검증해야 합니다. Work IQ 연결은 preview이고 GitHub Copilot harness/Copilot Credits를 사용하며, 기본 읽기 전용입니다. 쓰기 작업은 관리자가 별도로 허용하고 Work IQ 전용 지출 정책을 구성해야 합니다. [Azure SQL 지식 원본](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/knowledge-add-azure-sql-tables), [Work IQ preview 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq).
 - **Microsoft IQ Accelerator:** Work IQ·Foundry IQ·Fabric IQ를 연결하는 공급망 참조 구현입니다. 일부 기능과 MCP 통합은 preview이며 평가·실험용 조건을 확인해야 합니다. [Microsoft 공식 저장소](https://github.com/microsoft/microsoft-iq-solution-accelerator).
-- **상태 구분:** [Studio What's New](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)는 이번 조회에서 7월까지 표시했습니다. 7월에는 신규 에이전트 Entra Agent ID 자동생성과 환경단위 옵트아웃 제거를 안내합니다. 개별 기능의 preview 표시는 별도로 유지하세요.
+- **상태 구분:** [Studio What's New](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)는 이번 조회에서 9월까지 표시했습니다. 7월의 신규 에이전트 Entra Agent ID 자동생성과 환경단위 옵트아웃 제거 이후 8월·9월 변경이 추가됐으며, 개별 기능의 preview·GA 표시는 별도로 유지하세요.
 - **한국 지역:** [지역 릴리스표](https://learn.microsoft.com/ko-kr/power-platform/released-versions/copilotstudio)는 Platform `2026.6.3`, UX `26.06.21-24`를 표시했습니다. 오래된 표의 날짜를 현재 테넌트 배포완료 근거로 사용하지 마세요.
 
 ## 도입 담당자의 확인 순서
