@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 6일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 7일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -20,8 +20,16 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 | [8월 11일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-11-2026) | 병렬수집, ServiceNow 역할권한, SharePoint 공식사이트, Outlook 코칭·회의준비, 그룹 Planner에이전트, PowerPoint 기업자산·웹생성·웹출처, 소비대시보드, Word 모델선택 |
 | [8월 25일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-25-2026) | Excel Python, 하이브리드장치 메시지, Engage 비공개콘텐츠, 노트북 UI·메일·회의, 검색중채팅, 채팅중메일열기, Work IQ버튼, 모바일페이지, 앱개편, Cowork 이미지생성, Researcher 모델선택, Work IQ API, Outlook 일정, PowerPoint 메일참조·발표설명, Word 음성질문·Sonnet |
 | [9월 23일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#september-23-2026) | Excel 변경링크·AI기여표시, 라이선스요청, 검색첨부·메일정렬, 공간프로필, 회의주제검색, 분석필터, Planner채팅, Outlook 분류작업, People Skills삭제, GitHub 비용분석, 노트북 빠른참조·개편, CarPlay, 차단정책링크, Cowork 위임, Vision, Forms채팅, 연합커넥터 GA·관리개선, 클래식Outlook 에이전트확장, PowerPoint 사용자스킬, Glint 분류, 활용도·일별분석 |
+| [10월 6일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#october-06-2026) | Copilot Search·Chat 통합, 응답 재생성·모델전환, 커넥터 쿼리·사용자 매핑 수정, SharePoint 광범위그룹 권한 보고서, PowerPoint 커스텀 스킬·Mac 파일참조, Cowork 채택·비용 분석 |
 
-출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 이번 조회에서 최신 날짜는 9월 23일입니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
+출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 이번 조회에서 최신 날짜는 10월 6일입니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
+
+## 10월 6일 운영 체크포인트
+
+- **검색에서 채팅으로:** Windows·Web의 Microsoft 365 Copilot Search 결과를 문맥으로 이어 후속 질문·요약·콘텐츠 생성을 할 수 있습니다. Web 채팅에는 `Try Again`과 `Switch Model`을 포함한 응답 재생성이 추가됐습니다. 검색 권한과 선택 모델을 포함해 대표 사용자로 단계적 배포 여부를 확인하세요.
+- **커넥터 권한 매핑:** 관리자가 Microsoft 365 관리 센터의 `Settings > Search & intelligence > Data sources`에서 생성된 연결의 쿼리 문자열과 사용자 ID 매핑 규칙을 직접 수정할 수 있습니다. 변경 후 다음 크롤을 확인하고, 영향받는 사용자로 소스 범위와 권한 누락·과다 노출을 재검증하세요.
+- **SharePoint 광범위 공유 감사:** SharePoint Advanced Management 관리자는 Data access governance reports에서 `Everyone`과 `Everyone except external users`에 부여된 항목 단위 권한을 보고서로 확인할 수 있습니다. [광범위 그룹 공유 보고서 안내](https://learn.microsoft.com/en-us/sharepoint/powershell-for-data-access-governance#generate-a-report-on-sites-and-files-shared-via-special-sharepoint-groups)의 역할·모듈 전제 조건을 확인하고 사이트·파일 소유자와 예외 필요성을 같이 검토하세요.
+- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 커스텀 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 채택·영향·크레딧 소비 지표와 export, Advanced Insights의 Consumption·Person query를 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 파일럿 기준선을 잡으세요.
 
 ## 9월 25일 새 Copilot 공식 발표
 
