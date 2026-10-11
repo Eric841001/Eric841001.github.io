@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 7일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 11일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -51,6 +51,13 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 - **월간 배포 확인:** Teams·Outlook의 Copilot UI, 프롬프트 안 `/` 에이전트·`@` 스킬 호출, 스캔 PDF 검색, Android Office 편집, 모바일 Record가 9월 배포 항목으로 정리됐습니다. 관리 기능에는 Copilot Search의 신뢰할 수 있는 SharePoint 사이트를 최대 100개 지정하는 중앙 관리와 집계 단위 Pulse 설문이 포함됩니다. Edge 새 탭 통합은 10월 예정이며 일정은 변경될 수 있습니다. [9월 공식 월간 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107)
 
 월간 블로그의 배포 표현은 개별 테넌트의 즉시 사용 가능성을 보장하지 않습니다. 기능 표시, 라이선스, 하위 처리자·연결 정책과 메시지 센터 공지를 함께 확인하세요.
+
+## 10월 9일 Copilot 앱·Notebooks 업데이트
+
+- **Office in Copilot:** Copilot 앱의 Chat 또는 Cowork에서 시작한 Word 문서, Excel 통합 문서, PowerPoint 프레젠테이션을 대화와 나란히 열어 직접 편집하고 공동 작성할 수 있습니다. 파일은 OneDrive에 저장되어 서식, 공유 권한, 버전 기록, 민감도 레이블과 규정 준수 정책을 이어갑니다. Microsoft는 10월 9일 게시 시점에 Frontier 고객 대상 배포로 안내했으므로, 일반 공급으로 간주하지 말고 대상 사용자에게 Chat·Cowork 진입점과 공동 편집이 실제 표시되는지 확인하세요. [Office in Copilot 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230)
+- **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 공식 글이 전체 테넌트 GA를 명시한 것으로 보지 말고, Microsoft 365 Copilot 라이선스·SharePoint 또는 OneDrive 저장소와 실제 롤아웃 상태를 대표 사용자로 검증하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
+
+두 업데이트 모두 기존 Office 파일의 권한과 공동 작업 경계를 그대로 사용하므로, 파일럿에서는 새 파일 생성뿐 아니라 기존 파일 열기, 외부 공유, 민감도 레이블, 버전 복원까지 함께 점검하세요.
 
 ## Copilot Studio와 에이전트
 
