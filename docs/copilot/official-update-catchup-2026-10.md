@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 11일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 14일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -58,6 +58,16 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 - **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 공식 글이 전체 테넌트 GA를 명시한 것으로 보지 말고, Microsoft 365 Copilot 라이선스·SharePoint 또는 OneDrive 저장소와 실제 롤아웃 상태를 대표 사용자로 검증하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
 
 두 업데이트 모두 기존 Office 파일의 권한과 공동 작업 경계를 그대로 사용하므로, 파일럿에서는 새 파일 생성뿐 아니라 기존 파일 열기, 외부 공유, 민감도 레이블, 버전 복원까지 함께 점검하세요.
+
+## 10월 13일 간접 프롬프트 인젝션 방어 업데이트
+
+Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델에 그대로 전달하지 않고 격리된 제약 처리 경로에서 변환한 뒤, 출처 표시와 함께 신뢰된 콘텐츠와 합성하는 Microsoft 365 Copilot의 새 강제 적용 계층을 발표했습니다. 이는 정상 권한으로 읽을 수 있는 콘텐츠 안의 악성 지시가 모델 행동에 영향을 주는 간접 프롬프트 인젝션 위험을 낮추기 위한 방어 심층 계층입니다.
+
+- **적용 상태를 단정하지 마세요:** 발표는 초기 투자가 외부 통신 같은 고위험 콘텐츠에 집중된다고 설명하며, 릴리스 상태와 테넌트에 따라 가용성과 동작이 달라질 수 있다고 명시합니다. 대표 사용자로 외부 메일 요약·추론 시나리오를 검증하고, [Microsoft 365 Copilot 방어 심층 문서](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-prompt-defense-in-depth)의 감사·Defender·Purview 통제를 함께 점검하세요.
+- **외부 발신자 식별:** Microsoft는 [CVE-2026-55145 지침](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55145)과 연결해 Outlook 외부 발신자 설정을 사용하도록 안내합니다. Exchange Online에서 `Set-ExternalInOutlook -Enabled $true` 적용 여부와 예외 목록을 검토하세요. 표시 반영에는 24~48시간이 걸릴 수 있으며, 기존 제목 삽입 메일 흐름 규칙과 중복되지 않게 해야 합니다. [Exchange PowerShell 공식 문서](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-externalinoutlook?view=exchange-ps)
+- **더 엄격한 제외가 필요하면:** Microsoft Purview DLP의 `Email is received from > External users` 조건으로 외부 메일을 Copilot의 근거·요약·인용에서 제외할 수 있습니다. 이 기능은 preview이고 메일 본문이 아니라 발신자 도메인 메타데이터를 평가하므로, 라이선스와 실제 테넌트 롤아웃을 확인한 뒤 시뮬레이션·파일럿으로 적용하세요. [Purview DLP 공식 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview)
+
+출처: [Microsoft 공식 블로그 — Building Trust-Aware Controls for AI](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/building-trust-aware-controls-for-ai-differentiated-handling-of-untrusted-conten/4562160). 이 계층은 기존 권한·DLP·Defender 통제를 대체하지 않으며, 외부 콘텐츠 식별과 감사·탐지·차단 정책을 함께 운영해야 합니다.
 
 ## Copilot Studio와 에이전트
 
