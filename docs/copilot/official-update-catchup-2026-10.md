@@ -71,7 +71,7 @@ Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델�
 
 ## 10월 15일 Copilot for legal GA
 
-Microsoft는 계약 검토·초안·레드라인·플레이북 대조·조항 분석을 지원하는 20개 이상의 법률 스킬과 파트너 플러그인을 **일반 공급(GA)**으로 발표했습니다.
+Microsoft는 계약 검토·초안·레드라인·플레이북 대조·조항 분석을 지원하는 20개 이상의 법률 스킬과 파트너 플러그인을 일반 공급(GA)으로 발표했습니다.
 
 - **대상과 라이선스:** Microsoft 365 Copilot 상용 라이선스 사용자가 Word 데스크톱과 Cowork에서 사용할 수 있습니다. Word의 Legal 플러그인은 기본 활성화되며 `Manage plugins & skills`에서 끌 수 있고, Cowork에서는 `Customize > Roles & Industry`에서 Legal 플러그인을 추가합니다. [시작 가이드와 전제 조건](https://support.microsoft.com/en-us/word/get-started-with-copilot-for-legal)
 - **운영 방식:** Word에서는 출처 인용, 추적 변경을 이용한 레드라인, `.docx` 플레이북 기반 계약 검토와 선례·템플릿 기반 초안을 지원합니다. Cowork에서는 여러 계약·메일·회의·파일을 아우르는 다단계 작업을 맡길 수 있습니다. 파트너 플러그인은 Microsoft 플러그인 레지스트리를 통해 순차 배포되므로 각 플러그인의 게시자·권한·데이터 처리 조건을 별도로 승인하세요.
