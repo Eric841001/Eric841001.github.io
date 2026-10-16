@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 14일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 16일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -68,6 +68,17 @@ Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델�
 - **더 엄격한 제외가 필요하면:** Microsoft Purview DLP의 `Email is received from > External users` 조건으로 외부 메일을 Copilot의 근거·요약·인용에서 제외할 수 있습니다. 이 기능은 preview이고 메일 본문이 아니라 발신자 도메인 메타데이터를 평가하므로, 라이선스와 실제 테넌트 롤아웃을 확인한 뒤 시뮬레이션·파일럿으로 적용하세요. [Purview DLP 공식 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview)
 
 출처: [Microsoft 공식 블로그 — Building Trust-Aware Controls for AI](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/building-trust-aware-controls-for-ai-differentiated-handling-of-untrusted-conten/4562160). 이 계층은 기존 권한·DLP·Defender 통제를 대체하지 않으며, 외부 콘텐츠 식별과 감사·탐지·차단 정책을 함께 운영해야 합니다.
+
+## 10월 15일 Copilot for legal GA
+
+Microsoft는 계약 검토·초안·레드라인·플레이북 대조·조항 분석을 지원하는 20개 이상의 법률 스킬과 파트너 플러그인을 **일반 공급(GA)**으로 발표했습니다.
+
+- **대상과 라이선스:** Microsoft 365 Copilot 상용 라이선스 사용자가 Word 데스크톱과 Cowork에서 사용할 수 있습니다. Word의 Legal 플러그인은 기본 활성화되며 `Manage plugins & skills`에서 끌 수 있고, Cowork에서는 `Customize > Roles & Industry`에서 Legal 플러그인을 추가합니다. [시작 가이드와 전제 조건](https://support.microsoft.com/en-us/word/get-started-with-copilot-for-legal)
+- **운영 방식:** Word에서는 출처 인용, 추적 변경을 이용한 레드라인, `.docx` 플레이북 기반 계약 검토와 선례·템플릿 기반 초안을 지원합니다. Cowork에서는 여러 계약·메일·회의·파일을 아우르는 다단계 작업을 맡길 수 있습니다. 파트너 플러그인은 Microsoft 플러그인 레지스트리를 통해 순차 배포되므로 각 플러그인의 게시자·권한·데이터 처리 조건을 별도로 승인하세요.
+- **통제와 책임:** 결과는 자문용이며 법률 자문이나 전문가 판단을 대체하지 않습니다. 승인된 플레이북으로 범위를 제한하고, Word의 추적 변경을 사람이 검토하며, 민감도 레이블·접근 권한·보존 정책을 포함한 Microsoft 365 통제를 그대로 적용하세요. [투명성 문서](https://support.microsoft.com/en-us/word/copilot-for-legal-transparency-documentation)
+- **지역·배포 확인:** Microsoft 발표는 전 세계 Microsoft Copilot 고객 대상 GA라고 설명하지만, 파트너 플러그인과 세부 화면은 순차 배포될 수 있습니다. 대표 사용자의 Word 데스크톱과 Cowork에서 Legal 스킬 표시, 라이선스, 언어·지역 동작을 실제 확인하세요.
+
+출처: [Microsoft 공식 발표 — Introducing Microsoft Copilot for legal](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246). 법률 문서와 플레이북은 실제 접근 권한 범위에서만 사용하고, 생성된 조항·인용·기한은 자격 있는 담당자가 원문과 대조해야 합니다.
 
 ## Copilot Studio와 에이전트
 

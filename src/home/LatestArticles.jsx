@@ -6,9 +6,9 @@ const articles = [
   {
     category: 'Official Updates',
     title: 'Copilot Update Review — October 2026',
-    description: 'Official release review covering the unpublished July–September changes, agent harnesses and rollout checks.',
+    description: 'Official release review covering the July–October changes, agent harnesses and rollout checks.',
     path: '/knowledge/copilot/official-update-catchup-2026-10',
-    meta: 'Verified October 2, 2026',
+    meta: 'Verified October 16, 2026',
   },
   {
     category: 'AI Adoption',
