@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 16일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 20일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -79,6 +79,17 @@ Microsoft는 계약 검토·초안·레드라인·플레이북 대조·조항 �
 - **지역·배포 확인:** Microsoft 발표는 전 세계 Microsoft Copilot 고객 대상 GA라고 설명하지만, 파트너 플러그인과 세부 화면은 순차 배포될 수 있습니다. 대표 사용자의 Word 데스크톱과 Cowork에서 Legal 스킬 표시, 라이선스, 언어·지역 동작을 실제 확인하세요.
 
 출처: [Microsoft 공식 발표 — Introducing Microsoft Copilot for legal](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246). 법률 문서와 플레이북은 실제 접근 권한 범위에서만 사용하고, 생성된 조항·인용·기한은 자격 있는 담당자가 원문과 대조해야 합니다.
+
+## 10월 19일 PowerPoint 대화형 슬라이드 배포
+
+Microsoft는 Copilot이 요약·타임라인·대시보드·비교 같은 **대화형 슬라이드**를 만들고 프롬프트로 수정하는 기능의 단계적 배포를 발표했습니다. 정적 슬라이드 생성과 달리 발표자와 청중이 단계, 필터, 데이터 포인트를 직접 탐색할 수 있습니다.
+
+- **배포 상태:** Windows·Mac의 Current Channel 및 Monthly Enterprise Channel과 PowerPoint 웹은 10월 중순 배포를 시작해 10월 말 완료 예정입니다. Frontier, Microsoft 365 Insiders Beta Channel, Current Channel (Preview)는 지원 범위에 따라 먼저 사용할 수 있으므로, 전면 배포 완료로 간주하지 말고 대표 사용자에게 `Interactive Slide` 버튼과 Copilot 스킬이 실제 표시되는지 확인하세요.
+- **라이선스와 공유:** Copilot in PowerPoint를 사용할 수 있는 적격 개인·상용 사용자가 대상이며 Microsoft 365 Copilot Basic·Premium을 포함합니다. 대화형 슬라이드 전용 추가 라이선스는 없고, 공유받은 사용자는 Copilot 라이선스가 없어도 상호작용을 탐색할 수 있습니다.
+- **플랫폼 차이:** 생성·수정은 Copilot 앱과 Windows·Mac·웹 PowerPoint에서 지원합니다. 열람 상호작용은 여기에 iPad와 Teams PowerPoint Live가 추가되지만, iPhone·Android·인쇄·PDF 내보내기에서는 비대화형 이미지로 표시됩니다. Mac 발표자 보기와 Teams의 발표자-청중 상호작용 동기화도 아직 지원되지 않습니다.
+- **운영 체크:** 슬라이드는 캔버스에서 직접 편집하지 않고 Copilot 프롬프트로 갱신합니다. Work IQ로 Excel·프로젝트 문서를 근거로 삼을 수 있으므로 원본 파일 권한과 민감도 레이블을 검증하고, 생성된 수치·레이아웃·동작을 발표 전 사람이 확인하세요. 대화형 요소는 다른 콘텐츠나 서비스에 연결되지 않는 격리된 웹 보기로 표시됩니다.
+
+출처: [Microsoft 공식 발표 — Transform your storytelling with interactive slides in PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/transform-your-storytelling-with-interactive-slides-in-powerpoint/4564287), [Microsoft 지원 — Create interactive slides with Copilot in PowerPoint](https://support.microsoft.com/en-us/powerpoint/copilot/create-interactive-slides-with-copilot-in-powerpoint).
 
 ## Copilot Studio와 에이전트
 
