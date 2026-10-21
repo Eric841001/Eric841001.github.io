@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 20일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 21일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -90,6 +90,17 @@ Microsoft는 Copilot이 요약·타임라인·대시보드·비교 같은 **대�
 - **운영 체크:** 슬라이드는 캔버스에서 직접 편집하지 않고 Copilot 프롬프트로 갱신합니다. Work IQ로 Excel·프로젝트 문서를 근거로 삼을 수 있으므로 원본 파일 권한과 민감도 레이블을 검증하고, 생성된 수치·레이아웃·동작을 발표 전 사람이 확인하세요. 대화형 요소는 다른 콘텐츠나 서비스에 연결되지 않는 격리된 웹 보기로 표시됩니다.
 
 출처: [Microsoft 공식 발표 — Transform your storytelling with interactive slides in PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/transform-your-storytelling-with-interactive-slides-in-powerpoint/4564287), [Microsoft 지원 — Create interactive slides with Copilot in PowerPoint](https://support.microsoft.com/en-us/powerpoint/copilot/create-interactive-slides-with-copilot-in-powerpoint).
+
+## 10월 20일 OneDrive·SharePoint Copilot 업데이트
+
+Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 확인하고, 파일을 단순히 찾는 수준을 넘어 여러 파일 분석·정리·콘텐츠 생성에 사용하는 새 경험을 발표했습니다. OneDrive와 SharePoint의 Copilot은 같은 기반과 라이선스 모델을 사용합니다.
+
+- **실무 기능:** 여러 스프레드시트를 선택해 추세·차트를 분석하고, 혼잡한 프로젝트 폴더를 목적에 맞게 정리하며, 기존 파일을 근거로 대화형 HTML 보고서를 만들 수 있습니다. 반복 절차는 Markdown 개인 스킬로 저장할 수 있고 OneDrive Prompt Gallery에서 시작 프롬프트를 선택할 수 있습니다.
+- **라이선스와 비용:** 콘텐츠 기반 질문, 생성·정리, 재사용 스킬, 점진적 메타데이터 보강과 결정론적 워크플로 같은 일상 기능은 Microsoft 365 Copilot 라이선스에 포함됩니다. 대규모 콘텐츠 컬렉션 처리, 다단계 에이전트 작업, 이미지 생성·편집, AI 사이트 분석, 준실시간 메타데이터 자동 채우기에는 Copilot Credits와 usage-based billing이 필요합니다. 관리자는 Microsoft 365 관리 센터의 비용 관리·지출 정책과 사용자 범위를 먼저 설정하세요.
+- **배포 확인:** Copilot in OneDrive는 9월 30일부터 전 세계 테넌트에 GA로 배포됐지만, 10월 20일 발표의 개별 `NEW` 기능은 모두 같은 날 전면 제공된다는 뜻이 아닙니다. 대표 사용자로 다중 파일 분석, 폴더 정리, HTML·Markdown 편집, 개인 스킬 메뉴가 실제 표시되는지 확인하고 크레딧 소비 확인 화면도 검증하세요.
+- **로드맵 구분:** 파일에 에이전트를 공유·멘션해 댓글로 협업하거나 Copilot이 권한 상속 문제와 과도한 공유를 진단·수정하는 기능은 향후 방향입니다. 현재 GA 기능이나 보안 통제로 간주하지 말고 기존 SharePoint·OneDrive 권한 검토, 민감도 레이블, DLP를 계속 적용하세요.
+
+출처: [Microsoft OneDrive 공식 발표 — OneDrive Just Got a Major Upgrade](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995), [Microsoft SharePoint 공식 GA·과금 안내](https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724).
 
 ## Copilot Studio와 에이전트
 
