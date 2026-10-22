@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 21일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 22일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -103,6 +103,17 @@ Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 �
 출처: [Microsoft OneDrive 공식 발표 — OneDrive Just Got a Major Upgrade](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995), [Microsoft SharePoint 공식 GA·과금 안내](https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724).
 
 ## Copilot Studio와 에이전트
+
+### 10월 21일 Cowork 플러그인·역할 스킬 확대
+
+Microsoft는 Cowork에서 사용할 수 있는 연결과 반복 업무용 역할 스킬을 확대했습니다. 플러그인은 Microsoft 365 App Store에서 제공되며, 사용자는 Cowork의 `Customize > Plugins`에서 찾고 관리자는 Microsoft 365 관리 센터의 `Agents > Tools`에서 허용 범위와 배포 대상을 제어합니다.
+
+- **연결 범위:** Power Platform 커넥터는 향후 수 주에 걸쳐 순차 배포됩니다. Federated Copilot connector는 MCP를 통해 외부 시스템의 실시간 데이터를 연결하며, 각 사용자가 해당 시스템에서 가진 권한 범위로 동작합니다. Fabric IQ, Business Applications in Work IQ와 Dynamics 365 플러그인은 별도 환경·연결 권한을 확인하세요.
+- **역할별 플러그인:** Sales, Service, Education, Legal for Cowork는 `Roles & Industry`에서 사용할 수 있다고 발표됐습니다. 회의 준비·딜 위험 분석, 서비스 케이스 분류·답변 작성, 교육 거버넌스·과정 준비, 계약 검토·레드라인처럼 반복되는 업무를 사전 구성된 스킬로 제공합니다. 사용자는 Microsoft 365 Copilot 라이선스가 필요하며, 법률 결과는 자격 있는 담당자가 원문과 대조해야 합니다.
+- **관리와 보안:** 관리자는 조직 전체 또는 특정 사용자·그룹에 배포하거나 차단할 수 있지만 국가·지역 단위 범위 지정은 지원되지 않습니다. 사용자 업로드 플러그인의 조직 전체 공개에는 관리자 승인이 필요하나, 특정 사용자 공유를 한 번에 끄는 단일 테넌트 설정은 현재 없습니다. Microsoft Purview Information Barriers는 플러그인·스킬 관리와 공유를 지원하지 않아 IB 사용 테넌트에서는 포함된 지식 파일의 업로드·게시가 차단됩니다.
+- **파일럿 확인:** 게시자, 커넥터 동의 권한, 외부 서비스 데이터 처리, 대상 보안 그룹, 진행 중 대화에 대한 차단 적용 시점을 먼저 점검하세요. 관리자가 배포한 플러그인도 외부 서비스 연결은 사용자가 최초 로그인·동의를 완료해야 합니다.
+
+출처: [Microsoft 공식 발표 — What’s New in Cowork: Expanded plugins and role-based skills](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-cowork-expanded-plugins-and-role-based-skills/4566221), [Cowork 사용 가능 플러그인](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-available-plugins), [Cowork 플러그인 관리](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins).
 
 - **GitHub Copilot harness:** 8월 3일 공식 발표에서 GA로 안내했습니다. Copilot Chat·Standard와 병행하는 실행 선택지이며, 복잡한 작업에 필요한 계획·도구·워크플로를 지원합니다. 포함 라이선스로 소비비용이 모두 면제된다고 가정하지 마세요. [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969), [상세 플랫폼 가이드](./copilot-studio-2026-platform-update.md).
 - **9월 워크플로·평가:** GitHub Copilot harness 워크플로에 PDF·Word·Excel·PowerPoint의 지정 값과 표를 구조화하는 Extract 노드가 추가됐습니다. Copilot Chat·Cowork·Researcher·Analyst 등을 호출하는 Copilot 노드는 preview이며, 연결된 Microsoft 365 사용자의 권한으로 메일·파일·일정·채팅에 접근합니다. 표준 harness에는 유해 콘텐츠 심각도 기준을 설정하는 평가 방식이 추가됐습니다. [9월 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new#september-2026), [Copilot 노드 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/workflows-experience/microsoft-365-copilot-node-workflow), [콘텐츠 안전 평가](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview).
