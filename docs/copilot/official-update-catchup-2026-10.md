@@ -36,7 +36,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 Microsoft는 Copilot 앱의 새 작업 진입점으로 **Home, Code, Autopilot**을 발표했습니다. 이는 릴리스 노트의 전면 GA 목록이 아니라 단계적 공개 계획이므로, 도입 일정과 비용을 분리해서 판단해야 합니다.
 
 - **Home:** Chat과 Cowork를 한곳에 모으고 Word·Excel·PowerPoint 문서를 Copilot 안에서 만들고 편집하는 시작 화면입니다. 앞으로 수 주에 걸쳐 Frontier 프로그램부터 배포합니다.
-- **Code:** 자연어로 앱·대시보드·자동화·워크플로를 만드는 환경입니다. Frontier에 먼저 배포하고 Microsoft 365 Premium·Pro 구독자용 preview는 2026년 후반으로 안내했습니다. Copilot Managed Runtime은 현재 preview입니다.
+- **Code:** 자연어로 앱·대시보드·자동화·워크플로를 만드는 환경입니다. 9월 발표 당시에는 Frontier 우선 배포와 Microsoft 365 Premium·Pro 구독자용 2026년 후반 preview 계획으로 안내했습니다. 현재 적용 조건은 아래 10월 21일 Frontier 문서의 Microsoft Copilot 라이선스·조직 설정을 기준으로 확인하세요. Copilot Managed Runtime은 현재 preview입니다.
 - **Autopilot:** 이전 명칭 Scout인 지속 실행형 개인 에이전트입니다. 테넌트 안에서 자체 ID·메모리·컴퓨터·작업 공간을 사용하며 9월 말 private preview 확대 대상으로 발표됐습니다.
 - **비용 구분:** 일반 Chat과 Microsoft 365 앱 내 Copilot은 사용자 구독 라이선스(USL), Cowork·Code·Autopilot 같은 장기 실행 작업은 Copilot Credits 기반 사용량 과금(UBB)으로 설명했습니다. 파일럿 전에 크레딧 한도·승인·모델 정책과 감사 범위를 함께 설계하세요.
 
