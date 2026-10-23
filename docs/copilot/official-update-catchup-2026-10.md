@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 22일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 23일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -103,6 +103,28 @@ Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 �
 출처: [Microsoft OneDrive 공식 발표 — OneDrive Just Got a Major Upgrade](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995), [Microsoft SharePoint 공식 GA·과금 안내](https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724).
 
 ## Copilot Studio와 에이전트
+
+### 10월 22일 Microsoft 365 Insights Agent V2 공개 미리 보기
+
+Microsoft는 Frontier에서 **Microsoft 365 Insights Agent V2**를 공개 미리 보기로 제공한다고 발표했습니다. Copilot Chat에서 자연어로 조직의 선언형 에이전트 사용 현황과 사용자 피드백을 조회해, 에이전트 소유자·제작자·관리자가 채택과 개선 우선순위를 판단할 수 있습니다.
+
+- **측정 범위:** DAU·WAU·MAU, 고유 사용자, 대화·쿼리·상호작용·인용, 사용 강도, 기간별 성장, 집계된 유지 신호를 확인하고 에이전트를 비교할 수 있습니다. 데이터는 약 3~4시간 간격으로 갱신되므로 실시간 운영 모니터링 도구로 사용하지 마세요.
+- **개인정보 경계:** 사용량은 테넌트 범위의 집계 데이터이며 개인별 사용 내역이나 코호트 유지율을 제공하지 않습니다. 요청자는 자신에게 접근 권한이 있는 에이전트만 조회할 수 있습니다. 자유 입력 피드백에는 업무 내용이 포함될 수 있으므로 민감정보를 넣지 않도록 안내하세요.
+- **피드백 통제:** 관리자는 Microsoft 365 관리 센터의 `Agents > Settings > Agent feedback sharing`에서 `No agents`, `All agents`, `Selected agents`를 선택합니다. 전사 허용보다 검토된 에이전트만 선택하고, 에이전트 소유자·게시자·피드백 처리 책임을 함께 기록하는 방식이 안전합니다.
+- **적용 조건:** 현재 Frontier 미리 보기이며 Microsoft 365 Copilot 라이선스, 지원되는 선언형 에이전트와 충분한 활동 데이터가 필요합니다. 지원 언어와 기능은 변경될 수 있으므로 실제 테넌트의 에이전트 선택기와 관리 설정에서 표시 여부를 확인하세요.
+
+출처: [Microsoft 공식 발표 — Explore user feedback with Microsoft 365 Insights Agent](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/explore-user-feedback-with-microsoft-365-insights-agent/4565981), [Microsoft 365 Insights Agent 샘플 프롬프트](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-sample-prompts), [Microsoft 365 관리 센터 에이전트 설정](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide).
+
+### 10월 21일 Copilot Code Frontier 운영 조건
+
+9월 발표된 **Copilot Code**가 Frontier 문서와 함께 구체화됐습니다. 자연어로 앱·대시보드·내부 도구·정적 웹 사이트·데이터 변환·스크립트를 만들고, 로컬 또는 격리된 클라우드 환경에서 실행하며 GitHub 저장소와 연결할 수 있습니다.
+
+- **상태와 라이선스:** 일반 공급이 아니라 Frontier 미리 보기입니다. 조직 계정은 Microsoft Copilot 라이선스와 조직의 Code 탭 활성화가 필요하고, 제공 여부는 롤아웃·플랫폼·정책에 따라 달라집니다.
+- **권한과 데이터:** 로컬 프로젝트는 선택한 폴더 안에서 파일을 읽고 쓸 수 있습니다. 다른 폴더 접근, 네트워크 연결, 터미널 명령, 확장 또는 MCP 사용에는 승인이 필요합니다. `Always allow`는 이후 세션과 작업 공간에도 유지될 수 있으므로 파일럿에서 기본 승인 범위를 검토하세요.
+- **개발·게시 경계:** GitHub 연결은 선택 사항이며 브랜치·커밋·초안 pull request를 만들 수 있습니다. 조직용 대화형 앱을 Copilot Managed Runtime에 게시하는 기능도 미리 보기이므로, 소스 권한·비밀값·외부 연결·사용량 한도와 게시 승인자를 먼저 정하세요.
+- **관리와 감사:** 관리자는 조직 단위로 Code 사용과 세부 기능을 켜거나 끄고 지출 한도를 관리할 수 있습니다. 생성 코드, 실행 명령, 읽거나 쓴 파일 같은 활동의 감사 범위를 확인하고, 생성 결과는 보안 검토와 테스트를 거쳐 배포하세요.
+
+출처: [Microsoft 공식 발표 — Copilot Code](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-code-make-the-power-of-coding-accessible-to-everyone/4562358), [Copilot Code 개요](https://learn.microsoft.com/en-us/copilot/code/overview), [Copilot Code 요구 사항](https://learn.microsoft.com/en-us/copilot/code/code-requirements), [조직용 Copilot Code 관리](https://learn.microsoft.com/en-us/copilot/code/code-admin).
 
 ### 10월 21일 Cowork 플러그인·역할 스킬 확대
 
