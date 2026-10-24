@@ -7,7 +7,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 23일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 24일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -101,6 +101,17 @@ Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 �
 - **로드맵 구분:** 파일에 에이전트를 공유·멘션해 댓글로 협업하거나 Copilot이 권한 상속 문제와 과도한 공유를 진단·수정하는 기능은 향후 방향입니다. 현재 GA 기능이나 보안 통제로 간주하지 말고 기존 SharePoint·OneDrive 권한 검토, 민감도 레이블, DLP를 계속 적용하세요.
 
 출처: [Microsoft OneDrive 공식 발표 — OneDrive Just Got a Major Upgrade](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995), [Microsoft SharePoint 공식 GA·과금 안내](https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724).
+
+## 10월 23일 에이전트 파일럿 확장 운영 프레임워크
+
+Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파일럿을 운영 프로그램으로 확장하는 프레임워크**를 공개했습니다. 새 제품 기능이나 GA 발표가 아니라, Copilot과 에이전트를 반복 가능한 운영 모델로 전환하기 위한 공식 도입 지침입니다.
+
+- **업무 유형부터 분류:** `Assist`, `Execute`, `Transform` 모드 아래 직원 AI 지원, 전문가 역량 확장, 사내 서비스, 핵심 업무 프로세스, 외부 고객 접점, AI-first 역량의 여섯 패턴으로 목적을 구분합니다. 실행 권한이 커질수록 명시적 소유자, 장애 대응, 수명주기 관리와 권한 한계가 필요합니다. [Agentic transformation patterns](https://learn.microsoft.com/en-us/agents/adoption-patterns/)
+- **준비도 격차를 먼저 해소:** 전략·업무 전환·거버넌스·기술과 데이터·조직 문화의 성숙도를 평가해 선택한 패턴을 막는 가장 큰 격차부터 투자합니다. 기술 배포만으로 파일럿을 확장하지 말고, 고위 경영진 후원자와 업무 성과 책임자를 먼저 지정하세요. [Agentic AI adoption maturity model](https://learn.microsoft.com/en-us/agents/adoption-maturity-model)
+- **CoE를 운영 기능으로 설계:** Agentic Center of Excellence는 위험별 출시 게이트와 감사 추적, 제작자용 템플릿·교육·사전 승인 경로, 품질·비용·가치 모니터링, 재사용 확산을 담당합니다. 정보 제공형 에이전트에는 가벼운 검토를, 외부 시스템에서 실행하거나 규제·고영향 결정을 다루는 에이전트에는 보안·데이터·업무 책임자 검토와 사람 승인을 적용하세요. [Agentic Center of Excellence](https://learn.microsoft.com/en-us/agents/center-of-excellence/)
+- **성과를 사용량과 분리:** 시간 절감과 처리 속도 같은 `soft savings`는 확보된 용량으로, 과지급 방지·거래당 비용·감사 비용·벌금 회피처럼 재무제표에 연결되는 `hard savings`는 재무 성과로 구분합니다. 시작 전에 효율·품질·채택·위험 지표를 정하고, 2~3개의 고가치·저위험 시나리오를 선정해 확장·중단 기준을 함께 기록하세요.
+
+출처: [Microsoft 공식 발표 — From Pilots to Programs](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/from-pilots-to-programs-a-structured-approach-to-scaling-ai-and-agents-for-real-/4566921). 이 글의 고객 사례 수치와 성숙도 조사는 방향 설정 자료이며, 개별 조직의 ROI 보장이나 제품 제공 상태를 뜻하지 않습니다.
 
 ## Copilot Studio와 에이전트
 
