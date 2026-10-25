@@ -34,7 +34,7 @@ sidebar_label: Downloads Center
         <strong>Request</strong>
         <span>Share industry, workload, project phase and preferred output format.</span>
       </a>
-      <a href="/knowledge/contact#confidentiality-principle" className="kc-factory-card">
+      <a href="/knowledge/contact#confidentiality-boundary" className="kc-factory-card">
         <small>03</small>
         <strong>Sanitize</strong>
         <span>Remove customer names, tenant identifiers, commercial terms and internal project details.</span>

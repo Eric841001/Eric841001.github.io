@@ -7,7 +7,27 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 24일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 25일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+
+## 이번 확인의 핵심 변경
+
+- [10월 23일 에이전트 운영 프레임워크](#agent-operating-framework) · 도입·거버넌스 지침
+- [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
+- [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
+- [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 10월 21일 고객 대화형 Harness 공개 미리 보기 {/* #customer-conversation-harness */}
+
+음성·채팅, 전문 에이전트와 사람 이관을 연결하는 **public preview**입니다. 일부 기능은 순차 배포이며 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관 같은 계획을 현재 기능으로 간주하지 마세요. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
+
+[공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954) · [상세 설계·파일럿 가이드](./customer-conversation-harness.md)
+
+## 설계와 거버넌스 후속 지침
+
+- **10월 8일:** 역할에 맞는 도구·skills·workflow·전문 에이전트로 책임을 나눠 확장성을 검증합니다. [공식 설계 지침](https://techcommunity.microsoft.com/blog/copilot-studio-blog/are-bigger-agents-better-how-to-design-agents-that-scale/4559073)
+- **9월 22일:** 관찰·평가·실행·이관의 순환으로 권한·비용·건강 상태 변화를 관리하고, 정책이 명확한 대응만 자동화합니다. [공식 운영 지침](https://techcommunity.microsoft.com/blog/copilot-studio-blog/governance-is-becoming-agentic-too-how-enterprises-can-operate-ai-at-scale/4556820)
+
+두 항목은 신규 제품 GA 발표가 아닌 설계·운영 지침입니다. [상세 검토 항목](./customer-conversation-harness.md#확장-가능한-에이전트-설계)을 확인하세요.
 
 ## Microsoft 365 Copilot 변경 목록
 
@@ -42,7 +62,7 @@ Microsoft는 Copilot 앱의 새 작업 진입점으로 **Home, Code, Autopilot**
 
 출처: [Microsoft 공식 블로그 — Introducing the new Copilot with Home, Code and Autopilot](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/).
 
-## 9월 30일 후속 업데이트
+## 9월 30일 후속 업데이트 {/* #model-availability */}
 
 Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 범위와 관리 지점을 보완했습니다.
 
@@ -102,7 +122,7 @@ Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 �
 
 출처: [Microsoft OneDrive 공식 발표 — OneDrive Just Got a Major Upgrade](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995), [Microsoft SharePoint 공식 GA·과금 안내](https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724).
 
-## 10월 23일 에이전트 파일럿 확장 운영 프레임워크
+## 10월 23일 에이전트 파일럿 확장 운영 프레임워크 {/* #agent-operating-framework */}
 
 Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파일럿을 운영 프로그램으로 확장하는 프레임워크**를 공개했습니다. 새 제품 기능이나 GA 발표가 아니라, Copilot과 에이전트를 반복 가능한 운영 모델로 전환하기 위한 공식 도입 지침입니다.
 
@@ -115,7 +135,7 @@ Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파
 
 ## Copilot Studio와 에이전트
 
-### 10월 22일 Microsoft 365 Insights Agent V2 공개 미리 보기
+### 10월 22일 Microsoft 365 Insights Agent V2 공개 미리 보기 {/* #insights-agent-v2 */}
 
 Microsoft는 Frontier에서 **Microsoft 365 Insights Agent V2**를 공개 미리 보기로 제공한다고 발표했습니다. Copilot Chat에서 자연어로 조직의 선언형 에이전트 사용 현황과 사용자 피드백을 조회해, 에이전트 소유자·제작자·관리자가 채택과 개선 우선순위를 판단할 수 있습니다.
 
@@ -137,7 +157,7 @@ Microsoft는 Frontier에서 **Microsoft 365 Insights Agent V2**를 공개 미리
 
 출처: [Microsoft 공식 발표 — Copilot Code](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-code-make-the-power-of-coding-accessible-to-everyone/4562358), [Copilot Code 개요](https://learn.microsoft.com/en-us/copilot/code/overview), [Copilot Code 요구 사항](https://learn.microsoft.com/en-us/copilot/code/code-requirements), [조직용 Copilot Code 관리](https://learn.microsoft.com/en-us/copilot/code/code-admin).
 
-### 10월 21일 Cowork 플러그인·역할 스킬 확대
+### 10월 21일 Cowork 플러그인·역할 스킬 확대 {/* #cowork-role-skills */}
 
 Microsoft는 Cowork에서 사용할 수 있는 연결과 반복 업무용 역할 스킬을 확대했습니다. 플러그인은 Microsoft 365 App Store에서 제공되며, 사용자는 Cowork의 `Customize > Plugins`에서 찾고 관리자는 Microsoft 365 관리 센터의 `Agents > Tools`에서 허용 범위와 배포 대상을 제어합니다.
 

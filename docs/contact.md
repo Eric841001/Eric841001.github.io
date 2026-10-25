@@ -35,6 +35,11 @@ description: Contact Youngsun Kang for Microsoft 365, Security, Copilot, AI Agen
   </aside>
 </section>
 
+<div className="kc-contact-action">
+  <a className="button button--primary" href="https://www.linkedin.com/in/young-sun-kang-a51b26356">LinkedIn에서 문의하기 ↗</a>
+  <p>업무 주제와 필요한 결과물을 간단히 알려주세요. 기밀 자료는 첫 문의에 포함하지 마세요.</p>
+</div>
+
 ## When To Contact
 
 Contact is useful when the public Knowledge Center gives you the direction, but you need the right discussion, template or sanitized asset for your business context.

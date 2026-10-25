@@ -89,3 +89,6 @@
     font-size: 34px;
   }
 }
+
+/* Shared home rhythm. */
+.dashboard {margin:0 auto;padding-top:44px;padding-bottom:44px;scroll-margin-top:5rem;}

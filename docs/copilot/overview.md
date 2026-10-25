@@ -1,10 +1,14 @@
 ---
 sidebar_position: 1
 title: Copilot
-description: Microsoft 365 Copilot readiness, GPT-5.6 adoption, Copilot Studio, AI Agent, Copilot Cowork, governance and ROI guide for enterprise programs.
+description: Microsoft 365 Copilot readiness, model availability, Copilot Studio, AI Agent, Copilot Cowork, governance and ROI guide for enterprise programs.
 ---
 
 # Copilot
+
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
 
 <section aria-label="Copilot enterprise AI adoption landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -111,7 +115,7 @@ description: Microsoft 365 Copilot readiness, GPT-5.6 adoption, Copilot Studio, 
   </div>
 </div>
 
-## GPT-5.6 Update for Microsoft 365 Copilot
+## July 2026 Model Update — Historical Context {/* #gpt-56-update-for-microsoft-365-copilot */}
 
 Microsoft announced GPT-5.6 for Microsoft 365 Copilot on July 9, 2026, describing it as a frontier reasoning model for agentic, end-to-end work. The rollout spans Copilot Chat, Word, Excel, PowerPoint and Copilot Cowork, so organizations should treat it as a model upgrade that affects adoption design, model selection guidance and governance communication.
 
@@ -361,4 +365,4 @@ For Copilot readiness workbooks, adoption roadmaps, agent governance templates, 
 
 ## Official Update Review
 
-[October 2026 official update review](./official-update-catchup-2026-10.md) covers the July–September release batches and links to the detailed workload guides.
+[October 2026 official update review](./official-update-catchup-2026-10.md) covers the July–October release batches and links to the detailed workload guides.

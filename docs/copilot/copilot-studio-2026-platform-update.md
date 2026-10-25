@@ -7,6 +7,10 @@ sidebar_label: 2026 Platform Update
 
 # Copilot Studio 2026 Platform Update
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
 <section aria-label="Copilot Studio 2026 platform update landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">2026 Agent Platform Baseline</span>
@@ -110,6 +114,10 @@ GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M36
   <span>Prompts, agent calls, human review and asynchronous responses make agent design closer to an operational workflow platform.</span>
 </div>
 </div>
+
+## Customer Conversation Harness — October 2026 Preview
+
+10월 21일 발표된 고객 응대용 **public preview**입니다. 음성·채팅, 전문 에이전트와 사람 이관을 연결하며, 모든 기능이 GA인 것은 아닙니다. [현재 제공 상태, 비용과 파일럿 검증](./customer-conversation-harness.md)을 확인하세요.
 
 ## GitHub Copilot Harness — August 2026 GA
 

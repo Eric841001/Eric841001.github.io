@@ -49,7 +49,7 @@ const knowledgeItems = [
 
 export default function KnowledgeGrid() {
   return (
-    <section className={styles.knowledgeGrid}>
+    <section id="browse-topics" className={styles.knowledgeGrid}>
       <div className={styles.header}>
         <p>Knowledge Domains</p>
         <h2>Browse by Technology</h2>

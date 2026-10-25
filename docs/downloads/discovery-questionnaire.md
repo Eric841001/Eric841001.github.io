@@ -36,7 +36,7 @@ toc_max_heading_level: 2
         <strong>Baseline</strong>
         <span>Tenant, workloads, licenses, hybrid state and third-party dependencies.</span>
       </a>
-      <a href="#7-security-and-compliance" className="kc-factory-card">
+      <a href="#7-security" className="kc-factory-card">
         <small>03</small>
         <strong>Risk</strong>
         <span>Security, compliance, migration constraints and governance gaps.</span>

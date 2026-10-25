@@ -146,6 +146,7 @@ module.exports = {
         'copilot/prompt-engineering',
         'copilot/copilot-studio',
         'copilot/copilot-studio-2026-platform-update',
+        'copilot/customer-conversation-harness',
         'copilot/copilot-cowork-cost-governance',
         'copilot/agentic-ai-architecture',
         'copilot/multi-agent-framework',

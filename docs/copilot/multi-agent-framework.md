@@ -917,6 +917,12 @@ Enterprise AI Operating System
 
 ---
 
+## Agent Boundary Review — October 2026
+
+Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명확히 하고, 고정 절차는 workflow로, 전문 판단은 필요한 skills·도구·전문 에이전트로 분리할지 평가하세요. 권한과 도구가 바뀔 때는 위험을 재평가하고 정책으로 처리할 수 없는 예외를 사람에게 이관합니다.
+
+[공식 출처와 세부 운영 체크](./customer-conversation-harness.md#확장-가능한-에이전트-설계)
+
 ## Executive Recommendations
 
 1. Start with business outcomes.

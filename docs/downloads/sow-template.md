@@ -28,7 +28,7 @@ toc_max_heading_level: 2
     <div class="kc-factory-grid">
       <a href="#2-business-objectives" class="kc-factory-card"><small>01</small><strong>Objectives</strong><span>Business outcomes, success criteria and Microsoft workload value.</span></a>
       <a href="#3-project-scope" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Included scope, excluded scope, assumptions and dependencies.</span></a>
-      <a href="#delivery-methodology" class="kc-factory-card"><small>03</small><strong>Method</strong><span>Assessment, design, implementation, handover and governance.</span></a>
+      <a href="#5-project-approach" class="kc-factory-card"><small>03</small><strong>Method</strong><span>Assessment, design, implementation, handover and governance.</span></a>
       <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable SOW can be shared after scope and confidentiality review.</span></a>
     </div>
   </div>

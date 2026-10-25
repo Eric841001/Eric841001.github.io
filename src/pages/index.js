@@ -1,23 +1,11 @@
 import React from 'react';
 import Head from '@docusaurus/Head';
-
+import Layout from '@theme/Layout';
 import HeroSection from '../home/HeroSection';
-import PlatformStats from '../home/PlatformStats';
-import AtAGlance from '../home/AtAGlance';
-import AdoptionStory from '../home/AdoptionStory';
-import SignatureEntryPoints from '../home/SignatureEntryPoints';
-import ArchitecturePreview from '../home/ArchitecturePreview';
-import MarketUpdate from '../home/MarketUpdate';
-import ExecutiveDashboard from '../home/ExecutiveDashboard';
-import DocsQuickAccess from '../home/DocsQuickAccess';
-import FeatureCards from '../home/FeatureCards';
-import KnowledgeGrid from '../home/KnowledgeGrid';
 import LatestArticles from '../home/LatestArticles';
-import FeaturedTemplates from '../home/FeaturedTemplates';
-import CustomerScenarios from '../home/CustomerScenarios';
-import OperatingModel from '../home/OperatingModel';
-import EnterpriseRoadmap from '../home/EnterpriseRoadmap';
-import CTASection from '../home/CTASection';
+import KnowledgeGrid from '../home/KnowledgeGrid';
+import SignatureEntryPoints from '../home/SignatureEntryPoints';
+import ExecutiveDashboard from '../home/ExecutiveDashboard';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -80,7 +68,7 @@ const structuredData = {
 
 export default function Home() {
   return (
-    <>
+    <Layout title="Enterprise Microsoft Knowledge Center">
       <Head>
         <meta
           name="description"
@@ -97,39 +85,11 @@ export default function Home() {
 
       <main className="site-home">
         <HeroSection />
-
-        <PlatformStats />
-
-        <AtAGlance />
-
-        <AdoptionStory />
-
-        <SignatureEntryPoints />
-
-        <ArchitecturePreview />
-
-        <MarketUpdate />
-
-        <CustomerScenarios />
-
-        <ExecutiveDashboard />
-
-        <DocsQuickAccess />
-
-        <FeatureCards />
-
-        <KnowledgeGrid />
-
         <LatestArticles />
-
-        <FeaturedTemplates />
-
-        <OperatingModel />
-
-        <EnterpriseRoadmap />
-
-        <CTASection />
+        <KnowledgeGrid />
+        <SignatureEntryPoints />
+        <ExecutiveDashboard />
       </main>
-    </>
+    </Layout>
   );
 }

@@ -39,7 +39,7 @@ toc_max_heading_level: 2
         <strong>Decisions</strong>
         <span>Scope boundary, assumptions, exclusions, acceptance and change control.</span>
       </a>
-      <a href="#quality-checklist" className="kc-factory-card">
+      <a href="#sow-quality-gates" className="kc-factory-card">
         <small>04</small>
         <strong>Quality</strong>
         <span>Make reviewable outputs and approval criteria explicit.</span>

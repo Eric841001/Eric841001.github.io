@@ -33,7 +33,7 @@ export default function HeroSection() {
           <p className={styles.eyebrow}>Enterprise AI Adoption Architecture</p>
 
           <h1>
-            From Copilot to Agents: how enterprise AI becomes real work
+            From Copilot to governed AI agents
           </h1>
 
           <p className={styles.subtitle}>
@@ -47,17 +47,9 @@ export default function HeroSection() {
           </p>
 
           <div className={styles.heroActions}>
-            <Link className={styles.primaryButton} to="/knowledge/search/ai-agent-factory">
-              Explore AI Adoption Path
-            </Link>
+            <a className={styles.primaryButton} href="#latest-updates">최근 업데이트 보기</a>
 
-            <Link className={styles.secondaryButton} to="/knowledge/copilot/copilot-studio-2026-platform-update">
-              Copilot Studio Update
-            </Link>
-
-            <Link className={styles.secondaryButton} to="/knowledge/copilot/copilot-cowork-cost-governance">
-              Cowork Governance
-            </Link>
+            <a className={styles.secondaryButton} href="#browse-topics">주제별 가이드 탐색</a>
           </div>
 
           <div className={styles.signalRow} aria-label="Portfolio focus areas">

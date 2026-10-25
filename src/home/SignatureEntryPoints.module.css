@@ -107,3 +107,6 @@
     min-height: 0;
   }
 }
+
+/* Shared home rhythm. */
+.signaturePaths {margin:0 auto;padding-top:44px;padding-bottom:44px;scroll-margin-top:5rem;}

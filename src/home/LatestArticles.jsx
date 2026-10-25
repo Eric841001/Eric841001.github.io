@@ -1,110 +1,28 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import {verifiedOn, updateGuide, updateHighlights, modelUpdate} from '../data/updateHighlights';
 import styles from './LatestArticles.module.css';
-
-const articles = [
-  {
-    category: 'Official Updates',
-    title: 'Copilot Update Review — October 2026',
-    description: 'Official release review covering the July–October changes, agent harnesses and rollout checks.',
-    path: '/knowledge/copilot/official-update-catchup-2026-10',
-    meta: 'Verified October 24, 2026',
-  },
-  {
-    category: 'AI Adoption',
-    title: 'How to Use AI in Enterprise',
-    description:
-      'A practical journey from Copilot and GPT-5.6 to Copilot Studio, Microsoft 365 Agents, Cowork and change management.',
-    path: '/knowledge/search/how-to-use-ai-in-enterprise',
-    meta: 'AI Usage / Adoption Journey',
-  },
-  {
-    category: 'Security',
-    title: 'Microsoft 365 Security',
-    description:
-      'Zero Trust, Entra ID, Conditional Access, Defender, Purview, Intune and Copilot data protection in one control map.',
-    path: '/knowledge/search/microsoft-365-security',
-    meta: 'Security / Control Architecture',
-  },
-  {
-    category: 'Licensing',
-    title: 'Microsoft Licensing Feature Update',
-    description:
-      'Feature entitlement review for Office 365 E3, Microsoft 365 E3, Defender, Purview, Entra, Intune and Copilot Studio.',
-    path: '/knowledge/licensing/july-2026-microsoft-licensing-update',
-    meta: 'Licensing / Feature Entitlement',
-  },
-  {
-    category: 'Copilot Studio',
-    title: 'Copilot Studio 2026 Platform Update',
-    description:
-      'New agent experience, Microsoft IQ, skills, memory, computer use, A2A and agent inventory implications for enterprise design.',
-    path: '/knowledge/copilot/copilot-studio-2026-platform-update',
-    meta: 'Copilot Studio / Agent Platform',
-  },
-  {
-    category: 'Projects',
-    title: 'Enterprise AI Agent Factory Case Study',
-    description:
-      'Anonymized Copilot Studio and AI Agent portfolio pattern for research, pricing, HR, ESG and presales scenarios.',
-    path: '/knowledge/projects/case-study-enterprise-ai-agent-factory',
-    meta: 'Customer Success / AI Agents',
-  },
-  {
-    category: 'Projects',
-    title: 'Manufacturing Copilot Adoption Case Study',
-    description:
-      'Anonymized Copilot adoption operating model for readiness, governance, pilot planning and value tracking.',
-    path: '/knowledge/projects/case-study-manufacturing-copilot-adoption',
-    meta: 'Customer Success / Copilot Adoption',
-  },
-  {
-    category: 'Security',
-    title: 'Financial SaaS Security Case Study',
-    description:
-      'Zero Trust, Conditional Access, Defender, Purview and SaaS access readiness for regulated environments.',
-    path: '/knowledge/projects/case-study-financial-saas-security',
-    meta: 'Security / Zero Trust',
-  },
-  {
-    category: 'Copilot',
-    title: 'Copilot Cowork Cost Governance',
-    description:
-      'Plan Copilot Cowork licensing, usage-based billing, Copilot Credits, spending controls and governance before rollout.',
-    path: '/knowledge/copilot/copilot-cowork-cost-governance',
-    meta: 'Copilot / Cost Governance',
-  },
-  {
-    category: 'Microsoft 365',
-    title: 'E3 vs E5 Licensing Decision Guide',
-    description:
-      'Compare Microsoft 365 E3 and E5 from security, compliance, governance and business value perspectives.',
-    path: '/knowledge/microsoft365/e3-vs-e5',
-    meta: 'Licensing / Decision Guide',
-  },
-];
 
 export default function LatestArticles() {
   return (
-    <section className={styles.latestArticles}>
+    <section id="latest-updates" className={styles.latestArticles} aria-labelledby="latest-updates-title">
       <div className={styles.header}>
-        <p>Latest Knowledge</p>
-        <h2>Latest Articles</h2>
-        <span>
-          Recently curated articles for Microsoft cloud consulting, architecture and presales.
-        </span>
+        <div><p>Official updates · <time dateTime={verifiedOn}>{verifiedOn}</time> 확인</p>
+          <h2 id="latest-updates-title">최근 업데이트</h2>
+          <span>공식 발표의 날짜와 제공 상태를 구분해 실무에 필요한 변경을 확인하세요.</span>
+        </div>
+        <Link className={styles.allUpdates} to={updateGuide}>전체 변경 기록 →</Link>
       </div>
-
       <div className={styles.grid}>
-        {articles.map((article) => (
-          <Link key={article.title} to={article.path} className={styles.card}>
+        {updateHighlights.map(article => (
+          <Link key={article.path} to={article.path} className={styles.card}>
             <span className={styles.category}>{article.category}</span>
-            <h3>{article.title}</h3>
-            <p>{article.description}</p>
-            <div className={styles.meta}>{article.meta}</div>
+            <h3>{article.title}</h3><p>{article.description}</p>
+            <div className={styles.meta}><time dateTime={article.date}>{article.date}</time><span>{article.status}</span></div>
           </Link>
         ))}
       </div>
+      <p className={styles.modelNote}>모델 제공 안내 · <Link to={modelUpdate.path}>{modelUpdate.title}</Link> <span>({modelUpdate.date} 발표 · 앱별 배포와 라이선스 확인)</span></p>
     </section>
   );
 }
