@@ -14,7 +14,9 @@ Microsoft has introduced Skills for Excel Copilot, enabling reusable task-specif
 
 Skills allow organizations to standardize financial analysis, planning, forecasting, valuation and reporting workflows while maintaining transparency, auditability and governance.
 
-This capability represents a major evolution of Copilot for Finance scenarios and establishes a foundation for Enterprise Finance AI.
+This guide combines documented Excel capabilities with author-proposed finance workflows. The architecture and finance scenarios are design examples, not a separate Microsoft product or a guarantee of financial accuracy.
+
+As checked on 2026-10-25, the [official Excel Skills guide](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-skills) requires the Office display language to be **English**. The skill-builder capability is rolling out and might not appear for every customer. Confirm the account entitlement, app build, channel and available menu before rollout.
 
 <section aria-label="Excel Copilot Skills hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
@@ -133,7 +135,7 @@ Examples:
 |----------|----------|
 | Repeatability | Consistent financial analysis |
 | Governance | Controlled execution model |
-| Auditability | Full change tracking |
+| Auditability | Review supported change evidence alongside version history and approval records |
 | Transparency | Explainable outputs |
 | Productivity | Faster financial operations |
 | Standardization | Shared business methodology |
@@ -190,7 +192,7 @@ Review planned changes before execution.
 
 ### Show Changes
 
-Track all Copilot modifications.
+Review the edits that the supported change-history features expose. Show Changes is not a complete, permanent audit log for every workbook operation. See [Show Changes scope](https://support.microsoft.com/en-us/excel/show-changes-that-were-made-in-a-workbook).
 
 As of the September 23, 2026 Current Channel release notes, Copilot responses can link directly to the sheets, tables, ranges, charts and shapes they changed. The Show Changes pane also identifies Copilot edits and suggestions with attribution cards on Windows, Mac and the web.
 
@@ -246,42 +248,15 @@ Support month-end and quarter-end activities.
 
 ## Data Connectors
 
-Microsoft is expanding trusted financial data integration.
-
-Supported ecosystem includes:
-
-- CB Insights
-- Daloopa
-- FactSet
-- Morningstar
-- PitchBook
-- S&P Global
-
-These connectors enable enterprise-grade finance scenarios.
+Financial data integration depends on the specific provider, connector and environment. A provider name is not proof of included entitlement or an enabled Excel connector. Verify current availability, separate data subscriptions, permitted uses, authentication, administrator approval and refresh behavior before designing the workflow. This guide does not certify a connector catalog or third-party commercial terms.
 
 ---
 
 ## Custom Skills
 
-Organizations can build custom Skills.
+Use the current [official custom skills procedure](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-skills): open Copilot settings, select **Manage plugins & skills → Custom skills**, create the OneDrive skills folder if needed, then open the folder from the provided link. Do not assume a fixed localized OneDrive path.
 
-Location:
-
-Documents
-
-→ Copilot
-
-→ Microsoft Excel
-
-→ Skills
-
-Custom Skills are defined using:
-
-```text
-SKILL.md
-```
-
-This allows organizations to codify internal finance processes and operating procedures.
+Each custom skill has its own folder containing `SKILL.md`, with required `name` and `description` frontmatter and instructions in the body. Review its data access, instructions and outputs before enabling it. Skill-builder is rolling out; the manual folder procedure is a distinct option.
 
 ---
 

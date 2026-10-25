@@ -12,7 +12,7 @@ toc_max_heading_level: 2
 
 Microsoft 365 Copilot delivers measurable business value when aligned to real business processes.
 
-This document provides practical enterprise use cases across major business functions.
+This document provides practical enterprise use cases across major business functions. The workflows and savings below are author-provided planning examples, not Microsoft benchmarks or measured customer results. Validate savings against a recorded baseline, task volume, review effort and pilot outcomes.
 
 <section className="kc-topic-hero kc-topic-hero--agent" aria-label="Copilot business use cases hero">
   <div className="kc-topic-hero__content">
@@ -114,7 +114,7 @@ This document provides practical enterprise use cases across major business func
 
 ### Estimated Savings
 
-8~12 hours per month per analyst
+Illustrative planning assumption: 8–12 hours per month per analyst; not a measured or guaranteed result.
 
 ---
 
@@ -193,7 +193,7 @@ This document provides practical enterprise use cases across major business func
 
 ### Estimated Savings
 
-60~80% reduction in proposal preparation time
+Illustrative planning assumption: 60–80% reduction in proposal preparation time; validate net savings after human review.
 
 ---
 

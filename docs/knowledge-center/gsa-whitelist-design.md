@@ -241,6 +241,8 @@ Allowed
 
 ## Unmanaged Devices
 
+The following is a proposed access experience, requiring workload-specific app-enforced restrictions or an appropriate session-control service. It is not an automatic consequence of enabling GSA.
+
 Restricted
 
 - Browser only
@@ -251,13 +253,17 @@ Restricted
 
 ## Recommended Conditional Access Policies
 
+For Microsoft traffic, verify the [Microsoft traffic profile prerequisites](https://learn.microsoft.com/en-us/entra/global-secure-access/tutorial-microsoft-traffic-introduction), user assignment, supported client/forwarding path and Universal Tenant Restrictions configuration. Microsoft services traffic capabilities are included in Entra ID P1/P2; full Internet Access and Private Access have separate licensing. Test tenant restrictions and bypass paths against the [current known limitations](https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations).
+
+The matrix is an author-proposed control design. Compliant-device access and user/sign-in risk are separate Conditional Access concepts; see the [official Conditional Access overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview).
+
 | Policy | Recommendation |
 |----------|----------|
 | MFA | Required |
 | Compliant Device | Required |
-| Risk Level | Low |
-| Device Platform | Managed Only |
-| Session Control | Enable |
+| User/sign-in risk | Use the appropriate risk condition and explicit remediation/block policy only with Entra ID P2; a generic Low value is not a complete access policy |
+| Device state | Use the Require device to be marked as compliant grant control; Device platforms selects operating systems and has no Managed Only option |
+| Session control | Select the supported control for the target workload; GSA alone does not impose browser-only download restrictions |
 
 ---
 

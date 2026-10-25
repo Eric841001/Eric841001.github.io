@@ -73,9 +73,11 @@ Typical requirements:
 
 ## Supported Controls
 
+This guide covers supported removable-media access controls, not disabling every USB bus device such as keyboards or cameras. Match the Device Control policy type, Windows version, Defender build, onboarding and license prerequisites to the [current Intune deployment procedure](https://learn.microsoft.com/en-us/defender-endpoint/device-control-deploy-manage-intune). Intune is a separate entitlement; the Device Control profile is not supported for Windows Server devices managed through Defender security settings management.
+
 | Control | Supported |
 |----------|----------|
-| Block All USB | Yes |
+| Block removable-storage read/write/execute access | Yes, within supported Device Control device classes and policy scope |
 | Allow Specific USB | Yes |
 | Read Only | Yes |
 | Read/Write | Yes |

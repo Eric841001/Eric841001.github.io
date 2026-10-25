@@ -3910,3 +3910,12 @@ body.kc-diagram-modal-open {
 [data-theme='dark'] .theme-doc-markdown :is(.kc-topic-hero__lede,.kc-context-panel__lead) {color:#cbd5e1;}
 [data-theme='dark'] .theme-doc-markdown [class*='kc-'] > strong,
 [data-theme='dark'] .theme-doc-markdown :is(span,small)[class*='kc-'] {background:transparent;border-color:#3b516d;color:#7dd3fc;}
+
+/* Keep precise source findings available without lengthening every guide. */
+.kc-source-review__sources {margin:.75rem 0;border:1px solid var(--kc-border);border-radius:6px;padding:.7rem .85rem;background:var(--kc-surface);}
+.kc-source-review__sources > summary {cursor:pointer;min-height:24px;font-weight:600;color:var(--kc-ink);}
+.kc-source-review__sources > summary:focus-visible {outline:3px solid var(--ifm-color-primary);outline-offset:4px;}
+.kc-source-review__sources li {margin:.75rem 0;overflow-wrap:anywhere;}
+.kc-source-review__sources li p {margin:.3rem 0;color:var(--kc-ink);}
+.kc-source-review__limits {border-inline-start:3px solid var(--kc-border-strong);padding-inline-start:.75rem;overflow-wrap:anywhere;}
+@media print {.kc-source-review {break-inside:auto;} .kc-source-review__sources:not([open]) > :not(summary) {display:block!important;}}

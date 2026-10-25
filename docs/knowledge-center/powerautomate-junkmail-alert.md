@@ -133,13 +133,9 @@ Organizations require:
 
 ## Exchange Online Trigger
 
-When a new email arrives in:
+Use the **Office 365 Outlook** connector's **When a new email arrives (V3)** trigger, selecting the intended mailbox's **Junk Email** folder. Validate the connection account and use the appropriate shared-mailbox trigger when relevant. The [connector reference](https://learn.microsoft.com/en-us/connectors/office365/) documents permissions, limits and trigger behavior.
 
-```text
-Junk Email
-```
-
-folder.
+This is a notification pattern, not a guaranteed security-event pipeline. A message moved between folders may not trigger as expected; test direct arrival, later moves, duplicates, protected messages and throttling. Quarantined mail is separate from a mailbox's Junk Email folder. Correlation with Defender/Sentinel/Purview is an additional design requiring its own data access and implementation. Do not copy message bodies or sensitive attachments into broad notification channels.
 
 ---
 
