@@ -1,157 +1,285 @@
 ---
-title: E3 vs E5
-description: "Microsoft 365 E3 vs E5 - Microsoft 365 E3 provides the enterprise productivity, identity, device and collaboration foundation. Microsoft 365 E5 adds..."
+title: Microsoft 365 E3 vs E5 Enterprise Decision Guide
+sidebar_label: E3 vs E5
+description: Microsoft 365 E3, E5, add-ons and E7 decision guide with verified licensing conditions.
+toc_max_heading_level: 2
 ---
 
-# Microsoft 365 E3 vs E5
+{/* Generated from docs/microsoft365/e3-vs-e5.md. Run npm run sync:licensing after editing the source. */}
 
-<section className="kc-topic-hero kc-topic-hero--compact">
-  <div>
-    <span className="kc-eyebrow">E3 VS E5 DECISION GUIDE</span>
-    <h2>Choose by control requirement, not by feature list</h2>
-    <p>E3 is the enterprise foundation. E5 becomes necessary when advanced security, compliance, analytics and operational maturity are explicit requirements.</p>
-  </div>
-  <div aria-label="E3 vs E5 focus" className="kc-hero-metrics">
-    <div>
-      <strong>E3</strong>
-      <span>Foundation</span>
-    </div>
-    <div>
-      <strong>E5</strong>
-      <span>Control</span>
-    </div>
-    <div>
-      <strong>Mix</strong>
-      <span>Persona</span>
-    </div>
-    <div>
-      <strong>ROI</strong>
-      <span>Risk</span>
-    </div>
-  </div>
-</section>
+# Microsoft 365 E3 vs E5 Enterprise Decision Guide
 
-<div aria-label="E3 versus E5 licensing decision cards" className="kc-outcome-grid">
-  <div className="kc-outcome-card">
-    <small>PERSONA</small>
-    <strong>E3 baseline users</strong>
-    <span>Use E3 when productivity and baseline governance are the primary requirement.</span>
-  </div>
-  <div className="kc-outcome-card">
-    <small>CAPABILITY</small>
-    <strong>E5 advanced controls</strong>
-    <span>Use E5 when advanced security, compliance, analytics and automation controls are required.</span>
-  </div>
-  <div className="kc-outcome-card">
-    <small>DECISION</small>
-    <strong>Hybrid licensing model</strong>
-    <span>Many enterprises need mixed assignment by persona, risk and workload maturity.</span>
-  </div>
-</div>
+<span id="한국어-요약" />
 
 ## Executive Summary
 
-Microsoft 365 E3 provides the enterprise productivity, identity, device and collaboration foundation. Microsoft 365 E5 adds advanced security, compliance, analytics and voice capabilities that are often required for regulated or security-sensitive environments.
+Microsoft 365 E3 provides an enterprise productivity, identity and device-management baseline. Compare **E5, E3 plus targeted add-ons, and E7** against the controls and AI capabilities you actually need. Neither Zero Trust nor Copilot readiness alone mandates E5.
 
-The right decision should be based on control requirements, not only feature comparison.
+Confirm Office 365 versus Microsoft 365, Teams entitlement, enabled service plans, licensing terms and operational ownership before recommending a purchase.
 
-## 한국어 요약
+**한국어 요약:** E3/E5 이름만으로 포함 기능을 판단하지 마세요. 필요한 보안·컴플라이언스·AI 기능을 기준으로 추가 기능과 E7까지 비교하고, 실제 서비스 플랜과 사용자별 권한을 확인하세요.
 
-Microsoft 365 E3와 E5의 차이는 “기능이 더 많다”의 문제가 아니라 보안, 컴플라이언스, 데이터 보호, 위협 대응, 감사 대응 수준의 차이입니다.
+<span id="licensing-verification--2026-10-25" />
 
-E3는 enterprise productivity와 기본 identity/device/collaboration foundation을 제공합니다. E5는 Defender, Purview, advanced compliance, analytics, XDR 중심의 고급 통제와 운영 역량을 강화합니다. 따라서 E5 도입은 비용 증가가 아니라 risk reduction, audit readiness, security operation maturity 관점에서 설명되어야 합니다.
+## 최신 라이선스 확인
 
-## Business Scenario
+확인일: **2026-10-25 (KST)**.
 
-- E3 fit: standard enterprise productivity, device management and baseline governance
-- E5 fit: advanced threat protection, compliance, eDiscovery, DLP, insider risk and XDR
-- Mixed fit: E5 for high-risk users, administrators or regulated departments
+The current [Microsoft enterprise plan comparison](https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing) lists **Microsoft 365 E7** alongside E3 and E5. E7 includes AI and agent management with broader identity, security and compliance capabilities. This E3/E5 guidance is a scoped comparison, not the full enterprise catalog. Compare actual service plans and existing investments before choosing a bundle.
 
-## Architecture
+- Verify **with Teams / without Teams**, market, purchase channel and contract terms; the E3/E5 name alone does not establish Teams entitlement.
+- Distinguish web-grounded Copilot Chat from work-grounded Microsoft 365 Copilot. E5 AI readiness does not establish entitlement to every Copilot feature.
+- Conditional Access generally requires Entra ID P1; user/sign-in risk policies require P2. Agent policies have separate licensing and preview conditions. See the [Conditional Access guide](../security/conditional-access).
+- The US page is not a Korean quotation. Confirm currency, taxes, commitment, region and renewal terms for the actual offer.
 
-<div className="kc-factory-panel"><div className="kc-panel-header">
-  <span>License decision path</span>
-  <strong>Foundation to advanced controls</strong>
-</div><div aria-label="E3 versus E5 decision path" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>E3 foundation</strong>
-  <span>Productivity, identity, device and collaboration baseline for standard enterprise users.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Security requirement</strong>
-  <span>Map Defender, XDR, identity risk, endpoint and threat protection needs.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Compliance requirement</strong>
-  <span>Map Purview, eDiscovery, audit, DLP, insider risk and regulatory needs.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Mixed model</strong>
-  <span>Assign E5 by persona, risk, workload and executive value case.</span>
-</div></div></div>
+---
 
-## Evaluation Criteria
+<span id="architecture" />
+<span id="business-scenario" />
 
-| Area | E3-Oriented | E5-Oriented |
+## Decision Framework
+
+1. Define business requirements and required security/compliance controls.
+2. Confirm the exact SKU, enabled service plans and existing add-ons.
+3. Compare E3, E5, targeted add-ons and E7 against the gaps.
+4. Assign by persona and risk, confirm operational owners and validate the business case.
+
+---
+
+<span id="evaluation-criteria" />
+
+## Executive Decision Summary
+
+The ratings below are a qualitative planning aid, not a complete entitlement matrix or a claim that a license automatically implements controls. Confirm exact features using the official plan comparison and service-plan references.
+
+| Decision Area | Microsoft 365 E3 | Microsoft 365 E5 |
 |---|---|---|
-| Endpoint | Intune baseline | Advanced Defender capabilities |
-| Email Security | Standard controls | Defender for Office 365 advanced scenarios |
-| Compliance | Basic retention and audit | Advanced eDiscovery, DLP, Insider Risk |
-| Identity | Entra ID baseline | Advanced identity and risk controls |
-| Operations | IT administration | SOC and compliance operations |
+| Productivity | Strong | Strong |
+| Collaboration | Strong | Strong |
+| Basic Compliance | Available | Enhanced |
+| Advanced Security | Limited | Strong |
+| Identity Protection | Limited | Strong |
+| Advanced Threat Protection | Limited | Strong |
+| Advanced Compliance | Limited | Strong |
+| Analytics | Limited | Strong |
+| Zero Trust Readiness | Baseline | Advanced |
 
-## Decision Checklist
+---
 
-| Question | Why It Matters |
+## When E3 Is Appropriate
+
+Microsoft 365 E3 is generally appropriate when the organization requires:
+
+- Enterprise productivity
+- Office desktop applications
+- Exchange Online
+- Teams collaboration where the purchased SKU or separate Teams license includes it
+- SharePoint and OneDrive
+- Baseline information governance
+- Standard security controls
+- Cost-efficient enterprise modernization
+
+Typical E3 scenarios:
+
+| Scenario | Fit |
 |---|---|
-| Are advanced threat protection requirements mandatory? | Determines Defender and XDR value |
-| Is DLP, eDiscovery or insider risk required? | Determines Purview and compliance need |
-| Are administrators, executives or regulated users exposed to higher risk? | Supports mixed E3/E5 assignment |
-| Is the security team ready to operate E5 signals? | Prevents buying controls that are not used |
-| Can the business measure value beyond feature access? | Helps finance and executive approval |
+| Collaboration modernization | High |
+| Exchange Online migration | High |
+| SharePoint / Teams adoption | High |
+| Basic governance | Medium |
+| Advanced security transformation | Low |
+| Regulated industry compliance | Medium to Low |
 
-## Recommended Licensing Patterns
+---
 
-| Pattern | Description |
+## When E5 Is Appropriate
+
+Microsoft 365 E5 is generally appropriate when the organization requires:
+
+- Advanced identity protection
+- Privileged access management
+- Advanced endpoint protection
+- Advanced email protection
+- Defender XDR
+- Advanced compliance
+- Insider risk management
+- Advanced eDiscovery
+- Power BI Pro
+- Advanced controls supporting a Zero Trust architecture; E5 itself is not a prerequisite
+
+Typical E5 scenarios:
+
+| Scenario | Fit |
 |---|---|
-| E3 foundation | Use E3 as the standard productivity and governance baseline |
-| E5 for privileged users | Assign E5 to administrators, security team, executives and high-risk groups |
-| E5 for regulated departments | Apply E5 to finance, legal, compliance or sensitive data teams |
-| E5 security-first | Adopt E5 where XDR, Defender, DLP and audit readiness are primary drivers |
-| Phased E5 expansion | Start with pilot groups, validate value, then expand by risk and business priority |
+| Zero Trust security program | High |
+| SOC modernization | High |
+| Regulated industry compliance | High |
+| Advanced DLP and data protection | High |
+| Copilot security readiness | High |
+| Basic collaboration only | Low |
 
-## Implementation
+---
 
-1. Capture required controls.
-2. Map each control to E3, E5 or add-on licensing.
-3. Identify high-risk user groups.
-4. Build cost scenarios for E3-only, E5-only and mixed models.
-5. Validate security and compliance gaps with stakeholders.
+## E3 vs E5 Capability View
 
-## Executive Positioning
+| Area | E3 Position | E5 Position |
+|---|---|---|
+| Identity | Baseline identity and access | Advanced identity protection and privileged access |
+| Endpoint | Basic management and protection baseline | Advanced endpoint detection and response |
+| Email Security | Standard protection | Advanced threat protection |
+| Compliance | Core compliance capabilities | Advanced compliance and risk management |
+| Information Protection | Baseline protection | Broader data protection and investigation |
+| Analytics | Basic productivity analytics | Power BI Pro included |
+| Security Operations | Limited | Defender XDR-based operations |
 
-Use this positioning when explaining E5:
+---
 
-> E5 should be evaluated as a security, compliance and operational risk reduction investment, not only as a bundle of additional product features.
+## Service Plan Entitlement Check
 
-Avoid this positioning:
+| Check | Why It Matters |
+|---|---|
+| Office 365 E3 vs Microsoft 365 E3 | Office 365 E3 is productivity-centered, while Microsoft 365 E3 adds broader identity, endpoint and security capability. |
+| Defender for Office 365 Plan 1 | If included and enabled, Safe Links, Safe Attachments and impersonation protection can change the email security baseline. |
+| Defender for Endpoint Plan 1 | If included and enabled, endpoint protection architecture can start from a stronger Microsoft baseline. |
+| Entra ID P1/P2 | Conditional Access and identity governance decisions depend on actual entitlement. |
+| Purview capability | DLP, information protection, audit, retention and eDiscovery must be mapped to enabled service plans. |
+| Intune capability | Device compliance, app protection and endpoint governance require explicit enablement and policy ownership. |
 
-> E5 is better because it includes more Microsoft features.
+---
 
-## Lessons Learned
+## E3 + Add-on Strategy
 
-The best licensing proposal explains risk reduction and operational value. A feature table alone rarely convinces finance or executive stakeholders.
+E3 with selected add-ons can be appropriate when only specific advanced capabilities are required.
+
+Examples:
+
+| Requirement | Possible Approach |
+|---|---|
+| Endpoint security only | E3 + Defender for Endpoint |
+| Email security only | E3 + Defender for Office 365 |
+| Identity governance only | Compare Entra ID P2 and Entra ID Governance against the specific governance feature |
+| Compliance enhancement | E3 + Purview add-ons |
+| Zero Trust control gaps | Compare E5, targeted add-ons and E7; the architecture does not mandate one SKU |
+
+---
+
+## Decision Matrix
+
+| Requirement | Recommended Direction |
+|---|---|
+| Basic productivity and collaboration | E3 |
+| Enterprise collaboration with cost control | E3 |
+| Security transformation | Compare E5 and targeted security add-ons |
+| Regulated compliance environment | Map required compliance features to E5 or targeted add-ons |
+| Copilot readiness with data protection | E5 or E3 + Security / Compliance add-ons |
+| SOC integration and XDR | Compare E5 with existing tools and required Defender service plans |
+| Frontline worker scenario | F3 or mixed licensing |
+| SMB security and device management | Business Premium |
+
+---
+
+## Business Value Comparison
+
+| Value Driver | E3 | E5 |
+|---|---|---|
+| Productivity improvement | High | High |
+| Security risk reduction | Medium | High |
+| Compliance readiness | Medium | High |
+| Operational simplification | Medium | High |
+| License optimization | High | Medium |
+| Executive risk visibility | Medium | High |
+
+---
+
+## Risk Considerations
+
+| Risk | E3 Consideration | E5 Consideration |
+|---|---|---|
+| Advanced threats | May require add-ons | Better native coverage |
+| Data leakage | Requires careful configuration | Stronger protection options |
+| Identity compromise | Limited advanced protection | Stronger identity risk controls |
+| Compliance investigation | Limited capability | Stronger investigation capability |
+| Tool sprawl | Evaluate existing tools and operating costs | Validate consolidation benefits against existing investments |
+
+---
+
+<span id="decision-checklist" />
+
+## Recommended Assessment Questions
+
+Before deciding between E3 and E5, confirm:
+
+- Is the customer in a regulated industry?
+- Is there a Zero Trust initiative?
+- Is there a SOC or security monitoring requirement?
+- Are endpoint security and EDR required?
+- Are advanced email security controls required?
+- Is DLP required across Microsoft 365?
+- Are sensitivity labels required?
+- Is Microsoft 365 Copilot planned?
+- Are executives asking for security risk visibility?
+- Is license consolidation a business driver?
+
+---
+
+<span id="executive-positioning" />
+
+## Recommended Positioning
+
+### E3 Positioning
+
+Microsoft 365 E3 is recommended as the enterprise productivity and governance baseline.
+
+It is suitable when the customer wants to modernize collaboration, standardize Microsoft 365 usage, and control cost while maintaining a strong enterprise foundation.
+
+### E5 Positioning
+
+Microsoft 365 E5 is one option for advanced security, compliance and SOC requirements. Compare E3 plus targeted add-ons and E7 against the actual controls and AI entitlements required; Copilot readiness alone is not an E5 purchase requirement.
+
+E5 should be positioned as a risk reduction and security modernization investment, not only as a license upgrade.
+
+---
+
+## Executive Recommendation Model
+
+Compare the E3 baseline, E5 modernization, targeted add-ons and E7 using the same control requirements. Include tool consolidation, operating effort, AI entitlement, adoption value and renewal terms; approve owners and a review cadence with the decision.
+
+---
+
+<span id="recommended-licensing-patterns" />
+<span id="implementation" />
+<span id="lessons-learned" />
+
+## Final Recommendation
+
+For most enterprise customers:
+
+- Use E3 as the baseline for productivity, collaboration, and governance.
+- Compare E5, E3 plus add-ons and E7 against required controls; Copilot readiness alone does not mandate E5.
+- Use E3 + add-ons only when requirements are narrow and clearly defined.
+- Avoid deciding based on SKU names alone.
+- Evaluate risk reduction, operational simplification, and executive visibility as part of the business case.
+
+---
+
+## References
+
+- [Microsoft 365 and Office 365 plan options](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+- [Product names and service plan identifiers for licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-service-plan-reference)
+- [Microsoft Defender for Office 365 overview](https://learn.microsoft.com/en-us/defender-office-365/mdo-about)
+- [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/)
+- [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
 
 ## 검색 키워드
 
-- Microsoft 365 E3 vs E5
-- E3 E5 decision guide
-- Microsoft 365 E5 security value
-- Defender Purview E5 licensing
-- Microsoft 365 E3 E5 비교
-- E5 보안 컴플라이언스
-- Microsoft 365 라이선스 의사결정
+- Microsoft 365 architecture
+- Microsoft 365 governance
+- Teams SharePoint OneDrive
+- Exchange Online
+- Microsoft 365 security
+- Microsoft 365 컨설팅
+- Microsoft 365 운영 모델
 
 ## Contact / Asset Request
 
-For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).
+For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).

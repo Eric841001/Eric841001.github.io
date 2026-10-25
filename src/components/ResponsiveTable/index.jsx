@@ -39,7 +39,7 @@ export default function ResponsiveTable({children, className = '', ...props}) {
     <div className={cards ? 'kc-table-region' : 'kc-table-region kc-table-region--scroll'}>
       {!cards && <p className="kc-table-scroll-hint">표를 좌우로 스크롤하면 모든 열을 볼 수 있습니다.</p>}
       <div className="kc-table-viewport" role="region" aria-label={labels.length ? labels.join(' / ') : '데이터 표'} tabIndex={cards ? undefined : 0}>
-        <table {...props} role="table" className={`${className} ${cards ? 'kc-responsive-table' : ''}`.trim()}>{cards ? labelRows(children, labels) : children}</table>
+        <table {...props} data-columns={labels.length} role="table" className={`${className} ${cards ? 'kc-responsive-table' : ''}`.trim()}>{cards ? labelRows(children, labels) : children}</table>
       </div>
     </div>
   );
