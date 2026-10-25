@@ -20,3 +20,7 @@
 - Keep review records in scripts/data/documentReviews.json for build-time quality checks only. Do not import them into client components.
 - Do not show document-review status, verification scope, author/profile verification disclaimers or audit panels in public pages. The user explicitly removed these panels.
 - Keep useful technical explanations and relevant official citations in the article body.
+
+# Diagram rendering
+- Mermaid nodes and edge labels use light fills in both themes. Keep all SVG and foreignObject label text dark, including enlarged copies.
+- Enlarged diagrams must retain readable text and allow scrolling on narrow screens. Keep keyboard focus inside the dialog and restore it to the opener on close.

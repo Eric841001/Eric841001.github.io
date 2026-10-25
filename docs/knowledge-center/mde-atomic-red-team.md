@@ -197,9 +197,12 @@ Atomic Red Team으로 Defender for Endpoint와 Defender XDR의 탐지·기록·�
 | Target 엔드포인트 | 테스트 장비와 운영 환경 영향 범위 확인 |
 | Defender alert | 탐지 여부와 alert severity 확인 |
 | Incident correlation | 단일 alert가 incident로 묶이는지 확인 |
-| Device timeline | 프로세스, file, 네트워크 상태·활동 기록 확인 |
+| Device timeline | 프로세스, 파일, 네트워크 상태·활동 기록 확인 |
 | SOC response | analyst notification과 triage 절차 확인 |
 
+## References
+
+- [Defender for Endpoint overview](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint)
 ## Related Documents
 
 - [Defender for Endpoint](../security/defender-for-endpoint)
@@ -209,7 +212,7 @@ Atomic Red Team으로 Defender for Endpoint와 Defender XDR의 탐지·기록·�
 
 ## Search Keywords
 
-이 문서는 다음 검색 의도에 답합니다.
+관련 검색어입니다.
 
 - Atomic Red Team Microsoft Defender
 - Microsoft Defender XDR validation

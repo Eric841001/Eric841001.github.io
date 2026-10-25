@@ -251,7 +251,7 @@ Exchange Online의 Junk Email 폴더를 확인하고 Teams나 메일로 알리�
 
 ## Search Keywords
 
-이 문서는 다음 검색 의도에 답합니다.
+관련 검색어입니다.
 
 - Power Automate Junk Mail alert
 - Exchange Online Junk Email monitoring

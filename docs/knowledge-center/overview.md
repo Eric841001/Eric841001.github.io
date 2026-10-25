@@ -150,13 +150,13 @@ Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 |---|---|
 | Executive Summary | 핵심 결론과 업무에 미치는 영향 |
 | Business Scenario | 고객 상황, 해결할 문제와 요구사항 |
-| Architecture | 권장 architecture와 design principle |
+| Architecture | 권장 구성과 설계 원칙 |
 | Implementation | 구축 절차, configuration 기준, 운영 방식 |
 | Licensing | 필요한 라이선스와 제약사항 |
 | Security | 보안 consideration과 제어 방안 |
 | Best Practice | 실제 project 기반 권장사항 |
 | Troubleshooting | 자주 발생하는 문제와 해결 방법 |
-| Lessons Learned | project delivery 경험 기반 교훈 |
+| Lessons Learned | 프로젝트 수행 중 확인한 주의사항 |
 | References | Microsoft official documentation 및 참고 링크 |
 
 ---
@@ -220,7 +220,7 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 | Proposal | proposal, SOW, WBS 작성 |
 | Assessment | 고객 현황 진단 checklist 구성 |
 | Architecture | To-Be architecture 설계 |
-| Delivery | 구축 project 수행 기준 |
+| Delivery | 구축 프로젝트 수행 기준 |
 | Executive Reporting | 경영진 보고의 주요 내용 작성 |
 
 ---
@@ -246,6 +246,10 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 - [Security Overview](../security/overview.md)
 - [Licensing Overview](../licensing/overview.md)
 
+## References
+
+- [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
+- [Microsoft Intune fundamentals](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune)
 ## Search Keywords
 
 This Knowledge Center is designed for the following search intents:

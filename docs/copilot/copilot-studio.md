@@ -1066,7 +1066,6 @@ A Copilot Studio engagement should produce:
 </ReadingSummary>
 
 
-- Microsoft Learn
 - Microsoft Copilot Studio Documentation
 - [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
 - Power Platform Documentation
@@ -1075,7 +1074,6 @@ A Copilot Studio engagement should produce:
 - Microsoft Entra
 - Microsoft Purview
 - Microsoft Defender
-
 
 </ReadingSection>
 

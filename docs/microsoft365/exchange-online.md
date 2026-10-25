@@ -118,9 +118,10 @@ Exchange Server to Exchange Online
 
 Examples:
 
-- Exchange 2013
-- Exchange 2016
-- Exchange 2019
+- Exchange Server Subscription Edition (SE)
+- Legacy Exchange 2013, 2016 or 2019 estates requiring a supported transition plan
+
+[Exchange 2013](https://learn.microsoft.com/en-us/lifecycle/products/exchange-server-2013) reached end of support on April 11, 2023; Exchange 2016 and 2019 reached end of support on October 14, 2025. Treat them as legacy migration sources, not a current supported deployment baseline. See the [Exchange lifecycle guidance](https://learn.microsoft.com/en-us/troubleshoot/exchange/administration/exchange-2019-2016-end-of-support).
 
 Goal:
 
@@ -321,51 +322,19 @@ Recommended:
 
 ### Cutover Migration
 
-Suitable:
-
-- Small organizations
-- Less than 150 users
-
-Advantages:
-
-- Fast
-- Simple
-
-Disadvantages:
-
-- High user impact
+Cutover moves the organization in one event. Microsoft documents a maximum of 2,000 mailboxes and recommends 150 or fewer for a manageable migration window. The 150 figure is a planning recommendation, not a technical hard limit. Confirm source-version prerequisites and directory synchronization constraints in the [cutover procedure](https://learn.microsoft.com/en-us/exchange/mailbox-migration/cutover-migration-to-office-365).
 
 ---
 
 ### Staged Migration
 
-Suitable:
-
-- Medium organizations
-
-Advantages:
-
-- Controlled rollout
-
-Disadvantages:
-
-- Longer duration
+Staged migration is the legacy method for **Exchange 2003 or 2007**. It is not a general recommendation for medium-sized organizations and does not support Exchange 2010 or later. For a supported modern Exchange estate, evaluate hybrid remote moves or another documented migration path. See [staged migration requirements](https://learn.microsoft.com/en-us/exchange/mailbox-migration/what-to-know-about-a-staged-migration).
 
 ---
 
 ### Hybrid Migration
 
-Suitable:
-
-- Enterprise customers
-
-Advantages:
-
-- Seamless coexistence
-
-Disadvantages:
-
-- Higher complexity
+Use hybrid remote moves when the supported source configuration and coexistence requirements justify them. Validate the Hybrid Configuration Wizard prerequisites, identity synchronization, certificates, mail routing and free/busy before selecting the approach. Organization size alone does not determine the migration method. See [Exchange hybrid deployments](https://learn.microsoft.com/en-us/exchange/exchange-hybrid).
 
 ---
 
@@ -379,12 +348,14 @@ Suitable:
 
 Tools:
 
-- Microsoft Migration
+- Microsoft Migration Orchestrator for supported workloads
 - Quest
 - BitTitan
 - AvePoint Fly
 
 ---
+
+Microsoft Migration Orchestrator coordinates **Exchange mailboxes, OneDrive, Teams chats and Teams meetings**. It moves content, not identities; prepare identity mapping and the required user configuration separately. Teams meetings require both chats and mailbox migration in the batch. SharePoint sites, Teams channels, apps and device policies need separate migration plans. Check the per-user Cross Tenant User Data Migration add-on and workload exclusions in the [orchestrator documentation](https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide).
 
 ## Security Architecture
 
@@ -580,13 +551,8 @@ Validate:
 
 ## References
 
-- Microsoft Learn
-- Exchange Online Documentation
-- Exchange Hybrid Deployment Guide
-- Microsoft 365 Migration Guidance
-- Exchange Online Protection Documentation
-- Microsoft Entra Documentation
-
+- [Exchange Online documentation](https://learn.microsoft.com/en-us/exchange/exchange-online)
+- [Choose a migration path](https://learn.microsoft.com/en-us/exchange/mailbox-migration/decide-on-a-migration-path)
 ## 검색 키워드
 
 - Microsoft 365 architecture

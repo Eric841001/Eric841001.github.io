@@ -158,6 +158,9 @@ Capture policy scope, test results, false positive review, exception approvals, 
 
 DLP programs fail when policies are enforced before users understand the business reason. A phased approach with user tips, pilot groups and evidence-based tuning produces better adoption.
 
+## References
+
+- [Microsoft Purview DLP overview](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp)
 ## 검색 키워드
 
 - Microsoft Purview DLP

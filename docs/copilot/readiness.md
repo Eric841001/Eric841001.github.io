@@ -514,13 +514,13 @@ Before Copilot rollout, leadership should confirm:
 
 ## References
 
-- Microsoft Learn
+
+- [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
 - Microsoft 365 Copilot Documentation
 - Microsoft Purview Documentation
 - Microsoft Entra Documentation
 - Microsoft Zero Trust Guidance
-- Microsoft Adoption Framework
-
 ## 검색 키워드
 
 - Microsoft 365 Copilot

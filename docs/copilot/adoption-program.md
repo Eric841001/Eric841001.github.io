@@ -984,14 +984,14 @@ The most successful Copilot adoption programs consistently include:
 
 ## References
 
+
+
 </ReadingSummary>
 
+- [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
 
-- Microsoft Adoption Framework
-- Microsoft Copilot Success Kit
-- Microsoft Change Management Guidance
-- Microsoft Learn
-- Enterprise Adoption Best Practices
+
 
 
 </ReadingSection>

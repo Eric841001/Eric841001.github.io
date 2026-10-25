@@ -154,6 +154,10 @@ Playbooks are designed to bridge consulting strategy and real execution. They de
 - security committee evidence pack
 - migration hypercare and operations handover
 
+## References
+
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+- [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 ## Contact / Asset Request
 
 For editable playbook workbooks, workshop agendas, delivery checklists or handover templates, use [Contact and Asset Request](../contact). Share the intended scenario, industry, Microsoft workload and preferred output format.

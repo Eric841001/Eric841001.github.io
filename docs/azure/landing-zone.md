@@ -160,14 +160,14 @@ Landing zone projects fail when they become abstract architecture exercises. The
 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- Azure 신규 도입 전 standard architecture 수립
-- on-premises server를 Azure로 이전하기 전 foundation design
+- Azure 신규 도입 전 표준 아키텍처 수립
+- 온프레미스 서버를 Azure로 옮기기 전 운영 기반 설계
 - 여러 부서 또는 계열사의 Azure 구독 운영 기준 정비
 - Defender for Cloud와 Azure Policy 기반 기본 보안 정책 수립
-- AI/Data/Application Modernization 프로젝트의 cloud foundation 준비
+- AI·데이터 서비스 구축과 애플리케이션 개선에 필요한 클라우드 운영 기반 준비
 
 ## References
 
-- Azure Landing Zone architecture guidance
-- Azure Policy
-- Microsoft Defender for Cloud
+
+- [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)

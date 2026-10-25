@@ -188,11 +188,13 @@ Typical migration scenarios include:
 
 ## References
 
+
+- [Microsoft 365 tenant-to-tenant migrations](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations)
+- [Cross-tenant synchronization](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview)
 - [Microsoft 365 Reference Architecture](./m365-reference-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-
 ## Contact / Asset Request
 
 For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

@@ -192,11 +192,13 @@ Typical Copilot initiatives include:
 
 ## References
 
+
+- [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- [Copilot Studio current updates](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
 - [Copilot Overview](../copilot/overview)
 - [Copilot Governance](../copilot/governance)
 - [Agent Factory Operating Model](../copilot/agent-factory-operating-model)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-
 ## Contact / Asset Request
 
 For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

@@ -372,6 +372,8 @@ Migration Considerations:
 
 ### Migration Methods
 
+Microsoft Migration Orchestrator coordinates **Exchange mailboxes, OneDrive, Teams chats and Teams meetings**. It moves content, not identities; prepare identity mapping and the required user configuration separately. Teams meetings require both chats and mailbox migration in the batch. SharePoint sites, Teams channels, apps and device policies need separate migration plans. Check the per-user Cross Tenant User Data Migration add-on and workload exclusions in the [orchestrator documentation](https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide).
+
 - Microsoft Native
 - Quest
 - BitTitan

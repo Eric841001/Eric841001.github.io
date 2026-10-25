@@ -193,11 +193,13 @@ Typical security initiatives include:
 
 ## References
 
+
+- [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
+- [Microsoft Defender XDR overview](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender)
 - [Security Overview](../security/overview)
 - [Conditional Access](../security/conditional-access)
 - [Purview](../security/purview)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-
 ## Contact / Asset Request
 
 For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

@@ -145,6 +145,10 @@ Azure 도입에 필요한 랜딩 존, ID, 네트워크, 보안과 비용 관리 
 - cost estimate and tagging standard
 - operations handover checklist
 
+## References
+
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+- [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
 ## 검색 키워드
 
 - Azure Landing Zone

@@ -122,6 +122,10 @@ Entra ID, Azure RBAC, PIM, Conditional Access, 관리 ID와 서비스 주체의 
 
 Identity cleanup should happen before broad Azure expansion. Retrofitting RBAC and privilege controls after workload growth is slower and riskier.
 
+## References
+
+- [Azure identity and access architecture](https://learn.microsoft.com/en-us/azure/architecture/identity/identity-get-started)
+- [Microsoft Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing)
 ## 검색 키워드
 
 - Azure identity architecture

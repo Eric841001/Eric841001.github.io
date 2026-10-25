@@ -63,7 +63,7 @@ Microsoft 365의 협업 서비스, 사용자·기기 관리와 데이터 보호�
 
 도입 목적에 따라 필요한 서비스를 고르고 사용자 권한, 운영 담당자와 지원 절차를 함께 정합니다.
 
-특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스를 배정하기 전에 데이터 접근 권한, external sharing, sensitivity label, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
+특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스를 배정하기 전에 데이터 접근 권한, 외부 공유, 민감도 레이블, DLP, 사용자 교육과 지원 절차을 먼저 정리해야 합니다.
 
 ## Platform Architecture
 
@@ -396,15 +396,15 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 
 ## References
 
+
+- [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 - Microsoft 365 admin center
 - Microsoft Entra admin center
 - Microsoft Intune admin center
 - Microsoft Purview compliance portal
 - Microsoft Defender portal
-- Microsoft Learn
 - Microsoft Cloud Adoption Framework
 - Microsoft Zero Trust guidance
-
 ## Contact / Asset Request
 
 For Microsoft 365 assessment workbooks, security baseline checklists, migration planning templates or executive architecture materials, use [Contact and Asset Request](/knowledge/contact).

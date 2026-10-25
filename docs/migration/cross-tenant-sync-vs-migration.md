@@ -164,7 +164,7 @@ Examples:
 
 ## Overview
 
-Cross-Tenant Synchronization synchronizes users between Microsoft Entra tenants.
+Cross-tenant synchronization provisions B2B collaboration users and supported security groups into a target tenant. It is a one-way provisioning process; source identities remain responsible for authentication. It does not migrate mailboxes, files or Teams content. See the [supported objects and group limitations](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#object-types).
 
 Users remain in their original tenant.
 
@@ -225,13 +225,13 @@ Business disruption minimized.
 
 ## Faster Deployment
 
-Days to weeks.
+A limited identity pilot may be quicker than a content migration, but duration depends on object count, attribute mapping, access policy, testing and approvals. Estimate the schedule after discovery.
 
 ---
 
 ## Compliance Friendly
 
-Regional data remains local.
+Synchronization does not move workload content, but user attributes are provisioned into the target tenant. Review those data flows and cross-tenant access separately.
 
 ---
 
@@ -267,8 +267,8 @@ Multiple governance models remain.
 
 | Scenario | Recommendation |
 |----------|---------------|
-| GDPR Separation | Strong Fit |
-| Germany Data Residency | Strong Fit |
+| Separate workload storage | Consider synchronization when content should remain in existing tenants; assess identity-attribute transfers separately |
+| Regional requirements | Validate data location, access and applicable requirements; synchronization alone establishes no compliance outcome |
 | Regional Autonomy | Strong Fit |
 | Temporary Integration | Strong Fit |
 | M&A Due Diligence Phase | Strong Fit |
@@ -388,7 +388,7 @@ Single security framework.
 
 ## Copilot Readiness
 
-Optimal architecture for Microsoft 365 Copilot.
+A consolidated tenant can simplify data discovery and administration. Copilot readiness still depends on permissions, licensing, data quality and policy; consolidation is not a prerequisite.
 
 ---
 
@@ -555,11 +555,7 @@ Risks:
 
 ## GDPR and Data Residency
 
-Cross-Tenant Sync is frequently preferred when:
-
-- Data must remain within specific countries.
-- Regional legal entities require autonomy.
-- Separate DPO governance exists.
+Cross-tenant synchronization can preserve separate workload storage and administration. It still provisions identity attributes across tenants and enables cross-tenant access. Determine permitted data flows, storage locations and responsibilities with the organization's privacy and legal owners before enabling it; neither synchronization nor tenant separation by itself establishes GDPR compliance. [Microsoft describes these responsibilities](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#who-should-use-cross-tenant-synchronization).
 
 ---
 
@@ -630,9 +626,9 @@ Activities:
 
 ## Choose Cross-Tenant Sync When
 
-- Regional compliance is primary.
-- Business entities remain independent.
-- Data residency is mandatory.
+- Business entities need independent administration.
+- Workload content should remain in existing tenants.
+- Identity-attribute provisioning and cross-tenant access have been approved.
 - Temporary coexistence is expected.
 
 ---

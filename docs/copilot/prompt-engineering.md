@@ -586,11 +586,11 @@ Enterprise AI Operating System
 
 ## References
 
-- Microsoft Copilot Adoption Framework
-- Microsoft Learn
-- Microsoft Copilot Success Kit
-- Enterprise Prompt Engineering Best Practices
 
+- [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
+- Microsoft Copilot Adoption Framework
+- Enterprise Prompt Engineering Best Practices
 ## 검색 키워드
 
 - Microsoft 365 Copilot

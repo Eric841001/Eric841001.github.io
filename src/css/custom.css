@@ -1767,14 +1767,6 @@ a.kc-pathway-step:hover {
   scrollbar-color: #38bdf8 #0f172a;
 }
 
-[data-theme='dark'] .theme-doc-markdown .mermaid .nodeLabel,
-[data-theme='dark'] .theme-doc-markdown .mermaid .edgeLabel,
-[data-theme='dark'] .theme-doc-markdown .mermaid .cluster-label,
-[data-theme='dark'] .theme-doc-markdown div[class*='mermaid'] .nodeLabel,
-[data-theme='dark'] .theme-doc-markdown div[class*='mermaid'] .edgeLabel,
-[data-theme='dark'] .theme-doc-markdown div[class*='mermaid'] .cluster-label {
-  color: #e5edf7 !important;
-}
 
 [data-theme='dark'] .theme-doc-markdown .kc-visual-frame::after {
   border-color: #334a64;
@@ -3935,3 +3927,17 @@ body.kc-diagram-modal-open {
 /* The search field uses a light surface in both themes; typed text must stay dark. */
 [data-theme='dark'] .navbar .navbar__search-input {background-color:#f7fbff;color:#102033;caret-color:#102033;}
 [data-theme='dark'] .navbar .navbar__search-input::placeholder {color:#526174;opacity:1;}
+
+/* Mermaid uses light node and edge-label fills in both themes, including enlarged copies. */
+:is(.docusaurus-mermaid-container, .kc-diagram-modal) svg :is(.nodeLabel, .edgeLabel, .cluster-label, foreignObject, foreignObject *) {
+  color: #102033 !important;
+}
+:is(.docusaurus-mermaid-container, .kc-diagram-modal) svg text {
+  fill: #102033 !important;
+}
+
+.kc-diagram-modal__panel, .kc-diagram-modal__canvas {min-width:0;min-height:0;}
+.kc-diagram-modal__close {min-width:44px;min-height:44px;}
+.kc-diagram-modal__close:focus-visible {outline:3px solid #0284c7;outline-offset:2px;}
+
+.kc-diagram-modal__canvas:focus-visible {outline:3px solid #0284c7;outline-offset:-3px;}

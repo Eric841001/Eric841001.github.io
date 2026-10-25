@@ -125,6 +125,9 @@ Licensing must be checked against required security controls such as Defender, P
 
 Executive stakeholders respond better to licensing proposals that connect included capabilities to risk reduction, operational efficiency, Copilot readiness and adoption value.
 
+## References
+
+- [Microsoft Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing)
 ## 검색 키워드
 
 - Microsoft 365 licensing

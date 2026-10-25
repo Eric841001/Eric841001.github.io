@@ -122,6 +122,10 @@ Azure Virtual Machines로 업무 시스템을 운영할 때 확인할 설계 항
 
 VM migration is often a bridge to modernization. Document which workloads should remain on VMs and which should later move to PaaS or SaaS.
 
+## References
+
+- [Azure Virtual Machines overview](https://learn.microsoft.com/en-us/azure/virtual-machines/overview)
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
 ## 검색 키워드
 
 - Azure Virtual Machines architecture

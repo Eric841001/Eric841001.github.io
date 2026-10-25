@@ -497,7 +497,7 @@ Purview should integrate with:
 
 ## KPI Framework
 
-| KPI | Target |
+| KPI | Example planning target |
 |------|------|
 | Labeled Documents | > 90% |
 | Sensitive Data Coverage | > 95% |
@@ -510,7 +510,7 @@ Purview should integrate with:
 ## Best Practice
 
 - Keep label taxonomy simple
-- Start with 4-level classification
+- Choose a small classification set based on business needs; four levels are an example, not a Microsoft requirement
 - Use manual labeling before auto-labeling
 - Pilot DLP in audit mode first
 - Review SharePoint permissions before Copilot rollout
@@ -525,7 +525,7 @@ Purview should integrate with:
 |---------|---------|---------|
 | Users ignore labels | Complex taxonomy | Simplify labels |
 | Excessive DLP alerts | Overly broad conditions | Tune policies |
-| Copilot exposes sensitive content | Missing labels | Expand classification coverage |
+| Copilot exposes sensitive content | Excessive permissions or sharing; protection policies may also be missing | Review effective access and sharing, then apply the required label, encryption and DLP controls |
 | External sharing bypass | Governance gap | Review sharing policies |
 | Label adoption low | Lack of user education | Conduct awareness training |
 
@@ -544,14 +544,14 @@ Purview should integrate with:
 
 ## References
 
-- Microsoft Learn
+
+- [Sensitivity labels](https://learn.microsoft.com/en-us/purview/sensitivity-labels)
 - Microsoft Purview Documentation
 - [Microsoft Purview Information Barriers](./information-barriers)
 - Microsoft Information Protection Documentation
 - Microsoft Compliance Center Guidance
 - Microsoft Copilot Readiness Guidance
 - Microsoft Zero Trust Framework
-
 ## 검색 키워드
 
 - Microsoft security architecture

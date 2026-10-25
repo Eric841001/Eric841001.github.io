@@ -121,6 +121,9 @@ Purview Insider Risk Management는 조직 내부의 위험 행위를 탐지하�
 | Manufacturing | Sensitive design data | Data exfiltration signal review with Purview labels |
 | Technology | Privileged user monitoring | Role-separated investigation and periodic governance review |
 
+## References
+
+- [Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management)
 ## 검색 키워드
 
 - Microsoft Purview Insider Risk Management

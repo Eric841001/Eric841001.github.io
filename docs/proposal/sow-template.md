@@ -66,7 +66,7 @@ SOW는 프로젝트에서 수행할 작업과 제공할 결과물, 책임과 인
 
 포함·제외 범위, 선행 조건과 고객이 준비할 사항을 명시하고, 변경 요청이 생겼을 때의 승인 절차도 정합니다.
 
-SOW는 고객에게 "무엇을 제공하는가"만 설명하는 문서가 아닙니다. 어떤 조건에서 시작하고, 어떤 산출물로 검토하며, 어떤 기준으로 완료를 승인할지 합의하는 delivery contract입니다.
+작업 시작 조건과 제출할 결과물, 검토 방법과 완료 승인 기준을 고객과 합의해 SOW에 기록합니다.
 
 > **Asset preview:** This page explains the SOW design model. Editable SOW templates and sanitized customer-ready examples are shared by request after confirming scope, audience and confidentiality requirements.
 

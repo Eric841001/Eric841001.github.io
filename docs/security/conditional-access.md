@@ -71,7 +71,7 @@ Conditional Access는 사용자, 접속 기기·위치·앱과 위험 신호를 
 
 보고 전용 모드와 소수 사용자를 대상으로 먼저 시험하고, 긴급 접근 계정과 예외 대상을 정합니다. 로그인 기록으로 정책 적용 결과를 확인한 뒤 범위를 넓히세요.
 
-Copilot 도입 시에도 Conditional Access는 중요합니다. Copilot은 Microsoft 365 데이터 접근 권한을 기반으로 동작하므로, ID, 기기, session, 데이터 보호 정책이 함께 정리되어야 합니다.
+Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계정과 기기, 세션과 데이터 보호 정책을 함께 검토하세요.
 
 ## Why Conditional Access Matters
 

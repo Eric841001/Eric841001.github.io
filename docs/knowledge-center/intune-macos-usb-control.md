@@ -39,6 +39,8 @@ macOS에서 USB 저장장치의 사용을 제한할 때 확인할 Defender for E
 
 ## Control Options
 
+macOS uses a Defender Device Control JSON policy rather than the Windows Device Control profile. Validate the JSON against Microsoft's schema, then run `mdatp device-control policy validate --path <policy-file>` on a test Mac before Intune or Jamf deployment. See the [macOS policy deployment procedure](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure).
+
 - Block USB Storage
 - Read Only
 - Approved Device List

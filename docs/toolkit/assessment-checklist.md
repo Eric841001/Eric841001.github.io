@@ -250,7 +250,7 @@ Microsoft 365의 사용자·기기·협업·보안과 운영 현황을 조사할
 | Current State Summary | 현재 테넌트, 보안, 기기, 이전 상태 요약 |
 | Risk Register | 보안, 운영, 일정, 비용 리스크 분류 |
 | Gap Analysis | 목표 상태와 현재 상태의 차이 |
-| Roadmap | phase, 담당자, dependency, timeline 정의 |
+| Roadmap | 단계별 담당자, 선행 작업과 일정 정의 |
 | Executive Summary | 임원 보고용 핵심 메시지 |
 | Next Action Plan | 워크숍 이후 실행 항목과 책임자 |
 
@@ -263,7 +263,7 @@ Microsoft 365의 사용자·기기·협업·보안과 운영 현황을 조사할
 
 ## Search Keywords
 
-이 문서는 다음 검색 의도에 답합니다.
+관련 검색어입니다.
 
 - Microsoft 365 assessment checklist
 - M365 security assessment

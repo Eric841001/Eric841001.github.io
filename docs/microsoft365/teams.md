@@ -582,13 +582,13 @@ Responsibilities:
 
 ## References
 
-- Microsoft Learn
+
+- [Microsoft Teams administration](https://learn.microsoft.com/en-us/microsoftteams/teams-overview)
 - Microsoft Teams Governance Guidance
 - Microsoft Purview Documentation
 - Microsoft Entra Documentation
 - Microsoft Copilot Readiness Guidance
 - Microsoft Cloud Adoption Framework
-
 ## 검색 키워드
 
 - Microsoft 365 architecture

@@ -129,6 +129,10 @@ Microsoft 365 E5 commonly provides the broadest Defender XDR capability. E3 envi
 
 Defender projects work best when framed as an operating model. Tool enablement is only the beginning; triage ownership, alert tuning and response playbooks determine real security value.
 
+## References
+
+- [Microsoft Defender XDR overview](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender)
+- [Defender for Endpoint overview](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint)
 ## 검색 키워드
 
 - Microsoft Defender

@@ -272,12 +272,13 @@ Design assuming compromise will occur.
 
 ## References
 
+
+- [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
+- [Microsoft Defender XDR overview](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender)
 - Microsoft Zero Trust Framework
 - Microsoft Security Adoption Framework
 - Microsoft Defender Documentation
 - Microsoft Purview Documentation
-- Microsoft Learn
-
 ## 검색 키워드
 
 - Microsoft 365 playbook

@@ -135,7 +135,7 @@ Organizations must achieve:
 | Endpoint | Intune |
 | Threat Protection | Microsoft Defender |
 | Data Protection | Microsoft Purview |
-| AI Security | Microsoft Copilot |
+| AI Security | Microsoft Entra, Agent 365, Defender and Purview controls for Copilot and agents |
 | Monitoring | Defender XDR |
 | SIEM | Microsoft Sentinel |
 | Access Control | Conditional Access |
@@ -377,7 +377,7 @@ Historical Permission Design
 
 Cause:
 
-Missing Classification
+Excessive access, sharing or missing protection controls
 
 ---
 
@@ -575,7 +575,7 @@ Provides:
 
 ## Key Metrics
 
-| KPI | Target |
+| KPI | Example planning target |
 |---------|---------|
 | MFA Adoption | 100% |
 | Compliant Devices | >95% |
@@ -599,6 +599,10 @@ Provides:
 
 ---
 
+## References
+
+- [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
+- [Microsoft Defender XDR overview](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender)
 ## Related Documents
 
 - Zero Trust Framework

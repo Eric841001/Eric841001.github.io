@@ -105,7 +105,7 @@ Microsoft 365 Business Premium은 Microsoft 365 Apps, Exchange Online, Teams, Sh
 
 ## Licensing
 
-Business Premium is generally designed for organizations up to the Microsoft SMB licensing limit. If the customer needs advanced compliance, enterprise voice, large-scale governance or E5 security, compare against E3/E5.
+Microsoft documents a combined limit of 300 provisioned seats across Business Basic, Business Standard and Business Premium. Count all Business-family seats together; enterprise subscriptions are a separate option. Verify the purchased variant's Teams entitlement and any server add-ons in the [Business Premium FAQ](https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide). If the customer needs advanced compliance, enterprise voice, large-scale governance or E5 security, compare against E3/E5.
 
 ## When Business Premium Is Enough
 

@@ -962,7 +962,7 @@ Example model:
 | Internal employee | Download allowed based on policy |
 | Regional employee | Group-based exception |
 | Unmanaged device | Browser-only or download blocked |
-| Privileged user | Download and offline access allowed |
+| Privileged user | Apply the same device and data controls; privilege alone is not a download exception |
 
 ---
 
@@ -1017,9 +1017,9 @@ Before executing tenant consolidation, validate:
 
 ### Mail Coexistence Strategy
 
-테넌트 통합 프로젝트에서는 데이터 마이그레이션보다 메일 공존(Coexistence) 설계가 선행되어야 한다.
+테넌트 통합을 시작하기 전에 이전 기간의 메일 송수신 경로를 정합니다.
 
-특히 아래와 같은 환경에서는 메일 흐름 설계가 필수적이다.
+다음처럼 두 환경을 함께 사용하는 동안에는 사용자별 메일 전달 경로를 시험하세요.
 
 - Notes + Exchange Online
 - Google Workspace + Exchange Online
@@ -1038,7 +1038,7 @@ Before executing tenant consolidation, validate:
 
 ### Shared Domain Migration
 
-동일 SMTP Domain을 사용하는 경우 다음 절차를 수행한다.
+같은 SMTP 도메인을 대상 테넌트로 옮길 때는 계정·그룹·별칭의 도메인 사용 현황과 제거 조건을 먼저 확인합니다. 다음은 작업 순서를 요약한 것으로, 실제 전환 전에는 복구 조건과 사용자 영향을 별도로 검토하세요.
 
 #### Current State
 
@@ -1071,9 +1071,7 @@ user@company.com
 
 ### Teams Identity Impact
 
-Tenant Consolidation 이후
-
-다음 데이터는 자동 유지되지 않는다.
+테넌트를 옮길 때 다음 정보가 그대로 유지된다고 가정하지 마세요. 선택한 이전 도구의 지원 범위와 대상 계정으로 접속한 결과를 확인합니다.
 
 #### User Impact
 
@@ -1085,17 +1083,15 @@ Tenant Consolidation 이후
 
 #### Recommendation
 
-Cross Tenant Sync를 우선 검토하고
-
-전체 이전은 업무상 필요성과 이전 범위를 확인한 뒤 진행합니다.
+기존 테넌트를 유지하면서 협업만 연결할지, 사용자 자료를 실제로 옮길지 먼저 결정하세요. 동기화는 자료 이전을 대신하지 않습니다.
 
 ---
 
 ### Sensitivity Label Migration
 
-Microsoft Purview Information Protection 적용 환경에서는
+Microsoft Migration Orchestrator는 메일, OneDrive, Teams 채팅·모임을 함께 옮길 수 있습니다. 계정 자체와 SharePoint 사이트·Teams 채널은 별도로 준비해야 합니다. [지원 범위와 선행 조건](https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide)을 확인하세요.
 
-문서 마이그레이션 이전에 정책 검토가 필요하다.
+Purview Information Protection으로 보호된 자료는 이전 전에 레이블과 암호화 정책을 검토합니다.
 
 #### Considerations
 
@@ -1106,16 +1102,13 @@ Microsoft Purview Information Protection 적용 환경에서는
 
 #### Risk
 
-암호화된 문서는
-단순 Migration Tool로 이동 불가
-
-별도 검증 필요
+암호화된 문서의 이전 가능 여부는 도구와 암호화 방식에 따라 다릅니다. 파일을 옮긴 뒤에도 대상 계정이 열 수 있는지, 원본 테넌트의 키와 권한에 계속 의존하는지 시험하세요. 암호화 해제나 레이블 변경이 필요하다면 자료 소유자와 보안 담당자의 승인을 먼저 받습니다.
 
 ---
 
 ### Regional Security Policy
 
-Single Tenant에서도 국가별 정책 분리가 가능하다.
+하나의 테넌트에서도 사용자·기기 그룹에 따라 지역별 정책을 다르게 적용할 수 있습니다. 제품별 할당 범위와 예외 처리 방식을 확인하세요.
 
 #### Supported Controls
 
@@ -1128,19 +1121,13 @@ Single Tenant에서도 국가별 정책 분리가 가능하다.
 
 #### Design Principle
 
-정책은 Domain 기반이 아닌
-
-Group 기반으로 설계한다.
+정책을 사용자·기기 그룹에 할당하고 담당자가 그룹 구성원과 예외를 관리합니다. 도메인 이름만으로 조직의 정책 경계가 만들어지지는 않습니다.
 
 ---
 
 ### Administrative Units
 
-글로벌 운영 조직의 경우
-
-Administrative Units를 사용하여
-
-지역별 관리자 권한을 분리한다.
+Administrative Units로 일부 사용자·그룹·기기의 관리 권한을 지역별로 위임할 수 있습니다. 테넌트 전체를 격리하는 기능은 아니므로 지원되는 역할과 작업 범위를 확인하세요.
 
 #### Example
 
@@ -1162,28 +1149,16 @@ HQ Admin
 
 ### Download Restriction Model
 
-Conditional Access 기반
-
-SharePoint Limited Access 정책을 활용한다.
+Conditional Access와 SharePoint의 제한된 웹 접근 설정으로 비관리 기기의 다운로드를 제한할 수 있습니다. 게스트나 관리자라는 이유만으로 허용·차단이 결정되는 것은 아닙니다.
 
 #### Typical Scenario
 
-Guest User
-
-- Browser Only
-
-Employee
-
-- Download Allowed
-
-Privileged User
-
-- Download Allowed
-- Offline Access Allowed
-
-Regional User
-
-- Group Based Exception
+| 대상 | 확인할 접근 조건 |
+|---|---|
+| 게스트 | 대상 사이트 권한, 기기 상태와 제한된 웹 접근 적용 여부 |
+| 직원 | 기기 준수 상태, 자료 보호 정책과 다운로드 허용 조건 |
+| 관리자 | 관리자 권한과 자료 접근 권한을 구분하고 예외 필요성 검토 |
+| 지역별 사용자 | 승인된 그룹별 예외와 만료일 |
 
 ---
 

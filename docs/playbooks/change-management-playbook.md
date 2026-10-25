@@ -438,12 +438,10 @@ Track:
 
 ## References
 
-- Microsoft Adoption Framework
-- Microsoft Change Management Guidance
-- Microsoft Copilot Adoption Framework
-- Microsoft Learn
-- Prosci Change Management Methodology
 
+- [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- Microsoft Copilot Adoption Framework
+- Prosci Change Management Methodology
 ## 검색 키워드
 
 - Microsoft 365 playbook

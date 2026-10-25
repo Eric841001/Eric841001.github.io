@@ -587,13 +587,11 @@ Authoritative status improves ranking; it does not grant access or replace permi
 
 ## References
 
-- Microsoft Learn
 - SharePoint Online Documentation
 - Microsoft Purview Documentation
 - Microsoft 365 Copilot Documentation
 - [SharePoint authoritative sites in Copilot Search](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-11-2026)
 - Microsoft Cloud Adoption Framework
-
 ## 검색 키워드
 
 - Microsoft 365 architecture

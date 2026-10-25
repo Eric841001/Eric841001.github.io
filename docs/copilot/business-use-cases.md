@@ -440,10 +440,10 @@ Organizations should prioritize:
 
 ## References
 
-- Microsoft Copilot Success Kit
-- Microsoft Adoption Framework
-- Microsoft Work Trend Index
 
+- [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
+- [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
+- Microsoft Work Trend Index
 ## 검색 키워드
 
 - Microsoft 365 Copilot

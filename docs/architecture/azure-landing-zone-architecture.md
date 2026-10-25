@@ -235,11 +235,13 @@ Typical Azure initiatives include:
 
 ## References
 
+
+- [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
 - [Governance Architecture](./governance-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Migration Architecture](./migration-architecture)
-
 ## Contact / Asset Request
 
 For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

@@ -289,6 +289,8 @@ Create an identity transition plan that includes:
 
 ## Teams and Collaboration Impact
 
+For native migration, [Microsoft Migration Orchestrator](https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide) supports mailboxes, OneDrive, Teams chats and meetings. It does not move identities or all Teams and SharePoint content. See the [workload support summary](./tenant-to-tenant#migration-methods) before selecting tools.
+
 Tenant consolidation can affect Teams collaboration.
 
 ### Key Considerations

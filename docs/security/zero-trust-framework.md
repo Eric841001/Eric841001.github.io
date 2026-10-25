@@ -241,6 +241,8 @@ Conditional Access should evaluate:
 
 ## Zero Trust Maturity Model
 
+The five levels below are a planning example for this guide, not a Microsoft certification or official scoring scale.
+
 | Level | Description |
 |---|---|
 | Level 1 | Basic identity and MFA controls |
@@ -364,13 +366,14 @@ Executives should approve target maturity, risk tolerance, device scope, externa
 
 ## References
 
+
+- [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
+- [Microsoft Entra Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview)
 - Microsoft Zero Trust Guidance
-- Microsoft Learn
 - Microsoft Entra Documentation
 - Microsoft Intune Documentation
 - Microsoft Defender Documentation
 - Microsoft Purview Documentation
-
 ## 검색 키워드
 
 - Microsoft security architecture

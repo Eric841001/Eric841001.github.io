@@ -2,6 +2,7 @@
   const visualSelector =
     '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom), .theme-doc-markdown .kc-ai-journey';
   let activeDialog = null;
+  let activeOpener = null;
 
   function getVisual(frame) {
     if (frame.tagName === 'IMG') return frame;
@@ -89,6 +90,9 @@
 
     const canvas = document.createElement('div');
     canvas.className = 'kc-diagram-modal__canvas';
+    canvas.tabIndex = 0;
+    canvas.setAttribute('role', 'region');
+    canvas.setAttribute('aria-label', 'Expanded visual; use arrow keys to scroll');
 
     const clone = visual.cloneNode(true);
     if (clone.tagName === 'IMG') {
@@ -98,7 +102,14 @@
     } else if (clone.tagName === 'svg') {
       clone.removeAttribute('width');
       clone.removeAttribute('height');
-      clone.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+      clone.setAttribute('preserveAspectRatio', 'xMinYMin meet');
+      const bounds = visual.viewBox.baseVal;
+      if (bounds.width > 0 && bounds.height > 0) {
+        // Keep diagram labels readable on narrow screens instead of fitting the entire chart.
+        clone.style.width = `${Math.ceil(bounds.width * 1.25)}px`;
+        clone.style.height = 'auto';
+        clone.style.maxWidth = 'none';
+      }
     } else {
       clone.removeAttribute('role');
       clone.removeAttribute('tabindex');
@@ -117,6 +128,7 @@
     document.body.appendChild(overlay);
     document.body.classList.add('kc-diagram-modal-open');
     activeDialog = overlay;
+    activeOpener = frame;
     closeButton.focus();
   }
 
@@ -125,6 +137,8 @@
     activeDialog.remove();
     activeDialog = null;
     document.body.classList.remove('kc-diagram-modal-open');
+    if (activeOpener?.isConnected) activeOpener.focus({preventScroll: true});
+    activeOpener = null;
   }
 
   function findNearestHeading(frame) {
@@ -137,7 +151,27 @@
   }
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeDialog();
+    if (!activeDialog) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeDialog();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const controls = [...activeDialog.querySelectorAll(
+      'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    )].filter((element) => !element.disabled && element.getClientRects().length > 0);
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (!first) return;
+    const outside = !activeDialog.contains(document.activeElement);
+    if (event.shiftKey && (outside || document.activeElement === first)) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && (outside || document.activeElement === last)) {
+      event.preventDefault();
+      first.focus();
+    }
   });
 
   function start() {

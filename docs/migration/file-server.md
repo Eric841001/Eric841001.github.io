@@ -123,6 +123,9 @@ The biggest risk is not the copy operation. The biggest risk is moving unmanaged
 
 File server migration is an information architecture project. Customers get better outcomes when folder cleanup and ownership decisions happen before migration waves.
 
+## References
+
+- [SharePoint Migration Tool](https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool)
 ## 검색 키워드
 
 - file server migration

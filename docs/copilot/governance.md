@@ -140,7 +140,7 @@ Copilot을 도입하기 전에 자료 접근 권한과 운영 절차를 정합�
 - Microsoft 365 Copilot governance
 - Copilot data access control
 - Copilot oversharing review
-- Copilot 도입 전 SharePoint 접근 권한 review
+- Copilot 도입 전 SharePoint 접근 권한 검토
 - Copilot security readiness
 - Copilot Agent governance
 
@@ -160,5 +160,5 @@ This page is designed for the following search intents:
 - Copilot security readiness
 - Copilot Studio agent governance
 - Microsoft 365 Copilot 보안
-- Copilot 도입 전 SharePoint 접근 권한 review
+- Copilot 도입 전 SharePoint 접근 권한 검토
 - Copilot Agent 거버넌스

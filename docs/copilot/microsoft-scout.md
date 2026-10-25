@@ -352,7 +352,7 @@ Microsoft는 2026년 9월 25일 Scout의 새 이름을 Autopilot으로 발표했
 
 ## Search Keywords
 
-이 문서는 다음 검색 의도에 답합니다.
+관련 검색어입니다.
 
 - Microsoft Autopilot
 - Microsoft Work IQ

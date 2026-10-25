@@ -122,6 +122,9 @@ Microsoft 365 자료의 보관 기간, 삭제와 처분 검토 절차를 정리�
 | Finance | Audit evidence readiness | Records management and legal hold operating model |
 | Retail | Collaboration data cleanup | Teams and SharePoint lifecycle governance before Copilot rollout |
 
+## References
+
+- [Retention policies and labels](https://learn.microsoft.com/en-us/purview/retention)
 ## 검색 키워드
 
 - Microsoft Purview data lifecycle management

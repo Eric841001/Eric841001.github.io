@@ -199,6 +199,10 @@ For customer workshops, use this sequence:
 - Proposal scope, SOW, WBS and risk register
 - Executive steering committee status pack
 
+## References
+
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+- [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 ## 검색 키워드
 
 이 문서는 다음과 같은 검색어와 관련됩니다.

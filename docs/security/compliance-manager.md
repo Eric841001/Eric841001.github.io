@@ -121,6 +121,9 @@ Compliance Manager에서 평가 항목과 개선 작업, 담당자와 증거 자
 | Manufacturing | Global compliance posture | Regional control mapping and monthly governance review |
 | SaaS | Security questionnaire response | Reusable compliance evidence pack for customer due diligence |
 
+## References
+
+- [Microsoft Purview Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager)
 ## 검색 키워드
 
 - Microsoft Purview Compliance Manager

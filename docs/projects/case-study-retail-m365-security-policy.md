@@ -64,7 +64,7 @@ The engagement converted Microsoft 365 license capabilities and current-state fi
 
 보유 라이선스에서 사용할 수 있는 기능과 현재 설정을 확인했습니다. 개선 과제마다 선행 조건, 적용 영향과 작업 순서를 기록했습니다.
 
-공개 레퍼런스에는 고객명, 실제 사용자 수, domain, 내부 부서명, 기존 솔루션명, 세부 일정, 내부 파일명은 포함하지 않습니다.
+공개 레퍼런스에는 고객명, 실제 사용자 수, 도메인, 내부 부서명, 기존 솔루션명, 세부 일정, 내부 파일명은 포함하지 않습니다.
 
 ## Business Challenge
 

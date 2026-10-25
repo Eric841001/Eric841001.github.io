@@ -328,10 +328,8 @@ Organizations can move beyond individual productivity gains and establish repeat
 - [Microsoft 365 Copilot release notes — September 23, 2026](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#september-23-2026)
 - [Microsoft 365 Copilot release notes — August 25, 2026](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-25-2026)
 - Microsoft 365 Blog
-- Microsoft Learn
 - Copilot in Excel Skills Documentation
 - Frontier Finance Initiative
-
 ## 한국어 요약
 
 Excel Skills로 반복하는 분석·보고 작업의 지시와 출력 형식을 저장해 사용할 수 있습니다. 기능을 쓰기 전에 지원 언어, 앱 버전과 계정 조건을 확인하세요.

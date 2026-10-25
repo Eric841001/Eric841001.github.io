@@ -160,6 +160,10 @@ Exchange Online, Google Workspace, 파일 서버와 테넌트 간 이전 자료�
 - communication template
 - hypercare and issue tracker
 
+## References
+
+- [Microsoft 365 tenant-to-tenant migrations](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations)
+- [SharePoint Migration Tool](https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool)
 ## Contact / Asset Request
 
 For migration pre-assessment workbooks, cutover runbooks, rollback checklists, communication templates or executive migration status packs, use [Contact and Asset Request](../contact).

@@ -1003,6 +1003,11 @@
         "title": "Exchange Online documentation",
         "url": "https://learn.microsoft.com/en-us/exchange/exchange-online",
         "checkedFor": "Exchange Online의 관리자·메일·이전 운영 영역을 확인했으며 특정 고객의 구성이나 이전 성공을 입증하지 않습니다."
+      },
+      {
+        "title": "Transport rule decryption parameter scope",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-transportrule?view=exchange-ps#-removermsattachmentencryption",
+        "checkedFor": "미리 암호화된 첨부 처리와 RemoveOMEv2 활성화 의존성을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1138,6 +1143,11 @@
         "title": "Intune supported platforms",
         "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers",
         "checkedFor": "Intune 관리 지원과 Defender 에이전트 지원은 별개이며 사용하는 기능의 OS·앱 조건을 함께 확인해야 합니다."
+      },
+      {
+        "title": "macOS Device Control configuration",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure",
+        "checkedFor": "macOS JSON 정책과 배포 전 mdatp 정책 유효성 검사, Windows 프로필과의 차이를 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1359,6 +1369,11 @@
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
         "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+      },
+      {
+        "title": "Business Premium FAQ seat limits",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
+        "checkedFor": "Business Basic·Standard·Premium의 프로비저닝된 좌석 합계 300개 제한을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1464,6 +1479,21 @@
         "title": "Defender for Office 365 overview",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
         "checkedFor": "Defender Office 365 P1/P2 기능과 실제 구독 권한을 구분해야 합니다."
+      },
+      {
+        "title": "Exchange cutover requirements",
+        "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/cutover-migration-to-office-365",
+        "checkedFor": "Cutover의 2,000개 사서함 한도와 150개 이하 권장 규모를 구분했습니다."
+      },
+      {
+        "title": "Staged migration scope",
+        "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/what-to-know-about-a-staged-migration",
+        "checkedFor": "Staged는 Exchange 2003·2007 대상의 기존 방식이며 일반적인 중간 규모 조직 권장안에서 제외했습니다."
+      },
+      {
+        "title": "Migration Orchestrator supported workloads",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide",
+        "checkedFor": "메일·OneDrive·Teams 채팅·모임과 계정·SharePoint 사이트·Teams 채널 제외 범위를 구분했습니다. 계정 매핑과 모임 의존성을 공식 안내에서 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1579,7 +1609,7 @@
       {
         "title": "Cross-tenant synchronization",
         "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
-        "checkedFor": "교차 테넌트 동기화는 B2B 협업용 객체를 관리하며 워크로드 이전이 아닙니다. 사용자·그룹 시나리오의 원본 테넌트 라이선스를 구분합니다."
+        "checkedFor": "지원 보안 그룹과 B2B 사용자 프로비저닝, 원본 인증 의존성과 데이터 이전 제외를 확인했습니다. 규정 준수의 자동 보장 표현을 제거했습니다."
       },
       {
         "title": "Microsoft 365 tenant-to-tenant migrations",
@@ -1622,6 +1652,11 @@
         "title": "Azure Cloud Adoption Framework",
         "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
         "checkedFor": "Cloud Adoption Framework는 도입·계획·준비·운영·보안·거버넌스 지침이며 이 글의 프로젝트 일정이나 점수를 인증하지 않습니다."
+      },
+      {
+        "title": "Migration Orchestrator supported workloads",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide",
+        "checkedFor": "메일·OneDrive·Teams 채팅·모임과 계정·SharePoint 사이트·Teams 채널 제외 범위를 구분했습니다. 계정 매핑과 모임 의존성을 공식 안내에서 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1690,6 +1725,11 @@
         "title": "Cross-tenant synchronization",
         "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
         "checkedFor": "교차 테넌트 동기화는 B2B 협업용 객체를 관리하며 워크로드 이전이 아닙니다. 사용자·그룹 시나리오의 원본 테넌트 라이선스를 구분합니다."
+      },
+      {
+        "title": "Migration Orchestrator supported workloads",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide",
+        "checkedFor": "메일·OneDrive·Teams 채팅·모임과 계정·SharePoint 사이트·Teams 채널 제외 범위를 구분했습니다. 계정 매핑과 모임 의존성을 공식 안내에서 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1847,6 +1887,11 @@
         "title": "Cross-tenant synchronization",
         "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
         "checkedFor": "교차 테넌트 동기화는 B2B 협업용 객체를 관리하며 워크로드 이전이 아닙니다. 사용자·그룹 시나리오의 원본 테넌트 라이선스를 구분합니다."
+      },
+      {
+        "title": "Migration Orchestrator supported workloads",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide",
+        "checkedFor": "메일·OneDrive·Teams 채팅·모임과 계정·SharePoint 사이트·Teams 채널 제외 범위를 구분했습니다. 계정 매핑과 모임 의존성을 공식 안내에서 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2877,6 +2922,11 @@
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
         "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+      },
+      {
+        "title": "Business family seat limits",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
+        "checkedFor": "Business 계열 상품을 합산하는 300석 제한으로 산정 예시를 수정했습니다."
       }
     ],
     "reviewLevel": "작성자 예시·참고자료",

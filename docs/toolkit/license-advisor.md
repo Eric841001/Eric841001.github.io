@@ -178,7 +178,7 @@ Included capabilities:
 
 Best fit:
 
-- Up to 300 users
+- Up to 300 provisioned seats across the Business family in total; count Basic, Standard and Premium together
 - Security modernization projects
 
 ---
@@ -271,7 +271,7 @@ Business Premium
 
 Recommended when:
 
-- Less than 300 users
+- Within the combined 300-seat Business-family limit
 - Intune required
 - Conditional Access required
 

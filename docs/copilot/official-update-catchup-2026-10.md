@@ -24,7 +24,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 ## 설계와 거버넌스 후속 지침
 
-- **10월 8일:** 역할에 맞는 도구·skills·workflow·전문 에이전트로 책임을 나눠 확장성을 검증합니다. [공식 설계 지침](https://techcommunity.microsoft.com/blog/copilot-studio-blog/are-bigger-agents-better-how-to-design-agents-that-scale/4559073)
+- **10월 8일:** 역할에 맞는 도구·스킬·워크플로·전문 에이전트로 책임을 나눠 확장성을 검증합니다. [공식 설계 지침](https://techcommunity.microsoft.com/blog/copilot-studio-blog/are-bigger-agents-better-how-to-design-agents-that-scale/4559073)
 - **9월 22일:** 활동 기록을 보고 권한·비용·서비스 상태를 점검하며, 정책이 명확한 대응만 자동화합니다. [공식 운영 지침](https://techcommunity.microsoft.com/blog/copilot-studio-blog/governance-is-becoming-agentic-too-how-enterprises-can-operate-ai-at-scale/4556820)
 
 두 항목은 신규 제품 GA 발표가 아닌 설계·운영 지침입니다. [상세 검토 항목](./customer-conversation-harness.md#확장-가능한-에이전트-설계)을 확인하세요.
@@ -49,7 +49,7 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 - **검색에서 채팅으로:** Windows·Web의 Microsoft 365 Copilot Search 결과를 문맥으로 이어 후속 질문·요약·콘텐츠 생성을 할 수 있습니다. Web 채팅에는 `Try Again`과 `Switch Model`을 포함한 응답 재생성이 추가됐습니다. 검색 권한과 선택 모델을 포함해 대표 사용자로 단계적 배포 여부를 확인하세요.
 - **커넥터 권한 매핑:** 관리자가 Microsoft 365 관리 센터의 `Settings > Search & intelligence > Data sources`에서 생성된 연결의 쿼리 문자열과 사용자 ID 매핑 규칙을 직접 수정할 수 있습니다. 변경 후 다음 크롤을 확인하고, 영향받는 사용자로 소스 범위와 권한 누락·과다 노출을 재검증하세요.
 - **SharePoint 광범위 공유 감사:** SharePoint Advanced Management 관리자는 `Data access governance reports`에서 `Everyone`과 `Everyone except external users`에 부여된 항목 단위 권한을 보고서로 확인할 수 있습니다. [광범위 그룹 공유 보고서 안내](https://learn.microsoft.com/en-us/sharepoint/powershell-for-data-access-governance#generate-a-report-on-sites-and-files-shared-via-special-sharepoint-groups)의 역할·모듈 전제 조건을 확인하고 사이트·파일 소유자와 예외 필요성을 같이 검토하세요.
-- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 채택·영향·크레딧 소비 지표와 내보내기 기능, Advanced Insights의 Consumption·Person 쿼리을 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 파일럿 기준선을 잡으세요.
+- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 채택·영향·크레딧 소비 지표와 내보내기 기능, Advanced Insights의 Consumption·Person 쿼리를 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 파일럿 기준선을 잡으세요.
 
 ## 9월 25일 새 Copilot 공식 발표
 
@@ -113,7 +113,7 @@ Microsoft는 Copilot이 요약·타임라인·대시보드·비교 같은 **대�
 
 ## 10월 20일 OneDrive·SharePoint Copilot 업데이트
 
-Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 확인하고, 파일을 단순히 찾는 수준을 넘어 여러 파일 분석·정리·콘텐츠 생성에 사용하는 새 경험을 발표했습니다. OneDrive와 SharePoint의 Copilot은 같은 기반과 라이선스 모델을 사용합니다.
+Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 확인하고, 여러 파일의 분석·정리·콘텐츠 생성을 지원하는 기능을 발표했습니다. OneDrive와 SharePoint의 Copilot은 같은 기반과 라이선스 모델을 사용합니다.
 
 - **실무 기능:** 여러 스프레드시트를 선택해 추세·차트를 분석하고, 혼잡한 프로젝트 폴더를 목적에 맞게 정리하며, 기존 파일을 근거로 대화형 HTML 보고서를 만들 수 있습니다. 반복 절차는 Markdown 개인 스킬로 저장할 수 있고 OneDrive Prompt Gallery에서 시작 프롬프트를 선택할 수 있습니다.
 - **라이선스와 비용:** 콘텐츠 기반 질문, 생성·정리, 재사용 스킬, 점진적 메타데이터 보강과 결정론적 워크플로 같은 일상 기능은 Microsoft 365 Copilot 라이선스에 포함됩니다. 대규모 콘텐츠 컬렉션 처리, 다단계 에이전트 작업, 이미지 생성·편집, AI 사이트 분석, 준실시간 메타데이터 자동 채우기에는 Copilot Credits와 usage-based billing이 필요합니다. 관리자는 Microsoft 365 관리 센터의 비용 관리·지출 정책과 사용자 범위를 먼저 설정하세요.

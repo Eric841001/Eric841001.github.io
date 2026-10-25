@@ -126,6 +126,10 @@ OneDrive의 동기화, 외부 공유, 데이터 보존과 퇴사자 파일 처�
 
 OneDrive rollout succeeds when users understand what belongs in OneDrive versus Teams or SharePoint. Clear information architecture reduces support tickets.
 
+## References
+
+- [OneDrive overview](https://learn.microsoft.com/en-us/sharepoint/onedrive-overview)
+- [Control access from unmanaged devices](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices)
 ## 검색 키워드
 
 - OneDrive enterprise governance

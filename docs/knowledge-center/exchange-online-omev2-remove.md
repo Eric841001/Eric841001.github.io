@@ -105,6 +105,8 @@ This should only be used with:
 
 ## Example PowerShell Pattern
 
+`RemoveOMEv2` removes Purview Message Encryption from the message and its attachments. `RemoveRMSAttachmentEncryption` also handles attachments encrypted before they were added, and requires `RemoveOMEv2 $true`. These settings are not a general decryptor for every protection format. Use the [parameter definitions](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-transportrule?view=exchange-ps#-removermsattachmentencryption) and validate the actual message and file protection types before approving an exception.
+
 Connect to Exchange Online.
 
 ```powershell
@@ -203,7 +205,7 @@ Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파�
 | 규칙 범위 | 발신자, 수신자, 조건과 예외 범위 |
 | Security 승인 | 보안 또는 규정 준수 승인 기록 |
 | Test 증거 자료 | approved 수신자와 non-approved 수신자 테스트 결과 |
-| Review cadence | 예외 rule의 정기 검토 주기 |
+| Review cadence | 예외 규칙의 정기 검토 주기 |
 
 ## Related Documents
 
@@ -214,7 +216,7 @@ Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파�
 
 ## Search Keywords
 
-이 문서는 다음 검색 의도에 답합니다.
+관련 검색어입니다.
 
 - Exchange Online RemoveOMEv2
 - Remove RMS attachment encryption
@@ -227,4 +229,4 @@ Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파�
 
 ## Contact / Asset Request
 
-암호화 예외 요청서, transport rule design sheet, 승인 증거 자료 양식이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+암호화 예외 요청서, 메일 흐름 규칙 설계서, 승인 증거 자료 양식이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

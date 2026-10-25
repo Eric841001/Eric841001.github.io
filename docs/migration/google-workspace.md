@@ -122,6 +122,10 @@ Google Workspace의 메일·일정·연락처와 Drive 자료를 Microsoft 365�
 
 Drive ownership and shared drive structure often create more complexity than mailbox migration. Early inventory and business owner validation reduce cutover surprises.
 
+## References
+
+- [Migrate Google Workspace mailboxes](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration)
+- [SharePoint Migration Tool](https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool)
 ## Contact / Asset Request
 
 For Google Workspace assessment templates, user mapping workbooks, shared drive inventory models, cutover plans or adoption communication samples, use [Contact and Asset Request](../contact).

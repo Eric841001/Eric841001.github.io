@@ -195,6 +195,9 @@ Use this model when preparing an executive licensing discussion:
 - license utilization review template
 - executive cost and value summary
 
+## References
+
+- [Microsoft Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing)
 ## 검색 키워드
 
 - Microsoft 365 licensing strategy

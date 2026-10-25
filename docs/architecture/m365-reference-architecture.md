@@ -470,12 +470,14 @@ Recommended phased approach:
 
 ## References
 
+
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+- [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Copilot Architecture](./copilot-architecture)
 - [Governance Architecture](./governance-architecture)
 - [Migration Architecture](./migration-architecture)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-
 ## Contact / Asset Request
 
 For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).

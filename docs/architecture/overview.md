@@ -148,6 +148,10 @@ Microsoft 365, Azure, 보안과 Copilot의 설계 문서를 모았습니다. 도
 
 Good architecture is not only a diagram. It must explain why a design is needed, what decisions are required, who owns the controls and how the platform will be operated after delivery.
 
+## References
+
+- [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
+- [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 ## 검색 키워드
 
 - Microsoft 365 architecture
