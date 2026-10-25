@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const root = path.resolve(__dirname, '..');
-const reviews = require('../src/data/documentReviews.json');
+const reviews = require('./data/documentReviews.json');
 const walk = dir => fs.readdirSync(dir, {withFileTypes:true}).flatMap(e => e.isDirectory() ? walk(path.join(dir,e.name)) : /\.mdx?$/.test(e.name) ? [path.join(dir,e.name)] : []);
 const files = walk(path.join(root,'docs')).map(p => path.relative(root,p).replaceAll('\\','/'));
 const entries = Object.entries(reviews);
