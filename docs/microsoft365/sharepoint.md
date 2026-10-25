@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # SharePoint Information Architecture Framework
 
-<section class="kc-topic-hero" aria-label="SharePoint information architecture hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft 365 Content and Knowledge Architecture</span>
+<section aria-label="SharePoint information architecture hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Content and Knowledge Architecture</span>
     <h2>Design SharePoint as a governed knowledge platform</h2>
     <p>SharePoint Online should not be treated as a file server replacement. It should be designed as an enterprise content platform with hub architecture, ownership, permissions, metadata, lifecycle, Purview controls and Copilot readiness working together.</p>
-    <div class="kc-hero-signal-row" aria-label="SharePoint architecture signals">
+    <div aria-label="SharePoint architecture signals" className="kc-hero-signal-row">
       <span>Hub</span>
       <span>Owner</span>
       <span>Policy</span>
       <span>Copilot</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="SharePoint related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/security/purview">Purview</a>
-      <a class="kc-topic-button" href="/knowledge/security/information-barriers">Information Barriers</a>
-      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Copilot Readiness</a>
+    <div aria-label="SharePoint related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/security/purview" className="kc-topic-button kc-topic-button--primary">Purview</a>
+      <a href="/knowledge/security/information-barriers" className="kc-topic-button">Information Barriers</a>
+      <a href="/knowledge/copilot/readiness" className="kc-topic-button">Copilot Readiness</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="SharePoint operating model visual">
-    <div class="kc-factory-panel__header">
+  <div aria-label="SharePoint operating model visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>IA Control Loop</span>
       <strong>Content to AI readiness</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#site-architecture-model" class="kc-factory-card"><small>01</small><strong>Structure</strong><span>Hub, department, project, regional and community site model.</span></a>
-      <a href="#permission-architecture" class="kc-factory-card"><small>02</small><strong>Access</strong><span>Owners, members, visitors, external sharing and review cadence.</span></a>
-      <a href="#information-architecture" class="kc-factory-card"><small>03</small><strong>Metadata</strong><span>Content types, document types, lifecycle, search and retention.</span></a>
-      <a href="#copilot-readiness" class="kc-factory-card"><small>04</small><strong>AI Ready</strong><span>Oversharing, labels, stale content and knowledge quality.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#site-architecture-model" className="kc-factory-card">
+        <small>01</small>
+        <strong>Structure</strong>
+        <span>Hub, department, project, regional and community site model.</span>
+      </a>
+      <a href="#permission-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Access</strong>
+        <span>Owners, members, visitors, external sharing and review cadence.</span>
+      </a>
+      <a href="#information-architecture" className="kc-factory-card">
+        <small>03</small>
+        <strong>Metadata</strong>
+        <span>Content types, document types, lifecycle, search and retention.</span>
+      </a>
+      <a href="#copilot-readiness" className="kc-factory-card">
+        <small>04</small>
+        <strong>AI Ready</strong>
+        <span>Oversharing, labels, stale content and knowledge quality.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Architecture rule</strong>
       <span>Copilot readiness starts with SharePoint readiness: clean permissions, accountable owners, meaningful metadata and governed lifecycle.</span>
     </div>
@@ -74,18 +89,42 @@ Typical SharePoint initiatives include:
 
 ## Reference Architecture
 
-<div class="kc-journey-map" aria-label="SharePoint reference architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="SharePoint reference architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Reference Architecture</span>
     <strong>Hub model with security and AI controls</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Organization</strong><span>Business units, regions, projects and communities.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Hub Sites</strong><span>Corporate, department, project, regional and community hubs.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Sites</strong><span>Owned workspaces with member groups and lifecycle rules.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Purview</strong><span>Sensitivity labels, DLP, retention and audit controls.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Search</strong><span>Metadata, content types and navigable knowledge structure.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Copilot Ready</strong><span>Clean permissions, relevant content and accountable owners.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Organization</strong>
+      <span>Business units, regions, projects and communities.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Hub Sites</strong>
+      <span>Corporate, department, project, regional and community hubs.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Sites</strong>
+      <span>Owned workspaces with member groups and lifecycle rules.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Purview</strong>
+      <span>Sensitivity labels, DLP, retention and audit controls.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Search</strong>
+      <span>Metadata, content types and navigable knowledge structure.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Copilot Ready</strong>
+      <span>Clean permissions, relevant content and accountable owners.</span>
+    </div>
   </div>
 </div>
 
@@ -135,17 +174,37 @@ Department sites should be used for long-term business ownership.
 
 Recommended structure:
 
-<div class="kc-journey-map" aria-label="SharePoint department site model">
-  <div class="kc-journey-map__header">
+<div aria-label="SharePoint department site model" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Department Site Model</span>
     <strong>Long-term business ownership with governed content areas</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Department hub</strong><span>Primary business-owned site for long-term departmental knowledge.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Controlled content</strong><span>Policies, procedures, templates and official reference materials.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Working content</strong><span>Active documents, reports and collaboration libraries.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance</strong><span>Owner, member groups, sharing policy, sensitivity label and retention.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Archive</strong><span>Closed or historical content with lifecycle and discovery controls.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Department hub</strong>
+      <span>Primary business-owned site for long-term departmental knowledge.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Controlled content</strong>
+      <span>Policies, procedures, templates and official reference materials.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Working content</strong>
+      <span>Active documents, reports and collaboration libraries.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Governance</strong>
+      <span>Owner, member groups, sharing policy, sensitivity label and retention.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Archive</strong>
+      <span>Closed or historical content with lifecycle and discovery controls.</span>
+    </div>
   </div>
 </div>
 
@@ -165,17 +224,37 @@ Project sites should be used for temporary collaboration.
 
 Recommended structure:
 
-<div class="kc-journey-map" aria-label="SharePoint project site model">
-  <div class="kc-journey-map__header">
+<div aria-label="SharePoint project site model" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Project Site Model</span>
     <strong>Temporary collaboration workspace with closure discipline</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Project site</strong><span>Temporary workspace with project owner, end date and participant model.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Management</strong><span>Project management, meeting notes, decisions, risks and issues.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Delivery</strong><span>Working documents, deliverables, review material and handover assets.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>External access</strong><span>Guest access, partner policy and sensitivity controls are reviewed.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Closure</strong><span>After project end, review, archive and remove unnecessary access.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Project site</strong>
+      <span>Temporary workspace with project owner, end date and participant model.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Management</strong>
+      <span>Project management, meeting notes, decisions, risks and issues.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Delivery</strong>
+      <span>Working documents, deliverables, review material and handover assets.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>External access</strong>
+      <span>Guest access, partner policy and sensitivity controls are reviewed.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Closure</strong>
+      <span>After project end, review, archive and remove unnecessary access.</span>
+    </div>
   </div>
 </div>
 
@@ -193,17 +272,37 @@ Design considerations:
 
 Recommended model:
 
-<div class="kc-journey-map" aria-label="SharePoint permission architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="SharePoint permission architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Permission Architecture</span>
     <strong>Group-based access before direct user assignment</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User</strong><span>Employee, guest, partner or service account needs access.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Group</strong><span>Microsoft 365 group or security group represents the access population.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Role</strong><span>Owner, member, visitor, restricted access or external guest role.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Scope</strong><span>Site, library or sensitive content area receives the access assignment.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Review</strong><span>Access review, owner approval and lifecycle process keep permissions clean.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User</strong>
+      <span>Employee, guest, partner or service account needs access.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Group</strong>
+      <span>Microsoft 365 group or security group represents the access population.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Role</strong>
+      <span>Owner, member, visitor, restricted access or external guest role.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Scope</strong>
+      <span>Site, library or sensitive content area receives the access assignment.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Review</strong>
+      <span>Access review, owner approval and lifecycle process keep permissions clean.</span>
+    </div>
   </div>
 </div>
 
@@ -332,17 +431,37 @@ Before enabling Copilot, review:
 
 Copilot readiness architecture:
 
-<div class="kc-journey-map" aria-label="SharePoint Copilot readiness architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="SharePoint Copilot readiness architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Copilot Readiness Architecture</span>
     <strong>Better content governance produces better Copilot answers</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Information architecture</strong><span>Sites, libraries, metadata, content types and navigation are rationalized.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Permission review</strong><span>Oversharing, anonymous links, guests and inheritance breaks are cleaned up.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Purview controls</strong><span>Sensitivity labels, DLP, retention and audit are applied where required.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Ownership</strong><span>Site owners, content owners and lifecycle responsibilities are assigned.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Copilot quality</strong><span>Search, grounding and answers improve because source content is trusted.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Information architecture</strong>
+      <span>Sites, libraries, metadata, content types and navigation are rationalized.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Permission review</strong>
+      <span>Oversharing, anonymous links, guests and inheritance breaks are cleaned up.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Purview controls</strong>
+      <span>Sensitivity labels, DLP, retention and audit are applied where required.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Ownership</strong>
+      <span>Site owners, content owners and lifecycle responsibilities are assigned.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Copilot quality</strong>
+      <span>Search, grounding and answers improve because source content is trusted.</span>
+    </div>
   </div>
 </div>
 
@@ -408,17 +527,37 @@ Recommended approach:
 
 ## Implementation Roadmap
 
-<div class="kc-journey-map" aria-label="SharePoint implementation roadmap">
-  <div class="kc-journey-map__header">
+<div aria-label="SharePoint implementation roadmap" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Implementation Roadmap</span>
     <strong>Inventory, design, pilot, rollout and hypercare</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assessment</strong><span>Source inventory, site discovery, permission review and risk baseline.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Information architecture, metadata, naming, sharing and governance model.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Pilot</strong><span>Pilot site build, migration test, user validation and search quality review.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Rollout</strong><span>Production migration, communications, owner onboarding and support readiness.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Hypercare</strong><span>Issue resolution, permission fixes, adoption coaching and governance reporting.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Assessment</strong>
+      <span>Source inventory, site discovery, permission review and risk baseline.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Design</strong>
+      <span>Information architecture, metadata, naming, sharing and governance model.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Pilot</strong>
+      <span>Pilot site build, migration test, user validation and search quality review.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Rollout</strong>
+      <span>Production migration, communications, owner onboarding and support readiness.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Hypercare</strong>
+      <span>Issue resolution, permission fixes, adoption coaching and governance reporting.</span>
+    </div>
   </div>
 </div>
 
@@ -440,12 +579,19 @@ SharePoint architecture engagement should produce:
 
 ---
 
+### Authoritative Sites for Copilot Search
+
+SharePoint administrators can mark selected sites as authoritative so official content such as policies, company news and approved guidance is prioritized in Copilot Search. Use this designation for a small, governed set of sources with accountable owners and a defined review cadence.
+
+Authoritative status improves ranking; it does not grant access or replace permission, sensitivity, retention and lifecycle controls. Validate that designated sites remain current and appropriately scoped before treating them as trusted organizational sources.
+
 ## References
 
 - Microsoft Learn
 - SharePoint Online Documentation
 - Microsoft Purview Documentation
 - Microsoft 365 Copilot Documentation
+- [SharePoint authoritative sites in Copilot Search](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-11-2026)
 - Microsoft Cloud Adoption Framework
 
 ## 검색 키워드

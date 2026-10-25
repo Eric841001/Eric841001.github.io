@@ -9,25 +9,44 @@ toc_max_heading_level: 2
 
 # Enterprise AI Adoption Program
 
-<section class="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent" aria-label="Enterprise AI Adoption Program hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Enterprise AI Adoption Program</span>
+<section aria-label="Enterprise AI Adoption Program hero" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise AI Adoption Program</span>
     <h2>Turn Copilot and agents into a governed business transformation program</h2>
     <p>The program connects leadership intent, business scenarios, readiness, pilot, Agent portfolio, change management and measurable scale into one operating model.</p>
-    <div class="kc-hero-signal-row" aria-label="Enterprise AI adoption signals">
+    <div aria-label="Enterprise AI adoption signals" className="kc-hero-signal-row">
       <span>Scenario</span>
       <span>Readiness</span>
       <span>Agents</span>
       <span>Scale</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Enterprise AI Adoption Program model">
-    <div class="kc-factory-panel__header"><span>Program Flow</span><strong>Adoption-first</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#target-customers" class="kc-factory-card"><small>01</small><strong>Demand</strong><span>Leadership asks how AI should be used in real work.</span></a>
-      <a href="#adoption-framework" class="kc-factory-card"><small>02</small><strong>Readiness</strong><span>Identity, data, security, licensing and support model.</span></a>
-      <a href="#ai-use-case-portfolio" class="kc-factory-card"><small>03</small><strong>Portfolio</strong><span>Copilot, Copilot Studio, M365 Agents and human review.</span></a>
-      <a href="#operating-model" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Champions, governance, cost control and KPI reporting.</span></a>
+  <div aria-label="Enterprise AI Adoption Program model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Program Flow</span>
+      <strong>Adoption-first</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#target-customers" className="kc-factory-card">
+        <small>01</small>
+        <strong>Demand</strong>
+        <span>Leadership asks how AI should be used in real work.</span>
+      </a>
+      <a href="#adoption-framework" className="kc-factory-card">
+        <small>02</small>
+        <strong>Readiness</strong>
+        <span>Identity, data, security, licensing and support model.</span>
+      </a>
+      <a href="#ai-use-case-portfolio" className="kc-factory-card">
+        <small>03</small>
+        <strong>Portfolio</strong>
+        <span>Copilot, Copilot Studio, M365 Agents and human review.</span>
+      </a>
+      <a href="#operating-model" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Champions, governance, cost control and KPI reporting.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -36,15 +55,42 @@ The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent in
 
 ## Visual Program Story
 
-<div class="kc-journey-map" aria-label="Enterprise AI Adoption Program story">
-  <div class="kc-journey-map__header"><span>Visual Program Story</span><strong>Leadership ask to governed scale</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Leadership Ask</strong><span>How should we use AI in practical enterprise work?</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Business Scenarios</strong><span>Prioritize real work patterns and measurable value.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Readiness</strong><span>Identity, data, security, licensing and support model.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pilot</strong><span>Selected users, success metrics, VOC and support rhythm.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Agent Portfolio</strong><span>Copilot Studio, M365 Agents, human review and owner model.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Governed Scale</strong><span>Cost controls, KPI reporting, champions and continuous scenarios.</span></div>
+<div aria-label="Enterprise AI Adoption Program story" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Visual Program Story</span>
+    <strong>Leadership ask to governed scale</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Leadership Ask</strong>
+      <span>How should we use AI in practical enterprise work?</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Business Scenarios</strong>
+      <span>Prioritize real work patterns and measurable value.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Readiness</strong>
+      <span>Identity, data, security, licensing and support model.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Pilot</strong>
+      <span>Selected users, success metrics, VOC and support rhythm.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Agent Portfolio</strong>
+      <span>Copilot Studio, M365 Agents, human review and owner model.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Governed Scale</strong>
+      <span>Cost controls, KPI reporting, champions and continuous scenarios.</span>
+    </div>
   </div>
 </div>
 
@@ -146,10 +192,22 @@ For anonymized customer-facing references, position Enterprise AI adoption as a 
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Enterprise AI adoption program reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>AI enthusiasm without adoption</strong><span>Users are interested in AI, but business scenarios, governance and behavior change are not yet organized.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Adoption program</strong><span>Connect Copilot, Copilot Studio, agents, training, champion network, KPI and value storytelling.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Sustainable AI usage</strong><span>AI use moves from demos to repeatable work patterns with owner, measurement and governance.</span></div>
+<div aria-label="Enterprise AI adoption program reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>AI enthusiasm without adoption</strong>
+    <span>Users are interested in AI, but business scenarios, governance and behavior change are not yet organized.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Adoption program</strong>
+    <span>Connect Copilot, Copilot Studio, agents, training, champion network, KPI and value storytelling.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Sustainable AI usage</strong>
+    <span>AI use moves from demos to repeatable work patterns with owner, measurement and governance.</span>
+  </div>
 </div>
 
 ## Related Documents

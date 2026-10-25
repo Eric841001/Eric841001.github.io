@@ -7,17 +7,29 @@ description: Microsoft Security architecture guide covering Zero Trust, Conditio
 
 # Security
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">MICROSOFT SECURITY OPERATING MODEL</span>
+    <span className="kc-eyebrow">MICROSOFT SECURITY OPERATING MODEL</span>
     <h2>From identity control to data-aware security operations</h2>
     <p>Security architecture becomes practical when Entra ID, Conditional Access, Intune, Defender, Purview, DLP and audit evidence operate as one measurable control system.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Security operating model focus">
-    <div><strong>01</strong><span>Access</span></div>
-    <div><strong>02</strong><span>Device</span></div>
-    <div><strong>03</strong><span>Data</span></div>
-    <div><strong>04</strong><span>Evidence</span></div>
+  <div aria-label="Security operating model focus" className="kc-hero-metrics">
+    <div>
+      <strong>01</strong>
+      <span>Access</span>
+    </div>
+    <div>
+      <strong>02</strong>
+      <span>Device</span>
+    </div>
+    <div>
+      <strong>03</strong>
+      <span>Data</span>
+    </div>
+    <div>
+      <strong>04</strong>
+      <span>Evidence</span>
+    </div>
   </div>
 </section>
 
@@ -25,18 +37,18 @@ This Security section organizes Microsoft security architecture, Zero Trust cont
 
 The guidance is shaped around field scenarios such as regulated SaaS access, Microsoft 365 security review, Exchange Online protection, endpoint onboarding, Purview readiness, DLP design and Copilot data protection.
 
-<div class="kc-signal-grid" aria-label="Security architecture entry points">
-  <a class="kc-signal-card" href="./conditional-access">
+<div aria-label="Security architecture entry points" className="kc-signal-grid">
+  <a href="./conditional-access" className="kc-signal-card">
     <small>ACCESS</small>
     <strong>Identity and Conditional Access</strong>
     <span>Start with Entra ID, MFA, device trust, guest access and policy exception control.</span>
   </a>
-  <a class="kc-signal-card" href="./defender-xdr">
+  <a href="./defender-xdr" className="kc-signal-card">
     <small>THREAT</small>
     <strong>Defender XDR Operations</strong>
     <span>Connect endpoint, email, identity and incident response into a measurable security operation.</span>
   </a>
-  <a class="kc-signal-card" href="./information-barriers">
+  <a href="./information-barriers" className="kc-signal-card">
     <small>DATA</small>
     <strong>Purview Information Barriers</strong>
     <span>Design segment-based collaboration boundaries for Teams, SharePoint and OneDrive.</span>
@@ -45,21 +57,26 @@ The guidance is shaped around field scenarios such as regulated SaaS access, Mic
 
 ## Visual Security Control Map
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Control spine</span>
-    <strong>Zero Trust to Copilot readiness</strong>
-  </div>
-  <div class="kc-journey-map kc-journey-map--security" aria-label="Security control map">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Access control</strong><span>Entra ID, MFA, Conditional Access, guest access and privileged role review.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Device trust</strong><span>Intune compliance, Defender onboarding and managed endpoint posture.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Data protection</strong><span>Purview labels, DLP, retention, audit and sensitive content boundaries.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Evidence and Copilot readiness</strong><span>Exceptions, approvals, review cadence and permission cleanup before AI rollout.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Control spine</span>
+  <strong>Zero Trust to Copilot readiness</strong>
+</div><div aria-label="Security control map" className="kc-journey-map kc-journey-map--security"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Access control</strong>
+  <span>Entra ID, MFA, Conditional Access, guest access and privileged role review.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Device trust</strong>
+  <span>Intune compliance, Defender onboarding and managed endpoint posture.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Data protection</strong>
+  <span>Purview labels, DLP, retention, audit and sensitive content boundaries.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Evidence and Copilot readiness</strong>
+  <span>Exceptions, approvals, review cadence and permission cleanup before AI rollout.</span>
+</div></div></div>
 
 ## 한국어 요약
 

@@ -7,17 +7,29 @@ sidebar_label: macOS Onboarding
 
 # Microsoft Defender for Endpoint macOS Onboarding
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">MDE MACOS ONBOARDING</span>
+    <span className="kc-eyebrow">MDE MACOS ONBOARDING</span>
     <h2>Bring Mac endpoints into the same Defender operating model</h2>
     <p>macOS onboarding should align Intune management, Defender sensor health, system extension permissions, inventory visibility and XDR incident context.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="macOS onboarding focus">
-    <div><strong>Mac</strong><span>Device</span></div>
-    <div><strong>MDM</strong><span>Intune</span></div>
-    <div><strong>MDE</strong><span>Sensor</span></div>
-    <div><strong>XDR</strong><span>Signal</span></div>
+  <div aria-label="macOS onboarding focus" className="kc-hero-metrics">
+    <div>
+      <strong>Mac</strong>
+      <span>Device</span>
+    </div>
+    <div>
+      <strong>MDM</strong>
+      <span>Intune</span>
+    </div>
+    <div>
+      <strong>MDE</strong>
+      <span>Sensor</span>
+    </div>
+    <div>
+      <strong>XDR</strong>
+      <span>Signal</span>
+    </div>
   </div>
 </section>
 
@@ -67,19 +79,35 @@ Organizations commonly require:
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>macOS onboarding architecture</span>
     <strong>Managed Mac to Defender XDR</strong>
   </div>
-  <div class="kc-journey-map" aria-label="macOS Defender onboarding architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>macOS device</strong><span>Corporate MacBook or managed macOS endpoint enters the onboarding scope.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Intune management</strong><span>Deploy configuration profiles, system extensions, permissions and compliance settings.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Defender sensor</strong><span>Install and validate Microsoft Defender for Endpoint sensor health and connectivity.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Defender XDR</strong><span>Confirm inventory, alerts, vulnerability signals and incident correlation.</span></div>
+  <div className="kc-journey-map" aria-label="macOS Defender onboarding architecture">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>macOS device</strong>
+  <span>Corporate MacBook or managed macOS endpoint enters the onboarding scope.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Intune management</strong>
+  <span>Deploy configuration profiles, system extensions, permissions and compliance settings.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Defender sensor</strong>
+  <span>Install and validate Microsoft Defender for Endpoint sensor health and connectivity.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Defender XDR</strong>
+  <span>Confirm inventory, alerts, vulnerability signals and incident correlation.</span>
+</div>
   </div>
 </div>
 
@@ -106,19 +134,35 @@ Organizations commonly require:
 
 ## Onboarding Workflow
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Onboarding workflow</span>
     <strong>Prepare, deploy, validate</strong>
   </div>
-  <div class="kc-journey-map" aria-label="macOS onboarding workflow">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Prepare tenant</strong><span>Confirm Defender portal settings, Intune enrollment, assignments and support scope.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Deploy client</strong><span>Create onboarding package and deploy Defender client with required profiles.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Validate device</strong><span>Check sensor health, system extensions, permissions and portal inventory.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Monitor events</strong><span>Review security events, vulnerability data, compliance status and support issues.</span></div>
+  <div className="kc-journey-map" aria-label="macOS onboarding workflow">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Prepare tenant</strong>
+  <span>Confirm Defender portal settings, Intune enrollment, assignments and support scope.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Deploy client</strong>
+  <span>Create onboarding package and deploy Defender client with required profiles.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Validate device</strong>
+  <span>Check sensor health, system extensions, permissions and portal inventory.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Monitor events</strong>
+  <span>Review security events, vulnerability data, compliance status and support issues.</span>
+</div>
   </div>
 </div>
 

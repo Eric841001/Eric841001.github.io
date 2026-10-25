@@ -20,17 +20,29 @@ keywords:
 
 # Microsoft Enterprise Architecture Search Guide
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">SEARCH AND TOPIC LANDING</span>
+    <span className="kc-eyebrow">SEARCH AND TOPIC LANDING</span>
     <h2>Find the right Microsoft architecture path faster</h2>
     <p>This page connects search intent to practical Microsoft 365, Security, Copilot, AI Agent, Azure, Migration and consulting asset pages.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Search guide focus">
-    <div><strong>Find</strong><span>Intent</span></div>
-    <div><strong>Map</strong><span>Topic</span></div>
-    <div><strong>Use</strong><span>Asset</span></div>
-    <div><strong>Ask</strong><span>Contact</span></div>
+  <div aria-label="Search guide focus" className="kc-hero-metrics">
+    <div>
+      <strong>Find</strong>
+      <span>Intent</span>
+    </div>
+    <div>
+      <strong>Map</strong>
+      <span>Topic</span>
+    </div>
+    <div>
+      <strong>Use</strong>
+      <span>Asset</span>
+    </div>
+    <div>
+      <strong>Ask</strong>
+      <span>Contact</span>
+    </div>
   </div>
 </section>
 
@@ -38,35 +50,40 @@ This page helps visitors and search engines understand the main topics covered b
 
 The Knowledge Center focuses on practical enterprise consulting topics across Microsoft 365, Security, Copilot, AI Agents, Azure, Migration, Licensing, Proposal assets and customer success reference patterns.
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Search journey</span>
-    <strong>Intent to asset request</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Search guide journey">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Search intent</strong><span>Visitor starts with a problem, technology, architecture area or consulting deliverable.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Topic landing</strong><span>Route to Microsoft 365, Security, Copilot, Azure, Migration or Proposal Center.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Practical guide</strong><span>Read architecture, governance, adoption, risk or implementation guidance.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Asset request</strong><span>Use the contact path for SOW, WBS, checklist or review template discussion.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Search journey</span>
+  <strong>Intent to asset request</strong>
+</div><div aria-label="Search guide journey" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Search intent</strong>
+  <span>Visitor starts with a problem, technology, architecture area or consulting deliverable.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Topic landing</strong>
+  <span>Route to Microsoft 365, Security, Copilot, Azure, Migration or Proposal Center.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Practical guide</strong>
+  <span>Read architecture, governance, adoption, risk or implementation guidance.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Asset request</strong>
+  <span>Use the contact path for SOW, WBS, checklist or review template discussion.</span>
+</div></div></div>
 
 
-<div class="kc-signal-grid" aria-label="Architecture Keywords search landing cards">
-  <a class="kc-signal-card" href="../architecture/overview">
+<div aria-label="Architecture Keywords search landing cards" className="kc-signal-grid">
+  <a href="../architecture/overview" className="kc-signal-card">
     <small>ARCHITECTURE</small>
     <strong>Architecture center</strong>
     <span>Start from business driver, reference design, control model and operating model.</span>
   </a>
-  <a class="kc-signal-card" href="../microsoft365/overview">
+  <a href="../microsoft365/overview" className="kc-signal-card">
     <small>M365</small>
     <strong>Microsoft 365 platform</strong>
     <span>Connect tenant, security, collaboration and Copilot readiness.</span>
   </a>
-  <a class="kc-signal-card" href="../contact">
+  <a href="../contact" className="kc-signal-card">
     <small>REQUEST</small>
     <strong>Ask for reusable assets</strong>
     <span>Use Contact and Asset Request when a template, workbook or sanitized reference would help.</span>

@@ -6,17 +6,29 @@ description: Research map for Microsoft MVP and community sources covering Micro
 
 # MVP and Community Research Map
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">RESEARCH AND COMMUNITY SIGNALS</span>
+    <span className="kc-eyebrow">RESEARCH AND COMMUNITY SIGNALS</span>
     <h2>Turn public expertise into original consulting guidance</h2>
     <p>This map tracks public Microsoft MVP, community and official source patterns, then translates them into validated architecture notes and delivery assets.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Research map focus">
-    <div><strong>Track</strong><span>Sources</span></div>
-    <div><strong>Extract</strong><span>Signals</span></div>
-    <div><strong>Validate</strong><span>Delivery</span></div>
-    <div><strong>Publish</strong><span>Guidance</span></div>
+  <div aria-label="Research map focus" className="kc-hero-metrics">
+    <div>
+      <strong>Track</strong>
+      <span>Sources</span>
+    </div>
+    <div>
+      <strong>Extract</strong>
+      <span>Signals</span>
+    </div>
+    <div>
+      <strong>Validate</strong>
+      <span>Delivery</span>
+    </div>
+    <div>
+      <strong>Publish</strong>
+      <span>Guidance</span>
+    </div>
   </div>
 </section>
 
@@ -26,21 +38,26 @@ This page organizes public Microsoft MVP and community knowledge sources into a 
 
 The goal is not to copy external articles. The goal is to monitor respected community patterns, translate them into consulting-ready checklists, and connect them with Microsoft official documentation and real delivery experience.
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Research operating loop</span>
-    <strong>Public source to original guidance</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="MVP community research operating loop">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Monitor public sources</strong><span>Follow MVP blogs, community posts, product blogs and official Microsoft documentation.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Extract field signals</strong><span>Capture recurring patterns, caveats, support boundaries and operational risks.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Validate against delivery</strong><span>Compare findings with customer scenarios, project artifacts and Microsoft official behavior.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Publish original guidance</strong><span>Convert insight into checklists, runbooks, architecture notes and update backlog items.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Research operating loop</span>
+  <strong>Public source to original guidance</strong>
+</div><div aria-label="MVP community research operating loop" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Monitor public sources</strong>
+  <span>Follow MVP blogs, community posts, product blogs and official Microsoft documentation.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Extract field signals</strong>
+  <span>Capture recurring patterns, caveats, support boundaries and operational risks.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Validate against delivery</strong>
+  <span>Compare findings with customer scenarios, project artifacts and Microsoft official behavior.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Publish original guidance</strong>
+  <span>Convert insight into checklists, runbooks, architecture notes and update backlog items.</span>
+</div></div></div>
 
 ## 한국어 요약
 

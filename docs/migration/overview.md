@@ -11,19 +11,19 @@ This Migration section provides enterprise migration guidance for Microsoft 365,
 
 Migration is treated as a business continuity program, not a file-copy activity. The key work is assessment, target design, batching, communication, security validation, cutover, rollback and hypercare.
 
-<section className="kc-topic-hero" aria-label="Migration program hero">
+<section aria-label="Migration program hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft 365 Migration Program</span>
     <h2>Move workloads without losing business continuity</h2>
     <div className="kc-topic-hero__lede">A strong migration program coordinates source discovery, target architecture, security validation, wave planning, cutover, rollback, user communication and operations handover.</div>
-    <div className="kc-hero-signal-row" aria-label="Migration success signals">
+    <div aria-label="Migration success signals" className="kc-hero-signal-row">
       <span>Discover</span>
       <span>Design</span>
       <span>Cutover</span>
       <span>Stabilize</span>
     </div>
   </div>
-  <div className="kc-factory-panel" aria-label="Migration operating model">
+  <div aria-label="Migration operating model" className="kc-factory-panel">
     <div className="kc-factory-panel__header">
       <span>Migration Control Tower</span>
       <strong>Source environment to stable Microsoft 365 operations</strong>

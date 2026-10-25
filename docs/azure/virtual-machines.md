@@ -5,6 +5,32 @@ description: Azure Virtual Machines architecture guide for workload placement, n
 
 # Azure Virtual Machines
 
+<section className="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span className="kc-eyebrow">AZURE COMPUTE ARCHITECTURE</span>
+    <h2>Run virtual machines with operational control built in</h2>
+    <p>Place every workload inside a governed design for identity, network, resilience, security, monitoring and cost ownership.</p>
+  </div>
+  <div aria-label="Azure virtual machine architecture focus" className="kc-hero-metrics">
+    <div>
+      <strong>Compute</strong>
+      <span>Workload purpose and sizing</span>
+    </div>
+    <div>
+      <strong>Network</strong>
+      <span>Private access and segmentation</span>
+    </div>
+    <div>
+      <strong>Resilience</strong>
+      <span>Backup, patching and monitoring</span>
+    </div>
+    <div>
+      <strong>Governance</strong>
+      <span>Security posture and cost control</span>
+    </div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Azure Virtual Machines provide infrastructure-as-a-service compute for workloads that cannot immediately move to platform services or SaaS.
@@ -27,21 +53,26 @@ Azure Virtual Machines는 IaaS 기반 workload를 운영하기 위한 compute �
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Azure VM architecture</span>
-    <strong>Compute with governance controls</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Azure virtual machine architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Azure VM</strong><span>Define workload purpose, operating system, sizing, image and ownership.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Network and storage</strong><span>Place VM in VNet, subnet, NSG, managed disk and private access design.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Backup and monitoring</strong><span>Enable backup, patching, monitoring, logging and incident ownership.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Security baseline</strong><span>Apply Defender for Cloud, vulnerability management, access review and cost controls.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Azure VM architecture</span>
+  <strong>Compute with governance controls</strong>
+</div><div aria-label="Azure virtual machine architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Azure VM</strong>
+  <span>Define workload purpose, operating system, sizing, image and ownership.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Network and storage</strong>
+  <span>Place VM in VNet, subnet, NSG, managed disk and private access design.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Backup and monitoring</strong>
+  <span>Enable backup, patching, monitoring, logging and incident ownership.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Security baseline</strong>
+  <span>Apply Defender for Cloud, vulnerability management, access review and cost controls.</span>
+</div></div></div>
 
 ## Implementation
 

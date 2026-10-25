@@ -8,25 +8,44 @@ toc_max_heading_level: 2
 
 # Risk Register Template
 
-<section class="kc-topic-hero" aria-label="Risk Register asset hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Requestable Consulting Asset</span>
+<section aria-label="Risk Register asset hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Requestable Consulting Asset</span>
     <h2>Make project risk visible before delivery is blocked</h2>
     <p>A practical risk register connects risk source, probability, impact, mitigation, owner, escalation trigger, residual risk and closure evidence.</p>
-    <div class="kc-hero-signal-row" aria-label="Risk register signals">
+    <div aria-label="Risk register signals" className="kc-hero-signal-row">
       <span>Identify</span>
       <span>Assess</span>
       <span>Mitigate</span>
       <span>Track</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Risk Register request model">
-    <div class="kc-factory-panel__header"><span>Risk Loop</span><strong>Executive-visible</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#risk-classification" class="kc-factory-card"><small>01</small><strong>Classify</strong><span>Critical, high, medium and low risk levels.</span></a>
-      <a href="#probability-rating" class="kc-factory-card"><small>02</small><strong>Assess</strong><span>Probability, impact, exposure and residual risk.</span></a>
-      <a href="#risk-matrix" class="kc-factory-card"><small>03</small><strong>Prioritize</strong><span>Escalation path, owner, due date and decision trigger.</span></a>
-      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable workbook can be shared after confirming project scenario.</span></a>
+  <div aria-label="Risk Register request model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Risk Loop</span>
+      <strong>Executive-visible</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#risk-classification" className="kc-factory-card">
+        <small>01</small>
+        <strong>Classify</strong>
+        <span>Critical, high, medium and low risk levels.</span>
+      </a>
+      <a href="#probability-rating" className="kc-factory-card">
+        <small>02</small>
+        <strong>Assess</strong>
+        <span>Probability, impact, exposure and residual risk.</span>
+      </a>
+      <a href="#risk-matrix" className="kc-factory-card">
+        <small>03</small>
+        <strong>Prioritize</strong>
+        <span>Escalation path, owner, due date and decision trigger.</span>
+      </a>
+      <a href="../contact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Request</strong>
+        <span>Editable workbook can be shared after confirming project scenario.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -45,15 +64,42 @@ The objective is to improve project predictability, support executive decision-m
 
 ## Risk Management Process
 
-<div class="kc-journey-map" aria-label="Risk management process">
-  <div class="kc-journey-map__header"><span>Risk Management Process</span><strong>Identify to evidence-based closure</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Identify Risk</strong><span>Source, trigger, affected workstream and business impact.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Assess Impact</strong><span>Probability, severity, exposure and residual risk.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Define Mitigation</strong><span>Action, fallback, decision point and escalation trigger.</span></div>
-    <div class="kc-journey-node"><small>04</small><strong>Assign Owner</strong><span>Accountability, due date, review cadence and dependency owner.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Track Status</strong><span>Trend, escalation, blocker state and mitigation evidence.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Close Risk</strong><span>Evidence, decision record, lessons learned and remaining exposure.</span></div>
+<div aria-label="Risk management process" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Risk Management Process</span>
+    <strong>Identify to evidence-based closure</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Identify Risk</strong>
+      <span>Source, trigger, affected workstream and business impact.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assess Impact</strong>
+      <span>Probability, severity, exposure and residual risk.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>03</small>
+      <strong>Define Mitigation</strong>
+      <span>Action, fallback, decision point and escalation trigger.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>04</small>
+      <strong>Assign Owner</strong>
+      <span>Accountability, due date, review cadence and dependency owner.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Track Status</strong>
+      <span>Trend, escalation, blocker state and mitigation evidence.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Close Risk</strong>
+      <span>Evidence, decision record, lessons learned and remaining exposure.</span>
+    </div>
   </div>
 </div>
 

@@ -9,31 +9,49 @@ toc_max_heading_level: 2
 
 # Manufacturing Copilot Adoption Case Study
 
-<section class="kc-topic-hero kc-topic-hero--compact-agent" aria-label="Manufacturing Copilot adoption case study hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Manufacturing AI Adoption Pattern</span>
+<section aria-label="Manufacturing Copilot adoption case study hero" className="kc-topic-hero kc-topic-hero--compact-agent">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Manufacturing AI Adoption Pattern</span>
     <h2>Make Copilot adoption measurable across office, plant and operations roles</h2>
     <p>This anonymized pattern frames Copilot as a governed adoption program, connecting readiness, security, role-based scenarios, champions, feedback and executive value reporting.</p>
-    <div class="kc-hero-signal-row" aria-label="Manufacturing Copilot adoption signals">
+    <div aria-label="Manufacturing Copilot adoption signals" className="kc-hero-signal-row">
       <span>Readiness</span>
       <span>Use cases</span>
       <span>Pilot</span>
       <span>Value</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Manufacturing Copilot adoption actions">
-      <a class="kc-topic-button kc-topic-button--primary" href="#delivery-approach">Delivery Approach</a>
-      <a class="kc-topic-button" href="../copilot/adoption-program">Adoption Program</a>
-      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    <div aria-label="Manufacturing Copilot adoption actions" className="kc-topic-hero__actions">
+      <a href="#delivery-approach" className="kc-topic-button kc-topic-button--primary">Delivery Approach</a>
+      <a href="../copilot/adoption-program" className="kc-topic-button">Adoption Program</a>
+      <a href="../contact" className="kc-topic-button">Request Asset</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Manufacturing Copilot adoption operating model">
-    <div class="kc-factory-panel__header"><span>Adoption Flow</span><strong>Role-based</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Mixed office, plant and operations roles require different adoption paths.</span></a>
-      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Readiness</strong><span>Identity, security, data, license and Microsoft 365 workload readiness.</span></a>
-      <a href="#delivery-approach" class="kc-factory-card"><small>03</small><strong>Pilot</strong><span>Scenario priority, champions, training, feedback and support model.</span></a>
-      <a href="#success-pattern" class="kc-factory-card"><small>04</small><strong>Scale</strong><span>Value reporting, governance and repeatable adoption assets.</span></a>
+  <div aria-label="Manufacturing Copilot adoption operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Adoption Flow</span>
+      <strong>Role-based</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-context" className="kc-factory-card">
+        <small>01</small>
+        <strong>Context</strong>
+        <span>Mixed office, plant and operations roles require different adoption paths.</span>
+      </a>
+      <a href="#microsoft-workloads" className="kc-factory-card">
+        <small>02</small>
+        <strong>Readiness</strong>
+        <span>Identity, security, data, license and Microsoft 365 workload readiness.</span>
+      </a>
+      <a href="#delivery-approach" className="kc-factory-card">
+        <small>03</small>
+        <strong>Pilot</strong>
+        <span>Scenario priority, champions, training, feedback and support model.</span>
+      </a>
+      <a href="#success-pattern" className="kc-factory-card">
+        <small>04</small>
+        <strong>Scale</strong>
+        <span>Value reporting, governance and repeatable adoption assets.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -42,18 +60,42 @@ This anonymized case study summarizes a manufacturing-sector Copilot adoption pa
 
 ## Visual Success Pattern
 
-<div class="kc-journey-map" aria-label="Manufacturing Copilot adoption visual success pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Manufacturing Copilot adoption visual success pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Visual Success Pattern</span>
     <strong>Readiness to measurable adoption</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Manufacturing Challenge</strong><span>Mixed office, plant and operations roles with different work patterns.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Readiness Review</strong><span>Identity, data, security, license baseline and collaboration posture.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Role-Based Scenarios</strong><span>Meetings, reports, proposals, knowledge search and operational updates.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Controlled Pilot</strong><span>Champions, support, feedback, KPI and data protection guidance.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Governance Model</strong><span>Owner, escalation, roadmap, adoption rhythm and executive reporting.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Value Story</strong><span>Confidence, productivity, measurable adoption and scale decision.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Manufacturing Challenge</strong>
+      <span>Mixed office, plant and operations roles with different work patterns.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Readiness Review</strong>
+      <span>Identity, data, security, license baseline and collaboration posture.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Role-Based Scenarios</strong>
+      <span>Meetings, reports, proposals, knowledge search and operational updates.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Controlled Pilot</strong>
+      <span>Champions, support, feedback, KPI and data protection guidance.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Governance Model</strong>
+      <span>Owner, escalation, roadmap, adoption rhythm and executive reporting.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Value Story</strong>
+      <span>Confidence, productivity, measurable adoption and scale decision.</span>
+    </div>
   </div>
 </div>
 
@@ -129,10 +171,22 @@ The strongest pattern is to treat Copilot as a governed adoption program rather 
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Manufacturing Copilot adoption reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Mixed work patterns</strong><span>Office, plant and operations roles need different Copilot use cases, training and support models.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Role-based adoption</strong><span>Design readiness, scenario priority, pilot users, governance and executive value tracking together.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Measurable adoption</strong><span>Copilot value is explained through role scenarios, confidence signals and reusable adoption assets.</span></div>
+<div aria-label="Manufacturing Copilot adoption reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Mixed work patterns</strong>
+    <span>Office, plant and operations roles need different Copilot use cases, training and support models.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Role-based adoption</strong>
+    <span>Design readiness, scenario priority, pilot users, governance and executive value tracking together.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Measurable adoption</strong>
+    <span>Copilot value is explained through role scenarios, confidence signals and reusable adoption assets.</span>
+  </div>
 </div>
 
 ## Related Documents

@@ -5,6 +5,32 @@ description: Google Workspace to Microsoft 365 migration guide for Gmail, Calend
 
 # Google Workspace Migration
 
+<section className="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span className="kc-eyebrow">GOOGLE WORKSPACE MIGRATION</span>
+    <h2>Move identity, data and user behavior as one program</h2>
+    <p>Coordinate Gmail, Calendar, Drive, domains, collaboration, security and adoption rather than treating the transition as a mail-only migration.</p>
+  </div>
+  <div aria-label="Google Workspace migration focus" className="kc-hero-metrics">
+    <div>
+      <strong>Identity</strong>
+      <span>Domains, aliases and groups</span>
+    </div>
+    <div>
+      <strong>Messaging</strong>
+      <span>Mail, calendar and coexistence</span>
+    </div>
+    <div>
+      <strong>Content</strong>
+      <span>Drive ownership and sharing</span>
+    </div>
+    <div>
+      <strong>Adoption</strong>
+      <span>Waves, training and hypercare</span>
+    </div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Google Workspace migration moves mail, calendar, contacts, Drive content and collaboration workflows into Microsoft 365.
@@ -27,21 +53,26 @@ Identity, domain, alias, group, calendar, Drive ownership, shared drive, externa
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Google Workspace migration path</span>
-    <strong>Identity, data, collaboration, adoption</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Google Workspace migration architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Google Workspace</strong><span>Inventory Gmail, Calendar, Drive, shared drives, groups, aliases and external collaborators.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Map identity, domain, mail, calendar, Drive ownership and coexistence complexity.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Microsoft 365 target</strong><span>Move to Exchange Online, Teams, SharePoint, OneDrive and security baseline.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>User adoption</strong><span>Support behavior change, training, migration waves and post-cutover hypercare.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Google Workspace migration path</span>
+  <strong>Identity, data, collaboration, adoption</strong>
+</div><div aria-label="Google Workspace migration architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Google Workspace</strong>
+  <span>Inventory Gmail, Calendar, Drive, shared drives, groups, aliases and external collaborators.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Assessment</strong>
+  <span>Map identity, domain, mail, calendar, Drive ownership and coexistence complexity.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Microsoft 365 target</strong>
+  <span>Move to Exchange Online, Teams, SharePoint, OneDrive and security baseline.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>User adoption</strong>
+  <span>Support behavior change, training, migration waves and post-cutover hypercare.</span>
+</div></div></div>
 
 ## Implementation
 

@@ -46,21 +46,26 @@ Defender for Endpoint와 Intune 정책을 함께 사용해 audit, block, read-on
 
 ## Recommended Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>macOS USB control path</span>
-    <strong>Audit before enforcement</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="macOS USB device control path">
-    <div class="kc-journey-node is-source"><small>01</small><strong>macOS device</strong><span>Corporate Mac endpoint enters removable media governance scope.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Intune assignment</strong><span>Assign configuration to pilot groups and validate user impact.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Defender control</strong><span>Apply audit, block, read-only or approved device rules through Defender for Endpoint.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Exception governance</strong><span>Review bypass needs, creative workflows, evidence and exception expiry.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>macOS USB control path</span>
+  <strong>Audit before enforcement</strong>
+</div><div aria-label="macOS USB device control path" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>macOS device</strong>
+  <span>Corporate Mac endpoint enters removable media governance scope.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Intune assignment</strong>
+  <span>Assign configuration to pilot groups and validate user impact.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Defender control</strong>
+  <span>Apply audit, block, read-only or approved device rules through Defender for Endpoint.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Exception governance</strong>
+  <span>Review bypass needs, creative workflows, evidence and exception expiry.</span>
+</div></div></div>
 
 ---
 

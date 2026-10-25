@@ -5,32 +5,44 @@ description: "Microsoft 365 E3 vs E5 - Microsoft 365 E3 provides the enterprise 
 
 # Microsoft 365 E3 vs E5
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">E3 VS E5 DECISION GUIDE</span>
+    <span className="kc-eyebrow">E3 VS E5 DECISION GUIDE</span>
     <h2>Choose by control requirement, not by feature list</h2>
     <p>E3 is the enterprise foundation. E5 becomes necessary when advanced security, compliance, analytics and operational maturity are explicit requirements.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="E3 vs E5 focus">
-    <div><strong>E3</strong><span>Foundation</span></div>
-    <div><strong>E5</strong><span>Control</span></div>
-    <div><strong>Mix</strong><span>Persona</span></div>
-    <div><strong>ROI</strong><span>Risk</span></div>
+  <div aria-label="E3 vs E5 focus" className="kc-hero-metrics">
+    <div>
+      <strong>E3</strong>
+      <span>Foundation</span>
+    </div>
+    <div>
+      <strong>E5</strong>
+      <span>Control</span>
+    </div>
+    <div>
+      <strong>Mix</strong>
+      <span>Persona</span>
+    </div>
+    <div>
+      <strong>ROI</strong>
+      <span>Risk</span>
+    </div>
   </div>
 </section>
 
-<div class="kc-outcome-grid" aria-label="E3 versus E5 licensing decision cards">
-  <div class="kc-outcome-card">
+<div aria-label="E3 versus E5 licensing decision cards" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
     <small>PERSONA</small>
     <strong>E3 baseline users</strong>
     <span>Use E3 when productivity and baseline governance are the primary requirement.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>CAPABILITY</small>
     <strong>E5 advanced controls</strong>
     <span>Use E5 when advanced security, compliance, analytics and automation controls are required.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>DECISION</small>
     <strong>Hybrid licensing model</strong>
     <span>Many enterprises need mixed assignment by persona, risk and workload maturity.</span>
@@ -57,21 +69,26 @@ E3는 enterprise productivity와 기본 identity/device/collaboration foundation
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>License decision path</span>
-    <strong>Foundation to advanced controls</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="E3 versus E5 decision path">
-    <div class="kc-journey-node is-source"><small>01</small><strong>E3 foundation</strong><span>Productivity, identity, device and collaboration baseline for standard enterprise users.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Security requirement</strong><span>Map Defender, XDR, identity risk, endpoint and threat protection needs.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Compliance requirement</strong><span>Map Purview, eDiscovery, audit, DLP, insider risk and regulatory needs.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Mixed model</strong><span>Assign E5 by persona, risk, workload and executive value case.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>License decision path</span>
+  <strong>Foundation to advanced controls</strong>
+</div><div aria-label="E3 versus E5 decision path" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>E3 foundation</strong>
+  <span>Productivity, identity, device and collaboration baseline for standard enterprise users.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Security requirement</strong>
+  <span>Map Defender, XDR, identity risk, endpoint and threat protection needs.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Compliance requirement</strong>
+  <span>Map Purview, eDiscovery, audit, DLP, insider risk and regulatory needs.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Mixed model</strong>
+  <span>Assign E5 by persona, risk, workload and executive value case.</span>
+</div></div></div>
 
 ## Evaluation Criteria
 

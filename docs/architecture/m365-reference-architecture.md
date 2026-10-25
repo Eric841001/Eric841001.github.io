@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Microsoft 365 Reference Architecture
 
-<section class="kc-topic-hero" aria-label="Microsoft 365 reference architecture hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Enterprise Digital Workplace Architecture</span>
+<section aria-label="Microsoft 365 reference architecture hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Digital Workplace Architecture</span>
     <h2>Connect productivity, security, governance and AI readiness</h2>
     <p>Microsoft 365 should be designed as one operating platform across identity, collaboration, endpoint, security, compliance, adoption and Copilot readiness. The architecture should explain how users work and how the organization controls risk.</p>
-    <div class="kc-hero-signal-row" aria-label="Microsoft 365 reference architecture signals">
+    <div aria-label="Microsoft 365 reference architecture signals" className="kc-hero-signal-row">
       <span>Tenant</span>
       <span>Identity</span>
       <span>Workloads</span>
       <span>Operate</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Microsoft 365 reference architecture related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/microsoft365/overview">M365 Overview</a>
-      <a class="kc-topic-button" href="/knowledge/security/security-architecture">Security Architecture</a>
-      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Copilot Readiness</a>
+    <div aria-label="Microsoft 365 reference architecture related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/microsoft365/overview" className="kc-topic-button kc-topic-button--primary">M365 Overview</a>
+      <a href="/knowledge/security/security-architecture" className="kc-topic-button">Security Architecture</a>
+      <a href="/knowledge/copilot/readiness" className="kc-topic-button">Copilot Readiness</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Microsoft 365 operating platform visual">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Microsoft 365 operating platform visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Platform Architecture</span>
       <strong>Productivity with control</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#identity-architecture" class="kc-factory-card"><small>01</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access, PIM and guest governance.</span></a>
-      <a href="#collaboration-architecture" class="kc-factory-card"><small>02</small><strong>Collaboration</strong><span>Exchange, Teams, SharePoint, OneDrive and information architecture.</span></a>
-      <a href="#security-architecture" class="kc-factory-card"><small>03</small><strong>Security</strong><span>Intune, Defender, Purview, DLP, labels and monitoring.</span></a>
-      <a href="#copilot-readiness-architecture" class="kc-factory-card"><small>04</small><strong>AI Ready</strong><span>Microsoft Graph, permissions, content quality and adoption readiness.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#identity-architecture" className="kc-factory-card">
+        <small>01</small>
+        <strong>Identity</strong>
+        <span>Entra ID, MFA, Conditional Access, PIM and guest governance.</span>
+      </a>
+      <a href="#collaboration-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Collaboration</strong>
+        <span>Exchange, Teams, SharePoint, OneDrive and information architecture.</span>
+      </a>
+      <a href="#security-architecture" className="kc-factory-card">
+        <small>03</small>
+        <strong>Security</strong>
+        <span>Intune, Defender, Purview, DLP, labels and monitoring.</span>
+      </a>
+      <a href="#copilot-readiness-architecture" className="kc-factory-card">
+        <small>04</small>
+        <strong>AI Ready</strong>
+        <span>Microsoft Graph, permissions, content quality and adoption readiness.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Architecture rule</strong>
       <span>Do not deploy workloads in isolation. Tenant, identity, collaboration, security, compliance and Copilot readiness must be designed together.</span>
     </div>
@@ -130,18 +145,42 @@ Architecture must support global subsidiaries and regional requirements.
 
 ## Reference Architecture Overview
 
-<div class="kc-journey-map" aria-label="Microsoft 365 reference architecture overview">
-  <div class="kc-journey-map__header">
+<div aria-label="Microsoft 365 reference architecture overview" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Reference Architecture</span>
     <strong>User productivity to governed AI readiness</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Users</strong><span>Employees, admins, guests, partners and frontline workers.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Entra ID</strong><span>MFA, Conditional Access, identity governance and PIM.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>M365 Workloads</strong><span>Exchange, Teams, SharePoint, OneDrive and Microsoft Graph.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security</strong><span>Intune, Defender, Purview, DLP, sensitivity labels and XDR.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Copilot</strong><span>Graph-grounded AI experiences with existing permission boundaries.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate</strong><span>Lifecycle, support, reporting, adoption and continuous improvement.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Users</strong>
+      <span>Employees, admins, guests, partners and frontline workers.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Entra ID</strong>
+      <span>MFA, Conditional Access, identity governance and PIM.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>M365 Workloads</strong>
+      <span>Exchange, Teams, SharePoint, OneDrive and Microsoft Graph.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Security</strong>
+      <span>Intune, Defender, Purview, DLP, sensitivity labels and XDR.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Copilot</strong>
+      <span>Graph-grounded AI experiences with existing permission boundaries.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Operate</strong>
+      <span>Lifecycle, support, reporting, adoption and continuous improvement.</span>
+    </div>
   </div>
 </div>
 
@@ -236,19 +275,35 @@ Security controls should include:
 
 Recommended architecture:
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>M365 security architecture</span>
     <strong>Signal, protect, respond</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Microsoft 365 security architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Security signals</strong><span>Identity, device, email and cloud app signals flow into Microsoft Defender XDR.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>XDR correlation</strong><span>Incidents are grouped with entities, severity, timeline and response guidance.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Data protection</strong><span>Microsoft Purview, sensitivity labels, DLP and audit protect collaboration data.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>SOC operation</strong><span>Security teams act through triage, incident response, evidence and improvement backlog.</span></div>
+  <div className="kc-journey-map" aria-label="Microsoft 365 security architecture">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Security signals</strong>
+  <span>Identity, device, email and cloud app signals flow into Microsoft Defender XDR.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>XDR correlation</strong>
+  <span>Incidents are grouped with entities, severity, timeline and response guidance.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Data protection</strong>
+  <span>Microsoft Purview, sensitivity labels, DLP and audit protect collaboration data.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>SOC operation</strong>
+  <span>Security teams act through triage, incident response, evidence and improvement backlog.</span>
+</div>
   </div>
 </div>
 
@@ -269,19 +324,35 @@ Successful Copilot adoption requires:
 
 Copilot readiness model:
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Copilot readiness architecture</span>
     <strong>Data-safe adoption path</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Copilot readiness model">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Identity and security</strong><span>Entra ID, Conditional Access, Defender, device compliance and privileged access are reviewed first.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Data governance</strong><span>SharePoint permissions, Purview labels, DLP and content ownership are cleaned up.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Pilot readiness</strong><span>Use cases, user groups, risk controls, help desk and adoption messaging are prepared.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Enterprise rollout</strong><span>Scale with adoption telemetry, policy review, champion feedback and governance cadence.</span></div>
+  <div className="kc-journey-map" aria-label="Copilot readiness model">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Identity and security</strong>
+  <span>Entra ID, Conditional Access, Defender, device compliance and privileged access are reviewed first.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Data governance</strong>
+  <span>SharePoint permissions, Purview labels, DLP and content ownership are cleaned up.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Pilot readiness</strong>
+  <span>Use cases, user groups, risk controls, help desk and adoption messaging are prepared.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Enterprise rollout</strong>
+  <span>Scale with adoption telemetry, policy review, champion feedback and governance cadence.</span>
+</div>
   </div>
 </div>
 

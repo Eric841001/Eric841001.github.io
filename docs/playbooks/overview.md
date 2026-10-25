@@ -11,19 +11,19 @@ The Playbooks section provides repeatable delivery guidance for Microsoft 365 as
 
 Playbooks are designed to bridge consulting strategy and real execution. They define workstreams, checkpoints, deliverables, risks and handover expectations.
 
-<section className="kc-topic-hero" aria-label="Playbooks program hero">
+<section aria-label="Playbooks program hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Enterprise Delivery Playbooks</span>
     <h2>Convert consulting strategy into repeatable delivery</h2>
     <div className="kc-topic-hero__lede">Each playbook turns a customer scenario into phases, workstreams, checkpoints, acceptance evidence, risks, handover outputs and reusable delivery patterns.</div>
-    <div className="kc-hero-signal-row" aria-label="Playbook delivery signals">
+    <div aria-label="Playbook delivery signals" className="kc-hero-signal-row">
       <span>Assess</span>
       <span>Design</span>
       <span>Execute</span>
       <span>Handover</span>
     </div>
   </div>
-  <div className="kc-factory-panel" aria-label="Playbook operating model">
+  <div aria-label="Playbook operating model" className="kc-factory-panel">
     <div className="kc-factory-panel__header">
       <span>Delivery Operating System</span>
       <strong>Scenario to evidence-backed handover</strong>

@@ -5,6 +5,32 @@ description: Microsoft Purview Insider Risk Management guide for insider risk si
 
 # Insider Risk Management
 
+<section className="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span className="kc-eyebrow">PURVIEW INSIDER RISK</span>
+    <h2>Investigate sensitive risk with privacy-aware governance</h2>
+    <p>Define signals, triage, role separation, case evidence and accountable actions before insider-risk policies are activated.</p>
+  </div>
+  <div aria-label="Insider Risk Management focus" className="kc-hero-metrics">
+    <div>
+      <strong>Signals</strong>
+      <span>Approved activity indicators</span>
+    </div>
+    <div>
+      <strong>Privacy</strong>
+      <span>Role and data boundaries</span>
+    </div>
+    <div>
+      <strong>Cases</strong>
+      <span>Triage and investigation workflow</span>
+    </div>
+    <div>
+      <strong>Evidence</strong>
+      <span>Actions and audit trail</span>
+    </div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Microsoft Purview Insider Risk Management helps organizations identify risky user activities that may indicate data theft, policy violation, security negligence or business-sensitive behavior.
@@ -28,21 +54,26 @@ Insider Risk Management는 내부자의 의도적 또는 비의도적 위험 행
 
 ## Insider Risk Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Insider risk case model</span>
-    <strong>Privacy-aware investigation flow</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Insider Risk Management case model">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Activity signals</strong><span>User and data activity signals are evaluated within approved policy boundaries.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Alert triage</strong><span>Review context, severity, privacy rules, false positives and escalation criteria.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Case investigation</strong><span>Coordinate HR, legal, compliance and security review with role separation.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Action and evidence</strong><span>Apply remediation or risk acceptance and preserve audit trail responsibly.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Insider risk case model</span>
+  <strong>Privacy-aware investigation flow</strong>
+</div><div aria-label="Insider Risk Management case model" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Activity signals</strong>
+  <span>User and data activity signals are evaluated within approved policy boundaries.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Alert triage</strong>
+  <span>Review context, severity, privacy rules, false positives and escalation criteria.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Case investigation</strong>
+  <span>Coordinate HR, legal, compliance and security review with role separation.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Action and evidence</strong>
+  <span>Apply remediation or risk acceptance and preserve audit trail responsibly.</span>
+</div></div></div>
 
 ## Core Design Areas
 

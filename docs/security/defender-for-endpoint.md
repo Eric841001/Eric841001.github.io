@@ -5,26 +5,48 @@ description: Microsoft Defender for Endpoint deployment, device risk, ASR rollou
 
 # Defender for Endpoint
 
-<section class="kc-topic-hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">ENDPOINT SECURITY OPERATIONS</span>
+<section className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">ENDPOINT SECURITY OPERATIONS</span>
     <h2>Turn endpoint telemetry into trusted access decisions</h2>
     <p>Microsoft Defender for Endpoint should be designed as the device signal layer for Zero Trust, Defender XDR and Copilot readiness. The outcome is not only malware protection. The outcome is trusted device posture, incident evidence, vulnerability visibility and response ownership.</p>
-    <div class="kc-topic-hero__actions">
-      <a class="kc-topic-button kc-topic-button--primary" href="./defender-xdr">Defender XDR</a>
-      <a class="kc-topic-button" href="./conditional-access">Conditional Access</a>
-      <a class="kc-topic-button" href="../knowledge-center/mde-atomic-red-team">Detection Validation</a>
+    <div className="kc-topic-hero__actions">
+      <a href="./defender-xdr" className="kc-topic-button kc-topic-button--primary">Defender XDR</a>
+      <a href="./conditional-access" className="kc-topic-button">Conditional Access</a>
+      <a href="../knowledge-center/mde-atomic-red-team" className="kc-topic-button">Detection Validation</a>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Endpoint operating model">
-    <div class="kc-factory-panel__header"><span>Endpoint Loop</span><strong>Signal ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#deployment-journey" class="kc-factory-card"><small>01</small><strong>Onboard</strong><span>Windows, macOS, Linux, servers and privileged devices.</span></a>
-      <a href="#control-model" class="kc-factory-card"><small>02</small><strong>Control</strong><span>ASR, tamper protection, device groups and security baselines.</span></a>
-      <a href="#operations-model" class="kc-factory-card"><small>03</small><strong>Operate</strong><span>Alerts, device timeline, vulnerability backlog and response.</span></a>
-      <a href="#evidence-and-metrics" class="kc-factory-card"><small>04</small><strong>Improve</strong><span>Coverage, exceptions, test evidence and executive reporting.</span></a>
+  <div aria-label="Endpoint operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Endpoint Loop</span>
+      <strong>Signal ready</strong>
     </div>
-    <div class="kc-guardrail-panel"><strong>Endpoint risk is a business signal</strong><span>Device risk should influence administrator access, Copilot readiness, privileged operations and incident response, not sit isolated in an endpoint console.</span></div>
+    <div className="kc-factory-grid">
+      <a href="#deployment-journey" className="kc-factory-card">
+        <small>01</small>
+        <strong>Onboard</strong>
+        <span>Windows, macOS, Linux, servers and privileged devices.</span>
+      </a>
+      <a href="#control-model" className="kc-factory-card">
+        <small>02</small>
+        <strong>Control</strong>
+        <span>ASR, tamper protection, device groups and security baselines.</span>
+      </a>
+      <a href="#operations-model" className="kc-factory-card">
+        <small>03</small>
+        <strong>Operate</strong>
+        <span>Alerts, device timeline, vulnerability backlog and response.</span>
+      </a>
+      <a href="#evidence-and-metrics" className="kc-factory-card">
+        <small>04</small>
+        <strong>Improve</strong>
+        <span>Coverage, exceptions, test evidence and executive reporting.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Endpoint risk is a business signal</strong>
+      <span>Device risk should influence administrator access, Copilot readiness, privileged operations and incident response, not sit isolated in an endpoint console.</span>
+    </div>
   </div>
 </section>
 
@@ -42,39 +64,103 @@ Defender for Endpoint는 단순한 antivirus 대체품이 아닙니다. Windows,
 
 ## Control Model
 
-<div class="kc-platform-fit">
-  <div class="kc-platform-fit__card"><small>Protection</small><strong>Next-generation protection</strong><span>Cloud-delivered protection, tamper protection, antivirus policy and security intelligence updates.</span></div>
-  <div class="kc-platform-fit__card"><small>Reduction</small><strong>Attack Surface Reduction</strong><span>Audit-first rollout for ASR rules, controlled folder access, network protection and web protection.</span></div>
-  <div class="kc-platform-fit__card"><small>Detection</small><strong>Endpoint Detection and Response</strong><span>Device timeline, alert evidence, investigation package, process tree and incident context.</span></div>
-  <div class="kc-platform-fit__card"><small>Exposure</small><strong>Vulnerability management</strong><span>Software inventory, exposure score, remediation backlog and risk-based patch prioritization.</span></div>
-  <div class="kc-platform-fit__card"><small>Access</small><strong>Device risk integration</strong><span>Use device risk and compliance with Conditional Access for privileged and sensitive workloads.</span></div>
-  <div class="kc-platform-fit__card"><small>Operations</small><strong>SOC handover</strong><span>Define alert routing, escalation, isolation approval, evidence capture and incident closure.</span></div>
+<div className="kc-platform-fit">
+  <div className="kc-platform-fit__card">
+  <small>Protection</small>
+  <strong>Next-generation protection</strong>
+  <span>Cloud-delivered protection, tamper protection, antivirus policy and security intelligence updates.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Reduction</small>
+  <strong>Attack Surface Reduction</strong>
+  <span>Audit-first rollout for ASR rules, controlled folder access, network protection and web protection.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Detection</small>
+  <strong>Endpoint Detection and Response</strong>
+  <span>Device timeline, alert evidence, investigation package, process tree and incident context.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Exposure</small>
+  <strong>Vulnerability management</strong>
+  <span>Software inventory, exposure score, remediation backlog and risk-based patch prioritization.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Access</small>
+  <strong>Device risk integration</strong>
+  <span>Use device risk and compliance with Conditional Access for privileged and sensitive workloads.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Operations</small>
+  <strong>SOC handover</strong>
+  <span>Define alert routing, escalation, isolation approval, evidence capture and incident closure.</span>
+</div>
 </div>
 
 ## Deployment Journey
 
-<div class="kc-journey-map">
-  <div class="kc-journey-map__header">
+<div className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Deployment Journey</span>
     <strong>Audit first, then enforce</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node"><small>01</small><strong>Scope</strong><span>Confirm device types, ownership, privileged endpoints, exclusions and onboarding method.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Pilot</strong><span>Onboard a controlled pilot group and validate sensor health, inventory and alerts.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Audit</strong><span>Run ASR and protection policies in audit mode before broad enforcement.</span></div>
-    <div class="kc-journey-node"><small>04</small><strong>Enforce</strong><span>Move rules into block mode by ring, workload sensitivity and exception maturity.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Operate</strong><span>Track alerts, vulnerability backlog, exceptions, device risk and response actions.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node">
+      <small>01</small>
+      <strong>Scope</strong>
+      <span>Confirm device types, ownership, privileged endpoints, exclusions and onboarding method.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Pilot</strong>
+      <span>Onboard a controlled pilot group and validate sensor health, inventory and alerts.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Audit</strong>
+      <span>Run ASR and protection policies in audit mode before broad enforcement.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>04</small>
+      <strong>Enforce</strong>
+      <span>Move rules into block mode by ring, workload sensitivity and exception maturity.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Operate</strong>
+      <span>Track alerts, vulnerability backlog, exceptions, device risk and response actions.</span>
+    </div>
   </div>
 </div>
 
 ## Operations Model
 
-<div class="kc-operating-model">
-  <div class="kc-operating-stage"><small>Endpoint Owner</small><strong>Onboarding and health</strong><span>Owns device coverage, sensor health, OS support, MDM alignment and offboarding control.</span></div>
-  <div class="kc-operating-stage"><small>Security Architect</small><strong>Policy and exception design</strong><span>Defines ASR rings, tamper protection, device groups, sensitive device tiers and exception criteria.</span></div>
-  <div class="kc-operating-stage"><small>SOC Analyst</small><strong>Investigation and response</strong><span>Uses device timeline, alert evidence, automated investigation and isolation workflow.</span></div>
-  <div class="kc-operating-stage"><small>Service Desk</small><strong>User impact handling</strong><span>Manages policy impact, false positive intake, communication and remediation coordination.</span></div>
-  <div class="kc-operating-stage"><small>Executive Owner</small><strong>Risk and funding</strong><span>Reviews coverage, exposure score, unresolved critical vulnerabilities and incident trends.</span></div>
+<div className="kc-operating-model">
+  <div className="kc-operating-stage">
+    <small>Endpoint Owner</small>
+    <strong>Onboarding and health</strong>
+    <span>Owns device coverage, sensor health, OS support, MDM alignment and offboarding control.</span>
+  </div>
+  <div className="kc-operating-stage">
+    <small>Security Architect</small>
+    <strong>Policy and exception design</strong>
+    <span>Defines ASR rings, tamper protection, device groups, sensitive device tiers and exception criteria.</span>
+  </div>
+  <div className="kc-operating-stage">
+    <small>SOC Analyst</small>
+    <strong>Investigation and response</strong>
+    <span>Uses device timeline, alert evidence, automated investigation and isolation workflow.</span>
+  </div>
+  <div className="kc-operating-stage">
+    <small>Service Desk</small>
+    <strong>User impact handling</strong>
+    <span>Manages policy impact, false positive intake, communication and remediation coordination.</span>
+  </div>
+  <div className="kc-operating-stage">
+    <small>Executive Owner</small>
+    <strong>Risk and funding</strong>
+    <span>Reviews coverage, exposure score, unresolved critical vulnerabilities and incident trends.</span>
+  </div>
 </div>
 
 ## Implementation Checklist
@@ -90,26 +176,54 @@ Defender for Endpoint는 단순한 antivirus 대체품이 아닙니다. Windows,
 
 ## Endpoint to XDR Reference Flow
 
-<div class="kc-context-panel">
-  <div class="kc-context-panel__lead">
+<div className="kc-context-panel">
+  <div className="kc-context-panel__lead">
     <small>Reference Flow</small>
     <strong>Endpoint evidence should enrich the full attack story.</strong>
     <span>Endpoint alerts become much stronger when identity, email, cloud app and data signals are reviewed through Defender XDR.</span>
   </div>
-  <div class="kc-context-panel__grid">
-    <a href="./defender-xdr"><small>XDR</small><strong>Incident correlation</strong><span>Connect endpoint process activity to identity, email and cloud signals.</span></a>
-    <a href="./conditional-access"><small>Access</small><strong>Device trust</strong><span>Use compliance and risk signals before granting sensitive access.</span></a>
-    <a href="../knowledge-center/mde-atomic-red-team"><small>Validation</small><strong>Detection test</strong><span>Use controlled tests to prove alerts, incidents and routing work.</span></a>
+  <div className="kc-context-panel__grid">
+    <a href="./defender-xdr">
+      <small>XDR</small>
+      <strong>Incident correlation</strong>
+      <span>Connect endpoint process activity to identity, email and cloud signals.</span>
+    </a>
+    <a href="./conditional-access">
+      <small>Access</small>
+      <strong>Device trust</strong>
+      <span>Use compliance and risk signals before granting sensitive access.</span>
+    </a>
+    <a href="../knowledge-center/mde-atomic-red-team">
+      <small>Validation</small>
+      <strong>Detection test</strong>
+      <span>Use controlled tests to prove alerts, incidents and routing work.</span>
+    </a>
   </div>
 </div>
 
 ## Evidence and Metrics
 
-<div class="kc-platform-fit">
-  <div class="kc-platform-fit__card"><small>Coverage</small><strong>Onboarding completeness</strong><span>Percentage of expected Windows, macOS, Linux and server endpoints reporting healthily.</span></div>
-  <div class="kc-platform-fit__card"><small>Exposure</small><strong>Critical vulnerability backlog</strong><span>High-risk software and configuration findings by owner and SLA.</span></div>
-  <div class="kc-platform-fit__card"><small>Control</small><strong>ASR enforcement progress</strong><span>Audit findings, exceptions, enforcement rings and business impact trend.</span></div>
-  <div class="kc-platform-fit__card"><small>Response</small><strong>Incident handling quality</strong><span>MTTA, MTTR, isolation decisions, false positive rate and closure evidence.</span></div>
+<div className="kc-platform-fit">
+  <div className="kc-platform-fit__card">
+  <small>Coverage</small>
+  <strong>Onboarding completeness</strong>
+  <span>Percentage of expected Windows, macOS, Linux and server endpoints reporting healthily.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Exposure</small>
+  <strong>Critical vulnerability backlog</strong>
+  <span>High-risk software and configuration findings by owner and SLA.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Control</small>
+  <strong>ASR enforcement progress</strong>
+  <span>Audit findings, exceptions, enforcement rings and business impact trend.</span>
+</div>
+  <div className="kc-platform-fit__card">
+  <small>Response</small>
+  <strong>Incident handling quality</strong>
+  <span>MTTA, MTTR, isolation decisions, false positive rate and closure evidence.</span>
+</div>
 </div>
 
 ## Common Mistakes

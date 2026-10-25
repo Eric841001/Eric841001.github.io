@@ -6,17 +6,29 @@ description: Microsoft Defender architecture guide for Defender XDR, endpoint, e
 
 # Microsoft Defender
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">DEFENDER XDR OPERATING MODEL</span>
+    <span className="kc-eyebrow">DEFENDER XDR OPERATING MODEL</span>
     <h2>Unify signals into a security operation executives can trust</h2>
     <p>Defender should connect endpoint, identity, email, cloud app and incident evidence into a repeatable triage and response model.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Defender delivery focus">
-    <div><strong>XDR</strong><span>Correlation</span></div>
-    <div><strong>SOC</strong><span>Triage</span></div>
-    <div><strong>RBAC</strong><span>Roles</span></div>
-    <div><strong>KPI</strong><span>Reporting</span></div>
+  <div aria-label="Defender delivery focus" className="kc-hero-metrics">
+    <div>
+      <strong>XDR</strong>
+      <span>Correlation</span>
+    </div>
+    <div>
+      <strong>SOC</strong>
+      <span>Triage</span>
+    </div>
+    <div>
+      <strong>RBAC</strong>
+      <span>Roles</span>
+    </div>
+    <div>
+      <strong>KPI</strong>
+      <span>Reporting</span>
+    </div>
   </div>
 </section>
 
@@ -36,21 +48,26 @@ For enterprise architecture, the goal is not to enable every feature at once. Th
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Defender signal architecture</span>
-    <strong>Workloads to response</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Defender XDR architecture">
-    <div class="kc-journey-node is-source"><small>Signals</small><strong>MDO, MDE, MDI, MDCA</strong><span>Email, endpoint, identity and cloud app detections are onboarded with clear ownership.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>XDR</small><strong>Incident correlation</strong><span>Alerts are grouped into incidents with severity, entity context and recommended actions.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>Operate</small><strong>SOC triage model</strong><span>Analysts follow escalation, containment, evidence and exception handling runbooks.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>Report</small><strong>Executive metrics</strong><span>Risk trend, response time, policy gaps and improvement backlog are reported in business language.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Defender signal architecture</span>
+  <strong>Workloads to response</strong>
+</div><div aria-label="Defender XDR architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>Signals</small>
+  <strong>MDO, MDE, MDI, MDCA</strong>
+  <span>Email, endpoint, identity and cloud app detections are onboarded with clear ownership.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>XDR</small>
+  <strong>Incident correlation</strong>
+  <span>Alerts are grouped into incidents with severity, entity context and recommended actions.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>Operate</small>
+  <strong>SOC triage model</strong>
+  <span>Analysts follow escalation, containment, evidence and exception handling runbooks.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>Report</small>
+  <strong>Executive metrics</strong>
+  <span>Risk trend, response time, policy gaps and improvement backlog are reported in business language.</span>
+</div></div></div>
 
 ## Implementation
 

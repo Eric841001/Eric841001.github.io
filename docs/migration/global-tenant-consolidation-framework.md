@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Global Tenant Consolidation Framework
 
-<section class="kc-topic-hero" aria-label="Global tenant consolidation hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Global Microsoft 365 Operating Model</span>
+<section aria-label="Global tenant consolidation hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Global Microsoft 365 Operating Model</span>
     <h2>Decide what to consolidate, federate or keep separate</h2>
     <p>Global tenant consolidation is a business operating model decision before it is a migration decision. The architecture must define which tenants should merge, coexist, federate, remain isolated or become transitional.</p>
-    <div class="kc-hero-signal-row" aria-label="Global tenant consolidation signals">
+    <div aria-label="Global tenant consolidation signals" className="kc-hero-signal-row">
       <span>Tenant</span>
       <span>Domain</span>
       <span>Policy</span>
       <span>Region</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Global tenant consolidation related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/playbooks/tenant-to-tenant-migration-playbook">Tenant Migration Playbook</a>
-      <a class="kc-topic-button" href="/knowledge/migration/cross-tenant-sync-vs-migration">Sync vs Migration</a>
-      <a class="kc-topic-button" href="/knowledge/contact">Request Consolidation Assets</a>
+    <div aria-label="Global tenant consolidation related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/playbooks/tenant-to-tenant-migration-playbook" className="kc-topic-button kc-topic-button--primary">Tenant Migration Playbook</a>
+      <a href="/knowledge/migration/cross-tenant-sync-vs-migration" className="kc-topic-button">Sync vs Migration</a>
+      <a href="/knowledge/contact" className="kc-topic-button">Request Consolidation Assets</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Global tenant consolidation model">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Global tenant consolidation model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Decision Model</span>
       <strong>Consolidate with control</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#consolidation-scope" class="kc-factory-card"><small>01</small><strong>Scope</strong><span>Domain, identity, mail, collaboration, security and compliance.</span></a>
-      <a href="#mail-coexistence-strategy" class="kc-factory-card"><small>02</small><strong>Coexist</strong><span>Legacy mail, alternate SMTP, forwarding and staged routing.</span></a>
-      <a href="#regional-policy-separation" class="kc-factory-card"><small>03</small><strong>Separate</strong><span>Regional Conditional Access, Intune, Purview and admin delegation.</span></a>
-      <a href="#consolidation-decision-framework" class="kc-factory-card"><small>04</small><strong>Decide</strong><span>Full migration, cross-tenant sync, coexistence or hybrid governance.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#consolidation-scope" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Domain, identity, mail, collaboration, security and compliance.</span>
+      </a>
+      <a href="#mail-coexistence-strategy" className="kc-factory-card">
+        <small>02</small>
+        <strong>Coexist</strong>
+        <span>Legacy mail, alternate SMTP, forwarding and staged routing.</span>
+      </a>
+      <a href="#regional-policy-separation" className="kc-factory-card">
+        <small>03</small>
+        <strong>Separate</strong>
+        <span>Regional Conditional Access, Intune, Purview and admin delegation.</span>
+      </a>
+      <a href="#consolidation-decision-framework" className="kc-factory-card">
+        <small>04</small>
+        <strong>Decide</strong>
+        <span>Full migration, cross-tenant sync, coexistence or hybrid governance.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Architecture rule</strong>
       <span>Consolidation should reduce operating complexity without erasing legitimate regional security, compliance and administrative requirements.</span>
     </div>
@@ -87,18 +102,42 @@ Typical scenarios include:
 
 ## Target Architecture
 
-<div class="kc-journey-map" aria-label="Global tenant consolidation target architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="Global tenant consolidation target architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Target Architecture</span>
     <strong>Global governance with regional control</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Tenant Landscape</strong><span>Headquarters tenant, regional tenants and legacy environments.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Global Governance</strong><span>Decision model for consolidation, coexistence, federation or isolation.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Identity & Domain</strong><span>Entra ID, DNS, SMTP domains, UPN, routing and cross-tenant access.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security & Compliance</strong><span>Conditional Access, Intune, Defender, Purview, DLP and audit.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Regional Admin</strong><span>Administrative Units, role delegation and country-specific policy separation.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operating Model</strong><span>Reduced complexity with controlled regional exceptions.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Tenant Landscape</strong>
+      <span>Headquarters tenant, regional tenants and legacy environments.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Global Governance</strong>
+      <span>Decision model for consolidation, coexistence, federation or isolation.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Identity &amp; Domain</strong>
+      <span>Entra ID, DNS, SMTP domains, UPN, routing and cross-tenant access.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Security &amp; Compliance</strong>
+      <span>Conditional Access, Intune, Defender, Purview, DLP and audit.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Regional Admin</strong>
+      <span>Administrative Units, role delegation and country-specific policy separation.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Operating Model</strong>
+      <span>Reduced complexity with controlled regional exceptions.</span>
+    </div>
   </div>
 </div>
 
@@ -117,19 +156,35 @@ This is especially important when:
 
 ### Common Pattern
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Mail coexistence pattern</span>
     <strong>Shared routing without confusing users</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Mail coexistence routing pattern">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Legacy mail system</strong><span>Keep primary mailbox service stable while alternate routing addresses are prepared.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Exchange Online tenant</strong><span>Map Exchange Online recipients, contacts, forwarding and accepted domain behavior.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Mail routing control</strong><span>Use alternate SMTP, contacts, connectors or forwarding based on coexistence duration.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Target recipient experience</strong><span>Users receive mail consistently while migration, domain transfer or coexistence continues.</span></div>
+  <div className="kc-journey-map" aria-label="Mail coexistence routing pattern">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Legacy mail system</strong>
+  <span>Keep primary mailbox service stable while alternate routing addresses are prepared.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Exchange Online tenant</strong>
+  <span>Map Exchange Online recipients, contacts, forwarding and accepted domain behavior.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Mail routing control</strong>
+  <span>Use alternate SMTP, contacts, connectors or forwarding based on coexistence duration.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Target recipient experience</strong>
+  <span>Users receive mail consistently while migration, domain transfer or coexistence continues.</span>
+</div>
   </div>
 </div>
 
@@ -331,19 +386,35 @@ Download restriction can be implemented through Conditional Access and SharePoin
 
 ## Consolidation Decision Framework
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Consolidation decision framework</span>
     <strong>Choose migration, sync, coexistence or governance</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Tenant consolidation decision framework">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Consolidation requirement</strong><span>Confirm whether the driver is tenant retirement, collaboration, shared domain or governance cleanup.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Migration decision</strong><span>Use full tenant migration when regional tenant retirement and domain cutover are required.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Coexistence decision</strong><span>Use cross-tenant sync, B2B or mail coexistence when collaboration or domain sharing must continue.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Operating model</strong><span>Define hybrid multi-tenant governance, owners, exceptions, risk reporting and review cadence.</span></div>
+  <div className="kc-journey-map" aria-label="Tenant consolidation decision framework">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Consolidation requirement</strong>
+  <span>Confirm whether the driver is tenant retirement, collaboration, shared domain or governance cleanup.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Migration decision</strong>
+  <span>Use full tenant migration when regional tenant retirement and domain cutover are required.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Coexistence decision</strong>
+  <span>Use cross-tenant sync, B2B or mail coexistence when collaboration or domain sharing must continue.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Operating model</strong>
+  <span>Define hybrid multi-tenant governance, owners, exceptions, risk reporting and review cadence.</span>
+</div>
   </div>
 </div>
 

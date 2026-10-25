@@ -16,19 +16,19 @@ Skills allow organizations to standardize financial analysis, planning, forecast
 
 This capability represents a major evolution of Copilot for Finance scenarios and establishes a foundation for Enterprise Finance AI.
 
-<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Excel Copilot Skills hero">
+<section aria-label="Excel Copilot Skills hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Excel Copilot Skills</span>
     <h2>Standardize finance work with reusable Copilot skills</h2>
     <div className="kc-topic-hero__lede">Excel Copilot Skills move finance AI from one-off prompts to reusable analysis patterns with governed data, workbook rules, traceability and reviewable outputs.</div>
-    <div className="kc-hero-signal-row" aria-label="Excel Copilot Skills signals">
+    <div aria-label="Excel Copilot Skills signals" className="kc-hero-signal-row">
       <span>Skill</span>
       <span>Data</span>
       <span>Model</span>
       <span>Evidence</span>
     </div>
   </div>
-  <div className="kc-factory-panel" aria-label="Excel Copilot Skills operating model">
+  <div aria-label="Excel Copilot Skills operating model" className="kc-factory-panel">
     <div className="kc-factory-panel__header">
       <span>Finance AI Operating Model</span>
       <strong>Skill definition to validated workbook output</strong>
@@ -75,7 +75,7 @@ Traditional prompting creates challenges:
 
 Skills introduce reusable business logic.
 
-<div className="kc-journey-map" aria-label="Excel skill execution model">
+<div aria-label="Excel skill execution model" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Skill Execution Model</span>
     <strong>User request to validated finance output</strong>
@@ -142,7 +142,7 @@ Examples:
 
 ## Frontier Finance Architecture
 
-<div className="kc-journey-map" aria-label="Frontier finance architecture">
+<div aria-label="Frontier finance architecture" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Frontier Finance Architecture</span>
     <strong>Excel Copilot, skills, data and models into business output</strong>

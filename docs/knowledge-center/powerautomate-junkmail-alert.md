@@ -7,17 +7,29 @@ sidebar_label: Junk Mail Alert
 
 # Power Automate Junk Mail Alert
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">EXCHANGE ONLINE ALERT AUTOMATION</span>
+    <span className="kc-eyebrow">EXCHANGE ONLINE ALERT AUTOMATION</span>
     <h2>Turn hidden Junk Email activity into visible security signals</h2>
     <p>This pattern uses Power Automate to collect junk mail indicators and notify Teams or email channels before missed messages become operational risk.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Junk mail alert focus">
-    <div><strong>EXO</strong><span>Mailbox</span></div>
-    <div><strong>Flow</strong><span>Trigger</span></div>
-    <div><strong>Teams</strong><span>Alert</span></div>
-    <div><strong>Ops</strong><span>Review</span></div>
+  <div aria-label="Junk mail alert focus" className="kc-hero-metrics">
+    <div>
+      <strong>EXO</strong>
+      <span>Mailbox</span>
+    </div>
+    <div>
+      <strong>Flow</strong>
+      <span>Trigger</span>
+    </div>
+    <div>
+      <strong>Teams</strong>
+      <span>Alert</span>
+    </div>
+    <div>
+      <strong>Ops</strong>
+      <span>Review</span>
+    </div>
   </div>
 </section>
 
@@ -47,19 +59,35 @@ Organizations require:
 
 ## Solution Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Junk mail alert architecture</span>
     <strong>Exchange signal to team notification</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Junk mail alert architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Exchange Online</strong><span>Monitor selected Junk Email folders or mailbox signals for messages requiring visibility.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Power Automate</strong><span>Trigger workflow, collect message metadata and apply filtering logic.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Teams notification</strong><span>Notify a security, help desk or operations channel with actionable context.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Email summary</strong><span>Send summary or evidence record for follow-up, tuning and reporting.</span></div>
+  <div className="kc-journey-map" aria-label="Junk mail alert architecture">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Exchange Online</strong>
+  <span>Monitor selected Junk Email folders or mailbox signals for messages requiring visibility.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Power Automate</strong>
+  <span>Trigger workflow, collect message metadata and apply filtering logic.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Teams notification</strong>
+  <span>Notify a security, help desk or operations channel with actionable context.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Email summary</strong>
+  <span>Send summary or evidence record for follow-up, tuning and reporting.</span>
+</div>
   </div>
 </div>
 
@@ -67,19 +95,35 @@ Organizations require:
 
 ## Workflow Overview
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Alert workflow</span>
     <strong>Detect, enrich, notify</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Junk mail alert workflow">
-    <div class="kc-journey-node is-source"><small>01</small><strong>New junk email</strong><span>A message lands in scope for monitoring based on mailbox or folder criteria.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Collect metadata</strong><span>Capture sender, subject, received time, recipient, classification and message indicators.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Generate alert</strong><span>Format relevant context for review without exposing unnecessary sensitive content.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Notify and report</strong><span>Post to Teams, send email summary and maintain visibility for tuning.</span></div>
+  <div className="kc-journey-map" aria-label="Junk mail alert workflow">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>New junk email</strong>
+  <span>A message lands in scope for monitoring based on mailbox or folder criteria.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Collect metadata</strong>
+  <span>Capture sender, subject, received time, recipient, classification and message indicators.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Generate alert</strong>
+  <span>Format relevant context for review without exposing unnecessary sensitive content.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Notify and report</strong>
+  <span>Post to Teams, send email summary and maintain visibility for tuning.</span>
+</div>
   </div>
 </div>
 

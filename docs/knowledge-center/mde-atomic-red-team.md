@@ -7,17 +7,29 @@ sidebar_label: Atomic Red Team
 
 # Microsoft Defender Validation with Atomic Red Team
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">DEFENDER VALIDATION PLAYBOOK</span>
+    <span className="kc-eyebrow">DEFENDER VALIDATION PLAYBOOK</span>
     <h2>Prove detection coverage before real incidents occur</h2>
     <p>Atomic Red Team validation connects safe adversary simulation, Defender XDR evidence, SOC triage and detection tuning into a repeatable assurance workflow.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Atomic Red Team validation focus">
-    <div><strong>Test</strong><span>Atomic</span></div>
-    <div><strong>XDR</strong><span>Signal</span></div>
-    <div><strong>SOC</strong><span>Review</span></div>
-    <div><strong>Tune</strong><span>Control</span></div>
+  <div aria-label="Atomic Red Team validation focus" className="kc-hero-metrics">
+    <div>
+      <strong>Test</strong>
+      <span>Atomic</span>
+    </div>
+    <div>
+      <strong>XDR</strong>
+      <span>Signal</span>
+    </div>
+    <div>
+      <strong>SOC</strong>
+      <span>Review</span>
+    </div>
+    <div>
+      <strong>Tune</strong>
+      <span>Control</span>
+    </div>
   </div>
 </section>
 
@@ -43,19 +55,35 @@ Organizations require:
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Detection validation architecture</span>
     <strong>Atomic test to SOC evidence</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Atomic Red Team validation architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Atomic test</strong><span>Select a scoped Atomic Red Team test mapped to expected MITRE behavior.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Endpoint execution</strong><span>Run safely on a test endpoint with rollback and monitoring in place.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Defender signal</strong><span>Validate alert, incident, timeline and entity evidence in Defender XDR.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>SOC review</strong><span>Document detection result, tuning action and executive-ready coverage evidence.</span></div>
+  <div className="kc-journey-map" aria-label="Atomic Red Team validation architecture">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Atomic test</strong>
+  <span>Select a scoped Atomic Red Team test mapped to expected MITRE behavior.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Endpoint execution</strong>
+  <span>Run safely on a test endpoint with rollback and monitoring in place.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Defender signal</strong>
+  <span>Validate alert, incident, timeline and entity evidence in Defender XDR.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>SOC review</strong>
+  <span>Document detection result, tuning action and executive-ready coverage evidence.</span>
+</div>
   </div>
 </div>
 
@@ -86,19 +114,35 @@ Organizations require:
 
 ## Recommended Testing Process
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Validation workflow</span>
     <strong>Scope, execute, tune</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Atomic Red Team validation workflow">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Define scope</strong><span>Confirm target device, test owner, detection expectation and change window.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Execute test</strong><span>Run the selected atomic test and capture command, timestamp and device context.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Review signal</strong><span>Check alert, incident, severity, entity mapping and investigation details.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Tune detection</strong><span>Adjust policy, analytics, SOC runbook or exception handling based on evidence.</span></div>
+  <div className="kc-journey-map" aria-label="Atomic Red Team validation workflow">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Define scope</strong>
+  <span>Confirm target device, test owner, detection expectation and change window.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Execute test</strong>
+  <span>Run the selected atomic test and capture command, timestamp and device context.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Review signal</strong>
+  <span>Check alert, incident, severity, entity mapping and investigation details.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Tune detection</strong>
+  <span>Adjust policy, analytics, SOC runbook or exception handling based on evidence.</span>
+</div>
   </div>
 </div>
 

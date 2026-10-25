@@ -1,190 +1,97 @@
 ---
 id: exchange-online-download-restriction
-title: Exchange Online Attachment Download Restriction
-description: "Exchange Online Attachment Download Restriction - This guide describes how to restrict users from directly downloading email attachments from Outlook..."
-sidebar_label: EXO Attachment Download Restriction
+title: Exchange Online 사서함 첨부파일 다운로드 방지 구성 (No MDCA)
+description: "OWA Mailbox Policy와 조건부 액세스로 브라우저 첨부파일 다운로드를 제한하는 구성 및 검증 가이드"
+sidebar_label: EXO 첨부파일 다운로드 방지
 ---
 
-# Exchange Online Attachment Download Restriction
+<header><h1>Exchange Online 사서함 첨부파일 다운로드 방지 구성 (No MDCA)</h1></header>
 
-<section class="kc-topic-hero kc-topic-hero--compact">
-  <div>
-    <span class="kc-eyebrow">EXCHANGE ONLINE ACCESS CONTROL</span>
-    <h2>Reduce attachment risk without blocking email productivity</h2>
-    <p>Attachment download restriction helps steer users toward safer browser or cloud-viewer experiences when endpoint trust or data leakage risk is a concern.</p>
-  </div>
-  <div class="kc-hero-metrics" aria-label="Attachment download restriction focus">
-    <div><strong>OWA</strong><span>Access</span></div>
-    <div><strong>Policy</strong><span>Control</span></div>
-    <div><strong>Cloud</strong><span>Viewer</span></div>
-    <div><strong>Risk</strong><span>Reduce</span></div>
-  </div>
-</section>
+이 문서는 Microsoft Defender for Cloud Apps(MDCA)를 사용하지 않고, 브라우저에서 Exchange Online 사서함에 접근할 때 첨부파일의 로컬 다운로드와 인쇄를 제한하는 방법을 설명합니다.
 
-## Executive Summary
+제한 범위는 예시상 브라우저이지만, 실제 적용 대상은 Microsoft Entra 조건부 액세스의 사용자·디바이스·위치·클라이언트 앱 조건으로 조정할 수 있습니다.
 
-This guide describes how to restrict users from directly downloading email attachments from Outlook on the web and guide them to open files through a safer cloud-based experience.
+## 구성 흐름
 
-This control is useful when organizations want to reduce the risk of malicious attachments being downloaded directly to unmanaged or vulnerable endpoints.
-
----
-
-## Business Scenario
-
-Organizations often receive attachments through email from external senders.
-
-Direct local download may introduce risks such as:
-
-- Malware execution
-- Data leakage
-- Uncontrolled local file storage
-- Endpoint infection
-- Unmanaged file transfer
-
-A safer approach is to restrict direct attachment download and encourage users to open files through OneDrive or browser-based preview where security controls can be applied.
-
----
-
-## Target Use Cases
-
-| Use Case | Description |
-|---|---|
-| Unmanaged device access | Prevent local download from browser sessions |
-| High-risk users | Restrict attachment handling for selected users |
-| External attachment risk | Reduce malicious file exposure |
-| Secure collaboration | Encourage cloud-based file access |
-
----
-
-## Architecture
-
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Attachment access control</span>
-    <strong>Block local download, preserve cloud preview</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Exchange Online attachment download restriction">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Exchange mailbox</strong><span>External or internal attachment arrives in a user mailbox.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Outlook on the web</strong><span>User accesses the message through browser-based experience.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>OWA mailbox policy</strong><span>Policy restricts direct download for selected users or scenarios.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Cloud viewer</strong><span>Users preview or open files in a safer cloud-controlled flow.</span></div>
-  </div>
-</div>
-
----
-
-## Configuration Concept
-
-Exchange Online can control Outlook on the web behavior through OWA mailbox policies.
-
-The recommended design is:
-
-1. Identify target user group.
-2. Review current OWA mailbox policies.
-3. Create or modify an OWA mailbox policy.
-4. Disable direct file access where required.
-5. Assign the policy to target users.
-6. Validate attachment behavior.
-
----
-
-## PowerShell Validation
-
-Administrators should first review existing OWA mailbox policies.
-
-```powershell
-Get-OwaMailboxPolicy | Select-Object Identity
+```text
+대상 사용자 → 조건부 액세스(Exchange Online) → 앱 적용 제한          ↘ OWA Mailbox Policy(ConditionalAccessPolicy=ReadOnly)             → 웹 열람 허용 / 첨부파일 다운로드·인쇄 제한
 ```
 
-Review target policy settings before changing production configuration.
+## 1. OWA Mailbox Policy 생성
 
----
+Exchange Online PowerShell에 연결한 뒤 별도의 테스트 정책을 만듭니다.
 
-## Recommended Implementation Steps
+```powershell
+New-OwaMailboxPolicy -Name '<Test Policy Name>'
+```
 
-| Step | Activity |
-|---|---|
-| 1 | Review business requirement |
-| 2 | Identify target users or groups |
-| 3 | Review current OWA mailbox policy |
-| 4 | Create dedicated policy if required |
-| 5 | Configure attachment access settings |
-| 6 | Assign policy to pilot users |
-| 7 | Validate attachment open/download behavior |
-| 8 | Expand deployment after pilot |
+조건부 액세스가 적용된 세션을 읽기 전용으로 처리합니다.
 
----
+```powershell
+Set-OwaMailboxPolicy -Identity '<Test Policy Name>' `  -ConditionalAccessPolicy ReadOnly
+```
 
-## Operational Considerations
+설정값을 확인합니다.
 
-| Area | Consideration |
-|---|---|
-| User Experience | Users may experience different attachment behavior in Outlook on the web |
-| Scope | Apply policy to pilot group before broad rollout |
-| Support | Help desk should understand expected behavior |
-| Exceptions | Executive or business-critical exceptions may be required |
-| Security Review | Validate with Defender for Office 365 and DLP policies |
+```powershell
+Get-OwaMailboxPolicy -Identity '<Test Policy Name>' |  Select-Object Identity, ConditionalAccessPolicy
+```
 
----
+`ConditionalAccessPolicy`가 `ReadOnly`인지 확인합니다.
 
-## Validation Checklist
+## 2. 사서함에 정책 연결
 
-- OWA mailbox policy applied
-- Target users assigned correctly
-- Attachment download behavior validated
-- OneDrive or browser preview behavior validated
-- Exception users tested
-- Help desk guide prepared
+```powershell
+Set-CASMailbox -Identity '<Test Mailbox Alias>' `  -OwaMailboxPolicy '<Test Policy Name>'
+```
 
----
+```powershell
+Get-CASMailbox -Identity '<Test Mailbox Alias>' |  Select-Object DisplayName, OwaMailboxPolicy
+```
 
-## Risk and Mitigation
+기존 사용자에게 일괄 할당하기 전에 테스트 사서함에서 영향도를 검증합니다.
 
-| Risk | Impact | Mitigation |
-|---|---|---|
-| User confusion | Support tickets increase | Provide user communication |
-| Business process impact | Users cannot download required files | Define exception process |
-| Wrong policy assignment | Unexpected access restriction | Pilot before full deployment |
-| Inconsistent client behavior | Different Outlook clients behave differently | Document supported scope |
+## 3. 조건부 액세스 정책 구성
 
----
+1. 대상은 테스트 사용자 또는 파일럿 그룹으로 지정합니다.
+2. 대상 리소스는 `Office 365 Exchange Online`을 선택합니다.
+3. 이 시나리오에서는 클라이언트 앱 조건을 **브라우저**로 지정합니다.
+4. 세션 제어에서 **앱 적용 제한(Use app enforced restrictions)** 을 선택합니다.
+5. 정책을 보고 전용으로 먼저 검증한 뒤 사용 상태로 전환합니다.
 
-## Recommended Deliverables
+정책 적용 후 전파에 수 분이 걸릴 수 있습니다.
 
-- OWA Policy Design
-- Target User List
-- Pilot Validation Result
-- Exception Process
-- User Communication Guide
-- Help Desk Runbook
+## 4. 동작 검증
 
----
+첨부파일이 있는 메일을 Outlook on the web에서 열고 다음을 확인합니다.
 
-## References
+- 다운로드 및 일부 작업이 제한된다는 안내가 표시됩니다.
+- 첨부파일 메뉴에서 다운로드 항목이 보이지 않습니다.
+- 첨부파일 미리보기는 가능하지만 다운로드와 파일 메뉴 옵션이 제한됩니다.
+- 인쇄 또는 로컬 저장 진입점이 제거됩니다.
+- 정책 대상이 아닌 예외 계정에서는 기존 동작이 유지됩니다.
 
-- Exchange Online PowerShell
-- Outlook on the web mailbox policy
-- Microsoft Defender for Office 365
-- Microsoft Purview Data Loss Prevention
+## 운영 체크리스트
 
-## 한국어 요약
+| 항목 | 확인 내용 |
+| --- | --- |
+| 범위 | 파일럿 사용자와 제외 계정이 정확한가 |
+| 정책 연결 | 대상 사서함에 전용 OWA 정책이 연결되었는가 |
+| 세션 제어 | 조건부 액세스에 앱 적용 제한이 선택되었는가 |
+| 사용자 경험 | 첨부파일 미리보기와 업무 흐름이 유지되는가 |
+| 예외 | 업무상 다운로드가 필요한 사용자 승인 절차가 있는가 |
+| 복구 | 기존 OWA 정책으로 되돌리는 롤백 절차가 준비되었는가 |
 
-Exchange Online download restriction은 Outlook on the web, attachment handling, DLP, browser access control을 함께 고려해 민감한 메일 첨부파일이 무분별하게 다운로드되는 것을 줄이기 위한 운영 설계입니다.
+## 통제 범위
 
-정책 적용 전에는 사용자 영향, 예외 프로세스, 지원 범위, 클라이언트별 동작 차이를 반드시 검토해야 합니다. 특히 업무상 첨부파일 다운로드가 필요한 부서에는 pilot과 예외 승인 절차가 필요합니다.
+이 구성은 OWA의 앱 적용 제한 기능을 이용하므로 MDCA 세션 프록시 없이도 브라우저 다운로드를 제한할 수 있습니다. 다만 다른 메일 클라이언트, 모바일 앱, 전달·복사, 화면 캡처 등의 경로는 별도 통제가 필요합니다. 조건부 액세스 범위와 각 클라이언트의 동작을 함께 검증해야 합니다.
 
-## 검색 키워드
+Microsoft의 `ReadOnly` 제한은 인라인 이미지에는 적용되지 않습니다. 인쇄 차단 여부와 기타 UI는 사용 중인 클라이언트에서 별도로 확인해야 하며, 이 설정을 모든 첨부 콘텐츠의 유출 방지로 간주하지 않습니다.
 
-- Exchange Online download restriction
-- Outlook on the web mailbox policy
-- OWA attachment download control
-- Microsoft 365 DLP attachment
-- Exchange Online 보안 정책
-- Outlook 첨부파일 다운로드 제한
+## 원문 및 참고자료
 
-## Contact / Asset Request
+- [사서함 첨부파일 다운로드 방지 구성 (No MDCA)](https://fetilonia.notion.site/no-MDCA-3b5dbd591ead8025b26fcab74ded1aaa)
+- [Microsoft Learn: Exchange Online recommendations for Zero Trust](https://learn.microsoft.com/security/zero-trust/deploy/applications-office-365)
 
-For OWA policy designs, target user matrices, pilot validation sheets, exception process templates or user communication guides, use [Contact and Asset Request](../contact).
+- [Microsoft Learn: Set-OwaMailboxPolicy ConditionalAccessPolicy](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps#-conditionalaccesspolicy)
+- [Microsoft Learn: Recommended Exchange access policies](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-identity-device-access-policies-exchange)

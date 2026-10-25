@@ -6,30 +6,49 @@ toc_max_heading_level: 2
 
 # Executive Summary Template
 
-<section class="kc-topic-hero" aria-label="Executive Summary template hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Executive Summary template hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Translate technical scope into executive decision language</h2>
     <p>Executive Summary should connect business pressure, risk, recommended approach, expected value and the decision required from leadership.</p>
-    <div class="kc-hero-signal-row" aria-label="Executive summary signals">
+    <div aria-label="Executive summary signals" className="kc-hero-signal-row">
       <span>Challenge</span>
       <span>Objective</span>
       <span>Value</span>
       <span>Decision</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Executive Summary design model">
-    <div class="kc-factory-panel__header"><span>Narrative Flow</span><strong>Decision-ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-drivers" class="kc-factory-card"><small>01</small><strong>Why now</strong><span>Business pressure, risk, inefficiency or strategic timing.</span></a>
-      <a href="#recommended-structure" class="kc-factory-card"><small>02</small><strong>Direction</strong><span>Target outcome, recommended approach and roadmap shape.</span></a>
-      <a href="#expected-business-outcomes" class="kc-factory-card"><small>03</small><strong>Value</strong><span>Productivity, security, governance, innovation and cost impact.</span></a>
-      <a href="#executive-message-patterns" class="kc-factory-card"><small>04</small><strong>Decision</strong><span>Approval, funding, pilot, assessment or next-step request.</span></a>
+  <div aria-label="Executive Summary design model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Narrative Flow</span>
+      <strong>Decision-ready</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-drivers" className="kc-factory-card">
+        <small>01</small>
+        <strong>Why now</strong>
+        <span>Business pressure, risk, inefficiency or strategic timing.</span>
+      </a>
+      <a href="#recommended-structure" className="kc-factory-card">
+        <small>02</small>
+        <strong>Direction</strong>
+        <span>Target outcome, recommended approach and roadmap shape.</span>
+      </a>
+      <a href="#expected-business-outcomes" className="kc-factory-card">
+        <small>03</small>
+        <strong>Value</strong>
+        <span>Productivity, security, governance, innovation and cost impact.</span>
+      </a>
+      <a href="#executive-message-patterns" className="kc-factory-card">
+        <small>04</small>
+        <strong>Decision</strong>
+        <span>Approval, funding, pilot, assessment or next-step request.</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="kc-request-panel" aria-label="Executive summary editable asset request">
+<div aria-label="Executive summary editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Executive summary narrative template</strong>
   <span>Use this asset to translate technical scope, business driver, risk and roadmap into executive language. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -51,15 +70,42 @@ Executive Summary는 기술 설명을 임원 의사결정 언어로 바꾸는 �
 
 ## Executive Narrative Flow
 
-<div class="kc-journey-map" aria-label="Executive narrative flow">
-  <div class="kc-journey-map__header"><span>Executive Narrative Flow</span><strong>Problem to decision</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Current Challenge</strong><span>Risk, inefficiency, adoption pressure or migration complexity.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Strategic Objective</strong><span>Business, security, governance or productivity outcome.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Recommended Approach</strong><span>Architecture direction, program model and delivery path.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Delivery Roadmap</strong><span>Phases, decision gates, dependencies and acceptance checkpoints.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Expected Value</strong><span>Productivity, security, governance, innovation and cost impact.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Executive Decision</strong><span>Approval, funding, pilot, assessment or next step.</span></div>
+<div aria-label="Executive narrative flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Executive Narrative Flow</span>
+    <strong>Problem to decision</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Current Challenge</strong>
+      <span>Risk, inefficiency, adoption pressure or migration complexity.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Strategic Objective</strong>
+      <span>Business, security, governance or productivity outcome.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Recommended Approach</strong>
+      <span>Architecture direction, program model and delivery path.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Delivery Roadmap</strong>
+      <span>Phases, decision gates, dependencies and acceptance checkpoints.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Expected Value</strong>
+      <span>Productivity, security, governance, innovation and cost impact.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Executive Decision</strong>
+      <span>Approval, funding, pilot, assessment or next step.</span>
+    </div>
   </div>
 </div>
 

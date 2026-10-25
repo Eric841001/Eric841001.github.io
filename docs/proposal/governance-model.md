@@ -6,25 +6,49 @@ toc_max_heading_level: 2
 
 # Governance Model
 
-<section class="kc-topic-hero" aria-label="Governance Model hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Governance Model hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Make decision rights, escalation and change control visible</h2>
     <p>Governance Model explains who owns decisions, how risks are escalated, how scope changes are controlled and how project cadence supports delivery quality.</p>
-    <div class="kc-hero-signal-row" aria-label="Governance Model signals"><span>Steering</span><span>PMO</span><span>Security</span><span>Delivery</span></div>
+    <div aria-label="Governance Model signals" className="kc-hero-signal-row">
+      <span>Steering</span>
+      <span>PMO</span>
+      <span>Security</span>
+      <span>Delivery</span>
+    </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Governance Model design model">
-    <div class="kc-factory-panel__header"><span>Governance Model</span><strong>Decision-safe</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#core-roles" class="kc-factory-card"><small>01</small><strong>Roles</strong><span>Sponsor, steering committee, PM, technical lead and business owner.</span></a>
-      <a href="#meeting-cadence" class="kc-factory-card"><small>02</small><strong>Cadence</strong><span>Steering, status, technical workshop, security review and change control.</span></a>
-      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Escalation, scope control, risk acceptance and evidence requirements.</span></a>
-      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable governance model can be shared by scenario.</span></a>
+  <div aria-label="Governance Model design model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Governance Model</span>
+      <strong>Decision-safe</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#core-roles" className="kc-factory-card">
+        <small>01</small>
+        <strong>Roles</strong>
+        <span>Sponsor, steering committee, PM, technical lead and business owner.</span>
+      </a>
+      <a href="#meeting-cadence" className="kc-factory-card">
+        <small>02</small>
+        <strong>Cadence</strong>
+        <span>Steering, status, technical workshop, security review and change control.</span>
+      </a>
+      <a href="#decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decisions</strong>
+        <span>Escalation, scope control, risk acceptance and evidence requirements.</span>
+      </a>
+      <a href="../contact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Request</strong>
+        <span>Editable governance model can be shared by scenario.</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="kc-request-panel" aria-label="Governance model editable asset request">
+<div aria-label="Governance model editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Governance model template</strong>
   <span>Use this asset to define owners, cadence, decision rights, exception handling and reporting rhythm. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -44,15 +68,42 @@ Governance Model은 프로젝트 운영 구조를 설명하는 제안서 핵심 
 
 ## Governance Structure
 
-<div class="kc-journey-map" aria-label="Governance structure flow">
-  <div class="kc-journey-map__header"><span>Governance Structure</span><strong>Executive decision to delivery execution</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Executive Steering</strong><span>Funding, priority, risk acceptance and major decision review.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>PMO</strong><span>Schedule, issue, risk, communication and status control.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Architecture Team</strong><span>Technical design, quality review and implementation direction.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security / Compliance</strong><span>Control baseline, exception, evidence and policy validation.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Business Owners</strong><span>User impact, adoption, acceptance and readiness decisions.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Delivery Workstreams</strong><span>Execution, validation, handover and closure evidence.</span></div>
+<div aria-label="Governance structure flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Governance Structure</span>
+    <strong>Executive decision to delivery execution</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Executive Steering</strong>
+      <span>Funding, priority, risk acceptance and major decision review.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>PMO</strong>
+      <span>Schedule, issue, risk, communication and status control.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Architecture Team</strong>
+      <span>Technical design, quality review and implementation direction.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Security / Compliance</strong>
+      <span>Control baseline, exception, evidence and policy validation.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Business Owners</strong>
+      <span>User impact, adoption, acceptance and readiness decisions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Delivery Workstreams</strong>
+      <span>Execution, validation, handover and closure evidence.</span>
+    </div>
   </div>
 </div>
 

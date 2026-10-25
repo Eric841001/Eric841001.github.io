@@ -7,17 +7,29 @@ description: Microsoft Defender for Endpoint Windows offboarding guide using Int
 
 # Microsoft Defender for Endpoint Windows Offboarding
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">MDE WINDOWS OFFBOARDING</span>
+    <span className="kc-eyebrow">MDE WINDOWS OFFBOARDING</span>
     <h2>Remove Defender coverage only with lifecycle evidence</h2>
     <p>Windows offboarding should connect approval, Intune deployment, sensor validation, inventory updates and audit records so unmanaged endpoint risk does not appear silently.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Windows offboarding focus">
-    <div><strong>Approve</strong><span>Scope</span></div>
-    <div><strong>Intune</strong><span>Deploy</span></div>
-    <div><strong>MDE</strong><span>State</span></div>
-    <div><strong>Audit</strong><span>Record</span></div>
+  <div aria-label="Windows offboarding focus" className="kc-hero-metrics">
+    <div>
+      <strong>Approve</strong>
+      <span>Scope</span>
+    </div>
+    <div>
+      <strong>Intune</strong>
+      <span>Deploy</span>
+    </div>
+    <div>
+      <strong>MDE</strong>
+      <span>State</span>
+    </div>
+    <div>
+      <strong>Audit</strong>
+      <span>Record</span>
+    </div>
   </div>
 </section>
 
@@ -49,19 +61,35 @@ Device retirement, tenant migration, security tool transition 상황에서 사�
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Windows offboarding architecture</span>
     <strong>Controlled removal from Defender scope</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Windows Defender offboarding architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Approval trigger</strong><span>Device retirement, tenant migration, lab cleanup or security tool transition is approved.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Intune assignment</strong><span>Deploy offboarding package only to controlled target groups.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Windows device</strong><span>Device processes offboarding package and sensor state changes are monitored.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Audit record</strong><span>Update inventory, evidence, exception register and post-offboarding risk status.</span></div>
+  <div className="kc-journey-map" aria-label="Windows Defender offboarding architecture">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Approval trigger</strong>
+  <span>Device retirement, tenant migration, lab cleanup or security tool transition is approved.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Intune assignment</strong>
+  <span>Deploy offboarding package only to controlled target groups.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Windows device</strong>
+  <span>Device processes offboarding package and sensor state changes are monitored.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Audit record</strong>
+  <span>Update inventory, evidence, exception register and post-offboarding risk status.</span>
+</div>
   </div>
 </div>
 
@@ -69,19 +97,35 @@ Device retirement, tenant migration, security tool transition 상황에서 사�
 
 ## Offboarding Workflow
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Offboarding workflow</span>
     <strong>Package to evidence</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Windows offboarding workflow">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Package</strong><span>Generate Defender offboarding package and document expiry and scope.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Deploy</strong><span>Assign through Intune to selected devices using a staged rollout group.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Validate</strong><span>Confirm sensor state, portal inventory, device retirement and replacement protection.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Record</strong><span>Store audit evidence and update asset, support and security operations records.</span></div>
+  <div className="kc-journey-map" aria-label="Windows offboarding workflow">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Package</strong>
+  <span>Generate Defender offboarding package and document expiry and scope.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Deploy</strong>
+  <span>Assign through Intune to selected devices using a staged rollout group.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Validate</strong>
+  <span>Confirm sensor state, portal inventory, device retirement and replacement protection.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Record</strong>
+  <span>Store audit evidence and update asset, support and security operations records.</span>
+</div>
   </div>
 </div>
 

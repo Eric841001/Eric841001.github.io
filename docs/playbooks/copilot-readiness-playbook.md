@@ -7,17 +7,29 @@ sidebar_label: Copilot Readiness
 
 # Microsoft 365 Copilot Readiness Playbook
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">COPILOT READINESS PLAYBOOK</span>
+    <span className="kc-eyebrow">COPILOT READINESS PLAYBOOK</span>
     <h2>Make Copilot adoption a governed readiness program</h2>
     <p>Readiness should align identity, security, data, compliance, adoption and governance before pilot and enterprise rollout.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Copilot readiness playbook focus">
-    <div><strong>ID</strong><span>Identity</span></div>
-    <div><strong>Data</strong><span>Sharing</span></div>
-    <div><strong>Adopt</strong><span>Change</span></div>
-    <div><strong>KPI</strong><span>Value</span></div>
+  <div aria-label="Copilot readiness playbook focus" className="kc-hero-metrics">
+    <div>
+      <strong>ID</strong>
+      <span>Identity</span>
+    </div>
+    <div>
+      <strong>Data</strong>
+      <span>Sharing</span>
+    </div>
+    <div>
+      <strong>Adopt</strong>
+      <span>Change</span>
+    </div>
+    <div>
+      <strong>KPI</strong>
+      <span>Value</span>
+    </div>
   </div>
 </section>
 
@@ -46,21 +58,26 @@ The readiness assessment should answer:
 
 ## Readiness Framework
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Readiness framework</span>
-    <strong>Business goal to rollout roadmap</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Copilot readiness framework">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Business alignment</strong><span>Clarify AI goals, priority use cases, executive sponsorship and success metrics.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Technical readiness</strong><span>Assess identity, security, compliance, SharePoint, Teams and OneDrive risk posture.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Adoption readiness</strong><span>Prepare champions, training, support, communications and feedback channels.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Roadmap development</strong><span>Build pilot, remediation, rollout, KPI and governance backlog for scale.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Readiness framework</span>
+  <strong>Business goal to rollout roadmap</strong>
+</div><div aria-label="Copilot readiness framework" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Business alignment</strong>
+  <span>Clarify AI goals, priority use cases, executive sponsorship and success metrics.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Technical readiness</strong>
+  <span>Assess identity, security, compliance, SharePoint, Teams and OneDrive risk posture.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Adoption readiness</strong>
+  <span>Prepare champions, training, support, communications and feedback channels.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Roadmap development</strong>
+  <span>Build pilot, remediation, rollout, KPI and governance backlog for scale.</span>
+</div></div></div>
 
 ---
 
@@ -88,6 +105,22 @@ Examples:
 - Customer communications
 
 ---
+
+### Microsoft 365 Copilot Workload Prerequisites
+
+A Copilot license assignment is necessary, but it is not sufficient evidence that every workload prerequisite is ready. Validate the deployed state for each pilot user:
+
+| Prerequisite | Deployment validation |
+| --- | --- |
+| Eligible Microsoft 365 base license and Copilot license | Confirm the assigned products and enabled service plans for the user. |
+| Microsoft Entra ID account | Confirm the user can authenticate with the intended tenant identity and policy set. |
+| Exchange Online primary mailbox | Verify that the primary mailbox is actually provisioned in Exchange Online. Microsoft 365 Copilot is not supported with an on-premises or hybrid primary mailbox, and archive, group, shared, and delegated mailboxes do not replace this requirement. |
+| Microsoft 365 Apps | Deploy supported apps, review connected-experience privacy controls, and allow the Office Feature Updates task to run. |
+| OneDrive | Provision OneDrive where the selected Copilot scenarios depend on OneDrive-backed features. |
+| Browser | Enable third-party cookies when Word, Excel, or PowerPoint for the web requires them for Copilot. |
+| Network | Allow Microsoft 365 endpoints and full WebSocket connectivity to `*.cloud.microsoft` and `*.office.com`; review TLS inspection, proxy timeout, and perimeter controls. |
+
+Do not treat a client-side eligibility flag or an acquired license state as proof that the Exchange Online mailbox, OneDrive, network, and application dependencies have finished provisioning. Record both entitlement and workload provisioning evidence before pilot acceptance.
 
 ## Identity Readiness
 
@@ -184,6 +217,12 @@ Review:
 Organizations handling regulated data require additional controls.
 
 ---
+
+Copilot and AI-app retention policies can retain and delete user prompts and responses for compliance. Microsoft Purview uses hidden folders in the user's Exchange Online mailbox for backend retention and eDiscovery processes. The messages visible in a Copilot experience are therefore not a reliable indicator of whether compliance data is retained or permanently deleted. Validate policy scope, eDiscovery searchability, other holds, and the separate retention locations used by newly created policies for Copilot and AI apps.
+
+### 한국어 운영 요약
+
+Copilot 라이선스가 할당됐다는 사실만으로 배포 준비가 끝난 것은 아닙니다. 사용자별 Exchange Online 기본 사서함의 실제 생성 여부, Entra ID, Microsoft 365 Apps, OneDrive, 네트워크 및 WebSocket 연결을 별도로 확인해야 합니다. 또한 Copilot 프롬프트와 응답의 보존은 사용자 화면이 아니라 Purview retention 및 eDiscovery 근거로 검증해야 합니다.
 
 ## User Readiness
 
@@ -336,15 +375,63 @@ Optimization and Adoption Analytics
 
 ---
 
+## Troubleshooting Protected Documents in Copilot Chat
+
+A message such as “your organization's policy prevents access to the requested file or resource” is not, by itself, proof that a sensitivity label or DLP rule blocked the request. Use an evidence-based sequence that separates authorization, protection, workload provisioning, and network failures.
+
+### Anonymized field observation
+
+In one controlled troubleshooting case, Copilot Chat could identify a sensitivity-labeled, encrypted SharePoint file but could not use the document body for grounding. The test account showed Copilot client eligibility and file-upload capability, while its Exchange Online primary mailbox had not been provisioned.
+
+After the primary mailbox was provisioned, the same user and encrypted document produced body-level citations and a successful summary without removing the label or encryption. This before-and-after result supports mailbox provisioning as the operational remediation for that case. It does **not** establish a publicly documented Microsoft backend call path, nor does it mean every protected-content failure has the same cause.
+
+### Diagnostic sequence
+
+1. **Reproduce safely.** Use an approved test document and record the user, app, timestamp, prompt type, and expected access without publishing tenant or label identifiers.
+2. **Validate source access.** Confirm that the user can open the SharePoint or OneDrive file directly and that file permissions, sharing links, label publishing scope, and encryption rights are valid.
+3. **Separate policy evidence from UI text.** Review DLP and sensitivity-label policy results for an explicit block action. A generic policy message is not sufficient evidence of Purview enforcement.
+4. **Verify the workload, not only the license.** Confirm an Exchange Online primary mailbox exists and is usable. Do not infer provisioning from Copilot eligibility, license acquisition, or an enabled Exchange service plan alone.
+5. **Check application and network prerequisites.** Validate supported Microsoft 365 Apps, connected experiences, third-party cookies where required, Microsoft 365 endpoints, WSS connectivity, TLS inspection, and proxy timeouts.
+6. **Retest without weakening protection.** Keep the same label, encryption, permissions, and network path where possible. Change one variable at a time and compare the failed and successful grounding results.
+7. **Validate compliance handling.** Confirm the intended Purview retention policy location and use eDiscovery evidence rather than the visible Copilot chat history to verify retention or deletion.
+
+### Evidence matrix
+
+| Signal | What it proves | What it does not prove |
+| --- | --- | --- |
+| Copilot license assigned | The user has the intended entitlement | Exchange Online mailbox and other workloads are fully provisioned |
+| Client eligibility or file-upload UI | The client exposes an eligible experience | The protected document body can be grounded |
+| File opens in SharePoint | The user has source-file access in that path | Copilot workload, network, and compliance dependencies are healthy |
+| Sensitivity label detected | Copilot or SharePoint can identify protection metadata | Purview issued the block shown in the UI |
+| WSS connection succeeds | The real-time transport was established | A usable body-level citation was created |
+| Primary mailbox exists in Exchange Online | A documented Copilot prerequisite is present | Every protected-content failure is resolved |
+| eDiscovery returns the interaction | Compliance data remains searchable | The interaction must still be visible in the Copilot UI |
+
+### Pre-deployment acceptance checklist
+
+- [ ]   Eligible base license and Microsoft 365 Copilot license are assigned.
+- [ ]   Exchange Online primary mailbox is provisioned and verified for every pilot user.
+- [ ]   Microsoft Entra ID, supported apps, privacy controls, browser settings, and OneDrive-dependent scenarios are validated.
+- [ ]   Microsoft 365 endpoints and WSS to `*.cloud.microsoft` and `*.office.com` are allowed through proxies and inspection controls.
+- [ ]   SharePoint permissions, sensitivity-label publishing scope, encryption rights, and DLP mode are documented.
+- [ ]   Failed and successful tests use the same protected content and change one dependency at a time.
+- [ ]   Copilot and AI-app retention locations, retention periods, holds, and eDiscovery validation are approved by compliance owners.
+- [ ]   Evidence excludes customer names, tenant IDs, label GUIDs, packet captures, and document contents from public documentation.
+
+---
+
 ## References
 
-- Microsoft 365 Copilot Adoption Framework
-- Microsoft Learn
-- Microsoft AI Transformation Guidance
-- Microsoft Security Adoption Framework
-- Microsoft Graph Documentation
+
+- [Minimum requirements to deploy Microsoft 365 Copilot in your organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements)
+- [Microsoft 365 app and network requirements for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-requirements)
+- [Learn about retention for Copilot and AI apps](https://learn.microsoft.com/en-us/purview/retention-policies-copilot)
+- [Microsoft 365 Copilot Adoption](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-adoption)
+
+The troubleshooting pattern above was generalized from an anonymized field investigation. Microsoft Learn is authoritative for supported requirements and retention behavior; packet-level interpretations remain case-specific technical observations.
 
 ## 검색 키워드
+
 
 - Microsoft 365 playbook
 - Copilot readiness playbook
@@ -353,6 +440,10 @@ Optimization and Adoption Analytics
 - change management playbook
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
+- Copilot Exchange Online primary mailbox
+- Copilot sensitivity label troubleshooting
+- Copilot 조직 정책 파일 오류
+- Copilot retention eDiscovery
 
 ## Contact / Asset Request
 

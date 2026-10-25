@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Multi-Agent Framework
 
-<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Multi-agent framework hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Multi-Agent Architecture</span>
+<section aria-label="Multi-agent framework hero" className="kc-topic-hero kc-topic-hero--agent">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Multi-Agent Architecture</span>
     <h2>Coordinate specialist agents without losing control</h2>
     <p>Multi-agent systems become valuable when complex work is divided across specialist agents and governed through a coordinator, policy boundary, human review and measurable outcomes.</p>
-    <div class="kc-hero-signal-row" aria-label="Multi-agent operating signals">
+    <div aria-label="Multi-agent operating signals" className="kc-hero-signal-row">
       <span>Coordinate</span>
       <span>Specialize</span>
       <span>Review</span>
       <span>Measure</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Multi-agent related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/copilot/agentic-ai-architecture">Agentic AI Architecture</a>
-      <a class="kc-topic-button" href="/knowledge/copilot/agent-factory-operating-model">Agent Factory</a>
-      <a class="kc-topic-button" href="/knowledge/projects/case-study-enterprise-ai-agent-factory">Customer Pattern</a>
+    <div aria-label="Multi-agent related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/copilot/agentic-ai-architecture" className="kc-topic-button kc-topic-button--primary">Agentic AI Architecture</a>
+      <a href="/knowledge/copilot/agent-factory-operating-model" className="kc-topic-button">Agent Factory</a>
+      <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory" className="kc-topic-button">Customer Pattern</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Multi-agent system visual">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Multi-agent system visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Agent Team</span>
       <strong>Specialists with control</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#coordinator-agent" class="kc-factory-card"><small>01</small><strong>Coordinator</strong><span>Decomposes work, assigns agents and consolidates response.</span></a>
-      <a href="#knowledge-agent" class="kc-factory-card"><small>02</small><strong>Knowledge</strong><span>Retrieves policies, history, reference assets and enterprise context.</span></a>
-      <a href="#task-agent" class="kc-factory-card"><small>03</small><strong>Task</strong><span>Executes workflow, ticket, CRM, proposal or system actions.</span></a>
-      <a href="#review-agent" class="kc-factory-card"><small>04</small><strong>Review</strong><span>Checks quality, completeness, compliance and business fit.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#coordinator-agent" className="kc-factory-card">
+        <small>01</small>
+        <strong>Coordinator</strong>
+        <span>Decomposes work, assigns agents and consolidates response.</span>
+      </a>
+      <a href="#knowledge-agent" className="kc-factory-card">
+        <small>02</small>
+        <strong>Knowledge</strong>
+        <span>Retrieves policies, history, reference assets and enterprise context.</span>
+      </a>
+      <a href="#task-agent" className="kc-factory-card">
+        <small>03</small>
+        <strong>Task</strong>
+        <span>Executes workflow, ticket, CRM, proposal or system actions.</span>
+      </a>
+      <a href="#review-agent" className="kc-factory-card">
+        <small>04</small>
+        <strong>Review</strong>
+        <span>Checks quality, completeness, compliance and business fit.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Control point</strong>
       <span>Multi-agent design should reduce complexity for users, not hide complexity from governance owners.</span>
     </div>
@@ -92,34 +107,82 @@ A multi-agent architecture distributes responsibilities across specialized agent
 
 ## Core Architecture
 
-<div class="kc-journey-map" aria-label="Multi-agent core architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="Multi-agent core architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Core Architecture</span>
     <strong>User request to governed response</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User Request</strong><span>Business question, workflow request or executive task.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>02</small><strong>Coordinator</strong><span>Plans work, assigns specialists and owns final orchestration.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Specialists</strong><span>Knowledge, task, review, compliance and reporting agents.</span></div>
-    <div class="kc-journey-node"><small>04</small><strong>Human Review</strong><span>Approves sensitive actions, exceptions and external-facing outputs.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Control Plane</strong><span>Identity, DLP, audit, telemetry, cost and evaluation signals.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Final Response</strong><span>Consolidated answer, action result, report or decision support.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User Request</strong>
+      <span>Business question, workflow request or executive task.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>02</small>
+      <strong>Coordinator</strong>
+      <span>Plans work, assigns specialists and owns final orchestration.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Specialists</strong>
+      <span>Knowledge, task, review, compliance and reporting agents.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>04</small>
+      <strong>Human Review</strong>
+      <span>Approves sensitive actions, exceptions and external-facing outputs.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Control Plane</strong>
+      <span>Identity, DLP, audit, telemetry, cost and evaluation signals.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Final Response</strong>
+      <span>Consolidated answer, action result, report or decision support.</span>
+    </div>
   </div>
 </div>
 
-<div class="kc-context-panel" aria-label="Multi-agent responsibility model">
-  <div class="kc-context-panel__lead">
+<div aria-label="Multi-agent responsibility model" className="kc-context-panel">
+  <div className="kc-context-panel__lead">
     <small>Responsibility Model</small>
     <strong>Each specialist should have a narrow purpose and an explicit boundary.</strong>
     <span>The coordinator should not become an uncontrolled super-agent. It should route work, enforce policy and explain how final outputs were assembled.</span>
   </div>
-  <div class="kc-context-panel__grid">
-    <a href="#coordinator-agent"><small>Coordinate</small><strong>Task decomposition</strong><span>Break complex requests into specialist work packets.</span></a>
-    <a href="#knowledge-agent"><small>Ground</small><strong>Enterprise knowledge</strong><span>Retrieve approved information from Microsoft 365 and business systems.</span></a>
-    <a href="#task-agent"><small>Act</small><strong>Workflow execution</strong><span>Trigger tools, APIs, approvals and business actions within scope.</span></a>
-    <a href="#review-agent"><small>Review</small><strong>Quality and consistency</strong><span>Check completeness, format, accuracy and business alignment.</span></a>
-    <a href="#compliance-agent"><small>Control</small><strong>Compliance review</strong><span>Evaluate policy, data handling and risk before delivery.</span></a>
-    <a href="#reporting-agent"><small>Report</small><strong>Executive output</strong><span>Create summaries, dashboards and stakeholder-ready narratives.</span></a>
+  <div className="kc-context-panel__grid">
+    <a href="#coordinator-agent">
+      <small>Coordinate</small>
+      <strong>Task decomposition</strong>
+      <span>Break complex requests into specialist work packets.</span>
+    </a>
+    <a href="#knowledge-agent">
+      <small>Ground</small>
+      <strong>Enterprise knowledge</strong>
+      <span>Retrieve approved information from Microsoft 365 and business systems.</span>
+    </a>
+    <a href="#task-agent">
+      <small>Act</small>
+      <strong>Workflow execution</strong>
+      <span>Trigger tools, APIs, approvals and business actions within scope.</span>
+    </a>
+    <a href="#review-agent">
+      <small>Review</small>
+      <strong>Quality and consistency</strong>
+      <span>Check completeness, format, accuracy and business alignment.</span>
+    </a>
+    <a href="#compliance-agent">
+      <small>Control</small>
+      <strong>Compliance review</strong>
+      <span>Evaluate policy, data handling and risk before delivery.</span>
+    </a>
+    <a href="#reporting-agent">
+      <small>Report</small>
+      <strong>Executive output</strong>
+      <span>Create summaries, dashboards and stakeholder-ready narratives.</span>
+    </a>
   </div>
 </div>
 
@@ -273,17 +336,37 @@ Generate:
 
 ## Enterprise Agent Taxonomy
 
-<div class="kc-journey-map" aria-label="Enterprise agent taxonomy">
-  <div class="kc-journey-map__header">
+<div aria-label="Enterprise agent taxonomy" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Enterprise Agent Taxonomy</span>
     <strong>Group agents by business capability and control needs</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Strategic</strong><span>Executive briefing, planning, portfolio and decision-support agents.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Operational</strong><span>Service desk, HR, finance and repeatable work execution agents.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Knowledge</strong><span>Policy, architecture, standards, proposal and reusable asset agents.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Compliance</strong><span>Security, privacy, audit, exception and control-review agents.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Delivery</strong><span>Project, migration, proposal, handover and reporting agents.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Strategic</strong>
+      <span>Executive briefing, planning, portfolio and decision-support agents.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Operational</strong>
+      <span>Service desk, HR, finance and repeatable work execution agents.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Knowledge</strong>
+      <span>Policy, architecture, standards, proposal and reusable asset agents.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Compliance</strong>
+      <span>Security, privacy, audit, exception and control-review agents.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Delivery</strong>
+      <span>Project, migration, proposal, handover and reporting agents.</span>
+    </div>
   </div>
 </div>
 
@@ -317,17 +400,37 @@ Scout can:
 
 In future architectures:
 
-<div class="kc-journey-map" aria-label="Microsoft Scout multi-agent integration">
-  <div class="kc-journey-map__header">
+<div aria-label="Microsoft Scout multi-agent integration" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Microsoft Scout Integration</span>
     <strong>Personal orchestration layer for specialist agents</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Scout</strong><span>Tracks personal work, priorities, meetings, risk and next actions.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Coordinator</strong><span>Routes intent to the right specialist agent and keeps task context.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Specialists</strong><span>Knowledge, task, compliance and reporting agents execute scoped work.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Review</strong><span>Human approval and governance controls apply before sensitive actions.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Outcome</strong><span>Meeting prep, risk summary, draft output or work package is returned.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Scout</strong>
+      <span>Tracks personal work, priorities, meetings, risk and next actions.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Coordinator</strong>
+      <span>Routes intent to the right specialist agent and keeps task context.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Specialists</strong>
+      <span>Knowledge, task, compliance and reporting agents execute scoped work.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Review</strong>
+      <span>Human approval and governance controls apply before sensitive actions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Outcome</strong>
+      <span>Meeting prep, risk summary, draft output or work package is returned.</span>
+    </div>
   </div>
 </div>
 
@@ -341,16 +444,32 @@ Scout becomes the user's personal orchestration layer.
 
 Sequential
 
-<div class="kc-journey-map" aria-label="Sequential agent communication pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Sequential agent communication pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Pattern 1</span>
     <strong>Sequential handoff</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>A</small><strong>Research</strong><span>Collect facts, source material and business context.</span></div>
-    <div class="kc-journey-node"><small>B</small><strong>Draft</strong><span>Create the first output from the research package.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>C</small><strong>Review</strong><span>Check quality, policy, risk and missing assumptions.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>D</small><strong>Deliver</strong><span>Publish the approved output or hand it to the next workflow.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>A</small>
+      <strong>Research</strong>
+      <span>Collect facts, source material and business context.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>B</small>
+      <strong>Draft</strong>
+      <span>Create the first output from the research package.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>C</small>
+      <strong>Review</strong>
+      <span>Check quality, policy, risk and missing assumptions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>D</small>
+      <strong>Deliver</strong>
+      <span>Publish the approved output or hand it to the next workflow.</span>
+    </div>
   </div>
 </div>
 
@@ -364,17 +483,37 @@ Research → Draft → Review → Deliver
 
 Parallel
 
-<div class="kc-journey-map" aria-label="Parallel agent communication pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Parallel agent communication pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Pattern 2</span>
     <strong>Parallel specialist review</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>A</small><strong>Shared input</strong><span>One work package is distributed to multiple specialist agents.</span></div>
-    <div class="kc-journey-node"><small>B</small><strong>Policy</strong><span>Policy and governance review.</span></div>
-    <div class="kc-journey-node"><small>C</small><strong>Security</strong><span>Security and risk review.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>D</small><strong>Architecture</strong><span>Technical fit and integration review.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>E</small><strong>Consolidate</strong><span>Combine findings into one decision-ready output.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>A</small>
+      <strong>Shared input</strong>
+      <span>One work package is distributed to multiple specialist agents.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>B</small>
+      <strong>Policy</strong>
+      <span>Policy and governance review.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>C</small>
+      <strong>Security</strong>
+      <span>Security and risk review.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>D</small>
+      <strong>Architecture</strong>
+      <span>Technical fit and integration review.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>E</small>
+      <strong>Consolidate</strong>
+      <span>Combine findings into one decision-ready output.</span>
+    </div>
   </div>
 </div>
 
@@ -396,17 +535,37 @@ then consolidate.
 
 Hierarchical
 
-<div class="kc-journey-map" aria-label="Hierarchical agent communication pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Hierarchical agent communication pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Pattern 3</span>
     <strong>Hierarchical orchestration</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Master agent</strong><span>Owns goal, decomposition, dependency handling and final synthesis.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Team agent A</strong><span>Executes a domain-specific workstream.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Team agent B</strong><span>Handles a second workstream with its own tools and knowledge.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Team agent C</strong><span>Reviews risk, governance or quality before completion.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Final output</strong><span>The master agent combines workstreams into one governed result.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Master agent</strong>
+      <span>Owns goal, decomposition, dependency handling and final synthesis.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Team agent A</strong>
+      <span>Executes a domain-specific workstream.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Team agent B</strong>
+      <span>Handles a second workstream with its own tools and knowledge.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Team agent C</strong>
+      <span>Reviews risk, governance or quality before completion.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Final output</strong>
+      <span>The master agent combines workstreams into one governed result.</span>
+    </div>
   </div>
 </div>
 
@@ -427,17 +586,37 @@ Benefits:
 
 Example:
 
-<div class="kc-journey-map" aria-label="MCP in multi-agent systems">
-  <div class="kc-journey-map__header">
+<div aria-label="MCP in multi-agent systems" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>MCP Integration</span>
     <strong>Shared tool layer for consistent agent actions</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent A</strong><span>Requests a business system action through a standard interface.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Agent B</strong><span>Uses the same tool contract for a different workflow.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>MCP</strong><span>Standardizes tool access, permission checks and integration patterns.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Systems</strong><span>SAP, ServiceNow, Salesforce and internal APIs stay behind governed connectors.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Result</strong><span>Agents act consistently without duplicating integration logic.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Agent A</strong>
+      <span>Requests a business system action through a standard interface.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Agent B</strong>
+      <span>Uses the same tool contract for a different workflow.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>MCP</strong>
+      <span>Standardizes tool access, permission checks and integration patterns.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Systems</strong>
+      <span>SAP, ServiceNow, Salesforce and internal APIs stay behind governed connectors.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Result</strong>
+      <span>Agents act consistently without duplicating integration logic.</span>
+    </div>
   </div>
 </div>
 
@@ -485,16 +664,32 @@ Examples:
 
 ## Human-in-the-Loop Architecture
 
-<div class="kc-journey-map" aria-label="Human in the loop architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="Human in the loop architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Human-in-the-Loop</span>
     <strong>Sensitive actions stay reviewable and auditable</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent proposal</strong><span>The agent prepares a recommendation, draft, action or exception request.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Policy review</strong><span>Rules, confidence, data sensitivity and business risk are checked.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Human approval</strong><span>Named owner approves, rejects or requests changes.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>04</small><strong>Execute</strong><span>The approved action runs with audit trail and rollback path.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Agent proposal</strong>
+      <span>The agent prepares a recommendation, draft, action or exception request.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Policy review</strong>
+      <span>Rules, confidence, data sensitivity and business risk are checked.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>03</small>
+      <strong>Human approval</strong>
+      <span>Named owner approves, rejects or requests changes.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>04</small>
+      <strong>Execute</strong>
+      <span>The approved action runs with audit trail and rollback path.</span>
+    </div>
   </div>
 </div>
 
@@ -556,17 +751,37 @@ Responsible for:
 
 ## Enterprise Operating Model
 
-<div class="kc-journey-map" aria-label="Multi-agent enterprise operating model">
-  <div class="kc-journey-map__header">
+<div aria-label="Multi-agent enterprise operating model" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Enterprise Operating Model</span>
     <strong>Business idea to continuously improved agent portfolio</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Idea</strong><span>Business unit submits an agent opportunity with expected value.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Assess</strong><span>Review feasibility, data, permissions, security, cost and owner model.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Define agent roles, tools, memory, guardrails and human review points.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Build and test</strong><span>Validate accuracy, safety, latency, UX and escalation behavior.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operate</strong><span>Deploy, monitor, improve, retire or scale the agent portfolio.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Idea</strong>
+      <span>Business unit submits an agent opportunity with expected value.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assess</strong>
+      <span>Review feasibility, data, permissions, security, cost and owner model.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Design</strong>
+      <span>Define agent roles, tools, memory, guardrails and human review points.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Build and test</strong>
+      <span>Validate accuracy, safety, latency, UX and escalation behavior.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Operate</strong>
+      <span>Deploy, monitor, improve, retire or scale the agent portfolio.</span>
+    </div>
   </div>
 </div>
 
@@ -729,6 +944,11 @@ A Multi-Agent engagement should produce:
 - KPI Framework
 - Operating Model
 - Roadmap
+
+<blockquote>
+<p><strong>Agent Builder knowledge update (Current Channel, July 29, 2026):</strong> A team agent can use one SharePoint list with up to 20,000 items as a knowledge source alongside other source types. List attachments and lookup columns are not supported in this release, so validate the list schema before selecting this pattern. See the <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" target="_blank" rel="noopener noreferrer" className="">Microsoft 365 Copilot release notes</a>.</p>
+</blockquote>
+
 
 ## 검색 키워드
 

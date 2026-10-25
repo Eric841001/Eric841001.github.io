@@ -7,17 +7,29 @@ sidebar_label: Linux Onboarding
 
 # Microsoft Defender for Endpoint Linux Onboarding
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">MDE LINUX ONBOARDING</span>
+    <span className="kc-eyebrow">MDE LINUX ONBOARDING</span>
     <h2>Extend Defender visibility to Linux servers and workloads</h2>
     <p>Linux onboarding should validate distribution support, connectivity, package deployment, sensor health and Defender portal visibility before operational handover.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Linux onboarding focus">
-    <div><strong>Linux</strong><span>Server</span></div>
-    <div><strong>Agent</strong><span>MDE</span></div>
-    <div><strong>Portal</strong><span>Signal</span></div>
-    <div><strong>Ops</strong><span>Owner</span></div>
+  <div aria-label="Linux onboarding focus" className="kc-hero-metrics">
+    <div>
+      <strong>Linux</strong>
+      <span>Server</span>
+    </div>
+    <div>
+      <strong>Agent</strong>
+      <span>MDE</span>
+    </div>
+    <div>
+      <strong>Portal</strong>
+      <span>Signal</span>
+    </div>
+    <div>
+      <strong>Ops</strong>
+      <span>Owner</span>
+    </div>
   </div>
 </section>
 
@@ -57,21 +69,26 @@ Before onboarding, confirm whether the server is internet-connected, proxy-route
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Linux onboarding architecture</span>
-    <strong>Server signal to Defender portal</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Linux Defender onboarding architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Linux server</strong><span>Supported Linux workload is selected for Defender for Endpoint onboarding.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Prerequisite check</strong><span>Confirm distribution, package manager, Python, connectivity and proxy requirements.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Defender agent</strong><span>Install, onboard and validate sensor health and telemetry flow.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Defender portal</strong><span>Confirm device inventory, alerting, vulnerability data and operational ownership.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Linux onboarding architecture</span>
+  <strong>Server signal to Defender portal</strong>
+</div><div aria-label="Linux Defender onboarding architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Linux server</strong>
+  <span>Supported Linux workload is selected for Defender for Endpoint onboarding.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Prerequisite check</strong>
+  <span>Confirm distribution, package manager, Python, connectivity and proxy requirements.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Defender agent</strong>
+  <span>Install, onboard and validate sensor health and telemetry flow.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Defender portal</strong>
+  <span>Confirm device inventory, alerting, vulnerability data and operational ownership.</span>
+</div></div></div>
 
 ---
 

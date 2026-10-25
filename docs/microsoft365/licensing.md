@@ -5,17 +5,29 @@ description: Microsoft 365 licensing architecture guide for Business Premium, E3
 
 # Microsoft 365 Licensing
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">MICROSOFT 365 LICENSING ARCHITECTURE</span>
+    <span className="kc-eyebrow">MICROSOFT 365 LICENSING ARCHITECTURE</span>
     <h2>Map business controls to the right license mix</h2>
     <p>Licensing should connect user segmentation, security and compliance requirements, Copilot readiness, cost scenarios and governance cadence.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Microsoft 365 licensing focus">
-    <div><strong>Req</strong><span>Control</span></div>
-    <div><strong>User</strong><span>Persona</span></div>
-    <div><strong>Cost</strong><span>Scenario</span></div>
-    <div><strong>Gov</strong><span>Review</span></div>
+  <div aria-label="Microsoft 365 licensing focus" className="kc-hero-metrics">
+    <div>
+      <strong>Required controls</strong>
+      <span>Security and compliance baseline</span>
+    </div>
+    <div>
+      <strong>User personas</strong>
+      <span>Role, risk and workload segmentation</span>
+    </div>
+    <div>
+      <strong>Cost scenarios</strong>
+      <span>SKU mix, add-ons and utilization</span>
+    </div>
+    <div>
+      <strong>Governance reviews</strong>
+      <span>Assignment, evidence and optimization</span>
+    </div>
   </div>
 </section>
 
@@ -47,21 +59,26 @@ Use this page for the current planning model: [Microsoft Licensing Feature Updat
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Licensing architecture</span>
-    <strong>Requirement to governance cycle</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Microsoft 365 licensing architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Business requirements</strong><span>Capture productivity, security, compliance, endpoint, Copilot and operational needs.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>License mapping</strong><span>Map features to Business Premium, E3, E5, add-ons and Copilot licenses.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>User segmentation</strong><span>Assign licenses by persona, risk, workload, geography and adoption maturity.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Cost governance</strong><span>Review cost scenarios, utilization, disabled plans and recurring optimization cadence.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Licensing architecture</span>
+  <strong>Requirement to governance cycle</strong>
+</div><div aria-label="Microsoft 365 licensing architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Business requirements</strong>
+  <span>Capture productivity, security, compliance, endpoint, Copilot and operational needs.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>License mapping</strong>
+  <span>Map features to Business Premium, E3, E5, add-ons and Copilot licenses.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>User segmentation</strong>
+  <span>Assign licenses by persona, risk, workload, geography and adoption maturity.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Cost governance</strong>
+  <span>Review cost scenarios, utilization, disabled plans and recurring optimization cadence.</span>
+</div></div></div>
 
 ## Implementation
 

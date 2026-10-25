@@ -11,19 +11,19 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 이 영역은 단순한 기술 메모가 아니라 실제 고객 제안, architecture design, implementation, governance, 운영 handover에 바로 재사용할 수 있는 Enterprise Knowledge Base로 구성됩니다.
 
-<section className="kc-topic-hero" aria-label="Knowledge Center overview hero">
+<section aria-label="Knowledge Center overview hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Enterprise Knowledge Center</span>
     <h2>Use Microsoft cloud knowledge as a reusable consulting system</h2>
     <div className="kc-topic-hero__lede">This hub connects Microsoft 365, Security, Copilot, Azure, Migration, Licensing and Proposal assets into a public-safe reference platform for presales, architecture and delivery.</div>
-    <div className="kc-hero-signal-row" aria-label="Knowledge Center signals">
+    <div aria-label="Knowledge Center signals" className="kc-hero-signal-row">
       <span>AI</span>
       <span>Security</span>
       <span>Delivery</span>
       <span>Assets</span>
     </div>
   </div>
-  <div className="kc-factory-panel" aria-label="Knowledge Center operating model">
+  <div aria-label="Knowledge Center operating model" className="kc-factory-panel">
     <div className="kc-factory-panel__header">
       <span>Knowledge Operating Model</span>
       <strong>Field experience to reusable public-safe guidance</strong>
@@ -112,7 +112,7 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 모든 문서는 아래 구조를 기준으로 작성합니다.
 
-<div className="kc-journey-map" aria-label="Standard article framework">
+<div aria-label="Standard article framework" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Standard Article Framework</span>
     <strong>Executive context to references and asset request path</strong>

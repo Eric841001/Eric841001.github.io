@@ -9,25 +9,44 @@ toc_max_heading_level: 2
 
 # Microsoft 365 Optimization Program
 
-<section class="kc-topic-hero" aria-label="Microsoft 365 Optimization Program hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft 365 Optimization Program</span>
+<section aria-label="Microsoft 365 Optimization Program hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Optimization Program</span>
     <h2>Turn an already deployed tenant into a governed operating platform</h2>
     <p>This program helps organizations convert fragmented Microsoft 365 usage into a practical improvement backlog, policy workbook, ownership model and operations roadmap.</p>
-    <div class="kc-hero-signal-row" aria-label="M365 optimization signals">
+    <div aria-label="M365 optimization signals" className="kc-hero-signal-row">
       <span>Assess</span>
       <span>Prioritize</span>
       <span>Design</span>
       <span>Handover</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Microsoft 365 Optimization Program model">
-    <div class="kc-factory-panel__header"><span>Optimization Loop</span><strong>Operations-ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#assessment-scope" class="kc-factory-card"><small>01</small><strong>Assess</strong><span>Tenant, identity, device, collaboration, messaging and security state.</span></a>
-      <a href="#engagement-structure" class="kc-factory-card"><small>02</small><strong>Prioritize</strong><span>Risk, business impact, effort, dependency and improvement backlog.</span></a>
-      <a href="#delivery-model" class="kc-factory-card"><small>03</small><strong>Design</strong><span>Governance model, policy baseline, exception process and roadmap.</span></a>
-      <a href="#deliverables" class="kc-factory-card"><small>04</small><strong>Handover</strong><span>Administrator guide, workbook, review rhythm and operating ownership.</span></a>
+  <div aria-label="Microsoft 365 Optimization Program model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Optimization Loop</span>
+      <strong>Operations-ready</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#assessment-scope" className="kc-factory-card">
+        <small>01</small>
+        <strong>Assess</strong>
+        <span>Tenant, identity, device, collaboration, messaging and security state.</span>
+      </a>
+      <a href="#engagement-structure" className="kc-factory-card">
+        <small>02</small>
+        <strong>Prioritize</strong>
+        <span>Risk, business impact, effort, dependency and improvement backlog.</span>
+      </a>
+      <a href="#delivery-model" className="kc-factory-card">
+        <small>03</small>
+        <strong>Design</strong>
+        <span>Governance model, policy baseline, exception process and roadmap.</span>
+      </a>
+      <a href="#deliverables" className="kc-factory-card">
+        <small>04</small>
+        <strong>Handover</strong>
+        <span>Administrator guide, workbook, review rhythm and operating ownership.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -36,15 +55,42 @@ The Microsoft 365 Optimization Program is a reusable engagement model for organi
 
 ## Visual Optimization Loop
 
-<div class="kc-journey-map" aria-label="Microsoft 365 optimization loop">
-  <div class="kc-journey-map__header"><span>Visual Optimization Loop</span><strong>Current state to continuous improvement</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assess Current State</strong><span>Tenant, identity, devices, collaboration, messaging and security.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Prioritize Backlog</strong><span>Risk, impact, effort, dependency and operational value.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Design Governance</strong><span>Policy baseline, owner model, exception process and decision log.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pilot Remediation</strong><span>Controlled validation, user communication and operational feedback.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Operations Handover</strong><span>Administrator guide, workbook, review rhythm and support ownership.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Improve</strong><span>Roadmap, quarterly review and next maturity cycle.</span></div>
+<div aria-label="Microsoft 365 optimization loop" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Visual Optimization Loop</span>
+    <strong>Current state to continuous improvement</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Assess Current State</strong>
+      <span>Tenant, identity, devices, collaboration, messaging and security.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Prioritize Backlog</strong>
+      <span>Risk, impact, effort, dependency and operational value.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Design Governance</strong>
+      <span>Policy baseline, owner model, exception process and decision log.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Pilot Remediation</strong>
+      <span>Controlled validation, user communication and operational feedback.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Operations Handover</strong>
+      <span>Administrator guide, workbook, review rhythm and support ownership.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Improve</strong>
+      <span>Roadmap, quarterly review and next maturity cycle.</span>
+    </div>
   </div>
 </div>
 
@@ -137,10 +183,22 @@ In manufacturing, logistics and enterprise group environments, the strongest out
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Microsoft 365 optimization reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Underused platform value</strong><span>Tenants often contain unused licenses, inconsistent governance and unclear collaboration ownership.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Assessment and roadmap</strong><span>Review tenant settings, collaboration, identity, endpoint, security and license-to-capability fit.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Prioritized improvement</strong><span>Optimization becomes a roadmap with quick wins, policy backlog and operating model decisions.</span></div>
+<div aria-label="Microsoft 365 optimization reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Underused platform value</strong>
+    <span>Tenants often contain unused licenses, inconsistent governance and unclear collaboration ownership.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Assessment and roadmap</strong>
+    <span>Review tenant settings, collaboration, identity, endpoint, security and license-to-capability fit.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Prioritized improvement</strong>
+    <span>Optimization becomes a roadmap with quick wins, policy backlog and operating model decisions.</span>
+  </div>
 </div>
 
 ## Related Documents

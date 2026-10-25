@@ -9,27 +9,49 @@ toc_max_heading_level: 2
 # Security Reference Architecture
 
 
-<section class="kc-topic-hero" aria-label="Security reference architecture hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft Security Reference Architecture</span>
+<section aria-label="Security reference architecture hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft Security Reference Architecture</span>
     <h2>Make security controls measurable, operable and evidence-backed</h2>
     <p>Zero Trust, identity, endpoint, email, data, cloud and monitoring controls should map to owners, evidence, response process and improvement cadence.</p>
-    <div class="kc-hero-signal-row" aria-label="Security reference signals">
+    <div aria-label="Security reference signals" className="kc-hero-signal-row">
       <span>Prevent</span>
       <span>Detect</span>
       <span>Respond</span>
       <span>Improve</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Security reference operating model">
-    <div class="kc-factory-panel__header"><span>Security Control Plane</span><strong>Identity, data, endpoint and operations in one model</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#security-architecture-overview" class="kc-factory-card"><small>01</small><strong>Verify</strong><span>Entra ID, MFA, Conditional Access, PIM and device trust.</span></a>
-      <a href="#security-domains" class="kc-factory-card"><small>02</small><strong>Protect</strong><span>Defender, Purview, DLP, labels, email and collaboration controls.</span></a>
-      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Decide</strong><span>Security baseline, SOC process, exception and deployment sequence.</span></a>
-      <a href="#lessons-learned" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Alert triage, evidence, tuning, review and continuous improvement.</span></a>
+  <div aria-label="Security reference operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Security Control Plane</span>
+      <strong>Identity, data, endpoint and operations in one model</strong>
     </div>
-    <div class="kc-guardrail-panel"><strong>Security rule</strong><span>Do not deploy controls without owners, pilot validation, exception expiry and response process.</span></div>
+    <div className="kc-factory-grid">
+      <a href="#security-architecture-overview" className="kc-factory-card">
+        <small>01</small>
+        <strong>Verify</strong>
+        <span>Entra ID, MFA, Conditional Access, PIM and device trust.</span>
+      </a>
+      <a href="#security-domains" className="kc-factory-card">
+        <small>02</small>
+        <strong>Protect</strong>
+        <span>Defender, Purview, DLP, labels, email and collaboration controls.</span>
+      </a>
+      <a href="#decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decide</strong>
+        <span>Security baseline, SOC process, exception and deployment sequence.</span>
+      </a>
+      <a href="#lessons-learned" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Alert triage, evidence, tuning, review and continuous improvement.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Security rule</strong>
+      <span>Do not deploy controls without owners, pilot validation, exception expiry and response process.</span>
+    </div>
   </div>
 </section>
 
@@ -63,14 +85,37 @@ Typical security initiatives include:
 
 ## Security Architecture Overview
 
-<div class="kc-journey-map" aria-label="Security architecture overview">
-  <div class="kc-journey-map__header"><span>Security Architecture Overview</span><strong>Verify access, protect data and operate response</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Users and workloads</strong><span>Employees, guests, devices, applications and cloud workloads request access.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Identity and access</strong><span>Entra ID, MFA, Conditional Access, Identity Protection and PIM verify context.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Endpoint and collaboration</strong><span>Intune, Defender, Exchange, Teams, SharePoint and OneDrive enforce trust.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Data and operations</strong><span>Purview, DLP, labels, Defender XDR, Sentinel and incident process.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governance</strong><span>Policy, exceptions, evidence, review cadence and continuous improvement.</span></div>
+<div aria-label="Security architecture overview" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Security Architecture Overview</span>
+    <strong>Verify access, protect data and operate response</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Users and workloads</strong>
+      <span>Employees, guests, devices, applications and cloud workloads request access.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Identity and access</strong>
+      <span>Entra ID, MFA, Conditional Access, Identity Protection and PIM verify context.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Endpoint and collaboration</strong>
+      <span>Intune, Defender, Exchange, Teams, SharePoint and OneDrive enforce trust.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Data and operations</strong>
+      <span>Purview, DLP, labels, Defender XDR, Sentinel and incident process.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Governance</strong>
+      <span>Policy, exceptions, evidence, review cadence and continuous improvement.</span>
+    </div>
   </div>
 </div>
 

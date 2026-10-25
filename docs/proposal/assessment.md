@@ -8,25 +8,49 @@ toc_max_heading_level: 2
 
 # Assessment Framework
 
-<section class="kc-topic-hero" aria-label="Assessment Framework hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Assessment Framework hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Turn current-state findings into roadmap-ready proposal input</h2>
     <p>The Assessment Framework captures business requirements, technical gaps, risks, readiness and licensing considerations before defining architecture or implementation scope.</p>
-    <div class="kc-hero-signal-row" aria-label="Assessment Framework signals"><span>Discover</span><span>Analyze</span><span>Design</span><span>Align</span></div>
+    <div aria-label="Assessment Framework signals" className="kc-hero-signal-row">
+      <span>Discover</span>
+      <span>Analyze</span>
+      <span>Design</span>
+      <span>Align</span>
+    </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Assessment Framework model">
-    <div class="kc-factory-panel__header"><span>Assessment Flow</span><strong>Roadmap-ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-scenario" class="kc-factory-card"><small>01</small><strong>Scenario</strong><span>Modernization, security, licensing, migration or Copilot readiness.</span></a>
-      <a href="#assessment-scope" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Identity, collaboration, endpoint, security, compliance and operations.</span></a>
-      <a href="#discovery-questions" class="kc-factory-card"><small>03</small><strong>Questions</strong><span>Business and technical discovery inputs for proposal design.</span></a>
-      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable workbook can be shared after scenario confirmation.</span></a>
+  <div aria-label="Assessment Framework model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Assessment Flow</span>
+      <strong>Roadmap-ready</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-scenario" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scenario</strong>
+        <span>Modernization, security, licensing, migration or Copilot readiness.</span>
+      </a>
+      <a href="#assessment-scope" className="kc-factory-card">
+        <small>02</small>
+        <strong>Scope</strong>
+        <span>Identity, collaboration, endpoint, security, compliance and operations.</span>
+      </a>
+      <a href="#discovery-questions" className="kc-factory-card">
+        <small>03</small>
+        <strong>Questions</strong>
+        <span>Business and technical discovery inputs for proposal design.</span>
+      </a>
+      <a href="../contact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Request</strong>
+        <span>Editable workbook can be shared after scenario confirmation.</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="kc-request-panel" aria-label="Assessment framework editable asset request">
+<div aria-label="Assessment framework editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Assessment framework editable workbook</strong>
   <span>Use this structure to capture current state, risks, assumptions, readiness and recommended roadmap. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -38,14 +62,37 @@ The Assessment Framework is used to evaluate the current state of a customer env
 
 The objective is to identify business requirements, technical gaps, operational risks and licensing considerations before proposing a target architecture or implementation scope.
 
-<div class="kc-journey-map" aria-label="Assessment Framework flow">
-  <div class="kc-journey-map__header"><span>Assessment Flow</span><strong>Discovery to proposal input</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discovery</strong><span>Business goals, technical baseline, constraints and sponsor expectations.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Analysis</strong><span>Risks, gaps, license fit, dependency and maturity findings.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Target Direction</strong><span>Architecture options, roadmap, governance and delivery approach.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Stakeholder Alignment</strong><span>Priorities, scope, success measures and decision gates.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Proposal Input</strong><span>SOW, WBS, risk register, roadmap and executive summary.</span></div>
+<div aria-label="Assessment Framework flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Assessment Flow</span>
+    <strong>Discovery to proposal input</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Discovery</strong>
+      <span>Business goals, technical baseline, constraints and sponsor expectations.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Analysis</strong>
+      <span>Risks, gaps, license fit, dependency and maturity findings.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Target Direction</strong>
+      <span>Architecture options, roadmap, governance and delivery approach.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Stakeholder Alignment</strong>
+      <span>Priorities, scope, success measures and decision gates.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Proposal Input</strong>
+      <span>SOW, WBS, risk register, roadmap and executive summary.</span>
+    </div>
   </div>
 </div>
 

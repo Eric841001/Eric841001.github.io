@@ -7,17 +7,29 @@ description: "Architecture Center - The Architecture Center organizes Microsoft 
 
 # Architecture Center
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">ENTERPRISE ARCHITECTURE CENTER</span>
+    <span className="kc-eyebrow">ENTERPRISE ARCHITECTURE CENTER</span>
     <h2>Turn business pressure into architecture decisions and delivery assets</h2>
     <p>This center connects Microsoft 365, Security, Copilot, Azure, Migration and Governance into a practical consulting architecture flow.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Architecture center focus">
-    <div><strong>01</strong><span>Driver</span></div>
-    <div><strong>02</strong><span>Design</span></div>
-    <div><strong>03</strong><span>Assets</span></div>
-    <div><strong>04</strong><span>Operate</span></div>
+  <div aria-label="Architecture center focus" className="kc-hero-metrics">
+    <div>
+      <strong>01</strong>
+      <span>Driver</span>
+    </div>
+    <div>
+      <strong>02</strong>
+      <span>Design</span>
+    </div>
+    <div>
+      <strong>03</strong>
+      <span>Assets</span>
+    </div>
+    <div>
+      <strong>04</strong>
+      <span>Operate</span>
+    </div>
   </div>
 </section>
 
@@ -25,28 +37,28 @@ The Architecture Center organizes Microsoft cloud reference architectures, desig
 
 Architecture content here is intended to be practical. Each topic connects business requirements, Microsoft capabilities, governance decisions and delivery outputs.
 
-<div class="kc-pathway" aria-label="Architecture lifecycle pathway">
-  <a class="kc-pathway-step" href="./executive-architecture-blueprint">
+<div aria-label="Architecture lifecycle pathway" className="kc-pathway">
+  <a href="./executive-architecture-blueprint" className="kc-pathway-step">
     <small>01</small>
     <strong>Business Driver</strong>
     <span>Clarify risk, growth, productivity, compliance or AI adoption pressure.</span>
   </a>
-  <a class="kc-pathway-step" href="./m365-reference-architecture">
+  <a href="./m365-reference-architecture" className="kc-pathway-step">
     <small>02</small>
     <strong>Reference Design</strong>
     <span>Translate requirements into Microsoft 365, Security, Copilot, Azure and Migration architecture.</span>
   </a>
-  <a class="kc-pathway-step" href="./security-reference-architecture">
+  <a href="./security-reference-architecture" className="kc-pathway-step">
     <small>03</small>
     <strong>Control Model</strong>
     <span>Define identity, endpoint, data, threat protection and evidence-ready security controls.</span>
   </a>
-  <a class="kc-pathway-step" href="../proposal/overview">
+  <a href="../proposal/overview" className="kc-pathway-step">
     <small>04</small>
     <strong>Delivery Assets</strong>
     <span>Convert architecture decisions into SOW, WBS, risk register, runbook and governance outputs.</span>
   </a>
-  <a class="kc-pathway-step" href="./governance-architecture">
+  <a href="./governance-architecture" className="kc-pathway-step">
     <small>05</small>
     <strong>Operating Model</strong>
     <span>Assign owners, cadence, exception handling, KPI and continuous improvement rhythm.</span>
@@ -55,21 +67,26 @@ Architecture content here is intended to be practical. Each topic connects busin
 
 ## Visual Architecture Map
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Architecture consulting flow</span>
-    <strong>Decision to operating model</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Architecture consulting map">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Business driver</strong><span>Risk, growth, productivity, compliance, migration or AI adoption pressure.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Architecture decisions</strong><span>Identity, data, network, workload, tenant, security and governance choices.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Target blueprint</strong><span>Microsoft 365, Security, Copilot, Azure, Migration and Governance reference design.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Delivery assets</strong><span>SOW, WBS, risk register, runbook, decision log and operating cadence.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Architecture consulting flow</span>
+  <strong>Decision to operating model</strong>
+</div><div aria-label="Architecture consulting map" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Business driver</strong>
+  <span>Risk, growth, productivity, compliance, migration or AI adoption pressure.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Architecture decisions</strong>
+  <span>Identity, data, network, workload, tenant, security and governance choices.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Target blueprint</strong>
+  <span>Microsoft 365, Security, Copilot, Azure, Migration and Governance reference design.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Delivery assets</strong>
+  <span>SOW, WBS, risk register, runbook, decision log and operating cadence.</span>
+</div></div></div>
 
 ## 한국어 요약
 

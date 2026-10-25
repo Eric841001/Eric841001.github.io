@@ -5,32 +5,44 @@ description: "Microsoft 365 Business Premium - Microsoft 365 Business Premium is
 
 # Microsoft 365 Business Premium
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">BUSINESS PREMIUM DECISION GUIDE</span>
+    <span className="kc-eyebrow">BUSINESS PREMIUM DECISION GUIDE</span>
     <h2>Use Business Premium when productivity and baseline security must move together</h2>
     <p>Business Premium is strongest when Microsoft 365 Apps, Entra ID, Intune and Defender for Business are planned as one SMB security baseline.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Business Premium focus">
-    <div><strong>Apps</strong><span>Productivity</span></div>
-    <div><strong>ID</strong><span>Entra</span></div>
-    <div><strong>MDM</strong><span>Intune</span></div>
-    <div><strong>EDR</strong><span>Defender</span></div>
+  <div aria-label="Business Premium focus" className="kc-hero-metrics">
+    <div>
+      <strong>Apps</strong>
+      <span>Productivity</span>
+    </div>
+    <div>
+      <strong>ID</strong>
+      <span>Entra</span>
+    </div>
+    <div>
+      <strong>MDM</strong>
+      <span>Intune</span>
+    </div>
+    <div>
+      <strong>EDR</strong>
+      <span>Defender</span>
+    </div>
   </div>
 </section>
 
-<div class="kc-outcome-grid" aria-label="Business Premium licensing decision cards">
-  <div class="kc-outcome-card">
+<div aria-label="Business Premium licensing decision cards" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
     <small>PERSONA</small>
     <strong>SMB and mid-market</strong>
     <span>Business Premium is strong when productivity, Intune, Entra ID P1 and Defender for Business are needed together.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>CAPABILITY</small>
     <strong>Security baseline</strong>
     <span>Review device management, MFA, Conditional Access, endpoint protection and data sharing controls.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>DECISION</small>
     <strong>Scale boundary</strong>
     <span>Confirm user count, enterprise compliance needs, Copilot roadmap and add-on requirements.</span>
@@ -61,21 +73,26 @@ Microsoft 365 Business Premium은 Microsoft 365 Apps, Exchange Online, Teams, Sh
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Business Premium capability path</span>
-    <strong>Productivity to security baseline</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Business Premium capability path">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Users and apps</strong><span>Provide Microsoft 365 Apps, Exchange, Teams, SharePoint and OneDrive for daily work.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Identity baseline</strong><span>Apply Entra ID, MFA, Conditional Access and account protection policies.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Device management</strong><span>Use Intune for device compliance, configuration and mobile application management.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Endpoint security</strong><span>Defender for Business adds endpoint protection, alerts and security operations baseline.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Business Premium capability path</span>
+  <strong>Productivity to security baseline</strong>
+</div><div aria-label="Business Premium capability path" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Users and apps</strong>
+  <span>Provide Microsoft 365 Apps, Exchange, Teams, SharePoint and OneDrive for daily work.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Identity baseline</strong>
+  <span>Apply Entra ID, MFA, Conditional Access and account protection policies.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Device management</strong>
+  <span>Use Intune for device compliance, configuration and mobile application management.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Endpoint security</strong>
+  <span>Defender for Business adds endpoint protection, alerts and security operations baseline.</span>
+</div></div></div>
 
 ## Implementation
 

@@ -7,17 +7,29 @@ sidebar_label: Certificate Deployment
 
 # Intune Trusted Certificate Deployment
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">INTUNE CERTIFICATE TRUST DEPLOYMENT</span>
+    <span className="kc-eyebrow">INTUNE CERTIFICATE TRUST DEPLOYMENT</span>
     <h2>Build the trust chain before certificate-based access</h2>
     <p>Trusted root and intermediate certificates must be delivered and validated before Wi-Fi, VPN, SCEP, PKCS or app authentication scenarios depend on them.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Certificate deployment focus">
-    <div><strong>CA</strong><span>Root</span></div>
-    <div><strong>CER</strong><span>DER</span></div>
-    <div><strong>Intune</strong><span>Deploy</span></div>
-    <div><strong>Trust</strong><span>Verify</span></div>
+  <div aria-label="Certificate deployment focus" className="kc-hero-metrics">
+    <div>
+      <strong>CA</strong>
+      <span>Root</span>
+    </div>
+    <div>
+      <strong>CER</strong>
+      <span>DER</span>
+    </div>
+    <div>
+      <strong>Intune</strong>
+      <span>Deploy</span>
+    </div>
+    <div>
+      <strong>Trust</strong>
+      <span>Verify</span>
+    </div>
   </div>
 </section>
 
@@ -54,19 +66,35 @@ Export requirements:
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Certificate trust chain</span>
     <strong>CA to managed device</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Certificate trust deployment">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Certificate Authority</strong><span>Confirm root and intermediate CA certificates that must be trusted by devices.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Export certificate</strong><span>Use DER encoded .CER format and public certificate only.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Deploy with Intune</strong><span>Create Trusted Certificate profile and assign to validated target groups.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Validate device trust</strong><span>Confirm root and intermediate stores before SCEP, PKCS, Wi-Fi or VPN rollout.</span></div>
+  <div className="kc-journey-map" aria-label="Certificate trust deployment">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Certificate Authority</strong>
+  <span>Confirm root and intermediate CA certificates that must be trusted by devices.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Export certificate</strong>
+  <span>Use DER encoded .CER format and public certificate only.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Deploy with Intune</strong>
+  <span>Create Trusted Certificate profile and assign to validated target groups.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Validate device trust</strong>
+  <span>Confirm root and intermediate stores before SCEP, PKCS, Wi-Fi or VPN rollout.</span>
+</div>
   </div>
 </div>
 
@@ -74,19 +102,35 @@ Export requirements:
 
 ## Deployment Process
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Deployment workflow</span>
     <strong>Profile, assignment, validation</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Intune certificate deployment workflow">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Create profile</strong><span>Use Intune Admin Center, Devices, Configuration Profiles, Trusted Certificate.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Upload and assign</strong><span>Upload the certificate and target user, device or dynamic groups.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Deploy and monitor</strong><span>Sync devices, review policy status and troubleshoot profile delivery.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Evidence</strong><span>Record validation result before enabling certificate-dependent services.</span></div>
+  <div className="kc-journey-map" aria-label="Intune certificate deployment workflow">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Create profile</strong>
+  <span>Use Intune Admin Center, Devices, Configuration Profiles, Trusted Certificate.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Upload and assign</strong>
+  <span>Upload the certificate and target user, device or dynamic groups.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Deploy and monitor</strong>
+  <span>Sync devices, review policy status and troubleshoot profile delivery.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Evidence</strong>
+  <span>Record validation result before enabling certificate-dependent services.</span>
+</div>
   </div>
 </div>
 

@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Tenant-to-Tenant Migration Playbook
 
-<section class="kc-topic-hero" aria-label="Tenant-to-tenant migration playbook hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft 365 Tenant Migration Control Tower</span>
+<section aria-label="Tenant-to-tenant migration playbook hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Tenant Migration Control Tower</span>
     <h2>Run tenant migration as a business cutover program</h2>
     <p>Tenant-to-tenant migration is not a simple data transfer. It requires coordinated planning across identity, domains, Exchange Online, Teams, SharePoint, OneDrive, security, compliance, communication and hypercare.</p>
-    <div class="kc-hero-signal-row" aria-label="Tenant migration signals">
+    <div aria-label="Tenant migration signals" className="kc-hero-signal-row">
       <span>Identity</span>
       <span>Mail</span>
       <span>Data</span>
       <span>Cutover</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Tenant migration related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/migration/tenant-to-tenant">Tenant Migration</a>
-      <a class="kc-topic-button" href="/knowledge/migration/global-tenant-consolidation-framework">Global Consolidation</a>
-      <a class="kc-topic-button" href="/knowledge/contact">Request Migration Assets</a>
+    <div aria-label="Tenant migration related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/migration/tenant-to-tenant" className="kc-topic-button kc-topic-button--primary">Tenant Migration</a>
+      <a href="/knowledge/migration/global-tenant-consolidation-framework" className="kc-topic-button">Global Consolidation</a>
+      <a href="/knowledge/contact" className="kc-topic-button">Request Migration Assets</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Tenant migration control tower visual">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Tenant migration control tower visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Control Tower</span>
       <strong>Cutover without surprises</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#migration-scope" class="kc-factory-card"><small>01</small><strong>Scope</strong><span>Users, mailboxes, Teams, SharePoint, OneDrive, domains and policies.</span></a>
-      <a href="#phase-3-migration-design" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Identity mapping, domain plan, coexistence, pilot and rollback.</span></a>
-      <a href="#production-cutover" class="kc-factory-card"><small>03</small><strong>Cutover</strong><span>DNS, mail flow, workload validation, executive confirmation and comms.</span></a>
-      <a href="#hypercare" class="kc-factory-card"><small>04</small><strong>Hypercare</strong><span>Support, issue triage, reporting, user confidence and closure evidence.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#migration-scope" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Users, mailboxes, Teams, SharePoint, OneDrive, domains and policies.</span>
+      </a>
+      <a href="#phase-3-migration-design" className="kc-factory-card">
+        <small>02</small>
+        <strong>Design</strong>
+        <span>Identity mapping, domain plan, coexistence, pilot and rollback.</span>
+      </a>
+      <a href="#production-cutover" className="kc-factory-card">
+        <small>03</small>
+        <strong>Cutover</strong>
+        <span>DNS, mail flow, workload validation, executive confirmation and comms.</span>
+      </a>
+      <a href="#hypercare" className="kc-factory-card">
+        <small>04</small>
+        <strong>Hypercare</strong>
+        <span>Support, issue triage, reporting, user confidence and closure evidence.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Migration rule</strong>
       <span>Identity, mail, collaboration, security and user communication must be operated as one cutover rhythm, not separate technical tracks.</span>
     </div>
@@ -54,19 +69,43 @@ This playbook provides a structured delivery model for Microsoft 365 tenant migr
 
 > **Executive lens:** Tenant migration succeeds when identity, mail, collaboration, security and user communication are treated as one business cutover program rather than separate technical workstreams.
 
-<div class="kc-context-panel" aria-label="Tenant migration executive operating model">
-  <div class="kc-context-panel__lead">
+<div aria-label="Tenant migration executive operating model" className="kc-context-panel">
+  <div className="kc-context-panel__lead">
     <small>Executive Operating Model</small>
     <strong>The control tower connects technical workstreams to business continuity.</strong>
     <span>Migration success depends on synchronized decision-making across identity, mail, collaboration, security, communication and support.</span>
   </div>
-  <div class="kc-context-panel__grid">
-    <a href="#identity-migration"><small>Identity</small><strong>Access and mapping</strong><span>Users, groups, domains, admin roles and cross-tenant access.</span></a>
-    <a href="#exchange-online-migration"><small>Mail</small><strong>Exchange Online</strong><span>Mailboxes, routing, shared resources, DNS and validation.</span></a>
-    <a href="#teams-migration"><small>Collaboration</small><strong>Teams, SharePoint, OneDrive</strong><span>Content, channels, permissions, sharing links and ownership.</span></a>
-    <a href="#security-and-compliance-migration"><small>Security</small><strong>Policy continuity</strong><span>Conditional Access, Defender, Purview, DLP, labels and audit.</span></a>
-    <a href="#communication-plan"><small>Change</small><strong>User communication</strong><span>Preparation guide, pilot notice, cutover instructions and hypercare.</span></a>
-    <a href="#success-criteria"><small>Outcome</small><strong>Validated cutover</strong><span>Service continuity, supported users, clean issues and closure evidence.</span></a>
+  <div className="kc-context-panel__grid">
+    <a href="#identity-migration">
+      <small>Identity</small>
+      <strong>Access and mapping</strong>
+      <span>Users, groups, domains, admin roles and cross-tenant access.</span>
+    </a>
+    <a href="#exchange-online-migration">
+      <small>Mail</small>
+      <strong>Exchange Online</strong>
+      <span>Mailboxes, routing, shared resources, DNS and validation.</span>
+    </a>
+    <a href="#teams-migration">
+      <small>Collaboration</small>
+      <strong>Teams, SharePoint, OneDrive</strong>
+      <span>Content, channels, permissions, sharing links and ownership.</span>
+    </a>
+    <a href="#security-and-compliance-migration">
+      <small>Security</small>
+      <strong>Policy continuity</strong>
+      <span>Conditional Access, Defender, Purview, DLP, labels and audit.</span>
+    </a>
+    <a href="#communication-plan">
+      <small>Change</small>
+      <strong>User communication</strong>
+      <span>Preparation guide, pilot notice, cutover instructions and hypercare.</span>
+    </a>
+    <a href="#success-criteria">
+      <small>Outcome</small>
+      <strong>Validated cutover</strong>
+      <span>Service continuity, supported users, clean issues and closure evidence.</span>
+    </a>
   </div>
 </div>
 
@@ -92,19 +131,35 @@ Typical tenant-to-tenant migration scope includes:
 
 ## Migration Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Tenant-to-tenant migration architecture</span>
     <strong>Source to target with controlled cutover</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Tenant migration architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Discovery and assessment</strong><span>Inventory identities, Exchange, Teams, SharePoint, OneDrive, policies and dependencies.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Migration design</strong><span>Map source to target, define coexistence, tooling, batch plan, DNS and rollback assumptions.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Pilot and cutover</strong><span>Validate representative users, perform production cutover and stabilize mail flow and access.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Validation and hypercare</strong><span>Confirm workloads, permissions, mobile, Outlook, Teams, SharePoint and business process continuity.</span></div>
+  <div className="kc-journey-map" aria-label="Tenant migration architecture">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Discovery and assessment</strong>
+  <span>Inventory identities, Exchange, Teams, SharePoint, OneDrive, policies and dependencies.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Migration design</strong>
+  <span>Map source to target, define coexistence, tooling, batch plan, DNS and rollback assumptions.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Pilot and cutover</strong>
+  <span>Validate representative users, perform production cutover and stabilize mail flow and access.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Validation and hypercare</strong>
+  <span>Confirm workloads, permissions, mobile, Outlook, Teams, SharePoint and business process continuity.</span>
+</div>
   </div>
 </div>
 
@@ -112,18 +167,42 @@ Typical tenant-to-tenant migration scope includes:
 
 ## Migration Lifecycle
 
-<div class="kc-journey-map" aria-label="Tenant migration lifecycle">
-  <div class="kc-journey-map__header">
+<div aria-label="Tenant migration lifecycle" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Migration Lifecycle</span>
     <strong>Discover to controlled closure</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discover</strong><span>Scope, dependency, volume, stakeholder and risk discovery.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Assess</strong><span>Identity, Exchange, Teams, SharePoint, OneDrive, domains and security.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Migration strategy, mapping, coexistence, pilot and rollback plan.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pilot</strong><span>Representative users, validation checklist and issue backlog.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Cutover</strong><span>Production wave, DNS/mail flow, workload validation and communications.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Hypercare</strong><span>Support, executive reporting, stabilization and closure evidence.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Discover</strong>
+      <span>Scope, dependency, volume, stakeholder and risk discovery.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assess</strong>
+      <span>Identity, Exchange, Teams, SharePoint, OneDrive, domains and security.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Design</strong>
+      <span>Migration strategy, mapping, coexistence, pilot and rollback plan.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Pilot</strong>
+      <span>Representative users, validation checklist and issue backlog.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Cutover</strong>
+      <span>Production wave, DNS/mail flow, workload validation and communications.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Hypercare</strong>
+      <span>Support, executive reporting, stabilization and closure evidence.</span>
+    </div>
   </div>
 </div>
 
@@ -239,19 +318,35 @@ Typical tenant-to-tenant migration scope includes:
 
 ### Domain Cutover Sequence
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Domain cutover sequence</span>
     <strong>Lower risk before DNS changes</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Domain cutover sequence">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Prepare source tenant</strong><span>Remove domain dependencies, aliases, mail flow blockers and workload references.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Prepare DNS</strong><span>Lower TTL and confirm MX, SPF, DKIM, DMARC, Autodiscover and relay dependencies.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Verify target tenant</strong><span>Add and verify the domain in the target tenant, then activate target mail routing.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>User validation</strong><span>Confirm sign-in, Outlook, mobile access, internal and external mail flow after cutover.</span></div>
+  <div className="kc-journey-map" aria-label="Domain cutover sequence">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Prepare source tenant</strong>
+  <span>Remove domain dependencies, aliases, mail flow blockers and workload references.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Prepare DNS</strong>
+  <span>Lower TTL and confirm MX, SPF, DKIM, DMARC, Autodiscover and relay dependencies.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Verify target tenant</strong>
+  <span>Add and verify the domain in the target tenant, then activate target mail routing.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>User validation</strong>
+  <span>Confirm sign-in, Outlook, mobile access, internal and external mail flow after cutover.</span>
+</div>
   </div>
 </div>
 

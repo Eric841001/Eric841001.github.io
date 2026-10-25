@@ -5,6 +5,32 @@ description: Microsoft Purview data lifecycle management guide for retention, de
 
 # Data Lifecycle Management
 
+<section className="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span className="kc-eyebrow">PURVIEW DATA LIFECYCLE</span>
+    <h2>Keep enterprise content useful, governed and defensible</h2>
+    <p>Manage how Microsoft 365 information is classified, retained, reviewed and disposed while improving data quality for Copilot.</p>
+  </div>
+  <div aria-label="Data lifecycle management focus" className="kc-hero-metrics">
+    <div>
+      <strong>Classify</strong>
+      <span>Owner, sensitivity and context</span>
+    </div>
+    <div>
+      <strong>Retain</strong>
+      <span>Policy and records controls</span>
+    </div>
+    <div>
+      <strong>Review</strong>
+      <span>Stale and sensitive content</span>
+    </div>
+    <div>
+      <strong>Dispose</strong>
+      <span>Defensible deletion or preservation</span>
+    </div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Data Lifecycle Management defines how enterprise information is created, retained, protected, reviewed and disposed across Microsoft 365.
@@ -28,21 +54,26 @@ Retention, deletion, records management, ownership, audit evidence를 설계하�
 
 ## Lifecycle Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Data lifecycle architecture</span>
-    <strong>Create, retain, review, dispose</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Data lifecycle management architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Create and classify</strong><span>New content receives owner, location, label, sensitivity and business context.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Retain and protect</strong><span>Retention, records, DLP and access controls apply based on policy.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Review</strong><span>Owners and compliance teams review stale, sensitive, regulated or obsolete content.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Dispose or evidence</strong><span>Dispose content when allowed, preserve evidence when legal or audit requirements apply.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Data lifecycle architecture</span>
+  <strong>Create, retain, review, dispose</strong>
+</div><div aria-label="Data lifecycle management architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Create and classify</strong>
+  <span>New content receives owner, location, label, sensitivity and business context.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Retain and protect</strong>
+  <span>Retention, records, DLP and access controls apply based on policy.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Review</strong>
+  <span>Owners and compliance teams review stale, sensitive, regulated or obsolete content.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Dispose or evidence</strong>
+  <span>Dispose content when allowed, preserve evidence when legal or audit requirements apply.</span>
+</div></div></div>
 
 ## Core Design Areas
 

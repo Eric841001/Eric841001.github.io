@@ -6,17 +6,29 @@ description: Azure Landing Zone architecture guide for enterprise subscription g
 
 # Landing Zone
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">AZURE LANDING ZONE BLUEPRINT</span>
+    <span className="kc-eyebrow">AZURE LANDING ZONE BLUEPRINT</span>
     <h2>Standardize the platform before workload teams arrive</h2>
     <p>A landing zone gives enterprise teams a repeatable way to place subscriptions, policies, network, monitoring, security and cost control around every workload.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="Landing zone focus">
-    <div><strong>MG</strong><span>Hierarchy</span></div>
-    <div><strong>NET</strong><span>Topology</span></div>
-    <div><strong>POL</strong><span>Policy</span></div>
-    <div><strong>OPS</strong><span>Run</span></div>
+  <div aria-label="Landing zone focus" className="kc-hero-metrics">
+    <div>
+      <strong>MG</strong>
+      <span>Hierarchy</span>
+    </div>
+    <div>
+      <strong>NET</strong>
+      <span>Topology</span>
+    </div>
+    <div>
+      <strong>POL</strong>
+      <span>Policy</span>
+    </div>
+    <div>
+      <strong>OPS</strong>
+      <span>Run</span>
+    </div>
   </div>
 </section>
 
@@ -49,21 +61,26 @@ For a manufacturing modernization scenario, a landing zone helped separate share
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Landing zone architecture</span>
-    <strong>Platform controls to workload landing</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Azure landing zone architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Tenant and hierarchy</strong><span>Entra tenant, management groups, subscriptions, environment separation and ownership.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Policy and network</strong><span>Azure Policy baseline, hub network, DNS, firewall, private access and connectivity.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Security and cost</strong><span>Defender, logging, monitoring, backup, budget, tagging and chargeback controls.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Workload subscription</strong><span>Validated landing space for migration, application modernization, data and AI services.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Landing zone architecture</span>
+  <strong>Platform controls to workload landing</strong>
+</div><div aria-label="Azure landing zone architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Tenant and hierarchy</strong>
+  <span>Entra tenant, management groups, subscriptions, environment separation and ownership.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Policy and network</strong>
+  <span>Azure Policy baseline, hub network, DNS, firewall, private access and connectivity.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Security and cost</strong>
+  <span>Defender, logging, monitoring, backup, budget, tagging and chargeback controls.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Workload subscription</strong>
+  <span>Validated landing space for migration, application modernization, data and AI services.</span>
+</div></div></div>
 
 Core design areas:
 

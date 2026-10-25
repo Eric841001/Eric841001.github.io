@@ -95,7 +95,7 @@ export default function Home() {
         </script>
       </Head>
 
-      <main>
+      <main className="site-home">
         <HeroSection />
 
         <PlatformStats />

@@ -7,17 +7,29 @@ sidebar_label: EXO OMEv2 Remove Rule
 
 # Exchange Online OMEv2 and RMS Attachment Decryption Rule
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">EXCHANGE ONLINE ENCRYPTION EXCEPTION</span>
+    <span className="kc-eyebrow">EXCHANGE ONLINE ENCRYPTION EXCEPTION</span>
     <h2>Handle OMEv2 and RMS removal as a controlled exception</h2>
     <p>Transport rules that remove encryption must be narrow, approved, auditable and tied to a clear business process because they can increase data leakage risk.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="OMEv2 removal focus">
-    <div><strong>Scope</strong><span>Narrow</span></div>
-    <div><strong>Rule</strong><span>EXO</span></div>
-    <div><strong>Risk</strong><span>Data</span></div>
-    <div><strong>Audit</strong><span>Evidence</span></div>
+  <div aria-label="OMEv2 removal focus" className="kc-hero-metrics">
+    <div>
+      <strong>Scope</strong>
+      <span>Narrow</span>
+    </div>
+    <div>
+      <strong>Rule</strong>
+      <span>EXO</span>
+    </div>
+    <div>
+      <strong>Risk</strong>
+      <span>Data</span>
+    </div>
+    <div>
+      <strong>Audit</strong>
+      <span>Evidence</span>
+    </div>
   </div>
 </section>
 
@@ -56,21 +68,26 @@ This should only be used with:
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Encryption exception flow</span>
-    <strong>Narrow transport rule scope</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="OMEv2 and RMS decryption transport rule flow">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Internal sender</strong><span>Approved sender or business process requires a controlled encryption exception.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Exchange Online</strong><span>Message is evaluated by mail flow and transport rule conditions.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Transport rule</strong><span>Rule removes OMEv2 or RMS attachment protection only for approved scope.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>External recipient</strong><span>Approved recipient receives usable content with audit and exception record.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Encryption exception flow</span>
+  <strong>Narrow transport rule scope</strong>
+</div><div aria-label="OMEv2 and RMS decryption transport rule flow" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Internal sender</strong>
+  <span>Approved sender or business process requires a controlled encryption exception.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Exchange Online</strong>
+  <span>Message is evaluated by mail flow and transport rule conditions.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Transport rule</strong>
+  <span>Rule removes OMEv2 or RMS attachment protection only for approved scope.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>External recipient</strong>
+  <span>Approved recipient receives usable content with audit and exception record.</span>
+</div></div></div>
 
 ---
 

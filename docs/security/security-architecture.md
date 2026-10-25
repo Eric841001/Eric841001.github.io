@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Enterprise Security Architecture
 
-<section class="kc-topic-hero" aria-label="Enterprise security architecture hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft Security Reference Architecture</span>
+<section aria-label="Enterprise security architecture hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft Security Reference Architecture</span>
     <h2>Make risk visible across identity, endpoint, data and AI</h2>
     <p>Modern enterprise security requires an integrated platform approach. Identity, device, endpoint, email, data, AI and security operations controls should work as one architecture with measurable evidence, exception handling and response ownership.</p>
-    <div class="kc-hero-signal-row" aria-label="Security architecture signals">
+    <div aria-label="Security architecture signals" className="kc-hero-signal-row">
       <span>Identity</span>
       <span>Endpoint</span>
       <span>Data</span>
       <span>SOC</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Security architecture related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/security/conditional-access">Conditional Access</a>
-      <a class="kc-topic-button" href="/knowledge/security/defender-xdr">Defender XDR</a>
-      <a class="kc-topic-button" href="/knowledge/security/purview">Purview</a>
+    <div aria-label="Security architecture related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/security/conditional-access" className="kc-topic-button kc-topic-button--primary">Conditional Access</a>
+      <a href="/knowledge/security/defender-xdr" className="kc-topic-button">Defender XDR</a>
+      <a href="/knowledge/security/purview" className="kc-topic-button">Purview</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Enterprise security control model">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Enterprise security control model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Security Control Plane</span>
       <strong>Zero Trust to operations</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#identity-security" class="kc-factory-card"><small>01</small><strong>Identity</strong><span>Entra ID, MFA, Conditional Access and risk-based policies.</span></a>
-      <a href="#device-security" class="kc-factory-card"><small>02</small><strong>Device</strong><span>Intune compliance, configuration, application and platform controls.</span></a>
-      <a href="#endpoint-protection" class="kc-factory-card"><small>03</small><strong>Defender</strong><span>Endpoint, email, XDR, vulnerability and incident response.</span></a>
-      <a href="#data-protection" class="kc-factory-card"><small>04</small><strong>Purview</strong><span>Labels, DLP, audit, insider risk and Copilot data protection.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#identity-security" className="kc-factory-card">
+        <small>01</small>
+        <strong>Identity</strong>
+        <span>Entra ID, MFA, Conditional Access and risk-based policies.</span>
+      </a>
+      <a href="#device-security" className="kc-factory-card">
+        <small>02</small>
+        <strong>Device</strong>
+        <span>Intune compliance, configuration, application and platform controls.</span>
+      </a>
+      <a href="#endpoint-protection" className="kc-factory-card">
+        <small>03</small>
+        <strong>Defender</strong>
+        <span>Endpoint, email, XDR, vulnerability and incident response.</span>
+      </a>
+      <a href="#data-protection" className="kc-factory-card">
+        <small>04</small>
+        <strong>Purview</strong>
+        <span>Labels, DLP, audit, insider risk and Copilot data protection.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Architecture rule</strong>
       <span>Security architecture should prove which risks are reduced, which controls enforce them and who operates the response when controls trigger.</span>
     </div>
@@ -71,18 +86,42 @@ Organizations must achieve:
 
 ## Security Reference Architecture
 
-<div class="kc-journey-map" aria-label="Enterprise security reference architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="Enterprise security reference architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Reference Architecture</span>
     <strong>User access to detection and response</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User</strong><span>Workforce, admin, guest, partner and service identities.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Entra ID</strong><span>Authentication, Conditional Access, identity governance and risk signals.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Intune</strong><span>Device compliance, configuration, app protection and platform baselines.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Defender & Purview</strong><span>Endpoint, email, data protection, DLP, audit and insider risk controls.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Copilot Security</strong><span>Permission boundary, data protection, prompt behavior and AI governance.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>SOC</strong><span>Defender XDR, Sentinel, triage, incident response and evidence.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User</strong>
+      <span>Workforce, admin, guest, partner and service identities.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Entra ID</strong>
+      <span>Authentication, Conditional Access, identity governance and risk signals.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Intune</strong>
+      <span>Device compliance, configuration, app protection and platform baselines.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Defender &amp; Purview</strong>
+      <span>Endpoint, email, data protection, DLP, audit and insider risk controls.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Copilot Security</strong>
+      <span>Permission boundary, data protection, prompt behavior and AI governance.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>SOC</strong>
+      <span>Defender XDR, Sentinel, triage, incident response and evidence.</span>
+    </div>
   </div>
 </div>
 
@@ -389,19 +428,35 @@ Extend Zero Trust beyond traditional network boundaries.
 
 ## Integration
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Secure access integration</span>
     <strong>User access through identity and network controls</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Secure access integration">
-    <div class="kc-journey-node is-source"><small>01</small><strong>User and device context</strong><span>User, location, device compliance, session risk and app sensitivity are evaluated together.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Global Secure Access</strong><span>Internet, private and Microsoft traffic can be routed through controlled access policy.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Microsoft Entra ID</strong><span>Conditional Access, MFA, risk signals and session controls decide access posture.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Microsoft 365 workload</strong><span>Exchange, Teams, SharePoint, OneDrive and Copilot receive governed access.</span></div>
+  <div className="kc-journey-map" aria-label="Secure access integration">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>User and device context</strong>
+  <span>User, location, device compliance, session risk and app sensitivity are evaluated together.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Global Secure Access</strong>
+  <span>Internet, private and Microsoft traffic can be routed through controlled access policy.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Microsoft Entra ID</strong>
+  <span>Conditional Access, MFA, risk signals and session controls decide access posture.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Microsoft 365 workload</strong>
+  <span>Exchange, Teams, SharePoint, OneDrive and Copilot receive governed access.</span>
+</div>
   </div>
 </div>
 
@@ -434,19 +489,35 @@ Provides:
 
 ## Incident Response Framework
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
+<div className="kc-factory-panel">
+  <div className="kc-panel-header">
     <span>Incident response framework</span>
     <strong>Detect, contain, recover, improve</strong>
   </div>
-  <div class="kc-journey-map" aria-label="Incident response framework">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Detect and investigate</strong><span>Correlate Defender XDR and Sentinel signals, validate scope and identify affected users or devices.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Contain</strong><span>Disable risky sessions, isolate devices, block malicious artifacts and protect privileged accounts.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Remediate and recover</strong><span>Remove persistence, restore configuration, validate business service recovery and document evidence.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Review and improve</strong><span>Update policies, playbooks, detections, training and executive risk reporting.</span></div>
+  <div className="kc-journey-map" aria-label="Incident response framework">
+    <div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Detect and investigate</strong>
+  <span>Correlate Defender XDR and Sentinel signals, validate scope and identify affected users or devices.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Contain</strong>
+  <span>Disable risky sessions, isolate devices, block malicious artifacts and protect privileged accounts.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Remediate and recover</strong>
+  <span>Remove persistence, restore configuration, validate business service recovery and document evidence.</span>
+</div>
+    <div className="kc-journey-arrow" aria-hidden="true"/>
+    <div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Review and improve</strong>
+  <span>Update policies, playbooks, detections, training and executive risk reporting.</span>
+</div>
   </div>
 </div>
 

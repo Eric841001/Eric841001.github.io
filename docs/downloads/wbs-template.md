@@ -21,7 +21,10 @@ toc_max_heading_level: 2
     </div>
   </div>
   <div class="kc-factory-panel" aria-label="Download WBS request model">
-    <div class="kc-factory-panel__header"><span>WBS Asset</span><strong>Delivery-ready</strong></div>
+    <div class="kc-factory-panel__header">
+  <span>WBS Asset</span>
+  <strong>Delivery-ready</strong>
+</div>
     <div class="kc-factory-grid">
       <a href="#phase-1-project-initiation" class="kc-factory-card"><small>01</small><strong>Initiation</strong><span>Kickoff, stakeholders, governance setup and baseline schedule.</span></a>
       <a href="#phase-2-discovery" class="kc-factory-card"><small>02</small><strong>Discovery</strong><span>Workshops, interviews, environment review and reference documents.</span></a>
@@ -49,13 +52,36 @@ toc_max_heading_level: 2
 > **Executive lens:** A WBS should make delivery ownership visible. Each phase should connect activity, deliverable, dependency and acceptance evidence so the project can be governed instead of merely tracked.
 
 <div class="kc-journey-map" aria-label="Download WBS template flow">
-  <div class="kc-journey-map__header"><span>WBS Delivery Flow</span><strong>Initiation to handover closure</strong></div>
+  <div class="kc-journey-map__header">
+  <span>WBS Delivery Flow</span>
+  <strong>Initiation to handover closure</strong>
+</div>
   <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Initiation</strong><span>Kickoff, governance, stakeholder register and baseline schedule.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Discovery</strong><span>Workshops, interviews, environment review and documentation collection.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Assessment</strong><span>Findings, risks, recommendations and workstream priorities.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Design</strong><span>Target architecture, roadmap, controls and acceptance criteria.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Delivery</strong><span>Implementation, validation, handover, closure and lessons learned.</span></div>
+    <div class="kc-journey-node kc-journey-node--demand">
+  <small>01</small>
+  <strong>Initiation</strong>
+  <span>Kickoff, governance, stakeholder register and baseline schedule.</span>
+</div>
+    <div class="kc-journey-node">
+  <small>02</small>
+  <strong>Discovery</strong>
+  <span>Workshops, interviews, environment review and documentation collection.</span>
+</div>
+    <div class="kc-journey-node">
+  <small>03</small>
+  <strong>Assessment</strong>
+  <span>Findings, risks, recommendations and workstream priorities.</span>
+</div>
+    <div class="kc-journey-node kc-journey-node--control">
+  <small>04</small>
+  <strong>Design</strong>
+  <span>Target architecture, roadmap, controls and acceptance criteria.</span>
+</div>
+    <div class="kc-journey-node kc-journey-node--outcome">
+  <small>05</small>
+  <strong>Delivery</strong>
+  <span>Implementation, validation, handover, closure and lessons learned.</span>
+</div>
   </div>
 </div>
 

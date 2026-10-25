@@ -9,25 +9,44 @@ toc_max_heading_level: 2
 
 # Security Modernization Program
 
-<section class="kc-topic-hero" aria-label="Security Modernization Program hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Security Modernization Program</span>
+<section aria-label="Security Modernization Program hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Security Modernization Program</span>
     <h2>Move Microsoft security from settings review to evidence-ready operations</h2>
     <p>This program connects Zero Trust, Conditional Access, Defender, Purview, Intune, SaaS access and security committee evidence into one measurable operating model.</p>
-    <div class="kc-hero-signal-row" aria-label="Security modernization signals">
+    <div aria-label="Security modernization signals" className="kc-hero-signal-row">
       <span>Baseline</span>
       <span>Architecture</span>
       <span>Evidence</span>
       <span>Operate</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Security Modernization Program model">
-    <div class="kc-factory-panel__header"><span>Security Flow</span><strong>Evidence-ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#common-drivers" class="kc-factory-card"><small>01</small><strong>Drivers</strong><span>SaaS approval, Copilot readiness, audit evidence and control ownership.</span></a>
-      <a href="#reference-architecture" class="kc-factory-card"><small>02</small><strong>Architecture</strong><span>Identity, endpoint, data, messaging, SaaS access and operations.</span></a>
-      <a href="#modernization-roadmap" class="kc-factory-card"><small>03</small><strong>Roadmap</strong><span>Baseline, policy design, evidence pack and operating cadence.</span></a>
-      <a href="#deliverables" class="kc-factory-card"><small>04</small><strong>Assets</strong><span>Reference architecture, CA design, Defender plan and approval pack.</span></a>
+  <div aria-label="Security Modernization Program model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Security Flow</span>
+      <strong>Evidence-ready</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#common-drivers" className="kc-factory-card">
+        <small>01</small>
+        <strong>Drivers</strong>
+        <span>SaaS approval, Copilot readiness, audit evidence and control ownership.</span>
+      </a>
+      <a href="#reference-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Architecture</strong>
+        <span>Identity, endpoint, data, messaging, SaaS access and operations.</span>
+      </a>
+      <a href="#modernization-roadmap" className="kc-factory-card">
+        <small>03</small>
+        <strong>Roadmap</strong>
+        <span>Baseline, policy design, evidence pack and operating cadence.</span>
+      </a>
+      <a href="#deliverables" className="kc-factory-card">
+        <small>04</small>
+        <strong>Assets</strong>
+        <span>Reference architecture, CA design, Defender plan and approval pack.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -36,15 +55,42 @@ The Security Modernization Program helps organizations move from basic Microsoft
 
 ## Visual Modernization Roadmap
 
-<div class="kc-journey-map" aria-label="Security modernization roadmap">
-  <div class="kc-journey-map__header"><span>Visual Modernization Roadmap</span><strong>Control baseline to operating evidence</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Baseline Review</strong><span>Identity, endpoint, data, messaging, SaaS and operations maturity.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Reference Architecture</strong><span>Zero Trust, Defender, Purview, Intune and access control model.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Policy Design</strong><span>Mandatory controls, exception rules, ownership and approval path.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Evidence Pack</strong><span>Committee, audit, executive review and decision-ready documentation.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Security Operations</strong><span>Owners, cadence, incident workflow and risk review rhythm.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Control Tuning</strong><span>Metrics, findings, exceptions and continuous improvement backlog.</span></div>
+<div aria-label="Security modernization roadmap" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Visual Modernization Roadmap</span>
+    <strong>Control baseline to operating evidence</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Baseline Review</strong>
+      <span>Identity, endpoint, data, messaging, SaaS and operations maturity.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Reference Architecture</strong>
+      <span>Zero Trust, Defender, Purview, Intune and access control model.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Policy Design</strong>
+      <span>Mandatory controls, exception rules, ownership and approval path.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Evidence Pack</strong>
+      <span>Committee, audit, executive review and decision-ready documentation.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Security Operations</strong>
+      <span>Owners, cadence, incident workflow and risk review rhythm.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Control Tuning</strong>
+      <span>Metrics, findings, exceptions and continuous improvement backlog.</span>
+    </div>
   </div>
 </div>
 
@@ -156,10 +202,22 @@ In finance, healthcare, manufacturing and regulated SaaS environments, security 
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Security modernization reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Control gaps across workloads</strong><span>Identity, endpoint, email, data and SaaS access controls are often improved separately.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Unified security program</strong><span>Connect Zero Trust, Defender, Purview, Intune, Conditional Access and governance evidence.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Executive-ready security story</strong><span>Security modernization becomes a phased roadmap with measurable risk reduction and operational ownership.</span></div>
+<div aria-label="Security modernization reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Control gaps across workloads</strong>
+    <span>Identity, endpoint, email, data and SaaS access controls are often improved separately.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Unified security program</strong>
+    <span>Connect Zero Trust, Defender, Purview, Intune, Conditional Access and governance evidence.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Executive-ready security story</strong>
+    <span>Security modernization becomes a phased roadmap with measurable risk reduction and operational ownership.</span>
+  </div>
 </div>
 
 ## Related Documents

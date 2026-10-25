@@ -5,17 +5,29 @@ description: OneDrive enterprise architecture guide for personal work files, syn
 
 # OneDrive
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">ONEDRIVE ENTERPRISE GOVERNANCE</span>
+    <span className="kc-eyebrow">ONEDRIVE ENTERPRISE GOVERNANCE</span>
     <h2>Govern personal work files as part of the collaboration architecture</h2>
     <p>OneDrive affects sync, external sharing, retention, DLP, user departure, migration and Copilot readiness, so it should be designed with enterprise controls.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="OneDrive governance focus">
-    <div><strong>Sync</strong><span>Device</span></div>
-    <div><strong>Share</strong><span>Control</span></div>
-    <div><strong>DLP</strong><span>Data</span></div>
-    <div><strong>AI</strong><span>Ready</span></div>
+  <div aria-label="OneDrive governance focus" className="kc-hero-metrics">
+    <div>
+      <strong>Sync</strong>
+      <span>Device</span>
+    </div>
+    <div>
+      <strong>Share</strong>
+      <span>Control</span>
+    </div>
+    <div>
+      <strong>DLP</strong>
+      <span>Data</span>
+    </div>
+    <div>
+      <strong>AI</strong>
+      <span>Ready</span>
+    </div>
   </div>
 </section>
 
@@ -43,21 +55,26 @@ Known Folder Move, sync restriction, external sharing, retention, DLP, user depa
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>OneDrive governance architecture</span>
-    <strong>Personal work files under enterprise controls</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="OneDrive governance architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>User and device</strong><span>Users access work files from managed devices with sync and compliance controls.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>OneDrive</strong><span>Known Folder Move, sync, sharing and lifecycle rules govern personal work content.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Intune and Purview</strong><span>Device compliance, DLP, labels, retention and audit controls apply around the content.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Copilot readiness</strong><span>Permissions, sharing and sensitive data posture are reviewed before AI rollout.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>OneDrive governance architecture</span>
+  <strong>Personal work files under enterprise controls</strong>
+</div><div aria-label="OneDrive governance architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>User and device</strong>
+  <span>Users access work files from managed devices with sync and compliance controls.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>OneDrive</strong>
+  <span>Known Folder Move, sync, sharing and lifecycle rules govern personal work content.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Intune and Purview</strong>
+  <span>Device compliance, DLP, labels, retention and audit controls apply around the content.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Copilot readiness</strong>
+  <span>Permissions, sharing and sensitive data posture are reviewed before AI rollout.</span>
+</div></div></div>
 
 ## Implementation
 

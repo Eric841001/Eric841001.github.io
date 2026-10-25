@@ -9,31 +9,49 @@ toc_max_heading_level: 2
 
 # Enterprise Group Governance Case Study
 
-<section class="kc-topic-hero" aria-label="Enterprise group governance case study hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Enterprise Group Governance Pattern</span>
+<section aria-label="Enterprise group governance case study hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Group Governance Pattern</span>
     <h2>Standardize identity, device and collaboration governance across business units</h2>
     <p>This anonymized pattern shows how enterprise groups can convert scattered tenant, identity, Intune and collaboration decisions into a traceable policy workbook and operating model.</p>
-    <div class="kc-hero-signal-row" aria-label="Enterprise group governance signals">
+    <div aria-label="Enterprise group governance signals" className="kc-hero-signal-row">
       <span>Identity</span>
       <span>Device</span>
       <span>Tenant</span>
       <span>Exception</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Enterprise group governance actions">
-      <a class="kc-topic-button kc-topic-button--primary" href="#governance-decision-model">Decision Model</a>
-      <a class="kc-topic-button" href="../architecture/governance-architecture">Governance Architecture</a>
-      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    <div aria-label="Enterprise group governance actions" className="kc-topic-hero__actions">
+      <a href="#governance-decision-model" className="kc-topic-button kc-topic-button--primary">Decision Model</a>
+      <a href="../architecture/governance-architecture" className="kc-topic-button">Governance Architecture</a>
+      <a href="../contact" className="kc-topic-button">Request Asset</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Enterprise group governance operating model">
-    <div class="kc-factory-panel__header"><span>Governance Flow</span><strong>Workbook-driven</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Multiple business units operate with different policy variants and maturity levels.</span></a>
-      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Baseline</strong><span>Entra ID, Intune, Microsoft 365, Teams, SharePoint, Defender and Purview.</span></a>
-      <a href="#governance-decision-model" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Standardization questions, exception questions and operating ownership.</span></a>
-      <a href="#business-outcome" class="kc-factory-card"><small>04</small><strong>Outcome</strong><span>Clearer tenant strategy, safer exceptions and repeatable governance review.</span></a>
+  <div aria-label="Enterprise group governance operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Governance Flow</span>
+      <strong>Workbook-driven</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-context" className="kc-factory-card">
+        <small>01</small>
+        <strong>Context</strong>
+        <span>Multiple business units operate with different policy variants and maturity levels.</span>
+      </a>
+      <a href="#microsoft-workloads" className="kc-factory-card">
+        <small>02</small>
+        <strong>Baseline</strong>
+        <span>Entra ID, Intune, Microsoft 365, Teams, SharePoint, Defender and Purview.</span>
+      </a>
+      <a href="#governance-decision-model" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decisions</strong>
+        <span>Standardization questions, exception questions and operating ownership.</span>
+      </a>
+      <a href="#business-outcome" className="kc-factory-card">
+        <small>04</small>
+        <strong>Outcome</strong>
+        <span>Clearer tenant strategy, safer exceptions and repeatable governance review.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -42,18 +60,42 @@ This anonymized case study summarizes an enterprise group pattern involving Entr
 
 ## Visual Governance Pattern
 
-<div class="kc-journey-map" aria-label="Enterprise group governance visual pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Enterprise group governance visual pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Visual Governance Pattern</span>
     <strong>Policy variants to operating cadence</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Group Context</strong><span>Multiple business units, policy variants and different maturity levels.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Identity Governance</strong><span>Roles, groups, MFA, Conditional Access and privileged access decisions.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Device Governance</strong><span>Intune enrollment, compliance, platform policy and exception handling.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Collaboration Governance</strong><span>Teams, SharePoint, guests, external sharing and lifecycle ownership.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Tenant Strategy</strong><span>Strategic, transitional, regulated and legacy tenant decisions.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operations Model</strong><span>Exception, support, review cadence, renewal and escalation path.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Group Context</strong>
+      <span>Multiple business units, policy variants and different maturity levels.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Identity Governance</strong>
+      <span>Roles, groups, MFA, Conditional Access and privileged access decisions.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Device Governance</strong>
+      <span>Intune enrollment, compliance, platform policy and exception handling.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Collaboration Governance</strong>
+      <span>Teams, SharePoint, guests, external sharing and lifecycle ownership.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Tenant Strategy</strong>
+      <span>Strategic, transitional, regulated and legacy tenant decisions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Operations Model</strong>
+      <span>Exception, support, review cadence, renewal and escalation path.</span>
+    </div>
   </div>
 </div>
 
@@ -162,10 +204,22 @@ For executive review, this pattern should be positioned as a governance standard
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Enterprise group governance reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Group-wide inconsistency</strong><span>Subsidiaries operate different policies, tenant settings and ownership models.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Governance baseline</strong><span>Define common tenant standards, exception process, policy workbook and operating cadence.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Reusable control model</strong><span>Central IT can guide local operations without blocking local business requirements.</span></div>
+<div aria-label="Enterprise group governance reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Group-wide inconsistency</strong>
+    <span>Subsidiaries operate different policies, tenant settings and ownership models.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Governance baseline</strong>
+    <span>Define common tenant standards, exception process, policy workbook and operating cadence.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Reusable control model</strong>
+    <span>Central IT can guide local operations without blocking local business requirements.</span>
+  </div>
 </div>
 
 ## Related Documents

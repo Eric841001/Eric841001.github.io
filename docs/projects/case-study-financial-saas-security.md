@@ -9,31 +9,49 @@ toc_max_heading_level: 2
 
 # Financial SaaS Security Case Study
 
-<section class="kc-topic-hero" aria-label="Financial SaaS security case study hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Regulated SaaS Security Pattern</span>
+<section aria-label="Financial SaaS security case study hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Regulated SaaS Security Pattern</span>
     <h2>Connect identity, device, network and data controls into approval-ready evidence</h2>
     <p>This anonymized pattern shows how a regulated financial environment can use Microsoft 365 and SaaS capabilities while maintaining control ownership, exception governance and security committee visibility.</p>
-    <div class="kc-hero-signal-row" aria-label="Financial SaaS security signals">
+    <div aria-label="Financial SaaS security signals" className="kc-hero-signal-row">
       <span>Identity</span>
       <span>Device</span>
       <span>Network</span>
       <span>Evidence</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Financial SaaS security actions">
-      <a class="kc-topic-button kc-topic-button--primary" href="#delivery-approach">Delivery Approach</a>
-      <a class="kc-topic-button" href="../security/zero-trust-framework">Zero Trust</a>
-      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    <div aria-label="Financial SaaS security actions" className="kc-topic-hero__actions">
+      <a href="#delivery-approach" className="kc-topic-button kc-topic-button--primary">Delivery Approach</a>
+      <a href="../security/zero-trust-framework" className="kc-topic-button">Zero Trust</a>
+      <a href="../contact" className="kc-topic-button">Request Asset</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Financial SaaS security operating model">
-    <div class="kc-factory-panel__header"><span>Control Model</span><strong>Evidence-ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Requirement</strong><span>Controlled SaaS access, internal approval and regulated operations.</span></a>
-      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Baseline</strong><span>Entra ID, Conditional Access, Intune, Defender, Purview and GSA.</span></a>
-      <a href="#success-metrics" class="kc-factory-card"><small>03</small><strong>Evidence</strong><span>Control coverage, exception hygiene and committee-ready review pack.</span></a>
-      <a href="#lessons-learned" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Recurring review, exception expiry and policy refinement rhythm.</span></a>
+  <div aria-label="Financial SaaS security operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Control Model</span>
+      <strong>Evidence-ready</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-context" className="kc-factory-card">
+        <small>01</small>
+        <strong>Requirement</strong>
+        <span>Controlled SaaS access, internal approval and regulated operations.</span>
+      </a>
+      <a href="#microsoft-workloads" className="kc-factory-card">
+        <small>02</small>
+        <strong>Baseline</strong>
+        <span>Entra ID, Conditional Access, Intune, Defender, Purview and GSA.</span>
+      </a>
+      <a href="#success-metrics" className="kc-factory-card">
+        <small>03</small>
+        <strong>Evidence</strong>
+        <span>Control coverage, exception hygiene and committee-ready review pack.</span>
+      </a>
+      <a href="#lessons-learned" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Recurring review, exception expiry and policy refinement rhythm.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -42,18 +60,42 @@ This anonymized case study summarizes a financial-services pattern for Microsoft
 
 ## Visual Control Pattern
 
-<div class="kc-journey-map" aria-label="Financial SaaS security visual control pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Financial SaaS security visual control pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Visual Control Pattern</span>
     <strong>Control design to security committee evidence</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Regulated Requirement</strong><span>Controlled SaaS access, approval evidence and exception visibility.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Identity and Device</strong><span>Entra ID, Conditional Access, Intune compliance and device posture.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Network Boundary</strong><span>Global Secure Access, allowlist, traffic path and exception process.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Data Protection</strong><span>Purview, DLP, sensitivity labels, audit and Copilot readiness.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Exception Governance</strong><span>Owner, expiry date, approval evidence and compensating controls.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Committee Evidence</strong><span>Decision pack, review cadence and policy refinement loop.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Regulated Requirement</strong>
+      <span>Controlled SaaS access, approval evidence and exception visibility.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Identity and Device</strong>
+      <span>Entra ID, Conditional Access, Intune compliance and device posture.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Network Boundary</strong>
+      <span>Global Secure Access, allowlist, traffic path and exception process.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Data Protection</strong>
+      <span>Purview, DLP, sensitivity labels, audit and Copilot readiness.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Exception Governance</strong>
+      <span>Owner, expiry date, approval evidence and compensating controls.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Committee Evidence</strong>
+      <span>Decision pack, review cadence and policy refinement loop.</span>
+    </div>
   </div>
 </div>
 
@@ -142,10 +184,22 @@ For regulated environments, success depends on evidence-ready governance. Archit
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Financial SaaS security reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Security assurance pressure</strong><span>Customer due diligence, identity controls and data protection evidence must be presented clearly.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Evidence-ready design</strong><span>Map Conditional Access, Defender, Purview, audit and exception process into an approval-ready story.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Faster review cycle</strong><span>Reusable evidence and governance artifacts reduce repeated security questionnaire effort.</span></div>
+<div aria-label="Financial SaaS security reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Security assurance pressure</strong>
+    <span>Customer due diligence, identity controls and data protection evidence must be presented clearly.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Evidence-ready design</strong>
+    <span>Map Conditional Access, Defender, Purview, audit and exception process into an approval-ready story.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Faster review cycle</strong>
+    <span>Reusable evidence and governance artifacts reduce repeated security questionnaire effort.</span>
+  </div>
 </div>
 
 ## Related Documents

@@ -8,34 +8,49 @@ toc_max_heading_level: 2
 
 # Agentic AI Architecture
 
-<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Agentic AI architecture hero">
+<section aria-label="Agentic AI architecture hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Agentic AI Reference Architecture</span>
     <h2>Design agents as controlled business systems</h2>
     <p>Agentic AI moves beyond prompt assistance into systems that can reason, use tools, maintain context, coordinate work and produce measurable business outcomes. The architecture must explain what the agent can know, what it can do, who owns it and how it is governed.</p>
-    <div className="kc-hero-signal-row" aria-label="Agentic architecture signals">
+    <div aria-label="Agentic architecture signals" className="kc-hero-signal-row">
       <span>Goal</span>
       <span>Grounding</span>
       <span>Action</span>
       <span>Control</span>
     </div>
-    <div className="kc-topic-hero__actions" aria-label="Agentic AI entry points">
-      <a className="kc-topic-button kc-topic-button--primary" href="/knowledge/search/ai-agent-factory">AI Agent Factory</a>
-      <a className="kc-topic-button" href="/knowledge/copilot/copilot-studio-2026-platform-update">Copilot Studio Update</a>
-      <a className="kc-topic-button" href="/knowledge/copilot/multi-agent-framework">Multi-Agent Framework</a>
+    <div aria-label="Agentic AI entry points" className="kc-topic-hero__actions">
+      <a href="/knowledge/search/ai-agent-factory" className="kc-topic-button kc-topic-button--primary">AI Agent Factory</a>
+      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" className="kc-topic-button">Copilot Studio Update</a>
+      <a href="/knowledge/copilot/multi-agent-framework" className="kc-topic-button">Multi-Agent Framework</a>
     </div>
   </div>
-
-  <div className="kc-factory-panel" aria-label="Agentic AI architecture visual">
+  <div aria-label="Agentic AI architecture visual" className="kc-factory-panel">
     <div className="kc-factory-panel__header">
       <span>Architecture Spine</span>
       <strong>Human-guided autonomy</strong>
     </div>
     <div className="kc-factory-grid">
-      <a href="#core-architecture" className="kc-factory-card"><small>01</small><strong>Experience</strong><span>Copilot, Teams, business apps and workflow triggers.</span></a>
-      <a href="#core-architecture" className="kc-factory-card"><small>02</small><strong>Agent</strong><span>Instructions, skills, memory, tools and orchestration.</span></a>
-      <a href="#security-control-plane" className="kc-factory-card"><small>03</small><strong>Control</strong><span>Identity, policy, approval, audit, telemetry and cost.</span></a>
-      <a href="#kpi-framework" className="kc-factory-card"><small>04</small><strong>Outcome</strong><span>Automation, insight, decision support and measured value.</span></a>
+      <a href="#core-architecture" className="kc-factory-card">
+        <small>01</small>
+        <strong>Experience</strong>
+        <span>Copilot, Teams, business apps and workflow triggers.</span>
+      </a>
+      <a href="#core-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Agent</strong>
+        <span>Instructions, skills, memory, tools and orchestration.</span>
+      </a>
+      <a href="#security-control-plane" className="kc-factory-card">
+        <small>03</small>
+        <strong>Control</strong>
+        <span>Identity, policy, approval, audit, telemetry and cost.</span>
+      </a>
+      <a href="#kpi-framework" className="kc-factory-card">
+        <small>04</small>
+        <strong>Outcome</strong>
+        <span>Automation, insight, decision support and measured value.</span>
+      </a>
     </div>
     <div className="kc-guardrail-panel">
       <strong>Design rule</strong>
@@ -54,19 +69,43 @@ The objective is not simply to create many agents. The objective is to establish
 
 > **Executive lens:** Agentic AI architecture is the bridge between AI experimentation and operational automation. The architecture must explain who the agent serves, what it can know, what it can do and how it is governed.
 
-<div className="kc-context-panel" aria-label="Agentic AI executive architecture">
+<div aria-label="Agentic AI executive architecture" className="kc-context-panel">
   <div className="kc-context-panel__lead">
     <small>Executive Architecture</small>
     <strong>Experience, agent, data, control and outcome should be designed together.</strong>
     <span>An agent is not just a chat surface. It is a governed operating object connected to users, data, tools, policy and measurable business value.</span>
   </div>
   <div className="kc-context-panel__grid">
-    <a href="#core-architecture"><small>Experience</small><strong>Where work starts</strong><span>Microsoft 365 Copilot, Teams, business apps, workflow triggers and user requests.</span></a>
-    <a href="#core-architecture"><small>Agent layer</small><strong>How work is reasoned</strong><span>Instructions, skills, memory, routing, orchestration and specialist agents.</span></a>
-    <a href="#knowledge-grounding"><small>Knowledge</small><strong>What the agent can know</strong><span>Microsoft Graph, SharePoint, Dataverse, Fabric and approved external data.</span></a>
-    <a href="#tool-use-and-action-execution"><small>Tools</small><strong>What the agent can do</strong><span>Connectors, APIs, Power Automate, Logic Apps, MCP and computer use patterns.</span></a>
-    <a href="#security-control-plane"><small>Control</small><strong>How risk is governed</strong><span>Entra ID, Purview, Defender, DLP, audit, approval and telemetry.</span></a>
-    <a href="#kpi-framework"><small>Outcome</small><strong>Why it exists</strong><span>Automation, insight, decision support, quality improvement and business value.</span></a>
+    <a href="#core-architecture">
+      <small>Experience</small>
+      <strong>Where work starts</strong>
+      <span>Microsoft 365 Copilot, Teams, business apps, workflow triggers and user requests.</span>
+    </a>
+    <a href="#core-architecture">
+      <small>Agent layer</small>
+      <strong>How work is reasoned</strong>
+      <span>Instructions, skills, memory, routing, orchestration and specialist agents.</span>
+    </a>
+    <a href="#knowledge-grounding">
+      <small>Knowledge</small>
+      <strong>What the agent can know</strong>
+      <span>Microsoft Graph, SharePoint, Dataverse, Fabric and approved external data.</span>
+    </a>
+    <a href="#tool-use-and-action-execution">
+      <small>Tools</small>
+      <strong>What the agent can do</strong>
+      <span>Connectors, APIs, Power Automate, Logic Apps, MCP and computer use patterns.</span>
+    </a>
+    <a href="#security-control-plane">
+      <small>Control</small>
+      <strong>How risk is governed</strong>
+      <span>Entra ID, Purview, Defender, DLP, audit, approval and telemetry.</span>
+    </a>
+    <a href="#kpi-framework">
+      <small>Outcome</small>
+      <strong>Why it exists</strong>
+      <span>Automation, insight, decision support, quality improvement and business value.</span>
+    </a>
   </div>
 </div>
 
@@ -78,18 +117,42 @@ Traditional Copilot usage is primarily user-initiated.
 
 Agentic AI introduces agents that can understand goals, maintain context, use enterprise knowledge, call tools, coordinate with other agents, escalate exceptions and improve through telemetry.
 
-<div className="kc-journey-map" aria-label="From Copilot to Agentic AI journey">
+<div aria-label="From Copilot to Agentic AI journey" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Adoption Journey</span>
     <strong>From assistance to governed automation</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Copilot Chat</strong><span>User-led prompts for everyday work.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Assistant</strong><span>Reusable work patterns for meetings, documents and analysis.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Task Agent</strong><span>Grounded agent with tools and a defined business scope.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governed Agent</strong><span>Owner, policy, approval, cost and telemetry are in place.</span></div>
-    <div className="kc-journey-node"><small>05</small><strong>Multi-Agent</strong><span>Coordinator and specialist agents work together with boundaries.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>AI Operating Model</strong><span>Portfolio governance, adoption and value realization run continuously.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Copilot Chat</strong>
+      <span>User-led prompts for everyday work.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assistant</strong>
+      <span>Reusable work patterns for meetings, documents and analysis.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Task Agent</strong>
+      <span>Grounded agent with tools and a defined business scope.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Governed Agent</strong>
+      <span>Owner, policy, approval, cost and telemetry are in place.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Multi-Agent</strong>
+      <span>Coordinator and specialist agents work together with boundaries.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>AI Operating Model</strong>
+      <span>Portfolio governance, adoption and value realization run continuously.</span>
+    </div>
   </div>
 </div>
 
@@ -97,13 +160,37 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ## Core Architecture
 
-<div className="kc-platform-fit" aria-label="Agentic AI core architecture layers">
-  <div className="kc-platform-fit__card"><small>Experience Layer</small><strong>Where users meet AI</strong><span>Microsoft 365 Copilot, Teams, Outlook, business apps and workflow triggers.</span></div>
-  <div className="kc-platform-fit__card"><small>Agent Layer</small><strong>Where tasks are interpreted</strong><span>Agent Builder, Copilot Studio, Microsoft Foundry and Microsoft 365 Agents SDK.</span></div>
-  <div className="kc-platform-fit__card"><small>Orchestration Layer</small><strong>Where work is routed</strong><span>Reasoning, instructions, skills, memory, tool selection and multi-agent coordination.</span></div>
-  <div className="kc-platform-fit__card"><small>Knowledge Layer</small><strong>Where context is grounded</strong><span>Microsoft Graph, SharePoint, Dataverse, Fabric, business systems and approved external data.</span></div>
-  <div className="kc-platform-fit__card"><small>Action Layer</small><strong>Where work happens</strong><span>Connectors, APIs, Power Automate, Logic Apps, MCP servers and computer use.</span></div>
-  <div className="kc-platform-fit__card"><small>Control Plane</small><strong>Where risk is managed</strong><span>Entra ID, Purview, Defender, DLP, approval, audit, telemetry and cost controls.</span></div>
+<div aria-label="Agentic AI core architecture layers" className="kc-platform-fit">
+  <div className="kc-platform-fit__card">
+    <small>Experience Layer</small>
+    <strong>Where users meet AI</strong>
+    <span>Microsoft 365 Copilot, Teams, Outlook, business apps and workflow triggers.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Agent Layer</small>
+    <strong>Where tasks are interpreted</strong>
+    <span>Agent Builder, Copilot Studio, Microsoft Foundry and Microsoft 365 Agents SDK.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Orchestration Layer</small>
+    <strong>Where work is routed</strong>
+    <span>Reasoning, instructions, skills, memory, tool selection and multi-agent coordination.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Knowledge Layer</small>
+    <strong>Where context is grounded</strong>
+    <span>Microsoft Graph, SharePoint, Dataverse, Fabric, business systems and approved external data.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Action Layer</small>
+    <strong>Where work happens</strong>
+    <span>Connectors, APIs, Power Automate, Logic Apps, MCP servers and computer use.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Control Plane</small>
+    <strong>Where risk is managed</strong>
+    <span>Entra ID, Purview, Defender, DLP, approval, audit, telemetry and cost controls.</span>
+  </div>
 </div>
 
 ---
@@ -211,17 +298,37 @@ Examples:
 
 ## Agent Build Spectrum
 
-<div className="kc-journey-map" aria-label="Agent build spectrum">
+<div aria-label="Agent build spectrum" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Agent Build Spectrum</span>
     <strong>Match the platform to persona, complexity and control needs</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>General user</strong><span>Agent Builder for simple personal or team agents.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Power user</strong><span>Copilot Studio for business agents and low-code automation.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Automation owner</strong><span>Power Automate for workflow, approval and process automation.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Developer</strong><span>Microsoft 365 Agents SDK, Logic Apps and governed connectors.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>AI engineer</strong><span>Microsoft Foundry for advanced orchestration, model and agent engineering.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>General user</strong>
+      <span>Agent Builder for simple personal or team agents.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Power user</strong>
+      <span>Copilot Studio for business agents and low-code automation.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Automation owner</strong>
+      <span>Power Automate for workflow, approval and process automation.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Developer</strong>
+      <span>Microsoft 365 Agents SDK, Logic Apps and governed connectors.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>AI engineer</strong>
+      <span>Microsoft Foundry for advanced orchestration, model and agent engineering.</span>
+    </div>
   </div>
 </div>
 
@@ -255,17 +362,37 @@ Work IQ provides organizational and work context such as:
 - Organizational relationships
 - Work patterns
 
-<div className="kc-journey-map" aria-label="Work IQ and agent context">
+<div aria-label="Work IQ and agent context" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Work IQ and Context</span>
     <strong>Organizational signals ground agent reasoning</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>People</strong><span>Roles, relationships, teams, ownership and collaboration patterns.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Work artifacts</strong><span>Meetings, email, files, Teams conversations and calendar context.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Business context</strong><span>Customer, project, policy, architecture and operating model knowledge.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Permission boundary</strong><span>Agents reason only over data the user or agent is allowed to access.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Agent reasoning</strong><span>Context is converted into recommendations, actions and outputs.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>People</strong>
+      <span>Roles, relationships, teams, ownership and collaboration patterns.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Work artifacts</strong>
+      <span>Meetings, email, files, Teams conversations and calendar context.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Business context</strong>
+      <span>Customer, project, policy, architecture and operating model knowledge.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Permission boundary</strong>
+      <span>Agents reason only over data the user or agent is allowed to access.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Agent reasoning</strong>
+      <span>Context is converted into recommendations, actions and outputs.</span>
+    </div>
   </div>
 </div>
 
@@ -299,17 +426,37 @@ Recommended grounding sources:
 
 Agents become business-relevant when they can take action.
 
-<div className="kc-journey-map" aria-label="Agent tool use and action execution">
+<div aria-label="Agent tool use and action execution" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Tool Use and Action Execution</span>
     <strong>Reason, choose a tool, act and review</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Intent</strong><span>User or workflow provides the objective, constraints and expected outcome.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Reason</strong><span>Agent interprets context, determines steps and selects the right tool.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Act</strong><span>Power Automate, connector, API, MCP server or Logic Apps executes the action.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Review</strong><span>Human confirmation or policy control applies to sensitive actions.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Result</strong><span>Outcome, audit signal and next-step recommendation are returned.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Intent</strong>
+      <span>User or workflow provides the objective, constraints and expected outcome.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Reason</strong>
+      <span>Agent interprets context, determines steps and selects the right tool.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Act</strong>
+      <span>Power Automate, connector, API, MCP server or Logic Apps executes the action.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Review</strong>
+      <span>Human confirmation or policy control applies to sensitive actions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Result</strong>
+      <span>Outcome, audit signal and next-step recommendation are returned.</span>
+    </div>
   </div>
 </div>
 
@@ -338,17 +485,37 @@ MCP is important because it can help organizations:
 - Reduce one-off integration patterns
 - Support scalable agent ecosystems
 
-<div className="kc-journey-map" aria-label="MCP in Agentic AI">
+<div aria-label="MCP in Agentic AI" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>MCP in Agentic AI</span>
     <strong>Reusable connector layer for enterprise tools and resources</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent</strong><span>Needs an approved tool or knowledge resource to complete work.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>MCP server</strong><span>Provides standardized tool contracts and resource access.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Enterprise tool</strong><span>CRM, ERP, ITSM, HR, finance or custom business systems.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance</strong><span>Permission, DLP, logging, approval and connector policy are enforced.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Reuse</strong><span>Multiple agents use the same governed integration pattern.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Agent</strong>
+      <span>Needs an approved tool or knowledge resource to complete work.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>MCP server</strong>
+      <span>Provides standardized tool contracts and resource access.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Enterprise tool</strong>
+      <span>CRM, ERP, ITSM, HR, finance or custom business systems.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Governance</strong>
+      <span>Permission, DLP, logging, approval and connector policy are enforced.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Reuse</strong>
+      <span>Multiple agents use the same governed integration pattern.</span>
+    </div>
   </div>
 </div>
 
@@ -356,17 +523,37 @@ MCP is important because it can help organizations:
 
 ## Multi-Agent Reference Model
 
-<div className="kc-journey-map" aria-label="Multi-agent reference model">
+<div aria-label="Multi-agent reference model" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Multi-Agent Reference Model</span>
     <strong>Coordinator routes work to specialist agents and synthesizes the result</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User request</strong><span>Business user submits a goal, question, task or workflow trigger.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Coordinator</strong><span>Decomposes intent, assigns work and keeps shared context.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Specialists</strong><span>Knowledge, task, review, compliance and reporting agents execute scoped work.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Validation</strong><span>Quality, policy, data and risk checks are applied before output.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Final output</strong><span>Response, action, report, approval request or work package is returned.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User request</strong>
+      <span>Business user submits a goal, question, task or workflow trigger.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Coordinator</strong>
+      <span>Decomposes intent, assigns work and keeps shared context.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Specialists</strong>
+      <span>Knowledge, task, review, compliance and reporting agents execute scoped work.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Validation</strong>
+      <span>Quality, policy, data and risk checks are applied before output.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Final output</strong>
+      <span>Response, action, report, approval request or work package is returned.</span>
+    </div>
   </div>
 </div>
 
@@ -387,17 +574,37 @@ MCP is important because it can help organizations:
 
 Agentic AI requires stronger governance than simple chat experiences.
 
-<div className="kc-journey-map" aria-label="Agentic AI security control plane">
+<div aria-label="Agentic AI security control plane" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Security Control Plane</span>
     <strong>Every agent needs identity, data, tool, audit and risk controls</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Identity</strong><span>Entra ID authentication, authorization, owner and least privilege.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Data</strong><span>Purview labels, DLP, retention and permission boundaries.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Tools</strong><span>Approved connectors, MCP servers, APIs, flows and action policies.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Audit and risk</strong><span>Logs, reviews, Defender signals, anomaly detection and escalation.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governed agent</strong><span>Agent can operate with traceability, monitoring and retirement path.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Identity</strong>
+      <span>Entra ID authentication, authorization, owner and least privilege.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Data</strong>
+      <span>Purview labels, DLP, retention and permission boundaries.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Tools</strong>
+      <span>Approved connectors, MCP servers, APIs, flows and action policies.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Audit and risk</strong>
+      <span>Logs, reviews, Defender signals, anomaly detection and escalation.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Governed agent</strong>
+      <span>Agent can operate with traceability, monitoring and retirement path.</span>
+    </div>
   </div>
 </div>
 
@@ -496,17 +703,37 @@ Agentic AI adoption requires operating discipline.
 
 ## Agentic AI Roadmap
 
-<div className="kc-journey-map" aria-label="Agentic AI enterprise roadmap">
+<div aria-label="Agentic AI enterprise roadmap" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Agentic AI Roadmap</span>
     <strong>Governance first, agent factory next, multi-agent scale later</strong>
   </div>
   <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Foundation</strong><span>AI strategy, governance, data readiness and security baseline.</span></div>
-    <div className="kc-journey-node"><small>02</small><strong>Pilot</strong><span>Use case discovery, value criteria, pilot agents and human review process.</span></div>
-    <div className="kc-journey-node"><small>03</small><strong>Factory</strong><span>Intake, assessment, design, build, validate and operate model.</span></div>
-    <div className="kc-journey-node kc-journey-node--control"><small>04</small><strong>Scale</strong><span>Department agent rollout, portfolio governance and cost monitoring.</span></div>
-    <div className="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Optimize</strong><span>Multi-agent architecture, operating model and continuous improvement loop.</span></div>
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Foundation</strong>
+      <span>AI strategy, governance, data readiness and security baseline.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Pilot</strong>
+      <span>Use case discovery, value criteria, pilot agents and human review process.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Factory</strong>
+      <span>Intake, assessment, design, build, validate and operate model.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Scale</strong>
+      <span>Department agent rollout, portfolio governance and cost monitoring.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Optimize</strong>
+      <span>Multi-agent architecture, operating model and continuous improvement loop.</span>
+    </div>
   </div>
 </div>
 

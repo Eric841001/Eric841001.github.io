@@ -31,6 +31,7 @@ module.exports = {
           label: 'Microsoft 365 Operations',
           collapsed: true,
           items: [
+            'knowledge-center/m365-cloud-only-save-as',
             'knowledge-center/exchange-online-download-restriction',
             'knowledge-center/exchange-online-message-recall-purge',
             'knowledge-center/exchange-online-omev2-remove',
@@ -41,7 +42,12 @@ module.exports = {
           type: 'category',
           label: 'Security & Access Controls',
           collapsed: true,
-          items: ['knowledge-center/gsa-whitelist-design'],
+          items: [
+            'knowledge-center/onedrive-limited-access-read-only',
+            'knowledge-center/entra-api-driven-ad-provisioning',
+            'knowledge-center/gsa-whitelist-design',
+            'knowledge-center/entra-connect-pta-egress-validation',
+          ],
         },
         {
           type: 'category',

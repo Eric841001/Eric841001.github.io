@@ -7,20 +7,44 @@ toc_max_heading_level: 2
 
 # Licensing
 
-<section class="kc-topic-hero" aria-label="Microsoft licensing overview hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft Licensing Architecture</span>
+<section aria-label="Microsoft licensing overview hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft Licensing Architecture</span>
     <h2>Connect license decisions to security, AI readiness and operating value</h2>
     <p>Licensing decisions should start from personas, required controls, adoption readiness, service plan validation and cost governance rather than SKU names alone.</p>
-    <div class="kc-hero-signal-row" aria-label="Licensing overview signals"><span>Persona</span><span>Control</span><span>Adoption</span><span>Cost</span></div>
+    <div aria-label="Licensing overview signals" className="kc-hero-signal-row">
+      <span>Persona</span>
+      <span>Control</span>
+      <span>Adoption</span>
+      <span>Cost</span>
+    </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Microsoft licensing decision model">
-    <div class="kc-factory-panel__header"><span>Decision Model</span><strong>Capability-led</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#licensing-feature-watch" class="kc-factory-card"><small>01</small><strong>Feature Watch</strong><span>Included service plans, enabled features and roadmap changes.</span></a>
-      <a href="#executive-decision-model" class="kc-factory-card"><small>02</small><strong>Executive Model</strong><span>Business driver, control requirement, segmentation and adoption plan.</span></a>
-      <a href="#decision-areas" class="kc-factory-card"><small>03</small><strong>Decision Areas</strong><span>E3, E5, Business Premium, Defender, Purview, Entra and Copilot.</span></a>
-      <a href="../toolkit/license-advisor" class="kc-factory-card"><small>04</small><strong>Advisor</strong><span>Map personas and capabilities to license options.</span></a>
+  <div aria-label="Microsoft licensing decision model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Decision Model</span>
+      <strong>Capability-led</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#licensing-feature-watch" className="kc-factory-card">
+        <small>01</small>
+        <strong>Feature Watch</strong>
+        <span>Included service plans, enabled features and roadmap changes.</span>
+      </a>
+      <a href="#executive-decision-model" className="kc-factory-card">
+        <small>02</small>
+        <strong>Executive Model</strong>
+        <span>Business driver, control requirement, segmentation and adoption plan.</span>
+      </a>
+      <a href="#decision-areas" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decision Areas</strong>
+        <span>E3, E5, Business Premium, Defender, Purview, Entra and Copilot.</span>
+      </a>
+      <a href="../toolkit/license-advisor" className="kc-factory-card">
+        <small>04</small>
+        <strong>Advisor</strong>
+        <span>Map personas and capabilities to license options.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -30,18 +54,18 @@ This Licensing section helps compare Microsoft 365, Security, Compliance, Entra,
 Licensing guidance should connect cost to architecture, security controls, adoption readiness and operational value. A license decision is weak if it only compares product names.
 
 
-<div class="kc-outcome-grid" aria-label="licensing overview licensing decision cards">
-  <div class="kc-outcome-card">
+<div aria-label="licensing overview licensing decision cards" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
     <small>PERSONA</small>
     <strong>Start with user personas</strong>
     <span>Map information worker, frontline, admin, security and Copilot users before selecting plans.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>CAPABILITY</small>
     <strong>Map required features</strong>
     <span>Compare identity, endpoint, Defender, Purview, collaboration and Copilot requirements.</span>
   </div>
-  <div class="kc-outcome-card">
+  <div className="kc-outcome-card">
     <small>DECISION</small>
     <strong>Build a defensible roadmap</strong>
     <span>Separate immediate needs, future roadmap, add-ons and operational prerequisites.</span>
@@ -50,15 +74,42 @@ Licensing guidance should connect cost to architecture, security controls, adopt
 
 ## Visual License Decision Map
 
-<div class="kc-journey-map" aria-label="Visual license decision map">
-  <div class="kc-journey-map__header"><span>Visual License Decision Map</span><strong>Business driver to optimization cycle</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Driver</strong><span>Security, compliance, AI, migration, renewal or cost pressure.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>User Segmentation</strong><span>Executive, knowledge worker, frontline, admin and high-risk personas.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Required Controls</strong><span>Entra, Intune, Defender, Purview, DLP, audit and Copilot readiness.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Adoption Readiness</strong><span>Training, support, use case value and operational ownership.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Cost Governance</strong><span>Assignment, utilization, service plan validation and review cadence.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>License Decision</strong><span>Baseline, add-on, phased rollout and optimization cycle.</span></div>
+<div aria-label="Visual license decision map" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Visual License Decision Map</span>
+    <strong>Business driver to optimization cycle</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Business Driver</strong>
+      <span>Security, compliance, AI, migration, renewal or cost pressure.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>User Segmentation</strong>
+      <span>Executive, knowledge worker, frontline, admin and high-risk personas.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Required Controls</strong>
+      <span>Entra, Intune, Defender, Purview, DLP, audit and Copilot readiness.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Adoption Readiness</strong>
+      <span>Training, support, use case value and operational ownership.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Cost Governance</strong>
+      <span>Assignment, utilization, service plan validation and review cadence.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>License Decision</strong>
+      <span>Baseline, add-on, phased rollout and optimization cycle.</span>
+    </div>
   </div>
 </div>
 

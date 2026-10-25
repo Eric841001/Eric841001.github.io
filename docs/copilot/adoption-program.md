@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Enterprise Copilot Adoption Program Framework
 
-<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Enterprise Copilot adoption hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">AI Adoption and Change Management</span>
+<section aria-label="Enterprise Copilot adoption hero" className="kc-topic-hero kc-topic-hero--agent">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">AI Adoption and Change Management</span>
     <h2>Move from Copilot usage to measurable behavior change</h2>
     <p>Copilot adoption succeeds when employees change how they run meetings, write documents, analyze data, respond to customers and escalate repeatable work into governed agents. The program must connect AI capability, change management, champions, support and executive value measurement.</p>
-    <div class="kc-hero-signal-row" aria-label="Copilot adoption signals">
+    <div aria-label="Copilot adoption signals" className="kc-hero-signal-row">
       <span>Scenario</span>
       <span>Champion</span>
       <span>Support</span>
       <span>Value</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Copilot adoption related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/search/copilot-adoption">Copilot Adoption Landing</a>
-      <a class="kc-topic-button" href="/knowledge/copilot/readiness">Readiness</a>
-      <a class="kc-topic-button" href="/knowledge/playbooks/change-management-playbook">Change Playbook</a>
+    <div aria-label="Copilot adoption related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/search/copilot-adoption" className="kc-topic-button kc-topic-button--primary">Copilot Adoption Landing</a>
+      <a href="/knowledge/copilot/readiness" className="kc-topic-button">Readiness</a>
+      <a href="/knowledge/playbooks/change-management-playbook" className="kc-topic-button">Change Playbook</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Copilot adoption system visual">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Copilot adoption system visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Adoption System</span>
       <strong>Behavior to business value</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#why-copilot-adoption-fails" class="kc-factory-card"><small>01</small><strong>Reality</strong><span>Understand why feature training alone does not create value.</span></a>
-      <a href="#operating-model-components" class="kc-factory-card"><small>02</small><strong>System</strong><span>Combine education, champions, support, VOC and analytics.</span></a>
-      <a href="#managed-service-framework" class="kc-factory-card"><small>03</small><strong>Support</strong><span>Operate Q&A, coaching, issue handling and improvement loops.</span></a>
-      <a href="#adoption-analytics-and-kpi-framework" class="kc-factory-card"><small>04</small><strong>Value</strong><span>Measure quality, confidence, time saved and business outcomes.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#why-copilot-adoption-fails" className="kc-factory-card">
+        <small>01</small>
+        <strong>Reality</strong>
+        <span>Understand why feature training alone does not create value.</span>
+      </a>
+      <a href="#operating-model-components" className="kc-factory-card">
+        <small>02</small>
+        <strong>System</strong>
+        <span>Combine education, champions, support, VOC and analytics.</span>
+      </a>
+      <a href="#managed-service-framework" className="kc-factory-card">
+        <small>03</small>
+        <strong>Support</strong>
+        <span>Operate Q&amp;A, coaching, issue handling and improvement loops.</span>
+      </a>
+      <a href="#adoption-analytics-and-kpi-framework" className="kc-factory-card">
+        <small>04</small>
+        <strong>Value</strong>
+        <span>Measure quality, confidence, time saved and business outcomes.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Change principle</strong>
       <span>Do not sell Copilot as a feature. Show how work changes, how users get help and how leaders see value.</span>
     </div>
@@ -71,18 +86,42 @@ For enterprise rollout, treat GPT-5.6 as a change-management moment:
 
 The best message for users is simple: start with everyday work, use the right model for deeper reasoning, and escalate repeatable or long-running work into governed agents.
 
-<div class="kc-journey-map" aria-label="Copilot adoption loop">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot adoption loop" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Adoption Loop</span>
     <strong>Scenario to scaled behavior change</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Scenario</strong><span>Real work, role fit and value hypothesis.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Enable</strong><span>Training, prompt patterns and manager reinforcement.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Support</strong><span>Q&A, coaching, issue handling and guided practice.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Measure</strong><span>Usage, satisfaction, quality, confidence and time saved.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Improve</strong><span>VOC insights, content updates and scenario refinement.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Scale</strong><span>Champion playbooks, new use cases and executive storytelling.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Scenario</strong>
+      <span>Real work, role fit and value hypothesis.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Enable</strong>
+      <span>Training, prompt patterns and manager reinforcement.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Support</strong>
+      <span>Q&amp;A, coaching, issue handling and guided practice.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Measure</strong>
+      <span>Usage, satisfaction, quality, confidence and time saved.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Improve</strong>
+      <span>VOC insights, content updates and scenario refinement.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Scale</strong>
+      <span>Champion playbooks, new use cases and executive storytelling.</span>
+    </div>
   </div>
 </div>
 
@@ -107,17 +146,37 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 
 ## Adoption Operating System
 
-<div class="kc-journey-map" aria-label="Copilot adoption operating system">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot adoption operating system" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Adoption Operating System</span>
     <strong>Capability building to measurable business value</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Educate</strong><span>Role-based training, scenarios, prompts and champion enablement.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Use</strong><span>Apply Copilot in meetings, documents, email, analysis and workflows.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Listen</strong><span>Collect VOC from helpdesk, champions, surveys and business reviews.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Improve</strong><span>Update training, prompt patterns, governance and support content.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Measure</strong><span>Track usage, satisfaction, productivity impact and validated business value.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Educate</strong>
+      <span>Role-based training, scenarios, prompts and champion enablement.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Use</strong>
+      <span>Apply Copilot in meetings, documents, email, analysis and workflows.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Listen</strong>
+      <span>Collect VOC from helpdesk, champions, surveys and business reviews.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Improve</strong>
+      <span>Update training, prompt patterns, governance and support content.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Measure</strong>
+      <span>Track usage, satisfaction, productivity impact and validated business value.</span>
+    </div>
   </div>
 </div>
 
@@ -170,16 +229,32 @@ The adoption team should be structured by capability, not only by headcount.
 
 Adoption requires both top-down sponsorship and bottom-up engagement.
 
-<div class="kc-journey-map" aria-label="Copilot champion program framework">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot champion program framework" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Champion Program</span>
     <strong>Executive sponsorship plus peer-led behavior change</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Executive sponsor</strong><span>Sets direction, value narrative, investment priority and leadership message.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Champion community</strong><span>Connects adoption PMO, business units and real user feedback.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>BU champions</strong><span>Translate Copilot into local scenarios, rituals and team coaching.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>04</small><strong>All users</strong><span>Adopt daily work patterns and feed new use cases back into the program.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Executive sponsor</strong>
+      <span>Sets direction, value narrative, investment priority and leadership message.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Champion community</strong>
+      <span>Connects adoption PMO, business units and real user feedback.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>03</small>
+      <strong>BU champions</strong>
+      <span>Translate Copilot into local scenarios, rituals and team coaching.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>04</small>
+      <strong>All users</strong>
+      <span>Adopt daily work patterns and feed new use cases back into the program.</span>
+    </div>
   </div>
 </div>
 
@@ -226,17 +301,37 @@ Copilot education should be customized by role, maturity and scenario.
 
 Training should be based on real business scenarios.
 
-<div class="kc-journey-map" aria-label="Copilot customized learning model">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot customized learning model" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Customized Learning Model</span>
     <strong>Business interview to field adoption</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Interview</strong><span>Capture role, pain point, work artifact, data source and success criteria.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Scenario</strong><span>Convert pain points into Copilot use cases and prompt patterns.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Workshop</strong><span>Practice with real tasks, reusable examples and department context.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Adopt</strong><span>Embed the scenario into meetings, documents, reporting and collaboration routines.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Improve</strong><span>Use VOC and analytics to refine content and repeat the cycle.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Interview</strong>
+      <span>Capture role, pain point, work artifact, data source and success criteria.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Scenario</strong>
+      <span>Convert pain points into Copilot use cases and prompt patterns.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Workshop</strong>
+      <span>Practice with real tasks, reusable examples and department context.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Adopt</strong>
+      <span>Embed the scenario into meetings, documents, reporting and collaboration routines.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Improve</strong>
+      <span>Use VOC and analytics to refine content and repeat the cycle.</span>
+    </div>
   </div>
 </div>
 
@@ -265,17 +360,37 @@ Training should be based on real business scenarios.
 
 A Copilot community should be operated as an always-on adoption hub.
 
-<div class="kc-journey-map" aria-label="Copilot community engagement model">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot community engagement model" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Community Hub</span>
     <strong>Always-on enablement instead of one-time training</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Q&A</strong><span>User questions, expert responses and champion-assisted troubleshooting.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>FAQ</strong><span>Reusable answers from tickets, training sessions and office hours.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Tips</strong><span>Prompt examples, best practices, scenario cards and productivity patterns.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Learning</strong><span>Micro videos, how-to guides, workshops and champion activities.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Scale</strong><span>Turn common questions into training updates and adoption campaigns.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Q&amp;A</strong>
+      <span>User questions, expert responses and champion-assisted troubleshooting.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>FAQ</strong>
+      <span>Reusable answers from tickets, training sessions and office hours.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Tips</strong>
+      <span>Prompt examples, best practices, scenario cards and productivity patterns.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Learning</strong>
+      <span>Micro videos, how-to guides, workshops and champion activities.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Scale</strong>
+      <span>Turn common questions into training updates and adoption campaigns.</span>
+    </div>
   </div>
 </div>
 
@@ -295,17 +410,37 @@ A Copilot community should be operated as an always-on adoption hub.
 
 Innovation programs can convert learning into business value.
 
-<div class="kc-journey-map" aria-label="Promptathon and Agentathon program">
-  <div class="kc-journey-map__header">
+<div aria-label="Promptathon and Agentathon program" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Promptathon to Agentathon</span>
     <strong>Turn learning energy into reusable business assets</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Learn</strong><span>Build shared AI literacy and Copilot work patterns.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Practice</strong><span>Apply prompts to real tasks and refine reusable examples.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Promptathon</strong><span>Discover high-value prompts and scenario templates.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Agentathon</strong><span>Identify automation candidates and Copilot Studio agent opportunities.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Showcase</strong><span>Recognize teams, publish assets and scale proven use cases.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Learn</strong>
+      <span>Build shared AI literacy and Copilot work patterns.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Practice</strong>
+      <span>Apply prompts to real tasks and refine reusable examples.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Promptathon</strong>
+      <span>Discover high-value prompts and scenario templates.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Agentathon</strong>
+      <span>Identify automation candidates and Copilot Studio agent opportunities.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Showcase</strong>
+      <span>Recognize teams, publish assets and scale proven use cases.</span>
+    </div>
   </div>
 </div>
 
@@ -328,17 +463,37 @@ Managed service should not be limited to ticket processing.
 
 It should operate as an adoption enablement function.
 
-<div class="kc-journey-map" aria-label="Copilot managed service framework">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot managed service framework" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Managed Service Framework</span>
     <strong>Support, coaching and feedback in one loop</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>User inquiry</strong><span>Questions, prompt issues, scenario blockers, access issues and product feedback.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>L1 support</strong><span>Basic usage guidance, FAQ, known issues and prompt coaching triage.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>L2 specialist</strong><span>Advanced scenarios, adoption coaching, analytics review and pattern creation.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>L3 escalation</strong><span>Tenant, product, security or Microsoft escalation path.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Training update</strong><span>Feed common issues into content, workshops, FAQ and champion briefings.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>User inquiry</strong>
+      <span>Questions, prompt issues, scenario blockers, access issues and product feedback.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>L1 support</strong>
+      <span>Basic usage guidance, FAQ, known issues and prompt coaching triage.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>L2 specialist</strong>
+      <span>Advanced scenarios, adoption coaching, analytics review and pattern creation.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>L3 escalation</strong>
+      <span>Tenant, product, security or Microsoft escalation path.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Training update</strong>
+      <span>Feed common issues into content, workshops, FAQ and champion briefings.</span>
+    </div>
   </div>
 </div>
 
@@ -383,17 +538,37 @@ VOC should be treated as an adoption improvement engine.
 
 ### VOC Closed Loop
 
-<div class="kc-journey-map" aria-label="Copilot VOC closed loop">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot VOC closed loop" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>VOC Closed Loop</span>
     <strong>Feedback must create visible improvement</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Collect</strong><span>Tickets, Q&A, champion feedback, surveys, business reviews and analytics.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Analyze</strong><span>Group issues by role, app, scenario, permission, data quality and confidence.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Prioritize</strong><span>Separate training gaps, governance blockers, product issues and adoption opportunities.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Improve</strong><span>Update training, prompts, FAQ, policy guidance and support scripts.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Re-deliver</strong><span>Publish updates through champions, community, office hours and manager routines.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Collect</strong>
+      <span>Tickets, Q&amp;A, champion feedback, surveys, business reviews and analytics.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Analyze</strong>
+      <span>Group issues by role, app, scenario, permission, data quality and confidence.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Prioritize</strong>
+      <span>Separate training gaps, governance blockers, product issues and adoption opportunities.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Improve</strong>
+      <span>Update training, prompts, FAQ, policy guidance and support scripts.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Re-deliver</strong>
+      <span>Publish updates through champions, community, office hours and manager routines.</span>
+    </div>
   </div>
 </div>
 
@@ -428,16 +603,32 @@ Adoption must be measurable.
 
 ## 12-Month Adoption Roadmap
 
-<div class="kc-journey-map" aria-label="12-month Copilot adoption roadmap">
-  <div class="kc-journey-map__header">
+<div aria-label="12-month Copilot adoption roadmap" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>12-Month Roadmap</span>
     <strong>Foundation, pilot, scale and sustain</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>Q1</small><strong>Foundation</strong><span>PMO, governance, scenario discovery, champion selection and baseline communications.</span></div>
-    <div class="kc-journey-node"><small>Q2</small><strong>Pilot</strong><span>Pilot users, champion training, helpdesk launch, VOC capture and early value stories.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>Q3</small><strong>Scale</strong><span>Wave rollout, end-user training, community operations and analytics review.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>Q4</small><strong>Sustain</strong><span>KPI review, use case expansion, low-adoption remediation and value realization review.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>Q1</small>
+      <strong>Foundation</strong>
+      <span>PMO, governance, scenario discovery, champion selection and baseline communications.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>Q2</small>
+      <strong>Pilot</strong>
+      <span>Pilot users, champion training, helpdesk launch, VOC capture and early value stories.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>Q3</small>
+      <strong>Scale</strong>
+      <span>Wave rollout, end-user training, community operations and analytics review.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>Q4</small>
+      <strong>Sustain</strong>
+      <span>KPI review, use case expansion, low-adoption remediation and value realization review.</span>
+    </div>
   </div>
 </div>
 

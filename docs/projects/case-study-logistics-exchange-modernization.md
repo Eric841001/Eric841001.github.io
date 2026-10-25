@@ -9,31 +9,49 @@ toc_max_heading_level: 2
 
 # Logistics Exchange Online Modernization Case Study
 
-<section class="kc-topic-hero" aria-label="Logistics Exchange Online modernization case study hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Logistics Collaboration Modernization</span>
+<section aria-label="Logistics Exchange Online modernization case study hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Logistics Collaboration Modernization</span>
     <h2>Modernize Exchange Online without losing operational continuity</h2>
     <p>This anonymized pattern frames mail modernization as a business continuity program across readiness, mail flow, security review, cutover, rollback, hypercare and operations handover.</p>
-    <div class="kc-hero-signal-row" aria-label="Logistics Exchange modernization signals">
+    <div aria-label="Logistics Exchange modernization signals" className="kc-hero-signal-row">
       <span>Readiness</span>
       <span>Mail flow</span>
       <span>Cutover</span>
       <span>Handover</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Logistics Exchange modernization actions">
-      <a class="kc-topic-button kc-topic-button--primary" href="#delivery-approach">Delivery Approach</a>
-      <a class="kc-topic-button" href="../microsoft365/exchange-online">Exchange Online</a>
-      <a class="kc-topic-button" href="../contact">Request Asset</a>
+    <div aria-label="Logistics Exchange modernization actions" className="kc-topic-hero__actions">
+      <a href="#delivery-approach" className="kc-topic-button kc-topic-button--primary">Delivery Approach</a>
+      <a href="../microsoft365/exchange-online" className="kc-topic-button">Exchange Online</a>
+      <a href="../contact" className="kc-topic-button">Request Asset</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Logistics Exchange modernization operating model">
-    <div class="kc-factory-panel__header"><span>Modernization Flow</span><strong>Continuity-first</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Context</strong><span>Distributed logistics teams require stable mail and collaboration continuity.</span></a>
-      <a href="#microsoft-workloads" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Exchange Online, Defender for Office 365, Teams, SharePoint, OneDrive and Entra ID.</span></a>
-      <a href="#success-metrics" class="kc-factory-card"><small>03</small><strong>Control</strong><span>Readiness, pilot quality, cutover control, rollback and security review.</span></a>
-      <a href="#lessons-learned" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Administrator guide, support process and hypercare issue tracker.</span></a>
+  <div aria-label="Logistics Exchange modernization operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Modernization Flow</span>
+      <strong>Continuity-first</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-context" className="kc-factory-card">
+        <small>01</small>
+        <strong>Context</strong>
+        <span>Distributed logistics teams require stable mail and collaboration continuity.</span>
+      </a>
+      <a href="#microsoft-workloads" className="kc-factory-card">
+        <small>02</small>
+        <strong>Scope</strong>
+        <span>Exchange Online, Defender for Office 365, Teams, SharePoint, OneDrive and Entra ID.</span>
+      </a>
+      <a href="#success-metrics" className="kc-factory-card">
+        <small>03</small>
+        <strong>Control</strong>
+        <span>Readiness, pilot quality, cutover control, rollback and security review.</span>
+      </a>
+      <a href="#lessons-learned" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Administrator guide, support process and hypercare issue tracker.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -42,18 +60,42 @@ This anonymized case study summarizes a logistics-sector Microsoft 365 moderniza
 
 ## Visual Modernization Pattern
 
-<div class="kc-journey-map" aria-label="Logistics Exchange Online modernization pattern">
-  <div class="kc-journey-map__header">
+<div aria-label="Logistics Exchange Online modernization pattern" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Visual Modernization Pattern</span>
     <strong>Readiness to stable operations</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Readiness</strong><span>Source mail, identity, DNS, network and dependency inventory.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Target Design</strong><span>Mail flow, security baseline, coexistence, routing and validation path.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Pilot</strong><span>Selected users, issue log, coexistence validation and support learning.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Cutover</strong><span>Batch migration, communication, rollback readiness and checklist control.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Hypercare</strong><span>Issue handling, user support, administrator guide and operations handover.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Operate</strong><span>Stable mail, security review, runbook and continuous improvement.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Readiness</strong>
+      <span>Source mail, identity, DNS, network and dependency inventory.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Target Design</strong>
+      <span>Mail flow, security baseline, coexistence, routing and validation path.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Pilot</strong>
+      <span>Selected users, issue log, coexistence validation and support learning.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Cutover</strong>
+      <span>Batch migration, communication, rollback readiness and checklist control.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Hypercare</strong>
+      <span>Issue handling, user support, administrator guide and operations handover.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Operate</strong>
+      <span>Stable mail, security review, runbook and continuous improvement.</span>
+    </div>
   </div>
 </div>
 
@@ -143,10 +185,22 @@ The most reusable pattern is to pair migration planning with security and operat
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Logistics Exchange modernization reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Mail continuity risk</strong><span>Logistics operations depend on reliable mail flow, calendar coordination and rapid support during cutover.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Controlled migration</strong><span>Validate DNS, mail routing, security baseline, pilot users, rollback and help desk readiness.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Stable transition</strong><span>Cutover becomes an orchestrated business event rather than a technical switch.</span></div>
+<div aria-label="Logistics Exchange modernization reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Mail continuity risk</strong>
+    <span>Logistics operations depend on reliable mail flow, calendar coordination and rapid support during cutover.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Controlled migration</strong>
+    <span>Validate DNS, mail routing, security baseline, pilot users, rollback and help desk readiness.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Stable transition</strong>
+    <span>Cutover becomes an orchestrated business event rather than a technical switch.</span>
+  </div>
 </div>
 
 ## Related Documents

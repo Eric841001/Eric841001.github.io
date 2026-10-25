@@ -11,36 +11,51 @@ This blueprint explains how the major areas of this Knowledge Center connect int
 
 It is designed for executive review, presales storytelling, architecture workshops and project kickoff discussions where business leaders, security owners, IT teams and delivery teams need the same view of the target platform.
 
-<section class="kc-topic-hero" aria-label="Executive architecture blueprint hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Executive Architecture Story</span>
+<section aria-label="Executive architecture blueprint hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Executive Architecture Story</span>
     <h2>Turn technical architecture into an executive decision roadmap</h2>
     <p>Executive architecture should clarify business pressure, risk, investment sequence, governance ownership, delivery artifacts and measurable outcomes in language leaders can act on.</p>
-    <div class="kc-hero-signal-row" aria-label="Executive architecture signals">
+    <div aria-label="Executive architecture signals" className="kc-hero-signal-row">
       <span>Context</span>
       <span>Decision</span>
       <span>Roadmap</span>
       <span>Ownership</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Executive blueprint related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="./m365-reference-architecture">M365 Architecture</a>
-      <a class="kc-topic-button" href="./security-reference-architecture">Security Reference</a>
-      <a class="kc-topic-button" href="../projects/customer-success-reference-patterns">Reference Patterns</a>
+    <div aria-label="Executive blueprint related pages" className="kc-topic-hero__actions">
+      <a href="./m365-reference-architecture" className="kc-topic-button kc-topic-button--primary">M365 Architecture</a>
+      <a href="./security-reference-architecture" className="kc-topic-button">Security Reference</a>
+      <a href="../projects/customer-success-reference-patterns" className="kc-topic-button">Reference Patterns</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Executive architecture decision model">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Executive architecture decision model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Decision Blueprint</span>
       <strong>Business outcome to funded roadmap</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#executive-platform-view" class="kc-factory-card"><small>01</small><strong>Platform</strong><span>Connect Microsoft 365, Security, Copilot, Azure and Migration as one platform.</span></a>
-      <a href="#architecture-layers" class="kc-factory-card"><small>02</small><strong>Layers</strong><span>Show the business, governance, identity, data, AI and delivery layers.</span></a>
-      <a href="#executive-decision-checklist" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Clarify sponsorship, security controls, pilots, SOW, WBS and success metrics.</span></a>
-      <a href="#executive-delivery-artifacts" class="kc-factory-card"><small>04</small><strong>Artifacts</strong><span>Convert strategy into roadmap, review pack, proposal and governance outputs.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#executive-platform-view" className="kc-factory-card">
+        <small>01</small>
+        <strong>Platform</strong>
+        <span>Connect Microsoft 365, Security, Copilot, Azure and Migration as one platform.</span>
+      </a>
+      <a href="#architecture-layers" className="kc-factory-card">
+        <small>02</small>
+        <strong>Layers</strong>
+        <span>Show the business, governance, identity, data, AI and delivery layers.</span>
+      </a>
+      <a href="#executive-decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decisions</strong>
+        <span>Clarify sponsorship, security controls, pilots, SOW, WBS and success metrics.</span>
+      </a>
+      <a href="#executive-delivery-artifacts" className="kc-factory-card">
+        <small>04</small>
+        <strong>Artifacts</strong>
+        <span>Convert strategy into roadmap, review pack, proposal and governance outputs.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Executive rule</strong>
       <span>Do not present architecture as a product map. Present it as a sequence of decisions, risks, owners and outcomes.</span>
     </div>
@@ -55,17 +70,37 @@ It is designed for executive review, presales storytelling, architecture worksho
 
 ## Executive Platform View
 
-<div class="kc-journey-map" aria-label="Executive platform view">
-  <div class="kc-journey-map__header">
+<div aria-label="Executive platform view" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Executive Platform View</span>
     <strong>Business outcomes connected to platform, controls and delivery assets</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business outcomes</strong><span>Productivity, risk reduction, AI adoption, modernization and delivery speed.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Governance</strong><span>Decision rights, owners, exceptions, KPI and operating cadence.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Platform layers</strong><span>Identity, endpoint, data protection, collaboration, Azure and migration.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>AI readiness</strong><span>Copilot, Copilot Studio, agent factory, security and adoption controls.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Delivery assets</strong><span>SOW, WBS, risk register, playbooks, roadmap and handover pack.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Business outcomes</strong>
+      <span>Productivity, risk reduction, AI adoption, modernization and delivery speed.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Governance</strong>
+      <span>Decision rights, owners, exceptions, KPI and operating cadence.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Platform layers</strong>
+      <span>Identity, endpoint, data protection, collaboration, Azure and migration.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>AI readiness</strong>
+      <span>Copilot, Copilot Studio, agent factory, security and adoption controls.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Delivery assets</strong>
+      <span>SOW, WBS, risk register, playbooks, roadmap and handover pack.</span>
+    </div>
   </div>
 </div>
 
@@ -85,17 +120,37 @@ It is designed for executive review, presales storytelling, architecture worksho
 
 ## Readiness Sequence
 
-<div class="kc-journey-map" aria-label="Executive readiness sequence">
-  <div class="kc-journey-map__header">
+<div aria-label="Executive readiness sequence" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Readiness Sequence</span>
     <strong>Assess, design, pilot, govern, scale and operate</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Assess</strong><span>Tenant, identity, data, security, workload and business readiness.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Target architecture, governance model, delivery sequence and decision log.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Pilot</strong><span>Validate users, workloads, controls, support and adoption assumptions.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Govern and scale</strong><span>Policy, ownership, exceptions, rollout waves, training and KPI.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operate</strong><span>Runbook, monitoring, improvement backlog and executive reporting.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Assess</strong>
+      <span>Tenant, identity, data, security, workload and business readiness.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Design</strong>
+      <span>Target architecture, governance model, delivery sequence and decision log.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Pilot</strong>
+      <span>Validate users, workloads, controls, support and adoption assumptions.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Govern and scale</strong>
+      <span>Policy, ownership, exceptions, rollout waves, training and KPI.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Operate</strong>
+      <span>Runbook, monitoring, improvement backlog and executive reporting.</span>
+    </div>
   </div>
 </div>
 

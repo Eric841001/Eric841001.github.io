@@ -9,27 +9,49 @@ toc_max_heading_level: 2
 # Governance Architecture
 
 
-<section class="kc-topic-hero" aria-label="Governance architecture hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Enterprise Governance Architecture</span>
+<section aria-label="Governance architecture hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Enterprise Governance Architecture</span>
     <h2>Keep the platform healthy with owners, cadence and evidence</h2>
     <p>Good governance connects policy, ownership, exception handling, review cadence and audit-ready evidence instead of relying on one-time configuration.</p>
-    <div class="kc-hero-signal-row" aria-label="Governance architecture signals">
+    <div aria-label="Governance architecture signals" className="kc-hero-signal-row">
       <span>Owners</span>
       <span>Policy</span>
       <span>Cadence</span>
       <span>Evidence</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Governance operating model">
-    <div class="kc-factory-panel__header"><span>Governance Control Plane</span><strong>Policy decisions to operational evidence</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#governance-architecture-overview" class="kc-factory-card"><small>01</small><strong>Board</strong><span>Executive and enterprise governance decision structure.</span></a>
-      <a href="#governance-domains" class="kc-factory-card"><small>02</small><strong>Domains</strong><span>Identity, collaboration, data, security, Azure and Copilot governance.</span></a>
-      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Policy baseline, exception process, lifecycle and review cadence.</span></a>
-      <a href="#operating-model" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Owners, service desk, dashboard, evidence and improvement backlog.</span></a>
+  <div aria-label="Governance operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Governance Control Plane</span>
+      <strong>Policy decisions to operational evidence</strong>
     </div>
-    <div class="kc-guardrail-panel"><strong>Governance rule</strong><span>Every policy needs an owner, review date, exception path and evidence model.</span></div>
+    <div className="kc-factory-grid">
+      <a href="#governance-architecture-overview" className="kc-factory-card">
+        <small>01</small>
+        <strong>Board</strong>
+        <span>Executive and enterprise governance decision structure.</span>
+      </a>
+      <a href="#governance-domains" className="kc-factory-card">
+        <small>02</small>
+        <strong>Domains</strong>
+        <span>Identity, collaboration, data, security, Azure and Copilot governance.</span>
+      </a>
+      <a href="#decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decisions</strong>
+        <span>Policy baseline, exception process, lifecycle and review cadence.</span>
+      </a>
+      <a href="#operating-model" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Owners, service desk, dashboard, evidence and improvement backlog.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Governance rule</strong>
+      <span>Every policy needs an owner, review date, exception path and evidence model.</span>
+    </div>
   </div>
 </section>
 
@@ -63,14 +85,37 @@ Typical governance initiatives include:
 
 ## Governance Architecture Overview
 
-<div class="kc-journey-map" aria-label="Governance architecture overview">
-  <div class="kc-journey-map__header"><span>Governance Architecture Overview</span><strong>Steering committee to evidence-backed improvement loop</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Steering</strong><span>Executive committee sets priority, funding, escalation and risk appetite.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Governance board</strong><span>Cross-domain board owns policy decisions and exception handling.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Domains</strong><span>Identity, security, collaboration, data, Azure and Copilot governance.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Operations</strong><span>Operational teams execute policy, support users and manage lifecycle.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Evidence</strong><span>Metrics, exceptions, reviews and improvement backlog feed the board.</span></div>
+<div aria-label="Governance architecture overview" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Governance Architecture Overview</span>
+    <strong>Steering committee to evidence-backed improvement loop</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Steering</strong>
+      <span>Executive committee sets priority, funding, escalation and risk appetite.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Governance board</strong>
+      <span>Cross-domain board owns policy decisions and exception handling.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Domains</strong>
+      <span>Identity, security, collaboration, data, Azure and Copilot governance.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Operations</strong>
+      <span>Operational teams execute policy, support users and manage lifecycle.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Evidence</strong>
+      <span>Metrics, exceptions, reviews and improvement backlog feed the board.</span>
+    </div>
   </div>
 </div>
 

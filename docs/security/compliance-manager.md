@@ -5,6 +5,32 @@ description: Microsoft Purview Compliance Manager guide for compliance posture, 
 
 # Compliance Manager
 
+<section className="kc-topic-hero kc-topic-hero--compact">
+  <div>
+    <span className="kc-eyebrow">PURVIEW COMPLIANCE OPERATIONS</span>
+    <h2>Turn compliance posture into owned improvement actions</h2>
+    <p>Connect assessments, accountable owners, remediation evidence and executive risk reviews in one repeatable operating model.</p>
+  </div>
+  <div aria-label="Compliance Manager operating focus" className="kc-hero-metrics">
+    <div>
+      <strong>Assess</strong>
+      <span>Scope and control posture</span>
+    </div>
+    <div>
+      <strong>Assign</strong>
+      <span>Owners, actions and due dates</span>
+    </div>
+    <div>
+      <strong>Evidence</strong>
+      <span>Configuration and test records</span>
+    </div>
+    <div>
+      <strong>Review</strong>
+      <span>Risk, exceptions and progress</span>
+    </div>
+  </div>
+</section>
+
 ## Executive Summary
 
 Microsoft Purview Compliance Manager helps organizations assess compliance posture, track improvement actions and maintain evidence for security, privacy and regulatory programs.
@@ -28,21 +54,26 @@ Compliance Manager는 Microsoft cloud 환경의 compliance posture를 점검하�
 
 ## Compliance Operating Model
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>Compliance operating model</span>
-    <strong>Action, evidence, review</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="Compliance Manager operating model">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Compliance assessment</strong><span>Review current posture, assessment scope, control families and score drivers.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Improvement actions</strong><span>Assign control owners, remediation tasks, due dates and business priority.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Evidence collection</strong><span>Store configuration, approval, test result and policy evidence for audit readiness.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Governance review</strong><span>Report risk, progress, exceptions and next actions to governance or executives.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>Compliance operating model</span>
+  <strong>Action, evidence, review</strong>
+</div><div aria-label="Compliance Manager operating model" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Compliance assessment</strong>
+  <span>Review current posture, assessment scope, control families and score drivers.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Improvement actions</strong>
+  <span>Assign control owners, remediation tasks, due dates and business priority.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Evidence collection</strong>
+  <span>Store configuration, approval, test result and policy evidence for audit readiness.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Governance review</strong>
+  <span>Report risk, progress, exceptions and next actions to governance or executives.</span>
+</div></div></div>
 
 ## Core Design Areas
 

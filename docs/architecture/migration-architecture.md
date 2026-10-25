@@ -9,27 +9,49 @@ toc_max_heading_level: 2
 # Migration Architecture
 
 
-<section class="kc-topic-hero" aria-label="Migration architecture hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft 365 Migration Architecture</span>
+<section aria-label="Migration architecture hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Migration Architecture</span>
     <h2>Protect business continuity while changing identity, data and collaboration</h2>
     <p>Successful migration design aligns source discovery, target state, coexistence, security validation, wave planning, cutover, communication and hypercare.</p>
-    <div class="kc-hero-signal-row" aria-label="Migration architecture signals">
+    <div aria-label="Migration architecture signals" className="kc-hero-signal-row">
       <span>Discover</span>
       <span>Transition</span>
       <span>Cutover</span>
       <span>Stabilize</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Migration architecture operating model">
-    <div class="kc-factory-panel__header"><span>Migration Control Tower</span><strong>Source discovery to stabilized operations</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#migration-architecture-overview" class="kc-factory-card"><small>01</small><strong>Map</strong><span>Users, identities, mail, files, Teams, permissions and dependencies.</span></a>
-      <a href="#migration-domains" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Target tenant, security baseline, wave plan and communication model.</span></a>
-      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Cutover</strong><span>Coexistence, pilot, go/no-go, rollback, DNS and service desk readiness.</span></a>
-      <a href="#customer-success-reference-patterns" class="kc-factory-card"><small>04</small><strong>Stabilize</strong><span>Hypercare, issue trend, handover, reporting and success pattern capture.</span></a>
+  <div aria-label="Migration architecture operating model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Migration Control Tower</span>
+      <strong>Source discovery to stabilized operations</strong>
     </div>
-    <div class="kc-guardrail-panel"><strong>Migration rule</strong><span>Do not start migration before source ownership, permissions, security baseline and support path are validated.</span></div>
+    <div className="kc-factory-grid">
+      <a href="#migration-architecture-overview" className="kc-factory-card">
+        <small>01</small>
+        <strong>Map</strong>
+        <span>Users, identities, mail, files, Teams, permissions and dependencies.</span>
+      </a>
+      <a href="#migration-domains" className="kc-factory-card">
+        <small>02</small>
+        <strong>Design</strong>
+        <span>Target tenant, security baseline, wave plan and communication model.</span>
+      </a>
+      <a href="#decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Cutover</strong>
+        <span>Coexistence, pilot, go/no-go, rollback, DNS and service desk readiness.</span>
+      </a>
+      <a href="#customer-success-reference-patterns" className="kc-factory-card">
+        <small>04</small>
+        <strong>Stabilize</strong>
+        <span>Hypercare, issue trend, handover, reporting and success pattern capture.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Migration rule</strong>
+      <span>Do not start migration before source ownership, permissions, security baseline and support path are validated.</span>
+    </div>
   </div>
 </section>
 
@@ -62,14 +84,37 @@ Typical migration scenarios include:
 
 ## Migration Architecture Overview
 
-<div class="kc-journey-map" aria-label="Migration architecture overview">
-  <div class="kc-journey-map__header"><span>Migration Architecture Overview</span><strong>Source environment to stabilized Microsoft 365 operations</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Source discovery</strong><span>Inventory users, aliases, domains, mail flow, files, Teams, sites and dependencies.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Mapping</strong><span>Identity, mailbox, permissions, collaboration and workload mapping.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Target design</strong><span>Microsoft 365 tenant, security, Purview, Defender and governance baseline.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Cutover</strong><span>Wave planning, coexistence, communication, go/no-go and rollback.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Hypercare</strong><span>Stabilization, support, issue trend, reporting and owner handover.</span></div>
+<div aria-label="Migration architecture overview" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Migration Architecture Overview</span>
+    <strong>Source environment to stabilized Microsoft 365 operations</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Source discovery</strong>
+      <span>Inventory users, aliases, domains, mail flow, files, Teams, sites and dependencies.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Mapping</strong>
+      <span>Identity, mailbox, permissions, collaboration and workload mapping.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Target design</strong>
+      <span>Microsoft 365 tenant, security, Purview, Defender and governance baseline.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Cutover</strong>
+      <span>Wave planning, coexistence, communication, go/no-go and rollback.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Hypercare</strong>
+      <span>Stabilization, support, issue trend, reporting and owner handover.</span>
+    </div>
   </div>
 </div>
 

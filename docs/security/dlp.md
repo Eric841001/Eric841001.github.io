@@ -6,17 +6,29 @@ description: Microsoft Purview Data Loss Prevention guide for policy design, sen
 
 # Data Loss Prevention
 
-<section class="kc-topic-hero kc-topic-hero--compact">
+<section className="kc-topic-hero kc-topic-hero--compact">
   <div>
-    <span class="kc-eyebrow">PURVIEW DLP CONTROL MODEL</span>
+    <span className="kc-eyebrow">PURVIEW DLP CONTROL MODEL</span>
     <h2>Protect sensitive work without breaking business flow</h2>
     <p>DLP succeeds when protected data, policy mode, user coaching, exception approval and alert tuning are treated as one adoption journey.</p>
   </div>
-  <div class="kc-hero-metrics" aria-label="DLP operating focus">
-    <div><strong>Data</strong><span>Scope</span></div>
-    <div><strong>Policy</strong><span>Mode</span></div>
-    <div><strong>User</strong><span>Coaching</span></div>
-    <div><strong>Audit</strong><span>Evidence</span></div>
+  <div aria-label="DLP operating focus" className="kc-hero-metrics">
+    <div>
+      <strong>Data</strong>
+      <span>Scope</span>
+    </div>
+    <div>
+      <strong>Policy</strong>
+      <span>Mode</span>
+    </div>
+    <div>
+      <strong>User</strong>
+      <span>Coaching</span>
+    </div>
+    <div>
+      <strong>Audit</strong>
+      <span>Evidence</span>
+    </div>
   </div>
 </section>
 
@@ -36,21 +48,26 @@ DLP should be designed as a business control, not only a security rule. The stro
 
 ## Architecture
 
-<div class="kc-factory-panel">
-  <div class="kc-panel-header">
-    <span>DLP adoption loop</span>
-    <strong>Audit before enforcement</strong>
-  </div>
-  <div class="kc-journey-map" aria-label="DLP policy architecture">
-    <div class="kc-journey-node is-source"><small>01</small><strong>Classify data</strong><span>Map sensitive information types, trainable classifiers and business-owned data categories.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>02</small><strong>Design policy</strong><span>Separate workload scope, conditions, user groups, unmanaged device rules and policy tips.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node"><small>03</small><strong>Tune impact</strong><span>Start in audit or test mode, review false positives and tune thresholds before enforcement.</span></div>
-    <div class="kc-journey-arrow" aria-hidden="true"></div>
-    <div class="kc-journey-node is-target"><small>04</small><strong>Operate exceptions</strong><span>Use named reviewers, time-bound exceptions, alert evidence and Copilot data protection reporting.</span></div>
-  </div>
-</div>
+<div className="kc-factory-panel"><div className="kc-panel-header">
+  <span>DLP adoption loop</span>
+  <strong>Audit before enforcement</strong>
+</div><div aria-label="DLP policy architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
+  <small>01</small>
+  <strong>Classify data</strong>
+  <span>Map sensitive information types, trainable classifiers and business-owned data categories.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>02</small>
+  <strong>Design policy</strong>
+  <span>Separate workload scope, conditions, user groups, unmanaged device rules and policy tips.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
+  <small>03</small>
+  <strong>Tune impact</strong>
+  <span>Start in audit or test mode, review false positives and tune thresholds before enforcement.</span>
+</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
+  <small>04</small>
+  <strong>Operate exceptions</strong>
+  <span>Use named reviewers, time-bound exceptions, alert evidence and Copilot data protection reporting.</span>
+</div></div></div>
 
 ## Implementation
 

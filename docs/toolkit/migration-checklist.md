@@ -8,20 +8,44 @@ toc_max_heading_level: 2
 
 # Enterprise Migration Checklist
 
-<section class="kc-topic-hero" aria-label="Enterprise Migration Checklist hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Toolkit Asset</span>
+<section aria-label="Enterprise Migration Checklist hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Toolkit Asset</span>
     <h2>Reduce migration risk with discovery, pilot, cutover and hypercare control</h2>
     <p>This checklist standardizes validation for Microsoft 365 transformation, tenant-to-tenant migration, Exchange Online migration, SharePoint migration and cloud modernization.</p>
-    <div class="kc-hero-signal-row" aria-label="Migration Checklist signals"><span>Discover</span><span>Design</span><span>Cutover</span><span>Hypercare</span></div>
+    <div aria-label="Migration Checklist signals" className="kc-hero-signal-row">
+      <span>Discover</span>
+      <span>Design</span>
+      <span>Cutover</span>
+      <span>Hypercare</span>
+    </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Migration Checklist model">
-    <div class="kc-factory-panel__header"><span>Migration Control</span><strong>Continuity-first</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#discovery-checklist" class="kc-factory-card"><small>01</small><strong>Discovery</strong><span>Business objectives, stakeholder map, inventory and dependencies.</span></a>
-      <a href="#assessment-checklist" class="kc-factory-card"><small>02</small><strong>Assessment</strong><span>Identity, messaging, source data, security and readiness risk.</span></a>
-      <a href="#migration-lifecycle" class="kc-factory-card"><small>03</small><strong>Lifecycle</strong><span>Design, pilot, migration waves, validation and hypercare.</span></a>
-      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable checklist can be shared after confirming migration scope.</span></a>
+  <div aria-label="Migration Checklist model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Migration Control</span>
+      <strong>Continuity-first</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#discovery-checklist" className="kc-factory-card">
+        <small>01</small>
+        <strong>Discovery</strong>
+        <span>Business objectives, stakeholder map, inventory and dependencies.</span>
+      </a>
+      <a href="#assessment-checklist" className="kc-factory-card">
+        <small>02</small>
+        <strong>Assessment</strong>
+        <span>Identity, messaging, source data, security and readiness risk.</span>
+      </a>
+      <a href="#migration-lifecycle" className="kc-factory-card">
+        <small>03</small>
+        <strong>Lifecycle</strong>
+        <span>Design, pilot, migration waves, validation and hypercare.</span>
+      </a>
+      <a href="../contact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Request</strong>
+        <span>Editable checklist can be shared after confirming migration scope.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -36,15 +60,42 @@ The objective is to reduce migration risk while ensuring business continuity and
 
 ## Migration Lifecycle
 
-<div class="kc-journey-map" aria-label="Migration lifecycle">
-  <div class="kc-journey-map__header"><span>Migration Lifecycle</span><strong>Discovery to stabilized handover</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discovery</strong><span>Scope, inventory, stakeholders, timelines and business success criteria.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Risk, dependency, readiness, identity and workload complexity.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Target architecture, migration method, wave plan and rollback path.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pilot</strong><span>Validation, issue log, user feedback and operational learning.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Migration</strong><span>Waves, cutover, communication, rollback and reconciliation.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Hypercare</strong><span>Support, stabilization, handover and lessons learned.</span></div>
+<div aria-label="Migration lifecycle" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Migration Lifecycle</span>
+    <strong>Discovery to stabilized handover</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Discovery</strong>
+      <span>Scope, inventory, stakeholders, timelines and business success criteria.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assessment</strong>
+      <span>Risk, dependency, readiness, identity and workload complexity.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Design</strong>
+      <span>Target architecture, migration method, wave plan and rollback path.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Pilot</strong>
+      <span>Validation, issue log, user feedback and operational learning.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Migration</strong>
+      <span>Waves, cutover, communication, rollback and reconciliation.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Hypercare</strong>
+      <span>Support, stabilization, handover and lessons learned.</span>
+    </div>
   </div>
 </div>
 

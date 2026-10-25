@@ -8,36 +8,51 @@ toc_max_heading_level: 2
 
 # Microsoft Copilot Studio
 
-<section class="kc-topic-hero kc-topic-hero--agent" aria-label="Microsoft Copilot Studio hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Copilot Studio Enterprise Agent Platform</span>
+<section aria-label="Microsoft Copilot Studio hero" className="kc-topic-hero kc-topic-hero--agent">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Copilot Studio Enterprise Agent Platform</span>
     <h2>Build business agents with governance from day one</h2>
     <p>Copilot Studio turns repeatable business scenarios into governed agents, workflows and controlled actions. The enterprise design question is not only “can we build an agent?” It is “can we own, secure, publish, measure and retire it?”</p>
-    <div class="kc-hero-signal-row" aria-label="Copilot Studio operating signals">
+    <div aria-label="Copilot Studio operating signals" className="kc-hero-signal-row">
       <span>Build</span>
       <span>Ground</span>
       <span>Govern</span>
       <span>Operate</span>
     </div>
-    <div class="kc-topic-hero__actions" aria-label="Copilot Studio related pages">
-      <a class="kc-topic-button kc-topic-button--primary" href="/knowledge/copilot/copilot-studio-2026-platform-update">2026 Platform Update</a>
-      <a class="kc-topic-button" href="/knowledge/copilot/agent-factory-operating-model">Agent Factory</a>
-      <a class="kc-topic-button" href="/knowledge/copilot/multi-agent-framework">Multi-Agent Framework</a>
+    <div aria-label="Copilot Studio related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" className="kc-topic-button kc-topic-button--primary">2026 Platform Update</a>
+      <a href="/knowledge/copilot/agent-factory-operating-model" className="kc-topic-button">Agent Factory</a>
+      <a href="/knowledge/copilot/multi-agent-framework" className="kc-topic-button">Multi-Agent Framework</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Copilot Studio operating model visual">
-    <div class="kc-factory-panel__header">
+  <div aria-label="Copilot Studio operating model visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
       <span>Agent Delivery Loop</span>
       <strong>Build to operate</strong>
     </div>
-    <div class="kc-factory-grid">
-      <a href="#business-context" class="kc-factory-card"><small>01</small><strong>Idea</strong><span>Business problem, user journey and measurable value.</span></a>
-      <a href="#microsoft-agent-build-spectrum" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Platform fit, knowledge, tools, identity and channels.</span></a>
-      <a href="#security-and-governance" class="kc-factory-card"><small>03</small><strong>Gate</strong><span>Security, DLP, owner, lifecycle and release approval.</span></a>
-      <a href="#analytics-and-operations" class="kc-factory-card"><small>04</small><strong>Operate</strong><span>Monitoring, feedback, cost, portfolio and retirement.</span></a>
+    <div className="kc-factory-grid">
+      <a href="#business-context" className="kc-factory-card">
+        <small>01</small>
+        <strong>Idea</strong>
+        <span>Business problem, user journey and measurable value.</span>
+      </a>
+      <a href="#microsoft-agent-build-spectrum" className="kc-factory-card">
+        <small>02</small>
+        <strong>Design</strong>
+        <span>Platform fit, knowledge, tools, identity and channels.</span>
+      </a>
+      <a href="#security-and-governance" className="kc-factory-card">
+        <small>03</small>
+        <strong>Gate</strong>
+        <span>Security, DLP, owner, lifecycle and release approval.</span>
+      </a>
+      <a href="#analytics-and-operations" className="kc-factory-card">
+        <small>04</small>
+        <strong>Operate</strong>
+        <span>Monitoring, feedback, cost, portfolio and retirement.</span>
+      </a>
     </div>
-    <div class="kc-guardrail-panel">
+    <div className="kc-guardrail-panel">
       <strong>Enterprise rule</strong>
       <span>Every Copilot Studio agent should have owner, data boundary, action boundary, quality check, cost signal and support path before production exposure.</span>
     </div>
@@ -54,18 +69,42 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 
 > **Executive lens:** Copilot Studio should be governed like an enterprise application platform: every agent needs an owner, knowledge boundary, action boundary, lifecycle rule and measurement model.
 
-<div class="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
-  <div class="kc-journey-map__header">
+<div className="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
+  <div className="kc-journey-map__header">
     <span>Agent Lifecycle</span>
     <strong>Idea to governed portfolio</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Idea</strong><span>Business problem, user journey and value hypothesis.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Knowledge, tools, identity, channels and test criteria.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>03</small><strong>Govern</strong><span>Security, DLP, owner, lifecycle and release approval.</span></div>
-    <div class="kc-journey-node"><small>04</small><strong>Publish</strong><span>Environment, channel, support path and change control.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Operate</strong><span>Monitoring, feedback, analytics and cost review.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Portfolio</strong><span>Reuse, retirement, consolidation and value tracking.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+  <small>01</small>
+  <strong>Idea</strong>
+  <span>Business problem, user journey and value hypothesis.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Design</strong>
+  <span>Knowledge, tools, identity, channels and test criteria.</span>
+</div>
+    <div className="kc-journey-node kc-journey-node--control">
+  <small>03</small>
+  <strong>Govern</strong>
+  <span>Security, DLP, owner, lifecycle and release approval.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>04</small>
+  <strong>Publish</strong>
+  <span>Environment, channel, support path and change control.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>05</small>
+  <strong>Operate</strong>
+  <span>Monitoring, feedback, analytics and cost review.</span>
+</div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+  <small>06</small>
+  <strong>Portfolio</strong>
+  <span>Reuse, retirement, consolidation and value tracking.</span>
+</div>
   </div>
 </div>
 
@@ -101,17 +140,37 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 
 ## Microsoft Agent Build Spectrum
 
-<div class="kc-journey-map" aria-label="Microsoft agent build spectrum">
-  <div class="kc-journey-map__header">
+<div aria-label="Microsoft agent build spectrum" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Microsoft Agent Build Spectrum</span>
     <strong>No-code, low-code and pro-code agent delivery</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Agent Builder</strong><span>General users create simple personal or team agents.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Copilot Studio</strong><span>Business makers build governed business agents and workflows.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Power Platform</strong><span>Power Automate and Power Apps add workflow, approvals and app surfaces.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Pro-code</strong><span>Foundry, Logic Apps and Agents SDK support complex integration and custom agents.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governance</strong><span>All build paths require owner, data, tool, security and lifecycle controls.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Agent Builder</strong>
+      <span>General users create simple personal or team agents.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Copilot Studio</strong>
+      <span>Business makers build governed business agents and workflows.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Power Platform</strong>
+      <span>Power Automate and Power Apps add workflow, approvals and app surfaces.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Pro-code</strong>
+      <span>Foundry, Logic Apps and Agents SDK support complex integration and custom agents.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Governance</strong>
+      <span>All build paths require owner, data, tool, security and lifecycle controls.</span>
+    </div>
   </div>
 </div>
 
@@ -149,17 +208,37 @@ It supports:
 
 ## Core Architecture
 
-<div class="kc-journey-map" aria-label="Copilot Studio core architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot Studio core architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Core Architecture</span>
     <strong>Channel, agent, knowledge, tools and automation in one platform</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Channels</strong><span>Teams, Microsoft 365 Copilot, website, demo site or custom app.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Agent</strong><span>Copilot Studio agent handles intent, orchestration, topics and user experience.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Knowledge</strong><span>SharePoint, files, websites, Dataverse, Microsoft Graph and enterprise sources.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Tools</strong><span>Connectors, prompts, REST APIs, MCP servers, computer use and agent flows.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Automation</strong><span>Power Automate and business systems complete the action loop.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Channels</strong>
+      <span>Teams, Microsoft 365 Copilot, website, demo site or custom app.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Agent</strong>
+      <span>Copilot Studio agent handles intent, orchestration, topics and user experience.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Knowledge</strong>
+      <span>SharePoint, files, websites, Dataverse, Microsoft Graph and enterprise sources.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Tools</strong>
+      <span>Connectors, prompts, REST APIs, MCP servers, computer use and agent flows.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Automation</strong>
+      <span>Power Automate and business systems complete the action loop.</span>
+    </div>
   </div>
 </div>
 
@@ -243,17 +322,37 @@ Examples:
 
 ## Agent Lifecycle
 
-<div class="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
-  <div class="kc-journey-map__header">
+<div className="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
+  <div className="kc-journey-map__header">
     <span>Agent Lifecycle</span>
     <strong>Discover, design, build, validate, operate and improve</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discover</strong><span>Business problem, user group, value case and target scenario.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Design</strong><span>Agent scope, knowledge, tools, data boundary and governance model.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Build</strong><span>Agent, topics, actions, flows, prompts and deployment channel.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Validate</strong><span>Functional, security, permission, quality and pilot user validation.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Operate</strong><span>Deploy, monitor, improve, retire or expand the agent.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+  <small>01</small>
+  <strong>Discover</strong>
+  <span>Business problem, user group, value case and target scenario.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Design</strong>
+  <span>Agent scope, knowledge, tools, data boundary and governance model.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>03</small>
+  <strong>Build</strong>
+  <span>Agent, topics, actions, flows, prompts and deployment channel.</span>
+</div>
+    <div className="kc-journey-node kc-journey-node--control">
+  <small>04</small>
+  <strong>Validate</strong>
+  <span>Functional, security, permission, quality and pilot user validation.</span>
+</div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+  <small>05</small>
+  <strong>Operate</strong>
+  <span>Deploy, monitor, improve, retire or expand the agent.</span>
+</div>
   </div>
 </div>
 
@@ -292,17 +391,37 @@ Recommended knowledge sources:
 
 Agents become more valuable when they can take action.
 
-<div class="kc-journey-map" aria-label="Copilot Studio tool and action architecture">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot Studio tool and action architecture" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Tool and Action Architecture</span>
     <strong>Agents create value when they can safely take action</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Intent</strong><span>User request or trigger identifies a business action.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Tool selection</strong><span>Agent chooses flow, connector, API, MCP server or prompt tool.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Execution</strong><span>Business process, enterprise system or external service is invoked.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Control</strong><span>Authentication, DLP, approval, logging and error handling are enforced.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Result</strong><span>User receives confirmation, output, escalation or next-step guidance.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Intent</strong>
+      <span>User request or trigger identifies a business action.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Tool selection</strong>
+      <span>Agent chooses flow, connector, API, MCP server or prompt tool.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Execution</strong>
+      <span>Business process, enterprise system or external service is invoked.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Control</strong>
+      <span>Authentication, DLP, approval, logging and error handling are enforced.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Result</strong>
+      <span>User receives confirmation, output, escalation or next-step guidance.</span>
+    </div>
   </div>
 </div>
 
@@ -357,17 +476,37 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ## Enterprise Agent Platform View
 
-<div class="kc-journey-map" aria-label="Enterprise agent platform view">
-  <div class="kc-journey-map__header">
+<div aria-label="Enterprise agent platform view" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Enterprise Agent Platform View</span>
     <strong>Experience, agent platform, data and control plane</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Experience</strong><span>Microsoft 365 Copilot, Teams, websites and business apps.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Agent platform</strong><span>Copilot Studio, Foundry and Microsoft 365 Agents SDK.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Data</strong><span>Graph, Fabric, Dataverse, lakehouse, warehouse and external systems.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Control plane</strong><span>Entra ID, Purview, Defender, analytics and Agent365 governance.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Business outcome</strong><span>Governed agents automate work, answer questions and orchestrate processes.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Experience</strong>
+      <span>Microsoft 365 Copilot, Teams, websites and business apps.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Agent platform</strong>
+      <span>Copilot Studio, Foundry and Microsoft 365 Agents SDK.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Data</strong>
+      <span>Graph, Fabric, Dataverse, lakehouse, warehouse and external systems.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Control plane</strong>
+      <span>Entra ID, Purview, Defender, analytics and Agent365 governance.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Business outcome</strong>
+      <span>Governed agents automate work, answer questions and orchestrate processes.</span>
+    </div>
   </div>
 </div>
 
@@ -393,17 +532,37 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ## Agent Governance Model
 
-<div class="kc-journey-map" aria-label="Copilot Studio agent governance model">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot Studio agent governance model" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Agent Governance Model</span>
     <strong>Shared accountability before production release</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>AI governance board</strong><span>Sets policy, prioritization, risk appetite and operating cadence.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Agent owner</strong><span>Owns business value, requirements, adoption and lifecycle decisions.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Platform team</strong><span>Manages environments, connectors, capacity, deployment and operations.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Security and compliance</strong><span>Reviews data, tools, permissions, DLP, audit and regulatory requirements.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Approved agent</strong><span>Agent is released with owner, policy, monitoring and retirement path.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>AI governance board</strong>
+      <span>Sets policy, prioritization, risk appetite and operating cadence.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Agent owner</strong>
+      <span>Owns business value, requirements, adoption and lifecycle decisions.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Platform team</strong>
+      <span>Manages environments, connectors, capacity, deployment and operations.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Security and compliance</strong>
+      <span>Reviews data, tools, permissions, DLP, audit and regulatory requirements.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Approved agent</strong>
+      <span>Agent is released with owner, policy, monitoring and retirement path.</span>
+    </div>
   </div>
 </div>
 
@@ -462,11 +621,22 @@ Agent operations should continuously track performance.
 
 ### IT Helpdesk Agent
 
-- Password reset guidance
-- Service request intake
-- Incident classification
-- Knowledge article search
-- Ticket creation
+
+Separate guidance from state-changing actions.
+
+- **Guidance path:** Answer password-help and service questions from approved knowledge with source links. This path must not change account, ticket or asset state.
+- **Action path:** Ticket creation or an account reset calls an approved tool, connector, API or flow. Configure end-user authentication when the agent must identify the user, and block makers from supplying their own credentials for supported connectors where that restriction is required.
+- **Control path:** Use Power Platform data policies to control channels, connectors and HTTP requests; use Microsoft Purview audit logs for Copilot Studio activities; and configure human handoff when the agent cannot complete the request.
+
+Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-enduser-authentication), [credential restrictions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication), [data policies](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention), [audit](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio), and [human handoff](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-hand-off).
+
+#### 한국어 요약
+
+안내와 상태 변경 작업을 구분합니다.
+
+- **안내 경로:** 승인된 지식과 출처 링크를 바탕으로 암호 도움말과 서비스 문의에 답변하며 계정, 티켓 또는 자산 상태를 변경하지 않습니다.
+- **실행 경로:** 티켓 생성이나 계정 재설정은 승인된 도구, 커넥터, API 또는 흐름을 호출합니다. 에이전트가 사용자를 식별해야 하면 최종 사용자 인증을 구성하고, 해당 제한이 필요한 지원 커넥터에서는 제작자가 자신의 자격 증명을 제공하지 못하도록 차단합니다.
+- **통제 경로:** Power Platform 데이터 정책으로 채널, 커넥터와 HTTP 요청을 제어하고, Microsoft Purview 감사 로그로 Copilot Studio 활동을 확인하며, 에이전트가 요청을 완료할 수 없을 때 사람 상담원 이관을 구성합니다.
 
 ### HR Agent
 
@@ -534,17 +704,37 @@ Consider:
 
 ## Decision Framework
 
-<div class="kc-journey-map" aria-label="Copilot Studio decision framework">
-  <div class="kc-journey-map__header">
+<div aria-label="Copilot Studio decision framework" className="kc-journey-map">
+  <div className="kc-journey-map__header">
     <span>Decision Framework</span>
     <strong>Choose the simplest governed platform that can meet the requirement</strong>
   </div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Requirement</strong><span>Clarify user group, business process, data source, action and risk level.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Simple agent</strong><span>Use Agent Builder for lightweight personal or team knowledge use cases.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Business agent</strong><span>Use Copilot Studio for governed knowledge, tools, flows and channels.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Complex AI</strong><span>Use Foundry, SDK or Logic Apps when model, integration or custom code depth is required.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Governance review</strong><span>Every option passes owner, data, tool, security and lifecycle checks.</span></div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Requirement</strong>
+      <span>Clarify user group, business process, data source, action and risk level.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Simple agent</strong>
+      <span>Use Agent Builder for lightweight personal or team knowledge use cases.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Business agent</strong>
+      <span>Use Copilot Studio for governed knowledge, tools, flows and channels.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Complex AI</strong>
+      <span>Use Foundry, SDK or Logic Apps when model, integration or custom code depth is required.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Governance review</strong>
+      <span>Every option passes owner, data, tool, security and lifecycle checks.</span>
+    </div>
   </div>
 </div>
 

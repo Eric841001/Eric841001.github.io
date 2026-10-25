@@ -21,7 +21,10 @@ toc_max_heading_level: 2
     </div>
   </div>
   <div class="kc-factory-panel" aria-label="Download SOW request model">
-    <div class="kc-factory-panel__header"><span>SOW Asset</span><strong>Request-based</strong></div>
+    <div class="kc-factory-panel__header">
+  <span>SOW Asset</span>
+  <strong>Request-based</strong>
+</div>
     <div class="kc-factory-grid">
       <a href="#2-business-objectives" class="kc-factory-card"><small>01</small><strong>Objectives</strong><span>Business outcomes, success criteria and Microsoft workload value.</span></a>
       <a href="#3-project-scope" class="kc-factory-card"><small>02</small><strong>Scope</strong><span>Included scope, excluded scope, assumptions and dependencies.</span></a>
@@ -54,13 +57,36 @@ The purpose of this engagement is to assess, design and implement a modern Micro
 The engagement will be delivered through a structured methodology covering assessment, architecture design, implementation planning and knowledge transfer.
 
 <div class="kc-journey-map" aria-label="Download SOW template flow">
-  <div class="kc-journey-map__header"><span>SOW Asset Flow</span><strong>Objectives to approved delivery baseline</strong></div>
+  <div class="kc-journey-map__header">
+  <span>SOW Asset Flow</span>
+  <strong>Objectives to approved delivery baseline</strong>
+</div>
   <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Objectives</strong><span>Outcomes, scope intent, success criteria and executive driver.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Engagement Scope</strong><span>Included work, excluded work, assumptions and dependencies.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Delivery Method</strong><span>Assessment, design, implementation, handover and governance rhythm.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Commercial Plan</strong><span>Timeline, roles, milestones, risks and decision gates.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Approved SOW</strong><span>Decision-ready delivery baseline and acceptance model.</span></div>
+    <div class="kc-journey-node kc-journey-node--demand">
+  <small>01</small>
+  <strong>Business Objectives</strong>
+  <span>Outcomes, scope intent, success criteria and executive driver.</span>
+</div>
+    <div class="kc-journey-node">
+  <small>02</small>
+  <strong>Engagement Scope</strong>
+  <span>Included work, excluded work, assumptions and dependencies.</span>
+</div>
+    <div class="kc-journey-node">
+  <small>03</small>
+  <strong>Delivery Method</strong>
+  <span>Assessment, design, implementation, handover and governance rhythm.</span>
+</div>
+    <div class="kc-journey-node kc-journey-node--control">
+  <small>04</small>
+  <strong>Commercial Plan</strong>
+  <span>Timeline, roles, milestones, risks and decision gates.</span>
+</div>
+    <div class="kc-journey-node kc-journey-node--outcome">
+  <small>05</small>
+  <strong>Approved SOW</strong>
+  <span>Decision-ready delivery baseline and acceptance model.</span>
+</div>
   </div>
 </div>
 

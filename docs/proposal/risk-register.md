@@ -8,25 +8,49 @@ toc_max_heading_level: 2
 
 # Risk Register
 
-<section class="kc-topic-hero" aria-label="Proposal Risk Register hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Proposal Risk Register hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Expose project risk, owner and escalation path before execution</h2>
     <p>The proposal risk register connects technical, licensing, business readiness, change management and executive decision dependencies into one control model.</p>
-    <div class="kc-hero-signal-row" aria-label="Proposal Risk Register signals"><span>Identify</span><span>Classify</span><span>Owner</span><span>Report</span></div>
+    <div aria-label="Proposal Risk Register signals" className="kc-hero-signal-row">
+      <span>Identify</span>
+      <span>Classify</span>
+      <span>Owner</span>
+      <span>Report</span>
+    </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Proposal Risk Register model">
-    <div class="kc-factory-panel__header"><span>Risk Control</span><strong>Escalation-ready</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-scenario" class="kc-factory-card"><small>01</small><strong>Scenario</strong><span>M365, Security, migration, Copilot, licensing and governance projects.</span></a>
-      <a href="#risk-classification" class="kc-factory-card"><small>02</small><strong>Classify</strong><span>Critical, high, medium and low risk levels.</span></a>
-      <a href="#standard-risk-register" class="kc-factory-card"><small>03</small><strong>Register</strong><span>Risk, category, impact, probability, level, mitigation and owner.</span></a>
-      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable risk register can be shared by project type.</span></a>
+  <div aria-label="Proposal Risk Register model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Risk Control</span>
+      <strong>Escalation-ready</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-scenario" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scenario</strong>
+        <span>M365, Security, migration, Copilot, licensing and governance projects.</span>
+      </a>
+      <a href="#risk-classification" className="kc-factory-card">
+        <small>02</small>
+        <strong>Classify</strong>
+        <span>Critical, high, medium and low risk levels.</span>
+      </a>
+      <a href="#standard-risk-register" className="kc-factory-card">
+        <small>03</small>
+        <strong>Register</strong>
+        <span>Risk, category, impact, probability, level, mitigation and owner.</span>
+      </a>
+      <a href="../contact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Request</strong>
+        <span>Editable risk register can be shared by project type.</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="kc-request-panel" aria-label="Risk register editable asset request">
+<div aria-label="Risk register editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Risk register and issue control template</strong>
   <span>Use this asset to document risk, likelihood, impact, owner, mitigation, decision status and escalation path. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -40,14 +64,37 @@ For Microsoft 365, Azure, Security, Copilot and migration projects, risk managem
 
 > **Asset preview:** Use this page to understand the risk model. For an editable risk register file or customer-ready sample, request the asset through [Contact and Asset Request](../contact) with the project type and target workload.
 
-<div class="kc-journey-map" aria-label="Proposal risk register flow">
-  <div class="kc-journey-map__header"><span>Risk Register Flow</span><strong>Risk discovery to executive reporting</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Identify</strong><span>Technical, business, license, change, migration and governance risks.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Classify</strong><span>Impact, probability, risk level and escalation trigger.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Assign Owner</strong><span>Decision maker, mitigation lead, due date and dependency owner.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Mitigate</strong><span>Actions, fallback, dates, dependencies and residual exposure.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>05</small><strong>Report</strong><span>Status, escalation, executive decisions and closure evidence.</span></div>
+<div aria-label="Proposal risk register flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Risk Register Flow</span>
+    <strong>Risk discovery to executive reporting</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Identify</strong>
+      <span>Technical, business, license, change, migration and governance risks.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Classify</strong>
+      <span>Impact, probability, risk level and escalation trigger.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Assign Owner</strong>
+      <span>Decision maker, mitigation lead, due date and dependency owner.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Mitigate</strong>
+      <span>Actions, fallback, dates, dependencies and residual exposure.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>05</small>
+      <strong>Report</strong>
+      <span>Status, escalation, executive decisions and closure evidence.</span>
+    </div>
   </div>
 </div>
 

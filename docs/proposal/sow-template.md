@@ -6,30 +6,49 @@ toc_max_heading_level: 2
 
 # Statement of Work Template
 
-<section class="kc-topic-hero" aria-label="Statement of Work template hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Statement of Work template hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Define scope, deliverables and acceptance before delivery starts</h2>
     <p>A strong SOW connects business driver, workload scope, assumptions, exclusions, responsibilities, acceptance criteria and change control into a delivery contract.</p>
-    <div class="kc-hero-signal-row" aria-label="SOW template signals">
+    <div aria-label="SOW template signals" className="kc-hero-signal-row">
       <span>Scope</span>
       <span>Deliverables</span>
       <span>Assumptions</span>
       <span>Acceptance</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="SOW template design model">
-    <div class="kc-factory-panel__header"><span>SOW Design</span><strong>Scope-safe</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#recommended-sow-structure" class="kc-factory-card"><small>01</small><strong>Structure</strong><span>Background, objectives, scope, deliverables and roles.</span></a>
-      <a href="#delivery-scope-example" class="kc-factory-card"><small>02</small><strong>Workstreams</strong><span>Assessment, architecture, security, migration, adoption and handover.</span></a>
-      <a href="#decision-checklist" class="kc-factory-card"><small>03</small><strong>Decisions</strong><span>Scope boundary, assumptions, exclusions, acceptance and change control.</span></a>
-      <a href="#quality-checklist" class="kc-factory-card"><small>04</small><strong>Quality</strong><span>Make reviewable outputs and approval criteria explicit.</span></a>
+  <div aria-label="SOW template design model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>SOW Design</span>
+      <strong>Scope-safe</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#recommended-sow-structure" className="kc-factory-card">
+        <small>01</small>
+        <strong>Structure</strong>
+        <span>Background, objectives, scope, deliverables and roles.</span>
+      </a>
+      <a href="#delivery-scope-example" className="kc-factory-card">
+        <small>02</small>
+        <strong>Workstreams</strong>
+        <span>Assessment, architecture, security, migration, adoption and handover.</span>
+      </a>
+      <a href="#decision-checklist" className="kc-factory-card">
+        <small>03</small>
+        <strong>Decisions</strong>
+        <span>Scope boundary, assumptions, exclusions, acceptance and change control.</span>
+      </a>
+      <a href="#quality-checklist" className="kc-factory-card">
+        <small>04</small>
+        <strong>Quality</strong>
+        <span>Make reviewable outputs and approval criteria explicit.</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="kc-request-panel" aria-label="SOW editable asset request">
+<div aria-label="SOW editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Statement of Work editable structure</strong>
   <span>Use this asset to align scope, deliverables, assumptions, exclusions, acceptance criteria and responsibilities. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -53,15 +72,42 @@ SOW는 고객에게 "무엇을 제공하는가"만 설명하는 문서가 아닙
 
 ## SOW Design Flow
 
-<div class="kc-journey-map" aria-label="SOW design flow">
-  <div class="kc-journey-map__header"><span>SOW Design Flow</span><strong>Business driver to change control</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Business Driver</strong><span>Clarify why the engagement matters now.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Scope Boundary</strong><span>Workloads, users, tenants, regions, environments and responsibilities.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Deliverables</strong><span>Reviewable outputs, workshops, design documents and handover assets.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Assumptions / Exclusions</strong><span>Customer inputs, access, dependencies and out-of-scope requests.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Acceptance Criteria</strong><span>Evidence, review path, sign-off and completion definition.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Change Control</strong><span>Additional scope decision, approval and commercial handling.</span></div>
+<div aria-label="SOW design flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>SOW Design Flow</span>
+    <strong>Business driver to change control</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Business Driver</strong>
+      <span>Clarify why the engagement matters now.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Scope Boundary</strong>
+      <span>Workloads, users, tenants, regions, environments and responsibilities.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Deliverables</strong>
+      <span>Reviewable outputs, workshops, design documents and handover assets.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Assumptions / Exclusions</strong>
+      <span>Customer inputs, access, dependencies and out-of-scope requests.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Acceptance Criteria</strong>
+      <span>Evidence, review path, sign-off and completion definition.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Change Control</strong>
+      <span>Additional scope decision, approval and commercial handling.</span>
+    </div>
   </div>
 </div>
 

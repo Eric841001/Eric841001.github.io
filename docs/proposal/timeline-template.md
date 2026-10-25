@@ -8,25 +8,49 @@ toc_max_heading_level: 2
 
 # Timeline Template
 
-<section class="kc-topic-hero" aria-label="Timeline Template hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Timeline Template hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Convert phases, dependencies and decision gates into a realistic schedule</h2>
     <p>The Timeline Template aligns customer and delivery teams around phases, milestones, dependencies, stakeholder events and handover checkpoints.</p>
-    <div class="kc-hero-signal-row" aria-label="Timeline Template signals"><span>Discover</span><span>Design</span><span>Rollout</span><span>Handover</span></div>
+    <div aria-label="Timeline Template signals" className="kc-hero-signal-row">
+      <span>Discover</span>
+      <span>Design</span>
+      <span>Rollout</span>
+      <span>Handover</span>
+    </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Timeline Template model">
-    <div class="kc-factory-panel__header"><span>Timeline Model</span><strong>Milestone-driven</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#business-scenario" class="kc-factory-card"><small>01</small><strong>Scenario</strong><span>M365 assessment, security baseline, Intune, migration or Copilot project.</span></a>
-      <a href="#standard-project-timeline" class="kc-factory-card"><small>02</small><strong>Phases</strong><span>Discovery, assessment, design, build, pilot, rollout and handover.</span></a>
-      <a href="#example-12-week-timeline" class="kc-factory-card"><small>03</small><strong>Schedule</strong><span>Week-by-week structure for workstreams and approvals.</span></a>
-      <a href="../contact" class="kc-factory-card"><small>04</small><strong>Request</strong><span>Editable timeline can be shared by engagement type.</span></a>
+  <div aria-label="Timeline Template model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Timeline Model</span>
+      <strong>Milestone-driven</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#business-scenario" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scenario</strong>
+        <span>M365 assessment, security baseline, Intune, migration or Copilot project.</span>
+      </a>
+      <a href="#standard-project-timeline" className="kc-factory-card">
+        <small>02</small>
+        <strong>Phases</strong>
+        <span>Discovery, assessment, design, build, pilot, rollout and handover.</span>
+      </a>
+      <a href="#example-12-week-timeline" className="kc-factory-card">
+        <small>03</small>
+        <strong>Schedule</strong>
+        <span>Week-by-week structure for workstreams and approvals.</span>
+      </a>
+      <a href="../contact" className="kc-factory-card">
+        <small>04</small>
+        <strong>Request</strong>
+        <span>Editable timeline can be shared by engagement type.</span>
+      </a>
     </div>
   </div>
 </section>
 
-<div class="kc-request-panel" aria-label="Timeline editable asset request">
+<div aria-label="Timeline editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Timeline and milestone planning template</strong>
   <span>Use this asset to convert project phases, dependencies, review gates and stakeholder events into a delivery schedule. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -38,15 +62,42 @@ The Timeline Template provides a standard project schedule structure for Microso
 
 The objective is to define realistic phases, milestones, dependencies and decision points so that both customer and delivery teams can align on scope, timeline and responsibilities.
 
-<div class="kc-journey-map" aria-label="Timeline Template flow">
-  <div class="kc-journey-map__header"><span>Timeline Flow</span><strong>Discovery to stabilization</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Discovery</strong><span>Requirements, current state, stakeholders and constraints.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Findings, risks, readiness, license fit and dependency review.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Design</strong><span>Architecture, policy, roadmap, backlog and approval gates.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Build and Pilot</strong><span>Configuration, validation, pilot users and issue resolution.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Rollout</strong><span>Production waves, communication, change support and monitoring.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Handover</strong><span>Runbook, training, stabilization, closure report and backlog.</span></div>
+<div aria-label="Timeline Template flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Timeline Flow</span>
+    <strong>Discovery to stabilization</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Discovery</strong>
+      <span>Requirements, current state, stakeholders and constraints.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Assessment</strong>
+      <span>Findings, risks, readiness, license fit and dependency review.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Design</strong>
+      <span>Architecture, policy, roadmap, backlog and approval gates.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Build and Pilot</strong>
+      <span>Configuration, validation, pilot users and issue resolution.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Rollout</strong>
+      <span>Production waves, communication, change support and monitoring.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Handover</strong>
+      <span>Runbook, training, stabilization, closure report and backlog.</span>
+    </div>
   </div>
 </div>
 

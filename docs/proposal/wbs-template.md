@@ -6,25 +6,44 @@ toc_max_heading_level: 2
 
 # Work Breakdown Structure
 
-<section class="kc-topic-hero" aria-label="Work Breakdown Structure hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Proposal Center Asset</span>
+<section aria-label="Work Breakdown Structure hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Proposal Center Asset</span>
     <h2>Convert proposal scope into controlled work packages and acceptance evidence</h2>
     <p>The WBS is the delivery control layer that connects SOW scope, workstreams, owners, dependencies, validation evidence, customer acceptance and operations handover.</p>
-    <div class="kc-hero-signal-row" aria-label="WBS template signals">
+    <div aria-label="WBS template signals" className="kc-hero-signal-row">
       <span>Scope</span>
       <span>Owner</span>
       <span>Evidence</span>
       <span>Handover</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="WBS template control model">
-    <div class="kc-factory-panel__header"><span>Delivery Control</span><strong>Evidence-led</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#recommended-wbs-model" class="kc-factory-card"><small>01</small><strong>Phases</strong><span>Discover, analyze, design, build, validate, deploy and close.</span></a>
-      <a href="#work-package-design-principles" class="kc-factory-card"><small>02</small><strong>Packages</strong><span>Owner, activity, dependency, deliverable and acceptance condition.</span></a>
-      <a href="#enterprise-wbs-example" class="kc-factory-card"><small>03</small><strong>Evidence</strong><span>Policy export, test result, report, checklist and acceptance record.</span></a>
-      <a href="#wbs-quality-criteria" class="kc-factory-card"><small>04</small><strong>Quality</strong><span>Traceability, ownership, evidence, governance and adoption.</span></a>
+  <div aria-label="WBS template control model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Delivery Control</span>
+      <strong>Evidence-led</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#recommended-wbs-model" className="kc-factory-card">
+        <small>01</small>
+        <strong>Phases</strong>
+        <span>Discover, analyze, design, build, validate, deploy and close.</span>
+      </a>
+      <a href="#work-package-design-principles" className="kc-factory-card">
+        <small>02</small>
+        <strong>Packages</strong>
+        <span>Owner, activity, dependency, deliverable and acceptance condition.</span>
+      </a>
+      <a href="#enterprise-wbs-example" className="kc-factory-card">
+        <small>03</small>
+        <strong>Evidence</strong>
+        <span>Policy export, test result, report, checklist and acceptance record.</span>
+      </a>
+      <a href="#wbs-quality-criteria" className="kc-factory-card">
+        <small>04</small>
+        <strong>Quality</strong>
+        <span>Traceability, ownership, evidence, governance and adoption.</span>
+      </a>
     </div>
   </div>
 </section>
@@ -34,7 +53,7 @@ The WBS is the delivery control layer that connects proposal scope, technical wo
 For Microsoft 365, Security, Copilot and migration engagements, the WBS should not be a simple task list. It should show how discovery findings become architecture decisions, how implementation tasks are validated, and how customer acceptance is collected.
 
 
-<div class="kc-request-panel" aria-label="WBS editable asset request">
+<div aria-label="WBS editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
   <strong>Work Breakdown Structure template</strong>
   <span>Use this asset to break work into workstreams, tasks, owners, dependencies, effort and acceptance checkpoints. Editable versions should be requested after confirming scenario, audience, confidentiality boundary and expected output format.</span>
@@ -42,15 +61,42 @@ For Microsoft 365, Security, Copilot and migration engagements, the WBS should n
 
 ## WBS Control Flow
 
-<div class="kc-journey-map" aria-label="WBS control flow">
-  <div class="kc-journey-map__header"><span>WBS Control Flow</span><strong>SOW scope to operations handover</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>SOW Scope</strong><span>Deliverables, assumptions, exclusions and approved boundaries.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Workstreams</strong><span>Identity, endpoint, security, collaboration, Copilot or migration.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Work Packages</strong><span>Owner, activity, dependency, schedule and acceptance condition.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Evidence</strong><span>Test result, export, workshop record, report and validation artifact.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Acceptance</strong><span>Customer review, sign-off, issue handling and decision record.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Handover</strong><span>Operation guide, backlog, support model and closure report.</span></div>
+<div aria-label="WBS control flow" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>WBS Control Flow</span>
+    <strong>SOW scope to operations handover</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>SOW Scope</strong>
+      <span>Deliverables, assumptions, exclusions and approved boundaries.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Workstreams</strong>
+      <span>Identity, endpoint, security, collaboration, Copilot or migration.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Work Packages</strong>
+      <span>Owner, activity, dependency, schedule and acceptance condition.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Evidence</strong>
+      <span>Test result, export, workshop record, report and validation artifact.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Acceptance</strong>
+      <span>Customer review, sign-off, issue handling and decision record.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Handover</strong>
+      <span>Operation guide, backlog, support model and closure report.</span>
+    </div>
   </div>
 </div>
 

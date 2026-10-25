@@ -14,42 +14,75 @@ keywords:
 
 # Microsoft 365 Consulting
 
-<section class="kc-topic-hero" aria-label="Microsoft 365 Consulting landing hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Microsoft 365 Consulting Architecture</span>
+<section aria-label="Microsoft 365 Consulting landing hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Consulting Architecture</span>
     <h2>Connect tenant decisions to security, adoption and delivery assets</h2>
     <p>Microsoft 365 consulting should connect architecture, identity, collaboration, security, endpoint, Copilot readiness, migration, operating model and customer-ready delivery assets such as SOW, WBS and risk register.</p>
-    <div class="kc-topic-hero__actions" aria-label="Microsoft 365 consulting entry points">
-      <a class="kc-topic-button kc-topic-button--primary" href="../microsoft365/overview">M365 Overview</a>
-      <a class="kc-topic-button" href="../architecture/m365-reference-architecture">Reference Architecture</a>
-      <a class="kc-topic-button" href="../proposal/overview">Proposal Center</a>
+    <div aria-label="Microsoft 365 consulting entry points" className="kc-topic-hero__actions">
+      <a href="../microsoft365/overview" className="kc-topic-button kc-topic-button--primary">M365 Overview</a>
+      <a href="../architecture/m365-reference-architecture" className="kc-topic-button">Reference Architecture</a>
+      <a href="../proposal/overview" className="kc-topic-button">Proposal Center</a>
     </div>
   </div>
-
-  <div class="kc-factory-panel" aria-label="Microsoft 365 consulting delivery visual">
-    <div class="kc-factory-panel__header"><span>Consulting Path</span><strong>Asset driven</strong></div>
-    <div class="kc-factory-grid">
-      <a href="../downloads/m365-assessment-workbook" class="kc-factory-card"><small>01</small><strong>Assess</strong><span>Tenant, identity, security, collaboration and operations</span></a>
-      <a href="../architecture/m365-reference-architecture" class="kc-factory-card"><small>02</small><strong>Design</strong><span>Architecture decisions, governance and workload model</span></a>
-      <a href="../proposal/overview" class="kc-factory-card"><small>03</small><strong>Deliver</strong><span>SOW, WBS, risk register and handover guide</span></a>
-      <a href="../projects/m365-optimization-program" class="kc-factory-card"><small>04</small><strong>Optimize</strong><span>License value, Copilot readiness, security and adoption</span></a>
+  <div aria-label="Microsoft 365 consulting delivery visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Consulting Path</span>
+      <strong>Asset driven</strong>
     </div>
-    <div class="kc-guardrail-panel"><strong>Consulting quality is visible in the artifacts</strong><span>Good consulting leaves clear decisions, evidence, ownership, risk controls and reusable delivery assets behind.</span></div>
+    <div className="kc-factory-grid">
+      <a href="../downloads/m365-assessment-workbook" className="kc-factory-card">
+        <small>01</small>
+        <strong>Assess</strong>
+        <span>Tenant, identity, security, collaboration and operations</span>
+      </a>
+      <a href="../architecture/m365-reference-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Design</strong>
+        <span>Architecture decisions, governance and workload model</span>
+      </a>
+      <a href="../proposal/overview" className="kc-factory-card">
+        <small>03</small>
+        <strong>Deliver</strong>
+        <span>SOW, WBS, risk register and handover guide</span>
+      </a>
+      <a href="../projects/m365-optimization-program" className="kc-factory-card">
+        <small>04</small>
+        <strong>Optimize</strong>
+        <span>License value, Copilot readiness, security and adoption</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Consulting quality is visible in the artifacts</strong>
+      <span>Good consulting leaves clear decisions, evidence, ownership, risk controls and reusable delivery assets behind.</span>
+    </div>
   </div>
 </section>
 
 ## 2026 Renewal Context
 
-<div class="kc-context-panel" aria-label="Microsoft 365 renewal context">
-  <div class="kc-context-panel__lead">
+<div aria-label="Microsoft 365 renewal context" className="kc-context-panel">
+  <div className="kc-context-panel__lead">
     <small>2026 Renewal Context</small>
     <strong>Renewal review should connect license scope, security baseline, Copilot adoption, agents, storage, endpoint management and measurable value.</strong>
     <span>For the current planning model, see <a href="../licensing/july-2026-microsoft-licensing-update">Microsoft Licensing Feature Update</a>.</span>
   </div>
-  <div class="kc-context-panel__grid">
-    <a href="./microsoft-365-security"><small>Security</small><strong>Baseline and risk</strong><span>Review Defender, Purview, Conditional Access, Intune and Copilot data protection.</span></a>
-    <a href="./how-to-use-ai-in-enterprise"><small>AI</small><strong>Copilot and agents</strong><span>Connect Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork.</span></a>
-    <a href="../contact"><small>Request</small><strong>Delivery assets</strong><span>Request assessment, SOW, WBS or architecture workshop templates.</span></a>
+  <div className="kc-context-panel__grid">
+    <a href="./microsoft-365-security">
+      <small>Security</small>
+      <strong>Baseline and risk</strong>
+      <span>Review Defender, Purview, Conditional Access, Intune and Copilot data protection.</span>
+    </a>
+    <a href="./how-to-use-ai-in-enterprise">
+      <small>AI</small>
+      <strong>Copilot and agents</strong>
+      <span>Connect Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork.</span>
+    </a>
+    <a href="../contact">
+      <small>Request</small>
+      <strong>Delivery assets</strong>
+      <span>Request assessment, SOW, WBS or architecture workshop templates.</span>
+    </a>
   </div>
 </div>
 
@@ -61,34 +94,102 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 
 ## Consulting Journey Map
 
-<div class="kc-journey-map" aria-label="Microsoft 365 consulting journey">
-  <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Search Intent</strong><span>Microsoft 365 consulting, architecture, security or migration</span></div>
-  <div class="kc-journey-node"><small>02</small><strong>Assessment</strong><span>Tenant, identity, collaboration, security and operations</span></div>
-  <div class="kc-journey-node"><small>03</small><strong>Architecture</strong><span>Governance, workload model and decision records</span></div>
-  <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Delivery Assets</strong><span>SOW, WBS, risk register, checklist and handover guide</span></div>
-  <div class="kc-journey-node"><small>05</small><strong>Optimization</strong><span>License, Copilot readiness, security and adoption value</span></div>
-  <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Asset Request</strong><span>Scenario-based sharing after confidentiality boundary is confirmed</span></div>
+<div aria-label="Microsoft 365 consulting journey" className="kc-journey-map">
+  <div className="kc-journey-node kc-journey-node--demand">
+    <small>01</small>
+    <strong>Search Intent</strong>
+    <span>Microsoft 365 consulting, architecture, security or migration</span>
+  </div>
+  <div className="kc-journey-node">
+    <small>02</small>
+    <strong>Assessment</strong>
+    <span>Tenant, identity, collaboration, security and operations</span>
+  </div>
+  <div className="kc-journey-node">
+    <small>03</small>
+    <strong>Architecture</strong>
+    <span>Governance, workload model and decision records</span>
+  </div>
+  <div className="kc-journey-node kc-journey-node--control">
+    <small>04</small>
+    <strong>Delivery Assets</strong>
+    <span>SOW, WBS, risk register, checklist and handover guide</span>
+  </div>
+  <div className="kc-journey-node">
+    <small>05</small>
+    <strong>Optimization</strong>
+    <span>License, Copilot readiness, security and adoption value</span>
+  </div>
+  <div className="kc-journey-node kc-journey-node--outcome">
+    <small>06</small>
+    <strong>Asset Request</strong>
+    <span>Scenario-based sharing after confidentiality boundary is confirmed</span>
+  </div>
 </div>
 
 ## Consulting Scope
 
-<div class="kc-platform-fit" aria-label="Microsoft 365 consulting scope">
-  <div class="kc-platform-fit__card"><small>Tenant</small><strong>Tenant Architecture</strong><span>Tenant structure, domain, admin role, workload ownership and lifecycle.</span></div>
-  <div class="kc-platform-fit__card"><small>Identity</small><strong>Entra ID and access</strong><span>MFA, Conditional Access, privileged access and guest access.</span></div>
-  <div class="kc-platform-fit__card"><small>Collaboration</small><strong>Teams, SharePoint, OneDrive</strong><span>External sharing, workspace lifecycle and ownership model.</span></div>
-  <div class="kc-platform-fit__card"><small>Security</small><strong>Defender and Purview</strong><span>DLP, audit, retention and Zero Trust control alignment.</span></div>
-  <div class="kc-platform-fit__card"><small>Endpoint</small><strong>Intune governance</strong><span>Enrollment, compliance policy, app protection and device governance.</span></div>
-  <div class="kc-platform-fit__card"><small>Copilot</small><strong>AI readiness and ROI</strong><span>Readiness, GPT-5.6 guidance, adoption, agent governance and ROI.</span></div>
+<div aria-label="Microsoft 365 consulting scope" className="kc-platform-fit">
+  <div className="kc-platform-fit__card">
+    <small>Tenant</small>
+    <strong>Tenant Architecture</strong>
+    <span>Tenant structure, domain, admin role, workload ownership and lifecycle.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Identity</small>
+    <strong>Entra ID and access</strong>
+    <span>MFA, Conditional Access, privileged access and guest access.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Collaboration</small>
+    <strong>Teams, SharePoint, OneDrive</strong>
+    <span>External sharing, workspace lifecycle and ownership model.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Security</small>
+    <strong>Defender and Purview</strong>
+    <span>DLP, audit, retention and Zero Trust control alignment.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Endpoint</small>
+    <strong>Intune governance</strong>
+    <span>Enrollment, compliance policy, app protection and device governance.</span>
+  </div>
+  <div className="kc-platform-fit__card">
+    <small>Copilot</small>
+    <strong>AI readiness and ROI</strong>
+    <span>Readiness, GPT-5.6 guidance, adoption, agent governance and ROI.</span>
+  </div>
 </div>
 
 ## What Good Looks Like
 
-<div class="kc-maturity-ladder" aria-label="Microsoft 365 consulting maturity ladder">
-  <div class="kc-maturity-step"><small>Level 1</small><strong>Issue-Based Support</strong><span>Work is handled as isolated requests without a target architecture.</span></div>
-  <div class="kc-maturity-step"><small>Level 2</small><strong>Structured Assessment</strong><span>Tenant, identity, collaboration, security and operations are assessed together.</span></div>
-  <div class="kc-maturity-step"><small>Level 3</small><strong>Architecture-Led Delivery</strong><span>Design decisions are documented before implementation and migration.</span></div>
-  <div class="kc-maturity-step"><small>Level 4</small><strong>Governed Operation</strong><span>Ownership, exception process, security review and handover are part of delivery.</span></div>
-  <div class="kc-maturity-step"><small>Level 5</small><strong>Business Value Review</strong><span>License value, Copilot readiness, risk reduction and productivity are measured together.</span></div>
+<div aria-label="Microsoft 365 consulting maturity ladder" className="kc-maturity-ladder">
+  <div className="kc-maturity-step">
+    <small>Level 1</small>
+    <strong>Issue-Based Support</strong>
+    <span>Work is handled as isolated requests without a target architecture.</span>
+  </div>
+  <div className="kc-maturity-step">
+    <small>Level 2</small>
+    <strong>Structured Assessment</strong>
+    <span>Tenant, identity, collaboration, security and operations are assessed together.</span>
+  </div>
+  <div className="kc-maturity-step">
+    <small>Level 3</small>
+    <strong>Architecture-Led Delivery</strong>
+    <span>Design decisions are documented before implementation and migration.</span>
+  </div>
+  <div className="kc-maturity-step">
+    <small>Level 4</small>
+    <strong>Governed Operation</strong>
+    <span>Ownership, exception process, security review and handover are part of delivery.</span>
+  </div>
+  <div className="kc-maturity-step">
+    <small>Level 5</small>
+    <strong>Business Value Review</strong>
+    <span>License value, Copilot readiness, risk reduction and productivity are measured together.</span>
+  </div>
 </div>
 
 ## Visitor Routing
@@ -126,18 +227,36 @@ Use industry and scenario-level patterns only. Do not expose customer names, ten
 
 ## Recommended Entry Points
 
-<div class="kc-entry-hub" aria-label="Microsoft 365 consulting recommended entry points">
-  <a href="../microsoft365/overview"><small>Start</small><strong>Microsoft 365 Overview</strong></a>
-  <a href="../architecture/m365-reference-architecture"><small>Design</small><strong>M365 Reference Architecture</strong></a>
-  <a href="./microsoft-365-security"><small>Secure</small><strong>Microsoft 365 Security</strong></a>
-  <a href="../projects/m365-optimization-program"><small>Optimize</small><strong>M365 Optimization Program</strong></a>
-  <a href="../downloads/m365-assessment-workbook"><small>Assess</small><strong>M365 Assessment Workbook</strong></a>
-  <a href="../licensing/july-2026-microsoft-licensing-update"><small>Renew</small><strong>Licensing Feature Update</strong></a>
+<div aria-label="Microsoft 365 consulting recommended entry points" className="kc-entry-hub">
+  <a href="../microsoft365/overview">
+    <small>Start</small>
+    <strong>Microsoft 365 Overview</strong>
+  </a>
+  <a href="../architecture/m365-reference-architecture">
+    <small>Design</small>
+    <strong>M365 Reference Architecture</strong>
+  </a>
+  <a href="./microsoft-365-security">
+    <small>Secure</small>
+    <strong>Microsoft 365 Security</strong>
+  </a>
+  <a href="../projects/m365-optimization-program">
+    <small>Optimize</small>
+    <strong>M365 Optimization Program</strong>
+  </a>
+  <a href="../downloads/m365-assessment-workbook">
+    <small>Assess</small>
+    <strong>M365 Assessment Workbook</strong>
+  </a>
+  <a href="../licensing/july-2026-microsoft-licensing-update">
+    <small>Renew</small>
+    <strong>Licensing Feature Update</strong>
+  </a>
 </div>
 
 ## Requestable Assets
 
-<div class="kc-request-panel">
+<div className="kc-request-panel">
   <small>Asset Request</small>
   <strong>Customer-ready consulting artifacts should be shared after scope and confidentiality are confirmed.</strong>
   <span>Microsoft 365 assessment workbook, tenant governance decision workbook, Teams and SharePoint operating guide, Exchange Online security review template, Entra ID and Intune policy matrix, SOW and WBS samples can be requested through <a href="../contact">Contact and Asset Request</a>.</span>

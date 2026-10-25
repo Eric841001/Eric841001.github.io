@@ -9,40 +9,86 @@ toc_max_heading_level: 2
 
 # Multi-Tenant Governance Strategy
 
-<section class="kc-topic-hero" aria-label="Multi-Tenant Governance Strategy hero">
-  <div class="kc-topic-hero__content">
-    <span class="kc-topic-hero__eyebrow">Multi-Tenant Governance Strategy</span>
+<section aria-label="Multi-Tenant Governance Strategy hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Multi-Tenant Governance Strategy</span>
     <h2>Decide which tenants to standardize, isolate, federate or migrate</h2>
     <p>Multi-tenant governance turns scattered tenant ownership into a business-aligned model for identity, security baseline, collaboration, licensing, support and migration roadmap.</p>
-    <div class="kc-hero-signal-row" aria-label="Multi-tenant governance signals">
+    <div aria-label="Multi-tenant governance signals" className="kc-hero-signal-row">
       <span>Inventory</span>
       <span>Classify</span>
       <span>Baseline</span>
       <span>Roadmap</span>
     </div>
   </div>
-  <div class="kc-factory-panel" aria-label="Multi-Tenant Governance Strategy model">
-    <div class="kc-factory-panel__header"><span>Tenant Strategy</span><strong>Business-aligned</strong></div>
-    <div class="kc-factory-grid">
-      <a href="#governance-challenges" class="kc-factory-card"><small>01</small><strong>Challenge</strong><span>Different tenants, policies, guests, data sharing and operating ownership.</span></a>
-      <a href="#strategy-components" class="kc-factory-card"><small>02</small><strong>Components</strong><span>Tenant role, identity, collaboration, security baseline and roadmap.</span></a>
-      <a href="#tenant-role-model" class="kc-factory-card"><small>03</small><strong>Classify</strong><span>Strategic, transitional, regulated, legacy and innovation tenants.</span></a>
-      <a href="#recommended-approach" class="kc-factory-card"><small>04</small><strong>Decide</strong><span>Consolidate, federate, isolate or migrate through phased governance.</span></a>
+  <div aria-label="Multi-Tenant Governance Strategy model" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Tenant Strategy</span>
+      <strong>Business-aligned</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#governance-challenges" className="kc-factory-card">
+        <small>01</small>
+        <strong>Challenge</strong>
+        <span>Different tenants, policies, guests, data sharing and operating ownership.</span>
+      </a>
+      <a href="#strategy-components" className="kc-factory-card">
+        <small>02</small>
+        <strong>Components</strong>
+        <span>Tenant role, identity, collaboration, security baseline and roadmap.</span>
+      </a>
+      <a href="#tenant-role-model" className="kc-factory-card">
+        <small>03</small>
+        <strong>Classify</strong>
+        <span>Strategic, transitional, regulated, legacy and innovation tenants.</span>
+      </a>
+      <a href="#recommended-approach" className="kc-factory-card">
+        <small>04</small>
+        <strong>Decide</strong>
+        <span>Consolidate, federate, isolate or migrate through phased governance.</span>
+      </a>
     </div>
   </div>
 </section>
 
 Multi-tenant governance is required when an enterprise group, holding company or acquisition-driven organization operates more than one Microsoft 365 or Azure tenant.
 
-<div class="kc-journey-map" aria-label="Multi-tenant governance strategy map">
-  <div class="kc-journey-map__header"><span>Strategy Map</span><strong>Inventory to migration roadmap</strong></div>
-  <div class="kc-journey-track">
-    <div class="kc-journey-node kc-journey-node--demand"><small>01</small><strong>Tenant Inventory</strong><span>Domains, workloads, licenses, ownership and operational dependencies.</span></div>
-    <div class="kc-journey-node"><small>02</small><strong>Tenant Role Model</strong><span>Strategic, transitional, regulated, legacy or innovation tenant.</span></div>
-    <div class="kc-journey-node"><small>03</small><strong>Minimum Baseline</strong><span>Identity, security, collaboration, audit, guest and support controls.</span></div>
-    <div class="kc-journey-node kc-journey-node--control"><small>04</small><strong>Governance Decisions</strong><span>Consolidate, federate, isolate, migrate or maintain with compensating controls.</span></div>
-    <div class="kc-journey-node"><small>05</small><strong>Operating Model</strong><span>Governance board, exception process, platform ownership and reporting.</span></div>
-    <div class="kc-journey-node kc-journey-node--outcome"><small>06</small><strong>Roadmap</strong><span>Migration waves, coexistence, retirement and quarterly governance review.</span></div>
+<div aria-label="Multi-tenant governance strategy map" className="kc-journey-map">
+  <div className="kc-journey-map__header">
+    <span>Strategy Map</span>
+    <strong>Inventory to migration roadmap</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+      <small>01</small>
+      <strong>Tenant Inventory</strong>
+      <span>Domains, workloads, licenses, ownership and operational dependencies.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>02</small>
+      <strong>Tenant Role Model</strong>
+      <span>Strategic, transitional, regulated, legacy or innovation tenant.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>03</small>
+      <strong>Minimum Baseline</strong>
+      <span>Identity, security, collaboration, audit, guest and support controls.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--control">
+      <small>04</small>
+      <strong>Governance Decisions</strong>
+      <span>Consolidate, federate, isolate, migrate or maintain with compensating controls.</span>
+    </div>
+    <div className="kc-journey-node">
+      <small>05</small>
+      <strong>Operating Model</strong>
+      <span>Governance board, exception process, platform ownership and reporting.</span>
+    </div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+      <small>06</small>
+      <strong>Roadmap</strong>
+      <span>Migration waves, coexistence, retirement and quarterly governance review.</span>
+    </div>
   </div>
 </div>
 
@@ -151,10 +197,22 @@ An anonymized enterprise group governance engagement typically follows this patt
 
 ## Reference Snapshot
 
-<div class="kc-outcome-grid" aria-label="Multi-tenant governance strategy reference snapshot">
-  <div class="kc-outcome-card"><small>CHALLENGE</small><strong>Fragmented tenant landscape</strong><span>Multiple tenants create inconsistent identity, collaboration, security and admin practices.</span></div>
-  <div class="kc-outcome-card"><small>APPROACH</small><strong>Decision framework</strong><span>Compare consolidation, coexistence, cross-tenant access, migration and regional governance options.</span></div>
-  <div class="kc-outcome-card"><small>OUTCOME</small><strong>Governed roadmap</strong><span>Executives receive a sequenced strategy instead of isolated tenant cleanup tasks.</span></div>
+<div aria-label="Multi-tenant governance strategy reference snapshot" className="kc-outcome-grid">
+  <div className="kc-outcome-card">
+    <small>CHALLENGE</small>
+    <strong>Fragmented tenant landscape</strong>
+    <span>Multiple tenants create inconsistent identity, collaboration, security and admin practices.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>APPROACH</small>
+    <strong>Decision framework</strong>
+    <span>Compare consolidation, coexistence, cross-tenant access, migration and regional governance options.</span>
+  </div>
+  <div className="kc-outcome-card">
+    <small>OUTCOME</small>
+    <strong>Governed roadmap</strong>
+    <span>Executives receive a sequenced strategy instead of isolated tenant cleanup tasks.</span>
+  </div>
 </div>
 
 ## Related Documents
