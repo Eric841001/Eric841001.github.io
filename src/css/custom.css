@@ -3945,3 +3945,7 @@ body.kc-diagram-modal-open {
 .theme-doc-markdown .kc-hero-signal-row {margin:.8rem 0;gap:.5rem;}
 .theme-doc-markdown .kc-hero-signal-row span,
 [data-theme='dark'] .theme-doc-markdown .kc-topic-hero .kc-hero-signal-row span {background:var(--kc-surface-muted);color:var(--kc-ink);border:1px solid var(--kc-border-strong);box-shadow:none;}
+
+/* The search field uses a light surface in both themes; typed text must stay dark. */
+[data-theme='dark'] .navbar .navbar__search-input {background-color:#f7fbff;color:#102033;caret-color:#102033;}
+[data-theme='dark'] .navbar .navbar__search-input::placeholder {color:#526174;opacity:1;}
