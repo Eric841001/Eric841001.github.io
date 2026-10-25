@@ -1,32 +1,39 @@
 ---
 id: microsoft-scout
-title: Microsoft Scout
-description: "Microsoft Scout - Microsoft Scout is Microsoft's always on personal agent concept introduced for the next stage of Microsoft 365 AI experiences."
-sidebar_label: Microsoft Scout
+title: Microsoft Autopilot (formerly Scout)
+description: Microsoft Autopilot (formerly Scout), private-preview availability and proactive personal-agent architecture with identity, permissions and governance boundaries.
+sidebar_label: Autopilot / Scout
 toc_max_heading_level: 2
 ---
 
-# Microsoft Scout
+# Microsoft Autopilot (formerly Scout)
+
+## Current name and availability — 2026-10-25
+
+Microsoft announced **Autopilot, previously called Scout**, on 2026-09-25 and described expansion to **private preview**, not general availability. See [the official announcement](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/). Existing Scout URLs and section anchors are retained for older links. The guide uses the current name while retaining earlier Scout URLs. Architectural patterns below are not a promise that every listed action is available in a production tenant.
+
+For a pilot, confirm eligibility, identity, permissions, approval boundaries, audit visibility and the current commercial/consumption terms. A proposed coordinator/specialist integration remains a design example until its actual connectors and runtime are validated.
+
 
 ## Executive Summary
 
-Microsoft Scout is Microsoft's always-on personal agent concept introduced for the next stage of Microsoft 365 AI experiences.
+Microsoft Autopilot is Microsoft's always-on personal agent concept introduced for the next stage of Microsoft 365 AI experiences.
 
-Unlike traditional Copilot experiences that require direct user interaction, Scout represents a more proactive agent pattern: coordinating tasks, monitoring communications, preparing meetings and helping users manage commitments.
+Unlike traditional Copilot experiences that require direct user interaction, Autopilot represents a more proactive agent pattern: coordinating tasks, monitoring communications, preparing meetings and helping users manage commitments.
 
-<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Microsoft Scout hero">
+<section className="kc-topic-hero kc-topic-hero--agent" aria-label="Microsoft Autopilot hero">
   <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Microsoft Scout Concept</span>
+    <span className="kc-topic-hero__eyebrow">Microsoft Autopilot Concept</span>
     <h2>From user-initiated Copilot to proactive work agents</h2>
-    <div className="kc-topic-hero__lede">Scout-style agents point toward always-on work assistance that prepares meetings, tracks commitments, coordinates follow-up and surfaces decisions inside Microsoft 365 governance boundaries.</div>
-    <div className="kc-hero-signal-row" aria-label="Microsoft Scout signals">
+    <div className="kc-topic-hero__lede">Autopilot-style agents point toward always-on work assistance that prepares meetings, tracks commitments, coordinates follow-up and surfaces decisions inside Microsoft 365 governance boundaries.</div>
+    <div className="kc-hero-signal-row" aria-label="Microsoft Autopilot signals">
       <span>Context</span>
       <span>Commitments</span>
       <span>Follow-up</span>
       <span>Controls</span>
     </div>
   </div>
-  <div className="kc-factory-panel" aria-label="Scout operating model">
+  <div className="kc-factory-panel" aria-label="Autopilot operating model">
     <div className="kc-factory-panel__header">
       <span>Personal Agent Operating Model</span>
       <strong>Work IQ to governed proactive assistance</strong>
@@ -62,11 +69,11 @@ Unlike traditional Copilot experiences that require direct user interaction, Sco
 
 ---
 
-## What is Microsoft Scout
+## What is Microsoft Autopilot {/* #what-is-microsoft-scout */}
 
-Microsoft Scout is an autonomous personal work agent.
+Microsoft Autopilot is an autonomous personal work agent.
 
-Scout continuously monitors:
+Autopilot continuously monitors:
 
 - Outlook
 - Teams
@@ -104,7 +111,7 @@ and proactively assists users without requiring every action to start from a man
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
-      <strong>Scout pattern</strong>
+      <strong>Autopilot pattern</strong>
       <span>Personal agent monitors work context and prepares proactive assistance.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
@@ -117,9 +124,9 @@ and proactively assists users without requiring every action to start from a man
 
 ---
 
-## Copilot vs Scout
+## Copilot vs Autopilot {/* #copilot-vs-scout */}
 
-| Area | Copilot | Scout |
+| Area | Copilot | Autopilot |
 |--------|--------|--------|
 | User Initiated | Yes | No |
 | Background Operation | No | Yes |
@@ -128,7 +135,7 @@ and proactively assists users without requiring every action to start from a man
 | Scheduling | User Driven | Autonomous |
 | Proactive Actions | Limited | High |
 
-Scout represents Microsoft's broader move from assistive AI toward agentic AI.
+Autopilot represents Microsoft's broader move from assistive AI toward agentic AI.
 
 ---
 
@@ -136,7 +143,7 @@ Scout represents Microsoft's broader move from assistive AI toward agentic AI.
 
 ## Meeting Preparation
 
-Scout automatically:
+Autopilot automatically:
 
 - Reviews meeting context
 - Reads related emails
@@ -147,7 +154,7 @@ Scout automatically:
 
 ## Calendar Coordination
 
-Scout can:
+Autopilot can:
 
 - Detect scheduling conflicts
 - Coordinate across time zones
@@ -157,7 +164,7 @@ Scout can:
 
 ## Task Management
 
-Scout can:
+Autopilot can:
 
 - Track commitments
 - Monitor action items
@@ -167,7 +174,7 @@ Scout can:
 
 ## Email Assistance
 
-Scout continuously analyzes:
+Autopilot continuously analyzes:
 
 - Important emails
 - Escalations
@@ -179,7 +186,7 @@ and highlights items requiring attention.
 
 ## Work IQ Integration
 
-Microsoft Scout is powered by Work IQ.
+Microsoft Autopilot is powered by Work IQ.
 
 Work IQ provides:
 
@@ -188,7 +195,7 @@ Work IQ provides:
 - Enterprise knowledge grounding
 - Business relationship mapping
 
-This enables Scout-like agent experiences to understand not only data but also business context.
+This enables Autopilot-like agent experiences to understand not only data but also business context.
 
 ---
 
@@ -228,7 +235,7 @@ This enables Scout-like agent experiences to understand not only data but also b
 
 ## Governance Model
 
-<div className="kc-journey-map" aria-label="Scout governance model">
+<div className="kc-journey-map" aria-label="Autopilot governance model">
   <div className="kc-journey-map__header">
     <span>Governance Model</span>
     <strong>User control, Microsoft 365 context and compliance boundaries</strong>
@@ -241,7 +248,7 @@ This enables Scout-like agent experiences to understand not only data but also b
     </div>
     <div className="kc-journey-node">
       <small>02</small>
-      <strong>Scout agent</strong>
+      <strong>Autopilot agent</strong>
       <span>Coordinates context, commitments, meetings, tasks and proactive suggestions.</span>
     </div>
     <div className="kc-journey-node">
@@ -266,7 +273,7 @@ This enables Scout-like agent experiences to understand not only data but also b
 
 ## Security and Compliance
 
-Microsoft positions Scout as an enterprise-grade agent.
+Microsoft positions Autopilot as an enterprise-grade agent.
 
 Controls include:
 
@@ -276,13 +283,13 @@ Controls include:
 - Audit Logging
 - Enterprise Compliance Controls
 
-Scout-style enterprise agents should run within Microsoft security boundaries and governance frameworks.
+Autopilot-style enterprise agents should run within Microsoft security boundaries and governance frameworks.
 
 ---
 
 ## Strategic Impact
 
-Microsoft Scout represents a significant shift in enterprise productivity.
+Microsoft Autopilot represents a significant shift in enterprise productivity.
 
 Traditional model:
 
@@ -306,7 +313,7 @@ Expected evolution:
 - Autonomous Business Processes
 - Enterprise Digital Assistants
 
-Scout is likely to become a foundational component of Microsoft's Agentic AI strategy.
+Autopilot is likely to become a foundational component of Microsoft's Agentic AI strategy.
 
 ---
 
@@ -323,7 +330,7 @@ Scout is likely to become a foundational component of Microsoft's Agentic AI str
 
 Microsoft Scout는 사용자가 직접 AI에게 질문하는 방식에서 한 단계 더 나아가, agent가 업무 맥락을 지속적으로 관찰하고 필요한 action item, follow-up, meeting preparation, escalation을 먼저 제안하는 방향을 보여줍니다.
 
-기업 관점에서는 Scout 자체보다 더 중요한 질문이 있습니다. 어떤 데이터와 업무 맥락을 agent가 사용할 수 있는지, 어떤 action을 자동화할 수 있는지, 어떤 시점에 human approval이 필요한지, 그리고 audit과 compliance를 어떻게 남길 것인지입니다.
+기업 관점에서는 Autopilot 자체보다 더 중요한 질문이 있습니다. 어떤 데이터와 업무 맥락을 agent가 사용할 수 있는지, 어떤 action을 자동화할 수 있는지, 어떤 시점에 human approval이 필요한지, 그리고 audit과 compliance를 어떻게 남길 것인지입니다.
 
 ## Enterprise Readiness Checklist
 
@@ -347,7 +354,7 @@ Microsoft Scout는 사용자가 직접 AI에게 질문하는 방식에서 한 �
 
 이 문서는 다음 검색 의도에 답합니다.
 
-- Microsoft Scout
+- Microsoft Autopilot
 - Microsoft Work IQ
 - AI executive assistant
 - Microsoft 365 agent
@@ -359,4 +366,4 @@ Microsoft Scout는 사용자가 직접 AI에게 질문하는 방식에서 한 �
 
 ## Contact / Asset Request
 
-Scout-style agent scenario를 Copilot Studio, Microsoft 365 agents, Copilot Cowork 관점으로 정리한 workshop agenda나 governance checklist가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+Autopilot-style agent scenario를 Copilot Studio, Microsoft 365 agents, Copilot Cowork 관점으로 정리한 workshop agenda나 governance checklist가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

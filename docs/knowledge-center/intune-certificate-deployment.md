@@ -145,16 +145,22 @@ Recommended execution notes:
 
 ## Validation
 
-Confirm certificate deployment.
+Match validation to the **Destination Store** selected in the Intune profile. For Windows, the trusted certificate profile supports Computer Root, Computer Intermediate and User Intermediate stores. [Official profile guidance](https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles) describes the choices.
+
+| Destination | Correct validation view |
+|---|---|
+| Computer Root | `certlm.msc` → Trusted Root Certification Authorities, or `Cert:\LocalMachine\Root` |
+| Computer Intermediate | `certlm.msc` → Intermediate Certification Authorities, or `Cert:\LocalMachine\CA` |
+| User Intermediate | `certmgr.msc` in the affected user's context, or `Cert:\CurrentUser\CA` |
+
+Read-only PowerShell checks:
 
 ```powershell
-certmgr.msc
+Get-ChildItem Cert:\LocalMachine\Root | Select-Object Subject, Thumbprint, NotAfter
+Get-ChildItem Cert:\LocalMachine\CA | Select-Object Subject, Thumbprint, NotAfter
 ```
 
-Verify:
-
-- Trusted Root Certification Authorities
-- Intermediate Certification Authorities
+Compare the expected thumbprint, chain and expiration, then test the dependent Wi-Fi/VPN/application scenario. Merely finding a certificate in the current user's store does not prove a Computer Root deployment succeeded.
 
 ---
 

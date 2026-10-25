@@ -43,14 +43,7 @@ Linux onboarding enables endpoint visibility, threat detection and vulnerability
 
 ## Supported Distributions
 
-| Distribution | Supported |
-|-------------|------------|
-| Ubuntu | Yes |
-| Debian | Yes |
-| RHEL | Yes |
-| CentOS | Yes |
-| Oracle Linux | Yes |
-| SUSE | Yes |
+Support depends on the **distribution, exact version, architecture and Defender build**, not the distribution name alone. Use the current [Linux requirements matrix](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-linux) and [release notes](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases). Record `/etc/os-release`, kernel/architecture and installed `mdatp` version in deployment evidence. Do not infer support for an end-of-life CentOS or other release from a generic “Yes” row.
 
 ---
 
@@ -92,25 +85,31 @@ Before onboarding, confirm whether the server is internet-connected, proxy-route
 
 ---
 
+<span id="repository-configuration" />
+<span id="import-microsoft-key" />
+<span id="install-defender" />
+
 ## Installation Workflow
 
-### Repository Configuration
+Use the [official distribution-specific installation procedure](https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually). Repository configuration and package signing-key registration differ across Debian/Ubuntu, RHEL-family and SUSE; one generic command sequence is not portable.
+
+Before installing:
+
+1. Read `cat /etc/os-release` and `uname -m`, then match the exact supported distribution/version.
+2. Configure the official production repository for that distribution and version using the linked procedure.
+3. Register Microsoft's package-signing key in the format and keyring location prescribed for that package manager. Downloading or printing the key alone does not register trust.
+4. Refresh repository metadata, install `mdatp` with the matching package manager, and record the selected package version.
+5. Apply the tenant-specific onboarding package, then validate health and cloud connectivity.
+
+The following commands are **read-only preflight checks**, not a standalone installer:
 
 ```bash
-curl -o microsoft.list
+cat /etc/os-release
+uname -m
+command -v python3
 ```
 
-### Import Microsoft Key
-
-```bash
-curl -sSL https://packages.microsoft.com/keys/microsoft.asc
-```
-
-### Install Defender
-
-```bash
-sudo apt-get install mdatp
-```
+For Debian/Ubuntu the final package-install command is `sudo apt-get install mdatp`, **after** repository/key configuration and metadata refresh. RHEL/SUSE use their respective package-manager instructions. Follow the official repository instructions instead of inventing a download URL or reusing a different distribution's configuration.
 
 ---
 

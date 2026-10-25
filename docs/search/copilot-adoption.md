@@ -2,7 +2,7 @@
 id: copilot-adoption
 title: Copilot Adoption
 sidebar_label: Copilot Adoption
-description: Microsoft 365 Copilot adoption landing page for readiness, GPT-5.6, governance, pilot planning, ROI, change management, Copilot Studio and rollout strategy.
+description: Microsoft 365 Copilot adoption landing page for readiness, available reasoning models, governance, pilot planning, ROI, change management, Copilot Studio and rollout strategy.
 keywords:
   - Microsoft Copilot adoption
   - Copilot 도입
@@ -10,16 +10,22 @@ keywords:
   - Copilot governance
   - Copilot ROI
   - Copilot adoption WBS
-  - GPT-5.6 Microsoft 365 Copilot
+  - available reasoning models Microsoft 365 Copilot
 ---
 
 # Copilot Adoption
+
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
 
 <section aria-label="Copilot Adoption landing hero" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Copilot Adoption Operating Model</span>
     <h2>Turn Copilot rollout into measurable behavior change</h2>
-    <p>Copilot adoption is not license assignment or feature training. It is a change program that connects readiness, data protection, role scenarios, champions, GPT-5.6 guidance, agent escalation paths and executive value signals.</p>
+    <p>Copilot adoption is not license assignment or feature training. It is a change program that connects readiness, data protection, role scenarios, champions, available reasoning models guidance, agent escalation paths and executive value signals.</p>
     <div aria-label="Copilot adoption entry points" className="kc-topic-hero__actions">
       <a href="../copilot/adoption-program" className="kc-topic-button kc-topic-button--primary">Adoption Program</a>
       <a href="../copilot/readiness" className="kc-topic-button">Readiness</a>
@@ -55,7 +61,7 @@ keywords:
     </div>
     <div className="kc-guardrail-panel">
       <strong>Adoption must explain the next step</strong>
-      <span>Users should know when to use Copilot, when GPT-5.6 helps, when a process should become an agent and when Cowork needs governance.</span>
+      <span>Users should know when to use Copilot, when available reasoning models help, when a process should become an agent and when Cowork needs governance.</span>
     </div>
   </div>
 </section>
@@ -65,8 +71,8 @@ keywords:
 <div aria-label="2026 Copilot adoption context" className="kc-context-panel">
   <div className="kc-context-panel__lead">
     <small>2026 Adoption Context</small>
-    <strong>Copilot adoption now spans everyday work, GPT-5.6 reasoning, Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork.</strong>
-    <span>GPT-5.6 raises the quality ceiling for reasoning, drafting, analysis and presentation work, but enterprise value still depends on readiness, data protection, user behavior, governance and measurement.</span>
+    <strong>Copilot adoption now spans everyday work, available reasoning models reasoning, Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork.</strong>
+    <span>available reasoning models can improve the quality ceiling for reasoning, drafting, analysis and presentation work, but enterprise value still depends on readiness, data protection, user behavior, governance and measurement.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="../copilot/overview">
@@ -91,7 +97,7 @@ keywords:
 
 Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout이 아닙니다. 성공적인 도입은 data readiness, security, Purview, DLP, use case prioritization, champion model, ROI measurement, change management를 함께 설계할 때 가능합니다.
 
-특히 2026년 이후에는 "누가 Copilot을 사용할 것인가"보다 "어떤 업무에서 Copilot, GPT-5.6, Copilot Studio Agent, Copilot Cowork를 어떻게 연결해 반복 가능한 가치를 만들 것인가"가 더 중요합니다.
+특히 2026년 이후에는 "누가 Copilot을 사용할 것인가"보다 "어떤 업무에서 Copilot, available reasoning models, Copilot Studio Agent, Copilot Cowork를 어떻게 연결해 반복 가능한 가치를 만들 것인가"가 더 중요합니다.
 
 방문자가 이 페이지에서 얻어야 할 핵심은 명확합니다. Copilot은 기능 교육이 아니라 업무 방식의 변화이며, adoption은 readiness, governance, training, measurement가 연결된 운영 모델이어야 합니다.
 
@@ -106,7 +112,7 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
   <div className="kc-journey-node">
     <small>02</small>
     <strong>Model Choice</strong>
-    <span>Use GPT-5.6 guidance where available and useful</span>
+    <span>Use available reasoning models guidance where available and useful</span>
   </div>
   <div className="kc-journey-node">
     <small>03</small>
@@ -140,7 +146,7 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
   </div>
   <div className="kc-platform-fit__card">
     <small>Guidance</small>
-    <strong>GPT-5.6 model selector</strong>
+    <strong>Copilot model selector</strong>
     <span>Define reasoning scenarios, user communication and model choice rules.</span>
   </div>
   <div className="kc-platform-fit__card">
@@ -191,7 +197,7 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
   <div className="kc-maturity-step">
     <small>Level 5</small>
     <strong>AI Operating Model</strong>
-    <span>Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork connect to a repeatable change model.</span>
+    <span>Copilot, available reasoning models, Copilot Studio, M365 Agents and Cowork connect to a repeatable change model.</span>
   </div>
 </div>
 
@@ -226,9 +232,9 @@ Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout�
 
 Start with readiness and role-based scenarios. License assignment should follow a clear pilot scope, data protection review, support model and value measurement plan.
 
-### How should GPT-5.6 be explained to users?
+### How should available reasoning models be explained to users? {/* #how-should-gpt-56-be-explained-to-users */}
 
-Explain GPT-5.6 as a deeper reasoning option for complex writing, analysis, presentation, comparison and decision-support scenarios where the model selector is available.
+Explain available reasoning models as task-dependent options for complex writing, analysis, presentation, comparison and decision-support scenarios where the model selector is available.
 
 ### Why do many Copilot programs fail?
 
@@ -276,14 +282,14 @@ Executives should see readiness status, business scenarios, risk controls, adopt
 <div className="kc-request-panel">
   <small>Asset Request</small>
   <strong>Adoption assets should be shared after industry, users and confidentiality boundary are confirmed.</strong>
-  <span>Copilot readiness workbook, GPT-5.6 adoption message, model selector guide, adoption WBS, governance checklist, pilot scorecard, use case prioritization matrix and executive roadmap can be requested through <a href="../contact">Contact and Asset Request</a>.</span>
+  <span>Copilot readiness workbook, available reasoning models adoption message, model selector guide, adoption WBS, governance checklist, pilot scorecard, use case prioritization matrix and executive roadmap can be requested through <a href="../contact">Contact and Asset Request</a>.</span>
 </div>
 
 ## 검색 키워드
 
 - Copilot 도입
 - Microsoft 365 Copilot adoption
-- GPT-5.6 Microsoft 365 Copilot
+- available reasoning models Microsoft 365 Copilot
 - Copilot model selector
 - Copilot readiness
 - Copilot governance

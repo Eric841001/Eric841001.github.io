@@ -1,0 +1,2353 @@
+{
+  "/knowledge/about": {
+    "file": "docs/about.md",
+    "checkedOn": "2026-10-25",
+    "kind": "공개 프로필·문의 안내",
+    "scope": "공개 프로필·문의 경로와 제공 자료의 공개 범위를 확인했습니다. 이 페이지는 Microsoft 제품 제공 상태에 관한 공식 문서가 아닙니다.",
+    "note": "개인 연락처나 고객 비공개 자료를 새로 공개하지 않습니다.",
+    "sources": [
+      {
+        "title": "Youngsun Kang public GitHub profile",
+        "url": "https://github.com/Eric841001"
+      }
+    ]
+  },
+  "/knowledge/architecture/azure-landing-zone-architecture": {
+    "file": "docs/architecture/azure-landing-zone-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure landing zones",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/architecture/copilot-architecture": {
+    "file": "docs/architecture/copilot-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/architecture/executive-architecture-blueprint": {
+    "file": "docs/architecture/executive-architecture-blueprint.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      }
+    ]
+  },
+  "/knowledge/architecture/governance-architecture": {
+    "file": "docs/architecture/governance-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      }
+    ]
+  },
+  "/knowledge/architecture/m365-reference-architecture": {
+    "file": "docs/architecture/m365-reference-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      }
+    ]
+  },
+  "/knowledge/architecture/migration-architecture": {
+    "file": "docs/architecture/migration-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 tenant-to-tenant migrations",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations"
+      },
+      {
+        "title": "Cross-tenant synchronization",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview"
+      }
+    ]
+  },
+  "/knowledge/architecture/overview": {
+    "file": "docs/architecture/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      }
+    ]
+  },
+  "/knowledge/architecture/security-reference-architecture": {
+    "file": "docs/architecture/security-reference-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      },
+      {
+        "title": "Microsoft Defender XDR overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender"
+      }
+    ]
+  },
+  "/knowledge/azure/identity": {
+    "file": "docs/azure/identity.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure identity and access architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/identity/identity-get-started"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      },
+      {
+        "title": "Microsoft Entra Conditional Access",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+      }
+    ]
+  },
+  "/knowledge/azure/landing-zone": {
+    "file": "docs/azure/landing-zone.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure landing zones",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/azure/overview": {
+    "file": "docs/azure/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Azure landing zones",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"
+      }
+    ]
+  },
+  "/knowledge/azure/virtual-machines": {
+    "file": "docs/azure/virtual-machines.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Virtual Machines overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/contact": {
+    "file": "docs/contact.md",
+    "checkedOn": "2026-10-25",
+    "kind": "공개 프로필·문의 안내",
+    "scope": "공개 프로필·문의 경로와 제공 자료의 공개 범위를 확인했습니다. 이 페이지는 Microsoft 제품 제공 상태에 관한 공식 문서가 아닙니다.",
+    "note": "개인 연락처나 고객 비공개 자료를 새로 공개하지 않습니다.",
+    "sources": [
+      {
+        "title": "Youngsun Kang public GitHub profile",
+        "url": "https://github.com/Eric841001"
+      }
+    ]
+  },
+  "/knowledge/copilot/adoption-program": {
+    "file": "docs/copilot/adoption-program.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      },
+      {
+        "title": "Current model rollout announcement",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      }
+    ]
+  },
+  "/knowledge/copilot/agent-factory-operating-model": {
+    "file": "docs/copilot/agent-factory-operating-model.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/agentic-ai-architecture": {
+    "file": "docs/copilot/agentic-ai-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/business-use-cases": {
+    "file": "docs/copilot/business-use-cases.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/copilot-cowork-cost-governance": {
+    "file": "docs/copilot/copilot-cowork-cost-governance.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot official announcements",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog"
+      },
+      {
+        "title": "Current model rollout announcement",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801"
+      },
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      }
+    ]
+  },
+  "/knowledge/copilot/copilot-studio-2026-platform-update": {
+    "file": "docs/copilot/copilot-studio-2026-platform-update.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Copilot Studio official announcements",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/copilot-studio-blog"
+      },
+      {
+        "title": "Current model rollout announcement",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801"
+      }
+    ]
+  },
+  "/knowledge/copilot/copilot-studio": {
+    "file": "docs/copilot/copilot-studio.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Copilot Studio overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/copilot/customer-conversation-harness": {
+    "file": "docs/copilot/customer-conversation-harness.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Copilot Studio official announcements",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/copilot-studio-blog"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/copilot/excel-copilot-skills": {
+    "file": "docs/copilot/excel-copilot-skills.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/governance": {
+    "file": "docs/copilot/governance.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/microsoft-scout": {
+    "file": "docs/copilot/microsoft-scout.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft announcement: Home, Code and Autopilot",
+        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      }
+    ]
+  },
+  "/knowledge/copilot/multi-agent-framework": {
+    "file": "docs/copilot/multi-agent-framework.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft announcement: Home, Code and Autopilot",
+        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+      },
+      {
+        "title": "Copilot Studio official announcements",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/copilot-studio-blog"
+      }
+    ]
+  },
+  "/knowledge/copilot/official-update-catchup-2026-10": {
+    "file": "docs/copilot/official-update-catchup-2026-10.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Microsoft Copilot official announcements",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog"
+      },
+      {
+        "title": "Copilot Studio official announcements",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/copilot-studio-blog"
+      }
+    ]
+  },
+  "/knowledge/copilot/overview": {
+    "file": "docs/copilot/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/prompt-engineering": {
+    "file": "docs/copilot/prompt-engineering.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/copilot/readiness": {
+    "file": "docs/copilot/readiness.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      },
+      {
+        "title": "Current model rollout announcement",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      }
+    ]
+  },
+  "/knowledge/copilot/roi-framework": {
+    "file": "docs/copilot/roi-framework.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads/discovery-questionnaire": {
+    "file": "docs/downloads/discovery-questionnaire.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads/m365-assessment-workbook": {
+    "file": "docs/downloads/m365-assessment-workbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads/overview": {
+    "file": "docs/downloads/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads/risk-register-template": {
+    "file": "docs/downloads/risk-register-template.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads/downloads-sow-template": {
+    "file": "docs/downloads/sow-template.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads/downloads-wbs-template": {
+    "file": "docs/downloads/wbs-template.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/downloads": {
+    "file": "docs/downloads.mdx",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/intro": {
+    "file": "docs/intro.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/entra-api-driven-ad-provisioning": {
+    "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "API-driven inbound provisioning",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-concepts"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
+    "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Pass-through authentication prerequisites",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-quick-start"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/exchange-online-download-restriction": {
+    "file": "docs/knowledge-center/exchange-online-download-restriction.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Conditional Access session controls",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session"
+      },
+      {
+        "title": "Exchange Online documentation",
+        "url": "https://learn.microsoft.com/en-us/exchange/exchange-online"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/exchange-online-message-recall-purge": {
+    "file": "docs/knowledge-center/exchange-online-message-recall-purge.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Find and delete messages in eDiscovery",
+        "url": "https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data"
+      },
+      {
+        "title": "Connect to Security & Compliance PowerShell",
+        "url": "https://learn.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/exchange-online-omev2-remove": {
+    "file": "docs/knowledge-center/exchange-online-omev2-remove.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Mail flow rule encryption parameters",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-transportrule"
+      },
+      {
+        "title": "Exchange Online documentation",
+        "url": "https://learn.microsoft.com/en-us/exchange/exchange-online"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/gsa-whitelist-design": {
+    "file": "docs/knowledge-center/gsa-whitelist-design.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Global Secure Access overview",
+        "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/intune-0x80180031": {
+    "file": "docs/knowledge-center/intune-0x80180031.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Troubleshoot Windows enrollment",
+        "url": "https://learn.microsoft.com/en-us/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-enrollment-errors"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/intune-certificate-deployment": {
+    "file": "docs/knowledge-center/intune-certificate-deployment.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Trusted certificate profiles",
+        "url": "https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/intune-ios-compliance": {
+    "file": "docs/knowledge-center/intune-ios-compliance.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "iOS and iPadOS compliance settings",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/compliance-policy-create-ios"
+      },
+      {
+        "title": "Intune supported platforms",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers"
+      },
+      {
+        "title": "Microsoft Intune current updates",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/intune-macos-usb-control": {
+    "file": "docs/knowledge-center/intune-macos-usb-control.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Device Control on macOS",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-jamf"
+      },
+      {
+        "title": "Defender for Endpoint release and OS support",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases"
+      },
+      {
+        "title": "Intune supported platforms",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/intune-usb-whitelist": {
+    "file": "docs/knowledge-center/intune-usb-whitelist.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Configure Defender device control with Intune",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-deploy-manage-intune"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/m365-cloud-only-save-as": {
+    "file": "docs/knowledge-center/m365-cloud-only-save-as.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "OneDrive overview",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/onedrive-overview"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/mde-atomic-red-team": {
+    "file": "docs/knowledge-center/mde-atomic-red-team.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Defender for Endpoint overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint"
+      },
+      {
+        "title": "Atomic Red Team project documentation",
+        "url": "https://github.com/redcanaryco/atomic-red-team"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/mde-linux-onboarding": {
+    "file": "docs/knowledge-center/mde-linux-onboarding.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Defender for Endpoint Linux requirements",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-linux"
+      },
+      {
+        "title": "Defender for Endpoint Linux manual installation",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually"
+      },
+      {
+        "title": "Defender for Endpoint release and OS support",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/mde-macos-onboarding": {
+    "file": "docs/knowledge-center/mde-macos-onboarding.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Defender for Endpoint on macOS",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac"
+      },
+      {
+        "title": "Defender for Endpoint release and OS support",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases"
+      },
+      {
+        "title": "Intune supported platforms",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/mde-windows-offboarding": {
+    "file": "docs/knowledge-center/mde-windows-offboarding.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Offboard Defender devices",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/offboard-machines"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/mvp-community-research-map": {
+    "file": "docs/knowledge-center/mvp-community-research-map.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Intune fundamentals",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/onedrive-limited-access-read-only": {
+    "file": "docs/knowledge-center/onedrive-limited-access-read-only.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Control access from unmanaged devices",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices"
+      },
+      {
+        "title": "OneDrive overview",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/onedrive-overview"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/overview": {
+    "file": "docs/knowledge-center/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Intune fundamentals",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune"
+      }
+    ]
+  },
+  "/knowledge/knowledge-center/powerautomate-junkmail-alert": {
+    "file": "docs/knowledge-center/powerautomate-junkmail-alert.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Power Automate documentation",
+        "url": "https://learn.microsoft.com/en-us/power-automate/"
+      },
+      {
+        "title": "Exchange Online documentation",
+        "url": "https://learn.microsoft.com/en-us/exchange/exchange-online"
+      }
+    ]
+  },
+  "/knowledge/licensing/business-premium": {
+    "file": "docs/licensing/business-premium.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 Business Premium FAQ",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/misc/microsoft-365-business-faqs"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/licensing/e3-vs-e5": {
+    "file": "docs/licensing/e3-vs-e5.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/licensing/july-2026-microsoft-licensing-update": {
+    "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/licensing/overview": {
+    "file": "docs/licensing/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/e3-vs-e5": {
+    "file": "docs/microsoft365/e3-vs-e5.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/exchange-online": {
+    "file": "docs/microsoft365/exchange-online.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Exchange Online documentation",
+        "url": "https://learn.microsoft.com/en-us/exchange/exchange-online"
+      },
+      {
+        "title": "Defender for Office 365 overview",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/licensing": {
+    "file": "docs/microsoft365/licensing.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/onedrive": {
+    "file": "docs/microsoft365/onedrive.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "OneDrive overview",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/onedrive-overview"
+      },
+      {
+        "title": "Control access from unmanaged devices",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/overview": {
+    "file": "docs/microsoft365/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/sharepoint": {
+    "file": "docs/microsoft365/sharepoint.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "SharePoint overview",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/sharepoint-online"
+      },
+      {
+        "title": "Control access from unmanaged devices",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices"
+      }
+    ]
+  },
+  "/knowledge/microsoft365/teams": {
+    "file": "docs/microsoft365/teams.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Teams administration",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-overview"
+      }
+    ]
+  },
+  "/knowledge/migration/cross-tenant-sync-vs-migration": {
+    "file": "docs/migration/cross-tenant-sync-vs-migration.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Cross-tenant synchronization",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview"
+      },
+      {
+        "title": "Microsoft 365 tenant-to-tenant migrations",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations"
+      }
+    ]
+  },
+  "/knowledge/migration/file-server": {
+    "file": "docs/migration/file-server.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "SharePoint Migration Tool",
+        "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool"
+      }
+    ]
+  },
+  "/knowledge/migration/global-tenant-consolidation-framework": {
+    "file": "docs/migration/global-tenant-consolidation-framework.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Cross-tenant synchronization",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/migration/google-workspace": {
+    "file": "docs/migration/google-workspace.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Migrate Google Workspace mailboxes",
+        "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration"
+      },
+      {
+        "title": "SharePoint Migration Tool",
+        "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool"
+      }
+    ]
+  },
+  "/knowledge/migration/overview": {
+    "file": "docs/migration/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 tenant-to-tenant migrations",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations"
+      },
+      {
+        "title": "SharePoint Migration Tool",
+        "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool"
+      },
+      {
+        "title": "Cross-tenant synchronization",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview"
+      }
+    ]
+  },
+  "/knowledge/migration/tenant-to-tenant": {
+    "file": "docs/migration/tenant-to-tenant.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 tenant-to-tenant migrations",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations"
+      },
+      {
+        "title": "Cross-tenant synchronization",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview"
+      }
+    ]
+  },
+  "/knowledge/playbooks/change-management-playbook": {
+    "file": "docs/playbooks/change-management-playbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/playbooks/copilot-readiness-playbook": {
+    "file": "docs/playbooks/copilot-readiness-playbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      }
+    ]
+  },
+  "/knowledge/playbooks/intune-deployment-playbook": {
+    "file": "docs/playbooks/intune-deployment-playbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Intune fundamentals",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune"
+      },
+      {
+        "title": "Intune supported platforms",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers"
+      }
+    ]
+  },
+  "/knowledge/playbooks/m365-assessment-playbook": {
+    "file": "docs/playbooks/m365-assessment-playbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/playbooks/overview": {
+    "file": "docs/playbooks/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/playbooks/security-modernization-playbook": {
+    "file": "docs/playbooks/security-modernization-playbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      },
+      {
+        "title": "Microsoft Defender XDR overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender"
+      }
+    ]
+  },
+  "/knowledge/playbooks/tenant-to-tenant-migration-playbook": {
+    "file": "docs/playbooks/tenant-to-tenant-migration-playbook.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 tenant-to-tenant migrations",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations"
+      },
+      {
+        "title": "Cross-tenant synchronization",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview"
+      }
+    ]
+  },
+  "/knowledge/projects/case-study-enterprise-ai-agent-factory": {
+    "file": "docs/projects/case-study-enterprise-ai-agent-factory.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/case-study-enterprise-group-governance": {
+    "file": "docs/projects/case-study-enterprise-group-governance.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/case-study-financial-saas-security": {
+    "file": "docs/projects/case-study-financial-saas-security.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/case-study-logistics-exchange-modernization": {
+    "file": "docs/projects/case-study-logistics-exchange-modernization.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/case-study-manufacturing-copilot-adoption": {
+    "file": "docs/projects/case-study-manufacturing-copilot-adoption.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/case-study-retail-m365-security-policy": {
+    "file": "docs/projects/case-study-retail-m365-security-policy.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/customer-success-reference-patterns": {
+    "file": "docs/projects/customer-success-reference-patterns.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/enterprise-ai-adoption-program": {
+    "file": "docs/projects/enterprise-ai-adoption-program.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/m365-optimization-program": {
+    "file": "docs/projects/m365-optimization-program.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/multi-tenant-governance-strategy": {
+    "file": "docs/projects/multi-tenant-governance-strategy.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/overview": {
+    "file": "docs/projects/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/projects/security-modernization-program": {
+    "file": "docs/projects/security-modernization-program.md",
+    "checkedOn": "2026-10-25",
+    "kind": "사례·설계 패턴",
+    "scope": "익명화된 사례의 공개 범위와 관련 플랫폼 설계 기준을 확인했습니다. 공식 문서는 고객별 구현 결과·성과 수치나 비공개 증적을 인증하지 않습니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot adoption and onboarding",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources"
+      }
+    ]
+  },
+  "/knowledge/proposal/assessment": {
+    "file": "docs/proposal/assessment.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/executive-summary": {
+    "file": "docs/proposal/executive-summary.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/governance-model": {
+    "file": "docs/proposal/governance-model.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/overview": {
+    "file": "docs/proposal/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/risk-register": {
+    "file": "docs/proposal/risk-register.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/sow-template": {
+    "file": "docs/proposal/sow-template.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/timeline-template": {
+    "file": "docs/proposal/timeline-template.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/proposal/wbs-template": {
+    "file": "docs/proposal/wbs-template.md",
+    "checkedOn": "2026-10-25",
+    "kind": "템플릿·실무 예시",
+    "scope": "관련 플랫폼의 설계·도입 기준과 공개 예시의 구조를 확인했습니다. 이 양식은 저자 제공 예시이며 Microsoft가 발행하거나 인증한 산출물이 아닙니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      },
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      }
+    ]
+  },
+  "/knowledge/search/ai-agent-factory": {
+    "file": "docs/search/ai-agent-factory.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/search/copilot-adoption": {
+    "file": "docs/search/copilot-adoption.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/search/enterprise-microsoft-architecture-keywords": {
+    "file": "docs/search/enterprise-microsoft-architecture-keywords.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/search/how-to-use-ai-in-enterprise": {
+    "file": "docs/search/how-to-use-ai-in-enterprise.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/search/microsoft-365-consulting": {
+    "file": "docs/search/microsoft-365-consulting.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/search/microsoft-365-security": {
+    "file": "docs/search/microsoft-365-security.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/search/search-index-url-hub": {
+    "file": "docs/search/search-index-url-hub.md",
+    "checkedOn": "2026-10-25",
+    "kind": "주제 탐색 안내",
+    "scope": "연결 경로와 현재 제품·모델 명칭을 점검했습니다. 기능 제공 상태는 상세 가이드와 연결된 공식 릴리스를 기준으로 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Microsoft Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+      },
+      {
+        "title": "Copilot Studio current updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new"
+      }
+    ]
+  },
+  "/knowledge/security/compliance-manager": {
+    "file": "docs/security/compliance-manager.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Purview Compliance Manager",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager"
+      }
+    ]
+  },
+  "/knowledge/security/conditional-access": {
+    "file": "docs/security/conditional-access.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Entra Conditional Access",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+      },
+      {
+        "title": "Approved client app migration",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app/"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/security/data-lifecycle": {
+    "file": "docs/security/data-lifecycle.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Retention policies and labels",
+        "url": "https://learn.microsoft.com/en-us/purview/retention"
+      }
+    ]
+  },
+  "/knowledge/security/defender-for-endpoint": {
+    "file": "docs/security/defender-for-endpoint.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Defender for Endpoint overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint"
+      },
+      {
+        "title": "Defender for Endpoint release and OS support",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases"
+      }
+    ]
+  },
+  "/knowledge/security/defender-for-office365": {
+    "file": "docs/security/defender-for-office365.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Defender for Office 365 overview",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
+      }
+    ]
+  },
+  "/knowledge/security/defender-xdr": {
+    "file": "docs/security/defender-xdr.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Defender XDR overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender"
+      }
+    ]
+  },
+  "/knowledge/security/defender": {
+    "file": "docs/security/defender.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Defender XDR overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender"
+      },
+      {
+        "title": "Defender for Endpoint overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint"
+      },
+      {
+        "title": "Defender for Office 365 overview",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about"
+      }
+    ]
+  },
+  "/knowledge/security/dlp": {
+    "file": "docs/security/dlp.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Purview DLP overview",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp"
+      }
+    ]
+  },
+  "/knowledge/security/information-barriers": {
+    "file": "docs/security/information-barriers.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Purview Information Barriers",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers"
+      }
+    ]
+  },
+  "/knowledge/security/insider-risk": {
+    "file": "docs/security/insider-risk.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Insider Risk Management",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management"
+      }
+    ]
+  },
+  "/knowledge/security/overview": {
+    "file": "docs/security/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      },
+      {
+        "title": "Microsoft Purview documentation",
+        "url": "https://learn.microsoft.com/en-us/purview/"
+      },
+      {
+        "title": "Defender for Endpoint overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint"
+      }
+    ]
+  },
+  "/knowledge/security/purview-information-protection": {
+    "file": "docs/security/purview-information-protection.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Sensitivity labels",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels"
+      },
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      }
+    ]
+  },
+  "/knowledge/security/purview": {
+    "file": "docs/security/purview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Purview documentation",
+        "url": "https://learn.microsoft.com/en-us/purview/"
+      },
+      {
+        "title": "Sensitivity labels",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels"
+      }
+    ]
+  },
+  "/knowledge/security/security-architecture": {
+    "file": "docs/security/security-architecture.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      },
+      {
+        "title": "Microsoft Defender XDR overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender"
+      },
+      {
+        "title": "Microsoft Purview documentation",
+        "url": "https://learn.microsoft.com/en-us/purview/"
+      }
+    ]
+  },
+  "/knowledge/security/zero-trust-framework": {
+    "file": "docs/security/zero-trust-framework.md",
+    "checkedOn": "2026-10-25",
+    "kind": "기술·운영 가이드",
+    "scope": "관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다. 실제 적용 조건은 연결된 원문과 대상 환경에서 확인하세요.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft Zero Trust guidance",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/"
+      },
+      {
+        "title": "Microsoft Entra Conditional Access",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+      }
+    ]
+  },
+  "/knowledge/toolkit/architecture-builder": {
+    "file": "docs/toolkit/architecture-builder.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/toolkit/assessment-checklist": {
+    "file": "docs/toolkit/assessment-checklist.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/toolkit/license-advisor": {
+    "file": "docs/toolkit/license-advisor.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 enterprise plans",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing"
+      },
+      {
+        "title": "Microsoft 365 Business Premium FAQ",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/misc/microsoft-365-business-faqs"
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing"
+      }
+    ]
+  },
+  "/knowledge/toolkit/migration-checklist": {
+    "file": "docs/toolkit/migration-checklist.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/toolkit/overview": {
+    "file": "docs/toolkit/overview.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  },
+  "/knowledge/toolkit/prompt-library": {
+    "file": "docs/toolkit/prompt-library.md",
+    "checkedOn": "2026-10-25",
+    "kind": "설계·실행 프레임워크",
+    "scope": "연결된 공식 설계·운영 기준과 문서의 절차·전제 조건을 대조했습니다. 고객별 범위·승인·검증 증적은 프로젝트에서 별도로 확정해야 합니다.",
+    "note": "공식 출처의 제공 범위는 라이선스·지역·클라우드·제품 버전·단계적 배포에 따라 달라질 수 있습니다.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library"
+      },
+      {
+        "title": "Azure Cloud Adoption Framework",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/"
+      }
+    ]
+  }
+}

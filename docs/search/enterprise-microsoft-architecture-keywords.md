@@ -20,6 +20,12 @@ keywords:
 
 # Microsoft Enterprise Architecture Search Guide
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">SEARCH AND TOPIC LANDING</span>
@@ -96,7 +102,7 @@ The Knowledge Center focuses on practical enterprise consulting topics across Mi
 |---|---|---|
 | Understand enterprise Microsoft capability | [Executive Architecture Blueprint](../architecture/executive-architecture-blueprint) | Overall operating model, governance, delivery structure |
 | Explore Microsoft 365 consulting | [Microsoft 365 Consulting](./microsoft-365-consulting) | Exchange, Teams, SharePoint, OneDrive, licensing, governance |
-| Learn how to use AI in work | [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | Copilot, GPT-5.6, Copilot Studio, M365 Agents, Cowork |
+| Learn how to use AI in work | [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | Copilot, available reasoning models, Copilot Studio, M365 Agents, Cowork |
 | Plan Copilot adoption | [Copilot Adoption](./copilot-adoption) | Readiness, change management, champions, value measurement |
 | Build AI Agent capability | [AI Agent Factory](./ai-agent-factory) | Copilot Studio, agent lifecycle, governance, portfolio model |
 | Review security modernization | [Microsoft 365 Security](./microsoft-365-security) | Zero Trust, Defender, Purview, Conditional Access, Intune |
@@ -112,7 +118,7 @@ Visitors may find this site through Korean search queries such as:
 |---|---|
 | Microsoft 365 Architecture | Microsoft 365 아키텍처, Microsoft 365 컨설팅, Microsoft 365 보안 설계 |
 | Copilot Adoption | Copilot 도입, Copilot readiness, Copilot 거버넌스, Copilot 변화관리 |
-| AI Usage | AI 활용 방법, Microsoft 365 AI 활용, 업무 AI 도입, GPT-5.6 Copilot |
+| AI Usage | AI 활용 방법, Microsoft 365 AI 활용, 업무 AI 도입, available reasoning models Copilot |
 | AI Agents | Copilot Studio Agent, AI Agent Factory, AI Agent 거버넌스, Agent Factory 운영 모델 |
 | Security | Microsoft 365 보안, Defender XDR 구축, Purview DLP 설계, Conditional Access 설계 |
 | Endpoint | Microsoft Intune 디바이스 관리, Intune 보안 정책, macOS USB 제어 |
@@ -125,7 +131,7 @@ Visitors may find this site through Korean search queries such as:
 
 | Landing Page | Best For |
 |---|---|
-| [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | AI 활용 방법, Copilot, GPT-5.6, Copilot Studio, Cowork storyline |
+| [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | AI 활용 방법, Copilot, available reasoning models, Copilot Studio, Cowork storyline |
 | [Microsoft 365 Consulting](./microsoft-365-consulting) | Microsoft 365 architecture and operating model review |
 | [Microsoft 365 Security](./microsoft-365-security) | Security, Defender, Purview, Entra ID, Intune, Zero Trust |
 | [Copilot Adoption](./copilot-adoption) | Adoption, readiness, change management and value tracking |
@@ -139,7 +145,7 @@ Visitors may find this site through Korean search queries such as:
 - Microsoft 365 Enterprise Architecture
 - Microsoft Security Architecture
 - Microsoft Copilot Readiness
-- GPT-5.6 Microsoft 365 Copilot
+- available reasoning models Microsoft 365 Copilot
 - Microsoft Copilot Governance
 - Microsoft Purview Data Protection
 - Microsoft Defender XDR

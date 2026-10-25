@@ -5,7 +5,7 @@ description: "OWA Mailbox Policy와 조건부 액세스로 브라우저 첨부�
 sidebar_label: EXO 첨부파일 다운로드 방지
 ---
 
-<header><h1>Exchange Online 사서함 첨부파일 다운로드 방지 구성 (No MDCA)</h1></header>
+# Exchange Online 사서함 첨부파일 다운로드 방지 구성 (No MDCA)
 
 이 문서는 Microsoft Defender for Cloud Apps(MDCA)를 사용하지 않고, 브라우저에서 Exchange Online 사서함에 접근할 때 첨부파일의 로컬 다운로드와 인쇄를 제한하는 방법을 설명합니다.
 
@@ -91,7 +91,7 @@ Microsoft의 `ReadOnly` 제한은 인라인 이미지에는 적용되지 않습�
 ## 원문 및 참고자료
 
 - [사서함 첨부파일 다운로드 방지 구성 (No MDCA)](https://fetilonia.notion.site/no-MDCA-3b5dbd591ead8025b26fcab74ded1aaa)
-- [Microsoft Learn: Exchange Online recommendations for Zero Trust](https://learn.microsoft.com/security/zero-trust/deploy/applications-office-365)
+- [Microsoft Learn: Exchange Online recommendations for Zero Trust](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session#application-enforced-restrictions)
 
 - [Microsoft Learn: Set-OwaMailboxPolicy ConditionalAccessPolicy](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps#-conditionalaccesspolicy)
 - [Microsoft Learn: Recommended Exchange access policies](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-identity-device-access-policies-exchange)

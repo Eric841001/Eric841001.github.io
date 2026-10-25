@@ -125,7 +125,7 @@ Editable or customer-ready materials are not posted directly on the public site.
 
 When requesting a discussion or document, include only safe business context at first.
 
-<div id="what-to-include" aria-label="Information to include in first request" className="kc-contact-brief">
+<div id="request-context-fields" aria-label="Information to include in first request" className="kc-contact-brief">
   <div>
     <small>01</small>
     <strong>Workload</strong>

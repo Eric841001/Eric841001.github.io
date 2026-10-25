@@ -68,7 +68,7 @@ Copilot Studio는 더 이상 단순한 chatbot builder로 보기 어렵습니다
 
 따라서 기업 고객에게는 "agent를 만들 수 있다"보다 "누가 소유하고, 어떤 데이터에 접근하며, 어떤 도구를 실행하고, 비용과 품질을 어떻게 관리할 것인가"를 먼저 설계해야 합니다.
 
-GPT-5.6이 Microsoft 365 Copilot에 적용되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 adoption journey로 설명하는 것이 더 중요해졌습니다. 더 강한 reasoning model은 사용자 경험을 좋게 만들 수 있지만, enterprise 환경에서는 model selection, data boundary, approval, cost control, evaluation 기준이 함께 준비되어야 합니다.
+available reasoning 모델 선택 폭이 확대되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 adoption journey로 설명하는 것이 더 중요해졌습니다. 더 강한 reasoning model은 사용자 경험을 좋게 만들 수 있지만, enterprise 환경에서는 model selection, data boundary, approval, cost control, evaluation 기준이 함께 준비되어야 합니다.
 
 ## 2026 Capability Map
 
@@ -242,11 +242,11 @@ Source: [Microsoft Copilot Studio announcement](https://techcommunity.microsoft.
   </div>
 </div>
 
-## GPT-5.6 Planning Impact
+## Current Model Planning Impact {/* #gpt-56-planning-impact */}
 
-GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning because users will expect richer reasoning across daily Copilot experiences and agent workflows.
+available reasoning models in Microsoft 365 Copilot should be reflected in Copilot Studio planning because users will expect richer reasoning across daily Copilot experiences and agent workflows.
 
-<div aria-label="GPT-5.6 planning impact for Copilot Studio" className="kc-operating-model">
+<div aria-label="available reasoning models planning impact for Copilot Studio" className="kc-operating-model">
   <div className="kc-operating-stage">
     <small>Story</small>
     <strong>Connect the journey</strong>
@@ -255,7 +255,7 @@ GPT-5.6 in Microsoft 365 Copilot should be reflected in Copilot Studio planning 
   <div className="kc-operating-stage">
     <small>Model</small>
     <strong>Guide model selection</strong>
-    <span>Add user and maker guidance for selecting GPT-5.6 where it is available in the tenant.</span>
+    <span>Add user and maker guidance for selecting available reasoning models where it is available in the tenant.</span>
   </div>
   <div className="kc-operating-stage">
     <small>Design</small>

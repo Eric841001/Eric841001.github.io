@@ -143,6 +143,12 @@ Copilot 도입 시에도 Conditional Access는 중요합니다. Copilot은 Micro
   </div>
 </div>
 
+## Mobile policy control change — 2026-10-25
+
+The **Require approved client app** grant control moved to a read-only state on **2026-06-30**. Existing enabled policies can continue to enforce, but administrators cannot create or edit policies using that control. For new policies, use **Require app protection policy** and verify application support, enrollment model and user impact in report-only mode. See [Microsoft's migration guidance](https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app/).
+
+Blocking legacy authentication and disabling a mail protocol are separate decisions. A protocol that uses OAuth is not Basic authentication merely because it is POP, IMAP or SMTP AUTH. Document the protocol requirement and authentication flow before choosing the policy scope.
+
 ## Policy Layer Model
 
 <div aria-label="Conditional Access policy layer model" className="kc-maturity-ladder">
@@ -159,12 +165,12 @@ Copilot 도입 시에도 Conditional Access는 중요합니다. Copilot은 Micro
   <div className="kc-maturity-step">
     <small>Layer 3</small>
     <strong>Legacy authentication block</strong>
-    <span>Block POP, IMAP, SMTP AUTH, Basic Authentication and unsupported clients where applicable.</span>
+    <span>Block legacy authentication using the relevant client-app conditions. POP, IMAP and SMTP AUTH can also use OAuth; protocol names alone do not identify Basic authentication.</span>
   </div>
   <div className="kc-maturity-step">
     <small>Layer 4</small>
     <strong>Device and app control</strong>
-    <span>Require compliant devices, approved apps or app protection for sensitive workloads.</span>
+    <span>Require compliant devices or app protection for sensitive workloads. For new mobile policies, use Require app protection policy rather than the retired approved-client-app control.</span>
   </div>
   <div className="kc-maturity-step">
     <small>Layer 5</small>

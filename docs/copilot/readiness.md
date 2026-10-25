@@ -8,6 +8,12 @@ toc_max_heading_level: 2
 
 # Copilot Readiness Assessment Framework
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section aria-label="Copilot readiness assessment hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft 365 Copilot Readiness</span>
@@ -71,15 +77,15 @@ This framework provides a standardized assessment model to evaluate enterprise r
 
 ---
 
-## GPT-5.6 Readiness Addendum
+## Current Model Readiness Addendum {/* #gpt-56-readiness-addendum */}
 
-GPT-5.6 raises the quality ceiling for Microsoft 365 Copilot, but it also raises the importance of readiness. Stronger reasoning can produce better documents, analysis and decisions only when the underlying data, permission model and user behavior are ready.
+available reasoning models can improve the quality ceiling for Microsoft 365 Copilot, but it also raises the importance of readiness. Stronger reasoning can produce better documents, analysis and decisions only when the underlying data, permission model and user behavior are ready.
 
 Add the following checks before broad communication or executive demonstrations:
 
 | Readiness Check | Why It Matters |
 |---|---|
-| Model selector guidance | Users need to know when GPT-5.6 is appropriate and when standard Copilot interaction is enough. |
+| Model selector guidance | Users need to know when available reasoning models are appropriate and when standard Copilot interaction is enough. |
 | Data boundary review | Stronger reasoning may combine more context, so overshared SharePoint, Teams and OneDrive content must be reviewed. |
 | Prompt pattern update | Training should include reasoning tasks such as compare, synthesize, critique, plan and decide. |
 | Executive demo control | Demonstrations should use sanitized data and realistic scenarios, not confidential customer files. |

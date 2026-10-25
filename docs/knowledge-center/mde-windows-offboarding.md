@@ -133,11 +133,14 @@ Device retirement, tenant migration, security tool transition 상황에서 사�
 
 ## Validation
 
+Offboarding and uninstalling are different operations. Microsoft documents that status changes to **inactive after seven days**; historical data remains until its retention period expires, and the device profile can remain in inventory for **up to 180 days**. A remaining inventory entry is therefore not, by itself, an offboarding failure. See [Offboard devices](https://learn.microsoft.com/en-us/defender-endpoint/offboard-machines). Confirm the offboarding package validity, local state, last-seen behavior and replacement protection before closing the change.
+
+
 Verify:
 
-- Device no longer reporting
-- Sensor removed
-- Defender Portal inventory updated
+- New detection, vulnerability and security data stop arriving after successful offboarding
+- Offboarding state confirmed; do not treat this as uninstalling Windows Defender components
+- Review the last-seen timestamp and lifecycle record; the inventory entry need not disappear immediately
 
 ---
 

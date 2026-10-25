@@ -14,6 +14,12 @@ keywords:
 
 # Microsoft 365 Consulting
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section aria-label="Microsoft 365 Consulting landing hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft 365 Consulting Architecture</span>
@@ -76,7 +82,7 @@ keywords:
     <a href="./how-to-use-ai-in-enterprise">
       <small>AI</small>
       <strong>Copilot and agents</strong>
-      <span>Connect Copilot, GPT-5.6, Copilot Studio, M365 Agents and Cowork.</span>
+      <span>Connect Copilot, available reasoning models, Copilot Studio, M365 Agents and Cowork.</span>
     </a>
     <a href="../contact">
       <small>Request</small>
@@ -158,7 +164,7 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
   <div className="kc-platform-fit__card">
     <small>Copilot</small>
     <strong>AI readiness and ROI</strong>
-    <span>Readiness, GPT-5.6 guidance, adoption, agent governance and ROI.</span>
+    <span>Readiness, available reasoning models guidance, adoption, agent governance and ROI.</span>
   </div>
 </div>
 
@@ -199,7 +205,7 @@ Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDriv
 | Microsoft 365 architecture design | [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture) | request architecture review or tenant assessment |
 | Security and governance baseline | [Microsoft 365 Security](./microsoft-365-security) | review Defender, Purview, Conditional Access and Intune scope |
 | License and renewal value | [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update) | map license capability to security and Copilot readiness |
-| Copilot or AI adoption | [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | connect Copilot, GPT-5.6, Copilot Studio and Cowork |
+| Copilot or AI adoption | [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | connect Copilot, available reasoning models, Copilot Studio and Cowork |
 | Migration or tenant transition | [Migration Architecture](../architecture/migration-architecture) | prepare inventory, wave plan and rollback governance |
 | Proposal or delivery package | [Proposal Center](../proposal/overview) | request SOW, WBS, risk register or assessment workbook |
 

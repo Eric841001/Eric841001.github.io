@@ -94,14 +94,29 @@ Before execution:
 
 ## Required Permissions
 
-Administrators may require appropriate compliance and Exchange permissions.
+A search permission does not itself grant permission to delete. Confirm the **Compliance Search** / eDiscovery search permissions and the separate **Search And Purge** role in Microsoft Purview. Exchange Administrator alone is not a substitute for the purge role. Role-group names and assigned permissions must be checked in the actual tenant.
 
-Typical roles include:
+### Current connection requirements
 
-- Compliance Administrator
-- eDiscovery Manager
-- Exchange Administrator
-- Organization Management role where applicable
+For interactive eDiscovery PowerShell, use ExchangeOnlineManagement **3.9.0 or later** and a search-only session:
+
+```powershell
+Import-Module ExchangeOnlineManagement
+Connect-IPPSSession -UserPrincipalName '<authorized-admin-UPN>' -EnableSearchOnlySession
+```
+
+This example connects; it does not run a search or purge. App-only eDiscovery authentication has different support limitations and must not be assumed to be supported from this interactive example. See [current connection requirements](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell).
+
+### Choose the supported purge method
+
+| Case and method | Current documented limit and boundary |
+|---|---|
+| Non-premium eDiscovery / PowerShell | Up to **10 items per mailbox/location** in a purge action; intended for incident response, not bulk mailbox cleanup |
+| Premium-enabled case / Microsoft Graph | Up to **100 items per location**; verify case creation method and supported item types in the official procedure |
+| Mixed methods | Do not combine PowerShell and Graph purge methods for the same process; follow the method supported by the case |
+
+[Find and delete email in eDiscovery](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data) explains the case and method restrictions. A single completed action does not prove every matching item was removed. Review counts, scope, action results, unindexed items and remaining matches. Holds, retention and Recoverable Items affect final removal; HardDelete is not a promise of immediate physical erasure.
+
 
 ---
 
@@ -169,8 +184,8 @@ Use HardDelete only when approved.
 
 Validate that:
 
-- Target message no longer exists in user mailbox
-- Deleted Items does not contain the message
+- Review action status, item counts and remaining matches; do not infer complete removal from action completion alone
+- Validate the expected mailbox visibility and Recoverable Items / hold / retention behavior
 - Recoverable Items behavior is understood
 - Search action completed successfully
 - Incident record is updated
@@ -213,10 +228,8 @@ Validate that:
 
 ## References
 
-- Microsoft Purview Compliance Search
-- Exchange Online PowerShell
-- New-ComplianceSearch
-- New-ComplianceSearchAction
+- [Find and delete messages in eDiscovery](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data)
+- [Connect to Security & Compliance PowerShell](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell)
 
 ## 한국어 요약
 

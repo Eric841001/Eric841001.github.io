@@ -426,7 +426,7 @@ After the primary mailbox was provisioned, the same user and encrypted document 
 - [Minimum requirements to deploy Microsoft 365 Copilot in your organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements)
 - [Microsoft 365 app and network requirements for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-requirements)
 - [Learn about retention for Copilot and AI apps](https://learn.microsoft.com/en-us/purview/retention-policies-copilot)
-- [Microsoft 365 Copilot Adoption](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-adoption)
+- [Microsoft 365 Copilot Adoption](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 
 The troubleshooting pattern above was generalized from an anonymized field investigation. Microsoft Learn is authoritative for supported requirements and retention behavior; packet-level interpretations remain case-specific technical observations.
 

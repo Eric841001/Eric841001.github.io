@@ -8,58 +8,18 @@ toc_max_heading_level: 2
 
 # Agentic AI Architecture
 
-<section aria-label="Agentic AI architecture hero" className="kc-topic-hero kc-topic-hero--agent">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Agentic AI Reference Architecture</span>
-    <h2>Design agents as controlled business systems</h2>
-    <p>Agentic AI moves beyond prompt assistance into systems that can reason, use tools, maintain context, coordinate work and produce measurable business outcomes. The architecture must explain what the agent can know, what it can do, who owns it and how it is governed.</p>
-    <div aria-label="Agentic architecture signals" className="kc-hero-signal-row">
-      <span>Goal</span>
-      <span>Grounding</span>
-      <span>Action</span>
-      <span>Control</span>
-    </div>
-    <div aria-label="Agentic AI entry points" className="kc-topic-hero__actions">
-      <a href="/knowledge/search/ai-agent-factory" className="kc-topic-button kc-topic-button--primary">AI Agent Factory</a>
-      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" className="kc-topic-button">Copilot Studio Update</a>
-      <a href="/knowledge/copilot/multi-agent-framework" className="kc-topic-button">Multi-Agent Framework</a>
-    </div>
-  </div>
-  <div aria-label="Agentic AI architecture visual" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Architecture Spine</span>
-      <strong>Human-guided autonomy</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="#core-architecture" className="kc-factory-card">
-        <small>01</small>
-        <strong>Experience</strong>
-        <span>Copilot, Teams, business apps and workflow triggers.</span>
-      </a>
-      <a href="#core-architecture" className="kc-factory-card">
-        <small>02</small>
-        <strong>Agent</strong>
-        <span>Instructions, skills, memory, tools and orchestration.</span>
-      </a>
-      <a href="#security-control-plane" className="kc-factory-card">
-        <small>03</small>
-        <strong>Control</strong>
-        <span>Identity, policy, approval, audit, telemetry and cost.</span>
-      </a>
-      <a href="#kpi-framework" className="kc-factory-card">
-        <small>04</small>
-        <strong>Outcome</strong>
-        <span>Automation, insight, decision support and measured value.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Design rule</strong>
-      <span>Autonomy should increase only when grounding, permission, approval, monitoring and rollback are already designed.</span>
-    </div>
-  </div>
-</section>
+<ReadingControls />
+
+
+
+
+<ReadingSection open>
+<ReadingSummary>
 
 ## Executive Summary
+
+</ReadingSummary>
+
 
 Agentic AI represents the shift from prompt-based assistance to goal-oriented, context-aware and action-capable AI systems.
 
@@ -111,7 +71,77 @@ The objective is not simply to create many agents. The objective is to establish
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
+## 문서 소개와 설계 관점
+
+</ReadingSummary>
+
+<section aria-label="Agentic AI architecture hero" className="kc-topic-hero kc-topic-hero--agent">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Agentic AI Reference Architecture</span>
+    <h2>Design agents as controlled business systems</h2>
+    <p>Agentic AI moves beyond prompt assistance into systems that can reason, use tools, maintain context, coordinate work and produce measurable business outcomes. The architecture must explain what the agent can know, what it can do, who owns it and how it is governed.</p>
+    <div aria-label="Agentic architecture signals" className="kc-hero-signal-row">
+      <span>Goal</span>
+      <span>Grounding</span>
+      <span>Action</span>
+      <span>Control</span>
+    </div>
+    <div aria-label="Agentic AI entry points" className="kc-topic-hero__actions">
+      <a href="/knowledge/search/ai-agent-factory" className="kc-topic-button kc-topic-button--primary">AI Agent Factory</a>
+      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" className="kc-topic-button">Copilot Studio Update</a>
+      <a href="/knowledge/copilot/multi-agent-framework" className="kc-topic-button">Multi-Agent Framework</a>
+    </div>
+  </div>
+  <div aria-label="Agentic AI architecture visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Architecture Spine</span>
+      <strong>Human-guided autonomy</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#core-architecture" className="kc-factory-card">
+        <small>01</small>
+        <strong>Experience</strong>
+        <span>Copilot, Teams, business apps and workflow triggers.</span>
+      </a>
+      <a href="#core-architecture" className="kc-factory-card">
+        <small>02</small>
+        <strong>Agent</strong>
+        <span>Instructions, skills, memory, tools and orchestration.</span>
+      </a>
+      <a href="#security-control-plane" className="kc-factory-card">
+        <small>03</small>
+        <strong>Control</strong>
+        <span>Identity, policy, approval, audit, telemetry and cost.</span>
+      </a>
+      <a href="#kpi-framework" className="kc-factory-card">
+        <small>04</small>
+        <strong>Outcome</strong>
+        <span>Automation, insight, decision support and measured value.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Design rule</strong>
+      <span>Autonomy should increase only when grounding, permission, approval, monitoring and rollback are already designed.</span>
+    </div>
+  </div>
+</section>
+
+</ReadingSection>
+
+
+<ReadingSection>
+<ReadingSummary>
+
 ## From Copilot to Agentic AI
+
+</ReadingSummary>
+
 
 Traditional Copilot usage is primarily user-initiated.
 
@@ -158,7 +188,16 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Core Architecture
+
+</ReadingSummary>
+
 
 <div aria-label="Agentic AI core architecture layers" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
@@ -195,7 +234,16 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Architecture Layers
+
+</ReadingSummary>
+
 
 | Layer | Purpose | Microsoft Capabilities |
 |---|---|---|
@@ -209,7 +257,16 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agentic AI Design Principles
+
+</ReadingSummary>
+
 
 | Principle | Description |
 |---|---|
@@ -224,7 +281,16 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agent Types
+
+</ReadingSummary>
+
 
 ### Personal Agent
 
@@ -296,7 +362,16 @@ Examples:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agent Build Spectrum
+
+</ReadingSummary>
+
 
 <div aria-label="Agent build spectrum" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -347,7 +422,16 @@ Examples:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Work IQ and Context
+
+</ReadingSummary>
+
 
 Agentic AI depends on context.
 
@@ -398,13 +482,31 @@ Work IQ provides organizational and work context such as:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Microsoft IQ Solution Accelerator
+
+</ReadingSummary>
+
 
 The [official Microsoft reference implementation](https://github.com/microsoft/microsoft-iq-solution-accelerator), checked October 2, 2026, combines Fabric IQ business data, Foundry IQ enterprise knowledge and Work IQ work context. Its supply-chain scenario links disruption signals, risk assessment and coordinated response through agents and workflows.
 
 Some platform features and MCP integrations remain preview. Use the implementation for evaluation and demonstrations; validate production support separately. Adapt data models, contract and policy sources, workflow approvals, identity permissions and consumption budgets before using operational data.
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Knowledge Grounding
+
+</ReadingSummary>
+
 
 Agents must be grounded in trusted knowledge.
 
@@ -422,7 +524,16 @@ Recommended grounding sources:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Tool Use and Action Execution
+
+</ReadingSummary>
+
 
 Agents become business-relevant when they can take action.
 
@@ -473,7 +584,16 @@ Examples:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## MCP in Agentic AI
+
+</ReadingSummary>
+
 
 Model Context Protocol provides a way to connect agents to external tools and resources.
 
@@ -521,7 +641,16 @@ MCP is important because it can help organizations:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Multi-Agent Reference Model
+
+</ReadingSummary>
+
 
 <div aria-label="Multi-agent reference model" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -570,7 +699,16 @@ MCP is important because it can help organizations:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Security Control Plane
+
+</ReadingSummary>
+
 
 Agentic AI requires stronger governance than simple chat experiences.
 
@@ -610,7 +748,16 @@ Agentic AI requires stronger governance than simple chat experiences.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Governance Requirements
+
+</ReadingSummary>
+
 
 | Area | Requirement |
 |---|---|
@@ -625,7 +772,16 @@ Agentic AI requires stronger governance than simple chat experiences.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Human-in-the-Loop Model
+
+</ReadingSummary>
+
 
 Not every action should be autonomous.
 
@@ -639,7 +795,16 @@ Not every action should be autonomous.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Enterprise Use Cases
+
+</ReadingSummary>
+
 
 ### Executive Assistant Agent
 
@@ -685,7 +850,16 @@ Not every action should be autonomous.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Adoption and Operating Model
+
+</ReadingSummary>
+
 
 Agentic AI adoption requires operating discipline.
 
@@ -701,7 +875,16 @@ Agentic AI adoption requires operating discipline.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agentic AI Roadmap
+
+</ReadingSummary>
+
 
 <div aria-label="Agentic AI enterprise roadmap" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -739,7 +922,16 @@ Agentic AI adoption requires operating discipline.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agent Factory Model
+
+</ReadingSummary>
+
 
 An Agent Factory provides repeatable delivery.
 
@@ -755,7 +947,16 @@ An Agent Factory provides repeatable delivery.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Maturity Model
+
+</ReadingSummary>
+
 
 | Level | Description |
 |---|---|
@@ -767,7 +968,16 @@ An Agent Factory provides repeatable delivery.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## KPI Framework
+
+</ReadingSummary>
+
 
 | KPI | Purpose |
 |---|---|
@@ -782,7 +992,16 @@ An Agent Factory provides repeatable delivery.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Risk Register
+
+</ReadingSummary>
+
 
 | Risk | Impact | Mitigation |
 |---|---|---|
@@ -795,7 +1014,16 @@ An Agent Factory provides repeatable delivery.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Executive Decision Points
+
+</ReadingSummary>
+
 
 Leadership should confirm:
 
@@ -809,7 +1037,16 @@ Leadership should confirm:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Deliverables
+
+</ReadingSummary>
+
 
 An Agentic AI architecture engagement should produce:
 
@@ -825,7 +1062,16 @@ An Agentic AI architecture engagement should produce:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## References
+
+</ReadingSummary>
+
 
 - Microsoft Copilot Studio
 - Microsoft 365 Copilot
@@ -836,7 +1082,16 @@ An Agentic AI architecture engagement should produce:
 - Microsoft Defender
 - Microsoft Power Platform
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## 검색 키워드
+
+</ReadingSummary>
+
 
 - Microsoft 365 Copilot
 - Copilot Studio
@@ -846,6 +1101,17 @@ An Agentic AI architecture engagement should produce:
 - Copilot 도입
 - AI Agent 운영 모델
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Contact / Asset Request
 
+</ReadingSummary>
+
+
 For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+
+</ReadingSection>

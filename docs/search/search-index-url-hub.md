@@ -14,6 +14,12 @@ keywords:
 
 # Search Index URL Hub
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section aria-label="Search Index URL Hub landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Search and Topic Landing</span>
@@ -120,7 +126,7 @@ keywords:
   <a href="/knowledge/search/copilot-adoption">
     <small>Copilot</small>
     <strong>Copilot Adoption</strong>
-    <span>Adoption path from readiness to value, GPT-5.6, Copilot Studio and Cowork.</span>
+    <span>Adoption path from readiness to value, available reasoning models, Copilot Studio and Cowork.</span>
   </a>
   <a href="/knowledge/search/ai-agent-factory">
     <small>Agent</small>

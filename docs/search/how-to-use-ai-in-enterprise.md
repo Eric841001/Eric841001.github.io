@@ -2,11 +2,11 @@
 id: how-to-use-ai-in-enterprise
 title: How to Use AI in Enterprise
 sidebar_label: How to Use AI
-description: Enterprise AI usage landing page connecting Microsoft 365 Copilot, GPT-5.6, Copilot Studio, Microsoft 365 Agents, Copilot Cowork and change management.
+description: Enterprise AI usage landing page connecting Microsoft 365 Copilot, available reasoning models, Copilot Studio, Microsoft 365 Agents, Copilot Cowork and change management.
 keywords:
   - AI 활용 방법
   - Microsoft 365 AI 활용
-  - GPT-5.6 Copilot
+  - available reasoning models Copilot
   - Copilot Studio
   - M365 Agents
   - Copilot Cowork
@@ -15,11 +15,17 @@ keywords:
 
 # How to Use AI in Enterprise
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section aria-label="How to use AI in enterprise landing hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Enterprise AI Usage Architecture</span>
     <h2>Use AI where real work changes, not where a feature looks exciting</h2>
-    <p>Enterprise AI adoption should start from work patterns: document creation, analysis, meetings, decisions, follow-up and long-running execution. From there, connect Copilot, GPT-5.6, Copilot Studio, Microsoft 365 Agents, Copilot Cowork and change management.</p>
+    <p>Enterprise AI adoption should start from work patterns: document creation, analysis, meetings, decisions, follow-up and long-running execution. From there, connect Copilot, available reasoning models, Copilot Studio, Microsoft 365 Agents, Copilot Cowork and change management.</p>
     <div aria-label="Enterprise AI usage entry points" className="kc-topic-hero__actions">
       <a href="../copilot/overview" className="kc-topic-button kc-topic-button--primary">Copilot Overview</a>
       <a href="./copilot-adoption" className="kc-topic-button">Adoption Path</a>
@@ -39,7 +45,7 @@ keywords:
       </a>
       <a href="../copilot/copilot-studio-2026-platform-update" className="kc-factory-card">
         <small>02</small>
-        <strong>GPT-5.6</strong>
+        <strong>available reasoning models</strong>
         <span>Deeper reasoning for drafting, comparison and decision support</span>
       </a>
       <a href="./ai-agent-factory" className="kc-factory-card">
@@ -64,7 +70,7 @@ keywords:
   <div className="kc-context-panel__lead">
     <small>Executive View</small>
     <strong>The question is not which AI tool to buy. The question is which work should change first.</strong>
-    <span>Start with repeatable business scenarios, then decide whether the right answer is Copilot, GPT-5.6, Copilot Studio, Microsoft 365 Agents or Copilot Cowork.</span>
+    <span>Start with repeatable business scenarios, then decide whether the right answer is Copilot, available reasoning models, Copilot Studio, Microsoft 365 Agents or Copilot Cowork.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="../copilot/governance">
@@ -91,7 +97,7 @@ keywords:
 가장 자연스러운 흐름은 다음과 같습니다.
 
 1. Copilot으로 개인 업무 생산성을 높입니다.
-2. GPT-5.6을 활용해 더 깊은 reasoning이 필요한 문서, 분석, 발표, 의사결정 업무를 고도화합니다.
+2. available reasoning models을 활용해 더 깊은 reasoning이 필요한 문서, 분석, 발표, 의사결정 업무를 고도화합니다.
 3. 반복되는 업무는 Copilot Studio Agent로 전환합니다.
 4. Microsoft 365 업무 맥락 안에서는 M365 Agents를 활용합니다.
 5. 장기 실행 업무는 Copilot Cowork로 확장하되 approval, cost, owner, governance를 함께 설계합니다.
@@ -111,7 +117,7 @@ keywords:
   </div>
   <div className="kc-journey-node">
     <small>03</small>
-    <strong>GPT-5.6</strong>
+    <strong>available reasoning models</strong>
     <span>Deeper reasoning for complex work where available</span>
   </div>
   <div className="kc-journey-node kc-journey-node--control">
@@ -147,7 +153,7 @@ keywords:
   <div className="kc-platform-fit__card">
     <small>Reasoning</small>
     <strong>Documents and analysis need deeper reasoning</strong>
-    <span>Add GPT-5.6 model selector guidance and scenario examples where available.</span>
+    <span>Add Copilot model selector guidance and scenario examples where available.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Repeat</small>
@@ -187,7 +193,7 @@ keywords:
   <div className="kc-maturity-step">
     <small>Level 4</small>
     <strong>Scaled AI Work</strong>
-    <span>Copilot, GPT-5.6, M365 Agents and Copilot Cowork connect to measurable outcomes.</span>
+    <span>Copilot, available reasoning models, M365 Agents and Copilot Cowork connect to measurable outcomes.</span>
   </div>
   <div className="kc-maturity-step">
     <small>Level 5</small>
@@ -212,7 +218,7 @@ keywords:
   <div className="kc-operating-stage">
     <small>Model</small>
     <strong>Model guidance</strong>
-    <span>When should users select GPT-5.6 or standard Copilot interaction?</span>
+    <span>When should users select available reasoning models or standard Copilot interaction?</span>
   </div>
   <div className="kc-operating-stage">
     <small>Change</small>
@@ -225,11 +231,11 @@ keywords:
 
 ### What is the best first step for enterprise AI adoption?
 
-Start with real business scenarios, not with the tool list. Identify where users spend time on drafting, summarizing, analysis, meetings, reporting or follow-up work, then map those scenarios to Copilot, GPT-5.6, Copilot Studio or Cowork.
+Start with real business scenarios, not with the tool list. Identify where users spend time on drafting, summarizing, analysis, meetings, reporting or follow-up work, then map those scenarios to Copilot, available reasoning models, Copilot Studio or Cowork.
 
-### When should GPT-5.6 be used?
+### When should available reasoning models be used? {/* #when-should-gpt-56-be-used */}
 
-Use GPT-5.6 where deeper reasoning is useful: document critique, spreadsheet analysis, presentation refinement, decision support, comparison, planning and synthesis. Keep simple tasks in standard Copilot interaction when deeper reasoning is not needed.
+Use available reasoning models where deeper reasoning is useful: document critique, spreadsheet analysis, presentation refinement, decision support, comparison, planning and synthesis. Keep simple tasks in standard Copilot interaction when deeper reasoning is not needed.
 
 ### When does a Copilot scenario become an agent scenario?
 
@@ -277,7 +283,7 @@ Treat AI adoption as behavior change. Training should show real work before and 
 <div className="kc-request-panel">
   <small>Asset Request</small>
   <strong>Request practical assets after the scenario and confidentiality boundary are clear.</strong>
-  <span>Enterprise AI adoption roadmap, GPT-5.6 model selector guide, Copilot role-based scenario library, AI Agent opportunity assessment, Copilot Studio Agent intake template, Copilot Cowork governance checklist and executive AI adoption briefing can be requested through <a href="../contact">Contact and Asset Request</a>.</span>
+  <span>Enterprise AI adoption roadmap, Copilot model selector guide, Copilot role-based scenario library, AI Agent opportunity assessment, Copilot Studio Agent intake template, Copilot Cowork governance checklist and executive AI adoption briefing can be requested through <a href="../contact">Contact and Asset Request</a>.</span>
 </div>
 
 ## 검색 키워드
@@ -285,7 +291,7 @@ Treat AI adoption as behavior change. Training should show real work before and 
 - AI 활용 방법
 - 기업 AI 도입
 - Microsoft 365 AI 활용
-- GPT-5.6 Copilot
+- available reasoning models Copilot
 - Copilot Studio Agent
 - Microsoft 365 Agents
 - Copilot Cowork

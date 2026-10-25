@@ -7,6 +7,12 @@ sidebar_label: Copilot Cowork Cost Governance
 
 # Copilot Cowork Cost and Governance Guide
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section aria-label="Copilot Cowork governance landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Long-Running AI Work Governance</span>
@@ -66,7 +72,7 @@ Copilot Cowork는 단순한 chat 기능이 아니라, 장기 실행 업무를 �
 
 따라서 도입 시에는 "누가 사용할 수 있는가", "어떤 업무를 맡길 것인가", "비용은 누가 승인하는가", "민감한 작업은 누가 검토하는가", "성과는 어떻게 측정할 것인가"를 먼저 정해야 합니다.
 
-GPT-5.6처럼 reasoning이 강해질수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 enterprise 환경에서는 reasoning 성능보다 더 중요한 것이 approval, ownership, budget, security, monitoring입니다.
+더 복잡한 추론 작업을 위임할수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 enterprise 환경에서는 reasoning 성능보다 더 중요한 것이 approval, ownership, budget, security, monitoring입니다.
 
 Microsoft의 6월 30일 plugin 업데이트에 따르면 Copilot Cowork plugin은 반복 가능한 skill과 업무 시스템에 연결되는 secure connector를 함께 패키징하여 Microsoft Marketplace를 통해 배포할 수 있습니다. Microsoft의 6월 16일 GA 발표에 따르면 Cowork는 전 세계 GA 상태이며 Microsoft 365 Copilot User Subscription License가 필요하고 사용량은 Copilot Credits로 청구됩니다. 다만 개별 plugin의 제공 상태는 서로 다르므로 coming soon으로 표시된 기능을 현재 사용 가능한 것으로 안내하면 안 됩니다. Plugin을 활성화하기 전에는 제공자, 요청 데이터와 작업, connector 권한, 쓰기 또는 외부 작업의 승인 지점, prompt·response·생성 artifact에 현재 제공되는 Microsoft 365 및 Purview 통제를 검토해야 합니다. Microsoft가 DLP 등 coming soon으로 표시한 통제를 현재 제공되는 것으로 안내해서는 안 됩니다.
 

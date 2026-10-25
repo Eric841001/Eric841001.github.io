@@ -16,6 +16,12 @@ keywords:
 
 # Microsoft 365 Security
 
+import UpdateBrief from '@site/src/components/UpdateBrief';
+
+<UpdateBrief />
+
+
+
 <section aria-label="Microsoft 365 Security landing hero" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft 365 Security Architecture</span>
@@ -90,7 +96,7 @@ keywords:
 
 Microsoft 365 보안은 개별 기능을 켜는 작업이 아닙니다. Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Information Barriers, audit, incident response를 하나의 control architecture로 연결해야 합니다.
 
-Copilot과 GPT-5.6이 업무에 더 깊게 들어올수록 security architecture는 더 중요해집니다. AI가 더 좋은 답변을 하기 위해서는 데이터에 접근해야 하고, 그 데이터 접근은 permission, label, DLP, audit, retention, sharing policy와 연결됩니다.
+Copilot과 available reasoning models이 업무에 더 깊게 들어올수록 security architecture는 더 중요해집니다. AI가 더 좋은 답변을 하기 위해서는 데이터에 접근해야 하고, 그 데이터 접근은 permission, label, DLP, audit, retention, sharing policy와 연결됩니다.
 
 ## Security Control Map
 

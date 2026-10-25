@@ -8,6 +8,78 @@ toc_max_heading_level: 2
 
 # Microsoft Copilot Studio
 
+<ReadingControls />
+
+
+
+
+<ReadingSection open>
+<ReadingSummary>
+
+## Executive Summary
+
+</ReadingSummary>
+
+
+Microsoft Copilot Studio is the enterprise platform for building, extending, deploying and governing AI agents.
+
+It enables business users, power users and developers to create agents that connect to enterprise knowledge, automate workflows, call business systems and extend Microsoft 365 Copilot.
+
+Copilot Studio should not be positioned only as a chatbot builder. It is a core component of the Microsoft Agent Platform for enabling enterprise-scale Agentic AI.
+
+> **Executive lens:** Copilot Studio should be governed like an enterprise application platform: every agent needs an owner, knowledge boundary, action boundary, lifecycle rule and measurement model.
+
+<div className="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
+  <div className="kc-journey-map__header">
+    <span>Agent Lifecycle</span>
+    <strong>Idea to governed portfolio</strong>
+  </div>
+  <div className="kc-journey-track">
+    <div className="kc-journey-node kc-journey-node--demand">
+  <small>01</small>
+  <strong>Idea</strong>
+  <span>Business problem, user journey and value hypothesis.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>02</small>
+  <strong>Design</strong>
+  <span>Knowledge, tools, identity, channels and test criteria.</span>
+</div>
+    <div className="kc-journey-node kc-journey-node--control">
+  <small>03</small>
+  <strong>Govern</strong>
+  <span>Security, DLP, owner, lifecycle and release approval.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>04</small>
+  <strong>Publish</strong>
+  <span>Environment, channel, support path and change control.</span>
+</div>
+    <div className="kc-journey-node">
+  <small>05</small>
+  <strong>Operate</strong>
+  <span>Monitoring, feedback, analytics and cost review.</span>
+</div>
+    <div className="kc-journey-node kc-journey-node--outcome">
+  <small>06</small>
+  <strong>Portfolio</strong>
+  <span>Reuse, retirement, consolidation and value tracking.</span>
+</div>
+  </div>
+</div>
+
+---
+
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
+## 문서 소개와 설계 관점
+
+</ReadingSummary>
+
 <section aria-label="Microsoft Copilot Studio hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Copilot Studio Enterprise Agent Platform</span>
@@ -59,58 +131,16 @@ toc_max_heading_level: 2
   </div>
 </section>
 
-## Executive Summary
+</ReadingSection>
 
-Microsoft Copilot Studio is the enterprise platform for building, extending, deploying and governing AI agents.
 
-It enables business users, power users and developers to create agents that connect to enterprise knowledge, automate workflows, call business systems and extend Microsoft 365 Copilot.
-
-Copilot Studio should not be positioned only as a chatbot builder. It is a core component of the Microsoft Agent Platform for enabling enterprise-scale Agentic AI.
-
-> **Executive lens:** Copilot Studio should be governed like an enterprise application platform: every agent needs an owner, knowledge boundary, action boundary, lifecycle rule and measurement model.
-
-<div className="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
-  <div className="kc-journey-map__header">
-    <span>Agent Lifecycle</span>
-    <strong>Idea to governed portfolio</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-  <small>01</small>
-  <strong>Idea</strong>
-  <span>Business problem, user journey and value hypothesis.</span>
-</div>
-    <div className="kc-journey-node">
-  <small>02</small>
-  <strong>Design</strong>
-  <span>Knowledge, tools, identity, channels and test criteria.</span>
-</div>
-    <div className="kc-journey-node kc-journey-node--control">
-  <small>03</small>
-  <strong>Govern</strong>
-  <span>Security, DLP, owner, lifecycle and release approval.</span>
-</div>
-    <div className="kc-journey-node">
-  <small>04</small>
-  <strong>Publish</strong>
-  <span>Environment, channel, support path and change control.</span>
-</div>
-    <div className="kc-journey-node">
-  <small>05</small>
-  <strong>Operate</strong>
-  <span>Monitoring, feedback, analytics and cost review.</span>
-</div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-  <small>06</small>
-  <strong>Portfolio</strong>
-  <span>Reuse, retirement, consolidation and value tracking.</span>
-</div>
-  </div>
-</div>
-
----
+<ReadingSection>
+<ReadingSummary>
 
 ## 2026 Platform Shift
+
+</ReadingSummary>
+
 
 Copilot Studio has changed materially in 2026. The platform now needs to be discussed in terms of new agent experience, Microsoft IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
 
@@ -118,7 +148,16 @@ For the current architecture and governance implications, start here: [Copilot S
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Business Context
+
+</ReadingSummary>
+
 
 Many organizations want to introduce "one agent per user" or department-level AI agents, but they face practical challenges.
 
@@ -138,7 +177,16 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Microsoft Agent Build Spectrum
+
+</ReadingSummary>
+
 
 <div aria-label="Microsoft agent build spectrum" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -186,7 +234,16 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## What Copilot Studio Is
+
+</ReadingSummary>
+
 
 Copilot Studio is a graphical low-code tool for creating agents and agent flows.
 
@@ -206,7 +263,16 @@ It supports:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Core Architecture
+
+</ReadingSummary>
+
 
 <div aria-label="Copilot Studio core architecture" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -244,7 +310,16 @@ It supports:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Copilot Studio Building Blocks
+
+</ReadingSummary>
+
 
 | Component | Description |
 |---|---|
@@ -260,7 +335,16 @@ It supports:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agent Types
+
+</ReadingSummary>
+
 
 ### 1. Knowledge Agent
 
@@ -320,7 +404,16 @@ Examples:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agent Lifecycle
+
+</ReadingSummary>
+
 
 <div className="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
   <div className="kc-journey-map__header">
@@ -369,7 +462,16 @@ Examples:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Knowledge Architecture
+
+</ReadingSummary>
+
 
 Knowledge quality determines agent quality.
 
@@ -387,7 +489,16 @@ Recommended knowledge sources:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Tool and Action Architecture
+
+</ReadingSummary>
+
 
 Agents become more valuable when they can take action.
 
@@ -435,7 +546,16 @@ Agents become more valuable when they can take action.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## MCP Integration
+
+</ReadingSummary>
+
 
 Model Context Protocol expands agent extensibility.
 
@@ -460,7 +580,16 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## No-Code, Low-Code and Pro-Code Positioning
+
+</ReadingSummary>
+
 
 | Approach | Target User | Recommended Platform |
 |---|---|---|
@@ -474,7 +603,16 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Enterprise Agent Platform View
+
+</ReadingSummary>
+
 
 <div aria-label="Enterprise agent platform view" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -512,7 +650,16 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Security and Governance
+
+</ReadingSummary>
+
 
 Copilot Studio must be governed as part of the enterprise AI control plane.
 
@@ -530,7 +677,16 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Agent Governance Model
+
+</ReadingSummary>
+
 
 <div aria-label="Copilot Studio agent governance model" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -568,7 +724,16 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Security Review Checklist
+
+</ReadingSummary>
+
 
 | Area | Review Question |
 |---|---|
@@ -583,7 +748,16 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Deployment Channels
+
+</ReadingSummary>
+
 
 Copilot Studio agents can be deployed through several channels.
 
@@ -598,7 +772,16 @@ Copilot Studio agents can be deployed through several channels.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Analytics and Operations
+
+</ReadingSummary>
+
 
 Agent operations should continuously track performance.
 
@@ -617,7 +800,16 @@ Agent operations should continuously track performance.
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Use Case Portfolio
+
+</ReadingSummary>
+
 
 ### IT Helpdesk Agent
 
@@ -672,7 +864,16 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Recommended Delivery Approach
+
+</ReadingSummary>
+
 
 | Phase | Key Activities | Deliverables |
 |---|---|---|
@@ -685,7 +886,16 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Licensing and Capacity Considerations
+
+</ReadingSummary>
+
 
 Licensing should be reviewed before production rollout.
 
@@ -702,7 +912,16 @@ Consider:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Decision Framework
+
+</ReadingSummary>
+
 
 <div aria-label="Copilot Studio decision framework" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -740,7 +959,16 @@ Consider:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Best Practices
+
+</ReadingSummary>
+
 
 1. Start with high-value, low-risk scenarios.
 2. Define the business owner before building.
@@ -755,7 +983,16 @@ Consider:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Common Risks
+
+</ReadingSummary>
+
 
 | Risk | Impact | Mitigation |
 |---|---|---|
@@ -768,7 +1005,16 @@ Consider:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Executive Positioning
+
+</ReadingSummary>
+
 
 Copilot Studio should be positioned as an enterprise agent platform.
 
@@ -783,7 +1029,16 @@ It enables organizations to:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Deliverables
+
+</ReadingSummary>
+
 
 A Copilot Studio engagement should produce:
 
@@ -800,7 +1055,16 @@ A Copilot Studio engagement should produce:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## References
+
+</ReadingSummary>
+
 
 - Microsoft Learn
 - Microsoft Copilot Studio Documentation
@@ -812,7 +1076,16 @@ A Copilot Studio engagement should produce:
 - Microsoft Purview
 - Microsoft Defender
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## 검색 키워드
+
+</ReadingSummary>
+
 
 - Microsoft 365 Copilot
 - Copilot Studio
@@ -822,6 +1095,17 @@ A Copilot Studio engagement should produce:
 - Copilot 도입
 - AI Agent 운영 모델
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Contact / Asset Request
 
+</ReadingSummary>
+
+
 For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+
+</ReadingSection>

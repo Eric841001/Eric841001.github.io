@@ -8,58 +8,18 @@ toc_max_heading_level: 2
 
 # Tenant-to-Tenant Migration Playbook
 
-<section aria-label="Tenant-to-tenant migration playbook hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Microsoft 365 Tenant Migration Control Tower</span>
-    <h2>Run tenant migration as a business cutover program</h2>
-    <p>Tenant-to-tenant migration is not a simple data transfer. It requires coordinated planning across identity, domains, Exchange Online, Teams, SharePoint, OneDrive, security, compliance, communication and hypercare.</p>
-    <div aria-label="Tenant migration signals" className="kc-hero-signal-row">
-      <span>Identity</span>
-      <span>Mail</span>
-      <span>Data</span>
-      <span>Cutover</span>
-    </div>
-    <div aria-label="Tenant migration related pages" className="kc-topic-hero__actions">
-      <a href="/knowledge/migration/tenant-to-tenant" className="kc-topic-button kc-topic-button--primary">Tenant Migration</a>
-      <a href="/knowledge/migration/global-tenant-consolidation-framework" className="kc-topic-button">Global Consolidation</a>
-      <a href="/knowledge/contact" className="kc-topic-button">Request Migration Assets</a>
-    </div>
-  </div>
-  <div aria-label="Tenant migration control tower visual" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Control Tower</span>
-      <strong>Cutover without surprises</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="#migration-scope" className="kc-factory-card">
-        <small>01</small>
-        <strong>Scope</strong>
-        <span>Users, mailboxes, Teams, SharePoint, OneDrive, domains and policies.</span>
-      </a>
-      <a href="#phase-3-migration-design" className="kc-factory-card">
-        <small>02</small>
-        <strong>Design</strong>
-        <span>Identity mapping, domain plan, coexistence, pilot and rollback.</span>
-      </a>
-      <a href="#production-cutover" className="kc-factory-card">
-        <small>03</small>
-        <strong>Cutover</strong>
-        <span>DNS, mail flow, workload validation, executive confirmation and comms.</span>
-      </a>
-      <a href="#hypercare" className="kc-factory-card">
-        <small>04</small>
-        <strong>Hypercare</strong>
-        <span>Support, issue triage, reporting, user confidence and closure evidence.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Migration rule</strong>
-      <span>Identity, mail, collaboration, security and user communication must be operated as one cutover rhythm, not separate technical tracks.</span>
-    </div>
-  </div>
-</section>
+<ReadingControls />
+
+
+
+
+<ReadingSection open>
+<ReadingSummary>
 
 ## Executive Summary
+
+</ReadingSummary>
+
 
 Tenant-to-tenant migration is not a simple data transfer project.
 
@@ -111,7 +71,77 @@ This playbook provides a structured delivery model for Microsoft 365 tenant migr
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
+## 문서 소개와 설계 관점
+
+</ReadingSummary>
+
+<section aria-label="Tenant-to-tenant migration playbook hero" className="kc-topic-hero">
+  <div className="kc-topic-hero__content">
+    <span className="kc-topic-hero__eyebrow">Microsoft 365 Tenant Migration Control Tower</span>
+    <h2>Run tenant migration as a business cutover program</h2>
+    <p>Tenant-to-tenant migration is not a simple data transfer. It requires coordinated planning across identity, domains, Exchange Online, Teams, SharePoint, OneDrive, security, compliance, communication and hypercare.</p>
+    <div aria-label="Tenant migration signals" className="kc-hero-signal-row">
+      <span>Identity</span>
+      <span>Mail</span>
+      <span>Data</span>
+      <span>Cutover</span>
+    </div>
+    <div aria-label="Tenant migration related pages" className="kc-topic-hero__actions">
+      <a href="/knowledge/migration/tenant-to-tenant" className="kc-topic-button kc-topic-button--primary">Tenant Migration</a>
+      <a href="/knowledge/migration/global-tenant-consolidation-framework" className="kc-topic-button">Global Consolidation</a>
+      <a href="/knowledge/contact" className="kc-topic-button">Request Migration Assets</a>
+    </div>
+  </div>
+  <div aria-label="Tenant migration control tower visual" className="kc-factory-panel">
+    <div className="kc-factory-panel__header">
+      <span>Control Tower</span>
+      <strong>Cutover without surprises</strong>
+    </div>
+    <div className="kc-factory-grid">
+      <a href="#migration-scope" className="kc-factory-card">
+        <small>01</small>
+        <strong>Scope</strong>
+        <span>Users, mailboxes, Teams, SharePoint, OneDrive, domains and policies.</span>
+      </a>
+      <a href="#phase-3-migration-design" className="kc-factory-card">
+        <small>02</small>
+        <strong>Design</strong>
+        <span>Identity mapping, domain plan, coexistence, pilot and rollback.</span>
+      </a>
+      <a href="#production-cutover" className="kc-factory-card">
+        <small>03</small>
+        <strong>Cutover</strong>
+        <span>DNS, mail flow, workload validation, executive confirmation and comms.</span>
+      </a>
+      <a href="#hypercare" className="kc-factory-card">
+        <small>04</small>
+        <strong>Hypercare</strong>
+        <span>Support, issue triage, reporting, user confidence and closure evidence.</span>
+      </a>
+    </div>
+    <div className="kc-guardrail-panel">
+      <strong>Migration rule</strong>
+      <span>Identity, mail, collaboration, security and user communication must be operated as one cutover rhythm, not separate technical tracks.</span>
+    </div>
+  </div>
+</section>
+
+</ReadingSection>
+
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Migration Scope
+
+</ReadingSummary>
+
 
 Typical tenant-to-tenant migration scope includes:
 
@@ -129,7 +159,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Migration Architecture
+
+</ReadingSummary>
+
 
 <div className="kc-factory-panel">
   <div className="kc-panel-header">
@@ -165,7 +204,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Migration Lifecycle
+
+</ReadingSummary>
+
 
 <div aria-label="Tenant migration lifecycle" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -208,7 +256,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Phase 1. Discovery
+
+</ReadingSummary>
+
 
 ### Objectives
 
@@ -234,7 +291,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Phase 2. Assessment
+
+</ReadingSummary>
+
 
 ### Assessment Checklist
 
@@ -251,7 +317,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Phase 3. Migration Design
+
+</ReadingSummary>
+
 
 ### Design Components
 
@@ -279,7 +354,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Identity Migration
+
+</ReadingSummary>
+
 
 ### Key Considerations
 
@@ -304,7 +388,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Domain Migration
+
+</ReadingSummary>
+
 
 ### Key Considerations
 
@@ -352,7 +445,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Exchange Online Migration
+
+</ReadingSummary>
+
 
 ### Scope Items
 
@@ -379,7 +481,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Teams Migration
+
+</ReadingSummary>
+
 
 ### Scope Items
 
@@ -403,7 +514,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## SharePoint Migration
+
+</ReadingSummary>
+
 
 ### Scope Items
 
@@ -429,7 +549,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## OneDrive Migration
+
+</ReadingSummary>
+
 
 ### Scope Items
 
@@ -452,7 +581,16 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Security and Compliance Migration
+
+</ReadingSummary>
+
 
 ### Assessment Areas
 
@@ -473,7 +611,16 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Pilot Migration
+
+</ReadingSummary>
+
 
 ### Pilot Objectives
 
@@ -494,7 +641,16 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Production Cutover
+
+</ReadingSummary>
+
 
 ### Cutover Preparation
 
@@ -521,7 +677,16 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Hypercare
+
+</ReadingSummary>
+
 
 ### Hypercare Scope
 
@@ -546,7 +711,16 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Risk Register
+
+</ReadingSummary>
+
 
 | ID | Risk | Impact | Mitigation |
 |---|---|---|---|
@@ -559,7 +733,16 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Communication Plan
+
+</ReadingSummary>
+
 
 ### Communication Audiences
 
@@ -583,7 +766,16 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Deliverables
+
+</ReadingSummary>
+
 
 Tenant migration projects should produce:
 
@@ -600,7 +792,16 @@ Tenant migration projects should produce:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Success Criteria
+
+</ReadingSummary>
+
 
 The migration is considered successful when:
 
@@ -614,7 +815,16 @@ The migration is considered successful when:
 
 ---
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Advanced Tenant Consolidation Considerations
+
+</ReadingSummary>
+
 
 ### Mail Coexistence with Legacy Mail Systems
 
@@ -777,7 +987,16 @@ Before executing tenant consolidation, validate:
 
 
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## References
+
+</ReadingSummary>
+
 
 - Microsoft Learn
 - Microsoft Exchange Online Migration Guidance
@@ -785,7 +1004,16 @@ Before executing tenant consolidation, validate:
 - Microsoft Teams Migration Considerations
 - Microsoft Entra Documentation
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Global Tenant Consolidation Considerations
+
+</ReadingSummary>
+
 
 ### Mail Coexistence Strategy
 
@@ -974,7 +1202,16 @@ Before Migration
 - Data Migration Validation
 - User Communication Plan
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## 검색 키워드
+
+</ReadingSummary>
+
 
 - Microsoft 365 playbook
 - Copilot readiness playbook
@@ -984,6 +1221,17 @@ Before Migration
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
 
+
+</ReadingSection>
+
+<ReadingSection>
+<ReadingSummary>
+
 ## Contact / Asset Request
 
+</ReadingSummary>
+
+
 For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+
+</ReadingSection>
