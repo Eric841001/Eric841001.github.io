@@ -218,9 +218,9 @@ Verify:
 
 ## 한국어 요약
 
-MDE macOS onboarding은 macOS 장비를 Microsoft Defender for Endpoint와 Defender XDR 운영 체계에 연결하기 위한 보안 배포 작업입니다.
+macOS에 Defender for Endpoint를 설치하고 필요한 권한과 조직 등록을 설정하는 절차입니다.
 
-Intune, Jamf, device compliance, network permission, privacy permission, sensor health, alert visibility를 함께 검토해야 하며, pilot validation과 help desk runbook을 준비해야 안정적으로 확산할 수 있습니다.
+지원 OS와 앱 버전을 확인하고 시스템 확장, 디스크 접근 권한과 정책 적용 결과를 시험하세요. 설치 완료만으로 보호와 등록이 끝났다고 판단하지 않습니다.
 
 ## Requestable Assets
 

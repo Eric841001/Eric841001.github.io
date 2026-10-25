@@ -64,9 +64,9 @@ It is designed for executive review, presales storytelling, architecture worksho
 
 ## 한국어 요약
 
-이 문서는 Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance, Proposal asset을 하나의 enterprise architecture 관점으로 연결한 executive blueprint입니다.
+이 문서는 Microsoft 365, Azure, 보안과 Copilot 도입 계획을 경영진에게 설명할 때 사용하는 구성 예시입니다.
 
-개별 기술 문서가 아니라, 고객에게 "왜 이 구성이 필요한지", "어떤 순서로 준비해야 하는지", "어떤 산출물이 필요한지"를 설명하기 위한 상위 architecture story로 사용할 수 있습니다.
+도입 목적, 먼저 준비할 사항, 투자 범위와 담당자의 결정을 한눈에 볼 수 있도록 정리했습니다.
 
 ## Executive Platform View
 

@@ -46,9 +46,9 @@ Microsoft currently documents outbound TCP 443 for PTA feature operations and TC
 
 ## 한국어 요약
 
-Squid 같은 Proxy의 deny log는 **통신 시도 근거**일 뿐 AADC 또는 PTA의 필수 허용 URL 목록이 아닙니다. Entra Connect 서버, PTA 서버, Client 트래픽을 분리 수집하고 Microsoft 공식 문서, 호출 process, 기능 실패·복구, 재차단 negative test를 함께 확인해야 합니다.
+프록시의 차단 기록은 통신을 시도했다는 뜻이며, 해당 주소를 반드시 허용해야 한다는 근거는 아닙니다. Entra Connect 서버, PTA 서버와 사용자 기기의 기록을 나누고 호출 프로세스와 기능의 실패·복구 여부를 확인하세요.
 
-PTA의 최신 공식 기준은 기능 통신 TCP 443, 인증서 폐기 목록 확인 TCP 80이며, TCP 8080은 443을 사용할 수 없을 때 상태 보고에만 선택적으로 사용됩니다. 구버전 agent는 추가 port가 필요할 수 있으므로 설치 version을 확인하지 않고 일괄 차단하면 안 됩니다. PTA agent와 Microsoft Entra endpoint 사이 outbound TLS에는 inline inspection이나 TLS termination을 적용하지 않습니다.
+PTA는 기능 통신에 TCP 443, 인증서 폐기 확인에 TCP 80을 사용합니다. TCP 8080은 443을 사용할 수 없을 때 상태 보고에만 선택적으로 사용합니다. 구버전 에이전트의 추가 포트는 설치 버전별로 확인하세요. PTA와 Microsoft Entra 사이의 송신 TLS 통신에는 중간 검사나 TLS 종료를 적용하지 않습니다.
 
 ---
 

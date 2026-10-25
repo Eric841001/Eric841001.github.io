@@ -7,9 +7,9 @@ toc_max_heading_level: 2
 
 # Knowledge Center
 
-Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다.
+Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 
-이 영역은 단순한 기술 메모가 아니라 실제 고객 제안, architecture design, implementation, governance, 운영 handover에 바로 재사용할 수 있는 Enterprise Knowledge Base로 구성됩니다.
+고객 제안, 설계, 구축과 운영 인수인계에 필요한 문서를 주제별로 찾을 수 있습니다.
 
 <section aria-label="Knowledge Center overview hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -99,10 +99,10 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 | Domain | Purpose | Primary Audience |
 |---|---|---|
-| Microsoft 365 | Modern Work, collaboration, governance 설계 | IT Manager, Collaboration Lead |
-| Azure | Cloud infrastructure, Landing Zone, cost control 설계 | Cloud Architect, Infra Manager |
-| Security | Zero Trust, identity, device, data protection 설계 | CISO, Security Manager |
-| Copilot | Copilot readiness, adoption, governance 설계 | CIO, Digital Innovation Lead |
+| Microsoft 365 | Modern Work, 협업, 운영 기준 설계 | IT Manager, Collaboration Lead |
+| Azure | Cloud infrastructure, Landing Zone, 비용 관리 설계 | Cloud Architect, Infra Manager |
+| Security | Zero Trust, ID, 기기, 데이터 보호 설계 | CISO, Security Manager |
+| Copilot | Copilot 준비 상태, 도입·정착, 운영 기준 설계 | CIO, Digital Innovation Lead |
 | Migration | Tenant, mail, file, Google Workspace 전환 | Migration PM, IT Operations |
 | Licensing | E3/E5/Business Premium/F3 license optimization | CIO, Procurement, IT Finance |
 
@@ -148,12 +148,12 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 | Section | Description |
 |---|---|
-| Executive Summary | 핵심 결론과 business impact |
-| Business Scenario | 고객 상황, pain point, requirement |
+| Executive Summary | 핵심 결론과 업무에 미치는 영향 |
+| Business Scenario | 고객 상황, 해결할 문제와 요구사항 |
 | Architecture | 권장 architecture와 design principle |
-| Implementation | 구축 절차, configuration 기준, operating model |
-| Licensing | 필요한 license와 제약사항 |
-| Security | security consideration과 control 방안 |
+| Implementation | 구축 절차, configuration 기준, 운영 방식 |
+| Licensing | 필요한 라이선스와 제약사항 |
+| Security | 보안 consideration과 제어 방안 |
 | Best Practice | 실제 project 기반 권장사항 |
 | Troubleshooting | 자주 발생하는 문제와 해결 방법 |
 | Lessons Learned | project delivery 경험 기반 교훈 |
@@ -165,7 +165,7 @@ Microsoft Enterprise Consulting Platform의 핵심 기술 지식 허브입니다
 
 ### Microsoft 365
 
-Microsoft 365 영역은 기업의 collaboration, security, governance, license optimization을 다룹니다.
+Microsoft 365 영역은 기업의 협업, 보안, 운영 기준, 라이선스 optimization을 다룹니다.
 
 - E3 vs E5 comparison
 - SharePoint / OneDrive governance
@@ -176,7 +176,7 @@ Microsoft 365 영역은 기업의 collaboration, security, governance, license o
 
 ### Security
 
-Security 영역은 Zero Trust 기반의 identity, device, data, access control 설계를 다룹니다.
+Security 영역은 Zero Trust 기반의 ID, 기기, 데이터, 접근 제어 설계를 다룹니다.
 
 - Entra ID
 - Conditional Access
@@ -188,7 +188,7 @@ Security 영역은 Zero Trust 기반의 identity, device, data, access control �
 
 ### Copilot
 
-Copilot 영역은 기술 배포뿐 아니라 adoption, change management, governance까지 함께 다룹니다.
+Copilot 영역은 기술 배포뿐 아니라 도입·정착, 변경 관리, 운영 기준까지 함께 다룹니다.
 
 - Copilot Readiness
 - Data Security Readiness
@@ -220,8 +220,8 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 | Proposal | proposal, SOW, WBS 작성 |
 | Assessment | 고객 현황 진단 checklist 구성 |
 | Architecture | To-Be architecture 설계 |
-| Delivery | implementation project 수행 기준 |
-| Executive Reporting | executive report 핵심 메시지 구성 |
+| Delivery | 구축 project 수행 기준 |
+| Executive Reporting | 경영진 보고의 주요 내용 작성 |
 
 ---
 
@@ -232,8 +232,8 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 - Microsoft Learn 수준의 technical accuracy
 - Microsoft consulting 수준의 document structure
 - 실제 고객 project에 적용 가능한 practicality
-- license 포함 여부와 제약사항 명확화
-- security, operation, cost 관점 동시 반영
+- 라이선스 포함 여부와 제약사항 명확화
+- 보안·운영 조건과 비용 확인
 - 고객명은 사용하지 않고 industry 기준으로 일반화
 
 ---

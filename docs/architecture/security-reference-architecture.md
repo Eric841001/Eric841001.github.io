@@ -65,9 +65,9 @@ Microsoft security architecture integrates identity, endpoint, email, collaborat
 
 ## 한국어 요약
 
-이 문서는 Microsoft Security architecture를 Zero Trust 관점으로 정리한 reference architecture입니다.
+Microsoft 제품으로 Zero Trust 보안을 구성할 때 참고할 수 있는 설계입니다.
 
-Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Sentinel, security operation을 따로 보는 것이 아니라 하나의 security operating model로 연결합니다.
+Entra ID와 Conditional Access로 접근을 제어하고, Intune과 Defender로 기기 상태를 확인하며, Purview로 데이터를 보호합니다. 제품별 담당자와 사고 대응 절차도 함께 정합니다.
 
 ## Business Scenario
 

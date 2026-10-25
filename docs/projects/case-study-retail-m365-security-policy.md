@@ -60,9 +60,9 @@ The engagement converted Microsoft 365 license capabilities and current-state fi
 
 ## Korean Summary
 
-유통 업종 고객은 Microsoft 365 환경에서 identity, access, collaboration, endpoint, data protection, Power Platform 정책을 통합적으로 점검해야 했습니다.
+유통 업종 고객은 Microsoft 365 환경에서 ID, 접근 권한, 협업, 엔드포인트, 데이터 보호, Power Platform 정책을 통합적으로 점검해야 했습니다.
 
-핵심은 단순한 보안 기능 목록 정리가 아니라, 보유 license에서 사용 가능한 기능, 현재 활성화 상태, 개선 과제, 선행 요건, 적용 영향도를 하나의 실행 가능한 보안 정책 개선 로드맵으로 정리하는 것이었습니다.
+보유 라이선스에서 사용할 수 있는 기능과 현재 설정을 확인했습니다. 개선 과제마다 선행 조건, 적용 영향과 작업 순서를 기록했습니다.
 
 공개 레퍼런스에는 고객명, 실제 사용자 수, domain, 내부 부서명, 기존 솔루션명, 세부 일정, 내부 파일명은 포함하지 않습니다.
 

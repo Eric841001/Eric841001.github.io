@@ -599,7 +599,7 @@ Enterprise AI Operating System
 - Copilot adoption
 - Copilot readiness
 - Copilot 도입
-- AI Agent 운영 모델
+- AI 에이전트 운영 모델
 
 ## Contact / Asset Request
 

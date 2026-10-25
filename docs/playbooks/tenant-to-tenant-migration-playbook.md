@@ -1087,7 +1087,7 @@ Tenant Consolidation 이후
 
 Cross Tenant Sync를 우선 검토하고
 
-Full Migration은 Business Requirement 검증 후 수행한다.
+전체 이전은 업무상 필요성과 이전 범위를 확인한 뒤 진행합니다.
 
 ---
 

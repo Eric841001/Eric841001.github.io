@@ -67,11 +67,11 @@ This document provides an enterprise design methodology for Microsoft 365, Azure
 
 ## 한국어 요약
 
-Conditional Access는 Microsoft Entra ID 기반의 접근 제어 정책 엔진입니다. 사용자가 누구인지, 어떤 device에서 접속하는지, 어떤 location인지, 어떤 application에 접근하는지, risk signal이 있는지에 따라 접근을 허용하거나 차단합니다.
+Conditional Access는 사용자, 접속 기기·위치·앱과 위험 신호를 확인해 접근 조건을 적용하는 Entra ID 기능입니다.
 
-실무에서는 모든 사용자를 한 번에 차단하는 방식보다 report-only, pilot group, exclusion, break-glass account, sign-in log 분석을 통해 단계적으로 적용하는 것이 안전합니다.
+보고 전용 모드와 소수 사용자를 대상으로 먼저 시험하고, 긴급 접근 계정과 예외 대상을 정합니다. 로그인 기록으로 정책 적용 결과를 확인한 뒤 범위를 넓히세요.
 
-Copilot 도입 시에도 Conditional Access는 중요합니다. Copilot은 Microsoft 365 data permission을 기반으로 동작하므로, identity, device, session, data protection 정책이 함께 정리되어야 합니다.
+Copilot 도입 시에도 Conditional Access는 중요합니다. Copilot은 Microsoft 365 데이터 접근 권한을 기반으로 동작하므로, ID, 기기, session, 데이터 보호 정책이 함께 정리되어야 합니다.
 
 ## Why Conditional Access Matters
 

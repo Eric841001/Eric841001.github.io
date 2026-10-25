@@ -95,11 +95,11 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 ## 한국어 요약
 
-Copilot 도입은 license를 배정하고 교육을 진행하는 단순 rollout이 아닙니다. 성공적인 도입은 data readiness, security, Purview, DLP, use case prioritization, champion model, ROI measurement, change management를 함께 설계할 때 가능합니다.
+Copilot을 도입할 때 필요한 자료 준비, 접근 권한 점검, 사용자 교육과 지원 자료를 안내합니다.
 
-특히 2026년 이후에는 "누가 Copilot을 사용할 것인가"보다 "어떤 업무에서 Copilot, available reasoning models, Copilot Studio Agent, Copilot Cowork를 어떻게 연결해 반복 가능한 가치를 만들 것인가"가 더 중요합니다.
+시범 업무와 대상을 정하고 업무 시간, 결과물 품질과 비용을 확인한 뒤 적용 범위를 넓히세요.
 
-방문자가 이 페이지에서 얻어야 할 핵심은 명확합니다. Copilot은 기능 교육이 아니라 업무 방식의 변화이며, adoption은 readiness, governance, training, measurement가 연결된 운영 모델이어야 합니다.
+시범 업무와 대상 사용자를 정하고 자료 준비, 교육과 지원 절차를 확인하세요. 적용 전후의 결과를 비교해 다음 도입 범위를 결정합니다.
 
 ## AI Adoption Storyline
 

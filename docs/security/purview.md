@@ -52,9 +52,9 @@ description: Microsoft Purview guide for sensitivity labels, DLP, retention, aud
 
 ## 한국어 요약
 
-Purview는 보안팀만 사용하는 compliance 도구가 아닙니다. Microsoft 365, Copilot, Security, Legal, IT, business owner가 같은 기준으로 “어떤 데이터를 보호해야 하는가”를 결정하게 만드는 enterprise data governance layer입니다.
+Purview의 데이터 분류·보호·보존·감사 기능을 정리한 문서입니다.
 
-AI 도입 관점에서는 특히 중요합니다. Copilot과 agent는 기존 permission, sharing link, sensitivity label, retention, DLP 정책의 영향을 그대로 받습니다. 따라서 Purview 설계는 Copilot readiness, oversharing review, data owner 정비와 함께 진행되어야 합니다.
+보안·법무·IT 담당자와 자료 소유자가 보호할 정보와 보관·공유 기준을 합의합니다. 기능별 라이선스와 적용되는 앱은 따로 확인하세요.
 
 ## Business Scenario
 

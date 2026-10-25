@@ -43,9 +43,9 @@ The process should be connected to device retirement, tenant migration, security
 
 ## 한국어 요약
 
-Microsoft Defender for Endpoint Windows Offboarding은 Windows device를 Defender for Endpoint 관리 범위에서 제거하는 절차입니다.
+Windows 기기를 Defender for Endpoint에서 오프보딩할 때 확인할 승인·배포·검증 절차입니다.
 
-Device retirement, tenant migration, security tool transition 상황에서 사용되며, Intune deployment, validation, asset update, audit record를 함께 관리해야 합니다.
+오프보딩은 앱 제거와 다릅니다. 기기 상태와 마지막 통신, 대체 보호 수단을 확인하고 포털에 남는 기록은 보존 기간과 구분해 판단하세요.
 
 ---
 

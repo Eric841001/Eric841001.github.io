@@ -62,9 +62,9 @@ For Microsoft consulting projects, a strong SOW prevents ambiguity between presa
 
 ## 한국어 요약
 
-SOW는 제안서와 실제 수행 사이의 기준 문서입니다.
+SOW는 프로젝트에서 수행할 작업과 제공할 결과물, 책임과 인수 조건을 정하는 문서입니다.
 
-Microsoft 365, Security, Copilot, Azure, Migration 프로젝트에서는 scope, deliverables, assumptions, exclusions, acceptance criteria가 명확하지 않으면 일정, 비용, 품질 리스크가 커집니다.
+포함·제외 범위, 선행 조건과 고객이 준비할 사항을 명시하고, 변경 요청이 생겼을 때의 승인 절차도 정합니다.
 
 SOW는 고객에게 "무엇을 제공하는가"만 설명하는 문서가 아닙니다. 어떤 조건에서 시작하고, 어떤 산출물로 검토하며, 어떤 기준으로 완료를 승인할지 합의하는 delivery contract입니다.
 

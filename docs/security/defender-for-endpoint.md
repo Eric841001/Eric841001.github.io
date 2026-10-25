@@ -58,9 +58,9 @@ The strongest deployment pattern is to design Defender for Endpoint as an operat
 
 ## 한국어 요약
 
-Defender for Endpoint는 단순한 antivirus 대체품이 아닙니다. Windows, macOS, Linux, server, privileged workstation의 보안 신호를 수집하고, Defender XDR incident, Intune compliance, Conditional Access, vulnerability remediation, SOC response와 연결하는 endpoint security 운영 기반입니다.
+Defender for Endpoint로 기기의 위협과 취약점을 확인하고 대응하는 절차를 정리했습니다.
 
-특히 Copilot과 AI Agent를 도입하는 조직에서는 unmanaged device, risky device, local malware, browser-based threat, vulnerable software가 Microsoft 365 데이터 접근 위험으로 이어질 수 있습니다. 따라서 endpoint visibility와 exception 운영 모델을 먼저 정리해야 합니다.
+Defender XDR, Intune과 Conditional Access를 연결할 때는 기기별 지원 기능과 위험 신호, 정책 적용 결과를 확인하세요.
 
 ## Control Model
 

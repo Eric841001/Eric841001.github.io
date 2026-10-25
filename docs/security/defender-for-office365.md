@@ -58,9 +58,9 @@ The practical design question is: which messages are blocked, which are held for
 
 ## 한국어 요약
 
-Defender for Office 365는 Exchange Online, Teams, SharePoint, OneDrive 환경에서 phishing, malware, malicious link, unsafe attachment 위험을 줄이는 보안 계층입니다.
+Defender for Office 365로 메일과 협업 자료의 피싱, 악성 링크와 첨부파일 위험을 줄이는 방법입니다.
 
-정책을 켜는 것만으로는 충분하지 않습니다. Safe Links, Safe Attachments, anti-phishing, quarantine, user report, false-positive review, attack simulation, incident response까지 하나의 email security 운영 모델로 설계해야 합니다.
+Safe Links, Safe Attachments와 피싱 방지 정책을 설정하고, 사용자 신고·격리 검토·오탐 처리와 사고 대응 담당자를 정합니다.
 
 ## Core Control Model
 

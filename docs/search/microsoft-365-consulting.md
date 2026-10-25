@@ -94,9 +94,9 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 ## 한국어 요약
 
-Microsoft 365 컨설팅은 단순히 Exchange Online, Teams, SharePoint, OneDrive를 구축하는 일이 아닙니다. 실제 enterprise 환경에서는 Entra ID, Intune, Defender, Purview, Conditional Access, collaboration governance, migration, 운영 인수인계까지 함께 설계해야 안정적인 결과가 나옵니다.
+Microsoft 365 컨설팅은 협업 서비스, 사용자·기기 관리, 데이터 보호와 운영 절차를 함께 검토합니다.
 
-이 Knowledge Center는 Microsoft 365 architecture, security baseline, tenant governance, SOW, WBS, assessment workbook, migration planning을 연결해 실무형 컨설팅 산출물로 정리합니다.
+이 페이지에서 현황 진단, 설계, 이전과 운영 인수인계에 필요한 문서를 찾을 수 있습니다.
 
 ## Consulting Journey Map
 

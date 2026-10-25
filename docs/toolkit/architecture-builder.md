@@ -371,9 +371,9 @@ Architecture outputs should include:
 
 ## 한국어 요약
 
-Architecture Builder는 고객 요구사항을 Microsoft 365, Security, Copilot, Azure, Migration 관점의 target architecture로 바꾸기 위한 실무 도구입니다. 단순한 구성도 작성이 아니라 business requirement, security requirement, governance owner, risk, roadmap을 함께 정리하는 데 목적이 있습니다.
+고객 요구사항을 Microsoft 365, Azure, 보안과 Copilot 설계로 정리할 때 쓰는 도구입니다.
 
-컨설팅에서는 이 문서를 사용해 current state, gap analysis, target state, decision log, risk register, executive summary를 일관된 구조로 만들 수 있습니다.
+구성도와 함께 적용할 정책, 담당자, 위험과 검증 방법을 기록하고 실행 순서를 정합니다.
 
 ## 검색 키워드
 

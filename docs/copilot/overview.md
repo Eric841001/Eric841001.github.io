@@ -322,13 +322,13 @@ Start with [Copilot Studio 2026 Platform Update](/knowledge/copilot/copilot-stud
 
 ## 한국어 요약
 
-Microsoft 365 Copilot 도입은 단순히 license를 구매하고 사용자를 활성화하는 작업이 아닙니다. 성공적인 Copilot 도입을 위해서는 data readiness, permission cleanup, security policy, business scenario, user training, cost management, value measurement가 함께 설계되어야 합니다.
+Microsoft 365 Copilot을 도입하기 전에 자료의 공유 권한, 보안 정책과 실제로 맡길 업무를 확인합니다.
 
-Enterprise 환경에서 Copilot은 기존 Microsoft 365 data permission을 기반으로 답변합니다. 따라서 SharePoint, Teams, OneDrive의 permission sprawl, sensitive information exposure, DLP policy, Purview label, Defender security signal을 함께 점검해야 합니다.
+사용자 교육과 지원, 비용 관리와 성과 측정 방법을 정한 뒤 시범 적용합니다. Copilot Studio나 Cowork로 업무를 넓힐 때는 각각의 권한과 과금 조건을 다시 확인하세요.
 
 현재 모델 안내는 [최신 모델 제공 기록](./official-update-catchup-2026-10.md#model-availability)을 기준으로 확인하세요. 9월 30일 발표된 GPT-6.1 Sol·Claude Sonnet 5.5도 앱별 배포 일정·라이선스·조직 정책이 다르므로 실제 사용자 화면과 함께 검증해야 합니다. 위 7월 GPT-5.6 섹션은 당시 발표를 보존한 기록입니다.
 
-Copilot Studio와 M365 Agents는 단순한 실험이 아니라 agent portfolio, owner model, lifecycle, cost, security, monitoring을 포함한 운영 모델로 설계해야 합니다. Copilot Cowork처럼 장기 실행 업무로 확장될수록 approval, 책임자, 비용 통제, 품질 측정이 더 중요해집니다.
+Copilot Studio와 M365 Agents를 배포할 때는 에이전트 목록과 담당자, 변경·폐기 절차, 비용과 모니터링 기준을 정합니다. Copilot Cowork처럼 장기 실행 업무로 확장될수록 승인, 책임자, 비용 통제, 품질 측정이 더 중요해집니다.
 
 ## 검색 키워드
 
@@ -350,12 +350,12 @@ Copilot Studio와 M365 Agents는 단순한 실험이 아니라 agent portfolio, 
 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- Copilot 도입 전 readiness assessment
-- 임원 보고용 Copilot adoption roadmap 작성
+- Copilot 도입 전 준비 상태 현황 진단
+- 임원 보고용 Copilot 도입·정착 추진 계획 작성
 - 최신 모델 제공 범위·앱별 배포·라이선스를 확인한 사용자 안내 자료 정리
-- 부서별 Copilot use case 발굴
-- Copilot Studio 기반 business agent 설계
-- Copilot usage와 license value 측정
+- 부서별 Copilot 활용 예시 발굴
+- Copilot Studio 기반 업무 에이전트 설계
+- Copilot usage와 라이선스 value 측정
 - 데이터 유출 위험을 줄이기 위한 Purview / DLP 연계 설계
 
 ## Contact / Asset Request

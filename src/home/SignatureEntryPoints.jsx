@@ -6,16 +6,16 @@ import styles from './SignatureEntryPoints.module.css';
 const entries = [
   {
     label: '아키텍처',
-    title: '엔터프라이즈 아키텍처 설계',
+    title: 'Microsoft 365·Azure 설계',
     description:
-      'Microsoft 365·Azure·보안·Copilot을 연결하는 설계 관점을 확인하세요.',
+      'Microsoft 365·Azure·보안·Copilot 설계에서 확인할 사항을 정리했습니다.',
     path: '/knowledge/architecture/executive-architecture-blueprint',
   },
   {
     label: '도입 사례',
     title: 'AI 에이전트 운영 사례',
     description:
-      '익명화한 사례로 에이전트 구성과 거버넌스·성과 측정 방식을 살펴보세요.',
+      '고객명을 제외한 사례에서 에이전트 구성, 운영 기준과 효과 측정 방법을 살펴보세요.',
     path: '/knowledge/projects/case-study-enterprise-ai-agent-factory',
   },
   {

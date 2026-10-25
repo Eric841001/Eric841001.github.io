@@ -69,9 +69,9 @@ The objective is to ensure that users access only approved corporate tenants and
 
 ## 한국어 요약
 
-Global Secure Access Whitelist Design은 사용자가 승인된 Microsoft 365 tenant와 업무용 application에만 접근하도록 제어하는 Zero Trust 기반 접근 통제 설계입니다.
+Global Secure Access와 테넌트 제한을 이용해 승인된 Microsoft 365 테넌트로의 접속을 관리하는 설계입니다.
 
-Entra Conditional Access, Intune compliance, tenant restriction, Global Secure Access policy를 함께 설계해야 개인 tenant 사용, Shadow IT, 비관리 device 접속, 데이터 유출 위험을 줄일 수 있습니다.
+트래픽 전달 경로와 허용할 테넌트를 정한 뒤 Conditional Access와 Intune의 기기 준수 정책을 연결합니다. 개인 계정, 승인된 협력사 계정과 우회 경로를 각각 시험하세요.
 
 ---
 

@@ -43,9 +43,9 @@ This framework helps organizations define measurable value across productivity, 
 
 ## 한국어 요약
 
-Copilot ROI는 license 배정 수나 active user만으로 판단하면 부족합니다. 실제 가치는 회의, 이메일, 문서 작성, 보고, 분석, 제안, 고객 커뮤니케이션 같은 업무 흐름에서 시간이 줄고 품질이 높아지며 반복 가능한 use case가 만들어질 때 확인됩니다.
+Copilot의 효과는 사용 인원과 접속 횟수 외에 업무 시간, 결과물 품질과 검토 비용으로 확인합니다.
 
-이 framework는 Copilot 도입을 “사용률 보고”가 아니라 “business value realization”으로 관리하기 위한 측정 모델입니다. 특히 pilot 단계부터 baseline, role별 use case, adoption signal, governance signal을 같이 잡아야 executive review에서 설득력이 생깁니다.
+도입 전 기준값을 기록하고 같은 업무의 도입 후 결과와 비교합니다. 이 문서의 계산식과 예시 수치는 측정 계획을 세울 때 참고하세요.
 
 ---
 

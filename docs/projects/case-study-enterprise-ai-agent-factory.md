@@ -72,9 +72,9 @@ The objective was to convert scattered AI ideas into a governed Agent portfolio 
 
 ## 한국어 요약
 
-이 사례는 Copilot Studio와 AI Agent를 활용해 현업 업무 자동화 후보를 발굴하고, Agent Factory 운영 모델로 정리하는 익명화된 customer success pattern입니다.
+Copilot Studio로 업무 자동화 후보를 검토하고 에이전트의 승인·배포·운영 절차를 정리한 사례입니다.
 
-고객명과 내부 프로젝트명은 공개하지 않고, 제조/소재/상사/대기업 그룹사에서 반복적으로 나타나는 Agent use case와 governance pattern만 정리합니다.
+고객명과 내부 프로젝트명은 제외했습니다. 업종별 업무 예시, 담당자 역할과 운영 기준을 참고하세요.
 
 ## Key Challenges
 
@@ -197,8 +197,8 @@ The objective was to convert scattered AI ideas into a governed Agent portfolio 
 - Agent prioritization matrix
 - Multi-Agent operating model
 - Copilot Studio 고객 사례
-- AI Agent 도입 사례
-- Agent Factory 운영 모델
+- AI 에이전트 도입 사례
+- 에이전트 운영 절차
 
 ## Reference Snapshot
 

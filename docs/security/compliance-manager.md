@@ -39,9 +39,9 @@ For enterprise architecture, Compliance Manager should be positioned as an opera
 
 ## 한국어 요약
 
-Compliance Manager는 Microsoft cloud 환경의 compliance posture를 점검하고 improvement action, evidence, ownership을 관리하기 위한 도구입니다.
+Compliance Manager에서 평가 항목과 개선 작업, 담당자와 증거 자료를 관리하는 방법입니다.
 
-실무에서는 점수 자체보다 어떤 control을 누가 개선하고, 어떤 evidence를 남기며, 어떤 risk를 임원 또는 governance board에 보고할지가 더 중요합니다.
+점수와 함께 실제로 개선한 설정과 남은 위험을 확인하세요. 도구의 점수가 규정 준수 인증을 뜻하지는 않습니다.
 
 ## Business Scenario
 

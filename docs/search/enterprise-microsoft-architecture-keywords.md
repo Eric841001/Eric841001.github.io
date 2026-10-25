@@ -117,9 +117,9 @@ Visitors may find this site through Korean search queries such as:
 | Area | Natural Korean Queries |
 |---|---|
 | Microsoft 365 Architecture | Microsoft 365 아키텍처, Microsoft 365 컨설팅, Microsoft 365 보안 설계 |
-| Copilot Adoption | Copilot 도입, Copilot readiness, Copilot 거버넌스, Copilot 변화관리 |
-| AI Usage | AI 활용 방법, Microsoft 365 AI 활용, 업무 AI 도입, available reasoning models Copilot |
-| AI Agents | Copilot Studio Agent, AI Agent Factory, AI Agent 거버넌스, Agent Factory 운영 모델 |
+| Copilot Adoption | Copilot 도입, Copilot 준비 상태, Copilot 거버넌스, Copilot 변화관리 |
+| AI Usage | AI 활용 방법, Microsoft 365 AI 활용, 업무 AI 도입, 사용 가능한 추론 모델 Copilot |
+| AI Agents | Copilot Studio Agent, AI 에이전트 Factory, AI 에이전트 거버넌스, 에이전트 운영 절차 |
 | Security | Microsoft 365 보안, Defender XDR 구축, Purview DLP 설계, Conditional Access 설계 |
 | Endpoint | Microsoft Intune 디바이스 관리, Intune 보안 정책, macOS USB 제어 |
 | Migration | Microsoft 365 마이그레이션, Tenant to Tenant Migration, Google Workspace Microsoft 365 전환 |
@@ -131,7 +131,7 @@ Visitors may find this site through Korean search queries such as:
 
 | Landing Page | Best For |
 |---|---|
-| [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | AI 활용 방법, Copilot, available reasoning models, Copilot Studio, Cowork storyline |
+| [How to Use AI in Enterprise](./how-to-use-ai-in-enterprise) | AI 활용 방법, Copilot, 사용 가능한 추론 모델, Copilot Studio, Cowork 활용 안내 |
 | [Microsoft 365 Consulting](./microsoft-365-consulting) | Microsoft 365 architecture and operating model review |
 | [Microsoft 365 Security](./microsoft-365-security) | Security, Defender, Purview, Entra ID, Intune, Zero Trust |
 | [Copilot Adoption](./copilot-adoption) | Adoption, readiness, change management and value tracking |

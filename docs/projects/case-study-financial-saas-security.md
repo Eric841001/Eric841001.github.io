@@ -101,9 +101,9 @@ This anonymized case study summarizes a financial-services pattern for Microsoft
 
 ## 한국어 요약
 
-이 사례는 금융권 또는 규제 산업 환경에서 Microsoft 365와 SaaS access를 승인 가능한 보안 구조로 정리한 익명화된 customer success pattern입니다.
+금융·규제 산업에서 Microsoft 365와 SaaS 접속을 보안 심의에 맞춰 설계한 사례입니다.
 
-핵심은 Conditional Access, device compliance, Defender, Purview, Global Secure Access, exception workflow를 각각의 설정이 아니라 security committee가 검토할 수 있는 evidence-ready architecture로 묶는 것입니다.
+접근 제어와 기기 준수, 데이터 보호와 예외 처리 기준을 정하고 심의 담당자가 확인할 설정과 증거 자료를 준비합니다.
 
 ## Business Context
 

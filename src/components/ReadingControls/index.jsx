@@ -20,7 +20,7 @@ export default function ReadingControls() {
     sections.forEach((section, index) => {section.open = expand || index === 0;});
   }
   return <nav className="kc-reading-controls" aria-label="긴 문서 탐색">
-    <p>요약을 먼저 읽고 필요한 절을 펼쳐 보세요. 목차나 기존 본문 링크로 이동하면 해당 절이 열립니다.</p>
+    <p>요약을 읽은 뒤 필요한 부분을 펼쳐 보세요. 목차나 본문 링크를 누르면 해당 부분이 열립니다.</p>
     <div><button type="button" onClick={() => setSections(true)}>전체 펼치기</button>
     <button type="button" onClick={() => setSections(false)}>요약만 보기</button></div>
   </nav>;

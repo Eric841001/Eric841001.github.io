@@ -5,7 +5,7 @@ import styles from './HeroSection.module.css';
 const capabilities = [
   {
     label: 'Copilot',
-    value: '업무 AI 시작점',
+    value: '문서·메일 업무',
     path: '/knowledge/copilot/overview',
   },
   {
@@ -47,7 +47,7 @@ export default function HeroSection() {
           <div className={styles.heroActions}>
             <a className={styles.primaryButton} href="#latest-updates">최근 업데이트 보기</a>
 
-            <a className={styles.secondaryButton} href="#browse-topics">주제별 가이드 탐색</a>
+            <a className={styles.secondaryButton} href="#browse-topics">주제별 문서 보기</a>
           </div>
 
           <div className={styles.signalRow} aria-label="Portfolio focus areas">
@@ -61,8 +61,8 @@ export default function HeroSection() {
 
         <div className={styles.heroPanel}>
           <div className={styles.panelHeader}>
-            <span>AI 도입과 확장</span>
-            <strong>통제하며 확장</strong>
+            <span>도구별 안내</span>
+            <strong>권한·비용 확인</strong>
           </div>
 
           <div className={styles.capabilityGrid}>
@@ -79,9 +79,9 @@ export default function HeroSection() {
             <p>운영 원칙</p>
             <ul>
               <li>업무 유형과 성과 기준</li>
-              <li>데이터·ID·권한 경계</li>
-              <li>에이전트 수명주기와 승인 책임</li>
-              <li>비용·품질·활용 현황 측정</li>
+              <li>자료와 계정의 접근 권한</li>
+              <li>에이전트 변경·폐기와 승인 담당자</li>
+              <li>사용량·비용과 결과 검토</li>
               <li>민감한 작업의 담당자 검토</li>
             </ul>
           </div>

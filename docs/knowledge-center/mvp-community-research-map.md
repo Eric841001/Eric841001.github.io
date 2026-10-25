@@ -61,9 +61,9 @@ The goal is not to copy external articles. The goal is to monitor respected comm
 
 ## 한국어 요약
 
-이 페이지는 Microsoft MVP와 Microsoft community 전문가들이 공개적으로 공유하는 블로그, 기술 글, 운영 경험을 Enterprise Knowledge Center 관점으로 다시 분류한 research map입니다.
+Microsoft MVP와 커뮤니티 전문가의 공개 블로그·기술 자료를 주제별로 모았습니다.
 
-외부 글을 그대로 복사하지 않고, 반복적으로 등장하는 design pattern과 운영 risk를 Microsoft 365 consulting, Copilot adoption, security architecture, Purview data protection, Azure Landing Zone design에 맞게 재구성합니다.
+커뮤니티 글은 운영 경험을 참고하는 데 사용하고, 현재 지원 조건과 설정 방법은 Microsoft 공식 문서와 다시 확인하세요.
 
 ## Research Principles
 
@@ -126,8 +126,8 @@ When a useful community article is found, translate it into this structure:
 - Microsoft MVP 블로그
 - Microsoft 365 MVP 블로그
 - Microsoft 365 community reference
-- Microsoft 365 Copilot governance 사례
-- Microsoft Purview compliance 블로그
+- Microsoft 365 Copilot 운영 기준 사례
+- Microsoft Purview 규정 준수 블로그
 - Conditional Access Zero Trust 블로그
 - Microsoft 365 operations automation PowerShell
 - Microsoft 365 consulting research

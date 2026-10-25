@@ -17,9 +17,9 @@ The design should start with audit mode, approved device requirements and user e
 
 ## 한국어 요약
 
-Intune macOS USB Device Control은 macOS 환경에서 USB storage와 removable media 사용을 통제하기 위한 보안 설계입니다.
+macOS에서 USB 저장장치의 사용을 제한할 때 확인할 Defender for Endpoint와 Intune 설정을 정리했습니다.
 
-Defender for Endpoint와 Intune 정책을 함께 사용해 audit, block, read-only, approved device list 방식으로 단계적으로 운영하는 것이 좋습니다.
+사용 기록을 먼저 수집하고 승인 장치 목록, 읽기 전용과 차단 정책을 시험합니다. macOS와 Defender 버전별 지원 범위는 본문에 연결된 공식 자료에서 확인하세요.
 
 ---
 

@@ -375,9 +375,9 @@ Official sources: [Microsoft Product Terms](https://www.microsoft.com/licensing/
 
 ## 한국어 요약
 
-License Advisor는 Microsoft 365, Security, Compliance, Copilot license를 단순 가격 비교가 아니라 기능 요구사항과 사용자 persona 기준으로 검토하기 위한 도구입니다.
+사용자별 업무와 필요한 기능을 Microsoft 365 라이선스에 맞춰 비교하는 자료입니다.
 
-실제 컨설팅에서는 user type, security requirement, Intune 필요 여부, Conditional Access, Defender, Purview, Copilot roadmap을 함께 검토해 license-to-capability map을 작성하는 데 활용합니다.
+기존 구독과 서비스 플랜, 보안·기기 관리 조건, Copilot 사용 계획과 예상 사용량을 확인하세요.
 
 ### 라이선스 산정 방법
 

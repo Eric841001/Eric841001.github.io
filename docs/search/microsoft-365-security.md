@@ -94,9 +94,9 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 ## 한국어 요약
 
-Microsoft 365 보안은 개별 기능을 켜는 작업이 아닙니다. Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Information Barriers, audit, incident response를 하나의 control architecture로 연결해야 합니다.
+Entra ID, Conditional Access, Intune, Defender와 Purview의 보안 설계 자료를 안내합니다.
 
-Copilot과 available reasoning models이 업무에 더 깊게 들어올수록 security architecture는 더 중요해집니다. AI가 더 좋은 답변을 하기 위해서는 데이터에 접근해야 하고, 그 데이터 접근은 permission, label, DLP, audit, retention, sharing policy와 연결됩니다.
+계정과 기기 상태, 자료 공유 권한, 데이터 보호와 사고 대응 절차를 점검하세요. Copilot과 에이전트에 맡기는 업무도 같은 접근 권한 검토가 필요합니다.
 
 ## Security Control Map
 

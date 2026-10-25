@@ -59,9 +59,9 @@ It is often suitable when the organization wants Microsoft 365, Intune, Defender
 
 Microsoft 365 Business Premium은 Microsoft 365 Apps, Exchange Online, Teams, SharePoint, OneDrive, Entra ID, Intune, Defender for Business를 하나의 실무 패키지로 묶어 검토할 수 있는 라이선스입니다.
 
-단순히 메일과 Office를 쓰기 위한 라이선스가 아니라, 중소·중견 조직이 MFA, Conditional Access, 디바이스 관리, endpoint protection, 기본 보안 운영 체계를 빠르게 갖추기 위한 출발점으로 보는 것이 좋습니다.
+메일과 Office 외에 MFA, Conditional Access, 기기 관리와 엔드포인트 보호가 필요한 조직에서 검토할 수 있습니다. 포함 기능과 구매할 상품의 Teams 제공 여부는 별도로 확인하세요.
 
-핵심 판단은 “Business Premium으로 충분한가?”가 아니라 “현재 필요한 보안, 관리, 규정 준수, 운영 범위가 Business Premium의 경계 안에 있는가?”입니다.
+필요한 보안·관리·규정 준수 기능이 Business Premium에 포함되는지 확인하고 부족한 기능은 추가 구독과 비교하세요.
 
 ## Business Scenario
 
@@ -168,7 +168,7 @@ Business Premium can deliver strong value when implemented as a full security an
 - Defender for Business
 - Entra ID Conditional Access
 - Microsoft 365 라이선스 전략
-- Microsoft 365 보안 baseline
+- Microsoft 365 기본 보안 정책
 
 ## Related Documents
 

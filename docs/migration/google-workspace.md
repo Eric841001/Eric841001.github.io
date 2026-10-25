@@ -39,9 +39,9 @@ The program should be planned as identity, data, collaboration and change manage
 
 ## 한국어 요약
 
-Google Workspace Migration은 Gmail만 Exchange Online으로 옮기는 작업이 아닙니다.
+Google Workspace의 메일·일정·연락처와 Drive 자료를 Microsoft 365로 옮길 때 필요한 준비 사항입니다.
 
-Identity, domain, alias, group, calendar, Drive ownership, shared drive, external collaborator, user adoption을 함께 설계해야 Microsoft 365 전환 리스크를 줄일 수 있습니다.
+계정과 도메인, 별칭·그룹, 파일 소유권과 외부 공유를 점검하세요. Exchange의 메일 이전과 Drive 자료 이전은 도구와 지원 범위를 따로 확인합니다.
 
 ## Business Scenario
 

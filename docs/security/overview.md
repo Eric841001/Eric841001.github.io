@@ -80,11 +80,11 @@ The guidance is shaped around field scenarios such as regulated SaaS access, Mic
 
 ## 한국어 요약
 
-Microsoft Security는 Entra ID, Conditional Access, Intune, Defender, Purview, DLP, Audit, Compliance 기능을 하나의 security operating model로 연결할 때 효과가 커집니다.
+Microsoft 365의 계정·기기·메일 보안과 데이터 보호 문서를 모았습니다.
 
-이 섹션은 Microsoft 365 security assessment, Zero Trust architecture, Conditional Access policy, Defender XDR, Defender for Endpoint, Defender for Office 365, Purview information protection, DLP, Insider Risk, Copilot data protection을 실무 관점에서 정리합니다.
+접근 제어, Defender 운영, Purview 정책과 사고 대응 중 필요한 주제를 선택해 적용 조건과 점검 항목을 확인하세요.
 
-Enterprise security 프로젝트에서는 기술 설정만큼 approval process, exception management, administrator role, audit evidence, user impact가 중요합니다. 특히 금융, SaaS, 제조, 유통, 글로벌 조직처럼 규제와 운영 안정성이 중요한 환경에서는 security policy를 단계적으로 적용해야 합니다.
+보안 프로젝트에서는 설정 외에 승인 절차, 예외 관리, 관리자 역할과 감사 자료, 사용자 영향을 확인합니다. 특히 금융, SaaS, 제조, 유통, 글로벌 조직처럼 규제와 운영 안정성이 중요한 환경에서는 보안 정책을 단계적으로 적용해야 합니다.
 
 ## Security Domains
 
@@ -153,11 +153,11 @@ Enterprise security 프로젝트에서는 기술 설정만큼 approval process, 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
 - Microsoft 365 security assessment
-- CISO 보고용 security baseline 작성
-- Conditional Access policy 설계 및 exception management
-- Defender/Purview 기반 security modernization
-- Copilot 도입 전 data security review
-- 금융/제조/SaaS 환경의 audit-ready security design
+- CISO 보고용 기본 보안 정책 작성
+- Conditional Access 정책 설계 및 예외 관리
+- Defender와 Purview를 활용한 보안 개선
+- Copilot 도입 전 데이터 보안 review
+- 금융/제조/SaaS 환경의 audit-ready 보안 design
 
 ## Contact / Asset Request
 

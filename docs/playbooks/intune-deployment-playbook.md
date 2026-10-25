@@ -59,6 +59,17 @@ toc_max_heading_level: 2
   </div>
 </section>
 
+## 2026년 10월 변경 사항
+
+2026년 10월 25일에 [Intune 공식 변경 기록](https://learn.microsoft.com/en-us/intune/whats-new/)을 확인했습니다. 사용하는 기능에 해당하는 항목만 배포 계획에 반영하세요.
+
+- **Windows 11 26H2 보안 기준:** 10월 5일 주간에 새 기준이 추가됐습니다. 기존 보안 기준 프로필은 자동으로 새 버전이 되지 않습니다. 기존 사용자 지정 값을 비교하고 시험한 뒤 새 프로필을 만들거나 버전을 갱신하세요. NetBIOS 구성 정책은 이 기준에 포함되지 않으므로 배포 항목에 넣기 전에 현재 지원 여부를 확인해야 합니다.
+- **Apple 앱 할당:** 10월 19일 주간부터 Apple Business Manager와 Apple School Manager에서 무제한 라이선스로 제공한 VPP 앱을 iOS/iPadOS·macOS 기기에 할당할 수 있습니다. 모든 앱을 수량 제한 없이 구매·사용할 수 있다는 뜻은 아닙니다. 앱의 라이선스 유형과 할당 결과를 확인하세요.
+- **Windows Remote Help:** 10월 12일 주간에 5.2.1210.0 버전이 나왔습니다. 이 기능을 사용하는 조직은 사용 권한과 배포 정책을 확인하고 연결·지원 동작을 시험한 뒤 업데이트하세요.
+
+Intune 서비스 변경은 순차 배포됩니다. 발표 날짜만으로 모든 테넌트에 기능이 적용됐다고 판단하지 말고 실제 관리 화면과 시험 기기에서 확인하세요.
+
+
 ## Executive Summary
 
 Microsoft Intune provides a cloud-native endpoint management platform for securing and managing corporate devices.

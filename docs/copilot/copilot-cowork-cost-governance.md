@@ -68,13 +68,13 @@ Microsoft's June 30 update describes Copilot Cowork plugins as packages that can
 
 ## 한국어 요약
 
-Copilot Cowork는 단순한 chat 기능이 아니라, 장기 실행 업무를 여러 도구와 Microsoft 365 context를 활용해 수행하는 agentic work execution 기능으로 보아야 합니다.
+Copilot Cowork에 여러 단계의 업무를 맡기려면 사용할 도구와 자료, 작업 권한을 먼저 정해야 합니다.
 
-따라서 도입 시에는 "누가 사용할 수 있는가", "어떤 업무를 맡길 것인가", "비용은 누가 승인하는가", "민감한 작업은 누가 검토하는가", "성과는 어떻게 측정할 것인가"를 먼저 정해야 합니다.
+사용 대상, 위임할 업무, 비용 승인자와 결과 검토자를 정하고, 시범 적용에서 사용량과 오류를 확인한 뒤 적용 범위를 넓힙니다.
 
-더 복잡한 추론 작업을 위임할수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 enterprise 환경에서는 reasoning 성능보다 더 중요한 것이 approval, ownership, budget, security, monitoring입니다.
+더 복잡한 추론 작업을 위임할수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 기업 환경에서는 추론 성능보다 더 중요한 것이 승인, 관리 책임, 예산, 보안, 모니터링입니다.
 
-Microsoft의 6월 30일 plugin 업데이트에 따르면 Copilot Cowork plugin은 반복 가능한 skill과 업무 시스템에 연결되는 secure connector를 함께 패키징하여 Microsoft Marketplace를 통해 배포할 수 있습니다. Microsoft의 6월 16일 GA 발표에 따르면 Cowork는 전 세계 GA 상태이며 Microsoft 365 Copilot User Subscription License가 필요하고 사용량은 Copilot Credits로 청구됩니다. 다만 개별 plugin의 제공 상태는 서로 다르므로 coming soon으로 표시된 기능을 현재 사용 가능한 것으로 안내하면 안 됩니다. Plugin을 활성화하기 전에는 제공자, 요청 데이터와 작업, connector 권한, 쓰기 또는 외부 작업의 승인 지점, prompt·response·생성 artifact에 현재 제공되는 Microsoft 365 및 Purview 통제를 검토해야 합니다. Microsoft가 DLP 등 coming soon으로 표시한 통제를 현재 제공되는 것으로 안내해서는 안 됩니다.
+Microsoft의 6월 30일 플러그인 업데이트에 따르면 Copilot Cowork 플러그인은 반복 가능한 스킬과 업무 시스템에 연결되는 secure 커넥터를 함께 패키징하여 Microsoft Marketplace를 통해 배포할 수 있습니다. Microsoft의 6월 16일 GA 발표에 따르면 Cowork는 전 세계 GA 상태이며 Microsoft 365 Copilot User Subscription License가 필요하고 사용량은 Copilot Credits로 청구됩니다. 다만 개별 플러그인의 제공 상태는 서로 다르므로 coming soon으로 표시된 기능을 현재 사용 가능한 것으로 안내하면 안 됩니다. Plugin을 활성화하기 전에는 제공자, 요청 데이터와 작업, 커넥터 권한, 쓰기 또는 외부 작업의 승인 지점, 프롬프트·response·생성 artifact에 현재 제공되는 Microsoft 365 및 Purview 통제를 검토해야 합니다. Microsoft가 DLP 등 coming soon으로 표시한 통제를 현재 제공되는 것으로 안내해서는 안 됩니다.
 
 ## When To Use Cowork
 
@@ -358,7 +358,7 @@ Once these answers are available, the organization can move from technical enabl
 - Copilot adoption
 - Copilot governance
 - Copilot 도입
-- AI Agent 운영 모델
+- AI 에이전트 운영 모델
 - 장기 실행 AI 업무
 
 ## Contact / Asset Request

@@ -95,9 +95,9 @@ Playbooks are designed to bridge consulting strategy and real execution. They de
 
 ## 한국어 요약
 
-Playbooks는 전략 문서를 실제 delivery workstream으로 바꾸기 위한 실행 가이드입니다.
+진단, 구축, 이전과 운영 인수인계에 사용할 실행 가이드를 모았습니다.
 
-assessment, readiness, implementation, migration, adoption, handover 단계에서 무엇을 확인하고 어떤 산출물을 만들어야 하는지 정리하여 프로젝트 품질을 일정하게 유지하는 데 목적이 있습니다.
+단계별로 확인할 사항, 담당자와 결과물을 정리해 작업 계획을 세울 때 참고하세요.
 
 ## Playbook Categories
 

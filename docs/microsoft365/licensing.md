@@ -39,9 +39,9 @@ The goal is not simply to minimize cost. The goal is to avoid paying for unused 
 
 ## 한국어 요약
 
-Microsoft 365 licensing은 비용 절감표가 아니라 business requirement와 security/compliance control을 license capability에 매핑하는 의사결정 작업입니다.
+필요한 업무 기능과 보안 정책을 Microsoft 365의 실제 서비스 플랜에 맞춰 확인하는 문서입니다.
 
-Business Premium, E3, E5, security add-on, compliance add-on, Copilot license를 사용자 유형과 risk level에 맞게 설계해야 합니다.
+사용자별 업무와 기기, 기존 구독과 추가 기능을 비교하세요. 구매한 상품명과 실제 사용 권한, 기능 활성화 상태는 각각 확인해야 합니다.
 
 ## Feature Entitlement Review
 

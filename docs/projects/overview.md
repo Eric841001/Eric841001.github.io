@@ -98,9 +98,9 @@ This section captures anonymized enterprise project experience and reusable deli
 
 ## 한국어 요약
 
-Projects Library는 실제 고객 경험을 고객명 없이 업종, 과제, delivery pattern 중심으로 재구성한 공간입니다.
+고객 이름을 제외하고 업종별 과제와 프로젝트 수행 방법을 정리한 사례 모음입니다.
 
-Microsoft 365, Security, Copilot, AI Agent, Azure, Migration, Governance 프로젝트에서 반복적으로 사용되는 assessment, SOW, WBS, architecture, risk register, operating model 구조를 확인할 수 있습니다.
+현황 진단, 설계, SOW, WBS, 위험 관리와 운영 인수인계에 필요한 문서 구성을 참고하세요.
 
 ## Project Pattern Map
 

@@ -52,11 +52,11 @@ description: Reusable proposal, SOW, WBS, risk register, assessment and governan
 
 ## 한국어 요약
 
-Proposal Center는 Microsoft 365, Azure, Security, Copilot, AI Agent, Migration 프로젝트 제안에 필요한 실무 산출물 구조를 정리한 공간입니다.
+Microsoft 365, Azure, 보안, Copilot과 이전 프로젝트에 필요한 제안서 자료를 모았습니다.
 
-제안서 작성은 단순한 문서 작업이 아닙니다. 고객의 business goal, technical scope, security requirement, 일정, 역할, risk, cost, approval structure를 하나의 실행 가능한 delivery model로 연결하는 작업입니다.
+고객의 목표와 작업 범위, 보안 조건, 일정, 역할과 인수 기준을 합의할 때 참고하세요.
 
-이 섹션은 Executive Summary, Assessment Framework, Statement of Work, Work Breakdown Structure, Risk Register, Timeline, Governance Model 같은 제안 및 수행 산출물을 재사용 가능한 구조로 제공합니다.
+경영진 요약, 현황 진단, SOW, WBS, 위험 등록부와 일정·운영 계획의 작성 예시를 제공합니다.
 
 ## Proposal Operating Model
 
@@ -321,16 +321,16 @@ Use [Contact and Asset Request](/knowledge/contact) when you need a reusable pro
 - Cloud migration WBS
 - Project Risk Register
 - Executive Summary template
-- 제안서 delivery asset
+- 제안서 프로젝트 자료
 - PMO governance model
 
 ## 컨설팅 활용 사례
 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- Microsoft 365 implementation proposal 작성
-- Copilot readiness / adoption proposal 작성
-- Azure Landing Zone 또는 migration SOW 작성
-- Security assessment / implementation WBS 작성
+- Microsoft 365 구축 proposal 작성
+- Copilot 준비 상태 / 도입·정착 proposal 작성
+- Azure Landing Zone 또는 이전 SOW 작성
+- Security 현황 진단 / 구축 WBS 작성
 - 고객 의사결정을 위한 executive summary 구성
-- PMO와 고객 담당자가 공유할 risk register 및 governance model 작성
+- PMO와 고객 담당자가 공유할 위험 등록부 및 운영 기준 문서 작성

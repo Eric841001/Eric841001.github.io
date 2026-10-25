@@ -73,9 +73,9 @@ The objective is to establish a scalable, secure and operationally sustainable d
 
 ## 한국어 요약
 
-Microsoft 365 Reference Architecture는 Exchange, Teams, SharePoint, OneDrive를 개별 서비스로 보는 것이 아니라 Entra ID, Intune, Defender, Purview, Copilot readiness, governance와 연결된 enterprise digital workplace architecture로 설계하는 방식입니다.
+Exchange, Teams, SharePoint와 OneDrive를 도입할 때 Entra ID, Intune, Defender와 Purview를 함께 검토하는 참조 설계입니다.
 
-핵심은 생산성 도구를 빠르게 배포하는 것이 아니라 identity, device, data, security, collaboration, adoption, operation이 함께 작동하는 운영 가능한 플랫폼을 만드는 것입니다.
+사용자 권한, 기기 관리, 데이터 보호와 지원 업무를 누가 맡을지 정하고, 이 구성이 실제 업무에서 작동하는지 확인합니다.
 
 ---
 

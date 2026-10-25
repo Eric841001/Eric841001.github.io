@@ -39,9 +39,9 @@ Because insider risk can involve employee privacy, HR, legal and compliance conc
 
 ## 한국어 요약
 
-Insider Risk Management는 내부자의 의도적 또는 비의도적 위험 행위를 탐지하고 조사하기 위한 Microsoft Purview 기능입니다.
+Purview Insider Risk Management는 조직 내부의 위험 행위를 탐지하고 조사하는 기능입니다.
 
-실무에서는 기술 설정보다 privacy, HR/legal involvement, case review process, evidence handling, role separation이 중요합니다. 따라서 정책 활성화 전에 governance model을 먼저 설계해야 합니다.
+정책을 켜기 전에 개인정보 보호, 인사·법무 검토, 조사 권한과 증거 취급 절차를 정하세요.
 
 ## Business Scenario
 

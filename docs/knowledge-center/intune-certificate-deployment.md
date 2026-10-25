@@ -43,9 +43,9 @@ This guide explains the deployment process using Intune Trusted Certificate Prof
 
 ## 한국어 요약
 
-Intune Trusted Certificate Deployment는 Wi-Fi, VPN, SCEP, PKCS, email signing, line-of-business application 접속처럼 인증서 신뢰 체인이 필요한 시나리오의 선행 작업입니다.
+Intune의 신뢰 인증서 프로필은 Wi-Fi, VPN과 업무 앱에서 인증서를 신뢰하도록 루트·중간 인증서를 배포하는 데 사용합니다.
 
-Root CA와 Intermediate CA를 올바른 형식으로 배포하고, 대상 그룹과 검증 책임을 명확히 정의해야 인증서 기반 인증 장애를 줄일 수 있습니다.
+인증서 파일 형식, 배포 대상과 저장소를 확인하고 실제 기기에서 인증서 체인과 연결 동작을 점검하세요.
 
 ---
 

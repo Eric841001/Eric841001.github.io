@@ -65,9 +65,9 @@ This reference architecture provides a framework for enterprise Copilot readines
 
 ## 한국어 요약
 
-Copilot architecture는 license 배정이나 기능 활성화가 아니라 Microsoft Graph, permission, Purview, DLP, Conditional Access, adoption, AI Agent governance를 하나로 연결하는 설계입니다.
+Copilot을 도입할 때는 사용자가 어떤 Microsoft 365 자료에 접근할 수 있는지 먼저 확인해야 합니다. Microsoft Graph를 통해 참조하는 자료의 권한과 공유 상태를 점검하고, Purview와 DLP 등 필요한 보호 정책을 적용합니다.
 
-Copilot은 사용자가 이미 접근 가능한 Microsoft 365 데이터를 기반으로 작동하므로, data readiness와 permission cleanup이 architecture의 핵심입니다.
+그다음 사용자 교육, 에이전트 승인 절차, 비용과 운영 담당자를 정합니다.
 
 ## Business Scenario
 

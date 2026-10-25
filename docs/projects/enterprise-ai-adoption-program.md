@@ -96,9 +96,9 @@ The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent in
 
 ## 한국어 요약
 
-Enterprise AI Adoption Program은 Copilot license 배포나 단순 prompt 교육이 아니라, 기업의 실제 업무 시나리오를 AI use case와 Agent portfolio로 전환하는 프로그램입니다.
+기업의 업무 중 Copilot이나 에이전트를 사용할 대상을 찾고 도입·지원·운영 계획을 정하는 문서입니다.
 
-성공적인 AI 도입은 Microsoft 365 Copilot, Copilot Studio, Agent Factory, 보안/데이터 거버넌스, change management, 가치 측정이 함께 설계될 때 가능합니다. 특히 고객 조직에서는 “무엇을 자동화할 것인가”보다 “누가 소유하고, 어떤 데이터에 접근하며, 어떤 승인 절차로 운영할 것인가”가 더 중요합니다.
+도구를 선택하기 전에 담당자, 자료 접근 권한과 작업 승인 절차를 정합니다. 사용자 교육과 지원, 비용과 결과 측정도 함께 준비하세요.
 
 ## Target Customers
 
@@ -188,7 +188,7 @@ For anonymized customer-facing references, position Enterprise AI adoption as a 
 - Enterprise AI 도입 전략
 - Copilot 도입 프레임워크
 - Copilot Studio Agent 도입
-- AI Agent 거버넌스
+- AI 에이전트 거버넌스
 
 ## Reference Snapshot
 

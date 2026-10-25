@@ -190,9 +190,9 @@ Validate with test messages:
 
 ## 한국어 요약
 
-이 문서는 Exchange Online transport rule을 사용해 승인된 예외 상황에서 OMEv2 또는 RMS attachment encryption을 제거하는 설계 패턴을 설명합니다.
+Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파일의 암호화를 해제하는 방법을 설명합니다.
 
-이 기능은 편의 기능이 아니라 보안 예외 관리 대상입니다. recipient, sender, domain, business justification, approval owner, review schedule이 명확하지 않으면 data leakage risk가 커질 수 있습니다.
+수신자·발신자·도메인을 좁게 지정하고 업무상 이유, 승인자와 예외 종료일을 기록하세요. 규칙 적용 후에는 승인 대상과 그 밖의 수신자를 각각 시험해야 합니다.
 
 ## Exception Approval Checklist
 
@@ -200,9 +200,9 @@ Validate with test messages:
 |---|---|
 | Business reason | 암호화 제거가 필요한 업무 사유 |
 | Recipient trust | 승인된 외부 수신자 또는 도메인 검증 |
-| Rule scope | sender, recipient, condition, exception 범위 |
-| Security approval | 보안 또는 compliance 승인 기록 |
-| Test evidence | approved recipient와 non-approved recipient 테스트 결과 |
+| 규칙 범위 | 발신자, 수신자, 조건과 예외 범위 |
+| Security 승인 | 보안 또는 규정 준수 승인 기록 |
+| Test 증거 자료 | approved 수신자와 non-approved 수신자 테스트 결과 |
 | Review cadence | 예외 rule의 정기 검토 주기 |
 
 ## Related Documents
@@ -223,8 +223,8 @@ Validate with test messages:
 - Microsoft Purview Information Protection exception
 - Exchange Online 암호화 제거
 - OMEv2 예외 정책
-- RMS attachment encryption 제거
+- RMS 첨부파일 encryption 제거
 
 ## Contact / Asset Request
 
-암호화 예외 요청서, transport rule design sheet, 승인 evidence template이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+암호화 예외 요청서, transport rule design sheet, 승인 증거 자료 양식이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

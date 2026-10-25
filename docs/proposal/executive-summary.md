@@ -62,9 +62,9 @@ For Microsoft 365, Security, Copilot, Azure and migration proposals, this sectio
 
 ## 한국어 요약
 
-Executive Summary는 기술 설명을 임원 의사결정 언어로 바꾸는 섹션입니다.
+제안서의 경영진 요약에는 해결할 문제, 기대 결과, 비용과 위험, 필요한 결정을 짧게 적습니다.
 
-단순히 기능을 나열하기보다 business driver, risk, target outcome, recommended approach, investment value, next decision을 짧고 명확하게 연결해야 합니다.
+기술 기능을 나열하기보다 도입 이유와 지금 결정해야 할 사항이 무엇인지 설명하세요.
 
 좋은 Executive Summary는 "무엇을 구축할 것인가"보다 "왜 지금 해야 하는가", "하지 않으면 어떤 리스크가 남는가", "승인 후 어떤 변화가 생기는가"를 먼저 설명합니다.
 

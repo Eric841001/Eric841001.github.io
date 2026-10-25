@@ -87,9 +87,9 @@ Azure work in enterprise consulting is rarely isolated. It often supports identi
 
 ## 한국어 요약
 
-Azure는 단독 인프라 구축 과제가 아니라 Microsoft 365, Security, Copilot, migration program을 안정적으로 받쳐주는 enterprise cloud foundation으로 보는 것이 좋습니다.
+Azure 도입에 필요한 랜딩 존, ID, 네트워크, 보안과 비용 관리 자료를 모았습니다.
 
-특히 landing zone, identity, network, monitoring, security, cost governance가 정리되지 않은 상태에서 workload를 올리면 이후 운영 비용과 보안 예외가 빠르게 증가합니다.
+업무 시스템을 배포하기 전에 접근 권한, 모니터링과 운영 담당자를 정해 두면 운영 중 발생하는 변경과 장애에 대응하기 쉽습니다.
 
 ## Scope
 

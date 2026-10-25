@@ -39,9 +39,9 @@ The biggest risk is not the copy operation. The biggest risk is moving unmanaged
 
 ## 한국어 요약
 
-File Server Migration은 파일 복사 작업이 아니라 information architecture와 permission governance 작업입니다.
+파일 서버의 자료를 SharePoint나 OneDrive로 옮기기 전에 확인할 항목을 정리했습니다.
 
-부서별 owner, stale data, duplicate files, sensitive data, inherited permission을 정리하지 않으면 SharePoint와 OneDrive에서도 동일한 혼란이 반복됩니다.
+파일 소유자와 공유 권한을 정리하고 대상 저장 위치를 정합니다. 시험 이전에서 파일 수, 접근 권한과 사용자 업무를 확인한 뒤 전환하세요.
 
 ## Business Scenario
 

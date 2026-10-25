@@ -64,11 +64,11 @@ The design shift is simple but important: an agent is no longer just a conversat
 
 ## 한국어 요약
 
-Copilot Studio는 더 이상 단순한 chatbot builder로 보기 어렵습니다. 2026년 기준 Copilot Studio는 new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, A2A protocol, Entra Agent ID 같은 기능을 통해 enterprise agent platform에 가까워지고 있습니다.
+2026년 Copilot Studio의 에이전트, 워크플로와 실행 환경 변경을 정리했습니다. 기능마다 정식 제공 여부와 적용 조건이 다르므로 본문의 발표일과 공식 자료를 함께 확인하세요.
 
-따라서 기업 고객에게는 "agent를 만들 수 있다"보다 "누가 소유하고, 어떤 데이터에 접근하며, 어떤 도구를 실행하고, 비용과 품질을 어떻게 관리할 것인가"를 먼저 설계해야 합니다.
+구축 전에 에이전트 담당자, 접근할 자료, 실행할 도구, 승인 절차와 비용 한도를 정합니다.
 
-available reasoning 모델 선택 폭이 확대되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 adoption journey로 설명하는 것이 더 중요해졌습니다. 더 강한 reasoning model은 사용자 경험을 좋게 만들 수 있지만, enterprise 환경에서는 model selection, data boundary, approval, cost control, evaluation 기준이 함께 준비되어야 합니다.
+사용 가능한 추론 모델 선택 폭이 확대되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 도입·정착 journey로 설명하는 것이 더 중요해졌습니다. 더 강한 추론 model은 사용자 경험을 좋게 만들 수 있지만, 기업 환경에서는 모델 선택, 데이터 접근 범위, 승인, 비용 관리, evaluation 기준이 함께 준비되어야 합니다.
 
 ## 2026 Capability Map
 
@@ -420,7 +420,7 @@ available reasoning models in Microsoft 365 Copilot should be reflected in Copil
 - Copilot adoption
 - Copilot readiness
 - Copilot 도입
-- AI Agent 운영 모델
+- AI 에이전트 운영 모델
 - Copilot Studio Agent
 - Microsoft IQ
 - Entra Agent ID

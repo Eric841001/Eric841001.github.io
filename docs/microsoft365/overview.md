@@ -59,11 +59,11 @@ Enterprise Microsoft 365 work should be framed around business outcomes: secure 
 
 ## 한국어 요약
 
-Microsoft 365는 단순한 Office 앱 묶음이 아니라, 기업의 협업, 보안, governance, compliance, AI 활용을 하나로 연결하는 enterprise 운영 플랫폼입니다.
+Microsoft 365의 협업 서비스, 사용자·기기 관리와 데이터 보호를 설계할 때 참고할 문서입니다.
 
-이 문서는 Microsoft 365 architecture 설계, tenant governance, Teams / SharePoint / OneDrive 협업 구조, Exchange Online migration, Entra ID Conditional Access, Intune device management, Purview data protection, Defender 보안 체계를 함께 검토해야 하는 이유를 정리합니다.
+도입 목적에 따라 필요한 서비스를 고르고 사용자 권한, 운영 담당자와 지원 절차를 함께 정합니다.
 
-특히 Microsoft 365 Copilot을 도입하려는 조직은 license를 배정하기 전에 data permission, external sharing, sensitivity label, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
+특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스를 배정하기 전에 데이터 접근 권한, external sharing, sensitivity label, DLP, 사용자 교육, 운영 지원 모델을 먼저 정리해야 합니다.
 
 ## Platform Architecture
 
@@ -389,10 +389,10 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 
 - Microsoft 365 신규 도입 제안
 - Google Workspace에서 Microsoft 365로 전환
-- Exchange Online과 Teams 중심의 collaboration modernization
-- Copilot 도입 전 data / security readiness assessment
+- Exchange Online과 Teams를 활용한 협업 환경 개선
+- Copilot 도입 전 데이터 / 보안 준비 상태 현황 진단
 - Microsoft 365 E3 / E5 / Business Premium license optimization
-- 글로벌 조직 또는 계열사의 tenant governance 정비
+- 글로벌 조직 또는 계열사의 테넌트 운영 기준 정비
 
 ## References
 

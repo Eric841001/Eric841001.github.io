@@ -65,9 +65,9 @@ The objective is to prevent platform sprawl, reduce security risk and keep cloud
 
 ## 한국어 요약
 
-Governance architecture는 Microsoft 365와 Azure를 안정적으로 운영하기 위한 의사결정 구조입니다.
+Microsoft 365와 Azure를 운영할 때 필요한 의사결정과 책임을 정리한 문서입니다.
 
-Teams, SharePoint, Entra ID, Purview, Azure subscription, Copilot, AI Agent가 빠르게 확산될수록 정책, 소유자, 예외 승인, 정기 검토 체계가 필요합니다.
+서비스별 담당자, 정책 변경 승인자, 예외 처리 절차와 정기 점검 일정을 정합니다. Teams, SharePoint, Azure 구독과 AI 에이전트에도 같은 기준을 적용하되 제품별 설정은 따로 확인해야 합니다.
 
 ## Business Scenario
 

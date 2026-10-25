@@ -64,11 +64,11 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 | Scenario | Typical Requirement | Design Focus |
 |---|---|---|
-| 이해상충 분리 | 특정 부서 간 커뮤니케이션 제한 | Segment Matrix, symmetric policy, exception users |
+| 이해상충 분리 | 특정 부서 간 커뮤니케이션 제한 | 세그먼트 구성표, 양방향 정책과 예외 사용자 |
 | M&A / 계열 분리 | 조직 단위별 협업 경계 분리 | multi-segment design, Teams/SPO/ODfB validation |
-| 금융 / 투자 업무분장 | Chinese Wall 및 정보 장벽 통제 | audit evidence, approval flow, policy change history |
-| 민감 프로젝트 | 프로젝트별 접근 및 공유 제한 | SharePoint site segment, owner moderated review |
-| Copilot 데이터 보호 | Copilot 확산 전 협업 경계 정비 | Graph permission, Purview, DLP, IB alignment |
+| 금융 / 투자 업무분장 | Chinese Wall 및 정보 장벽 통제 | 감사 증거 자료, 승인 절차와 정책 변경 기록 |
+| 민감 프로젝트 | 프로젝트별 접근 및 공유 제한 | SharePoint site segment, 담당자 moderated review |
+| Copilot 데이터 보호 | Copilot 확산 전 협업 경계 정비 | Graph 접근 권한, Purview, DLP, IB alignment |
 
 ## 구현 아키텍처
 
@@ -112,7 +112,7 @@ IB should not be treated as a simple user blocking feature. It should be designe
 |---|---|
 | Matrix First | 정책을 만들기 전에 부서/사용자 간 허용 및 차단 Matrix를 먼저 확정합니다. |
 | Symmetric Policy | A에서 B를 차단했다면 B에서 A를 차단하는 대칭 정책도 검토합니다. |
-| Exception by Segment | 예외 사용자가 필요하면 개별 예외 사용자를 별도 Segment로 분리합니다. |
+| Exception by Segment | 예외 사용자가 필요하면 개별 예외 사용자를 별도 세그먼트로 분리합니다. |
 | Workload Validation | Teams, SharePoint, OneDrive는 정책 적용 방식과 검증 항목이 다릅니다. |
 | Evidence Ready | 정책 설정, 테스트 결과, 오류 화면, 로그를 감사 대응 패키지로 보관합니다. |
 | Rollback Planned | Segment/Policy 삭제보다 비활성화, 영향 검증, application 재실행 순서를 먼저 정의합니다. |
@@ -130,14 +130,14 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 ## Segment Design
 
-Segment는 단순 부서명이 아니라 정책 경계를 표현하는 단위입니다.
+세그먼트는 통신·협업 제한 정책을 적용할 사용자 집합입니다. 부서 외의 속성을 기준으로 정할 수도 있습니다.
 
 | Segment Type | Example | Notes |
 |---|---|---|
 | Department Segment | Finance, Investment, Advisory | 가장 일반적인 업무분장 기준 |
 | Project Segment | Project A, Project B | 민감 프로젝트 또는 제한된 협업 공간 |
 | Subsidiary Segment | Company A, Company B | 계열사 또는 인수합병 시나리오 |
-| Exception Segment | Approved exception users | 예외 승인 및 만료일 관리 필요 |
+| Exception Segment | 승인된 예외 사용자 | 예외 승인 및 만료일 관리 필요 |
 | Regulated Segment | Compliance restricted group | 감사 증적과 승인 이력 필수 |
 
 ## Workload Control Pattern
@@ -178,14 +178,14 @@ Segment는 단순 부서명이 아니라 정책 경계를 표현하는 단위입
 
 ## Teams 검증
 
-Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 workload 중 하나입니다.
+Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시스템 중 하나입니다.
 
 | Test Case | Expected Result |
 |---|---|
-| 차단 대상 사용자 간 1:1 chat | 대화 시작 또는 메시지 전송 차단 |
-| 차단 대상 사용자가 포함된 group chat | 초대 또는 대화 참여 차단 |
+| 차단 대상 사용자 간 1:1 채팅 | 대화 시작 또는 메시지 전송 차단 |
+| 차단 대상 사용자가 포함된 group 채팅 | 초대 또는 대화 참여 차단 |
 | Team member 추가 | 정책에 맞지 않는 사용자는 추가 차단 |
-| 동일 Segment 사용자 chat | 정상 허용 |
+| 동일 Segment 사용자 채팅 | 정상 허용 |
 | 예외 Segment 사용자 | 승인된 방향과 상대에 대해서만 허용 |
 
 검증 시에는 허용 시나리오와 차단 시나리오를 모두 캡처해야 합니다. 차단 화면만 남기면 운영팀이 정상 협업 영향도를 판단하기 어렵습니다.
@@ -205,10 +205,10 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 workload �
 
 ## Exchange 고려사항
 
-IB를 설계할 때 Exchange Online까지 동일한 방식으로 제어된다고 가정하면 안 됩니다. 메일 흐름 기반의 송수신 제한은 Exchange mail flow rule 또는 transport rule 기반 설계를 별도로 검토해야 합니다.
+IB를 설계할 때 Exchange Online까지 동일한 방식으로 제어된다고 가정하면 안 됩니다. 메일 흐름 기반의 송수신 제한은 Exchange 메일 흐름 규칙 기반 설계를 별도로 검토해야 합니다.
 
-- Collaboration boundary: Teams, SharePoint, OneDrive 중심의 IB 통제
-- Messaging boundary: Exchange mail flow rule, transport rule, moderation, DLP 중심의 메일 통제
+- 협업 제한: Teams, SharePoint, OneDrive의 Information Barriers 정책
+- 메일 제한: Exchange 메일 흐름 규칙, 중재와 DLP 정책
 
 ## Evidence Package
 
@@ -219,19 +219,19 @@ IB를 설계할 때 Exchange Online까지 동일한 방식으로 제어된다고
 | Segment Matrix | 비즈니스 승인 기준 |
 | Policy List | Segment별 차단/허용 정책 확인 |
 | Policy Application Status | 정책 적용 완료 여부 확인 |
-| Teams Validation Screenshot | chat, group chat, member add 테스트 |
-| SharePoint Validation Screenshot | site access, member add, file sharing 테스트 |
-| OneDrive Validation Screenshot | direct link, folder sharing, same Segment access 테스트 |
+| Teams Validation Screenshot | 채팅, group 채팅, member add 테스트 |
+| SharePoint Validation Screenshot | 사이트 접근, 구성원 추가와 파일 공유 시험 |
+| OneDrive Validation Screenshot | 직접 링크, 폴더 공유와 동일 세그먼트 사용자 접근 시험 |
 | Exception Register | 예외 사용자, 승인자, 만료일 관리 |
 | Rollback Plan | 장애 발생 시 영향 최소화 |
 
-증적 이미지에는 실제 UPN, 이메일 주소, tenant domain, 사용자 이름 등 개인정보가 노출되지 않도록 마스킹해야 합니다.
+증적 이미지에는 실제 UPN, 이메일 주소, 테넌트 domain, 사용자 이름 등 개인정보가 노출되지 않도록 마스킹해야 합니다.
 
 ## Troubleshooting
 
 | Symptom | Likely Cause | Response |
 |---|---|---|
-| Teams에서 차단되지 않음 | Policy가 Active가 아니거나 application start 미완료 | policy state와 application status 확인 |
+| Teams에서 차단되지 않음 | Policy가 Active가 아니거나 application start 미완료 | 정책 state와 application status 확인 |
 | SharePoint 사이트 접근 가능 | site mode 또는 Segment 연결 누락 | site mode, assigned Segment, 기존 권한 재검토 |
 | OneDrive 반영 지연 | Segment 변경 후 propagation 지연 | 최대 24시간 지연 가능성을 고려하고 재검증 |
 | People Picker에는 보이지만 공유 실패 | 검색 단계와 실제 공유 검증 단계 차이 | 실제 공유/접근 결과 기준으로 판단 |
@@ -242,12 +242,12 @@ IB를 설계할 때 Exchange Online까지 동일한 방식으로 제어된다고
 
 운영 장애가 발생했을 때 바로 Segment를 삭제하면 추적성이 떨어질 수 있습니다. 다음 순서로 접근하는 것이 안전합니다.
 
-1. 영향 사용자와 workload를 확인합니다.
+1. 영향 사용자와 업무 시스템를 확인합니다.
 2. 정책을 비활성화할지, 예외 Segment를 추가할지 결정합니다.
 3. 변경 승인자를 기록합니다.
 4. Policy 변경 후 `Start-InformationBarrierPoliciesApplication`을 다시 실행합니다.
 5. Teams, SharePoint, OneDrive 검증을 반복합니다.
-6. 최종 변경 사항과 잔여 리스크를 evidence package에 반영합니다.
+6. 최종 변경 사항과 잔여 리스크를 증거 자료 package에 반영합니다.
 
 ## Consulting Deliverables
 

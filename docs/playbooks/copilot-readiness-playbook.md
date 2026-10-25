@@ -222,7 +222,7 @@ Copilot and AI-app retention policies can retain and delete user prompts and res
 
 ### 한국어 운영 요약
 
-Copilot 라이선스가 할당됐다는 사실만으로 배포 준비가 끝난 것은 아닙니다. 사용자별 Exchange Online 기본 사서함의 실제 생성 여부, Entra ID, Microsoft 365 Apps, OneDrive, 네트워크 및 WebSocket 연결을 별도로 확인해야 합니다. 또한 Copilot 프롬프트와 응답의 보존은 사용자 화면이 아니라 Purview retention 및 eDiscovery 근거로 검증해야 합니다.
+Copilot 라이선스가 할당됐다는 사실만으로 배포 준비가 끝난 것은 아닙니다. 사용자별 Exchange Online 기본 사서함의 실제 생성 여부, Entra ID, Microsoft 365 Apps, OneDrive, 네트워크 및 WebSocket 연결을 별도로 확인해야 합니다. 또한 Copilot 프롬프트와 응답의 보존은 사용자 화면이 아니라 Purview 보존 및 eDiscovery 근거로 검증해야 합니다.
 
 ## User Readiness
 

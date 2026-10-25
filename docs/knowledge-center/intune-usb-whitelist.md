@@ -17,9 +17,9 @@ The strongest design starts with audit evidence, approved device inventory and e
 
 ## 한국어 요약
 
-Intune USB Whitelist Control은 승인된 USB device만 허용하고 개인 USB나 미승인 removable media를 차단하기 위한 보안 정책입니다.
+승인된 USB 저장장치의 접근을 허용하고 나머지 이동식 저장장치를 제한하는 방법을 설명합니다.
 
-Defender Device Control과 Intune을 활용해 audit mode, approved device inventory, enforcement policy, exception workflow를 단계적으로 운영해야 합니다.
+Defender Device Control과 Intune으로 사용 기록을 수집한 뒤 허용 목록과 예외 처리 절차를 정합니다. 업무에 미치는 영향을 확인한 다음 차단 정책을 적용하세요.
 
 ---
 

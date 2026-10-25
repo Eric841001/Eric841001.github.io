@@ -95,9 +95,9 @@ Migration is treated as a business continuity program, not a file-copy activity.
 
 ## 한국어 요약
 
-Migration은 데이터를 옮기는 작업만이 아니라 업무 연속성, 보안, 커뮤니케이션, cutover, rollback, hypercare가 결합된 프로그램입니다.
+Exchange Online, Google Workspace, 파일 서버와 테넌트 간 이전 자료를 모았습니다.
 
-성공적인 migration은 source inventory, target architecture, batch strategy, user communication, risk register, 운영 인수인계가 함께 준비될 때 안정적으로 진행됩니다.
+원본 자료와 권한을 조사하고 대상 환경, 시험 이전, 전환·복구 절차와 전환 후 지원 계획을 준비합니다.
 
 ## Migration Scenarios
 

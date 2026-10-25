@@ -124,9 +124,9 @@ These tools are designed to support repeatable consulting work. They help conver
 
 ## 한국어 요약
 
-Toolkit은 제안, 진단, 아키텍처 설계, migration, licensing, delivery planning을 반복 가능한 산출물로 만들기 위한 실무 도구 모음입니다.
+진단, 설계, 라이선스 검토와 이전 계획에 쓰는 문서 양식을 모았습니다.
 
-고객에게 바로 공개하는 완성 문서가 아니라, workshop, assessment, SOW, WBS, risk register, architecture decision record를 빠르게 만들기 위한 컨설팅 운영 체계로 이해하면 됩니다.
+워크숍과 제안서 준비에 필요한 점검표, SOW, WBS와 위험 등록부를 선택해 고객 상황에 맞게 작성하세요.
 
 ## Toolkit Areas
 

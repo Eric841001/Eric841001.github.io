@@ -40,9 +40,9 @@ In modern Microsoft architecture, identity is the control plane for Azure, Micro
 
 ## 한국어 요약
 
-Azure Identity는 Azure resource 접근을 제어하는 핵심 control plane입니다.
+Azure 리소스에 접근하는 사용자와 애플리케이션의 권한을 정리합니다.
 
-Entra ID, Azure RBAC, PIM, Conditional Access, managed identity, service principal governance를 함께 설계해야 landing zone과 workload 운영이 안전해집니다.
+Entra ID, Azure RBAC, PIM, Conditional Access, 관리 ID와 서비스 주체의 용도를 구분하고 필요한 권한만 부여합니다.
 
 ## Business Scenario
 

@@ -185,19 +185,19 @@ The strongest outcome is not simply that an alert was generated. A good validati
 
 ## 한국어 요약
 
-이 문서는 Atomic Red Team을 활용해 Microsoft Defender for Endpoint와 Microsoft Defender XDR의 탐지, incident 생성, device timeline, SOC routing을 검증하는 방법을 설명합니다.
+Atomic Red Team으로 Defender for Endpoint와 Defender XDR의 탐지·기록·사고 대응 절차를 시험하는 방법입니다.
 
-핵심은 “테스트를 실행했다”가 아니라 “예상한 telemetry와 alert가 생성되었고, analyst가 조치 가능한 evidence를 받았는지”를 확인하는 것입니다. 운영 환경에서는 승인된 범위, 테스트 시간, 대상 device, rollback owner, SOC notification을 반드시 정리해야 합니다.
+테스트 실행 후 예상한 기록과 경고가 생성됐는지 확인하고, 담당자가 원인을 파악해 조치할 수 있는지도 점검합니다. 실행 전 승인과 격리된 시험 환경이 필요합니다.
 
 ## Validation Evidence Model
 
 | Evidence | Why It Matters |
 |---|---|
 | Atomic test ID | 어떤 MITRE technique을 검증했는지 추적 |
-| Target endpoint | 테스트 장비와 production 영향 범위 확인 |
+| Target 엔드포인트 | 테스트 장비와 운영 환경 영향 범위 확인 |
 | Defender alert | 탐지 여부와 alert severity 확인 |
 | Incident correlation | 단일 alert가 incident로 묶이는지 확인 |
-| Device timeline | process, file, network telemetry 확인 |
+| Device timeline | 프로세스, file, 네트워크 상태·활동 기록 확인 |
 | SOC response | analyst notification과 triage 절차 확인 |
 
 ## Related Documents
@@ -222,4 +222,4 @@ The strongest outcome is not simply that an alert was generated. A good validati
 
 ## Contact / Asset Request
 
-고객 환경에서 Atomic Red Team 기반 validation plan, MITRE mapping report, SOC handover checklist가 필요하면 [Contact and Asset Request](../contact)를 통해 public-safe template을 요청할 수 있습니다.
+고객 환경에서 Atomic Red Team 기반 검증 계획, MITRE 기법 연결표와 SOC 인수인계 점검표가 필요하면 [Contact and Asset Request](../contact)를 통해 공개 가능한 양식을 요청할 수 있습니다.

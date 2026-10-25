@@ -41,9 +41,9 @@ For regulated collaboration boundaries, OneDrive should also be reviewed with Mi
 
 ## 한국어 요약
 
-OneDrive는 개인 업무 파일 저장소이지만 enterprise architecture에서는 data protection과 collaboration governance의 일부로 설계해야 합니다.
+OneDrive의 동기화, 외부 공유, 데이터 보존과 퇴사자 파일 처리를 정리했습니다.
 
-Known Folder Move, sync restriction, external sharing, retention, DLP, user departure process, Copilot readiness까지 함께 고려해야 합니다.
+폴더 이동과 공유 정책을 적용하기 전에 대상 사용자, 파일 소유자와 예외 처리 방법을 정하고 데이터 보호 정책을 확인하세요.
 
 ## Business Scenario
 

@@ -101,9 +101,9 @@ This anonymized case study summarizes a manufacturing-sector Copilot adoption pa
 
 ## 한국어 요약
 
-이 사례는 제조업 환경에서 Microsoft 365 Copilot을 도입할 때 readiness, security, license value, user enablement, executive reporting을 함께 설계한 익명화된 customer success pattern입니다.
+제조 조직에서 Copilot의 사용 준비, 자료 보호, 사용자 교육과 효과 측정을 함께 계획한 사례입니다.
 
-제조 조직은 본사, 현업, 생산/운영 조직의 업무 패턴이 다르기 때문에 단순한 기능 교육보다 role-based use case, data protection, phased pilot, adoption metric이 중요합니다.
+본사와 생산·운영 부서의 업무 차이를 확인하고 직무별 사용 예시와 시범 적용 대상을 정합니다. 결과는 업무별로 측정해 보고합니다.
 
 ## Business Context
 

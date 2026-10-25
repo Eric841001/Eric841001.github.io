@@ -69,9 +69,9 @@ Landing Zone architecture standardizes governance, identity, networking, securit
 
 ## 한국어 요약
 
-Azure Landing Zone은 workload를 Azure에 올리기 전에 먼저 준비해야 하는 enterprise cloud foundation입니다.
+Azure Landing Zone은 업무 시스템을 Azure로 옮기기 전에 마련하는 클라우드 운영 기반입니다. 관리 그룹, 구독, 네트워크, 접근 권한과 보안 정책을 정하고 운영 담당자를 지정합니다.
 
-Management group, subscription, identity, network, security, monitoring, policy, cost management를 표준화하면 이후 migration, application modernization, AI platform 구축을 더 빠르고 안전하게 진행할 수 있습니다.
+이 기준에 맞춰 모니터링과 비용 관리를 설정하면 시스템을 추가할 때마다 운영 방식을 새로 정할 필요가 줄어듭니다.
 
 ## Business Scenario
 

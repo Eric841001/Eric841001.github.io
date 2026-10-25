@@ -333,9 +333,9 @@ Start here: [Contact and Asset Request](/knowledge/contact)
 
 ## 한국어 요약
 
-Downloads Center는 실제 컨설팅에서 사용할 수 있는 Microsoft 365, Security, Copilot, AI Agent, Migration, SOW, WBS, Risk Register 관련 자산의 구조와 활용 방식을 설명하는 공간입니다. 실제 편집 가능한 문서는 공개 사이트에 직접 올리지 않고, 목적과 보안 경계를 확인한 뒤 공유하는 방식이 적합합니다.
+Microsoft 365, 보안, Copilot, 이전 작업과 프로젝트 관리에 쓰는 문서 양식을 소개합니다.
 
-첫 요청에서는 고객명, tenant ID, domain, 계약 금액, 내부 프로젝트명, 보안 예외 정보처럼 민감한 내용은 제외하고, 업종, 대상 workload, 프로젝트 단계, 필요한 산출물 유형만 전달하는 것이 안전합니다.
+공개 페이지에서는 양식의 구성과 용도를 확인할 수 있습니다. 편집 가능한 파일은 사용 목적과 공개 가능한 정보의 범위를 확인한 뒤 요청하세요.
 
 ## 검색 키워드
 

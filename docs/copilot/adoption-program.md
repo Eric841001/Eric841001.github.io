@@ -1010,7 +1010,7 @@ The most successful Copilot adoption programs consistently include:
 - Copilot adoption
 - Copilot readiness
 - Copilot 도입
-- AI Agent 운영 모델
+- AI 에이전트 운영 모델
 
 
 </ReadingSection>

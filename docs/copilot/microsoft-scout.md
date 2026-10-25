@@ -328,18 +328,18 @@ Autopilot is likely to become a foundational component of Microsoft's Agentic AI
 
 ## 한국어 요약
 
-Microsoft Scout는 사용자가 직접 AI에게 질문하는 방식에서 한 단계 더 나아가, agent가 업무 맥락을 지속적으로 관찰하고 필요한 action item, follow-up, meeting preparation, escalation을 먼저 제안하는 방향을 보여줍니다.
+Microsoft는 2026년 9월 25일 Scout의 새 이름을 Autopilot으로 발표했습니다. 당시 제공 단계는 비공개 미리 보기이므로 아래 업무 예시를 모든 테넌트에서 사용할 수 있는 기능으로 보아서는 안 됩니다.
 
-기업 관점에서는 Autopilot 자체보다 더 중요한 질문이 있습니다. 어떤 데이터와 업무 맥락을 agent가 사용할 수 있는지, 어떤 action을 자동화할 수 있는지, 어떤 시점에 human approval이 필요한지, 그리고 audit과 compliance를 어떻게 남길 것인지입니다.
+시범 도입 자격과 비용을 확인하고, 에이전트가 읽을 자료와 실행할 작업, 담당자 승인과 기록 보관 방법을 정합니다.
 
 ## Enterprise Readiness Checklist
 
 | Area | Question |
 |---|---|
-| Work context | Calendar, Email, Teams, SharePoint, CRM, project data 중 어떤 범위를 사용할 것인가? |
-| Action boundary | reminder, draft, task creation, approval request 중 어디까지 agent가 수행할 수 있는가? |
+| Work 맥락 | Calendar, Email, Teams, SharePoint, CRM, project 데이터 중 어떤 범위를 사용할 것인가? |
+| Action boundary | 알림, 초안 작성, 작업 생성과 승인 요청 중 어디까지 에이전트가 수행할 수 있는가? |
 | Privacy | 개인 업무 지원과 조직 모니터링 사이의 경계를 어떻게 설명할 것인가? |
-| Governance | agent owner, lifecycle, permission, audit log를 누가 관리할 것인가? |
+| Governance | 에이전트 담당자, 변경·폐기 절차, 접근 권한과 감사 로그를 누가 관리할 것인가? |
 | Adoption | 사용자에게 어떤 업무 시나리오부터 보여줄 것인가? |
 
 ## Related Documents
@@ -366,4 +366,4 @@ Microsoft Scout는 사용자가 직접 AI에게 질문하는 방식에서 한 �
 
 ## Contact / Asset Request
 
-Autopilot-style agent scenario를 Copilot Studio, Microsoft 365 agents, Copilot Cowork 관점으로 정리한 workshop agenda나 governance checklist가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+Autopilot-style 에이전트 활용 예시를 Copilot Studio, Microsoft 365 agents, Copilot Cowork 관점으로 정리한 워크숍 agenda나 운영 기준 checklist가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

@@ -40,11 +40,11 @@ For enterprise customers, the landing zone is not only a network or subscription
 
 ## 한국어 요약
 
-Azure Landing Zone은 Azure를 안전하고 일관되게 사용하기 위한 cloud foundation 설계입니다. 단순히 subscription을 만들거나 network를 연결하는 작업이 아니라, management group, subscription structure, naming, tagging, network, security, policy, monitoring, cost management, 운영 책임을 함께 정의하는 architecture입니다.
+Azure Landing Zone을 설계할 때는 관리 그룹, 구독 구조, 이름과 태그 규칙, 네트워크, 보안 정책, 모니터링과 비용 담당자를 정합니다.
 
-기업 고객이 Azure를 본격적으로 사용하거나 on-premises 시스템을 Azure로 이전하려면 Landing Zone이 먼저 정리되어야 합니다. 특히 제조, 금융, 유통, 글로벌 조직처럼 여러 부서와 workload가 함께 사용하는 환경에서는 표준화된 Landing Zone이 cost control과 security operation의 기준이 됩니다.
+여러 부서가 같은 Azure 환경을 사용한다면 공통 운영 기준과 부서별 책임을 먼저 합의하세요. 시스템 이전이나 신규 서비스 구축 전에 이 기준을 적용할 수 있는지 확인합니다.
 
-AI, data platform, application modernization, server migration을 준비하는 조직도 Azure Landing Zone을 통해 security와 operational governance를 먼저 확립하는 것이 좋습니다.
+AI나 데이터 서비스를 구축하거나 기존 앱·서버를 이전한다면 필요한 보안 정책과 운영 기준을 Landing Zone에 먼저 반영하세요.
 
 ## Business Scenario
 
@@ -162,8 +162,8 @@ Landing zone projects fail when they become abstract architecture exercises. The
 
 - Azure 신규 도입 전 standard architecture 수립
 - on-premises server를 Azure로 이전하기 전 foundation design
-- 여러 부서 또는 계열사의 Azure subscription governance 정비
-- Defender for Cloud와 Azure Policy 기반 security baseline 수립
+- 여러 부서 또는 계열사의 Azure 구독 운영 기준 정비
+- Defender for Cloud와 Azure Policy 기반 기본 보안 정책 수립
 - AI/Data/Application Modernization 프로젝트의 cloud foundation 준비
 
 ## References

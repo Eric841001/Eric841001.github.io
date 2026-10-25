@@ -64,11 +64,11 @@ This page summarizes anonymized customer success patterns derived from enterpris
 
 ## 한국어 요약
 
-이 페이지는 실제 고객 프로젝트 경험을 외부에 공개 가능한 수준으로 익명화한 Customer Success Reference Pattern입니다. 고객명, 프로젝트명, 계약 정보, 내부 파일명은 포함하지 않고, 업종과 업무 상황을 기준으로 반복 가능한 성공 패턴을 정리합니다.
+고객 프로젝트 경험에서 공개할 수 있는 작업 방식과 문서 구성을 정리했습니다. 고객명, 프로젝트명과 계약 정보는 제외했습니다.
 
-제조, 금융, 물류, 유통, 건설, 헬스케어와 같은 산업군에서 Microsoft 365, Security, Copilot, Azure, Migration, Governance 프로젝트를 수행할 때 활용할 수 있는 접근 방식과 delivery asset 구조를 제공합니다.
+제조·금융·물류·유통 등 업종별 과제와 Microsoft 365, 보안, Copilot과 이전 작업의 접근 방법을 참고하세요.
 
-검색 사용자 입장에서는 "Microsoft 365 고객 성공 사례", "Copilot 도입 사례", "Security architecture reference", "Microsoft 365 migration 사례", "SOW/WBS 산출물 예시"와 같은 주제로 이 페이지를 찾을 수 있습니다.
+
 
 ## Reference Pattern Map
 
@@ -371,23 +371,23 @@ When publishing these references externally:
 - Microsoft Security customer reference
 - Azure Landing Zone 사례
 - Microsoft 365 migration case
-- 제조업 Copilot adoption
-- 금융 SaaS security architecture
-- 물류 Exchange Online migration
+- 제조업 Copilot 도입·정착
+- 금융 SaaS 보안 architecture
+- 물류 Exchange Online 이전
 - Enterprise Governance 사례
 - Copilot Studio 고객 사례
-- AI Agent 도입 사례
+- AI 에이전트 도입 사례
 - SOW WBS customer reference
 
 ## 컨설팅 활용 사례
 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- 제안서에 포함할 anonymized customer success pattern 작성
+- 제안서에 포함할 anonymized 익명화한 프로젝트 사례 작성
 - Microsoft 365/Copilot/Security 프로젝트 reference 정리
 - 업종별 pain point와 delivery approach 매핑
-- SOW, WBS, risk register, governance model 산출물 재사용
-- 고객명을 공개하지 않고도 신뢰 가능한 portfolio narrative 구성
+- SOW, WBS, 위험 등록부, 운영 기준 문서 산출물 재사용
+- 고객명을 공개하지 않고 수행 업무와 공개 가능한 결과 설명
 
 ## Executive Reference Model
 

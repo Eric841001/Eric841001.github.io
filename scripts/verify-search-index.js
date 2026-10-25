@@ -1,0 +1,13 @@
+const fs = require('fs');
+const path = require('path');
+const lunr = require('lunr');
+require('lunr-languages/lunr.stemmer.support')(lunr);
+require('lunr-languages/lunr.ko')(lunr);
+require('lunr-languages/lunr.multi')(lunr);
+const indexFile = path.resolve(__dirname, '../build/search-index.json');
+if (!fs.existsSync(indexFile)) throw new Error('Run npm run build before checking the search index.');
+const indexes = JSON.parse(fs.readFileSync(indexFile, 'utf8')).map(entry => lunr.Index.load(entry.index));
+const queries = ['보안', '클라우드', 'Intune', '0x80180031', '26H2'];
+const results = queries.map(query => ({query, matches: indexes.reduce((n, index) => n + index.search(query).length, 0)}));
+console.log(JSON.stringify(results));
+if (results.some(result => result.matches === 0)) process.exit(1);

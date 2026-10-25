@@ -90,9 +90,9 @@ Architecture content here is intended to be practical. Each topic connects busin
 
 ## 한국어 요약
 
-Architecture Center는 Microsoft 365, Security, Copilot, Azure, Migration, Governance를 각각의 제품 설명이 아니라 하나의 enterprise architecture 관점으로 연결합니다.
+Microsoft 365, Azure, 보안과 Copilot의 설계 문서를 모았습니다. 도입 목적에 맞는 구성을 정하고 관련 제품의 적용 조건을 확인할 때 참고하세요.
 
-좋은 아키텍처는 구성도만 의미하지 않습니다. 왜 이 설계가 필요한지, 어떤 결정을 내려야 하는지, 누가 운영 책임을 갖는지, 어떤 산출물로 고객과 합의할지를 함께 설명해야 합니다.
+구성도와 함께 설계 이유, 결정할 사항, 운영 담당자와 인수할 자료를 정리하면 고객과 작업 범위를 합의하기 쉽습니다.
 
 ## Focus Areas
 

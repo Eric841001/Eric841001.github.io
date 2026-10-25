@@ -66,9 +66,9 @@ This guide explains how to position Defender XDR as the SOC layer for Microsoft 
 
 ## 한국어 요약
 
-Defender XDR은 여러 보안 제품의 alert를 한 화면에 모으는 수준으로 끝나면 효과가 제한적입니다. 제대로 설계하려면 identity, endpoint, email, SaaS, data protection 신호를 하나의 incident story로 연결하고, SOC analyst가 어떤 기준으로 triage, investigation, containment, remediation, executive reporting을 수행할지 정해야 합니다.
+Defender XDR로 계정, 기기, 메일과 클라우드 앱의 보안 신호를 연결해 조사하는 방법입니다.
 
-특히 Copilot과 AI Agent 도입이 확대되면 compromised user, risky device, overshared data, malicious email, suspicious OAuth app 같은 신호가 업무 데이터 접근 위험과 직접 연결됩니다. 따라서 Defender XDR은 AI adoption 이전에 반드시 검토해야 하는 security visibility layer입니다.
+SOC 담당자가 경고를 분류하고 원인을 조사한 뒤 격리·복구·보고할 수 있도록 권한과 절차를 정합니다.
 
 ## Reference Architecture View
 

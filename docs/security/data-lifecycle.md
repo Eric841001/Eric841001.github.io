@@ -39,9 +39,9 @@ For Microsoft 365 and Copilot readiness, lifecycle management reduces data spraw
 
 ## 한국어 요약
 
-Data Lifecycle Management는 Microsoft 365에 저장된 데이터가 생성되고, 보관되고, 폐기되는 전체 흐름을 관리하는 체계입니다.
+Microsoft 365 자료의 보관 기간, 삭제와 처분 검토 절차를 정리합니다.
 
-Retention, deletion, records management, ownership, audit evidence를 설계하면 SharePoint, OneDrive, Teams, Exchange 데이터가 무분별하게 쌓이는 문제를 줄이고 Copilot이 참조하는 정보 품질도 개선할 수 있습니다.
+자료 소유자와 법적 요구사항을 확인하고 보존 정책·레이블의 적용 위치와 대상을 정하세요. 보존 설정과 실제 삭제 시점은 구분해야 합니다.
 
 ## Business Scenario
 

@@ -178,20 +178,20 @@ For production Linux servers, capture a validation screenshot or command output 
 
 ## 한국어 요약
 
-이 문서는 Linux 서버를 Microsoft Defender for Endpoint에 온보딩할 때 필요한 사전 조건, 설치 절차, 검증 기준을 정리합니다.
+Linux 서버에 Defender for Endpoint를 설치하고 조직에 등록하는 절차입니다.
 
-Linux onboarding은 agent 설치만으로 완료되지 않습니다. Microsoft Defender XDR portal에 device가 정상 표시되고, `mdatp health` 결과가 정상이며, vulnerability management와 alert routing까지 확인되어야 운영 인수인계가 가능합니다.
+배포판과 버전, 패키지 저장소, 네트워크와 라이선스 조건을 확인한 뒤 설치합니다. 완료 후에는 기기의 보호 상태와 포털 등록 결과를 함께 확인하세요.
 
 ## Field Checklist
 
 | Area | What to Confirm |
 |---|---|
 | OS support | 배포판과 버전이 Microsoft Defender for Endpoint 지원 범위에 있는가? |
-| Network path | proxy, SSL inspection, firewall, package repository 접근이 가능한가? |
-| Onboarding package | tenant에 맞는 onboarding package를 사용했는가? |
+| Network path | proxy, SSL inspection, 방화벽, package repository 접근이 가능한가? |
+| Onboarding package | 테넌트에 맞는 onboarding package를 사용했는가? |
 | Health validation | `mdatp health`, cloud connectivity, org ID, RTP 상태가 정상인가? |
-| SOC operation | alert routing, incident ownership, escalation path가 정의되었는가? |
-| Handover evidence | command output, portal screenshot, validation checklist가 남아 있는가? |
+| SOC 운영 | alert routing, incident 관리 책임, escalation path가 정의되었는가? |
+| 인수인계 자료 | 명령 실행 결과, 포털 화면과 검증 점검표가 남아 있는가? |
 
 ## Related Documents
 
@@ -215,4 +215,4 @@ Linux onboarding은 agent 설치만으로 완료되지 않습니다. Microsoft D
 
 ## Contact / Asset Request
 
-Linux 서버 대량 온보딩, proxy 환경, isolated network, SOC handover 기준이 필요한 경우 [Contact and Asset Request](../contact)를 통해 체크리스트와 validation report template을 요청할 수 있습니다.
+Linux 서버 대량 온보딩, 프록시 환경, 격리된 네트워크, SOC 인수인계 기준이 필요한 경우 [Contact and Asset Request](../contact)를 통해 체크리스트와 검증 보고서 양식을 요청할 수 있습니다.

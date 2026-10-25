@@ -62,9 +62,9 @@ For proposal work, governance should make the delivery model credible. It explai
 
 ## 한국어 요약
 
-Governance Model은 프로젝트 운영 구조를 설명하는 제안서 핵심 섹션입니다.
+프로젝트의 의사결정자, 수행 담당자와 보고·승인 절차를 정리합니다.
 
-고객에게 단순히 “주간 회의를 한다”가 아니라 steering committee, project team, technical workshop, risk review, change control이 어떻게 연결되는지 보여줘야 합니다.
+정기 회의의 목적과 참석자, 위험 보고 기준, 설계 변경 승인자와 기록할 자료를 명시하세요.
 
 ## Governance Structure
 

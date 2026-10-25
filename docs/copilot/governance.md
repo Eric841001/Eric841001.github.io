@@ -96,20 +96,20 @@ Successful Copilot adoption starts with a narrow, high-value pilot. Broad rollou
 
 ## 한국어 요약
 
-Copilot Governance는 Microsoft 365 Copilot을 안전하게 배포하기 위한 data access, identity, Purview, DLP, audit, agent lifecycle, adoption 운영 모델입니다.
+Copilot 사용자의 자료 접근 권한, 데이터 보호 정책과 에이전트 운영 책임을 정리한 문서입니다.
 
-핵심은 Copilot license를 배정하기 전에 SharePoint, Teams, OneDrive의 permission sprawl과 oversharing risk를 정리하고, pilot user, business scenario, support model, value measurement를 함께 설계하는 것입니다. Copilot Studio agent와 Graph connector까지 확장되는 환경에서는 agent approval, owner, telemetry, cost control도 governance에 포함되어야 합니다.
+도입 전에 SharePoint, Teams와 OneDrive의 과도한 공유를 점검합니다. 시범 적용 대상과 업무, 지원 담당자, 성과 측정 방법을 정하고, 에이전트와 커넥터를 추가할 때 승인 절차와 비용 기준을 확인합니다.
 
 ## Governance Control Matrix
 
-| Control Area | Practical Decision |
+| 점검 영역 | 확인할 사항 |
 |---|---|
-| Data readiness | overshared site, sensitive content, permission inheritance를 어떻게 정리할 것인가? |
-| Identity | pilot group, privileged role, guest access, Conditional Access 기준은 무엇인가? |
-| Purview / DLP | sensitivity label, retention, DLP, audit가 Copilot 사용 시나리오와 맞는가? |
-| Agent governance | Copilot Studio agent 생성, 승인, 배포, 폐기 기준은 무엇인가? |
-| Adoption | champion, training, prompt guide, VOC, KPI를 어떻게 운영할 것인가? |
-| Value tracking | license usage가 아니라 업무 성과와 시간 절감 기준으로 측정하는가? |
+| 자료와 권한 | 과도하게 공유한 사이트, 민감한 자료와 상속된 접근 권한을 어떻게 정리할 것인가? |
+| 계정 | 시범 적용 그룹, 관리자 역할, 게스트 접근과 Conditional Access 기준은 무엇인가? |
+| Purview / DLP | 민감도 레이블, 보존, DLP와 감사 설정이 사용할 업무에 맞는가? |
+| 에이전트 운영 | Copilot Studio 에이전트를 만들고 승인·배포·폐기하는 기준은 무엇인가? |
+| 사용자 지원 | 부서별 지원자와 교육, 사용 안내와 의견 수렴을 누가 담당할 것인가? |
+| 효과 측정 | 사용 인원 외에 업무 결과와 검토 시간을 어떻게 측정할 것인가? |
 
 ## Related Documents
 
@@ -122,16 +122,16 @@ Copilot Governance는 Microsoft 365 Copilot을 안전하게 배포하기 위한 
 
 ## MVP 커뮤니티 기반 설계 메모
 
-Public Microsoft 365 community에서 반복적으로 강조되는 핵심은 분명합니다. Copilot governance는 AI 기능을 켜는 문제가 아니라, data access와 operating model을 먼저 정리하는 문제입니다.
+Copilot을 도입하기 전에 자료 접근 권한과 운영 절차를 정합니다. 아래 항목으로 담당자와 적용할 정책을 확인하세요.
 
-Enterprise 프로젝트에서는 이 관점을 다음과 같은 실행 항목으로 바꾸는 것이 좋습니다.
+프로젝트에서 다음 항목을 확인하고 실행 계획에 기록하세요.
 
-- SharePoint, Teams, OneDrive oversharing review를 Copilot readiness의 필수 gate로 둡니다.
-- Copilot access를 전체 허용할지, pilot group으로 제한할지, data domain 기준으로 제한할지 결정합니다.
-- 전체 배포 전에 sensitivity label, DLP policy, retention, audit readiness를 확인합니다.
-- Copilot agent, Graph connector, third-party extension의 승인 기준을 정합니다.
-- 부정확한 답변, 예상하지 못한 content discovery, 사용자 feedback을 처리할 support model을 준비합니다.
-- prompt usage, business scenario, adoption outcome을 추적하되 사용자 감시처럼 보이지 않도록 운영 기준을 명확히 합니다.
+- SharePoint, Teams와 OneDrive의 과도한 공유를 점검하고 필요한 권한을 정리합니다.
+- Copilot 사용 대상과 접근할 자료를 정합니다. 시범 적용 그룹과 자료 소유자의 검토 범위를 기록하세요.
+- 전체 배포 전에 민감도 레이블, DLP, 보존과 감사 설정을 확인합니다.
+- Copilot 에이전트, Graph 커넥터와 타사 확장 기능의 승인 기준을 정합니다.
+- 부정확한 답변, 예상하지 못한 자료 노출과 사용자 의견을 접수·처리할 담당자를 정합니다.
+- 사용량과 업무 결과를 확인할 때 수집할 항목과 용도를 사용자에게 안내하고 개인정보 보호 기준을 지킵니다.
 
 ## 한국어 검색 키워드
 
@@ -140,7 +140,7 @@ Enterprise 프로젝트에서는 이 관점을 다음과 같은 실행 항목으
 - Microsoft 365 Copilot governance
 - Copilot data access control
 - Copilot oversharing review
-- Copilot 도입 전 SharePoint permission review
+- Copilot 도입 전 SharePoint 접근 권한 review
 - Copilot security readiness
 - Copilot Agent governance
 
@@ -160,5 +160,5 @@ This page is designed for the following search intents:
 - Copilot security readiness
 - Copilot Studio agent governance
 - Microsoft 365 Copilot 보안
-- Copilot 도입 전 SharePoint permission review
+- Copilot 도입 전 SharePoint 접근 권한 review
 - Copilot Agent 거버넌스

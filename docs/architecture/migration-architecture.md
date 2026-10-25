@@ -65,9 +65,9 @@ This architecture provides a standardized framework for tenant-to-tenant migrati
 
 ## 한국어 요약
 
-Migration architecture는 단순한 data copy 작업이 아닙니다.
+이전 작업을 시작하기 전에 원본 환경과 대상 테넌트의 차이를 확인해야 합니다.
 
-Source environment 분석, target Microsoft 365 tenant 설계, identity mapping, mail flow, permission, security, user communication, cutover, stabilization까지 하나의 전환 프로그램으로 관리해야 합니다.
+계정 연결, 메일 흐름, 파일 권한, 보안 정책과 사용자 안내를 준비하고, 시험 이전부터 전환·복구·안정화까지 단계별 담당자와 완료 조건을 정합니다.
 
 ## Business Scenario
 

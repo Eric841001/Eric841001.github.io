@@ -94,9 +94,9 @@ Multi-tenant governance is required when an enterprise group, holding company or
 
 ## 한국어 요약
 
-Multi-Tenant Governance는 여러 계열사, 인수합병 조직, 지역 법인, 분리 운영 조직이 Microsoft 365 또는 Azure tenant를 동시에 운영할 때 필요한 전략입니다.
+계열사와 지역 법인 등이 여러 Microsoft 365 또는 Azure 테넌트를 운영할 때 확인할 관리 기준입니다.
 
-이 주제는 단순히 tenant를 하나로 통합할지 말지를 결정하는 문제가 아닙니다. identity, security baseline, collaboration, external sharing, license ownership, support model, migration roadmap을 함께 정리해야 합니다. 잘못 접근하면 tenant consolidation 비용만 커지고, 보안 및 운영 표준은 여전히 분산된 상태로 남을 수 있습니다.
+테넌트 통합 여부와 별개로 계정, 공통 보안 정책, 외부 공유, 라이선스와 지원 책임을 정합니다. 이전이 필요하다면 비용과 적용 순서를 따로 검토하세요.
 
 ## Governance Challenges
 
@@ -190,9 +190,9 @@ An anonymized enterprise group governance engagement typically follows this patt
 - Microsoft 365 tenant strategy
 - tenant consolidation roadmap
 - cross-tenant access governance
-- Microsoft 365 계열사 tenant 관리
-- Microsoft 365 tenant 통합 전략
-- 다중 tenant governance
+- Microsoft 365 계열사 테넌트 관리
+- Microsoft 365 테넌트 통합 전략
+- 다중 테넌트 운영 기준
 - tenant-to-tenant migration strategy
 
 ## Reference Snapshot

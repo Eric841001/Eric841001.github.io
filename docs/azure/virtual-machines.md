@@ -39,9 +39,9 @@ VM architecture should consider identity, network, backup, monitoring, patching,
 
 ## 한국어 요약
 
-Azure Virtual Machines는 IaaS 기반 workload를 운영하기 위한 compute 서비스입니다.
+Azure Virtual Machines로 업무 시스템을 운영할 때 확인할 설계 항목을 정리했습니다.
 
-단순 lift-and-shift가 아니라 network, identity, backup, monitoring, patching, security, cost ownership을 함께 설계해야 Azure 운영 복잡도와 비용 리스크를 줄일 수 있습니다.
+서버 크기와 디스크뿐 아니라 네트워크, 접근 권한, 백업, 패치, 모니터링과 비용 담당자를 함께 정합니다.
 
 ## Business Scenario
 

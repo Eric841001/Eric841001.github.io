@@ -217,7 +217,7 @@ High-risk senders can trigger:
 
 ## Deliverables
 
-- Power Automate Flow
+- Power Automate 흐름
 - Teams Notification Template
 - Email Template
 - Operational Guide
@@ -227,20 +227,20 @@ High-risk senders can trigger:
 
 ## 한국어 요약
 
-이 문서는 Exchange Online의 Junk Email 폴더를 Power Automate로 모니터링하고, Teams 또는 Email로 알림을 보내는 운영 자동화 패턴을 설명합니다.
+Exchange Online의 Junk Email 폴더를 확인하고 Teams나 메일로 알리는 Power Automate 구성 예시입니다.
 
-핵심은 모든 Junk Mail을 무조건 경보화하는 것이 아니라, 보안팀과 서비스데스크가 확인해야 하는 조건을 정의하고 noise를 줄이는 것입니다. 운영 환경에서는 sender, recipient, subject, received time, spam confidence, attachment 여부, URL 포함 여부를 기준으로 alert rule을 조정해야 합니다.
+보안팀과 서비스데스크가 확인할 조건을 정해 불필요한 알림을 줄입니다. 발신자, 수신자, 제목과 수신 시각 등 필요한 항목만 알림에 담으세요.
 
 ## Operational Checklist
 
 | Checkpoint | Validation Question |
 |---|---|
-| Trigger scope | 어떤 사용자 또는 공유 사서함의 Junk Email 폴더를 감시할 것인가? |
+| Trigger 범위 | 어떤 사용자 또는 공유 사서함의 Junk Email 폴더를 감시할 것인가? |
 | Alert rule | 모든 메일을 알릴 것인가, 특정 조건만 알릴 것인가? |
-| Recipient | Teams channel, service desk mailbox, SOC queue 중 어디로 보낼 것인가? |
-| Noise control | daily summary, high-risk only, VIP user only 같은 제한 조건이 필요한가? |
-| Evidence | sender, subject, received time, recipient, URL, attachment 정보를 남기는가? |
-| Ownership | Flow owner, backup owner, failure notification owner가 정의되어 있는가? |
+| Recipient | Teams 채널, 서비스데스크 사서함과 SOC 작업 목록 중 어디로 보낼 것인가? |
+| Noise 제어 | 일별 요약, 고위험 메일만 알림, 지정 사용자만 알림 같은 제한 조건이 필요한가? |
+| Evidence | 발신자, 제목, 수신 시각, 수신자, URL, 첨부파일 정보를 남기는가? |
+| Ownership | 흐름 담당자, 대체 담당자와 실패 알림 수신자가 정의되어 있는가? |
 
 ## Related Documents
 
@@ -264,4 +264,4 @@ High-risk senders can trigger:
 
 ## Contact / Asset Request
 
-실제 고객 환경에 적용할 때는 tenant policy, mailbox scope, Defender signal, Teams channel 운영 기준을 함께 검토해야 합니다. Power Automate Flow 예시나 운영 알림 템플릿이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+실제 고객 환경에 적용할 때는 테넌트 정책, 사서함 범위, Defender 경고와 Teams 채널 운영 기준을 함께 검토해야 합니다. Power Automate 흐름 예시나 운영 알림 템플릿이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

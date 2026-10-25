@@ -239,20 +239,20 @@ Assessment outputs should include:
 
 ## 한국어 요약
 
-이 문서는 Microsoft 365, Security, Endpoint, Migration, Governance 관점에서 assessment workshop을 준비하고 실행하기 위한 체크리스트입니다.
+Microsoft 365의 사용자·기기·협업·보안과 운영 현황을 조사할 때 쓰는 점검표입니다.
 
-좋은 assessment는 단순한 현황 조사표가 아니라 executive summary, risk register, gap analysis, roadmap, licensing recommendation으로 이어져야 합니다. 특히 고객 환경에서는 tenant configuration, security control, adoption readiness, migration dependency를 함께 보아야 실제 제안서와 WBS로 연결됩니다.
+확인한 설정과 증거를 기록한 뒤 문제의 영향, 개선 순서와 필요한 라이선스를 정리합니다.
 
 ## Assessment Output Model
 
 | Output | Purpose |
 |---|---|
-| Current State Summary | 현재 tenant, security, device, migration 상태 요약 |
+| Current State Summary | 현재 테넌트, 보안, 기기, 이전 상태 요약 |
 | Risk Register | 보안, 운영, 일정, 비용 리스크 분류 |
 | Gap Analysis | 목표 상태와 현재 상태의 차이 |
-| Roadmap | phase, owner, dependency, timeline 정의 |
+| Roadmap | phase, 담당자, dependency, timeline 정의 |
 | Executive Summary | 임원 보고용 핵심 메시지 |
-| Next Action Plan | workshop 이후 실행 항목과 책임자 |
+| Next Action Plan | 워크숍 이후 실행 항목과 책임자 |
 
 ## Related Documents
 
@@ -272,8 +272,8 @@ Assessment outputs should include:
 - tenant assessment workbook
 - Microsoft 365 진단 체크리스트
 - 보안 진단 체크리스트
-- Microsoft 365 컨설팅 assessment
+- Microsoft 365 컨설팅 현황 진단
 
 ## Contact / Asset Request
 
-실제 workshop에서 사용할 editable assessment workbook, risk register, executive summary template이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+실제 워크숍에서 사용할 편집 가능한 현황 진단표, 위험 등록부와 경영진 요약 양식이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

@@ -370,6 +370,6 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 - Microsoft 블로그 검색
 - Microsoft 365 검색
 - Copilot 검색
-- AI Agent 검색
+- AI 에이전트 검색
 - Google Search Console
 - Naver Search Advisor

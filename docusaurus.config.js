@@ -103,7 +103,7 @@
         indexDocs: true,
         indexBlog: false,
         docsRouteBasePath: 'knowledge',
-        language: ['en'],
+        language: ['en', 'ko'],
       },
     ],
   ],

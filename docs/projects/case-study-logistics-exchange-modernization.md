@@ -101,9 +101,9 @@ This anonymized case study summarizes a logistics-sector Microsoft 365 moderniza
 
 ## 한국어 요약
 
-이 사례는 물류/유통형 조직에서 Exchange Online과 Microsoft 365 collaboration을 현대화하면서 업무 연속성, mail flow, security review, cutover, rollback, hypercare를 함께 설계한 익명화된 customer success pattern입니다.
+물류·유통 조직의 Exchange Online 도입과 메일 이전을 준비한 사례입니다.
 
-메일 migration은 데이터 이동만으로 끝나지 않습니다. DNS, firewall, endpoint, user communication, administrator guide, post-cutover support가 함께 준비되어야 안정적인 전환이 가능합니다.
+메일 흐름과 보안 정책을 점검하고 DNS, 방화벽, 기기 설정과 사용자 안내를 준비합니다. 전환·복구 절차와 전환 후 지원 담당자도 정합니다.
 
 ## Business Context
 

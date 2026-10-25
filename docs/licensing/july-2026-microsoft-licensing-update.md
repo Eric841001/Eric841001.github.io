@@ -78,11 +78,11 @@ This is especially important when comparing Office 365 E3, Microsoft 365 E3, Mic
 
 ## 한국어 요약
 
-Microsoft licensing 검토에서 가장 중요한 것은 가격 변화가 아니라 포함 기능의 변화입니다.
+Microsoft 라이선스 검토 검토에서 가장 중요한 것은 가격 변화가 아니라 포함 기능의 변화입니다.
 
-예를 들어 고객이 "E3를 사용 중"이라고 말하더라도 그것이 Office 365 E3인지, Microsoft 365 E3인지에 따라 포함되는 security, device management, identity, compliance capability가 달라질 수 있습니다. 또한 Microsoft 문서에서는 Microsoft 365 E3 같은 일부 subscription에 Defender for Office 365 Plan 1이 포함될 수 있다고 설명하므로, 단순 SKU 이름만 보고 아키텍처를 판단하면 위험합니다.
+예를 들어 고객이 "E3를 사용 중"이라고 말하더라도 그것이 Office 365 E3인지, Microsoft 365 E3인지에 따라 포함되는 보안, 기기 관리, ID, 규정 준수 capability가 달라질 수 있습니다. 또한 Microsoft 문서에서는 Microsoft 365 E3 같은 일부 구독에 Defender for Office 365 Plan 1이 포함될 수 있다고 설명하므로, 단순 SKU 이름만 보고 아키텍처를 판단하면 위험합니다.
 
-따라서 license 검토는 SKU 이름이 아니라 service plan identifier, 포함 기능, 실제 enable 상태, 보안 정책 적용 가능 여부를 기준으로 수행해야 합니다.
+따라서 라이선스 검토는 SKU 이름이 아니라 서비스 플랜 식별자, 포함 기능, 실제 활성화 상태, 보안 정책 적용 가능 여부를 기준으로 수행해야 합니다.
 
 ## Feature Change Watch
 

@@ -96,9 +96,9 @@ The Microsoft 365 Optimization Program is a reusable engagement model for organi
 
 ## 한국어 요약
 
-Microsoft 365 Optimization Program은 이미 Microsoft 365를 사용 중인 조직이 tenant governance, identity, endpoint, collaboration, messaging, security, operations를 다시 정렬하기 위한 개선 프로그램입니다.
+이미 사용 중인 Microsoft 365의 설정과 운영 절차를 점검하고 개선할 작업을 정리합니다.
 
-많은 조직은 Microsoft 365를 빠르게 도입한 뒤 Teams, SharePoint, OneDrive, Exchange Online, Intune, Defender, Entra ID 운영 기준이 분산됩니다. 이 프로그램은 현재 상태를 점검하고, 위험과 개선 backlog를 정리하며, 실제 운영팀이 유지할 수 있는 policy workbook과 roadmap으로 전환하는 데 초점을 둡니다.
+Teams, SharePoint, OneDrive, Exchange Online과 보안 제품의 담당자와 정책을 확인합니다. 발견한 문제는 영향과 우선순위, 조치 담당자와 완료 조건으로 기록하세요.
 
 ## Typical Customer Context
 

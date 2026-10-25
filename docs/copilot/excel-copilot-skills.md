@@ -334,9 +334,9 @@ Organizations can move beyond individual productivity gains and establish repeat
 
 ## 한국어 요약
 
-Excel Copilot Skills는 단순히 Excel 수식을 도와주는 기능을 넘어, 재무 분석, 보고, 예측, workbook rule, connector 기반 데이터 활용을 더 반복 가능하게 만드는 방향으로 발전하고 있습니다.
+Excel Skills로 반복하는 분석·보고 작업의 지시와 출력 형식을 저장해 사용할 수 있습니다. 기능을 쓰기 전에 지원 언어, 앱 버전과 계정 조건을 확인하세요.
 
-기업에서는 이를 개인 생산성 기능이 아니라 finance operation, reporting automation, governance-ready workbook design 관점으로 검토해야 합니다. 중요한 workbook에는 데이터 출처, 승인 흐름, 변경 추적, 민감정보 처리 기준이 함께 필요합니다.
+중요한 재무 파일은 원본 자료, 계산 가정과 변경 내용을 담당자가 검토해야 합니다. 스킬 사용만으로 계산의 정확성이나 감사 기록이 보장되지는 않습니다.
 
 ## 검색 키워드
 

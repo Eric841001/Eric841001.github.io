@@ -101,9 +101,9 @@ This anonymized case study summarizes an enterprise group pattern involving Entr
 
 ## 한국어 요약
 
-이 사례는 여러 사업부 또는 계열사가 Microsoft 365, Entra ID, Intune, Teams, SharePoint, Defender, Purview를 서로 다른 기준으로 운영하는 상황에서 공통 governance model을 수립한 익명화된 customer success pattern입니다.
+여러 사업부와 계열사가 Microsoft 365를 서로 다른 기준으로 운영할 때 공통 정책과 책임을 정한 사례입니다.
 
-고객명과 내부 프로젝트명은 공개하지 않고, 계열사/사업부 환경에서 반복적으로 발생하는 identity, device, collaboration, tenant strategy, exception process, operations handover 패턴만 정리합니다.
+계정·기기·협업 서비스의 관리 기준, 테넌트 운영 방침과 예외 승인 절차를 정리했습니다. 고객명과 내부 프로젝트명은 공개하지 않습니다.
 
 ## Business Context
 
@@ -198,7 +198,7 @@ For executive review, this pattern should be positioned as a governance standard
 - Entra ID governance
 - Intune policy workbook
 - multi-tenant governance
-- 계열사 Microsoft 365 governance
+- 계열사 Microsoft 365 운영 기준
 - Microsoft 365 운영 모델
 - tenant strategy
 

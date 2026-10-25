@@ -92,9 +92,9 @@ keywords:
 
 ## 한국어 요약
 
-AI Agent Factory는 부서별로 agent를 무작정 만드는 방식이 아닙니다. agent idea intake, prioritization, design, approval, publishing, monitoring, retirement를 반복 가능한 운영 모델로 만드는 접근입니다.
+에이전트 제안을 접수하고 우선순위를 정해 설계·승인·배포·운영하는 절차를 소개합니다.
 
-Copilot Studio, Agent Builder, Microsoft 365 Agents SDK, Microsoft Foundry를 활용하더라도 enterprise 환경에서는 owner, permission boundary, knowledge source, audit, lifecycle, cost control이 먼저 정리되어야 합니다.
+업무별 담당자와 데이터 접근 범위, 실행 권한, 비용과 품질 기준을 정한 뒤 도구를 선택하세요.
 
 ## Agent Factory Journey Map
 
@@ -291,11 +291,11 @@ Measure reuse, task completion, quality, user satisfaction, incident count, cost
 
 - AI Agent Factory
 - Copilot Studio Agent
-- AI Agent 도입
-- AI Agent 거버넌스
+- AI 에이전트 도입
+- AI 에이전트 거버넌스
 - Agentic AI architecture
 - Multi-Agent Framework
-- Agent Factory 운영 모델
+- 에이전트 운영 절차
 - Copilot Studio new agent experience
 - Microsoft IQ
 - Copilot Studio skills

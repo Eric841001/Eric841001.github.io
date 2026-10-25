@@ -125,9 +125,9 @@ The current [Microsoft enterprise plan comparison](https://www.microsoft.com/en-
 
 ## 한국어 요약
 
-Licensing 검토는 단순히 Microsoft 365 E3, E5, Business Premium, Defender, Purview, Copilot 가격을 비교하는 작업이 아닙니다.
+Microsoft 365와 보안·Copilot 기능의 라이선스 조건을 확인하는 자료입니다.
 
-기업 환경에서는 license가 security control, compliance requirement, AI readiness, device management, migration scope, 운영 조직의 책임 범위와 직접 연결됩니다. 따라서 어떤 license를 선택할지는 기능 목록이 아니라 “어떤 위험을 줄이고, 어떤 업무 가치를 만들고, 어떤 운영 모델을 유지할 것인가”라는 관점에서 판단해야 합니다.
+사용자 업무와 필요한 기능, 기기 관리와 보안 요구사항을 정한 뒤 기존 구독과 추가 기능을 비교하세요. 실제 서비스 플랜과 계약 조건을 확인한 뒤 구매안을 결정합니다.
 
 ## Licensing Feature Watch
 

@@ -12,7 +12,7 @@ if (missing.length || invalid.length || new Set(covered).size !== files.length) 
  console.error(JSON.stringify({missing,invalid:invalid.map(([route])=>route)}));process.exit(1);
 }
 const detailedErrors = [];
-const allowedLevels = new Set(['공식 문서로 설정·조건 대조', '공식 문서로 설계 범위 대조', '작성자 자료의 제품 범위 대조']);
+const allowedLevels = new Set(['설정·적용 조건 확인', '설계 참고사항 확인', '작성자 예시·참고자료']);
 for (const [route, r] of entries) {
   if (!allowedLevels.has(r.reviewLevel) || typeof r.notChecked !== 'string' || r.notChecked.length < 30) detailedErrors.push(route + ': missing review method or limits');
   if (r.scope.includes('관련 플랫폼의 공식 요구사항·설계 기준과 문서의 현재 제공 상태 표현을 대조했습니다')) detailedErrors.push(route + ': generic unbounded review claim');

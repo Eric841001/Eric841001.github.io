@@ -60,9 +60,9 @@ sidebar_label: Agent Factory
 
 ## 한국어 요약
 
-Agent Factory는 agent를 많이 만드는 공장이 아닙니다. business demand를 받아서 value, risk, owner, data boundary, approval, cost, telemetry를 확인한 뒤 운영 가능한 agent만 production으로 보내는 enterprise AI 운영 모델입니다.
+Agent Factory는 에이전트 제안을 접수하고 검토·배포·운영하는 절차를 뜻합니다. 업무 효과와 위험을 검토한 뒤 담당자, 접근 권한, 승인 절차와 예산을 정합니다.
 
-Copilot Studio, Microsoft 365 Agents, SDK, Foundry, multi-agent framework를 함께 쓰더라도 핵심은 동일합니다. agent idea가 들어오면 누가 책임지는지, 어떤 데이터에 접근하는지, 어떤 action을 실행하는지, 비용과 품질을 어떻게 볼 것인지가 먼저 정리되어야 합니다.
+Copilot Studio, Microsoft 365 Agents, SDK나 Foundry 중 어떤 도구를 쓰더라도 에이전트가 읽는 자료와 실행하는 작업을 확인해야 합니다. 배포 후 품질과 비용을 점검할 담당자도 지정합니다.
 
 ## 2026 Platform Controls
 
@@ -319,8 +319,8 @@ Anonymized enterprise AI programs show the same pattern: the first successful ag
 - Copilot Studio governance
 - Microsoft 365 Agents
 - agent lifecycle management
-- AI Agent 거버넌스
-- AI Agent 운영 모델
+- AI 에이전트 거버넌스
+- AI 에이전트 운영 모델
 - Copilot Studio release gate
 - multi-agent operating model
 - Copilot Credit forecasting

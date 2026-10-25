@@ -76,7 +76,7 @@ Microsoft Entra ID > Enterprise applications > New application
 
 ## 3. API 호출용 App Registration
 
-별도의 App Registration을 만들고 Microsoft Graph의 다음 **Application permission**을 할당합니다.
+별도의 App Registration을 만들고 Microsoft Graph의 다음 **Application 접근 권한**을 할당합니다.
 
 ```text
 SynchronizationData-User.Upload
@@ -220,7 +220,7 @@ Invoke-RestMethod `
 | 범위 | 대상 OU와 프로비저닝 범위를 파일럿 계정으로 제한 |
 | 감사 | API 호출 로그, Entra 프로비저닝 로그, AD 변경 로그를 연결해 보관 |
 
-이 구성은 일반적인 디렉터리 동기화의 단순한 역방향 복제가 아니라, API로 명시된 사용자 데이터를 Entra 프로비저닝 엔진이 Forest B에 적용하는 통합 패턴입니다. 따라서 운영 전 소유권, 오류 처리, 중복 판정과 계정 수명 주기까지 함께 설계해야 합니다.
+이 구성에서는 API로 전달한 사용자 데이터를 Entra 프로비저닝 엔진이 Forest B에 적용합니다. 일반 디렉터리 동기화를 거꾸로 실행하는 방식은 아닙니다. 따라서 운영 전 소유권, 오류 처리, 중복 판정과 계정 수명 주기까지 함께 설계해야 합니다.
 
 ## 원문 및 참고자료
 

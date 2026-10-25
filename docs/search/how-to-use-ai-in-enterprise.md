@@ -92,15 +92,15 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 </div>
 ## 한국어 요약
 
-기업에서 AI를 활용한다는 것은 단순히 Chat이나 Copilot 기능을 켜는 일이 아닙니다. 실제 업무에서 문서 작성, 분석, 회의 요약, 의사결정, 후속 조치, 장기 실행 업무를 어떻게 바꿀 것인지 설계해야 합니다.
+AI를 사용할 업무를 먼저 고릅니다. 문서 작성, 자료 분석, 회의 요약이나 여러 단계의 작업 중 어떤 부분을 맡길지 정하고 결과를 검토할 담당자를 지정하세요.
 
-가장 자연스러운 흐름은 다음과 같습니다.
+다음 항목을 참고해 도구와 적용 범위를 정할 수 있습니다.
 
 1. Copilot으로 개인 업무 생산성을 높입니다.
-2. available reasoning models을 활용해 더 깊은 reasoning이 필요한 문서, 분석, 발표, 의사결정 업무를 고도화합니다.
+2. 사용 가능한 추론 모델을 활용해 자세한 검토가 필요한 문서, 분석, 발표, 의사결정 업무를 검토합니다.
 3. 반복되는 업무는 Copilot Studio Agent로 전환합니다.
 4. Microsoft 365 업무 맥락 안에서는 M365 Agents를 활용합니다.
-5. 장기 실행 업무는 Copilot Cowork로 확장하되 approval, cost, owner, governance를 함께 설계합니다.
+5. 여러 단계의 업무를 Cowork에 맡길 때는 담당자, 작업 승인과 비용 기준을 정합니다.
 
 ## Enterprise AI Usage Journey
 

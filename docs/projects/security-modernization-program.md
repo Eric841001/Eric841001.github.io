@@ -96,9 +96,9 @@ The Security Modernization Program helps organizations move from basic Microsoft
 
 ## 한국어 요약
 
-Security Modernization Program은 Microsoft 365 보안 설정을 단순 점검하는 작업이 아니라, Zero Trust, Conditional Access, Defender, Purview, Intune, SaaS access control, security committee evidence를 하나의 운영 모델로 묶는 프로그램입니다.
+Microsoft 365의 접근 제어, 기기·메일 보안과 데이터 보호를 점검하고 개선하는 계획입니다.
 
-특히 Copilot, AI Agent, SaaS 확대를 준비하는 조직은 identity, endpoint, data protection, network exception, audit evidence를 먼저 정리해야 합니다. 그렇지 않으면 기능 도입은 빨라져도 보안 승인과 운영 책임이 뒤따라가지 못합니다.
+보안 심의에 필요한 설정과 증거 자료를 확인하고, 담당자와 예외 승인 절차를 정합니다. 개선 후에도 운영팀이 정책을 유지할 수 있도록 인수인계를 준비하세요.
 
 ## Common Drivers
 

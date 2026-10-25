@@ -3919,3 +3919,29 @@ body.kc-diagram-modal-open {
 .kc-source-review__sources li p {margin:.3rem 0;color:var(--kc-ink);}
 .kc-source-review__limits {border-inline-start:3px solid var(--kc-border-strong);padding-inline-start:.75rem;overflow-wrap:anywhere;}
 @media print {.kc-source-review {break-inside:auto;} .kc-source-review__sources:not([open]) > :not(summary) {display:block!important;}}
+
+/* Document introductions should fit the reading column, rather than act as landing pages. */
+.theme-doc-markdown .kc-topic-hero {grid-template-columns:minmax(0,1fr);gap:1rem;padding:1.25rem;margin-block:1.25rem;}
+.theme-doc-markdown .kc-topic-hero :is(.kc-topic-hero__content,.kc-factory-panel) {min-width:0;}
+.theme-doc-markdown .kc-topic-hero > div > h2,
+.theme-doc-markdown .kc-topic-hero .kc-topic-hero__content > h2 {font-size:clamp(1.4rem,2.2vw,1.85rem);line-height:1.3;max-width:none;letter-spacing:-.02em;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-panel {padding:1rem;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-card {min-width:0;padding:.85rem;}
+@media(max-width:480px) {
+ .theme-doc-markdown .kc-topic-hero {padding:1rem;}
+ .theme-doc-markdown .kc-topic-hero .kc-factory-grid {grid-template-columns:minmax(0,1fr);}
+}
+
+/* Compact the whole introduction, including inherited spacing and decorative chips. */
+.theme-doc-markdown .kc-topic-hero > div > h2,
+.theme-doc-markdown .kc-topic-hero .kc-topic-hero__content > h2 {margin:.65rem 0 .75rem;padding:0;border:0;}
+.theme-doc-markdown .kc-topic-hero .kc-topic-hero__lede {font-size:1rem;line-height:1.6;margin:.75rem 0;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-card {min-height:0;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-card strong {font-size:1rem;line-height:1.4;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-card span {font-size:.875rem;line-height:1.5;}
+.theme-doc-markdown .kc-topic-hero .kc-factory-panel__header {margin-bottom:.75rem;}
+.theme-doc-markdown .kc-topic-hero .kc-guardrail-panel {padding:.85rem;font-size:.9rem;line-height:1.5;}
+.theme-doc-markdown .kc-hero-signal-row {margin:.8rem 0;gap:.5rem;}
+.theme-doc-markdown .kc-hero-signal-row span,
+[data-theme='dark'] .theme-doc-markdown .kc-topic-hero .kc-hero-signal-row span {background:var(--kc-surface-muted);color:var(--kc-ink);border:1px solid var(--kc-border-strong);box-shadow:none;}
