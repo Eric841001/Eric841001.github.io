@@ -72,6 +72,16 @@ Licensing guidance should connect cost to architecture, security controls, adopt
   </div>
 </div>
 
+## Licensing verification — 2026-10-25
+
+The current [Microsoft enterprise plan comparison](https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing) lists **Microsoft 365 E7** alongside E3 and E5. E7 includes AI and agent management with broader identity, security and compliance capabilities. This E3/E5 guidance is a scoped comparison, not the full enterprise catalog. Compare actual service plans and existing investments before choosing a bundle.
+
+- Verify **with Teams / without Teams**, market, purchase channel and contract terms; the E3/E5 name alone does not establish Teams entitlement.
+- Distinguish web-grounded Copilot Chat from work-grounded Microsoft 365 Copilot. E5 AI readiness does not establish entitlement to every Copilot feature.
+- Conditional Access generally requires Entra ID P1; user/sign-in risk policies require P2. Agent policies have separate licensing and preview conditions. See the [Conditional Access guide](../security/conditional-access).
+- The US page is not a Korean quotation. Confirm currency, taxes, commitment, region and renewal terms for the actual offer.
+
+
 ## Visual License Decision Map
 
 <div aria-label="Visual license decision map" className="kc-journey-map">

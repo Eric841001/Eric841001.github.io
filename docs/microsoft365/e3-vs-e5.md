@@ -8,13 +8,23 @@ toc_max_heading_level: 2
 
 # Microsoft 365 E3 vs E5 Enterprise Decision Guide
 
+## Licensing verification — 2026-10-25
+
+The current [Microsoft enterprise plan comparison](https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing) lists **Microsoft 365 E7** alongside E3 and E5. E7 includes AI and agent management with broader identity, security and compliance capabilities. This E3/E5 guidance is a scoped comparison, not the full enterprise catalog. Compare actual service plans and existing investments before choosing a bundle.
+
+- Verify **with Teams / without Teams**, market, purchase channel and contract terms; the E3/E5 name alone does not establish Teams entitlement.
+- Distinguish web-grounded Copilot Chat from work-grounded Microsoft 365 Copilot. E5 AI readiness does not establish entitlement to every Copilot feature.
+- Conditional Access generally requires Entra ID P1; user/sign-in risk policies require P2. Agent policies have separate licensing and preview conditions. See the [Conditional Access guide](../security/conditional-access).
+- The US page is not a Korean quotation. Confirm currency, taxes, commitment, region and renewal terms for the actual offer.
+
+
 ## Executive Summary
 
 Microsoft 365 E3 and E5 selection should be evaluated by service plan entitlement, enabled controls, security maturity, compliance requirements and operational risk.
 
 The decision should be based on security maturity, compliance requirements, operational risk, regulatory exposure, and business transformation objectives.
 
-In most enterprise environments, Microsoft 365 E3 provides a strong productivity and governance baseline, while Microsoft 365 E5 becomes necessary when the organization requires advanced security, identity protection, compliance, analytics, and Zero Trust capabilities.
+In most enterprise environments, Microsoft 365 E3 provides a strong productivity and governance baseline, while Microsoft 365 E5 or appropriately licensed add-ons can address advanced security, identity protection, compliance and analytics requirements. Zero Trust is an architecture approach, not a requirement to purchase E5.
 
 Before making a recommendation, confirm whether the customer is using Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, or a mixed model with add-ons. Similar names can hide materially different security, endpoint, identity and compliance capabilities.
 
@@ -53,7 +63,7 @@ Before making a recommendation, confirm whether the customer is using Office 365
       <a href="#when-e5-is-appropriate" className="kc-factory-card">
         <small>03</small>
         <strong>Advance</strong>
-        <span>Use E5 when Zero Trust, XDR, compliance, identity protection or Copilot readiness are strategic.</span>
+        <span>Compare E5 and targeted add-ons against required controls; Copilot readiness alone does not mandate E5.</span>
       </a>
       <a href="#e3--add-on-strategy" className="kc-factory-card">
         <small>04</small>
@@ -286,7 +296,7 @@ It is suitable when the customer wants to modernize collaboration, standardize M
 
 ### E5 Positioning
 
-Microsoft 365 E5 is recommended when the customer's business priority includes security transformation, compliance modernization, Zero Trust, SOC visibility, and Copilot readiness.
+Microsoft 365 E5 is one option for advanced security, compliance and SOC requirements. Compare E3 plus targeted add-ons and E7 against the actual controls and AI entitlements required; Copilot readiness alone is not an E5 purchase requirement.
 
 E5 should be positioned as a risk reduction and security modernization investment, not only as a license upgrade.
 
@@ -335,7 +345,7 @@ E5 should be positioned as a risk reduction and security modernization investmen
 For most enterprise customers:
 
 - Use E3 as the baseline for productivity, collaboration, and governance.
-- Use E5 when security, compliance, Zero Trust, or Copilot readiness is a strategic priority.
+- Compare E5, E3 plus add-ons and E7 against required controls; Copilot readiness alone does not mandate E5.
 - Use E3 + add-ons only when requirements are narrow and clearly defined.
 - Avoid deciding based on SKU names alone.
 - Evaluate risk reduction, operational simplification, and executive visibility as part of the business case.

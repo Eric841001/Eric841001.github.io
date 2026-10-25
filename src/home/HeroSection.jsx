@@ -5,22 +5,22 @@ import styles from './HeroSection.module.css';
 const capabilities = [
   {
     label: 'Copilot',
-    value: 'Work AI entry point',
+    value: '업무 AI 시작점',
     path: '/knowledge/copilot/overview',
   },
   {
     label: 'Copilot Studio',
-    value: 'Business agents',
+    value: '업무 에이전트',
     path: '/knowledge/copilot/copilot-studio-2026-platform-update',
   },
   {
     label: 'M365 Agents',
-    value: 'In-context automation',
+    value: '앱 안의 자동화',
     path: '/knowledge/copilot/agentic-ai-architecture',
   },
   {
     label: 'Copilot Cowork',
-    value: 'Long-running work',
+    value: '장시간 작업 위임',
     path: '/knowledge/copilot/copilot-cowork-cost-governance',
   },
 ];
@@ -30,20 +30,18 @@ export default function HeroSection() {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <div className={styles.heroContent}>
-          <p className={styles.eyebrow}>Enterprise AI Adoption Architecture</p>
+          <p className={styles.eyebrow}>Microsoft AI 도입과 운영</p>
 
           <h1>
-            From Copilot to governed AI agents
+            Copilot 도입부터 AI 에이전트 운영까지
           </h1>
 
           <p className={styles.subtitle}>
-            A practical Microsoft AI adoption platform that connects Microsoft 365
-            Copilot, Copilot Studio, Microsoft 365 Agents, Copilot Cowork, security
-            governance and measurable business outcomes.
+            Microsoft 365, 보안, Copilot과 AI 에이전트의 설계·도입·운영 지침을 한곳에서 확인하세요.
           </p>
 
           <p className={styles.byline}>
-            Curated by Youngsun Kang, Enterprise Microsoft Architect.
+            Youngsun Kang · Enterprise Microsoft Architect
           </p>
 
           <div className={styles.heroActions}>
@@ -63,8 +61,8 @@ export default function HeroSection() {
 
         <div className={styles.heroPanel}>
           <div className={styles.panelHeader}>
-            <span>AI Adoption Journey</span>
-            <strong>Governed scale</strong>
+            <span>AI 도입과 확장</span>
+            <strong>통제하며 확장</strong>
           </div>
 
           <div className={styles.capabilityGrid}>
@@ -72,19 +70,19 @@ export default function HeroSection() {
               <Link key={item.label} className={styles.capability} to={item.path}>
                 <small>{item.label}</small>
                 <strong>{item.value}</strong>
-                <span>Open</span>
+                <span>가이드 보기 →</span>
               </Link>
             ))}
           </div>
 
           <div className={styles.deliveryStack}>
-            <p>Enterprise guardrails</p>
+            <p>운영 원칙</p>
             <ul>
-              <li>Use case portfolio and value criteria</li>
-              <li>Data, identity and permission boundary</li>
-              <li>Agent lifecycle, owner and approval model</li>
-              <li>Cost, quality and adoption telemetry</li>
-              <li>Human review for sensitive actions</li>
+              <li>업무 유형과 성과 기준</li>
+              <li>데이터·ID·권한 경계</li>
+              <li>에이전트 수명주기와 승인 책임</li>
+              <li>비용·품질·활용 현황 측정</li>
+              <li>민감한 작업의 담당자 검토</li>
             </ul>
           </div>
         </div>

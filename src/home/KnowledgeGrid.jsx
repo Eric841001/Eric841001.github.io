@@ -6,42 +6,42 @@ const knowledgeItems = [
   {
     title: 'Microsoft 365',
     code: 'M365',
-    description: 'Modern Work, Exchange, Teams, SharePoint, OneDrive and governance guidance.',
+    description: 'Exchange, Teams, SharePoint와 OneDrive의 도입·운영.',
     topics: ['E3/E5', 'Teams', 'SharePoint'],
     path: '/knowledge/microsoft365/overview',
   },
   {
     title: 'Azure',
     code: 'AZ',
-    description: 'Cloud infrastructure, landing zone, network, identity and cost architecture.',
+    description: '랜딩 존, 네트워크, ID와 비용을 고려한 클라우드 설계.',
     topics: ['Landing Zone', 'VM', 'Cost'],
     path: '/knowledge/azure/overview',
   },
   {
     title: 'Security',
     code: 'SEC',
-    description: 'Zero Trust, Conditional Access, Defender, Purview and data protection.',
+    description: 'Zero Trust, 조건부 액세스, Defender와 데이터 보호.',
     topics: ['Zero Trust', 'Defender', 'Purview'],
     path: '/knowledge/security/overview',
   },
   {
     title: 'Copilot',
     code: 'AI',
-    description: 'Copilot readiness, adoption, governance, prompt strategy and KPI model.',
+    description: '도입 준비, 에이전트 설계, 거버넌스와 성과 측정.',
     topics: ['Readiness', 'Adoption', 'Prompt'],
     path: '/knowledge/copilot/overview',
   },
   {
     title: 'Migration',
     code: 'MIG',
-    description: 'Tenant, mail, file server, Google Workspace and collaboration migration.',
+    description: '테넌트·메일·파일과 협업 환경의 전환.',
     topics: ['Tenant', 'Mail', 'Files'],
     path: '/knowledge/migration/overview',
   },
   {
     title: 'Licensing',
     code: 'LIC',
-    description: 'Microsoft 365, Entra, Intune, Defender, Purview and Copilot licensing decisions.',
+    description: 'Microsoft 365와 보안·Copilot의 라이선스 판단.',
     topics: ['E3/E5', 'BP', 'Copilot'],
     path: '/knowledge/licensing/overview',
   },
@@ -51,10 +51,10 @@ export default function KnowledgeGrid() {
   return (
     <section id="browse-topics" className={styles.knowledgeGrid}>
       <div className={styles.header}>
-        <p>Knowledge Domains</p>
-        <h2>Browse by Technology</h2>
+        <p>주제별 문서</p>
+        <h2>기술별 가이드</h2>
         <span>
-          Explore structured Microsoft cloud knowledge domains mapped to real consulting scenarios.
+          필요한 기술을 선택해 설계와 운영 지침을 찾아보세요.
         </span>
       </div>
 
@@ -73,7 +73,7 @@ export default function KnowledgeGrid() {
               ))}
             </div>
 
-            <strong>Open Documentation -&gt;</strong>
+            <strong>문서 보기 →</strong>
           </Link>
         ))}
       </div>

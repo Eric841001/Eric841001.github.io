@@ -92,3 +92,8 @@
 
 /* Shared home rhythm. */
 .dashboard {margin:0 auto;padding-top:44px;padding-bottom:44px;scroll-margin-top:5rem;}
+
+/* Compact mobile destinations. */
+@media(max-width:640px){.dashboard{padding:28px 20px;}.header{text-align:left;margin-bottom:20px;}.header h2{font-size:28px;}.header span{font-size:15px;}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}.card{min-height:112px;padding:16px;}.card h3{font-size:17px;line-height:1.45;word-break:keep-all;}.card span{font-size:12px;padding-top:12px;}}
+.card:focus-visible{outline:3px solid var(--ifm-color-primary);outline-offset:3px;}
+@media(prefers-reduced-motion:reduce){.card{transition:none;}.card:hover{transform:none;}}

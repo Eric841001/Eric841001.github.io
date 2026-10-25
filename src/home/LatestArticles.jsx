@@ -7,7 +7,7 @@ export default function LatestArticles() {
   return (
     <section id="latest-updates" className={styles.latestArticles} aria-labelledby="latest-updates-title">
       <div className={styles.header}>
-        <div><p>Official updates · <time dateTime={verifiedOn}>{verifiedOn}</time> 확인</p>
+        <div><p>공식 업데이트 · <time dateTime={verifiedOn}>{verifiedOn}</time> 확인</p>
           <h2 id="latest-updates-title">최근 업데이트</h2>
           <span>공식 발표의 날짜와 제공 상태를 구분해 실무에 필요한 변경을 확인하세요.</span>
         </div>

@@ -52,6 +52,13 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
   </div>
 </section>
 
+## License and rollout verification — 2026-10-25
+
+[Microsoft's overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) requires **Entra ID P1** for Conditional Access; Business Premium also includes access. **User/sign-in risk policies require P2**, as described in [Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing).
+
+Agent policies have separate licensing and identity targeting rules. The current [agent policy documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id) lists **Microsoft 365 E7**, or **Microsoft Agent 365 paired with at least Entra P1 or Microsoft 365 E3**, as licensing options. The general overview still marks agent targeting as preview; verify the specific policy's release status in the linked scenario documentation and your tenant rather than declaring all agent controls GA or preview together. A policy targeting an agent identity does not automatically cover delegated user access or an agent user account. Validate the token subject, policy target and report-only results before enforcement.
+
+
 ## Executive Summary
 
 Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture. It evaluates user identity, device posture, location, application, risk signals and session context before granting access to corporate resources.

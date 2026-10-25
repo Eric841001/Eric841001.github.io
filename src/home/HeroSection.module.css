@@ -346,3 +346,6 @@
 :global([data-theme='dark']) .capability span {color:#7dd3fc;}
 :global([data-theme='dark']) .secondaryButton {background:#163047;color:#e2e8f0;border-color:#45637a;}
 :global([data-theme='dark']) .signalRow span {background:#163047;color:#dbeafe;border-color:#45637a;}
+
+.hero h1{word-break:keep-all;overflow-wrap:break-word;}
+@media(max-width:640px){.hero h1{font-size:34px;line-height:1.25;}}

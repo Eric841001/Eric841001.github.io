@@ -5,24 +5,24 @@ import styles from './SignatureEntryPoints.module.css';
 
 const entries = [
   {
-    label: 'Architecture',
-    title: 'Executive Architecture Blueprint',
+    label: '아키텍처',
+    title: '엔터프라이즈 아키텍처 설계',
     description:
-      'Start here for the end-to-end Microsoft enterprise architecture story across Microsoft 365, Security, Copilot, Azure, Migration and Governance.',
+      'Microsoft 365·Azure·보안·Copilot을 연결하는 설계 관점을 확인하세요.',
     path: '/knowledge/architecture/executive-architecture-blueprint',
   },
   {
-    label: 'Customer Success',
-    title: 'Enterprise AI Agent Factory Case Study',
+    label: '도입 사례',
+    title: 'AI 에이전트 운영 사례',
     description:
-      'Review an anonymized enterprise pattern for Copilot Studio, AI Agent portfolio design, governance, adoption and measurable business value.',
+      '익명화한 사례로 에이전트 구성과 거버넌스·성과 측정 방식을 살펴보세요.',
     path: '/knowledge/projects/case-study-enterprise-ai-agent-factory',
   },
   {
-    label: 'Asset Request',
-    title: 'Contact and Asset Request',
+    label: '자료 문의',
+    title: '문의와 자료 요청',
     description:
-      'Use this path to request sanitized templates, sample deliverables or a focused discussion after reviewing the public Knowledge Center.',
+      '공개 가능한 템플릿과 산출물 예시, 기술 논의를 요청하세요.',
     path: '/knowledge/contact',
   },
 ];
@@ -31,11 +31,10 @@ export default function SignatureEntryPoints() {
   return (
     <section className={styles.signaturePaths} aria-labelledby="signature-entry-title">
       <div className={styles.header}>
-        <p>For visitors from email signature</p>
-        <h2 id="signature-entry-title">Start with the three strongest paths</h2>
+        <p>추천 시작점</p>
+        <h2 id="signature-entry-title">설계·사례·문의</h2>
         <span>
-          If you arrived here from a mail signature, these pages show the architecture
-          point of view, customer success pattern and asset request path most clearly.
+          처음 방문하셨다면 아래 세 가지 경로로 시작하세요.
         </span>
       </div>
 
@@ -45,7 +44,7 @@ export default function SignatureEntryPoints() {
             <span className={styles.label}>{entry.label}</span>
             <h3>{entry.title}</h3>
             <p>{entry.description}</p>
-            <strong>Open path -&gt;</strong>
+            <strong>자세히 보기 →</strong>
           </Link>
         ))}
       </div>
