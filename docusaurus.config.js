@@ -1,3 +1,10 @@
+const {createHash} = require('node:crypto');
+const {readFileSync} = require('node:fs');
+const path = require('node:path');
+const diagramScriptVersion = createHash('sha256')
+  .update(readFileSync(path.join(__dirname, 'static/js/mermaid-zoom.js')))
+  .digest('hex').slice(0, 12);
+
 ﻿module.exports = {
   title: 'Youngsun Kang | Microsoft 365, Security, Copilot & AI Architect',
   tagline: 'Enterprise Microsoft Architecture, Security, Copilot, AI Agent and Delivery Asset Knowledge Center',
@@ -31,7 +38,7 @@
 
   scripts: [
     {
-      src: '/js/mermaid-zoom.js',
+      src: `/js/mermaid-zoom.js?v=${diagramScriptVersion}`,
       defer: true,
     },
   ],

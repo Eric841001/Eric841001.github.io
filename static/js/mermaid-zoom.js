@@ -3,6 +3,42 @@
     '.theme-doc-markdown .mermaid, .theme-doc-markdown div[class*="mermaid"], .theme-doc-markdown img:not(.no-zoom), .theme-doc-markdown .kc-ai-journey';
   let activeDialog = null;
   let activeOpener = null;
+  let cloneSequence = 0;
+
+  function isolateCloneIdentifiers(clone) {
+    const elements = [clone, ...clone.querySelectorAll('*')];
+    const ids = new Map();
+    const prefix = `kc-expanded-${++cloneSequence}-`;
+    elements.forEach((element) => {
+      if (element.id) {
+        const oldId = element.id;
+        const newId = prefix + oldId;
+        ids.set(oldId, newId);
+        element.id = newId;
+      }
+    });
+    const idReferenceAttributes = new Set([
+      'aria-labelledby', 'aria-describedby', 'aria-controls', 'aria-owns',
+      'aria-flowto', 'aria-activedescendant', 'headers', 'for',
+    ]);
+    elements.forEach((element) => {
+      [...element.attributes].forEach((attribute) => {
+        if (attribute.name === 'id') return;
+        let value = attribute.value;
+        if (idReferenceAttributes.has(attribute.name)) {
+          value = value.split(/\s+/).map((id) => ids.get(id) || id).join(' ');
+        } else if (['href', 'xlink:href'].includes(attribute.name) && value.startsWith('#')) {
+          value = '#' + (ids.get(value.slice(1)) || value.slice(1));
+        }
+        attribute.value = value.replace(/url\((['"]?)#([^)'"\s]+)\1\)/g,
+          (match, quote, id) => ids.has(id) ? `url(${quote}#${ids.get(id)}${quote})` : match);
+      });
+      if (element.localName === 'style') {
+        element.textContent = element.textContent.replace(/#([A-Za-z_][\w-]*)/g,
+          (match, id) => ids.has(id) ? '#' + ids.get(id) : match);
+      }
+    });
+  }
 
   function getVisual(frame) {
     if (frame.tagName === 'IMG') return frame;
@@ -116,6 +152,7 @@
       clone.removeAttribute('title');
       clone.classList.remove('kc-visual-frame', 'kc-html-visual-frame');
     }
+    isolateCloneIdentifiers(clone);
     canvas.appendChild(clone);
 
     toolbar.append(title, closeButton);
