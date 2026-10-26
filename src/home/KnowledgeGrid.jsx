@@ -7,7 +7,7 @@ const knowledgeItems = [
     title: 'Microsoft 365',
     code: 'M365',
     description: 'Exchange, Teams, SharePoint와 OneDrive의 도입·운영.',
-    topics: ['E3/E5', 'Teams', 'SharePoint'],
+    topics: ['E3/E5/E7', 'Teams', 'SharePoint'],
     path: '/knowledge/microsoft365/overview',
   },
   {
@@ -42,7 +42,7 @@ const knowledgeItems = [
     title: 'Licensing',
     code: 'LIC',
     description: 'Microsoft 365와 보안·Copilot의 라이선스 판단.',
-    topics: ['E3/E5', 'BP', 'Copilot'],
+    topics: ['E3/E5/E7', 'BP', 'Copilot'],
     path: '/knowledge/licensing/overview',
   },
 ];

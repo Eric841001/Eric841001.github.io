@@ -339,8 +339,8 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 <div aria-label="Microsoft 365 recommended reading" className="kc-entry-hub">
   <a href="/knowledge/microsoft365/e3-vs-e5">
     <small>Decision</small>
-    <strong>E3 vs E5 Decision Guide</strong>
-    <span>Compare enterprise productivity, security, compliance and advanced control requirements.</span>
+    <strong>E3·E5·E7 비교</strong>
+    <span>업무 앱·보안·Copilot·에이전트 관리와 구독 비용을 비교합니다.</span>
   </a>
   <a href="/knowledge/microsoft365/exchange-online">
     <small>Exchange</small>

@@ -1396,24 +1396,44 @@
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: E3·E5·E7 비교와 Teams·Copilot·ID 권한 확인",
+    "scope": "E3·E5·E7의 포함 구성, E5+Copilot 대안, Teams 상품, 미국 공개 참고 가격과 사용량 비용 구분",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft 365 enterprise plans",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
-        "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
+        "title": "Microsoft E3 E5 E7 comparison",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "업무용 Copilot·Agent 365의 포함 여부와 E3 기본 보호·E5 고급 보호, Security Copilot의 적격 고객 조건을 대조했습니다."
+      },
+      {
+        "title": "Microsoft 365 E3 pricing",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e3",
+        "checkedFor": "미국 연간 약정·연간 결제 월 환산 가격 $39 및 Teams 미포함 $30.45와 상품 조건을 확인했습니다."
+      },
+      {
+        "title": "Microsoft 365 E5 pricing",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e5",
+        "checkedFor": "미국 연간 약정·연간 결제 월 환산 가격 $60 및 Teams 미포함 $51.45를 확인했습니다."
+      },
+      {
+        "title": "Microsoft 365 E7 package and pricing",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e7",
+        "checkedFor": "E5·Microsoft 365 Copilot·Entra Suite·Agent 365 묶음, 미국 연간 약정·연간 결제 월 환산 $99 및 Teams 미포함 $90.45를 확인했습니다."
       },
       {
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+        "checkedFor": "P1·P2와 Entra Suite 전체를 구분하고 E7의 Suite 포함, 네트워크·ID 관리 제품 구성을 대조했습니다."
+      },
+      {
+        "title": "Copilot Credits usage-based billing",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Copilot 구독이 필요한 Cowork·Code 등 사용량 과금 서비스와 사전 구매·종량제·용량 방식의 서비스별 차이를 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "개별 고객의 계약·할인·세금·한국 견적과 실제 테넌트의 활성화·사용량은 검증하지 않았습니다. 모든 추가 기능이 포함되거나 구독만으로 정책이 적용된다고 주장하지 않습니다."
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
@@ -1438,9 +1458,9 @@
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 라이선스 문서 탐색과 구매·사용 권한 판단의 구분",
+    "scope": "확인한 항목: 라이선스 문서 탐색과 구매·사용 권한 판단의 구분 추가 확인: E3·E5·E7 비교 안내와 메뉴 문구를 새 정본 비교에 맞췄습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1459,24 +1479,44 @@
   },
   "/knowledge/microsoft365/e3-vs-e5": {
     "file": "docs/microsoft365/e3-vs-e5.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: E3·E5·E7 정본 비교의 포함 기능·추가 기능 경계",
+    "scope": "E3·E5·E7의 포함 구성, E5+Copilot 대안, Teams 상품, 미국 공개 참고 가격과 사용량 비용 구분",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft 365 service descriptions",
-        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library",
-        "checkedFor": "서비스 설명은 플랜별 기능 비교의 출발점이며 실제 사용자 서비스 플랜·계약 조건 확인이 필요합니다."
+        "title": "Microsoft E3 E5 E7 comparison",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "업무용 Copilot·Agent 365의 포함 여부와 E3 기본 보호·E5 고급 보호, Security Copilot의 적격 고객 조건을 대조했습니다."
       },
       {
-        "title": "Microsoft 365 enterprise plans",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
-        "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
+        "title": "Microsoft 365 E3 pricing",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e3",
+        "checkedFor": "미국 연간 약정·연간 결제 월 환산 가격 $39 및 Teams 미포함 $30.45와 상품 조건을 확인했습니다."
+      },
+      {
+        "title": "Microsoft 365 E5 pricing",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e5",
+        "checkedFor": "미국 연간 약정·연간 결제 월 환산 가격 $60 및 Teams 미포함 $51.45를 확인했습니다."
+      },
+      {
+        "title": "Microsoft 365 E7 package and pricing",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e7",
+        "checkedFor": "E5·Microsoft 365 Copilot·Entra Suite·Agent 365 묶음, 미국 연간 약정·연간 결제 월 환산 $99 및 Teams 미포함 $90.45를 확인했습니다."
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
+        "checkedFor": "P1·P2와 Entra Suite 전체를 구분하고 E7의 Suite 포함, 네트워크·ID 관리 제품 구성을 대조했습니다."
+      },
+      {
+        "title": "Copilot Credits usage-based billing",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Copilot 구독이 필요한 Cowork·Code 등 사용량 과금 서비스와 사전 구매·종량제·용량 방식의 서비스별 차이를 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "개별 고객의 계약·할인·세금·한국 견적과 실제 테넌트의 활성화·사용량은 검증하지 않았습니다. 모든 추가 기능이 포함되거나 구독만으로 정책이 적용된다고 주장하지 않습니다."
   },
   "/knowledge/microsoft365/exchange-online": {
     "file": "docs/microsoft365/exchange-online.md",
@@ -1558,9 +1598,9 @@
   },
   "/knowledge/microsoft365/overview": {
     "file": "docs/microsoft365/overview.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Microsoft 365 생산성·ID·보안·AI 제품 영역 구분",
+    "scope": "확인한 항목: Microsoft 365 생산성·ID·보안·AI 제품 영역 구분 추가 확인: E3·E5·E7 비교 안내와 메뉴 문구를 새 정본 비교에 맞췄습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
