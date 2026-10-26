@@ -224,6 +224,10 @@ Automatically classify content based on:
 - Financial Data
 - Custom Keywords
 
+Microsoft 365의 자동 레이블 정책은 먼저 **시뮬레이션**으로 검사하고, 일치 항목과 적용 위치를 검토한 뒤 켭니다. 시뮬레이션은 레이블을 바꾸지 않으며, 일치 건수가 실제 적용 성공 건수를 뜻하지도 않습니다. SharePoint·OneDrive의 기존 파일은 저장된 분류 결과를 사용하므로 민감한 정보 유형(SIT)을 수정한 뒤 시뮬레이션만 다시 시작해도 파일이 새로 분류되지는 않습니다. 재실행 전에 필요한 결과를 내보내 보관하세요. 예약 활성화는 검토가 끝날 때까지 기다리지 않으므로 시간이 더 필요하면 예약을 취소합니다. [시뮬레이션 결과와 적용 전 확인 사항](https://learn.microsoft.com/en-us/purview/auto-label-simulation-results)을 참고하세요.
+
+**Box·Google Workspace의 자동 레이블은 미리 보기**이며 테넌트별로 순차 제공됩니다. 먼저 Defender for Cloud Apps의 앱 커넥터를 연결하고 사용할 레이블을 게시합니다. Custom 정책으로 구성하며, Microsoft 365 위치와 같은 정책에 섞을 수 없습니다. 이 연결 앱 정책은 시뮬레이션과 Content explorer를 지원하지 않으므로 Microsoft 365의 시험 절차를 그대로 적용하지 마세요. 범위를 좁혀 시험하고 Activity explorer에서 처리 결과를 확인합니다. PDF와 암호화 파일의 분류도 지원하지 않습니다. [연결 앱별 조건과 제한](https://learn.microsoft.com/en-us/purview/information-protection-non-microsoft-connected-apps)을 확인하세요.
+
 ---
 
 ### Data Loss Prevention

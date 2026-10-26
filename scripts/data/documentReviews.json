@@ -624,7 +624,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 2026년 10월 공식 발표별 모델·기능·미리 보기 변경 사항 추가 확인: 한글 표현과 적용 전 점검 안내를 정리했습니다. 기존 기술 범위와 주의사항은 유지했습니다.",
+    "scope": "확인한 항목: 2026년 10월 공식 발표별 모델·기능·미리 보기 변경 사항 추가 확인: 한글 표현과 적용 전 점검 안내를 정리했습니다. 기존 기술 범위와 주의사항은 유지했습니다. 추가 확인: 변경 요약 표의 띄어쓰기와 사용량·제작자 용어를 정리했습니다. 발표 날짜와 출처 링크는 유지했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2817,9 +2817,9 @@
   },
   "/knowledge/security/purview-information-protection": {
     "file": "docs/security/purview-information-protection.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 민감도 레이블·암호화·DLP·정보 거버넌스 적용 범위",
+    "scope": "확인한 항목: 민감도 레이블·암호화·DLP·정보 거버넌스 적용 범위 추가 확인: Microsoft 365 자동 레이블 시뮬레이션의 분류 결과·일치 건수·예약 활성화와 연결 앱 미리 보기의 커넥터·정책 분리·시뮬레이션 및 파일 형식 제한.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2831,6 +2831,16 @@
         "title": "Microsoft 365 enterprise plans",
         "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
         "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
+      },
+      {
+        "title": "Auto-label simulation results",
+        "url": "https://learn.microsoft.com/en-us/purview/auto-label-simulation-results",
+        "checkedFor": "시뮬레이션은 레이블을 변경하지 않고 저장된 분류 결과로 평가합니다. 재시작이 재분류는 아니며 예약 활성화가 검토를 기다리지 않는 점을 확인했습니다."
+      },
+      {
+        "title": "Non-Microsoft app label policies preview",
+        "url": "https://learn.microsoft.com/en-us/purview/information-protection-non-microsoft-connected-apps",
+        "checkedFor": "Box·Google Workspace 미리 보기, 앱 커넥터·게시된 레이블·Custom 정책 조건과 Microsoft 365 위치 혼합, 시뮬레이션, Content explorer, PDF·암호화 분류 제한을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

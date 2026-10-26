@@ -3952,3 +3952,11 @@ body.kc-diagram-modal-open {
   .navbar__search-input {width: 9rem;}
   .navbar [class*='searchHintContainer_'] {display: none;}
 }
+
+/* Keep every search result reachable on short screens and with a mobile keyboard. */
+.navbar [class*='dropdownMenu_'] {
+  max-height: calc(100vh - var(--ifm-navbar-height) - 1rem);
+  max-height: calc(100dvh - var(--ifm-navbar-height) - 1rem);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
