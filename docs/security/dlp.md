@@ -84,6 +84,12 @@ Microsoft는 2026년 10월 Endpoint DLP의 FTP·SFTP 전송 보호를 일반 공
 
 네트워크 DLP와 Endpoint DLP는 적용 경로가 다릅니다. Entra Global Secure Access 연동에는 Microsoft 365 E7 또는 Purview E5 상당의 사용권과 Entra Internet Access 상당의 사용권 조합이 필요합니다. 다른 SASE·보안 브라우저 연동에는 Purview E5 상당의 사용권과 Purview 종량제 설정이 필요하며, B2B 게스트는 네트워크 보호 정책 대상에서 제외됩니다. [연동별 라이선스와 제한](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)을 확인하고 실제 전송 경로를 시험하세요.
 
+## 외부 조직과의 Teams 대화
+
+Teams의 **공유 채널**과 **외부 액세스 채팅**은 DLP 적용 방식이 다릅니다. 공유 채널에서는 각 발신자의 소속 테넌트 정책으로 메시지를 평가합니다. 외부 액세스 채팅에서는 대화를 시작한 테넌트가 호스트이며, 그 호스트에 소속된 사용자의 메시지에 호스트 정책을 적용합니다. 다른 테넌트 사용자의 메시지까지 호스트 정책으로 검사하거나, 사용자 소속 테넌트의 정책이 외부 호스트 대화에도 자동으로 따라간다고 가정하지 마세요.
+
+시험할 때는 채팅을 시작하는 조직을 바꾸고 양쪽 사용자가 보낸 메시지의 처리 결과를 확인하세요. 공유 파일은 저장된 SharePoint·OneDrive 위치에 적용되는 정책도 따로 점검합니다. [Teams 대화별 DLP 적용 범위](https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams)를 참고하세요.
+
 ## Licensing
 
 Advanced DLP across Microsoft 365 workloads and endpoints may require higher compliance licensing. Confirm workload coverage before committing policy scope in a proposal.

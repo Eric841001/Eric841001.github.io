@@ -193,12 +193,12 @@ Atomic Red Team으로 Defender for Endpoint와 Defender XDR의 탐지·기록·�
 
 | Evidence | Why It Matters |
 |---|---|
-| Atomic test ID | 어떤 MITRE technique을 검증했는지 추적 |
-| Target 엔드포인트 | 테스트 장비와 운영 환경 영향 범위 확인 |
-| Defender alert | 탐지 여부와 alert severity 확인 |
-| Incident correlation | 단일 alert가 incident로 묶이는지 확인 |
+| Atomic test ID | 시험한 MITRE 공격 기법 확인 |
+| 시험 대상 기기 | 테스트 장비와 운영 환경 영향 범위 확인 |
+| Defender alert | 탐지 여부와 경고 심각도 확인 |
+| Incident correlation | 개별 경고가 하나의 인시던트로 연결되는지 확인 |
 | Device timeline | 프로세스, 파일, 네트워크 상태·활동 기록 확인 |
-| SOC response | analyst notification과 triage 절차 확인 |
+| SOC response | 분석가에게 알림이 전달되는지와 초기 분류 절차 확인 |
 
 ## References
 

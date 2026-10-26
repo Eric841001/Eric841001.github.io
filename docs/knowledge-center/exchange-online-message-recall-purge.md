@@ -105,7 +105,7 @@ Import-Module ExchangeOnlineManagement
 Connect-IPPSSession -UserPrincipalName '<authorized-admin-UPN>' -EnableSearchOnlySession
 ```
 
-This example connects; it does not run a search or purge. App-only eDiscovery authentication has different support limitations and must not be assumed to be supported from this interactive example. See [current connection requirements](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell).
+This example connects; it does not run a search or purge. App-only authentication for eDiscovery cmdlets in Security & Compliance PowerShell is **unsupported**. Existing certificate-based examples do not change that status. Use supported Microsoft Graph APIs for unattended automation where available, and check which operations the API covers. See [eDiscovery app-only support status](https://learn.microsoft.com/en-us/purview/edisc-permissions#configure-app-only-authentication-for-ediscovery-powershell). See [current connection requirements](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell).
 
 ### Choose the supported purge method
 

@@ -72,9 +72,11 @@ Copilot Cowork에 여러 단계의 업무를 맡기려면 사용할 도구와 �
 
 사용 대상, 위임할 업무, 비용 승인자와 결과 검토자를 정하고, 시범 적용에서 사용량과 오류를 확인한 뒤 적용 범위를 넓힙니다.
 
-더 복잡한 추론 작업을 위임할수록 사용자는 Copilot에게 더 복잡한 업무를 맡기고 싶어집니다. 그러나 기업 환경에서는 추론 성능보다 더 중요한 것이 승인, 관리 책임, 예산, 보안, 모니터링입니다.
+장시간 걸리는 업무를 맡길 때는 완료 조건과 중간 승인 지점, 예산과 결과 검토자를 정하세요. 작업 기록을 확인하고 오류가 생겼을 때 중단·재시도할 담당자도 필요합니다.
 
-Microsoft의 6월 30일 플러그인 업데이트에 따르면 Copilot Cowork 플러그인은 반복 가능한 스킬과 업무 시스템에 연결되는 secure 커넥터를 함께 패키징하여 Microsoft Marketplace를 통해 배포할 수 있습니다. Microsoft의 6월 16일 GA 발표에 따르면 Cowork는 전 세계 GA 상태이며 Microsoft 365 Copilot User Subscription License가 필요하고 사용량은 Copilot Credits로 청구됩니다. 다만 개별 플러그인의 제공 상태는 서로 다르므로 coming soon으로 표시된 기능을 현재 사용 가능한 것으로 안내하면 안 됩니다. Plugin을 활성화하기 전에는 제공자, 요청 데이터와 작업, 커넥터 권한, 쓰기 또는 외부 작업의 승인 지점, 프롬프트·response·생성 artifact에 현재 제공되는 Microsoft 365 및 Purview 통제를 검토해야 합니다. Microsoft가 DLP 등 coming soon으로 표시한 통제를 현재 제공되는 것으로 안내해서는 안 됩니다.
+Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)되었으며 Microsoft 365 Copilot User Subscription License가 필요합니다. 사용량은 Copilot Credits로 청구됩니다. 6월 30일 발표된 플러그인은 반복해서 사용할 스킬과 업무 시스템 연결용 커넥터를 묶어 Microsoft Marketplace로 배포하는 방식입니다.
+
+플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 발표문에서 '출시 예정'으로 표시한 플러그인이나 DLP 기능은 현재 사용할 수 있다고 가정하지 마세요. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
 ## When To Use Cowork
 

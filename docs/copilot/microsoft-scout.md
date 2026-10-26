@@ -366,4 +366,4 @@ Microsoft는 2026년 9월 25일 Scout의 새 이름을 Autopilot으로 발표했
 
 ## Contact / Asset Request
 
-Autopilot-style 에이전트 활용 예시를 Copilot Studio, Microsoft 365 agents, Copilot Cowork 관점으로 정리한 워크숍 agenda나 운영 기준 checklist가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+Copilot Studio, Microsoft 365 Agents와 Copilot Cowork로 개인 비서형 에이전트를 검토할 때 쓸 워크숍 진행안이나 운영 점검표가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.

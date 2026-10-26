@@ -68,7 +68,7 @@ The design shift is simple but important: an agent is no longer just a conversat
 
 구축 전에 에이전트 담당자, 접근할 자료, 실행할 도구, 승인 절차와 비용 한도를 정합니다.
 
-사용 가능한 추론 모델 선택 폭이 확대되면서 Copilot, Copilot Studio, M365 Agents, Copilot Cowork를 하나의 도입·정착 journey로 설명하는 것이 더 중요해졌습니다. 더 강한 추론 model은 사용자 경험을 좋게 만들 수 있지만, 기업 환경에서는 모델 선택, 데이터 접근 범위, 승인, 비용 관리, evaluation 기준이 함께 준비되어야 합니다.
+Copilot, Copilot Studio, M365 Agents와 Copilot Cowork는 맡길 업무에 맞춰 선택합니다. 모델의 추론 성능과 함께 자료 접근 권한, 작업 승인 절차, 비용과 결과 평가 기준을 확인하세요.
 
 ## 2026 Capability Map
 

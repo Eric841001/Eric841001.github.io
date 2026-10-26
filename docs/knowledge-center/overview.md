@@ -218,7 +218,7 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 |---|---|
 | Presales | 고객 meeting 전 사전 설명 자료 작성 |
 | Proposal | proposal, SOW, WBS 작성 |
-| Assessment | 고객 현황 진단 checklist 구성 |
+| Assessment | 고객 현황 진단 점검표 작성 |
 | Architecture | To-Be architecture 설계 |
 | Delivery | 구축 프로젝트 수행 기준 |
 | Executive Reporting | 경영진 보고의 주요 내용 작성 |

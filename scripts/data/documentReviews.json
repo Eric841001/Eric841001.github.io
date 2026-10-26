@@ -414,9 +414,9 @@
   },
   "/knowledge/copilot/copilot-cowork-cost-governance": {
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Cowork의 구독·소비 비용·플러그인별 제공 조건",
+    "scope": "확인한 항목: Cowork의 구독·소비 비용·플러그인별 제공 조건 추가 확인: 한글 혼용 표현 정리와 GA 사용자 라이선스·Copilot Credits 조건을 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -433,6 +433,11 @@
         "title": "Microsoft 365 enterprise plans",
         "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
         "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
+      },
+      {
+        "title": "Cowork GA announcement",
+        "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+        "checkedFor": "GA 발표의 사용자 구독과 Copilot Credits 과금을 확인하고 미제공 플러그인·DLP 통제를 현재 기능과 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -440,9 +445,9 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Studio의 harness별 제공 상태와 preview·GA 구분",
+    "scope": "확인한 항목: Studio의 harness별 제공 상태와 preview·GA 구분 추가 확인: 한글 문장을 다듬고 기존 제품명·제공 조건·상세 링크를 유지했습니다. 이번 변경으로 새로운 기술 검증 범위를 주장하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -487,9 +492,9 @@
   },
   "/knowledge/copilot/customer-conversation-harness": {
     "file": "docs/copilot/customer-conversation-harness.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 고객 대화형 harness의 공개 미리 보기와 향후 계획 구분",
+    "scope": "확인한 항목: 고객 대화형 harness의 공개 미리 보기와 향후 계획 구분 추가 확인: 한글 문장을 다듬고 기존 제품명·제공 조건·상세 링크를 유지했습니다. 이번 변경으로 새로운 기술 검증 범위를 주장하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -570,9 +575,9 @@
   },
   "/knowledge/copilot/microsoft-scout": {
     "file": "docs/copilot/microsoft-scout.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Scout의 Autopilot 명칭 변경과 private preview 상태",
+    "scope": "확인한 항목: Scout의 Autopilot 명칭 변경과 private preview 상태 추가 확인: 한글 문장을 다듬고 기존 제품명·제공 조건·상세 링크를 유지했습니다. 이번 변경으로 새로운 기술 검증 범위를 주장하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -617,9 +622,9 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 2026년 10월 공식 발표별 모델·기능·미리 보기 변경 사항",
+    "scope": "확인한 항목: 2026년 10월 공식 발표별 모델·기능·미리 보기 변경 사항 추가 확인: 한글 표현과 적용 전 점검 안내를 정리했습니다. 기존 기술 범위와 주의사항은 유지했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -968,9 +973,9 @@
   },
   "/knowledge/knowledge-center/exchange-online-message-recall-purge": {
     "file": "docs/knowledge-center/exchange-online-message-recall-purge.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: eDiscovery 검색·삭제 권한·연결·건수·보존 제한",
+    "scope": "확인한 항목: eDiscovery 검색·삭제 권한·연결·건수·보존 제한 추가 확인: Security & Compliance PowerShell eDiscovery cmdlet의 app-only 인증 미지원과 가능한 Graph API로의 전환 지침을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -982,6 +987,11 @@
         "title": "Connect to Security & Compliance PowerShell",
         "url": "https://learn.microsoft.com/en-us/powershell/exchange/connect-to-scc-powershell",
         "checkedFor": "대화형 eDiscovery 연결은 모듈 3.9.0 이상과 EnableSearchOnlySession 조건을 확인하며 앱 전용 인증과 구분합니다."
+      },
+      {
+        "title": "eDiscovery permissions and app-only support",
+        "url": "https://learn.microsoft.com/en-us/purview/edisc-permissions",
+        "checkedFor": "Security & Compliance PowerShell eDiscovery cmdlet의 app-only 인증 미지원과 가능한 Graph API로의 전환 지침을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1176,9 +1186,9 @@
   },
   "/knowledge/knowledge-center/m365-cloud-only-save-as": {
     "file": "docs/knowledge-center/m365-cloud-only-save-as.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Cloud Policy 일반 우선순위와 원문의 개별 Save As 정책 예시",
+    "scope": "확인한 항목: Cloud Policy 일반 우선순위와 원문의 개별 Save As 정책 예시 추가 확인: 한글 표현과 적용 전 점검 안내를 정리했습니다. 기존 기술 범위와 주의사항은 유지했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1192,9 +1202,9 @@
   },
   "/knowledge/knowledge-center/mde-atomic-red-team": {
     "file": "docs/knowledge-center/mde-atomic-red-team.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Atomic Red Team 프로젝트의 테스트 정의와 격리된 검증 절차",
+    "scope": "확인한 항목: Atomic Red Team 프로젝트의 테스트 정의와 격리된 검증 절차 추가 확인: 한글 표현과 적용 전 점검 안내를 정리했습니다. 기존 기술 범위와 주의사항은 유지했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1323,9 +1333,9 @@
   },
   "/knowledge/knowledge-center/overview": {
     "file": "docs/knowledge-center/overview.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 운영 가이드 목록의 플랫폼·라이선스·검증 증거 범위",
+    "scope": "확인한 항목: 운영 가이드 목록의 플랫폼·라이선스·검증 증거 범위 추가 확인: 한글 문장을 다듬고 기존 제품명·제공 조건·상세 링크를 유지했습니다. 이번 변경으로 새로운 기술 검증 범위를 주장하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2608,15 +2618,25 @@
   },
   "/knowledge/security/data-lifecycle": {
     "file": "docs/security/data-lifecycle.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 데이터 보존 정책·레이블·삭제·처분 검토의 구분",
+    "scope": "확인한 항목: 데이터 보존 정책·레이블·삭제·처분 검토의 구분 추가 확인: 지연 보류의 자동 적용·30일 만료와 일반 일시 삭제 복구 기간을 구분했습니다. 공개 미리 보기, 휴지통 우회·보류 재정의, 검토 집합 제외, 하루 전 감사 설정과 다른 관리자의 활성화 조건을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Retention policies and labels",
         "url": "https://learn.microsoft.com/en-us/purview/retention",
         "checkedFor": "보존 정책과 레이블의 위치·대상·보존/삭제 동작을 구분하며 즉시 물리 삭제를 보장하지 않습니다."
+      },
+      {
+        "title": "Inactive mailbox deletion",
+        "url": "https://learn.microsoft.com/en-us/purview/delete-an-inactive-mailbox",
+        "checkedFor": "지연 보류의 자동 적용·30일 만료와 일반 일시 삭제 복구 기간을 구분했습니다."
+      },
+      {
+        "title": "Priority Cleanup permanent deletion",
+        "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+        "checkedFor": "공개 미리 보기, 휴지통 우회·보류 재정의, 검토 집합 제외, 하루 전 감사 설정과 다른 관리자의 활성화 조건을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2705,7 +2725,7 @@
     "file": "docs/security/dlp.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: DLP의 워크로드·정책·파일럿·라이선스 적용 범위",
+    "scope": "확인한 항목: DLP의 워크로드·정책·파일럿·라이선스 적용 범위 추가 확인: 공유 채널의 발신자 소속 테넌트 평가와 외부 액세스 채팅의 호스트 소속 사용자 적용을 구분하고 공유 파일의 별도 저장 위치 정책을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2722,6 +2742,11 @@
         "title": "Network data security integration",
         "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
         "checkedFor": "GSA와 타 SASE의 라이선스·종량제 차이와 B2B 게스트 제외를 확인했습니다."
+      },
+      {
+        "title": "Teams DLP scope",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+        "checkedFor": "공유 채널의 발신자 소속 테넌트 평가와 외부 액세스 채팅의 호스트 소속 사용자 적용을 구분하고 공유 파일의 별도 저장 위치 정책을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

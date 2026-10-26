@@ -3694,6 +3694,10 @@ body.kc-diagram-modal-open {
     max-width: 100% !important;
   }
 
+  .navbar__brand {
+    flex-shrink: 0;
+  }
+
   .navbar__title {
     display: none;
   }
@@ -3941,3 +3945,10 @@ body.kc-diagram-modal-open {
 .kc-diagram-modal__close:focus-visible {outline:3px solid #0284c7;outline-offset:2px;}
 
 .kc-diagram-modal__canvas:focus-visible {outline:3px solid #0284c7;outline-offset:-3px;}
+
+/* Reserve the logo width even when the compact navigation hides its title. */
+@media (min-width: 997px) and (max-width: 1100px) {
+  .navbar__link {padding-inline: 0.4rem;}
+  .navbar__search-input {width: 9rem;}
+  .navbar [class*='searchHintContainer_'] {display: none;}
+}

@@ -81,7 +81,7 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 
 ## 10월 13일 간접 프롬프트 인젝션 방어 업데이트
 
-Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델에 그대로 전달하지 않고 격리된 제약 처리 경로에서 변환한 뒤, 출처 표시와 함께 신뢰된 콘텐츠와 합성하는 Microsoft 365 Copilot의 새 강제 적용 계층을 발표했습니다. 이는 정상 권한으로 읽을 수 있는 콘텐츠 안의 악성 지시가 모델 행동에 영향을 주는 간접 프롬프트 인젝션 위험을 낮추기 위한 방어 심층 계층입니다.
+Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델에 그대로 전달하지 않고 격리된 제약 처리 경로에서 변환한 뒤, 출처 표시와 함께 신뢰된 콘텐츠와 합성하는 Microsoft 365 Copilot의 새 강제 적용 계층을 발표했습니다. 사용자가 읽을 수 있는 자료에 악성 지시가 섞여 있더라도 모델이 그 지시를 따를 위험을 줄이기 위한 보호 장치입니다.
 
 - **적용 상태를 단정하지 마세요:** 발표는 초기 투자가 외부 통신 같은 고위험 콘텐츠에 집중된다고 설명하며, 릴리스 상태와 테넌트에 따라 가용성과 동작이 달라질 수 있다고 명시합니다. 대표 사용자로 외부 메일 요약·추론 시나리오를 검증하고, [Microsoft 365 Copilot 방어 심층 문서](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-prompt-defense-in-depth)의 감사·Defender·Purview 통제를 함께 점검하세요.
 - **외부 발신자 식별:** Microsoft는 [CVE-2026-55145 지침](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55145)과 연결해 Outlook 외부 발신자 설정을 사용하도록 안내합니다. Exchange Online에서 `Set-ExternalInOutlook -Enabled $true` 적용 여부와 예외 목록을 검토하세요. 표시 반영에는 24~48시간이 걸릴 수 있으며, 기존 제목 삽입 메일 흐름 규칙과 중복되지 않게 해야 합니다. [Exchange PowerShell 공식 문서](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-externalinoutlook?view=exchange-ps)

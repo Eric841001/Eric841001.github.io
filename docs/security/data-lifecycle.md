@@ -85,6 +85,12 @@ Microsoft 365 자료의 보관 기간, 삭제와 처분 검토 절차를 정리�
 | Records | Regulatory and business records | Records management model |
 | Audit | Evidence for policy and disposal decisions | Audit evidence pack |
 
+## 삭제 전에 확인할 보존 설정
+
+비활성 사서함에서 기존 보류를 해제하면 지연 보류가 자동으로 적용될 수 있습니다. `DelayHoldApplied`와 `DelayReleaseHoldApplied`를 확인하세요. 지연 보류는 30일 후 만료되며, 모든 보류가 사라져 일반 일시 삭제 상태로 바뀐 뒤의 복구 기간과 구분해야 합니다. 사서함이 남아 있다는 이유만으로 삭제 명령을 반복하지 말고 [비활성 사서함의 보류와 삭제 단계](https://learn.microsoft.com/en-us/purview/delete-an-inactive-mailbox)를 확인하세요.
+
+SharePoint·OneDrive의 **Priority Cleanup 영구 삭제 옵션은 공개 미리 보기**입니다. 2026년 8월 24일부터 순차 제공되며 휴지통을 건너뛰고 보존 설정이나 eDiscovery 보류를 재정의할 수 있습니다. 검토 집합에 이미 복사된 항목은 삭제하지 않습니다. 일반 정리 작업과 구분하고, 감사 기능을 최소 하루 전에 켠 뒤 시뮬레이션과 필수 승인을 거쳐야 합니다. 마지막 정책 편집자가 직접 활성화할 수 없으며 다른 Priority Cleanup 관리자의 검토가 필요합니다. [지원 조건과 승인 절차](https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion)를 확인하세요.
+
 ## Decision Checklist
 
 | Decision | Recommended Question |

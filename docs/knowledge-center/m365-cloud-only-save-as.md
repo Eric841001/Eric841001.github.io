@@ -11,11 +11,11 @@ Microsoft 365 Apps의 **다른 이름으로 저장** 화면에서 로컬 저장�
 
 ## 적용 조건
 
-[Cloud Policy 공식 문서](https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy)는 사용자 기반 정책 배포와 GPO 대비 우선순위를 설명합니다. 아래 개별 정책 이름·레지스트리 값은 원문 구현 예시입니다. 대상 Office 빌드의 최신 ADMX/Cloud Policy 카탈로그에서 설정 존재와 설명을 확인한 뒤 적용하세요. 이 페이지의 일반 Cloud Policy 출처만으로 개별 레지스트리 값의 현행 지원을 입증하지 않습니다.
+[Cloud Policy 공식 문서](https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy)는 사용자 기반 정책 배포와 GPO 대비 우선순위를 설명합니다. 배포 전 대상 Office 빌드의 ADMX 또는 Cloud Policy 카탈로그에서 아래 정책과 레지스트리 값의 지원 여부를 확인하세요. GPO와 Cloud Policy의 일반적인 우선순위만으로 개별 설정의 지원 여부를 판단할 수는 없습니다.
 
 - Microsoft 365 Apps 엔터프라이즈 구독
 - 최신 Office ADMX/ADML 템플릿을 사용하는 Active Directory 환경 또는 Microsoft 365 Apps 관리 센터
-- 원문에 기록된 검증 환경은 Windows 11 24H2입니다. 이번 검토에서 해당 장치나 Office 빌드의 저장 동작을 재실행한 것은 아닙니다.
+- Windows와 Office의 실제 버전을 기록하고 시험용 사용자에게 먼저 적용합니다. 저장 화면과 기존 파일 편집·저장 동작을 각각 확인하세요.
 
 > 동일한 정책이 AD GPO와 Cloud Policy에 모두 구성되면 Cloud Policy가 우선 적용됩니다.
 
