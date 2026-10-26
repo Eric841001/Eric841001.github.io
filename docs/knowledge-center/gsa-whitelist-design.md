@@ -75,6 +75,10 @@ Global Secure Access와 테넌트 제한을 이용해 승인된 Microsoft 365 �
 
 ---
 
+## Tenant restriction and content protection
+
+Tenant restrictions decide which tenants users can access. Inspecting sensitive content sent to external cloud or AI apps requires a separate Purview network data security integration and content policies. Confirm the license combination, supported traffic and guest-user exclusions in [Purview network data security](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn); a tenant allow list alone does not provide content DLP.
+
 ## Business Scenario
 
 Organizations frequently face challenges such as:

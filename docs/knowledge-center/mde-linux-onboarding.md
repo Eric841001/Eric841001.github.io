@@ -190,7 +190,7 @@ Linux 서버에 Defender for Endpoint를 설치하고 조직에 등록하는 절
 | Network path | 프록시, SSL 검사, 방화벽, 패키지 저장소 접근이 가능한가? |
 | Onboarding package | 테넌트에 맞는 온보딩 패키지를 사용했는가? |
 | Health validation | `mdatp health`, 클라우드 연결, 조직 ID, 실시간 보호 상태가 정상인가? |
-| SOC 운영 | alert routing, incident 관리 책임, escalation path가 정의되었는가? |
+| SOC 운영 | 경고 전달 대상, 사고 처리 책임자와 상위 담당자에게 보고할 기준이 정해져 있는가? |
 | 인수인계 자료 | 명령 실행 결과, 포털 화면과 검증 점검표가 남아 있는가? |
 
 ## Related Documents

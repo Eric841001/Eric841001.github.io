@@ -1015,7 +1015,7 @@
   },
   "/knowledge/knowledge-center/gsa-whitelist-design": {
     "file": "docs/knowledge-center/gsa-whitelist-design.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
     "scope": "확인한 항목: GSA Microsoft 트래픽·테넌트 제한과 CA 디바이스·위험 제어 구분",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
@@ -1039,6 +1039,11 @@
         "title": "Global Secure Access overview",
         "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
         "checkedFor": "Microsoft 트래픽 기능은 Entra P1/P2 범위이며 Internet Access·Private Access의 별도 권한과 구분합니다."
+      },
+      {
+        "title": "Purview network data security",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+        "checkedFor": "테넌트 허용 목록과 콘텐츠 검사·차단 정책의 역할과 라이선스를 구분했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2698,7 +2703,7 @@
   },
   "/knowledge/security/dlp": {
     "file": "docs/security/dlp.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
     "scope": "확인한 항목: DLP의 워크로드·정책·파일럿·라이선스 적용 범위",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
@@ -2707,6 +2712,16 @@
         "title": "Microsoft Purview DLP overview",
         "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
         "checkedFor": "DLP 적용 범위는 워크로드·데이터·정책·라이선스·preview 상태에 따라 다릅니다."
+      },
+      {
+        "title": "Endpoint DLP FTP/SFTP",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-ftp-sftp-short",
+        "checkedFor": "2026년 10월 GA, 온보딩된 Windows 기기·Devices 활동과 Audit only 시작 조건을 확인했습니다."
+      },
+      {
+        "title": "Network data security integration",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+        "checkedFor": "GSA와 타 SASE의 라이선스·종량제 차이와 B2B 게스트 제외를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2714,7 +2729,7 @@
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
     "scope": "확인한 항목: Information Barriers의 양방향 세그먼트·워크로드 제한",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
@@ -2723,6 +2738,11 @@
         "title": "Microsoft Purview Information Barriers",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers",
         "checkedFor": "Information Barriers는 지원 워크로드에서 세그먼트 사이 양방향 통신·협업 제한을 제공하며 비대칭 허용 모델과 다릅니다."
+      },
+      {
+        "title": "IB policy compliance report",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint-report",
+        "checkedFor": "지원 사이트·OneDrive·사용자 소유 컨테이너 범위와 조회 및 세그먼트 변경 옵션을 구분했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2793,7 +2813,7 @@
   },
   "/knowledge/security/purview": {
     "file": "docs/security/purview.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
     "scope": "확인한 항목: Purview의 분류·보호·보존·감사·AI 통제 경계",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
@@ -2807,6 +2827,11 @@
         "title": "Sensitivity labels",
         "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
         "checkedFor": "레이블은 분류와 선택한 보호 설정을 적용하며 모든 레이블이 암호화를 자동으로 켜는 것은 아닙니다."
+      },
+      {
+        "title": "Purview current changes",
+        "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "checkedFor": "2026년 10월 FTP·SFTP 보호와 9월 네트워크 보안·IB 보고서 변경을 관련 기술 문서에 연결했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

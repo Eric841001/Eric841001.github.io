@@ -115,7 +115,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Assessment Scope
 
-## Included Areas
+### Included Areas
 
 - Identity and Access
 - Exchange Online
@@ -132,7 +132,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Identity Assessment
 
-## Environment Summary
+### Environment Summary
 
 | Area | Status | Notes |
 |---|---|---|
@@ -145,7 +145,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -163,7 +163,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Exchange Online Assessment
 
-## Review Areas
+### Review Areas
 
 | Area | Status | Notes |
 |---|---|---|
@@ -176,7 +176,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -194,7 +194,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Microsoft Teams Assessment
 
-## Review Areas
+### Review Areas
 
 | Area | Status | Notes |
 |---|---|---|
@@ -207,7 +207,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -225,7 +225,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## SharePoint Online Assessment
 
-## Review Areas
+### Review Areas
 
 | Area | Status | Notes |
 |---|---|---|
@@ -238,7 +238,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -256,7 +256,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## OneDrive Assessment
 
-## Review Areas
+### Review Areas
 
 | Area | Status | Notes |
 |---|---|---|
@@ -268,7 +268,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -286,7 +286,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Security Assessment
 
-## Microsoft Defender
+### Microsoft Defender
 
 | Area | Status | Notes |
 |---|---|---|
@@ -298,7 +298,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -316,7 +316,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Compliance Assessment
 
-## Microsoft Purview
+### Microsoft Purview
 
 | Area | Status | Notes |
 |---|---|---|
@@ -328,7 +328,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -346,7 +346,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Intune Assessment
 
-## Review Areas
+### Review Areas
 
 | Area | Status | Notes |
 |---|---|---|
@@ -358,7 +358,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -376,7 +376,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Governance Assessment
 
-## Review Areas
+### Review Areas
 
 | Area | Status | Notes |
 |---|---|---|
@@ -388,7 +388,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Findings
+### Findings
 
 ### Strengths
 
@@ -406,7 +406,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Copilot Readiness Assessment
 
-## Readiness Scorecard
+### Readiness Scorecard
 
 | Area | Score (1-5) | Notes |
 |---|---:|---|
@@ -420,7 +420,7 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ---
 
-## Overall Readiness
+### Overall Readiness
 
 | Score | Readiness Level |
 |---|---|
@@ -443,15 +443,15 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Executive Recommendations
 
-## Priority 1 – Critical Actions
+### Priority 1 – Critical Actions
 
 - 
 
-## Priority 2 – Strategic Improvements
+### Priority 2 – Strategic Improvements
 
 - 
 
-## Priority 3 – Optimization Opportunities
+### Priority 3 – Optimization Opportunities
 
 - 
 
@@ -459,23 +459,23 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ## Roadmap
 
-## Phase 1
+### Phase 1
 
 Critical Risk Remediation
 
-## Phase 2
+### Phase 2
 
 Governance Foundation
 
-## Phase 3
+### Phase 3
 
 Security Modernization
 
-## Phase 4
+### Phase 4
 
 Operational Optimization
 
-## Phase 5
+### Phase 5
 
 Copilot Readiness
 

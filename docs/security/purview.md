@@ -230,6 +230,14 @@ An anonymized enterprise group governance program used Purview not as a single t
 - Microsoft 365 데이터 보호
 - Copilot 보안 준비
 
+## 최근 데이터 보호 기능
+
+- Windows 기기의 FTP·SFTP 전송은 [Endpoint DLP 설정](./dlp#ftp-sftp-전송과-네트워크-보호)에서 다룹니다.
+- 외부 클라우드·AI 앱으로 전송하는 자료는 GSA나 지원 SASE 연동의 네트워크 정책을 따로 구성합니다. 적용 경로와 사용권을 구분하세요.
+- IB 정책을 변경했다면 [사이트 보고서](./information-barriers#정책-변경-후-사이트-보고서)로 기존 세그먼트 조합을 확인합니다.
+
+출처: [Microsoft Purview 2026년 변경 목록](https://learn.microsoft.com/en-us/purview/whats-new).
+
 ## References
 
 - [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/)

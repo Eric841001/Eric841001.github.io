@@ -127,7 +127,7 @@ Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 �
 Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파일럿을 운영 프로그램으로 확장하는 프레임워크**를 공개했습니다. 새 제품 기능이나 GA 발표가 아니라, Copilot과 에이전트를 반복 가능한 운영 모델로 전환하기 위한 공식 도입 지침입니다.
 
 - **업무 유형부터 분류:** `Assist`, `Execute`, `Transform` 모드 아래 직원 AI 지원, 전문가 역량 확장, 사내 서비스, 핵심 업무 프로세스, 외부 고객 접점, AI-first 역량의 여섯 패턴으로 목적을 구분합니다. 실행 권한이 커질수록 명시적 소유자, 장애 대응, 수명주기 관리와 권한 한계가 필요합니다. [Agentic transformation patterns](https://learn.microsoft.com/en-us/agents/adoption-patterns/)
-- **준비도 격차를 먼저 해소:** 전략, 업무 절차, 운영 기준, 기술·데이터와 조직 문화별 준비 사항을 점검합니다. 선택한 업무를 수행하는 데 걸림돌이 되는 문제부터 해결합니다. 기술 배포만으로 파일럿을 확장하지 말고, 도입을 지원할 경영진와 업무 성과 책임자를 먼저 지정하세요. [에이전트 도입 준비 단계 안내](https://learn.microsoft.com/en-us/agents/adoption-maturity-model)
+- **준비도 격차를 먼저 해소:** 전략, 업무 절차, 운영 기준, 기술·데이터와 조직 문화별 준비 사항을 점검합니다. 선택한 업무를 수행하는 데 걸림돌이 되는 문제부터 해결합니다. 기술 배포만으로 파일럿을 확장하지 말고, 도입을 지원할 경영진과 업무 성과 책임자를 먼저 지정하세요. [에이전트 도입 준비 단계 안내](https://learn.microsoft.com/en-us/agents/adoption-maturity-model)
 - **CoE를 운영 기능으로 설계:** Agentic Center of Excellence는 위험별 출시 게이트와 감사 추적, 제작자용 템플릿·교육·사전 승인 경로, 품질·비용·가치 모니터링, 재사용 확산을 담당합니다. 정보 제공형 에이전트에는 가벼운 검토를, 외부 시스템에서 실행하거나 규제·고영향 결정을 다루는 에이전트에는 보안·데이터·업무 책임자 검토와 사람 승인을 적용하세요. [Agentic Center of Excellence](https://learn.microsoft.com/en-us/agents/center-of-excellence/)
 - **성과를 사용량과 분리:** 시간 절감과 처리 속도 같은 `soft savings`는 확보된 용량으로, 과지급 방지·거래당 비용·감사 비용·벌금 회피처럼 재무제표에 연결되는 `hard savings`는 재무 성과로 구분합니다. 시작 전에 효율·품질·채택·위험 지표를 정하고, 2~3개의 고가치·저위험 시나리오를 선정해 확장·중단 기준을 함께 기록하세요.
 

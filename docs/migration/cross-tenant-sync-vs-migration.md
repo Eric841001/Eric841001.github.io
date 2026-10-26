@@ -1,7 +1,7 @@
 ---
 id: cross-tenant-sync-vs-migration
 title: Cross-Tenant Synchronization vs Full Tenant Migration
-description: "Cross Tenant Synchronization vs Full Tenant Migration - Cross Tenant Synchronization vs Full Tenant Migration"
+description: Compare cross-tenant identity provisioning with Microsoft 365 content migration, including authentication dependencies, workload scope, access controls and operating responsibilities.
 sidebar_label: Cross-Tenant Sync vs Migration
 toc_max_heading_level: 2
 ---
@@ -76,7 +76,7 @@ This document provides a decision framework used in enterprise Microsoft 365 tra
 
 ## Typical Business Scenarios
 
-## Merger & Acquisition
+### Merger & Acquisition
 
 Examples:
 
@@ -86,7 +86,7 @@ Examples:
 
 ---
 
-## Regional Compliance
+### Regional Compliance
 
 Examples:
 
@@ -96,7 +96,7 @@ Examples:
 
 ---
 
-## Divestiture
+### Divestiture
 
 Examples:
 
@@ -105,7 +105,7 @@ Examples:
 
 ---
 
-## Global Operating Model
+### Global Operating Model
 
 Examples:
 
@@ -158,11 +158,13 @@ Examples:
 
 ---
 
-## Option 1
+<span id="option-1" />
+
+**Option 1**
 
 ## Cross-Tenant Synchronization
 
-## Overview
+### Overview
 
 Cross-tenant synchronization provisions B2B collaboration users and supported security groups into a target tenant. It is a one-way provisioning process; source identities remain responsible for authentication. It does not migrate mailboxes, files or Teams content. See the [supported objects and group limitations](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#object-types).
 
@@ -172,7 +174,7 @@ Data remains in its original tenant.
 
 ---
 
-## Architecture
+### Architecture
 
 <div aria-label="Cross-tenant synchronization architecture" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -205,9 +207,9 @@ Data remains in its original tenant.
 
 ---
 
-## Benefits
+### Benefits
 
-## Low Complexity
+### Low Complexity
 
 No mailbox migration.
 
@@ -217,27 +219,27 @@ No Teams migration.
 
 ---
 
-## Lower Risk
+### Lower Risk
 
 Business disruption minimized.
 
 ---
 
-## Faster Deployment
+### Faster Deployment
 
 A limited identity pilot may be quicker than a content migration, but duration depends on object count, attribute mapping, access policy, testing and approvals. Estimate the schedule after discovery.
 
 ---
 
-## Compliance Friendly
+### Compliance Friendly
 
 Synchronization does not move workload content, but user attributes are provisioned into the target tenant. Review those data flows and cross-tenant access separately.
 
 ---
 
-## Limitations
+### Limitations
 
-## Data Remains Separate
+### Data Remains Separate
 
 Mailboxes stay in source tenant.
 
@@ -247,7 +249,7 @@ Teams remains separate.
 
 ---
 
-## User Experience
+### User Experience
 
 Multiple tenant context.
 
@@ -255,7 +257,7 @@ Potential collaboration complexity.
 
 ---
 
-## Administration
+### Administration
 
 Multiple tenants remain.
 
@@ -263,7 +265,7 @@ Multiple governance models remain.
 
 ---
 
-## Recommended Use Cases
+### Recommended Use Cases
 
 | Scenario | Recommendation |
 |----------|---------------|
@@ -275,11 +277,13 @@ Multiple governance models remain.
 
 ---
 
-## Option 2
+<span id="option-2" />
+
+**Option 2**
 
 ## Full Tenant Migration
 
-## Overview
+### Overview
 
 Users and workloads are migrated into a target tenant.
 
@@ -287,7 +291,7 @@ The source tenant is eventually decommissioned.
 
 ---
 
-## Architecture
+### Architecture
 
 <div aria-label="Full tenant migration architecture" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -325,9 +329,9 @@ The source tenant is eventually decommissioned.
 
 ---
 
-## Migration Scope
+### Migration Scope
 
-## Identity
+### Identity
 
 - User Accounts
 - Groups
@@ -335,7 +339,7 @@ The source tenant is eventually decommissioned.
 
 ---
 
-## Exchange Online
+### Exchange Online
 
 - Mailboxes
 - Archives
@@ -343,7 +347,7 @@ The source tenant is eventually decommissioned.
 
 ---
 
-## SharePoint Online
+### SharePoint Online
 
 - Sites
 - Permissions
@@ -351,14 +355,14 @@ The source tenant is eventually decommissioned.
 
 ---
 
-## OneDrive
+### OneDrive
 
 - User Data
 - Sharing Links
 
 ---
 
-## Teams
+### Teams
 
 - Channels
 - Membership
@@ -366,59 +370,59 @@ The source tenant is eventually decommissioned.
 
 ---
 
-## Benefits
+### Benefits
 
-## Single Tenant
+### Single Tenant
 
 Centralized administration.
 
 ---
 
-## Better User Experience
+### Better User Experience
 
 Single sign-in experience.
 
 ---
 
-## Governance Simplification
+### Governance Simplification
 
 Single security framework.
 
 ---
 
-## Copilot Readiness
+### Copilot Readiness
 
 A consolidated tenant can simplify data discovery and administration. Copilot readiness still depends on permissions, licensing, data quality and policy; consolidation is not a prerequisite.
 
 ---
 
-## Challenges
+### Challenges
 
-## Complexity
+### Complexity
 
 Migration planning required.
 
 ---
 
-## Cost
+### Cost
 
 Migration tooling required.
 
 ---
 
-## Downtime Risk
+### Downtime Risk
 
 Business impact possible.
 
 ---
 
-## Change Management
+### Change Management
 
 User communication required.
 
 ---
 
-## Recommended Use Cases
+### Recommended Use Cases
 
 | Scenario | Recommendation |
 |----------|---------------|
@@ -447,7 +451,7 @@ User communication required.
 
 ## Exchange Online Considerations
 
-## Cross-Tenant Sync
+### Cross-Tenant Sync
 
 Mailbox remains in source tenant.
 
@@ -455,7 +459,7 @@ Users collaborate through B2B relationship.
 
 ---
 
-## Migration
+### Migration
 
 Mailbox moved to target tenant.
 
@@ -465,7 +469,7 @@ Single mailbox strategy.
 
 ## SharePoint Considerations
 
-## Cross-Tenant Sync
+### Cross-Tenant Sync
 
 Separate content repositories.
 
@@ -475,7 +479,7 @@ Separate permissions.
 
 ---
 
-## Migration
+### Migration
 
 Unified content repository.
 
@@ -487,13 +491,13 @@ Unified Copilot access model.
 
 ## Microsoft Teams Considerations
 
-## Cross-Tenant Sync
+### Cross-Tenant Sync
 
 Users switch tenant context.
 
 ---
 
-## Migration
+### Migration
 
 Single Teams experience.
 
@@ -501,7 +505,7 @@ Single Teams experience.
 
 ## Copilot Considerations
 
-## Cross-Tenant Sync
+### Cross-Tenant Sync
 
 Challenges:
 
@@ -512,7 +516,7 @@ Challenges:
 
 ---
 
-## Migration
+### Migration
 
 Benefits:
 
@@ -525,7 +529,7 @@ Benefits:
 
 ## Security Considerations
 
-## Cross-Tenant Sync
+### Cross-Tenant Sync
 
 Benefits:
 
@@ -539,7 +543,7 @@ Risks:
 
 ---
 
-## Migration
+### Migration
 
 Benefits:
 
@@ -561,7 +565,7 @@ Cross-tenant synchronization can preserve separate workload storage and administ
 
 ## Recommended Migration Methodology
 
-## Phase 1
+### Phase 1
 
 Assessment
 
@@ -573,7 +577,7 @@ Activities:
 
 ---
 
-## Phase 2
+### Phase 2
 
 Target Operating Model
 
@@ -585,7 +589,7 @@ Activities:
 
 ---
 
-## Phase 3
+### Phase 3
 
 Pilot
 
@@ -597,7 +601,7 @@ Activities:
 
 ---
 
-## Phase 4
+### Phase 4
 
 Migration
 
@@ -610,7 +614,7 @@ Activities:
 
 ---
 
-## Phase 5
+### Phase 5
 
 Hypercare
 
@@ -624,7 +628,7 @@ Activities:
 
 ## Real World Recommendation
 
-## Choose Cross-Tenant Sync When
+### Choose Cross-Tenant Sync When
 
 - Business entities need independent administration.
 - Workload content should remain in existing tenants.
@@ -633,7 +637,7 @@ Activities:
 
 ---
 
-## Choose Full Migration When
+### Choose Full Migration When
 
 - Long-term integration is required.
 - Unified governance is required.

@@ -71,7 +71,7 @@ This document presents an enterprise security reference architecture used for Mi
 
 ## Security Vision
 
-## Business Objectives
+### Business Objectives
 
 Organizations must achieve:
 
@@ -149,7 +149,7 @@ Identity is the primary security perimeter.
 
 ---
 
-## Core Services
+### Core Services
 
 ### Microsoft Entra ID
 
@@ -162,7 +162,7 @@ Provides:
 
 ---
 
-## Key Controls
+### Key Controls
 
 ### MFA
 
@@ -184,7 +184,7 @@ Required
 
 ## Device Security
 
-## Microsoft Intune
+### Microsoft Intune
 
 Provides:
 
@@ -195,7 +195,7 @@ Provides:
 
 ---
 
-## Managed Device Requirements
+### Managed Device Requirements
 
 Windows
 
@@ -218,7 +218,7 @@ Mobile
 
 ## Endpoint Protection
 
-## Microsoft Defender for Endpoint
+### Microsoft Defender for Endpoint
 
 Provides:
 
@@ -229,7 +229,7 @@ Provides:
 
 ---
 
-## Security Objectives
+### Security Objectives
 
 Detect:
 
@@ -248,7 +248,7 @@ Respond:
 
 ## Email Security
 
-## Microsoft Defender for Office 365
+### Microsoft Defender for Office 365
 
 Protects:
 
@@ -259,7 +259,7 @@ Protects:
 
 ---
 
-## Security Features
+### Security Features
 
 - Safe Links
 - Safe Attachments
@@ -270,13 +270,13 @@ Protects:
 
 ## Data Protection
 
-## Microsoft Purview
+### Microsoft Purview
 
 Protects enterprise information.
 
 ---
 
-## Core Components
+### Core Components
 
 ### Sensitivity Labels
 
@@ -300,7 +300,7 @@ Investigation
 
 ---
 
-## Information Classification Model
+### Information Classification Model
 
 | Classification | Example |
 |--------------|----------|
@@ -313,7 +313,7 @@ Investigation
 
 ## Copilot Security Architecture
 
-## Security Principle
+### Security Principle
 
 Copilot does not create permissions.
 
@@ -321,7 +321,7 @@ Copilot uses existing permissions.
 
 ---
 
-## Data Sources
+### Data Sources
 
 - SharePoint Online
 - OneDrive
@@ -332,7 +332,7 @@ Copilot uses existing permissions.
 
 ---
 
-## Security Controls
+### Security Controls
 
 ### Identity
 
@@ -355,7 +355,7 @@ Copilot uses existing permissions.
 
 ---
 
-## Copilot Risk Areas
+### Copilot Risk Areas
 
 ### Oversharing
 
@@ -383,7 +383,7 @@ Excessive access, sharing or missing protection controls
 
 ## Conditional Access Architecture
 
-## Core Policies
+### Core Policies
 
 ### MFA
 
@@ -403,7 +403,7 @@ Privileged Accounts
 
 ---
 
-## Business Outcome
+### Business Outcome
 
 Verify every access request before granting access.
 
@@ -411,13 +411,13 @@ Verify every access request before granting access.
 
 ## Global Secure Access
 
-## Purpose
+### Purpose
 
 Extend Zero Trust beyond traditional network boundaries.
 
 ---
 
-## Use Cases
+### Use Cases
 
 - Tenant Restriction
 - Internet Access Control
@@ -426,7 +426,7 @@ Extend Zero Trust beyond traditional network boundaries.
 
 ---
 
-## Integration
+### Integration
 
 <div className="kc-factory-panel">
   <div className="kc-panel-header">
@@ -464,7 +464,7 @@ Extend Zero Trust beyond traditional network boundaries.
 
 ## Security Operations
 
-## Microsoft Defender XDR
+### Microsoft Defender XDR
 
 Correlates signals from:
 
@@ -476,7 +476,7 @@ Correlates signals from:
 
 ---
 
-## Microsoft Sentinel
+### Microsoft Sentinel
 
 Provides:
 
@@ -525,7 +525,7 @@ Provides:
 
 ## Recommended Security Baseline
 
-## Identity
+### Identity
 
 - MFA
 - Conditional Access
@@ -533,28 +533,28 @@ Provides:
 
 ---
 
-## Endpoint
+### Endpoint
 
 - Defender for Endpoint
 - Intune Compliance
 
 ---
 
-## Data
+### Data
 
 - Sensitivity Labels
 - DLP
 
 ---
 
-## AI
+### AI
 
 - Copilot Readiness
 - Permission Review
 
 ---
 
-## Monitoring
+### Monitoring
 
 - Defender XDR
 - Sentinel

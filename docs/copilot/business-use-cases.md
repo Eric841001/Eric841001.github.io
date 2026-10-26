@@ -98,7 +98,7 @@ This document provides practical enterprise use cases across major business func
 
 ## Finance
 
-## Financial Reporting
+### Financial Reporting
 
 ### Current State
 
@@ -118,7 +118,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ---
 
-## Budget Planning
+### Budget Planning
 
 ### Use Cases
 
@@ -128,7 +128,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ---
 
-## Variance Analysis
+### Variance Analysis
 
 ### Use Cases
 
@@ -138,7 +138,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ---
 
-## DCF Modeling
+### DCF Modeling
 
 ### Use Cases
 
@@ -150,7 +150,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ## Human Resources
 
-## Job Description Creation
+### Job Description Creation
 
 ### Use Cases
 
@@ -160,7 +160,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ---
 
-## Performance Review
+### Performance Review
 
 ### Use Cases
 
@@ -170,7 +170,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ---
 
-## Learning Programs
+### Learning Programs
 
 ### Use Cases
 
@@ -182,7 +182,7 @@ Illustrative planning assumption: 8–12 hours per month per analyst; not a meas
 
 ## Sales
 
-## Proposal Development
+### Proposal Development
 
 ### Use Cases
 
@@ -197,7 +197,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Account Planning
+### Account Planning
 
 ### Use Cases
 
@@ -207,7 +207,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Customer Meeting Preparation
+### Customer Meeting Preparation
 
 ### Use Cases
 
@@ -219,7 +219,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Marketing
 
-## Campaign Development
+### Campaign Development
 
 ### Use Cases
 
@@ -229,7 +229,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Competitive Analysis
+### Competitive Analysis
 
 ### Use Cases
 
@@ -241,7 +241,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Procurement
 
-## Vendor Evaluation
+### Vendor Evaluation
 
 ### Use Cases
 
@@ -251,7 +251,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Supplier Communication
+### Supplier Communication
 
 ### Use Cases
 
@@ -263,7 +263,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Legal
 
-## Contract Review
+### Contract Review
 
 ### Use Cases
 
@@ -273,7 +273,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Policy Development
+### Policy Development
 
 ### Use Cases
 
@@ -285,7 +285,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## IT Operations
 
-## Incident Management
+### Incident Management
 
 ### Use Cases
 
@@ -295,7 +295,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Change Management
+### Change Management
 
 ### Use Cases
 
@@ -307,7 +307,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Cyber Security
 
-## Security Operations
+### Security Operations
 
 ### Use Cases
 
@@ -317,7 +317,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Compliance
+### Compliance
 
 ### Use Cases
 
@@ -329,7 +329,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Microsoft 365 Administration
 
-## Tenant Assessment
+### Tenant Assessment
 
 ### Use Cases
 
@@ -339,7 +339,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## License Optimization
+### License Optimization
 
 ### Use Cases
 
@@ -351,7 +351,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Copilot Deployment
 
-## Readiness Assessment
+### Readiness Assessment
 
 ### Use Cases
 
@@ -361,7 +361,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Adoption Program
+### Adoption Program
 
 ### Use Cases
 
@@ -374,7 +374,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ## Industry Use Cases
 
-## Manufacturing
+### Manufacturing
 
 ### Examples
 
@@ -384,7 +384,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Financial Services
+### Financial Services
 
 ### Examples
 
@@ -394,7 +394,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Healthcare
+### Healthcare
 
 ### Examples
 
@@ -404,7 +404,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ---
 
-## Retail
+### Retail
 
 ### Examples
 

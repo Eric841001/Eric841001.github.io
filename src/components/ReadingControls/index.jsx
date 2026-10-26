@@ -12,8 +12,22 @@ export default function ReadingControls() {
       window.requestAnimationFrame(() => target.scrollIntoView({block: 'start'}));
     };
     reveal();
+    const reopenCurrentFragment = (event) => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest?.('a[href]');
+      if (!link || link.target === '_blank') return;
+      const url = new URL(link.href, window.location.href);
+      if (url.origin === window.location.origin && url.pathname === window.location.pathname &&
+          url.search === window.location.search && url.hash && url.hash === window.location.hash) {
+        reveal();
+      }
+    };
     window.addEventListener('hashchange', reveal);
-    return () => window.removeEventListener('hashchange', reveal);
+    document.addEventListener('click', reopenCurrentFragment);
+    return () => {
+      window.removeEventListener('hashchange', reveal);
+      document.removeEventListener('click', reopenCurrentFragment);
+    };
   }, []);
   function setSections(expand) {
     const sections = document.querySelectorAll('article details.kc-reading-section');

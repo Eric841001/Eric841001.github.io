@@ -227,7 +227,7 @@ High-risk senders can trigger:
 
 ## 한국어 요약
 
-Exchange Online의 Junk Email 폴더를 확인하고 Teams나 메일로 알리는 Power Automate 구성 예시입니다.
+Exchange Online의 정크 메일 폴더를 확인하고 Teams나 메일로 알리는 Power Automate 구성 예시입니다.
 
 보안팀과 서비스데스크가 확인할 조건을 정해 불필요한 알림을 줄입니다. 발신자, 수신자, 제목과 수신 시각 등 필요한 항목만 알림에 담으세요.
 
@@ -235,10 +235,10 @@ Exchange Online의 Junk Email 폴더를 확인하고 Teams나 메일로 알리�
 
 | Checkpoint | Validation Question |
 |---|---|
-| Trigger 범위 | 어떤 사용자 또는 공유 사서함의 Junk Email 폴더를 감시할 것인가? |
-| Alert rule | 모든 메일을 알릴 것인가, 특정 조건만 알릴 것인가? |
+| 감시 범위 | 어떤 사용자 또는 공유 사서함의 정크 메일 폴더를 감시할 것인가? |
+| 알림 조건 | 모든 메일을 알릴 것인가, 특정 조건만 알릴 것인가? |
 | Recipient | Teams 채널, 서비스데스크 사서함과 SOC 작업 목록 중 어디로 보낼 것인가? |
-| Noise 제어 | 일별 요약, 고위험 메일만 알림, 지정 사용자만 알림 같은 제한 조건이 필요한가? |
+| 불필요한 알림 줄이기 | 일별 요약, 고위험 메일만 알림, 지정 사용자만 알림 같은 제한 조건이 필요한가? |
 | Evidence | 발신자, 제목, 수신 시각, 수신자, URL, 첨부파일 정보를 남기는가? |
 | Ownership | 흐름 담당자, 대체 담당자와 실패 알림 수신자가 정의되어 있는가? |
 
@@ -246,7 +246,6 @@ Exchange Online의 Junk Email 폴더를 확인하고 Teams나 메일로 알리�
 
 - [Exchange Online Message Search and Purge](./exchange-online-message-recall-purge)
 - [Defender for Office 365](../security/defender-for-office365)
-- [Power Automate Junk Mail Alert](./powerautomate-junkmail-alert)
 - [Contact and Asset Request](../contact)
 
 ## Search Keywords

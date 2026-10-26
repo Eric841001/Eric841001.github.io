@@ -297,42 +297,42 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
     <small>AI 활용 방법</small>
     <strong>How to Use AI</strong>
     <span>
-      <a href="/knowledge/search/how-to-use-ai-in-enterprise">AI 활용 방법 검색 유입</a>
+      <a href="/knowledge/search/how-to-use-ai-in-enterprise">업무별 AI 활용 가이드</a>
     </span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Copilot 도입</small>
     <strong>Copilot Adoption</strong>
     <span>
-      <a href="/knowledge/search/copilot-adoption">Copilot 도입 검색 유입</a>
+      <a href="/knowledge/search/copilot-adoption">Copilot 도입 가이드</a>
     </span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Copilot Studio Agent</small>
     <strong>AI Agent Factory</strong>
     <span>
-      <a href="/knowledge/search/ai-agent-factory">Copilot Studio Agent 검색 유입</a>
+      <a href="/knowledge/search/ai-agent-factory">에이전트 설계·운영 가이드</a>
     </span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Microsoft 365 보안</small>
     <strong>Microsoft 365 Security</strong>
     <span>
-      <a href="/knowledge/search/microsoft-365-security">Microsoft 365 보안 검색 유입</a>
+      <a href="/knowledge/search/microsoft-365-security">Microsoft 365 보안 가이드</a>
     </span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Microsoft 365 컨설팅</small>
     <strong>Microsoft 365 Consulting</strong>
     <span>
-      <a href="/knowledge/search/microsoft-365-consulting">Microsoft 365 컨설팅 검색 유입</a>
+      <a href="/knowledge/search/microsoft-365-consulting">Microsoft 365 도입·운영 가이드</a>
     </span>
   </div>
   <div className="kc-platform-fit__card">
     <small>SOW WBS 템플릿</small>
     <strong>Proposal Center</strong>
     <span>
-      <a href="/knowledge/proposal/overview">SOW / WBS 템플릿 검색 유입</a>
+      <a href="/knowledge/proposal/overview">SOW·WBS 양식 안내</a>
     </span>
   </div>
 </div>

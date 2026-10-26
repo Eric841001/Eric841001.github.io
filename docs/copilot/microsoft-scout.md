@@ -336,7 +336,7 @@ Microsoft는 2026년 9월 25일 Scout의 새 이름을 Autopilot으로 발표했
 
 | Area | Question |
 |---|---|
-| Work 맥락 | Calendar, Email, Teams, SharePoint, CRM, project 데이터 중 어떤 범위를 사용할 것인가? |
+| 업무 자료 | 일정, 메일, Teams, SharePoint, CRM과 프로젝트 자료 중 어디까지 접근을 허용할 것인가? |
 | Action boundary | 알림, 초안 작성, 작업 생성과 승인 요청 중 어디까지 에이전트가 수행할 수 있는가? |
 | Privacy | 개인 업무 지원과 조직 모니터링 사이의 경계를 어떻게 설명할 것인가? |
 | Governance | 에이전트 담당자, 변경·폐기 절차, 접근 권한과 감사 로그를 누가 관리할 것인가? |

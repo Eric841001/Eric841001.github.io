@@ -227,6 +227,19 @@ IB를 설계할 때 Exchange Online까지 동일한 방식으로 제어된다고
 
 증적 이미지에는 실제 UPN, 이메일 주소, 테넌트 도메인, 사용자 이름 등 개인정보가 노출되지 않도록 마스킹해야 합니다.
 
+## 정책 변경 후 사이트 보고서
+
+IB 정책을 바꾼 뒤에는 기존 사이트의 세그먼트 조합이 새 정책에 맞는지 확인합니다. SharePoint의 IB 정책 준수 보고서는 Teams에 연결되지 않은 지원 사이트, OneDrive와 사용자 소유 SharePoint Embedded 컨테이너를 다룹니다. Teams 전체의 통신 제한 시험을 대신하는 보고서는 아닙니다.
+
+최신 SharePoint Online Management Shell에서 SharePoint 관리자 권한으로 보고서를 만들고 완료 상태를 조회합니다.
+
+```powershell
+Start-SPOInformationBarriersPolicyComplianceReport
+Get-SPOInformationBarriersPolicyComplianceReport
+```
+
+`-UpdateOneDriveSegments`와 `-UpdateUserOwnedContainerSegments`는 조회만 하는 옵션이 아니라 세그먼트를 변경하는 옵션입니다. 자동 보정이 필요하면 영향과 변경 대상을 검토한 뒤 사용하세요. [보고서 대상과 명령 설명](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint-report)에서 지원 범위를 확인할 수 있습니다.
+
 ## Troubleshooting
 
 | Symptom | Likely Cause | Response |

@@ -78,6 +78,12 @@ DLP should be designed as a business control, not only a security rule. The stro
 5. Move high-confidence scenarios to warning or block.
 6. Define exception request and approval process.
 
+## FTP·SFTP 전송과 네트워크 보호 {/* #ftp-sftp-전송과-네트워크-보호 */}
+
+Microsoft는 2026년 10월 Endpoint DLP의 FTP·SFTP 전송 보호를 일반 공급으로 안내했습니다. Purview에 온보딩한 Windows 기기에서 `Devices` 위치의 정책에 `FTP and SFTP transfers` 활동을 추가합니다. 소수 사용자를 `Audit only`로 먼저 운영하고 Activity explorer의 전송 기록을 확인한 뒤 차단 여부를 정하세요. [설정 절차와 권한](https://learn.microsoft.com/en-us/purview/endpoint-dlp-ftp-sftp-short)을 확인합니다.
+
+네트워크 DLP와 Endpoint DLP는 적용 경로가 다릅니다. Entra Global Secure Access 연동에는 Microsoft 365 E7 또는 Purview E5 상당의 사용권과 Entra Internet Access 상당의 사용권 조합이 필요합니다. 다른 SASE·보안 브라우저 연동에는 Purview E5 상당의 사용권과 Purview 종량제 설정이 필요하며, B2B 게스트는 네트워크 보호 정책 대상에서 제외됩니다. [연동별 라이선스와 제한](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)을 확인하고 실제 전송 경로를 시험하세요.
+
 ## Licensing
 
 Advanced DLP across Microsoft 365 workloads and endpoints may require higher compliance licensing. Confirm workload coverage before committing policy scope in a proposal.

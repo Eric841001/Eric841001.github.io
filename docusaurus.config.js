@@ -13,6 +13,7 @@
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
 
   future: {
     v4: true,
@@ -22,7 +23,7 @@
   markdown: {
     mermaid: true,
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownLinks: 'throw',
     },
   },
 
