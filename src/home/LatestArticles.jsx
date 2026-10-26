@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import {verifiedOn, updateGuide, updateHighlights, modelUpdate} from '../data/updateHighlights';
+import {updateGuide, updateHighlights, modelUpdate} from '../data/updateHighlights';
 import styles from './LatestArticles.module.css';
 
 export default function LatestArticles() {
   return (
     <section id="latest-updates" className={styles.latestArticles} aria-labelledby="latest-updates-title">
       <div className={styles.header}>
-        <div><p>공식 업데이트 · <time dateTime={verifiedOn}>{verifiedOn}</time> 확인</p>
+        <div><p>제품 소식과 문서 개정</p>
           <h2 id="latest-updates-title">최근 업데이트</h2>
-          <span>발표 날짜와 실제 사용 가능 여부를 확인하고 관련 문서를 읽어보세요.</span>
+          <span>제품 발표와 문서 개정 소식을 모았습니다. 각 항목의 날짜와 제공 조건을 확인하세요.</span>
         </div>
         <Link className={styles.allUpdates} to={updateGuide}>전체 변경 기록 →</Link>
       </div>
