@@ -37,7 +37,7 @@ This framework provides a structured approach for recommending Microsoft 365 lic
       <a href="#microsoft-365-license-overview" className="kc-factory-card">
         <small>01</small>
         <strong>Compare</strong>
-        <span>Review Business Basic, Standard, Premium, E3, E5 and F3 by user type.</span>
+        <span>Business 계열과 E3·E5·E7·F3를 사용자별 업무에 맞춰 비교합니다.</span>
       </a>
       <a href="#common-licensing-scenarios" className="kc-factory-card">
         <small>02</small>
@@ -108,8 +108,11 @@ This framework provides a structured approach for recommending Microsoft 365 lic
 | Business Standard | Office applications and collaboration |
 | Business Premium | SMB security and device management |
 | Microsoft 365 E3 | Enterprise productivity and compliance |
-| Microsoft 365 E5 | Advanced security and compliance |
+| Microsoft 365 E5 | 고급 보안·규정 준수, 업무용 Copilot은 별도 추가 |
+| Microsoft 365 E7 | E5 + Microsoft 365 Copilot + Entra Suite + Agent 365 |
 | Microsoft 365 F3 | Frontline workers |
+
+E7에는 E5의 기능과 Microsoft 365 Copilot·Microsoft Entra Suite·Microsoft Agent 365가 포함됩니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 비용 조건을 확인하세요. Teams는 포함·미포함 상품이 있으므로 상품명과 계약을 확인합니다.
 
 ---
 
@@ -125,7 +128,7 @@ Recommended for:
 Included capabilities:
 
 - Exchange Online
-- Teams
+- Teams (구매한 상품에 포함된 경우)
 - SharePoint Online
 - OneDrive
 
@@ -133,7 +136,7 @@ Not recommended when:
 
 - Device management is required
 - Advanced security is required
-- Compliance requirements exist
+- 필요한 규정 준수 기능이 기본 구독에 없고 추가 구독으로도 충족하기 어려움
 
 ---
 
@@ -149,13 +152,13 @@ Included capabilities:
 
 - Desktop Office Apps
 - Exchange Online
-- Teams
+- Teams (구매한 상품에 포함된 경우)
 - SharePoint
 - OneDrive
 
 Not recommended when:
 
-- Security controls are required
+- 필요한 보안 기능이 기본 구독에 없고 별도 보안 제품도 사용하지 않음
 - Intune is required
 - Conditional Access strategy exists
 
@@ -196,7 +199,7 @@ Included capabilities:
 
 - Office Apps
 - Exchange Online
-- Teams
+- Teams (구매한 상품에 포함된 경우)
 - SharePoint
 - OneDrive
 - Purview Core Capabilities
@@ -214,7 +217,7 @@ Typical use cases:
 Recommended for:
 
 - Security transformation
-- Zero Trust programs
+- 위험 기반 접근 제어와 고급 보안 조사가 필요한 조직
 - Compliance initiatives
 - SOC modernization
 
@@ -243,6 +246,16 @@ Included capabilities:
 - Power BI Pro
 
 ---
+
+## Microsoft 365 E7
+
+E5의 고급 보호와 업무용 Copilot에 더해 Entra Suite·Agent 365를 함께 사용할 때 비교합니다. E5에 Copilot만 추가한 구성과 Entra Suite·Agent 365를 각각 구매한 구성도 같은 사용자 수로 산정하세요.
+
+- Entra ID P2와 Entra Suite 전체의 포함 범위를 구분합니다.
+- Agent 365는 에이전트의 접근·보안·수명주기 관리를 담당합니다. 모든 개발·실행 비용이 포함되는 것으로 계산하지 않습니다.
+- 이미 구매한 구독과 겹치는 권한, 갱신 시점과 실제 사용할 기능을 확인합니다.
+
+공식 근거: [E7 구성](https://www.microsoft.com/en-us/microsoft-365/enterprise/e7), [Entra 라이선스](https://learn.microsoft.com/en-us/entra/fundamentals/licensing).
 
 ## Microsoft 365 F3
 
@@ -297,20 +310,27 @@ Recommended when:
 
 - Defender deployment planned
 - Purview deployment planned
-- Zero Trust implementation planned
-- Compliance requirements exist
+- P2의 위험 제어·고급 Defender 조사 기능을 실제로 운영할 계획
+- 고급 감사·eDiscovery·내부자 위험 관리 등 필요한 Purview 기능을 확인함
 
 ---
+
+### Scenario 4
+
+고급 보안·규정 준수와 업무용 Copilot, Entra Suite, Agent 365가 함께 필요하면 E7과 개별 구독 조합을 비교합니다. 기능 사용 대상과 운영 담당자가 정해지지 않았다면 전 직원 일괄 도입부터 결정하지 마세요.
 
 ## Copilot Readiness
 
 Recommended baseline:
 
-| Scenario | Recommendation |
-|-----------|-----------|
-| Small Business | Business Premium |
-| Enterprise | Microsoft 365 E3 |
-| Secure Enterprise | Microsoft 365 E5 |
+| 업무·보호 요구 | 비교할 구성 |
+|---|---|
+| 중소기업의 기기·계정 보호와 업무용 Copilot | Business Premium + 적격 Copilot 추가 구독 |
+| 기업 협업과 업무용 Copilot | E3 + 적격 Copilot 추가 구독 |
+| 고급 보안·규정 준수와 업무용 Copilot | E5 + Copilot |
+| 위 기능과 Entra Suite·Agent 365를 함께 사용 | E7 또는 필요한 개별 구독 조합 |
+
+E3·E5의 기본 구독만으로 업무용 Copilot 사용 권한을 확정하지 마세요. E7은 Copilot을 포함하지만, [Copilot Credits 과금](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)을 사용하는 서비스의 비용은 별도로 확인해야 합니다.
 
 Copilot deployment should review:
 
@@ -330,7 +350,8 @@ Copilot deployment should review:
 | Desktop Apps | Business Standard |
 | Security + Intune | Business Premium |
 | Enterprise Productivity | Microsoft 365 E3 |
-| Advanced Security | Microsoft 365 E5 |
+| Advanced Security | Microsoft 365 E5 또는 적격 보안 추가 구독 |
+| 고급 보호 + Copilot + Entra Suite + Agent 365 | E7과 기존 구독 조합의 총비용 비교 |
 | Frontline Workers | Microsoft 365 F3 |
 
 ---
@@ -343,7 +364,9 @@ Copilot deployment should review:
 - Conditional Access required?
 - Defender deployment planned?
 - Compliance requirements?
-- Copilot roadmap?
+- 어떤 사용자가 어떤 업무에 Copilot을 사용할 예정인가요?
+- Entra Suite·Agent 365를 실제로 사용할 기능과 담당자가 정해졌나요?
+- 기존 구독과 중복되는 권한, AI 사용량 요금은 확인했나요?
 - Global operations?
 
 ---
@@ -377,7 +400,7 @@ Official sources: [Microsoft Product Terms](https://www.microsoft.com/licensing/
 
 사용자별 업무와 필요한 기능을 Microsoft 365 라이선스에 맞춰 비교하는 자료입니다.
 
-기존 구독과 서비스 플랜, 보안·기기 관리 조건, Copilot 사용 계획과 예상 사용량을 확인하세요.
+기존 구독과 서비스 플랜, 보안·기기 관리 조건, Copilot 사용 계획과 예상 사용량을 확인하세요. E3·E5에 필요한 기능을 추가한 구성과 E7을 같은 사용자 수와 사용량 조건으로 비교합니다.
 
 ### 라이선스 산정 방법
 
@@ -392,7 +415,7 @@ Official sources: [Microsoft Product Terms](https://www.microsoft.com/licensing/
 ## 검색 키워드
 
 - Microsoft 365 license advisor
-- M365 E3 E5 comparison
+- M365 E3 E5 E7 comparison
 - Business Premium licensing
 - Copilot license readiness
 - license to capability map

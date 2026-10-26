@@ -391,14 +391,16 @@ Questions:
 
 | Capability | License |
 |------------|------------|
-| Manual Labeling | Microsoft 365 E3 |
-| Auto Labeling | Microsoft 365 E5 |
-| Endpoint DLP | Microsoft 365 E5 |
-| Insider Risk | Microsoft 365 E5 |
-| Communication Compliance | Microsoft 365 E5 |
-| eDiscovery Premium | Microsoft 365 E5 |
+| Manual Labeling | Microsoft 365 E3·E5·E7 등 적격 구독 |
+| Auto Labeling | Microsoft 365 E5·E7 또는 기능별 적격 추가 구독 |
+| Endpoint DLP | Microsoft 365 E5·E7 또는 기능별 적격 추가 구독 |
+| Insider Risk | Microsoft 365 E5·E7 또는 기능별 적격 추가 구독 |
+| Communication Compliance | Microsoft 365 E5·E7 또는 기능별 적격 추가 구독 |
+| eDiscovery Premium | Microsoft 365 E5·E7 또는 기능별 적격 추가 구독 |
 
 ---
+
+E7은 E5의 고급 Purview 기능을 포함합니다. 표의 플랜명만으로 모든 적용 위치나 보존 기간을 확정하지 말고, [공식 E3·E5·E7 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [민감도 레이블 안내](https://learn.microsoft.com/en-us/purview/sensitivity-labels)에서 기능 조건을 확인하세요. Copilot·에이전트 관련 보호도 사용자 권한과 정책 설정을 검토해야 합니다.
 
 ## Enterprise Deployment Approach
 

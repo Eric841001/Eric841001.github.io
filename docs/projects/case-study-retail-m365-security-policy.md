@@ -254,7 +254,7 @@ The engagement converted Microsoft 365 license capabilities and current-state fi
   <div className="kc-platform-fit__card">
     <small>Licensing</small>
     <strong>Capability feasibility</strong>
-    <span>E3, F3, E5 and add-on differences affect which controls are feasible.</span>
+    <span>새 도입 계획에서는 E3·E5·E7·F3와 추가 구독의 포함 기능을 비교합니다. 이 사례에서 E7을 사용했다는 뜻은 아닙니다.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Classification</small>

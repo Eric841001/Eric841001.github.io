@@ -104,7 +104,7 @@ Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 | Security | Zero Trust, ID, 기기, 데이터 보호 설계 | CISO, Security Manager |
 | Copilot | Copilot 준비 상태, 도입·정착, 운영 기준 설계 | CIO, Digital Innovation Lead |
 | Migration | Tenant, mail, file, Google Workspace 전환 | Migration PM, IT Operations |
-| Licensing | E3/E5/Business Premium/F3 license optimization | CIO, Procurement, IT Finance |
+| Licensing | E3·E5·E7·Business Premium·F3 구성과 비용 비교 | CIO, Procurement, IT Finance |
 
 ---
 
@@ -167,7 +167,7 @@ Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 
 Microsoft 365 영역은 기업의 협업, 보안, 운영 기준, 라이선스 optimization을 다룹니다.
 
-- E3 vs E5 comparison
+- E3 E5 E7 comparison
 - SharePoint / OneDrive governance
 - Teams operating policy
 - Exchange Online security policy
@@ -264,6 +264,8 @@ This Knowledge Center is designed for the following search intents:
 - Intune 배포 가이드
 - Microsoft 365 제안서 산출물
 - SOW WBS Risk Register template
+
+[E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.
 
 ## Contact / Asset Request
 

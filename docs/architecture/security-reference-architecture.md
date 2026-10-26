@@ -167,10 +167,12 @@ Typical security initiatives include:
 | Conditional Access | Microsoft Entra ID P1 |
 | Identity Protection | Microsoft Entra ID P2 |
 | Privileged Identity Management | Microsoft Entra ID P2 |
-| Defender for Endpoint P2 | Microsoft 365 E5 or security add-on |
-| Defender for Office 365 P2 | Microsoft 365 E5 or security add-on |
-| Defender XDR | Microsoft 365 E5 security capabilities |
-| Purview advanced compliance | Microsoft 365 E5 compliance capabilities |
+| Defender for Endpoint P2 | Microsoft 365 E5·E7 또는 해당 기능을 포함하는 적격 보안 구독 |
+| Defender for Office 365 P2 | Microsoft 365 E5·E7 또는 해당 기능을 포함하는 적격 보안 구독 |
+| Defender XDR | Microsoft 365 E5·E7에 포함된 고급 보안 기능 |
+| Purview advanced compliance | Microsoft 365 E5·E7의 고급 Purview 기능. 적용 위치·사용자 조건 별도 확인 |
+
+E7에는 E5의 보호 기능과 Copilot·Entra Suite·Agent 365가 포함됩니다. 보안 기능만 필요한 사용자와 AI·에이전트 관리까지 필요한 사용자를 구분하세요. [공식 플랜 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [Entra 라이선스](https://learn.microsoft.com/en-us/entra/fundamentals/licensing)에서 포함 범위를 확인합니다. 이 표는 가능한 구독 예시이며 모든 대체 구독을 나열하지는 않습니다.
 
 ## Lessons Learned
 

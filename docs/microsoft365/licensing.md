@@ -1,6 +1,6 @@
 ---
 title: Licensing
-description: Microsoft 365 licensing architecture guide for Business Premium, E3, E5, add-ons, Copilot readiness, security controls and CFO review.
+description: Microsoft 365 licensing architecture guide for Business Premium, E3, E5, E7, add-ons, Copilot readiness, security controls and CFO review.
 ---
 
 # Microsoft 365 Licensing
@@ -49,9 +49,13 @@ Microsoft 365 licensing discussions should include a feature entitlement review.
 
 Use this page for the current planning model: [Microsoft Licensing Feature Update](../licensing/july-2026-microsoft-licensing-update)
 
+## E7과 추가 구독 비교
+
+E7에는 E5의 기능과 Microsoft 365 Copilot·Microsoft Entra Suite·Microsoft Agent 365가 포함됩니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 비용 조건을 확인하세요. E5+Copilot과 E7의 차이는 Entra Suite·Agent 365 사용 계획까지 포함해 판단합니다. [AI 사용량 요금](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)은 구독료와 별도로 산정하세요.
+
 ## Business Scenario
 
-- Compare Business Premium, E3, E5 and add-ons
+- Business Premium·E3·E5·E7과 필요한 추가 기능 비교
 - Build licensing model for Microsoft 365 migration
 - Prepare Copilot licensing and readiness
 - Align security and compliance requirements
@@ -69,7 +73,7 @@ Use this page for the current planning model: [Microsoft Licensing Feature Updat
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
   <small>02</small>
   <strong>License mapping</strong>
-  <span>Map features to Business Premium, E3, E5, add-ons and Copilot licenses.</span>
+  <span>Business Premium·E3·E5·E7의 포함 기능과 추가 구독을 확인합니다.</span>
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
   <small>03</small>
   <strong>User segmentation</strong>
@@ -100,7 +104,7 @@ Licensing must be checked against required security controls such as Defender, P
 | User segmentation | Which users require productivity, security, compliance or frontline licensing? |
 | Security controls | Which Defender, Intune, Entra ID and Purview features are mandatory? |
 | Copilot readiness | Which users are ready for Copilot license assignment? |
-| Add-ons | Are E5 add-ons more efficient than full E5 for certain groups? |
+| Add-ons | E3+추가 기능, E5+Copilot, E7 중 실제 사용할 기능과 총비용에 맞는 구성은 무엇인가요? |
 | Governance | How often are unused or misassigned licenses reviewed? |
 
 ## Delivery Artifacts
@@ -108,7 +112,7 @@ Licensing must be checked against required security controls such as Defender, P
 - License requirement matrix
 - Service plan inventory
 - User segmentation model
-- E3/E5/Business Premium comparison
+- E3·E5·E7·Business Premium 비교표
 - Security and compliance capability mapping
 - Copilot license readiness plan
 - Executive license-to-control matrix
@@ -118,7 +122,7 @@ Licensing must be checked against required security controls such as Defender, P
 | Industry | Scenario | Pattern |
 |---|---|---|
 | Finance | Security and compliance uplift | E5 capability mapping with audit-driven justification |
-| Manufacturing | Mixed workforce | E3/E5 segmentation and frontline licensing review |
+| Manufacturing | Mixed workforce | E3·E5·E7 사용 대상과 현장 직원 플랜을 구분 |
 | Retail | Cost optimization | License reclaim process and role-based assignment model |
 
 ## Lessons Learned
@@ -131,7 +135,7 @@ Executive stakeholders respond better to licensing proposals that connect includ
 ## 검색 키워드
 
 - Microsoft 365 licensing
-- Microsoft 365 E3 vs E5
+- Microsoft 365 E3 E5 E7 비교
 - Business Premium licensing
 - Copilot licensing
 - Microsoft 365 license optimization

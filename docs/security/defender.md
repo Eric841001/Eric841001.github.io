@@ -80,7 +80,7 @@ For enterprise architecture, the goal is not to enable every feature at once. Th
 
 ## Licensing
 
-Microsoft 365 E5 commonly provides the broadest Defender XDR capability. E3 environments may require add-ons depending on endpoint, identity, cloud app and email protection requirements.
+Microsoft 365 E5와 E7은 고급 Defender XDR 기능을 포함합니다. E7에는 Entra Suite와 Agent 365도 포함되므로, Defender 보호만 필요한 경우와 AI·에이전트 관리까지 필요한 경우를 나눠 비교하세요. E3는 필요한 엔드포인트·계정·클라우드 앱·메일 보호 기능에 따라 추가 구독을 검토합니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)에서 플랜별 포함 범위를 확인하고 사용자 할당과 각 Defender 서비스 설정을 점검하세요.
 
 ## Security
 

@@ -123,7 +123,7 @@ Visitors may find this site through Korean search queries such as:
 | Security | Microsoft 365 보안, Defender XDR 구축, Purview DLP 설계, Conditional Access 설계 |
 | Endpoint | Microsoft Intune 디바이스 관리, Intune 보안 정책, macOS USB 제어 |
 | Migration | Microsoft 365 마이그레이션, Tenant to Tenant Migration, Google Workspace Microsoft 365 전환 |
-| Licensing | Microsoft 365 라이선스 전략, Microsoft 365 E3 E5 비교, Copilot 라이선스 관리 |
+| Licensing | Microsoft 365 라이선스 전략, Microsoft 365 E3 E5 E7 비교, Copilot 라이선스 관리 |
 | Proposal Assets | Microsoft 365 제안서, SOW 템플릿, WBS 템플릿, 제안서 산출물 |
 | Customer Success | Microsoft 365 고객 성공 사례, Copilot 도입 사례, 보안 거버넌스 사례 |
 
@@ -157,7 +157,7 @@ Visitors may find this site through Korean search queries such as:
 - Copilot Studio Agent Governance
 - Enterprise AI Adoption Program
 - Microsoft 365 License Optimization
-- Microsoft 365 E3 E5 Decision Guide
+- Microsoft 365 E3 E5 E7 Decision Guide
 - Microsoft 365 Migration Strategy
 - Google Workspace to Microsoft 365 Migration
 - SOW Template for Microsoft 365
@@ -181,3 +181,5 @@ https://eric841001.github.io/sitemap.xml
 - Microsoft 365 architecture
 - security architecture
 - 엔터프라이즈 아키텍처
+
+[E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.

@@ -38,7 +38,7 @@ toc_max_heading_level: 2
       <a href="#decision-areas" className="kc-factory-card">
         <small>03</small>
         <strong>Decision Areas</strong>
-        <span>E3, E5, Business Premium, Defender, Purview, Entra and Copilot.</span>
+        <span>E3·E5·E7, Business Premium과 보안·Copilot 추가 구독을 비교합니다.</span>
       </a>
       <a href="../toolkit/license-advisor" className="kc-factory-card">
         <small>04</small>
@@ -72,12 +72,12 @@ Licensing guidance should connect cost to architecture, security controls, adopt
   </div>
 </div>
 
-## Licensing verification — 2026-10-25
+## 라이선스 구성 비교 {/* #licensing-verification--2026-10-25 */}
 
-Microsoft 365 E7은 E5에 Microsoft 365 Copilot·Microsoft Entra Suite·Agent 365를 묶은 구성입니다. [E3·E5·E7 비교](./e3-vs-e5)에서 포함 기능, E5+Copilot과의 차이, Teams 구성과 비용을 함께 확인하세요.
+[Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)에 따르면 Microsoft 365 E7은 E5에 Microsoft 365 Copilot·Microsoft Entra Suite·Agent 365를 묶은 구성입니다. [E3·E5·E7 비교](./e3-vs-e5)에서 포함 기능, E5+Copilot과의 차이, Teams 구성과 비용을 함께 확인하세요.
 
-- Verify **with Teams / without Teams**, market, purchase channel and contract terms; the E3/E5 name alone does not establish Teams entitlement.
-- Distinguish web-grounded Copilot Chat from work-grounded Microsoft 365 Copilot. E5 AI readiness does not establish entitlement to every Copilot feature.
+- E3·E5·E7 모두 Teams 포함·미포함 상품과 이용 지역, 구매 경로와 계약 조건을 확인합니다.
+- 웹 기반 Copilot Chat과 회사 자료를 참조하는 Microsoft 365 Copilot을 구분합니다. E3·E5에서는 업무용 Copilot 추가 구독을, E7에서는 포함된 구독과 별도 사용량 요금을 확인합니다.
 - Conditional Access generally requires Entra ID P1; user/sign-in risk policies require P2. Agent policies have separate licensing and preview conditions. See the [Conditional Access guide](../security/conditional-access).
 - The US page is not a Korean quotation. Confirm currency, taxes, commitment, region and renewal terms for the actual offer.
 
@@ -172,10 +172,11 @@ Use this model when preparing an executive licensing discussion:
 | Pattern | When It Fits | Caution |
 |---|---|---|
 | E3 baseline with E5 add-ons | Organization needs a stable productivity foundation with selective advanced controls | add-on sprawl can become hard to manage |
-| Mixed E3/E5 model | High-risk users, executives, admins or regulated teams need advanced protection | user segmentation must be documented clearly |
+| E3·E5·E7 혼합 | 사용자별로 기본 관리·고급 보호·Copilot·에이전트 관리 요구가 다름 | 실제 사용할 기능과 적용 대상을 기록 |
 | Business Premium model | Smaller organizations need strong baseline security and device management | may not satisfy advanced compliance or analytics needs |
 | Copilot phased assignment | Organization wants measurable adoption before broad license expansion | use case, training and data readiness must be prepared first |
 | Security-first E5 adoption | Security modernization, XDR, DLP, audit or insider risk are key drivers | finance stakeholders need value and risk rationale |
+| E7과 개별 구독 비교 | E5·Copilot·Entra Suite·Agent 365를 함께 사용 | 중복 구독, 실제 이용 대상과 사용량 비용 확인 |
 
 ## Recommended Reading
 
@@ -201,11 +202,11 @@ Use this model when preparing an executive licensing discussion:
 ## 검색 키워드
 
 - Microsoft 365 licensing strategy
-- Microsoft 365 E3 E5 comparison
+- Microsoft 365 E3 E5 E7 comparison
 - Microsoft 365 license optimization
 - Copilot license governance
 - Microsoft 365 라이선스 전략
-- Microsoft 365 E3 E5 비교
+- Microsoft 365 E3 E5 E7 비교
 - Copilot 라이선스 관리
 - Microsoft 365 비용 최적화
 

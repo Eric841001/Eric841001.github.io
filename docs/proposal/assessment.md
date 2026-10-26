@@ -116,7 +116,7 @@ This assessment is typically used when a customer needs to:
 | Endpoint | Intune, device enrollment, compliance policy, platform coverage |
 | Security | Defender, Secure Score, threat protection, alert process |
 | Compliance | Purview, DLP, sensitivity labels, retention, audit readiness |
-| Licensing | Current license assignment, feature utilization, E3/E5/BP/Copilot fit |
+| Licensing | 현재 할당·사용 기능, E3·E5·E7·Business Premium과 Copilot 추가 구독 비교 |
 | Migration | Source system, data volume, permission model, cutover readiness |
 | Operations | Admin role, support model, change management, governance process |
 
@@ -263,6 +263,8 @@ Typical assessment deliverables include:
 - readiness assessment
 - assessment workbook
 - 진단 프레임워크
+
+[E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.
 
 ## Contact / Asset Request
 

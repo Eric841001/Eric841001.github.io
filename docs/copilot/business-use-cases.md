@@ -343,7 +343,7 @@ Illustrative planning assumption: 60–80% reduction in proposal preparation tim
 
 ### Use Cases
 
-- E3 vs E5 analysis
+- E3 E5 E7 analysis
 - Cost optimization
 - Utilization reviews
 
@@ -453,6 +453,8 @@ Organizations should prioritize:
 - Copilot readiness
 - Copilot 도입
 - AI 에이전트 운영 모델
+
+[E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.
 
 ## Contact / Asset Request
 

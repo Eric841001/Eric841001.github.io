@@ -53,11 +53,11 @@ description: "Microsoft 365 Business Premium - Microsoft 365 Business Premium is
 
 Microsoft 365 Business Premium is a strong option for small and mid-sized organizations that need productivity, identity protection, endpoint management and baseline security in one package.
 
-It is often suitable when the organization wants Microsoft 365, Intune, Defender for Business and Entra ID capabilities without moving immediately to enterprise E3 or E5 licensing.
+It is often suitable when the organization wants Microsoft 365, Intune, Defender for Business and Entra ID capabilities without moving immediately to enterprise E3, E5 or E7 licensing.
 
 ## 한국어 요약
 
-Microsoft 365 Business Premium은 Microsoft 365 Apps, Exchange Online, Teams, SharePoint, OneDrive, Entra ID, Intune, Defender for Business를 하나의 실무 패키지로 묶어 검토할 수 있는 라이선스입니다.
+Microsoft 365 Business Premium에는 업무 앱과 메일·파일 공유, Entra ID P1, Intune, Defender for Business가 포함됩니다. Teams는 구매한 상품의 포함 여부를 확인하세요.
 
 메일과 Office 외에 MFA, Conditional Access, 기기 관리와 엔드포인트 보호가 필요한 조직에서 검토할 수 있습니다. 포함 기능과 구매할 상품의 Teams 제공 여부는 별도로 확인하세요.
 
@@ -105,7 +105,7 @@ Microsoft 365 Business Premium은 Microsoft 365 Apps, Exchange Online, Teams, Sh
 
 ## Licensing
 
-Microsoft documents a combined limit of 300 provisioned seats across Business Basic, Business Standard and Business Premium. Count all Business-family seats together; enterprise subscriptions are a separate option. Verify the purchased variant's Teams entitlement and any server add-ons in the [Business Premium FAQ](https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide). If the customer needs advanced compliance, enterprise voice, large-scale governance or E5 security, compare against E3/E5.
+Microsoft documents a combined limit of 300 provisioned seats across Business Basic, Business Standard and Business Premium. Count all Business-family seats together; enterprise subscriptions are a separate option. Verify the purchased variant's Teams entitlement and any server add-ons in the [Business Premium FAQ](https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide). 고급 규정 준수·보안 조사·통화 기능 등이 필요하면 E3·E5와 필요한 추가 기능을 비교합니다. 업무용 Copilot·Entra Suite·Agent 365까지 함께 필요하면 E7도 비교하세요.
 
 ## When Business Premium Is Enough
 
@@ -115,17 +115,18 @@ Business Premium is usually a practical fit when the organization needs:
 - baseline identity security with MFA and Conditional Access
 - Intune-based device enrollment, compliance policy and app protection
 - endpoint protection through Defender for Business
-- a simpler operating model than full enterprise E3/E5
+- 실제로 운영할 수 있는 기기·계정·보안 관리 범위
 - a cost-conscious license path for a controlled Microsoft 365 rollout
 
-## When To Compare Against E3 Or E5
+## E3·E5·E7과 비교할 때 {/* #when-to-compare-against-e3-or-e5 */}
 
-Compare Business Premium with E3 or E5 when the customer has one or more of these requirements:
+인원수만으로 상위 플랜을 정하지 말고, Business Premium과 추가 구독으로 필요한 기능을 충족할 수 있는지 확인하세요. E7에는 E5의 기능과 Microsoft 365 Copilot·Microsoft Entra Suite·Microsoft Agent 365가 포함됩니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 비용 조건을 확인하세요.
 
 | Requirement | Why It Matters |
 |---|---|
 | Advanced compliance | Purview, retention, eDiscovery, DLP and audit requirements may exceed the Business Premium boundary. |
 | Enterprise security operations | Defender XDR, advanced hunting and security operations integration may require E5-level capabilities. |
+| 고급 보호·업무용 Copilot·Entra Suite·Agent 365 | E7 묶음과 Business Premium 또는 E5에 필요한 제품을 추가한 구성의 총비용을 비교합니다. |
 | Large-scale governance | Large tenants often need more advanced policy, reporting, delegation and operational controls. |
 | Complex voice or meeting requirements | Enterprise voice and advanced meeting scenarios may require additional licensing decisions. |
 | Regulated industry control evidence | Finance, healthcare, public sector or manufacturing environments often require more formal evidence packs. |
@@ -162,7 +163,7 @@ Business Premium can deliver strong value when implemented as a full security an
 ## 검색 키워드
 
 - Microsoft 365 Business Premium
-- Business Premium E3 E5 비교
+- Business Premium E3 E5 E7 비교
 - Microsoft 365 중소기업 보안
 - Intune Business Premium
 - Defender for Business

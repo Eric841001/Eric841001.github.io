@@ -126,7 +126,7 @@ Microsoft 365의 협업 서비스, 사용자·기기 관리와 데이터 보호�
   <a href="/knowledge/microsoft365/licensing">
     <small>Licensing</small>
     <strong>Optimize license fit</strong>
-    <span>E3, E5, Business Premium, F3 and Copilot licensing aligned to persona and risk.</span>
+    <span>E3·E5·E7, Business Premium·F3와 Copilot 구독을 사용자별 업무에 맞춰 비교합니다.</span>
   </a>
   <a href="/knowledge/copilot/readiness">
     <small>Copilot</small>
@@ -391,7 +391,7 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 - Google Workspace에서 Microsoft 365로 전환
 - Exchange Online과 Teams를 활용한 협업 환경 개선
 - Copilot 도입 전 데이터 / 보안 준비 상태 현황 진단
-- Microsoft 365 E3 / E5 / Business Premium license optimization
+- Microsoft 365 E3 / E5 / E7 / Business Premium license optimization
 - 글로벌 조직 또는 계열사의 테넌트 운영 기준 정비
 
 ## References

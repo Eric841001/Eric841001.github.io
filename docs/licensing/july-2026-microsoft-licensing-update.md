@@ -74,7 +74,7 @@ Microsoft licensing decisions should be reviewed as a feature entitlement and co
 
 The important question is not "how much did the SKU change?" The important question is "which capabilities are actually included, which service plans are enabled, and which security or AI controls can now be designed without an additional product assumption?"
 
-This is especially important when comparing Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender, Microsoft Purview, Microsoft Entra, Intune, Microsoft 365 Copilot and Copilot Studio.
+This is especially important when comparing Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Microsoft 365 E7, Microsoft Defender, Microsoft Purview, Microsoft Entra, Intune, Microsoft 365 Copilot and Copilot Studio.
 
 ## 한국어 요약
 
@@ -82,13 +82,18 @@ Microsoft 라이선스를 검토할 때는 가격과 함께 포함 기능이 어
 
 예를 들어 고객이 "E3를 사용 중"이라고 말하더라도 그것이 Office 365 E3인지, Microsoft 365 E3인지에 따라 포함되는 보안, 기기 관리, ID, 규정 준수 기능이 달라질 수 있습니다. 또한 Microsoft 문서에서는 Microsoft 365 E3 같은 일부 구독에 Defender for Office 365 Plan 1이 포함될 수 있다고 설명하므로, 상품 이름만으로 보안 구성을 결정하지 마세요.
 
-따라서 라이선스 검토는 SKU 이름이 아니라 서비스 플랜 식별자, 포함 기능, 실제 활성화 상태, 보안 정책 적용 가능 여부를 기준으로 수행해야 합니다.
+따라서 라이선스를 검토할 때는 상품명과 서비스 플랜 식별자를 확인하고, 포함 기능이 대상 사용자에게 활성화돼 있는지 살펴보세요. E7도 사용자 할당과 정책 설정, 사용량 요금 확인이 필요합니다.
+
+## E7을 포함해 비교할 항목
+
+E7에는 E5의 기능과 Microsoft 365 Copilot·Microsoft Entra Suite·Microsoft Agent 365가 포함됩니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 비용 조건을 확인하세요. E5+Copilot에는 Entra Suite·Agent 365 전체가 자동으로 포함되지 않습니다. 기존 구독과 겹치는 기능을 먼저 확인하고 [Copilot Credits 사용량 요금](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)을 별도로 계산하세요.
 
 ## Feature Change Watch
 
 | Area | What To Check | Architecture Impact |
 |---|---|---|
 | Office 365 E3 vs Microsoft 365 E3 | service plans included and enabled | same "E3" label can mean different security and device control capability |
+| E3·E5·E7 비교 | E7의 E5·Copilot·Entra Suite·Agent 365 포함 범위 | 개별 구독과 묶음의 중복 및 총비용 비교 |
 | Defender for Office 365 Plan 1 | Safe Links, Safe Attachments, anti-phishing, real-time detections | email and collaboration security baseline may be stronger than assumed |
 | Defender for Office 365 Plan 2 | Threat Explorer, AIR, attack simulation, advanced investigation | SOC and response automation design changes |
 | Purview capability | information protection, audit, DLP, retention, eDiscovery | compliance architecture depends on enabled service plans |
@@ -171,7 +176,7 @@ The platform itself has also changed. New agent experience, Microsoft IQ, Work I
 ## Review Checklist
 
 - Export subscribed SKU and service plan information from Microsoft 365 admin center, PowerShell or Microsoft Graph.
-- Confirm whether the customer means Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Business Premium or add-on bundles.
+- Confirm whether the customer means Office 365 E3, Microsoft 365 E3, Microsoft 365 E5, Microsoft 365 E7, Business Premium or add-on bundles.
 - Review service plan enabled state for representative user groups.
 - Map Defender, Purview, Entra ID, Intune and Copilot capabilities to required security controls.
 - Identify add-ons that duplicate bundled capability.
@@ -203,7 +208,7 @@ The platform itself has also changed. New agent experience, Microsoft IQ, Work I
 ## Recommended Next Steps
 
 1. Build a service plan inventory.
-2. Identify the customer's real E3/E5/Business Premium mix.
+2. Identify the customer's actual E3/E5/E7/Business Premium mix and separately purchased Copilot, Entra and Agent 365 subscriptions.
 3. Map each required control to an included or missing feature.
 4. Validate Defender, Purview, Entra and Intune entitlement before add-on recommendations.
 5. Update Copilot Studio governance for new agent experience, Microsoft IQ, skills, memory, computer use, A2A, agent inventory and Entra agent identities.
@@ -220,7 +225,7 @@ The platform itself has also changed. New agent experience, Microsoft IQ, Work I
 
 - [Licensing Overview](./overview)
 - [Microsoft 365 Licensing](../microsoft365/licensing)
-- [E3 vs E5](./e3-vs-e5)
+- [E3·E5·E7 비교](./e3-vs-e5)
 - [Copilot ROI Framework](../copilot/roi-framework)
 - [Copilot Studio 2026 Platform Update](../copilot/copilot-studio-2026-platform-update)
 

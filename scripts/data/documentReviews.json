@@ -184,9 +184,9 @@
   },
   "/knowledge/architecture/security-reference-architecture": {
     "file": "docs/architecture/security-reference-architecture.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: Zero Trust와 Defender의 보안 설계 영역 및 라이선스 확인 항목",
+    "scope": "고급 Defender·Purview 의존성 표에 E7을 추가하고 P2와 Entra Suite, 적격 대체 구독·실제 적용 조건을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -198,10 +198,20 @@
         "title": "Microsoft Defender XDR overview",
         "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
         "checkedFor": "Defender XDR은 여러 보안 제품의 신호·사건을 연결하며 각 제품의 배포·권한·구독을 대신하지 않습니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
+        "checkedFor": "E5·E7의 P2, E7의 Entra Suite 포함과 다섯 구성 제품, Agent 365 포함·추가 구독 구분을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/azure/identity": {
     "file": "docs/azure/identity.md",
@@ -388,9 +398,9 @@
   },
   "/knowledge/copilot/business-use-cases": {
     "file": "docs/copilot/business-use-cases.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 업무별 Copilot 활용 예시와 시간 절감 가정의 증거 구분",
+    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -407,10 +417,15 @@
         "title": "Copilot Studio current updates",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
         "checkedFor": "Studio 변경 기록의 GA·preview와 harness·첨부·지식·워크플로별 범위를 구분했습니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/copilot/copilot-cowork-cost-governance": {
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
@@ -1335,7 +1350,7 @@
     "file": "docs/knowledge-center/overview.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 운영 가이드 목록의 플랫폼·라이선스·검증 증거 범위 추가 확인: 한글 문장을 다듬고 기존 제품명·제공 조건·상세 링크를 유지했습니다. 이번 변경으로 새로운 기술 검증 범위를 주장하지 않습니다.",
+    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1347,10 +1362,15 @@
         "title": "Microsoft Intune fundamentals",
         "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune",
         "checkedFor": "Intune은 등록·준수·앱·정책을 관리하며 접근 차단은 Conditional Access 등과 연계합니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/knowledge-center/powerautomate-junkmail-alert": {
     "file": "docs/knowledge-center/powerautomate-junkmail-alert.md",
@@ -1370,9 +1390,9 @@
   },
   "/knowledge/licensing/business-premium": {
     "file": "docs/licensing/business-premium.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Business Premium 사용자 한도·서비스 플랜·Teams 변형 확인",
+    "scope": "Business 계열 합산 300석 제한을 유지하고 기업 플랜 비교 대상에 E7, Suite·Agent 365 필요 여부와 총비용을 추가했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1386,13 +1406,18 @@
         "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
       },
       {
-        "title": "Business Premium FAQ seat limits",
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
+        "title": "Business Premium FAQ",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
-        "checkedFor": "Business Basic·Standard·Premium의 프로비저닝된 좌석 합계 300개 제한을 확인했습니다."
+        "checkedFor": "Business Basic·Standard·Premium 합산 300개 프로비저닝 좌석 제한을 유지하고, 고급 기능이 필요한 경우 기업 플랜과 비교하는 조건을 확인했습니다."
       }
     ],
-    "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "reviewLevel": "설계 참고사항 확인",
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
@@ -1437,9 +1462,9 @@
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 7월 라이선스 변경 이력과 현재 서비스 플랜 확인 원칙",
+    "scope": "Office 365와 Microsoft 365 E3의 구분을 유지하며 E7 구성·중복 구독·사용량 요금 및 비교 링크를 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1448,19 +1473,29 @@
         "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
       },
       {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+        "checkedFor": "E5·E7의 P2, E7의 Entra Suite 포함과 다섯 구성 제품, Agent 365 포함·추가 구독 구분을 확인했습니다."
+      },
+      {
+        "title": "Copilot Credits usage-based billing",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Cowork·Code 등 사용량 과금 서비스와 고정 구독을 구분하고 서비스별 과금 방식과 지출 정책이 다름을 확인했습니다."
       }
     ],
-    "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "reviewLevel": "설계 참고사항 확인",
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 라이선스 문서 탐색과 구매·사용 권한 판단의 구분 추가 확인: E3·E5·E7 비교 안내와 메뉴 문구를 새 정본 비교에 맞췄습니다.",
+    "scope": "목록·혼합 구성·구매 조건·검색어에 E7을 반영하고 오래된 날짜형 공개 검증 제목을 일반 구성 안내로 바꿨습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1472,10 +1507,15 @@
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
         "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/microsoft365/e3-vs-e5": {
     "file": "docs/microsoft365/e3-vs-e5.md",
@@ -1556,9 +1596,9 @@
   },
   "/knowledge/microsoft365/licensing": {
     "file": "docs/microsoft365/licensing.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 라이선스 SKU·서비스 플랜·사용자 요구사항 매핑",
+    "scope": "E3·E5·E7·Business Premium의 비교 범위와 E5+Copilot 대 E7의 Suite·Agent 365 차이, 총비용 질문을 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1567,13 +1607,23 @@
         "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
       },
       {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+        "checkedFor": "E5·E7의 P2, E7의 Entra Suite 포함과 다섯 구성 제품, Agent 365 포함·추가 구독 구분을 확인했습니다."
+      },
+      {
+        "title": "Copilot Credits usage-based billing",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Cowork·Code 등 사용량 과금 서비스와 고정 구독을 구분하고 서비스별 과금 방식과 지출 정책이 다름을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/microsoft365/onedrive": {
     "file": "docs/microsoft365/onedrive.md",
@@ -1600,7 +1650,7 @@
     "file": "docs/microsoft365/overview.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Microsoft 365 생산성·ID·보안·AI 제품 영역 구분 추가 확인: E3·E5·E7 비교 안내와 메뉴 문구를 새 정본 비교에 맞췄습니다.",
+    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1612,10 +1662,15 @@
         "title": "Microsoft 365 enterprise plans",
         "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
         "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/microsoft365/sharepoint": {
     "file": "docs/microsoft365/sharepoint.md",
@@ -2084,9 +2139,9 @@
   },
   "/knowledge/projects/case-study-retail-m365-security-policy": {
     "file": "docs/projects/case-study-retail-m365-security-policy.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "사례·설계 패턴",
-    "scope": "확인한 항목: 유통 보안 정책 사례의 보유 권한·개선 과제·선행 조건",
+    "scope": "신규 계획의 비교 후보에 E7을 추가하되 과거 사례에서 E7을 사용했다고 소급 주장하지 않도록 문장을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2103,10 +2158,15 @@
         "title": "Microsoft Copilot adoption and onboarding",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources",
         "checkedFor": "Copilot 도입은 데이터 준비·라이선스 선택·설정·채택·운영 단계를 포함합니다. 작성자의 ROI나 점수를 보증하지 않습니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
-    "reviewLevel": "작성자 예시·참고자료",
-    "notChecked": "프로젝트 결과와 시간 절감 효과를 별도로 측정하지 않았습니다. 수치와 일정은 작성자의 예시이며 실제 계획을 세울 때 다시 확인해야 합니다."
+    "reviewLevel": "설계 참고사항 확인",
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/projects/customer-success-reference-patterns": {
     "file": "docs/projects/customer-success-reference-patterns.md",
@@ -2266,9 +2326,9 @@
   },
   "/knowledge/proposal/assessment": {
     "file": "docs/proposal/assessment.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "템플릿·실무 예시",
-    "scope": "확인한 항목: 제안 평가의 범위·증거·갭·실행 권고 구조",
+    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2280,10 +2340,15 @@
         "title": "Microsoft 365 service descriptions",
         "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library",
         "checkedFor": "서비스 설명은 플랜별 기능 비교의 출발점이며 실제 사용자 서비스 플랜·계약 조건 확인이 필요합니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
-    "reviewLevel": "작성자 예시·참고자료",
-    "notChecked": "프로젝트 결과와 시간 절감 효과를 별도로 측정하지 않았습니다. 수치와 일정은 작성자의 예시이며 실제 계획을 세울 때 다시 확인해야 합니다."
+    "reviewLevel": "설계 참고사항 확인",
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/proposal/executive-summary": {
     "file": "docs/proposal/executive-summary.md",
@@ -2486,9 +2551,9 @@
   },
   "/knowledge/search/enterprise-microsoft-architecture-keywords": {
     "file": "docs/search/enterprise-microsoft-architecture-keywords.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "주제 탐색 안내",
-    "scope": "확인한 항목: 검색 키워드의 제품 명칭과 실제 주제 문서 연결",
+    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2505,10 +2570,15 @@
         "title": "Copilot Studio current updates",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
         "checkedFor": "Studio 변경 기록의 GA·preview와 harness·첨부·지식·워크플로별 범위를 구분했습니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/search/how-to-use-ai-in-enterprise": {
     "file": "docs/search/how-to-use-ai-in-enterprise.md",
@@ -2737,9 +2807,9 @@
   },
   "/knowledge/security/defender": {
     "file": "docs/security/defender.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Defender 제품군의 엔드포인트·메일·ID·클라우드 역할",
+    "scope": "E5를 가장 넓은 구성으로 단정한 문장을 E5·E7의 고급 XDR 기능과 E7의 추가 ID·에이전트 관리 구분으로 고쳤습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2756,10 +2826,15 @@
         "title": "Defender for Office 365 overview",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
         "checkedFor": "Defender Office 365 P1/P2 기능과 실제 구독 권한을 구분해야 합니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/security/dlp": {
     "file": "docs/security/dlp.md",
@@ -2859,14 +2934,9 @@
     "file": "docs/security/purview-information-protection.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 민감도 레이블·암호화·DLP·정보 거버넌스 적용 범위 추가 확인: Microsoft 365 자동 레이블 시뮬레이션의 분류 결과·일치 건수·예약 활성화와 연결 앱 미리 보기의 커넥터·정책 분리·시뮬레이션 및 파일 형식 제한.",
+    "scope": "라이선스 표에 E7과 기능별 적격 추가 구독을 반영했습니다. 표를 전체 라이선스 목록으로 오해하지 않도록 적용 위치·보존 기간·정책 조건을 명시했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
-      {
-        "title": "Sensitivity labels",
-        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
-        "checkedFor": "레이블은 분류와 선택한 보호 설정을 적용하며 모든 레이블이 암호화를 자동으로 켜는 것은 아닙니다."
-      },
       {
         "title": "Microsoft 365 enterprise plans",
         "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
@@ -2881,10 +2951,20 @@
         "title": "Non-Microsoft app label policies preview",
         "url": "https://learn.microsoft.com/en-us/purview/information-protection-non-microsoft-connected-apps",
         "checkedFor": "Box·Google Workspace 미리 보기, 앱 커넥터·게시된 레이블·Custom 정책 조건과 Microsoft 365 위치 혼합, 시뮬레이션, Content explorer, PDF·암호화 분류 제한을 확인했습니다."
+      },
+      {
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
+        "title": "Sensitivity labels",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "checkedFor": "수동·자동 레이블의 구분과 Copilot·에이전트의 레이블 인식, 정책과 사용자 권한 확인이 필요한 조건을 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/security/purview": {
     "file": "docs/security/purview.md",
@@ -3005,7 +3085,7 @@
     "file": "docs/toolkit/license-advisor.md",
     "checkedOn": "2026-10-26",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: 라이선스 조언의 사용자·구독·사용량·구매 조건 구분 추가 확인: 산정 입력·가정·비용 구분·실사용 보정·구매 전 계약 확인의 한글 표현을 정리했습니다. 새로운 가격이나 포함 권리는 추가하지 않았습니다.",
+    "scope": "플랜 목록·E7 설명·시나리오·Copilot 준비 및 의사결정 표에 E7을 추가했습니다. E3·E5의 Copilot 추가 구독과 Teams 상품 조건, 별도 AI 사용량 요금을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3019,18 +3099,28 @@
         "checkedFor": "Business 제품군의 300개 프로비저닝 라이선스 한도와 계획별 서비스 구성을 확인해야 합니다."
       },
       {
-        "title": "Microsoft Entra licensing",
-        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
       },
       {
-        "title": "Business family seat limits",
+        "title": "Microsoft Entra licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
+        "checkedFor": "E5·E7의 P2, E7의 Entra Suite 포함과 다섯 구성 제품, Agent 365 포함·추가 구독 구분을 확인했습니다."
+      },
+      {
+        "title": "Copilot Credits usage-based billing",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Cowork·Code 등 사용량 과금 서비스와 고정 구독을 구분하고 서비스별 과금 방식과 지출 정책이 다름을 확인했습니다."
+      },
+      {
+        "title": "Business Premium FAQ",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
-        "checkedFor": "Business 계열 상품을 합산하는 300석 제한으로 산정 예시를 수정했습니다."
+        "checkedFor": "Business Basic·Standard·Premium 합산 300개 프로비저닝 좌석 제한을 유지하고, 고급 기능이 필요한 경우 기업 플랜과 비교하는 조건을 확인했습니다."
       }
     ],
-    "reviewLevel": "작성자 예시·참고자료",
-    "notChecked": "프로젝트 결과와 시간 절감 효과를 별도로 측정하지 않았습니다. 수치와 일정은 작성자의 예시이며 실제 계획을 세울 때 다시 확인해야 합니다."
+    "reviewLevel": "설계 참고사항 확인",
+    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
   },
   "/knowledge/toolkit/migration-checklist": {
     "file": "docs/toolkit/migration-checklist.md",
