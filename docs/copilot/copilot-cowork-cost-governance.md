@@ -76,6 +76,17 @@ Copilot Cowork에 여러 단계의 업무를 맡기려면 사용할 도구와 �
 
 Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)되었으며 Microsoft 365 Copilot User Subscription License가 필요합니다. 사용량은 Copilot Credits로 청구됩니다. 6월 30일 발표된 플러그인은 반복해서 사용할 스킬과 업무 시스템 연결용 커넥터를 묶어 Microsoft Marketplace로 배포하는 방식입니다.
 
+## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
+
+Microsoft announced the Power Platform Admin (preview) plugin for Cowork on October 25, 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
+
+- A Microsoft 365 administrator can install the plugin for all users or selected users and groups from `Agents > Tools > Registry`. Installation does not grant Cowork access or Power Platform data permissions.
+- The account that connects through Power Platform for Admins V2 must have the Global Administrator, Power Platform Administrator or Dynamics 365 Administrator role. Confirm the intended account and tenant before completing OAuth consent.
+- Questions consume Copilot Credits. Pilot a small set of governance scenarios, measure actual consumption, and configure a Cowork spending policy before broad rollout.
+- Keep `Ask Advisor` approval scoped to trusted scenarios. Do not place passwords, access tokens or client secrets in a Cowork conversation, and review supported regions, AI subprocessors and Cowork compliance guidance for the target tenant.
+
+Managed Environments are not required to ask questions. Their separate governance features retain their own requirements, and the preview plugin remains an insight layer rather than an administrative change engine.
+
 플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 발표문에서 '출시 예정'으로 표시한 플러그인이나 DLP 기능은 현재 사용할 수 있다고 가정하지 마세요. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
 ## When To Use Cowork
@@ -349,6 +360,8 @@ Once these answers are available, the organization can move from technical enabl
 - [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/)
 - [The workflow is the product: Copilot Cowork plugins change what AI can do for businesses](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/the-workflow-is-the-product-copilot-cowork-plugins-change-what-ai-can-do-for-bus/4531933) — Microsoft 365 Copilot Blog, June 30, 2026; checked July 13, 2026 (Asia/Seoul).
 - [Understand usage-based billing and cost management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
+- [Power Platform Admin in Cowork (preview)](https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork)
+- [Agentic governance with Power Platform Admin in Cowork (preview)](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance)
 
 ## 검색 키워드
 

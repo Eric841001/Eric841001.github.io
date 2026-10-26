@@ -7,10 +7,11 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 
 # Copilot 공식 업데이트 누락 점검
 
-확인일: **2026년 10월 25일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+확인일: **2026년 10월 26일(KST)**. 아래는 공식 발표의 변경 목록이며, 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 이번 확인의 핵심 변경
 
+- [10월 25일 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
 - [10월 23일 에이전트 도입·운영 지침](#agent-operating-framework) · 도입·거버넌스 지침
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
@@ -21,6 +22,17 @@ description: 7월 이후 미게시 업데이트를 공식 릴리스와 대조한
 음성·채팅, 전문 에이전트와 사람 이관을 연결하는 **public preview**입니다. 일부 기능은 순차 배포이며 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관 같은 계획을 현재 기능으로 간주하지 마세요. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
 
 [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954) · [상세 설계·파일럿 가이드](./customer-conversation-harness.md)
+
+## 10월 25일 Power Platform Admin 플러그인 미리 보기 {/* #power-platform-admin-cowork */}
+
+Microsoft는 Copilot Cowork에서 Power Platform 테넌트의 환경, 앱, 흐름, 에이전트, 사용량, 소유권, 용량과 라이선스 정보를 자연어로 조회하는 **Power Platform Admin (preview)** 플러그인을 공개했습니다. 관리 작업을 직접 실행하는 기능이 아니라 읽기 전용 인사이트와 지침을 제공하며, 결과를 근거로 정책이나 환경을 바꾸기 전에는 관리자가 원본 데이터를 확인해야 합니다.
+
+- **설치와 데이터 권한은 별개:** Microsoft 365 관리자는 `Agents > Tools > Registry`에서 조직 전체 또는 특정 사용자·그룹에 플러그인을 설치할 수 있습니다. 데이터를 조회하는 연결 계정에는 Global Administrator, Power Platform Administrator, Dynamics 365 Administrator 중 하나가 필요하며, 설치만으로 해당 역할이나 Power Platform 데이터 접근 권한이 부여되지는 않습니다.
+- **접근·연결 조건:** 사용자는 Cowork와 플러그인에 접근할 수 있어야 하고 `Power Platform for Admins V2` OAuth 연결을 만들어야 합니다. 플러그인 설치는 Cowork 접근을 열지 않으므로 Cowork를 포함한 지출 정책과 사용자 라이선스·대상 범위를 별도로 확인하세요.
+- **비용과 승인:** 질문은 Copilot Credits를 소비합니다. 파일럿에서 실제 사용량을 측정해 지출 정책과 예산을 정하고, `Ask Advisor` 전송 같은 후속 작업의 상시 승인은 필요한 시나리오와 사용자에게만 허용하세요. 암호, 액세스 토큰, 클라이언트 비밀값은 대화에 입력하지 않습니다.
+- **지역·준수 확인:** preview 기능이므로 지원 지역, AI 하위 처리자, Cowork 보안·준수 조건과 실제 테넌트 표시 여부를 확인한 뒤 확대하세요. Managed Environments는 질문 자체의 필수 조건이 아니며, 플러그인이 관리 설정을 대신 변경하지 않습니다.
+
+출처: [Microsoft 공식 발표 — Power Platform Admin Plugin in Cowork](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-power-platform-admin-plugin-in-cowork-agentic-governance-with-na/4567557), [Power Platform Admin in Cowork 설치·역할 조건](https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork), [Agentic governance 운영 지침](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance). [Cowork 비용·거버넌스 상세 가이드](./copilot-cowork-cost-governance.md#power-platform-admin-plugin-preview)에서 파일럿 체크포인트를 이어서 확인할 수 있습니다.
 
 ## 설계와 거버넌스 후속 지침
 
