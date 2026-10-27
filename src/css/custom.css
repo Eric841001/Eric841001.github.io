@@ -3913,3 +3913,7 @@ body.kc-diagram-modal-open {
 .site-home :is(h1,h2,h3)[id] {scroll-margin-top:calc(var(--ifm-navbar-height) + 1rem);}
 
 .site-home h3 {word-break:keep-all;overflow-wrap:anywhere;}
+
+/* Search metadata stays readable; selected hits keep white text on a dark blue. */
+:root {--search-local-muted-color:var(--kc-muted);}
+.navbar [class*='suggestion_'][class*='cursor_'] {--search-local-highlight-color:#075985;}
