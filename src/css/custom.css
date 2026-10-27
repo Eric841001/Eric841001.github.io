@@ -3901,3 +3901,10 @@ body.kc-diagram-modal-open {
 .site-home a[class*='card_']:hover {border-color:var(--ifm-color-primary);}
 
 .site-home #latest-updates a[class*='card_'] {background:transparent;}
+
+/* Dark reading contrast: breadcrumb text, small panel labels and profile badges. */
+[data-theme='dark'] .breadcrumbs__link {color:var(--kc-muted);}
+[data-theme='dark'] .breadcrumbs__link:hover {color:var(--ifm-color-primary);background:var(--kc-surface-blue);border-color:var(--kc-border);}
+[data-theme='dark'] .theme-doc-markdown small {color:var(--ifm-color-primary);background:var(--kc-surface-blue);}
+[data-theme='dark'] .theme-doc-markdown :is(.kc-about-hero__meta,.kc-about-card__facts) span {background:var(--kc-surface-blue);border-color:var(--kc-border-strong);color:var(--kc-ink);}
+[data-theme='dark'] .site-home [class*='label_'] {background:var(--kc-surface-blue);border-color:var(--kc-border-strong);}

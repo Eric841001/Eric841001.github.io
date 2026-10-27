@@ -11,7 +11,7 @@ export default function LatestArticles() {
           <h2 id="latest-updates-title">최근 업데이트</h2>
           <span>제품 발표와 문서 개정 소식을 모았습니다. 각 항목의 날짜와 제공 조건을 확인하세요.</span>
         </div>
-        <Link className={styles.allUpdates} to={updateGuide}>전체 변경 기록 →</Link>
+        <Link className={styles.allUpdates} to={updateGuide}>Copilot 변경 기록 →</Link>
       </div>
       <div className={styles.grid}>
         {updateHighlights.map(article => (

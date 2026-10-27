@@ -70,7 +70,7 @@ Microsoft는 Copilot Cowork에서 Power Platform 테넌트의 환경, 앱, 흐�
 - **검색에서 채팅으로:** Windows·Web의 Microsoft 365 Copilot Search 결과를 문맥으로 이어 후속 질문·요약·콘텐츠 생성을 할 수 있습니다. Web 채팅에는 `Try Again`과 `Switch Model`을 포함한 응답 재생성이 추가됐습니다. 검색 권한과 선택 모델을 포함해 대표 사용자로 단계적 배포 여부를 확인하세요.
 - **커넥터 권한 매핑:** 관리자가 Microsoft 365 관리 센터의 `Settings > Search & intelligence > Data sources`에서 생성된 연결의 쿼리 문자열과 사용자 ID 매핑 규칙을 직접 수정할 수 있습니다. 변경 후 다음 크롤을 확인하고, 영향받는 사용자로 소스 범위와 권한 누락·과다 노출을 재검증하세요.
 - **SharePoint 광범위 공유 감사:** SharePoint Advanced Management 관리자는 `Data access governance reports`에서 `Everyone`과 `Everyone except external users`에 부여된 항목 단위 권한을 보고서로 확인할 수 있습니다. [광범위 그룹 공유 보고서 안내](https://learn.microsoft.com/en-us/sharepoint/powershell-for-data-access-governance#generate-a-report-on-sites-and-files-shared-via-special-sharepoint-groups)의 역할·모듈 전제 조건을 확인하고 사이트·파일 소유자와 예외 필요성을 같이 검토하세요.
-- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 채택·영향·크레딧 소비 지표와 내보내기 기능, Advanced Insights의 Consumption·Person 쿼리를 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 파일럿 기준선을 잡으세요.
+- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 채택·영향·크레딧 소비 지표와 내보내기 기능, Advanced Insights의 Consumption·Person 쿼리를 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 시험 도입 전후를 비교할 기준을 정하세요.
 
 ## 9월 25일 새 Copilot 공식 발표
 
@@ -116,10 +116,10 @@ Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델�
 
 ## 10월 15일 Copilot for legal GA
 
-Microsoft는 계약 검토·초안·레드라인·플레이북 대조·조항 분석을 지원하는 20개 이상의 법률 스킬과 파트너 플러그인을 일반 공급(GA)으로 발표했습니다.
+Microsoft는 계약 검토·초안 작성·수정 내용 표시·검토 지침 대조·조항 분석을 지원하는 20개 이상의 법률 스킬과 파트너 플러그인을 일반 공급(GA)으로 발표했습니다.
 
 - **대상과 라이선스:** Microsoft 365 Copilot 상용 라이선스 사용자가 Word 데스크톱과 Cowork에서 사용할 수 있습니다. Word의 Legal 플러그인은 기본 활성화되며 `Manage plugins & skills`에서 끌 수 있고, Cowork에서는 `Customize > Roles & Industry`에서 Legal 플러그인을 추가합니다. [시작 가이드와 전제 조건](https://support.microsoft.com/en-us/word/get-started-with-copilot-for-legal)
-- **운영 방식:** Word에서는 출처 인용, 추적 변경을 이용한 레드라인, `.docx` 플레이북 기반 계약 검토와 선례·템플릿 기반 초안을 지원합니다. Cowork에서는 여러 계약·메일·회의·파일을 아우르는 다단계 작업을 맡길 수 있습니다. 파트너 플러그인은 Microsoft 플러그인 레지스트리를 통해 순차 배포되므로 각 플러그인의 게시자·권한·데이터 처리 조건을 별도로 승인하세요.
+- **운영 방식:** Word에서는 출처 인용, 변경 내용 추적, `.docx` 검토 지침을 활용한 계약 검토와 선례·템플릿 기반 초안을 지원합니다. Cowork에서는 여러 계약·메일·회의·파일을 아우르는 다단계 작업을 맡길 수 있습니다. 파트너 플러그인은 Microsoft 플러그인 레지스트리를 통해 순차 배포되므로 각 플러그인의 게시자·권한·데이터 처리 조건을 별도로 승인하세요.
 - **통제와 책임:** 결과는 자문용이며 법률 자문이나 전문가 판단을 대체하지 않습니다. 승인된 플레이북으로 범위를 제한하고, Word의 추적 변경을 사람이 검토하며, 민감도 레이블·접근 권한·보존 정책을 포함한 Microsoft 365 통제를 그대로 적용하세요. [투명성 문서](https://support.microsoft.com/en-us/word/copilot-for-legal-transparency-documentation)
 - **지역·배포 확인:** Microsoft 발표는 전 세계 Microsoft Copilot 고객 대상 GA라고 설명하지만, 파트너 플러그인과 세부 화면은 순차 배포될 수 있습니다. 대표 사용자의 Word 데스크톱과 Cowork에서 Legal 스킬 표시, 라이선스, 언어·지역 동작을 실제 확인하세요.
 
@@ -187,7 +187,7 @@ Microsoft는 Frontier에서 **Microsoft 365 Insights Agent V2**를 공개 미리
 Microsoft는 Cowork에서 사용할 수 있는 연결과 반복 업무용 역할 스킬을 확대했습니다. 플러그인은 Microsoft 365 App Store에서 제공되며, 사용자는 Cowork의 `Customize > Plugins`에서 찾고 관리자는 Microsoft 365 관리 센터의 `Agents > Tools`에서 허용 범위와 배포 대상을 제어합니다.
 
 - **연결 범위:** Power Platform 커넥터는 향후 수 주에 걸쳐 순차 배포됩니다. Federated Copilot 커넥터는 MCP를 통해 외부 시스템의 실시간 데이터를 연결하며, 각 사용자가 해당 시스템에서 가진 권한 범위로 동작합니다. Fabric IQ, Business Applications in Work IQ와 Dynamics 365 플러그인은 별도 환경·연결 권한을 확인하세요.
-- **역할별 플러그인:** Sales, Service, Education, Legal for Cowork는 `Roles & Industry`에서 사용할 수 있다고 발표됐습니다. 회의 준비·딜 위험 분석, 서비스 케이스 분류·답변 작성, 교육 거버넌스·과정 준비, 계약 검토·레드라인처럼 반복되는 업무를 사전 구성된 스킬로 제공합니다. 사용자는 Microsoft 365 Copilot 라이선스가 필요하며, 법률 결과는 자격 있는 담당자가 원문과 대조해야 합니다.
+- **역할별 플러그인:** Sales, Service, Education, Legal for Cowork는 `Roles & Industry`에서 사용할 수 있다고 발표됐습니다. 회의 준비·영업 기회별 위험 분석, 서비스 케이스 분류·답변 작성, 교육 거버넌스·과정 준비, 계약 검토·수정 내용 표시처럼 반복되는 업무를 사전 구성된 스킬로 제공합니다. 사용자는 Microsoft 365 Copilot 라이선스가 필요하며, 법률 결과는 자격 있는 담당자가 원문과 대조해야 합니다.
 - **관리와 보안:** 관리자는 조직 전체 또는 특정 사용자·그룹에 배포하거나 차단할 수 있지만 국가·지역 단위 범위 지정은 지원되지 않습니다. 사용자 업로드 플러그인의 조직 전체 공개에는 관리자 승인이 필요하나, 특정 사용자 공유를 한 번에 끄는 단일 테넌트 설정은 현재 없습니다. Microsoft Purview Information Barriers는 플러그인·스킬 관리와 공유를 지원하지 않아 IB 사용 테넌트에서는 포함된 지식 파일의 업로드·게시가 차단됩니다.
 - **파일럿 확인:** 게시자, 커넥터 동의 권한, 외부 서비스 데이터 처리, 대상 보안 그룹, 진행 중 대화에 대한 차단 적용 시점을 먼저 점검하세요. 관리자가 배포한 플러그인도 외부 서비스 연결은 사용자가 최초 로그인·동의를 완료해야 합니다.
 
