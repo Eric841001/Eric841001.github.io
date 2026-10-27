@@ -66,7 +66,7 @@ Defender XDR, Intune과 Conditional Access를 연결할 때는 기기별 지원 
 
 Amazon Linux 2 **ARM64**의 Defender 지원은 2026년 10월 31일 종료됩니다. Linux 데스크톱 지원은 Public Preview이며, 데스크톱용 P2 권한과 서버용 라이선스를 구분해야 합니다. [Linux 온보딩 가이드](../knowledge-center/mde-linux-onboarding#october-2026-support)에서 종료 대상과 10월 빌드의 순차 적용 조건을 확인하세요.
 
-macOS의 10월 빌드에는 Bluetooth 권한 상태 보고와 키보드 접근성 개선이 포함됩니다. [macOS 온보딩 가이드](../knowledge-center/mde-macos-onboarding#october-2026-agent-update)에서 설치 버전과 권한 점검 방법을 확인하세요. 근거는 [Microsoft 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)와 [Linux 지원·라이선스 조건](https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites)입니다.
+macOS의 10월 추가 GA 빌드 `101.26092.0009`에는 Device Control v1 종료, 보호·시스템 확장 상태 보고와 EDR 개선이 포함됩니다. [USB 제어 전환 안내](../knowledge-center/intune-macos-usb-control#device-control-v1-retirement)에서 v2 구성과 권한·실제 적용 결과를 확인하세요. [macOS 온보딩 가이드](../knowledge-center/mde-macos-onboarding#october-2026-agent-update)에서 설치 버전과 권한 점검 방법을 확인하세요. 근거는 [Microsoft 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)와 [Linux 지원·라이선스 조건](https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites)입니다.
 
 ## Control Model
 

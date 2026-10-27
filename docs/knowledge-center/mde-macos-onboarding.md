@@ -82,9 +82,15 @@ Organizations commonly require:
 
 ## 10월 에이전트 변경 {/* #october-2026-agent-update */}
 
-macOS 빌드 `101.26082.0012`는 Device Control의 기기 상태 보고에 **Bluetooth 권한 상태**를 추가합니다. 또한 측면 패널과 피드백 평가 항목의 키보드 탐색을 개선했습니다. 설치 버전과 권한 상태를 확인하고, 필요한 접근 권한이 실제로 허용됐는지 기기에서 점검하세요. 상태 보고 항목이 생겼다는 이유로 권한이 자동 부여되거나 정책이 적용됐다고 판단하지 마세요.
+10월 추가 GA 빌드 `101.26092.0009`에는 다음 변경이 포함됩니다.
 
-출처: [Microsoft의 10월 macOS 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases#macos--october-2026--101260820012). 지원 OS 조건과 Intune의 관리 조건은 각각 확인해야 합니다.
+- **Device Control v1 종료:** v1 정책을 쓰는 기기는 v2 전환이 필요합니다. [macOS USB 제어 문서](./intune-macos-usb-control#device-control-v1-retirement)에서 v2 구성과 실제 동작을 확인하는 순서를 설명합니다.
+- **보호 상태와 안정성:** 관리형 보호 정책 적용, 서비스 상태 보고, 시스템 확장 구성 상태 확인과 파일 작업 시 성능을 개선했습니다. 업데이트 후 설치 버전과 보호 엔진·시스템 확장 상태를 점검하세요.
+- **EDR:** 시작·절전 해제 후 인증과 기기 격리를 개선하고 AI 에이전트 런타임 보호 설정을 지원합니다. 빌드 설치만으로 해당 보호가 활성화되거나 별도 사용 권한이 부여되는 것은 아닙니다.
+
+앞선 `101.26082.0012`의 Bluetooth 권한 상태 보고와 키보드 접근성 개선도 함께 확인하세요. 권한 상태가 표시되더라도 필요한 접근 권한은 기기에서 별도로 점검해야 합니다.
+
+출처: [Microsoft의 10월 추가 macOS 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases#macos--october-2026--101260920009), [GA 제공 상태](https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint). 지원 OS 조건과 Intune의 관리 조건은 각각 확인해야 합니다.
 
 ## Architecture
 

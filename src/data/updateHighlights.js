@@ -7,6 +7,7 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Defender for Endpoint', title: 'macOS Defender 추가 빌드와 USB 정책 전환', description: '101.26092.0009의 Device Control v1 종료와 v2 정책·권한 확인 방법을 보강했습니다.', date: '2026-10-28', status: '문서 개정 · GA 빌드', path: '/knowledge/knowledge-center/intune-macos-usb-control#device-control-v1-retirement'},
   {category: 'Microsoft 365 Licensing', title: 'E3 CSP 프로모션 시작', description: '신규 300석 이상 주문과 고객 자격 조건을 확인합니다. 30% 할인은 파트너 순가격 기준입니다.', date: '2026-10-27', status: '조건부 CSP 프로모션', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#e3-csp-promotion-2026'},
   {category: 'Defender for Endpoint', title: 'Linux Defender 지원 종료와 10월 변경', description: 'Amazon Linux 2 ARM64의 10월 31일 지원 종료와 Linux·macOS의 변경 사항을 정리했습니다.', date: '2026-10-27', status: '문서 개정 · 지원 종료 예정', path: '/knowledge/knowledge-center/mde-linux-onboarding#october-2026-support'},
   {category: 'Microsoft 365', title: 'Frontier 공개 미리 보기 범위 확대', description: '11월부터 Outlook·OneDrive·SharePoint·Teams 대상 기능까지 확대되는 등록·라이선스 조건을 확인합니다.', date: '2026-10-26', status: 'Public preview · 11월 시작', path: `${updateGuide}#frontier-expanded-previews`},

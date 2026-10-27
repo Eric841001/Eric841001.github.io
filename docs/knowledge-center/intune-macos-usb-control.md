@@ -37,6 +37,25 @@ macOS에서 USB 저장장치의 사용을 제한할 때 확인할 Defender for E
 
 ---
 
+## Device Control v1 종료와 v2 확인 {/* #device-control-v1-retirement */}
+
+macOS Defender 빌드 `101.26092.0009`의 [릴리스 안내](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases#macos--october-2026--101260920009)는 기존 **Device Control v1 종료**를 명시합니다. 이전 구성 프로필의 사용 여부를 확인하고, 현재 JSON 정책으로 전환할 계획을 세우세요.
+
+먼저 대상 Mac에서 다음 읽기 전용 명령으로 적용 상태를 확인합니다.
+
+```bash
+mdatp health --details device_control
+```
+
+| 확인 항목 | 정상 구성에서 확인할 값과 조치 |
+|---|---|
+| `active` | v2가 활성화됐는지 확인합니다. v1만 표시되거나 v1·v2가 함께 보이면 이전 구성 프로필도 점검합니다. |
+| `v2_configured` · `v2_state` | 각각 `true`와 `enabled`인지 확인합니다. |
+| `v2_sensor_connection` | `created_ok`인지 확인합니다. |
+| `v2_full_disk_access` | `approved`인지 확인합니다. 권한이 부족하면 일부 또는 전체 작업을 막지 못할 수 있습니다. |
+
+정책 JSON을 검증한 뒤 Intune 또는 Jamf로 소수 기기에 배포하고, 허용·차단·감사 대상 USB 작업을 실제로 시험하세요. v2 적용 결과를 확인한 후 관리 도구에서 이전 v1 구성을 정리합니다. MDM이 정책을 관리하는 운영 기기에 로컬 시험 정책을 덮어쓰지 마세요. [현재 구성·검증 절차](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure)는 수동 적용을 사전 시험 환경으로 한정합니다.
+
 ## Control Options
 
 macOS uses a Defender Device Control JSON policy rather than the Windows Device Control profile. Validate the JSON against Microsoft's schema, then run `mdatp device-control policy validate --path <policy-file>` on a test Mac before Intune or Jamf deployment. See the [macOS policy deployment procedure](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure).
