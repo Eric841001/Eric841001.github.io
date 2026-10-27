@@ -11,6 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [10월 26일 Frontier 범위 확대](#frontier-expanded-previews) · 11월부터 대상 공개 미리 보기 확대
 - [10월 개발자 기능 변경](#developer-updates-october-2026) · 매니페스트·beta API
 - [10월 25일 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
 - [10월 23일 에이전트 도입·운영 지침](#agent-operating-framework) · 도입·거버넌스 지침
@@ -25,6 +26,17 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - **날짜별 사용자 사용량 보고서:** `getMicrosoft365CopilotUsageUserDetailByDate`는 한 날짜의 사용자별 활동을 반환하는 [beta API](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetailbydate)입니다. 조회 날짜는 오늘을 기준으로 계산하지 않고 최신 `reportRefreshDate`부터 그 7일 전까지에서 선택합니다. `Reports.Read.All` 권한이 필요하며 Global 서비스만 지원합니다.
 
 출처: [Microsoft 365 Copilot 개발자 변경 기록](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/whats-new). API의 권한·제공 상태는 실제 적용 전에 각 참조 문서에서 확인하세요.
+
+## 10월 26일 Frontier 공개 미리 보기 범위 확대 {/* #frontier-expanded-previews */}
+
+Microsoft는 **2026년 11월부터** Frontier에 새 Outlook for Windows, OneDrive, SharePoint, Microsoft Teams의 대상 공개 미리 보기 기능을 포함한다고 발표했습니다. Frontier는 일반 공급 기능의 Standard release 또는 Deferred release와 별도로 운영되는 선택형 미리 보기 경로입니다.
+
+- **관리자 등록:** 테넌트 전체를 등록할 필요는 없습니다. IT·혁신 팀 같은 소규모 사용자나 그룹부터 등록할 수 있으며, 기존에 Copilot Frontier에 등록된 사용자는 다시 등록하지 않아도 11월부터 대상 제품의 미리 보기를 받을 수 있습니다.
+- **라이선스 조건:** Frontier 등록 자체에 Microsoft Copilot 라이선스가 필수인 것은 아닙니다. 다만 사용자는 시험할 제품의 라이선스가 필요합니다. Copilot 관련 기능은 Microsoft Copilot 접근 권한, Teams 기능은 Teams가 포함된 라이선스처럼 제품별 조건을 별도로 확인해야 합니다.
+- **릴리스 설정과 분리:** Targeted release 사용자가 자동 등록되지는 않습니다. Frontier 공개 미리 보기는 Standard·Deferred release보다 앞선 필수 단계도 아니며, 일부 미리 보기는 일반 공급으로 이어지지 않을 수 있습니다.
+- **운영 권고:** Message center에서 프로그램에 새로 포함되는 기능을 확인하고, 별도 시험 그룹에서 권한·데이터 처리·지원 절차를 검증한 뒤 확대하세요. 기존 M365 Insiders (for business)는 프로덕션 빌드 검증에 계속 사용하되, Frontier 대상 기능은 관리자 등록을 따로 확인합니다.
+
+출처: [Microsoft 공식 발표 — Frontier expands to more Microsoft 365 public previews](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/frontier-expands-to-more-microsoft-365-public-previews/4567243). 발표일은 10월 26일이며 확대 적용 시작 시점은 11월입니다. 개별 기능이 즉시 모든 등록 사용자에게 표시된다는 의미는 아닙니다.
 
 ## 10월 21일 고객 대화형 Harness 공개 미리 보기 {/* #customer-conversation-harness */}
 

@@ -654,7 +654,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 추가 확인: Power Platform Admin preview의 읽기 전용 조회, 설치와 데이터 접근 역할의 분리, OAuth 및 Cowork 지출 정책을 공식 문서와 다시 대조했습니다.; 10월 개발자 변경·1.9 스키마 표기 불일치·비용/날짜별 보고 API beta 제약 확인; 재점검: 딜·레드라인·파일럿 기준선 표현을 구체적인 한국어로 교정(기능 범위 변경 없음)",
+    "scope": "이번 수정 범위: 10월 26일 발표된 Frontier 공개 미리 보기의 11월 제품 범위 확대, 관리자 선택 등록, Standard·Deferred release와의 분리, 제품별 라이선스 조건을 확인했습니다. 기존 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화, Power Platform Admin preview, 10월 개발자 변경과 beta API 제약을 검토했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -665,7 +665,12 @@
       {
         "title": "Microsoft Copilot official announcements",
         "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
-        "checkedFor": "공식 Copilot 목록의 10월 23일 운영 지침·22일 Insights·21일 Code/Cowork 발표를 확인했습니다."
+        "checkedFor": "공식 Copilot 목록의 10월 26일 Frontier 범위 확대와 10월 23일 운영 지침·22일 Insights·21일 Code/Cowork 발표를 확인했습니다."
+      },
+      {
+        "title": "Frontier expands to more Microsoft 365 public previews",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/frontier-expands-to-more-microsoft-365-public-previews/4567243",
+        "checkedFor": "11월부터 새 Outlook for Windows, OneDrive, SharePoint, Teams의 대상 공개 미리 보기가 포함되며, 선택형 관리자 등록·제품별 라이선스·Standard/Deferred release와의 분리 조건을 확인했습니다."
       },
       {
         "title": "Copilot Studio official announcements",

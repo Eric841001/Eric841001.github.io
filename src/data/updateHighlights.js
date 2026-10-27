@@ -1,5 +1,5 @@
 // Shared by home highlights and document update notices.
-export const verifiedOn = '2026-10-26';
+export const verifiedOn = '2026-10-27';
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
 export const modelUpdate = {
   title: 'GPT-6.1 Sol · Claude Sonnet 5.5',
@@ -8,6 +8,7 @@ export const modelUpdate = {
 };
 export const updateHighlights = [
   {category: 'Microsoft 365 Licensing', title: 'E3 CSP 프로모션 시작', description: '신규 300석 이상 주문과 고객 자격 조건을 확인합니다. 30% 할인은 파트너 순가격 기준입니다.', date: '2026-10-27', status: '조건부 CSP 프로모션', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#e3-csp-promotion-2026'},
+  {category: 'Microsoft 365', title: 'Frontier 공개 미리 보기 범위 확대', description: '11월부터 Outlook·OneDrive·SharePoint·Teams 대상 기능까지 확대되는 등록·라이선스 조건을 확인합니다.', date: '2026-10-26', status: 'Public preview · 11월 시작', path: `${updateGuide}#frontier-expanded-previews`},
   {category: 'Copilot Licensing', title: 'Copilot 구매·과금 변경 예고', description: '12월 1일 예정된 상품 변경과 CSP 과금, 한국의 초기 제외 조건을 구분했습니다.', date: '2026-10-26', status: '시행 예정 안내', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes'},
   {category: 'Microsoft 365 Licensing', title: 'E3·E5·E7 라이선스 비교', description: 'E7의 포함 기능과 E5+Copilot의 차이, Teams 구성과 별도 사용량 비용을 정리했습니다.', date: '2026-10-26', status: '비교 자료 개정', path: '/knowledge/microsoft365/e3-vs-e5'},
   {category: 'Copilot Cowork', title: 'Power Platform 관리 정보 조회', description: '읽기 전용 관리 플러그인의 역할, 연결 권한, 크레딧과 지출 정책 조건을 확인합니다.', date: '2026-10-25', status: 'Preview', path: `${updateGuide}#power-platform-admin-cowork`},
