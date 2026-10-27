@@ -1318,25 +1318,25 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Linux 배포판별 설치·키 신뢰·패키지·온보딩 지원 조건",
+    "scope": "확인한 항목: AL2 ARM64 지원 종료·Linux 데스크톱 preview와 서버/데스크톱 라이선스·10월 Linux 빌드·배포 방식별 의존성",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Defender for Endpoint Linux requirements",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-linux",
-        "checkedFor": "Linux는 배포판·버전·아키텍처별 지원 조건을 별도 확인해야 합니다."
+        "title": "Defender Linux prerequisites and support matrix",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites",
+        "checkedFor": "AL2 ARM64 지원은 2026-10-31 종료되며 마지막 지원 버전은101.25122.0004입니다. Linux 데스크톱은 public preview, 데스크톱은P2, 서버는별도 서버용 권한을 확인합니다."
       },
       {
-        "title": "Defender for Endpoint Linux manual installation",
+        "title": "Defender Linux manual deployment",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually",
-        "checkedFor": "수동 설치는 배포판별 저장소·서명 키·패키지 절차를 따르며 하나의 공통 명령으로 모든 Linux 버전을 지원하지 않습니다."
+        "checkedFor": "배포판별 저장소·키·패키지 절차가 다르며 Python 요건은 Python 온보딩 스크립트 실행 단계와 연결됩니다."
       },
       {
-        "title": "Defender for Endpoint release and OS support",
+        "title": "Defender October Linux releases",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "Defender 릴리스별 OS·에이전트 지원 범위를 확인했습니다. 현재 macOS 기준은 14 이상이며 Ventura 지원으로 안내하지 않습니다."
+        "checkedFor": "Linux101.26091.0004의 Azure Linux4와 TCP bind 이벤트를 확인했습니다. 이벤트는한 달에 걸쳐 적용되며 DeviceNetworkEvents의 ListeningConnectionCreated로 조회합니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1344,9 +1344,9 @@
   },
   "/knowledge/knowledge-center/mde-macos-onboarding": {
     "file": "docs/knowledge-center/mde-macos-onboarding.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: macOS Defender 설치·권한·온보딩과 OS 지원 범위",
+    "scope": "확인한 항목: 10월 macOS 빌드의 Bluetooth 권한 상태 보고·키보드 접근성 변경과 Defender OS 지원 범위",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1357,7 +1357,7 @@
       {
         "title": "Defender for Endpoint release and OS support",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "Defender 릴리스별 OS·에이전트 지원 범위를 확인했습니다. 현재 macOS 기준은 14 이상이며 Ventura 지원으로 안내하지 않습니다."
+        "checkedFor": "macOS14 이상 지원과101.26082.0012의 Bluetooth 권한 상태 보고·측면 패널 및 피드백 평가의 키보드 접근성 개선을 확인했습니다. 기기에서 권한이 자동 부여된다는 의미로 안내하지 않습니다."
       },
       {
         "title": "Intune supported platforms",
@@ -2899,9 +2899,9 @@
   },
   "/knowledge/security/defender-for-endpoint": {
     "file": "docs/security/defender-for-endpoint.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Defender Endpoint의 보호·EDR·지원 플랫폼·구독 확인",
+    "scope": "확인한 항목: AL2 ARM64 지원 종료·Linux 데스크톱 preview·서버/데스크톱 라이선스 구분과10월 Linux/macOS 변경",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2912,7 +2912,12 @@
       {
         "title": "Defender for Endpoint release and OS support",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "Defender 릴리스별 OS·에이전트 지원 범위를 확인했습니다. 현재 macOS 기준은 14 이상이며 Ventura 지원으로 안내하지 않습니다."
+        "checkedFor": "10월 Linux와 macOS 빌드의 제공 기능과 순차 적용을 확인하고 각각의 온보딩 문서로 연결했습니다."
+      },
+      {
+        "title": "Defender Linux support and license conditions",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites",
+        "checkedFor": "2026-10-31 AL2 ARM64 지원 종료와 데스크톱P2·서버용 라이선스를 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

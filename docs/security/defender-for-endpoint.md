@@ -62,6 +62,12 @@ Defender for Endpoint로 기기의 위협과 취약점을 확인하고 대응하
 
 Defender XDR, Intune과 Conditional Access를 연결할 때는 기기별 지원 기능과 위험 신호, 정책 적용 결과를 확인하세요.
 
+## Linux·macOS의 10월 운영 변경 {/* #october-2026-platform-updates */}
+
+Amazon Linux 2 **ARM64**의 Defender 지원은 2026년 10월 31일 종료됩니다. Linux 데스크톱 지원은 Public Preview이며, 데스크톱용 P2 권한과 서버용 라이선스를 구분해야 합니다. [Linux 온보딩 가이드](../knowledge-center/mde-linux-onboarding#october-2026-support)에서 종료 대상과 10월 빌드의 순차 적용 조건을 확인하세요.
+
+macOS의 10월 빌드에는 Bluetooth 권한 상태 보고와 키보드 접근성 개선이 포함됩니다. [macOS 온보딩 가이드](../knowledge-center/mde-macos-onboarding#october-2026-agent-update)에서 설치 버전과 권한 점검 방법을 확인하세요. 근거는 [Microsoft 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)와 [Linux 지원·라이선스 조건](https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites)입니다.
+
 ## Control Model
 
 <div className="kc-platform-fit">

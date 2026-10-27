@@ -80,6 +80,12 @@ Organizations commonly require:
 
 ---
 
+## 10월 에이전트 변경 {/* #october-2026-agent-update */}
+
+macOS 빌드 `101.26082.0012`는 Device Control의 기기 상태 보고에 **Bluetooth 권한 상태**를 추가합니다. 또한 측면 패널과 피드백 평가 항목의 키보드 탐색을 개선했습니다. 설치 버전과 권한 상태를 확인하고, 필요한 접근 권한이 실제로 허용됐는지 기기에서 점검하세요. 상태 보고 항목이 생겼다는 이유로 권한이 자동 부여되거나 정책이 적용됐다고 판단하지 마세요.
+
+출처: [Microsoft의 10월 macOS 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases#macos--october-2026--101260820012). 지원 OS 조건과 Intune의 관리 조건은 각각 확인해야 합니다.
+
 ## Architecture
 
 <div className="kc-factory-panel">
