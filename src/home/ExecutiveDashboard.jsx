@@ -13,10 +13,10 @@ const items = [
 
 export default function ExecutiveDashboard() {
   return (
-    <section className={styles.dashboard}>
+    <section id="practice-resources" className={styles.dashboard} aria-labelledby="practice-resources-title">
       <div className={styles.header}>
         <p>실무 자료</p>
-        <h2>진단과 실행을 위한 자료</h2>
+        <h2 id="practice-resources-title">진단과 실행을 위한 자료</h2>
         <span>
           진단·설계·수행 계획에 필요한 가이드와 템플릿을 확인하세요.
         </span>

@@ -3092,7 +3092,7 @@ body.kc-diagram-modal-open {
 [data-theme='dark'] main div[class*='layer_'],
 [data-theme='dark'] .pagination-nav__link {
   border-color: #29384d;
-  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  background: var(--kc-surface);
 }
 
 [data-theme='dark'] .theme-doc-markdown blockquote {
@@ -3977,3 +3977,15 @@ body.kc-diagram-modal-open {
 
 /* An opaque header keeps scrolled text out of the navigation. */
 .navbar,[data-theme='dark'] .navbar {background-color:var(--kc-surface);}
+
+/* Keep the whole reading experience on the same dark canvas. */
+[data-theme='dark'] {
+ --ifm-background-color:#0b1220;
+ --ifm-background-surface-color:#111827;
+}
+[data-theme='dark'] .footer {background:var(--kc-surface);}
+/* A bounded column avoids long lines on large monitors; tables retain local scrolling. */
+.theme-doc-markdown,.theme-doc-footer,.pagination-nav {max-width:52rem;}
+
+.site-home #practice-resources a {background:transparent;}
+.site-home #practice-resources a:hover {background:var(--kc-surface-muted);}

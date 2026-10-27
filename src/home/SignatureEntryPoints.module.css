@@ -1,4 +1,4 @@
-.signaturePaths {width:min(1200px,calc(100% - 56px));margin:0 auto;padding:48px 0;scroll-margin-top:5rem;}
+.signaturePaths {width:100%;max-width:1200px;margin:0 auto;padding:48px 28px;scroll-margin-top:5rem;}
 .header {max-width:780px;margin-bottom:24px;}
 .header p {margin:0 0 8px;color:var(--ifm-color-primary);font-size:12px;font-weight:650;}
 .header h2 {margin:0;color:var(--kc-ink);font-size:30px;line-height:1.35;word-break:keep-all;overflow-wrap:anywhere;}
@@ -12,5 +12,5 @@
 .card strong {display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--ifm-color-primary);font-size:13px;font-weight:600;}
 .card:focus-visible {outline:3px solid var(--ifm-color-primary);outline-offset:4px;}
 @media(max-width:996px){.grid{grid-template-columns:1fr;}.card{padding:20px;}.card h3{margin:12px 0 8px;}.card p{margin-bottom:16px;}}
-@media(max-width:640px){.signaturePaths{width:calc(100% - 40px);padding:32px 0;}.header h2{font-size:26px;}.header span{font-size:14px;}.grid{gap:12px;}.card h3{font-size:21px;}.card p{font-size:14px;}}
+@media(max-width:640px){.signaturePaths{width:100%;padding:32px 20px;}.header h2{font-size:26px;}.header span{font-size:14px;}.grid{gap:12px;}.card h3{font-size:21px;}.card p{font-size:14px;}}
 @media(prefers-reduced-motion:reduce){.card{transition:none;}}
