@@ -59,6 +59,20 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 Agent policies have separate licensing and identity targeting rules. The current [agent policy documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id) lists **Microsoft 365 E7**, or **Microsoft Agent 365 paired with at least Entra P1 or Microsoft 365 E3**, as licensing options. The general overview still marks agent targeting as preview; verify the specific policy's release status in the linked scenario documentation and your tenant rather than declaring all agent controls GA or preview together. A policy targeting an agent identity does not automatically cover delegated user access or an agent user account. Validate the token subject, policy target and report-only results before enforcement.
 
 
+## Microsoft 관리형 정책과 위험 해결 {/* #managed-risk-remediation */}
+
+Microsoft가 만든 정책도 직접 만든 정책과 함께 점검해야 합니다. 관리 센터의 `Entra ID > Conditional Access > Policies`에서 `Created by`가 `Microsoft`인 항목을 찾고 대상·예외·현재 상태를 확인하세요.
+
+- **자동 활성화:** 처음에는 보고 전용으로 생성되며, 보통 도입 후 최소 30일이 지나면 활성화됩니다. 일부 정책은 더 빨리 적용될 수 있으므로 메시지 센터와 정책 상세의 테넌트별 일정을 확인하세요. 보고 전용 상태로 두는 것만으로 적용이 계속 미뤄지지는 않습니다.
+- **고위험 사용자:** `Require remediation for high-risk users`는 Entra ID P2 대상 정책입니다. 별도 보안 그룹으로 범위를 정하며, 로그인 위험이 아닌 **사용자 위험**을 해결합니다. 외부·게스트 사용자는 지원하지 않습니다.
+- **인증과 정책 충돌:** 인증 강도와 매번 로그인 조건이 자동 적용됩니다. `Block`은 위험 해결보다 우선하고, 위험 해결은 암호 변경 요구보다 우선합니다. 기존 정책과 중복 적용되는지 확인하세요.
+- **잠금 방지:** 긴급 접근 계정을 제외하고 MFA 등록 상태를 점검하세요. 하이브리드 환경에서는 암호 해시 동기화 등 암호 변경 전제 조건도 확인해야 합니다. MFA 후 수행하는 보안 암호 변경과 암호를 모를 때 쓰는 SSPR 복구 절차를 구분하세요.
+
+보고 전용 결과와 로그인 기록을 검토한 뒤 적용 범위를 정하세요. 공통된 달력 날짜가 모든 테넌트의 활성화 날짜인 것은 아닙니다.
+
+출처: [Microsoft 관리형 정책](https://learn.microsoft.com/en-us/entra/identity/conditional-access/managed-policies), [위험 해결과 사용자 차단 해제](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock).
+
+
 ## Executive Summary
 
 Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture. It evaluates user identity, device posture, location, application, risk signals and session context before granting access to corporate resources.

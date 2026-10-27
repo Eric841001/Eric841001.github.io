@@ -11,6 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [10월 27일 앱·API 변경](#app-updates-october-27) · Current Channel·플랫폼별 순차 배포
 - [10월 26일 Frontier 범위 확대](#frontier-expanded-previews) · 11월부터 대상 공개 미리 보기 확대
 - [10월 개발자 기능 변경](#developer-updates-october-2026) · 매니페스트·beta API
 - [10월 25일 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
@@ -19,11 +20,27 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
 
+## 10월 27일 앱·API 변경 {/* #app-updates-october-27 */}
+
+[공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#october-27-2026)는 10월 13~27일 변경을 다음과 같이 구분합니다. 사용자별 적용 시점은 다를 수 있습니다.
+
+| 대상 | 추가된 기능과 확인할 점 |
+|---|---|
+| Windows · Learning agent | 개인별 학습 콘텐츠·학습 경로. 에이전트 표시 여부를 확인합니다. |
+| Web · Viva Insights | Copilot 앱·Edge·OneNote와 Office 작업별 사용 지표 확대. 대시보드에 표시되는 지표로 교육 계획을 세웁니다. |
+| Notebooks · Web·iOS | Web은 웹 링크를 참조 자료로 추가하고, iOS는 관련 대화·생성물·자료를 모아 이어서 작업합니다. |
+| Web · 커넥터 | Researcher의 Canva 연결, 관리 센터의 사용자 지정 MCP 커넥터 배포와 검색 결과의 상세 카드. 권한·공개 대상을 점검합니다. |
+| Work IQ API | 사용량 과금과 선언형 에이전트 호출. 호출한 에이전트·모델에 따라 비용이 발생하며, API의 사전 라이선스 할당 조건 변경을 일반 Microsoft 365 앱의 무료 사용으로 해석하면 안 됩니다. |
+| Android · OneNote | 음성·사진·입력 메모를 한 세션에서 기록해 노트북에 저장합니다. 녹음 동의와 보관 위치를 확인합니다. |
+| Windows · 클래식 Outlook | 앱 안의 Copilot 설정. 조직 정책과 제공 설정을 대조합니다. |
+| Windows·Web · PowerPoint | 첨부한 발표자료의 테마·스타일과 이미지를 새 발표자료 생성에 참조합니다. 서식과 이미지 사용 권한을 검토합니다. |
+| Windows·Mac · Teams | Queues 앱의 녹음된 통화 기록에서 Copilot 요약·질문. 녹음·접근 권한과 사용자별 Copilot 제공 조건을 확인합니다. |
+
 ## 10월 개발자 기능 변경 {/* #developer-updates-october-2026 */}
 
 - **선언형 에이전트 매니페스트 1.9:** `agent_skills`로 스킬 폴더를 참조하고 `Fabric` 기능으로 Fabric 자료를 활용할 수 있습니다. 배포할 패키지는 [1.9 스키마](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/declarative-agent-manifest-1.9)로 검사하세요. 변경 기록의 `instructions` 선택 항목 안내와 스키마의 필수 항목 표기가 서로 다르므로, 이 문서에서는 해당 필드를 생략하는 예제를 제시하지 않습니다.
 - **Copilot Cost Management API:** 크레딧 잔액, 지출 정책, 그룹별 대상과 사용량을 조회·관리합니다. [현재 API 문서](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/cost-management/overview)는 `/beta`이며 운영 애플리케이션 사용을 지원하지 않는다고 명시합니다. 크레딧 기준 자료이므로 통화 금액·청구서 조회 기능으로 보지 마세요. 알림 임계값도 그 자체가 사용 차단은 아닙니다.
-- **날짜별 사용자 사용량 보고서:** `getMicrosoft365CopilotUsageUserDetailByDate`는 한 날짜의 사용자별 활동을 반환하는 [beta API](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetailbydate)입니다. 조회 날짜는 오늘을 기준으로 계산하지 않고 최신 `reportRefreshDate`부터 그 7일 전까지에서 선택합니다. `Reports.Read.All` 권한이 필요하며 Global 서비스만 지원합니다.
+- **날짜별 사용자 활동 보고서:** `getMicrosoft365CopilotUsageUserDetailByDate`는 한 날짜의 사용자별 활동을 반환하는 [beta API](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetailbydate)입니다. 조회 날짜는 오늘을 기준으로 계산하지 않고 최신 `reportRefreshDate`부터 그 7일 전까지에서 선택합니다. `Reports.Read.All` 권한이 필요하며 Global 서비스만 지원합니다.
 
 출처: [Microsoft 365 Copilot 개발자 변경 기록](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/whats-new). API의 권한·제공 상태는 실제 적용 전에 각 참조 문서에서 확인하세요.
 
@@ -53,7 +70,7 @@ Microsoft는 Copilot Cowork에서 Power Platform 테넌트의 환경, 앱, 흐�
 - **비용과 승인:** 질문은 Copilot Credits를 소비합니다. 파일럿에서 실제 사용량을 측정해 지출 정책과 예산을 정하고, `Ask Advisor` 조회 요청의 반복 승인은 필요한 시나리오와 사용자에게만 허용하세요. 암호, 액세스 토큰, 클라이언트 비밀값은 대화에 입력하지 않습니다.
 - **지역·준수 확인:** preview 기능이므로 지원 지역, AI 하위 처리자, Cowork 보안·준수 조건과 실제 테넌트 표시 여부를 확인한 뒤 확대하세요. Managed Environments는 질문 자체의 필수 조건이 아니며, 플러그인이 관리 설정을 대신 변경하지 않습니다.
 
-출처: [Microsoft 공식 발표 — Power Platform Admin Plugin in Cowork](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-power-platform-admin-plugin-in-cowork-agentic-governance-with-na/4567557), [Power Platform Admin in Cowork 설치·역할 조건](https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork), [Agentic governance 운영 지침](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance). [Cowork 비용·거버넌스 상세 가이드](./copilot-cowork-cost-governance.md#power-platform-admin-plugin-preview)에서 파일럿 체크포인트를 이어서 확인할 수 있습니다.
+출처: [Microsoft 공식 발표 — Power Platform Admin Plugin in Cowork](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-power-platform-admin-plugin-in-cowork-agentic-governance-with-na/4567557), [Power Platform Admin in Cowork 설치·역할 조건](https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork), [Agentic governance 운영 지침](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance). [Cowork 비용·거버넌스 상세 가이드](./copilot-cowork-cost-governance.md#power-platform-admin-plugin-preview)에서 시범 도입 전에 확인할 항목을 볼 수 있습니다.
 
 ## 설계와 거버넌스 후속 지침
 
@@ -73,16 +90,17 @@ Microsoft는 Copilot Cowork에서 Power Platform 테넌트의 환경, 앱, 흐�
 | [8월 11일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-11-2026) | 병렬 수집, ServiceNow 역할 권한, SharePoint 공식 사이트, Outlook 코칭·회의 준비, 그룹 Planner 에이전트, PowerPoint 기업 자산·웹 생성·웹 출처, 사용량 대시보드, Word 모델 선택 |
 | [8월 25일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#august-25-2026) | Excel Python, 하이브리드 장치 메시지, Engage 비공개 콘텐츠, 노트북 UI·메일·회의, 검색 중 채팅, 채팅 중 메일 열기, Work IQ 버튼, 모바일 페이지, 앱 개편, Cowork 이미지 생성, Researcher 모델 선택, Work IQ API, Outlook 일정, PowerPoint 메일 참조·발표 설명, Word 음성 질문·Sonnet |
 | [9월 23일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#september-23-2026) | Excel 변경 링크·AI 기여 표시, 라이선스 요청, 검색 첨부·메일 정렬, 공간 프로필, 회의 주제 검색, 분석 필터, Planner 채팅, Outlook 분류 작업, People Skills 삭제, GitHub 비용 분석, 노트북 빠른 참조·개편, CarPlay, 차단 정책 링크, Cowork 위임, Vision, Forms 채팅, 연합 커넥터 GA·관리 개선, 클래식 Outlook 에이전트 확장, PowerPoint 사용자 스킬, Glint 분류, 활용도·일별 분석 |
+| [10월 27일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#october-27-2026) | Learning agent, 활용 지표, Notebooks, MCP·Canva 커넥터, Work IQ API 과금·선언형 호출, 앱별 변경 |
 | [10월 6일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#october-06-2026) | Copilot Search·Chat 통합, 응답 재생성·모델 전환, 커넥터 쿼리·사용자 매핑 수정, SharePoint 광범위 그룹 권한 보고서, PowerPoint 사용자 지정 스킬·Mac 파일 참조, Cowork 채택·비용 분석 |
 
-출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 이번 조회에서 최신 날짜는 10월 6일입니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
+출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 최신 기록은 10월 27일입니다. 10월 13~27일 변경은 앞의 앱·API 변경 절에 정리했습니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
 
-## 10월 6일 운영 체크포인트
+## 10월 6일 운영 점검 사항 {/* #10월-6일-운영-체크포인트 */}
 
 - **검색에서 채팅으로:** Windows·Web의 Microsoft 365 Copilot Search 결과를 문맥으로 이어 후속 질문·요약·콘텐츠 생성을 할 수 있습니다. Web 채팅에는 `Try Again`과 `Switch Model`을 포함한 응답 재생성이 추가됐습니다. 검색 권한과 선택 모델을 포함해 대표 사용자로 단계적 배포 여부를 확인하세요.
 - **커넥터 권한 매핑:** 관리자가 Microsoft 365 관리 센터의 `Settings > Search & intelligence > Data sources`에서 생성된 연결의 쿼리 문자열과 사용자 ID 매핑 규칙을 직접 수정할 수 있습니다. 변경 후 다음 크롤을 확인하고, 영향받는 사용자로 소스 범위와 권한 누락·과다 노출을 재검증하세요.
 - **SharePoint 광범위 공유 감사:** SharePoint Advanced Management 관리자는 `Data access governance reports`에서 `Everyone`과 `Everyone except external users`에 부여된 항목 단위 권한을 보고서로 확인할 수 있습니다. [광범위 그룹 공유 보고서 안내](https://learn.microsoft.com/en-us/sharepoint/powershell-for-data-access-governance#generate-a-report-on-sites-and-files-shared-via-special-sharepoint-groups)의 역할·모듈 전제 조건을 확인하고 사이트·파일 소유자와 예외 필요성을 같이 검토하세요.
-- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 채택·영향·크레딧 소비 지표와 내보내기 기능, Advanced Insights의 Consumption·Person 쿼리를 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 시험 도입 전후를 비교할 기준을 정하세요.
+- **PowerPoint·Cowork:** Windows PowerPoint에는 사용자 정의 스킬, Mac에는 프롬프트에서 SharePoint·OneDrive 파일명이나 소유자를 참조해 발표자료를 생성하는 기능이 추가됐습니다. Web의 Copilot Analytics·Consumption 대시보드는 Cowork 활용도·업무 영향·크레딧 사용량 지표와 내보내기 기능, Advanced Insights의 Consumption·Person 쿼리를 제공합니다. 해당 라이선스와 분석 역할을 확인한 뒤 시험 도입 전후를 비교할 기준을 정하세요.
 
 ## 9월 25일 새 Copilot 공식 발표
 

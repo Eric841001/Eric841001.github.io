@@ -7,6 +7,8 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft 365 Copilot', title: '10월 27일 앱별 변경과 Work IQ API 과금', description: 'MCP 커넥터와 앱별 새 기능, Work IQ API의 사용량 과금 조건을 추가했습니다.', date: '2026-10-28', status: '문서 개정 · 플랫폼별 순차 배포', path: `${updateGuide}#app-updates-october-27`},
+  {category: 'Microsoft Entra', title: '관리형 정책의 자동 활성화와 고위험 사용자', description: '보고 전용 이후 적용 일정, P2 대상 위험 해결과 잠금 방지 조건을 보완했습니다.', date: '2026-10-28', status: '문서 개정 · 테넌트별 일정 확인', path: '/knowledge/security/conditional-access#managed-risk-remediation'},
   {category: 'Defender for Endpoint', title: 'macOS Defender 추가 빌드와 USB 정책 전환', description: '101.26092.0009의 Device Control v1 종료와 v2 정책·권한 확인 방법을 보강했습니다.', date: '2026-10-28', status: '문서 개정 · GA 빌드', path: '/knowledge/knowledge-center/intune-macos-usb-control#device-control-v1-retirement'},
   {category: 'Microsoft 365 Licensing', title: 'E3 CSP 프로모션 시작', description: '신규 300석 이상 주문과 고객 자격 조건을 확인합니다. 30% 할인은 파트너 순가격 기준입니다.', date: '2026-10-27', status: '조건부 CSP 프로모션', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#e3-csp-promotion-2026'},
   {category: 'Defender for Endpoint', title: 'Linux Defender 지원 종료와 10월 변경', description: 'Amazon Linux 2 ARM64의 10월 31일 지원 종료와 Linux·macOS의 변경 사항을 정리했습니다.', date: '2026-10-27', status: '문서 개정 · 지원 종료 예정', path: '/knowledge/knowledge-center/mde-linux-onboarding#october-2026-support'},
