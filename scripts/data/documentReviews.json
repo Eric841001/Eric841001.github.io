@@ -654,7 +654,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 추가 확인: Power Platform Admin preview의 읽기 전용 조회, 설치와 데이터 접근 역할의 분리, OAuth 및 Cowork 지출 정책을 공식 문서와 다시 대조했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 추가 확인: Power Platform Admin preview의 읽기 전용 조회, 설치와 데이터 접근 역할의 분리, OAuth 및 Cowork 지출 정책을 공식 문서와 다시 대조했습니다.; 10월 개발자 변경·1.9 스키마 표기 불일치·비용/날짜별 보고 API beta 제약 확인",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -681,6 +681,26 @@
         "title": "Partner Center October 2026 Copilot announcements",
         "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
         "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
+      },
+      {
+        "title": "Copilot developer October updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/whats-new",
+        "checkedFor": "1.9 agent_skills·Fabric, Cost Management API, 날짜별 사용자 사용량 보고 변경 확인."
+      },
+      {
+        "title": "Declarative agent schema 1.9",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/declarative-agent-manifest-1.9",
+        "checkedFor": "agent_skills·Fabric 확인. 변경 기록은 instructions optional로 설명하나 스키마 표는 Required여서 생략 예제를 넣지 않음. 실제 패키지 검증 미실행."
+      },
+      {
+        "title": "Copilot Cost Management API",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/cost-management/overview",
+        "checkedFor": "beta·운영 앱 미지원, credit 단위, 통화/청구서 제외, notify-only alert 및 정책/그룹/사용자 기능 확인. 실제 API 실행 미수행."
+      },
+      {
+        "title": "Daily Copilot usage API",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetailbydate",
+        "checkedFor": "beta·Global 전용·Reports.Read.All·reportRefreshDate부터 7일 전까지 날짜 범위 확인. 실제 응답·고객 데이터 미확인."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1486,9 +1506,9 @@
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1530,6 +1550,11 @@
         "title": "Current Microsoft Copilot license options",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
         "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
+      },
+      {
+        "title": "Partner Center — E3 CSP promotional offer",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
+        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1537,9 +1562,9 @@
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; E7 CSP 크레딧 매칭 조건·AI Builder 판매 종료와 갱신 조치 확인",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1571,6 +1596,16 @@
         "title": "Current Microsoft Copilot license options",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
         "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
+      },
+      {
+        "title": "Partner Center — E3 CSP promotional offer",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
+        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
+      },
+      {
+        "title": "Partner Center — October E7 and AI Builder announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 21일 E7 행사: 연간 신규 300석·Azure PAYG·연간 Studio 팩 5개 이상, 12개월 1:1 최대 5팩, 12월 31일까지. 10월 22일 AI Builder 공지: 11월 1일 판매 종료, 현 구독 기간 종료까지 사용, 다음 갱신 전 자동 갱신 해제. 실제 고객 계약·자격은 미확인."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1604,9 +1639,9 @@
   },
   "/knowledge/microsoft365/e3-vs-e5": {
     "file": "docs/microsoft365/e3-vs-e5.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1648,6 +1683,11 @@
         "title": "Current Microsoft Copilot license options",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
         "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
+      },
+      {
+        "title": "Partner Center — E3 CSP promotional offer",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
+        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",

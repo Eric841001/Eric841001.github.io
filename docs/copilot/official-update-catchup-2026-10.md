@@ -11,11 +11,20 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [10월 개발자 기능 변경](#developer-updates-october-2026) · 매니페스트·beta API
 - [10월 25일 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
 - [10월 23일 에이전트 도입·운영 지침](#agent-operating-framework) · 도입·거버넌스 지침
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 10월 개발자 기능 변경 {/* #developer-updates-october-2026 */}
+
+- **선언형 에이전트 매니페스트 1.9:** `agent_skills`로 스킬 폴더를 참조하고 `Fabric` 기능으로 Fabric 자료를 활용할 수 있습니다. 배포할 패키지는 [1.9 스키마](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/declarative-agent-manifest-1.9)로 검사하세요. 변경 기록의 `instructions` 선택 항목 안내와 스키마의 필수 항목 표기가 서로 다르므로, 이 문서에서는 해당 필드를 생략하는 예제를 제시하지 않습니다.
+- **Copilot Cost Management API:** 크레딧 잔액, 지출 정책, 그룹별 대상과 사용량을 조회·관리합니다. [현재 API 문서](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/cost-management/overview)는 `/beta`이며 운영 애플리케이션 사용을 지원하지 않는다고 명시합니다. 크레딧 기준 자료이므로 통화 금액·청구서 조회 기능으로 보지 마세요. 알림 임계값도 그 자체가 사용 차단은 아닙니다.
+- **날짜별 사용자 사용량 보고서:** `getMicrosoft365CopilotUsageUserDetailByDate`는 한 날짜의 사용자별 활동을 반환하는 [beta API](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetailbydate)입니다. 조회 날짜는 오늘을 기준으로 계산하지 않고 최신 `reportRefreshDate`부터 그 7일 전까지에서 선택합니다. `Reports.Read.All` 권한이 필요하며 Global 서비스만 지원합니다.
+
+출처: [Microsoft 365 Copilot 개발자 변경 기록](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/whats-new). API의 권한·제공 상태는 실제 적용 전에 각 참조 문서에서 확인하세요.
 
 ## 10월 21일 고객 대화형 Harness 공개 미리 보기 {/* #customer-conversation-harness */}
 

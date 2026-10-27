@@ -138,12 +138,12 @@ function DocSidebarItemCategoryCollapsible({
   const isCurrentPage = isSamePath(href, activePath);
   const {collapsed, setCollapsed} = useCollapsible({
     // Keep the sidebar calm and predictable: categories respect sidebars.js
-    // even when the current page belongs to the category.
+    // except the branch containing the current page.
     initialState: () => {
       if (!collapsible) {
         return false;
       }
-      return item.collapsed;
+      return isActive ? false : item.collapsed;
     },
   });
   const {expandedItem, setExpandedItem} = useDocSidebarItemsExpandedState();
@@ -162,6 +162,11 @@ function DocSidebarItemCategoryCollapsible({
       setCollapsed(true);
     }
   }, [collapsible, expandedItem, index, setCollapsed, autoCollapseCategories]);
+  // Reopen the current branch after navigation, while allowing manual collapse
+  // until the route changes again.
+  useEffect(() => {
+    if (collapsible && isActive) setCollapsed(false);
+  }, [activePath, collapsible, isActive, setCollapsed]);
   const handleItemClick = (e) => {
     onItemClick?.(item);
     if (collapsible) {

@@ -21,7 +21,7 @@ E7에는 **Microsoft 365 E5 + Microsoft 365 Copilot + Microsoft Entra Suite + Mi
 
 ## 최신 라이선스 확인
 
-기준일은 **2026년 10월 26일**입니다. 아래는 **Microsoft 365** 기업용 플랜의 비교이며 Office 365 E3·E5와 구분합니다. Teams 포함·미포함 상품과 이용 지역, 계약 조건을 확인하세요.
+기능·정가 표는 **2026년 10월 26일** 자료를 기준으로 정리했습니다. 10월 27일 시작된 E3 프로모션은 아래에 별도로 안내합니다. 아래는 **Microsoft 365** 기업용 플랜의 비교이며 Office 365 E3·E5와 구분합니다. Teams 포함·미포함 상품과 이용 지역, 계약 조건을 확인하세요.
 
 기능 포함 여부는 [Microsoft의 E3·E5·E7 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7), E7의 구성은 [E7 제품 안내](https://www.microsoft.com/en-us/microsoft-365/enterprise/e7)를 기준으로 정리했습니다. 라이선스를 구매한 뒤에도 사용자 할당과 정책 설정이 필요합니다.
 
@@ -29,6 +29,8 @@ E7에는 **Microsoft 365 E5 + Microsoft 365 Copilot + Microsoft Entra Suite + Mi
 <span id="business-scenario" />
 
 12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
+
+**E3 CSP 프로모션:** 10월 27일 시작된 신규 구독 300석 이상 대상 프로모션은 고객 자격 제한이 있으며, 할인 기준도 공개 정가가 아닌 파트너 순가격입니다. [적용 기간과 자격 조건](../licensing/july-2026-microsoft-licensing-update#e3-csp-promotion-2026)을 확인하고 E5·E7 견적과 비교하세요.
 
 ## 비교 순서 {/* #decision-framework */}
 

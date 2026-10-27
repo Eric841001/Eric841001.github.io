@@ -50,19 +50,12 @@ export default function HeroSection() {
             <a className={styles.secondaryButton} href="#browse-topics">주제별 문서 보기</a>
           </div>
 
-          <div className={styles.signalRow} aria-label="Portfolio focus areas">
-            <span>Copilot</span>
-            <span>Copilot Studio</span>
-            <span>M365 Agents</span>
-            <span>Copilot Cowork</span>
-            <span>AI Agents</span>
-          </div>
         </div>
 
         <div className={styles.heroPanel}>
           <div className={styles.panelHeader}>
             <span>도구별 안내</span>
-            <strong>권한·비용 확인</strong>
+            <strong>제품별 시작점</strong>
           </div>
 
           <div className={styles.capabilityGrid}>
@@ -70,21 +63,11 @@ export default function HeroSection() {
               <Link key={item.label} className={styles.capability} to={item.path}>
                 <small>{item.label}</small>
                 <strong>{item.value}</strong>
-                <span>가이드 보기 →</span>
+                <span aria-hidden="true">→</span>
               </Link>
             ))}
           </div>
 
-          <div className={styles.deliveryStack}>
-            <p>운영 원칙</p>
-            <ul>
-              <li>업무 유형과 성과 기준</li>
-              <li>자료와 계정의 접근 권한</li>
-              <li>에이전트 변경·폐기와 승인 담당자</li>
-              <li>사용량·비용과 결과 검토</li>
-              <li>민감한 작업의 담당자 검토</li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>

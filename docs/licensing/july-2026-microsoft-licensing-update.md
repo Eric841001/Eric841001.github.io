@@ -84,6 +84,16 @@ Microsoft 라이선스를 검토할 때는 가격과 함께 포함 기능이 어
 
 따라서 라이선스를 검토할 때는 상품명과 서비스 플랜 식별자를 확인하고, 포함 기능이 대상 사용자에게 활성화돼 있는지 살펴보세요. E7도 사용자 할당과 정책 설정, 사용량 요금 확인이 필요합니다.
 
+## 10월 27일 시작된 E3 CSP 프로모션 {/* #e3-csp-promotion-2026 */}
+
+2026년 10월 26일 Partner Center 공지에 따르면, **10월 27일부터 2027년 6월 30일까지** 적격 CSP 고객의 Microsoft 365 E3 신규 구독에 프로모션이 적용됩니다.
+
+- **주문 조건:** 신규 구독으로 E3 라이선스 300개 이상을 구매해야 합니다. Teams 포함·미포함 상품이 모두 대상이며 연간 약정에 연간 또는 월간 청구를 선택할 수 있습니다.
+- **고객 조건:** 기존 좌석 중 Office 365 E3 비율이 50% 미만이고 Microsoft 365 비율이 5% 미만이어야 합니다. 2026년에 Office 365 좌석을 갱신한 고객은 제외됩니다.
+- **할인 기준:** 30%는 **파트너 순가격(net partner price)** 기준입니다. 공개 정가에 일괄 적용하거나 고객 견적이 반드시 30% 낮아진다고 계산하지 마세요.
+
+[Microsoft의 E3 프로모션 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3)와 파트너 프로모션 자료로 고객 자격·주문 조건을 확인한 뒤 견적을 받으세요. E5·E7과 비교할 때도 정가 비교와 프로모션 견적을 구분해야 합니다.
+
 ## 12월 1일 예정된 Copilot 구매·과금 변경 {/* #copilot-december-2026-purchase-changes */}
 
 2026년 10월 14일 Partner Center 공지는 다음 변경을 예고했습니다. 10월 26일 현재의 구매 조건과 구분하세요.
@@ -93,6 +103,11 @@ Microsoft 라이선스를 검토할 때는 가격과 함께 포함 기능이 어
 - **CSP 과금:** 신규 Copilot Business 상품의 사용량 과금 기본 활성화 일정은 11월 2일에서 12월 1일로 바뀌었습니다. 초기 제공 국가에 **한국은 포함되지 않습니다**. 이 예외를 앞의 구매 조건 변경 전체에 적용하지 마세요. 사용자당 월 4,000 Copilot Credits는 무료 제공량이 아닌 조정 가능한 기본 지출 한도이며, 실제 사용량이 청구됩니다.
 
 출처: [Partner Center 10월 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates). 구매 전 현재 가격 목록·SKU·지역 조건을 다시 확인하세요.
+
+## E7 크레딧 프로모션과 AI Builder 갱신
+
+- **E7 CSP 프로모션:** 2026년 12월 31일까지 신규 연간 E7 300석 이상, Azure 구독을 통한 사용량 과금 활성화, 연간 Copilot Studio 용량 팩 5개 이상 구매가 조건입니다. 적격 팩을 1:1로 최대 5개까지 12개월 동안 추가 제공하는 행사이며 E7의 상시 기본 제공량이 아닙니다. [공식 공지와 세부 자격 자료](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#grow-e7-deals-with-copilot-credits)를 확인하세요.
+- **AI Builder 용량 추가 기능:** 11월 1일부터 판매가 종료됩니다. 기존 크레딧은 현재 구독 기간 종료까지 사용할 수 있습니다. 파트너는 다음 갱신 전에 자동 갱신을 끄고, 계속 사용할 고객은 Copilot Credits 전환을 준비해야 합니다. [판매 종료 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#ai-builder-capacity-add-ons-retiring).
 
 ## E7을 포함해 비교할 항목
 
