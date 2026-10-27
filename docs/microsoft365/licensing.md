@@ -53,6 +53,8 @@ Use this page for the current planning model: [Microsoft Licensing Feature Updat
 
 E7에는 E5의 기능과 Microsoft 365 Copilot·Microsoft Entra Suite·Microsoft Agent 365가 포함됩니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 비용 조건을 확인하세요. E5+Copilot과 E7의 차이는 Entra Suite·Agent 365 사용 계획까지 포함해 판단합니다. [AI 사용량 요금](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)은 구독료와 별도로 산정하세요.
 
+12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
+
 ## Business Scenario
 
 - Business Premium·E3·E5·E7과 필요한 추가 기능 비교

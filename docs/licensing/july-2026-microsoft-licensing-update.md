@@ -84,6 +84,16 @@ Microsoft 라이선스를 검토할 때는 가격과 함께 포함 기능이 어
 
 따라서 라이선스를 검토할 때는 상품명과 서비스 플랜 식별자를 확인하고, 포함 기능이 대상 사용자에게 활성화돼 있는지 살펴보세요. E7도 사용자 할당과 정책 설정, 사용량 요금 확인이 필요합니다.
 
+## 12월 1일 예정된 Copilot 구매·과금 변경 {/* #copilot-december-2026-purchase-changes */}
+
+2026년 10월 14일 Partner Center 공지는 다음 변경을 예고했습니다. 10월 26일 현재의 구매 조건과 구분하세요.
+
+- **구매 조건:** 12월 1일부터 적격 기본 구독을 먼저 구매하지 않아도 주문할 수 있는 새 Copilot·Copilot Business 상품이 제공될 예정입니다. 이것이 모든 Office 앱·서비스의 사용 권한을 포함한다는 뜻은 아닙니다.
+- **기존 구독:** 현재 적격 기본 구독을 요구하는 상품에는 `(add-on)`이 붙습니다. 기존 구독은 계속 갱신·수량 조정할 수 있으며 새 상품이 나온다는 이유로 사용자 라이선스를 재할당할 필요는 없습니다. 자동화는 상품명보다 제품·SKU ID를 기준으로 확인하세요.
+- **CSP 과금:** 신규 Copilot Business 상품의 사용량 과금 기본 활성화 일정은 11월 2일에서 12월 1일로 바뀌었습니다. 초기 제공 국가에 **한국은 포함되지 않습니다**. 이 예외를 앞의 구매 조건 변경 전체에 적용하지 마세요. 사용자당 월 4,000 Copilot Credits는 무료 제공량이 아닌 조정 가능한 기본 지출 한도이며, 실제 사용량이 청구됩니다.
+
+출처: [Partner Center 10월 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates). 구매 전 현재 가격 목록·SKU·지역 조건을 다시 확인하세요.
+
 ## E7을 포함해 비교할 항목
 
 E7에는 E5의 기능과 Microsoft 365 Copilot·Microsoft Entra Suite·Microsoft Agent 365가 포함됩니다. [Microsoft 공식 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7)와 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 비용 조건을 확인하세요. E5+Copilot에는 Entra Suite·Agent 365 전체가 자동으로 포함되지 않습니다. 기존 구독과 겹치는 기능을 먼저 확인하고 [Copilot Credits 사용량 요금](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)을 별도로 계산하세요.

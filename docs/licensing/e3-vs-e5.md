@@ -28,6 +28,8 @@ E7에는 **Microsoft 365 E5 + Microsoft 365 Copilot + Microsoft Entra Suite + Mi
 <span id="architecture" />
 <span id="business-scenario" />
 
+12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
+
 ## 비교 순서 {/* #decision-framework */}
 
 1. 협업, 기기 관리, 보안 조사, 자료 보호와 AI 사용 중 필요한 업무를 고릅니다.

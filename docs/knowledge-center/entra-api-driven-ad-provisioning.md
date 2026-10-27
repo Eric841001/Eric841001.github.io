@@ -13,7 +13,7 @@ Forest A에서 Microsoft Entra ID로 동기화된 계정을 별도의 Forest B�
 
 ## 결론
 
-Forest A → Tenant → Forest B 사용자 동기화는 단순한 Cloud Sync 토글이나 기본 그룹 동기화만으로 완성되는 구성이 아닙니다. 사용자 객체를 Forest B에 생성하려면 다음 구성 요소가 필요합니다.
+Forest A의 사용자 데이터를 Forest B에 보내려면 원본 데이터를 읽어 SCIM 요청으로 전송할 호출기와 대상 AD에서 계정을 처리할 에이전트가 필요합니다. 다음 구성 요소를 준비하세요.
 
 - API-driven provisioning용 Enterprise Application
 - `SynchronizationData-User.Upload` 애플리케이션 권한을 가진 호출용 App Registration
@@ -82,6 +82,8 @@ Microsoft Entra ID > Enterprise applications > New application
 SynchronizationData-User.Upload
 ```
 
+위 예시는 `SynchronizationData-User.Upload`를 사용합니다. [현재 API 권한 표](https://learn.microsoft.com/en-us/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-1.0#permissions)는 애플리케이션의 최소 권한으로 `SynchronizationData-User.Upload.OwnedBy`를 안내하므로, 적용 조건과 접근할 프로비저닝 앱의 범위를 확인해 필요한 권한만 부여하세요.
+
 관리자 동의를 완료한 뒤 다음 값을 수집합니다.
 
 - Tenant ID
@@ -116,7 +118,7 @@ UserPrincipalName,EmployeeId,DisplayName,FirstName,LastName,Department
 test10@example.com,EMP-10010,Test User 10,Test,User 10,IT Infrastructure
 ```
 
-SCIM Bulk 요청의 각 작업은 `/Users` 경로로 전송합니다.
+SCIM Bulk 요청의 각 작업은 `/Users` 경로로 전송합니다. 표준 Enterprise User 확장에서 사번은 `employeeNumber`입니다. 대상 AD의 `employeeID`에 넣을지는 프로비저닝 속성 매핑에서 정하세요. [Graph bulkUpload의 표준 스키마 예제](https://learn.microsoft.com/en-us/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-1.0#example-1-bulk-upload-using-scim-core-user-and-enterprise-user-schema)를 참고합니다.
 
 ```json
 {
@@ -140,7 +142,7 @@ SCIM Bulk 요청의 각 작업은 `/Users` 경로로 전송합니다.
           "givenName": "Test"
         },
         "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
-          "employeeId": "EMP-10010",
+          "employeeNumber": "EMP-10010",
           "department": "IT Infrastructure"
         }
       }
@@ -148,6 +150,8 @@ SCIM Bulk 요청의 각 작업은 `/Users` 경로로 전송합니다.
   ]
 }
 ```
+
+예시는 구조를 설명하기 위한 일부 속성만 보여줍니다. 실제 요청에는 전체·증분 동기화 모두 해당 사용자에 대해 매핑한 전체 속성 값을 포함하세요. 빈 값 지우기 기능(미리 보기)을 켰다면 `null`·빈 문자열뿐 아니라 해당 매핑 속성의 누락도 기존 값을 지울 수 있습니다. [요청 데이터와 비동기 처리 조건](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-concepts)을 확인하세요.
 
 원문 검증에서는 한 요청당 최대 50명의 작업을 묶어 전송했습니다. 실제 구현은 Microsoft의 현재 API 제한과 throttling 지침을 확인하고, 재시도·부분 실패·중복 요청을 안전하게 처리해야 합니다.
 
@@ -192,7 +196,8 @@ Invoke-RestMethod `
 
 - 입력 스키마와 필수 속성 검증
 - 50개 이하 배치 분할
-- HTTP 상태 코드 및 SCIM 작업별 결과 기록
+- HTTP `202 Accepted`는 접수 성공으로 기록하고 계정 생성 완료와 구분
+- 프로비저닝 로그 조회용 `ProvisioningLog.Read.All` 권한과 로그 API로 사용자별 처리·실패 결과 확인
 - 429 및 일시적 오류에 대한 지수 백오프 재시도
 - 동일 사용자의 중복 생성 방지를 위한 안정적인 `externalId`
 - 실패 배치 재처리 및 감사 가능한 상관관계 ID
@@ -204,7 +209,7 @@ Invoke-RestMethod `
 2. SCIM Bulk 요청이 성공적으로 접수되는지 확인합니다.
 3. Enterprise Application의 프로비저닝 감사 로그에서 각 사용자의 처리 결과를 확인합니다.
 4. Forest B의 지정 OU에 계정이 생성되었는지 확인합니다.
-5. UPN, `employeeId`, 표시 이름, 이름, 부서 등 속성이 매핑 규칙과 일치하는지 비교합니다.
+5. UPN, SCIM의 `employeeNumber`와 대상 AD의 `employeeID`, 표시 이름, 이름, 부서 등 속성이 매핑 규칙과 일치하는지 비교합니다.
 6. 동일 요청 재전송, 필수 속성 누락, 중복 사용자, 비활성화 등 예외 시나리오를 검증합니다.
 7. 에이전트 중지와 네트워크 장애 후 복구 동작을 확인합니다.
 

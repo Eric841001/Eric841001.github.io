@@ -133,11 +133,13 @@ Business Premium is usually a practical fit when the organization needs:
 
 ## Security
 
-- Enforce MFA for all users.
+- 일반 사용자에게 MFA를 적용하고 긴급 계정은 별도로 보호합니다.
 - Use Conditional Access templates carefully.
 - Manage devices through Intune.
 - Enable endpoint protection and security baselines.
 - Review admin roles and emergency access accounts.
+
+긴급 액세스 계정은 일반 사용자의 차단·제한 조건부 액세스 정책에서 제외합니다. MFA를 없애는 대신 평소 관리자와 다른 피싱 방지 인증 수단을 준비하고 로그인 경보와 정기 접속 시험을 운영하세요. [Microsoft 긴급 액세스 계정 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)을 따릅니다.
 
 ## Decision Checklist
 

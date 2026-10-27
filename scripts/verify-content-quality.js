@@ -69,6 +69,23 @@ for (const file of files) {
       source,
     );
 
+  for (const block of source.matchAll(/^```(?:powershell|pwsh)[^\n]*\n([\s\S]*?)^```/gm)) {
+    if (/`[ \t]+(?:-[A-Za-z]|\r?\n)/.test(block[1])) {
+      failures.push(`${rel}: PowerShell continuation has whitespace after the backtick`);
+    }
+  }
+
+  for (const block of source.matchAll(/^```json[^\n]*\n([\s\S]*?)^```/gm)) {
+    let payload;
+    try { payload = JSON.parse(block[1]); } catch { continue; }
+    for (const operation of Array.isArray(payload?.Operations) ? payload.Operations : []) {
+      const enterprise = operation.data?.['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User'];
+      if (enterprise && Object.hasOwn(enterprise, 'employeeId')) {
+        failures.push(`${rel}: SCIM Enterprise User uses employeeNumber, not employeeId`);
+      }
+    }
+  }
+
   if (hasMojibake) failures.push(`${rel}: contains mojibake-like characters`);
   if (isHub && !hasVisual) failures.push(`${rel}: hub page has no visual section`);
   if (isHighValue && !hasContact) warnings.push(`${rel}: high-value page has no contact/request path`);

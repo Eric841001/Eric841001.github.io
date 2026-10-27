@@ -111,9 +111,9 @@
   },
   "/knowledge/architecture/m365-reference-architecture": {
     "file": "docs/architecture/m365-reference-architecture.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: Microsoft 365의 ID·협업·보안·운영 참조 계층",
+    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -130,10 +130,15 @@
         "title": "Microsoft Zero Trust guidance",
         "url": "https://learn.microsoft.com/en-us/security/zero-trust/",
         "checkedFor": "Zero Trust의 명시적 검증·최소 권한·침해 가정 원칙과 제품별 제어를 구분했습니다."
+      },
+      {
+        "title": "Manage emergency access accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/architecture/migration-architecture": {
     "file": "docs/architecture/migration-architecture.md",
@@ -429,9 +434,9 @@
   },
   "/knowledge/copilot/copilot-cowork-cost-governance": {
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Cowork의 구독·소비 비용·플러그인별 제공 조건. Power Platform Admin preview의 읽기 전용 범위, 관리자 역할, OAuth 연결, Copilot Credits와 지출 정책 조건을 대조했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 추가 확인: Power Platform Admin preview의 읽기 전용 조회, 설치와 데이터 접근 역할의 분리, OAuth 및 Cowork 지출 정책을 공식 문서와 다시 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -458,10 +463,15 @@
         "title": "Power Platform Admin in Cowork preview",
         "url": "https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork",
         "checkedFor": "플러그인의 preview·읽기 전용 범위, 설치와 데이터 권한의 분리, 필수 관리자 역할, OAuth 연결, Cowork 접근과 Copilot Credits 조건을 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
@@ -514,7 +524,7 @@
     "file": "docs/copilot/customer-conversation-harness.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 고객 대화형 harness의 공개 미리 보기와 향후 계획 구분 추가 확인: 한글 문장을 다듬고 기존 제품명·제공 조건·상세 링크를 유지했습니다. 이번 변경으로 새로운 기술 검증 범위를 주장하지 않습니다.",
+    "scope": "한글 표현만 수정했습니다. 기능 설명·GA와 미리 보기의 구분·설계 조건은 유지하고, 추상적인 표현과 완료를 단정하는 체크리스트를 구체적인 작업 문장으로 바꿨습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -529,7 +539,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 문장·체크리스트와 기존 설명의 의미 보존을 확인했습니다. 기술 기능 전체를 새로 인증하거나 실제 테넌트·기기에서 동작을 시험하지 않았습니다."
   },
   "/knowledge/copilot/excel-copilot-skills": {
     "file": "docs/copilot/excel-copilot-skills.md",
@@ -642,9 +652,9 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-27",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 2026년 10월 공식 발표별 모델·기능·미리 보기 변경 사항. 10월 25일 Power Platform Admin in Cowork preview의 역할·권한·비용·지역 조건을 추가 대조했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 추가 확인: Power Platform Admin preview의 읽기 전용 조회, 설치와 데이터 접근 역할의 분리, OAuth 및 Cowork 지출 정책을 공식 문서와 다시 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -666,10 +676,15 @@
         "title": "Power Platform Admin in Cowork preview",
         "url": "https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork",
         "checkedFor": "플러그인의 preview·읽기 전용 범위, 설치와 데이터 권한의 분리, 필수 관리자 역할, OAuth 연결, Cowork 접근과 Copilot Credits 조건을 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -725,9 +740,9 @@
   },
   "/knowledge/copilot/readiness": {
     "file": "docs/copilot/readiness.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Copilot ID·데이터·보안 준비 항목과 작성자 점수 모델",
+    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -744,10 +759,15 @@
         "title": "Microsoft Copilot release notes",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
         "checkedFor": "현재 채널 변경 기록은 플랫폼·기능별 제공 범위를 설명하며 테넌트 안에서도 단계적으로 배포됩니다."
+      },
+      {
+        "title": "Manage emergency access accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/copilot/roi-framework": {
     "file": "docs/copilot/roi-framework.md",
@@ -945,19 +965,24 @@
   },
   "/knowledge/knowledge-center/entra-api-driven-ad-provisioning": {
     "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: SCIM bulkUpload 기반 AD 프로비저닝의 입력·권한·에이전트 경계",
+    "scope": "이번 수정 범위: 202 Accepted 이후 비동기 프로비저닝 로그 확인, ProvisioningLog.Read.All, 전체·증분의 완전한 사용자 속성 및 미리 보기 null flow의 속성 누락 삭제 위험을 대조했습니다. 표준 SCIM Enterprise User의 employeeNumber, 대상 AD employeeID 매핑 구분, application 최소 권한 Upload.OwnedBy와 Upload의 차이, 50개 작업·202 응답을 공식 Graph 예제와 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "API-driven inbound provisioning",
+        "title": "API-driven inbound provisioning concepts",
         "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-concepts",
-        "checkedFor": "API 기반 inbound provisioning은 API 입력·속성 매핑·프로비저닝 서비스·대상 디렉터리를 구분합니다."
+        "checkedFor": "202 Accepted 이후 비동기 프로비저닝 로그 확인, ProvisioningLog.Read.All, 전체·증분의 완전한 사용자 속성 및 미리 보기 null flow의 속성 누락 삭제 위험을 대조했습니다."
+      },
+      {
+        "title": "Microsoft Graph bulkUpload API",
+        "url": "https://learn.microsoft.com/en-us/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-1.0",
+        "checkedFor": "표준 SCIM Enterprise User의 employeeNumber, 대상 AD employeeID 매핑 구분, application 최소 권한 Upload.OwnedBy와 Upload의 차이, 50개 작업·202 응답을 공식 Graph 예제와 대조했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
@@ -977,9 +1002,9 @@
   },
   "/knowledge/knowledge-center/exchange-online-download-restriction": {
     "file": "docs/knowledge-center/exchange-online-download-restriction.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: OWA 첨부 제한과 Conditional Access 앱 적용 제한 연계",
+    "scope": "이번 수정 범위: ReadOnly는 첨부파일 다운로드·오프라인을 제한하고 브라우저 미리보기는 허용합니다. 인라인 이미지는 제외되며 인쇄 전체 차단을 보장하지 않습니다. 사서함별 OwaMailboxPolicy 할당 매개 변수를 확인하고 줄 연결이 깨진 예제를 정상적인 다중 행 명령으로 수정했습니다. 보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -991,10 +1016,25 @@
         "title": "Exchange Online documentation",
         "url": "https://learn.microsoft.com/en-us/exchange/exchange-online",
         "checkedFor": "Exchange Online의 관리자·메일·이전 운영 영역을 확인했으며 특정 고객의 구성이나 이전 성공을 입증하지 않습니다."
+      },
+      {
+        "title": "Set-OwaMailboxPolicy ConditionalAccessPolicy",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps#-conditionalaccesspolicy",
+        "checkedFor": "ReadOnly는 첨부파일 다운로드·오프라인을 제한하고 브라우저 미리보기는 허용합니다. 인라인 이미지는 제외되며 인쇄 전체 차단을 보장하지 않습니다."
+      },
+      {
+        "title": "Set-CASMailbox OwaMailboxPolicy",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-casmailbox?view=exchange-ps",
+        "checkedFor": "사서함별 OwaMailboxPolicy 할당 매개 변수를 확인하고 줄 연결이 깨진 예제를 정상적인 다중 행 명령으로 수정했습니다."
+      },
+      {
+        "title": "Conditional Access report-only behavior",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only",
+        "checkedFor": "보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/knowledge-center/exchange-online-message-recall-purge": {
     "file": "docs/knowledge-center/exchange-online-message-recall-purge.md",
@@ -1213,17 +1253,22 @@
     "file": "docs/knowledge-center/m365-cloud-only-save-as.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Cloud Policy 일반 우선순위와 원문의 개별 Save As 정책 예시 추가 확인: 한글 표현과 적용 전 점검 안내를 정리했습니다. 기존 기술 범위와 주의사항은 유지했습니다.",
+    "scope": "이번 수정 범위: Microsoft 서명이 유효한 5568.1000 배포 파일을 실행 없이 추출했습니다. L_CloudOnlySaving 정책의 User 범위·FileIO 경로·enablecloudonlysaveasmode·활성 값 1·새 파일 및 Save As 제한 설명을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Cloud Policy scope and precedence",
         "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy",
         "checkedFor": "Cloud Policy는 사용자 기반으로 배포되고 충돌하는 GPO보다 우선합니다. 일반 개요는 개별 Save As 레지스트리 값의 지원 근거가 아닙니다."
+      },
+      {
+        "title": "Official Office Administrative Templates 5568.1000",
+        "url": "https://www.microsoft.com/en-us/download/details.aspx?id=49030",
+        "checkedFor": "Microsoft 서명이 유효한 5568.1000 배포 파일을 실행 없이 추출했습니다. L_CloudOnlySaving 정책의 User 범위·FileIO 경로·enablecloudonlysaveasmode·활성 값 1·새 파일 및 Save As 제한 설명을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다. Save As 정책과 레지스트리 값은 사용할 Office 버전의 정책 목록에서 다시 확인하세요. Windows 11 24H2는 원문에 기록된 환경이며 이번 시험 결과가 아닙니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다. Cloud Policy 카탈로그의 실제 테넌트 제공 여부와 Office 빌드별 UI는 시험하지 않았습니다."
   },
   "/knowledge/knowledge-center/mde-atomic-red-team": {
     "file": "docs/knowledge-center/mde-atomic-red-team.md",
@@ -1337,24 +1382,29 @@
   },
   "/knowledge/knowledge-center/onedrive-limited-access-read-only": {
     "file": "docs/knowledge-center/onedrive-limited-access-read-only.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 비관리 디바이스의 웹 제한·읽기 전용·파일 형식별 다운로드 경계",
+    "scope": "이번 수정 범위: 기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다. 보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
-      {
-        "title": "Control access from unmanaged devices",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices",
-        "checkedFor": "비관리 디바이스 제한은 Conditional Access와 SharePoint 정책을 연계하며 편집/파일 형식 옵션에 따라 범위가 다릅니다."
-      },
       {
         "title": "OneDrive overview",
         "url": "https://learn.microsoft.com/en-us/sharepoint/onedrive-overview",
         "checkedFor": "OneDrive는 사용자 작업 파일 저장·동기화·공유를 제공하며 저장·공유·퇴사자 보존은 별도 관리 항목입니다."
+      },
+      {
+        "title": "Control access from unmanaged devices",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices",
+        "checkedFor": "기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다."
+      },
+      {
+        "title": "Conditional Access report-only behavior",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only",
+        "checkedFor": "보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/knowledge-center/overview": {
     "file": "docs/knowledge-center/overview.md",
@@ -1402,7 +1452,7 @@
     "file": "docs/licensing/business-premium.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "Business 계열 합산 300석 제한을 유지하고 기업 플랜 비교 대상에 E7, Suite·Agent 365 필요 여부와 총비용을 추가했습니다.",
+    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1424,16 +1474,21 @@
         "title": "Business Premium FAQ",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
         "checkedFor": "Business Basic·Standard·Premium 합산 300개 프로비저닝 좌석 제한을 유지하고, 고급 기능이 필요한 경우 기업 플랜과 비교하는 조건을 확인했습니다."
+      },
+      {
+        "title": "Manage emergency access accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "E3·E5·E7의 포함 구성, E5+Copilot 대안, Teams 상품, 미국 공개 참고 가격과 사용량 비용 구분",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1465,16 +1520,26 @@
         "title": "Copilot Credits usage-based billing",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
         "checkedFor": "Copilot 구독이 필요한 Cowork·Code 등 사용량 과금 서비스와 사전 구매·종량제·용량 방식의 서비스별 차이를 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
+      },
+      {
+        "title": "Current Microsoft Copilot license options",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
+        "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "개별 고객의 계약·할인·세금·한국 견적과 실제 테넌트의 활성화·사용량은 검증하지 않았습니다. 모든 추가 기능이 포함되거나 구독만으로 정책이 적용된다고 주장하지 않습니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "Office 365와 Microsoft 365 E3의 구분을 유지하며 E7 구성·중복 구독·사용량 요금 및 비교 링크를 보완했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1496,10 +1561,20 @@
         "title": "Copilot Credits usage-based billing",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
         "checkedFor": "Cowork·Code 등 사용량 과금 서비스와 고정 구독을 구분하고 서비스별 과금 방식과 지출 정책이 다름을 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
+      },
+      {
+        "title": "Current Microsoft Copilot license options",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
+        "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
@@ -1531,7 +1606,7 @@
     "file": "docs/microsoft365/e3-vs-e5.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "E3·E5·E7의 포함 구성, E5+Copilot 대안, Teams 상품, 미국 공개 참고 가격과 사용량 비용 구분",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1563,10 +1638,20 @@
         "title": "Copilot Credits usage-based billing",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
         "checkedFor": "Copilot 구독이 필요한 Cowork·Code 등 사용량 과금 서비스와 사전 구매·종량제·용량 방식의 서비스별 차이를 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
+      },
+      {
+        "title": "Current Microsoft Copilot license options",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
+        "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "개별 고객의 계약·할인·세금·한국 견적과 실제 테넌트의 활성화·사용량은 검증하지 않았습니다. 모든 추가 기능이 포함되거나 구독만으로 정책이 적용된다고 주장하지 않습니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/microsoft365/exchange-online": {
     "file": "docs/microsoft365/exchange-online.md",
@@ -1608,7 +1693,7 @@
     "file": "docs/microsoft365/licensing.md",
     "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "E3·E5·E7·Business Premium의 비교 범위와 E5+Copilot 대 E7의 Suite·Agent 365 차이, 총비용 질문을 보완했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1630,10 +1715,15 @@
         "title": "Copilot Credits usage-based billing",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
         "checkedFor": "Cowork·Code 등 사용량 과금 서비스와 고정 구독을 구분하고 서비스별 과금 방식과 지출 정책이 다름을 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/microsoft365/onedrive": {
     "file": "docs/microsoft365/onedrive.md",
@@ -1920,9 +2010,9 @@
   },
   "/knowledge/playbooks/m365-assessment-playbook": {
     "file": "docs/playbooks/m365-assessment-playbook.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: Microsoft 365 평가의 라이선스·보안·운영 증거 구분",
+    "scope": "한글 표현만 수정했습니다. 기능 설명·GA와 미리 보기의 구분·설계 조건은 유지하고, 추상적인 표현과 완료를 단정하는 체크리스트를 구체적인 작업 문장으로 바꿨습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1942,7 +2032,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 문장·체크리스트와 기존 설명의 의미 보존을 확인했습니다. 기술 기능 전체를 새로 인증하거나 실제 테넌트·기기에서 동작을 시험하지 않았습니다."
   },
   "/knowledge/playbooks/overview": {
     "file": "docs/playbooks/overview.md",
@@ -3004,9 +3094,9 @@
   },
   "/knowledge/security/security-architecture": {
     "file": "docs/security/security-architecture.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 기업 보안 참조 계층과 작성자 성숙도·KPI 예시",
+    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3023,16 +3113,21 @@
         "title": "Microsoft Purview documentation",
         "url": "https://learn.microsoft.com/en-us/purview/",
         "checkedFor": "Purview의 분류·보호·위험·보존·감사 영역은 개별 기능의 라이선스와 워크로드 지원을 별도 확인해야 합니다."
+      },
+      {
+        "title": "Manage emergency access accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/security/zero-trust-framework": {
     "file": "docs/security/zero-trust-framework.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-26",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Zero Trust의 명시적 검증·최소 권한·침해 가정 설계",
+    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3044,10 +3139,15 @@
         "title": "Microsoft Entra Conditional Access",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
         "checkedFor": "Conditional Access의 조건·허용 제어·세션 제어를 구분하고 위험 기반 정책에는 P2가 필요합니다."
+      },
+      {
+        "title": "Manage emergency access accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/toolkit/architecture-builder": {
     "file": "docs/toolkit/architecture-builder.md",
@@ -3095,7 +3195,7 @@
     "file": "docs/toolkit/license-advisor.md",
     "checkedOn": "2026-10-26",
     "kind": "설계·실행 프레임워크",
-    "scope": "플랜 목록·E7 설명·시나리오·Copilot 준비 및 의사결정 표에 E7을 추가했습니다. E3·E5의 Copilot 추가 구독과 Teams 상품 조건, 별도 AI 사용량 요금을 구분했습니다.",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3127,10 +3227,20 @@
         "title": "Business Premium FAQ",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
         "checkedFor": "Business Basic·Standard·Premium 합산 300개 프로비저닝 좌석 제한을 유지하고, 고급 기능이 필요한 경우 기업 플랜과 비교하는 조건을 확인했습니다."
+      },
+      {
+        "title": "Partner Center October 2026 Copilot announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
+      },
+      {
+        "title": "Current Microsoft Copilot license options",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
+        "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
+    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
   },
   "/knowledge/toolkit/migration-checklist": {
     "file": "docs/toolkit/migration-checklist.md",

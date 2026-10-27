@@ -76,6 +76,8 @@ Copilot Cowork에 여러 단계의 업무를 맡기려면 사용할 도구와 �
 
 Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)되었으며 Microsoft 365 Copilot User Subscription License가 필요합니다. 사용량은 Copilot Credits로 청구됩니다. 6월 30일 발표된 플러그인은 반복해서 사용할 스킬과 업무 시스템 연결용 커넥터를 묶어 Microsoft Marketplace로 배포하는 방식입니다.
 
+플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 발표문에서 '출시 예정'으로 표시한 플러그인이나 DLP 기능은 현재 사용할 수 있다고 가정하지 마세요. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
+
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
 Microsoft announced the Power Platform Admin (preview) plugin for Cowork on October 25, 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
@@ -86,8 +88,6 @@ Microsoft announced the Power Platform Admin (preview) plugin for Cowork on Octo
 - Keep `Ask Advisor` approval scoped to trusted scenarios. Do not place passwords, access tokens or client secrets in a Cowork conversation, and review supported regions, AI subprocessors and Cowork compliance guidance for the target tenant.
 
 Managed Environments are not required to ask questions. Their separate governance features retain their own requirements, and the preview plugin remains an insight layer rather than an administrative change engine.
-
-플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 발표문에서 '출시 예정'으로 표시한 플러그인이나 DLP 기능은 현재 사용할 수 있다고 가정하지 마세요. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
 ## When To Use Cowork
 
@@ -113,6 +113,8 @@ Managed Environments are not required to ask questions. Their separate governanc
     <span>Simple summarization, brainstorming, drafting or Q&amp;A should usually remain in Copilot Chat.</span>
   </div>
 </div>
+
+12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
 
 ## Cost and Billing Control Plane
 

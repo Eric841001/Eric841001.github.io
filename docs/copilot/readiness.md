@@ -179,7 +179,7 @@ The readiness question is no longer only "Can we enable Copilot?" It is "Can we 
 
 | Control Area | Recommendation |
 |---|---|
-| MFA | Enforce MFA for all users |
+| MFA | 일반 사용자 MFA 적용 및 긴급 계정 별도 보호 |
 | Conditional Access | Apply risk-based and device-based access policies |
 | Legacy Authentication | Block legacy authentication |
 | Admin Access | Use least privilege and PIM where available |
@@ -511,6 +511,8 @@ Before Copilot rollout, leadership should confirm:
 6. Execute controlled pilot before enterprise rollout.
 
 ---
+
+긴급 액세스 계정은 일반 사용자의 차단·제한 조건부 액세스 정책에서 제외합니다. MFA를 없애는 대신 평소 관리자와 다른 피싱 방지 인증 수단을 준비하고 로그인 경보와 정기 접속 시험을 운영하세요. [Microsoft 긴급 액세스 계정 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)을 따릅니다.
 
 ## References
 

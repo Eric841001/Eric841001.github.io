@@ -7,7 +7,7 @@ sidebar_label: M365 Apps 클라우드 저장 강제
 
 # M365 Apps 로컬 저장소 제한 및 클라우드 저장 강제
 
-Microsoft 365 Apps의 **다른 이름으로 저장** 화면에서 로컬 저장소를 제외하고 OneDrive·SharePoint 같은 클라우드 위치만 제공하도록 구성하고 검증합니다. 배포 방법은 Active Directory 그룹 정책과 Microsoft 365 Apps 관리 센터의 Cloud Policy 두 가지입니다.
+Microsoft 365 Apps의 Word·Excel·PowerPoint에서 새 파일 저장과 **다른 이름으로 저장**에 사용할 로컬·네트워크 위치를 제한합니다. OneDrive·SharePoint 같은 클라우드 위치만 제공하도록 구성하는 정책입니다. 배포 방법은 Active Directory 그룹 정책과 Microsoft 365 Apps 관리 센터의 Cloud Policy 두 가지입니다.
 
 ## 적용 조건
 
@@ -21,7 +21,7 @@ Microsoft 365 Apps의 **다른 이름으로 저장** 화면에서 로컬 저장�
 
 ## 방법 1: Active Directory 그룹 정책
 
-최신 Office Administrative Template을 중앙 저장소의 `PolicyDefinitions`에 반영한 다음 사용자 구성에서 **클라우드가 아닌 위치에서 저장 제한** 정책을 찾아 **사용**으로 설정합니다.
+[Microsoft 공식 ADMX/ADML](https://www.microsoft.com/en-us/download/details.aspx?id=49030)의 Office 정책 템플릿을 중앙 저장소의 `PolicyDefinitions`에 반영합니다. 사용자 구성의 Microsoft Office 2016 → Miscellaneous에서 **Restrict saving on non-Cloud locations** 정책(`L_CloudOnlySaving`)을 사용으로 설정하세요. 표시 이름은 ADML 언어에 따라 달라집니다.
 
 클라이언트에 정책이 적용되면 다음 레지스트리 값을 확인할 수 있습니다.
 
@@ -43,7 +43,7 @@ Word, Excel 또는 PowerPoint에서 **다른 이름으로 저장**을 열었을 
 1. [Microsoft 365 Apps 관리 센터](https://config.office.com)에 접속합니다.
 2. **사용자 지정 > 정책 관리 > 만들기**로 이동합니다.
 3. 전체 사용자 대신 파일럿 보안 그룹을 먼저 할당합니다.
-4. 정책 구성에서 **클라우드가 아닌 위치에서 저장 제한**을 검색합니다.
+4. 정책 구성에서 **Restrict saving on non-Cloud locations**를 검색합니다. 사용하는 카탈로그에서 제공되지 않으면 배포됐다고 판단하지 말고 GPO 지원 여부를 따로 확인하세요.
 5. 설정을 **사용**으로 구성하고 배포합니다.
 
 Cloud Policy를 수신한 클라이언트에서는 다음 위치를 확인합니다.
@@ -60,7 +60,7 @@ Cloud Policy와 AD GPO가 동시에 존재할 때에는 Cloud 경로의 정책�
 - 정책 대상 사용자 또는 그룹이 정확한지 확인
 - 정책 레지스트리 `enablecloudonlysaveasmode=1` 확인
 - Office 앱 재시작 후 Save As 화면 확인
-- 로컬 디스크, 바탕 화면, 문서 폴더가 저장 대상으로 제공되지 않는지 확인
+- 로컬 디스크·바탕 화면·문서 폴더·네트워크 공유가 새 파일의 저장 대상으로 제공되지 않는지 확인
 - OneDrive 및 SharePoint 위치가 정상적으로 표시되는지 확인
 - 오프라인, 동기화 장애, 클라우드 로그인 만료 시 사용자 경험 확인
 - Cloud Policy와 GPO를 함께 사용할 경우 우선순위 확인

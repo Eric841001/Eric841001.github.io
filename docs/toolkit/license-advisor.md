@@ -319,6 +319,8 @@ Recommended when:
 
 고급 보안·규정 준수와 업무용 Copilot, Entra Suite, Agent 365가 함께 필요하면 E7과 개별 구독 조합을 비교합니다. 기능 사용 대상과 운영 담당자가 정해지지 않았다면 전 직원 일괄 도입부터 결정하지 마세요.
 
+12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
+
 ## Copilot Readiness
 
 Recommended baseline:

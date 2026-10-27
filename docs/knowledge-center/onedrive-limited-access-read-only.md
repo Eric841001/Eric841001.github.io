@@ -46,7 +46,7 @@ Get-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' |
 
 ## 고급 제한 설정
 
-기본 Limited Access는 다운로드와 인쇄를 제한합니다. 다음 옵션을 조합하면 브라우저 읽기 전용 범위와 미리보기 가능한 파일 형식을 더 엄격하게 제어할 수 있습니다.
+기본 Limited Access는 다운로드와 인쇄를 제한하지만 브라우저 편집은 허용합니다. 다음 옵션을 조합하면 브라우저 읽기 전용 범위와 미리보기 가능한 파일 형식을 더 엄격하게 제어할 수 있습니다.
 
 | 매개 변수 | 권장 값 | 효과 |
 |---|---:|---|
@@ -55,7 +55,9 @@ Get-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' |
 | `LimitedAccessFileType` | `OfficeOnlineFilesOnly` | Office Online 파일만 브라우저 미리보기 허용 |
 
 ```powershell
-Set-SPOTenant -AllowEditing $false `
+Set-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' `
+  -ConditionalAccessPolicy AllowLimitedAccess `
+  -AllowEditing $false `
   -ReadOnlyForUnmanagedDevices $true `
   -LimitedAccessFileType OfficeOnlineFilesOnly
 ```
@@ -73,7 +75,7 @@ Set-SPOTenant -AllowEditing $false `
 | Office 데스크톱 앱 접근 | ❌ | ❌ | ❌ |
 | 상대적 보안 수준 | 높음 | 중간 | 낮음 |
 
-`OtherFiles`는 미리보기가 불가능한 파일의 다운로드를 허용하므로 웹 전용 Read Only 목표에는 적합하지 않습니다.
+`OtherFiles`는 미리보기가 불가능한 파일의 다운로드를 허용하므로 웹 전용 Read Only 목표에는 적합하지 않습니다. `WebPreviewableFiles`에서도 일부 PDF·이미지는 표시 과정에서 다운로드가 필요해 접근 거부가 발생할 수 있습니다. 위 표는 모드별 기본 동작이며 실제 파일로 시험해야 합니다.
 
 ## 조건부 액세스 정책
 
@@ -83,7 +85,7 @@ Microsoft Entra 관리 센터에서 다음과 같이 파일럿 정책을 만듭�
 2. 대상 리소스는 `Office 365 SharePoint Online`을 선택합니다.
 3. 조건에서 적용할 디바이스 상태, 위치 또는 클라이언트 앱을 지정합니다.
 4. 세션 제어에서 **앱 적용 제한(Use app enforced restrictions)** 을 선택합니다.
-5. 보고 전용 모드로 영향도를 확인한 다음 정책을 사용 상태로 전환합니다.
+5. 보고 전용에서 적용 대상을 확인한 뒤 소수 시험 사용자에게 정책을 켜고 다운로드·편집·앱 접속을 시험합니다. 보고 전용은 제한을 강제하지 않습니다.
 
 정책 전파에는 수 분이 걸릴 수 있습니다.
 
@@ -97,7 +99,9 @@ Microsoft Entra 관리 센터에서 다음과 같이 파일럿 정책을 만듭�
 
 ## 운영 시 주의사항
 
-- 테넌트 수준 설정은 여러 사이트에 영향을 줄 수 있으므로 변경 전 현재 값을 기록하고 파일럿으로 검증합니다.
+- 위 예시는 특정 사이트에만 적용합니다. 조직 전체 변경이 필요한 경우에만 `Set-SPOTenant`를 검토하세요. 사이트 정책은 테넌트 정책보다 느슨하게 설정할 수 없습니다.
+- 익명 `Anyone` 링크는 이 조건부 액세스 제한의 대상이 아닙니다. 해당 사이트에서 익명 링크를 차단하고 기존 공유 링크도 점검하세요.
+- 서비스에서 app-only로 실행되는 앱도 예외가 있으므로 앱 권한과 데이터 접근을 따로 확인합니다.
 - 조건부 액세스의 긴급 액세스 계정은 정책 대상에서 제외합니다.
 - 브라우저 읽기 전용은 화면 캡처나 수기 전재까지 방지하는 완전한 데이터 유출 통제가 아닙니다.
 - 민감 데이터에는 Purview DLP, 민감도 레이블, 엔드포인트 통제를 함께 검토합니다.
