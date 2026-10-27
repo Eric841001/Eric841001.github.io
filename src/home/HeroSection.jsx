@@ -45,9 +45,9 @@ export default function HeroSection() {
           </p>
 
           <div className={styles.heroActions}>
-            <a className={styles.primaryButton} href="#latest-updates">최근 업데이트 보기</a>
+            <a className={styles.primaryButton} href="#start-reading">처음 읽을 문서</a>
 
-            <a className={styles.secondaryButton} href="#browse-topics">주제별 문서 보기</a>
+            <a className={styles.secondaryButton} href="#latest-updates">최근 업데이트 보기</a>
           </div>
 
         </div>

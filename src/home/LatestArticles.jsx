@@ -14,15 +14,23 @@ export default function LatestArticles() {
         <Link className={styles.allUpdates} to={updateGuide}>Copilot 변경 기록 →</Link>
       </div>
       <div className={styles.grid}>
-        {updateHighlights.map(article => (
-          <Link key={article.path} to={article.path} className={styles.card}>
-            <span className={styles.category}>{article.category}</span>
-            <h3>{article.title}</h3><p>{article.description}</p>
-            <div className={styles.meta}><time dateTime={article.date}>{article.date}</time><span>{article.status}</span></div>
-          </Link>
-        ))}
+        {updateHighlights.slice(0, 4).map(article => <UpdateCard key={article.path} article={article} />)}
       </div>
+      {updateHighlights.length > 4 && <details className={styles.archive}>
+        <summary>이전 업데이트 {updateHighlights.length - 4}개 더 보기</summary>
+        <div className={styles.grid}>
+          {updateHighlights.slice(4).map(article => <UpdateCard key={article.path} article={article} />)}
+        </div>
+      </details>}
       <p className={styles.modelNote}>모델 제공 안내 · <Link to={modelUpdate.path}>{modelUpdate.title}</Link> <span>({modelUpdate.date} 발표 · 앱별 배포와 라이선스 확인)</span></p>
     </section>
   );
+}
+
+function UpdateCard({article}) {
+  return <Link to={article.path} className={styles.card}>
+    <span className={styles.category}>{article.category}</span>
+    <h3>{article.title}</h3><p>{article.description}</p>
+    <div className={styles.meta}><time dateTime={article.date}>{article.date}</time><span>{article.status}</span></div>
+  </Link>;
 }

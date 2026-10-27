@@ -1,50 +1,46 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-
 import styles from './SignatureEntryPoints.module.css';
 
 const entries = [
   {
-    label: '아키텍처',
+    label: '01 · 라이선스 선택',
+    title: 'E3·E5·E7, 무엇이 필요한가요?',
+    description: '포함 기능과 추가 비용을 비교하고, 우리 조직에 필요한 구성을 고르세요.',
+    path: '/knowledge/microsoft365/e3-vs-e5',
+    action: '라이선스 비교 읽기',
+  },
+  {
+    label: '02 · 도입 준비',
+    title: 'Copilot 도입 전 확인할 것',
+    description: '사용 권한, 데이터 보호와 시범 도입 범위를 순서대로 점검하세요.',
+    path: '/knowledge/playbooks/copilot-readiness-playbook',
+    action: '도입 준비 점검하기',
+  },
+  {
+    label: '03 · 전체 설계',
     title: 'Microsoft 365·Azure 설계',
-    description:
-      'Microsoft 365·Azure·보안·Copilot 설계에서 확인할 사항을 정리했습니다.',
+    description: 'ID와 보안, 협업과 AI를 함께 설계할 때 필요한 기준을 살펴보세요.',
     path: '/knowledge/architecture/executive-architecture-blueprint',
-  },
-  {
-    label: '도입 사례',
-    title: 'AI 에이전트 운영 사례',
-    description:
-      '고객명을 제외한 사례에서 에이전트 구성, 운영 기준과 효과 측정 방법을 살펴보세요.',
-    path: '/knowledge/projects/case-study-enterprise-ai-agent-factory',
-  },
-  {
-    label: '자료 문의',
-    title: '문의와 자료 요청',
-    description:
-      '공개 가능한 템플릿과 산출물 예시, 기술 논의를 요청하세요.',
-    path: '/knowledge/contact',
+    action: '설계 지침 읽기',
   },
 ];
 
 export default function SignatureEntryPoints() {
   return (
-    <section className={styles.signaturePaths} aria-labelledby="signature-entry-title">
+    <section id="start-reading" className={styles.signaturePaths} aria-labelledby="signature-entry-title">
       <div className={styles.header}>
-        <p>추천 시작점</p>
-        <h2 id="signature-entry-title">설계·사례·문의</h2>
-        <span>
-          처음 방문하셨다면 아래 세 가지 경로로 시작하세요.
-        </span>
+        <p>처음 방문하셨나요?</p>
+        <h2 id="signature-entry-title">이 세 문서부터 읽어보세요</h2>
+        <span>라이선스 선택부터 도입 준비, 전체 설계까지 이어집니다. 필요한 문서부터 읽어도 좋습니다.</span>
       </div>
-
       <div className={styles.grid}>
         {entries.map((entry) => (
           <Link className={styles.card} to={entry.path} key={entry.title}>
             <span className={styles.label}>{entry.label}</span>
             <h3>{entry.title}</h3>
             <p>{entry.description}</p>
-            <strong>자세히 보기 →</strong>
+            <strong>{entry.action}<span aria-hidden="true"> →</span></strong>
           </Link>
         ))}
       </div>

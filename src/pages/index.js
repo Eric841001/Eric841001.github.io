@@ -85,9 +85,9 @@ export default function Home() {
 
       <main className="site-home">
         <HeroSection />
+        <SignatureEntryPoints />
         <LatestArticles />
         <KnowledgeGrid />
-        <SignatureEntryPoints />
         <ExecutiveDashboard />
       </main>
     </Layout>
