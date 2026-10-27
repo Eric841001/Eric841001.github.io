@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 export default function ReadingControls() {
+  const [ready, setReady] = useState(false);
   useEffect(() => {
     const reveal = () => {
       if (!window.location.hash) return;
@@ -24,6 +25,7 @@ export default function ReadingControls() {
     };
     window.addEventListener('hashchange', reveal);
     document.addEventListener('click', reopenCurrentFragment);
+    setReady(true);
     return () => {
       window.removeEventListener('hashchange', reveal);
       document.removeEventListener('click', reopenCurrentFragment);
@@ -35,7 +37,7 @@ export default function ReadingControls() {
   }
   return <nav className="kc-reading-controls" aria-label="긴 문서 탐색">
     <p>요약을 읽은 뒤 필요한 부분을 펼쳐 보세요. 목차나 본문 링크를 누르면 해당 부분이 열립니다.</p>
-    <div><button type="button" onClick={() => setSections(true)}>전체 펼치기</button>
-    <button type="button" onClick={() => setSections(false)}>요약만 보기</button></div>
+    <div><button type="button" disabled={!ready} onClick={() => setSections(true)}>전체 펼치기</button>
+    <button type="button" disabled={!ready} onClick={() => setSections(false)}>요약만 보기</button></div>
   </nav>;
 }
