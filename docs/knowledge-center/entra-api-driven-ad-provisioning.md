@@ -153,7 +153,13 @@ SCIM Bulk 요청의 각 작업은 `/Users` 경로로 전송합니다. 표준 Ent
 
 예시는 구조를 설명하기 위한 일부 속성만 보여줍니다. 실제 요청에는 전체·증분 동기화 모두 해당 사용자에 대해 매핑한 전체 속성 값을 포함하세요. 빈 값 지우기 기능(미리 보기)을 켰다면 `null`·빈 문자열뿐 아니라 해당 매핑 속성의 누락도 기존 값을 지울 수 있습니다. [요청 데이터와 비동기 처리 조건](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-concepts)을 확인하세요.
 
-원문 검증에서는 한 요청당 최대 50명의 작업을 묶어 전송했습니다. 실제 구현은 Microsoft의 현재 API 제한과 throttling 지침을 확인하고, 재시도·부분 실패·중복 요청을 안전하게 처리해야 합니다.
+`Operations` 배열에는 한 요청당 **사용자 작업을 최대 50개**까지 넣을 수 있습니다. 이는 [Microsoft Graph bulkUpload 제한](https://learn.microsoft.com/en-us/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-1.0)에 명시된 값입니다.
+
+호출 횟수는 요청 크기와 별도로 관리하세요.
+
+- [API 기반 프로비저닝 개요](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-concepts)는 **5초 동안 최대 40회**, **테넌트 전체의 24시간 한도는 P1/P2 2,000회·ID Governance 6,000회**로 안내합니다.
+- Graph API 참조에는 속도가 **초당 40회**로 적혀 있어 개요 문서와 단위가 다릅니다. 초기에는 더 낮은 한도인 5초당 40회를 넘지 않도록 호출하고, 실제 `429` 응답에 맞춰 조정하세요. 요청량은 24시간 한도도 함께 고려해야 합니다.
+- 일부 작업이 실패하면 결과 로그에서 실패한 레코드를 확인해 다시 전송하세요. 같은 요청을 반복해도 중복 계정이 생기지 않도록 매칭 속성을 정하고, 재시도에는 대기 시간을 두세요.
 
 ## 6. PowerShell 호출 구조
 
