@@ -64,7 +64,8 @@ body {
 }
 
 .navbar {
-  backdrop-filter: saturate(180%) blur(14px);
+  /* A filter makes this navbar the containing block for the fixed mobile menu. */
+  backdrop-filter: none;
 }
 
 .main-wrapper {
