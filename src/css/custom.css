@@ -3908,3 +3908,8 @@ body.kc-diagram-modal-open {
 [data-theme='dark'] .theme-doc-markdown small {color:var(--ifm-color-primary);background:var(--kc-surface-blue);}
 [data-theme='dark'] .theme-doc-markdown :is(.kc-about-hero__meta,.kc-about-card__facts) span {background:var(--kc-surface-blue);border-color:var(--kc-border-strong);color:var(--kc-ink);}
 [data-theme='dark'] .site-home [class*='label_'] {background:var(--kc-surface-blue);border-color:var(--kc-border-strong);}
+
+/* Home heading fragments clear the fixed navbar, like document headings. */
+.site-home :is(h1,h2,h3)[id] {scroll-margin-top:calc(var(--ifm-navbar-height) + 1rem);}
+
+.site-home h3 {word-break:keep-all;overflow-wrap:anywhere;}
