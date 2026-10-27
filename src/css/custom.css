@@ -3972,4 +3972,8 @@ body.kc-diagram-modal-open {
 
 .site-home #start-reading a {border-top-color:var(--kc-brand);}
 .site-home #start-reading a > span {color:var(--kc-brand);background:transparent;border:0;}
-.theme-doc-markdown > header + h2 {border-top:0;margin-top:1.5rem;padding-top:0;}
+.theme-doc-markdown > header + h2,
+.theme-doc-markdown > header + span[id] + h2 {border-top:0;margin-top:1.5rem;padding-top:0;}
+
+/* An opaque header keeps scrolled text out of the navigation. */
+.navbar,[data-theme='dark'] .navbar {background-color:var(--kc-surface);}
