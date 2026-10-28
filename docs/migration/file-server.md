@@ -74,6 +74,10 @@ The biggest risk is not the copy operation. The biggest risk is moving unmanaged
   <span>Apply lifecycle, permissions, labels, DLP, retention and Copilot readiness controls.</span>
 </div></div></div>
 
+## Target-specific boundaries
+
+SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files provides managed SMB/NFS file shares and has a different access, backup and data-protection model. SPMT migrates supported file shares to Microsoft 365; it is not an Azure Files migration tool. Choose the [Azure Files migration path](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview) for that target, and validate protocol, identity, ACL and metadata support. Do not assume SharePoint retention, container labels or Copilot indexing apply to an Azure file share simply because the files were moved to Azure.
+
 ## Implementation
 
 1. Inventory shares, size, file types and owners.

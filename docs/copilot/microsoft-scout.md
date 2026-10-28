@@ -19,7 +19,7 @@ For a pilot, confirm eligibility, identity, permissions, approval boundaries, au
 
 Microsoft Autopilot is Microsoft's always-on personal agent concept introduced for the next stage of Microsoft 365 AI experiences.
 
-Unlike traditional Copilot experiences that require direct user interaction, Autopilot represents a more proactive agent pattern: coordinating tasks, monitoring communications, preparing meetings and helping users manage commitments.
+Autopilot is a persistent personal-agent experience. Other Copilot experiences also support delegated or scheduled work; compare the specific experience and available permissions rather than treating all Copilot interactions as manual chat.
 
 <section className="kc-topic-hero kc-topic-hero--agent" aria-label="Microsoft Autopilot hero">
   <div className="kc-topic-hero__content">
@@ -36,7 +36,7 @@ Unlike traditional Copilot experiences that require direct user interaction, Aut
   <div className="kc-factory-panel" aria-label="Autopilot operating model">
     <div className="kc-factory-panel__header">
       <span>Personal Agent Operating Model</span>
-      <strong>Work IQ to governed proactive assistance</strong>
+      <strong>Microsoft IQ to governed proactive assistance</strong>
     </div>
     <div className="kc-factory-grid">
       <a href="#meeting-preparation" className="kc-factory-card">
@@ -57,7 +57,7 @@ Unlike traditional Copilot experiences that require direct user interaction, Aut
       <a href="#security-and-compliance" className="kc-factory-card">
         <small>04</small>
         <strong>Govern</strong>
-        <span>Apply Purview, Defender, policy enforcement, audit and compliance controls.</span>
+        <span>Validate permissions, audit coverage, approval rules and applicable security controls in the pilot.</span>
       </a>
     </div>
     <div className="kc-guardrail-panel">
@@ -73,16 +73,7 @@ Unlike traditional Copilot experiences that require direct user interaction, Aut
 
 Microsoft Autopilot is an autonomous personal work agent.
 
-Autopilot continuously monitors:
-
-- Outlook
-- Teams
-- Calendar
-- Meetings
-- Tasks
-- Commitments
-
-and proactively assists users without requiring every action to start from a manual prompt.
+The announcement describes a cloud-hosted agent with its own identity, memory, computer and workspace in the tenant. A user supplies its role, goal and boundaries; examples include following channels, recurring work and supplier-review coordination. Access to a particular mailbox, application or action depends on the preview configuration and granted permissions.
 
 ---
 
@@ -126,24 +117,24 @@ and proactively assists users without requiring every action to start from a man
 
 ## Copilot vs Autopilot {/* #copilot-vs-scout */}
 
-| Area | Copilot | Autopilot |
-|--------|--------|--------|
-| User Initiated | Yes | No |
-| Background Operation | No | Yes |
-| Memory | Limited | Persistent |
-| Task Monitoring | Limited | Continuous |
-| Scheduling | User Driven | Autonomous |
-| Proactive Actions | Limited | High |
+| Area | Copilot experiences | Autopilot private preview |
+|---|---|---|
+| Starting work | Interactive chat, delegated tasks or configured schedules, depending on the experience | User-defined role, goal and boundaries for persistent work |
+| Scheduled work | [Scheduled prompts](https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts) support recurring Copilot interactions | Recurring work is included in the announcement’s examples |
+| Persistence | Depends on Chat, Cowork and other capabilities | Own identity, memory, computer and workspace described in the announcement |
+| Availability and cost | License, feature rollout and usage terms vary | Confirm preview eligibility and usage-based billing before a pilot |
 
-Autopilot represents Microsoft's broader move from assistive AI toward agentic AI.
+Scheduled prompts require an eligible Copilot license and connected experiences. They are created and managed in the Work IQ tab. Current scheduled prompts no longer rely on Power Automate flows; legacy preview prompts can continue there until expiry. Disabling connected experiences hides prompt management but does not immediately stop existing schedules.
 
 ---
 
 ## Core Capabilities
 
+The sections below are proposed pilot workflows. The announcement demonstrates meeting preparation and follow-up as part of a supplier-review process; it does not guarantee every calendar, mail or task action listed here in every preview tenant. Confirm the required tools and approval behavior before assigning each workflow.
+
 ## Meeting Preparation
 
-Autopilot automatically:
+A meeting-preparation pilot could:
 
 - Reviews meeting context
 - Reads related emails
@@ -154,7 +145,7 @@ Autopilot automatically:
 
 ## Calendar Coordination
 
-Autopilot can:
+A configured pilot could:
 
 - Detect scheduling conflicts
 - Coordinate across time zones
@@ -164,7 +155,7 @@ Autopilot can:
 
 ## Task Management
 
-Autopilot can:
+A configured pilot could:
 
 - Track commitments
 - Monitor action items
@@ -174,7 +165,7 @@ Autopilot can:
 
 ## Email Assistance
 
-Autopilot continuously analyzes:
+An email-assistance pilot could review permitted sources such as:
 
 - Important emails
 - Escalations
@@ -186,9 +177,7 @@ and highlights items requiring attention.
 
 ## Work IQ Integration
 
-Microsoft Autopilot is powered by Work IQ.
-
-Work IQ provides:
+Microsoft describes Autopilot as built on Microsoft IQ. Work IQ supplies work context within that broader platform. Relevant context can include:
 
 - Organizational context
 - User behavior understanding
@@ -200,6 +189,8 @@ This enables Autopilot-like agent experiences to understand not only data but al
 ---
 
 ## Enterprise Use Cases
+
+These are candidate workflows for discovery, rather than a list of preconfigured product features.
 
 ## Executive Assistant
 
@@ -275,7 +266,7 @@ This enables Autopilot-like agent experiences to understand not only data but al
 
 Microsoft positions Autopilot as an enterprise-grade agent.
 
-Controls include:
+Validate the applicable controls and their coverage during the pilot:
 
 - Microsoft Purview
 - Microsoft Defender
@@ -305,7 +296,7 @@ The agent continuously works on behalf of the employee and surfaces only the inf
 
 ## Future Outlook
 
-Expected evolution:
+Possible design directions to evaluate, rather than announced delivery commitments:
 
 - Multi-Agent Collaboration
 - Persistent Memory
@@ -313,7 +304,7 @@ Expected evolution:
 - Autonomous Business Processes
 - Enterprise Digital Assistants
 
-Autopilot is likely to become a foundational component of Microsoft's Agentic AI strategy.
+These directions do not establish general availability or support for a specific integration.
 
 ---
 

@@ -154,6 +154,8 @@ The readiness question is no longer only "Can we enable Copilot?" It is "Can we 
 
 ## Readiness Score Model
 
+The levels, weights and thresholds in this guide are author-proposed planning aids. They do not represent Microsoft certification, a product prerequisite or a guarantee of readiness.
+
 | Score | Readiness Level | Meaning |
 |---:|---|---|
 | 0-40 | Not Ready | High risk. Remediation required before pilot. |

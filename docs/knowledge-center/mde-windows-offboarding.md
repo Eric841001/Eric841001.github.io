@@ -169,7 +169,7 @@ Verify:
 | Scope | Which devices are approved for offboarding? |
 | Timing | Is offboarding aligned with retirement, migration or tool transition? |
 | Security gap | What protects the device after Defender offboarding? |
-| Validation | How is sensor removal and portal inventory update confirmed? |
+| Validation | How are the offboarding state, last-seen timestamp and portal lifecycle record confirmed? |
 | Evidence | Which records are retained for audit or asset management? |
 
 ## Common Risks

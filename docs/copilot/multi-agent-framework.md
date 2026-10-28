@@ -100,7 +100,7 @@ For a pilot, confirm eligibility, identity, permissions, approval boundaries, au
 
 Enterprise AI is rapidly evolving from single-agent experiences toward coordinated multi-agent systems.
 
-A single agent can perform individual tasks, but complex enterprise processes typically require multiple specialized agents working together.
+A single agent can also complete complex processes. Add specialist agents when responsibilities, context, ownership or security boundaries justify the extra orchestration; size alone is not a reason to split.
 
 Microsoft's long-term vision for Agentic AI includes coordinated agents that collaborate across Microsoft 365, business applications, enterprise knowledge repositories and external systems.
 
@@ -147,16 +147,15 @@ A multi-agent architecture distributes responsibilities across specialized agent
 </ReadingSummary>
 
 
-| Capability | Single Agent | Multi-Agent |
-|------------|-------------|-------------|
-| Simple FAQ | Excellent | Excellent |
-| Knowledge Search | Good | Excellent |
-| Workflow Execution | Good | Excellent |
-| Enterprise Scale | Limited | Strong |
-| Governance | Moderate | Strong |
-| Reusability | Limited | High |
-| Maintainability | Difficult | Easier |
-| Complex Decision Support | Limited | Strong |
+| Decision area | Single agent | Multi-agent design |
+|---|---|---|
+| Bounded task | Often sufficient; fewer handoffs | Additional routing may add cost and latency |
+| Distinct domains | One agent can use scoped tools and workflows | Separate specialists can help when ownership or context differs |
+| Governance | Requires explicit permissions and controls | Each specialist and handoff needs the same controls |
+| Maintenance | Fewer components to coordinate | Independent releases can help, but integration tests are required |
+| Quality and scale | Measure with representative tasks | Do not assume improvement from agent count; measure completion, errors, latency and cost |
+
+See the [official agent design guidance](https://techcommunity.microsoft.com/blog/copilot-studio-blog/are-bigger-agents-better-how-to-design-agents-that-scale/4559073).
 
 ---
 
@@ -768,7 +767,7 @@ Example:
     <div className="kc-journey-node">
       <small>03</small>
       <strong>MCP</strong>
-      <span>Standardizes tool access, permission checks and integration patterns.</span>
+      <span>Standardizes tool discovery and calls; hosts, servers and underlying systems must enforce authorization and approval rules.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
@@ -792,6 +791,8 @@ Example:
 <ReadingSummary>
 
 ## Agent Memory Architecture
+
+These are conceptual storage categories. They are not three built-in Copilot Studio memory tiers. Configure retention, access, user isolation and deletion for each actual store; per-user agent memory does not automatically become shared organizational knowledge.
 
 </ReadingSummary>
 

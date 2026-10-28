@@ -81,6 +81,8 @@ Tenant restrictions decide which tenants users can access. Inspecting sensitive 
 
 ## Business Scenario
 
+Universal Tenant Restrictions applies TRv2 to traffic acquired through the configured GSA client or remote network. It does **not** process access to the tenant in which the restrictions are configured, including a guest accessing that tenant. Use separate inbound cross-tenant access and Conditional Access policies for that case. An external-tenant allow list must not be presented as a rule blocking every external identity. Test the actual sign-in tenant and resource tenant against [the official UTR examples](https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-universal-tenant-restrictions).
+
 Organizations frequently face challenges such as:
 
 - Personal Microsoft account usage
@@ -150,6 +152,8 @@ Typical customer requirements include:
 ---
 
 ## Tenant Restriction Design
+
+Consumer Microsoft accounts require a policy for the Microsoft account tenant (`9188040d-6c67-4c5b-b112-36a304b66dad`). User-level targeting is not supported for those accounts; application-level targeting is available. Blocking this tenant does not block every Windows service or B2B sign-in, and anonymous consumer OneDrive access needs separate controls. See [TRv2 consumer-account scope and limitations](https://learn.microsoft.com/en-us/entra/external-id/tenant-restrictions-v2).
 
 ## Objective
 

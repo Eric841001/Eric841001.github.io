@@ -158,7 +158,7 @@ Use this pattern when a customer says they have "E3".
 Copilot Studio should be reviewed across two dimensions:
 
 1. Maker access: tenant license and Copilot Studio User License.
-2. Runtime and scale: billed sessions, Copilot Credits, agent type, orchestration, knowledge and tools.
+2. Runtime and scale: Copilot Credits, agent type, orchestration, knowledge, tools and the applicable billing plan. The linked maker/tenant licensing procedure applies to the **standard harness**; verify the separate billing and access model for the new GitHub Copilot harness experience.
 
 The platform itself has also changed. New agent experience, Microsoft IQ, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, A2A and automated evaluations now affect governance design.
 
@@ -227,7 +227,7 @@ The platform itself has also changed. New agent experience, Microsoft IQ, Work I
 | Treating E3 as one universal capability set | distinguish Office 365 E3, Microsoft 365 E3 and add-on bundles |
 | Assuming purchased means enabled | verify user-level service plan enablement |
 | Recommending add-ons before entitlement review | check bundled features first |
-| Ignoring Copilot Studio runtime consumption | forecast Copilot Credits and billed sessions before scale-out |
+| Ignoring Copilot Studio runtime consumption | forecast Copilot Credits and the applicable usage-based charges before scale-out |
 | Treating Defender Plan 1 and Plan 2 as similar | separate prevention/detection from advanced investigation and automation |
 
 ## Recommended Next Steps

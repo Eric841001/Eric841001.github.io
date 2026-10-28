@@ -137,7 +137,7 @@ SOC 담당자가 경고를 분류하고 원인을 조사한 뒤 격리·복구·
   <div className="kc-platform-fit__card">
   <small>Hunting</small>
   <strong>Advanced Hunting</strong>
-  <span>KQL-driven investigation across supported Defender and Sentinel tables.</span>
+  <span>KQL-driven investigation across licensed Defender data and an onboarded Sentinel workspace, with the required table permissions.</span>
 </div>
 </div>
 
@@ -215,6 +215,8 @@ Automation is valuable only when the response boundary is clear. Defender XDR pr
 | Custom detection | Require owner, test result, false positive review and retirement date. |
 
 ## Hunting Starter Pack
+
+Advanced hunting exposes up to **30 days of raw Defender XDR data**. Querying Sentinel data requires connecting its workspace to the Defender portal; analytics-tier retention then follows that workspace configuration. Table access also depends on assigned permissions. A Defender XDR license or portal access alone does not populate all Sentinel tables or extend Defender raw-data retention. See [the current hunting prerequisites](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview).
 
 Advanced hunting should not be treated as a random query library. It should be mapped to the enterprise’s current risk themes.
 

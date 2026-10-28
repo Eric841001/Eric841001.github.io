@@ -16,7 +16,7 @@ Skills allow organizations to standardize financial analysis, planning, forecast
 
 This guide combines documented Excel capabilities with author-proposed finance workflows. The architecture and finance scenarios are design examples, not a separate Microsoft product or a guarantee of financial accuracy.
 
-As checked on 2026-10-25, the [official Excel Skills guide](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-skills) requires the Office display language to be **English**. The skill-builder capability is rolling out and might not appear for every customer. Confirm the account entitlement, app build, channel and available menu before rollout.
+The [official Excel Skills guide](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-skills) describes both Microsoft-managed and custom skills. Its current instructions do not state an English-only display-language requirement. Confirm the account entitlement, app build, language support and available menus before rollout; skill-builder is still rolling out.
 
 <section aria-label="Excel Copilot Skills hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
@@ -301,17 +301,11 @@ This reduces reliance on individual prompt engineering.
 
 ### Available Today
 
-- Core Skills
-- Financial Connectors
-- Change Tracking
-- Workbook Rules
+The support guide documents selecting skills, managing them and creating custom skills manually in OneDrive. Skill-builder is rolling out separately. Turning a skill off stops automatic use; a direct @mention can still invoke it, so this toggle is not a security block.
 
 ### Upcoming
 
-- Custom Skill General Availability
-- Marketplace Distribution
-- Partner Skills
-- Industry-Specific Finance Skills
+Treat any future marketplace or partner-finance integration as a separate availability check. This guide does not establish a delivery date or entitlement for a provider's data or connector.
 
 ---
 

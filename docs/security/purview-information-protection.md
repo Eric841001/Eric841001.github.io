@@ -203,7 +203,7 @@ Examples:
 
 ### Encryption
 
-Protection follows the document regardless of location.
+Encryption configured on a sensitivity label can remain with supported files when they leave their original location. A classification-only label does not encrypt a file. A label applied to a Team, group or site controls that container; it does not automatically label or encrypt every file inside it. The chosen rights, file format, client and authorized identity determine the result. See [label encryption](https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels) and [labels for groups and sites](https://learn.microsoft.com/en-us/purview/sensitivity-labels-teams-groups-sites).
 
 Capabilities:
 

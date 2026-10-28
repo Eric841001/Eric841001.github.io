@@ -114,12 +114,12 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
 ```
 
-Create a transport rule for a specific approved recipient scenario.
+Create a transport rule for a specific approved recipient scenario. The `SentTo` value must resolve to a mailbox, mail user or mail contact in your Exchange organization; an arbitrary external SMTP address is not a directory recipient. For this example, first confirm the approved external recipient exists as a mail contact and use its identity. See [mail flow rule recipient conditions](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions). Test a message that also contains an unapproved recipient before rollout; do not assume recipient matching safely confines a message-level decryption action in every mixed-recipient case.
 
 ```powershell
 New-TransportRule `
   -Name "Remove OMEv2 for Approved External Recipient" `
-  -SentTo "<approved-recipient@domain.com>" `
+  -SentTo "<approved-mail-contact-identity>" `
   -FromScope InOrganization `
   -RemoveOMEv2 $true
 ```
@@ -203,8 +203,8 @@ Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파�
 | Business reason | 암호화 제거가 필요한 업무 사유 |
 | Recipient trust | 승인된 외부 수신자 또는 도메인 검증 |
 | 규칙 범위 | 발신자, 수신자, 조건과 예외 범위 |
-| Security 승인 | 보안 또는 규정 준수 승인 기록 |
-| Test 증거 자료 | approved 수신자와 non-approved 수신자 테스트 결과 |
+| 보안 승인 | 보안 또는 규정 준수 승인 기록 |
+| 시험 기록 | 승인 수신자, 비승인 수신자와 두 대상이 함께 포함된 메일의 시험 결과 |
 | Review cadence | 예외 규칙의 정기 검토 주기 |
 
 ## Related Documents

@@ -64,6 +64,10 @@ Safe Links, Safe Attachments와 피싱 방지 정책을 설정하고, 사용자 
 
 ## Core Control Model
 
+### Match the capability to the plan
+
+Safe Links, Safe Attachments and impersonation protection are Plan 1 capabilities. **Attack simulation training, Threat Explorer, Campaigns and automated investigation and response require Plan 2**. Do not use the presence of Safe Links as evidence that a tenant can run every investigation or training workflow below. Confirm user entitlement and assigned portal permissions against [the official Plan 1/Plan 2 comparison](https://learn.microsoft.com/en-us/defender-office-365/mdo-about). Quarantine release also depends on the protection category and assigned quarantine policy; users cannot release every threat category themselves.
+
 <div className="kc-platform-fit">
   <div className="kc-platform-fit__card">
   <small>Anti-phishing</small>

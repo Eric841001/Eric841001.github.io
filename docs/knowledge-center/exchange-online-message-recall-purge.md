@@ -142,10 +142,10 @@ Example structure:
 New-ComplianceSearch `
   -Name "Search-Message-Removal" `
   -ExchangeLocation All `
-  -ContentMatchQuery 'subject:"<subject>" AND sender:"<sender>" AND sent:"<date>"'
+  -ContentMatchQuery 'subject:"<subject>" AND from:"<sender>" AND sent:<YYYY-MM-DD>'
 ```
 
-Adjust the query to match the actual incident.
+Use the supported KeyQL property `from`, even though the condition builder labels the field Sender. Replace the date placeholder with an ISO date. `subject` matches a phrase within a subject, not only an exact full subject, so review every result before purge. See [searchable mailbox properties](https://learn.microsoft.com/en-us/purview/edisc-search-mailboxes). Adjust the query and mailbox scope to the actual incident.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: mde-atomic-red-team
 title: Microsoft Defender Validation with Atomic Red Team
-description: "Microsoft Defender Validation with Atomic Red Team - Atomic Red Team provides safe adversary simulation tests used to validate Microsoft Defender..."
+description: "Microsoft Defender Validation with Atomic Red Team - Atomic Red Team provides ATT&CK-mapped adversary simulation tests used to validate Microsoft Defender..."
 sidebar_label: Atomic Red Team
 ---
 
@@ -11,7 +11,7 @@ sidebar_label: Atomic Red Team
   <div>
     <span className="kc-eyebrow">DEFENDER VALIDATION PLAYBOOK</span>
     <h2>Prove detection coverage before real incidents occur</h2>
-    <p>Atomic Red Team validation connects safe adversary simulation, Defender XDR evidence, SOC triage and detection tuning into a repeatable assurance workflow.</p>
+    <p>Atomic Red Team validation connects authorized adversary simulation, Defender XDR evidence, SOC triage and detection tuning into a repeatable assurance workflow.</p>
   </div>
   <div aria-label="Atomic Red Team validation focus" className="kc-hero-metrics">
     <div>
@@ -35,7 +35,7 @@ sidebar_label: Atomic Red Team
 
 ## Executive Summary
 
-Atomic Red Team provides safe adversary simulation tests used to validate Microsoft Defender detection and response capabilities.
+Atomic Red Team provides ATT&CK-mapped tests that execute adversary behaviors. Review each test, its prerequisites and cleanup steps before using it in an isolated, authorized environment; a test is not harmless simply because it belongs to this library. See the [official Atomic Red Team project](https://github.com/redcanaryco/atomic-red-team).
 
 It allows organizations to verify detection coverage before real incidents occur.
 
@@ -104,13 +104,15 @@ Organizations require:
 
 | Technique | Description |
 |------------|------------|
-| T1059 | Command Execution |
-| T1105 | File Download |
-| T1003 | Credential Access |
+| T1059 | Command and Scripting Interpreter |
+| T1105 | Ingress Tool Transfer |
+| T1003 | OS Credential Dumping |
 | T1055 | Process Injection |
-| T1562 | Defense Evasion |
+| [T1685](https://attack.mitre.org/techniques/T1685/) | Disable or Modify Tools |
 
 ---
+
+ATT&CK v19 split the former Defense Evasion tactic into Stealth and Defense Impairment. Older Atomic tests can retain T1562-era IDs, so record the test library revision and map the exact test to the current technique instead of treating T1562 as a current umbrella technique. See [the official ATT&CK update](https://attack.mitre.org/resources/updates/updates-april-2026/). These are technique names, not the broader ATT&CK tactics. Use the [MITRE ATT&CK enterprise technique catalog](https://attack.mitre.org/techniques/enterprise/) to select the exact sub-technique and expected behavior.
 
 ## Recommended Testing Process
 

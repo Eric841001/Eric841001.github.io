@@ -554,6 +554,8 @@ Agents become more valuable when they can take action.
 
 ## MCP Integration
 
+MCP capabilities vary by harness. In the [standard-harness procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent), server resources must be exposed as tool outputs to be used by the agent. Review enabled tools and connector data policies; the protocol itself does not grant access or enforce business approvals.
+
 </ReadingSummary>
 
 
@@ -903,7 +905,7 @@ Consider:
 
 - Microsoft 365 Copilot licensing
 - Copilot Studio licensing
-- Copilot Studio messages
+- Copilot Credits and the selected harness’s usage-based billing
 - Power Platform capacity
 - Dataverse capacity
 - Connector licensing

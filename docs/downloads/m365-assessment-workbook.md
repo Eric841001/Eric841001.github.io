@@ -422,6 +422,8 @@ The objective is to identify risks, optimization opportunities and strategic rec
 
 ### Overall Readiness
 
+For this author-proposed scorecard, score each assessed domain from 1 to 5, then calculate `(average domain score - 1) / 4 × 100`. Round to the nearest whole number before applying the bands below. Mark missing evidence as not assessed and report coverage separately; do not treat a partial score as permission to deploy. The bands are planning examples, rather than a Microsoft readiness certification.
+
 | Score | Readiness Level |
 |---|---|
 | 0-40 | Not Ready |

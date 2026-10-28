@@ -453,6 +453,8 @@ Typical tenant-to-tenant migration scope includes:
 
 ## Exchange Online Migration
 
+For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration), any hold blocks the move. A successful move deletes the source mailbox; it is no longer discoverable there. Prepare preservation requirements and a method-specific recovery plan before cutover. Do not assume the migration leaves a reversible source copy.
+
 </ReadingSummary>
 
 
@@ -853,7 +855,7 @@ Typical scenarios include:
 
 ### Shared Domain and Subdomain Routing
 
-When the same email domain must be shared or transitioned between environments, routing design must be completed before migration.
+A custom domain can be verified in only one Microsoft 365 tenant at a time. Mail coexistence with a legacy system is different from verifying the same domain in two Microsoft 365 tenants. Design alternate routing addresses, source dependency removal, domain release and target verification before cutover.
 
 Recommended options:
 
@@ -946,7 +948,7 @@ Use cases:
 
 Important limitation:
 
-Administrative Units do not provide full tenant-level separation. They should be used for scoped delegation, not as a replacement for tenant isolation.
+Administrative Units scope supported Entra directory roles to users, groups and devices. They do not scope Intune device-management permissions or hide all directory objects. Use Intune RBAC and scope tags for Intune administration, and retain separate tenant-isolation decisions. See [Administrative Units](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units).
 
 ---
 

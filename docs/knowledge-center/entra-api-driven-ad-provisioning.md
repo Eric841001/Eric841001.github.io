@@ -39,6 +39,7 @@ API 호출 서버가 Forest A의 디렉터리를 직접 조회할 수도 있고,
 
 | 구성 요소 | 요구사항 |
 |---|---|
+| 라이선스 | Microsoft Entra ID P1, P2 또는 ID Governance. 대상 사용자에게 필요한 권한과 일일 API 한도를 확인 |
 | 관리자 역할 | 에이전트 등록에는 최소 Hybrid Identity Administrator, 대상 AD 구성에는 필요한 도메인 권한 |
 | 네트워크 | Provisioning Agent가 Microsoft 서비스로 HTTPS 443 아웃바운드 통신 가능 |
 | 대상 AD | Forest B의 쓰기 가능한 대상 OU와 계정 생성 권한 |

@@ -168,9 +168,11 @@ Examples:
 
 Cross-tenant synchronization provisions B2B collaboration users and supported security groups into a target tenant. It is a one-way provisioning process; source identities remain responsible for authentication. It does not migrate mailboxes, files or Teams content. See the [supported objects and group limitations](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#object-types).
 
+For same-cloud user synchronization, each synchronized user needs Entra ID P1 in the source tenant. Group synchronization and cross-cloud synchronization require Entra ID Governance or Entra Suite. Target-tenant features can have their own licenses. Devices and contacts are not supported sync objects. See [the current license and object table](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview).
+
 Users remain in their original tenant.
 
-Data remains in its original tenant.
+Workload content remains in its original tenant; selected identity attributes are provisioned into the target tenant.
 
 ---
 
@@ -221,7 +223,7 @@ No Teams migration.
 
 ### Lower Risk
 
-Business disruption minimized.
+There is no mailbox or file cutover, but provisioning, access-policy and collaboration changes can still disrupt users. Estimate risk from the actual design and pilot results.
 
 ---
 
@@ -495,7 +497,7 @@ Unified Copilot access model.
 
 ### Cross-Tenant Sync
 
-Users switch tenant context.
+Some resource-tenant operations still require a tenant context. Multi-tenant organization experiences can improve cross-tenant people discovery and collaboration, but synchronization does not merge workload data or every Teams experience.
 
 ---
 
@@ -536,7 +538,7 @@ Benefits:
 Benefits:
 
 - Data Segmentation
-- Regional Compliance
+- Separate workload residency, with identity transfers and access obligations reviewed independently
 
 Risks:
 
@@ -550,7 +552,7 @@ Risks:
 Benefits:
 
 - Single Security Model
-- Simplified Compliance
+- Centralized compliance administration; actual compliance still depends on requirements and controls
 
 Risks:
 

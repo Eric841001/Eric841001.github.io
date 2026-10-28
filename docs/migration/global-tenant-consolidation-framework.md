@@ -203,7 +203,7 @@ This is especially important when:
 
 ## Shared Domain Strategy
 
-When two environments need to share or transition the same SMTP domain, additional routing design is required.
+When two environments need to share or transition the same SMTP domain, additional routing design is required. **One Microsoft 365 tenant owns a custom domain at a time.** Cross-tenant synchronization does not let two tenants verify and use the same domain simultaneously. Distinguish legacy-system shared-namespace routing from a domain transfer between Microsoft 365 tenants; use approved alternate routing domains during coexistence. See [domain ownership and Outlook cutover behavior](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration#how-do-we-access-outlook-on-day-1-after-the-user-mailbox-is-moved).
 
 ### Key Design Options
 
@@ -366,7 +366,7 @@ Administrative Units can provide limited regional administration.
 
 Administrative Units do not provide complete tenant-level separation.
 
-They are suitable for delegated administration but not for full regional autonomy.
+They are suitable for delegated administration but not for full regional autonomy. Administrative units scope supported Entra management permissions; they do not hide all other directory objects or delegate Intune device management. Use Intune RBAC and scope tags for that separate workload. See [supported administrative unit scenarios](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units).
 
 ---
 
@@ -381,7 +381,7 @@ Download restriction can be implemented through Conditional Access and SharePoin
 | Guest User | Browser-only access |
 | Internal Employee | Download allowed based on policy |
 | Regional Employee | Group-based exception |
-| Privileged User | Download and offline access allowed |
+| Privileged User | Apply the approved device/data controls; administrative privilege alone is not a download exception |
 | Unmanaged Device | Browser-only or block download |
 
 ---

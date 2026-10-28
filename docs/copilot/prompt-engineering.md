@@ -12,9 +12,7 @@ toc_max_heading_level: 2
 
 Prompt Engineering is the foundation of successful Microsoft Copilot adoption.
 
-Organizations that achieve measurable Copilot ROI do not rely on ad-hoc prompting.
-
-They establish:
+Teams can improve consistency by maintaining reusable prompts and checking results. This guide proposes:
 
 - Prompt Standards
 - Prompt Libraries
@@ -22,9 +20,7 @@ They establish:
 - Prompt Review Processes
 - Prompt-to-Agent Development Models
 
-Prompt Engineering is not a technical skill.
-
-It is a business capability.
+Prompt design combines technical knowledge with an understanding of the business task, data access and review requirements.
 
 <section className="kc-topic-hero kc-topic-hero--agent" aria-label="Prompt engineering hero">
   <div className="kc-topic-hero__content">
@@ -86,11 +82,13 @@ Organizations often experience:
 - User frustration
 - Low adoption rates
 
-These issues are usually caused by poor prompt design rather than AI limitations.
+Unclear prompts can contribute to these issues. Model limitations, missing or inaccessible sources, outdated information and unsuitable tools also affect results. A well-written prompt does not guarantee factual accuracy; verify important claims against the original sources.
 
 ---
 
 ## Enterprise Prompt Maturity Model
+
+The five levels below are an author-proposed planning model, rather than a Microsoft certification or measured adoption scale.
 
 | Level | Description |
 |---------|------------|
@@ -143,6 +141,8 @@ These issues are usually caused by poor prompt design rather than AI limitations
 ## Recommended Prompt Framework
 
 ## R-T-C-O-C Model
+
+This guide uses Role, Task, Context, Output and Constraints as a workshop template. Microsoft’s [prompting guidance](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot) instead describes Goal, Context, Source and Expectations; only a clear goal is required. Add a role or other detail when it helps the task, and identify the source documents explicitly.
 
 ### Role
 
@@ -410,7 +410,7 @@ Project Timeline
 
 ## Prompt → Skill → Agent
 
-Prompt Engineering is evolving.
+The sequence below is a possible development approach. A prompt does not automatically become a skill or an agent: implementation also requires tool definitions, permissions, execution logic, tests and an owner.
 
 Traditional Model:
 
@@ -549,7 +549,7 @@ Recommended responsibilities:
 
 ## Future State
 
-Prompt Engineering will evolve into:
+The following is an author-proposed direction for teams that need greater automation, rather than a Microsoft product roadmap or a required progression:
 
 Prompt
 

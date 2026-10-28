@@ -191,7 +191,7 @@ Exchange Group Mailbox
 OneNote
 ```
 
-Every Team creates associated Microsoft 365 workloads.
+A team can create a new Microsoft 365 group or use an existing group owned by its creator. These are related services, not a serial processing pipeline. Standard-channel files use the parent team's SharePoint site; private and shared channels each have a separate SharePoint site with their own membership boundary. See [Microsoft 365 Groups and Teams](https://learn.microsoft.com/en-us/microsoftteams/office-365-groups) and [Teams/SharePoint integration](https://learn.microsoft.com/en-us/sharepoint/teams-connected-sites).
 
 ---
 
@@ -323,6 +323,8 @@ Guest Users:
 
 ---
 
+A Microsoft 365 group expiration policy expires the group; it is not an individual guest-account expiration control. Choose the appropriate guest access review or lifecycle process separately, and confirm its license and workload scope. See [group expiration](https://learn.microsoft.com/en-us/entra/identity/users/groups-lifecycle).
+
 ### High-Sensitivity Teams
 
 Examples:
@@ -405,7 +407,7 @@ Recommended for:
 
 ### Shared Channels
 
-Cross-team collaboration.
+Cross-team collaboration. External participation uses **Microsoft Entra B2B direct connect**, not a guest object in the host tenant. Both organizations must configure the required cross-tenant access and Teams settings. Existing guests cannot simply be added to a shared channel. See [shared channel prerequisites and limitations](https://learn.microsoft.com/en-us/microsoftteams/shared-channels).
 
 Recommended for:
 
@@ -535,7 +537,9 @@ Responsibilities:
 
 ## KPI Framework
 
-| KPI | Target |
+The following targets are planning examples to agree with the organization, not Microsoft requirements.
+
+| KPI | Example planning target |
 |------|------|
 | Teams with Owners | 100% |
 | Guest Review Completion | > 95% |

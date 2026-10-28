@@ -173,14 +173,15 @@ Review:
 
 ### Device Enrollment
 
-Supported methods:
+Microsoft Entra join describes device identity; Intune enrollment establishes device management. Joining Entra ID alone does not prove successful MDM enrollment. Use the [Windows enrollment guide](https://learn.microsoft.com/en-us/intune/device-enrollment/windows/guide) to choose and validate the management path.
 
-| Method | Scenario |
+| Enrollment path | Scenario and prerequisites |
 |---|---|
-| Entra Join | Cloud-native |
-| Hybrid Join | Existing AD environments |
-| Autopilot | New device provisioning |
-| BYOD Enrollment | Personal devices |
+| Automatic MDM enrollment | Eligible users and configured MDM scope; commonly combined with Entra join |
+| Group Policy enrollment | Eligible AD domain-joined devices with the required Entra hybrid join and MDM configuration |
+| Windows Autopilot | Supported corporate provisioning scenarios; verify mode, identity and enrollment requirements |
+| User-driven BYOD enrollment | Personal devices allowed by the organization's enrollment restrictions |
+| Co-management | Configuration Manager and Intune management with planned workload ownership |
 
 ---
 

@@ -156,6 +156,8 @@ Hub Sites should be used to organize related sites and provide:
 - Governance alignment
 - Logical grouping
 
+Hub association shares navigation and discovery; it does not automatically grant access to every associated site. Preserve each site's permissions and decide separately whether to configure supported hub permission synchronization. See [hub planning and permissions](https://learn.microsoft.com/en-us/sharepoint/planning-hub-sites).
+
 Recommended hub models:
 
 | Hub Type | Purpose |
@@ -317,10 +319,12 @@ Avoid assigning permissions directly to individual users unless there is a docum
 | Owner | Site administration and permission management |
 | Member | Content contribution |
 | Visitor | Read-only access |
-| Restricted Access | Sensitive libraries or controlled content |
-| External Guest | Partner or vendor collaboration |
+| Separately scoped group | Assign an appropriate permission level to approved users for sensitive content |
+| External guest identity | Assign only the required content permissions; guest status is not a permission level |
 
 ---
+
+Owners, Members and Visitors are groups commonly associated with Full Control, Edit and Read. **Limited Access** is a system-assigned navigation permission, not a custom sensitive-library role or a grant to read all site content. For group-connected team sites, normally manage membership through the Microsoft 365 group. See [SharePoint permission levels](https://learn.microsoft.com/en-us/sharepoint/understanding-permission-levels).
 
 ## External Sharing Strategy
 

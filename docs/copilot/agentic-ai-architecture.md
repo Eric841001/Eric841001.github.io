@@ -957,6 +957,8 @@ An Agent Factory provides repeatable delivery.
 
 ## Maturity Model
 
+The levels, weights and thresholds in this guide are author-proposed planning aids. They do not represent Microsoft certification, a product prerequisite or a guarantee of readiness.
+
 </ReadingSummary>
 
 

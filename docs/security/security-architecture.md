@@ -563,6 +563,8 @@ Provides:
 
 ## Security Maturity Model
 
+The five levels below are an author-proposed planning model, not Microsoft's official Zero Trust maturity scale. Select and test concrete controls for the organization; reaching a numbered level does not certify protection or compliance.
+
 | Level | Description |
 |---------|---------|
 | Level 1 | Basic Security |

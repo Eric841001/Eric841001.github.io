@@ -97,7 +97,7 @@ Typical Azure initiatives include:
     <div className="kc-journey-node kc-journey-node--demand">
       <small>01</small>
       <strong>Tenant root</strong>
-      <span>Root management group sets global policy, guardrails and inheritance model.</span>
+      <span>Tenant root defines the top of the hierarchy; keep root-scope policy assignments limited and place shared guardrails at the appropriate intermediate management group.</span>
     </div>
     <div className="kc-journey-node">
       <small>02</small>
@@ -135,6 +135,8 @@ Typical Azure initiatives include:
 | Operations | Monitor, Log Analytics, alerts, backup | Operational model |
 | FinOps | Budgets, cost allocation, rightsizing | Cost management model |
 
+Management groups organize policy inheritance. Avoid duplicating the organization chart or creating management groups solely for production/test/development separation; use subscriptions where appropriate. Keep root assignments limited and scope workload-team RBAC to the subscriptions or resource groups they need. See [current management group recommendations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups).
+
 ## Network Architecture
 
 <div aria-label="Azure landing zone network architecture" className="kc-journey-map">
@@ -170,6 +172,8 @@ Typical Azure initiatives include:
     </div>
   </div>
 </div>
+
+For new network logging, use **virtual network flow logs**. NSG flow logs no longer allow new creation and retire on **September 30, 2027**. Plan migration of existing logs and Traffic Analytics instead of copying a legacy NSG logging deployment. See [the retirement and migration notice](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview).
 
 ## Decision Checklist
 

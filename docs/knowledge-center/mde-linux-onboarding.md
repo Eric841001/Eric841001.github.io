@@ -139,6 +139,14 @@ Check status.
 mdatp health
 ```
 
+Test service connectivity separately from the health summary.
+
+```bash
+mdatp connectivity test
+```
+
+The health summary and a nonempty organization ID alone do not prove every service endpoint is reachable. See the [Linux connectivity test](https://learn.microsoft.com/en-us/defender-endpoint/linux-support-connectivity) and [command reference](https://learn.microsoft.com/en-us/defender-endpoint/linux-resources).
+
 Check Org ID.
 
 ```bash
@@ -148,7 +156,7 @@ mdatp health --field org_id
 Enable real-time protection.
 
 ```bash
-mdatp config real-time-protection --value enabled
+sudo mdatp config real-time-protection --value enabled
 ```
 
 ## Operational Acceptance Criteria
@@ -156,7 +164,7 @@ mdatp config real-time-protection --value enabled
 Use the following criteria before marking the onboarding as complete:
 
 - the device appears in Microsoft Defender XDR with the expected hostname and operating system
-- `mdatp health` reports healthy cloud connectivity, real-time protection and valid organization ID
+- `mdatp health` reports the expected protection and organization state, and `mdatp connectivity test` verifies the required service connectivity
 - vulnerability management data is visible for the onboarded server
 - alert routing to the SOC or operations team has been validated
 - proxy and update paths are documented for future patching or incident response

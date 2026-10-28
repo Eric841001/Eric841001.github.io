@@ -383,7 +383,7 @@ When publishing these references externally:
 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- 제안서에 포함할 anonymized 익명화한 프로젝트 사례 작성
+- 제안서에 포함할 익명 프로젝트 사례 작성
 - Microsoft 365·Copilot·보안 프로젝트 사례 정리
 - 업종별 문제와 프로젝트 수행 방법 비교
 - SOW, WBS, 위험 등록부, 운영 기준 문서 산출물 재사용

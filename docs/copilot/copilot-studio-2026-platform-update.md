@@ -72,6 +72,8 @@ Copilot, Copilot Studio, M365 Agents와 Copilot Cowork는 맡길 업무에 맞�
 
 ## 2026 Capability Map
 
+The map combines released features and previews. Agent readiness remains preview; the current Work IQ guide identifies Work IQ as GA, while Business apps remains preview. Review each linked feature’s harness, permissions and availability before implementation. [Work IQ configuration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq) takes precedence over older monthly preview labels.
+
 <div className="kc-platform-fit" aria-label="Copilot Studio 2026 capability map">
   <div className="kc-platform-fit__card">
   <small>June 2026</small>
@@ -222,7 +224,7 @@ Source: [Microsoft Copilot Studio announcement](https://techcommunity.microsoft.
     <a href="/knowledge/copilot/copilot-cowork-cost-governance">
       <small>Cost</small>
       <strong>Consumption forecast</strong>
-      <span>Estimate Copilot Credits, billed sessions, volume assumptions and cost ownership.</span>
+      <span>Estimate Copilot Credits, task volume, applicable usage rates and cost ownership.</span>
     </a>
     <a href="/knowledge/copilot/governance">
       <small>Quality</small>

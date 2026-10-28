@@ -471,6 +471,8 @@ Review:
 
 ---
 
+Native cross-tenant mailbox moves are blocked for mailboxes on hold. After a successful move, the source mailbox is deleted and is not available for investigation in the source tenant. This is a move, not a reversible copy; an ordinary source-side rollback plan is insufficient. Review holds, preservation obligations, user-visible content scope and post-move routing before the migration. See [the current mailbox move conditions](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration).
+
 ## Coexistence Strategy
 
 During migration:
@@ -580,6 +582,8 @@ Welcome Guide
 
 ## Success Criteria
 
+Define acceptance per workload and reconcile every skipped or failed item. The percentages below are illustrative planning targets, not a Microsoft service guarantee or permission to lose one percent of the data. Unexplained missing critical content is a cutover blocker; record approved exclusions separately.
+
 ### Technical
 
 - Data Integrity > 99%
@@ -603,7 +607,7 @@ Welcome Guide
 
 ## KPI Framework
 
-| KPI | Target |
+| KPI | Example planning target |
 |------|------|
 | Mailbox Success Rate | >99% |
 | OneDrive Success Rate | >99% |

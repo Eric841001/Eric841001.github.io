@@ -84,6 +84,10 @@ Google Workspace의 메일·일정·연락처와 Drive 자료를 Microsoft 365�
 6. Execute migration waves.
 7. Validate mail flow, calendars, permissions and file access.
 
+## Supported migration paths
+
+Use Exchange Online's documented Google Workspace mailbox migration for mail, calendar and contacts. For Google Drive files, use **Migration Manager for Google Workspace**, not SharePoint Migration Tool (SPMT): SPMT supports on-premises SharePoint and file shares as sources. Review Google Drive identity mapping and permission settings separately; mapping a user alone does not enable file-level permission migration. See [Migration Manager's current workflow](https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview).
+
 ## Security
 
 - Review third-party app access before migration.
@@ -125,7 +129,7 @@ Drive ownership and shared drive structure often create more complexity than mai
 ## References
 
 - [Migrate Google Workspace mailboxes](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration)
-- [SharePoint Migration Tool](https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool)
+- [Migration Manager for Google Workspace](https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview)
 ## Contact / Asset Request
 
 For Google Workspace assessment templates, user mapping workbooks, shared drive inventory models, cutover plans or adoption communication samples, use [Contact and Asset Request](../contact).

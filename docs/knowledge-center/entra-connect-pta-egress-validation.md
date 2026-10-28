@@ -130,6 +130,8 @@ Avoid inline inspection and TLS termination on outbound TLS traffic between the 
 
 ## Proxy Configuration Boundaries
 
+Connect Sync also has an authentication migration deadline: upgrade to **2.6.84.0 or later** and configure **application-based authentication by April 7, 2027**. Microsoft warns that synchronization stops after that date if both requirements are not met. This is a Connect Sync requirement, not a PTA agent version number. Include the authentication path and registration/update traffic in the egress tests; see [current Connect prerequisites](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites).
+
 Microsoft Entra Connect installation and Sync are .NET applications. Microsoft documents the machine-level `.NET Framework` `machine.config` proxy setting for these components. Back up the file, validate its XML, restart the relevant service in a controlled window, and recheck the setting after change management.
 
 The PTA agent runs as a Windows service and can require its own service configuration when WPAD is not available. Do not assume that a user-level browser proxy or WinHTTP setting automatically covers the PTA service context.

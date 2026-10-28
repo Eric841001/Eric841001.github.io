@@ -111,7 +111,7 @@ IB should not be treated as a simple user blocking feature. It should be designe
 | Principle | Guidance |
 |---|---|
 | Matrix First | 정책을 만들기 전에 부서/사용자 간 허용·차단 표를 먼저 확정합니다. |
-| Symmetric Policy | A에서 B를 차단했다면 B에서 A를 차단하는 대칭 정책도 검토합니다. |
+| Symmetric Policy | IB는 양방향 제한만 지원합니다. A→B와 B→A가 같은 제한이 되도록 정책을 구성하고 확인합니다. 한 방향만 허용하는 설계는 지원하지 않습니다. |
 | Exception by Segment | 예외 사용자가 필요하면 개별 예외 사용자를 별도 세그먼트로 분리합니다. |
 | Workload Validation | Teams, SharePoint, OneDrive는 정책 적용 방식과 검증 항목이 다릅니다. |
 | Evidence Ready | 정책 설정, 테스트 결과, 오류 화면, 로그를 감사 대응 패키지로 보관합니다. |
@@ -186,11 +186,13 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시
 | 차단 대상 사용자가 포함된 그룹 채팅 | 초대 또는 대화 참여 차단 |
 | 팀 구성원 추가 | 정책에 맞지 않는 사용자는 추가 차단 |
 | 동일 Segment 사용자 채팅 | 정상 허용 |
-| 예외 Segment 사용자 | 승인된 방향과 상대에 대해서만 허용 |
+| 예외 Segment 사용자 | 양방향으로 호환되는 상대와 정책 범위에서 허용 |
 
 검증 시에는 허용 시나리오와 차단 시나리오를 모두 캡처해야 합니다. 차단 화면만 남기면 운영팀이 정상 협업 영향도를 판단하기 어렵습니다.
 
 ## SharePoint / OneDrive 검증
+
+아래의 세그먼트 일치 검사는 주로 SharePoint의 **Explicit** 모드를 전제로 합니다. Open은 사이트 권한, Owner Moderated는 소유자가 관리하는 협업과 그룹 구성원 여부, Implicit은 연결된 Microsoft 365 그룹 구성원 여부를 기준으로 동작합니다. 모든 모드에 같은 세그먼트 차단 규칙을 적용하면 안 됩니다. 세그먼트가 일치해도 사이트 권한이 자동으로 생기지는 않습니다. SharePoint와 OneDrive의 모드·공유·접근 조건을 각각 확인하세요. [SharePoint 모드별 동작](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint)과 [OneDrive의 IB 적용](https://learn.microsoft.com/en-us/purview/information-barriers-onedrive)을 기준으로 시험합니다.
 
 | Test Case | Expected Result |
 |---|---|
@@ -200,8 +202,8 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시
 | 파일 직접 링크 접근 | 링크를 보유해도 Segment 불일치 시 접근 차단 |
 | 파일/폴더 공유 | 공유 대상 검증 후 차단 또는 허용 |
 | People Picker / Search | 상대 Segment 사용자가 검색 결과에서 제한 |
-| 동일 Segment 사용자 접근 | 정상 허용 |
-| 사이트 소유자 권한 | 소유자 권한으로 IB를 우회할 수 없는지 확인 |
+| 동일 Segment 사용자 접근 | 해당 모드의 IB 조건과 사이트·파일 접근 권한을 모두 만족할 때 허용 |
+| 사이트 소유자 권한 | Explicit 등 선택한 모드의 제한과 Owner Moderated의 소유자 역할을 구분해 확인 |
 
 ## Exchange 고려사항
 
