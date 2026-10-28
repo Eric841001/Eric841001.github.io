@@ -428,7 +428,7 @@ User communication required.
 |----------|---------------|
 | Long-Term Integration | Strong Fit |
 | Shared Security Model | Strong Fit |
-| Copilot Rollout | Strong Fit |
+| Copilot rollout within an approved consolidation plan | Verify licensing, permissions, data and workload prerequisites |
 | Centralized IT | Strong Fit |
 | Unified Governance | Strong Fit |
 
@@ -436,16 +436,18 @@ User communication required.
 
 ## Comparison Matrix
 
+Compare the work and dependencies below before estimating cost or risk. Copilot readiness depends on the [requirements for the selected experience](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements), not on a tenant count rating.
+
 | Area | Cross-Tenant Sync | Full Migration |
 |--------|--------|--------|
-| Deployment Speed | Fast | Moderate |
-| Risk | Low | Medium |
-| Cost | Low | Medium-High |
+| Deployment work | Identity scope, mapping and access-policy pilot | Workload discovery, migration waves and cutover |
+| Risks to assess | Identity mappings and cross-tenant access | Content cutover, permission remapping and rollback |
+| Costs to estimate | Provisioning licenses and multi-tenant operations | Migration tooling, licenses and transition support |
 | Governance | Distributed | Centralized |
-| User Experience | Multi-Tenant | Single Tenant |
-| Compliance Flexibility | High | Medium |
-| Copilot Readiness | Moderate | High |
-| Operational Complexity | Medium | Low (Post Migration) |
+| User Experience | Home identity with resource-tenant context | Target accounts and workloads after cutover |
+| Data and compliance | Review identity-attribute transfer and cross-tenant access | Review target location, content transfer and responsibilities |
+| Copilot Readiness | Validate the selected experience in each tenant | Consolidation alone does not establish readiness |
+| Operational responsibilities | Policies and support across tenants | Target operations plus migration exceptions and dependencies |
 
 ---
 
@@ -641,7 +643,7 @@ Activities:
 
 - Long-term integration is required.
 - Unified governance is required.
-- Microsoft 365 Copilot deployment is planned.
+- The approved Copilot operating model calls for consolidated accounts and workloads.
 - Centralized security is required.
 
 ---

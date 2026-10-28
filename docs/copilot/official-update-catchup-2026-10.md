@@ -230,7 +230,7 @@ Microsoft는 Cowork에서 사용할 수 있는 연결과 반복 업무용 역할
 - **8월 지식 연결:** Azure SQL·SQL Server 테이블을 지식 원본으로 사용할 수 있지만, 제작자의 연결 권한과 데이터베이스 읽기 권한·네트워크 접근을 먼저 검증해야 합니다. Work IQ 연결은 preview이고 GitHub Copilot harness/Copilot Credits를 사용하며, 기본 읽기 전용입니다. 쓰기 작업은 관리자가 별도로 허용하고 Work IQ 전용 지출 정책을 구성해야 합니다. [Azure SQL 지식 원본](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/knowledge-add-azure-sql-tables), [Work IQ preview 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq).
 - **Microsoft IQ Accelerator:** Work IQ·Foundry IQ·Fabric IQ를 연결하는 공급망 참조 구현입니다. 일부 기능과 MCP 통합은 preview이며 평가·실험용 조건을 확인해야 합니다. [Microsoft 공식 저장소](https://github.com/microsoft/microsoft-iq-solution-accelerator).
 - **제공 상태:** [Studio 월별 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)에서 기능별 preview·GA와 적용 조건을 확인하세요. 7월부터 신규 에이전트의 Entra Agent ID가 자동 생성되며, 환경별로 자동 생성을 끄는 옵션은 없어졌습니다. 8월·9월에 추가된 기능도 각 참조 문서의 제공 조건에 따라 적용합니다.
-- **한국 지역:** 버전은 지역별로 순차 배포됩니다. [지역별 릴리스 표](https://learn.microsoft.com/ko-kr/power-platform/released-versions/copilotstudio)의 Korea 항목과 실제 환경의 Platform·UX 버전을 함께 확인하세요. 갱신이 오래된 표만으로 현재 배포 상태를 판단하지 마세요.
+- **한국 지역:** 버전은 지역별로 순차 배포됩니다. [지역별 릴리스 표](https://learn.microsoft.com/ko-kr/power-platform/released-versions/copilotstudio)의 Korea 항목과 실제 환경의 Platform·UX 버전을 함께 확인하세요. 최근에 갱신되지 않은 표만으로 현재 배포 상태를 판단하지 마세요.
 
 ## 도입 담당자의 확인 순서
 

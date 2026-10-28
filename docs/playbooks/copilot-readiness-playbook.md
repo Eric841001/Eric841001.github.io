@@ -108,13 +108,13 @@ Examples:
 
 ### Microsoft 365 Copilot Workload Prerequisites
 
-A Copilot license assignment is necessary, but it is not sufficient evidence that every workload prerequisite is ready. Validate the deployed state for each pilot user:
+Requirements depend on the selected experience. Use the [current Copilot requirements](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements) to distinguish licensed capabilities, eligible Copilot Chat, and app-specific dependencies:
 
 | Prerequisite | Deployment validation |
 | --- | --- |
-| Eligible Microsoft 365 base license and Copilot license | Confirm the assigned products and enabled service plans for the user. |
+| Licenses for the selected experience | Validate the required products and service plans; eligible Copilot Chat does not always require a Copilot license. |
 | Microsoft Entra ID account | Confirm the user can authenticate with the intended tenant identity and policy set. |
-| Exchange Online primary mailbox | Verify that the primary mailbox is actually provisioned in Exchange Online. Microsoft 365 Copilot is not supported with an on-premises or hybrid primary mailbox, and archive, group, shared, and delegated mailboxes do not replace this requirement. |
+| Exchange Online mailbox for mailbox-grounded experiences | Required when using mailbox data. Supported experiences can use permitted archive, shared and delegate content; group mailboxes are unsupported. |
 | Microsoft 365 Apps | Deploy supported apps, review connected-experience privacy controls, and allow the Office Feature Updates task to run. |
 | OneDrive | Provision OneDrive where the selected Copilot scenarios depend on OneDrive-backed features. |
 | Browser | Enable third-party cookies when Word, Excel, or PowerPoint for the web requires them for Copilot. |
@@ -222,7 +222,7 @@ Copilot and AI-app retention policies can retain and delete user prompts and res
 
 ### 한국어 운영 요약
 
-Copilot 라이선스가 할당됐다는 사실만으로 배포 준비가 끝난 것은 아닙니다. 사용자별 Exchange Online 기본 사서함의 실제 생성 여부, Entra ID, Microsoft 365 Apps, OneDrive, 네트워크 및 WebSocket 연결을 별도로 확인해야 합니다. 또한 Copilot 프롬프트와 응답의 보존은 사용자 화면이 아니라 Purview 보존 및 eDiscovery 근거로 검증해야 합니다.
+Copilot 라이선스가 할당됐다는 사실만으로 배포 준비가 끝난 것은 아닙니다. 사용할 기능에 맞춰 Entra ID, 앱, OneDrive와 네트워크 조건을 확인하세요. 메일·일정·모임 등 사서함 자료를 사용하는 기능은 Exchange Online 사서함도 필요합니다. 또한 Copilot 프롬프트와 응답의 보존은 사용자 화면이 아니라 Purview 보존 및 eDiscovery 근거로 검증해야 합니다.
 
 ## User Readiness
 
@@ -385,12 +385,14 @@ In one controlled troubleshooting case, Copilot Chat could identify a sensitivit
 
 After the primary mailbox was provisioned, the same user and encrypted document produced body-level citations and a successful summary without removing the label or encryption. This before-and-after result supports mailbox provisioning as the operational remediation for that case. It does **not** establish a publicly documented Microsoft backend call path, nor does it mean every protected-content failure has the same cause.
 
+Treat this as a case observation; current mailbox requirements vary by experience.
+
 ### Diagnostic sequence
 
 1. **Reproduce safely.** Use an approved test document and record the user, app, timestamp, prompt type, and expected access without publishing tenant or label identifiers.
 2. **Validate source access.** Confirm that the user can open the SharePoint or OneDrive file directly and that file permissions, sharing links, label publishing scope, and encryption rights are valid.
 3. **Separate policy evidence from UI text.** Review DLP and sensitivity-label policy results for an explicit block action. A generic policy message is not sufficient evidence of Purview enforcement.
-4. **Verify the workload, not only the license.** Confirm an Exchange Online primary mailbox exists and is usable. Do not infer provisioning from Copilot eligibility, license acquisition, or an enabled Exchange service plan alone.
+4. **Verify applicable workloads.** For email, calendar, meeting or other mailbox-grounded scenarios, confirm Exchange Online mailbox provisioning; validate other scenarios separately.
 5. **Check application and network prerequisites.** Validate supported Microsoft 365 Apps, connected experiences, third-party cookies where required, Microsoft 365 endpoints, WSS connectivity, TLS inspection, and proxy timeouts.
 6. **Retest without weakening protection.** Keep the same label, encryption, permissions, and network path where possible. Change one variable at a time and compare the failed and successful grounding results.
 7. **Validate compliance handling.** Confirm the intended Purview retention policy location and use eDiscovery evidence rather than the visible Copilot chat history to verify retention or deletion.
@@ -404,13 +406,13 @@ After the primary mailbox was provisioned, the same user and encrypted document 
 | File opens in SharePoint | The user has source-file access in that path | Copilot workload, network, and compliance dependencies are healthy |
 | Sensitivity label detected | Copilot or SharePoint can identify protection metadata | Purview issued the block shown in the UI |
 | WSS connection succeeds | The real-time transport was established | A usable body-level citation was created |
-| Primary mailbox exists in Exchange Online | A documented Copilot prerequisite is present | Every protected-content failure is resolved |
+| Primary mailbox exists in Exchange Online | A mailbox-grounded requirement can be met | Every Copilot feature or protected-content failure is resolved |
 | eDiscovery returns the interaction | Compliance data remains searchable | The interaction must still be visible in the Copilot UI |
 
 ### Pre-deployment acceptance checklist
 
-- [ ]   Eligible base license and Microsoft 365 Copilot license are assigned.
-- [ ]   Exchange Online primary mailbox is provisioned and verified for every pilot user.
+- [ ]   License requirements for the selected Copilot or Copilot Chat experience are verified.
+- [ ]   Exchange Online mailbox provisioning is verified for selected mailbox-grounded pilot scenarios.
 - [ ]   Microsoft Entra ID, supported apps, privacy controls, browser settings, and OneDrive-dependent scenarios are validated.
 - [ ]   Microsoft 365 endpoints and WSS to `*.cloud.microsoft` and `*.office.com` are allowed through proxies and inspection controls.
 - [ ]   SharePoint permissions, sensitivity-label publishing scope, encryption rights, and DLP mode are documented.

@@ -377,9 +377,9 @@
   },
   "/knowledge/copilot/agentic-ai-architecture": {
     "file": "docs/copilot/agentic-ai-architecture.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-28",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Agentic AI의 지식·작업·권한·사람 승인 및 배포 상태",
+    "scope": "확인한 항목: Agentic AI의 지식·작업·권한·사람 승인 및 배포 상태 이번 추가 확인은 Agent Builder의 직접 공유본과 Agent Store 게시본의 별도 관리, Update 반영 시점, 재제출·관리자 재승인, 게시 대상과 지식 원본 접근 권한에 한정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -396,6 +396,11 @@
         "title": "Microsoft Copilot adoption and onboarding",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources",
         "checkedFor": "Copilot 도입은 데이터 준비·라이선스 선택·설정·채택·운영 단계를 포함합니다. 작성자의 ROI나 점수를 보증하지 않습니다."
+      },
+      {
+        "title": "Submit Agent Builder agents to your org catalog",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-submit-to-org-catalog",
+        "checkedFor": "공유본은 Update 후 즉시 바뀌지만 Agent Store 게시본은 재제출과 관리자 승인 후에만 갱신됩니다. 관리자 사용 가능 범위와 지식 원본 권한도 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1861,9 +1866,9 @@
   },
   "/knowledge/migration/cross-tenant-sync-vs-migration": {
     "file": "docs/migration/cross-tenant-sync-vs-migration.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-28",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 교차 테넌트 동기화의 협업 목적과 이전·인증 경계",
+    "scope": "확인한 항목: 교차 테넌트 동기화의 협업 목적과 이전·인증 경계 이번 추가 확인은 테넌트 통합과 Copilot 준비도를 동일시하던 표·추천 문구의 정합성입니다. 비용·위험·규정 준수의 보편적 등급 대신 평가할 작업과 의존성을 표시하고, 선택한 Copilot 기능의 요건을 별도로 확인하도록 정리했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1875,6 +1880,11 @@
         "title": "Microsoft 365 tenant-to-tenant migrations",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations",
         "checkedFor": "테넌트 이전은 워크로드별 도구·선행 조건·대상 라이선스가 필요하며 모든 데이터가 단일 경로로 이전된다고 보장하지 않습니다."
+      },
+      {
+        "title": "Current Microsoft Copilot requirements",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+        "checkedFor": "요건은 기능별로 다릅니다. 사서함 자료를 사용하는 기능의 Exchange Online 요건, 사용 가능한 사서함 콘텐츠와 그룹 사서함 제외, Copilot Chat의 사용권 구분을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2013,9 +2023,9 @@
   },
   "/knowledge/playbooks/copilot-readiness-playbook": {
     "file": "docs/playbooks/copilot-readiness-playbook.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-28",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: Copilot 라이선스 외 앱·사서함·네트워크·데이터 준비 조건",
+    "scope": "확인한 항목: Copilot 라이선스 외 앱·사서함·네트워크·데이터 준비 조건 이번 추가 확인은 기능별 Copilot·Chat 사용권, 사서함 자료를 사용하는 기능의 Exchange Online 요건, 공유·위임·보관 사서함과 그룹 사서함의 구분에 한정했습니다. 개별 문제 해결 사례를 모든 기능의 공통 요건으로 확대하지 않도록 수정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2027,6 +2037,11 @@
         "title": "Microsoft Copilot release notes",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
         "checkedFor": "현재 채널 변경 기록은 플랫폼·기능별 제공 범위를 설명하며 테넌트 안에서도 단계적으로 배포됩니다."
+      },
+      {
+        "title": "Current Microsoft Copilot requirements",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+        "checkedFor": "요건은 기능별로 다릅니다. 사서함 자료를 사용하는 기능의 Exchange Online 요건, 사용 가능한 사서함 콘텐츠와 그룹 사서함 제외, Copilot Chat의 사용권 구분을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

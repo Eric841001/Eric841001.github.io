@@ -68,7 +68,7 @@ Microsoft가 만든 정책도 직접 만든 정책과 함께 점검해야 합니
 - **인증과 정책 충돌:** 인증 강도와 매번 로그인 조건이 자동 적용됩니다. `Block`은 위험 해결보다 우선하고, 위험 해결은 암호 변경 요구보다 우선합니다. 기존 정책과 중복 적용되는지 확인하세요.
 - **잠금 방지:** 긴급 접근 계정을 제외하고 MFA 등록 상태를 점검하세요. 하이브리드 환경에서는 암호 해시 동기화 등 암호 변경 전제 조건도 확인해야 합니다. MFA 후 수행하는 보안 암호 변경과 암호를 모를 때 쓰는 SSPR 복구 절차를 구분하세요.
 
-보고 전용 결과와 로그인 기록을 검토한 뒤 적용 범위를 정하세요. 공통된 달력 날짜가 모든 테넌트의 활성화 날짜인 것은 아닙니다.
+보고 전용 결과와 로그인 기록을 검토한 뒤 적용 범위를 정하세요. 활성화 일정은 테넌트마다 다를 수 있습니다.
 
 출처: [Microsoft 관리형 정책](https://learn.microsoft.com/en-us/entra/identity/conditional-access/managed-policies), [위험 해결과 사용자 차단 해제](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock).
 

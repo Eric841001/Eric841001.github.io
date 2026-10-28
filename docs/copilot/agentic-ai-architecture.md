@@ -416,9 +416,11 @@ Examples:
 | AI Engineer | Microsoft Foundry | Advanced AI agent and model orchestration |
 | Integration Team | Logic Apps | Enterprise integration and workflow engine |
 
-> **Agent Builder distribution (current channel / GA release-note status; checked 2026-07-17 KST):** An Agent Builder agent can be submitted for review in the Microsoft 365 admin center. Only after admin approval is it published under **Built by your org** and made discoverable across the organization. Availability may appear gradually as Microsoft rolls the capability out. See the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) and [admin guidance for managing Copilot agents and integrated apps](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps).
+### Agent Builder 배포와 업데이트 {/* #agent-builder-distribution */}
+
+> **Agent Builder distribution:** An admin reviews an Agent Builder submission and publishes approved agents under **Built by your org**. Admin availability settings control who can find and add the Agent Store version. Selecting **Update** changes the directly shared version immediately; the Agent Store version changes only after resubmission and admin approval. Intended users must also have access to the underlying knowledge sources. See [submission and update guidance](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-submit-to-org-catalog).
 >
-> **한국어 요약:** Agent Builder 에이전트는 Microsoft 365 관리 센터에 검토를 위해 제출할 수 있습니다. 관리자 승인 후에만 **Built by your org**에 게시되어 조직 전체에서 검색할 수 있습니다. 현재 채널의 GA 릴리스 노트 기준으로 2026년 7월 17일(KST)에 확인했으며, Microsoft의 단계적 배포에 따라 실제 표시 시점은 달라질 수 있습니다.
+> **한국어 요약:** 직접 공유한 버전과 조직 Agent Store 게시본은 따로 관리됩니다. **Update**를 누르면 공유받은 사용자에게는 변경 내용이 바로 적용됩니다. 조직 게시본에 반영하려면 다시 제출하고 관리자 승인을 받아야 하며, 승인 전에는 기존 게시본이 유지됩니다. 게시 대상은 관리자의 사용 가능 범위 설정을 따릅니다. 게시 승인과 자료 접근 권한은 별개이므로, 사용할 계정으로 지식 원본을 열 수 있는지도 확인하세요.
 
 ---
 

@@ -165,7 +165,7 @@ Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 
 ### Microsoft 365
 
-Microsoft 365 영역은 기업의 협업, 보안, 운영 기준, 라이선스 optimization을 다룹니다.
+Microsoft 365 영역은 기업의 협업, 보안, 운영 기준, 라이선스 구성과 비용 관리를 다룹니다.
 
 - E3 E5 E7 comparison
 - SharePoint / OneDrive governance
