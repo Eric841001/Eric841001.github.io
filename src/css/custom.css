@@ -1815,6 +1815,9 @@ body.kc-diagram-modal-open {
 }
 
 .kc-diagram-modal__title {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
   color: #0f3157;
   font-size: 0.96rem;
   font-weight: 650;
@@ -1822,6 +1825,8 @@ body.kc-diagram-modal-open {
 }
 
 .kc-diagram-modal__close {
+  flex: none;
+  white-space: nowrap;
   appearance: none;
   border: 1px solid #c7d8ed;
   border-radius: 8px;
