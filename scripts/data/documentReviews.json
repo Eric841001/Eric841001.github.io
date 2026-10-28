@@ -654,7 +654,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-10-28",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 26일 발표된 Frontier 공개 미리 보기의 11월 제품 범위 확대, 관리자 선택 등록, Standard·Deferred release와의 분리, 제품별 라이선스 조건을 확인했습니다. 기존 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화, Power Platform Admin preview, 10월 개발자 변경과 beta API 제약을 검토했습니다. 추가 확인: 10월 27일 릴리스의 앱·플랫폼별 변경과 Work IQ API 사용량 과금·선언형 호출을 보완하고 최신 기록 날짜를 정정했습니다.",
+    "scope": "이번 수정 범위: 10월 26일 발표된 Frontier 공개 미리 보기의 11월 제품 범위 확대, 관리자 선택 등록, Standard·Deferred release와의 분리, 제품별 라이선스 조건을 확인했습니다. 기존 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화, Power Platform Admin preview, 10월 개발자 변경과 beta API 제약을 검토했습니다. 추가 확인: 10월 27일 릴리스의 앱·플랫폼별 변경과 Work IQ API 사용량 과금·선언형 호출을 보완하고 최신 기록 날짜를 정정했습니다. 문구 정리: 날짜별 표의 오름차순을 바로잡고, 점검 과정 서술을 기능·지역별 배포 안내로 바꿨습니다. Studio 월별 변경과 지역 릴리스 표의 순차 배포 조건도 다시 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2034,9 +2034,9 @@
   },
   "/knowledge/playbooks/intune-deployment-playbook": {
     "file": "docs/playbooks/intune-deployment-playbook.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-28",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: Intune 등록·준수·앱 배포 절차와 2026년 10월의 보안 기준 갱신·Apple 앱 라이선스·Remote Help 변경",
+    "scope": "확인한 항목: Intune 등록·준수·앱 배포 절차와 2026년 10월의 보안 기준 갱신·Apple 앱 라이선스·Remote Help 변경 10월 28일 재확인 범위: 10월 5일 보안 기준, 12일 Windows Remote Help, 19일 VPP 변경의 기존 설명을 공식 변경 기록과 다시 대조하고 도입 문구를 기능 중심으로 정리했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
