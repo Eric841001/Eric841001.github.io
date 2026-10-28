@@ -3121,7 +3121,7 @@
     "file": "docs/security/defender-for-endpoint.md",
     "checkedOn": "2026-10-28",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 10월 추가 macOS GA 빌드·v1 종료 및 상세 정책 전환 문서 연결; 기존 Linux 지원 종료 범위 유지",
+    "scope": "확인한 항목: 10월 추가 macOS GA 빌드·v1 종료 및 상세 정책 전환 문서 연결; 기존 Linux 지원 종료 범위 유지; Microsoft Store 앱 취약점 평가의 GA 상태, 제한된 앱 지원과 Software evidence 확인·버전 관리 방법",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3143,6 +3143,16 @@
         "title": "Defender October macOS GA status",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
         "checkedFor": "10월 추가 macOS 빌드 101.26092.0009의 GA 표기를 확인했습니다."
+      },
+      {
+        "title": "Defender for Endpoint October releases",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
+        "checkedFor": "2026년 10월 Microsoft Store 앱 취약점 평가의 GA 발표와 일부 앱에 한정된 지원 범위를 대조했습니다."
+      },
+      {
+        "title": "Microsoft Store software inventory",
+        "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/tvm-software-inventory",
+        "checkedFor": "Software evidence의 Store 표시·버전·경로와 제안 쿼리, Store 버전 관리 및 WindowsApps 파일 직접 수정 금지 안내를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

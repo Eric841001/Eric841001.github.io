@@ -68,6 +68,14 @@ Amazon Linux 2 **ARM64**의 Defender 지원은 2026년 10월 31일 종료됩니�
 
 macOS의 10월 추가 GA 빌드 `101.26092.0009`에는 Device Control v1 종료, 보호·시스템 확장 상태 보고와 EDR 개선이 포함됩니다. [USB 제어 전환 안내](../knowledge-center/intune-macos-usb-control#device-control-v1-retirement)에서 v2 구성과 권한·실제 적용 결과를 확인하세요. [macOS 온보딩 가이드](../knowledge-center/mde-macos-onboarding#october-2026-agent-update)에서 설치 버전과 권한 점검 방법을 확인하세요. 근거는 [Microsoft 릴리스](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)와 [Linux 지원·라이선스 조건](https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites)입니다.
 
+## Microsoft Store 앱의 취약점 확인 {/* #microsoft-store-vulnerability-assessment */}
+
+2026년 10월부터 Microsoft Store로 설치한 앱의 취약점 평가가 정식 제공됩니다. 현재 지원 대상은 일부 자주 사용되는 앱으로 제한됩니다. 목록에 표시되거나 취약점이 발견되지 않았다는 이유만으로 모든 앱의 안전성을 판단해서는 안 됩니다.
+
+Defender 포털의 소프트웨어 목록에서 앱을 열고 **Software evidence**의 Microsoft Store 표시, 앱 버전과 파일 위치를 확인하세요. 함께 제공되는 쿼리로 영향을 받는 앱을 조사할 수 있습니다. 버전 관리는 Microsoft Store에서 진행하고, 표시된 `WindowsApps` 경로의 파일을 직접 수정하거나 삭제하지 마세요.
+
+근거: [Defender for Endpoint 10월 변경 사항](https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint#october-2026), [Microsoft Store 앱의 취약점 평가 범위와 확인 방법](https://learn.microsoft.com/en-us/defender-vulnerability-management/tvm-software-inventory#microsoft-store-applications).
+
 ## Control Model
 
 <div className="kc-platform-fit">

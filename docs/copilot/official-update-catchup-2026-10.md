@@ -57,7 +57,7 @@ Microsoft는 **2026년 11월부터** Frontier에 새 Outlook for Windows, OneDri
 
 ## 10월 21일 고객 대화형 Harness 공개 미리 보기 {/* #customer-conversation-harness */}
 
-음성·채팅, 전문 에이전트와 사람 이관을 연결하는 **public preview**입니다. 일부 기능은 순차 배포이며 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관 같은 계획을 현재 기능으로 간주하지 마세요. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
+음성·채팅, 전문 에이전트 처리와 상담원 연결을 지원하는 **public preview**입니다. 일부 기능은 순차 배포이며 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관 같은 계획을 현재 기능으로 간주하지 마세요. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
 
 [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954) · [상세 설계·파일럿 가이드](./customer-conversation-harness.md)
 
@@ -162,7 +162,7 @@ Microsoft는 Copilot이 요약·타임라인·대시보드·비교 같은 **대�
 - **배포 상태:** Windows·Mac의 Current Channel 및 Monthly Enterprise Channel과 PowerPoint 웹은 10월 중순 배포를 시작해 10월 말 완료 예정입니다. Frontier, Microsoft 365 Insiders Beta Channel, Current Channel (Preview)는 지원 범위에 따라 먼저 사용할 수 있으므로, 전면 배포 완료로 간주하지 말고 대표 사용자에게 `Interactive Slide` 버튼과 Copilot 스킬이 실제 표시되는지 확인하세요.
 - **라이선스와 공유:** Copilot in PowerPoint를 사용할 수 있는 적격 개인·상용 사용자가 대상이며 Microsoft 365 Copilot Basic·Premium을 포함합니다. 대화형 슬라이드 전용 추가 라이선스는 없고, 공유받은 사용자는 Copilot 라이선스가 없어도 상호작용을 탐색할 수 있습니다.
 - **플랫폼 차이:** 생성·수정은 Copilot 앱과 Windows·Mac·웹 PowerPoint에서 지원합니다. 열람 상호작용은 여기에 iPad와 Teams PowerPoint Live가 추가되지만, iPhone·Android·인쇄·PDF 내보내기에서는 비대화형 이미지로 표시됩니다. Mac 발표자 보기와 Teams의 발표자-청중 상호작용 동기화도 아직 지원되지 않습니다.
-- **운영 체크:** 슬라이드는 캔버스에서 직접 편집하지 않고 Copilot 프롬프트로 갱신합니다. Work IQ로 Excel·프로젝트 문서를 근거로 삼을 수 있으므로 원본 파일 권한과 민감도 레이블을 검증하고, 생성된 수치·레이아웃·동작을 발표 전 사람이 확인하세요. 대화형 요소는 다른 콘텐츠나 서비스에 연결되지 않는 격리된 웹 보기로 표시됩니다.
+- **운영 시 확인할 점:** 슬라이드는 캔버스에서 직접 편집하지 않고 Copilot 프롬프트로 갱신합니다. Work IQ로 Excel·프로젝트 문서를 근거로 삼을 수 있으므로 원본 파일 권한과 민감도 레이블을 검증하고, 생성된 수치·레이아웃·동작을 발표 전 사람이 확인하세요. 대화형 요소는 다른 콘텐츠나 서비스에 연결되지 않는 격리된 웹 보기로 표시됩니다.
 
 출처: [Microsoft 공식 발표 — Transform your storytelling with interactive slides in PowerPoint](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/transform-your-storytelling-with-interactive-slides-in-powerpoint/4564287), [Microsoft 지원 — Create interactive slides with Copilot in PowerPoint](https://support.microsoft.com/en-us/powerpoint/copilot/create-interactive-slides-with-copilot-in-powerpoint).
 
@@ -227,10 +227,21 @@ Microsoft는 Cowork에서 사용할 수 있는 연결과 반복 업무용 역할
 - **9월 워크플로·평가:** GitHub Copilot harness 워크플로에 PDF·Word·Excel·PowerPoint의 지정 값과 표를 구조화하는 Extract 노드가 추가됐습니다. Copilot Chat·Cowork·Researcher·Analyst 등을 호출하는 Copilot 노드는 preview이며, 연결된 Microsoft 365 사용자의 권한으로 메일·파일·일정·채팅에 접근합니다. 표준 harness에는 유해 콘텐츠 심각도 기준을 설정하는 평가 방식이 추가됐습니다. [9월 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new#september-2026), [Copilot 노드 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/workflows-experience/microsoft-365-copilot-node-workflow), [콘텐츠 안전 평가](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview).
 - **9월 파일·데이터:** GitHub Copilot harness 대화의 파일 첨부가 GA로 확대되어 Excel·PowerPoint·Word를 포함합니다. 첨부는 영구 지식 원본이 아니라 대화 입력이며 Purview 레이블을 지원하고, 공식 문서 기준 대화 마지막 활동 후 28일간 보관됩니다. Dataverse 테이블 지식과 Multiline Text·File 열의 비정형 추론은 상태가 다르므로 후자는 preview로 구분하세요. [첨부 파일 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/attachments-overview), [9월 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new#september-2026).
 - **8월 비용·보안:** GitHub Copilot harness 기반 에이전트·워크플로·앱은 제작·미리보기·테스트·평가 단계부터 Copilot Credits를 소비하며, 토큰·도구·harness 사용이 과금 범위에 포함됩니다. 관리자는 환경별 크레딧 할당과 소비 모니터링을 준비하세요. Power Platform 관리 센터에서는 환경·환경 그룹 단위로 응답의 이미지와 URL을 모두 차단하거나 문맥상 신뢰되지 않는 항목만 차단할 수 있습니다. [사용량 기반 과금](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-overview), [이미지·URL 제어](https://learn.microsoft.com/en-us/microsoft-copilot-studio/image-render-embedded-url).
-- **8월 지식 연결:** Azure SQL·SQL Server 테이블을 지식 원본으로 사용할 수 있지만, 제작자의 연결 권한과 데이터베이스 읽기 권한·네트워크 접근을 먼저 검증해야 합니다. Work IQ는 현재 상세 문서에서 GA로 안내하며, GitHub Copilot harness의 신규 에이전트에 기본 추가됩니다. 사용 가능한 워크로드와 쓰기 작업은 기본 활성화되므로 필요한 워크로드만 남기고 권한·정책을 점검하세요. 워크로드 선택으로 개별 사이트나 사서함을 제한할 수는 없습니다. Business apps는 별도 preview이며, Work IQ만을 위한 별도 지출 정책은 필요하지 않습니다. Copilot Credits 사용량 과금과 조직의 비용 통제는 계속 적용됩니다. [Azure SQL 지식 원본](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/knowledge-add-azure-sql-tables), [Work IQ 현재 제공·권한 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq).
+- **8월 지식 연결:** Azure SQL·SQL Server 테이블을 지식 원본으로 사용할 수 있지만, 제작자의 연결 권한과 데이터베이스 읽기 권한·네트워크 접근을 먼저 확인해야 합니다. [Azure SQL 지식 원본](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/knowledge-add-azure-sql-tables). Work IQ의 현재 제공 조건은 아래에 정리했습니다.
 - **Microsoft IQ Accelerator:** Work IQ·Foundry IQ·Fabric IQ를 연결하는 공급망 참조 구현입니다. 일부 기능과 MCP 통합은 preview이며 평가·실험용 조건을 확인해야 합니다. [Microsoft 공식 저장소](https://github.com/microsoft/microsoft-iq-solution-accelerator).
 - **제공 상태:** [Studio 월별 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)에서 기능별 preview·GA와 적용 조건을 확인하세요. 7월부터 신규 에이전트의 Entra Agent ID가 자동 생성되며, 환경별로 자동 생성을 끄는 옵션은 없어졌습니다. 8월·9월에 추가된 기능도 각 참조 문서의 제공 조건에 따라 적용합니다.
 - **한국 지역:** 버전은 지역별로 순차 배포됩니다. [지역별 릴리스 표](https://learn.microsoft.com/ko-kr/power-platform/released-versions/copilotstudio)의 Korea 항목과 실제 환경의 Platform·UX 버전을 함께 확인하세요. 최근에 갱신되지 않은 표만으로 현재 배포 상태를 판단하지 마세요.
+
+### Work IQ 제공 상태와 권한 {/* #work-iq-availability */}
+
+Work IQ는 Copilot Studio에서 정식 제공되며, **GitHub Copilot harness로 만든 새 에이전트에 기본 추가**됩니다.
+
+- **접근 범위:** 사용 가능한 워크로드가 기본 선택됩니다. 필요한 워크로드만 남기세요. 이 선택으로 개별 사이트나 사서함의 접근을 제한할 수는 없습니다.
+- **쓰기 작업:** 기본 활성화됩니다. 에이전트가 실행할 작업과 사용자 권한, 조직 정책을 확인하세요.
+- **미리 보기:** Business apps는 별도 미리 보기 기능입니다.
+- **비용:** Copilot Credits 사용량 과금이 적용됩니다. Work IQ만을 위한 별도 지출 정책은 필요하지 않지만, 조직의 예산과 비용 통제는 계속 적용됩니다.
+
+근거: [Work IQ의 현재 제공 상태와 설정](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq). 이전 월별 변경 기록의 미리 보기 표기와 구분하세요.
 
 ## 도입 담당자의 확인 순서
 

@@ -1,5 +1,4 @@
 // Shared by home highlights and document update notices.
-export const verifiedOn = '2026-10-27';
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
 export const modelUpdate = {
   title: 'GPT-6.1 Sol · Claude Sonnet 5.5',
@@ -7,6 +6,8 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Defender for Endpoint', title: 'Microsoft Store 앱 취약점 평가 정식 제공', description: '지원되는 앱과 취약점 근거를 확인하고, Microsoft Store에서 앱 버전을 관리하는 방법을 추가했습니다.', date: '2026-10-28', status: '문서 보완 · 일부 앱 지원', path: '/knowledge/security/defender-for-endpoint#microsoft-store-vulnerability-assessment'},
+  {category: 'Copilot Studio', title: 'Work IQ 정식 제공과 기본 권한 설정', description: 'GitHub Copilot harness의 새 에이전트에 기본 추가됩니다. 워크로드 선택과 쓰기 작업, 사용량 과금 조건을 확인하세요.', date: '2026-10-28', status: '문서 개정 · Business apps는 미리 보기', path: `${updateGuide}#work-iq-availability`},
   {category: 'Agent Builder', title: '공유본과 조직 게시본의 갱신 조건', description: '직접 공유한 버전과 Agent Store 게시본의 반영 시점·재승인 조건을 구분했습니다.', date: '2026-10-28', status: '문서 보완 · 관리자 재승인', path: '/knowledge/copilot/agentic-ai-architecture#agent-builder-distribution'},
   {category: 'Microsoft 365 Copilot', title: '10월 27일 앱별 변경과 Work IQ API 과금', description: 'MCP 커넥터와 앱별 새 기능, Work IQ API의 사용량 과금 조건을 추가했습니다.', date: '2026-10-28', status: '문서 개정 · 플랫폼별 순차 배포', path: `${updateGuide}#app-updates-october-27`},
   {category: 'Microsoft Entra', title: '관리형 정책의 자동 활성화와 고위험 사용자', description: '보고 전용 이후 적용 일정, P2 대상 위험 해결과 잠금 방지 조건을 보완했습니다.', date: '2026-10-28', status: '문서 개정 · 테넌트별 일정 확인', path: '/knowledge/security/conditional-access#managed-risk-remediation'},

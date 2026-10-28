@@ -13,7 +13,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 ## 고객 응대용 Harness — Public Preview
 
-Microsoft는 2026년 10월 21일 고객 응대를 위한 **customer conversation harness의 public preview**를 발표했습니다. 채팅과 음성을 하나의 대화 경험으로 구성하고, 업무별 전문 에이전트·지식·도구와 사람 상담원 이관을 연결하는 실행 방식입니다.
+Microsoft는 2026년 10월 21일 고객 응대를 위한 **customer conversation harness의 public preview**를 발표했습니다. 채팅과 음성을 하나의 대화 경험으로 구성하고, 업무별 전문 에이전트·지식·도구를 활용하고 필요하면 상담원에게 대화를 넘기는 실행 방식입니다.
 
 - **현재와 계획 구분:** 공개 미리 보기이며 일부 기능은 향후 수 주에 걸쳐 배포됩니다. 전문 에이전트별 모델 선택은 발표에서 GA 시점의 계획으로 설명했으므로 현재 제공된다고 가정하지 않습니다. Teams 채팅으로의 직접 이관도 향후 기능으로 구분합니다.
 - **관리와 비용:** 에이전트 생성 시 Agent 365에서 소유자·채널·ID·권한·도구와 사용 현황을 관리하는 방향이며, Copilot Credits 사용량 과금이 적용됩니다. 실제 지역·테넌트 메뉴, 연결 권한과 예산을 파일럿에서 확인하세요.

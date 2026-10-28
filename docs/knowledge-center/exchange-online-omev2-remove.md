@@ -225,7 +225,7 @@ Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파�
 - Microsoft Purview Information Protection exception
 - Exchange Online 암호화 제거
 - OMEv2 예외 정책
-- RMS 첨부파일 encryption 제거
+- RMS 첨부파일 암호화 해제
 
 ## Contact / Asset Request
 

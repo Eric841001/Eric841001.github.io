@@ -17,7 +17,7 @@ export default function LatestArticles() {
         {updateHighlights.slice(0, 4).map(article => <UpdateCard key={article.path} article={article} />)}
       </div>
       {updateHighlights.length > 4 && <details className={styles.archive}>
-        <summary>이전 업데이트 {updateHighlights.length - 4}개 더 보기</summary>
+        <summary>업데이트 {updateHighlights.length - 4}개 더 보기</summary>
         <div className={styles.grid}>
           {updateHighlights.slice(4).map(article => <UpdateCard key={article.path} article={article} />)}
         </div>

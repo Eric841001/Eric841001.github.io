@@ -355,7 +355,7 @@ Copilot Studio와 M365 Agents를 배포할 때는 에이전트 목록과 담당�
 - 최신 모델 제공 범위·앱별 배포·라이선스를 확인한 사용자 안내 자료 정리
 - 부서별 Copilot 활용 예시 발굴
 - Copilot Studio 기반 업무 에이전트 설계
-- Copilot usage와 라이선스 value 측정
+- Copilot 사용량과 라이선스 비용 대비 효과 측정
 - 데이터 유출 위험을 줄이기 위한 Purview / DLP 연계 설계
 
 ## Contact / Asset Request

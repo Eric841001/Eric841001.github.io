@@ -830,7 +830,7 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 
 - **안내 경로:** 승인된 지식과 출처 링크를 바탕으로 암호 도움말과 서비스 문의에 답변하며 계정, 티켓 또는 자산 상태를 변경하지 않습니다.
 - **실행 경로:** 티켓 생성이나 계정 재설정은 승인된 도구, 커넥터, API 또는 흐름을 호출합니다. 에이전트가 사용자를 식별해야 하면 최종 사용자 인증을 구성하고, 해당 제한이 필요한 지원 커넥터에서는 제작자가 자신의 자격 증명을 제공하지 못하도록 차단합니다.
-- **통제 경로:** Power Platform 데이터 정책으로 채널, 커넥터와 HTTP 요청을 제어하고, Microsoft Purview 감사 로그로 Copilot Studio 활동을 확인하며, 에이전트가 요청을 완료할 수 없을 때 사람 상담원 이관을 구성합니다.
+- **통제 경로:** Power Platform 데이터 정책으로 채널, 커넥터와 HTTP 요청을 제어하고, Microsoft Purview 감사 로그로 Copilot Studio 활동을 확인하며, 에이전트가 요청을 완료할 수 없을 때 상담원에게 대화를 넘기도록 구성합니다.
 
 ### HR Agent
 
