@@ -214,7 +214,7 @@ body {
 }
 
 .theme-doc-markdown tbody tr td:first-child {
-  color: #0f3157;
+  color: var(--kc-ink);
   font-weight: 760;
 }
 
@@ -4007,3 +4007,8 @@ body.kc-diagram-modal-open {
  display:flex;align-items:center;justify-content:space-between;gap:.5rem;min-height:44px;padding:.65rem .75rem;color:var(--kc-ink);font-size:.9rem;font-weight:600;line-height:1.45;
 }
 .theme-doc-sidebar-container .theme-doc-sidebar-item-category-level-2 > .menu__list-item-collapsible .menu__link::before {content:none;display:none;}
+
+/* Wide tables keep short row identifiers readable without splitting them. */
+.theme-doc-markdown table:not(.kc-responsive-table) tbody tr td:first-child {min-width:6rem;}
+/* Prism emits inline token colors; raise XML tag contrast on its dark canvas. */
+.theme-doc-markdown pre .token.tag {color:#ff7b97 !important;}
