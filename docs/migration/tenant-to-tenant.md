@@ -374,6 +374,8 @@ Migration Considerations:
 
 Microsoft Migration Orchestrator coordinates **Exchange mailboxes, OneDrive, Teams chats and Teams meetings**. It moves content, not identities; prepare identity mapping and the required user configuration separately. Teams meetings require both chats and mailbox migration in the batch. SharePoint sites, Teams channels, apps and device policies need separate migration plans. Check the per-user Cross Tenant User Data Migration add-on and workload exclusions in the [orchestrator documentation](https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide).
 
+Identity Mapping requires a mailbox in the source tenant and a MailUser without a mailbox in the target tenant, even when the batch does not move mailboxes. For OneDrive, the native orchestrator moves content and leaves a redirect; it does not support incremental or delta migration passes. `CompleteAfterDate` starts the remaining workloads after Exchange cutover rather than guaranteeing that every workload is complete at that time. Plan the user outage around these dependencies; migration completion is not covered by an SLA.
+
 - Microsoft Native
 - Quest
 - BitTitan

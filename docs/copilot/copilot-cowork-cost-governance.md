@@ -160,6 +160,12 @@ Microsoft describes usage-based billing as actual usage measured in Copilot Cred
   </div>
 </div>
 
+### Spending policy scope
+
+The **Auto-apply new services** option is enabled by default for spending policies. Newly supported Copilot services and agents can therefore inherit an existing policy. Turn this option off for policies that require a separate review before adding a service, and check the actual service list, users and limits. Cowork access requires a spending policy that includes Cowork; installing a plugin or changing its registry entry does not grant that access.
+
+The Microsoft 365 admin center manages supported services such as Cowork and Work IQ API. Copilot Studio has a separate billing setup, and not every Copilot experience uses this dashboard. The Copilot Cost Management API reports credits rather than currency charges or invoices. See [current billing scope and policy behavior](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
+
 ## Cost Drivers
 
 <div aria-label="Copilot Cowork cost drivers" className="kc-operating-model">

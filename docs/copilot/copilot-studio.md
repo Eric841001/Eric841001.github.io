@@ -819,7 +819,7 @@ Agent operations should continuously track performance.
 Separate guidance from state-changing actions.
 
 - **Guidance path:** Answer password-help and service questions from approved knowledge with source links. This path must not change account, ticket or asset state.
-- **Action path:** Ticket creation or an account reset calls an approved tool, connector, API or flow. Configure end-user authentication when the agent must identify the user, and block makers from supplying their own credentials for supported connectors where that restriction is required.
+- **Action path:** Ticket creation or an account reset calls an approved tool, connector, API or flow. Configure end-user authentication when the agent must identify the user, and block makers from supplying their own credentials for supported connectors where that restriction is required. The environment or environment-group setting also affects existing agents and their Power Automate tools. Requiring end-user credentials can break scheduled or autonomous background runs that have no active user; test those paths before changing the setting.
 - **Control path:** Use Power Platform data policies to control channels, connectors and HTTP requests; use Microsoft Purview audit logs for Copilot Studio activities; and configure human handoff when the agent cannot complete the request.
 
 Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-enduser-authentication), [credential restrictions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication), [data policies](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention), [audit](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio), and [human handoff](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-hand-off).
@@ -829,7 +829,7 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 안내와 상태 변경 작업을 구분합니다.
 
 - **안내 경로:** 승인된 지식과 출처 링크를 바탕으로 암호 도움말과 서비스 문의에 답변하며 계정, 티켓 또는 자산 상태를 변경하지 않습니다.
-- **실행 경로:** 티켓 생성이나 계정 재설정은 승인된 도구, 커넥터, API 또는 흐름을 호출합니다. 에이전트가 사용자를 식별해야 하면 최종 사용자 인증을 구성하고, 해당 제한이 필요한 지원 커넥터에서는 제작자가 자신의 자격 증명을 제공하지 못하도록 차단합니다.
+- **실행 경로:** 티켓 생성이나 계정 재설정은 승인된 도구, 커넥터, API 또는 흐름을 호출합니다. 에이전트가 사용자를 식별해야 하면 최종 사용자 인증을 구성하고, 해당 제한이 필요한 지원 커넥터에서는 제작자가 자신의 자격 증명을 제공하지 못하도록 차단합니다. 환경 또는 환경 그룹에 적용한 설정은 기존 에이전트와 Power Automate 도구에도 영향을 줍니다. 최종 사용자 인증을 강제하면 로그인할 사용자가 없는 예약·자율 실행 작업이 실패할 수 있으므로, 변경 전에 해당 작업을 시험하세요.
 - **통제 경로:** Power Platform 데이터 정책으로 채널, 커넥터와 HTTP 요청을 제어하고, Microsoft Purview 감사 로그로 Copilot Studio 활동을 확인하며, 에이전트가 요청을 완료할 수 없을 때 상담원에게 대화를 넘기도록 구성합니다.
 
 ### HR Agent

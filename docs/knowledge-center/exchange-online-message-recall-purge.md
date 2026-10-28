@@ -145,7 +145,7 @@ New-ComplianceSearch `
   -ContentMatchQuery 'subject:"<subject>" AND from:"<sender>" AND sent:<YYYY-MM-DD>'
 ```
 
-Use the supported KeyQL property `from`, even though the condition builder labels the field Sender. Replace the date placeholder with an ISO date. `subject` matches a phrase within a subject, not only an exact full subject, so review every result before purge. See [searchable mailbox properties](https://learn.microsoft.com/en-us/purview/edisc-search-mailboxes). Adjust the query and mailbox scope to the actual incident.
+Use the supported KeyQL property `from`, even though the condition builder labels the field Sender. Replace the date placeholder with an ISO date. `subject` matches a phrase within a subject, not only an exact full subject, so review every result before purge. See [searchable mailbox properties](https://learn.microsoft.com/en-us/purview/edisc-search-mailboxes). Adjust the query and mailbox scope to the actual incident. For the non-premium search-and-purge workflow, do not use identifier/message-ID, sensitivity-label or sensitive-information-type conditions; Microsoft warns that these conditions are unsupported for deletion and can cause unexpected data loss. Export a report and inspect every matched item before purging. A purge search can cover at most 50,000 mailboxes, including mailboxes with no matches, so replace `-ExchangeLocation All` with a bounded scope when necessary. If results were validated in the portal, rerun the search in PowerShell and reconcile its completed results before the purge. See the [current purge restrictions](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data).
 
 ---
 

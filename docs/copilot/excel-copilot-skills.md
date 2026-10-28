@@ -256,7 +256,7 @@ Financial data integration depends on the specific provider, connector and envir
 
 Use the current [official custom skills procedure](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-skills): open Copilot settings, select **Manage plugins & skills → Custom skills**, create the OneDrive skills folder if needed, then open the folder from the provided link. Do not assume a fixed localized OneDrive path.
 
-Each custom skill has its own folder containing `SKILL.md`, with required `name` and `description` frontmatter and instructions in the body. Review its data access, instructions and outputs before enabling it. Skill-builder is rolling out; the manual folder procedure is a distinct option.
+Each custom skill has its own folder containing `SKILL.md`, with required `name` and `description` frontmatter and instructions in the body. The folder name must match the `name` value; Copilot skips folders that do not match. After adding or renaming a skill in OneDrive, select **Refresh** in the Custom skills dialog. Review its data access, instructions and outputs before enabling it. Skill-builder is rolling out; the manual folder procedure is a distinct option.
 
 ---
 

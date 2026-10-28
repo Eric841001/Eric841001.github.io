@@ -597,7 +597,7 @@ Examples:
 </ReadingSummary>
 
 
-Model Context Protocol provides a way to connect agents to external tools and resources.
+Model Context Protocol provides a way to connect agents to external tools and resources. MCP defines the exchange protocol; it does not automatically enforce the DLP, approval and audit controls in this reference design. Configure those controls in the host, server, connector and underlying business system, and test each permission boundary. See the [MCP architecture scope](https://modelcontextprotocol.io/docs/learn/architecture).
 
 MCP is important because it can help organizations:
 

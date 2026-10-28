@@ -86,6 +86,10 @@ This guide covers supported removable-media access controls, not disabling every
 
 ---
 
+### Audit rules and default enforcement
+
+An audit rule records activity; it does not itself allow or deny access. When only audit rules are configured, access follows the default enforcement setting. Intune does not preserve the order shown in the policy list, so explicitly exclude approved devices from overlapping Deny rules instead of relying on an Allow rule appearing first. The Intune graphical interface does not change the default enforcement setting. Confirm the effective default and test both approved and unapproved media before rollout. See [Device Control rule behavior](https://learn.microsoft.com/en-us/defender-endpoint/device-control-configure).
+
 ## Implementation Approach
 
 <div className="kc-factory-panel">

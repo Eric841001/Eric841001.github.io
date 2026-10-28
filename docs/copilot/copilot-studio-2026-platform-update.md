@@ -376,7 +376,7 @@ available reasoning models in Microsoft 365 Copilot should be reflected in Copil
 - [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
 - [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
 - [Copilot Studio licensing and access](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing)
-- [Copilot Studio agent usage estimator](https://microsoft.github.io/copilot-studio-agent-usage-estimator/)
+- [Copilot Studio agent usage estimator](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-usage-estimator)
 
 ## Related Pages
 

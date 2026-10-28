@@ -71,12 +71,12 @@ Organizations commonly require:
 | Platform | Supported |
 |-----------|-----------|
 | macOS 13 Ventura | No — outside the current Defender support range |
-| macOS 14 Sonoma or newer | Check the current Defender support matrix and agent build |
+| macOS 15 Sequoia, 26 Tahoe, or 27 Golden Gate | Supported major releases in the current Defender prerequisites; beta OS versions are excluded |
 | Apple Silicon | Yes |
 | Intel Mac | Yes |
 
 
-[Defender 릴리스·지원 기준](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)은 macOS 14 이상을 안내하며 Ventura는 지원 범위 밖입니다. 이는 Defender 에이전트 기준입니다. Intune 관리 지원 OS는 [Intune 지원 플랫폼](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers)에서 별도로 확인하세요. 두 제품을 함께 사용할 때에는 양쪽 조건을 모두 만족해야 하며, CPU 아키텍처 지원이 모든 OS 버전 지원을 뜻하지는 않습니다.
+[Defender 배포 요구 사항](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac-prerequisites)은 최근 세 가지 정식 macOS 버전인 15·26·27을 지원 대상으로 명시합니다. 릴리스 기록에는 여전히 14 이상이라는 문구가 남아 있으므로, 이 안내만으로 Sonoma 14를 지원 대상으로 판단하지 마세요. 신규 배포는 요구 사항에 명시된 버전을 기준으로 준비합니다. Intune 관리 지원 OS는 [Intune 지원 플랫폼](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers)에서 별도로 확인하세요. 두 제품을 함께 사용할 때에는 양쪽 조건을 모두 만족해야 하며, CPU 아키텍처 지원이 모든 OS 버전 지원을 뜻하지는 않습니다.
 
 ---
 

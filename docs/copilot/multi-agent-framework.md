@@ -511,7 +511,7 @@ Generate:
 
 | Agent Type | Microsoft Technology |
 |------------|---------------------|
-| Personal Agent | Microsoft Autopilot |
+| Personal Agent | Microsoft Autopilot — private preview; validate eligibility and supported actions |
 | Team Agent | Agent Builder |
 | Department Agent | Copilot Studio |
 | Enterprise Agent | Microsoft Foundry |
@@ -532,9 +532,9 @@ Generate:
 </ReadingSummary>
 
 
-Microsoft Autopilot introduces the concept of an always-on personal agent.
+Microsoft Autopilot introduces the concept of an always-on personal agent. Microsoft’s September 25, 2026 announcement describes a private preview. The coordinator/specialist connections below are proposed designs, not a generally available integration contract. Confirm preview access, tools and permissions using the [Autopilot availability guide](./microsoft-scout).
 
-Autopilot can:
+The announcement illustrates candidate work such as:
 
 - Track work
 - Monitor priorities
@@ -578,7 +578,7 @@ In future architectures:
   </div>
 </div>
 
-Autopilot becomes the user's personal orchestration layer.
+In this proposed design, Autopilot would act as the user's personal orchestration layer once the required integrations and permissions have been validated.
 
 ---
 
@@ -1148,7 +1148,7 @@ Enterprise AI Operating System
 | Layer | Technology |
 |---------|-----------|
 | Experience | Microsoft 365 Copilot |
-| Personal Agent | Autopilot |
+| Personal Agent | Autopilot — private preview |
 | Team Agent | Agent Builder |
 | Business Agent | Copilot Studio |
 | Enterprise Agent | Microsoft Foundry |

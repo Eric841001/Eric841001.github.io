@@ -194,12 +194,12 @@ Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파
 
 Microsoft는 Frontier에서 **Microsoft 365 Insights Agent V2**를 공개 미리 보기로 제공한다고 발표했습니다. Copilot Chat에서 자연어로 조직의 선언형 에이전트 사용 현황과 사용자 피드백을 조회해, 에이전트 소유자·제작자·관리자가 활용 현황과 개선 우선순위를 판단할 수 있습니다.
 
-- **측정 범위:** DAU·WAU·MAU, 고유 사용자, 대화·쿼리·상호작용·인용, 사용 강도, 기간별 성장, 집계된 유지 신호를 확인하고 에이전트를 비교할 수 있습니다. 데이터는 약 3~4시간 간격으로 갱신되므로 실시간 운영 모니터링 도구로 사용하지 마세요.
-- **개인정보 경계:** 사용량은 테넌트 범위의 집계 데이터이며 개인별 사용 내역이나 사용자 집단별 지속 사용 비율을 제공하지 않습니다. 요청자는 자신에게 접근 권한이 있는 에이전트만 조회할 수 있습니다. 자유 입력 피드백에는 업무 내용이 포함될 수 있으므로 민감정보를 넣지 않도록 안내하세요.
+- **측정 범위:** DAU·WAU·MAU, 기간별 고유 사용자, 사용 추세, DAU/MAU 비율과 에이전트 간 비교를 지원합니다. 기간 간 고유 사용자 수의 비율은 같은 사용자가 다시 방문한 비율과 다릅니다. 응답에 표시된 대상 기간과 집계값을 확인하세요. 대화 품질이나 개인별 업무 성과를 이 지표만으로 판단할 수는 없습니다.
+- **조회 권한과 개인정보:** 사용량은 접근 권한이 있는 에이전트의 집계 지표를 조회합니다. 피드백은 관리자 공유 설정이 켜져 있고 요청자가 해당 에이전트의 소유자로 확인돼야 조회할 수 있습니다. 사용량을 볼 수 있다는 이유만으로 피드백도 볼 수 있는 것은 아닙니다. 피드백 결과에는 제출자 신원과 대화 내용이 포함되지 않지만, 사용자가 직접 쓴 의견에는 업무 정보가 들어갈 수 있으므로 민감정보를 넣지 않도록 안내하세요.
 - **피드백 통제:** 관리자는 Microsoft 365 관리 센터의 `Agents > Settings > Agent feedback sharing`에서 `No agents`, `All agents`, `Selected agents`를 선택합니다. 전사 허용보다 검토된 에이전트만 선택하고, 에이전트 소유자·게시자·피드백 처리 책임을 함께 기록하는 방식이 안전합니다.
 - **적용 조건:** 현재 Frontier 미리 보기이며 Microsoft 365 Copilot 라이선스, 지원되는 선언형 에이전트와 충분한 활동 데이터가 필요합니다. 지원 언어와 기능은 변경될 수 있으므로 실제 테넌트의 에이전트 선택기와 관리 설정에서 표시 여부를 확인하세요.
 
-출처: [Microsoft 공식 발표 — Explore user feedback with Microsoft 365 Insights Agent](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/explore-user-feedback-with-microsoft-365-insights-agent/4565981), [Microsoft 365 Insights Agent 샘플 프롬프트](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-sample-prompts), [Microsoft 365 관리 센터 에이전트 설정](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide).
+출처: [Microsoft 공식 발표 — Explore user feedback with Microsoft 365 Insights Agent](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/explore-user-feedback-with-microsoft-365-insights-agent/4565981), [Insights Agent 지원 지표·피드백 권한](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-overview), [Microsoft 365 Insights Agent 샘플 프롬프트](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-sample-prompts), [Microsoft 365 관리 센터 에이전트 설정](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide).
 
 ### 10월 21일 Copilot Code Frontier 운영 조건
 

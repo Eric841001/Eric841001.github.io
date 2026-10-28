@@ -110,7 +110,7 @@ Organizations require:
     <div className="kc-journey-node">
   <small>02</small>
   <strong>Collect metadata</strong>
-  <span>Capture sender, subject, received time, recipient, classification and message indicators.</span>
+  <span>Capture sender, subject, received time and recipient; add security classification only through a separate data source.</span>
 </div>
     <div className="kc-journey-arrow" aria-hidden="true"/>
     <div className="kc-journey-node">
@@ -149,7 +149,7 @@ Recommended fields:
 | Subject | Mail subject |
 | Time | Received time |
 | Recipient | Target user |
-| Category | Spam classification |
+| Classification (optional enrichment) | Add only when a separate authorized security data source supplies a verdict; the Outlook trigger does not provide a spam-classification verdict |
 
 ---
 
