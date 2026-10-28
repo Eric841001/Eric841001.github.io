@@ -6,6 +6,8 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft 365', title: '캐나다 시간대 전환 전 회의 일정 점검', description: '11월 1일 전환을 앞두고 기존 Outlook 일정과 Teams Rooms의 표시 시간을 확인하세요.', date: '2026-10-29', status: '운영 안내 · 대상 지역 확인', path: '/knowledge/microsoft365/exchange-online#canada-time-zone-2026'},
+  {category: 'Microsoft Intune', title: '회사 소유 Android 기기의 eSIM 일괄 관리', description: 'Android 15 이상에서 최대 100대의 eSIM을 활성화할 수 있습니다. 지원 기기와 초기화 시 요금제 유지 조건을 정리했습니다.', date: '2026-10-29', status: '문서 개정 · 10월 26일 주간 변경', path: '/knowledge/playbooks/intune-deployment-playbook#android-esim-bulk-actions'},
   {category: 'Defender for Endpoint', title: 'Microsoft Store 앱 취약점 평가 정식 제공', description: '지원되는 앱과 취약점 근거를 확인하고, Microsoft Store에서 앱 버전을 관리하는 방법을 추가했습니다.', date: '2026-10-28', status: '문서 보완 · 일부 앱 지원', path: '/knowledge/security/defender-for-endpoint#microsoft-store-vulnerability-assessment'},
   {category: 'Copilot Studio', title: 'Work IQ 정식 제공과 기본 권한 설정', description: 'GitHub Copilot harness의 새 에이전트에 기본 추가됩니다. 워크로드 선택과 쓰기 작업, 사용량 과금 조건을 확인하세요.', date: '2026-10-28', status: '문서 개정 · Business apps는 미리 보기', path: `${updateGuide}#work-iq-availability`},
   {category: 'Agent Builder', title: '공유본과 조직 게시본의 갱신 조건', description: '직접 공유한 버전과 Agent Store 게시본의 반영 시점·재승인 조건을 구분했습니다.', date: '2026-10-28', status: '문서 보완 · 관리자 재승인', path: '/knowledge/copilot/agentic-ai-architecture#agent-builder-distribution'},

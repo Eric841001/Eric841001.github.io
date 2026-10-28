@@ -549,6 +549,14 @@ Validate:
 
 ---
 
+## 캐나다 시간대 전환 전 일정 점검 {/* #canada-time-zone-2026 */}
+
+2026년 11월 1일 캐나다의 대상 지역은 시계를 한 시간 뒤로 돌리지 않습니다. British Columbia는 UTC−07:00, Alberta는 UTC−06:00, Manitoba는 UTC−05:00을 유지하며, 일부 인접 지역도 영향을 받습니다.
+
+해당 지역의 사용자는 Windows를 업데이트하고 Outlook에서 새 시간대를 선택해야 합니다. **기존 일정은 자동으로 이전되지 않으므로** 11월 1일 이후의 단일·반복 회의와 참석자의 표시 시간을 확인하세요. 한국 사용자도 해당 지역과의 회의가 있다면 초대장 시간을 함께 대조하세요.
+
+Microsoft의 10월 27일 안내는 단일 회의 보정용 Exchange Online PowerShell 명령의 목표일을 10월 28일로, 반복 회의 보정 일정은 미정으로 표시합니다. 목표일이 지났다는 이유만으로 제공이 완료됐다고 판단하지 말고, [현재 공식 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)에서 배포 여부와 적용 절차를 확인하세요.
+
 ## References
 
 - [Exchange Online documentation](https://learn.microsoft.com/en-us/exchange/exchange-online)

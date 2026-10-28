@@ -584,6 +584,12 @@ The following targets are planning examples to agree with the organization, not 
 
 ---
 
+## 캐나다 시간대 변경과 Teams Rooms {/* #canada-time-zone-2026 */}
+
+캐나다 일부 지역과 회의를 운영한다면 2026년 11월 1일 이후 일정을 점검하세요. Microsoft는 Windows용 Teams Rooms에서 Windows보다 시간이 한 시간 늦게 표시되는 문제에 대해 **Edge·WebView2 업데이트 후 회의실 화면의 시간 확인**을 안내합니다. 일반 Teams 클라이언트의 일정·알림과 다른 Teams 기기의 영향은 별도로 시험해야 합니다.
+
+[Microsoft의 제품별 시간대 변경 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)와 [Outlook·Exchange Online 일정 점검](./exchange-online#canada-time-zone-2026)을 참고하세요.
+
 ## References
 
 

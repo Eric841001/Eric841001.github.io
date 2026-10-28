@@ -61,7 +61,7 @@ toc_max_heading_level: 2
 
 ## 2026년 10월 변경 사항
 
-10월에는 보안 기준, Apple 앱 할당과 Windows 원격 지원에 변경이 있습니다. [Intune 공식 변경 기록](https://learn.microsoft.com/en-us/intune/whats-new/)에서 사용하는 기능의 적용 조건을 확인하고 배포 계획에 반영하세요.
+10월에는 보안 기준, Apple 앱 할당, Windows 원격 지원과 Android eSIM 관리에 변경이 있습니다. [Intune 공식 변경 기록](https://learn.microsoft.com/en-us/intune/whats-new/)에서 사용하는 기능의 적용 조건을 확인하고 배포 계획에 반영하세요.
 
 - **Windows 11 26H2 보안 기준:** 10월 5일 주간에 새 기준이 추가됐습니다. 기존 보안 기준 프로필은 자동으로 새 버전이 되지 않습니다. 기존 사용자 지정 값을 비교하고 시험한 뒤 새 프로필을 만들거나 버전을 갱신하세요. NetBIOS 구성 정책은 이 기준에 포함되지 않으므로 배포 항목에 넣기 전에 현재 지원 여부를 확인해야 합니다.
 - **Apple 앱 할당:** 10월 19일 주간부터 Apple Business Manager와 Apple School Manager에서 무제한 라이선스로 제공한 VPP 앱을 iOS/iPadOS·macOS 기기에 할당할 수 있습니다. 모든 앱을 수량 제한 없이 구매·사용할 수 있다는 뜻은 아닙니다. 앱의 라이선스 유형과 할당 결과를 확인하세요.
@@ -69,6 +69,19 @@ toc_max_heading_level: 2
 
 Intune 서비스 변경은 순차 배포됩니다. 발표 날짜만으로 모든 테넌트에 기능이 적용됐다고 판단하지 말고 실제 관리 화면과 시험 기기에서 확인하세요.
 
+
+## Android Enterprise eSIM 일괄 관리 {/* #android-esim-bulk-actions */}
+
+10월 26일 주간 변경 기록에 회사 소유 Android Enterprise 기기의 eSIM 일괄 관리가 추가됐습니다.
+
+- **대상 기기:** eSIM을 지원하는 Android 15 이상 기기입니다. 회사 소유 완전 관리(COBO), 전용 기기(COSU), 회사 소유 업무 프로필(COPE)을 지원하며 개인 소유 업무 프로필(BYOD)은 제외됩니다.
+- **일괄 활성화:** `Devices > All devices > Bulk device actions`의 새 화면에서 최대 100대를 선택합니다. 선택한 기기는 같은 통신사 활성화 서버 URL을 사용합니다. 기존 일괄 작업 화면에서는 지원하지 않습니다.
+- **실행 권한:** 활성화에는 `Remote tasks/Update cellular data plan`과 대상 기기 조회·접근 권한이 필요합니다. 통신사에서 받은 URL과 적용 기기를 먼저 확인하세요.
+- **일괄 초기화:** 지원되는 회사 소유 Android Enterprise 기기는 최대 100대까지 Wipe할 수 있습니다. eSIM 요금제는 기본으로 유지되며 삭제하려면 별도 옵션을 선택합니다. 조직에서 다중 관리자 승인(MAA)을 요구하면 다른 관리자의 승인도 필요합니다.
+
+활성화와 Wipe는 다른 작업입니다. 초기화 대상과 업무 데이터 삭제 영향을 확인하고, 재사용할 기기의 통신 연결을 유지할지 먼저 정하세요. Wipe는 개별·일괄·Graph API 요청을 합쳐 테넌트당 하루 500회까지 제출할 수 있습니다.
+
+근거: [Intune 10월 26일 주간 변경](https://learn.microsoft.com/en-us/intune/whats-new/#week-of-october-26-2026), [eSIM 지원 조건과 일괄 활성화](https://learn.microsoft.com/en-us/intune/device-management/actions/update-cellular-data-plan#activate-esims-on-multiple-android-enterprise-devices), [일괄 초기화와 eSIM 유지 조건](https://learn.microsoft.com/en-us/intune/device-management/actions/wipe#wipe-multiple-android-enterprise-devices).
 
 ## Executive Summary
 
