@@ -90,6 +90,15 @@ Teams의 **공유 채널**과 **외부 액세스 채팅**은 DLP 적용 방식�
 
 시험할 때는 채팅을 시작하는 조직을 바꾸고 양쪽 사용자가 보낸 메시지의 처리 결과를 확인하세요. 공유 파일은 저장된 SharePoint·OneDrive 위치에 적용되는 정책도 따로 점검합니다. [Teams 대화별 DLP 적용 범위](https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams)를 참고하세요.
 
+## macOS 27 권한과 운영 시 주의할 점 {/* #macos-27-permissions */}
+
+Microsoft는 macOS 27의 Endpoint DLP 권한 변경을 미리 보기로 안내합니다. 클라이언트는 **101.26072 이상**이어야 하며, `설정 > 개인정보 보호 및 보안 > Device Control and Data Access` 권한을 확인하세요. MDM으로 배포한 뒤에도 사용자가 이 권한을 끌 수 있습니다. 이때 Safari·Chrome·Firefox의 URL과 브라우저 정보를 가져오지 못하므로 권한 상태와 복구 알림을 함께 관리해야 합니다.
+
+권한이 없을 때 적용할 업로드 보호와 브라우저 붙여넣기 보호는 각각 설정합니다. 두 설정의 기본값은 `Enforce`이며 `Audit`에서는 기록만 남기고 추가 제한을 적용하지 않습니다. 시험 목적으로 `Audit`를 사용한다면 보호 공백을 고려하고 권한 복구 여부를 확인하세요. [macOS 27 설정과 보호 모드](https://learn.microsoft.com/en-us/purview/endpoint-dlp-macos-27-changes)에 자세한 조건이 있습니다.
+
+- **Windows와 macOS의 앱 제어 차이:** 제한된 앱 목록이나 규칙에 추가한 제한된 앱 그룹에 속하지 않는 앱의 접근 제어는 Windows에서 지원하지만 macOS에서는 지원하지 않습니다. 같은 규칙을 배포해도 보호 범위가 같다고 가정하지 마세요. [운영체제별 지원 표](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about)를 확인하세요.
+- **Exchange의 필수 레이블 지정:** 민감도 레이블 조건과 정책 팁을 사용하는 DLP 정책에서 필수 레이블 지정 창으로 레이블을 선택하면 정책 팁을 다시 평가하지 않습니다. 팁이 표시되지 않아도 설정한 DLP 동작은 적용됩니다. 경고 표시와 실제 전송 결과를 나누어 시험하세요. [레이블 조건과 정책 팁](https://learn.microsoft.com/en-us/purview/dlp-sensitivity-label-as-condition)을 참고하세요.
+
 ## Licensing
 
 Advanced DLP across Microsoft 365 workloads and endpoints may require higher compliance licensing. Confirm workload coverage before committing policy scope in a proposal.

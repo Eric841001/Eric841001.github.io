@@ -3288,9 +3288,9 @@
   },
   "/knowledge/security/dlp": {
     "file": "docs/security/dlp.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: DLP의 워크로드·정책·파일럿·라이선스 적용 범위 추가 확인: 공유 채널의 발신자 소속 테넌트 평가와 외부 액세스 채팅의 호스트 소속 사용자 적용을 구분하고 공유 파일의 별도 저장 위치 정책을 확인했습니다.",
+    "scope": "확인한 항목: DLP의 워크로드·정책·파일럿·라이선스 적용 범위 추가 확인: 공유 채널의 발신자 소속 테넌트 평가와 외부 액세스 채팅의 호스트 소속 사용자 적용을 구분하고 공유 파일의 별도 저장 위치 정책을 확인했습니다.; macOS 27 권한·최소 클라이언트·기본 보호 모드, 운영체제별 앱 제어와 Exchange 필수 레이블 정책 팁",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3312,10 +3312,25 @@
         "title": "Teams DLP scope",
         "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
         "checkedFor": "공유 채널의 발신자 소속 테넌트 평가와 외부 액세스 채팅의 호스트 소속 사용자 적용을 구분하고 공유 파일의 별도 저장 위치 정책을 확인했습니다."
+      },
+      {
+        "title": "macOS 27 Endpoint DLP",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-macos-27-changes",
+        "checkedFor": "클라이언트 101.26072 이상, 사용자가 권한을 끌 수 있는 조건과 두 보호 모드의 Enforce 기본값·Audit의 제한 미집행을 확인했습니다."
+      },
+      {
+        "title": "Endpoint DLP platform support",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "checkedFor": "제한된 앱 목록·규칙의 앱 그룹 밖 앱 접근 제어는 Windows에서 지원하고 macOS에서는 지원하지 않습니다."
+      },
+      {
+        "title": "DLP sensitivity label conditions",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-sensitivity-label-as-condition",
+        "checkedFor": "Exchange 필수 레이블 지정 창에서 레이블 선택 시 정책 팁을 재평가하지 않아도 DLP 동작은 집행되는 조건을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "공식 문서의 지원 조건을 대조했습니다. 실제 테넌트의 DLP 정책 집행, macOS 권한 변경 및 메일 전송은 시험하지 않았습니다."
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",

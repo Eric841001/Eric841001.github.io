@@ -151,13 +151,13 @@ Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 | Executive Summary | 핵심 결론과 업무에 미치는 영향 |
 | Business Scenario | 고객 상황, 해결할 문제와 요구사항 |
 | Architecture | 권장 구성과 설계 원칙 |
-| Implementation | 구축 절차, configuration 기준, 운영 방식 |
+| Implementation | 구축 절차, 설정 기준, 운영 방식 |
 | Licensing | 필요한 라이선스와 제약사항 |
-| Security | 보안 consideration과 제어 방안 |
-| Best Practice | 실제 project 기반 권장사항 |
+| Security | 보안 검토 사항과 제어 방안 |
+| Best Practice | 프로젝트에서 활용할 권장 사항 |
 | Troubleshooting | 자주 발생하는 문제와 해결 방법 |
 | Lessons Learned | 프로젝트 수행 중 확인한 주의사항 |
-| References | Microsoft official documentation 및 참고 링크 |
+| References | Microsoft 공식 문서와 참고 링크 |
 
 ---
 

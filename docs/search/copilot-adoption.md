@@ -71,7 +71,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 <div aria-label="2026 Copilot adoption context" className="kc-context-panel">
   <div className="kc-context-panel__lead">
     <small>2026 Adoption Context</small>
-    <strong>Copilot adoption now spans everyday work, available reasoning models reasoning, Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork.</strong>
+    <strong>Copilot adoption now spans everyday work, reasoning models available in the tenant, Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork.</strong>
     <span>available reasoning models can improve the quality ceiling for reasoning, drafting, analysis and presentation work, but enterprise value still depends on readiness, data protection, user behavior, governance and measurement.</span>
   </div>
   <div className="kc-context-panel__grid">
