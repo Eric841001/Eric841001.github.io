@@ -141,7 +141,7 @@ VM migration is often a bridge to modernization. Document which workloads should
 |---|---|
 | Sizing record | Confirms VM size is based on workload data rather than guesswork |
 | Network access design | Shows private access, Bastion, VPN or privileged admin path |
-| Backup and restore test | Proves RPO/RTO and operational recoverability |
+| Backup and restore test | Records measured data loss and recovery time for the tested restore scenario |
 | Defender for Cloud recommendation review | Confirms security posture is tracked after deployment |
 
 ## Related Documents

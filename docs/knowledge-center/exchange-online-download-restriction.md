@@ -28,7 +28,7 @@ Exchange Online PowerShell에 연결한 뒤 별도의 테스트 정책을 만듭
 New-OwaMailboxPolicy -Name '<Test Policy Name>'
 ```
 
-조건부 액세스의 앱 적용 제한을 받는 세션에서 첨부파일 다운로드와 오프라인 모드를 제한합니다. `ReadOnly`는 사서함 전체의 쓰기 권한을 없애는 설정이 아닙니다.
+조건부 액세스의 앱 적용 제한을 받는 비준수 기기의 Outlook on the web 세션에서 첨부파일 다운로드와 오프라인 모드를 제한합니다. 준수 기기와 비준수 기기로 각각 시험하세요. `ReadOnly`는 사서함 전체의 쓰기 권한을 없애는 설정이 아닙니다.
 
 ```powershell
 Set-OwaMailboxPolicy -Identity '<Test Policy Name>' `
@@ -56,7 +56,7 @@ Get-CASMailbox -Identity '<Test Mailbox Alias>' |
   Select-Object DisplayName, OwaMailboxPolicy
 ```
 
-기존 사용자에게 일괄 할당하기 전에 테스트 사서함에서 영향도를 검증합니다.
+기존 사용자에게 일괄 할당하기 전에 테스트 사서함에서 영향도를 검증합니다. [OWA 정책 변경은 반영까지 최대 60분이 걸릴 수 있습니다](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-owamailboxpolicy?view=exchange-ps). 저장 직후의 결과만으로 적용 실패를 판단하지 마세요.
 
 ## 3. 조건부 액세스 정책 구성
 

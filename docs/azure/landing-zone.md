@@ -138,7 +138,7 @@ Security considerations:
 
 ## Lessons Learned
 
-Landing zone projects fail when they become abstract architecture exercises. The best outcomes come from validating the foundation with one real workload and turning design standards into repeatable operating procedures.
+Validate the landing zone design with a representative workload before wider deployment. Record the pilot findings and turn the agreed design standards into operating procedures.
 
 ## 검색 키워드
 

@@ -135,7 +135,7 @@ If no threat service is integrated, leave its dependent compliance setting **Not
 | Device compliance state | Shows the iOS/iPadOS device is compliant or non-compliant |
 | Conditional Access sign-in log | Verifies the assigned policy enforces the compliant-device requirement |
 | Threat connector and device risk evidence | Confirms the chosen service reports risk, changes compliance and recovers after remediation |
-| User remediation message | Confirms the user understands how to fix non-compliance |
+| User remediation message | Records the instructions shown to the user; confirm understanding and successful recovery during the pilot |
 
 ## Related Documents
 

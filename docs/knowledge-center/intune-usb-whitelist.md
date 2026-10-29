@@ -13,7 +13,7 @@ Organizations often need to block unauthorized USB storage devices while allowin
 
 Microsoft Intune and Microsoft Defender Device Control can implement granular USB access policies.
 
-The strongest design starts with audit evidence, approved device inventory and exception governance before enforcement. This reduces business disruption while still improving data leakage control.
+Review audit evidence, the approved device inventory and exception procedures before enforcement. Use the pilot results to identify workflows that the proposed restrictions would interrupt.
 
 ## 한국어 요약
 

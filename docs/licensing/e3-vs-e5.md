@@ -56,7 +56,11 @@ Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot
 | Microsoft Agent 365 | 기본 구독에 미포함 | 기본 구독에 미포함 | 포함 |
 | Microsoft Security Copilot | 기본 구독에 미포함 | 적격 고객에 포함 | 적격 고객에 포함 |
 
-Teams는 세 플랜 모두 **구매한 상품에 포함되는지** 확인합니다. Microsoft Security Copilot과 일반 업무용 Microsoft 365 Copilot은 다른 제품입니다. Security Copilot의 적격 조건과 제공 범위를 별도로 확인하세요.
+Teams는 세 플랜 모두 **구매한 상품에 포함되는지** 확인합니다.
+
+기기 관리 기능도 과거 비교표와 달라졌습니다. 2026년 상용 패키지 개편으로 E3에는 Intune Remote Help·Advanced Analytics·Plan 2가 추가됐고, E5에는 Endpoint Privilege Management·Cloud PKI·Enterprise Application Management도 포함됩니다. E7은 E5 기능을 포함합니다. [공식 개편 안내](https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates)와 [플랜별 추가 기능 표](/knowledge/licensing/july-2026-microsoft-licensing-update#commercial-packaging-2026)를 확인하고, 기존 Intune 추가 구독과 겹치는지 점검하세요.
+
+ Microsoft Security Copilot과 일반 업무용 Microsoft 365 Copilot은 다른 제품입니다. Security Copilot의 적격 조건과 제공 범위를 별도로 확인하세요.
 
 ## E3를 검토할 때 {/* #when-e3-is-appropriate */}
 
@@ -136,7 +140,7 @@ E3에 특정 보안 기능만 추가하는 대안도 함께 비교합니다. 이
 | Teams 구성 | 포함·미포함 상품과 별도 Teams 구독의 중복 |
 | 기존 구독 | 해지·갱신·전환 시점과 이미 보유한 기능 |
 | AI 사용량 | 구독에 포함되는 사용과 별도 과금 서비스 |
-| 추가 기능 | Teams Premium·Windows 365·Intune 확장 기능 등의 별도 조건 |
+| 추가 기능 | Teams Premium·Windows 365와 기본 플랜에 없는 Intune 기능의 별도 조건 |
 | 운영 준비 | 자료 접근 권한, 정책 담당자, 에이전트 소유자와 변경 승인 |
 
 <span id="decision-checklist" />

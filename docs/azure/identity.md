@@ -120,7 +120,7 @@ Entra ID, Azure RBAC, PIM, Conditional Access, 관리 ID와 서비스 주체의 
 
 ## Lessons Learned
 
-Identity cleanup should happen before broad Azure expansion. Retrofitting RBAC and privilege controls after workload growth is slower and riskier.
+Identity cleanup should happen before broad Azure expansion. Review RBAC and privileged access before expanding workloads, and plan how existing assignments will be migrated.
 
 ## References
 
@@ -141,8 +141,8 @@ Identity cleanup should happen before broad Azure expansion. Retrofitting RBAC a
 |---|---|
 | RBAC role matrix | Confirms platform, security and workload ownership |
 | PIM activation policy | Shows approval, duration and justification requirements |
-| Break-glass test record | Proves emergency access is protected and usable |
-| Service principal review | Confirms app permissions and managed identity usage are controlled |
+| Break-glass test record | Records whether the tested emergency access path worked, including authentication method and test date |
+| Service principal review | Records reviewed app permissions, managed identities and unresolved access findings |
 
 ## Related Documents
 

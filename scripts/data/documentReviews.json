@@ -235,50 +235,45 @@
   },
   "/knowledge/azure/identity": {
     "file": "docs/azure/identity.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Azure ID의 인증·권한 부여·Conditional Access 역할",
+    "scope": "이번 대조 범위: 인증·권한 설계와 시험 증거의 의미를 구분하고 검증 결과를 과장한 문구 수정",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Azure identity and access architecture",
+        "title": "azure-identity",
         "url": "https://learn.microsoft.com/en-us/azure/architecture/identity/identity-get-started",
-        "checkedFor": "ID는 사용자·장치·애플리케이션의 인증과 권한 부여를 구분하는 설계 영역입니다."
+        "checkedFor": "ID와 접근 관리는 인증·인가를 제공하며 Entra ID와 하이브리드 ID, 역할·네트워크 설계를 함께 검토한다."
       },
       {
-        "title": "Microsoft Entra licensing",
-        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
+        "title": "pim",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "checkedFor": "PIM은 적격·시간제 역할 활성화, 승인·MFA·사유·접근 검토와 감사 이력을 제공한다."
       },
       {
-        "title": "Microsoft Entra Conditional Access",
+        "title": "ca-overview",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
-        "checkedFor": "Conditional Access의 조건·허용 제어·세션 제어를 구분하고 위험 기반 정책에는 P2가 필요합니다."
+        "checkedFor": "User,device,app,risk,location inputs; compliant grant separatefromOS; user/signinriskP2; sessioncontrols integration."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/azure/landing-zone": {
     "file": "docs/azure/landing-zone.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Landing Zone의 플랫폼·애플리케이션 구독 경계",
+    "scope": "이번 대조 범위: 플랫폼·워크로드 랜딩 존의 역할과 파일럿·운영 절차 구분",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Azure landing zones",
+        "title": "azure-landing",
         "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/",
-        "checkedFor": "Landing Zone은 관리그룹·구독·네트워크·ID·관리·보안·거버넌스의 설계 영역을 다룹니다."
-      },
-      {
-        "title": "Azure Cloud Adoption Framework",
-        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
-        "checkedFor": "Cloud Adoption Framework는 도입·계획·준비·운영·보안·거버넌스 지침이며 이 글의 프로젝트 일정이나 점수를 인증하지 않습니다."
+        "checkedFor": "플랫폼 랜딩 존과 워크로드 랜딩 존을 구분하며 관리그룹·구독·연결·정책·보안·운영 리소스를 포함한다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/azure/overview": {
     "file": "docs/azure/overview.md",
@@ -303,24 +298,19 @@
   },
   "/knowledge/azure/virtual-machines": {
     "file": "docs/azure/virtual-machines.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: VM 크기·네트워크·디스크·가용성·운영비 설계 항목",
+    "scope": "이번 대조 범위: VM 배포 전제 조건과 RPO/RTO 시험에서 실제 기록할 항목 구분",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Azure Virtual Machines overview",
+        "title": "azure-vm",
         "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
-        "checkedFor": "VM 크기 외 디스크·네트워크 등 연계 리소스와 구독 할당량·비용을 함께 고려해야 합니다."
-      },
-      {
-        "title": "Azure Cloud Adoption Framework",
-        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/",
-        "checkedFor": "Cloud Adoption Framework는 도입·계획·준비·운영·보안·거버넌스 지침이며 이 글의 프로젝트 일정이나 점수를 인증하지 않습니다."
+        "checkedFor": "VM은 OS 제어를 제공하며 기기 설정·패치·소프트웨어 관리가 필요하다. 네트워크·디스크 등 관련 리소스와 크기·지역·비용을 별도로 고려한다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/contact": {
     "file": "docs/contact.md",
@@ -1092,89 +1082,104 @@
     "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: API 기반 프로비저닝의 P1·P2·Governance 라이선스와 사용자 범위 추가 대조: HTTPS 연결 시작 방향은 에이전트에서 클라우드로 향하므로 작업 전달 방향과 분리하고 인증서 확인용 HTTP 80 등 추가 통신 조건을 안내했습니다.",
+    "scope": "이번 대조 범위: 앱 관리자·하이브리드 관리자 역할, 엔터프라이즈 앱 경로, 필수 알림 메일과 작업 시작 조건",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "API-driven inbound provisioning concepts",
+        "title": "api-concepts",
         "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-concepts",
-        "checkedFor": "5초 창 40회·24시간 P1/P2 2000회/ID Governance 6000회 한도, 실패 레코드 재전송을 확인. Graph 참조의 초당 40회와 단위가 달라 더 보수적인 초기 간격으로 안내. 실제 테넌트의 한도·처리량은 미측정."
+        "checkedFor": "Inbound API uploads SCIM records, service maps and writes AD or Entra, asynchronous result logs; 40 per 5 seconds, tenant daily 2000/6000; complete record and null clearing."
       },
       {
-        "title": "Microsoft Graph bulkUpload API",
+        "title": "api-config",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-configure-app",
+        "checkedFor": "App Administrator plus Hybrid Identity Administrator; domain and OU selection, connection test, mandatory notification email; Start provisioning starts listening."
+      },
+      {
+        "title": "api-bulk",
         "url": "https://learn.microsoft.com/en-us/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-1.0",
-        "checkedFor": "Operations 최대 50개와 API 참조의 초당 40회 표기를 확인. 실제 요청을 실행한 결과로 기술하지 않음."
+        "checkedFor": "OwnedBy least privilege, higher Upload; SCIM content type, employeeNumber and mapping, max50, 202 staged not completed; API reference conflicts with overview on 40/sec."
       },
       {
-        "title": "licensing-fundamentals",
-        "url": "https://learn.microsoft.com/en-us/entra/id-governance/licensing-fundamentals",
-        "checkedFor": "API 기반 프로비저닝의 P1·P2·Governance 라이선스와 사용자 범위"
-      },
-      {
-        "title": "Provisioning agent firewall requirements",
+        "title": "cloud-agent",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-to-prerequisites",
-        "checkedFor": "HTTPS 연결 시작 방향은 에이전트에서 클라우드로 향하므로 작업 전달 방향과 분리하고 인증서 확인용 HTTP 80 등 추가 통신 조건을 안내했습니다."
+        "checkedFor": "Domain joined server, Hybrid Identity Administrator, gMSA domain authority, multiple agents HA, outbound443 and CRL80."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Connect Sync 2.6.84.0 이상과 2027-04-07 애플리케이션 인증 전환 기한",
+    "scope": "이번 대조 범위: PTA 통신·프록시·TLS 검사 제외 및 Connect 인증 전환 전제 조건",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Pass-through authentication prerequisites",
+        "title": "pta-quick",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-quick-start",
-        "checkedFor": "PTA는 TCP 443·CRL TCP 80을 사용하며 TCP 8080은 443 불가 시 상태 보고용 선택 항목입니다."
+        "checkedFor": "443 service,80CRL,8080optionalstatusnotlogin; msappproxy/servicebus, registration endpoints, explicit autologon and TLS inspection exclusion."
       },
       {
-        "title": "how-to-connect-install-prerequisites",
+        "title": "pta-faq",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq",
+        "checkedFor": "Older versions additional5671,8080,9090,9091,9350,9352,10100-10120; WPAD or agent service config."
+      },
+      {
+        "title": "connect-prereq",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites",
-        "checkedFor": "Connect Sync 2.6.84.0 이상과 2027-04-07 애플리케이션 인증 전환 기한"
+        "checkedFor": "2.6.84.0 plus app-based authentication by2027-04-07; Sync machine.config proxy including credential context and service restart."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/exchange-online-download-restriction": {
     "file": "docs/knowledge-center/exchange-online-download-restriction.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: ReadOnly는 첨부파일 다운로드·오프라인을 제한하고 브라우저 미리보기는 허용합니다. 인라인 이미지는 제외되며 인쇄 전체 차단을 보장하지 않습니다. 사서함별 OwaMailboxPolicy 할당 매개 변수를 확인하고 줄 연결이 깨진 예제를 정상적인 다중 행 명령으로 수정했습니다. 보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다.",
+    "scope": "이번 대조 범위: 비준수 기기 OWA의 ReadOnly 범위, 정책 할당·보고 전용과 최대 60분 반영 시간",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Conditional Access session controls",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
-        "checkedFor": "앱 적용 제한은 지원되는 앱이 세션 신호를 사용해 제한하며 모든 앱의 다운로드를 일괄 차단하는 설정이 아닙니다."
+        "title": "owa-policy",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps",
+        "checkedFor": "비준수 기기의 ReadOnly는 다운로드·오프라인을 제한하고 인라인 이미지를 제외한다. Plus는 첨부 미리보기도 제한한다."
       },
       {
-        "title": "Exchange Online documentation",
-        "url": "https://learn.microsoft.com/en-us/exchange/exchange-online",
-        "checkedFor": "Exchange Online의 관리자·메일·이전 운영 영역을 확인했으며 특정 고객의 구성이나 이전 성공을 입증하지 않습니다."
-      },
-      {
-        "title": "Set-OwaMailboxPolicy ConditionalAccessPolicy",
-        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps#-conditionalaccesspolicy",
-        "checkedFor": "ReadOnly는 첨부파일 다운로드·오프라인을 제한하고 브라우저 미리보기는 허용합니다. 인라인 이미지는 제외되며 인쇄 전체 차단을 보장하지 않습니다."
-      },
-      {
-        "title": "Set-CASMailbox OwaMailboxPolicy",
+        "title": "owa-assignment",
         "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-casmailbox?view=exchange-ps",
-        "checkedFor": "사서함별 OwaMailboxPolicy 할당 매개 변수를 확인하고 줄 연결이 깨진 예제를 정상적인 다중 행 명령으로 수정했습니다."
+        "checkedFor": "사서함에 지정한 OWA 정책을 연결한다. 공식 매개변수 정의와 본문의 명령 예제를 대조했습니다."
       },
       {
-        "title": "Conditional Access report-only behavior",
+        "title": "owa-ca",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+        "checkedFor": "Exchange Online 앱 적용 제한과 OWA 정책을 함께 구성한다."
+      },
+      {
+        "title": "ca-report-only",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only",
-        "checkedFor": "보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다."
+        "checkedFor": "보고 전용은 정책을 평가하고 기록하지만 강제하지 않는다."
+      },
+      {
+        "title": "new-owa",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-owamailboxpolicy?view=exchange-ps",
+        "checkedFor": "New-OwaMailboxPolicy -Name으로 정책을 생성한다."
+      },
+      {
+        "title": "get-owa",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-owamailboxpolicy?view=exchange-ps",
+        "checkedFor": "정책 이름으로 OWA 설정을 조회한다. 공식 매개변수 정의와 본문의 명령 예제를 대조했습니다."
+      },
+      {
+        "title": "get-cas",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-casmailbox?view=exchange-ps",
+        "checkedFor": "Identity로 사서함 클라이언트 접근 설정을 조회한다. Exchange Online에서는 Get-EXOCASMailbox가 권장된다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/exchange-online-message-recall-purge": {
     "file": "docs/knowledge-center/exchange-online-message-recall-purge.md",
@@ -1317,50 +1322,50 @@
   },
   "/knowledge/knowledge-center/intune-certificate-deployment": {
     "file": "docs/knowledge-center/intune-certificate-deployment.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 신뢰 인증서 프로필의 루트·중간 인증서와 Windows 저장소",
+    "scope": "이번 대조 범위: 루트·중간 인증서 체인 조건과 신뢰 인증서 프로필 생성 경로",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Trusted certificate profiles",
+        "title": "cert-profile",
         "url": "https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles",
-        "checkedFor": "신뢰 인증서 프로필은 루트·중간 인증서용이며 Windows 대상 저장소 선택과 실제 확인 도구를 일치시켜야 합니다."
+        "checkedFor": "DER 공개 .cer를 사용하며 개인키 .pfx는 사용하지 않는다. Windows Root·Intermediate 기기 저장소 및 User Intermediate를 지원한다. SCEP·PKCS 대상과 신뢰 체인 배포 대상을 맞춘다."
+      },
+      {
+        "title": "cert-provider",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/about/about_certificate_provider?view=powershell-7.5",
+        "checkedFor": "Windows Cert: 공급자는 CurrentUser와 LocalMachine 저장소를 구분하며 Get-ChildItem으로 인증서를 조회한다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/intune-ios-compliance": {
     "file": "docs/knowledge-center/intune-ios-compliance.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: iOS 암호 기반 암호화·MTD 위협 수준·Defender 위험 점수 구분",
+    "scope": "이번 대조 범위: iOS 암호화·위협 수준·Defender 위험 점수와 사용자 안내 시험의 범위",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "iOS/iPadOS compliance settings",
+        "title": "ios-compliance",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-ios-ipados-settings",
-        "checkedFor": "암호 설정 시 암호화가 시작됩니다. MTD Device Threat Level과 Defender machine risk score는 서로 다른 준수 설정입니다."
+        "checkedFor": "탈옥·OS·MTD 위협 수준·Defender 위험 점수를 구분한다. 암호 설정 시 암호화가 시작된다. Not configured는 해당 설정을 평가하지 않는다."
       },
       {
-        "title": "iOS/iPadOS example security configurations",
-        "url": "https://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-compliance",
-        "checkedFor": "예시 보안 구성의 Device Threat Level은 MTD 제품을 필요로 하며 모든 환경의 보편적 기본값이 아닙니다."
-      },
-      {
-        "title": "Mobile Threat Defense integration",
+        "title": "mtd",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/mobile-threat-defense/overview",
-        "checkedFor": "MTD 서비스의 위험 정보는 Intune 커넥터를 통해 전달됩니다. 미연동 상태를 낮은 위험으로 판단하지 않습니다."
+        "checkedFor": "선택한 MTD 연결 앱이 위험 정보를 공급하며 커넥터와 앱·정책 구성이 필요하다."
       },
       {
-        "title": "Defender–Intune compliance integration",
+        "title": "mde-intune",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
-        "checkedFor": "Defender 연결·장치 온보딩·위험 준수 정책·Conditional Access를 연결해야 위험 기반 접근 제어가 동작합니다."
+        "checkedFor": "서비스 연결·기기 온보딩·위험 수준 규정 준수 정책·별도 조건부 액세스를 구성한다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/intune-macos-usb-control": {
     "file": "docs/knowledge-center/intune-macos-usb-control.md",
@@ -1402,22 +1407,22 @@
     "file": "docs/knowledge-center/intune-usb-whitelist.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "Audit 규칙은 접근 허용·차단을 결정하지 않고 기본 적용을 따릅니다. Intune 화면 순서는 우선순위가 아니며 허용 장치를 차단 규칙에서 제외하고 기본 적용을 확인하는 조건을 대조했습니다.",
+    "scope": "이번 대조 범위: Audit 동작과 기본 적용, 규칙 순서 및 허용 장치 제외 조건",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Configure Defender device control with Intune",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-deploy-manage-intune",
-        "checkedFor": "Intune은 별도 제품이며 Windows Device Control 프로필에는 플랫폼·관리 방식별 제약이 있습니다."
+        "title": "windows-dc",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-configure",
+        "checkedFor": "Intuneseparate;DeviceControlunsupportedWindowsServerMDEmanaged; auditinheritsdefault;policyorderunpreserved;explicitexclusions;GUIcannotchangedefault."
       },
       {
-        "title": "device-control-configure",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-configure",
-        "checkedFor": "Audit 규칙은 접근 허용·차단을 결정하지 않고 기본 적용을 따릅니다. Intune 화면 순서는 우선순위가 아니며 허용 장치를 차단 규칙에서 제외하고 기본 적용을 확인하는 조건을 대조했습니다."
+        "title": "dc-overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-overview",
+        "checkedFor": "Granular removable device read/write/execute/approveddevice/BitLocker restrictions;differentWindowsmac controls."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "본문의 제품 기능·지원 조건을 공식 자료와 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 명령을 실행하지 않았으며, 작성자가 제안한 일정·성과·평가 점수는 제품 보장이나 독립 인증으로 보지 않습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/m365-cloud-only-save-as": {
     "file": "docs/knowledge-center/m365-cloud-only-save-as.md",
@@ -1473,75 +1478,70 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: mdatp 상태와 연결 시험 구분, 실시간 보호 구성의 관리자 권한",
+    "scope": "이번 대조 범위: Linux 배포판·빌드·라이선스, AL2 ARM64 종료, 설치·연결 명령과 지원하지 않는 프록시",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Defender Linux prerequisites and support matrix",
+        "title": "linux-prereq",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites",
-        "checkedFor": "AL2 ARM64 지원은 2026-10-31 종료되며 마지막 지원 버전은101.25122.0004입니다. Linux 데스크톱은 public preview, 데스크톱은P2, 서버는별도 서버용 권한을 확인합니다."
+        "checkedFor": "AL2 ARM64 종료·최종 빌드·만료일, Linux 데스크톱 미리 보기와 서버 라이선스 구분을 대조했다."
       },
       {
-        "title": "Defender Linux manual deployment",
+        "title": "linux-install",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually",
-        "checkedFor": "배포판별 저장소·키·패키지 절차가 다르며 Python 요건은 Python 온보딩 스크립트 실행 단계와 연결됩니다."
+        "checkedFor": "배포판별 저장소·서명키·패키지 및 Python 온보딩·health·org_id 명령을 설명한다."
       },
       {
-        "title": "Defender October Linux releases",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "Linux101.26091.0004의 Azure Linux4와 TCP bind 이벤트를 확인했습니다. 이벤트는한 달에 걸쳐 적용되며 DeviceNetworkEvents의 ListeningConnectionCreated로 조회합니다."
-      },
-      {
-        "title": "linux-resources",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-resources",
-        "checkedFor": "mdatp 상태와 연결 시험 구분, 실시간 보호 구성의 관리자 권한"
-      },
-      {
-        "title": "linux-support-connectivity",
+        "title": "linux-network",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-support-connectivity",
-        "checkedFor": "mdatp 상태와 연결 시험 구분, 실시간 보호 구성의 관리자 권한"
+        "checkedFor": "static/transparent proxy 지원, PAC/WPAD/auth proxy와 TLS inspection 미지원, connectivity test 명령을 대조했다."
+      },
+      {
+        "title": "linux-cli",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-resources",
+        "checkedFor": "mdatp health와 real-time-protection 설정 명령을 대조했다."
+      },
+      {
+        "title": "linux-release",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
+        "checkedFor": "Azure Linux 4와 TCP 바인딩 이벤트 및 한 달 순차 적용을 대조했다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/mde-macos-onboarding": {
     "file": "docs/knowledge-center/mde-macos-onboarding.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "현재 Defender 배포 전제 조건의 macOS 15·26·27 지원과 베타 제외를 확인했습니다. 릴리스 페이지의 14 이상 문구와 차이가 있어 지원을 단정하지 않으며 Intune 지원과 분리했습니다.",
+    "scope": "이번 대조 범위: macOS 지원 OS·빌드, 온보딩과 Intune 준수·Windows 위험도 기반 CA의 경계",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Defender for Endpoint on macOS",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac",
-        "checkedFor": "macOS Defender는 설치뿐 아니라 시스템 확장·개인정보 권한·온보딩 구성이 필요합니다."
-      },
-      {
-        "title": "Defender for Endpoint release and OS support",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "10월 추가 빌드 101.26092.0009의 v1 종료·상태 보고·EDR 변경을 확인했습니다. 이전 101.26082.0012를 최신 빌드로 단정하지 않으며 설치만으로 기능 활성화나 권한 부여를 보장하지 않습니다."
-      },
-      {
-        "title": "Intune supported platforms",
-        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers",
-        "checkedFor": "Intune 관리 지원과 Defender 에이전트 지원은 별개이며 사용하는 기능의 OS·앱 조건을 함께 확인해야 합니다."
-      },
-      {
-        "title": "Defender October feature availability",
-        "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
-        "checkedFor": "101.26092.0009가 10월 GA 릴리스로 안내된 것을 확인했습니다. 공식 문서의 월 표기를 실제 배포일 10월28일로 바꿔 안내하지 않습니다."
-      },
-      {
-        "title": "microsoft-defender-endpoint-mac-prerequisites",
+        "title": "mac-prereq",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac-prerequisites",
-        "checkedFor": "현재 Defender 배포 전제 조건의 macOS 15·26·27 지원과 베타 제외를 확인했습니다. 릴리스 페이지의 14 이상 문구와 차이가 있어 지원을 단정하지 않으며 Intune 지원과 분리했습니다."
+        "checkedFor": "SupportedmacOS15,26,27notbeta; Intelx64/AppleARM64; subscriptionsMDMpermissions required."
+      },
+      {
+        "title": "mac-release",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
+        "checkedFor": "DeviceControlv1retired. Intro still14+contradictscurrentprerequisites; docuses latter."
+      },
+      {
+        "title": "mac-compliance",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-macos-settings",
+        "checkedFor": "OS·SIP·암호화·방화벽 등 macOS 설정을 Windows Defender 기기 위험도 절차와 구분했다."
+      },
+      {
+        "title": "windows-defender-ca",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/configure-conditional-access",
+        "checkedFor": "Windows 기기의 Defender 위험도 기반 준수·접근 제어 절차이다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "본문의 제품 기능·지원 조건을 공식 자료와 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 명령을 실행하지 않았으며, 작성자가 제안한 일정·성과·평가 점수는 제품 보장이나 독립 인증으로 보지 않습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/mde-windows-offboarding": {
     "file": "docs/knowledge-center/mde-windows-offboarding.md",
@@ -1561,128 +1561,128 @@
   },
   "/knowledge/knowledge-center/mvp-community-research-map": {
     "file": "docs/knowledge-center/mvp-community-research-map.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 공식·커뮤니티 자료의 구분과 재사용 시 출처 확인 절차",
+    "scope": "이번 대조 범위: 자료 활용 절차의 검증 완료를 단정한 소개 문구를 초안 작성·추가 검토 절차로 수정",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft 365 service descriptions",
-        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library",
-        "checkedFor": "서비스 설명은 플랜별 기능 비교의 출발점이며 실제 사용자 서비스 플랜·계약 조건 확인이 필요합니다."
-      },
-      {
-        "title": "Microsoft Intune fundamentals",
-        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune",
-        "checkedFor": "Intune은 등록·준수·앱·정책을 관리하며 접근 차단은 Conditional Access 등과 연계합니다."
+        "title": "plan-options",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options",
+        "checkedFor": "Microsoft 365와 Office 365의 포함 제품 차이, 혼합 구독과 서비스별 권한 확인 조건을 대조했다."
       }
     ],
     "reviewLevel": "작성자 예시·참고자료",
-    "notChecked": "프로젝트 결과와 시간 절감 효과를 별도로 측정하지 않았습니다. 수치와 일정은 작성자의 예시이며 실제 계획을 세울 때 다시 확인해야 합니다."
+    "notChecked": "이번 변경은 작성자의 자료 활용 절차와 표현 정리입니다. 소개한 모든 커뮤니티 게시물이나 작성자 경력·성과를 검증하지 않았습니다."
   },
   "/knowledge/knowledge-center/onedrive-limited-access-read-only": {
     "file": "docs/knowledge-center/onedrive-limited-access-read-only.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다. 보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다. 추가 대조: 정책 적용 시간을 수 분으로 단정하지 않고 접근 차단·전체 접근 복원의 최대 24시간과 기존 로그인 세션 영향을 구분했습니다. ",
+    "scope": "이번 대조 범위: 이미 로그인한 비관리 기기의 차단 지연, 모든 클라이언트 대상 설정, PDF·이미지 미리보기 예외",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "OneDrive overview",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/onedrive-overview",
-        "checkedFor": "OneDrive는 사용자 작업 파일 저장·동기화·공유를 제공하며 저장·공유·퇴사자 보존은 별도 관리 항목입니다."
-      },
-      {
-        "title": "Control access from unmanaged devices",
+        "title": "spo-unmanaged",
         "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices",
-        "checkedFor": "기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다. 정책 적용 시간을 수 분으로 단정하지 않고 접근 차단·전체 접근 복원의 최대 24시간과 기존 로그인 세션 영향을 구분했습니다."
+        "checkedFor": "LimitedweballowseditingunlessAllowEditingfalseorReadOnlytrue;filemodes;PDFimageerrors;OtherFilesdownload;24hblock/fullrestore existingloginblockexception;Anyonesharing/app-onlyexceptions;site>=tenant."
       },
       {
-        "title": "Conditional Access report-only behavior",
+        "title": "spo-app-restrict",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/app-enforced-restrictions",
+        "checkedFor": "SharePointresource,allclientsselected,sessionUseappenforcedrestrictions."
+      },
+      {
+        "title": "get-sposite",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.online.sharepoint.powershell/get-sposite?view=sharepoint-ps",
+        "checkedFor": "IncludePersonalSiteboolandIdentity;Limit/FiltercanomitConditionalAccessPolicy soqueryIdentityusedforverification."
+      },
+      {
+        "title": "set-sposite",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.online.sharepoint.powershell/set-sposite?view=sharepoint-ps",
+        "checkedFor": "Identity ConditionalAccessPolicy AllowEditing ReadOnlyForUnmanagedDevices LimitedAccessFileType validparameters."
+      },
+      {
+        "title": "ca-report-only",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only",
-        "checkedFor": "보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다."
+        "checkedFor": "보고 전용은 정책을 평가하고 기록하지만 강제하지 않는다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/knowledge-center/overview": {
     "file": "docs/knowledge-center/overview.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다. 추가 대조: 일반 영어 명사를 섞은 표현을 구체적인 한국어 문장으로 고쳤습니다. ",
+    "scope": "이번 대조 범위: 공식 문서와 동등한 정확성을 주장하던 표현과 불필요한 영어 혼용 수정",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft 365 service descriptions",
-        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library",
-        "checkedFor": "서비스 설명은 플랜별 기능 비교의 출발점이며 실제 사용자 서비스 플랜·계약 조건 확인이 필요합니다."
+        "title": "plan-options",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options",
+        "checkedFor": "Microsoft 365와 Office 365의 포함 제품 차이, 혼합 구독과 서비스별 권한 확인 조건을 대조했다."
       },
       {
-        "title": "Microsoft Intune fundamentals",
-        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune",
-        "checkedFor": "Intune은 등록·준수·앱·정책을 관리하며 접근 차단은 Conditional Access 등과 연계합니다."
-      },
-      {
-        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "title": "e357",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
-        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+        "checkedFor": "E7의 E5·Copilot·Entra Suite·Agent 365 구성, P1/P2와 Purview·Security Copilot 적격 범위를 대조했다."
       }
     ],
-    "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 E7 관련 비교·추천·연결 문구를 대조했습니다. 문서의 다른 기술 주제 전체를 재검증하거나 고객 계약·한국 견적·할인·테넌트 활성화·실제 사용량을 시험하지 않았습니다."
+    "reviewLevel": "작성자 예시·참고자료",
+    "notChecked": "이번 변경은 작성자의 자료 활용 절차와 표현 정리입니다. 소개한 모든 커뮤니티 게시물이나 작성자 경력·성과를 검증하지 않았습니다."
   },
   "/knowledge/knowledge-center/powerautomate-junkmail-alert": {
     "file": "docs/knowledge-center/powerautomate-junkmail-alert.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "새 메일 V3의 반환 스키마에 스팸 판정 필드가 없음을 확인했습니다. 분류는 선택 정보로 바꾸고 보안 판정이 필요하면 별도 권한과 데이터 원본을 확인하도록 수정했습니다.",
+    "scope": "이번 대조 범위: Outlook V3 폴더·메타데이터, 이동·보호·크기 제한과 최대 한 시간 지연, 격리 메일 구분",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Office 365 Outlook connector triggers and limitations",
+        "title": "outlook-connector",
         "url": "https://learn.microsoft.com/en-us/connectors/office365/",
-        "checkedFor": "새 메일 V3의 반환 스키마에 스팸 판정 필드가 없음을 확인했습니다. 분류는 선택 정보로 바꾸고 보안 판정이 필요하면 별도 권한과 데이터 원본을 확인하도록 수정했습니다."
+        "checkedFor": "선택 폴더, 공유 사서함 권한, 이동 메일 누락·지연·암호화 제한 및 메시지 메타데이터를 대조했다."
+      },
+      {
+        "title": "quarantine",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/quarantine-about",
+        "checkedFor": "격리 보관과 Junk Email 폴더 배달은 구분되는 정책 동작이다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "본문의 제품 기능·지원 조건을 공식 자료와 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 명령을 실행하지 않았으며, 작성자가 제안한 일정·성과·평가 점수는 제품 보장이나 독립 인증으로 보지 않습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/licensing/business-premium": {
     "file": "docs/licensing/business-premium.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
+    "scope": "이번 대조 범위: Business 합산 300석·포함 제품·E7 비교와 긴급 계정 조건, 근거 없는 성과 표현 수정",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft 365 Business Premium FAQ",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/misc/microsoft-365-business-faqs",
-        "checkedFor": "Business 제품군의 300개 프로비저닝 라이선스 한도와 계획별 서비스 구성을 확인해야 합니다."
-      },
-      {
-        "title": "Microsoft Entra licensing",
-        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "Entra 기능은 라이선스별로 다르며 Conditional Access P1과 사용자·로그인 위험 정책 P2를 구분합니다."
-      },
-      {
-        "title": "Compare Microsoft 365 E3, E5 and E7",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
-        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
-      },
-      {
-        "title": "Business Premium FAQ",
+        "title": "business-faq",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/business-premium/microsoft-365-business-faqs?view=o365-worldwide",
-        "checkedFor": "Business Basic·Standard·Premium 합산 300개 프로비저닝 좌석 제한을 유지하고, 고급 기능이 필요한 경우 기업 플랜과 비교하는 조건을 확인했습니다."
+        "checkedFor": "Business 계열 합산 300석, 업무 앱과 Defender for Business·Office 365 P1 포함을 확인했다."
       },
       {
-        "title": "Manage emergency access accounts",
+        "title": "entra-license",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
+        "checkedFor": "P1/P2 포함 플랜 및 Entra Suite의 다섯 제품과 P1 전제 조건을 대조했다."
+      },
+      {
+        "title": "e357",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7의 E5·Copilot·Entra Suite·Agent 365 구성, P1/P2와 Purview·Security Copilot 적격 범위를 대조했다."
+      },
+      {
+        "title": "emergency",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
-        "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
+        "checkedFor": "차단 CA 제외와 별도 피싱 방지 인증·로그인 감시·정기 접속 시험을 대조했다."
       }
     ],
-    "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
+    "reviewLevel": "설정·적용 조건 확인",
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
@@ -1747,59 +1747,44 @@
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Copilot Studio standard harness의 제작자·테넌트 라이선스와 Credits 과금 구분",
+    "scope": "이번 대조 범위: 2026년 상용 E3·E5 Defender·Intune 추가 기능과 배포 일정, 10월 프로모션·12월 예정 구매 조건",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft 365 enterprise plans",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
-        "checkedFor": "현재 기업 플랜 목록에 E7이 있으며 E3/E5 이름만으로 Teams·AI·모든 추가 기능의 권한을 확정할 수 없습니다."
+        "title": "packaging-2026",
+        "url": "https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates",
+        "checkedFor": "E3의 Defender Office P1·Intune 세 기능 및 E5의 EPM·Cloud PKI·EAM 추가와 상용 배포 일정을 대조했다."
       },
       {
-        "title": "Compare Microsoft 365 E3, E5 and E7",
+        "title": "partner-oct",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "checkedFor": "E3 할인 자격·일정, Copilot 12월 변경·한국 제외·4000 지출 한도, E7 행사와 AI Builder 판매 종료 조건을 대조했다."
+      },
+      {
+        "title": "e357",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
-        "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+        "checkedFor": "E7의 E5·Copilot·Entra Suite·Agent 365 구성, P1/P2와 Purview·Security Copilot 적격 범위를 대조했다."
       },
       {
-        "title": "Microsoft Entra licensing",
-        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "E5·E7의 P2, E7의 Entra Suite 포함과 다섯 구성 제품, Agent 365 포함·추가 구독 구분을 확인했습니다."
-      },
-      {
-        "title": "Copilot Credits usage-based billing",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
-        "checkedFor": "Cowork·Code 등 사용량 과금 서비스와 고정 구독을 구분하고 서비스별 과금 방식과 지출 정책이 다름을 확인했습니다."
-      },
-      {
-        "title": "Partner Center October 2026 Copilot announcements",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
-      },
-      {
-        "title": "Current Microsoft Copilot license options",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
-        "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
-      },
-      {
-        "title": "Partner Center — E3 CSP promotional offer",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
-        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
-      },
-      {
-        "title": "Partner Center — October E7 and AI Builder announcements",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "10월 21일 E7 행사: 연간 신규 300석·Azure PAYG·연간 Studio 팩 5개 이상, 12개월 1:1 최대 5팩, 12월 31일까지. 10월 22일 AI Builder 공지: 11월 1일 판매 종료, 현 구독 기간 종료까지 사용, 다음 갱신 전 자동 갱신 해제. 실제 고객 계약·자격은 미확인."
-      },
-      {
-        "title": "requirements-licensing",
+        "title": "studio-license",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing",
-        "checkedFor": "Copilot Studio standard harness의 제작자·테넌트 라이선스와 Credits 과금 구분"
+        "checkedFor": "standard harness의 개별 제작자·조직 라이선스 구분과 용량 예측 기준을 확인했다."
+      },
+      {
+        "title": "credits",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Cowork·Code 등 사용량 서비스와 서비스별 P3·종량제·용량 조합을 구분했다."
+      },
+      {
+        "title": "mdo-plans",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
+        "checkedFor": "기본 보호·P1 Safe Links/Attachments·P2 Explorer/AIR/시뮬레이션·헌팅을 구분했다."
       }
     ],
-    "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "reviewLevel": "설정·적용 조건 확인",
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
@@ -1831,62 +1816,52 @@
     "file": "docs/microsoft365/e3-vs-e5.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; 미국 공식 E3 실제 제품 화면과 E5/E7 제품 자료의 Teams 포함·미포함 연간 약정·연간 결제 가격 6개 재대조, 반복된 도입 문장 정리 추가 대조: 라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다. ",
+    "scope": "이번 대조 범위: E3·E5·E7 구성·명칭·미국 가격과 2026년 상용 Intune 추가 기능, 별도 구독의 중복 여부",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Microsoft E3 E5 E7 comparison",
+        "title": "e357",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
-        "checkedFor": "업무용 Copilot·Agent 365의 포함 여부와 E3 기본 보호·E5 고급 보호, Security Copilot의 적격 고객 조건을 대조했습니다."
+        "checkedFor": "E7의 E5·Copilot·Entra Suite·Agent 365 구성, P1/P2와 Purview·Security Copilot 적격 범위를 대조했다."
       },
       {
-        "title": "Microsoft 365 E3 pricing",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e3",
-        "checkedFor": "미국 연간 약정·연간 결제 월 환산 가격 $39 및 Teams 미포함 $30.45와 상품 조건을 확인했습니다. 2026-10-27 재대조: $39/$30.45 사용자당 월 환산 USD, 연간 약정·연간 결제, Teams 포함/미포함 순서. E3는 실제 브라우저 제품 화면의 두 탭을 직접 확인. 검색 도구의 4개월 전 캐시 $36/$27.45를 현재값으로 사용하지 않음."
+        "title": "packaging-2026",
+        "url": "https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates",
+        "checkedFor": "E3의 Defender Office P1·Intune 세 기능 및 E5의 EPM·Cloud PKI·EAM 추가와 상용 배포 일정을 대조했다."
       },
       {
-        "title": "Microsoft 365 E5 pricing",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e5",
-        "checkedFor": "미국 연간 약정·연간 결제 월 환산 가격 $60 및 Teams 미포함 $51.45를 확인했습니다. 2026-10-27 재대조: $60/$51.45 사용자당 월 환산 USD, 연간 약정·연간 결제, Teams 포함/미포함 순서. 당일 공식 제품 페이지의 가격·약정·구성을 대조. 한국 고객 견적은 확인하지 않음."
-      },
-      {
-        "title": "Microsoft 365 E7 package and pricing",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e7",
-        "checkedFor": "E5·Microsoft 365 Copilot·Entra Suite·Agent 365 묶음, 미국 연간 약정·연간 결제 월 환산 $99 및 Teams 미포함 $90.45를 확인했습니다. 2026-10-27 재대조: $99/$90.45 사용자당 월 환산 USD, 연간 약정·연간 결제, Teams 포함/미포함 순서. 당일 공식 제품 페이지의 가격·약정·구성을 대조. 한국 고객 견적은 확인하지 않음."
-      },
-      {
-        "title": "Microsoft Entra licensing",
+        "title": "entra-license",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
-        "checkedFor": "P1·P2와 Entra Suite 전체를 구분하고 E7의 Suite 포함, 네트워크·ID 관리 제품 구성을 대조했습니다."
+        "checkedFor": "P1/P2 포함 플랜 및 Entra Suite의 다섯 제품과 P1 전제 조건을 대조했다."
       },
       {
-        "title": "Copilot Credits usage-based billing",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
-        "checkedFor": "Copilot 구독이 필요한 Cowork·Code 등 사용량 과금 서비스와 사전 구매·종량제·용량 방식의 서비스별 차이를 확인했습니다."
+        "title": "price-e3",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e3",
+        "checkedFor": "미국 E3 Teams 포함 39달러, 미포함 30.45달러, 연간 약정·연간 결제 표시를 대조했다."
       },
       {
-        "title": "Partner Center October 2026 Copilot announcements",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
+        "title": "price-e5",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-plans-and-pricing",
+        "checkedFor": "공식 가격 비교의 E5 Teams 포함 60달러, 미포함 51.45달러와 연간 결제 조건을 대조했다. 개별 E5 페이지 직접 열기는 시간 초과였다."
       },
       {
-        "title": "Current Microsoft Copilot license options",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
-        "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
+        "title": "price-e7",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/enterprise/e7",
+        "checkedFor": "미국 E7 Teams 포함 99달러, 미포함 90.45달러, 연간 약정·연간 결제 표시를 대조했다."
       },
       {
-        "title": "Partner Center — E3 CSP promotional offer",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
-        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
-      },
-      {
-        "title": "microsoft-copilot-requirements",
+        "title": "copilot-requirements",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
-        "checkedFor": "라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다."
+        "checkedFor": "Microsoft Copilot 명칭·copilot.cloud.microsoft 변경, 적격 기본 구독·추가 라이선스 조건을 확인했다."
+      },
+      {
+        "title": "credits",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+        "checkedFor": "Cowork·Code 등 사용량 서비스와 서비스별 P3·종량제·용량 조합을 구분했다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
+    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
   },
   "/knowledge/microsoft365/exchange-online": {
     "file": "docs/microsoft365/exchange-online.md",

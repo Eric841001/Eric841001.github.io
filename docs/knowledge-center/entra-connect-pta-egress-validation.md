@@ -124,9 +124,7 @@ The management plane and direct Internet path should be controlled separately. A
 
 Older versions can require TCP `5671`, `8080`, `9090–9091`, `9350`, `9352` and `10100–10120`. Do not permanently allow or block these ports based only on a generic table. Record the installed Entra Connect, PTA and Connect Health versions, then apply the documentation that matches those versions.
 
-:::warning TLS inspection exception
-Avoid inline inspection and TLS termination on outbound TLS traffic between the PTA agent and Microsoft Entra endpoints. Apply the exception narrowly to the documented agent traffic rather than disabling security monitoring broadly.
-:::
+> **TLS inspection exception:** Avoid inline inspection and TLS termination on outbound TLS traffic between the PTA agent and Microsoft Entra endpoints. Apply the exception narrowly to the documented agent traffic rather than disabling security monitoring broadly.
 
 ## Proxy Configuration Boundaries
 

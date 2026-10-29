@@ -80,9 +80,19 @@ This is especially important when comparing Office 365 E3, Microsoft 365 E3, Mic
 
 Microsoft 라이선스를 검토할 때는 가격과 함께 포함 기능이 어떻게 달라졌는지 확인해야 합니다.
 
-예를 들어 고객이 "E3를 사용 중"이라고 말하더라도 그것이 Office 365 E3인지, Microsoft 365 E3인지에 따라 포함되는 보안, 기기 관리, ID, 규정 준수 기능이 달라질 수 있습니다. 또한 Microsoft 문서에서는 Microsoft 365 E3 같은 일부 구독에 Defender for Office 365 Plan 1이 포함될 수 있다고 설명하므로, 상품 이름만으로 보안 구성을 결정하지 마세요.
+예를 들어 고객이 "E3를 사용 중"이라고 말하더라도 그것이 Office 365 E3인지, Microsoft 365 E3인지에 따라 포함되는 보안, 기기 관리, ID, 규정 준수 기능이 달라질 수 있습니다. 2026년 상용 구독 개편에는 Office 365 E3와 Microsoft 365 E3의 Defender for Office 365 Plan 1 추가가 포함됩니다. 과거 비교표만 보고 이 기능을 별도 구매하지 마세요.
 
-따라서 라이선스를 검토할 때는 상품명과 서비스 플랜 식별자를 확인하고, 포함 기능이 대상 사용자에게 활성화돼 있는지 살펴보세요. E7도 사용자 할당과 정책 설정, 사용량 요금 확인이 필요합니다.
+따라서 라이선스를 검토할 때는 상품명과 서비스 플랜 식별자를 확인하고, 포함 기능이 대상 사용자에게 활성화돼 있는지 살펴보세요.
+
+### 2026년 상용 구독에 추가된 기능 {/* #commercial-packaging-2026 */}
+
+| 기본 플랜 | 추가된 주요 기능 |
+| --- | --- |
+| Office 365 E3 | Defender for Office 365 Plan 1 |
+| Microsoft 365 E3 | Defender for Office 365 Plan 1, Intune Remote Help, Intune Advanced Analytics, Intune Plan 2 |
+| Microsoft 365 E5 | E3 추가 기능에 더해 Security Copilot, Intune Endpoint Privilege Management, Microsoft Cloud PKI, Intune Enterprise Application Management |
+
+Microsoft는 해당 Defender·Intune 기능의 상용 배포 완료 일정을 2026년 8월 1일로 안내합니다. 정부 클라우드의 제공 범위와 일정은 별도 표를 확인해야 합니다. Security Copilot은 적격 조건과 제공 용량을 확인하세요. [공식 패키지 개편 안내](https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates)를 바탕으로 실제 구독과 사용자 할당을 대조한 뒤 추가 구매를 결정하세요. E7도 사용자 할당과 정책 설정, 사용량 요금 확인이 필요합니다.
 
 ## 10월 27일 시작된 E3 CSP 프로모션 {/* #e3-csp-promotion-2026 */}
 

@@ -216,10 +216,10 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 
 | Use Case | Usage |
 |---|---|
-| Presales | 고객 meeting 전 사전 설명 자료 작성 |
-| Proposal | proposal, SOW, WBS 작성 |
+| Presales | 고객 미팅 전 사전 설명 자료 작성 |
+| Proposal | 제안서, 작업 범위서(SOW), 작업 분류 체계(WBS) 작성 |
 | Assessment | 고객 현황 진단 점검표 작성 |
-| Architecture | To-Be architecture 설계 |
+| Architecture | 목표 아키텍처 설계 |
 | Delivery | 구축 프로젝트 수행 기준 |
 | Executive Reporting | 경영진 보고의 주요 내용 작성 |
 
@@ -229,12 +229,12 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 
 이 Knowledge Center는 다음 기준을 따릅니다.
 
-- Microsoft Learn 수준의 technical accuracy
-- Microsoft consulting 수준의 document structure
+- 제품 동작과 지원 조건은 Microsoft 공식 문서와 대조
+- 설계 근거, 적용 조건과 절차를 구분해 작성
 - 고객 프로젝트에 적용할 수 있는 구체적인 절차와 예시
 - 라이선스 포함 여부와 제약사항 명확화
 - 보안·운영 조건과 비용 확인
-- 고객명은 사용하지 않고 industry 기준으로 일반화
+- 고객명 대신 업종과 업무 조건으로 사례를 설명
 
 ---
 

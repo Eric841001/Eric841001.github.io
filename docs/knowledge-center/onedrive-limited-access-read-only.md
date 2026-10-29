@@ -22,7 +22,7 @@ sidebar_label: OneDrive 웹 전용 Read Only
 
 ## 사전 준비
 
-SharePoint Online Management Shell에서 개인 사이트가 포함된 사이트 목록과 대상 OneDrive URL을 확인합니다.
+최신 SharePoint Online Management Shell을 설치하고 SharePoint Administrator 권한으로 테넌트에 연결합니다. 연결 방법은 [공식 사전 준비 절차](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices#how-do-i-limit-access-using-powershell)를 따르세요. 이어서 개인 사이트가 포함된 사이트 목록과 대상 OneDrive URL을 확인합니다.
 
 ```powershell
 Get-SPOSite -IncludePersonalSite $true
@@ -67,7 +67,7 @@ Set-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' `
 | 기능 | `OfficeOnlineFilesOnly` | `WebPreviewableFiles` | `OtherFiles` |
 |---|:---:|:---:|:---:|
 | Office 파일 웹 미리보기 | ✅ | ✅ | ✅ |
-| PDF·이미지 미리보기 | ❌ | ✅ | ✅ |
+| PDF·이미지 미리보기 | ❌ | 조건부 지원¹ | 조건부 지원¹ |
 | ZIP·EXE 등 비미리보기 파일 접근 | ❌ | ❌ | ✅ |
 | Office 파일 다운로드 | ❌ | ❌ | ❌ |
 | PDF·이미지 다운로드 | ❌ | ❌ | ❌ |
@@ -75,7 +75,7 @@ Set-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' `
 | Office 데스크톱 앱 접근 | ❌ | ❌ | ❌ |
 | 상대적 보안 수준 | 높음 | 중간 | 낮음 |
 
-`OtherFiles`는 미리보기가 불가능한 파일의 다운로드를 허용하므로 웹 전용 Read Only 목표에는 적합하지 않습니다. `WebPreviewableFiles`에서도 일부 PDF·이미지는 표시 과정에서 다운로드가 필요해 접근 거부가 발생할 수 있습니다. 위 표는 모드별 기본 동작이며 실제 파일로 시험해야 합니다.
+`OtherFiles`는 미리보기가 불가능한 파일의 다운로드를 허용하므로 웹 전용 Read Only 목표에는 적합하지 않습니다. `WebPreviewableFiles`에서도 일부 PDF·이미지는 표시 과정에서 다운로드가 필요해 접근 거부가 발생할 수 있습니다. ¹ PDF·이미지 미리보기는 다운로드가 필요한 파일에서 실패할 수 있습니다. 위 표는 모드별 기본 동작이며 실제 파일로 시험해야 합니다.
 
 ## 조건부 액세스 정책
 
@@ -83,11 +83,11 @@ Microsoft Entra 관리 센터에서 다음과 같이 파일럿 정책을 만듭�
 
 1. 대상 사용자는 우선 테스트 계정 또는 파일럿 그룹으로 제한합니다.
 2. 대상 리소스는 `Office 365 SharePoint Online`을 선택합니다.
-3. 조건에서 적용할 디바이스 상태, 위치 또는 클라이언트 앱을 지정합니다.
+3. **조건 > 클라이언트 앱**에서 구성을 켜고 모든 클라이언트를 선택합니다. [공식 앱 적용 제한 절차](https://learn.microsoft.com/en-us/sharepoint/app-enforced-restrictions)에 따른 설정입니다. 브라우저만 선택하면 이 문서의 데스크톱 앱 차단 범위를 충족하지 못합니다. 기기나 위치 조건을 추가할 때에는 제외되는 접속 경로도 시험하세요.
 4. 세션 제어에서 **앱 적용 제한(Use app enforced restrictions)** 을 선택합니다.
 5. 보고 전용에서 적용 대상을 확인한 뒤 소수 시험 사용자에게 정책을 켜고 다운로드·편집·앱 접속을 시험합니다. 보고 전용은 제한을 강제하지 않습니다.
 
-변경 직후의 결과만으로 정책 적용 여부를 판단하지 마세요. Microsoft는 비관리 기기 접근 차단이나 전체 액세스 복원에 최대 24시간이 걸릴 수 있다고 안내합니다. 이미 로그인한 세션도 영향을 받으므로 새 세션에서 조건부 액세스 로그인 기록과 실제 파일 동작을 함께 확인하세요.
+변경 직후의 결과만으로 정책 적용 여부를 판단하지 마세요. Microsoft는 비관리 기기 접근 차단이나 전체 액세스 복원에 최대 24시간이 걸릴 수 있다고 안내합니다. 비관리 기기에서 이미 로그인한 사용자에게는 접근 차단이 즉시 적용되지 않을 수 있습니다. 새로 로그인한 세션에서 조건부 액세스 로그인 기록과 실제 파일 동작을 함께 확인하세요.
 
 ## 검증 절차
 

@@ -192,8 +192,10 @@ Verify:
 - AV enabled
 - EDR enabled
 - Device inventory updated
-- device risk signal available for Conditional Access scenario
+- macOS compliance result and Conditional Access outcome checked separately from Defender onboarding
 - test detection or test alert reviewed by security operations
+
+Defender onboarding does not by itself establish Intune compliance or configure Conditional Access. Build the access policy from the supported [macOS compliance settings](https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-macos-settings), such as OS version, System Integrity Protection and encryption. The [Defender device-risk walkthrough](https://learn.microsoft.com/en-us/defender-endpoint/configure-conditional-access) is scoped to Windows; do not copy its machine-risk setting into a macOS checklist without a supported integration.
 
 ---
 
@@ -204,7 +206,7 @@ Verify:
 | onboarding | target macOS devices appear in Microsoft Defender portal with healthy sensor state |
 | policy | antivirus, EDR and relevant configuration profiles are assigned successfully |
 | operations | security team can review device timeline, alerts and vulnerability data |
-| compliance | device inventory and risk signals can support Zero Trust access decisions |
+| compliance | the assigned macOS compliance policy and Conditional Access policy produce the expected access decision |
 | documentation | pilot validation report and operations runbook are handed over |
 
 ---

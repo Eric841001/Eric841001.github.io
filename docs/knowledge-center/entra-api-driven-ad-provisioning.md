@@ -43,7 +43,7 @@ API 호출 서버가 Forest A의 디렉터리를 직접 조회할 수도 있고,
 | 구성 요소 | 요구사항 |
 |---|---|
 | 라이선스 | Microsoft Entra ID P1, P2 또는 ID Governance. 대상 사용자에게 필요한 권한과 일일 API 한도를 확인 |
-| 관리자 역할 | 에이전트 등록에는 최소 Hybrid Identity Administrator, 대상 AD 구성에는 필요한 도메인 권한 |
+| 관리자 역할 | 앱 구성에는 Application Administrator, 에이전트 등록에는 Hybrid Identity Administrator, 대상 AD 구성에는 필요한 도메인 권한 |
 | 네트워크 | Provisioning Agent가 Microsoft 서비스로 HTTPS 443 아웃바운드 통신 가능 |
 | 대상 AD | Forest B의 쓰기 가능한 대상 OU와 계정 생성 권한 |
 | 호출 앱 | Client Credentials 방식 인증과 관리자 동의 |
@@ -67,14 +67,17 @@ API 호출 서버가 Forest A의 디렉터리를 직접 조회할 수도 있고,
 Entra 관리 센터에서 다음 경로로 이동합니다.
 
 ```text
-Microsoft Entra ID > Enterprise applications > New application
+Entra ID > Enterprise apps > New application
 ```
 
 1. `API-driven provisioning to on-premises Active Directory`를 검색하여 생성합니다.
 2. 애플리케이션의 **Provisioning** 메뉴에서 모드를 자동으로 설정합니다.
-3. Forest B의 대상 OU DN을 입력하고 연결을 테스트합니다.
-4. 속성 매핑과 일치 규칙을 검토합니다.
-5. 테스트가 성공하면 프로비저닝 상태를 사용으로 전환합니다.
+3. Forest B의 도메인을 선택하고 대상 OU DN을 입력한 뒤 연결을 테스트하고 저장합니다.
+4. **Settings**에 유효한 **Notification Email**을 입력하고 저장합니다. 이 값이 비어 있으면 실행을 시작할 때 프로비저닝이 격리 상태로 들어갑니다.
+5. 속성 매핑과 일치 규칙을 검토합니다.
+6. 설정을 저장한 뒤 **Start provisioning**으로 API 요청을 받을 수 있도록 작업을 시작합니다.
+
+[Microsoft의 앱 구성 절차](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-configure-app#configure-api-driven-inbound-provisioning-to-on-premises-ad)에서 관리자 역할, 알림 이메일과 시작 조건을 확인할 수 있습니다.
 
 기본 UI 기반 Entra ID → AD 구성은 그룹 객체 시나리오와 혼동하기 쉽습니다. 사용자 객체를 외부 로직에서 공급하려면 이 API 기반 애플리케이션과 SCIM 호출 단계가 필요합니다.
 

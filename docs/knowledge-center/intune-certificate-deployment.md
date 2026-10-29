@@ -54,7 +54,7 @@ Intune의 신뢰 인증서 프로필은 Wi-Fi, VPN과 업무 앱에서 인증서
 Required certificates:
 
 - Root CA Certificate
-- Intermediate CA Certificate
+- Intermediate CA Certificate, when present in the issuing chain
 
 Export requirements:
 
@@ -111,7 +111,7 @@ Export requirements:
     <div className="kc-journey-node is-source">
   <small>01</small>
   <strong>Create profile</strong>
-  <span>Use Intune Admin Center, Devices, Configuration Profiles, Trusted Certificate.</span>
+  <span>In the Intune admin center, go to Devices > Manage devices > Configuration > Create. Select the platform, then Trusted certificate or Templates > Trusted certificate, as available.</span>
 </div>
     <div className="kc-journey-arrow" aria-hidden="true"/>
     <div className="kc-journey-node">

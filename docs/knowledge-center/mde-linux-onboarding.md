@@ -64,7 +64,7 @@ Required:
 - Root Access
 - Supported Linux Version
 
-Before onboarding, confirm whether the server is internet-connected, proxy-routed or isolated. Linux onboarding often fails because package repository access, SSL inspection, proxy authentication or outbound firewall rules were not reviewed before installation. Treat these checks as part of the deployment readiness review, not as post-install troubleshooting.
+Before onboarding, confirm whether the server is internet-connected, proxy-routed or isolated. Before installation, check package repository access, TLS inspection exceptions and outbound firewall rules. Defender for Endpoint on Linux supports static or transparent proxies; PAC, WPAD and authenticated proxies are not supported. Treat these checks as part of the deployment readiness review, not as post-install troubleshooting.
 
 ---
 
@@ -169,7 +169,7 @@ Use the following criteria before marking the onboarding as complete:
 - alert routing to the SOC or operations team has been validated
 - proxy and update paths are documented for future patching or incident response
 
-For production Linux servers, capture a validation screenshot or command output as handover evidence. This prevents later disputes about whether the endpoint was onboarded, merely installed or fully operational.
+For production Linux servers, capture a validation screenshot or command output as handover evidence. Record the installation, onboarding, protection and connectivity results separately so the handover states what was actually tested.
 
 ---
 

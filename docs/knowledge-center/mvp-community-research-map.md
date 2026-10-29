@@ -10,7 +10,7 @@ description: Research map for Microsoft MVP and community sources covering Micro
   <div>
     <span className="kc-eyebrow">RESEARCH AND COMMUNITY SIGNALS</span>
     <h2>Turn public expertise into original consulting guidance</h2>
-    <p>This map tracks public Microsoft MVP, community and official source patterns, then translates them into validated architecture notes and delivery assets.</p>
+    <p>This map tracks public Microsoft MVP, community and official source patterns, then uses them to draft architecture notes and delivery checklists for further review.</p>
   </div>
   <div aria-label="Research map focus" className="kc-hero-metrics">
     <div>

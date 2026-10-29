@@ -6,6 +6,8 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft 365 Licensing', title: 'E3·E5의 Intune 포함 기능 보완', description: '2026년 상용 패키지 개편의 Remote Help·Plan 2와 E5 추가 기능을 비교표에 반영했습니다.', date: '2026-10-29', status: '비교 자료 보완', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#commercial-packaging-2026'},
+  {category: 'SharePoint · OneDrive', title: '비관리 기기의 접근 제한 조건 수정', description: '기존 로그인 세션과 모든 클라이언트 대상 설정, 미리보기 예외를 구분했습니다.', date: '2026-10-29', status: '적용 조건 수정', path: '/knowledge/knowledge-center/onedrive-limited-access-read-only'},
   {category: 'Microsoft Copilot', title: 'Copilot 제품명과 접속 주소 변경', description: '새 제품명과 copilot.cloud.microsoft 전환, 기능별 도입 요구사항을 정리했습니다.', date: '2026-10-29', status: '공식 요구사항 반영', path: '/knowledge/copilot/overview#제품명과-접속-주소'},
   {category: 'Microsoft Purview', title: 'macOS 27의 DLP 권한과 보호 모드', description: '최소 클라이언트 버전과 권한 복구, Windows와의 앱 제어 차이를 정리했습니다.', date: '2026-10-29', status: '문서 보완 · macOS 27 권한 변경은 미리 보기', path: '/knowledge/security/dlp#macos-27-permissions'},
   {category: 'Microsoft 365', title: '캐나다 시간대 전환 전 회의 일정 점검', description: '11월 1일 전환을 앞두고 기존 Outlook 일정과 Teams Rooms의 표시 시간을 확인하세요.', date: '2026-10-29', status: '운영 안내 · 대상 지역 확인', path: '/knowledge/microsoft365/exchange-online#canada-time-zone-2026'},
