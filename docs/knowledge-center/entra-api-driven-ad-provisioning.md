@@ -29,9 +29,12 @@ flowchart LR
     S[CSV·HR·업무 시스템] -->|SCIM 2.0 Bulk JSON| G[Microsoft Graph bulkUpload]
     G --> P[Entra Provisioning Engine]
     E -. 속성 원천·대상 선정 .-> S
-    P -->|Outbound HTTPS 443 작업 전달| AG[Provisioning Agent]
+    AG[Provisioning Agent] -->|Outbound HTTPS 443 연결| P
+    P -. 프로비저닝 작업 .-> AG
     AG -->|LDAP Create·Update| B[Forest B 대상 OU]
 ```
+
+에이전트가 클라우드 서비스로 HTTPS 443 연결을 시작하고, 그 연결을 통해 작업을 받습니다. 도식의 점선은 작업 흐름입니다. 인증서 폐기 목록 확인용 HTTP 80 등 추가 통신 조건도 [공식 방화벽 요구사항](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-to-prerequisites#firewall-and-proxy-requirements)에서 확인하세요.
 
 API 호출 서버가 Forest A의 디렉터리를 직접 조회할 수도 있고, 별도 CSV·HR 시스템·통합 플랫폼에서 대상 사용자 데이터를 제공할 수도 있습니다. 어떤 원천을 선택하든 API에는 필요한 속성을 SCIM 스키마로 명시적으로 전달해야 합니다.
 

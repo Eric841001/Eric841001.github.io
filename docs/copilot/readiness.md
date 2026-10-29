@@ -69,7 +69,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 Microsoft 365 Copilot adoption should not begin with license assignment.
 
-Successful Copilot adoption requires readiness across identity, security, data governance, SharePoint permissions, information architecture, user adoption and operational support.
+This assessment recommends preparation across identity, security, data governance, SharePoint permissions, information architecture, user adoption and operational support. These recommendations are separate from the [product prerequisites](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements): eligible licensing, an Entra ID account, supported apps and network access. Mailbox-grounded features also need an Exchange Online mailbox.
 
 This framework provides a standardized assessment model to evaluate enterprise readiness before Copilot pilot or enterprise rollout.
 
@@ -79,7 +79,7 @@ This framework provides a standardized assessment model to evaluate enterprise r
 
 ## Current Model Readiness Addendum {/* #gpt-56-readiness-addendum */}
 
-available reasoning models can improve the quality ceiling for Microsoft 365 Copilot, but it also raises the importance of readiness. Stronger reasoning can produce better documents, analysis and decisions only when the underlying data, permission model and user behavior are ready.
+Evaluate each available reasoning model with representative tasks before rollout. Compare accuracy, completeness and review effort using content that the intended users are allowed to access. Model availability alone does not demonstrate better results for your workload.
 
 Add the following checks before broad communication or executive demonstrations:
 

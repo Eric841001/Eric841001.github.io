@@ -199,9 +199,9 @@
   },
   "/knowledge/architecture/security-reference-architecture": {
     "file": "docs/architecture/security-reference-architecture.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "설계·실행 프레임워크",
-    "scope": "고급 Defender·Purview 의존성 표에 E7을 추가하고 P2와 Entra Suite, 적격 대체 구독·실제 적용 조건을 구분했습니다.",
+    "scope": "고급 Defender·Purview 의존성 표에 E7을 추가하고 P2와 Entra Suite, 적격 대체 구독·실제 적용 조건을 구분했습니다. 추가 대조: PIM은 Entra ID P2뿐 아니라 Entra ID Governance도 적격 라이선스임을 확인했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -223,6 +223,11 @@
         "title": "Microsoft Entra licensing",
         "url": "https://learn.microsoft.com/en-us/entra/fundamentals/licensing",
         "checkedFor": "E5·E7의 P2, E7의 Entra Suite 포함과 다섯 구성 제품, Agent 365 포함·추가 구독 구분을 확인했습니다."
+      },
+      {
+        "title": "licensing-fundamentals",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/licensing-fundamentals",
+        "checkedFor": "PIM은 Entra ID P2뿐 아니라 Entra ID Governance도 적격 라이선스임을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -788,9 +793,9 @@
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Copilot 현재 도입 지침과 7월 모델 변경 이력 구분",
+    "scope": "확인한 항목: Copilot 현재 도입 지침과 7월 모델 변경 이력 구분 추가 대조: 공식 요구사항에 반영된 Copilot·Copilot Chat 명칭 변경과 기본 앱 URL 변경을 확인했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -807,6 +812,11 @@
         "title": "Microsoft Copilot adoption and onboarding",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources",
         "checkedFor": "Copilot 도입은 데이터 준비·라이선스 선택·설정·채택·운영 단계를 포함합니다. 작성자의 ROI나 점수를 보증하지 않습니다."
+      },
+      {
+        "title": "microsoft-copilot-requirements",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+        "checkedFor": "공식 요구사항에 반영된 Copilot·Copilot Chat 명칭 변경과 기본 앱 URL 변경을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -845,9 +855,9 @@
   },
   "/knowledge/copilot/readiness": {
     "file": "docs/copilot/readiness.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 공식 기능별 전제 조건과 작성자 점수·가중치 구분",
+    "scope": "확인한 항목: 공식 기능별 전제 조건과 작성자 점수·가중치 구분 추가 대조: 조직 도입 준비 권고와 제품 필수 조건을 분리하고 메일함이 필요한 기능 범위를 명확히 했습니다. 더 강한 모델이 더 나은 결과를 낸다는 일반화를 업무별 평가 권고로 바꿨습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -873,7 +883,7 @@
       {
         "title": "microsoft-copilot-requirements",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
-        "checkedFor": "공식 기능별 전제 조건과 작성자 점수·가중치 구분"
+        "checkedFor": "공식 기능별 전제 조건과 작성자 점수·가중치 구분 조직 도입 준비 권고와 제품 필수 조건을 분리하고 메일함이 필요한 기능 범위를 명확히 했습니다. 더 강한 모델이 더 나은 결과를 낸다는 일반화를 업무별 평가 권고로 바꿨습니다."
       }
     ],
     "reviewLevel": "작성자 예시·참고자료",
@@ -1080,9 +1090,9 @@
   },
   "/knowledge/knowledge-center/entra-api-driven-ad-provisioning": {
     "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: API 기반 프로비저닝의 P1·P2·Governance 라이선스와 사용자 범위",
+    "scope": "확인한 항목: API 기반 프로비저닝의 P1·P2·Governance 라이선스와 사용자 범위 추가 대조: HTTPS 연결 시작 방향은 에이전트에서 클라우드로 향하므로 작업 전달 방향과 분리하고 인증서 확인용 HTTP 80 등 추가 통신 조건을 안내했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1099,6 +1109,11 @@
         "title": "licensing-fundamentals",
         "url": "https://learn.microsoft.com/en-us/entra/id-governance/licensing-fundamentals",
         "checkedFor": "API 기반 프로비저닝의 P1·P2·Governance 라이선스와 사용자 범위"
+      },
+      {
+        "title": "Provisioning agent firewall requirements",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-to-prerequisites",
+        "checkedFor": "HTTPS 연결 시작 방향은 에이전트에서 클라우드로 향하므로 작업 전달 방향과 분리하고 인증서 확인용 HTTP 80 등 추가 통신 조건을 안내했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1567,9 +1582,9 @@
   },
   "/knowledge/knowledge-center/onedrive-limited-access-read-only": {
     "file": "docs/knowledge-center/onedrive-limited-access-read-only.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다. 보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다.",
+    "scope": "이번 수정 범위: 기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다. 보고 전용은 로그인 시 정책을 평가하고 기록하지만 세션·허용 제어를 강제하지 않으므로 켜진 시험 정책과 구분합니다. 추가 대조: 정책 적용 시간을 수 분으로 단정하지 않고 접근 차단·전체 접근 복원의 최대 24시간과 기존 로그인 세션 영향을 구분했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1580,7 +1595,7 @@
       {
         "title": "Control access from unmanaged devices",
         "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices",
-        "checkedFor": "기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다."
+        "checkedFor": "기본 웹 편집 허용, 사이트별 고급 설정, Anyone 링크와 app-only 앱 예외, 일부 PDF·이미지 미리보기 접근 거부 조건을 대조했습니다. 정책 적용 시간을 수 분으로 단정하지 않고 접근 차단·전체 접근 복원의 최대 24시간과 기존 로그인 세션 영향을 구분했습니다."
       },
       {
         "title": "Conditional Access report-only behavior",
@@ -1593,9 +1608,9 @@
   },
   "/knowledge/knowledge-center/overview": {
     "file": "docs/knowledge-center/overview.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다.",
+    "scope": "E3·E5만 나열하던 안내·검색어에 E7을 추가하고 기존 비교 문서로 연결했습니다. 기능별 사용 권리를 새로 단정하는 내용은 추가하지 않았습니다. 추가 대조: 일반 영어 명사를 섞은 표현을 구체적인 한국어 문장으로 고쳤습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1671,9 +1686,9 @@
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
-    "checkedOn": "2026-10-27",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; 미국 공식 E3 실제 제품 화면과 E5/E7 제품 자료의 Teams 포함·미포함 연간 약정·연간 결제 가격 6개 재대조, 반복된 도입 문장 정리",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; 미국 공식 E3 실제 제품 화면과 E5/E7 제품 자료의 Teams 포함·미포함 연간 약정·연간 결제 가격 6개 재대조, 반복된 도입 문장 정리 추가 대조: 라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1720,6 +1735,11 @@
         "title": "Partner Center — E3 CSP promotional offer",
         "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
         "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
+      },
+      {
+        "title": "microsoft-copilot-requirements",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+        "checkedFor": "라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1809,9 +1829,9 @@
   },
   "/knowledge/microsoft365/e3-vs-e5": {
     "file": "docs/microsoft365/e3-vs-e5.md",
-    "checkedOn": "2026-10-27",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; 미국 공식 E3 실제 제품 화면과 E5/E7 제품 자료의 Teams 포함·미포함 연간 약정·연간 결제 가격 6개 재대조, 반복된 도입 문장 정리",
+    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; 미국 공식 E3 실제 제품 화면과 E5/E7 제품 자료의 Teams 포함·미포함 연간 약정·연간 결제 가격 6개 재대조, 반복된 도입 문장 정리 추가 대조: 라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1858,6 +1878,11 @@
         "title": "Partner Center — E3 CSP promotional offer",
         "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
         "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
+      },
+      {
+        "title": "microsoft-copilot-requirements",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+        "checkedFor": "라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2022,7 +2047,7 @@
     "file": "docs/microsoft365/teams.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 기존 Microsoft 365 그룹으로 Team 생성, 채널별 사이트, 공유 채널 B2B와 그룹 만료 범위; 캐나다 시간대 전환에 따른 Teams Rooms의 Edge·WebView2 업데이트와 일반 클라이언트의 별도 확인",
+    "scope": "확인한 항목: 기존 Microsoft 365 그룹으로 Team 생성, 채널별 사이트, 공유 채널 B2B와 그룹 만료 범위; 캐나다 시간대 전환에 따른 Teams Rooms의 Edge·WebView2 업데이트와 일반 클라이언트의 별도 확인 추가 대조: Microsoft 365 그룹과 Teams·SharePoint·Exchange·OneNote의 연결을 직렬 처리 단계가 아닌 관련 서비스 구조로 수정했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2033,7 +2058,7 @@
       {
         "title": "office-365-groups",
         "url": "https://learn.microsoft.com/en-us/microsoftteams/office-365-groups",
-        "checkedFor": "기존 Microsoft 365 그룹으로 Team 생성, 채널별 사이트, 공유 채널 B2B와 그룹 만료 범위"
+        "checkedFor": "기존 Microsoft 365 그룹으로 Team 생성, 채널별 사이트, 공유 채널 B2B와 그룹 만료 범위 Microsoft 365 그룹과 Teams·SharePoint·Exchange·OneNote의 연결을 직렬 처리 단계가 아닌 관련 서비스 구조로 수정했습니다."
       },
       {
         "title": "shared-channels",
@@ -2227,15 +2252,20 @@
   },
   "/knowledge/playbooks/change-management-playbook": {
     "file": "docs/playbooks/change-management-playbook.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-10-29",
     "kind": "설계·실행 프레임워크",
-    "scope": "확인한 항목: 변경 관리의 교육·챔피언·지원과 계획 수치의 예시 성격",
+    "scope": "확인한 항목: 변경 관리의 교육·챔피언·지원과 계획 수치의 예시 성격 추가 대조: 경영진 지원이 가장 강력한 성공 예측 변수라는 근거 없는 순위 주장을 삭제하고 공식 도입 지침의 후원자 역할로 바꿨습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Microsoft Copilot adoption and onboarding",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources",
         "checkedFor": "Copilot 도입은 데이터 준비·라이선스 선택·설정·채택·운영 단계를 포함합니다. 작성자의 ROI나 점수를 보증하지 않습니다."
+      },
+      {
+        "title": "teams-adoption-phase1",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-adoption-phase1",
+        "checkedFor": "경영진 지원이 가장 강력한 성공 예측 변수라는 근거 없는 순위 주장을 삭제하고 공식 도입 지침의 후원자 역할로 바꿨습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3409,7 +3439,7 @@
     "file": "docs/security/purview-information-protection.md",
     "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "Box·Google Workspace 자동 레이블 미리 보기에서 기존 자동 레이블을 다른 자동 정책의 높은 우선순위 레이블로 교체할 수 없는 제한을 확인했습니다.",
+    "scope": "Box·Google Workspace 자동 레이블 미리 보기에서 기존 자동 레이블을 다른 자동 정책의 높은 우선순위 레이블로 교체할 수 없는 제한을 확인했습니다. 추가 대조: 거버넌스 권고와 라이선스·ID·앱·네트워크 필수 조건, 메일함 기반 기능의 요구사항을 구분했습니다. 분류 전용 레이블은 암호화하지 않으므로 암호화·DLP를 필수 직렬 단계로 표현한 도식을 수정했습니다. 규정과 제품 기능의 연결을 검토 예시로 한정하고 기능 사용만으로 규정 준수가 입증되는 것으로 표현하지 않았습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3435,7 +3465,7 @@
       {
         "title": "Sensitivity labels",
         "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
-        "checkedFor": "수동·자동 레이블의 구분과 Copilot·에이전트의 레이블 인식, 정책과 사용자 권한 확인이 필요한 조건을 대조했습니다."
+        "checkedFor": "수동·자동 레이블의 구분과 Copilot·에이전트의 레이블 인식, 정책과 사용자 권한 확인이 필요한 조건을 대조했습니다. 분류 전용 레이블은 암호화하지 않으므로 암호화·DLP를 필수 직렬 단계로 표현한 도식을 수정했습니다."
       },
       {
         "title": "encryption-sensitivity-labels",
@@ -3446,6 +3476,16 @@
         "title": "sensitivity-labels-teams-groups-sites",
         "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-teams-groups-sites",
         "checkedFor": "암호화된 파일 보호의 지속 조건과 컨테이너 레이블의 파일 자동 상속 제외"
+      },
+      {
+        "title": "microsoft-copilot-requirements",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
+        "checkedFor": "거버넌스 권고와 라이선스·ID·앱·네트워크 필수 조건, 메일함 기반 기능의 요구사항을 구분했습니다."
+      },
+      {
+        "title": "compliance-manager",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+        "checkedFor": "규정과 제품 기능의 연결을 검토 예시로 한정하고 기능 사용만으로 규정 준수가 입증되는 것으로 표현하지 않았습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3510,9 +3550,9 @@
   },
   "/knowledge/security/zero-trust-framework": {
     "file": "docs/security/zero-trust-framework.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-10-29",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다.",
+    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다. 추가 대조: Intune의 기기 상태 평가와 조건부 액세스의 접근 제한을 구분하고 미할당 기기의 Not compliant 설정 권고를 확인했습니다. ",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3529,6 +3569,11 @@
         "title": "Manage emergency access accounts",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
         "checkedFor": "긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다."
+      },
+      {
+        "title": "overview",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/overview",
+        "checkedFor": "Intune의 기기 상태 평가와 조건부 액세스의 접근 제한을 구분하고 미할당 기기의 Not compliant 설정 권고를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

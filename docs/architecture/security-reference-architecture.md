@@ -166,7 +166,7 @@ Typical security initiatives include:
 |---|---|
 | Conditional Access | Microsoft Entra ID P1 |
 | Identity Protection | Microsoft Entra ID P2 |
-| Privileged Identity Management | Microsoft Entra ID P2 |
+| Privileged Identity Management | Microsoft Entra ID P2 or Microsoft Entra ID Governance |
 | Defender for Endpoint P2 | Microsoft 365 E5·E7 또는 해당 기능을 포함하는 적격 보안 구독 |
 | Defender for Office 365 P2 | Microsoft 365 E5·E7 또는 해당 기능을 포함하는 적격 보안 구독 |
 | Defender XDR | Microsoft 365 E5·E7에 포함된 고급 보안 기능 |

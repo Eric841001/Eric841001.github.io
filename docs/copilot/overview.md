@@ -10,6 +10,10 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 <UpdateBrief />
 
+## 제품명과 접속 주소
+
+Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot**, **Microsoft 365 Copilot Chat을 Microsoft Copilot Chat**으로 안내합니다. 기존 명칭은 과거 자료와의 연결을 위해 함께 사용합니다. 앱의 기본 접속 주소도 `copilot.cloud.microsoft`로 변경되므로 네트워크 허용 목록을 확인하세요. [현재 제품명과 접속 요구사항](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements)을 참고합니다.
+
 <section aria-label="Copilot enterprise AI adoption landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Enterprise AI Adoption</span>

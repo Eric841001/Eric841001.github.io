@@ -21,6 +21,8 @@ E7에는 **Microsoft 365 E5 + Microsoft 365 Copilot + Microsoft Entra Suite + Mi
 
 ## 최신 라이선스 확인
 
+Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot**, **Microsoft 365 Copilot Chat을 Microsoft Copilot Chat**으로 안내합니다. 기존 명칭은 과거 자료와의 연결을 위해 함께 사용합니다. 앱의 기본 접속 주소도 `copilot.cloud.microsoft`로 변경되므로 네트워크 허용 목록을 확인하세요. [현재 제품명과 접속 요구사항](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements)을 참고합니다.
+
 비교 대상은 **Microsoft 365 기업용 플랜**입니다. Office 365 E3·E5와 구분하고, Teams 포함 여부와 이용 지역·계약 조건을 확인하세요.
 
 기능 포함 여부는 [Microsoft의 E3·E5·E7 비교](https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7), E7의 구성은 [E7 제품 안내](https://www.microsoft.com/en-us/microsoft-365/enterprise/e7)를 기준으로 정리했습니다. 라이선스를 구매한 뒤에도 사용자 할당과 정책 설정이 필요합니다.

@@ -231,7 +231,7 @@ Knowledge Center의 문서는 아래 업무에 재사용할 수 있도록 작성
 
 - Microsoft Learn 수준의 technical accuracy
 - Microsoft consulting 수준의 document structure
-- 실제 고객 project에 적용 가능한 practicality
+- 고객 프로젝트에 적용할 수 있는 구체적인 절차와 예시
 - 라이선스 포함 여부와 제약사항 명확화
 - 보안·운영 조건과 비용 확인
 - 고객명은 사용하지 않고 industry 기준으로 일반화

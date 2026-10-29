@@ -130,7 +130,7 @@ The program should achieve:
 
 ## Executive Sponsorship
 
-Executive support is the strongest predictor of adoption success.
+Assign an executive sponsor to communicate the business purpose, support adoption and resolve decisions that cross teams. See [Microsoft Teams adoption roles](https://learn.microsoft.com/en-us/microsoftteams/teams-adoption-phase1).
 
 Key activities:
 

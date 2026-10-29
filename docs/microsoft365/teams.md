@@ -180,15 +180,11 @@ Examples:
 ### Logical Architecture
 
 ```text
-Microsoft Teams
-      |
 Microsoft 365 Group
-      |
-SharePoint Site
-      |
-Exchange Group Mailbox
-      |
-OneNote
+  +-- Microsoft Teams
+  +-- SharePoint team site
+  +-- Exchange group mailbox
+  +-- Shared OneNote notebook
 ```
 
 A team can create a new Microsoft 365 group or use an existing group owned by its creator. These are related services, not a serial processing pipeline. Standard-channel files use the parent team's SharePoint site; private and shared channels each have a separate SharePoint site with their own membership boundary. See [Microsoft 365 Groups and Teams](https://learn.microsoft.com/en-us/microsoftteams/office-365-groups) and [Teams/SharePoint integration](https://learn.microsoft.com/en-us/sharepoint/teams-connected-sites).

@@ -6,6 +6,7 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft Copilot', title: 'Copilot 제품명과 접속 주소 변경', description: '새 제품명과 copilot.cloud.microsoft 전환, 기능별 도입 요구사항을 정리했습니다.', date: '2026-10-29', status: '공식 요구사항 반영', path: '/knowledge/copilot/overview#제품명과-접속-주소'},
   {category: 'Microsoft Purview', title: 'macOS 27의 DLP 권한과 보호 모드', description: '최소 클라이언트 버전과 권한 복구, Windows와의 앱 제어 차이를 정리했습니다.', date: '2026-10-29', status: '문서 보완 · macOS 27 권한 변경은 미리 보기', path: '/knowledge/security/dlp#macos-27-permissions'},
   {category: 'Microsoft 365', title: '캐나다 시간대 전환 전 회의 일정 점검', description: '11월 1일 전환을 앞두고 기존 Outlook 일정과 Teams Rooms의 표시 시간을 확인하세요.', date: '2026-10-29', status: '운영 안내 · 대상 지역 확인', path: '/knowledge/microsoft365/exchange-online#canada-time-zone-2026'},
   {category: 'Microsoft Intune', title: '회사 소유 Android 기기의 eSIM 일괄 관리', description: 'Android 15 이상에서 최대 100대의 eSIM을 활성화할 수 있습니다. 지원 기기와 초기화 시 요금제 유지 조건을 정리했습니다.', date: '2026-10-29', status: '문서 개정 · 10월 26일 주간 변경', path: '/knowledge/playbooks/intune-deployment-playbook#android-esim-bulk-actions'},

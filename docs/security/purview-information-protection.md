@@ -143,11 +143,13 @@ Compliance requirements demand:
 
 ### Scenario 4
 
-Microsoft 365 Copilot deployment requires:
+Recommended governance preparation for Microsoft Copilot (formerly Microsoft 365 Copilot):
 
 - Content governance
 - Permission review
 - Data classification
+
+These are governance recommendations. Product prerequisites depend on the selected experience: eligible licensing, an Entra ID account, supported apps and network access. An Exchange Online mailbox is needed for experiences that use mailbox data. See [Copilot requirements](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements).
 
 ---
 
@@ -167,19 +169,13 @@ Examples:
 ## Information Protection Architecture
 
 ```text
-User
-  |
-Microsoft 365
-  |
-Sensitivity Labels
-  |
-Encryption
-  |
-DLP
-  |
-Monitoring
-  |
-Purview Portal
+Microsoft 365 data
+  +-- Sensitivity labels: classification
+  |     +-- Optional encryption and markings
+  +-- DLP policies: configured activities and locations
+  +-- Monitoring and investigation in Purview
+
+Labels and DLP are configured controls, not sequential stages.
 ```
 
 ---
@@ -376,6 +372,8 @@ Questions:
 ---
 
 ## Regulatory Compliance Mapping
+
+The table suggests capabilities to evaluate for a compliance program. It does not map every regulatory requirement or establish compliance; each assessment needs the applicable controls, evidence and legal review.
 
 | Requirement | Purview Capability |
 |------------|------------|

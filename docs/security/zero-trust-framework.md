@@ -162,10 +162,13 @@ For Microsoft cloud environments, Zero Trust should be designed across Microsoft
 | Control | Recommendation |
 |---|---|
 | Intune Enrollment | Enroll corporate devices |
-| Compliance Policy | Require compliant devices for sensitive access |
+| Compliance Policy | Evaluate device configuration and report compliance status |
+| Conditional Access | Require compliant devices for selected sensitive resources |
 | Configuration Profile | Apply security baseline |
 | Endpoint Protection | Deploy Defender for Endpoint |
 | Mobile Access | Apply app protection where needed |
+
+Intune 규정 준수 정책은 기기 상태를 평가합니다. 해당 상태로 업무 리소스 접근을 제한하려면 조건부 액세스 정책을 연결해야 합니다. 이 구성에서는 규정 준수 정책이 할당되지 않은 기기를 **Not compliant**로 처리하도록 설정도 확인하세요. [규정 준수 정책과 조건부 액세스](https://learn.microsoft.com/en-us/intune/device-security/compliance/overview)를 참고합니다.
 
 ---
 
