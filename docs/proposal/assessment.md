@@ -240,7 +240,7 @@ Typical assessment deliverables include:
 
 ## Lessons Learned
 
-- Assessment quality determines proposal accuracy
+- Trace proposal assumptions and estimates to the assessment evidence
 - License optimization requires user persona analysis
 - Migration estimates are unreliable without source inventory
 - Security projects require exception handling design
@@ -253,7 +253,7 @@ Typical assessment deliverables include:
 - Microsoft Entra admin center
 - Microsoft Intune admin center
 - Microsoft Defender portal
-- Microsoft Purview compliance portal
+- Microsoft Purview portal
 - Microsoft Learn
 
 ## 검색 키워드

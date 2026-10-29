@@ -172,7 +172,7 @@ Typical migration scenarios include:
 
 - Migration quality depends on assessment quality.
 - Permission cleanup improves both security and Copilot readiness.
-- Communication reduces perceived migration risk.
+- Explain the cutover impact, known risks and support path before each wave.
 - Hypercare must be planned before cutover, not after user issues start.
 - Executive reporting should show risk, readiness and business impact, not only item counts.
 

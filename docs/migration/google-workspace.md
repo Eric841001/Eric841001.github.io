@@ -33,7 +33,7 @@ description: Google Workspace to Microsoft 365 migration guide for Gmail, Calend
 
 ## Executive Summary
 
-Google Workspace migration moves mail, calendar, contacts, Drive content and collaboration workflows into Microsoft 365.
+A Google Workspace migration program covers supported mail, calendar, contacts and Drive content, plus the redesign of collaboration workflows for Microsoft 365.
 
 The program should be planned as identity, data, collaboration and change management workstreams. A mail-only view misses user behavior, file ownership and coexistence complexity.
 
@@ -88,6 +88,8 @@ Google Workspace의 메일·일정·연락처와 Drive 자료를 Microsoft 365�
 
 Use Exchange Online's documented Google Workspace mailbox migration for mail, calendar and contacts. For Google Drive files, use **Migration Manager for Google Workspace**, not SharePoint Migration Tool (SPMT): SPMT supports on-premises SharePoint and file shares as sources. Review Google Drive identity mapping and permission settings separately; mapping a user alone does not enable file-level permission migration. See [Migration Manager's current workflow](https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview).
 
+The Exchange migration path excludes room bookings and shared calendars; migrated rules remain disabled until users review and enable them. Identify these exceptions before the pilot. See [Google Workspace mailbox migration limitations](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration#migration-limitations).
+
 ## Security
 
 - Review third-party app access before migration.
@@ -116,6 +118,8 @@ Use Exchange Online's documented Google Workspace mailbox migration for mail, ca
 
 ## Customer Success Pattern
 
+The following are planning examples, not measured customer results.
+
 | Industry | Scenario | Pattern |
 |---|---|---|
 | Retail | Gmail and Drive consolidation | Department wave plan and shared drive owner validation |
@@ -124,7 +128,7 @@ Use Exchange Online's documented Google Workspace mailbox migration for mail, ca
 
 ## Lessons Learned
 
-Drive ownership and shared drive structure often create more complexity than mailbox migration. Early inventory and business owner validation reduce cutover surprises.
+Assess Drive ownership and shared drives alongside mailbox migration. Use the inventory and pilot results to assign exception owners and cutover actions.
 
 ## References
 

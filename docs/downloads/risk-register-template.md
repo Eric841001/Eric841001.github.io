@@ -292,7 +292,7 @@ Review the following:
 - Risks should be identified early
 - Mitigation should be assigned to specific owners
 - High risks should be reviewed weekly
-- Executive visibility improves risk resolution
+- Send unresolved risks to the accountable decision maker with options and a due date
 - Risks should be linked to project decisions
 - Closed risks should be documented for future projects
 

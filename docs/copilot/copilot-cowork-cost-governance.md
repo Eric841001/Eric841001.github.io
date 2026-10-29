@@ -64,7 +64,7 @@ Microsoft 365 Copilot Cowork is not just another chat interface. It is an agenti
 
 Adoption planning should therefore start with operating controls, not feature excitement. Organizations need to prepare access scope, usage-based billing, Copilot Credits, spending limits, budget alerts, security governance, approval workflows and ownership before broad rollout.
 
-Microsoft's June 30 update describes Copilot Cowork plugins as packages that can combine repeatable skills with secure connectors to business systems and be distributed through Microsoft Marketplace. Microsoft's June 16 GA announcement states that Cowork is generally available worldwide and requires a Microsoft 365 Copilot User Subscription License, with usage billed in Copilot Credits; individual plugin availability still varies, and capabilities marked as coming soon should not be treated as available. Before enabling a plugin, review its provider, requested data and actions, connector permissions, approval points for write or external actions, and the Microsoft 365 and Purview controls currently available for prompts, responses and generated artifacts. Do not present announced controls such as DLP as available when Microsoft marks them as coming soon.
+Microsoft's June 30 update describes Copilot Cowork plugins as packages that can combine repeatable skills with secure connectors to business systems and be distributed through Microsoft Marketplace. Microsoft's June 16 GA announcement states that Cowork is generally available worldwide and requires a Microsoft 365 Copilot User Subscription License, with usage billed in Copilot Credits; individual plugin availability still varies, and capabilities marked as coming soon should not be treated as available. Before enabling a plugin, review its provider, requested data and actions, connector permissions, approval points for write or external actions, and the Microsoft 365 and Purview controls currently available for prompts, responses and generated artifacts. The June announcement listed DLP as coming soon. The [current Purview support matrix](https://learn.microsoft.com/en-us/purview/ai-copilot-cowork) now lists data loss prevention as supported for Cowork. Check the applicable policy conditions and test the intended content and action paths before rollout.
 
 ## 한국어 요약
 
@@ -76,11 +76,11 @@ Copilot Cowork에 여러 단계의 업무를 맡기려면 사용할 도구와 �
 
 Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)되었으며 Microsoft 365 Copilot User Subscription License가 필요합니다. 사용량은 Copilot Credits로 청구됩니다. 6월 30일 발표된 플러그인은 반복해서 사용할 스킬과 업무 시스템 연결용 커넥터를 묶어 Microsoft Marketplace로 배포하는 방식입니다.
 
-플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 발표문에서 '출시 예정'으로 표시한 플러그인이나 DLP 기능은 현재 사용할 수 있다고 가정하지 마세요. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
+플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 6월 발표에서는 DLP를 출시 예정으로 안내했지만, 현재 Purview 지원표에는 Cowork의 지원 기능으로 표시되어 있습니다. 적용할 정책과 자료 유형을 확인하고 실제 차단 동작을 시험하세요. 플러그인의 제공 여부는 해당 제공자의 현재 안내를 따릅니다. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
-Microsoft announced the Power Platform Admin (preview) plugin for Cowork on October 25, 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
+Microsoft announced the Power Platform Admin (preview) plugin for Cowork in October 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
 
 - A Microsoft 365 administrator can install the plugin for all users or selected users and groups from `Agents > Tools > Registry`. Installation does not grant Cowork access or Power Platform data permissions.
 - The account that connects through Power Platform for Admins V2 must have the Global Administrator, Power Platform Administrator or Dynamics 365 Administrator role. Confirm the intended account and tenant before completing OAuth consent.
@@ -162,7 +162,7 @@ Microsoft describes usage-based billing as actual usage measured in Copilot Cred
 
 ### Spending policy scope
 
-The **Auto-apply new services** option is enabled by default for spending policies. Newly supported Copilot services and agents can therefore inherit an existing policy. Turn this option off for policies that require a separate review before adding a service, and check the actual service list, users and limits. Cowork access requires a spending policy that includes Cowork; installing a plugin or changing its registry entry does not grant that access.
+The **Auto-apply new services** option is enabled by default for spending policies. Newly supported Copilot services and agents can therefore inherit an existing policy. Turn this option off for policies that require a separate review before adding a service, and check the actual service list, users and limits. Cowork access requires a spending policy that includes Cowork; installing a plugin or changing its registry entry does not grant that access. Even a one-credit limit grants access until that limit is reached. To block access, exclude the user from every policy that selects Cowork. Disabling Anthropic models alone also leaves access through other allowed models. See [Cowork access controls](https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance).
 
 The Microsoft 365 admin center manages supported services such as Cowork and Work IQ API. Copilot Studio has a separate billing setup, and not every Copilot experience uses this dashboard. The Copilot Cost Management API reports credits rather than currency charges or invoices. See [current billing scope and policy behavior](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
 
@@ -366,7 +366,7 @@ Once these answers are available, the organization can move from technical enabl
 ## References
 
 - [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/)
-- [The workflow is the product: Copilot Cowork plugins change what AI can do for businesses](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/the-workflow-is-the-product-copilot-cowork-plugins-change-what-ai-can-do-for-bus/4531933) — Microsoft 365 Copilot Blog, June 30, 2026; checked July 13, 2026 (Asia/Seoul).
+- [The workflow is the product: Copilot Cowork plugins change what AI can do for businesses](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/the-workflow-is-the-product-copilot-cowork-plugins-change-what-ai-can-do-for-bus/4531933) — Microsoft 365 Copilot Blog, June 30, 2026; historical announcement; current controls are described in the linked Learn guidance.
 - [Understand usage-based billing and cost management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
 - [Power Platform Admin in Cowork (preview)](https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork)
 - [Agentic governance with Power Platform Admin in Cowork (preview)](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance)

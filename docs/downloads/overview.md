@@ -272,7 +272,7 @@ Start here: [Contact and Asset Request](/knowledge/contact)
   <div className="kc-platform-fit__card">
     <small>Scope</small>
     <strong>Scope and out-of-scope boundary</strong>
-    <span>Strong templates prevent ambiguity by separating included work, exclusions and assumptions.</span>
+    <span>Separate included work, exclusions and assumptions, and resolve conflicting terms before approval.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Inputs</small>

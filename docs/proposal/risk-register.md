@@ -131,7 +131,7 @@ This template is typically used for:
 | R-006 | Legacy system dependency discovered late | Architecture | High | Medium | High | Conduct dependency review during discovery | Architect |
 | R-007 | User resistance to new security policy | Change | Medium | Medium | Medium | Prepare communication and FAQ | Change Lead |
 | R-008 | Admin role assignment too broad | Security | Medium | Medium | Medium | Apply least privilege and PIM | Security Lead |
-| R-009 | DLP false positives disrupt business process | Compliance | Medium | Medium | Medium | Start with audit mode and tune policy | Compliance Lead |
+| R-009 | DLP false positives disrupt business process | Compliance | Medium | Medium | Medium | Start with DLP simulation mode; review matches and tune the policy before enforcement | Compliance Lead |
 | R-010 | Copilot exposes poorly governed content | Data Governance | High | Medium | High | Review permission model and sensitivity labels | Information Owner |
 
 ## Risk Categories
@@ -191,6 +191,7 @@ Mitigation:
 Decision Required:
 Due Date:
 Status:
+```
 
 ## 검색 키워드
 

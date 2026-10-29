@@ -70,7 +70,7 @@ There are two primary approaches:
 
 Selecting the wrong strategy can create significant operational, security, compliance, and user experience challenges.
 
-This document provides a decision framework used in enterprise Microsoft 365 transformation projects.
+This document proposes a decision framework for planning Microsoft 365 tenant integration.
 
 ---
 
@@ -289,7 +289,7 @@ Multiple governance models remain.
 
 Users and workloads are migrated into a target tenant.
 
-The source tenant is eventually decommissioned.
+Decommission source services only after retained data, identity dependencies, billing and migration exceptions have been resolved.
 
 ---
 
@@ -332,6 +332,8 @@ The source tenant is eventually decommissioned.
 ---
 
 ### Migration Scope
+
+The following items are discovery categories, not a promise that one tool transfers every object, permission or sharing link. Record supported items, exclusions and required recreation for each selected workload migration method.
 
 ### Identity
 
@@ -382,7 +384,7 @@ Centralized administration.
 
 ### Better User Experience
 
-Single sign-in experience.
+Validate target-account sign-in and application access after cutover.
 
 ---
 
@@ -489,7 +491,7 @@ Unified content repository.
 
 Unified governance.
 
-Unified Copilot access model.
+Configure and test Copilot access against target permissions, licensing and policy.
 
 ---
 
@@ -503,7 +505,7 @@ Some resource-tenant operations still require a tenant context. Multi-tenant org
 
 ### Migration
 
-Single Teams experience.
+Validate target Teams access, recreated resources and retained migration exceptions.
 
 ---
 
@@ -524,10 +526,10 @@ Challenges:
 
 Benefits:
 
-- Unified Graph
-- Unified Search
-- Unified Security
-- Unified Knowledge Base
+- Validate access to target organizational data
+- Test search results after indexing
+- Apply and test target security policies
+- Review migrated knowledge and remaining source dependencies
 
 ---
 

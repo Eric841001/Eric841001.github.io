@@ -302,7 +302,7 @@ Advanced hunting should not be treated as a random query library. It should be m
 
 | Evidence | Why it matters |
 |---|---|
-| Workload coverage map | Proves that Defender for Endpoint, Office 365, Identity, Cloud Apps and related signals are in scope. |
+| Workload coverage map | Records intended workload coverage; compare it with license assignments, provisioning and received telemetry. |
 | Incident workflow | Shows owner, severity, escalation, evidence standard and business communication path. |
 | Automation register | Documents automated response actions, approval boundaries and rollback requirements. |
 | Hunting query pack | Converts analyst knowledge into repeatable detection and investigation patterns. |

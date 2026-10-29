@@ -54,7 +54,7 @@ toc_max_heading_level: 2
 
 This checklist provides a standardized migration validation framework for Microsoft 365 transformation, tenant-to-tenant migration, Exchange Online migration, SharePoint migration and cloud modernization projects.
 
-The objective is to reduce migration risk while ensuring business continuity and user productivity.
+Use the checklist to identify migration risks, agree acceptable disruption and test recovery and user workflows before cutover.
 
 ---
 

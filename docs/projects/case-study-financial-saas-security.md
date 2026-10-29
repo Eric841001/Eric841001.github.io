@@ -197,8 +197,8 @@ For regulated environments, success depends on evidence-ready governance. Archit
   </div>
   <div className="kc-outcome-card">
     <small>OUTCOME</small>
-    <strong>Faster review cycle</strong>
-    <span>Reusable evidence and governance artifacts reduce repeated security questionnaire effort.</span>
+    <strong>Review cycle tracking</strong>
+    <span>Reuse approved evidence where applicable and measure the time spent answering security questionnaires.</span>
   </div>
 </div>
 

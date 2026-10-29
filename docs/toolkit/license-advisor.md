@@ -238,8 +238,8 @@ Included capabilities:
 ### Compliance
 
 - Insider Risk Management
-- Advanced eDiscovery
-- Advanced Audit
+- Microsoft Purview eDiscovery (Premium)
+- Microsoft Purview Audit (Premium)
 
 ### Analytics
 

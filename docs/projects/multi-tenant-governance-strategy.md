@@ -201,7 +201,7 @@ An anonymized enterprise group governance engagement typically follows this patt
   <div className="kc-outcome-card">
     <small>CHALLENGE</small>
     <strong>Fragmented tenant landscape</strong>
-    <span>Multiple tenants create inconsistent identity, collaboration, security and admin practices.</span>
+    <span>Compare identity, collaboration, security and administration practices across the tenants to identify differences.</span>
   </div>
   <div className="kc-outcome-card">
     <small>APPROACH</small>

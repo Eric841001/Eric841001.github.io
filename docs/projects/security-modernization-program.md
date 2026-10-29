@@ -112,7 +112,7 @@ Microsoft 365의 접근 제어, 기기·메일 보안과 데이터 보호를 점
 | Layer | Microsoft Capability | Design Intent |
 |---|---|---|
 | Identity | Entra ID, MFA, Conditional Access | verify user, device, location and risk before access |
-| Endpoint | Intune, Defender for Endpoint | enforce device compliance and threat protection |
+| Endpoint | Intune, Defender for Endpoint | evaluate managed-device compliance, enforce access through Conditional Access and configure threat protection |
 | Data | Purview, sensitivity labels, DLP | classify and protect sensitive business data |
 | Messaging | Defender for Office 365, Exchange Online | reduce phishing, malware and mail-based data leakage |
 | SaaS access | Global Secure Access, network allowlists, exception workflow | control cloud access from regulated network zones |
@@ -161,7 +161,7 @@ Microsoft 365의 접근 제어, 기기·메일 보안과 데이터 보호를 점
 
 ## Anonymized Success Pattern
 
-In finance, healthcare, manufacturing and regulated SaaS environments, security modernization succeeds when the project produces approval evidence, not only configuration changes. Security teams need a clear explanation of what is controlled, who owns exceptions and how the control will be reviewed after rollout.
+Include approval evidence and tested control results in the security modernization deliverables. Security teams need a clear explanation of what is controlled, who owns exceptions and how the control will be reviewed after rollout.
 
 ## Success Indicators
 
@@ -182,10 +182,10 @@ In finance, healthcare, manufacturing and regulated SaaS environments, security 
 
 ## Lessons Learned
 
-- Security modernization succeeds when evidence is planned from the beginning.
+- Define the required evidence and acceptance criteria before implementation.
 - Conditional Access, Defender, Purview and Intune should be explained as one control model.
 - Copilot and AI adoption make permission cleanup and data protection more urgent.
-- Exception governance is often more important than the initial policy setting.
+- Review exception ownership and expiry dates alongside the effective policy settings.
 - Executive reports should translate configuration into risk, decision and operating impact.
 
 ## 검색 키워드
@@ -216,7 +216,7 @@ In finance, healthcare, manufacturing and regulated SaaS environments, security 
   <div className="kc-outcome-card">
     <small>OUTCOME</small>
     <strong>Executive-ready security story</strong>
-    <span>Security modernization becomes a phased roadmap with measurable risk reduction and operational ownership.</span>
+    <span>Assign owners to the roadmap and compare control coverage, incidents and unresolved exceptions against the baseline.</span>
   </div>
 </div>
 

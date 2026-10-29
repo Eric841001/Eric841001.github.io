@@ -158,11 +158,11 @@ An enterprise group needed consistent identity, device and collaboration governa
 
 ## Success Pattern
 
-The strongest pattern is to document decisions in a policy workbook. Enterprise governance fails when decisions stay informal. A workbook creates traceability across security, operations and business stakeholders.
+Record policy decisions, owners, approval dates and unresolved exceptions in a shared workbook. Review it with security, operations and business stakeholders.
 
 ## Executive Summary Pattern
 
-For executive review, this pattern should be positioned as a governance standardization program. The business value is not only better policy documentation. It is reduced ambiguity across business units, clearer tenant strategy, faster exception decisions and safer expansion for Copilot, AI agents and collaboration services.
+For executive review, this pattern should be positioned as a governance standardization program. Define the tenant strategy and exception owners, then measure decision time, unresolved ownership questions and policy gaps before expanding Copilot or agents.
 
 ## Business Outcome
 

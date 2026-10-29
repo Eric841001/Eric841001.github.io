@@ -142,7 +142,7 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 </ReadingSummary>
 
 
-Copilot Studio has changed materially in 2026. The platform now needs to be discussed in terms of new agent experience, Microsoft IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
+Copilot Studio has changed materially in 2026. The platform now needs to be discussed in terms of new agent experience, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
 
 For the current architecture and governance implications, start here: [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
 
@@ -473,7 +473,7 @@ Examples:
 </ReadingSummary>
 
 
-Knowledge quality determines agent quality.
+Test whether the selected knowledge sources produce accurate, relevant answers for the intended users.
 
 Recommended knowledge sources:
 
@@ -500,12 +500,12 @@ Recommended knowledge sources:
 </ReadingSummary>
 
 
-Agents become more valuable when they can take action.
+Add actions when a scenario requires a system change, and test permissions, confirmation and recovery before release.
 
 <div aria-label="Copilot Studio tool and action architecture" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Tool and Action Architecture</span>
-    <strong>Agents create value when they can safely take action</strong>
+    <strong>Design and test the action path</strong>
   </div>
   <div className="kc-journey-track">
     <div className="kc-journey-node kc-journey-node--demand">
@@ -526,7 +526,7 @@ Agents become more valuable when they can take action.
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
       <strong>Control</strong>
-      <span>Authentication, DLP, approval, logging and error handling are enforced.</span>
+      <span>Configure and test authentication, data policies, approvals, logging and error handling for each action.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
@@ -1020,14 +1020,14 @@ Consider:
 
 Copilot Studio should be positioned as an enterprise agent platform.
 
-It enables organizations to:
+Evaluate the platform against agreed pilot targets:
 
-- Reduce development backlog
-- Empower business-led innovation
-- Standardize AI agent creation
-- Connect AI to enterprise systems
-- Govern agent usage
-- Scale from personal productivity to business process transformation
+- Compare development effort with the existing process.
+- Record which tasks business teams can maintain.
+- Reuse reviewed agent templates where appropriate.
+- Test connections to the required business systems.
+- Assign owners and review agent usage.
+- Compare process time, errors and operating cost before expanding.
 
 ---
 

@@ -160,13 +160,13 @@ Use this checklist before approving a Microsoft 365, Security, Copilot or Azure 
 
 | Question | Why It Matters |
 |---|---|
-| What business outcome is this program expected to improve? | Prevents technology-only delivery |
+| What business outcome is this program expected to improve? | Documents the business objective alongside technical delivery |
 | Which data and users are in scope? | Controls risk and licensing assumptions |
-| Who owns policy decisions and exceptions? | Prevents unclear governance after go-live |
+| Who owns policy decisions and exceptions? | Records policy owners and exception responsibilities |
 | Which security controls must be in place before rollout? | Reduces disruption and audit gaps |
-| What pilot group validates the design? | Proves feasibility before scale |
+| What pilot group validates the design? | Records feasibility and unresolved constraints for the tested scope |
 | What SOW, WBS and risk register are required? | Connects architecture to delivery execution |
-| How will success be measured after rollout? | Turns adoption into measurable value |
+| How will success be measured after rollout? | Defines measures for usage, cost and business outcomes |
 
 ## Customer Conversation Flow
 

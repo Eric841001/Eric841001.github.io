@@ -92,7 +92,7 @@ Copilot governance depends on Microsoft 365 licensing, Copilot licensing and com
 
 ## Lessons Learned
 
-Successful Copilot adoption starts with a narrow, high-value pilot. Broad rollout without data readiness creates trust issues and increases support load.
+Start with a limited pilot and explicit acceptance criteria. Check data access, incorrect answers and support requests before expanding the rollout.
 
 ## 한국어 요약
 

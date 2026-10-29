@@ -154,7 +154,7 @@ Executive proposal development.
 **Prompt**
 
 ```text
-Act as a Senior Management Consultant from Microsoft Consulting, Accenture and McKinsey.
+Review the material from a senior management consulting perspective. Do not imply affiliation with a consulting firm.
 
 Create an executive proposal document.
 
@@ -210,7 +210,7 @@ Roles and Responsibilities
 Risk Management
 Acceptance Criteria
 
-The output should be customer-ready.
+Produce a draft for consultant review. Identify missing facts, assumptions and claims that need current official sources.
 ```
 
 ---
@@ -439,7 +439,7 @@ Missing Elements
 Risk Areas
 Improvement Recommendations
 
-Provide a final quality score from 1 to 100.
+Explain the review criteria and evidence gaps. If a score is requested, label it as a subjective planning aid, not a certification or measured quality guarantee.
 ```
 
 ---

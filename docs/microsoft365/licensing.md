@@ -129,7 +129,7 @@ Licensing must be checked against required security controls such as Defender, P
 
 ## Lessons Learned
 
-Executive stakeholders respond better to licensing proposals that connect included capabilities to risk reduction, operational efficiency, Copilot readiness and adoption value.
+Explain required capabilities, expected costs, deployment responsibilities and the measures used to assess value in licensing proposals.
 
 ## References
 

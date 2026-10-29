@@ -6,6 +6,7 @@ export const modelUpdate = {
   path: `${updateGuide}#model-availability`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft Purview', title: '정보 장벽 적용 후 검색·Copilot 결과 확인', description: 'SharePoint 모드에 따라 검색 결과 표시와 실제 자료 접근 차단이 다르게 작동하는 조건을 보완했습니다.', date: '2026-10-29', status: '문서 보완 · 모드별 조건', path: '/knowledge/security/information-barriers'},
   {category: 'Microsoft 365 Licensing', title: 'E3·E5의 Intune 포함 기능 보완', description: '2026년 상용 패키지 개편의 Remote Help·Plan 2와 E5 추가 기능을 비교표에 반영했습니다.', date: '2026-10-29', status: '비교 자료 보완', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#commercial-packaging-2026'},
   {category: 'SharePoint · OneDrive', title: '비관리 기기의 접근 제한 조건 수정', description: '기존 로그인 세션과 모든 클라이언트 대상 설정, 미리보기 예외를 구분했습니다.', date: '2026-10-29', status: '적용 조건 수정', path: '/knowledge/knowledge-center/onedrive-limited-access-read-only'},
   {category: 'Microsoft Copilot', title: 'Copilot 제품명과 접속 주소 변경', description: '새 제품명과 copilot.cloud.microsoft 전환, 기능별 도입 요구사항을 정리했습니다.', date: '2026-10-29', status: '공식 요구사항 반영', path: '/knowledge/copilot/overview#제품명과-접속-주소'},

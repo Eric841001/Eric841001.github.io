@@ -12,7 +12,7 @@ toc_max_heading_level: 2
 
 Microsoft has introduced Skills for Excel Copilot, enabling reusable task-specific capabilities that extend beyond traditional prompt-based interactions.
 
-Skills allow organizations to standardize financial analysis, planning, forecasting, valuation and reporting workflows while maintaining transparency, auditability and governance.
+Skills store reusable instructions for analysis and reporting. Validate financial assumptions, permissions and change records separately before using the output.
 
 This guide combines documented Excel capabilities with author-proposed finance workflows. The architecture and finance scenarios are design examples, not a separate Microsoft product or a guarantee of financial accuracy.
 
@@ -68,14 +68,14 @@ The [official Excel Skills guide](https://support.microsoft.com/en-us/excel/copi
 
 ## Why Skills Matter
 
-Traditional prompting creates challenges:
+When evaluating prompts or skills, test these potential problems:
 
 - Inconsistent output
 - User dependency
 - Difficult governance
 - Limited repeatability
 
-Skills introduce reusable business logic.
+Skills package reusable instructions; they do not make model output deterministic.
 
 <div aria-label="Excel skill execution model" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -293,7 +293,7 @@ Skills provide a middle layer between:
 - Business Process
 - Financial Governance
 
-This reduces reliance on individual prompt engineering.
+Measure whether the shared instructions reduce repeated setup and review effort.
 
 ---
 
@@ -313,7 +313,7 @@ Treat any future marketplace or partner-finance integration as a separate availa
 
 Excel Copilot Skills represent a shift from AI-assisted spreadsheets toward AI-enabled financial operating models.
 
-Organizations can move beyond individual productivity gains and establish repeatable, governed and scalable financial intelligence processes.
+Pilot a repeatable finance task, compare output quality and review effort, and confirm ownership and change evidence before expanding its use.
 
 ---
 

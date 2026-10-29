@@ -183,12 +183,14 @@ This is especially important when:
     <div className="kc-journey-node is-target">
   <small>04</small>
   <strong>Target recipient experience</strong>
-  <span>Users receive mail consistently while migration, domain transfer or coexistence continues.</span>
+  <span>Test delivery and replies across each routing path during migration, domain transfer and coexistence.</span>
 </div>
   </div>
 </div>
 
 ### Design Elements
+
+An Internal relay domain needs the appropriate connector for recipients on the other mail system. See [accepted domain types](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 | Element | Description |
 |---|---|
@@ -196,7 +198,7 @@ This is especially important when:
 | Alternate SMTP | Routing address for coexistence |
 | Mail Contact | Object used to route to external or legacy mailbox |
 | Forwarding | Mail redirection between systems |
-| Accepted Domain | Domain registered in Microsoft 365 tenant |
+| Accepted Domain | SMTP domain configured for mail delivery; select Authoritative or Internal relay according to recipient location |
 | Connector | Mail flow control between systems |
 
 ---
@@ -318,6 +320,8 @@ Sensitivity labels and protected documents require special planning.
 - Protected files may require decryption or relabeling before migration
 - DLP and retention policies must be reviewed in the target tenant
 
+For native SharePoint cross-tenant moves, sites containing files with user-defined-permission sensitivity labels cannot move until those labels are removed. Plan any protection changes with the data owner and reapply the approved target protection. See the [SharePoint migration prerequisites and label restrictions](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-sharepoint-migration).
+
 ### Recommended Approach
 
 | Step | Activity |
@@ -338,6 +342,8 @@ A single Microsoft 365 tenant can support regional policy differences.
 However, policy separation should generally be designed by group, not by domain alone.
 
 ### Group-Based Policy Model
+
+These are scoping options to assess, not interchangeable settings. Check the supported assignment type and exclusions for each product and policy.
 
 | Policy Area | Separation Method |
 |---|---|
@@ -409,7 +415,7 @@ Download restriction can be implemented through Conditional Access and SharePoin
     <div className="kc-journey-node">
   <small>03</small>
   <strong>Coexistence decision</strong>
-  <span>Use cross-tenant sync, B2B or mail coexistence when collaboration or domain sharing must continue.</span>
+  <span>Use cross-tenant sync or B2B for collaboration; design mail coexistence separately with approved routing domains.</span>
 </div>
     <div className="kc-journey-arrow" aria-hidden="true"/>
     <div className="kc-journey-node is-target">

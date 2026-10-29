@@ -31,7 +31,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
       <a href="#2026-capability-map" className="kc-factory-card">
         <small>01</small>
         <strong>Build</strong>
-        <span>New agent experience, Microsoft IQ, skills, memory and workflows.</span>
+        <span>New agent experience, Work IQ, skills, memory and workflows.</span>
       </a>
       <a href="#updated-agent-architecture" className="kc-factory-card">
         <small>02</small>
@@ -78,11 +78,11 @@ The map combines released features and previews. Agent readiness remains preview
   <div className="kc-platform-fit__card">
   <small>June 2026</small>
   <strong>New agent experience</strong>
-  <span>Enhanced orchestration runtime improves agent design, response quality and reasoning while classic experience remains available.</span>
+  <span>The new runtime supports agent planning and reasoning; compare task quality in evaluations. The standard harness remains available.</span>
 </div>
   <div className="kc-platform-fit__card">
   <small>June 2026</small>
-  <strong>Microsoft IQ</strong>
+  <strong>Work IQ</strong>
   <span>Agents can connect to organizational context such as email, calendar, files, Teams messages and people information.</span>
 </div>
   <div className="kc-platform-fit__card">
@@ -116,6 +116,8 @@ The map combines released features and previews. Agent readiness remains preview
   <span>Prompts, agent calls, human review and asynchronous responses make agent design closer to an operational workflow platform.</span>
 </div>
 </div>
+
+Work IQ가 추가된 새 에이전트는 기본적으로 사용 가능한 모든 워크로드를 선택하며 쓰기 작업도 활성화됩니다. 필요한 워크로드만 남기고 실제 계정 권한을 확인하세요. 이 선택은 서비스 단위이며 개별 사이트·사서함을 지정하는 접근 제한이 아닙니다. 별도로 추가한 도구도 따로 점검해야 합니다. [Work IQ 설정과 기본 동작](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq)을 참고하세요.
 
 ## Customer Conversation Harness — October 2026 Preview
 
@@ -246,7 +248,7 @@ Source: [Microsoft Copilot Studio announcement](https://techcommunity.microsoft.
 
 ## Current Model Planning Impact {/* #gpt-56-planning-impact */}
 
-available reasoning models in Microsoft 365 Copilot should be reflected in Copilot Studio planning because users will expect richer reasoning across daily Copilot experiences and agent workflows.
+Check model availability separately for Microsoft Copilot and each Copilot Studio harness. Do not assume that a model shown in one app is available in every agent runtime.
 
 <div aria-label="available reasoning models planning impact for Copilot Studio" className="kc-operating-model">
   <div className="kc-operating-stage">

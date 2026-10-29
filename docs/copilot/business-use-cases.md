@@ -1,7 +1,7 @@
 ---
 id: business-use-cases
 title: Copilot Business Use Cases
-description: "Copilot Business Use Cases - Microsoft 365 Copilot delivers measurable business value when aligned to real business processes."
+description: "Copilot Business Use Cases - Evaluate Microsoft 365 Copilot against specific business tasks, baseline effort and reviewed output quality."
 sidebar_label: Business Use Cases
 toc_max_heading_level: 2
 ---
@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 
 ## Executive Summary
 
-Microsoft 365 Copilot delivers measurable business value when aligned to real business processes.
+Evaluate Microsoft 365 Copilot against specific business tasks, baseline effort and reviewed output quality.
 
 This document provides practical enterprise use cases across major business functions. The workflows and savings below are author-provided planning examples, not Microsoft benchmarks or measured customer results. Validate savings against a recorded baseline, task volume, review effort and pilot outcomes.
 

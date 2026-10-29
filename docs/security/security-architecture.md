@@ -252,10 +252,11 @@ Respond:
 
 Protects:
 
-- Exchange Online
-- Teams Links
-- OneDrive Links
-- SharePoint Links
+- Exchange Online email
+- Links in Teams and supported Office apps through Safe Links
+- Files in SharePoint, OneDrive and Teams through Safe Attachments
+
+[Safe Links](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about) and [Safe Attachments for collaboration files](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about) protect different activities. Check each workload's configuration and exclusions.
 
 ---
 

@@ -328,9 +328,9 @@ Use [Contact and Asset Request](/knowledge/contact) when you need a reusable pro
 
 이 가이드는 다음과 같은 컨설팅 상황에서 활용할 수 있습니다.
 
-- Microsoft 365 구축 proposal 작성
-- Copilot 준비 상태 / 도입·정착 proposal 작성
+- Microsoft 365 구축 제안서 작성
+- Copilot 준비 상태 진단 및 도입·정착 제안서 작성
 - Azure Landing Zone 또는 이전 SOW 작성
-- Security 현황 진단 / 구축 WBS 작성
-- 고객 의사결정을 위한 executive summary 구성
+- 보안 현황 진단 및 구축 작업 계획(WBS) 작성
+- 고객 의사결정을 위한 경영진 요약 작성
 - PMO와 고객 담당자가 공유할 위험 등록부 및 운영 기준 문서 작성

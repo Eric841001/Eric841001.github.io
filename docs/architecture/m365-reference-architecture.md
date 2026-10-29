@@ -79,6 +79,8 @@ Exchange, Teams, SharePoint와 OneDrive를 도입할 때 Entra ID, Intune, Defen
 
 ---
 
+업무 자료를 참조하는 범위는 Copilot 라이선스와 설정에 따라 다릅니다. Copilot 채팅에서 **Work IQ를 끄면 Microsoft Graph와 Work IQ를 통한 업무 자료 참조도 꺼집니다**. 첨부한 파일이나 앱에서 열어 둔 자료를 사용하는 방식은 별도로 구분해야 합니다. [Copilot의 라이선스별 기능과 Work IQ 설정](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-overview)을 확인하세요.
+
 ## Business Scenario
 
 Typical enterprise initiatives include:
@@ -203,10 +205,12 @@ Recommended baseline:
 | Area | Recommendation |
 |---|---|
 | MFA | 일반 사용자 MFA 적용 및 긴급 계정 별도 보호 |
-| Conditional Access | Apply risk-based access control |
+| Conditional Access | Use Entra ID P1 for baseline policies; user-risk and sign-in-risk policies require Entra ID P2 |
 | Admin Access | Use PIM where available |
 | Guest Access | Review and govern regularly |
 | Legacy Authentication | Block by default |
+
+See [Conditional Access license requirements](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview#license-requirements).
 
 ---
 
@@ -296,7 +300,7 @@ Recommended architecture:
     <div className="kc-journey-node">
   <small>03</small>
   <strong>Data protection</strong>
-  <span>Microsoft Purview, sensitivity labels, DLP and audit protect collaboration data.</span>
+  <span>Use Microsoft Purview labels and DLP to protect collaboration data, and audit to record supported activities.</span>
 </div>
     <div className="kc-journey-arrow" aria-hidden="true"/>
     <div className="kc-journey-node is-target">

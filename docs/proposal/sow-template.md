@@ -58,7 +58,7 @@ toc_max_heading_level: 2
 
 A Statement of Work defines the agreed scope, deliverables, assumptions, exclusions, responsibilities and acceptance criteria for a customer engagement.
 
-For Microsoft consulting projects, a strong SOW prevents ambiguity between presales promises and delivery execution. It should connect architecture decisions to measurable work packages.
+For Microsoft consulting projects, compare the proposed commitments with the delivery scope and resolve differences before approval. It should connect architecture decisions to measurable work packages.
 
 ## 한국어 요약
 
@@ -154,7 +154,7 @@ SOW는 프로젝트에서 수행할 작업과 제공할 결과물, 책임과 인
 | Scope gate | Each workload, tenant, region and user group is explicitly included or excluded | scope table, out-of-scope list |
 | Dependency gate | Customer responsibilities are visible before kickoff | access request list, data inventory request, stakeholder list |
 | Deliverable gate | Every activity maps to a reviewable output | assessment report, architecture diagram, configuration evidence |
-| Acceptance gate | Completion can be approved without subjective debate | test result, workshop sign-off, handover checklist |
+| Acceptance gate | Agreed evidence and reviewers are specified for completion approval | test result, workshop sign-off, handover checklist |
 | Change gate | Additional requests have a defined approval path | change request process and escalation owner |
 
 ## Anti-Patterns

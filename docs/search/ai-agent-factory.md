@@ -75,7 +75,7 @@ keywords:
     <a href="../copilot/copilot-studio-2026-platform-update">
       <small>Platform</small>
       <strong>Copilot Studio baseline</strong>
-      <span>New agent experience, Microsoft IQ, skills, memory, computer use and A2A patterns.</span>
+      <span>New agent experience, Work IQ, skills, memory, computer use and A2A patterns.</span>
     </a>
     <a href="../security/information-barriers">
       <small>Control</small>
@@ -297,7 +297,7 @@ Measure reuse, task completion, quality, user satisfaction, incident count, cost
 - Multi-Agent Framework
 - 에이전트 운영 절차
 - Copilot Studio new agent experience
-- Microsoft IQ
+- Work IQ
 - Copilot Studio skills
 - Copilot Studio memory
 - Computer use agents

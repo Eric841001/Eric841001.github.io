@@ -60,7 +60,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
     </div>
     <div className="kc-guardrail-panel">
       <strong>Readiness rule</strong>
-      <span>Do not use Copilot as a shortcut around data governance. Stronger reasoning makes clean permissions, labels and ownership more important.</span>
+      <span>Do not use Copilot as a shortcut around data governance. Review permissions, labels and ownership for every model used in the pilot.</span>
     </div>
   </div>
 </section>
@@ -86,7 +86,7 @@ Add the following checks before broad communication or executive demonstrations:
 | Readiness Check | Why It Matters |
 |---|---|
 | Model selector guidance | Users need to know when available reasoning models are appropriate and when standard Copilot interaction is enough. |
-| Data boundary review | Stronger reasoning may combine more context, so overshared SharePoint, Teams and OneDrive content must be reviewed. |
+| Data boundary review | Review overshared SharePoint, Teams and OneDrive content before testing any reasoning model. |
 | Prompt pattern update | Training should include reasoning tasks such as compare, synthesize, critique, plan and decide. |
 | Executive demo control | Demonstrations should use sanitized data and realistic scenarios, not confidential customer files. |
 | Evaluation baseline | Measure output quality, rework reduction, analysis accuracy and user trust. |

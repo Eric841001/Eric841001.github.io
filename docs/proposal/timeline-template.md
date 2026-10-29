@@ -212,7 +212,7 @@ This timeline is typically used for:
 ## Lessons Learned
 
 - Timeline credibility is a major factor in proposal trust
-- Customers often underestimate review and approval time
+- Confirm review and approval lead times with the responsible stakeholders
 - Migration projects require inventory and pilot gates
 - Security projects require exception handling and phased rollout
 - Executive timelines should show business milestones

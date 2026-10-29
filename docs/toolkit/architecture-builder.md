@@ -12,7 +12,7 @@ toc_max_heading_level: 2
 
 This architecture builder provides a standardized framework for designing Microsoft 365, Azure, Security and Copilot architectures.
 
-The objective is to ensure consistency, scalability, security and operational excellence across consulting engagements.
+Use the framework to record design decisions and define tests for consistency, capacity, security and operations.
 
 ---
 

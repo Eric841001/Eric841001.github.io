@@ -47,7 +47,7 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
     </div>
     <div className="kc-guardrail-panel">
       <strong>Policy is the new perimeter</strong>
-      <span>Conditional Access should continuously validate identity, device, location, application, risk and session context before access is granted.</span>
+      <span>Conditional Access evaluates applicable policies after first-factor authentication. Continuous Access Evaluation supports near-real-time enforcement only for supported resources and events.</span>
     </div>
   </div>
 </section>
@@ -264,7 +264,7 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   <div className="kc-context-panel__lead">
     <small>Lockout Prevention</small>
     <strong>Every Conditional Access program needs emergency access and exception governance.</strong>
-    <span>Security posture improves only if the policy can be operated. Break-glass accounts, exclusions, owner review and expiry dates prevent accidental business outages.</span>
+    <span>Security posture improves only if the policy can be operated. Maintain emergency accounts and review exclusions, owners and expiry dates; test recovery access instead of assuming these measures eliminate lockouts.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="/knowledge/security/security-architecture">

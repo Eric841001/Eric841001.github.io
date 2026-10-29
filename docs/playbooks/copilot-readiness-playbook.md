@@ -134,7 +134,7 @@ Review areas:
 | Privileged Access | PIM implementation |
 | Lifecycle Management | Joiner/Mover/Leaver process |
 
-Minimum requirements:
+Recommended security checks for this playbook; these are not all mandatory Copilot service prerequisites:
 
 - MFA enabled
 - Conditional Access deployed
@@ -183,7 +183,7 @@ Assessment areas:
 
 ## Information Architecture Assessment
 
-Copilot quality depends on content quality.
+Evaluate responses against current, relevant source content and permitted access.
 
 Review:
 
@@ -240,7 +240,7 @@ Assessment categories:
 
 ## Champion Program Readiness
 
-Recommended model:
+Author-proposed champion counts for planning; adjust to department coverage and support capacity:
 
 | Phase | Champion Count |
 |---------|---------------|
@@ -368,9 +368,9 @@ Optimization and Adoption Analytics
 
 - Copilot projects are organizational transformation programs
 - Security readiness must precede deployment
-- SharePoint quality directly impacts Copilot effectiveness
+- Test retrieval and response quality against representative SharePoint content
 - Executive sponsorship is critical
-- Champion programs accelerate adoption
+- Measure participation and task completion before and after champion support
 - Continuous education is required
 
 ---

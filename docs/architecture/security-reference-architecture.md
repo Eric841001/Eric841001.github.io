@@ -99,7 +99,7 @@ Typical security initiatives include:
     <div className="kc-journey-node">
       <small>02</small>
       <strong>Identity and access</strong>
-      <span>Entra ID, MFA, Conditional Access, Identity Protection and PIM verify context.</span>
+      <span>Entra ID and Conditional Access evaluate access signals; PIM controls privileged role activation.</span>
     </div>
     <div className="kc-journey-node">
       <small>03</small>
@@ -178,10 +178,10 @@ E7에는 E5의 보호 기능과 Copilot·Entra Suite·Agent 365가 포함됩니�
 
 - Identity security is the foundation of Zero Trust.
 - Conditional Access policies must be deployed in phases.
-- Device compliance improves data protection significantly.
+- Test whether the chosen compliance and Conditional Access policies block the intended device scenarios.
 - DLP requires business alignment and tuning.
 - Security operations need both technology and process.
-- E5 value increases when Defender and Purview are integrated into one operating model.
+- Assess E5 value using the Defender and Purview capabilities actually deployed, operating effort and measured outcomes.
 
 ## 검색 키워드
 

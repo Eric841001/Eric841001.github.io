@@ -160,7 +160,7 @@ Microsoft 365의 계정·기기·메일 보안과 데이터 보호 문서를 모
 - CISO 보고용 기본 보안 정책 작성
 - Conditional Access 정책 설계 및 예외 관리
 - Defender와 Purview를 활용한 보안 개선
-- Copilot 도입 전 데이터 보안 review
+- Copilot 도입 전 데이터 보안 검토
 - 금융·제조·SaaS 환경의 감사 대응을 위한 보안 설계
 
 ## Contact / Asset Request

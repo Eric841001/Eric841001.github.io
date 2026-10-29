@@ -14,7 +14,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 27일 앱·API 변경](#app-updates-october-27) · Current Channel·플랫폼별 순차 배포
 - [10월 26일 Frontier 범위 확대](#frontier-expanded-previews) · 11월부터 대상 공개 미리 보기 확대
 - [10월 개발자 기능 변경](#developer-updates-october-2026) · 매니페스트·beta API
-- [10월 25일 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
+- [10월 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
 - [10월 23일 에이전트 도입·운영 지침](#agent-operating-framework) · 도입·거버넌스 지침
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
@@ -61,7 +61,7 @@ Microsoft는 **2026년 11월부터** Frontier에 새 Outlook for Windows, OneDri
 
 [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954) · [상세 설계·파일럿 가이드](./customer-conversation-harness.md)
 
-## 10월 25일 Power Platform Admin 플러그인 미리 보기 {/* #power-platform-admin-cowork */}
+## 10월 Power Platform Admin 플러그인 미리 보기 {/* #power-platform-admin-cowork */}
 
 Microsoft는 Copilot Cowork에서 Power Platform 테넌트의 환경, 앱, 흐름, 에이전트, 사용량, 소유권, 용량과 라이선스 정보를 자연어로 조회하는 **Power Platform Admin (preview)** 플러그인을 공개했습니다. 관리 작업을 직접 실행하는 기능이 아니라 관리 정보 조회와 운영 안내를 제공하며, 결과를 근거로 정책이나 환경을 바꾸기 전에는 관리자가 원본 데이터를 확인해야 합니다.
 
@@ -126,7 +126,7 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 ## 10월 9일 Copilot 앱·Notebooks 업데이트
 
 - **Office in Copilot:** Copilot 앱의 Chat 또는 Cowork에서 시작한 Word 문서, Excel 통합 문서, PowerPoint 프레젠테이션을 대화와 나란히 열어 직접 편집하고 공동 작성할 수 있습니다. 파일은 OneDrive에 저장되어 서식, 공유 권한, 버전 기록, 민감도 레이블과 규정 준수 정책을 이어갑니다. Microsoft는 10월 9일 게시 시점에 Frontier 고객 대상 배포로 안내했으므로, 일반 공급으로 간주하지 말고 대상 사용자에게 Chat·Cowork 진입점과 공동 편집이 실제 표시되는지 확인하세요. [Office in Copilot 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230)
-- **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 공식 글이 전체 테넌트 GA를 명시한 것으로 보지 말고, Microsoft 365 Copilot 라이선스·SharePoint 또는 OneDrive 저장소와 실제 롤아웃 상태를 대표 사용자로 검증하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
+- **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 10월 9일 발표에서 새 화면·작업 위임·모델 선택·Office 편집·대화형 보고서는 Frontier, 참조 파일 형식 확대와 생성물 추천은 일반 공급으로 구분했습니다. 노트북 자동 생성과 예약 작업은 이후 수 주 내 제공 예정이었습니다. 기능별 표시 여부와 라이선스·저장소를 확인하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
 
 두 업데이트 모두 기존 Office 파일의 권한과 공동 작업 경계를 그대로 사용하므로, 파일럿에서는 새 파일 생성뿐 아니라 기존 파일 열기, 외부 공유, 민감도 레이블, 버전 복원까지 함께 점검하세요.
 
@@ -192,12 +192,12 @@ Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파
 
 ### 10월 22일 Microsoft 365 Insights Agent V2 공개 미리 보기 {/* #insights-agent-v2 */}
 
-Microsoft는 Frontier에서 **Microsoft 365 Insights Agent V2**를 공개 미리 보기로 제공한다고 발표했습니다. Copilot Chat에서 자연어로 조직의 선언형 에이전트 사용 현황과 사용자 피드백을 조회해, 에이전트 소유자·제작자·관리자가 활용 현황과 개선 우선순위를 판단할 수 있습니다.
+Microsoft는 기존 사용량 분석과 별도로, 소유자가 사용자 의견을 조회하는 **Insights Agent V2** 기능을 Frontier 미리 보기로 발표했습니다. Copilot Chat에서 자연어로 조직의 선언형 에이전트 사용 현황과 사용자 피드백을 조회해, 에이전트 소유자·제작자·관리자가 활용 현황과 개선 우선순위를 판단할 수 있습니다.
 
 - **측정 범위:** DAU·WAU·MAU, 기간별 고유 사용자, 사용 추세, DAU/MAU 비율과 에이전트 간 비교를 지원합니다. 기간 간 고유 사용자 수의 비율은 같은 사용자가 다시 방문한 비율과 다릅니다. 응답에 표시된 대상 기간과 집계값을 확인하세요. 대화 품질이나 개인별 업무 성과를 이 지표만으로 판단할 수는 없습니다.
 - **조회 권한과 개인정보:** 사용량은 접근 권한이 있는 에이전트의 집계 지표를 조회합니다. 피드백은 관리자 공유 설정이 켜져 있고 요청자가 해당 에이전트의 소유자로 확인돼야 조회할 수 있습니다. 사용량을 볼 수 있다는 이유만으로 피드백도 볼 수 있는 것은 아닙니다. 피드백 결과에는 제출자 신원과 대화 내용이 포함되지 않지만, 사용자가 직접 쓴 의견에는 업무 정보가 들어갈 수 있으므로 민감정보를 넣지 않도록 안내하세요.
 - **피드백 통제:** 관리자는 Microsoft 365 관리 센터의 `Agents > Settings > Agent feedback sharing`에서 `No agents`, `All agents`, `Selected agents`를 선택합니다. 전사 허용보다 검토된 에이전트만 선택하고, 에이전트 소유자·게시자·피드백 처리 책임을 함께 기록하는 방식이 안전합니다.
-- **적용 조건:** 현재 Frontier 미리 보기이며 Microsoft 365 Copilot 라이선스, 지원되는 선언형 에이전트와 충분한 활동 데이터가 필요합니다. 지원 언어와 기능은 변경될 수 있으므로 실제 테넌트의 에이전트 선택기와 관리 설정에서 표시 여부를 확인하세요.
+- **적용 조건:** 사용자 의견 조회는 Frontier 미리 보기입니다. Copilot Chat 내 사용은 Copilot 라이선스에 포함되지만, Work IQ를 통한 프로그램 방식 조회에는 Copilot Credits가 소비됩니다. 소유권·공유 설정과 조회할 활동 데이터를 확인하세요. 지원 언어와 기능은 변경될 수 있으므로 실제 테넌트의 에이전트 선택기와 관리 설정에서 표시 여부를 확인하세요.
 
 출처: [Microsoft 공식 발표 — Explore user feedback with Microsoft 365 Insights Agent](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/explore-user-feedback-with-microsoft-365-insights-agent/4565981), [Insights Agent 지원 지표·피드백 권한](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-overview), [Microsoft 365 Insights Agent 샘플 프롬프트](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-sample-prompts), [Microsoft 365 관리 센터 에이전트 설정](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide).
 

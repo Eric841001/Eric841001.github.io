@@ -8,7 +8,7 @@ toc_max_heading_level: 2
 
 # Microsoft Autopilot (formerly Scout)
 
-## Current name and availability — 2026-10-25
+## Current name and availability — 2026-10-29 {/* #current-name-and-availability--2026-10-25 */}
 
 Microsoft announced **Autopilot, previously called Scout**, on 2026-09-25 and described expansion to **private preview**, not general availability. See [the official announcement](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/). Existing Scout URLs and section anchors are retained for older links. The guide uses the current name while retaining earlier Scout URLs. Architectural patterns below are not a promise that every listed action is available in a production tenant.
 
@@ -136,10 +136,10 @@ The sections below are proposed pilot workflows. The announcement demonstrates m
 
 A meeting-preparation pilot could:
 
-- Reviews meeting context
-- Reads related emails
-- Reviews Teams conversations
-- Generates preparation materials
+- Review meeting context
+- Read related emails
+- Review Teams conversations
+- Generate preparation materials
 
 ---
 
@@ -171,7 +171,7 @@ An email-assistance pilot could review permitted sources such as:
 - Escalations
 - Outstanding requests
 
-and highlights items requiring attention.
+and highlight items requiring attention.
 
 ---
 
@@ -250,12 +250,12 @@ These are candidate workflows for discovery, rather than a list of preconfigured
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
       <strong>Work IQ</strong>
-      <span>Organizational context and relationship signals improve relevance.</span>
+      <span>Evaluate responses against organizational context and permitted relationship signals.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
       <strong>Compliance</strong>
-      <span>Purview, Defender, audit, policy and approval controls preserve trust.</span>
+      <span>Test applicable Purview, Defender, audit, policy and approval coverage.</span>
     </div>
   </div>
 </div>
@@ -280,7 +280,7 @@ Autopilot-style enterprise agents should run within Microsoft security boundarie
 
 ## Strategic Impact
 
-Microsoft Autopilot represents a significant shift in enterprise productivity.
+Evaluate Autopilot against recurring tasks, review effort, completion quality and usage costs.
 
 Traditional model:
 
@@ -290,7 +290,7 @@ Future model:
 
 AI -> User
 
-The agent continuously works on behalf of the employee and surfaces only the information requiring human attention.
+The announced design supports persistent work within user-defined boundaries. Test when the preview requests input and how it reports failures or incomplete work.
 
 ---
 

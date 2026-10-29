@@ -72,7 +72,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
   <div className="kc-context-panel__lead">
     <small>2026 Adoption Context</small>
     <strong>Copilot adoption now spans everyday work, reasoning models available in the tenant, Copilot Studio agents, Microsoft 365 Agents and Copilot Cowork.</strong>
-    <span>available reasoning models can improve the quality ceiling for reasoning, drafting, analysis and presentation work, but enterprise value still depends on readiness, data protection, user behavior, governance and measurement.</span>
+    <span>Evaluate the available models on representative writing and analysis tasks. Compare accuracy, review effort and cost under the same data-access conditions.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="../copilot/overview">
@@ -206,12 +206,12 @@ Copilot을 도입할 때 필요한 자료 준비, 접근 권한 점검, 사용�
   <div className="kc-operating-stage">
     <small>Roles</small>
     <strong>Where is measurable value first?</strong>
-    <span>Prevents license assignment without use case value.</span>
+    <span>Link license assignments to pilot scenarios and measurement criteria.</span>
   </div>
   <div className="kc-operating-stage">
     <small>Data</small>
     <strong>Are permissions ready?</strong>
-    <span>Reduces oversharing and Copilot answer quality risk.</span>
+    <span>Review oversharing and test answer quality with intended users.</span>
   </div>
   <div className="kc-operating-stage">
     <small>Security</small>
@@ -237,7 +237,7 @@ Explain available reasoning models as task-dependent options for complex writing
 
 ### Why do many Copilot programs fail?
 
-They focus on feature training rather than real work. Adoption improves when training is scenario-based, champions collect feedback, and governance defines what users can safely do.
+Check whether training covers real tasks, users have a feedback channel, and permitted uses are clear. Compare adoption and task outcomes before attributing a change to the program.
 
 ### When should Copilot Studio be introduced?
 

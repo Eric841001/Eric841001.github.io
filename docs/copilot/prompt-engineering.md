@@ -1,7 +1,7 @@
 ---
 id: prompt-engineering
 title: Enterprise Prompt Engineering Framework
-description: "Enterprise Prompt Engineering Framework - Prompt Engineering is the foundation of successful Microsoft Copilot adoption."
+description: "Enterprise Prompt Engineering Framework - This guide covers prompt design, reuse and review as part of a Microsoft Copilot adoption program."
 sidebar_label: Prompt Engineering
 toc_max_heading_level: 2
 ---
@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 
 ## Executive Summary
 
-Prompt Engineering is the foundation of successful Microsoft Copilot adoption.
+This guide covers prompt design, reuse and review as part of a Microsoft Copilot adoption program.
 
 Teams can improve consistency by maintaining reusable prompts and checking results. This guide proposes:
 
@@ -121,7 +121,7 @@ The five levels below are an author-proposed planning model, rather than a Micro
     <div className="kc-journey-node">
       <small>03</small>
       <strong>Copilot response</strong>
-      <span>Copilot uses permitted Microsoft 365 context and instruction boundaries.</span>
+      <span>Available context depends on the selected experience, license, Work IQ settings and user permissions; review the generated response.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
@@ -146,7 +146,7 @@ This guide uses Role, Task, Context, Output and Constraints as a workshop templa
 
 ### Role
 
-Define who Copilot should become.
+Describe the perspective or expertise the response should use.
 
 Example:
 
@@ -449,7 +449,7 @@ Evaluate prompts using:
 | Structure | Organized request |
 | Constraints | Defined boundaries |
 | Output | Expected result defined |
-| Repeatability | Consistent results |
+| Repeatability | Measure variation across repeated runs; identical prompts can produce different responses |
 
 ---
 

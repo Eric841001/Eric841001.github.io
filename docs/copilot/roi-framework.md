@@ -45,7 +45,7 @@ This framework helps organizations define measurable value across productivity, 
 
 Copilot의 효과는 사용 인원과 접속 횟수 외에 업무 시간, 결과물 품질과 검토 비용으로 확인합니다.
 
-도입 전 기준값을 기록하고 같은 업무의 도입 후 결과와 비교합니다. 이 문서의 계산식과 예시 수치는 측정 계획을 세울 때 참고하세요.
+도입 전 기준값을 기록하고 같은 업무의 도입 후 결과와 비교합니다. 이 문서의 계산식과 예시 수치는 측정 계획을 세울 때 참고하세요. 절약한 시간을 실제 비용 절감으로 바로 계산하지 말고, 재무 담당자와 환산 기준을 정하세요. 라이선스·교육·지원·결과 검토에 든 비용도 포함합니다. [Microsoft의 효과 측정 안내](https://adoption.microsoft.com/en-us/copilot/measure-business-impact/)는 실측 결과와 금액 추정치를 구분하도록 설명합니다.
 
 ---
 
@@ -132,8 +132,8 @@ Before measuring Copilot value, define the current baseline.
 | Use Case Value | high-value scenarios completed by department | connects usage to business outcomes |
 | Time Savings | estimated minutes or hours saved by role | supports ROI discussion |
 | Quality | review rework, summary quality, proposal quality and user confidence | prevents ROI from being reduced to time only |
-| Governance | oversharing findings, DLP events, risky usage and training completion | confirms scale-out readiness |
-| Operating Model | owner, cadence, backlog and training content maturity | proves the program can continue after pilot |
+| Governance | oversharing findings, DLP events, risky usage and training completion | provides evidence for a scale-out decision |
+| Operating Model | owner, cadence, backlog and training content maturity | identifies responsibilities and support gaps after the pilot |
 
 ---
 
@@ -149,9 +149,9 @@ Before measuring Copilot value, define the current baseline.
 
 ## Anonymized Success Pattern
 
-In manufacturing, professional services and enterprise group environments, the strongest Copilot ROI cases usually start with a small number of measurable role-based scenarios rather than a broad generic rollout.
+For an initial measurement plan, select a few role-based tasks with a recorded baseline, visible outputs and identifiable users.
 
-Examples include executive meeting follow-up, proposal drafting support, report summarization, Excel analysis assistance, policy Q&A and project status reporting. These scenarios are easier to measure because they have clear baseline effort, visible output quality and defined user groups.
+Examples include executive meeting follow-up, proposal drafting support, report summarization, Excel analysis assistance, policy Q&A and project status reporting. Record baseline effort and review output quality for the same user groups before comparing results.
 
 ---
 

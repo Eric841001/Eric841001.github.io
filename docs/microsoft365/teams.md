@@ -559,7 +559,7 @@ The following targets are planning examples to agree with the organization, not 
 
 ## Troubleshooting
 
-| Issue | Cause | Resolution |
+| Issue | Possible Cause to Investigate | Check or Remediation |
 |---------|---------|---------|
 | Too many Teams | No creation governance | Implement approval workflow |
 | Ownerless Teams | Ownership not enforced | Assign secondary owners |
@@ -571,12 +571,12 @@ The following targets are planning examples to agree with the organization, not 
 
 ## Lessons Learned
 
-- Teams governance is more important than Teams deployment
+- Define ownership and lifecycle tasks alongside Teams deployment
 - Ownerless Teams become operational risk
 - Guest access must be reviewed continuously
 - SharePoint governance and Teams governance must align
 - Copilot success depends on content quality
-- Lifecycle management reduces long-term complexity
+- Track inactive workspaces, owner changes and unresolved access reviews over time
 
 ---
 

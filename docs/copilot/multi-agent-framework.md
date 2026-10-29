@@ -119,7 +119,7 @@ Multi-Agent Framework provides the architectural pattern for building scalable, 
 </ReadingSummary>
 
 
-A single agent often becomes overloaded.
+Review whether a single agent can handle the required context and tools within the performance budget.
 
 Typical enterprise requests require:
 
@@ -130,7 +130,7 @@ Typical enterprise requests require:
 - Reporting
 - Approval
 
-Attempting to perform all of these tasks with one agent creates complexity, risk and maintenance challenges.
+Compare a single agent with scoped tools against multiple specialists; test routing errors, maintenance effort, latency and cost.
 
 A multi-agent architecture distributes responsibilities across specialized agents.
 
@@ -273,7 +273,7 @@ Responsibilities:
 - Resolve conflicts
 - Produce final response
 
-Without a coordinator, agent-to-agent communication becomes difficult to manage.
+Choose explicit coordination or handoff rules and test failure recovery between agents.
 
 ---
 
@@ -777,7 +777,7 @@ Example:
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
       <strong>Result</strong>
-      <span>Agents act consistently without duplicating integration logic.</span>
+      <span>Reuse tool contracts and test that each agent applies the required permissions and input validation.</span>
     </div>
   </div>
 </div>
@@ -1189,7 +1189,7 @@ Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명�
 
 
 1. Start with business outcomes.
-2. Avoid building a single mega-agent.
+2. Start with the simplest design that meets the tested requirements; add specialists when boundaries justify them.
 3. Design reusable specialist agents.
 4. Implement governance before scale.
 5. Establish an Agent Factory model.

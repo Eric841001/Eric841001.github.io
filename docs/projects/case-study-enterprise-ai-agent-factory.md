@@ -50,7 +50,7 @@ toc_max_heading_level: 2
       <a href="#success-metrics" className="kc-factory-card">
         <small>04</small>
         <strong>Outcome</strong>
-        <span>The program became a managed portfolio instead of isolated experiments.</span>
+        <span>Track approved agents, responsible owners and unresolved pilot findings in one portfolio.</span>
       </a>
     </div>
     <div className="kc-guardrail-panel">
@@ -183,10 +183,10 @@ Copilot Studio로 업무 자동화 후보를 검토하고 에이전트의 승인
 ## Lessons Learned
 
 - Agent programs need a portfolio model before broad creation is allowed.
-- The best first Agents are narrow, high-frequency and measurable.
-- Data readiness and permission design matter more than prompt quality alone.
+- For initial pilots, consider narrowly scoped tasks with measurable outcomes and enough repeated use to evaluate.
+- Test data readiness, permissions and prompts together against the intended tasks.
 - Action-capable Agents require stronger approval and audit controls than Q&A Agents.
-- Agent Factory governance prevents duplicate Agents and unmanaged automation sprawl.
+- Review the agent catalog for duplicate functions, missing owners and unapproved automation.
 
 ## 검색 키워드
 
@@ -216,7 +216,7 @@ Copilot Studio로 업무 자동화 후보를 검토하고 에이전트의 승인
   <div className="kc-outcome-card">
     <small>OUTCOME</small>
     <strong>Governed scale</strong>
-    <span>Agent delivery becomes a managed portfolio instead of isolated experiments.</span>
+    <span>Record agent approval, ownership and measured pilot results in the portfolio.</span>
   </div>
 </div>
 

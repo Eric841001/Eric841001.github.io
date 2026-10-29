@@ -90,7 +90,7 @@ These sources are useful for ongoing monitoring and topic discovery:
 
 - [Microsoft 365 for IT Pros](https://office365itpros.com/) - practical Microsoft 365 administration, PowerShell, Graph, Teams, Exchange, Entra ID, Purview and Copilot operations.
 - [Joanne C Klein](https://joannecklein.com/) - Microsoft 365 compliance, information governance, records management and Purview-oriented guidance.
-- [Daniel Chronlund Cloud Security Blog](https://danielchronlund.com/) - Microsoft cybersecurity, Conditional Access, Zero Trust and Entra ID security patterns.
+- [Daniel Chronlund Tech Blog](https://danielchronlund.com/) - author-maintained technical blog; check each article against current Microsoft documentation before applying it.
 - [Microsoft Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/) - official Zero Trust architecture, pillars, scenarios and assessment resources.
 - [Microsoft 365 Copilot data, privacy and security](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy) - official Copilot data boundary, Microsoft Graph, permissions, security and compliance behavior.
 - [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/) - official Purview compliance and data governance documentation.

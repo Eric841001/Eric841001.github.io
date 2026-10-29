@@ -170,7 +170,7 @@ Copilot Studio should be reviewed across two dimensions:
 1. Maker access: tenant license and Copilot Studio User License.
 2. Runtime and scale: Copilot Credits, agent type, orchestration, knowledge, tools and the applicable billing plan. The linked maker/tenant licensing procedure applies to the **standard harness**; verify the separate billing and access model for the new GitHub Copilot harness experience.
 
-The platform itself has also changed. New agent experience, Microsoft IQ, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, A2A and automated evaluations now affect governance design.
+The platform itself has also changed. New agent experience, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, A2A and automated evaluations now affect governance design.
 
 ## Recommended License Architecture
 
@@ -246,7 +246,7 @@ The platform itself has also changed. New agent experience, Microsoft IQ, Work I
 2. Identify the customer's actual E3/E5/E7/Business Premium mix and separately purchased Copilot, Entra and Agent 365 subscriptions.
 3. Map each required control to an included or missing feature.
 4. Validate Defender, Purview, Entra and Intune entitlement before add-on recommendations.
-5. Update Copilot Studio governance for new agent experience, Microsoft IQ, skills, memory, computer use, A2A, agent inventory and Entra agent identities.
+5. Update Copilot Studio governance for new agent experience, Work IQ, skills, memory, computer use, A2A, agent inventory and Entra agent identities.
 6. Produce an executive license-to-control matrix.
 
 ## References

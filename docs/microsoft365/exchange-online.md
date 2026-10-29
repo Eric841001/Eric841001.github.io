@@ -328,7 +328,7 @@ Cutover moves the organization in one event. Microsoft documents a maximum of 2,
 
 ### Staged Migration
 
-Staged migration is the legacy method for **Exchange 2003 or 2007**. It is not a general recommendation for medium-sized organizations and does not support Exchange 2010 or later. For a supported modern Exchange estate, evaluate hybrid remote moves or another documented migration path. See [staged migration requirements](https://learn.microsoft.com/en-us/exchange/mailbox-migration/what-to-know-about-a-staged-migration).
+Staged migration was the legacy method for **Exchange 2003 or 2007**. **Staged OutlookAnywhere onboarding retired on May 8, 2025**; do not select it for a new migration. Evaluate a supported migration path for the source environment, such as hybrid remote onboarding where its prerequisites are met. See [the retirement notice](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
 ---
 
@@ -527,7 +527,7 @@ Validate:
 
 ## Troubleshooting
 
-| Issue | Root Cause | Resolution |
+| Issue | Possible Cause to Investigate | Check or Remediation |
 |---------|---------|---------|
 | Mail flow failure | DNS configuration | Verify MX and connectors |
 | Outlook login failure | Identity synchronization issue | Review Entra Connect |
@@ -541,9 +541,9 @@ Validate:
 ## Lessons Learned
 
 - Mail migration is primarily a business project, not a technical project
-- Communication planning is often more important than migration tooling
-- Hybrid coexistence reduces user impact
-- DNS cutover planning determines project success
+- Plan user communication alongside the migration tooling and cutover tasks
+- Test coexistence mail flow, calendar access and client behavior with pilot users
+- Document DNS changes, propagation checks and the rollback decision before cutover
 - Security controls should be implemented before migration
 - Global deployments require regional coordination
 
@@ -555,7 +555,7 @@ Validate:
 
 해당 지역의 사용자는 Windows를 업데이트하고 Outlook에서 새 시간대를 선택해야 합니다. **기존 일정은 자동으로 이전되지 않으므로** 11월 1일 이후의 단일·반복 회의와 참석자의 표시 시간을 확인하세요. 한국 사용자도 해당 지역과의 회의가 있다면 초대장 시간을 함께 대조하세요.
 
-Microsoft의 10월 27일 안내는 단일 회의 보정용 Exchange Online PowerShell 명령의 목표일을 10월 28일로, 반복 회의 보정 일정은 미정으로 표시합니다. 목표일이 지났다는 이유만으로 제공이 완료됐다고 판단하지 말고, [현재 공식 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)에서 배포 여부와 적용 절차를 확인하세요.
+10월 29일 확인한 공식 안내의 제품별 상태 표는 단일 회의 보정용 Exchange Online PowerShell 명령의 제공일을 **10월 29일**로 표시합니다. 같은 페이지의 권장 작업에는 이전 목표일인 10월 28일이 남아 있으며, 반복 회의 보정 일정은 아직 미정입니다. 목표일이 지났다는 이유만으로 제공이 완료됐다고 판단하지 말고, [현재 공식 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)에서 배포 여부와 적용 절차를 확인하세요.
 
 ## References
 

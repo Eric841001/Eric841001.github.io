@@ -290,7 +290,7 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
   <div className="kc-platform-fit__card">
     <small>DLP</small>
     <strong>False positives</strong>
-    <span>Pilot policies in audit mode, tune conditions and align rules with business data classification.</span>
+    <span>Pilot DLP policies in simulation mode, tune conditions and align rules with business data classification.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Intune</small>
@@ -310,7 +310,7 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
   <div className="kc-maturity-step">
     <small>Lesson 1</small>
     <strong>License deployment is not transformation</strong>
-    <span>Microsoft 365 projects fail when treated only as license assignment or application rollout.</span>
+    <span>Include ownership, policy validation, user support and outcome measures in the rollout plan.</span>
   </div>
   <div className="kc-maturity-step">
     <small>Lesson 2</small>
@@ -391,7 +391,7 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 - Google Workspace에서 Microsoft 365로 전환
 - Exchange Online과 Teams를 활용한 협업 환경 개선
 - Copilot 도입 전 데이터 / 보안 준비 상태 현황 진단
-- Microsoft 365 E3 / E5 / E7 / Business Premium license optimization
+- Microsoft 365 E3·E5·E7·Business Premium 구독 구성 검토
 - 글로벌 조직 또는 계열사의 테넌트 운영 기준 정비
 
 ## References
@@ -401,7 +401,7 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 - Microsoft 365 admin center
 - Microsoft Entra admin center
 - Microsoft Intune admin center
-- Microsoft Purview compliance portal
+- Microsoft Purview portal
 - Microsoft Defender portal
 - Microsoft Cloud Adoption Framework
 - Microsoft Zero Trust guidance

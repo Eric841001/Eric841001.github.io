@@ -277,10 +277,10 @@ Assessment is successful when:
 
 ## Lessons Learned
 
-- Discovery quality determines assessment quality
+- Record evidence gaps and validate the discovery inputs before drawing conclusions
 - Business interviews are as important as technical reviews
-- Governance gaps are usually larger than technical gaps
-- Licensing optimization often funds modernization initiatives
+- Assess governance and technical gaps separately against the agreed requirements
+- Calculate any license savings after overlap, transition and operating costs before assigning that budget to modernization
 - Copilot projects require strong information architecture
 
 ---

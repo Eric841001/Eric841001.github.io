@@ -268,7 +268,7 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 
 ## Customer Success Pattern
 
-Anonymized enterprise AI programs show the same pattern: the first successful agent is not the end state. The durable value appears when the organization creates a repeatable path for intake, design review, release gates, adoption enablement, telemetry and continuous improvement. This is why Agent Factory should be positioned as operating model work, not only Copilot Studio build work.
+After the first pilot, define how proposals enter the backlog, who reviews designs and releases, and who monitors quality and cost. Test whether those procedures can support additional agents before expanding the portfolio.
 
 ## Common Mistakes
 

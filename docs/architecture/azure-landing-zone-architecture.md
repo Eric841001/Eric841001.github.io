@@ -220,11 +220,11 @@ For new network logging, use **virtual network flow logs**. NSG flow logs no lon
 
 ## Lessons Learned
 
-- Governance is easier to implement before workloads are deployed.
-- Network redesign later is expensive and disruptive.
-- RBAC, PIM and policy reduce operational risk.
-- Cost visibility requires tagging discipline from day one.
-- Landing Zone accelerates migration and future AI/data platform projects.
+- Define policy ownership and exceptions before deploying workloads.
+- Document network dependencies and test affected traffic before changing the production topology.
+- Review RBAC scope, privileged role activation and policy compliance during operations.
+- Review costs by subscription and resource group; use consistent tags where supported to allocate shared costs. See [Cost Analysis grouping options](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/group-filter).
+- Reuse the reviewed platform foundation for new workloads and measure onboarding time before claiming delivery improvements.
 - Security architecture must be embedded into the foundation, not added later.
 
 ## 검색 키워드

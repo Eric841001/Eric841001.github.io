@@ -98,7 +98,7 @@ The objective is to establish a secure and manageable endpoint environment align
 The deployment should achieve:
 
 - Centralized endpoint management
-- Device compliance enforcement
+- Device compliance evaluation and Conditional Access integration
 - Secure access control
 - Automated device provisioning
 - Application lifecycle management
@@ -374,7 +374,7 @@ Example:
 
 ## Pilot Deployment
 
-Recommended pilot size:
+Author-proposed pilot sizes for planning; these are not Microsoft requirements. Include representative device types, applications and support scenarios:
 
 | User Population | Pilot Users |
 |---|---|
@@ -457,9 +457,9 @@ Deliverables:
 - Device inventory is critical
 - Pilot deployment reduces rollout risk
 - Compliance policies should start simple
-- Application testing is often underestimated
+- Test critical applications before expanding enrollment
 - Conditional Access should be introduced gradually
-- Operational training improves long-term success
+- Verify support staff can perform the documented recovery and escalation steps
 
 ---
 

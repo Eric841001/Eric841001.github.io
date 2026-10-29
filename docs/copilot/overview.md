@@ -90,7 +90,7 @@ Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot
   <div className="kc-journey-node kc-journey-node--outcome">
     <small>06</small>
     <strong>Business value</strong>
-    <span>Time saved, quality improved, risk reduced and decisions accelerated.</span>
+    <span>Measure task time, output quality, access incidents and review time against the pilot baseline.</span>
   </div>
 </div>
 
@@ -162,7 +162,7 @@ For adoption programs, this update should be reflected in champion training, exe
 
 ## 2026 Copilot Studio Update
 
-Copilot Studio should be treated as an enterprise agent platform, not only a chatbot builder. Modern planning should include the new agent experience, Microsoft IQ, skills, memory, computer use, agent inventory, Microsoft Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
+Copilot Studio should be treated as an enterprise agent platform, not only a chatbot builder. Modern planning should include the new agent experience, Work IQ, skills, memory, computer use, agent inventory, Microsoft Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
 
 <div aria-label="Copilot Studio planning model" className="kc-operating-model">
   <div className="kc-operating-stage">

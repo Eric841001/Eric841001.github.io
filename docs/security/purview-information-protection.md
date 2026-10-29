@@ -23,7 +23,7 @@ Purview is a critical foundation for:
 - Microsoft 365 Copilot
 - Information Barriers
 
-Without proper data governance, AI initiatives often increase organizational risk rather than productivity.
+Review effective permissions, sensitive data and protection policies before giving AI tools access to organizational content.
 
 <section className="kc-topic-hero" aria-label="Purview information protection hero">
   <div className="kc-topic-hero__content">
@@ -516,7 +516,7 @@ Purview should integrate with:
 - Keep label taxonomy simple
 - Choose a small classification set based on business needs; four levels are an example, not a Microsoft requirement
 - Use manual labeling before auto-labeling
-- Pilot DLP in audit mode first
+- Pilot DLP in simulation mode; distinguish it from an endpoint activity configured as Audit only
 - Review SharePoint permissions before Copilot rollout
 - Align labels with business processes
 - Establish governance ownership
@@ -537,11 +537,11 @@ Purview should integrate with:
 
 ## Lessons Learned
 
-- Data governance projects fail when treated purely as technical implementations
+- Agree on data ownership, policy approval and operating responsibilities alongside technical settings
 - Classification must be owned by business stakeholders
-- Permission governance is often a larger risk than missing labels
+- Assess excessive permissions and missing protection separately; prioritize them by exposure and business impact
 - Copilot readiness depends heavily on information governance maturity
-- Simple label structures outperform complex taxonomies
+- Test whether employees can distinguish the proposed labels and apply them consistently
 - DLP success requires phased rollout and user education
 
 ---

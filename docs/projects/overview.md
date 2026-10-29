@@ -202,7 +202,7 @@ Each project will be documented with:
   <div className="kc-outcome-card">
     <small>03</small>
     <strong>Outcome</strong>
-    <span>Summarize reusable value such as reduced risk, clearer rollout control, stronger adoption or better handover.</span>
+    <span>Describe the delivered work and distinguish measured results from the intended benefits.</span>
   </div>
 </div>
 

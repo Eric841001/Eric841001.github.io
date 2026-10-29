@@ -12,7 +12,7 @@ toc_max_heading_level: 2
 
 Technology deployment does not guarantee business adoption.
 
-Successful transformation requires structured change management that aligns leadership, communication, education, support and continuous improvement.
+Plan leadership responsibilities, communication, training, support and feedback alongside the technical rollout.
 
 This playbook provides a framework for driving user adoption and realizing business value from Microsoft 365, Copilot, Security and Digital Workplace initiatives.
 
@@ -253,6 +253,8 @@ Duration:
 
 ### Recommended Scale
 
+These staffing ranges are planning examples, not Microsoft requirements or measured optimum ratios. Adjust them for locations, languages, shift coverage and available support time.
+
 | User Population | Champion Target |
 |---|---|
 | 500 | 10-20 |
@@ -429,7 +431,7 @@ Track:
 
 - Technology deployment is only the beginning
 - Leadership behavior influences adoption
-- Champions accelerate change significantly
+- Give champions time for peer support and measure whether adoption and task outcomes improve
 - Continuous education is required
 - Analytics should drive optimization
 - Business outcomes matter more than usage metrics

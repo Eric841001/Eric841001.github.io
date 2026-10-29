@@ -29,7 +29,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 Microsoft 365 Copilot adoption is not a one-time training program.
 
-Successful enterprise adoption requires a sustainable operating model that combines education, champion network, managed support, VOC feedback loop, governance, analytics and continuous improvement.
+This proposed operating model combines education, champions, user support, feedback, governance and measurement. Adjust staffing and review cadence to the rollout scope.
 
 This framework provides a reusable operating model for planning, scaling and sustaining Copilot adoption across large enterprise organizations.
 
@@ -49,7 +49,7 @@ This framework provides a reusable operating model for planning, scaling and sus
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">AI Adoption and Change Management</span>
     <h2>Move from Copilot usage to measurable behavior change</h2>
-    <p>Copilot adoption succeeds when employees change how they run meetings, write documents, analyze data, respond to customers and escalate repeatable work into governed agents. The program must connect AI capability, change management, champions, support and executive value measurement.</p>
+    <p>Measure how Copilot changes meetings, document writing, analysis and customer responses, including review effort and mistakes. The program must connect AI capability, change management, champions, support and executive value measurement.</p>
     <div aria-label="Copilot adoption signals" className="kc-hero-signal-row">
       <span>Scenario</span>
       <span>Champion</span>
@@ -174,16 +174,16 @@ The best message for users is simple: start with everyday work, use the right mo
 </ReadingSummary>
 
 
-Large-scale Copilot adoption commonly fails for the following reasons:
+Review these potential adoption risks during planning:
 
-| Failure Factor | Business Impact |
+| Potential gap | Review question |
 |---|---|
-| Feature-based training only | Users understand functions but do not apply Copilot to real work |
-| No champion network | Adoption does not scale beyond initial users |
-| No VOC feedback loop | User issues and improvement signals are not captured |
-| No KPI model | Business value cannot be measured |
-| No operating team | Adoption momentum stops after initial rollout |
-| No PMO control tower | Ownership, decisions and execution become fragmented |
+| Feature-based training only | Can trainees complete their actual tasks after training? |
+| No champion network | Who will support teams beyond the pilot? |
+| No VOC feedback loop | Where will user issues and suggestions be recorded? |
+| No KPI model | Which baseline and outcome measures will be used? |
+| No operating team | Who owns support and training after rollout? |
+| No PMO control tower | Who records decisions, responsibilities and dependencies? |
 
 Copilot adoption should be managed as an operating system, not as a temporary project.
 
@@ -552,7 +552,7 @@ A Copilot community should be operated as an always-on adoption hub.
 </ReadingSummary>
 
 
-Innovation programs can convert learning into business value.
+Test workshop outputs in real tasks and measure their effect before expanding them.
 
 <div aria-label="Promptathon and Agentathon program" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -963,7 +963,7 @@ An enterprise Copilot adoption program should produce:
 </ReadingSummary>
 
 
-The most successful Copilot adoption programs consistently include:
+Include these responsibilities in the adoption plan:
 
 1. Strong executive sponsorship
 2. Scenario-driven education

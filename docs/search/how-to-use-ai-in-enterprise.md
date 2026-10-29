@@ -61,7 +61,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
     </div>
     <div className="kc-guardrail-panel">
       <strong>Change management is the bridge</strong>
-      <span>AI becomes valuable when users change behavior, teams redesign workflows and leaders measure quality, time saved, confidence and risk.</span>
+      <span>Measure changes in task quality, time, review effort and risk before deciding which workflows to expand.</span>
     </div>
   </div>
 </section>
@@ -96,9 +96,9 @@ AI를 사용할 업무를 먼저 고릅니다. 문서 작성, 자료 분석, 회
 
 다음 항목을 참고해 도구와 적용 범위를 정할 수 있습니다.
 
-1. Copilot으로 개인 업무 생산성을 높입니다.
+1. Copilot을 문서 작성이나 요약에 시범 적용하고 시간과 결과물 품질을 비교합니다.
 2. 복잡한 문서나 분석에는 추론 모델을 사용하고, 근거와 계산 결과를 담당자가 확인합니다.
-3. 반복되는 업무는 Copilot Studio Agent로 전환합니다.
+3. 반복되는 업무는 Copilot Studio 에이전트나 기존 자동화로 처리할 수 있는지 비교합니다.
 4. Microsoft 365 업무 맥락 안에서는 M365 Agents를 활용합니다.
 5. 여러 단계의 업무를 Cowork에 맡길 때는 담당자, 작업 승인과 비용 기준을 정합니다.
 

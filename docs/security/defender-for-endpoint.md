@@ -52,7 +52,9 @@ description: Microsoft Defender for Endpoint deployment, device risk, ASR rollou
 
 ## Executive Summary
 
-Microsoft Defender for Endpoint provides endpoint detection and response, attack surface reduction, vulnerability management and endpoint security telemetry. In enterprise Microsoft 365 programs, it becomes a control input for Defender XDR, Microsoft Intune, Microsoft Entra Conditional Access and security operations.
+Microsoft Defender for Endpoint provides endpoint detection and response, attack surface reduction, vulnerability management and endpoint security telemetry.
+
+EDR and automated investigation are Plan 2 capabilities; verify the [Defender plan requirements](https://learn.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-defender-service-description) and server licensing separately. The [ASR rules](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-overview) discussed below target Windows. Do not apply the same feature checklist to macOS or Linux without checking platform support. In enterprise Microsoft 365 programs, it becomes a control input for Defender XDR, Microsoft Intune, Microsoft Entra Conditional Access and security operations.
 
 The strongest deployment pattern is to design Defender for Endpoint as an operating model: who owns device onboarding, who approves exceptions, how ASR rules move from audit to block, how incidents are escalated, and how endpoint risk affects access decisions.
 

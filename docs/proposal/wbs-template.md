@@ -145,9 +145,9 @@ For Microsoft 365, Security, Copilot and migration engagements, the WBS should n
 
 ## Customer Success Reference Pattern
 
-For a manufacturing group rollout, a phased WBS separated identity, security, collaboration and adoption workstreams. This helped the customer approve security policy changes independently from user adoption tasks, reducing decision delay during pilot expansion.
+For a manufacturing group rollout, a phased WBS separated identity, security, collaboration and adoption workstreams. This separated security-policy approvals from adoption tasks. Compare approval lead times before claiming a reduction in decision delay.
 
-For a regulated financial SaaS environment, the WBS included explicit evidence tasks for Conditional Access, Defender and Purview validation. This made the final handover easier because the operations team could trace each security control back to a tested deliverable.
+For a regulated financial SaaS environment, the WBS included explicit evidence tasks for Conditional Access, Defender and Purview validation. The handover mapped each control to its test evidence so the operations team could review unresolved issues.
 
 ## Practical Checklist
 

@@ -95,7 +95,7 @@ This page summarizes anonymized customer success patterns derived from enterpris
 | Can this experience be reused safely? | customer names, account identifiers and commercial details are excluded |
 | Which industries are represented? | manufacturing, finance, logistics, retail, construction, healthcare and enterprise group patterns |
 | What is reusable? | assessment model, architecture pattern, SOW/WBS structure, governance checklist and handover approach |
-| What outcome should be expected? | better readiness, lower risk, clearer operating ownership and more repeatable delivery |
+| What outcome should be expected? | agree measurable readiness, ownership and delivery targets; assess achieved results after implementation |
 | How can a private reference be requested? | use [Contact and Asset Request](../contact) with industry, workload and desired output type |
 
 ## Industry Patterns
@@ -372,7 +372,7 @@ When publishing these references externally:
 - Azure Landing Zone 사례
 - Microsoft 365 migration case
 - 제조업 Copilot 도입·정착
-- 금융 SaaS 보안 architecture
+- 금융 SaaS 보안 아키텍처
 - 물류 Exchange Online 이전
 - Enterprise Governance 사례
 - Copilot Studio 고객 사례
@@ -405,7 +405,7 @@ When publishing these references externally:
   <div className="kc-outcome-card">
     <small>VALUE</small>
     <strong>Reusable success narrative</strong>
-    <span>Describe outcomes as repeatable patterns: risk reduction, adoption, governance, migration stability or operational maturity.</span>
+    <span>Separate intended outcomes from measured results, and record the measurement period and supporting evidence.</span>
   </div>
 </div>
 

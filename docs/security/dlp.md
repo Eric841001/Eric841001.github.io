@@ -62,7 +62,7 @@ DLP should be designed as a business control, not only a security rule. The stro
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
   <small>03</small>
   <strong>Tune impact</strong>
-  <span>Start in audit or test mode, review false positives and tune thresholds before enforcement.</span>
+  <span>Start in simulation mode, review false positives and tune thresholds before enforcement.</span>
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
   <small>04</small>
   <strong>Operate exceptions</strong>
@@ -73,7 +73,7 @@ DLP should be designed as a business control, not only a security rule. The stro
 
 1. Define protected data categories with business owners.
 2. Select sensitive information types and trainable classifiers where needed.
-3. Start with audit or test mode.
+3. Start with simulation mode; use Audit only when testing a supported endpoint activity action.
 4. Review false positives and tune thresholds.
 5. Move high-confidence scenarios to warning or block.
 6. Define exception request and approval process.
@@ -142,7 +142,7 @@ Advanced DLP across Microsoft 365 workloads and endpoints may require higher com
 
 ### Should DLP start in block mode?
 
-Usually no. Start with audit or test mode for priority scenarios, review false positives and user impact, then move high-confidence rules to warn or block.
+Usually no. Start with simulation mode for priority scenarios, review false positives and user impact, then enable the supported warning or blocking actions.
 
 ### How does DLP relate to Copilot?
 
@@ -161,7 +161,7 @@ Capture policy scope, test results, false positive review, exception approvals, 
 | Evidence | Purpose |
 |---|---|
 | Data category map | connect sensitive information types to business data owners |
-| Test mode report | prove policy impact before enforcement |
+| Simulation report | record policy matches and expected impact before enforcement |
 | False positive log | show tuning decisions and threshold changes |
 | Exception register | keep temporary exceptions approved and auditable |
 | User coaching text | explain business reason behind warning or block |
@@ -177,7 +177,7 @@ Capture policy scope, test results, false positive review, exception approvals, 
 
 ## Lessons Learned
 
-DLP programs fail when policies are enforced before users understand the business reason. A phased approach with user tips, pilot groups and evidence-based tuning produces better adoption.
+Explain the protected data and expected user actions before enforcing a policy. Use pilot results, policy tips and support feedback to adjust the rollout and measure its impact.
 
 ## References
 

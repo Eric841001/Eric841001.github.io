@@ -209,12 +209,12 @@ Entra ID, Conditional Access, Intune, Defender와 Purview의 보안 설계 자�
   <div className="kc-operating-stage">
     <small>Data</small>
     <strong>Are sensitive repositories governed?</strong>
-    <span>Purview labels and DLP reduce accidental exposure.</span>
+    <span>Configure label protection and DLP rules, then test the intended data-access paths.</span>
   </div>
   <div className="kc-operating-stage">
     <small>Device</small>
     <strong>Are unmanaged devices restricted?</strong>
-    <span>AI-assisted work increases the value of stolen sessions or unmanaged access.</span>
+    <span>Review stolen-session and unmanaged-device access scenarios when enabling AI tools.</span>
   </div>
   <div className="kc-operating-stage">
     <small>Evidence</small>

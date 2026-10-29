@@ -10,7 +10,7 @@ toc_max_heading_level: 2
 
 ## Executive Summary
 
-Tenant-to-Tenant Migration is the process of moving users, identities, mailboxes, files, collaboration workloads and governance controls from one Microsoft 365 tenant to another.
+A tenant-to-tenant migration program coordinates account preparation, supported content moves and the recreation or reconfiguration of target governance controls. The migration tool does not automatically transfer every identity, policy or workload.
 
 Typical business drivers include:
 
@@ -170,6 +170,8 @@ Examples:
 
 ## Migration Scope
 
+Use this list for discovery. Confirm supported objects, exclusions and manual recreation for each selected tool before promising migration coverage.
+
 ### Identity
 
 - Users
@@ -314,11 +316,11 @@ Single Cutover
 
 Advantages:
 
-- Fast
+- One planned cutover event
 
 Disadvantages:
 
-- Higher Risk
+- More users may be affected by one cutover issue
 
 ---
 
@@ -334,11 +336,11 @@ Wave 3
 
 Advantages:
 
-- Lower Risk
+- Pilot feedback can inform later waves
 
 Disadvantages:
 
-- Longer Duration
+- Coexistence and repeated cutover work must be planned
 
 ---
 
@@ -487,7 +489,7 @@ Coexistence
 Target Tenant
 ```
 
-Capabilities:
+Capabilities to design and test separately:
 
 - Mail Routing
 - Free/Busy
@@ -633,12 +635,12 @@ Define acceptance per workload and reconcile every skipped or failed item. The p
 
 ## Lessons Learned
 
-- Identity complexity is usually underestimated
-- SharePoint permissions are often the largest challenge
-- Communication impacts success more than tooling
+- Inventory identity dependencies and target-account requirements
+- Test SharePoint permissions with representative users
+- Validate tooling and communicate the expected user impact
 - Teams migrations require extensive validation
 - Security baselines should be rebuilt before cutover
-- Hypercare is critical for executive adoption
+- Assign support owners and response times for executives and other high-impact users
 
 ---
 

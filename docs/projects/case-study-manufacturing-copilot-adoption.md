@@ -150,7 +150,7 @@ The environment included office workers, distributed business teams, strict gove
 
 ## Success Pattern
 
-The strongest pattern is to treat Copilot as a governed adoption program rather than a software rollout. The architecture, security, change management and value tracking workstreams must be connected from the beginning.
+Plan Copilot adoption with named owners, pilot tasks and measurable acceptance criteria. The architecture, security, change management and value tracking workstreams must be connected from the beginning.
 
 ## Lessons Learned
 

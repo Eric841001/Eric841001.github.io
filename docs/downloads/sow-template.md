@@ -52,7 +52,7 @@ toc_max_heading_level: 2
 
 ## 1. Executive Summary
 
-The purpose of this engagement is to assess, design and implement a modern Microsoft-based digital workplace platform that improves collaboration, security, governance and operational efficiency.
+The purpose of this engagement is to assess the current Microsoft environment, design a target architecture and prepare an implementation plan. Agree measurable collaboration, security, governance and operational objectives before work starts; production implementation requires an explicit scope item.
 
 The engagement will be delivered through a structured methodology covering assessment, architecture design, implementation planning and knowledge transfer.
 

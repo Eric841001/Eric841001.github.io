@@ -35,7 +35,7 @@ description: File server to Microsoft 365 migration guide for SharePoint, OneDri
 
 File server migration moves legacy shared folders into modern collaboration platforms such as SharePoint, OneDrive or Azure Files.
 
-The biggest risk is not the copy operation. The biggest risk is moving unmanaged folder structures, stale permissions and unclear ownership into a modern platform without governance.
+Assess copy fidelity and service interruption alongside unmanaged folders, stale permissions and unclear ownership. Rank those risks using the source inventory and pilot results.
 
 ## 한국어 요약
 
@@ -76,7 +76,7 @@ The biggest risk is not the copy operation. The biggest risk is moving unmanaged
 
 ## Target-specific boundaries
 
-SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files provides managed SMB/NFS file shares and has a different access, backup and data-protection model. SPMT migrates supported file shares to Microsoft 365; it is not an Azure Files migration tool. Choose the [Azure Files migration path](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview) for that target, and validate protocol, identity, ACL and metadata support. Do not assume SharePoint retention, container labels or Copilot indexing apply to an Azure file share simply because the files were moved to Azure.
+SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files provides managed SMB/NFS file shares and has a different access, backup and data-protection model. SPMT migrates supported file shares to Microsoft 365; it is not an Azure Files migration tool. For classic SMB shares, choose the [Azure Files migration path](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview) for that target, and validate protocol, identity, ACL and metadata support. Do not assume SharePoint retention, container labels or Copilot indexing apply to an Azure file share simply because the files were moved to Azure.
 
 ## Implementation
 
@@ -117,6 +117,8 @@ SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files
 
 ## Customer Success Pattern
 
+The following are planning examples, not measured customer results.
+
 | Industry | Scenario | Pattern |
 |---|---|---|
 | Manufacturing | Department file shares | Business owner mapping and phased SharePoint migration |
@@ -125,7 +127,7 @@ SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files
 
 ## Lessons Learned
 
-File server migration is an information architecture project. Customers get better outcomes when folder cleanup and ownership decisions happen before migration waves.
+Include information architecture in migration planning. Agree folder cleanup and ownership decisions before each wave, then measure access errors, missing files and support requests during the pilot.
 
 ## References
 

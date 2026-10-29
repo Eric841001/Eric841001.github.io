@@ -169,7 +169,7 @@ Visitors may find this site through Korean search queries such as:
 
 This site provides a public sitemap and allows search crawlers through `robots.txt`.
 
-Search visibility still depends on external indexing by Google and Naver. For faster discovery, the site should be registered in Google Search Console and Naver Search Advisor, and the sitemap URL should be submitted:
+Search visibility still depends on external indexing by Google and Naver. Submit the sitemap through Google Search Console and Naver Search Advisor to help URL discovery. Submission does not guarantee crawling, indexing or ranking:
 
 ```text
 https://eric841001.github.io/sitemap.xml

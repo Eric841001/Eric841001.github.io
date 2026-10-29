@@ -32,7 +32,7 @@ This playbook provides a structured delivery model for Microsoft 365 tenant migr
 <div aria-label="Tenant migration executive operating model" className="kc-context-panel">
   <div className="kc-context-panel__lead">
     <small>Executive Operating Model</small>
-    <strong>The control tower connects technical workstreams to business continuity.</strong>
+    <strong>Use the coordination model to assign owners, dependencies, recovery decisions and service-continuity tests.</strong>
     <span>Migration success depends on synchronized decision-making across identity, mail, collaboration, security, communication and support.</span>
   </div>
   <div className="kc-context-panel__grid">
@@ -931,7 +931,7 @@ The recommended design is **group-based policy assignment**, not domain-based po
 | Defender | User, device or policy group |
 | DLP | User, group or workload scope |
 | Sensitivity Labels | Label policy assignment |
-| SharePoint Download Restriction | Conditional Access group exception |
+| SharePoint Download Restriction | Applicable site controls and Conditional Access scope; test exceptions against both |
 
 ---
 

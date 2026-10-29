@@ -139,6 +139,8 @@ Review:
 
 ## Security Maturity Model
 
+The following levels are an author-proposed planning scale, not a Microsoft certification.
+
 | Level | Description |
 |---------|-------------|
 | Level 1 | Basic Security |
@@ -249,7 +251,7 @@ Design assuming compromise will occur.
 
 ## Common Risks
 
-| Risk | Impact | Mitigation |
+| Risk | Potential impact | Mitigation to evaluate |
 |---|---|---|
 | Weak identity controls | Account compromise | MFA and CA |
 | Unmanaged devices | Data leakage | Intune |
@@ -261,12 +263,12 @@ Design assuming compromise will occur.
 
 ## Lessons Learned
 
-- Identity is the first security boundary
+- Review identity alongside device, application, network and data controls
 - Security transformation should be phased
 - DLP requires business engagement
-- Endpoint compliance significantly reduces risk
+- Test whether compliance evaluation and access controls block the agreed noncompliant scenarios
 - Security operations require process as well as technology
-- Executive sponsorship accelerates security adoption
+- Assign an executive sponsor to resolve ownership, budget and policy decisions
 
 ---
 

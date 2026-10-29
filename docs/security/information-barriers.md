@@ -251,7 +251,7 @@ Get-SPOInformationBarriersPolicyComplianceReport
 | OneDrive 반영 지연 | 세그먼트 변경 후 정책 반영 지연 | 공식 배포 지침과 실제 정책 적용 상태를 확인하고 재검증 |
 | People Picker에는 보이지만 공유 실패 | 검색 단계와 실제 공유 검증 단계 차이 | 실제 공유/접근 결과 기준으로 판단 |
 | 예외 사용자가 차단됨 | 예외 세그먼트 또는 양방향 허용 정책 누락 | 예외 세그먼트와 양방향 정책 확인 |
-| 기존 공유 링크가 우회처럼 보임 | 기존 권한과 링크 캐시 영향 | 직접 접근, 새 세션, 정책 상태를 함께 확인 |
+| 기존 공유 링크가 우회처럼 보임 | 사이트 모드·기존 권한·정책 반영 상태 확인 필요 | 직접 접근, 새 세션, 정책 상태를 함께 확인 |
 
 ## Rollback Pattern
 
@@ -287,7 +287,7 @@ Start with a collaboration restriction matrix. Define which groups can communica
 
 ### How does Information Barriers affect Copilot readiness?
 
-Copilot follows Microsoft 365 permissions and collaboration boundaries. Information Barriers can help reduce unintended collaboration paths in regulated or conflict-of-interest scenarios, but they must be validated with workload-specific tests.
+Copilot results and direct content access need separate tests. In SharePoint Implicit and Owner Moderated modes, content accessed before policy application can remain visible in search and Copilot results even when opening it is denied by the current IB policy. See [SharePoint search and Copilot behavior](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint#tenant-wide-search-and-copilot-experience). Information Barriers can help reduce unintended collaboration paths in regulated or conflict-of-interest scenarios, but they must be validated with workload-specific tests.
 
 ### What evidence is required?
 

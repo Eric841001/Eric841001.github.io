@@ -293,7 +293,7 @@ Recommended model:
     <div className="kc-journey-node">
       <small>03</small>
       <strong>Role</strong>
-      <span>Owner, member, visitor, restricted access or external guest role.</span>
+      <span>Owner, member or visitor group with the required permission level; guest status identifies the user, not a role.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
@@ -303,7 +303,7 @@ Recommended model:
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
       <strong>Review</strong>
-      <span>Access review, owner approval and lifecycle process keep permissions clean.</span>
+      <span>Review effective access and record owner decisions when membership or content changes.</span>
     </div>
   </div>
 </div>
@@ -361,7 +361,7 @@ Information architecture should define:
 | Department | Ownership and filtering |
 | Region | Regional search and governance |
 | Document Type | Classification and lifecycle |
-| Confidentiality | Security and DLP |
+| Confidentiality | Classification metadata; configure supported labels and DLP rules separately |
 | Owner | Accountability |
 | Retention Category | Lifecycle management |
 
@@ -438,7 +438,7 @@ Copilot readiness architecture:
 <div aria-label="SharePoint Copilot readiness architecture" className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Copilot Readiness Architecture</span>
-    <strong>Better content governance produces better Copilot answers</strong>
+    <strong>Review source content and test Copilot answer quality</strong>
   </div>
   <div className="kc-journey-track">
     <div className="kc-journey-node kc-journey-node--demand">
@@ -464,7 +464,7 @@ Copilot readiness architecture:
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
       <strong>Copilot quality</strong>
-      <span>Search, grounding and answers improve because source content is trusted.</span>
+      <span>Test search results, cited sources and answers against representative tasks after content changes.</span>
     </div>
   </div>
 </div>
@@ -587,7 +587,7 @@ SharePoint architecture engagement should produce:
 
 SharePoint administrators can mark selected sites as authoritative so official content such as policies, company news and approved guidance is prioritized in Copilot Search. Use this designation for a small, governed set of sources with accountable owners and a defined review cadence.
 
-Authoritative status improves ranking; it does not grant access or replace permission, sensitivity, retention and lifecycle controls. Validate that designated sites remain current and appropriately scoped before treating them as trusted organizational sources.
+Authoritative designation identifies organization-managed sources in supported Copilot Search experiences. It does not replace access and content governance. The current configuration uses PowerShell or CSOM, supports up to 100 sites, excludes personal sites and can take up to 72 hours to appear. Check the license and tenant availability requirements in the [authoritative sites configuration guide](https://learn.microsoft.com/en-us/sharepoint/sharepoint-authoritative-sites). Validate that designated sites remain current and appropriately scoped before treating them as trusted organizational sources.
 
 ## References
 

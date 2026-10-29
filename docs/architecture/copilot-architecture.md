@@ -57,7 +57,7 @@ toc_max_heading_level: 2
 
 ## Executive Summary
 
-Microsoft 365 Copilot is not simply an AI assistant.
+This guide covers identity, data access and operating responsibilities for Microsoft 365 Copilot.
 
 Successful adoption requires a secure architecture that combines identity, permissions, information architecture, governance, compliance and change management.
 
@@ -68,6 +68,8 @@ This reference architecture provides a framework for enterprise Copilot readines
 Copilot을 도입할 때는 사용자가 어떤 Microsoft 365 자료에 접근할 수 있는지 먼저 확인해야 합니다. Microsoft Graph를 통해 참조하는 자료의 권한과 공유 상태를 점검하고, Purview와 DLP 등 필요한 보호 정책을 적용합니다.
 
 그다음 사용자 교육, 에이전트 승인 절차, 비용과 운영 담당자를 정합니다.
+
+업무 자료를 참조하는 범위는 Copilot 라이선스와 설정에 따라 다릅니다. Copilot 채팅에서 **Work IQ를 끄면 Microsoft Graph와 Work IQ를 통한 업무 자료 참조도 꺼집니다**. 첨부한 파일이나 앱에서 열어 둔 자료를 사용하는 방식은 별도로 구분해야 합니다. [Copilot의 라이선스별 기능과 Work IQ 설정](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-overview)을 확인하세요.
 
 ## Business Scenario
 

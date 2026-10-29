@@ -45,7 +45,7 @@ description: Microsoft Purview guide for sensitivity labels, DLP, retention, aud
     </div>
     <div className="kc-guardrail-panel">
       <strong>Enterprise guardrail</strong>
-      <span>Copilot and agents inherit the data estate. Purview should make sensitive data visible, governed and explainable before broad AI adoption.</span>
+      <span>Copilot and agents can use permitted data through the configured grounding sources and connections. Purview should make sensitive data visible, governed and explainable before broad AI adoption.</span>
     </div>
   </div>
 </section>
@@ -115,7 +115,7 @@ For enterprise group governance programs, the value of Purview is often the comm
   <div className="kc-platform-fit__card">
     <small>Business-readable</small>
     <strong>Small taxonomy first</strong>
-    <span>Start with a few labels that employees can understand. Too many labels reduce adoption and increase misclassification.</span>
+    <span>Start with a few labels that employees can understand. Pilot the label names with users and revise categories that they cannot distinguish.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Policy-backed</small>
@@ -139,9 +139,9 @@ For enterprise group governance programs, the value of Purview is often the comm
 DLP should not begin with aggressive blocking. A stronger delivery pattern is:
 
 1. Define priority sensitive information types and scenarios.
-2. Run DLP in test mode and collect evidence.
+2. Run DLP in simulation mode and collect evidence; policy actions are not enforced in this mode.
 3. Tune false positives with business owners.
-4. Move from audit to warning and then to block only where justified.
+4. After simulation, enable the supported warning or blocking actions that the pilot results justify.
 5. Record exception approvals, expiry and review owners.
 
 <div aria-label="DLP operating model" className="kc-operating-model">
@@ -192,14 +192,14 @@ Copilot readiness should combine Purview with access hygiene:
 
 ## Customer Success Pattern
 
-An anonymized enterprise group governance program used Purview not as a single technical deployment, but as a cross-functional operating model. Security, legal, IT and business owners agreed on a small label taxonomy, tested DLP before enforcement, documented exception handling and aligned Copilot readiness with oversharing review. The result was a governance model that could be explained to executives and operated by the security team after handover.
+In this planning example, security, legal, IT and business owners define a small label taxonomy, test DLP before enforcement, document exceptions and review oversharing before Copilot adoption. The proposed handover includes policy owners, test results and unresolved issues; it does not establish a measured customer outcome.
 
 ## Evidence Checklist
 
 | Evidence | Purpose |
 |---|---|
 | Label taxonomy | Show business-readable classification structure |
-| Label policy scope | Prove who receives which labels and why |
+| Label policy scope | Document intended recipients and check effective label availability |
 | DLP test results | Validate policy effect before enforcement |
 | Exception register | Document approvals, reasons, owner and expiry |
 | Oversharing review | Identify sensitive repositories before Copilot expansion |

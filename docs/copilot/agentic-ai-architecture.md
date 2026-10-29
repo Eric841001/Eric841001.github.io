@@ -25,7 +25,7 @@ Agentic AI represents the shift from prompt-based assistance to goal-oriented, c
 
 In the Microsoft ecosystem, Agentic AI is enabled through Microsoft 365 Copilot, Copilot Studio, Agent Builder, Microsoft Foundry, Microsoft 365 Agents SDK, Power Platform, Microsoft Graph, Work IQ, Microsoft Purview, Microsoft Defender and Agent365.
 
-The objective is not simply to create many agents. The objective is to establish a governed enterprise agent platform that can safely automate work, support decision-making, orchestrate business processes and continuously improve through feedback and analytics.
+The objective is not simply to create many agents. The objective is to establish a governed enterprise agent platform that can safely automate work, support decision-making, orchestrate business processes and use feedback and analytics to guide changes reviewed by its owners.
 
 > **Executive lens:** Agentic AI architecture is the bridge between AI experimentation and operational automation. The architecture must explain who the agent serves, what it can know, what it can do and how it is governed.
 
@@ -145,7 +145,7 @@ The objective is not simply to create many agents. The objective is to establish
 
 Traditional Copilot usage is primarily user-initiated.
 
-Agentic AI introduces agents that can understand goals, maintain context, use enterprise knowledge, call tools, coordinate with other agents, escalate exceptions and improve through telemetry.
+Agentic AI introduces agents that can understand goals, maintain context, use enterprise knowledge, call tools, coordinate with other agents, escalate exceptions and supply telemetry for operator-led improvements.
 
 <div aria-label="From Copilot to Agentic AI journey" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -495,7 +495,7 @@ Work IQ provides organizational and work context such as:
 </ReadingSummary>
 
 
-The [official Microsoft reference implementation](https://github.com/microsoft/microsoft-iq-solution-accelerator), checked October 2, 2026, combines Fabric IQ business data, Foundry IQ enterprise knowledge and Work IQ work context. Its supply-chain scenario links disruption signals, risk assessment and coordinated response through agents and workflows.
+The [official Microsoft reference implementation](https://github.com/microsoft/microsoft-iq-solution-accelerator), checked October 29, 2026, combines Fabric IQ business data, Foundry IQ enterprise knowledge and Work IQ work context. Its supply-chain scenario links disruption signals, risk assessment and coordinated response through agents and workflows.
 
 Some platform features and MCP integrations remain preview. Use the implementation for evaluation and demonstrations; validate production support separately. Adapt data models, contract and policy sources, workflow approvals, identity permissions and consumption budgets before using operational data.
 
@@ -537,7 +537,7 @@ Recommended grounding sources:
 </ReadingSummary>
 
 
-Agents become business-relevant when they can take action.
+Use tools when a scenario requires a system action; keep information-only agents read-only.
 
 <div aria-label="Agent tool use and action execution" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -631,7 +631,7 @@ MCP is important because it can help organizations:
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
       <strong>Governance</strong>
-      <span>Permission, DLP, logging, approval and connector policy are enforced.</span>
+      <span>Configure and test permissions, data policies, logging, approvals and connector policy at each boundary.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
@@ -696,7 +696,7 @@ MCP is important because it can help organizations:
 | Knowledge Agent | Retrieves and summarizes enterprise knowledge |
 | Task Agent | Executes workflow or system actions |
 | Review Agent | Checks quality and completeness |
-| Compliance Agent | Validates policy, data and risk requirements |
+| Compliance Agent | Flags potential policy issues for review by the responsible owner |
 | Reporting Agent | Generates output and management reporting |
 
 ---
@@ -785,7 +785,7 @@ Agentic AI requires stronger governance than simple chat experiences.
 </ReadingSummary>
 
 
-Not every action should be autonomous.
+Not every action should be autonomous. The following approval tiers are a proposed design; the responsible owners must adapt them to the process and applicable obligations.
 
 | Risk Level | Recommended Control |
 |---|---|

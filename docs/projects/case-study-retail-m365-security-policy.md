@@ -64,7 +64,7 @@ The engagement converted Microsoft 365 license capabilities and current-state fi
 
 보유 라이선스에서 사용할 수 있는 기능과 현재 설정을 확인했습니다. 개선 과제마다 선행 조건, 적용 영향과 작업 순서를 기록했습니다.
 
-공개 레퍼런스에는 고객명, 실제 사용자 수, 도메인, 내부 부서명, 기존 솔루션명, 세부 일정, 내부 파일명은 포함하지 않습니다.
+공개 사례에는 고객명, 실제 사용자 수, 도메인, 내부 부서명, 기존 솔루션명, 세부 일정, 내부 파일명은 포함하지 않습니다.
 
 ## Business Challenge
 
@@ -100,6 +100,8 @@ The engagement converted Microsoft 365 license capabilities and current-state fi
     <span>Review environment policy, connector control, DLP policy and lifecycle management.</span>
   </div>
 </div>
+
+Power Platform 데이터 정책은 앱·흐름·에이전트의 커넥터 사용을 관리합니다. 문서의 민감도 레이블이나 내용에 적용하는 Purview DLP와는 설정 위치와 적용 범위가 다릅니다. [Power Platform 데이터 정책](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention)에서 커넥터 유형별 지원 조건을 확인하세요.
 
 ## Consulting Scope
 
@@ -244,12 +246,12 @@ The engagement converted Microsoft 365 license capabilities and current-state fi
   <div className="kc-platform-fit__card">
     <small>Entra ID join</small>
     <strong>Device identity affects access</strong>
-    <span>Access control and compliance depend on clear join and registration strategy.</span>
+    <span>Check the supported device registration or join state for each selected access and compliance policy.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Intune</small>
     <strong>Enrollment and ownership readiness</strong>
-    <span>Endpoint configuration and compliance policies require enrollment, scope and owner model.</span>
+    <span>For Intune managed-device compliance, confirm enrollment, supported platform and policy assignment, then test the Conditional Access integration.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Licensing</small>
