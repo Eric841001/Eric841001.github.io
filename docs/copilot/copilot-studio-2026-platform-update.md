@@ -375,7 +375,7 @@ Microsoft 365 관리 센터에서 환경·에이전트용 지출 정책을 만�
   <div className="kc-platform-fit__card">
     <small>Design</small>
     <strong>Designing one large agent</strong>
-    <span>Prefer specialist agents, reusable skills and a coordinator pattern when work is complex.</span>
+    <span>Start with the simplest suitable agent and tools. Add specialists only where distinct context, ownership or security boundaries justify the handoffs.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Evaluation</small>

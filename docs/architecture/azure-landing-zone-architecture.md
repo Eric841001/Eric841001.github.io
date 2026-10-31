@@ -112,7 +112,7 @@ Typical Azure initiatives include:
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
       <strong>Controls</strong>
-      <span>Azure Policy, RBAC, tags, budgets, Defender, Monitor and Sentinel apply consistently.</span>
+      <span>Configure Azure Policy, RBAC, tags, budgets and security monitoring at the intended scopes; test coverage and exceptions.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>

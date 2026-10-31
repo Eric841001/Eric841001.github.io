@@ -104,7 +104,7 @@ Typical security initiatives include:
     <div className="kc-journey-node">
       <small>03</small>
       <strong>Endpoint and collaboration</strong>
-      <span>Intune, Defender, Exchange, Teams, SharePoint and OneDrive enforce trust.</span>
+      <span>Use device and threat signals to configure access and data controls; validate enforcement in each workload.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>

@@ -18,6 +18,8 @@ toc_max_heading_level: 2
 
 ## Executive Summary
 
+The layers below are a proposed architecture. Each platform needs its own configuration, permissions and supported integration path. [Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/agents-sdk-overview) handles agent hosting and channel interactions; choose the model and orchestration separately. [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Power Automate](https://learn.microsoft.com/en-us/power-automate/getting-started) serve different development and workflow needs.
+
 </ReadingSummary>
 
 
@@ -495,7 +497,7 @@ Work IQ provides organizational and work context such as:
 </ReadingSummary>
 
 
-The [official Microsoft reference implementation](https://github.com/microsoft/microsoft-iq-solution-accelerator), checked October 29, 2026, combines Fabric IQ business data, Foundry IQ enterprise knowledge and Work IQ work context. Its supply-chain scenario links disruption signals, risk assessment and coordinated response through agents and workflows.
+The [official Microsoft reference implementation](https://github.com/microsoft/microsoft-iq-solution-accelerator) combines Fabric IQ business data, Foundry IQ enterprise knowledge and Work IQ work context. Its supply-chain scenario links disruption signals, risk assessment and coordinated response through agents and workflows.
 
 Some platform features and MCP integrations remain preview. Use the implementation for evaluation and demonstrations; validate production support separately. Adapt data models, contract and policy sources, workflow approvals, identity permissions and consumption budgets before using operational data.
 

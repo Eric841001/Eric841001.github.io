@@ -248,6 +248,8 @@ Locations:
 
 ## Recommended Label Framework
 
+The names and protections below are a proposed taxonomy, not built-in behavior attached to those names. Configure file/email encryption and authorized users separately from group/site external-sharing settings. A container label does not label or encrypt every file inside it. See [container label scope](https://learn.microsoft.com/en-us/purview/sensitivity-labels-teams-groups-sites).
+
 ### Public
 
 Examples:

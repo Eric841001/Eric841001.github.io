@@ -134,7 +134,7 @@ Microsoft는 Copilot 앱의 새 작업 진입점으로 **Home, Code, Autopilot**
 Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 범위와 관리 지점을 보완했습니다.
 
 - **GPT-6.1 Sol·Claude Sonnet 5.5:** 9월 30일부터 Cowork와 Copilot Studio에 사용량 기반 과금(UBB)으로 배포를 시작했습니다. Word·Excel·PowerPoint·Chat은 Microsoft 365 Copilot 사용자 구독 라이선스(USL) 범위에서 다음 주부터 단계적으로 배포한다고 안내했습니다. Claude 또는 일부 GPT 화면을 사용하려면 조직의 Anthropic·OpenAI 하위 처리자 설정을 확인해야 하며, 앱 내 모델별 사용 한도가 적용될 수 있습니다. [모델 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801)
-- **Microsoft 플러그인 레지스트리:** Microsoft·파트너·조직 제작 플러그인을 Copilot 앱과 Microsoft 365 앱에서 함께 찾고 배포하는 통합 카탈로그가 9월에 배포됐습니다. 관리자는 Microsoft 365 관리 센터와 Agent 365에서 플러그인을 한 번 승인하고 중앙 관리할 수 있습니다. 도입 전에는 게시자 신뢰, 연결 권한, 데이터 처리 위치, 사용자 공개 범위를 승인 기준에 포함하세요. [플러그인 레지스트리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
+- **Microsoft 플러그인 레지스트리:** Microsoft·파트너·조직 제작 플러그인을 Copilot 앱과 Microsoft 365 앱에서 함께 찾고 배포하는 통합 카탈로그는 9월 30일 발표와 함께 순차 배포를 시작했습니다. 지원 화면과 커넥터마다 제공 시점이 다릅니다. 관리자는 Microsoft 365 관리 센터와 Agent 365에서 플러그인을 한 번 승인하고 중앙 관리할 수 있습니다. 도입 전에는 게시자 신뢰, 연결 권한, 데이터 처리 위치, 사용자 공개 범위를 승인 기준에 포함하세요. [플러그인 레지스트리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
 - **월간 배포 확인:** Teams·Outlook의 Copilot UI, 프롬프트 안 `/` 에이전트·`@` 스킬 호출, 스캔 PDF 검색, Android Office 편집, 모바일 Record가 9월 배포 항목으로 정리됐습니다. 관리 기능에는 Copilot Search의 신뢰할 수 있는 SharePoint 사이트를 최대 100개 지정하는 중앙 관리와 집계 단위 Pulse 설문이 포함됩니다. Edge 새 탭 통합은 10월 예정이며 일정은 변경될 수 있습니다. [9월 공식 월간 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107)
 
 월간 블로그의 배포 표현은 개별 테넌트의 즉시 사용 가능성을 보장하지 않습니다. 기능 표시, 라이선스, 하위 처리자·연결 정책과 메시지 센터 공지를 함께 확인하세요.
@@ -188,7 +188,7 @@ Microsoft는 **Copilot in OneDrive와 Copilot in SharePoint의 GA**를 다시 �
 
 - **실무 기능:** 여러 스프레드시트를 선택해 추세·차트를 분석하고, 혼잡한 프로젝트 폴더를 목적에 맞게 정리하며, 기존 파일을 근거로 대화형 HTML 보고서를 만들 수 있습니다. 반복 절차는 Markdown 개인 스킬로 저장할 수 있고 OneDrive Prompt Gallery에서 시작 프롬프트를 선택할 수 있습니다.
 - **라이선스와 비용:** 콘텐츠 기반 질문, 생성·정리, 재사용 스킬, 메타데이터를 단계적으로 보완하거나 정해진 규칙에 따라 실행하는 워크플로 같은 일상 기능은 Microsoft 365 Copilot 라이선스에 포함됩니다. 대규모 콘텐츠 컬렉션 처리, 다단계 에이전트 작업, 이미지 생성·편집, AI 사이트 분석, 준실시간 메타데이터 자동 채우기에는 Copilot Credits 사용량 과금이 적용됩니다. 관리자는 Microsoft 365 관리 센터의 비용 관리·지출 정책과 사용자 범위를 먼저 설정하세요.
-- **배포 확인:** Copilot in OneDrive는 9월 30일부터 전 세계 테넌트에 GA로 배포됐지만, 10월 20일 발표의 개별 `NEW` 기능은 모두 같은 날 전면 제공된다는 뜻이 아닙니다. 대표 사용자로 다중 파일 분석, 폴더 정리, HTML·Markdown 편집, 개인 스킬 메뉴가 실제 표시되는지 확인하고 크레딧 소비 확인 화면도 검증하세요.
+- **배포 확인:** Copilot in OneDrive는 9월 30일부터 전 세계 테넌트를 대상으로 GA 배포를 시작했지만, 10월 20일 발표의 개별 `NEW` 기능은 모두 같은 날 전면 제공된다는 뜻이 아닙니다. 대표 사용자로 다중 파일 분석, 폴더 정리, HTML·Markdown 편집, 개인 스킬 메뉴가 실제 표시되는지 확인하고 크레딧 소비 확인 화면도 검증하세요.
 - **로드맵 구분:** 파일에 에이전트를 공유·멘션해 댓글로 협업하거나 Copilot이 권한 상속 문제와 과도한 공유를 진단·수정하는 기능은 향후 방향입니다. 현재 GA 기능이나 보안 통제로 간주하지 말고 기존 SharePoint·OneDrive 권한 검토, 민감도 레이블, DLP를 계속 적용하세요.
 
 출처: [Microsoft OneDrive 공식 발표 — OneDrive Just Got a Major Upgrade](https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995), [Microsoft SharePoint 공식 GA·과금 안내](https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724).

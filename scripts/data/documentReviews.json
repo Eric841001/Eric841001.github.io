@@ -17,9 +17,9 @@
   },
   "/knowledge/architecture/azure-landing-zone-architecture": {
     "file": "docs/architecture/azure-landing-zone-architecture.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "설계·실행 프레임워크",
-    "scope": "개별 대조한 항목: Executive Summary, 한국어 요약, Landing Zone Architecture Overview, Core Components, Network Architecture, Lessons Learned. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: Azure Policy·RBAC·비용·보안 설정의 적용 범위는 직접 구성하고 예외를 시험해야 한다는 점을 명시했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -44,7 +44,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/architecture/copilot-architecture": {
     "file": "docs/architecture/copilot-architecture.md",
@@ -229,9 +229,9 @@
   },
   "/knowledge/architecture/security-reference-architecture": {
     "file": "docs/architecture/security-reference-architecture.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "설계·실행 프레임워크",
-    "scope": "개별 대조한 항목: Executive Summary, 한국어 요약, Security Architecture Overview, Security Domains, Licensing Considerations, Lessons Learned. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 기기·위협 신호와 워크로드별 접근·데이터 통제의 역할을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -291,7 +291,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/azure/identity": {
     "file": "docs/azure/identity.md",
@@ -390,9 +390,9 @@
   },
   "/knowledge/copilot/adoption-program": {
     "file": "docs/copilot/adoption-program.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Enterprise Copilot Adoption Program Framework. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 선택한 Copilot 기능에 실제 적용되는 보안·규정 준수 통제와 제한을 확인하도록 수정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -402,7 +402,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/agent-factory-operating-model": {
     "file": "docs/copilot/agent-factory-operating-model.md",
@@ -437,9 +437,9 @@
   },
   "/knowledge/copilot/agentic-ai-architecture": {
     "file": "docs/copilot/agentic-ai-architecture.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Agent Builder 배포와 업데이트, Work IQ and Context, Microsoft IQ Solution Accelerator, MCP in Agentic AI. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: Agents SDK·Foundry·Logic Apps·Power Automate의 역할과 별도 통합 구성을 설명하고 IQ 예제의 미리 보기 범위를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -466,10 +466,30 @@
         "title": "studio-mcp",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
         "checkedFor": "Standard harness resources need tool outputs; connector policies govern MCP access."
+      },
+      {
+        "title": "Microsoft 365 Agents SDK",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/agents-sdk-overview",
+        "checkedFor": "채널·메시지·상태 처리와 모델·오케스트레이션 엔진의 역할을 구분했습니다."
+      },
+      {
+        "title": "Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+        "checkedFor": "에이전트·모델·도구 개발과 관리, 개별 기능의 미리 보기 조건을 확인했습니다."
+      },
+      {
+        "title": "Logic Apps",
+        "url": "https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview",
+        "checkedFor": "기업 시스템 연결과 트리거·작업 기반 워크플로의 역할을 확인했습니다."
+      },
+      {
+        "title": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-automate/getting-started",
+        "checkedFor": "앱·서비스 간 흐름과 알림·승인 업무의 역할을 확인했습니다."
       }
     ],
     "reviewLevel": "작성자 예시·참고자료",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/business-use-cases": {
     "file": "docs/copilot/business-use-cases.md",
@@ -582,7 +602,7 @@
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
     "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리.",
+    "scope": "이번 개별 대조·수정: 작업 복잡성만으로 여러 에이전트를 권하지 않고 도메인·보안·담당 범위와 평가 결과에 따라 구성하도록 수정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -622,13 +642,13 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, 2026 Platform Shift, Developer Team Challenges, What Copilot Studio Is, Core Architecture, Copilot Studio Building Blocks, 1. Knowledge Agent, 2. Transaction Agent, 3. Workflow Agent, 4. Autonomous Agent, 5. Multi-Agent Pattern, MCP Integration, MCP Use Cases, MCP Connection Options, Deployment Channels, IT Helpdesk Agent, 한국어 요약. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 지식 원본과 인증의 지원표, 별도 Fabric·외부 시스템 연결, 데모 사이트의 시험 용도를 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -675,10 +695,20 @@
         "title": "studio-handoff",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-hand-off",
         "checkedFor": "Standard harness live transfer needs connected engagement hub and Transfer conversation node."
+      },
+      {
+        "title": "Knowledge sources",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio",
+        "checkedFor": "SharePoint·Dataverse·파일·웹·커넥터별 지원 및 사용자 인증 조건을 확인했습니다."
+      },
+      {
+        "title": "Publish channels",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels",
+        "checkedFor": "데모는 시험용이며 실제 채널별 게시와 인증·관리 제한을 확인해야 함을 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/customer-conversation-harness": {
     "file": "docs/copilot/customer-conversation-harness.md",
@@ -713,9 +743,9 @@
   },
   "/knowledge/copilot/excel-copilot-skills": {
     "file": "docs/copilot/excel-copilot-skills.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Why Skills Matter, What Is a Skill, Plan with Copilot, Show Changes, Workbook Rules, Personalization, Python Analysis with Edit with Copilot, Custom Skills, Available Today, 한국어 요약. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 스킬은 재사용 지침이며 결과의 재현성·품질·시간 절감은 파일럿 측정 목표라는 점을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -750,7 +780,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/governance": {
     "file": "docs/copilot/governance.md",
@@ -811,9 +841,9 @@
   },
   "/knowledge/copilot/multi-agent-framework": {
     "file": "docs/copilot/multi-agent-framework.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Current name and availability — 2026-10-25, Executive Summary, Single Agent vs Multi-Agent, Microsoft Agent Platform Mapping, Microsoft Autopilot Integration, MCP in Multi-Agent Systems, Recommended Microsoft Stack, Agent Boundary Review — October 2026, Deliverables. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 여러 에이전트가 필연적인 발전 단계이거나 성능·준수를 보장한다는 표현을 제거하고 단일 에이전트 대비 비용·지연·복구를 비교하도록 했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -843,13 +873,13 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 10월 30일 Copilot Studio 비용 관리 전환의 선택 적용과 AI Builder 제외 조건.",
+    "scope": "이번 개별 대조·수정: 10월 30일 월간 발표의 기능별 제공 시점과 9월 SharePoint·OneDrive 및 플러그인 레지스트리의 배포 시작을 구분했습니다. 메모리 보존·DLP의 발표와 Learn 문서 간 차이도 유지했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1104,7 +1134,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -1534,9 +1564,9 @@
   },
   "/knowledge/knowledge-center/exchange-online-omev2-remove": {
     "file": "docs/knowledge-center/exchange-online-omev2-remove.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: SentTo의 디렉터리 수신자 조건과 OMEv2 제거 매개변수",
+    "scope": "이번 개별 대조·수정: OME 제거 규칙은 지원하는 보호 형식에 한정되며 혼합 수신자 결과를 별도 시험해야 함을 테스트 표와 그림에 반영했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1561,7 +1591,7 @@
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/knowledge-center/gsa-whitelist-design": {
     "file": "docs/knowledge-center/gsa-whitelist-design.md",
@@ -1772,9 +1802,9 @@
   },
   "/knowledge/knowledge-center/mde-atomic-red-team": {
     "file": "docs/knowledge-center/mde-atomic-red-team.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Atomic 테스트의 격리·사전 조건과 현행 ATT&CK 기술 명칭·T1685 분류",
+    "scope": "이번 개별 대조·수정: 선택한 ATT&CK 기법 시험이 전체 공격 탐지 범위를 입증하지 않는다는 점을 명시했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1799,7 +1829,7 @@
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
@@ -2344,7 +2374,7 @@
     "file": "docs/microsoft365/onedrive.md",
     "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 미라이선스 계정 일정표의 275일 eDiscovery 제공 중단과 365일 삭제 위험 구분.",
+    "scope": "이번 개별 대조·수정: 민감도 레이블·DLP·보존·감사 통제는 대상 작업별 구성과 시험이 필요함을 명시했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2374,7 +2404,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/microsoft365/overview": {
     "file": "docs/microsoft365/overview.md",
@@ -2470,9 +2500,9 @@
   },
   "/knowledge/microsoft365/teams": {
     "file": "docs/microsoft365/teams.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Scenario 3A, Logical Architecture, Recommended Controls, Standard Channels, Private Channels, Shared Channels, 캐나다 시간대 변경과 Teams Rooms. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 메시지·파일 통제의 지원 범위와 그룹 만료·개별 게스트 접근 만료를 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2504,10 +2534,15 @@
         "title": "canada-timezone",
         "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes",
         "checkedFor": "11월1일대상지역UTC유지,기존일정미이전,RoomsEdge/WebView2보정과단일회의명령의상태표10월29일·권장작업28일불일치를확인했다."
+      },
+      {
+        "title": "External user entitlement lifecycle",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-external-users",
+        "checkedFor": "접근 패키지 할당 만료와 외부 사용자 생명주기 설정을 그룹 만료와 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/migration/cross-tenant-sync-vs-migration": {
     "file": "docs/migration/cross-tenant-sync-vs-migration.md",
@@ -2838,9 +2873,9 @@
   },
   "/knowledge/playbooks/tenant-to-tenant-migration-playbook": {
     "file": "docs/playbooks/tenant-to-tenant-migration-playbook.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "설계·실행 프레임워크",
-    "scope": "개별 대조한 항목: Exchange Online Migration, Shared Domain and Subdomain Routing, Purview and Sensitivity Label Migration, Regional Policy Separation in a Single Tenant, Administrative Units for Regional Delegation, Download Restriction and SharePoint Limited Access, Shared Domain Migration, Recommendation, Sensitivity Label Migration, Risk, Regional Security Policy, Design Principle, Administrative Units, Download Restriction Model. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 최종 증분 이전은 도구가 지원할 때만 수행하며 기본 SharePoint 교차 테넌트 이동은 일회성임을 반영했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2915,7 +2950,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/projects/case-study-enterprise-ai-agent-factory": {
     "file": "docs/projects/case-study-enterprise-ai-agent-factory.md",
@@ -3664,9 +3699,9 @@
   },
   "/knowledge/security/defender-for-endpoint": {
     "file": "docs/security/defender-for-endpoint.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Turn endpoint telemetry into trusted access decisions, Executive Summary, 한국어 요약, Linux·macOS의 10월 운영 변경, Microsoft Store 앱의 취약점 확인, Control Model, Operations Model, Implementation Checklist, Endpoint to XDR Reference Flow. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 기능·운영체제별 감사 설정과 웹 콘텐츠 필터링의 범주 없는 정책을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3703,10 +3738,15 @@
         "title": "mde-intune",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
         "checkedFor": "서비스 연결·기기 온보딩·위험 수준 규정 준수 정책·별도 조건부 액세스를 구성한다."
+      },
+      {
+        "title": "Web content filtering",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering",
+        "checkedFor": "차단 범주를 선택하지 않는 감사 정책과 Network Protection 전제 조건을 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/security/defender-for-office365": {
     "file": "docs/security/defender-for-office365.md",
@@ -3934,7 +3974,7 @@
     "file": "docs/security/purview-information-protection.md",
     "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 메일 주소 없는 보안 그룹의 레이블 게시 지원과 Azure Rights Management 접근 권한 분리.",
+    "scope": "이번 개별 대조·수정: 등급 이름은 작성자 예시이며 파일 암호화·허용 사용자와 컨테이너 외부 공유 설정은 별도라는 점을 보강했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4004,7 +4044,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/security/purview": {
     "file": "docs/security/purview.md",
@@ -4125,9 +4165,9 @@
   },
   "/knowledge/security/zero-trust-framework": {
     "file": "docs/security/zero-trust-framework.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 긴급 계정은 일반 차단·제한 CA 정책에서 제외하되 별도 피싱 방지 인증·로그인 감시·정기 접속 시험이 필요함을 확인했습니다. 추가 대조: Intune의 기기 상태 평가와 조건부 액세스의 접근 제한을 구분하고 미할당 기기의 Not compliant 설정 권고를 확인했습니다. ",
+    "scope": "이번 개별 대조·수정: 정책 표는 도입 권고이며 라이선스·기존 앱·긴급 액세스 예외를 확인해야 함을 명시했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4152,7 +4192,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
+    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
   },
   "/knowledge/toolkit/architecture-builder": {
     "file": "docs/toolkit/architecture-builder.md",

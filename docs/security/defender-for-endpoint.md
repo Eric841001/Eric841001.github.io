@@ -89,7 +89,7 @@ Defender 포털의 소프트웨어 목록에서 앱을 열고 **Software evidenc
   <div className="kc-platform-fit__card">
   <small>Reduction</small>
   <strong>Attack Surface Reduction</strong>
-  <span>Audit-first rollout for ASR rules, controlled folder access, network protection and web protection.</span>
+  <span>Use audit or pilot options supported by each protection feature and operating system before broad enforcement.</span>
 </div>
   <div className="kc-platform-fit__card">
   <small>Detection</small>
@@ -115,6 +115,8 @@ Defender 포털의 소프트웨어 목록에서 앱을 열고 **Software evidenc
 
 ## Deployment Journey
 
+Audit behavior depends on the control. For example, [web content filtering](https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering) can collect category activity with no categories selected for blocking; its Network Protection prerequisites still apply. This is different from turning every web-protection component to audit mode.
+
 <div className="kc-journey-map">
   <div className="kc-journey-map__header">
     <span>Deployment Journey</span>
@@ -134,7 +136,7 @@ Defender 포털의 소프트웨어 목록에서 앱을 열고 **Software evidenc
     <div className="kc-journey-node">
       <small>03</small>
       <strong>Audit</strong>
-      <span>Run ASR and protection policies in audit mode before broad enforcement.</span>
+      <span>Use supported audit settings for selected controls; validate platform behavior and existing blocking policies before rollout.</span>
     </div>
     <div className="kc-journey-node">
       <small>04</small>

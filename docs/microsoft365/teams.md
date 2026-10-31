@@ -98,7 +98,7 @@ The objective is to balance collaboration agility with security and operational 
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
       <strong>Protect</strong>
-      <span>Sensitivity labels, DLP, retention and Information Barriers protect content.</span>
+      <span>Configure supported label, DLP, retention and Information Barriers controls; test messages and stored files separately.</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
@@ -315,7 +315,9 @@ Guest Users:
 
 - MFA Required
 - Access Review
-- Expiration Policy
+- Time-bound guest access through an approved lifecycle process
+
+Microsoft 365 group expiration renews or deletes the group; it is not an expiry date for each guest. For access granted through an access package, configure assignment expiration and review other access paths separately. See [group expiration](https://learn.microsoft.com/en-us/entra/identity/users/groups-lifecycle) and [external-user entitlement management](https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-external-users).
 
 ---
 

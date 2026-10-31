@@ -69,7 +69,7 @@ OneDrive의 동기화, 외부 공유, 데이터 보존과 퇴사자 파일 처�
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
   <small>03</small>
   <strong>Intune and Purview</strong>
-  <span>Device compliance, DLP, labels, retention and audit controls apply around the content.</span>
+  <span>Configure device access, DLP, labels and retention for the required scope, and verify activity records separately.</span>
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
   <small>04</small>
   <strong>Copilot readiness</strong>

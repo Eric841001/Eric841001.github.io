@@ -131,14 +131,16 @@ Examples:
 
 ## Enterprise Benefits
 
-| Benefit | Description |
+These are pilot evaluation goals, not guaranteed outcomes from enabling a skill. Compare results with the existing process and retain human review of calculations.
+
+| Evaluation goal | What to measure |
 |----------|----------|
-| Repeatability | Consistent financial analysis |
-| Governance | Controlled execution model |
+| Repeatability | Variation and errors across repeated financial tasks |
+| Governance | Whether approved instructions, access and review steps are followed |
 | Auditability | Review supported change evidence alongside version history and approval records |
-| Transparency | Explainable outputs |
-| Productivity | Faster financial operations |
-| Standardization | Shared business methodology |
+| Transparency | Whether reviewers can trace inputs, formulas and assumptions |
+| Productivity | Total completion time, including checking and rework |
+| Standardization | Adherence to the agreed method across users |
 
 ---
 
@@ -158,7 +160,7 @@ Examples:
     <div className="kc-journey-node">
       <small>02</small>
       <strong>Skills</strong>
-      <span>Task-specific skills standardize repeatable financial workflows.</span>
+      <span>Task-specific skills provide reusable instructions; check that each output follows the intended financial method.</span>
     </div>
     <div className="kc-journey-node">
       <small>03</small>

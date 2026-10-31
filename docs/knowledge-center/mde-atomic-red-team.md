@@ -37,7 +37,7 @@ sidebar_label: Atomic Red Team
 
 Atomic Red Team provides ATT&CK-mapped tests that execute adversary behaviors. Review each test, its prerequisites and cleanup steps before using it in an isolated, authorized environment; a test is not harmless simply because it belongs to this library. See the [official Atomic Red Team project](https://github.com/redcanaryco/atomic-red-team).
 
-It allows organizations to verify detection coverage before real incidents occur.
+It helps test detection and response for the selected techniques and configurations; passing those tests does not establish complete attack coverage.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: multi-agent-framework
 title: Multi-Agent Framework
-description: "Multi Agent Framework - Enterprise AI is rapidly evolving from single agent experiences toward coordinated multi agent systems."
+description: "Multi-agent design patterns, component selection, orchestration costs and operating responsibilities."
 sidebar_label: Multi-Agent Framework
 toc_max_heading_level: 2
 ---
@@ -40,7 +40,7 @@ For a pilot, confirm eligibility, identity, permissions, approval boundaries, au
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Multi-Agent Architecture</span>
     <h2>Coordinate specialist agents without losing control</h2>
-    <p>Multi-agent systems become valuable when complex work is divided across specialist agents and governed through a coordinator, policy boundary, human review and measurable outcomes.</p>
+    <p>Evaluate specialist agents when work has distinct domain or security boundaries. Compare quality, latency, cost and recovery with a simpler design.</p>
     <div aria-label="Multi-agent operating signals" className="kc-hero-signal-row">
       <span>Coordinate</span>
       <span>Specialize</span>
@@ -98,13 +98,13 @@ For a pilot, confirm eligibility, identity, permissions, approval boundaries, au
 </ReadingSummary>
 
 
-Enterprise AI is rapidly evolving from single-agent experiences toward coordinated multi-agent systems.
+Multi-agent orchestration is one design option for work that crosses distinct domains or control boundaries.
 
 A single agent can also complete complex processes. Add specialist agents when responsibilities, context, ownership or security boundaries justify the extra orchestration; size alone is not a reason to split.
 
-Microsoft's long-term vision for Agentic AI includes coordinated agents that collaborate across Microsoft 365, business applications, enterprise knowledge repositories and external systems.
+The patterns below describe possible component responsibilities. Validate the selected runtime, connectors and permissions before implementing them.
 
-Multi-Agent Framework provides the architectural pattern for building scalable, governed and reusable enterprise AI ecosystems.
+This guide proposes a design framework; it is not a product or a guarantee of scale, reliability or compliance.
 
 ---
 
@@ -1190,7 +1190,7 @@ Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명�
 
 1. Start with business outcomes.
 2. Start with the simplest design that meets the tested requirements; add specialists when boundaries justify them.
-3. Design reusable specialist agents.
+3. Use specialist agents only where a separate responsibility justifies the added coordination.
 4. Implement governance before scale.
 5. Establish an Agent Factory model.
 6. Apply Purview and Defender controls.

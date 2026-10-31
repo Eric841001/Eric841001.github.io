@@ -82,11 +82,11 @@ This should only be used with:
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
   <small>03</small>
   <strong>Transport rule</strong>
-  <span>Rule removes OMEv2 or RMS attachment protection only for approved scope.</span>
+  <span>Configure removal of supported message or attachment encryption and test the rule against approved and mixed-recipient cases.</span>
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
   <small>04</small>
   <strong>External recipient</strong>
-  <span>Approved recipient receives usable content with audit and exception record.</span>
+  <span>Verify recipient access, retained protections and the exception record before approving rollout.</span>
 </div></div></div>
 
 ---
@@ -140,8 +140,8 @@ Validate with test messages:
 
 | Test | Expected Result |
 |---|---|
-| Approved recipient | Attachment can be opened without original encryption |
-| Non-approved recipient | Encryption remains enforced |
+| Approved recipient | Verify removal for the supported protection type and successful recipient access |
+| Non-approved recipient | Verify protection remains intact, including messages with both approved and unapproved recipients |
 | Internal recipient | Rule behavior follows defined condition |
 | Audit review | Rule execution can be reviewed |
 

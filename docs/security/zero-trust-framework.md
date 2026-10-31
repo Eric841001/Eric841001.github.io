@@ -188,10 +188,12 @@ Conditional Access should evaluate:
 
 ### Policy Baseline
 
+This table is a proposed deployment baseline. Confirm licensing, app dependencies and emergency-access exclusions before enforcement; risk-based policies require the applicable Identity Protection entitlement. Start with report-only evaluation and pilot users.
+
 | Policy | Recommendation |
 |---|---|
-| Block Legacy Authentication | Required |
-| Require MFA for Admins | Required |
+| Block Legacy Authentication | Prioritize after identifying and migrating dependent clients |
+| Require MFA for Admins | Prioritize; handle emergency access separately |
 | Require MFA for All Users | Recommended |
 | Require Compliant Device | Recommended for sensitive apps |
 | Block High-Risk Sign-ins | Recommended |

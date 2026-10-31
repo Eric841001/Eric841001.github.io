@@ -475,6 +475,8 @@ Examples:
 
 Test whether the selected knowledge sources produce accurate, relevant answers for the intended users.
 
+The sources below are design candidates, not interchangeable built-in connections. Use the [supported knowledge-source and authentication matrix](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) for the selected harness. Fabric and external systems need their supported agent, connector or API integration. A [demo website is for testing](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels), not a production customer channel.
+
 Recommended knowledge sources:
 
 | Source | Use Case |

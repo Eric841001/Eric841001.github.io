@@ -116,7 +116,7 @@ For enterprise rollout, treat available reasoning models as a change-management 
 | User guidance | Explain when to use available reasoning models through the model selector where it is available. |
 | Scenario library | Add deeper reasoning scenarios for document drafting, spreadsheet analysis, presentation refinement and decision support. |
 | Champion enablement | Train champions to demonstrate before/after work patterns rather than isolated prompt tricks. |
-| Governance message | Reinforce that enterprise security, compliance and privacy controls still apply inside Microsoft 365 Copilot. |
+| Governance message | Explain which configured security, compliance and privacy controls cover the selected Copilot experience, including their limits. |
 | Measurement | Track task quality, decision speed, rework reduction and user confidence, not only active usage. |
 | Cowork bridge | Explain when work should move from Copilot chat to Copilot Studio agents or Copilot Cowork. |
 

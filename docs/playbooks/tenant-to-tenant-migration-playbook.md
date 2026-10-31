@@ -666,10 +666,12 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ### Cutover Activities
 
+This is a planning sequence, not a universal migration procedure. Native [cross-tenant SharePoint moves](https://learn.microsoft.com/en-us/microsoft-365/enterprise/cross-tenant-sharepoint-migration) are a one-time move and do not support incremental or delta passes. Define the freeze and final-transfer procedure separately for each workload and tool.
+
 | Step | Activity |
 |---|---|
 | 1 | Stop source changes |
-| 2 | Final delta migration |
+| 2 | Complete the final supported transfer and reconcile content; use a delta pass only when the selected method supports it |
 | 3 | Domain removal from source |
 | 4 | Domain verification in target |
 | 5 | DNS update |
