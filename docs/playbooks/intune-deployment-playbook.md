@@ -70,6 +70,27 @@ toc_max_heading_level: 2
 Intune 서비스 변경은 순차 배포됩니다. 발표 날짜만으로 모든 테넌트에 기능이 적용됐다고 판단하지 말고 실제 관리 화면과 시험 기기에서 확인하세요.
 
 
+## Intune 2610 배포 전 확인할 변경 {/* #intune-2610-changes */}
+
+10월 26일 주간의 서비스 릴리스 2610에는 다음 변경이 추가됐습니다. [공식 변경 목록](https://learn.microsoft.com/en-us/intune/whats-new/#week-of-october-26-2026-service-release-2610)을 기준으로 사용하는 기능부터 점검하세요.
+
+- **AOSP 앱:** 패키지 이름으로 기존 앱을 지정합니다. Required는 숨김 해제, Uninstall은 숨김이며 APK 배포가 아닙니다. 구성은 JSON 방식을 사용합니다.
+- **Apple VPN:** Include all networks와 Exclude local networks에 따라 Enforce Routes가 결정됩니다.
+- **Apple 업데이트:** 기존 MDM 소프트웨어 업데이트 정책을 DDM 정책으로 전환하세요.
+- **Apple ADE:** 사용자 연결 등록의 Setup Assistant (legacy)는 지원이 끝났습니다. 기존 프로필은 최신 인증으로 전환되며 이미 등록된 기기는 유지됩니다.
+- **Apple OS 27:** 기기 상태·로그·콘텐츠 캐시·MDM 상태 정보가 추가됩니다. 제공 항목은 기기와 등록 조건에 따라 다릅니다.
+- **Windows 알림:** 방화벽에서 `*.trouter.communications.svc.cloud.microsoft` 연결을 검토하세요. 스크립트 변경도 푸시 알림으로 전달됩니다.
+- **Windows 관리자 보호:** 계정 보호 정책과 설정 카탈로그에서 승인 모드·권한 상승 알림을 설정합니다. 카탈로그 항목은 Windows 11 24H2·25H2를 지원합니다.
+- **에이전트 실행 보호:** Endpoint security 템플릿이 정식 제공되며 AI agent runtime inspection 설정이 추가됐습니다.
+- **인증서 커넥터:** 관리 센터에서 CA 연결, 서비스 계정 권한, 인증서 템플릿 불일치 등의 상태를 확인할 수 있습니다.
+- **MEFERI:** Managed Google Play의 `com.meferi.oemconfig` 앱으로 OEMConfig 프로필을 구성합니다.
+
+### STIG 감사와 관리자 권한
+
+[STIG 감사 기준](https://learn.microsoft.com/en-us/intune/device-security/security-baselines/stig-audit-baseline)은 기기 설정을 변경하지 않고 차이를 보고합니다. Intune Advanced Analytics가 필요하며, 자동 검사 대상이 아닌 규칙은 별도로 확인해야 합니다. 보고서의 통과 상태만으로 조직 전체의 규정 준수를 판정하지 마세요.
+
+Scoped permissions는 2610 변경 목록에서 정식 제공으로 안내하지만, [세부 문서](https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/scope-tags#permission-behavior-across-role-assignments)에는 아직 선택형 미리 보기 설명이 남아 있습니다. 자동 활성화됐다고 가정하지 말고 `Tenant administration > Roles > Settings`에서 실제 상태를 확인하세요. 활성화하면 서로 다른 범위 태그의 권한을 합치지 않고 각각 적용합니다. 되돌릴 수 없는 전환이므로 Permissions Assessment Report로 관리자별 권한 변화를 먼저 확인하세요.
+
 ## Android Enterprise eSIM 일괄 관리 {/* #android-esim-bulk-actions */}
 
 10월 26일 주간 변경 기록에 회사 소유 Android Enterprise 기기의 eSIM 일괄 관리가 추가됐습니다.

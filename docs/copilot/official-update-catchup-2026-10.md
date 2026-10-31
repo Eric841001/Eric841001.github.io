@@ -152,7 +152,7 @@ Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델�
 
 - **적용 상태를 단정하지 마세요:** 발표는 초기 투자가 외부 통신 같은 고위험 콘텐츠에 집중된다고 설명하며, 릴리스 상태와 테넌트에 따라 가용성과 동작이 달라질 수 있다고 명시합니다. 대표 사용자로 외부 메일 요약·추론 시나리오를 검증하고, [Microsoft 365 Copilot 방어 심층 문서](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-prompt-defense-in-depth)의 감사·Defender·Purview 통제를 함께 점검하세요.
 - **외부 발신자 식별:** Microsoft는 [CVE-2026-55145 지침](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55145)과 연결해 Outlook 외부 발신자 설정을 사용하도록 안내합니다. Exchange Online에서 `Set-ExternalInOutlook -Enabled $true` 적용 여부와 예외 목록을 검토하세요. 표시 반영에는 24~48시간이 걸릴 수 있으며, 기존 제목 삽입 메일 흐름 규칙과 중복되지 않게 해야 합니다. [Exchange PowerShell 공식 문서](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-externalinoutlook?view=exchange-ps)
-- **더 엄격한 제외가 필요하면:** Microsoft Purview DLP의 `Email is received from > External users` 조건으로 외부 메일을 Copilot의 근거·요약·인용에서 제외할 수 있습니다. 이 기능은 preview이고 메일 본문이 아니라 발신자 도메인 메타데이터를 평가하므로, 라이선스와 실제 테넌트 롤아웃을 확인한 뒤 시뮬레이션·파일럿으로 적용하세요. [Purview DLP 공식 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview)
+- **더 엄격한 제외가 필요하면:** Microsoft Purview DLP의 `Email is received from > External users` 조건으로 외부 메일을 Copilot의 근거·요약·인용에서 제외할 수 있습니다. 이 기능은 preview이고 메일 본문이 아니라 발신자 도메인 메타데이터를 평가하므로, 라이선스와 실제 테넌트의 배포 상태을 확인한 뒤 시뮬레이션·파일럿으로 적용하세요. [Purview DLP 공식 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview)
 
 출처: [Microsoft 공식 블로그 — Building Trust-Aware Controls for AI](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/building-trust-aware-controls-for-ai-differentiated-handling-of-untrusted-conten/4562160). 이 계층은 기존 권한·DLP·Defender 통제를 대체하지 않으며, 외부 콘텐츠 식별과 감사·탐지·차단 정책을 함께 운영해야 합니다.
 
@@ -199,7 +199,7 @@ Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파
 
 - **업무 유형부터 분류:** `Assist`, `Execute`, `Transform` 모드 아래 직원 AI 지원, 전문가 역량 확장, 사내 서비스, 핵심 업무 프로세스, 외부 고객 접점, AI-first 역량의 여섯 패턴으로 목적을 구분합니다. 실행 권한이 커질수록 명시적 소유자, 장애 대응, 수명주기 관리와 권한 한계가 필요합니다. [Agentic transformation patterns](https://learn.microsoft.com/en-us/agents/adoption-patterns/)
 - **준비도 격차를 먼저 해소:** 전략, 업무 절차, 운영 기준, 기술·데이터와 조직 문화별 준비 사항을 점검합니다. 선택한 업무를 수행하는 데 걸림돌이 되는 문제부터 해결합니다. 기술 배포만으로 파일럿을 확장하지 말고, 도입을 지원할 경영진과 업무 성과 책임자를 먼저 지정하세요. [에이전트 도입 준비 단계 안내](https://learn.microsoft.com/en-us/agents/adoption-maturity-model)
-- **CoE를 운영 기능으로 설계:** Agentic Center of Excellence는 위험별 출시 게이트와 감사 추적, 제작자용 템플릿·교육·사전 승인 경로, 품질·비용·가치 모니터링, 재사용 확산을 담당합니다. 정보 제공형 에이전트에는 가벼운 검토를, 외부 시스템에서 실행하거나 규제·고영향 결정을 다루는 에이전트에는 보안·데이터·업무 책임자 검토와 사람 승인을 적용하세요. [Agentic Center of Excellence](https://learn.microsoft.com/en-us/agents/center-of-excellence/)
+- **CoE를 운영 기능으로 설계:** Agentic Center of Excellence는 위험 수준별 출시 승인 절차와 감사 추적, 제작자용 템플릿·교육·사전 승인 경로, 품질·비용·가치 모니터링, 재사용 확산을 담당합니다. 정보 제공형 에이전트에는 가벼운 검토를, 외부 시스템에서 실행하거나 규제·고영향 결정을 다루는 에이전트에는 보안·데이터·업무 책임자 검토와 사람 승인을 적용하세요. [Agentic Center of Excellence](https://learn.microsoft.com/en-us/agents/center-of-excellence/)
 - **성과를 사용량과 분리:** 시간 절감과 처리 속도 같은 `soft savings`는 확보된 용량으로, 과지급 방지·거래당 비용·감사 비용·벌금 회피처럼 재무제표에 연결되는 `hard savings`는 재무 성과로 구분합니다. 시작 전에 효율·품질·채택·위험 지표를 정하고, 효과가 크고 위험이 낮은 업무 2~3개를 골라 확장·중단 기준을 함께 기록하세요.
 
 출처: [Microsoft 공식 발표 — From Pilots to Programs](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/from-pilots-to-programs-a-structured-approach-to-scaling-ai-and-agents-for-real-/4566921). 이 글의 고객 사례 수치와 성숙도 조사는 방향 설정 자료이며, 개별 조직의 ROI 보장이나 제품 제공 상태를 뜻하지 않습니다.
@@ -221,7 +221,7 @@ Microsoft는 기존 사용량 분석과 별도로, 소유자가 사용자 의견
 
 9월 발표된 **Copilot Code**가 Frontier 문서와 함께 구체화됐습니다. 자연어로 앱·대시보드·내부 도구·정적 웹 사이트·데이터 변환·스크립트를 만들고, 로컬 또는 격리된 클라우드 환경에서 실행하며 GitHub 저장소와 연결할 수 있습니다.
 
-- **상태와 라이선스:** 일반 공급이 아니라 Frontier 미리 보기입니다. 조직 계정은 Microsoft Copilot 라이선스와 조직의 Code 탭 활성화가 필요하고, 제공 여부는 롤아웃·플랫폼·정책에 따라 달라집니다.
+- **상태와 라이선스:** 일반 공급이 아니라 Frontier 미리 보기입니다. 조직 계정은 Microsoft Copilot 라이선스와 조직의 Code 탭 활성화가 필요하고, 제공 여부는 배포 일정·플랫폼·정책에 따라 달라집니다.
 - **권한과 데이터:** 로컬 프로젝트는 선택한 폴더 안에서 파일을 읽고 쓸 수 있습니다. 다른 폴더 접근, 네트워크 연결, 터미널 명령, 확장 또는 MCP 사용에는 승인이 필요합니다. `Always allow`는 이후 세션과 작업 공간에도 유지될 수 있으므로 파일럿에서 기본 승인 범위를 검토하세요.
 - **개발·게시 경계:** GitHub 연결은 선택 사항이며 브랜치·커밋·초안 pull request를 만들 수 있습니다. 조직용 대화형 앱을 Copilot Managed Runtime에 게시하는 기능도 미리 보기이므로, 소스 권한·비밀값·외부 연결·사용량 한도와 게시 승인자를 먼저 정하세요.
 - **관리와 감사:** 관리자는 조직 단위로 Code 사용과 세부 기능을 켜거나 끄고 지출 한도를 관리할 수 있습니다. 생성 코드, 실행 명령, 읽거나 쓴 파일 같은 활동의 감사 범위를 확인하고, 생성 결과는 보안 검토와 테스트를 거쳐 배포하세요.

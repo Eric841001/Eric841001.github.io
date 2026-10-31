@@ -1758,9 +1758,9 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: Linux 배포판·빌드·라이선스, AL2 ARM64 종료, 설치·연결 명령과 지원하지 않는 프록시",
+    "scope": "Amazon Linux 2 ARM64 지원 종료일과 Linux 백신 감사 모드의 GA·최소 버전·실시간 탐지 및 자동 조치 차이를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1787,6 +1787,11 @@
         "title": "linux-release",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
         "checkedFor": "Azure Linux 4와 TCP 바인딩 이벤트 및 한 달 순차 적용을 대조했다."
+      },
+      {
+        "title": "Linux antivirus enforcement",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences",
+        "checkedFor": "audit와 passive의 실시간 탐지 차이, 자동 조치 제외 및 antivirus_enforcement_level 조회 명령을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2679,16 +2684,11 @@
   },
   "/knowledge/playbooks/intune-deployment-playbook": {
     "file": "docs/playbooks/intune-deployment-playbook.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "설계·실행 프레임워크",
-    "scope": "개별 대조한 항목: 2026년 10월 변경 사항, Android Enterprise eSIM 일괄 관리, Executive Summary, Device Enrollment, Conditional Access. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "Intune 2610의 Apple·Windows·Android 변경, STIG 감사 조건, Scoped permissions의 발표와 세부 문서 간 제공 상태 차이를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
-      {
-        "title": "intune-new",
-        "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
-        "checkedFor": "Compared October 5 baseline, October 12 Remote Help, October 19 VPP and October 26 bulk Android actions; staged rollout and prerequisites apply."
-      },
       {
         "title": "intune-esim",
         "url": "https://learn.microsoft.com/en-us/intune/device-management/actions/update-cellular-data-plan",
@@ -2708,6 +2708,21 @@
         "title": "ca-overview",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
         "checkedFor": "User,device,app,risk,location inputs; compliant grant separatefromOS; user/signinriskP2; sessioncontrols integration."
+      },
+      {
+        "title": "Intune 2610",
+        "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+        "checkedFor": "2610의 AOSP 앱·Apple DDM·ADE·VPN·상태 정보·Windows 알림·관리자 보호·실행 보호·인증서 커넥터·OEMConfig 변경을 대조했습니다."
+      },
+      {
+        "title": "STIG audit",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/stig-audit-baseline",
+        "checkedFor": "설정을 변경하지 않는 감사 기능과 Advanced Analytics 요구 사항을 확인했습니다."
+      },
+      {
+        "title": "Scoped permissions",
+        "url": "https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/scope-tags",
+        "checkedFor": "GA 발표와 미리 보기로 남은 세부 문서의 차이, 전환 비가역성과 권한 평가 보고서를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
