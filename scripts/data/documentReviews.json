@@ -2260,9 +2260,9 @@
   },
   "/knowledge/microsoft365/exchange-online": {
     "file": "docs/microsoft365/exchange-online.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Scenario 1, Standard Cloud Architecture, Cloud Only, Hybrid Identity, Inbound Mail, Outbound Mail, Hybrid Mail Flow, Cutover Migration, Staged Migration, Hybrid Migration, Tenant-to-Tenant Migration, 캐나다 시간대 전환 전 일정 점검. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 캐나다 시간대 변경 공식 안내의 10월 30일 개정 내용과 단일 회의 보정 명령의 11월 4일 제공 예정일.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2308,11 +2308,11 @@
       {
         "title": "canada-timezone",
         "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes",
-        "checkedFor": "11월1일대상지역UTC유지,기존일정미이전,RoomsEdge/WebView2보정과단일회의명령의상태표10월29일·권장작업28일불일치를확인했다."
+        "checkedFor": "상태 표의 단일 회의 보정 명령 일정이 11월 4일 예정으로 바뀌었고 권장 작업에는 10월 28일이 남아 있음을 확인했습니다. 반복 회의 보정 일정은 미정입니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번에는 캐나다 시간대 변경 단락을 다시 대조했습니다. 문서의 나머지 기술 문장 전체를 오늘 다시 검증한 것은 아니며 테넌트에서 명령을 실행하지 않았습니다."
   },
   "/knowledge/microsoft365/licensing": {
     "file": "docs/microsoft365/licensing.md",

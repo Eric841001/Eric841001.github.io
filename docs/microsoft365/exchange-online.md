@@ -555,7 +555,7 @@ Validate:
 
 해당 지역의 사용자는 Windows를 업데이트하고 Outlook에서 새 시간대를 선택해야 합니다. **기존 일정은 자동으로 이전되지 않으므로** 11월 1일 이후의 단일·반복 회의와 참석자의 표시 시간을 확인하세요. 한국 사용자도 해당 지역과의 회의가 있다면 초대장 시간을 함께 대조하세요.
 
-10월 29일 확인한 공식 안내의 제품별 상태 표는 단일 회의 보정용 Exchange Online PowerShell 명령의 제공일을 **10월 29일**로 표시합니다. 같은 페이지의 권장 작업에는 이전 목표일인 10월 28일이 남아 있으며, 반복 회의 보정 일정은 아직 미정입니다. 목표일이 지났다는 이유만으로 제공이 완료됐다고 판단하지 말고, [현재 공식 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)에서 배포 여부와 적용 절차를 확인하세요.
+10월 30일 개정된 공식 안내의 제품별 상태 표는 단일 회의 보정용 Exchange Online PowerShell 명령을 **11월 4일까지 제공할 예정**으로 표시합니다. 같은 페이지의 권장 작업에는 이전 목표일인 10월 28일이 남아 있으며, 반복 회의 보정 일정은 아직 미정입니다. 목표일이 지났다는 이유만으로 제공이 완료됐다고 판단하지 말고, [현재 공식 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)에서 배포 여부와 적용 절차를 확인하세요.
 
 ## References
 
