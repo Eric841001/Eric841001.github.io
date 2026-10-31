@@ -132,6 +132,8 @@ Explain which files belong in OneDrive and which belong in shared Teams or Share
 
 기본 설정에서 라이선스가 없는 OneDrive는 60일 후 읽기 전용, 93일 후 보관 상태가 됩니다. 계정·보존 상태에 따라 휴지통으로 이동할 수 있으며, 별도 활성 저장 기간 설정도 확인해야 합니다. 2026년 7월 1일부터는 **누적 미납 365일**에 따른 삭제 위험도 적용됩니다. 그 전에 이미 미할당·미납 상태였던 계정은 2027년 7월 1일보다 이른 날짜에 이 기준으로 삭제되지는 않습니다. 이 변경은 EDU·GCC·DoD에는 적용되지 않습니다.
 
+공식 일정표는 미납 계정이 **275일 시점부터 eDiscovery에서 더 이상 제공되지 않는다**고 안내합니다. 삭제 위험이 시작되는 365일만 기준으로 자료 확보 일정을 잡지 마세요. 조사·인계에 필요한 자료는 계정의 누적 미납 일수와 유료 보관 상태를 확인해 미리 확보하세요.
+
 보존 정책이나 법적 보류만으로 미납 저장소가 계속 유지된다고 가정하지 마세요. 계정 상태, 적격 라이선스 또는 유료 저장·보관 옵션과 필요한 자료 이전을 함께 검토하세요. [OneDrive 보존·삭제 절차](https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion)와 [미할당 계정의 현재 처리 일정](https://learn.microsoft.com/en-us/sharepoint/unlicensed-onedrive-accounts)을 참고하세요.
 
 ## References

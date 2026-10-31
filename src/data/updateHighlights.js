@@ -6,6 +6,7 @@ export const modelUpdate = {
   path: `${updateGuide}#october-30-monthly-update`,
 };
 export const updateHighlights = [
+  {category: 'Copilot Studio', title: '환경·에이전트 비용 관리 전환 조건', description: 'Microsoft 365 지출 정책의 우선순위, 적용 지연과 AI Builder 제외 조건을 정리했습니다.', date: '2026-10-31', status: '선택 적용 · 지원 범위 확인', path: '/knowledge/copilot/copilot-studio-2026-platform-update#studio-cost-management-transition'},
   {category: 'Microsoft Intune', title: 'Intune 2610의 Apple·Windows 관리 변경', description: 'Apple 업데이트 정책 전환, Windows 연결 주소, STIG 감사와 관리자 권한 적용 조건을 추가했습니다.', date: '2026-10-31', status: '문서 보완 · 서비스 순차 배포', path: '/knowledge/playbooks/intune-deployment-playbook#intune-2610-changes'},
   {category: 'Defender for Endpoint', title: 'Linux 백신 감사 모드와 지원 종료일', description: '자동 차단 없이 탐지하는 감사 모드와 Amazon Linux 2 ARM64의 10월 31일 지원 종료를 확인하세요.', date: '2026-10-31', status: '감사 모드 GA · 대상 환경 확인', path: '/knowledge/knowledge-center/mde-linux-onboarding#linux-antivirus-audit-mode'},
   {category: 'Microsoft Copilot', title: '10월 월간 앱·에이전트 배포 정리', description: 'Home·Projects·Workspaces와 Office 앱의 10월 제공, 11월 순차 배포, Frontier 범위를 구분했습니다.', date: '2026-10-30', status: '공식 월간 업데이트 · 기능별 상태 확인', path: `${updateGuide}#october-30-monthly-update`},

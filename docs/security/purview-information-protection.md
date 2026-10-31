@@ -197,6 +197,12 @@ Examples:
 
 ---
 
+### 레이블 게시와 암호화 권한 {/* #label-publishing-and-encryption-rights */}
+
+레이블을 배포할 대상과 암호화된 파일을 열 수 있는 대상은 따로 설정합니다. 최신 안내에서는 메일 주소가 없는 보안 그룹도 레이블 게시 대상에 사용할 수 있지만, 이 설정으로 Azure Rights Management의 파일 접근 권한까지 부여되지는 않습니다. 레이블을 받았다는 이유만으로 보호된 파일을 열 수 있다고 판단하지 마세요. 게시 대상과 암호화 권한을 각각 확인하고, 실제 사용자 계정으로 파일 열기를 시험하세요.
+
+출처: [민감도 레이블의 암호화와 사용자·그룹 지정](https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels).
+
 ### Encryption
 
 Encryption configured on a sensitivity label can remain with supported files when they leave their original location. A classification-only label does not encrypt a file. A label applied to a Team, group or site controls that container; it does not automatically label or encrypt every file inside it. The chosen rights, file format, client and authorized identity determine the result. See [label encryption](https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels) and [labels for groups and sites](https://learn.microsoft.com/en-us/purview/sensitivity-labels-teams-groups-sites).

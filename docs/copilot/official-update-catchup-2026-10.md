@@ -152,7 +152,7 @@ Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델�
 
 - **적용 상태를 단정하지 마세요:** 발표는 초기 투자가 외부 통신 같은 고위험 콘텐츠에 집중된다고 설명하며, 릴리스 상태와 테넌트에 따라 가용성과 동작이 달라질 수 있다고 명시합니다. 대표 사용자로 외부 메일 요약·추론 시나리오를 검증하고, [Microsoft 365 Copilot 방어 심층 문서](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-prompt-defense-in-depth)의 감사·Defender·Purview 통제를 함께 점검하세요.
 - **외부 발신자 식별:** Microsoft는 [CVE-2026-55145 지침](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55145)과 연결해 Outlook 외부 발신자 설정을 사용하도록 안내합니다. Exchange Online에서 `Set-ExternalInOutlook -Enabled $true` 적용 여부와 예외 목록을 검토하세요. 표시 반영에는 24~48시간이 걸릴 수 있으며, 기존 제목 삽입 메일 흐름 규칙과 중복되지 않게 해야 합니다. [Exchange PowerShell 공식 문서](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-externalinoutlook?view=exchange-ps)
-- **더 엄격한 제외가 필요하면:** Microsoft Purview DLP의 `Email is received from > External users` 조건으로 외부 메일을 Copilot의 근거·요약·인용에서 제외할 수 있습니다. 이 기능은 preview이고 메일 본문이 아니라 발신자 도메인 메타데이터를 평가하므로, 라이선스와 실제 테넌트의 배포 상태을 확인한 뒤 시뮬레이션·파일럿으로 적용하세요. [Purview DLP 공식 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview)
+- **더 엄격한 제외가 필요하면:** Microsoft Purview DLP의 `Email is received from > External users` 조건으로 외부 메일을 Copilot의 근거·요약·인용에서 제외할 수 있습니다. 이 기능은 preview이고 메일 본문이 아니라 발신자 도메인 메타데이터를 평가하므로, 라이선스와 실제 테넌트의 배포 상태를 확인한 뒤 시뮬레이션·파일럿으로 적용하세요. [Purview DLP 공식 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview)
 
 출처: [Microsoft 공식 블로그 — Building Trust-Aware Controls for AI](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/building-trust-aware-controls-for-ai-differentiated-handling-of-untrusted-conten/4562160). 이 계층은 기존 권한·DLP·Defender 통제를 대체하지 않으며, 외부 콘텐츠 식별과 감사·탐지·차단 정책을 함께 운영해야 합니다.
 
@@ -203,6 +203,10 @@ Microsoft는 1,000건 이상의 고객 참여에서 정리한 **에이전트 파
 - **성과를 사용량과 분리:** 시간 절감과 처리 속도 같은 `soft savings`는 확보된 용량으로, 과지급 방지·거래당 비용·감사 비용·벌금 회피처럼 재무제표에 연결되는 `hard savings`는 재무 성과로 구분합니다. 시작 전에 효율·품질·채택·위험 지표를 정하고, 효과가 크고 위험이 낮은 업무 2~3개를 골라 확장·중단 기준을 함께 기록하세요.
 
 출처: [Microsoft 공식 발표 — From Pilots to Programs](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/from-pilots-to-programs-a-structured-approach-to-scaling-ai-and-agents-for-real-/4566921). 이 글의 고객 사례 수치와 성숙도 조사는 방향 설정 자료이며, 개별 조직의 ROI 보장이나 제품 제공 상태를 뜻하지 않습니다.
+
+## 10월 30일 Copilot Studio 비용 관리 변경 {/* #october-30-studio-costs */}
+
+환경·에이전트 지출을 Microsoft 365 관리 센터에서 선택적으로 관리할 수 있습니다. 기존 Power Platform 설정과의 우선순위, AI Builder 제외 조건을 확인한 뒤 전환하세요. [전환 절차와 제한](./copilot-studio-2026-platform-update#studio-cost-management-transition)을 정리했습니다.
 
 ## Copilot Studio와 에이전트
 

@@ -44,6 +44,8 @@ The following is a pilot design example, not a universal Microsoft security base
 | Require the device to be at or under the Device Threat Level | Only with a configured mobile threat defense service; choose Secured/Low/Medium/High after testing signal delivery and remediation |
 | Require the device to be at or under the machine risk score | Separate Microsoft Defender for Endpoint risk evaluation; requires the Defender–Intune integration and applicable entitlement |
 
+The settings reference lists **iOS 17.0 and later** for jailbreak detection, Device Threat Level, OS version/build limits and several password settings. This setting-level minimum does not establish support for the current Company Portal or Defender app; check their current requirements separately.
+
 ### Threat integration prerequisites
 
 **Device Threat Level** is supplied by the configured mobile threat defense (MTD) service. **Machine risk score** is supplied by Microsoft Defender for Endpoint. They are distinct settings; do not treat them as interchangeable signals or require both without an intentional design. Microsoft's [example iOS/iPadOS configurations](https://learn.microsoft.com/en-us/intune/device-security/security-configurations/ios-ipados-compliance) explicitly identify the MTD dependency.

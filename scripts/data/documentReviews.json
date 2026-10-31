@@ -506,7 +506,7 @@
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
     "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "10월 30일 월간 발표의 Home·Projects·Workspaces·Autopilot 배포 단계 및 기존 설명과의 시점 차이를 대조했습니다. DLP와 메모리 보존은 월간 발표와 Learn의 차이를 구분했습니다.",
+    "scope": "이번에 대조한 항목: Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용과 Power Platform 기존 설정의 범위별 유지.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -568,16 +568,21 @@
         "title": "Copilot memory administration",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory",
         "checkedFor": "기존 Learn은 메모리 전용 보존 규칙이 없다고 명시하므로 월간 발표의 보존 기능 안내와 차이를 밝혔습니다."
+      },
+      {
+        "title": "Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
+        "checkedFor": "Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용과 Power Platform 기존 설정의 범위별 유지를 최신 공식 문서와 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Copilot Studio 2026 Platform Update, 2026 Capability Map, Customer Conversation Harness — October 2026 Preview, GitHub Copilot Harness — August 2026 GA, Platform Migration Checkpoints. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -609,10 +614,15 @@
         "title": "studio-license",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing",
         "checkedFor": "standard harness의 개별 제작자·조직 라이선스 구분과 용량 예측 기준을 확인했다."
+      },
+      {
+        "title": "리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
+        "checkedFor": "리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리를 최신 공식 문서와 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
@@ -839,7 +849,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "10월 30일 월간 발표의 Home·Projects·Workspaces·Autopilot 배포 단계 및 기존 설명과의 시점 차이를 대조했습니다. DLP와 메모리 보존은 월간 발표와 Learn의 차이를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 10월 30일 Copilot Studio 비용 관리 전환의 선택 적용과 AI Builder 제외 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1086,10 +1096,15 @@
         "title": "Copilot memory administration",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory",
         "checkedFor": "기존 Learn은 메모리 전용 보존 규칙이 없다고 명시하므로 월간 발표의 보존 기능 안내와 차이를 밝혔습니다."
+      },
+      {
+        "title": "10월 30일 Copilot Studio 비용 관리 전환의 선택 적용",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
+        "checkedFor": "10월 30일 Copilot Studio 비용 관리 전환의 선택 적용과 AI Builder 제외 조건를 최신 공식 문서와 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -1648,15 +1663,15 @@
   },
   "/knowledge/knowledge-center/intune-ios-compliance": {
     "file": "docs/knowledge-center/intune-ios-compliance.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: iOS 암호화·위협 수준·Defender 위험 점수와 사용자 안내 시험의 범위",
+    "scope": "이번에 대조한 항목: 탈옥·위협 수준·OS 버전·일부 암호 설정의 iOS 17.0 최소 조건과 개별 앱 지원 조건의 구분.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "ios-compliance",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-ios-ipados-settings",
-        "checkedFor": "탈옥·OS·MTD 위협 수준·Defender 위험 점수를 구분한다. 암호 설정 시 암호화가 시작된다. Not configured는 해당 설정을 평가하지 않는다."
+        "checkedFor": "탈옥·OS·MTD 위협 수준·Defender 위험 점수를 구분한다. 암호 설정 시 암호화가 시작된다. Not configured는 해당 설정을 평가하지 않는다. 탈옥·위협 수준·OS 버전·일부 암호 설정의 iOS 17.0 최소 조건과 개별 앱 지원 조건의 구분를 최신 공식 문서와 대조했습니다."
       },
       {
         "title": "mtd",
@@ -1670,13 +1685,13 @@
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/knowledge-center/intune-macos-usb-control": {
     "file": "docs/knowledge-center/intune-macos-usb-control.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "현재 Defender 배포 전제 조건의 macOS 15·26·27 지원과 베타 제외를 확인했습니다. 릴리스 페이지의 14 이상 문구와 차이가 있어 지원을 단정하지 않으며 Intune 지원과 분리했습니다.",
+    "scope": "이번에 대조한 항목: macOS 27 Bluetooth 권한 철회와 MDM 표시 제한, Android PTP 외 연결 모드·Xcode 전송 예외.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1703,10 +1718,15 @@
         "title": "microsoft-defender-endpoint-mac-prerequisites",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac-prerequisites",
         "checkedFor": "현재 Defender 배포 전제 조건의 macOS 15·26·27 지원과 베타 제외를 확인했습니다. 릴리스 페이지의 14 이상 문구와 차이가 있어 지원을 단정하지 않으며 Intune 지원과 분리했습니다."
+      },
+      {
+        "title": "macOS 27 Bluetooth 권한 철회와 MDM 표시 제한, Android PTP 외 연결 모드·Xcode 전송 예외",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-overview",
+        "checkedFor": "macOS 27 Bluetooth 권한 철회와 MDM 표시 제한, Android PTP 외 연결 모드·Xcode 전송 예외를 최신 공식 문서와 대조했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "본문의 제품 기능·지원 조건을 공식 자료와 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 명령을 실행하지 않았으며, 작성자가 제안한 일정·성과·평가 점수는 제품 보장이나 독립 인증으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/knowledge-center/intune-usb-whitelist": {
     "file": "docs/knowledge-center/intune-usb-whitelist.md",
@@ -2322,9 +2342,9 @@
   },
   "/knowledge/microsoft365/onedrive": {
     "file": "docs/microsoft365/onedrive.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Business Scenario, Architecture, Security. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 미라이선스 계정 일정표의 275일 eDiscovery 제공 중단과 365일 삭제 위험 구분.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2346,10 +2366,15 @@
         "title": "onedrive-retention",
         "url": "https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion",
         "checkedFor": "계정삭제시정리기간기본30일,라이선스제거와별도절차임을확인했다."
+      },
+      {
+        "title": "미라이선스 계정 일정표의 275일 eDiscovery 제공 중단",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/unlicensed-onedrive-accounts",
+        "checkedFor": "미라이선스 계정 일정표의 275일 eDiscovery 제공 중단과 365일 삭제 위험 구분를 최신 공식 문서와 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/microsoft365/overview": {
     "file": "docs/microsoft365/overview.md",
@@ -2486,15 +2511,15 @@
   },
   "/knowledge/migration/cross-tenant-sync-vs-migration": {
     "file": "docs/migration/cross-tenant-sync-vs-migration.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Decide whether to connect tenants or consolidate them, Overview, Architecture, Low Complexity, Lower Risk, Compliance Friendly, Data Remains Separate, User Experience, Administration, Copilot Readiness, Comparison Matrix, Cross-Tenant Sync, GDPR and Data Residency. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 상용·미국 정부 동일 클라우드의 사용자·그룹 지원과 21Vianet·교차 클라우드의 사용자 전용 지원.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "cross-sync",
         "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
-        "checkedFor": "동기화는 원본 인증을 유지하는 단방향 B2B 프로비저닝이다. 지원 그룹·사용자와 라이선스 조건을 대조했으며 콘텐츠 이전 기능은 아니다."
+        "checkedFor": "상용·미국 정부 동일 클라우드의 사용자·그룹 지원과 21Vianet·교차 클라우드의 사용자 전용 지원를 최신 공식 문서와 대조했습니다."
       },
       {
         "title": "copilot-requirements",
@@ -2503,7 +2528,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/migration/file-server": {
     "file": "docs/migration/file-server.md",
@@ -3814,9 +3839,9 @@
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Microsoft Purview Information Barriers, 적용 시나리오, 구현 아키텍처, 설계 원칙, Prerequisites, Segment Design, Workload Control Pattern, Teams 검증, SharePoint / OneDrive 검증, Exchange 고려사항, 정책 변경 후 사이트 보고서, Troubleshooting, Rollback Pattern, Is Information Barriers only a Teams feature?, How does Information Barriers affect Copilot readiness?. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 조직 모드별 세그먼트 수·ABP 및 숨김 계정 처리 차이와 SharePoint·OneDrive 별도 활성화.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3827,7 +3852,7 @@
       {
         "title": "ib-policies",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-policies",
-        "checkedFor": "속성 기반 세그먼트·Active정책·Security & Compliance PowerShell의 적용명령과 상태조회 절차를 대조했다."
+        "checkedFor": "조직 모드별 세그먼트 수·ABP 및 숨김 계정 처리 차이와 SharePoint·OneDrive 별도 활성화를 최신 공식 문서와 대조했습니다."
       },
       {
         "title": "ib-sharepoint",
@@ -3846,7 +3871,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/security/insider-risk": {
     "file": "docs/security/insider-risk.md",
@@ -3907,9 +3932,9 @@
   },
   "/knowledge/security/purview-information-protection": {
     "file": "docs/security/purview-information-protection.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-10-31",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Classify, protect and govern data before AI scales it, Scenario 4, Scenario 5, Information Protection Architecture, Sensitivity Labels, Encryption, Auto Labeling, Data Loss Prevention, Exchange Online, SharePoint and OneDrive, Endpoint DLP, Licensing Requirements, Best Practice, Troubleshooting, Lessons Learned. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조한 항목: 메일 주소 없는 보안 그룹의 레이블 게시 지원과 Azure Rights Management 접근 권한 분리.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3935,7 +3960,7 @@
       {
         "title": "label-encryption",
         "url": "https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels",
-        "checkedFor": "암호화설정으로열기·인쇄·복사·메일전달권한등을제어하며권한이있는사용자만복호화한다."
+        "checkedFor": "메일 주소 없는 보안 그룹의 레이블 게시 지원과 Azure Rights Management 접근 권한 분리를 최신 공식 문서와 대조했습니다."
       },
       {
         "title": "label-containers",
@@ -3979,7 +4004,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
   },
   "/knowledge/security/purview": {
     "file": "docs/security/purview.md",

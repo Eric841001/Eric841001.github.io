@@ -19,7 +19,7 @@ Microsoft는 2026년 10월 21일 고객 응대를 위한 **customer conversation
 - **관리와 비용:** 에이전트 생성 시 Agent 365에서 소유자·채널·ID·권한·도구와 사용 현황을 관리하는 방향이며, Copilot Credits 사용량 과금이 적용됩니다. 실제 지역·테넌트 메뉴, 연결 권한과 예산을 파일럿에서 확인하세요.
 - **도입 판단:** 고객 채널, 인증, 생성형 판단과 고정 절차의 경계, 사람 이관, 녹음·보존 및 실패 복구를 먼저 설계하세요. Microsoft Contact Center Intelligence 통합이 필요한 경우 기존 전화·라우팅 환경과 지원 조건을 별도로 검토합니다.
 
-출처: [Microsoft 공식 발표 — Customer conversation harness](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954). **확인일: 2026-10-29.**
+출처: [Microsoft 공식 발표 — Customer conversation harness](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954).
 
 ## 확장 가능한 에이전트 설계
 

@@ -15,6 +15,15 @@ Defender for Endpoint and Intune can provide USB governance and removable media 
 
 The design should start with audit mode, approved device requirements and user exception handling before enforcement. macOS controls must be tested carefully because user productivity, creative workflows and device ownership models vary widely.
 
+## macOS 27과 연결 방식별 제한 {/* #macos-device-control-limits */}
+
+macOS 27에서는 MDM이 Bluetooth 권한을 허용해도 사용자가 Defender의 Bluetooth 접근을 끌 수 있습니다. 이때 Bluetooth 파일 전송 제한은 작동하지 않지만 MDM에는 계속 허용 상태로 표시될 수 있습니다. 프로필 설치 상태만 보지 말고 실제 전송 차단을 시험하세요. Purview의 보호 모드도 이 권한 변경을 막지는 않습니다.
+
+Android 기기는 **PTP 모드에서만** Device Control의 제한을 받습니다. File Transfer·USB Tethering·MIDI 모드와 Xcode로 개발한 소프트웨어의 외부 기기 전송을 차단한다고 설명해서는 안 됩니다. 모든 주변기기 전송을 차단하는 기능으로 간주하지 마세요.
+
+출처: [macOS Device Control의 알려진 제한](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-overview#known-issues).
+
+
 ## 한국어 요약
 
 macOS에서 USB 저장장치의 사용을 제한할 때 확인할 Defender for Endpoint와 Intune 설정을 정리했습니다.

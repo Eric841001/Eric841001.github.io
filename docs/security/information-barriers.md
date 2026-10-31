@@ -128,6 +128,14 @@ IB should not be treated as a simple user blocking feature. It should be designe
 - 테스트 사용자별 department 또는 정책 기준 속성
 - Teams, SharePoint, OneDrive 검증 환경
 
+## 조직 모드와 적용 범위 확인 {/* #ib-mode-prerequisites */}
+
+정책을 만들기 전에 조직이 **Legacy, SingleSegment, MultiSegment** 중 어느 모드인지 확인하세요. Legacy는 최대 250개 세그먼트와 사용자당 하나의 세그먼트를 지원합니다. 새 모드는 최대 5,000개를 지원하며, 사용자 다중 세그먼트는 별도 설정이 필요합니다.
+
+Legacy에서는 기존 Exchange 주소록 정책과의 충돌, 숨김·비활성 사용자와 게스트의 Teams 적용 예외를 확인해야 합니다. SingleSegment·MultiSegment는 기존 주소록 정책에 영향을 주지 않으며 숨김 사용자에도 IB가 적용됩니다. 모드를 확인하지 않고 기존 주소록 정책을 삭제하지 마세요.
+
+Teams에 IB를 구성했더라도 SharePoint·OneDrive는 별도로 활성화해야 합니다. Teams와 연결된 사이트의 파일까지 자동으로 보호된다고 가정하지 마세요. [모드별 사전 조건과 서비스별 활성화](https://learn.microsoft.com/en-us/purview/information-barriers-policies)를 확인하세요.
+
 ## Segment Design
 
 세그먼트는 통신·협업 제한 정책을 적용할 사용자 집합입니다. 부서 외의 속성을 기준으로 정할 수도 있습니다.

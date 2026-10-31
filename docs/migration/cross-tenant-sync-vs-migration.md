@@ -176,6 +176,8 @@ Workload content remains in its original tenant; selected identity attributes ar
 
 ---
 
+Group support also depends on the cloud pair: same-cloud commercial and US Government synchronization support users and groups; same-cloud 21Vianet and the documented cross-cloud pairs support users only. Do not apply the group scenario to every cloud combination. See [supported cloud pairs](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#frequently-asked-questions).
+
 ### Architecture
 
 <div aria-label="Cross-tenant synchronization architecture" className="kc-journey-map">

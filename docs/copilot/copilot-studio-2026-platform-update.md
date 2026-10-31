@@ -125,7 +125,7 @@ Work IQ가 추가된 새 에이전트는 기본적으로 사용 가능한 모든
 
 ## GitHub Copilot Harness — August 2026 GA
 
-Checked October 2, 2026 against Microsoft's August 3 announcement. The GitHub Copilot harness is generally available for complex, multi-step business processes. Copilot Chat and Standard remain separate supported choices.
+Microsoft announced the GitHub Copilot harness as generally available on August 3, 2026 for complex, multi-step business processes. Copilot Chat and Standard remain separate supported choices.
 
 | Harness | Planning focus |
 |---|---|
@@ -272,6 +272,17 @@ Check model availability separately for Microsoft Copilot and each Copilot Studi
     <span>Update test sets for document quality, analysis accuracy, task completion and escalation behavior.</span>
   </div>
 </div>
+
+## Copilot Studio 비용 관리 전환 {/* #studio-cost-management-transition */}
+
+Microsoft 365 관리 센터에서 환경·에이전트용 지출 정책을 만들면 해당 범위의 기존 Power Platform 용량 할당과 연결된 청구 계획보다 우선 적용됩니다. 별도 이전 절차는 없으며, 정책 적용에 최대 12분이 걸릴 수 있습니다.
+
+- 처음에는 **Specific environments**로 범위를 제한하세요. **All environments**는 이후 추가되는 환경까지 포함합니다.
+- 앱·워크플로는 개별 선택 대신 환경 단위로 관리합니다. **AI Builder를 사용하는 환경·에이전트·워크플로는 이 정책으로 옮기지 마세요.** AI Builder 사용량은 지원하지 않습니다.
+- 리소스 정책이 사용자 정책보다 우선합니다. 같은 유형이 겹치면 해당 에이전트·사용자의 한도가 더 높은 정책이 적용되며, 한도를 합산하지 않습니다.
+- 환경을 정책에서 제외하거나 정책을 삭제하면 기존 Power Platform 설정이 다시 적용됩니다. 관리 역할은 자동으로 이전되지 않으므로 별도로 확인하세요.
+
+출처: [Copilot Studio 비용 관리 전환과 적용 제한](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs).
 
 ## Release Gate Model
 
