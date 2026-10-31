@@ -11,6 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [10월 30일 월간 배포 정리](#october-30-monthly-update) · 10월 제공·11월 순차 배포·미리 보기 구분
 - [10월 27일 앱·API 변경](#app-updates-october-27) · Current Channel·플랫폼별 순차 배포
 - [10월 26일 Frontier 범위 확대](#frontier-expanded-previews) · 11월부터 대상 공개 미리 보기 확대
 - [10월 개발자 기능 변경](#developer-updates-october-2026) · 매니페스트·beta API
@@ -19,6 +20,21 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 10월 30일 Microsoft Copilot 월간 배포 정리 {/* #october-30-monthly-update */}
+
+Microsoft의 10월 월간 업데이트는 이미 발표된 기능을 앱별 실제 배포 상태와 함께 다시 묶었습니다. 아래의 `10월 배포`, `11월 순차 배포`, `Frontier`와 `public preview`는 서로 같은 제공 상태가 아닙니다. 테넌트의 라이선스·관리 설정·릴리스 채널과 실제 메뉴 표시를 확인하세요.
+
+| 범위 | 공식 상태와 운영 확인 |
+|---|---|
+| Copilot Home·Projects | Chat과 Cowork를 합친 Home은 10월 Frontier 배포 후 11월 전 세계 순차 배포입니다. Projects는 Cowork에 10월 배포됐고 Copilot Chat에는 11월 순차 배포입니다. 기존 대화·작업·파일을 새 프로젝트 문맥으로 가져올 때 권한과 공유 범위를 다시 확인합니다. |
+| Autopilot·Skills | Autopilot은 11월 Frontier 배포 예정이며 GA가 아닙니다. Copilot Chat에서 만드는 사용자 스킬도 11월 순차 배포입니다. 지속 실행 작업에는 승인·접근 제어·비용·Agent 365 관리를 파일럿 기준으로 둡니다. |
+| Cowork·Workspaces | 역할별 플러그인·작업 카탈로그·이전 대화 참조는 10월 배포됐습니다. OneNote·Planner 기능은 10월 Frontier 후 11월 전 세계 순차 배포입니다. Workspaces의 Office 파일 편집은 10월 Frontier 후 2027년 1월 전 세계 배포 예정이며, 오디오 개요의 새 자료 형식과 레이블 상속은 11월 순차 배포입니다. |
+| Excel·PowerPoint·Word | Excel 정리 스킬, PowerPoint의 Sonnet 5.5·Brand Kit·대화형 슬라이드·스킬, Word의 법률 플러그인·문서별 디자인·Markdown 지원은 10월 배포로 안내됐습니다. Excel 회계 스킬은 10월 Frontier 후 11월 전 세계, 대화형 캔버스는 10월 Insiders 후 11월 전 세계 순차 배포입니다. 생성 결과와 재무·법률 판단은 담당자가 원문·수치·서식을 검토합니다. |
+| Teams·GCC | 대화 내용을 저장하지 않는 Teams 지능형 회의 요약은 5월 public preview 후 10월 전 세계 배포로 안내됐습니다. GCC의 Word·Excel·PowerPoint 편집도 10월 배포입니다. 회의 녹음·요약 정책, 사용자 Copilot 라이선스와 정부 클라우드별 실제 제공 상태를 확인합니다. |
+| Purview | Copilot 메모리 보존 구성과 Cowork DLP 확대가 10월 항목에 포함됐습니다. 월간 발표는 Cowork DLP를 public preview로 설명하지만 현재 Learn 문서는 Cowork를 지원 대상에 포함합니다. 또한 기존 메모리 관리 문서는 메모리 전용 보존 정책이 없다고 안내하므로, 새 보존 설정이 실제 테넌트와 최신 Learn 문서에 나타나기 전에는 GA 통제로 간주하지 않습니다. |
+
+출처: [Microsoft 공식 월간 업데이트 — What’s New in Microsoft Copilot | October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528), [Copilot·Cowork DLP 지원 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory). 월간 글의 일정은 변경될 수 있으며, Purview의 발표·현재 문서가 다른 항목은 실제 관리 화면과 최신 문서를 함께 확인합니다.
 
 ## 10월 27일 앱·API 변경 {/* #app-updates-october-27 */}
 

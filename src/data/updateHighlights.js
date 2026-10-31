@@ -1,11 +1,14 @@
 // Shared by home highlights and document update notices.
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
+export const verifiedOn = '2026-10-31';
 export const modelUpdate = {
-  title: 'GPT-6.1 Sol · Claude Sonnet 5.5',
-  date: '2026-09-30',
-  path: `${updateGuide}#model-availability`,
+  title: 'Claude Sonnet 5.5 · PowerPoint 배포',
+  date: '2026-10-30',
+  path: `${updateGuide}#october-30-monthly-update`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft Copilot', title: '10월 월간 앱·에이전트 배포 정리', description: 'Home·Projects·Workspaces와 Office 앱의 10월 제공, 11월 순차 배포, Frontier 범위를 구분했습니다.', date: '2026-10-30', status: '공식 월간 업데이트 · 기능별 상태 확인', path: `${updateGuide}#october-30-monthly-update`},
+  {category: 'Microsoft Purview', title: 'Cowork DLP와 Copilot 메모리 보존 확인', description: '월간 발표와 현재 Learn 문서의 제공 상태 차이를 구분하고 실제 정책·관리 화면 확인 항목을 추가했습니다.', date: '2026-10-30', status: '문서 불일치 · 테넌트 검증 필요', path: '/knowledge/copilot/copilot-cowork-cost-governance#october-2026-rollout'},
   {category: 'Microsoft Purview', title: '정보 장벽 적용 후 검색·Copilot 결과 확인', description: 'SharePoint 모드에 따라 검색 결과 표시와 실제 자료 접근 차단이 다르게 작동하는 조건을 보완했습니다.', date: '2026-10-29', status: '문서 보완 · 모드별 조건', path: '/knowledge/security/information-barriers'},
   {category: 'Microsoft 365 Licensing', title: 'E3·E5의 Intune 포함 기능 보완', description: '2026년 상용 패키지 개편의 Remote Help·Plan 2와 E5 추가 기능을 비교표에 반영했습니다.', date: '2026-10-29', status: '비교 자료 보완', path: '/knowledge/licensing/july-2026-microsoft-licensing-update#commercial-packaging-2026'},
   {category: 'SharePoint · OneDrive', title: '비관리 기기의 접근 제한 조건 수정', description: '기존 로그인 세션과 모든 클라이언트 대상 설정, 미리보기 예외를 구분했습니다.', date: '2026-10-29', status: '적용 조건 수정', path: '/knowledge/knowledge-center/onedrive-limited-access-read-only'},

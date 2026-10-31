@@ -78,6 +78,18 @@ Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)�
 
 플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 6월 발표에서는 DLP를 출시 예정으로 안내했지만, 현재 Purview 지원표에는 Cowork의 지원 기능으로 표시되어 있습니다. 적용할 정책과 자료 유형을 확인하고 실제 차단 동작을 시험하세요. 플러그인의 제공 여부는 해당 제공자의 현재 안내를 따릅니다. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
+### 2026년 10월 배포 점검 {/* #october-2026-rollout */}
+
+10월 30일 Microsoft 월간 업데이트는 Cowork와 연결된 기능의 제공 시점을 다음과 같이 구분했습니다. Cowork 자체의 GA와 개별 플러그인·Workspaces 기능의 배포 상태를 혼동하지 마세요.
+
+- **10월 배포:** 역할별 플러그인, 작업 카탈로그, 이전 Copilot Chat·Cowork 작업 참조가 10월 배포로 안내됐습니다. 사용자에게 보이는 항목과 플러그인별 라이선스·연결 권한은 별도로 확인합니다.
+- **10월 Frontier → 11월 전 세계:** OneNote·Planner 기능과 Audio Overview의 새 자료 형식·민감도 레이블 상속은 단계적 배포입니다. Frontier 결과를 전사 GA 근거로 사용하지 않습니다.
+- **Workspaces:** 기존 Notebooks가 협업형 Workspaces로 전환되며, Office 파일 직접 편집은 10월 Frontier 후 **2027년 1월** 전 세계 배포 예정입니다. JPG·PNG·CSV·TSV 참조 지원은 10월 배포 항목입니다.
+- **Purview DLP:** 월간 글은 Cowork DLP 확대를 10월 public preview로 안내하지만, 현재 DLP Learn 문서는 Cowork를 정책 적용 대상에 포함합니다. 지원되는 조건·작업과 최대 4시간의 정책 반영 시간을 확인하고, 민감도 레이블 파일·메일, 프롬프트의 민감정보 유형, 외부 웹 검색 차단을 각각 시험합니다.
+- **메모리 보존:** 월간 글은 Copilot 메모리 보존 구성을 10월 배포로 소개하지만, 현재 Copilot 메모리 관리 문서는 메모리 전용 보존 규칙이 아직 없다고 설명합니다. 관리 화면과 최신 문서가 일치하기 전에는 메모리 보존을 운영 통제로 가정하지 말고, 일반 Copilot 상호작용 보존과 구분합니다.
+
+출처: [What’s New in Microsoft Copilot | October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528), [Microsoft Purview DLP for Microsoft 365 Copilot and Cowork](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory), [Copilot·AI 앱 상호작용 보존](https://learn.microsoft.com/en-us/purview/retention-policies-copilot).
+
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
 Microsoft announced the Power Platform Admin (preview) plugin for Cowork in October 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
