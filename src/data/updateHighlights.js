@@ -1,6 +1,5 @@
 // Shared by home highlights and document update notices.
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
-export const verifiedOn = '2026-10-31';
 export const modelUpdate = {
   title: 'Claude Sonnet 5.5 · PowerPoint 배포',
   date: '2026-10-30',

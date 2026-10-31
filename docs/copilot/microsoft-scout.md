@@ -1,16 +1,16 @@
 ---
 id: microsoft-scout
 title: Microsoft Autopilot (formerly Scout)
-description: Microsoft Autopilot (formerly Scout), private-preview availability and proactive personal-agent architecture with identity, permissions and governance boundaries.
+description: Microsoft Autopilot (formerly Scout), preview rollout and proactive personal-agent architecture with identity, permissions and governance boundaries.
 sidebar_label: Autopilot / Scout
 toc_max_heading_level: 2
 ---
 
 # Microsoft Autopilot (formerly Scout)
 
-## Current name and availability — 2026-10-29 {/* #current-name-and-availability--2026-10-25 */}
+## Current name and availability — 2026-10-31 {/* #current-name-and-availability--2026-10-25 */}
 
-Microsoft announced **Autopilot, previously called Scout**, on 2026-09-25 and described expansion to **private preview**, not general availability. See [the official announcement](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/). Existing Scout URLs and section anchors are retained for older links. The guide uses the current name while retaining earlier Scout URLs. Architectural patterns below are not a promise that every listed action is available in a production tenant.
+Microsoft announced **Autopilot, previously called Scout**, on 2026-09-25 as an expanded private preview. The [October 30 monthly update](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528) subsequently announced a **November Frontier rollout**. This is a planned preview expansion, not general availability or a guarantee that it is already enabled in your tenant. See [the official announcement](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/). Existing Scout URLs and section anchors are retained for older links. The guide uses the current name while retaining earlier Scout URLs. Architectural patterns below are not a promise that every listed action is available in a production tenant.
 
 For a pilot, confirm eligibility, identity, permissions, approval boundaries, audit visibility and the current commercial/consumption terms. A proposed coordinator/specialist integration remains a design example until its actual connectors and runtime are validated.
 
@@ -117,7 +117,7 @@ The announcement describes a cloud-hosted agent with its own identity, memory, c
 
 ## Copilot vs Autopilot {/* #copilot-vs-scout */}
 
-| Area | Copilot experiences | Autopilot private preview |
+| Area | Copilot experiences | Autopilot preview |
 |---|---|---|
 | Starting work | Interactive chat, delegated tasks or configured schedules, depending on the experience | User-defined role, goal and boundaries for persistent work |
 | Scheduled work | [Scheduled prompts](https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts) support recurring Copilot interactions | Recurring work is included in the announcement’s examples |

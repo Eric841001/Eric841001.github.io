@@ -31,7 +31,7 @@ Microsoft의 10월 월간 업데이트는 이미 발표된 기능을 앱별 실�
 | Autopilot·Skills | Autopilot은 11월 Frontier 배포 예정이며 GA가 아닙니다. Copilot Chat에서 만드는 사용자 스킬도 11월 순차 배포입니다. 지속 실행 작업에는 승인·접근 제어·비용·Agent 365 관리를 파일럿 기준으로 둡니다. |
 | Cowork·Workspaces | 역할별 플러그인·작업 카탈로그·이전 대화 참조는 10월 배포됐습니다. OneNote·Planner 기능은 10월 Frontier 후 11월 전 세계 순차 배포입니다. Workspaces의 Office 파일 편집은 10월 Frontier 후 2027년 1월 전 세계 배포 예정이며, 오디오 개요의 새 자료 형식과 레이블 상속은 11월 순차 배포입니다. |
 | Excel·PowerPoint·Word | Excel 정리 스킬, PowerPoint의 Sonnet 5.5·Brand Kit·대화형 슬라이드·스킬, Word의 법률 플러그인·문서별 디자인·Markdown 지원은 10월 배포로 안내됐습니다. Excel 회계 스킬은 10월 Frontier 후 11월 전 세계, 대화형 캔버스는 10월 Insiders 후 11월 전 세계 순차 배포입니다. 생성 결과와 재무·법률 판단은 담당자가 원문·수치·서식을 검토합니다. |
-| Teams·GCC | 대화 내용을 저장하지 않는 Teams 지능형 회의 요약은 5월 public preview 후 10월 전 세계 배포로 안내됐습니다. GCC의 Word·Excel·PowerPoint 편집도 10월 배포입니다. 회의 녹음·요약 정책, 사용자 Copilot 라이선스와 정부 클라우드별 실제 제공 상태를 확인합니다. |
+| Teams·GCC | 회의 대화록을 저장하지 않는 Teams 지능형 회의 요약은 5월 public preview 후 10월 전 세계 배포로 안내됐습니다. GCC의 Word·Excel·PowerPoint 편집도 10월 배포입니다. 회의 녹음·요약 정책, 사용자 Copilot 라이선스와 정부 클라우드별 실제 제공 상태를 확인합니다. |
 | Purview | Copilot 메모리 보존 구성과 Cowork DLP 확대가 10월 항목에 포함됐습니다. 월간 발표는 Cowork DLP를 public preview로 설명하지만 현재 Learn 문서는 Cowork를 지원 대상에 포함합니다. 또한 기존 메모리 관리 문서는 메모리 전용 보존 정책이 없다고 안내하므로, 새 보존 설정이 실제 테넌트와 최신 Learn 문서에 나타나기 전에는 GA 통제로 간주하지 않습니다. |
 
 출처: [Microsoft 공식 월간 업데이트 — What’s New in Microsoft Copilot | October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528), [Copilot·Cowork DLP 지원 문서](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory). 월간 글의 일정은 변경될 수 있으며, Purview의 발표·현재 문서가 다른 항목은 실제 관리 화면과 최신 문서를 함께 확인합니다.
@@ -142,7 +142,7 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 ## 10월 9일 Copilot 앱·Notebooks 업데이트
 
 - **Office in Copilot:** Copilot 앱의 Chat 또는 Cowork에서 시작한 Word 문서, Excel 통합 문서, PowerPoint 프레젠테이션을 대화와 나란히 열어 직접 편집하고 공동 작성할 수 있습니다. 파일은 OneDrive에 저장되어 서식, 공유 권한, 버전 기록, 민감도 레이블과 규정 준수 정책을 이어갑니다. Microsoft는 10월 9일 게시 시점에 Frontier 고객 대상 배포로 안내했으므로, 일반 공급으로 간주하지 말고 대상 사용자에게 Chat·Cowork 진입점과 공동 편집이 실제 표시되는지 확인하세요. [Office in Copilot 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230)
-- **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 10월 9일 발표에서 새 화면·작업 위임·모델 선택·Office 편집·대화형 보고서는 Frontier, 참조 파일 형식 확대와 생성물 추천은 일반 공급으로 구분했습니다. 노트북 자동 생성과 예약 작업은 이후 수 주 내 제공 예정이었습니다. 기능별 표시 여부와 라이선스·저장소를 확인하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
+- **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 10월 9일 발표에서 새 화면·작업 위임·모델 선택·Office 편집·대화형 보고서는 Frontier, 참조 파일 형식 확대와 생성물 추천은 일반 공급으로 구분했습니다. 노트북 자동 생성과 예약 작업은 이후 수 주 내 제공 예정이었습니다. 기능별 표시 여부와 라이선스·저장소를 확인하세요. 이후 10월 30일에는 Workspaces로의 전환과 Office 편집의 2027년 1월 전 세계 배포 계획이 발표됐습니다. [월간 배포 정리](#october-30-monthly-update)를 함께 확인하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
 
 두 업데이트 모두 기존 Office 파일의 권한과 공동 작업 경계를 그대로 사용하므로, 파일럿에서는 새 파일 생성뿐 아니라 기존 파일 열기, 외부 공유, 민감도 레이블, 버전 복원까지 함께 점검하세요.
 
