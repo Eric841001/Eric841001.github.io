@@ -64,7 +64,7 @@ Microsoft의 10월 월간 업데이트는 이미 발표된 기능을 앱별 실�
 
 Microsoft는 **2026년 11월부터** Frontier에 새 Outlook for Windows, OneDrive, SharePoint, Microsoft Teams의 대상 공개 미리 보기 기능을 포함한다고 발표했습니다. Frontier는 일반 공급 기능의 Standard release 또는 Deferred release와 별도로 운영되는 선택형 미리 보기 경로입니다.
 
-- **관리자 등록:** 테넌트 전체를 등록할 필요는 없습니다. IT·혁신 팀 같은 소규모 사용자나 그룹부터 등록할 수 있으며, 기존에 Copilot Frontier에 등록된 사용자는 다시 등록하지 않아도 11월부터 대상 제품의 미리 보기를 받을 수 있습니다.
+- **관리자 등록:** 테넌트 전체를 등록할 필요는 없습니다. IT 담당자 등 소수 사용자나 그룹부터 등록할 수 있으며, 기존에 Copilot Frontier에 등록된 사용자는 다시 등록하지 않아도 11월부터 대상 제품의 미리 보기를 받을 수 있습니다.
 - **라이선스 조건:** Frontier 등록 자체에 Microsoft Copilot 라이선스가 필수인 것은 아닙니다. 다만 사용자는 시험할 제품의 라이선스가 필요합니다. Copilot 관련 기능은 Microsoft Copilot 접근 권한, Teams 기능은 Teams가 포함된 라이선스처럼 제품별 조건을 별도로 확인해야 합니다.
 - **릴리스 설정과 분리:** Targeted release 사용자가 자동 등록되지는 않습니다. Frontier 공개 미리 보기는 Standard·Deferred release보다 앞선 필수 단계도 아니며, 일부 미리 보기는 일반 공급으로 이어지지 않을 수 있습니다.
 - **운영 권고:** Message center에서 프로그램에 새로 포함되는 기능을 확인하고, 별도 시험 그룹에서 권한·데이터 처리·지원 절차를 검증한 뒤 확대하세요. 기존 M365 Insiders (for business)는 프로덕션 빌드 검증에 계속 사용하되, Frontier 대상 기능은 관리자 등록을 따로 확인합니다.
@@ -135,7 +135,7 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 
 - **GPT-6.1 Sol·Claude Sonnet 5.5:** 9월 30일부터 Cowork와 Copilot Studio에 사용량 기반 과금(UBB)으로 배포를 시작했습니다. Word·Excel·PowerPoint·Chat은 Microsoft 365 Copilot 사용자 구독 라이선스(USL) 범위에서 다음 주부터 단계적으로 배포한다고 안내했습니다. Claude 또는 일부 GPT 화면을 사용하려면 조직의 Anthropic·OpenAI 하위 처리자 설정을 확인해야 하며, 앱 내 모델별 사용 한도가 적용될 수 있습니다. [모델 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801)
 - **Microsoft 플러그인 레지스트리:** Microsoft·파트너·조직 제작 플러그인을 Copilot 앱과 Microsoft 365 앱에서 함께 찾고 배포하는 통합 카탈로그는 9월 30일 발표와 함께 순차 배포를 시작했습니다. 지원 화면과 커넥터마다 제공 시점이 다릅니다. 관리자는 Microsoft 365 관리 센터와 Agent 365에서 플러그인을 한 번 승인하고 중앙 관리할 수 있습니다. 도입 전에는 게시자 신뢰, 연결 권한, 데이터 처리 위치, 사용자 공개 범위를 승인 기준에 포함하세요. [플러그인 레지스트리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
-- **월간 배포 확인:** Teams·Outlook의 Copilot UI, 프롬프트 안 `/` 에이전트·`@` 스킬 호출, 스캔 PDF 검색, Android Office 편집, 모바일 Record가 9월 배포 항목으로 정리됐습니다. 관리 기능에는 Copilot Search의 신뢰할 수 있는 SharePoint 사이트를 최대 100개 지정하는 중앙 관리와 집계 단위 Pulse 설문이 포함됩니다. Edge 새 탭 통합은 10월 예정이며 일정은 변경될 수 있습니다. [9월 공식 월간 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107)
+- **월간 배포 확인:** Teams·Outlook의 Copilot UI, 프롬프트 안 `/` 에이전트·`@` 스킬 호출, 스캔 PDF 검색, Android Office 편집, 모바일 Record가 9월 배포 항목으로 정리됐습니다. 관리 기능에는 Copilot Search의 신뢰할 수 있는 SharePoint 사이트를 최대 100개 지정하는 중앙 관리와 집계 단위 Pulse 설문이 포함됩니다. 당시 Edge 새 탭 통합은 10월로 예고됐습니다. 이 발표만으로 현재 배포 완료를 판단하지 마세요. [9월 공식 월간 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107)
 
 월간 블로그의 배포 표현은 개별 테넌트의 즉시 사용 가능성을 보장하지 않습니다. 기능 표시, 라이선스, 하위 처리자·연결 정책과 메시지 센터 공지를 함께 확인하세요.
 
@@ -175,7 +175,7 @@ Microsoft는 계약 검토·초안 작성·수정 내용 표시·검토 지침 �
 
 Microsoft는 Copilot이 요약·타임라인·대시보드·비교 같은 **대화형 슬라이드**를 만들고 프롬프트로 수정하는 기능의 단계적 배포를 발표했습니다. 정적 슬라이드 생성과 달리 발표자와 청중이 단계, 필터, 데이터 포인트를 직접 탐색할 수 있습니다.
 
-- **배포 상태:** Windows·Mac의 Current Channel 및 Monthly Enterprise Channel과 PowerPoint 웹은 10월 중순 배포를 시작해 10월 말 완료 예정입니다. Frontier, Microsoft 365 Insiders Beta Channel, Current Channel (Preview)는 지원 범위에 따라 먼저 사용할 수 있으므로, 전면 배포 완료로 간주하지 말고 대표 사용자에게 `Interactive Slide` 버튼과 Copilot 스킬이 실제 표시되는지 확인하세요.
+- **배포 상태:** Windows·Mac의 Current Channel 및 Monthly Enterprise Channel과 PowerPoint 웹은 10월 중순 배포 시작, 10월 말 완료 일정으로 발표됐습니다. Frontier, Microsoft 365 Insiders Beta Channel, Current Channel (Preview)는 지원 범위에 따라 먼저 사용할 수 있으므로, 전면 배포 완료로 간주하지 말고 대표 사용자에게 `Interactive Slide` 버튼과 Copilot 스킬이 실제 표시되는지 확인하세요.
 - **라이선스와 공유:** Copilot in PowerPoint를 사용할 수 있는 적격 개인·상용 사용자가 대상이며 Microsoft 365 Copilot Basic·Premium을 포함합니다. 대화형 슬라이드 전용 추가 라이선스는 없고, 공유받은 사용자는 Copilot 라이선스가 없어도 상호작용을 탐색할 수 있습니다.
 - **플랫폼 차이:** 생성·수정은 Copilot 앱과 Windows·Mac·웹 PowerPoint에서 지원합니다. 열람 상호작용은 여기에 iPad와 Teams PowerPoint Live가 추가되지만, iPhone·Android·인쇄·PDF 내보내기에서는 비대화형 이미지로 표시됩니다. Mac 발표자 보기와 Teams의 발표자-청중 상호작용 동기화도 아직 지원되지 않습니다.
 - **운영 시 확인할 점:** 슬라이드는 캔버스에서 직접 편집하지 않고 Copilot 프롬프트로 갱신합니다. Work IQ로 Excel·프로젝트 문서를 근거로 삼을 수 있으므로 원본 파일 권한과 민감도 레이블을 검증하고, 생성된 수치·레이아웃·동작을 발표 전 사람이 확인하세요. 대화형 요소는 다른 콘텐츠나 서비스에 연결되지 않는 격리된 웹 보기로 표시됩니다.

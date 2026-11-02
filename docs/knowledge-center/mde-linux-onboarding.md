@@ -49,7 +49,7 @@ Support depends on the **distribution, exact version, architecture and Defender 
 
 ## 10월 지원 변경과 업데이트 {/* #october-2026-support */}
 
-- **Amazon Linux 2 ARM64:** Defender의 공식 지원 종료일은 **2026년 10월 31일**입니다. 마지막 지원 버전은 `101.25122.0004`이며 같은 날 만료됩니다. 해당 서버의 이전 완료 여부를 확인하고, 남은 서버는 지원되는 배포판으로 전환하세요. 이 공지를 Amazon Linux 2의 모든 아키텍처가 같은 날 종료된다는 뜻으로 해석하지 마세요.
+- **Amazon Linux 2 ARM64:** Defender의 공식 지원 종료일은 **2026년 10월 31일**입니다. 마지막 지원 버전 `101.25122.0004`도 같은 날 만료됐습니다. 해당 서버의 이전 완료 여부를 확인하고, 남은 서버는 지원되는 배포판으로 전환하세요. 이 공지를 Amazon Linux 2의 모든 아키텍처가 같은 날 종료된다는 뜻으로 해석하지 마세요.
 - **Linux 데스크톱:** 지원 범위가 **Public Preview**로 확대됐습니다. 서버 지원 배포판을 기준으로 배포판·커널·아키텍처 조건을 확인하세요. 데스크톱에는 Defender for Endpoint P2 권한이 필요하고, 서버에는 Defender for Servers 등의 서버용 라이선스가 필요합니다. Microsoft 365 E5·E7의 사용자 권한만으로 서버 라이선스를 충족한다고 판단하지 마세요.
 - **10월 Linux 빌드:** `101.26091.0004`는 Azure Linux 4 지원과 TCP 소켓 바인딩 이벤트를 추가합니다. 이벤트 수집은 한 달에 걸쳐 순차 적용되며, 활성화된 기기에서는 Advanced Hunting의 `DeviceNetworkEvents`에서 `ActionType`이 `ListeningConnectionCreated`인 기록을 확인할 수 있습니다. 업데이트 직후 모든 기기에 기록이 나타난다고 가정하지 마세요.
 

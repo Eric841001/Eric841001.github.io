@@ -52,6 +52,11 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
   </div>
 </section>
 
+## memberOf 그룹을 정책 대상으로 사용하는 경우 {/* #memberof-policy-targeting */}
+
+`memberOf` 규칙을 사용하는 동적 그룹은 **2026년 11월 3일 이후 구성원이 갱신되지 않습니다**. 이 그룹을 조건부 액세스 정책의 포함·제외 대상으로 사용한다면, 구성원 변경이 정책 대상에 반영되지 않을 수 있습니다. [ID 설계 문서의 전환 안내](../azure/identity#memberof-retirement-2026)에 따라 그룹 규칙을 바꾸고, 전환 전후 대상 사용자와 로그인 결과를 비교하세요. 긴급 접근 계정의 제외 설정도 함께 확인합니다.
+
+
 ## License and rollout verification — 2026-10-25
 
 [Microsoft's overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) requires **Entra ID P1** for Conditional Access; Business Premium also includes access. **User/sign-in risk policies require P2**, as described in [Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing).

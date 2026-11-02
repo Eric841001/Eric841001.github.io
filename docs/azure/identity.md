@@ -44,6 +44,14 @@ Azure 리소스에 접근하는 사용자와 애플리케이션의 권한을 정
 
 Entra ID, Azure RBAC, PIM, Conditional Access, 관리 ID와 서비스 주체의 용도를 구분하고 필요한 권한만 부여합니다.
 
+## memberOf 규칙 종료 안내 {/* #memberof-retirement-2026 */}
+
+Microsoft Entra ID의 동적 멤버십 규칙에 쓰는 `memberOf` 미리 보기가 종료됩니다. **2026년 11월 3일 이후** 이 연산자를 사용하는 동적 그룹, 동적 관리 단위, 권한 관리 자동 할당 정책은 더 이상 갱신되지 않고 마지막 상태로 남습니다. 그룹이 자동으로 삭제되거나 기존 접근 권한이 모두 회수되는 것은 아닙니다.
+
+관리자는 `memberOf`를 사용하는 구성을 찾아 지원되는 속성 기반 규칙이나 직접 할당 방식으로 전환하세요. 변경 후에는 실제 구성원, 관리 범위와 접근 패키지 할당을 확인합니다. 조건부 액세스 대상, Teams·SharePoint 접근, 그룹 기반 라이선스도 이전 구성원을 계속 참조하지 않는지 점검하세요. 모든 동적 그룹이 종료되는 것은 아니며, 여기서는 `memberOf` 연산자를 사용하는 구성만 다룹니다.
+
+출처: [Microsoft Learn — memberOf 미리 보기 종료와 전환 절차](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of#migrate-before-the-preview-ends).
+
 ## Business Scenario
 
 - Secure Azure administrator access

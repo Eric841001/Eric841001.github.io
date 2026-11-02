@@ -295,9 +295,9 @@
   },
   "/knowledge/azure/identity": {
     "file": "docs/azure/identity.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-02",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 인증·권한 설계와 시험 증거의 의미를 구분하고 검증 결과를 과장한 문구 수정",
+    "scope": "memberOf 미리 보기 종료일, 마지막 상태 유지와 그룹·관리 단위·자동 할당 정책의 전환 절차를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -314,6 +314,11 @@
         "title": "ca-overview",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
         "checkedFor": "User,device,app,risk,location inputs; compliant grant separatefromOS; user/signinriskP2; sessioncontrols integration."
+      },
+      {
+        "title": "memberOf preview retirement",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "checkedFor": "memberOf 미리 보기 종료일, 마지막 상태 유지와 그룹·관리 단위·자동 할당 정책의 전환 절차를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -877,9 +882,9 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-02",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 10월 30일 월간 발표의 기능별 제공 시점과 9월 SharePoint·OneDrive 및 플러그인 레지스트리의 배포 시작을 구분했습니다. 메모리 보존·DLP의 발표와 Learn 문서 간 차이도 유지했습니다.",
+    "scope": "10월 배포 목표를 현재 완료 사실로 오해하지 않도록 과거 발표 시점을 명시하고 관리자 등록 문구를 다듬었습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1833,9 +1838,9 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-02",
     "kind": "기술·운영 가이드",
-    "scope": "Amazon Linux 2 ARM64 지원 종료일과 Linux 백신 감사 모드의 GA·최소 버전·실시간 탐지 및 자동 조치 차이를 대조했습니다.",
+    "scope": "Amazon Linux 2 ARM64의 마지막 지원 버전 101.25122.0004와 2026-10-31 만료일을 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3612,9 +3617,9 @@
   },
   "/knowledge/security/conditional-access": {
     "file": "docs/security/conditional-access.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-02",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Design Conditional Access as the policy engine for Zero Trust and Copilot-ready Microsoft 365, License and rollout verification — 2026-10-25, Microsoft 관리형 정책과 위험 해결, Executive Summary, 한국어 요약, Why Conditional Access Matters, Zero Trust Evaluation Flow, Mobile policy control change — 2026-10-25, Policy Layer Model, Recommended Enterprise Policies, Deployment Journey, Exception and Lockout Control, Copilot Access Control. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "memberOf 그룹 갱신 중단이 조건부 액세스 포함·제외 대상에 미치는 영향을 공식 종료 안내와 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3666,6 +3671,11 @@
         "title": "emergency",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
         "checkedFor": "차단 CA 제외와 별도 피싱 방지 인증·로그인 감시·정기 접속 시험을 대조했다."
+      },
+      {
+        "title": "memberOf preview retirement",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "checkedFor": "memberOf 그룹 갱신 중단이 조건부 액세스 포함·제외 대상에 미치는 영향을 공식 종료 안내와 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3699,9 +3709,9 @@
   },
   "/knowledge/security/defender-for-endpoint": {
     "file": "docs/security/defender-for-endpoint.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-02",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 기능·운영체제별 감사 설정과 웹 콘텐츠 필터링의 범주 없는 정책을 구분했습니다.",
+    "scope": "Amazon Linux 2 ARM64의 2026-10-31 지원 종료를 현재 시점의 완료형으로 고쳤습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
