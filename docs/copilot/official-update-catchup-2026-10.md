@@ -1,16 +1,17 @@
 ---
 id: official-update-catchup-2026-10
-title: Copilot 기능·배포 변경 — 2026년 10월
-sidebar_label: 2026년 10월 기능 변경
-description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, 12월 시행 예정 구매·과금 변경.
+title: Copilot 기능·배포 변경 — 2026년 10~11월
+sidebar_label: 2026년 10~11월 기능 변경
+description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, 11월 앱·관리 기능과 12월 시행 예정 구매·과금 변경.
 ---
 
-# Copilot 기능·배포 변경 — 2026년 10월
+# Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 초까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 4일 앱·관리 기능 변경](#app-updates-november-4) · Current Channel·플랫폼별 안전 배포
 - [10월 30일 월간 배포 정리](#october-30-monthly-update) · 10월 제공·11월 순차 배포·미리 보기 구분
 - [10월 27일 앱·API 변경](#app-updates-october-27) · Current Channel·플랫폼별 순차 배포
 - [10월 26일 Frontier 범위 확대](#frontier-expanded-previews) · 11월부터 대상 공개 미리 보기 확대
@@ -20,6 +21,24 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 4일 앱·관리 기능 변경 {/* #app-updates-november-4 */}
+
+[Microsoft 365 Copilot 릴리스 노트](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026)는 10월 28일~11월 3일에 배포된 Current Channel 변경을 정리합니다. 릴리스 노트의 기능은 일반 공급 범위에 포함되지만 Microsoft의 안전 배포 모델에 따라 사용자별 표시 시점이 다를 수 있습니다.
+
+| 대상 | 추가된 기능과 운영 확인 |
+|---|---|
+| Excel · Windows·Web·Mac | Copilot 채팅 응답에서 새 시트·표·범위·차트·도형의 변경 위치로 바로 이동하는 링크가 제공됩니다. 링크가 가리키는 셀과 개체를 검토한 뒤 결과를 승인하세요. |
+| Microsoft 365 관리 센터 · Web | 에이전트 사용량 보고서는 Copilot 라이선스 보유·미보유 사용자를 구분하고, 게시자 유형과 사용자·에이전트·사용자-에이전트 조합별 사용량을 제공합니다. 보고서 역할과 데이터 표시 여부를 확인해 파일럿 채택·거버넌스 기준에 연결하세요. |
+| Copilot Search · Web | 전역 관리자와 전역 읽기 권한자는 `Copilot > Search > Authoritative content`에서 최대 100개의 SharePoint 사이트를 권위 콘텐츠로 지정하고 일괄 가져오기·내보내기를 할 수 있습니다. 순위 향상은 접근 권한을 새로 부여하지 않으므로 사이트 권한과 검색 결과를 함께 시험하세요. |
+| Microsoft 365 Copilot · Web | SharePoint List agent가 자연어 설명을 목록 스키마와 필드로 변환합니다. 생성된 열 형식, 소유자, 공유 범위와 보존 정책을 검토한 뒤 목록을 만드세요. Edge의 새 Copilot 탭 페이지도 검색·채팅·업무 콘텐츠와 추천 작업을 한 화면에 제공합니다. |
+| Copilot Cowork · Web | 로컬 Microsoft Edge 세션을 사용해 로그인된 사이트를 탐색하고 지원되는 양식 입력·정보 수집 단계를 수행할 수 있습니다. 자격 증명·쿠키·세션 토큰은 기기에 남고 기존 ID·조건부 액세스·데이터 보호 정책이 적용되지만, 외부 제출·구매·파일 변경 같은 결과가 큰 작업에는 사용자 승인 지점을 두세요. |
+| Researcher · Web | HubSpot 커넥터의 CRM 정보를 Researcher 응답에 사용할 수 있습니다. 커넥터 동의, 사용자별 HubSpot 권한, 데이터 반출 범위와 결과 출처를 확인하세요. |
+| Outlook · Web | 새 Outlook 일정의 Copilot 사이드 패널에서 여러 Copilot 사용 가능 계정 중 현재 계정을 확인하고 전환할 수 있습니다. 개인·업무 계정이 함께 있는 사용자는 작업 전 계정 문맥을 확인하세요. |
+| PowerPoint · Windows·Mac | 새 프레젠테이션을 만들 때 기존 PowerPoint 파일을 첨부해 테마와 스타일을 참조할 수 있습니다. 브랜드 원본의 사용 권한, 레이아웃·글꼴·이미지 적용 결과를 검토하세요. |
+| Teams · Windows·Mac | Workflows 앱에 AI 기반 템플릿과 예약 프롬프트가 추가됐습니다. Workflows 앱을 허용해야 사용할 수 있으며 기본적으로 꺼져 있으므로 Teams 앱 관리 설정, 실행 계정, 연결 권한과 실패 처리를 먼저 확인하세요. |
+
+이 릴리스에는 여러 앱과 관리 기능이 함께 포함됐습니다. 플랫폼 표기와 실제 테넌트의 릴리스 채널·라이선스·관리 설정을 확인하고, 관리 보고서·커넥터·브라우저 작업은 대표 사용자와 관리자가 각각 검증하세요.
 
 ## 10월 30일 Microsoft Copilot 월간 배포 정리 {/* #october-30-monthly-update */}
 

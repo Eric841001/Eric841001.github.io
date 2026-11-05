@@ -90,6 +90,17 @@ Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)�
 
 출처: [What’s New in Microsoft Copilot | October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528), [Microsoft Purview DLP for Microsoft 365 Copilot and Cowork](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory), [Copilot·AI 앱 상호작용 보존](https://learn.microsoft.com/en-us/purview/retention-policies-copilot).
 
+### 로컬 Microsoft Edge 사용 점검 {/* #local-edge-browser-use */}
+
+11월 4일 릴리스 노트는 Cowork가 사용자 기기의 Microsoft Edge를 사용해 웹 기반 작업 단계를 수행하는 기능을 Current Channel 변경으로 안내했습니다. Cowork는 별도 Edge 탭에서 진행되며, 사용자는 대화에서 진행 상황을 보고 입력·승인하거나 직접 제어권을 가져올 수 있습니다.
+
+- **세션과 권한:** 로그인된 로컬 Edge 세션을 사용하므로 해당 사용자가 접근할 수 있는 사이트와 자료 범위에서 동작합니다. Microsoft는 자격 증명, 쿠키와 세션 토큰이 기기에 남는다고 설명합니다. 이 설명이 대상 브라우저·기기 관리 구성에서 그대로 충족되는지 파일럿으로 확인하세요.
+- **기존 정책:** ID, 조건부 액세스, 브라우저와 데이터 보호 정책을 우회하는 별도 권한이 아닙니다. 관리형 기기, 브라우저 프로필, 웹 사이트 세션과 다운로드·업로드 정책을 함께 시험합니다.
+- **승인 지점:** 정보 조회와 초안 입력은 낮은 위험 시나리오부터 시작합니다. 외부 제출, 구매, 게시, 계정·권한 변경, 파일 업로드 같은 결과가 큰 작업은 실행 직전 승인을 요구하고 완료 결과를 검토합니다.
+- **배포 확인:** 릴리스 노트의 Web 표기와 안전 배포 모델을 기준으로 대표 사용자의 Copilot Cowork와 Edge에서 기능 표시 여부를 확인합니다. Cowork 라이선스·지출 정책과 지역별 실제 제공 상태도 별도로 확인하세요.
+
+출처: [Microsoft 365 Copilot 릴리스 노트 — 2026년 11월 4일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026).
+
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
 Microsoft announced the Power Platform Admin (preview) plugin for Cowork in October 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.

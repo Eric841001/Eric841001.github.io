@@ -534,9 +534,9 @@
   },
   "/knowledge/copilot/copilot-cowork-cost-governance": {
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용과 Power Platform 기존 설정의 범위별 유지.",
+    "scope": "이번에 대조·수정한 항목: Cowork의 로컬 Microsoft Edge 사용 범위, 로컬 세션·기존 정책·승인 지점과 단계적 배포 확인.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -598,6 +598,11 @@
         "title": "Copilot memory administration",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory",
         "checkedFor": "기존 Learn은 메모리 전용 보존 규칙이 없다고 명시하므로 월간 발표의 보존 기능 안내와 차이를 밝혔습니다."
+      },
+      {
+        "title": "Microsoft 365 Copilot release notes — November 4, 2026",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026",
+        "checkedFor": "Cowork uses a separate local Edge tab and the signed-in user's access; credentials, cookies and session tokens remain on device; existing identity, Conditional Access and data protection policies continue to apply."
       },
       {
         "title": "Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용",
@@ -899,13 +904,13 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: Copilot harness 공식 명칭 변경; 기존 출시 시점과 과금 조건 유지.",
+    "scope": "이번에 대조·수정한 항목: 11월 4일 Microsoft 365 Copilot Current Channel의 앱·관리 센터·에이전트·Cowork·커넥터 변경과 플랫폼별 운영 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "copilot-release",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
-        "checkedFor": "Python execution in Edit with Copilot on Windows Mac Web; response object links and Show Changes Copilot attribution released with staged rollout."
+        "checkedFor": "November 4 release: Excel change links; agents usage report; up to 100 authoritative SharePoint sites; List agent; Edge new tab; Cowork local Edge; HubSpot Researcher; Outlook account selector; PowerPoint style reference; Teams AI Workflows. Current Channel with safe staged rollout."
       },
       {
         "title": "frontier-expand",
