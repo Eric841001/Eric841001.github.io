@@ -110,7 +110,7 @@ Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계�
   <div className="kc-platform-fit__card">
     <small>Legacy</small>
     <strong>Legacy authentication abuse</strong>
-    <span>Block protocols that cannot satisfy modern authentication and MFA requirements.</span>
+    <span>Identify clients that use legacy authentication, migrate supported clients to modern authentication, and block legacy sign-ins.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Device</small>
@@ -216,7 +216,7 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   <a href="/knowledge/microsoft365/exchange-online">
     <small>Legacy</small>
     <strong>Block legacy authentication</strong>
-    <span>Block protocols and clients that bypass modern authentication controls.</span>
+    <span>Block legacy authentication after reviewing sign-in logs and client dependencies. Assess OAuth-based protocol use separately.</span>
   </a>
   <a href="/knowledge/knowledge-center/intune-ios-compliance">
     <small>Device</small>

@@ -378,17 +378,16 @@ They are suitable for delegated administration but not for full regional autonom
 
 ## Download Restriction and SharePoint Limited Access
 
-Download restriction can be implemented through Conditional Access and SharePoint limited access controls.
+For SharePoint and OneDrive content, Conditional Access and configured SharePoint unmanaged-device controls can provide limited web access. The result depends on policy scope, device state and supported clients; being a guest or an employee does not set it automatically. Other workloads require their own access design. See [unmanaged-device access controls](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices).
 
 ### Example Access Model
 
-| User Type | Access Model |
+| Scenario | Access design to configure and test |
 |---|---|
-| Guest User | Browser-only access |
-| Internal Employee | Download allowed based on policy |
-| Regional Employee | Group-based exception |
-| Privileged User | Apply the approved device/data controls; administrative privilege alone is not a download exception |
-| Unmanaged Device | Browser-only or block download |
+| Guest or internal user on an unmanaged device | Limited browser access without file download, print or sync when the applicable policy requires it |
+| User on a managed device | Access follows permissions and other policies; verify the supported browser and operating system |
+| Regional exception | Define and approve policy scope explicitly; regional membership alone grants no exception |
+| Privileged user | Administrative privilege alone is not a download exception |
 
 ---
 

@@ -125,11 +125,13 @@ Business Premium is usually a practical fit when the organization needs:
 | Requirement | Why It Matters |
 |---|---|
 | Advanced compliance | Purview, retention, eDiscovery, DLP and audit requirements may exceed the Business Premium boundary. |
-| Enterprise security operations | Defender XDR, advanced hunting and security operations integration may require E5-level capabilities. |
+| Endpoint investigation | Defender for Business includes optimized EDR and automated investigation, but not endpoint advanced hunting. Compare Defender for Endpoint Plan 2 separately; a full E5 suite is not the only purchase path. |
 | 고급 보호·업무용 Copilot·Entra Suite·Agent 365 | E7 묶음과 Business Premium 또는 E5에 필요한 제품을 추가한 구성의 총비용을 비교합니다. |
 | Large-scale governance | Large tenants often need more advanced policy, reporting, delegation and operational controls. |
 | Complex voice or meeting requirements | Enterprise voice and advanced meeting scenarios may require additional licensing decisions. |
 | Regulated industry control evidence | Finance, healthcare, public sector or manufacturing environments often require more formal evidence packs. |
+
+See the [Defender for Business feature comparison](https://learn.microsoft.com/en-us/defender-business/mdb-overview) and [subscription transition guidance](https://learn.microsoft.com/en-us/defender-business/mdb-manage-subscription). Adding licenses does not automatically switch the portal experience; check license coverage and the supported transition process.
 
 ## Security
 

@@ -155,7 +155,7 @@ These are governance recommendations. Product prerequisites depend on the select
 
 ### Scenario 5
 
-Regulated collaboration requires department or user groups to be separated by policy.
+When an identified business or regulatory requirement calls for separation, define the affected user groups and permitted collaboration paths before configuring Information Barriers.
 
 Examples:
 

@@ -266,7 +266,7 @@ Each custom skill has its own folder containing `SKILL.md`, with required `name`
 
 ### Revenue Forecast Update
 
-Automatically refresh forecast assumptions.
+When the skill is invoked, update the forecast from approved inputs and review the assumptions and formulas it changes. This example does not configure unattended or scheduled refresh. See [how Excel skills are invoked](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-skills).
 
 ### Investment Evaluation
 

@@ -156,10 +156,12 @@ macOS uses a Defender Device Control JSON policy rather than the Windows Device 
 
 | Evidence | Purpose |
 |---|---|
-| Audit-only result | Confirms which removable media would be blocked before enforcement |
+| Audit-only result | Records observed access for comparison with the proposed policy; confirm actual denial separately on a test device |
 | Policy assignment | Shows the target device group and exclusion group |
 | Defender device control event | Proves device control telemetry is visible |
 | Exception register | Tracks approved USB devices, owners and expiry dates |
+
+Audit events do not prove that enforcement succeeded. Test the intended read, write and execute operations with the configured deny rules; unsupported applications can behave differently. See [macOS device control behavior](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-overview).
 
 ## Related Documents
 

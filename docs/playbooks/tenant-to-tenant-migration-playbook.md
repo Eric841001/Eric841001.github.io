@@ -956,17 +956,16 @@ Administrative Units scope supported Entra directory roles to users, groups and 
 
 ### Download Restriction and SharePoint Limited Access
 
-Download restrictions can be implemented using Conditional Access and SharePoint limited access controls.
+For SharePoint and OneDrive content, Conditional Access and configured SharePoint unmanaged-device controls can provide limited web access. The result depends on policy scope, device state and supported clients; being a guest or an employee does not set it automatically. Other workloads require their own access design. See [unmanaged-device access controls](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices).
 
 Example model:
 
-| User Type | Access Model |
+| Scenario | Access design to configure and test |
 |---|---|
-| Guest user | Browser-only access |
-| Internal employee | Download allowed based on policy |
-| Regional employee | Group-based exception |
-| Unmanaged device | Browser-only or download blocked |
-| Privileged user | Apply the same device and data controls; privilege alone is not a download exception |
+| Guest or internal user on an unmanaged device | Limited browser access without file download, print or sync when the applicable policy requires it |
+| User on a managed device | Access follows permissions and other policies; verify the supported browser and operating system |
+| Regional exception | Define and approve policy scope explicitly; regional membership alone grants no exception |
+| Privileged user | Administrative privilege alone is not a download exception |
 
 ---
 

@@ -117,7 +117,7 @@ Microsoft는 해당 Defender·Intune 기능의 상용 배포 완료 일정을 20
 ## E7 크레딧 프로모션과 AI Builder 갱신
 
 - **E7 CSP 프로모션:** 2026년 12월 31일까지 신규 연간 E7 300석 이상, Azure 구독을 통한 사용량 과금 활성화, 연간 Copilot Studio 용량 팩 5개 이상 구매가 조건입니다. 적격 팩을 1:1로 최대 5개까지 12개월 동안 추가 제공하는 행사이며 E7의 상시 기본 제공량이 아닙니다. [공식 공지와 세부 자격 자료](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#grow-e7-deals-with-copilot-credits)를 확인하세요.
-- **AI Builder 용량 추가 기능:** 11월 1일부터 판매가 종료됩니다. 기존 크레딧은 현재 구독 기간 종료까지 사용할 수 있습니다. 파트너는 다음 갱신 전에 자동 갱신을 끄고, 계속 사용할 고객은 Copilot Credits 전환을 준비해야 합니다. [판매 종료 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#ai-builder-capacity-add-ons-retiring).
+- **AI Builder 크레딧:** 2026년 11월 1일 용량 추가 기능과 Premium 라이선스에 포함된 크레딧의 종료 단계가 시작됐습니다. 기존 활성 계약의 크레딧은 계약 기간이 끝날 때까지 사용할 수 있지만, 이후 Premium 라이선스에 크레딧이 계속 포함되는 것은 아닙니다. 추가 기능의 자동 갱신을 끄고, 계속 사용할 환경에는 Copilot Credits를 준비하세요. 기존 크레딧이 Copilot Credits로 자동 변환되지는 않습니다. [계약별 종료 일정과 사용 조건](https://learn.microsoft.com/en-us/ai-builder/endofaibcredits)을 확인하세요.
 
 ## E7을 포함해 비교할 항목
 

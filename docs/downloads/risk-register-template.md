@@ -171,7 +171,7 @@ The objective is to improve project predictability, support executive decision-m
 | Risk | Mitigation |
 |---|---|
 | MFA not enabled | MFA rollout before production |
-| Legacy authentication enabled | Block legacy protocols |
+| Legacy authentication enabled | Identify dependent clients, migrate them to modern authentication and block legacy authentication; assess OAuth-based protocol use separately |
 | Excessive admin privileges | Implement PIM and RBAC |
 | Guest access uncontrolled | Guest governance review |
 
@@ -297,6 +297,8 @@ Review the following:
 - Closed risks should be documented for future projects
 
 ---
+
+See [Conditional Access legacy authentication controls](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-block-legacy-authentication) and [SMTP AUTH with OAuth](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Blocking basic authentication and disabling a protocol are different configuration decisions.
 
 ## References
 
