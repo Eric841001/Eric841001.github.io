@@ -1806,15 +1806,15 @@
   },
   "/knowledge/knowledge-center/m365-cloud-only-save-as": {
     "file": "docs/knowledge-center/m365-cloud-only-save-as.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: Microsoft 서명이 유효한 5568.1000 배포 파일을 실행 없이 추출했습니다. L_CloudOnlySaving 정책의 User 범위·FileIO 경로·enablecloudonlysaveasmode·활성 값 1·새 파일 및 Save As 제한 설명을 확인했습니다.",
+    "scope": "개별 대조한 항목: Cloud Policy 구독·사용자 범위, 기본 Office 로그인 계정, 90분 확인 간격과 앱 재시작, GPO 우선순위. 현재 공식 다운로드 버전과 기존 추출 ADMX의 L_CloudOnlySaving 정의도 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Cloud Policy scope and precedence",
         "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy",
-        "checkedFor": "Cloud Policy는 사용자 기반으로 배포되고 충돌하는 GPO보다 우선합니다. 일반 개요는 개별 Save As 레지스트리 값의 지원 근거가 아닙니다."
+        "checkedFor": "Apps for business는 개인정보 보호 정책만 지원하고 볼륨 라이선스는 제외됩니다. 사용자 개체·기본 Office 계정 기준, 대상 사용자의 90분 확인 간격, 재시작과 GPO 대비 우선순위를 확인했습니다."
       },
       {
         "title": "Official Office Administrative Templates 5568.1000",
@@ -2491,7 +2491,7 @@
     "file": "docs/microsoft365/sharepoint.md",
     "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 에이전트 생성 방식 전환·2027년 3월 말 지원 종료·공유 권한·Teams 재추가·이전 경로.",
+    "scope": "개별 대조한 항목: .agent 전환·종료 일정, 경로별 조건, 재공유와 Teams 재추가, 사용 이력 미이전. 11월 4일 Microsoft 추가 안내의 4월 단계적 중지 계획을 보강했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2537,7 +2537,12 @@
       {
         "title": "SharePoint·OneDrive 에이전트 업그레이드",
         "url": "https://learn.microsoft.com/en-us/sharepoint/upgrade-sharepoint-agents",
-        "checkedFor": "에이전트 생성 방식 전환·2027년 3월 말 지원 종료·공유 권한·Teams 재추가·이전 경로"
+        "checkedFor": "11월 중순 전환 도구 제공 예정, 2027년 3월 이후 기존 형식 종료, 공유 권한·지식 원본 별도 확인, Teams 재추가와 사용 이력 미이전을 대조했습니다."
+      },
+      {
+        "title": "SharePoint agents transition preparation",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/sharepoint-agents-are-changing-what-customers-need-to-know-for-preparation/4568460",
+        "checkedFor": "11월 4일 개정된 안내에서 4월 초부터 중순까지 단계적 사용 중지 계획을 확인했습니다. 테넌트별 종료 시각을 보장하지 않습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

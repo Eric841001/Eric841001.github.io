@@ -13,7 +13,7 @@ Microsoft 365 Apps의 Word·Excel·PowerPoint에서 새 파일 저장과 **다�
 
 [Cloud Policy 공식 문서](https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy)는 사용자 기반 정책 배포와 GPO 대비 우선순위를 설명합니다. 배포 전 대상 Office 빌드의 ADMX 또는 Cloud Policy 카탈로그에서 아래 정책과 레지스트리 값의 지원 여부를 확인하세요. GPO와 Cloud Policy의 일반적인 우선순위만으로 개별 설정의 지원 여부를 판단할 수는 없습니다.
 
-- Microsoft 365 Apps 엔터프라이즈 구독
+- Windows용 Microsoft 365 Apps for enterprise 구독. Cloud Policy에서 Apps for business는 개인정보 보호 관련 정책만 지원하며, Office LTSC 같은 볼륨 라이선스 제품에는 적용되지 않습니다.
 - 최신 Office ADMX/ADML 템플릿을 사용하는 Active Directory 환경 또는 Microsoft 365 Apps 관리 센터
 - Windows와 Office의 실제 버전을 기록하고 시험용 사용자에게 먼저 적용합니다. 저장 화면과 기존 파일 편집·저장 동작을 각각 확인하세요.
 
@@ -42,7 +42,7 @@ Word, Excel 또는 PowerPoint에서 **다른 이름으로 저장**을 열었을 
 
 1. [Microsoft 365 Apps 관리 센터](https://config.office.com)에 접속합니다.
 2. **사용자 지정 > 정책 관리 > 만들기**로 이동합니다.
-3. 전체 사용자 대신 파일럿 보안 그룹을 먼저 할당합니다.
+3. 시험용 사용자가 포함된 Microsoft Entra 그룹을 먼저 할당합니다. 정책은 사용자 개체에 적용되며, 그룹 안의 장치 개체는 무시됩니다.
 4. 정책 구성에서 **Restrict saving on non-Cloud locations**를 검색합니다. 사용하는 카탈로그에서 제공되지 않으면 배포됐다고 판단하지 말고 GPO 지원 여부를 따로 확인하세요.
 5. 설정을 **사용**으로 구성하고 배포합니다.
 
@@ -53,7 +53,9 @@ HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0\Common\FileIO
   enablecloudonlysaveasmode = 1 (DWORD)
 ```
 
-Cloud Policy와 AD GPO가 동시에 존재할 때에는 Cloud 경로의 정책이 우선합니다. Office 앱 로그인 계정을 변경하는 시나리오에서도 AD 사용자 정책 대상이라면 GPO에 의한 클라우드 저장 강제 상태가 유지되는지 함께 확인합니다.
+Cloud Policy와 AD GPO가 충돌하면 Cloud Policy가 우선합니다. Windows에서는 Office에 로그인한 **기본 계정**의 정책이 적용되므로, 여러 계정으로 로그인했다면 어떤 계정이 기본인지 확인하세요. 계정을 바꾼 뒤에는 Office 앱을 다시 시작하고 정책 수신과 저장 화면을 확인합니다. GPO 적용 여부는 AD 사용자 정책 대상과 실제 적용 결과로 따로 확인하세요.
+
+정책 배포가 즉시 끝나는 것은 아닙니다. Cloud Policy를 수신한 대상 사용자의 기본 확인 간격은 90분이며, 정책이 적용되는 시점에는 Office 앱 재시작도 필요합니다. 관리 센터의 설정 저장과 클라이언트의 적용 완료를 구분하세요.
 
 ## 검증 체크리스트
 
