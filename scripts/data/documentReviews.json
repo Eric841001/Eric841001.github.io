@@ -295,9 +295,9 @@
   },
   "/knowledge/azure/identity": {
     "file": "docs/azure/identity.md",
-    "checkedOn": "2026-11-02",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "memberOf 미리 보기 종료일, 마지막 상태 유지와 그룹·관리 단위·자동 할당 정책의 전환 절차를 대조했습니다.",
+    "scope": "이번에 대조·수정한 항목: memberOf 종료일 경과와 마지막 멤버십 상태 유지 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -322,7 +322,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/azure/landing-zone": {
     "file": "docs/azure/landing-zone.md",
@@ -342,9 +342,9 @@
   },
   "/knowledge/azure/overview": {
     "file": "docs/azure/overview.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Azure 도입·Landing Zone·VM 문서의 탐색 범위",
+    "scope": "이번에 대조·수정한 항목: Azure Automation의 캐나다 시간대 오차·임시 매핑·수정 일정 미정.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -356,10 +356,15 @@
         "title": "Azure landing zones",
         "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/",
         "checkedFor": "Landing Zone은 관리그룹·구독·네트워크·ID·관리·보안·거버넌스의 설계 영역을 다룹니다."
+      },
+      {
+        "title": "canada-timezone",
+        "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes",
+        "checkedFor": "Azure Automation의 캐나다 시간대 오차·임시 매핑·수정 일정 미정"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/azure/virtual-machines": {
     "file": "docs/azure/virtual-machines.md",
@@ -605,9 +610,9 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 작업 복잡성만으로 여러 에이전트를 권하지 않고 도메인·보안·담당 범위와 평가 결과에 따라 구성하도록 수정했습니다.",
+    "scope": "이번에 대조·수정한 항목: 11월 4일 개정 사용자 정의 지표의 분류·수치 기준과 MCP 마법사 메뉴",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -644,10 +649,15 @@
         "title": "리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
         "checkedFor": "리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리를 최신 공식 문서와 대조했습니다."
+      },
+      {
+        "title": "사용자 정의 분석 지표와 MCP 연결",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+        "checkedFor": "11월 4일 개정 사용자 정의 지표의 분류·수치 기준과 MCP 마법사 메뉴"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "이번에는 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 실제 테넌트 기능·권한·명령 실행 결과와 전체 기술 문장의 새 개별 대조는 포함하지 않습니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
@@ -748,9 +758,9 @@
   },
   "/knowledge/copilot/excel-copilot-skills": {
     "file": "docs/copilot/excel-copilot-skills.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 스킬은 재사용 지침이며 결과의 재현성·품질·시간 절감은 파일럿 측정 목표라는 점을 구분했습니다.",
+    "scope": "이번에 대조·수정한 항목: Excel 작업 기록의 순차 배포·명시적 저장·취소 시 변경 유지·Rules 저장 조건",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -782,10 +792,15 @@
         "title": "excel-personal",
         "url": "https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-personalization",
         "checkedFor": "Personal preferences apply to own account sessions, not shared workbook; task prompt overrides them."
+      },
+      {
+        "title": "작업 기록으로 스킬 만들기",
+        "url": "https://support.microsoft.com/en-gb/excel/copilot/copilot-in-excel-record-a-skill",
+        "checkedFor": "Excel 작업 기록의 순차 배포·명시적 저장·취소 시 변경 유지·Rules 저장 조건"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "이번에는 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 실제 테넌트 기능·권한·명령 실행 결과와 전체 기술 문장의 새 개별 대조는 포함하지 않습니다."
   },
   "/knowledge/copilot/governance": {
     "file": "docs/copilot/governance.md",
@@ -882,9 +897,9 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-11-02",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "10월 배포 목표를 현재 완료 사실로 오해하지 않도록 과거 발표 시점을 명시하고 관리자 등록 문구를 다듬었습니다.",
+    "scope": "이번에 대조·수정한 항목: Copilot harness 공식 명칭 변경; 기존 출시 시점과 과금 조건 유지.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1075,7 +1090,7 @@
       {
         "title": "studio-harness",
         "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969",
-        "checkedFor": "GitHub Copilot harness GA, 기존 harness 지원, 사용량 과금과 제작자 작업 과금, 발표 당시 자연어 작성 예정 상태를 본문으로 확인했다."
+        "checkedFor": "Copilot harness 공식 명칭 변경; 기존 출시 시점과 과금 조건 유지"
       },
       {
         "title": "studio-new",
@@ -1139,7 +1154,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -1838,9 +1853,9 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-11-02",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "Amazon Linux 2 ARM64의 마지막 지원 버전 101.25122.0004와 2026-10-31 만료일을 대조했습니다.",
+    "scope": "이번에 대조·수정한 항목: Linux 11월 101.26101.0000의 OpenSSL·CentOS·메모리 개선.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1866,7 +1881,7 @@
       {
         "title": "linux-release",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "Azure Linux 4와 TCP 바인딩 이벤트 및 한 달 순차 적용을 대조했다."
+        "checkedFor": "Linux 11월 101.26101.0000의 OpenSSL·CentOS·메모리 개선"
       },
       {
         "title": "Linux antivirus enforcement",
@@ -1875,13 +1890,13 @@
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/knowledge-center/mde-macos-onboarding": {
     "file": "docs/knowledge-center/mde-macos-onboarding.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: macOS 지원 OS·빌드, 온보딩과 Intune 준수·Windows 위험도 기반 CA의 경계",
+    "scope": "이번에 대조·수정한 항목: macOS 11월 GA 빌드 101.26092.0012와 오류·성능 개선.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1892,7 +1907,7 @@
       {
         "title": "mac-release",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "DeviceControlv1retired. Intro still14+contradictscurrentprerequisites; docuses latter."
+        "checkedFor": "macOS 11월 GA 빌드 101.26092.0012와 오류·성능 개선"
       },
       {
         "title": "mac-compliance",
@@ -1906,7 +1921,7 @@
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/knowledge-center/mde-windows-offboarding": {
     "file": "docs/knowledge-center/mde-windows-offboarding.md",
@@ -2137,9 +2152,9 @@
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, 한국어 요약, 10월 27일 시작된 E3 CSP 프로모션, 12월 1일 예정된 Copilot 구매·과금 변경, E7 크레딧 프로모션과 AI Builder 갱신, E7을 포함해 비교할 항목, Feature Change Watch, Why SKU Names Are Not Enough, E3 Review Pattern, Defender Feature Decision, Copilot Studio Licensing And Feature Shift, Review Checklist, Common Mistakes, Recommended Next Steps. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조·수정한 항목: Copilot harness 공식 명칭 변경; 기존 출시 시점과 과금 조건 유지.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2211,10 +2226,15 @@
         "title": "studio-new",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
         "checkedFor": "A2A, computer use, agent IDs, skills, memory, agent inventory의 발표 시점과 미리 보기 구분을 확인했다."
+      },
+      {
+        "title": "studio-harness",
+        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969",
+        "checkedFor": "Copilot harness 공식 명칭 변경; 기존 출시 시점과 과금 조건 유지"
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
@@ -2295,9 +2315,9 @@
   },
   "/knowledge/microsoft365/exchange-online": {
     "file": "docs/microsoft365/exchange-online.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 캐나다 시간대 변경 공식 안내의 10월 30일 개정 내용과 단일 회의 보정 명령의 11월 4일 제공 예정일.",
+    "scope": "이번에 대조·수정한 항목: 11월 2일 개정된 캐나다 시간대 안내의 Exchange 보정 일정과 미확정 상태.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2343,11 +2363,11 @@
       {
         "title": "canada-timezone",
         "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes",
-        "checkedFor": "상태 표의 단일 회의 보정 명령 일정이 11월 4일 예정으로 바뀌었고 권장 작업에는 10월 28일이 남아 있음을 확인했습니다. 반복 회의 보정 일정은 미정입니다."
+        "checkedFor": "11월 2일 개정된 캐나다 시간대 안내의 Exchange 보정 일정과 미확정 상태"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 캐나다 시간대 변경 단락을 다시 대조했습니다. 문서의 나머지 기술 문장 전체를 오늘 다시 검증한 것은 아니며 테넌트에서 명령을 실행하지 않았습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/microsoft365/licensing": {
     "file": "docs/microsoft365/licensing.md",
@@ -2454,9 +2474,9 @@
   },
   "/knowledge/microsoft365/sharepoint": {
     "file": "docs/microsoft365/sharepoint.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Hub Sites, Permission Architecture, Permission Roles, Purview Integration, Authoritative Sites for Copilot Search. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번에 대조·수정한 항목: 에이전트 생성 방식 전환·2027년 3월 말 지원 종료·공유 권한·Teams 재추가·이전 경로.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2498,16 +2518,21 @@
         "title": "spo-authoritative",
         "url": "https://learn.microsoft.com/en-us/sharepoint/sharepoint-authoritative-sites",
         "checkedFor": "현재 PowerShell·CSOM으로 사이트 단위 지정, 개인 사이트 제외, 최대 100개 및 최대 72시간 반영 지연 조건을 확인했다."
+      },
+      {
+        "title": "SharePoint·OneDrive 에이전트 업그레이드",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/upgrade-sharepoint-agents",
+        "checkedFor": "에이전트 생성 방식 전환·2027년 3월 말 지원 종료·공유 권한·Teams 재추가·이전 경로"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/microsoft365/teams": {
     "file": "docs/microsoft365/teams.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 메시지·파일 통제의 지원 범위와 그룹 만료·개별 게스트 접근 만료를 구분했습니다.",
+    "scope": "이번에 대조·수정한 항목: Teams Events 임시 시간대·Auto Attendant 수동 설정·Shifts 조사 상태.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2538,7 +2563,7 @@
       {
         "title": "canada-timezone",
         "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes",
-        "checkedFor": "11월1일대상지역UTC유지,기존일정미이전,RoomsEdge/WebView2보정과단일회의명령의상태표10월29일·권장작업28일불일치를확인했다."
+        "checkedFor": "Teams Events 임시 시간대·Auto Attendant 수동 설정·Shifts 조사 상태"
       },
       {
         "title": "External user entitlement lifecycle",
@@ -2547,19 +2572,19 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/migration/cross-tenant-sync-vs-migration": {
     "file": "docs/migration/cross-tenant-sync-vs-migration.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 상용·미국 정부 동일 클라우드의 사용자·그룹 지원과 21Vianet·교차 클라우드의 사용자 전용 지원.",
+    "scope": "이번에 대조·수정한 항목: 역할 할당 가능 그룹 동기화의 환경별 제공·생성 시 매핑·역할 할당 미복제 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "cross-sync",
         "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
-        "checkedFor": "상용·미국 정부 동일 클라우드의 사용자·그룹 지원과 21Vianet·교차 클라우드의 사용자 전용 지원를 최신 공식 문서와 대조했습니다."
+        "checkedFor": "역할 할당 가능 그룹 동기화의 환경별 제공·생성 시 매핑·역할 할당 미복제 조건"
       },
       {
         "title": "copilot-requirements",
@@ -2568,7 +2593,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/migration/file-server": {
     "file": "docs/migration/file-server.md",
@@ -2774,9 +2799,9 @@
   },
   "/knowledge/playbooks/intune-deployment-playbook": {
     "file": "docs/playbooks/intune-deployment-playbook.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "설계·실행 프레임워크",
-    "scope": "Intune 2610의 Apple·Windows·Android 변경, STIG 감사 조건, Scoped permissions의 발표와 세부 문서 간 제공 상태 차이를 대조했습니다.",
+    "scope": "이번에 대조·수정한 항목: Scoped permissions의 GA 안내 삭제와 선택형 미리 보기·되돌릴 수 없는 활성화 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2802,7 +2827,7 @@
       {
         "title": "Intune 2610",
         "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
-        "checkedFor": "2610의 AOSP 앱·Apple DDM·ADE·VPN·상태 정보·Windows 알림·관리자 보호·실행 보호·인증서 커넥터·OEMConfig 변경을 대조했습니다."
+        "checkedFor": "Scoped permissions의 GA 안내 삭제와 선택형 미리 보기·되돌릴 수 없는 활성화 조건"
       },
       {
         "title": "STIG audit",
@@ -2816,7 +2841,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/playbooks/m365-assessment-playbook": {
     "file": "docs/playbooks/m365-assessment-playbook.md",
@@ -3617,9 +3642,9 @@
   },
   "/knowledge/security/conditional-access": {
     "file": "docs/security/conditional-access.md",
-    "checkedOn": "2026-11-02",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "memberOf 그룹 갱신 중단이 조건부 액세스 포함·제외 대상에 미치는 영향을 공식 종료 안내와 대조했습니다.",
+    "scope": "이번에 대조·수정한 항목: 고위험 사용자 관리형 정책의 P2 수량·대상 그룹·기존 정책 제외 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3635,7 +3660,7 @@
       {
         "title": "ca-managed",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/managed-policies",
-        "checkedFor": "통상 최소30일 이후 자동활성화 및 예외, P2 사용자위험·보안그룹·게스트제외·조치 우선순위·인증강도·매번로그인을 대조했다."
+        "checkedFor": "고위험 사용자 관리형 정책의 P2 수량·대상 그룹·기존 정책 제외 조건"
       },
       {
         "title": "risk-remediate",
@@ -3679,7 +3704,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/security/data-lifecycle": {
     "file": "docs/security/data-lifecycle.md",
@@ -3709,9 +3734,9 @@
   },
   "/knowledge/security/defender-for-endpoint": {
     "file": "docs/security/defender-for-endpoint.md",
-    "checkedOn": "2026-11-02",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "Amazon Linux 2 ARM64의 2026-10-31 지원 종료를 현재 시점의 완료형으로 고쳤습니다.",
+    "scope": "이번에 대조·수정한 항목: 로컬 AI 검색의 GA·미리 보기 예외·P2와 E7 조건·최소 버전·검색과 실제 사용의 차이",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3753,10 +3778,15 @@
         "title": "Web content filtering",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering",
         "checkedFor": "차단 범주를 선택하지 않는 감사 정책과 Network Protection 전제 조건을 구분했습니다."
+      },
+      {
+        "title": "로컬 AI 에이전트 검색",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/discover-local-ai-agents",
+        "checkedFor": "로컬 AI 검색의 GA·미리 보기 예외·P2와 E7 조건·최소 버전·검색과 실제 사용의 차이"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "이번에는 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 실제 테넌트 기능·권한·명령 실행 결과와 전체 기술 문장의 새 개별 대조는 포함하지 않습니다."
   },
   "/knowledge/security/defender-for-office365": {
     "file": "docs/security/defender-for-office365.md",
@@ -3982,9 +4012,9 @@
   },
   "/knowledge/security/purview-information-protection": {
     "file": "docs/security/purview-information-protection.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-05",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 등급 이름은 작성자 예시이며 파일 암호화·허용 사용자와 컨테이너 외부 공유 설정은 별도라는 점을 보강했습니다.",
+    "scope": "이번에 대조·수정한 항목: 자동 레이블의 테넌트 전체 일일 처리 상한과 보장 처리량의 차이.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4020,7 +4050,7 @@
       {
         "title": "auto-label",
         "url": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically",
-        "checkedFor": "클라이언트측·서비스측자동레이블을구분하며설정한콘텐츠조건에따라적용한다."
+        "checkedFor": "자동 레이블의 테넌트 전체 일일 처리 상한과 보장 처리량의 차이"
       },
       {
         "title": "auto-simulation",
@@ -4054,7 +4084,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
   },
   "/knowledge/security/purview": {
     "file": "docs/security/purview.md",

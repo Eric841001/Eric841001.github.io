@@ -80,7 +80,9 @@ Organizations commonly require:
 
 ---
 
-## 10월 에이전트 변경 {/* #october-2026-agent-update */}
+## 10~11월 에이전트 변경 {/* #october-2026-agent-update */}
+
+11월 GA 빌드 `101.26092.0012`는 오류와 성능을 개선한 버전입니다. 릴리스 버전은 `20.126092.12.0`이며, [최신 릴리스 기록](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)에서 배포 버전을 확인하세요.
 
 10월 추가 GA 빌드 `101.26092.0009`에는 다음 변경이 포함됩니다.
 

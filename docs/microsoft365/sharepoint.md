@@ -589,6 +589,17 @@ SharePoint administrators can mark selected sites as authoritative so official c
 
 Authoritative designation identifies organization-managed sources in supported Copilot Search experiences. It does not replace access and content governance. The current configuration uses PowerShell or CSOM, supports up to 100 sites, excludes personal sites and can take up to 72 hours to appear. Check the license and tenant availability requirements in the [authoritative sites configuration guide](https://learn.microsoft.com/en-us/sharepoint/sharepoint-authoritative-sites). Validate that designated sites remain current and appropriately scoped before treating them as trusted organizational sources.
 
+## SharePoint·OneDrive 에이전트 전환 {/* #agent-upgrade-2026 */}
+
+2026년 11월 중순부터 새 에이전트 생성은 `.agent` 파일 저장 방식에서 Microsoft Copilot Agent Builder로 바뀔 예정입니다. 기존 `.agent` 파일은 **2027년 3월 말까지** 작동하며, 이후에는 응답하지 않습니다. 자동 전환을 기다리지 말고 소유자와 사용 위치를 확인해 이전을 준비하세요.
+
+- 사이트 내용에 대한 일반 질문은 Copilot in SharePoint로, 사이트 안의 반복 작업은 스킬로 이전할 수 있습니다.
+- 별도 지침이 필요한 질문·검색·분석용 에이전트는 Agent Builder 전환을 검토하세요. 전환 기능과 스킬 변환 도구는 11월 중순 제공 예정입니다.
+- 전환 후 공유 권한과 지식 원본 접근 권한을 다시 확인하세요. 원래 조직 전체에 공유한 경우를 제외하면 전환된 에이전트는 비공개이므로 다시 공유해야 합니다. Teams 채팅·채널에서도 다시 추가해야 합니다.
+- Copilot Studio에서 만든 에이전트는 새로 만들 필요 없이 Microsoft Copilot 앱 게시 설정을 검토합니다. Agent Chat 웹 파트는 제공 예정이므로 현재 사용 가능한 것으로 안내하지 마세요.
+
+출처: [SharePoint·OneDrive 에이전트 업그레이드](https://learn.microsoft.com/en-us/sharepoint/upgrade-sharepoint-agents).
+
 ## References
 
 - SharePoint Online Documentation

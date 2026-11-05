@@ -145,6 +145,12 @@ Azure 도입에 필요한 랜딩 존, ID, 네트워크, 보안과 비용 관리 
 - cost estimate and tagging standard
 - operations handover checklist
 
+## 캐나다 시간대 변경과 예약 실행 {/* #canada-automation-time-zone */}
+
+Azure Automation은 2026년 11월 1일 이후 미국과 연결된 Mountain·Pacific·Central 시간대를 쓰는 일정에서 한 시간 오차가 생길 수 있습니다. 임시 매핑은 Alberta → `Canada Central Standard Time`(Saskatchewan), British Columbia → `Yukon Standard Time`(반복·예약 트리거는 Arizona), Manitoba → `SA Pacific Standard Time`(Bogota)입니다. 새 주별 시간대 ID는 아직 사용하지 말고 예약 실행 시각을 확인하세요. 수정 배포일은 미정입니다.
+
+출처: [Microsoft의 제품별 시간대 변경 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes). 다른 Azure 제품에 큰 영향이 예상되지 않는다는 설명에도 Azure Automation은 예외로 명시돼 있습니다.
+
 ## References
 
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)

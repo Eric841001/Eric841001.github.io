@@ -168,7 +168,7 @@ Use this pattern when a customer says they have "E3".
 Copilot Studio should be reviewed across two dimensions:
 
 1. Maker access: tenant license and Copilot Studio User License.
-2. Runtime and scale: Copilot Credits, agent type, orchestration, knowledge, tools and the applicable billing plan. The linked maker/tenant licensing procedure applies to the **standard harness**; verify the separate billing and access model for the new GitHub Copilot harness experience.
+2. Runtime and scale: Copilot Credits, agent type, orchestration, knowledge, tools and the applicable billing plan. The linked maker/tenant licensing procedure applies to the **standard harness**; verify the separate billing and access model for the new Microsoft Copilot harness experience.
 
 The platform itself has also changed. New agent experience, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, A2A and automated evaluations now affect governance design.
 

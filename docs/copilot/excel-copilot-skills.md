@@ -319,6 +319,14 @@ Pilot a repeatable finance task, compare output quality and review effort, and c
 
 ---
 
+## 작업 기록으로 스킬 만들기 {/* #record-skill */}
+
+`Record a skill`은 순차 배포 중입니다. Excel의 Copilot 입력란에서 `Add > Record a skill`을 선택하고 준비가 끝나면 통합 문서에서 작업을 수행합니다. `Stop` 후 지침을 검토하고 **Save skill**을 눌러야 OneDrive에 저장됩니다.
+
+기록은 작업의 목적과 방법을 지침으로 만들며, 모든 동작을 기록하거나 같은 셀에 코드를 반복 실행하는 매크로와는 다릅니다. 중단·취소해도 통합 문서 변경은 되돌려지지 않습니다. 현재 통합 문서에만 적용하려면 `.Rules` 시트로 저장하도록 요청하세요. 모델이나 데이터가 바뀌면 결과도 달라질 수 있으므로 사용할 때마다 확인합니다.
+
+출처: [Microsoft 공식 안내](https://support.microsoft.com/en-gb/excel/copilot/copilot-in-excel-record-a-skill).
+
 ## References
 
 - [Microsoft 365 Copilot release notes — September 23, 2026](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#september-23-2026)

@@ -266,6 +266,16 @@ Audit behavior depends on the control. For example, [web content filtering](http
 - 엔드포인트 보안 기준
 - Defender for Endpoint 구축
 
+## 로컬 AI 에이전트 검색 {/* #local-ai-discovery */}
+
+Windows·macOS의 지원 대상 로컬 AI 에이전트와 구성된 MCP 서버 검색은 정식 제공됩니다. WSL 검색과 일부 macOS VS Code 확장 목록 수집은 미리 보기이므로 지원 표를 구분해서 확인하세요.
+
+상용 클라우드, Defender for Endpoint P2, 기기 온보딩이 필요합니다. 최소 버전은 Windows 백신 플랫폼 `4.18.26090.9`, macOS `101.26072.0017`입니다. 원칙적으로 백신 활성 모드와 실시간 보호가 필요하며, 지원 표에 명시된 VS Code 확장 목록 수집에는 예외가 있습니다. 이 예외가 MCP 구성 검색이나 런타임 보호까지 허용한다는 뜻은 아닙니다.
+
+P2로 목록과 Advanced Hunting을 조회할 수 있지만, 위험 수준·위험 지표·보안 권고에는 **Microsoft 365 E7 또는 Agent 365와 P2의 조합**이 필요합니다. 프로세스가 실행된 사실만으로 발견될 수 있으므로 목록에 있다는 이유만으로 실제 서비스 사용이나 접근 성공을 단정하지 마세요.
+
+출처: [Microsoft 공식 안내](https://learn.microsoft.com/en-us/defender-endpoint/discover-local-ai-agents).
+
 ## References
 
 - [Microsoft Defender for Endpoint documentation](https://learn.microsoft.com/en-us/defender-endpoint/)

@@ -176,6 +176,8 @@ Workload content remains in its original tenant; selected identity attributes ar
 
 ---
 
+Role-assignable group synchronization is supported **when role-enabled group sync is available in your environment**. In the target tenant, enable both inbound group synchronization and inbound role-enabled group synchronization. In the source tenant, map `isAssignableToRole` directly, only during object creation, before adding these groups to scope. This copies role-assignability, **not role assignments**; assign target-tenant roles separately. The property cannot be changed after creation, and adding the mapping does not convert previously synchronized non-role-assignable groups. See the [current group synchronization conditions](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview).
+
 Group support also depends on the cloud pair: same-cloud commercial and US Government synchronization support users and groups; same-cloud 21Vianet and the documented cross-cloud pairs support users only. Do not apply the group scenario to every cloud combination. See [supported cloud pairs](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#frequently-asked-questions).
 
 ### Architecture

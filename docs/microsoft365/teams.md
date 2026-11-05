@@ -586,6 +586,8 @@ The following targets are planning examples to agree with the organization, not 
 
 캐나다 일부 지역과 회의를 운영한다면 2026년 11월 1일 이후 일정을 점검하세요. Microsoft는 Windows용 Teams Rooms에서 Windows보다 시간이 한 시간 늦게 표시되는 문제에 대해 **Edge·WebView2 업데이트 후 회의실 화면의 시간 확인**을 안내합니다. 일반 Teams 클라이언트의 일정·알림과 다른 Teams 기기의 영향은 별도로 시험해야 합니다.
 
+11월 2일 추가 안내에 따라 **Teams Events**의 임시 시간대는 Alberta가 `(UTC-06:00) Saskatchewan`, British Columbia가 `(UTC-07:00) Yukon`, Manitoba가 `(UTC-05:00) Eastern Time (US & Canada)`입니다. 이벤트 주최자가 선택한 값과 참석자 화면의 시간을 함께 확인하세요. Auto Attendant는 공식 안내에 연결된 설정 절차에 따라 시간대를 수동 변경해야 합니다. Shifts는 영향 조사 중이므로 관리자는 메시지 센터의 `MC1532245`를 확인하세요.
+
 [Microsoft의 제품별 시간대 변경 안내](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes)와 [Outlook·Exchange Online 일정 점검](./exchange-online#canada-time-zone-2026)을 참고하세요.
 
 ## References

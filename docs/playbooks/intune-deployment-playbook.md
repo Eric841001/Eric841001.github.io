@@ -89,7 +89,7 @@ Intune 서비스 변경은 순차 배포됩니다. 발표 날짜만으로 모든
 
 [STIG 감사 기준](https://learn.microsoft.com/en-us/intune/device-security/security-baselines/stig-audit-baseline)은 기기 설정을 변경하지 않고 차이를 보고합니다. Intune Advanced Analytics가 필요하며, 자동 검사 대상이 아닌 규칙은 별도로 확인해야 합니다. 보고서의 통과 상태만으로 조직 전체의 규정 준수를 판정하지 마세요.
 
-Scoped permissions는 2610 변경 목록에서 정식 제공으로 안내하지만, [세부 문서](https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/scope-tags#permission-behavior-across-role-assignments)에는 아직 선택형 미리 보기 설명이 남아 있습니다. 자동 활성화됐다고 가정하지 말고 `Tenant administration > Roles > Settings`에서 실제 상태를 확인하세요. 활성화하면 서로 다른 범위 태그의 권한을 합치지 않고 각각 적용합니다. 되돌릴 수 없는 전환이므로 Permissions Assessment Report로 관리자별 권한 변화를 먼저 확인하세요.
+Scoped permissions의 정식 제공 항목은 11월 2일 개정된 2610 변경 목록에서 빠졌습니다. [세부 문서](https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/scope-tags#permission-behavior-across-role-assignments)에서는 선택형 공개 미리 보기로 안내합니다. 자동 활성화됐다고 가정하지 말고 `Tenant administration > Roles > Settings`에서 실제 상태를 확인하세요. 활성화하면 서로 다른 범위 태그의 권한을 합치지 않고 각각 적용합니다. 되돌릴 수 없는 전환이므로 Permissions Assessment Report로 관리자별 권한 변화를 먼저 확인하세요.
 
 ## Android Enterprise eSIM 일괄 관리 {/* #android-esim-bulk-actions */}
 

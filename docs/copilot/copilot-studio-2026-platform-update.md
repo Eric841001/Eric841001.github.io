@@ -125,7 +125,9 @@ Work IQ가 추가된 새 에이전트는 기본적으로 사용 가능한 모든
 
 ## GitHub Copilot Harness — August 2026 GA
 
-Microsoft announced the GitHub Copilot harness as generally available on August 3, 2026 for complex, multi-step business processes. Copilot Chat and Standard remain separate supported choices.
+The former GitHub Copilot harness is now named **Microsoft Copilot harness**. Microsoft added this naming update to its [official announcement](https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969).
+
+Microsoft announced the Microsoft Copilot harness as generally available on August 3, 2026 for complex, multi-step business processes. Copilot Chat and Standard remain separate supported choices.
 
 | Harness | Planning focus |
 |---|---|
@@ -133,7 +135,7 @@ Microsoft announced the GitHub Copilot harness as generally available on August 
 | Standard | Topic-driven conversational processes |
 | GitHub Copilot | Planning, skills, tools, workflows and connected agents |
 
-The workflow designer offers a visual canvas and evaluations. Natural-language workflow authoring was announced as forthcoming; confirm current tenant availability before promising it. GitHub Copilot harness consumption is usage-based irrespective of Microsoft 365 Copilot licensing, including relevant maker activity.
+The workflow designer offers a visual canvas and evaluations. Natural-language workflow authoring was announced as forthcoming; confirm current tenant availability before promising it. Microsoft Copilot harness consumption is usage-based irrespective of Microsoft 365 Copilot licensing, including relevant maker activity.
 
 Before rollout, compare representative tasks, completion quality, latency and cost. Define tool permissions, approval points, idempotency, retries, timeouts and recovery. Record the selected harness and billing assumptions in the agent catalog.
 
@@ -383,6 +385,14 @@ Microsoft 365 관리 센터에서 환경·에이전트용 지출 정책을 만�
     <span>Use evaluation data, realistic conversations and regression checks before rollout.</span>
   </div>
 </div>
+
+## 사용자 정의 분석 지표와 MCP 연결 {/* #november-2026-authoring */}
+
+사용자 정의 분석 지표는 미리 보기입니다. 원하는 업무 결과를 자연어로 설명하면 분류 또는 수치 점수 기준을 생성하고, 기본 분석 지표와 함께 결과를 계산합니다. 자동 생성한 기준이 실제 업무 성과를 제대로 나타내는지 예시 대화로 확인하세요.
+
+MCP 연결 마법사는 `Add a tool > New tool > Create new > Model Context Protocol`에서 엽니다. 서버 설명은 에이전트가 호출 여부를 판단하는 데 쓰이므로 수행할 작업을 구체적으로 적고, 연결 인증과 도구 권한을 확인하세요. [MCP 연결 절차](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent)를 참고하세요.
+
+출처: [Microsoft 공식 안내](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new).
 
 ## References
 
