@@ -141,6 +141,25 @@ Before rollout, compare representative tasks, completion quality, latency and co
 
 Source: [Microsoft Copilot Studio announcement](https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969), August 3, 2026; corroborating [Microsoft ModernWork Korea article](https://microsoft.github.io/mwkorea/copilot/CopilotStudioGitHubCopilotHarness/).
 
+## Reliable Agentic Loops — November 2026 Guidance {/* #reliable-agentic-loops */}
+
+Microsoft's November guidance applies to agents powered by the **Microsoft Copilot harness**. It is design guidance rather than a new GA feature announcement. The central rule is to preserve flexibility inside explicit execution boundaries so the agent can recover from correctable errors without turning uncertainty into repeated model and tool calls.
+
+| Design boundary | Production requirement |
+|---|---|
+| Handoffs | Define the input route, required format, returned state and observable success evidence for every tool, workflow and connected-agent handoff. |
+| Retries | Separate correctable invocation errors from terminal permission, configuration and structural failures. Set an attempt limit and verify that the prior attempt made no change before retrying a state-changing action. |
+| Partial completion | Return created or changed state, the failed step, specific errors and whether a retry is safe. If the outcome is unknown, stop and escalate instead of repeating the whole task. |
+| Runtime enforcement | Give the agent only required tools and prefer read-only operations for retrieval. Enforce critical limits with validation, hooks or runtime controls where supported; instructions alone do not guarantee a stop. |
+| Irreversible actions | Require user confirmation or authorized human review before deletion, overwrite, external delivery or another irreversible action, including when recovery changes the route. |
+| Completion | Define observable output checks. A successful tool response is not proof that the user's requested result, delivery or link is complete. |
+
+Test both successful and failure paths before publishing. Include ambiguous tool results, missing dependencies, invalid source objects, mismatched file representations, permission denials and connected agents that already returned sufficient evidence. Review traces for repeated calls, route changes and work that continued after a stopping condition.
+
+한국어 적용 요약: 각 단계의 입력·출력 계약, 최대 시도 횟수, 부분 성공 상태와 완료 증거를 배포 기준에 포함하세요. 결과가 불명확하거나 원본 입력을 검증할 수 없으면 추정·변환·재실행하지 말고 중단 후 보고합니다. 삭제·덮어쓰기·전송 같은 작업은 복구 과정에서도 승인 경계를 유지해야 합니다.
+
+Source: [Design reliable agentic loops](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agentic-loops-in-practice), updated November 6, 2026; [Copilot Studio guidance hub update](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026).
+
 ## Platform Migration Checkpoints
 
 <div aria-label="Copilot Studio migration checkpoints" className="kc-maturity-ladder">

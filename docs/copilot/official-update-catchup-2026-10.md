@@ -11,6 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 6일 안정적인 agentic loop 설계 지침](#reliable-agentic-loops) · Microsoft Copilot harness 운영 지침
 - [11월 4일 앱·관리 기능 변경](#app-updates-november-4) · Current Channel·플랫폼별 안전 배포
 - [10월 30일 월간 배포 정리](#october-30-monthly-update) · 10월 제공·11월 순차 배포·미리 보기 구분
 - [10월 27일 앱·API 변경](#app-updates-october-27) · Current Channel·플랫폼별 순차 배포
@@ -21,6 +22,22 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 6일 안정적인 agentic loop 설계 지침 {/* #reliable-agentic-loops */}
+
+Microsoft는 Copilot Studio의 **Microsoft Copilot harness**로 여러 단계 작업을 수행할 때 반복 실행이 비용과 지연을 늘리거나 부분 완료 작업을 중복시킬 수 있다고 설명했습니다. 이 문서는 새 기능의 GA 발표가 아니라, 에이전트·워크플로를 설계하고 검토할 때 적용하는 공식 운영 지침입니다.
+
+| 통제 항목 | 배포 전에 정할 기준 |
+|---|---|
+| 도구·에이전트 인계 | 입력 형식, 반환 값, 다음 단계가 사용할 필드와 성공 증거를 계약으로 기록합니다. 호출 에이전트와 연결된 에이전트는 충분한 근거와 완료 조건을 동일하게 사용합니다. |
+| 부분 성공과 재시도 | 워크플로는 실행 상태, 이미 바뀐 결과, 구체적 오류와 안전한 재시도 가능 여부를 함께 반환해야 합니다. 결과가 불명확하면 상태를 확인하고 자동 재실행하지 않습니다. |
+| 중단 조건과 한도 | 수정 가능한 입력 오류와 권한·구성 같은 종료 오류를 구분하고 시도 횟수, 재시도 조건과 시간·비용 한도를 정합니다. 반복해도 새 결과가 없으면 보고하거나 사람에게 넘깁니다. |
+| 최소 권한과 런타임 통제 | 필요한 도구만 제공하고 조회 업무에는 읽기 전용 작업을 사용합니다. 중요한 한도는 지침뿐 아니라 가능한 경우 도구 검증, hook과 런타임 정책으로 강제합니다. |
+| 불가역 작업과 완료 증거 | 삭제·덮어쓰기·외부 전송에는 사용자 확인 또는 승인된 사람의 검토를 요구합니다. 도구의 성공 응답만 믿지 않고 산출물·링크·상태가 요구 조건을 충족했는지 별도로 확인합니다. |
+
+성공 경로뿐 아니라 부분 결과, 누락된 의존성, 잘못된 입력 형식, 권한 거부와 모호한 오류도 시험하세요. 활동 추적과 평가 결과에서 반복 호출, 경로 변경, 중단 조건 이후 실행을 찾아 지침·도구 계약·런타임 통제 중 책임 있는 계층을 수정합니다.
+
+출처: [Copilot Studio guidance hub — November 2026](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026), [Design reliable agentic loops](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agentic-loops-in-practice).
 
 ## 11월 4일 앱·관리 기능 변경 {/* #app-updates-november-4 */}
 
