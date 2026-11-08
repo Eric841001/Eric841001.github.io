@@ -37,7 +37,7 @@ Microsoft는 Copilot Studio의 **Microsoft Copilot harness**로 여러 단계 �
 
 성공 경로뿐 아니라 부분 결과, 누락된 의존성, 잘못된 입력 형식, 권한 거부와 모호한 오류도 시험하세요. 활동 추적과 평가 결과에서 반복 호출, 경로 변경, 중단 조건 이후 실행을 찾아 지침·도구 계약·런타임 통제 중 책임 있는 계층을 수정합니다.
 
-11월 7일 Microsoft가 공개한 평가에서는 동일한 과제와 모델을 비교했을 때 Microsoft Copilot harness가 작업당 모델 호출은 약 2배였지만 캐시 적중률이 평균 40%p 높아 비용 가중 토큰 사용량은 15~21% 낮았습니다. 평가 통과율은 GPT-5.5 Chat에서 10.8%p, Opus 4.8에서 22.1%p 높았고, 도구 호출 실패 뒤 계속 작업한 비율은 84~91%로 Standard harness의 7% 미만보다 높았습니다. 이 수치는 Microsoft의 특정 평가·운영 데이터이며 모든 테넌트의 성능 보장이나 SLA는 아닙니다. 따라서 호출 횟수만 줄이는 대신 **완료율, 캐시 효율, 실패 복구, 총 토큰 비용**을 함께 측정하세요.
+11월 7일 Microsoft가 공개한 평가에서는 동일한 과제와 모델을 비교했을 때 Microsoft Copilot harness가 작업당 모델 호출은 약 2배였지만 캐시 적중률이 평균 40%p 높아 비용 가중 토큰 사용량은 15–21% 낮았습니다. 평가 통과율은 GPT-5.5 Chat에서 10.8%p, Opus 4.8에서 22.1%p 높았고, 도구 호출 실패 뒤 계속 작업한 비율은 84–91%로 Standard harness의 7% 미만보다 높았습니다. 이 수치는 Microsoft의 특정 평가·운영 데이터이며 모든 테넌트의 성능 보장이나 SLA는 아닙니다. 따라서 호출 횟수만 줄이는 대신 **완료율, 캐시 효율, 실패 복구, 총 토큰 비용**을 함께 측정하세요.
 
 출처: [Copilot Studio guidance hub — November 2026](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026), [Design reliable agentic loops](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agentic-loops-in-practice), [Microsoft Copilot harness 정량 평가 논문 소개](https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157).
 
