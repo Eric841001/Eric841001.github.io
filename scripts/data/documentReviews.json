@@ -617,7 +617,7 @@
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
     "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 11월 7일 Microsoft Copilot harness 평가의 호출 수, 캐시 효율, 비용 가중 토큰, 평가 통과율과 도구 실패 복구 수치.",
+    "scope": "11월 9일 추가 대조: 11월 7일 Microsoft 평가 발표의 호출 수·캐시 효율·비용 가중 토큰·평가 통과율 수치와 도구 실패 후 작업 지속 비율. 지속 비율을 성공률로 표현한 문장을 수정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -663,11 +663,11 @@
       {
         "title": "Microsoft Copilot harness 정량 평가 논문 소개",
         "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157",
-        "checkedFor": "동일 과제·모델 비교의 약 2배 호출, 평균 40%p 높은 캐시 효율, 15~21% 낮은 비용 가중 토큰, 모델별 평가 통과율 차이와 도구 실패 후 복구 비율을 확인했습니다."
+        "checkedFor": "11월 9일 발표 요약 대조: 약 2배 호출, 평균 +40%p 캐시 효율, 비용 가중 토큰 15–21% 감소, 모델별 +10.8/+22.1%p 평가 통과율. 84–91%는 도구 실패 후 작업 지속 비율이며 최종 성공률이 아닙니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 실제 테넌트 기능·권한·명령 실행 결과와 전체 기술 문장의 새 개별 대조는 포함하지 않습니다."
+    "notChecked": "이번 날짜에는 11월 7일 공식 발표의 요약 수치와 해당 문장을 대조했습니다. 첨부 논문의 전체 실험 설계·원시 데이터, 문서의 다른 기술 문장과 실제 테넌트 성능은 재검증하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
@@ -909,7 +909,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 11월 7일 Microsoft Copilot harness 평가의 호출 수, 캐시 효율, 비용 가중 토큰, 평가 통과율과 도구 실패 복구 수치.",
+    "scope": "11월 9일 추가 대조: 공식 사이트 지정의 관리 센터 경로와 기존 PowerShell·CSOM 안내, Global Reader 변경 권한에 관한 공식 문서 간 불일치를 확인했습니다. 플러그인 관리 위치, 새 버전 검토와 향후 연동 범위도 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1000,7 +1000,7 @@
       {
         "title": "plugin-registry",
         "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682",
-        "checkedFor": "Unified catalog with central admin assignment; supported surfaces and staged rollout, future Studio/Foundry integration distinct."
+        "checkedFor": "11월 9일 원문 대조: Agents > Tools의 Agent 365 관리, 허용·차단·사용자/그룹 할당과 새 버전 검토. Studio·GitHub Copilot·Foundry 지원은 발표 당시 향후 계획입니다."
       },
       {
         "title": "copilot-september",
@@ -1166,10 +1166,20 @@
         "title": "Microsoft Copilot harness 정량 평가 논문 소개",
         "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157",
         "checkedFor": "동일 과제·모델 비교의 약 2배 호출, 평균 40%p 높은 캐시 효율, 15~21% 낮은 비용 가중 토큰, 모델별 평가 통과율 차이와 도구 실패 후 복구 비율을 확인했습니다."
+      },
+      {
+        "title": "Microsoft 365 Copilot November 4 release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026",
+        "checkedFor": "관리 센터 경로, 최대 100개 사이트와 순차 배포를 확인했습니다. Global Reader 변경 허용 설명은 Entra 역할 정의와 충돌하므로 변경 가능하다고 단정하지 않았습니다."
+      },
+      {
+        "title": "Microsoft Entra Global Reader",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader",
+        "checkedFor": "Global Reader는 읽기 전용이며 변경할 수 없다는 역할 정의를 확인했습니다. 실제 서비스의 역할별 동작은 시험하지 않았습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
+    "notChecked": "이번 날짜의 개별 대조 범위는 scope에 적은 항목입니다. 기존 출처의 다른 내용과 문서 전체를 이날 다시 검증한 것은 아니며, 실제 테넌트의 화면·역할별 변경 작업은 시험하지 않았습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -2514,9 +2524,9 @@
   },
   "/knowledge/microsoft365/sharepoint": {
     "file": "docs/microsoft365/sharepoint.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: .agent 전환·종료 일정, 경로별 조건, 재공유와 Teams 재추가, 사용 이력 미이전. 11월 4일 Microsoft 추가 안내의 4월 단계적 중지 계획을 보강했습니다.",
+    "scope": "11월 9일 추가 대조: 공식 사이트 지정의 관리 센터 경로와 기존 PowerShell·CSOM 안내, Global Reader 변경 권한에 관한 공식 문서 간 불일치를 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2557,7 +2567,7 @@
       {
         "title": "spo-authoritative",
         "url": "https://learn.microsoft.com/en-us/sharepoint/sharepoint-authoritative-sites",
-        "checkedFor": "현재 PowerShell·CSOM으로 사이트 단위 지정, 개인 사이트 제외, 최대 100개 및 최대 72시간 반영 지연 조건을 확인했다."
+        "checkedFor": "11월 9일 원문 대조: PowerShell·CSOM, 개인 사이트 제외, 최대 100개·72시간. 관리 센터 추가 안내는 11월 4일 별도 릴리스 노트와 구분했습니다."
       },
       {
         "title": "SharePoint·OneDrive 에이전트 업그레이드",
@@ -2568,10 +2578,20 @@
         "title": "SharePoint agents transition preparation",
         "url": "https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/sharepoint-agents-are-changing-what-customers-need-to-know-for-preparation/4568460",
         "checkedFor": "11월 4일 개정된 안내에서 4월 초부터 중순까지 단계적 사용 중지 계획을 확인했습니다. 테넌트별 종료 시각을 보장하지 않습니다."
+      },
+      {
+        "title": "Microsoft 365 Copilot November 4 release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026",
+        "checkedFor": "관리 센터 경로, 최대 100개 사이트와 순차 배포를 확인했습니다. Global Reader 변경 허용 설명은 Entra 역할 정의와 충돌하므로 변경 가능하다고 단정하지 않았습니다."
+      },
+      {
+        "title": "Microsoft Entra Global Reader",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader",
+        "checkedFor": "Global Reader는 읽기 전용이며 변경할 수 없다는 역할 정의를 확인했습니다. 실제 서비스의 역할별 동작은 시험하지 않았습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
+    "notChecked": "이번 날짜의 개별 대조 범위는 scope에 적은 항목입니다. 기존 출처의 다른 내용과 문서 전체를 이날 다시 검증한 것은 아니며, 실제 테넌트의 화면·역할별 변경 작업은 시험하지 않았습니다."
   },
   "/knowledge/microsoft365/teams": {
     "file": "docs/microsoft365/teams.md",

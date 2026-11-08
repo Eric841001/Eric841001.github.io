@@ -49,13 +49,15 @@ Microsoft는 Copilot Studio의 **Microsoft Copilot harness**로 여러 단계 �
 |---|---|
 | Excel · Windows·Web·Mac | Copilot 채팅 응답에서 새 시트·표·범위·차트·도형의 변경 위치로 바로 이동하는 링크가 제공됩니다. 링크가 가리키는 셀과 개체를 검토한 뒤 결과를 승인하세요. |
 | Microsoft 365 관리 센터 · Web | 에이전트 사용량 보고서는 Copilot 라이선스 보유·미보유 사용자를 구분하고, 게시자 유형과 사용자·에이전트·사용자-에이전트 조합별 사용량을 제공합니다. 보고서 역할과 데이터 표시 여부를 확인해 파일럿 채택·거버넌스 기준에 연결하세요. |
-| Copilot Search · Web | 전역 관리자와 전역 읽기 권한자는 `Copilot > Search > Authoritative content`에서 최대 100개의 SharePoint 사이트를 권위 콘텐츠로 지정하고 일괄 가져오기·내보내기를 할 수 있습니다. 순위 향상은 접근 권한을 새로 부여하지 않으므로 사이트 권한과 검색 결과를 함께 시험하세요. |
+| Copilot Search · Web | Microsoft 365 관리 센터의 `Copilot > Search > Authoritative content`에서 최대 100개의 SharePoint 사이트를 공식 콘텐츠로 지정하고 일괄 가져오기·내보내기를 하는 기능이 추가됐습니다. 변경 작업에 필요한 역할은 아래 권한 안내를 확인하세요. 순위 향상은 접근 권한을 새로 부여하지 않으므로 사이트 권한과 검색 결과를 함께 시험하세요. |
 | Microsoft 365 Copilot · Web | SharePoint List agent가 자연어 설명을 목록 스키마와 필드로 변환합니다. 생성된 열 형식, 소유자, 공유 범위와 보존 정책을 검토한 뒤 목록을 만드세요. Edge의 새 Copilot 탭 페이지도 검색·채팅·업무 콘텐츠와 추천 작업을 한 화면에 제공합니다. |
 | Copilot Cowork · Web | 로컬 Microsoft Edge 세션을 사용해 로그인된 사이트를 탐색하고 지원되는 양식 입력·정보 수집 단계를 수행할 수 있습니다. 자격 증명·쿠키·세션 토큰은 기기에 남고 기존 ID·조건부 액세스·데이터 보호 정책이 적용되지만, 외부 제출·구매·파일 변경 같은 결과가 큰 작업에는 사용자 승인 지점을 두세요. |
 | Researcher · Web | HubSpot 커넥터의 CRM 정보를 Researcher 응답에 사용할 수 있습니다. 커넥터 동의, 사용자별 HubSpot 권한, 데이터 반출 범위와 결과 출처를 확인하세요. |
 | Outlook · Web | 새 Outlook 일정의 Copilot 사이드 패널에서 여러 Copilot 사용 가능 계정 중 현재 계정을 확인하고 전환할 수 있습니다. 개인·업무 계정이 함께 있는 사용자는 작업 전 계정 문맥을 확인하세요. |
 | PowerPoint · Windows·Mac | 새 프레젠테이션을 만들 때 기존 PowerPoint 파일을 첨부해 테마와 스타일을 참조할 수 있습니다. 브랜드 원본의 사용 권한, 레이아웃·글꼴·이미지 적용 결과를 검토하세요. |
 | Teams · Windows·Mac | Workflows 앱에 AI 기반 템플릿과 예약 프롬프트가 추가됐습니다. Workflows 앱을 허용해야 사용할 수 있으며 기본적으로 꺼져 있으므로 Teams 앱 관리 설정, 실행 계정, 연결 권한과 실패 처리를 먼저 확인하세요. |
+
+**사이트 지정 권한:** 릴리스 노트는 전역 읽기 권한자(Global Reader)에게도 추가·삭제 기능을 안내하지만, [Entra 역할 정의](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader)는 이 역할을 변경할 수 없는 읽기 전용 역할로 설명합니다. 두 안내가 일치하지 않으므로 전역 읽기 권한만으로 사이트를 변경할 수 있다고 가정하지 마세요. 실제 할당된 역할과 해당 화면의 변경 권한을 확인한 관리자가 작업해야 합니다.
 
 이 릴리스에는 여러 앱과 관리 기능이 함께 포함됐습니다. 플랫폼 표기와 실제 테넌트의 릴리스 채널·라이선스·관리 설정을 확인하고, 관리 보고서·커넥터·브라우저 작업은 대표 사용자와 관리자가 각각 검증하세요.
 
@@ -147,7 +149,7 @@ Microsoft는 Copilot Cowork에서 Power Platform 테넌트의 환경, 앱, 흐�
 | [10월 6일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#october-06-2026) | Copilot Search·Chat 통합, 응답 재생성·모델 전환, 커넥터 쿼리·사용자 매핑 수정, SharePoint 광범위 그룹 권한 보고서, PowerPoint 사용자 지정 스킬·Mac 파일 참조, Cowork 채택·비용 분석 |
 | [10월 27일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#october-27-2026) | Learning agent, 활용 지표, Notebooks, MCP·Canva 커넥터, Work IQ API 과금·선언형 호출, 앱별 변경 |
 
-출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 최신 기록은 10월 27일입니다. 10월 13~27일 변경은 앞의 앱·API 변경 절에 정리했습니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
+출처: [Microsoft 365 Copilot 공식 릴리스](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes). 위 표는 10월 27일까지의 기록입니다. 이후 변경은 앞의 [11월 4일 앱·관리 기능 변경](#app-updates-november-4)에 정리했습니다. [Excel 상세 가이드](./excel-copilot-skills.md), [Agentic AI 설계](./agentic-ai-architecture.md), [SharePoint 가이드](../microsoft365/sharepoint.md)에서 관련 운영 내용을 이어서 확인할 수 있습니다.
 
 ## 10월 6일 운영 점검 사항 {/* #10월-6일-운영-체크포인트 */}
 
@@ -172,7 +174,7 @@ Microsoft는 Copilot 앱의 새 작업 진입점으로 **Home, Code, Autopilot**
 Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 범위와 관리 지점을 보완했습니다.
 
 - **GPT-6.1 Sol·Claude Sonnet 5.5:** 9월 30일부터 Cowork와 Copilot Studio에 사용량 기반 과금(UBB)으로 배포를 시작했습니다. Word·Excel·PowerPoint·Chat은 Microsoft 365 Copilot 사용자 구독 라이선스(USL) 범위에서 다음 주부터 단계적으로 배포한다고 안내했습니다. Claude 또는 일부 GPT 화면을 사용하려면 조직의 Anthropic·OpenAI 하위 처리자 설정을 확인해야 하며, 앱 내 모델별 사용 한도가 적용될 수 있습니다. [모델 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801)
-- **Microsoft 플러그인 레지스트리:** Microsoft·파트너·조직 제작 플러그인을 Copilot 앱과 Microsoft 365 앱에서 함께 찾고 배포하는 통합 카탈로그는 9월 30일 발표와 함께 순차 배포를 시작했습니다. 지원 화면과 커넥터마다 제공 시점이 다릅니다. 관리자는 Microsoft 365 관리 센터와 Agent 365에서 플러그인을 한 번 승인하고 중앙 관리할 수 있습니다. 도입 전에는 게시자 신뢰, 연결 권한, 데이터 처리 위치, 사용자 공개 범위를 승인 기준에 포함하세요. [플러그인 레지스트리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
+- **Microsoft 플러그인 레지스트리:** Microsoft·파트너·조직 제작 플러그인을 Copilot 앱과 Microsoft 365 앱에서 함께 찾고 배포하는 통합 카탈로그는 9월 30일 발표와 함께 순차 배포를 시작했습니다. 지원 화면과 커넥터마다 제공 시점이 다릅니다. 관리자는 Microsoft 365 관리 센터의 Agent 365 관리 화면(`Agents > Tools`)에서 플러그인을 허용·차단하고 사용자·그룹에 할당하며 새 버전도 검토합니다. 이 발표에서 Copilot Studio·GitHub Copilot·Microsoft Foundry 연동은 향후 지원 항목입니다. 도입 전에는 게시자 신뢰, 연결 권한, 데이터 처리 위치, 사용자 공개 범위를 승인 기준에 포함하세요. [플러그인 레지스트리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682)
 - **월간 배포 확인:** Teams·Outlook의 Copilot UI, 프롬프트 안 `/` 에이전트·`@` 스킬 호출, 스캔 PDF 검색, Android Office 편집, 모바일 Record가 9월 배포 항목으로 정리됐습니다. 관리 기능에는 Copilot Search의 신뢰할 수 있는 SharePoint 사이트를 최대 100개 지정하는 중앙 관리와 집계 단위 Pulse 설문이 포함됩니다. 당시 Edge 새 탭 통합은 10월로 예고됐습니다. 이 발표만으로 현재 배포 완료를 판단하지 마세요. [9월 공식 월간 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107)
 
 월간 블로그의 배포 표현은 개별 테넌트의 즉시 사용 가능성을 보장하지 않습니다. 기능 표시, 라이선스, 하위 처리자·연결 정책과 메시지 센터 공지를 함께 확인하세요.
