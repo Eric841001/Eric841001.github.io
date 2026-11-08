@@ -1893,20 +1893,20 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: Linux 11월 101.26101.0000의 OpenSSL·CentOS·메모리 개선.",
+    "scope": "지원·라이선스·프록시 조건, Python 온보딩과 상태·조직 ID·연결·RTP 명령, 감사/수동 모드 차이를 대조했습니다. 다른 Fanotify 보안 제품과의 공존 조건과 Python 선택 안내를 보강했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "linux-prereq",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites",
-        "checkedFor": "AL2 ARM64 종료·최종 빌드·만료일, Linux 데스크톱 미리 보기와 서버 라이선스 구분을 대조했다."
+        "checkedFor": "배포판·아키텍처, AL2 ARM64 종료, 데스크톱 preview/P2·서버 별도 라이선스, 정적/투명 프록시, Fanotify 공존과 FAPolicyD 예외를 대조했습니다."
       },
       {
         "title": "linux-install",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually",
-        "checkedFor": "배포판별 저장소·서명키·패키지 및 Python 온보딩·health·org_id 명령을 설명한다."
+        "checkedFor": "Python/Python3 선택, 테넌트 패키지, sudo 온보딩, healthy/org_id와 RTP 명령 조건을 대조했습니다."
       },
       {
         "title": "linux-network",
@@ -1930,13 +1930,13 @@
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
+    "notChecked": "본문의 명시한 기술 조건과 공식 근거를 대조했습니다. 설치·온보딩·탐지·정책 적용을 실제 기기나 테넌트에서 시험하지 않았으며, 작성자 권고와 납품 항목은 Microsoft 보장 사항이 아닙니다."
   },
   "/knowledge/knowledge-center/mde-macos-onboarding": {
     "file": "docs/knowledge-center/mde-macos-onboarding.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: macOS 11월 GA 빌드 101.26092.0012와 오류·성능 개선.",
+    "scope": "OS·CPU·관리/수동 배포 요구 사항, 10·11월 빌드 변경 및 macOS 준수 평가 범위를 대조했습니다. 런타임 보호 설정의 빌드 귀속과 P1/P2 기능 구분을 수정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1947,7 +1947,7 @@
       {
         "title": "mac-release",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "macOS 11월 GA 빌드 101.26092.0012와 오류·성능 개선"
+        "checkedFor": "0009의 Device Control v1 종료·상태/인증/격리 개선, 101.26082.0012의 런타임 보호 설정 지원·Bluetooth·키보드 개선, 11월0012의 오류/성능 개선을 빌드별로 대조했습니다."
       },
       {
         "title": "mac-compliance",
@@ -1958,10 +1958,15 @@
         "title": "windows-defender-ca",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/configure-conditional-access",
         "checkedFor": "Windows 기기의 Defender 위험도 기반 준수·접근 제어 절차이다."
+      },
+      {
+        "title": "Defender licensing guidance",
+        "url": "https://www.microsoft.com/licensing/guidance/microsoft-defender",
+        "checkedFor": "P1과 P2의 EDR·취약성 관리 포함 차이를 대조해 검증 항목에 라이선스 조건을 추가했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
+    "notChecked": "본문의 명시한 기술 조건과 공식 근거를 대조했습니다. 설치·온보딩·탐지·정책 적용을 실제 기기나 테넌트에서 시험하지 않았으며, 작성자 권고와 납품 항목은 Microsoft 보장 사항이 아닙니다."
   },
   "/knowledge/knowledge-center/mde-windows-offboarding": {
     "file": "docs/knowledge-center/mde-windows-offboarding.md",

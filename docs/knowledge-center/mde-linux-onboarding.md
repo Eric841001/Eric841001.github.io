@@ -139,7 +139,7 @@ For Debian/Ubuntu the final package-install command is `sudo apt-get install mda
 
 ## Onboarding
 
-Deploy onboarding package.
+Download the Linux Server / Local Script onboarding package from the intended tenant’s Defender portal, extract it and copy the script to the target device. The following example uses Python 3; follow the [distribution-specific interpreter requirement](https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually#client-configuration) rather than assuming every supported older distribution provides the same interpreter.
 
 ```bash
 sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -169,7 +169,7 @@ Check Org ID.
 mdatp health --field org_id
 ```
 
-Enable real-time protection.
+Enable real-time protection only after checking compatibility with existing security software. [Microsoft’s Linux prerequisites](https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites) do not support active Defender alongside another Fanotify-based blocking security solution; use the documented passive-mode coexistence configuration where applicable. The documented exception is FAPolicyD on RHEL/Fedora when `mdatp health` reports a healthy state. Confirm the intended centrally managed policy before running this local configuration command.
 
 ```bash
 sudo mdatp config real-time-protection --value enabled
@@ -191,7 +191,7 @@ For production Linux servers, capture a validation screenshot or command output 
 
 ## Security Best Practices
 
-- Enable RTP
+- Enable RTP after validating coexistence; preserve the documented passive configuration when another security solution requires it
 - Enable Vulnerability Management
 - Monitor Health Status
 - Integrate with SIEM
