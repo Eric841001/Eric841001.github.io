@@ -11,7 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
-- [11월 6일 안정적인 agentic loop 설계 지침](#reliable-agentic-loops) · Microsoft Copilot harness 운영 지침
+- [11월 6~7일 안정적인 agentic loop 설계·평가](#reliable-agentic-loops) · Microsoft Copilot harness 운영 지침과 정량 근거
 - [11월 4일 앱·관리 기능 변경](#app-updates-november-4) · Current Channel·플랫폼별 안전 배포
 - [10월 30일 월간 배포 정리](#october-30-monthly-update) · 10월 제공·11월 순차 배포·미리 보기 구분
 - [10월 27일 앱·API 변경](#app-updates-october-27) · Current Channel·플랫폼별 순차 배포
@@ -23,7 +23,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
 
-## 11월 6일 안정적인 agentic loop 설계 지침 {/* #reliable-agentic-loops */}
+## 11월 6~7일 안정적인 agentic loop 설계·평가 {/* #reliable-agentic-loops */}
 
 Microsoft는 Copilot Studio의 **Microsoft Copilot harness**로 여러 단계 작업을 수행할 때 반복 실행이 비용과 지연을 늘리거나 부분 완료 작업을 중복시킬 수 있다고 설명했습니다. 이 문서는 새 기능의 GA 발표가 아니라, 에이전트·워크플로를 설계하고 검토할 때 적용하는 공식 운영 지침입니다.
 
@@ -37,7 +37,9 @@ Microsoft는 Copilot Studio의 **Microsoft Copilot harness**로 여러 단계 �
 
 성공 경로뿐 아니라 부분 결과, 누락된 의존성, 잘못된 입력 형식, 권한 거부와 모호한 오류도 시험하세요. 활동 추적과 평가 결과에서 반복 호출, 경로 변경, 중단 조건 이후 실행을 찾아 지침·도구 계약·런타임 통제 중 책임 있는 계층을 수정합니다.
 
-출처: [Copilot Studio guidance hub — November 2026](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026), [Design reliable agentic loops](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agentic-loops-in-practice).
+11월 7일 Microsoft가 공개한 평가에서는 동일한 과제와 모델을 비교했을 때 Microsoft Copilot harness가 작업당 모델 호출은 약 2배였지만 캐시 적중률이 평균 40%p 높아 비용 가중 토큰 사용량은 15~21% 낮았습니다. 평가 통과율은 GPT-5.5 Chat에서 10.8%p, Opus 4.8에서 22.1%p 높았고, 도구 호출 실패 뒤 계속 작업한 비율은 84~91%로 Standard harness의 7% 미만보다 높았습니다. 이 수치는 Microsoft의 특정 평가·운영 데이터이며 모든 테넌트의 성능 보장이나 SLA는 아닙니다. 따라서 호출 횟수만 줄이는 대신 **완료율, 캐시 효율, 실패 복구, 총 토큰 비용**을 함께 측정하세요.
+
+출처: [Copilot Studio guidance hub — November 2026](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026), [Design reliable agentic loops](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agentic-loops-in-practice), [Microsoft Copilot harness 정량 평가 논문 소개](https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157).
 
 ## 11월 4일 앱·관리 기능 변경 {/* #app-updates-november-4 */}
 

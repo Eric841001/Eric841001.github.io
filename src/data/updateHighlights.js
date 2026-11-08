@@ -1,13 +1,13 @@
 // Shared by home highlights and document update notices.
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
-export const verifiedOn = '2026-11-07';
+export const verifiedOn = '2026-11-09';
 export const modelUpdate = {
   title: 'Claude Sonnet 5.5 · PowerPoint 배포',
   date: '2026-10-30',
   path: `${updateGuide}#october-30-monthly-update`,
 };
 export const updateHighlights = [
-  {category: 'Copilot Studio', title: '에이전트 반복 실행의 중단·재시도 기준', description: '도구 계약, 부분 성공 상태, 재시도 한도, 불가역 작업 승인과 완료 증거를 운영 기준으로 추가했습니다.', date: '2026-11-06', status: '설계 지침 · Microsoft Copilot harness', path: `${updateGuide}#reliable-agentic-loops`},
+  {category: 'Copilot Studio', title: '에이전트 반복 실행의 설계·정량 평가', description: '도구 계약과 재시도 한도에 더해 완료율, 캐시 효율, 실패 복구와 총 토큰 비용을 함께 측정하는 근거를 추가했습니다.', date: '2026-11-07', status: '설계 지침 · Microsoft 정량 평가', path: `${updateGuide}#reliable-agentic-loops`},
   {category: 'Microsoft 365 Copilot', title: '11월 4일 앱·에이전트 운영 기능', description: '에이전트 사용량 보고서, 권위 콘텐츠, Cowork의 로컬 Edge 사용과 앱별 변경을 정리했습니다.', date: '2026-11-05', status: 'Current Channel · 안전 배포 확인', path: `${updateGuide}#app-updates-november-4`},
   {category: 'SharePoint · OneDrive', title: '에이전트 생성 방식 전환 준비', description: '11월 중순 전환 예정과 기존 .agent 파일의 2027년 3월 말 지원 종료, 공유 권한 재확인 사항을 정리했습니다.', date: '2026-11-05', status: '전환 예정 · 이전 준비', path: '/knowledge/microsoft365/sharepoint#agent-upgrade-2026'},
   {category: 'Microsoft Entra ID', title: 'memberOf 종료 후 정책 대상 점검', description: '11월 3일 이후 갱신이 중단된 동적 그룹·관리 단위·자동 할당 정책의 전환 방법을 추가했습니다.', date: '2026-11-05', status: '11월 3일 이후 갱신 중단', path: '/knowledge/azure/identity#memberof-retirement-2026'},

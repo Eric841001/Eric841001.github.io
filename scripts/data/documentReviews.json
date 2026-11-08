@@ -615,9 +615,9 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 11월 4일 개정 사용자 정의 지표의 분류·수치 기준과 MCP 마법사 메뉴",
+    "scope": "이번에 대조·수정한 항목: 11월 7일 Microsoft Copilot harness 평가의 호출 수, 캐시 효율, 비용 가중 토큰, 평가 통과율과 도구 실패 복구 수치.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -659,6 +659,11 @@
         "title": "사용자 정의 분석 지표와 MCP 연결",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
         "checkedFor": "11월 4일 개정 사용자 정의 지표의 분류·수치 기준과 MCP 마법사 메뉴"
+      },
+      {
+        "title": "Microsoft Copilot harness 정량 평가 논문 소개",
+        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157",
+        "checkedFor": "동일 과제·모델 비교의 약 2배 호출, 평균 40%p 높은 캐시 효율, 15~21% 낮은 비용 가중 토큰, 모델별 평가 통과율 차이와 도구 실패 후 복구 비율을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -902,9 +907,9 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 11월 4일 Microsoft 365 Copilot Current Channel의 앱·관리 센터·에이전트·Cowork·커넥터 변경과 플랫폼별 운영 조건.",
+    "scope": "이번에 대조·수정한 항목: 11월 7일 Microsoft Copilot harness 평가의 호출 수, 캐시 효율, 비용 가중 토큰, 평가 통과율과 도구 실패 복구 수치.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1156,6 +1161,11 @@
         "title": "10월 30일 Copilot Studio 비용 관리 전환의 선택 적용",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
         "checkedFor": "10월 30일 Copilot Studio 비용 관리 전환의 선택 적용과 AI Builder 제외 조건를 최신 공식 문서와 대조했습니다."
+      },
+      {
+        "title": "Microsoft Copilot harness 정량 평가 논문 소개",
+        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157",
+        "checkedFor": "동일 과제·모델 비교의 약 2배 호출, 평균 40%p 높은 캐시 효율, 15~21% 낮은 비용 가중 토큰, 모델별 평가 통과율 차이와 도구 실패 후 복구 비율을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
