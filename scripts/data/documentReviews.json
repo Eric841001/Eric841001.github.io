@@ -1970,19 +1970,24 @@
   },
   "/knowledge/knowledge-center/mde-windows-offboarding": {
     "file": "docs/knowledge-center/mde-windows-offboarding.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 오프보딩과 제거 구분, 비활성 표시와 기기 프로필 보존",
+    "scope": "Windows 클라이언트 Intune 오프보딩 경로·관리 권한·패키지 7일 만료·정책 충돌, 데이터 전송 중단·7일 비활성·최대 180일 프로필 보존을 개별 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Offboard Defender devices",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/offboard-machines",
         "checkedFor": "오프보딩과 제거 구분, 비활성 표시와 기기 프로필 보존"
+      },
+      {
+        "title": "Intune Windows client offboarding",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/configure-endpoints-mdm#offboard-devices-using-mobile-device-management-tools",
+        "checkedFor": "Windows10/11·Intune 등록과 권한, MDM 패키지 7일 유효기간 및 동시 온보딩 금지, Windows EDR Offboard/Offboarding(Device) 설정 경로를 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "실제 기기 오프보딩·정책 적용·센서 상태는 시험하지 않았습니다. 본문의 승인·인수인계·대체 보호 권고는 작성자의 운영 기준입니다."
   },
   "/knowledge/knowledge-center/mvp-community-research-map": {
     "file": "docs/knowledge-center/mvp-community-research-map.md",

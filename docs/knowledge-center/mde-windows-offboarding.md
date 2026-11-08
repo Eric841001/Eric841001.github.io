@@ -97,6 +97,17 @@ Windows 기기를 Defender for Endpoint에서 오프보딩할 때 확인할 승�
 
 ## Offboarding Workflow
 
+This Intune procedure targets enrolled Windows 10/11 clients. Confirm Intune licensing and an administrator role with permission to manage the EDR policy. Use the operating-system-specific procedure for Windows servers.
+
+Before assignment, remove overlapping onboarding assignments from the target devices. Microsoft warns against deploying onboarding and offboarding policies to the same device at the same time.
+
+1. In the Defender portal's Offboarding page, select **Windows 10 and Windows 11**, then **Mobile Device Management / Microsoft Intune** and download the package.
+2. Extract the `.offboarding` file and keep it in an administrator-accessible, read-only location. The MDM package expires **seven days after download**; expired packages are rejected. Check the expiry in the portal and package name before each deployment.
+3. In Intune, create an **Endpoint detection and response** policy for **Windows**. Set **Microsoft Defender for Endpoint client configuration package type** to **Offboard**, then paste the file contents into **Offboarding (Device)**.
+4. Assign the policy to the approved device group and check deployment results and local offboarding state. An inactive portal record alone is not proof of successful offboarding.
+
+Source: [Microsoft Intune offboarding procedure](https://learn.microsoft.com/en-us/defender-endpoint/configure-endpoints-mdm#offboard-devices-using-mobile-device-management-tools).
+
 <div className="kc-factory-panel">
   <div className="kc-panel-header">
     <span>Offboarding workflow</span>
