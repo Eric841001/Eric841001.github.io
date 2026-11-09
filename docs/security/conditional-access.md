@@ -265,6 +265,8 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   </div>
 </div>
 
+보고 전용 모드도 사용자에게 아무 영향이 없는 것은 아닙니다. 준수 기기를 요구하는 정책은 macOS·iOS·Android에서 기기 인증서 선택 창을 띄울 수 있습니다. `User Actions` 범위는 보고 전용 평가 대상에서 제외되므로, 해당 정책은 별도 시험 계획이 필요합니다. [보고 전용 모드의 적용 범위와 제한](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only)을 확인하세요.
+
 ## Exception and Lockout Control
 
 <div aria-label="Conditional Access exception and lockout control" className="kc-context-panel">
@@ -306,6 +308,8 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
     </a>
   </div>
 </div>
+
+긴급 접근 계정을 조건부 액세스에서 제외하더라도 Microsoft의 필수 MFA 요구사항이 면제되지는 않습니다. Microsoft는 클라우드 전용 긴급 계정을 두 개 이상 준비하고 FIDO2 패스키나 인증서 기반 인증 등 피싱 방지 인증 수단을 등록하도록 안내합니다. 실제 로그인과 복구 절차를 정기적으로 시험하세요. [긴급 접근 계정 구성](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)을 기준으로 확인합니다.
 
 ## Copilot Access Control
 

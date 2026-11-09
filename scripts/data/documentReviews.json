@@ -3701,15 +3701,20 @@
   },
   "/knowledge/security/compliance-manager": {
     "file": "docs/security/compliance-manager.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Compliance Manager의 평가·개선 작업과 규정 준수 증명 구분",
+    "scope": "평가·개선 작업·담당자 배정·증거 보관 기능과 점수의 의미를 대조했습니다. 운영 주기와 산업별 표는 작성자의 계획 예시입니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Microsoft Purview Compliance Manager",
         "url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
         "checkedFor": "Compliance Manager는 평가·개선 작업 도구이며 평가 점수가 규제 준수 인증을 의미하지 않습니다."
+      },
+      {
+        "title": "Compliance Manager scoring",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager-scoring",
+        "checkedFor": "점수는 개선 작업의 진행 정도이며 규정 준수 보증이 아니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3717,9 +3722,9 @@
   },
   "/knowledge/security/conditional-access": {
     "file": "docs/security/conditional-access.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 레거시 인증 차단과 프로토콜 비활성화의 구분, 현대식 인증 전환 및 로그인 로그 확인.",
+    "scope": "P1/P2·에이전트 라이선스 및 대상, memberOf 종료, 관리형 위험 해결 정책, 승인 클라이언트 앱 읽기 전용 전환, OAuth 프로토콜, 보고 전용 제한과 긴급 접근 MFA를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3788,9 +3793,9 @@
   },
   "/knowledge/security/data-lifecycle": {
     "file": "docs/security/data-lifecycle.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: 데이터 보존 정책·레이블·삭제·처분 검토의 구분 추가 확인: 지연 보류의 자동 적용·30일 만료와 일반 일시 삭제 복구 기간을 구분했습니다. 공개 미리 보기, 휴지통 우회·보류 재정의, 검토 집합 제외, 하루 전 감사 설정과 다른 관리자의 활성화 조건을 확인했습니다.",
+    "scope": "보존·삭제 기능과 Records Management 구분, 지연 보류 30일과 이후 복구 기간, Priority Cleanup 미리 보기·승인·보류 재정의 조건을 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3807,6 +3812,11 @@
         "title": "Priority Cleanup permanent deletion",
         "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
         "checkedFor": "공개 미리 보기, 휴지통 우회·보류 재정의, 검토 집합 제외, 하루 전 감사 설정과 다른 관리자의 활성화 조건을 확인했습니다."
+      },
+      {
+        "title": "Data Lifecycle Management scope",
+        "url": "https://learn.microsoft.com/en-us/purview/data-lifecycle-management",
+        "checkedFor": "보존·삭제 정책과 레이블이 기본 기능이며 고가치 기록 관리에는 Records Management를 사용한다. 분류·DLP·접근 제어를 자동으로 제공한다는 의미로 설명하지 않는다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3999,9 +4009,9 @@
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 조직 모드별 세그먼트 수·ABP 및 숨김 계정 처리 차이와 SharePoint·OneDrive 별도 활성화.",
+    "scope": "양방향 제한, 조직 모드·세그먼트 수·ABP·숨김 사용자, Teams 사전 대기·감사 로깅, SharePoint·OneDrive 활성화와 모드별 접근, 보고서·변경 명령, 검색·Copilot 잔존 결과를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4012,12 +4022,12 @@
       {
         "title": "ib-policies",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-policies",
-        "checkedFor": "조직 모드별 세그먼트 수·ABP 및 숨김 계정 처리 차이와 SharePoint·OneDrive 별도 활성화를 최신 공식 문서와 대조했습니다."
+        "checkedFor": "Legacy 250/사용자 1개, 새 모드 5,000개·다중 세그먼트 별도 설정, ABP·숨김 사용자 차이, scoped directory search 후 최소 24시간과 감사 로깅 필요."
       },
       {
         "title": "ib-sharepoint",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint",
-        "checkedFor": "Explicit는 세그먼트 일치와 사이트 권한 모두 필요하다. Implicit/Owner Moderated의 정책 전 접근 자료는 검색·Copilot에 남을 수 있으나 실제 접근은 차단될 수 있다."
+        "checkedFor": "모드별 공유·접근 조건, 활성화 전 정책 전파 24시간과 활성화 후 약 1시간, 검색·Copilot 잔존 결과와 실제 접근 차이."
       },
       {
         "title": "ib-report",
@@ -4027,7 +4037,12 @@
       {
         "title": "ib-onedrive",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-onedrive",
-        "checkedFor": "OneDrive는 Open·Owner Moderated·Explicit·Mixed를 구분하며 SharePoint와 조건을 따로 확인한다."
+        "checkedFor": "SharePoint와 함께 활성화되며 개별 활성화 불가. Open·Owner Moderated·Explicit·Mixed의 공유·접근 조건."
+      },
+      {
+        "title": "Manage Information Barriers policies",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers-edit-segments-policies",
+        "checkedFor": "정책 비활성화 후 Start-InformationBarrierPoliciesApplication 재실행과 적용 상태 확인."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -4035,9 +4050,9 @@
   },
   "/knowledge/security/insider-risk": {
     "file": "docs/security/insider-risk.md",
-    "checkedOn": "2026-10-25",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: Insider Risk의 신호·정책·검토자·개인정보 보호 범위",
+    "scope": "위험 신호·정책 조건·경고 분류·사례 조사, 가명 처리·역할별 접근·감사 기록과 대응 절차를 공식 개요에 대조했습니다. 산업별 표와 운영 절차는 작성자의 설계 예시입니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {

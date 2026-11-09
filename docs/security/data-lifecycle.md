@@ -33,7 +33,7 @@ description: Microsoft Purview data lifecycle management guide for retention, de
 
 ## Executive Summary
 
-Data Lifecycle Management defines how enterprise information is created, retained, protected, reviewed and disposed across Microsoft 365.
+Microsoft Purview Data Lifecycle Management provides retention policies and labels to keep or delete Microsoft 365 content. Use Records Management for record declaration and disposition review; classification, DLP and access control need their own configuration.
 
 For Microsoft 365 and Copilot readiness, lifecycle management reduces data sprawl, improves search quality and helps ensure sensitive or obsolete content is handled according to business and compliance requirements.
 
@@ -60,7 +60,7 @@ Microsoft 365 자료의 보관 기간, 삭제와 처분 검토 절차를 정리�
 </div><div aria-label="Data lifecycle management architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
   <small>01</small>
   <strong>Create and classify</strong>
-  <span>New content receives owner, location, label, sensitivity and business context.</span>
+  <span>Define how owners classify new content and assign labels; configure automatic labeling separately where supported.</span>
 </div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
   <small>02</small>
   <strong>Retain and protect</strong>
@@ -130,6 +130,7 @@ SharePoint·OneDrive의 **Priority Cleanup 영구 삭제 옵션은 공개 미리
 
 ## References
 
+- [Data Lifecycle Management scope](https://learn.microsoft.com/en-us/purview/data-lifecycle-management)
 - [Retention policies and labels](https://learn.microsoft.com/en-us/purview/retention)
 ## 검색 키워드
 

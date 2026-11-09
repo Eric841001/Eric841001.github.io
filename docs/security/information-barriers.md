@@ -122,11 +122,13 @@ IB should not be treated as a simple user blocking feature. It should be designe
 - Microsoft Purview Information Barriers를 지원하는 라이선스
 - Purview Information Barriers 관리 권한
 - ExchangeOnlineManagement module
-- IPPSSession 연결 가능 관리자 계정
+- PowerShell로 관리할 경우 `Connect-IPPSSession` 연결이 가능한 관리자 계정
 - SharePoint Online Management Shell
 - 테스트 사용자 2명 이상
 - 테스트 사용자별 department 또는 정책 기준 속성
 - Teams, SharePoint, OneDrive 검증 환경
+- 첫 IB 정책을 만들기 전에 Teams의 범위 지정 디렉터리 검색(scoped directory search)을 켜고 최소 24시간 대기
+- 정책 적용 상태를 조회할 수 있도록 감사 로깅 활성화 여부 확인
 
 ## 조직 모드와 적용 범위 확인 {/* #ib-mode-prerequisites */}
 
@@ -134,7 +136,9 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 Legacy에서는 기존 Exchange 주소록 정책과의 충돌, 숨김·비활성 사용자와 게스트의 Teams 적용 예외를 확인해야 합니다. SingleSegment·MultiSegment는 기존 주소록 정책에 영향을 주지 않으며 숨김 사용자에도 IB가 적용됩니다. 모드를 확인하지 않고 기존 주소록 정책을 삭제하지 마세요.
 
-Teams에 IB를 구성했더라도 SharePoint·OneDrive는 별도로 활성화해야 합니다. Teams와 연결된 사이트의 파일까지 자동으로 보호된다고 가정하지 마세요. [모드별 사전 조건과 서비스별 활성화](https://learn.microsoft.com/en-us/purview/information-barriers-policies)를 확인하세요.
+Teams에 IB를 구성했더라도 SharePoint·OneDrive용 IB를 추가로 활성화해야 합니다. 이 두 서비스는 한 번에 활성화되며 각각 따로 켤 수 없습니다. Teams와 연결된 사이트의 파일까지 자동으로 보호된다고 가정하지 마세요. [모드별 사전 조건과 서비스별 활성화](https://learn.microsoft.com/en-us/purview/information-barriers-policies)를 확인하세요.
+
+IB 정책을 구성하고 활성화한 뒤에는 SharePoint·OneDrive에 전파될 때까지 24시간을 기다립니다. 이어서 두 서비스의 IB를 활성화하면 적용에 약 1시간이 더 걸릴 수 있습니다. 대기 시간과 실제 적용 상태를 함께 확인하세요. [SharePoint·OneDrive 활성화 순서](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization)를 따릅니다.
 
 ## Segment Design
 
@@ -142,7 +146,7 @@ Teams에 IB를 구성했더라도 SharePoint·OneDrive는 별도로 활성화해
 
 | Segment Type | Example | Notes |
 |---|---|---|
-| Department Segment | Finance, Investment, Advisory | 가장 일반적인 업무분장 기준 |
+| Department Segment | Finance, Investment, Advisory | 부서별 업무분장 예시 |
 | Project Segment | Project A, Project B | 민감 프로젝트 또는 제한된 협업 공간 |
 | Subsidiary Segment | Company A, Company B | 계열사 또는 인수합병 시나리오 |
 | Exception Segment | 승인된 예외 사용자 | 예외 승인 및 만료일 관리 필요 |
@@ -200,7 +204,7 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시
 
 ## SharePoint / OneDrive 검증
 
-아래의 세그먼트 일치 검사는 주로 SharePoint의 **Explicit** 모드를 전제로 합니다. Open은 사이트 권한, Owner Moderated는 소유자가 관리하는 협업과 그룹 구성원 여부, Implicit은 연결된 Microsoft 365 그룹 구성원 여부를 기준으로 동작합니다. 모든 모드에 같은 세그먼트 차단 규칙을 적용하면 안 됩니다. 세그먼트가 일치해도 사이트 권한이 자동으로 생기지는 않습니다. SharePoint와 OneDrive의 모드·공유·접근 조건을 각각 확인하세요. [SharePoint 모드별 동작](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint)과 [OneDrive의 IB 적용](https://learn.microsoft.com/en-us/purview/information-barriers-onedrive)을 기준으로 시험합니다.
+아래의 세그먼트 일치 검사는 주로 SharePoint의 **Explicit** 모드를 전제로 합니다. Open은 사이트 권한, Owner Moderated는 그룹 연결 사이트의 그룹 구성원 여부와 비연결 사이트의 접근 권한, Implicit은 연결된 Microsoft 365 그룹 구성원 여부를 기준으로 동작합니다. 모든 모드에 같은 세그먼트 차단 규칙을 적용하면 안 됩니다. 세그먼트가 일치해도 사이트 권한이 자동으로 생기지는 않습니다. SharePoint와 OneDrive의 모드·공유·접근 조건을 각각 확인하세요. [SharePoint 모드별 동작](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint)과 [OneDrive의 IB 적용](https://learn.microsoft.com/en-us/purview/information-barriers-onedrive)을 기준으로 시험합니다.
 
 | Test Case | Expected Result |
 |---|---|
@@ -209,9 +213,11 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시
 | 문서 라이브러리 접근 | 기존 권한이 있어도 IB 정책에 따라 차단 |
 | 파일 직접 링크 접근 | 링크를 보유해도 Segment 불일치 시 접근 차단 |
 | 파일/폴더 공유 | 공유 대상 검증 후 차단 또는 허용 |
-| People Picker / Search | 상대 Segment 사용자가 검색 결과에서 제한 |
+| People Picker / Search | 조직 모드와 사용자 검색 제한 설정에 따라 확인. 검색 노출과 실제 접근 가능 여부를 따로 시험 |
 | 동일 Segment 사용자 접근 | 해당 모드의 IB 조건과 사이트·파일 접근 권한을 모두 만족할 때 허용 |
 | 사이트 소유자 권한 | Explicit 등 선택한 모드의 제한과 Owner Moderated의 소유자 역할을 구분해 확인 |
+
+OneDrive에는 SharePoint의 Implicit 모드 대신 **Mixed** 모드가 있습니다. Mixed에서는 세그먼트가 일치하는 사용자뿐 아니라 테넌트의 비세그먼트 사용자에게도 공유할 수 있습니다. 세그먼트 사용자는 세그먼트 일치와 파일 공유 조건을 모두 충족해야 하며, 비세그먼트 사용자에게도 접근 권한이 필요합니다. Explicit의 차단 결과를 Mixed에 그대로 적용하지 마세요.
 
 ## Exchange 고려사항
 
