@@ -7,6 +7,7 @@ export const modelUpdate = {
   path: `${updateGuide}#october-30-monthly-update`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft 365 Copilot', title: 'Copilot Chat fair-use와 과금 일정 변경', description: '무라이선스 사용자의 제한 확대와 Copilot Business CSP 과금 기본 활성화의 2027년 1~3월 연기를 구분했습니다.', date: '2026-11-09', status: '11월 9일 적용 시작 · 일정 정정', path: `${updateGuide}#copilot-chat-fair-use-november-9`},
   {category: 'Copilot Studio', title: '에이전트 반복 실행의 설계·정량 평가', description: '도구 계약과 재시도 한도에 더해 완료율, 캐시 효율, 실패 복구와 총 토큰 비용을 함께 측정하는 근거를 추가했습니다.', date: '2026-11-07', status: '설계 지침 · Microsoft 정량 평가', path: `${updateGuide}#reliable-agentic-loops`},
   {category: 'Microsoft 365 Copilot', title: '11월 4일 앱·에이전트 운영 기능', description: '에이전트 사용량 보고서, 권위 콘텐츠, Cowork의 로컬 Edge 사용과 앱별 변경을 정리했습니다.', date: '2026-11-05', status: 'Current Channel · 안전 배포 확인', path: `${updateGuide}#app-updates-november-4`},
   {category: 'SharePoint · OneDrive', title: '에이전트 생성 방식 전환 준비', description: '11월 중순 전환 예정과 기존 .agent 파일의 2027년 3월 말 지원 종료, 공유 권한 재확인 사항을 정리했습니다.', date: '2026-11-05', status: '전환 예정 · 이전 준비', path: '/knowledge/microsoft365/sharepoint#agent-upgrade-2026'},

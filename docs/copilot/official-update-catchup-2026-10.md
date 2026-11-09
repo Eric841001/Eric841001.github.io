@@ -2,15 +2,16 @@
 id: official-update-catchup-2026-10
 title: Copilot 기능·배포 변경 — 2026년 10~11월
 sidebar_label: 2026년 10~11월 기능 변경
-description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, 11월 앱·관리 기능과 12월 시행 예정 구매·과금 변경.
+description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, 11월 Copilot Chat 사용 제한과 구매·과금 일정 변경.
 ---
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 초까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 9일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 9일 Copilot Chat 제한·과금 일정 변경](#copilot-chat-fair-use-november-9) · 무라이선스 사용자 fair-use 적용과 CSP 준비 일정 정정
 - [11월 6~7일 안정적인 agentic loop 설계·평가](#reliable-agentic-loops) · Microsoft Copilot harness 운영 지침과 정량 근거
 - [11월 4일 앱·관리 기능 변경](#app-updates-november-4) · Current Channel·플랫폼별 안전 배포
 - [10월 30일 월간 배포 정리](#october-30-monthly-update) · 10월 제공·11월 순차 배포·미리 보기 구분
@@ -22,6 +23,20 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 9일 Copilot Chat 제한·과금 일정 변경 {/* #copilot-chat-fair-use-november-9 */}
+
+Microsoft의 11월 Partner Center 공지는 Microsoft 365 Copilot 라이선스가 없는 상용 테넌트 사용자에게 적용되는 **Copilot Chat fair-use 제한**과 신규 Copilot Business CSP 구매의 사용량 과금 일정을 다음과 같이 안내합니다.
+
+| 변경 | 대상·시점 | 운영 확인 |
+|---|---|---|
+| Copilot Chat fair-use 제한 확대 | Microsoft 365 Copilot 라이선스가 없는 상용 테넌트 사용자. 2,000석 이하 조직은 11월 2일, 2,000석 초과 조직은 11월 9일부터 시작 | Web·데스크톱·모바일에서 일부 추가 기능과 기능 범위에 제한이 적용될 수 있습니다. 제한에 도달하면 제품에 다시 사용할 수 있는 시점이 표시되며, 이미 진행 중인 응답은 중단되지 않습니다. 정확한 고정 할당량으로 환산하지 말고 Message center의 `MC1536158`, `MC1536163`과 실제 사용자 알림을 확인하세요. |
+| Copilot Business 사용량 과금 기본 활성화 | CSP에서 FY27 Q3(2027년 1~3월)에 신규 구매하는 Microsoft 365 Copilot Business. 새 구매가 있는 테넌트의 기존 Copilot Business 구독에도 기본 활성화 | 이전의 12월 1일 일정을 사용하지 마세요. 기본 지출 한도는 사용자당 월 4,000 Copilot Credits이지만 무료 제공량이 아니며 실제 사용량이 청구됩니다. 관리 센터 또는 Partner Center에서 한도를 조정하고 Cowork·Work IQ API·Microsoft Copilot harness 사용량을 확인하세요. |
+| 지역·샌드박스 일정 | 과금 기본 활성화는 한국을 포함한 모든 시장으로 안내. Partner Center 샌드박스의 기존 11월 2일 일정은 연기됐고 새 날짜는 미정 | 한국을 초기 제외 지역으로 가정하지 마세요. 샌드박스 준비 일정은 Microsoft의 후속 공지를 기다리고 실제 가격 목록·SKU·테넌트 설정을 다시 확인하세요. |
+
+fair-use 제한은 Copilot Chat이 Microsoft 365 구독에서 제외된다는 의미가 아니며, 별도의 관리자 작업도 요구하지 않습니다. Microsoft 365 Copilot 라이선스 보유자는 추가 기능과 사용 범위를 이용할 수 있으므로, 지원 부서는 제한 알림을 서비스 장애로 오인하지 않도록 사용자 유형과 라이선스 할당을 함께 확인해야 합니다.
+
+출처: [Microsoft Partner Center — November 2026 announcements](https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#copilot-chat-limits-for-users-without-a-microsoft-365-copilot-license). 공지의 날짜는 출시 시작일이며 모든 사용자에게 같은 순간에 적용된다는 보장은 아닙니다.
 
 ## 11월 6~7일 안정적인 agentic loop 설계·평가 {/* #reliable-agentic-loops */}
 

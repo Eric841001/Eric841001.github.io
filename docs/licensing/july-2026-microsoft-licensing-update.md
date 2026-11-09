@@ -104,15 +104,26 @@ Microsoft는 해당 Defender·Intune 기능의 상용 배포 완료 일정을 20
 
 [Microsoft의 E3 프로모션 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3)와 파트너 프로모션 자료로 고객 자격·주문 조건을 확인한 뒤 견적을 받으세요. E5·E7과 비교할 때도 정가 비교와 프로모션 견적을 구분해야 합니다.
 
-## 12월 1일 예정된 Copilot 구매·과금 변경 {/* #copilot-december-2026-purchase-changes */}
+## 11월 Copilot Chat fair-use 제한 {/* #copilot-chat-fair-use-november-9 */}
 
-2026년 10월 14일 Partner Center 공지는 다음 변경을 예고했습니다. 10월 26일 현재의 구매 조건과 구분하세요.
+Microsoft는 Microsoft 365 Copilot 라이선스가 없는 상용 테넌트 사용자의 Copilot Chat 일부 추가 기능에 fair-use 제한을 확대했습니다. 2,000석 이하 조직은 11월 2일, 2,000석 초과 조직은 11월 9일부터 적용이 시작됩니다.
+
+- **적용 사용자:** Web·데스크톱·모바일의 Copilot Chat을 사용하는 무라이선스 사용자입니다. Microsoft 365 Copilot 라이선스 보유자는 추가 기능과 사용 범위를 이용할 수 있습니다.
+- **제한 동작:** 사용 가능량은 하루 중 달라질 수 있습니다. 한도에 도달하면 제품에서 다시 사용할 수 있는 시점을 안내하고, 이미 생성 중인 응답은 중단하지 않습니다. Microsoft는 이 공지에서 고정된 요청 수를 제시하지 않았으므로 임의의 일일 할당량으로 계약하거나 장애로 분류하지 마세요.
+- **관리 확인:** 별도 관리자 작업은 필요하지 않습니다. Message center의 `MC1536158`, `MC1536163`, 실제 사용자 알림과 라이선스 할당을 함께 확인하세요.
+
+출처: [Partner Center 11월 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#copilot-chat-limits-for-users-without-a-microsoft-365-copilot-license).
+
+## Copilot 구매·과금 일정 변경 {/* #copilot-december-2026-purchase-changes */}
+
+2026년 10월 공지의 구매 조건과 11월 3일에 정정된 사용량 과금 일정을 구분하세요.
 
 - **구매 조건:** 12월 1일부터 적격 기본 구독을 먼저 구매하지 않아도 주문할 수 있는 새 Copilot·Copilot Business 상품이 제공될 예정입니다. 이것이 모든 Office 앱·서비스의 사용 권한을 포함한다는 뜻은 아닙니다.
 - **기존 구독:** 현재 적격 기본 구독을 요구하는 상품에는 `(add-on)`이 붙습니다. 기존 구독은 계속 갱신·수량 조정할 수 있으며 새 상품이 나온다는 이유로 사용자 라이선스를 재할당할 필요는 없습니다. 자동화는 상품명보다 제품·SKU ID를 기준으로 확인하세요.
-- **CSP 과금:** 신규 Copilot Business 상품의 사용량 과금 기본 활성화 일정은 11월 2일에서 12월 1일로 바뀌었습니다. 초기 제공 국가에 **한국은 포함되지 않습니다**. 이 예외를 앞의 구매 조건 변경 전체에 적용하지 마세요. 사용자당 월 4,000 Copilot Credits는 무료 제공량이 아닌 조정 가능한 기본 지출 한도이며, 실제 사용량이 청구됩니다.
+- **CSP 과금:** 신규 Copilot Business 상품의 사용량 과금 기본 활성화는 12월 1일이 아니라 **Microsoft FY27 Q3(2027년 1~3월)**에 시작될 예정입니다. 신규 구매가 있는 테넌트의 기존 Copilot Business 구독에도 기본 활성화되며, 한국을 포함한 모든 시장이 대상입니다. 사용자당 월 4,000 Copilot Credits는 무료 제공량이 아닌 조정 가능한 기본 지출 한도이며, 실제 사용량이 청구됩니다.
+- **샌드박스:** Partner Center 샌드박스의 기존 11월 2일 제공 일정은 연기됐습니다. 새 날짜는 아직 발표되지 않았으므로 후속 준비 안내를 확인하세요.
 
-출처: [Partner Center 10월 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates). 구매 전 현재 가격 목록·SKU·지역 조건을 다시 확인하세요.
+출처: [Partner Center 10월 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates), [Partner Center 11월 정정](https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments). 구매 전 현재 가격 목록·SKU·지역 조건을 다시 확인하세요.
 
 ## E7 크레딧 프로모션과 AI Builder 갱신
 

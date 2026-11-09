@@ -909,7 +909,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "11월 9일 추가 대조: 공식 사이트 지정의 관리 센터 경로와 기존 PowerShell·CSOM 안내, Global Reader 변경 권한에 관한 공식 문서 간 불일치를 확인했습니다. 플러그인 관리 위치, 새 버전 검토와 향후 연동 범위도 대조했습니다.",
+    "scope": "11월 9일 추가 대조: 무라이선스 Copilot Chat fair-use 제한의 조직 규모별 시작일과 알림 동작, Copilot Business CSP 사용량 과금 기본 활성화의 FY27 Q3 연기·전체 시장 확대를 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1176,6 +1176,11 @@
         "title": "Microsoft Entra Global Reader",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader",
         "checkedFor": "Global Reader는 읽기 전용이며 변경할 수 없다는 역할 정의를 확인했습니다. 실제 서비스의 역할별 동작은 시험하지 않았습니다."
+      },
+      {
+        "title": "Microsoft Partner Center November 2026 announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november",
+        "checkedFor": "무라이선스 Copilot Chat fair-use 제한의 11월 2일·9일 시작 조건, 제품 알림과 진행 중 응답 처리, Copilot Business CSP 과금 기본 활성화의 FY27 Q3 연기·전체 시장 확대·샌드박스 일정 연기를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2207,9 +2212,9 @@
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "kind": "기술·운영 가이드",
-    "scope": "11월 1일 이후 AI Builder 크레딧 종료 단계와 기존 활성 계약의 잔여 사용 조건을 대조했습니다.",
+    "scope": "11월 9일 추가 대조: 무라이선스 Copilot Chat fair-use 제한과 Copilot Business CSP 사용량 과금 기본 활성화의 FY27 Q3 연기, 한국을 포함한 전체 시장 적용을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2291,6 +2296,11 @@
         "title": "Official product configuration and conditions",
         "url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
         "checkedFor": "기존 활성 계약의 크레딧은 계약 종료까지 사용할 수 있습니다. Premium 포함 크레딧의 신규 제공 종료와 Copilot Credits의 별도 준비를 구분했습니다."
+      },
+      {
+        "title": "Microsoft Partner Center November 2026 announcements",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november",
+        "checkedFor": "Copilot Chat fair-use 제한의 대상·시작일·알림 동작과 Copilot Business CSP 과금 기본 활성화의 FY27 Q3 연기, 전체 시장 적용, 샌드박스 일정 연기를 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
