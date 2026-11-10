@@ -101,6 +101,17 @@ Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)�
 
 출처: [Microsoft 365 Copilot 릴리스 노트 — 2026년 11월 4일](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026).
 
+### Copilot 커넥터 쓰기 작업 통제 {/* #connector-write-actions */}
+
+11월 9일 Microsoft는 Copilot Chat과 Cowork에서 지원되는 federated connector의 **생성·수정·삭제 작업을 GA**로 발표했습니다. 연결 시스템의 사용자 권한으로 실행되며, 현재 Learn 문서는 사용자가 Microsoft 365 Copilot 라이선스를 보유하고 관리자 범위·커넥터 활성화·staged rollout에 포함되어야 한다고 안내합니다.
+
+- **기본 승인:** 새 쓰기·수정·삭제 도구는 `Needs approval`로 시작합니다. 사용자는 매개변수를 검토하고 한 번, 현재 대화 동안 또는 이후에도 허용할 수 있습니다. 지속 허용은 커넥터 전체가 아닌 개별 도구에 적용됩니다.
+- **관리 한계:** 쓰기 도구는 커넥터에 포함되며 읽기 도구와 별도로 관리자 활성화할 수 없습니다. 게시자 유형, 전체 사용자 범위, 개별 커넥터와 staged rollout으로 노출을 제한하고, 필요한 변경 작업을 제공하지 않는 커넥터를 선택하는 방식까지 검토하세요.
+- **데이터 경계:** 승인 대기 중에는 쓰기 작업의 고객 데이터가 외부 서비스로 전송되지 않습니다. 승인 뒤에는 외부 서비스가 시스템 오브 레코드이며 사용자 권한으로 변경됩니다. 제공자 약관, 데이터 처리 위치와 Purview 감사 가능 범위를 확인하세요.
+- **파일럿 기준:** 생성·수정·삭제를 각각 시험하고 취소, 부분 성공, 중복 실행과 완료 결과를 확인합니다. 삭제·외부 게시·계정 또는 금액 변경에는 `Always allow`를 사용하지 않고 조직의 별도 승인 절차를 유지하세요.
+
+출처: [Copilot 커넥터 쓰기 작업 GA 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/turn-copilot-insights-into-action-with-connector-write-capabilities/4571160), [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview).
+
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
 Microsoft announced the Power Platform Admin (preview) plugin for Cowork in October 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
@@ -137,7 +148,7 @@ Managed Environments are not required to ask questions. Their separate governanc
   </div>
 </div>
 
-12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
+Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 사용량 과금 기본 활성화 일정은 2027년 1~3월로 정정됐으므로 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
 
 ## Cost and Billing Control Plane
 

@@ -11,6 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 9일 커넥터 쓰기 작업 GA](#connector-write-actions-ga) · 외부 시스템 생성·수정·삭제와 사용자 승인·관리 통제
 - [11월 9일 Copilot Chat 제한·과금 일정 변경](#copilot-chat-fair-use-november-9) · 무라이선스 사용자 fair-use 적용과 CSP 준비 일정 정정
 - [11월 6~7일 안정적인 agentic loop 설계·평가](#reliable-agentic-loops) · Microsoft Copilot harness 운영 지침과 정량 근거
 - [11월 4일 앱·관리 기능 변경](#app-updates-november-4) · Current Channel·플랫폼별 안전 배포
@@ -23,6 +24,21 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 9일 Copilot 커넥터 쓰기 작업 GA {/* #connector-write-actions-ga */}
+
+Microsoft는 **Copilot 커넥터의 생성·수정·삭제 작업을 Copilot Chat과 Cowork에서 일반 공급(GA)**한다고 발표했습니다. 커넥터가 해당 도구를 제공할 때 회의 기록을 CRM 활동이나 작업으로 만들고, Jira 티켓이나 Notion 문서를 갱신하는 것처럼 대화의 문맥을 연결 시스템의 작업으로 이어갈 수 있습니다. Office 앱의 Copilot 지원은 향후 제공 항목이므로 현재 GA 범위로 단정하지 마세요.
+
+| 확인 영역 | 현재 동작과 운영 기준 |
+|---|---|
+| 사용자·라이선스 | 작업은 연결된 외부 서비스에서 **사용자 본인의 ID와 권한**으로 실행됩니다. 현재 Learn 문서는 federated connector 사용자의 Microsoft 365 Copilot 라이선스를 요구하므로, Copilot Chat 표시만으로 쓰기 권한이 있다고 가정하지 말고 대상 사용자의 라이선스와 원본 시스템 권한을 함께 확인하세요. |
+| 관리자 범위 | 관리 센터의 게시자 유형 허용, `Agents > Settings > User access`, 개별 커넥터 활성화와 staged rollout이 모두 사용자 노출 범위에 영향을 줍니다. 쓰기·삭제 도구는 커넥터의 일부이며 관리자 화면에서 읽기와 별도로 켜는 기능은 아닙니다. |
+| 실행 승인 | 새 쓰기·수정·삭제 도구는 기본적으로 `Needs approval`입니다. 사용자는 실행 매개변수를 보고 `Allow once`, 현재 대화 동안 허용, `Always allow` 또는 취소를 선택할 수 있습니다. `Always allow`는 커넥터 전체가 아니라 개별 도구에 적용되며 설정에서 다시 초기화할 수 있습니다. |
+| 데이터·감사 | 승인 대기 중에는 쓰기 작업용 고객 데이터가 외부 시스템으로 전송되지 않습니다. 승인 후에는 원본 서비스가 시스템 오브 레코드이며, Microsoft 365에는 외부 데이터가 인덱싱되지 않습니다. 관리자와 보안 담당자는 커넥터 제공자 약관, 사용자 권한, Purview 감사 기록과 완료 결과를 함께 검토하세요. |
+
+파일럿에서는 조회 도구와 변경 도구를 구분하고, 삭제·외부 게시·계정 또는 금액 변경에는 매번 확인을 유지하세요. 커넥터 게시자가 도구를 새로 추가하거나 변경하면 해당 도구는 다시 승인 필요 상태가 되지만, 이 동작만으로 조직의 업무 승인·분리 의무가 충족되는 것은 아닙니다.
+
+출처: [Microsoft 공식 발표 — Turn Copilot insights into action with connector write capabilities](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/turn-copilot-insights-into-action-with-connector-write-capabilities/4571160), [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview). 커넥터별 제공 도구와 구성·권한에 따라 실제 기능은 달라집니다.
 
 ## 11월 9일 Copilot Chat 제한·과금 일정 변경 {/* #copilot-chat-fair-use-november-9 */}
 
