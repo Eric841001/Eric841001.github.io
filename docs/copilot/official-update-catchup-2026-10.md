@@ -7,10 +7,11 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 9일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 10일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 10일 금융 데이터 커넥터 활용](#financial-intelligence-connectors) · 전문 데이터와 조직 맥락을 결합할 때의 권한·검토 기준
 - [11월 9일 커넥터 쓰기 작업 GA](#connector-write-actions-ga) · 외부 시스템 생성·수정·삭제와 사용자 승인·관리 통제
 - [11월 9일 Copilot Chat 제한·과금 일정 변경](#copilot-chat-fair-use-november-9) · 무라이선스 사용자 fair-use 적용과 CSP 준비 일정 정정
 - [11월 6~7일 안정적인 agentic loop 설계·평가](#reliable-agentic-loops) · Microsoft Copilot harness 운영 지침과 정량 근거
@@ -24,6 +25,21 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 10일 금융 데이터 커넥터 활용 {/* #financial-intelligence-connectors */}
+
+Microsoft는 Moody's·LSEG·FactSet 같은 **전문 금융 데이터 제공자의 federated connector**를 Copilot의 조직 맥락과 함께 사용하는 실무 예시를 공개했습니다. 신용·시장·기업 데이터를 Copilot Chat, Cowork 또는 Excel에서 조회해 Word 메모, Excel 분석표와 PowerPoint 브리핑으로 이어갈 수 있지만, 발표의 프롬프트는 예시이며 모든 커넥터가 모든 Copilot 환경에서 같은 기능을 제공한다는 뜻은 아닙니다.
+
+| 확인 영역 | 적용 전 점검 |
+|---|---|
+| 사용 권한 | 사용자는 Microsoft 365 Copilot 라이선스와 해당 데이터 제공자 계정·구독 권한이 모두 필요합니다. 연결해도 새 데이터 권한이 생기지 않으며 원본 제공자의 사용자 권한 범위에서만 조회합니다. |
+| 앱별 제공 범위 | Chat·Cowork에서는 `Agents & Plugins`, Excel에서는 Copilot의 플러그인 선택 화면에서 제공자를 연결합니다. 공급자와 앱에 따라 지원 기능이 다르므로 실제 테넌트에서 표시 여부와 읽기·쓰기 도구를 확인하세요. |
+| 관리자 통제 | 게시자 유형 허용, `Agents > Settings > User access`, 개별 커넥터 활성화와 staged rollout이 함께 적용됩니다. 외부 게시자 커넥터는 승인 대상 사용자 그룹부터 제한적으로 배포하세요. |
+| 데이터·전문가 검토 | federated connector는 외부 데이터를 Microsoft 365에 인덱싱하지 않고 원본에서 실시간으로 가져옵니다. 출처·기준일·단위·회계기간과 계산식을 기록하고, 투자·신용·고객 조언에 사용하기 전 담당자가 가정과 결론을 검토해야 합니다. |
+
+파일럿은 한 공급자와 한 업무부터 시작해 동일 질문의 원본 조회 결과, 인용, 누락값, 계산식과 최종 산출물을 대조하세요. 공급자 약관과 조직의 기밀·보존·공유 정책도 결과물에 계속 적용됩니다.
+
+출처: [Microsoft 공식 발표 — Use connected financial intelligence with Copilot in real financial workflows](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/use-connected-financial-intelligence-with-copilot-in-real-financial-workflows/4571099), [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview), [Manage federated connector availability](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors).
 
 ## 11월 9일 Copilot 커넥터 쓰기 작업 GA {/* #connector-write-actions-ga */}
 

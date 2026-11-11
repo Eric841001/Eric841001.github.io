@@ -112,6 +112,17 @@ Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)�
 
 출처: [Copilot 커넥터 쓰기 작업 GA 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/turn-copilot-insights-into-action-with-connector-write-capabilities/4571160), [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview).
 
+### 금융 데이터 커넥터 파일럿 {/* #financial-intelligence-connectors */}
+
+11월 10일 Microsoft는 Moody's·LSEG·FactSet 등 전문 금융 데이터를 Work IQ의 조직 맥락과 결합하는 Chat·Cowork·Excel 예시를 공개했습니다. 이는 측정된 생산성 결과나 모든 테넌트에 동일하게 제공되는 기능 목록이 아니라, 공급자별 계정과 커넥터 기능을 전제로 한 예시입니다.
+
+- **이중 권한 확인:** Microsoft 365 Copilot 라이선스뿐 아니라 데이터 제공자 계정·구독 권한이 필요합니다. 커넥터 연결은 사용자의 원본 데이터 권한을 확대하지 않습니다.
+- **경험별 기능 확인:** Chat·Cowork와 Excel에서 연결 경로와 지원 도구가 다를 수 있습니다. 대상 공급자, 앱, 읽기·쓰기 도구와 실제 사용자 표시 여부를 파일럿에서 확인합니다.
+- **근거 보존:** 결과물에 공급자, 출처 날짜, 보고 기간, 통화·단위, 계산식과 누락값을 남겨 검토자가 원본으로 되짚을 수 있게 합니다.
+- **전문가 책임:** 신용·투자·고객 조언의 가정과 결론은 담당자가 검토합니다. 공급자 약관, 조직의 기밀·보존·공유 정책과 관리자 staged rollout을 계속 적용합니다.
+
+출처: [Microsoft 공식 금융 워크플로 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/use-connected-financial-intelligence-with-copilot-in-real-financial-workflows/4571099), [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview), [Manage federated connector availability](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors).
+
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
 Microsoft announced the Power Platform Admin (preview) plugin for Cowork in October 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
