@@ -1,12 +1,15 @@
 // Shared by home highlights and document update notices.
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
-export const verifiedOn = '2026-11-11';
+export const verifiedOn = '2026-11-12';
 export const modelUpdate = {
-  title: 'Claude Sonnet 5.5 · PowerPoint 배포',
-  date: '2026-10-30',
-  path: `${updateGuide}#october-30-monthly-update`,
+  title: 'Claude Fable 5.2 · 단계적 배포',
+  date: '2026-11-12',
+  path: `${updateGuide}#claude-fable-5-2`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft Copilot', title: 'Claude Fable 5.2 단계적 배포', description: 'Cowork·Copilot Studio의 eligible users 대상 롤아웃과 지역·하위처리자·데이터 보존 설정을 구분했습니다.', date: '2026-11-12', status: '순차 배포 · 조직별 자격·조건 확인', path: `${updateGuide}#claude-fable-5-2`},
+  {category: 'Microsoft 365 Copilot', title: '커넥터 카탈로그·운영 기능 확대', description: '통합 카탈로그, source filter, 장기 작업, 연결 편집·진단과 원본 권한 검증 기준을 정리했습니다.', date: '2026-11-12', status: '공식 월간 업데이트 · 커넥터별 확인', path: `${updateGuide}#connectors-october-2026`},
+  {category: 'Copilot Studio', title: '에이전트 거버넌스 책임 분리', description: 'Power Platform·Entra·Purview·Agent 365·Defender의 역할과 에이전트 ID별 통제 범위를 정리했습니다.', date: '2026-11-12', status: '공식 운영 지침 · 지원 범위 확인', path: `${updateGuide}#agent-governance-roles`},
   {category: 'Microsoft 365 Copilot', title: '금융 데이터 커넥터의 검토 가능한 분석', description: 'Moody\'s·LSEG·FactSet 등 전문 데이터와 조직 맥락을 결합할 때 필요한 권한·출처·전문가 검토 기준을 정리했습니다.', date: '2026-11-11', status: '공식 활용 안내 · 공급자별 기능 확인', path: `${updateGuide}#financial-intelligence-connectors`},
   {category: 'Microsoft 365 Copilot', title: 'Copilot 커넥터 쓰기 작업 정식 제공', description: '외부 시스템 생성·수정·삭제의 사용자 권한, 실행 전 확인과 관리자 범위 통제를 정리했습니다.', date: '2026-11-10', status: 'GA · 커넥터별 도구·권한 확인', path: `${updateGuide}#connector-write-actions-ga`},
   {category: 'Microsoft 365 Copilot', title: 'Copilot Chat fair-use와 과금 일정 변경', description: '무라이선스 사용자의 제한 확대와 Copilot Business CSP 과금 기본 활성화의 2027년 1~3월 연기를 구분했습니다.', date: '2026-11-09', status: '11월 9일 적용 시작 · 일정 정정', path: `${updateGuide}#copilot-chat-fair-use-november-9`},

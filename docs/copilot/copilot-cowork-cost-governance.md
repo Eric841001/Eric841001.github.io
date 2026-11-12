@@ -78,6 +78,34 @@ Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)�
 
 플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 6월 발표에서는 DLP를 출시 예정으로 안내했지만, 현재 Purview 지원표에는 Cowork의 지원 기능으로 표시되어 있습니다. 적용할 정책과 자료 유형을 확인하고 실제 차단 동작을 시험하세요. 플러그인의 제공 여부는 해당 제공자의 현재 안내를 따릅니다. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
+### Claude Fable 5.2 모델 점검 {/* #claude-fable-5-2 */}
+
+11월 11일 Microsoft는 Claude Fable 5.2를 Copilot Cowork와 Copilot Studio의 eligible users에게 순차 배포한다고 발표했습니다. 전면 GA나 모든 지역 제공으로 해석하지 말고 모델 선택 화면, 조직 자격과 관리자 설정을 함께 확인하세요.
+
+- Microsoft 365 관리 센터의 Anthropic 하위처리자 설정과 허용 사용자·그룹을 확인합니다. EU·EFTA·영국은 기본 꺼짐이며 정부·소버린 클라우드는 별도 제한이 있습니다.
+- Fable 계열은 조직 자격에 따라 Microsoft 하위처리자 조건 또는 `Anthropic models with Data Retention` 조건으로 제공될 수 있습니다. 후자는 별도 opt-in·Anthropic 약관이 적용되고 입력·출력 보존 조건이 다르므로 법무·보안 검토 없이 활성화하지 않습니다.
+- Copilot Studio는 Power Platform 관리 센터의 외부 LLM 설정도 확인합니다. 새 모델은 대표 업무의 정확도, 도구 호출, 지연, 비용과 실패 복구를 기존 모델과 비교한 뒤 적용합니다.
+
+출처: [Claude Fable 5.2 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-anthropic-claude-fable-5-2-in-microsoft-copilot/4571829), [Claude 모델 데이터·관리자 조건](https://learn.microsoft.com/en-us/copilot/implement/connect-to-ai-subprocessor).
+
+### 커넥터 카탈로그와 운영 점검 {/* #connectors-october-2026 */}
+
+11월 11일 공개된 10월 커넥터 업데이트는 Copilot 화면 간 공유 카탈로그, connector skills, 장기 실행 Tasks와 연결 관리 개선을 안내했습니다. 카탈로그 노출은 실제 커넥터 활성화, 공급자 권한이나 앱별 도구 지원을 자동으로 보장하지 않습니다.
+
+- source filter, Sources 메뉴, 누락 결과 제안과 inline reauthentication을 대표 사용자로 시험합니다. Chat·Word·Excel·PowerPoint·Researcher에서 실제 커넥터와 도구가 보이는지 각각 확인합니다.
+- 장기 실행 Tasks는 진행 상태와 최종 결과를 확인하고, 시간 제한·중복 실행·취소·부분 성공을 시험합니다. 공급자 계정·라이선스와 원본 권한은 별도로 필요합니다.
+- 연결 구성 편집, ACL 변경 뒤 ad hoc crawl, 오류 진단과 full crawl 진행률을 변경 기록에 남깁니다. 제한 사용자와 민감 자료로 Salesforce·ServiceNow·Confluence의 권한 일치와 과다 노출을 검증합니다.
+
+출처: [Microsoft Copilot Connectors Update: October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/microsoft-copilot-connectors-update-october-2026/4572240), [Microsoft-built connectors gallery](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft).
+
+### 에이전트 거버넌스 운영 모델 {/* #agent-governance-roles */}
+
+Copilot Studio 에이전트의 통제는 한 포털에서 끝나지 않습니다. Power Platform은 환경·커넥터·공유 경계, Entra는 ID·접근, Purview는 지원되는 데이터 보호, Agent 365는 자산·도구·사용·비용 관찰, Defender는 위협 탐지와 대응을 담당합니다.
+
+인벤토리에는 에이전트 소유자, agent identity·delegated user·agent user account 중 실제 ID 유형, 환경, 지식 원본, 도구, 대상 사용자, 데이터 분류, 비용 정책과 비상 중지 담당자를 기록하세요. agent registry나 map에 표시되는 정보·작업은 에이전트 유형, 게시 상태와 도구에 따라 다릅니다. 각 포털의 지원 범위를 확인하고 정책 적용 결과를 시험해야 합니다.
+
+출처: [Where do I govern my Copilot Studio agents?](https://techcommunity.microsoft.com/blog/copilot-studio-blog/where-do-i-govern-my-copilot-studio-agents/4572592), [Copilot Studio layered governance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2), [Agent Registry](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/agent-registry-overview).
+
 ### 2026년 10월 배포 점검 {/* #october-2026-rollout */}
 
 10월 30일 Microsoft 월간 업데이트는 Cowork와 연결된 기능의 제공 시점을 다음과 같이 구분했습니다. Cowork 자체의 GA와 개별 플러그인·Workspaces 기능의 배포 상태를 혼동하지 마세요.

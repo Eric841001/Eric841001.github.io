@@ -7,10 +7,13 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 10일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 12일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 11일 Claude Fable 5.2 배포](#claude-fable-5-2) · Cowork·Copilot Studio의 조직별 자격·지역·데이터 조건
+- [11월 11일 Copilot 커넥터 월간 업데이트](#connectors-october-2026) · 통합 카탈로그·장기 작업·운영 개선
+- [11월 11일 에이전트 거버넌스 책임 분리](#agent-governance-roles) · Power Platform·Entra·Purview·Agent 365·Defender 역할
 - [11월 10일 금융 데이터 커넥터 활용](#financial-intelligence-connectors) · 전문 데이터와 조직 맥락을 결합할 때의 권한·검토 기준
 - [11월 9일 커넥터 쓰기 작업 GA](#connector-write-actions-ga) · 외부 시스템 생성·수정·삭제와 사용자 승인·관리 통제
 - [11월 9일 Copilot Chat 제한·과금 일정 변경](#copilot-chat-fair-use-november-9) · 무라이선스 사용자 fair-use 적용과 CSP 준비 일정 정정
@@ -25,6 +28,46 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 11일 Claude Fable 5.2 단계적 배포 {/* #claude-fable-5-2 */}
+
+Microsoft는 **Claude Fable 5.2를 Copilot Cowork와 Copilot Studio의 eligible users에게 순차 배포**한다고 발표했습니다. 발표일에 모든 테넌트와 지역에서 사용할 수 있다는 뜻은 아니며, 실제 모델 선택 화면과 조직 자격을 확인해야 합니다.
+
+| 확인 영역 | 적용 전 점검 |
+|---|---|
+| 조직·지역 | Microsoft 365 관리 센터에서 Anthropic 하위처리자와 대상 사용자·그룹 설정을 확인합니다. EU·EFTA·영국은 기본 꺼짐이며, 정부·소버린 클라우드는 별도 제외 또는 제한이 있습니다. |
+| 데이터 조건 | Fable 계열은 조직 자격에 따라 Microsoft 하위처리자 조건이 적용되거나 `Anthropic models with Data Retention`으로 제공될 수 있습니다. 후자는 별도 동의와 명시적 opt-in이 필요하고 Microsoft Product Terms·DPA 적용 범위가 다릅니다. |
+| Copilot Studio 추가 통제 | Microsoft 365 관리 센터에서 허용한 뒤에도 Power Platform 관리 센터의 외부 LLM 허용 설정을 확인합니다. 제작자는 에이전트에서 모델을 직접 선택해야 합니다. |
+| 운영 검증 | 기존 모델과 같은 평가 과제에서 정확도, 도구 호출, 지연, 비용과 실패 복구를 비교합니다. 새 모델이라는 이유만으로 운영 에이전트의 기본 모델을 즉시 교체하지 않습니다. |
+
+출처: [Microsoft 공식 발표 — Available today: Anthropic Claude Fable 5.2 in Microsoft Copilot](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-anthropic-claude-fable-5-2-in-microsoft-copilot/4571829), [Claude models from Anthropic in Microsoft Online Services](https://learn.microsoft.com/en-us/copilot/implement/connect-to-ai-subprocessor).
+
+## 11월 11일 Copilot 커넥터 월간 업데이트 {/* #connectors-october-2026 */}
+
+Microsoft의 10월 커넥터 업데이트는 Copilot 화면 간 **공유 카탈로그**, connector skills, 장기 실행 도구와 사용자·관리자 운영 기능 확대를 발표했습니다. synced connector와 federated connector의 데이터 방식, 인증, 앱별 기능은 계속 다르므로 카탈로그 노출을 모든 기능의 GA 근거로 사용하지 마세요.
+
+- **사용자 경험:** source filter, 설정의 Sources 메뉴, 누락된 커넥터 결과 제안과 federated connector의 inline reauthentication을 대상 사용자로 시험합니다. Microsoft는 Chat·Word·Excel·PowerPoint·Researcher의 통합 카탈로그를 안내했지만, 실제 도구·읽기·쓰기 범위는 커넥터별로 확인합니다.
+- **장기 작업:** Tasks는 최신 MCP 사양을 바탕으로 몇 분 걸리는 federated connector 도구의 진행 상태를 표시합니다. LexisNexis·Power BI·Fabric·Bloomberg·Wolters Kluwer·Thomson Reuters 등이 예시이며, 공급자 계정·권한·라이선스와 실제 제공 상태가 전제입니다.
+- **검색 품질·보안:** Salesforce의 추가 객체·field-level security, ServiceNow의 속성·ACL·64MB KB 첨부, Confluence의 댓글·첨부·identity matching 개선이 발표됐습니다. 원본 시스템의 제한 사용자와 대표 자료로 누락·과다 노출을 함께 검증합니다.
+- **관리 운영:** 게시된 연결의 구성 편집, 상황별 오류, 모든 full crawl의 진행률과 GCA·초기 crawl 이메일 알림이 추가됐습니다. 권한 변경은 ad hoc crawl, 다른 변경은 즉시 또는 다음 crawl 적용 조건을 확인하고 변경 전후 연결 ID·동기화 상태를 기록합니다.
+
+출처: [Microsoft Copilot Connectors Update: October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/microsoft-copilot-connectors-update-october-2026/4572240), [Microsoft-built connectors gallery](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/connectors-gallery-microsoft), [Microsoft 365 Copilot connectors documentation](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/).
+
+## 11월 11일 에이전트 거버넌스 책임 분리 {/* #agent-governance-roles */}
+
+Copilot Studio 에이전트가 자체 Microsoft 365 계정과 더 많은 작업 권한을 갖기 시작하면서, Microsoft는 단일 관리 화면이 아니라 **통제 결과별 담당 포털과 책임**을 연결하는 지침을 공개했습니다.
+
+| 운영 결과 | 주 담당·포털 | 확인 기준 |
+|---|---|---|
+| 제작 환경과 배포 | Power Platform 관리자·관리 센터 | environment routing, environment group·rule, connector allowlist와 공유 제한으로 개인 개발부터 운영 승격 경로를 분리합니다. |
+| ID와 접근 | ID 관리자·Microsoft Entra | agent identity, 사용자를 대신한 실행, agent user account를 구분하고 대상 ID·토큰·권한에 맞는 Conditional Access와 access review를 적용합니다. |
+| 정보 보호 | 규정 준수·데이터 보안 담당·Microsoft Purview | 지원되는 상호작용의 분류·민감도 레이블·DLP·감사를 확인합니다. 에이전트와 상호작용 유형별 지원 범위가 다르므로 실제 정책 결과를 시험합니다. |
+| 자산·도구·비용 | AI 관리자·Microsoft Agent 365 | agent registry·map에서 소유자·사용·연결을 보고, Tools와 Copilot Credits 지출 정책을 관리합니다. Agent 365는 각 제품의 통제를 대체하지 않습니다. |
+| 위협 탐지·대응 | 보안 관리자·SOC·Microsoft Defender | jailbreak, prompt injection, 비정상 도구 호출 신호를 에이전트·소유자·접근 범위와 연결해 조사하고 관련 포털에서 조치합니다. |
+
+에이전트 인벤토리에 소유자, ID 유형, 환경, 지식 원본, 도구, 대상 사용자, 데이터 분류, 비용 정책과 비상 중지 담당자를 함께 기록하세요. 포털에 에이전트가 보인다는 사실만으로 모든 통제나 정보가 지원된다고 가정하지 말고 게시 상태·에이전트 유형·도구별 범위를 확인합니다.
+
+출처: [Where do I govern my Copilot Studio agents?](https://techcommunity.microsoft.com/blog/copilot-studio-blog/where-do-i-govern-my-copilot-studio-agents/4572592), [Copilot Studio layered governance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2), [Agent Registry](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/agent-registry-overview), [Agent user accounts](https://learn.microsoft.com/en-us/entra/agent-id/agent-users).
 
 ## 11월 10일 금융 데이터 커넥터 활용 {/* #financial-intelligence-connectors */}
 
