@@ -7,10 +7,11 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 12일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 13일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 12일 Ignite 플러그인 안내](#plugin-catalog-ignite-2026) · 11월 17일 공개 예정 카탈로그와 기존 관리 통제 구분
 - [11월 11일 Claude Fable 5.2 배포](#claude-fable-5-2) · Cowork·Copilot Studio의 조직별 자격·지역·데이터 조건
 - [11월 11일 Copilot 커넥터 월간 업데이트](#connectors-october-2026) · 통합 카탈로그·장기 작업·운영 개선
 - [11월 11일 에이전트 거버넌스 책임 분리](#agent-governance-roles) · Power Platform·Entra·Purview·Agent 365·Defender 역할
@@ -28,6 +29,21 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 12일 Ignite 플러그인 안내와 공개 카탈로그 준비 {/* #plugin-catalog-ignite-2026 */}
+
+Microsoft는 플러그인을 **스킬, 도구(커넥터 포함), 에이전트를 한 패키지로 묶을 수 있는 확장 단위**로 설명하고, 11월 17일 Ignite 개막에 맞춰 microsoft.com의 공개 Plugin Catalog를 시작할 예정이라고 발표했습니다. 이 카탈로그는 생태계 탐색용 출발점이며, 조직 테넌트에서 즉시 설치·사용할 수 있다는 GA 근거는 아닙니다.
+
+| 확인 영역 | 운영 기준 |
+|---|---|
+| 사용자 탐색 | Copilot Home이 Chat과 Cowork를 통합하면서 탐색 메뉴에 플러그인이 표시되기 시작합니다. 기존 에이전트가 플러그인 경험 안에서 보일 수 있으므로 이름 변경이나 새 제품으로 오인하지 말고 실제 구성 요소와 게시자를 확인합니다. |
+| 공개 Catalog | 11월 17일 공개 예정인 웹 카탈로그는 Microsoft 플러그인 생태계와 제공 항목을 찾는 용도입니다. 공개 웹 페이지 노출, Microsoft 365 Store 제공, 조직 레지스트리 설치 가능 상태를 각각 확인합니다. |
+| 관리자 통제 | Microsoft는 탐색 화면 변경에 따른 백엔드 관리 변경은 없다고 설명했습니다. Microsoft 365 관리 센터에서 게시자 범주를 허용하고, 개별 플러그인의 대상 사용자·그룹, 요청 승인, 설치·차단 상태를 계속 관리합니다. |
+| 보안 검토 | 플러그인 패키지에 포함된 스킬·에이전트·MCP 서버·커넥터를 분리해 검토합니다. 쓰기·삭제·결제 같은 고위험 도구는 가능한 경우 도구별로 차단하고, 게시자·권한·외부 데이터 처리·사용자 동의를 파일럿에서 확인합니다. |
+
+11월 17일 이후에는 카탈로그의 실제 URL과 표시 항목, 한국 테넌트에서의 제공 여부를 다시 확인하세요. Ignite 세션과 실습 일정은 향후 기능 설명을 포함할 수 있으므로 현재 제품 제공 상태의 근거로 사용하지 않습니다.
+
+출처: [Microsoft 공식 발표 — Plugins at Microsoft Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951), [플러그인·스킬·MCP 서버 관리](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-plugins-skills-mcp-servers).
 
 ## 11월 11일 Claude Fable 5.2 단계적 배포 {/* #claude-fable-5-2 */}
 

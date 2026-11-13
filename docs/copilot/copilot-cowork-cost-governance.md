@@ -151,6 +151,17 @@ Copilot Studio 에이전트의 통제는 한 포털에서 끝나지 않습니다
 
 출처: [Microsoft 공식 금융 워크플로 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/use-connected-financial-intelligence-with-copilot-in-real-financial-workflows/4571099), [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview), [Manage federated connector availability](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/manage-federated-connectors).
 
+## Plugin Catalog 준비와 패키지 검토 {/* #plugin-catalog-ignite-2026 */}
+
+Microsoft는 11월 17일 Ignite 개막에 맞춰 공개 Plugin Catalog를 시작할 예정이며, Copilot Home의 탐색 메뉴에도 플러그인이 표시되기 시작한다고 안내했습니다. 공개 카탈로그는 생태계 탐색용이므로 조직에서 즉시 사용할 수 있다는 의미로 해석하지 마세요.
+
+- 플러그인은 스킬, 도구(커넥터 포함), 에이전트를 함께 포함할 수 있습니다. 패키지 이름만 보지 말고 포함된 구성 요소와 각각의 권한을 검토합니다.
+- 탐색 메뉴 변경에도 기존 Microsoft 365 관리 센터 통제는 유지됩니다. 게시자 범주, 대상 사용자·그룹, 설치·차단, 사용자 요청 승인 상태를 확인합니다.
+- 공개 Catalog 노출, Microsoft 365 Store 제공, 조직 레지스트리 설치 가능 여부는 서로 다른 상태입니다. 11월 17일 이후 실제 테넌트와 한국 지역 제공 상태를 다시 확인합니다.
+- MCP 서버나 커넥터가 포함되면 쓰기·삭제·결제 도구를 별도로 식별하고, 지원되는 경우 도구별 차단과 최소 권한 동의를 적용합니다.
+
+공식 근거는 [Plugins at Microsoft Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951)와 [플러그인·스킬·MCP 서버 관리](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-plugins-skills-mcp-servers)에서 확인할 수 있습니다. Ignite 세션 안내는 향후 기능을 포함할 수 있으므로 현재 제공 상태와 구분합니다.
+
 ## Power Platform Admin Plugin Preview {/* #power-platform-admin-plugin-preview */}
 
 Microsoft announced the Power Platform Admin (preview) plugin for Cowork in October 2026. It provides read-only, AI-generated insights about Power Platform environments, apps, flows, agents, inventory, usage, ownership, capacity and licensing. It does not independently change administrative settings, so administrators should validate the source data before contacting makers or changing policies and environments.
@@ -443,6 +454,8 @@ Once these answers are available, the organization can move from technical enabl
 - [Understand usage-based billing and cost management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits)
 - [Power Platform Admin in Cowork (preview)](https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork)
 - [Agentic governance with Power Platform Admin in Cowork (preview)](https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance)
+- [Plugins at Microsoft Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951)
+- [Manage plugins, skills, and MCP servers](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-plugins-skills-mcp-servers)
 
 ## 검색 키워드
 
