@@ -140,6 +140,12 @@ Teams에 IB를 구성했더라도 SharePoint·OneDrive용 IB를 추가로 활성
 
 IB 정책을 구성하고 활성화한 뒤에는 SharePoint·OneDrive에 전파될 때까지 24시간을 기다립니다. 이어서 두 서비스의 IB를 활성화하면 적용에 약 1시간이 더 걸릴 수 있습니다. 대기 시간과 실제 적용 상태를 함께 확인하세요. [SharePoint·OneDrive 활성화 순서](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization)를 따릅니다.
 
+### 다중 세그먼트와 그룹 유형
+
+MultiSegment 모드는 사용자당 최대 10개 세그먼트를 지원하며, 이 모드의 정책은 허용 목록으로 정의합니다. 사용자가 공통 세그먼트에 속하는지가 호환성 판단 기준입니다. 기존 단일 세그먼트의 차단 정책을 그대로 복제하지 말고 [다중 세그먼트 구성 조건](https://learn.microsoft.com/en-us/purview/information-barriers-multi-segment)에 맞춰 설계하세요.
+
+IB가 지원하는 그룹은 Microsoft 365 그룹입니다. 배포 목록과 보안 그룹은 비IB 그룹으로 취급하므로 모든 그룹 유형에 같은 차단 결과를 기대하면 안 됩니다. [그룹 유형별 지원 범위](https://learn.microsoft.com/en-us/purview/information-barriers-policies#configuration-concepts)를 확인하세요.
+
 ## Segment Design
 
 세그먼트는 통신·협업 제한 정책을 적용할 사용자 집합입니다. 부서 외의 속성을 기준으로 정할 수도 있습니다.
@@ -199,6 +205,8 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시
 | 팀 구성원 추가 | 정책에 맞지 않는 사용자는 추가 차단 |
 | 동일 Segment 사용자 채팅 | 정상 허용 |
 | 예외 Segment 사용자 | 양방향으로 호환되는 상대와 정책 범위에서 허용 |
+
+기존 일대일 채팅에 새 차단 정책이 적용되면 이후 대화가 차단되고 기존 대화는 읽기 전용으로 남습니다. 이전 메시지가 보인다는 이유만으로 정책 실패라고 판정하지 마세요. 새 메시지 전송과 기존 기록 열람을 나눠 시험합니다. [Teams의 기존 채팅 처리](https://learn.microsoft.com/en-us/purview/information-barriers-teams#how-policy-changes-impact-existing-chats)를 참고하세요.
 
 검증 시에는 허용 시나리오와 차단 시나리오를 모두 캡처해야 합니다. 차단 화면만 남기면 운영팀이 정상 협업 영향도를 판단하기 어렵습니다.
 

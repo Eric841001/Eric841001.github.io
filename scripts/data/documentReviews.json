@@ -1526,9 +1526,9 @@
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: PTA 통신·프록시·TLS 검사 제외 및 Connect 인증 전환 전제 조건",
+    "scope": "PTA 현재·구버전 포트와 WPAD, Connect 프록시 인증 계정, 에이전트별 로그인 처리 확인, PHS 자동 장애 조치 미지원 조건을 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1539,12 +1539,12 @@
       {
         "title": "pta-faq",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq",
-        "checkedFor": "Older versions additional5671,8080,9090,9091,9350,9352,10100-10120; WPAD or agent service config."
+        "checkedFor": "Older versions additional5671,8080,9090,9091,9350,9352,10100-10120; WPAD or agent service config. 다중 에이전트는 결정적 부하 분산을 제공하지 않으며 AgentId 대조가 필요하다. PHS 자동 장애 조치는 없다."
       },
       {
         "title": "connect-prereq",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites",
-        "checkedFor": "2.6.84.0 plus app-based authentication by2027-04-07; Sync machine.config proxy including credential context and service restart."
+        "checkedFor": "2.6.84.0 plus app-based authentication by2027-04-07; Sync machine.config proxy including credential context and service restart. 인증 프록시는 도메인 서비스 계정이 필요하며 설치 마법사와 Configure·동기화의 자격 증명이 다르다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -4054,9 +4054,9 @@
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "양방향 제한, 조직 모드·세그먼트 수·ABP·숨김 사용자, Teams 사전 대기·감사 로깅, SharePoint·OneDrive 활성화와 모드별 접근, 보고서·변경 명령, 검색·Copilot 잔존 결과를 대조했습니다.",
+    "scope": "이번 대조 범위: 조직 모드·그룹 지원·다중 세그먼트 조건, Teams 기존 일대일 채팅, SharePoint·OneDrive 모드별 접근, 보존된 검색·Copilot 결과와 직접 접근 차이",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4067,7 +4067,7 @@
       {
         "title": "ib-policies",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-policies",
-        "checkedFor": "Legacy 250/사용자 1개, 새 모드 5,000개·다중 세그먼트 별도 설정, ABP·숨김 사용자 차이, scoped directory search 후 최소 24시간과 감사 로깅 필요."
+        "checkedFor": "Legacy 250/사용자 1개, 새 모드 5,000개·다중 세그먼트 별도 설정, ABP·숨김 사용자 차이, scoped directory search 후 최소 24시간과 감사 로깅 필요. 지원 그룹은 Microsoft 365 그룹이며 배포 목록과 보안 그룹은 비IB 그룹이다."
       },
       {
         "title": "ib-sharepoint",
@@ -4088,6 +4088,16 @@
         "title": "Manage Information Barriers policies",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-edit-segments-policies",
         "checkedFor": "정책 비활성화 후 Start-InformationBarrierPoliciesApplication 재실행과 적용 상태 확인."
+      },
+      {
+        "title": "Multi-segment support",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers-multi-segment",
+        "checkedFor": "사용자당 최대 10개, 허용 목록 정책과 공통 세그먼트 기준."
+      },
+      {
+        "title": "IB in Teams",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers-teams",
+        "checkedFor": "새 차단 정책 적용 후 기존 일대일 채팅은 읽기 전용이며 이후 통신은 차단된다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
