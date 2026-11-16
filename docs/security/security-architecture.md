@@ -258,6 +258,10 @@ Protects:
 
 [Safe Links](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about) and [Safe Attachments for collaboration files](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about) protect different activities. Check each workload's configuration and exclusions.
 
+### Collaboration file scanning limits
+
+Safe Attachments does not scan every SharePoint, OneDrive or Teams file, and detected malicious files can still be downloaded by default. Review the [file scanning and download controls](./defender-for-office365#protection-boundaries-by-workload) before treating this as complete file coverage.
+
 ---
 
 ### Security Features

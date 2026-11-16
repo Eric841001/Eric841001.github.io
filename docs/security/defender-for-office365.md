@@ -101,6 +101,14 @@ Safe Links, Safe Attachments and impersonation protection are Plan 1 capabilitie
 </div>
 </div>
 
+### Protection boundaries by workload
+
+Safe Links checks URLs at click time in supported email clients, Teams and Office apps. If email URL rewriting is disabled, click-time checks depend on a client that supports the Safe Links API. RTF messages and S/MIME-signed messages have protection limitations; test the actual client and message format. See [Safe Links coverage](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about).
+
+Email Safe Attachments policies and Safe Attachments for SharePoint, OneDrive and Teams use separate settings. Collaboration files are scanned asynchronously using activity and threat signals; **not every file is scanned**. A file marked as malicious can still be downloaded by default. To block those downloads for users and admins, a SharePoint administrator can configure `Set-SPOTenant -DisallowInfectedFileDownload $true` after reviewing the impact. See [file scanning coverage](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about) and [download blocking configuration](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-configure).
+
+For email, Dynamic Delivery provides the message body with attachment placeholders while scanning continues; it works only for Exchange Online mailboxes and has exceptions, including S/MIME-encrypted messages and some message-move scenarios. See [Dynamic Delivery limitations](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-about#dynamic-delivery-in-safe-attachments-policies).
+
 ## Incident Response Flow
 
 <div className="kc-journey-map">
@@ -166,6 +174,8 @@ Safe Links, Safe Attachments and impersonation protection are Plan 1 capabilitie
     <span>Approves recurring business mail exceptions with expiry and risk acceptance.</span>
   </div>
 </div>
+
+Recipients cannot release messages quarantined as malware by anti-malware policies, as malware or phishing by Safe Attachments, or as high-confidence phishing by anti-spam policies. A quarantine policy can allow a release request for these categories, but an administrator must release the message. See [quarantine release restrictions](https://learn.microsoft.com/en-us/defender-office-365/quarantine-about).
 
 ## Decision Checklist
 

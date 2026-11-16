@@ -196,7 +196,7 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   <div className="kc-maturity-step">
     <small>Layer 5</small>
     <strong>Risk and session control</strong>
-    <span>Use user risk, sign-in risk, Defender device risk, app-enforced restrictions and session controls.</span>
+    <span>Use user and sign-in risk conditions, Intune compliance informed by Defender device risk, and supported session controls.</span>
   </div>
   <div className="kc-maturity-step">
     <small>Layer 6</small>
@@ -204,6 +204,8 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
     <span>Apply tailored controls for Exchange, SharePoint, Teams, OneDrive, Azure and Copilot scenarios.</span>
   </div>
 </div>
+
+기기 위험 점수는 사용자 위험·로그인 위험과 적용 경로가 다릅니다. Defender for Endpoint와 Intune을 연결하고, Intune 준수 정책에 기기 위험 수준의 허용 기준을 설정한 뒤 조건부 액세스에서 **준수 상태의 기기 요구**를 적용합니다. 기기를 Defender에 등록하는 것만으로 이 접근 정책이 생기지는 않습니다. [기기 위험을 이용한 준수·조건부 액세스 구성](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration)을 참고하세요.
 
 ## Recommended Enterprise Policies
 

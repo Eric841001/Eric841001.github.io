@@ -113,6 +113,10 @@ Defender 포털의 소프트웨어 목록에서 앱을 열고 **Software evidenc
 </div>
 </div>
 
+### How device risk reaches Conditional Access
+
+For device-based access control, connect Defender for Endpoint to Intune, onboard the devices and assign an Intune compliance policy with a machine-risk threshold. Conditional Access then requires the device to be marked as compliant; onboarding alone does not create that access policy. This documented risk-based compliance workflow supports Windows, Android and iOS/iPadOS. Do not assume that macOS or Linux onboarding provides the same compliance integration. See [integration and supported platforms](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration#create-and-assign-compliance-policy-to-set-device-risk-level).
+
 ## Deployment Journey
 
 Audit behavior depends on the control. For example, [web content filtering](https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering) can collect category activity with no categories selected for blocking; its Network Protection prerequisites still apply. This is different from turning every web-protection component to audit mode.

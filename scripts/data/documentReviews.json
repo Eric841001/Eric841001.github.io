@@ -3817,9 +3817,9 @@
   },
   "/knowledge/security/conditional-access": {
     "file": "docs/security/conditional-access.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "P1/P2·에이전트 라이선스 및 대상, memberOf 종료, 관리형 위험 해결 정책, 승인 클라이언트 앱 읽기 전용 전환, OAuth 프로토콜, 보고 전용 제한과 긴급 접근 MFA를 대조했습니다.",
+    "scope": "이번 대조: 사용자·로그인 위험 조건과 Defender 기기 위험의 Intune 준수 정책 적용 경로 구분.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3881,16 +3881,21 @@
         "title": "Legacy authentication controls",
         "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-block-legacy-authentication",
         "checkedFor": "레거시 인증을 사용하는 클라이언트와 종속성을 조사한 뒤 차단하며, OAuth를 쓰는 프로토콜을 일괄 레거시로 분류하지 않습니다."
+      },
+      {
+        "title": "Defender 등록만으로 조건부 액세스 정책이 생성되지 않으며 준수 정책과 접근 정책을 따로 설정",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration",
+        "checkedFor": "Defender 등록만으로 조건부 액세스 정책이 생성되지 않으며 준수 정책과 접근 정책을 따로 설정"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "위 항목의 공식 설명을 개별 대조했습니다. 문서 전체 기술 문장의 최신 근거 대조는 진행 중이며, 실제 고객 테넌트의 정책 실행·차단 결과는 시험하지 않았습니다."
+    "notChecked": "위 범위의 문장을 공식 문서와 대조했습니다. 다른 기술 문장의 최신 개별 대조와 실제 테넌트의 정책 실행·차단 시험은 완료하지 않았습니다."
   },
   "/knowledge/security/data-lifecycle": {
     "file": "docs/security/data-lifecycle.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "보존·삭제 기능과 Records Management 구분, 지연 보류 30일과 이후 복구 기간, Priority Cleanup 미리 보기·승인·보류 재정의 조건을 대조했습니다.",
+    "scope": "이번 문장별 대조: 보존 정책·레이블과 기록 관리의 역할, 비활성 사서함 지연 보류, Priority Cleanup 영구 삭제의 미리 보기·승인·검토 집합·기록물 제외 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3912,16 +3917,41 @@
         "title": "Data Lifecycle Management scope",
         "url": "https://learn.microsoft.com/en-us/purview/data-lifecycle-management",
         "checkedFor": "보존·삭제 정책과 레이블이 기본 기능이며 고가치 기록 관리에는 Records Management를 사용한다. 분류·DLP·접근 제어를 자동으로 제공한다는 의미로 설명하지 않는다."
+      },
+      {
+        "title": "보존 정책·레이블의 유지·삭제 기능",
+        "url": "https://learn.microsoft.com/en-us/purview/data-lifecycle-management",
+        "checkedFor": "보존 정책과 레이블은 Microsoft 365 자료를 유지하거나 지정 기간 뒤 삭제하도록 구성할 수 있다."
+      },
+      {
+        "title": "기록 선언과 처분 검토",
+        "url": "https://learn.microsoft.com/en-us/purview/records-management",
+        "checkedFor": "Records Management의 보존 레이블로 기록물을 선언하고 보존 기간 뒤 처분 검토와 삭제 증거를 관리한다."
+      },
+      {
+        "title": "지연 보류 속성과 30일 기간, 일반 일시 삭제 기간 구분",
+        "url": "https://learn.microsoft.com/en-us/purview/delete-an-inactive-mailbox",
+        "checkedFor": "지연 보류 속성과 30일 기간, 일반 일시 삭제 기간 구분"
+      },
+      {
+        "title": "미리 보기·영구 삭제·감사·승인·검토 집합 제외",
+        "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+        "checkedFor": "미리 보기·영구 삭제·감사·승인·검토 집합 제외"
+      },
+      {
+        "title": "기록물과 규제 기록물은 Priority Cleanup에서 제외",
+        "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-onedrive-sharepoint",
+        "checkedFor": "기록물과 규제 기록물은 Priority Cleanup에서 제외"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트나 기기에 정책과 명령을 적용해 시험하지 않았습니다. 비용과 보안 효과도 측정하지 않았습니다. 별도 근거가 없는 수치와 일정은 계획을 세우기 위한 예시입니다."
+    "notChecked": "위 기술 문장을 대조했습니다. 검색 품질이나 고객 사례 성과는 실증하지 않았으며, 실제 삭제 작업과 전체 문서군의 개별 검증은 완료하지 않았습니다."
   },
   "/knowledge/security/defender-for-endpoint": {
     "file": "docs/security/defender-for-endpoint.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 로컬 AI 검색의 GA·미리 보기 예외·P2와 E7 조건·최소 버전·검색과 실제 사용의 차이",
+    "scope": "이번 대조: Defender 기기 위험을 Intune 준수 정책과 조건부 액세스에 연결하는 절차 및 지원 플랫폼.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3968,26 +3998,61 @@
         "title": "로컬 AI 에이전트 검색",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/discover-local-ai-agents",
         "checkedFor": "로컬 AI 검색의 GA·미리 보기 예외·P2와 E7 조건·최소 버전·검색과 실제 사용의 차이"
+      },
+      {
+        "title": "서비스 연결, 온보딩, 준수 정책, 별도 조건부 액세스와 Windows·Android·iOS/iPadOS 지원 범위",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration",
+        "checkedFor": "서비스 연결, 온보딩, 준수 정책, 별도 조건부 액세스와 Windows·Android·iOS/iPadOS 지원 범위"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 실제 테넌트 기능·권한·명령 실행 결과와 전체 기술 문장의 새 개별 대조는 포함하지 않습니다."
+    "notChecked": "위 범위의 문장을 공식 문서와 대조했습니다. 다른 기술 문장의 최신 개별 대조와 실제 테넌트의 정책 실행·차단 시험은 완료하지 않았습니다."
   },
   "/knowledge/security/defender-for-office365": {
     "file": "docs/security/defender-for-office365.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: MDO Plan 1·2 기능 차이와 검역 사용자 작업 범위",
+    "scope": "이번 대조: Plan 1·2 기능, Safe Links 클라이언트 조건, 메일·협업 파일 검사 차이, 다운로드 허용 기본값, Dynamic Delivery와 격리 해제 제한.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Defender for Office 365 overview",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
         "checkedFor": "MDO Plan 1·2 기능 차이와 검역 사용자 작업 범위"
+      },
+      {
+        "title": "Plan 1·2 기능 구분",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
+        "checkedFor": "Plan 1은 Safe Links·Safe Attachments·사칭 보호, Plan 2는 훈련·Explorer·Campaigns·자동 조사 대응을 제공한다."
+      },
+      {
+        "title": "지원 클라이언트, API 검사와 메시지 형식 제한",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-links-about",
+        "checkedFor": "Safe Links는 지원 앱에서 클릭 시 검사하며 URL 재작성 해제 시 API 지원 클라이언트가 필요하고 RTF·S/MIME 서명에 제한이 있다."
+      },
+      {
+        "title": "메일 검사와 Dynamic Delivery 제한",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-about",
+        "checkedFor": "Dynamic Delivery는 Exchange Online 사서함의 첨부파일 자리에 표시자를 두며 S/MIME 암호화·일부 폴더 이동에 제한이 있다."
+      },
+      {
+        "title": "비동기·선별 파일 검사와 기본 다운로드 허용",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about",
+        "checkedFor": "SharePoint·OneDrive·Teams의 모든 파일을 검사하지 않고 비동기 선별 검사를 하며 악성으로 표시된 파일도 기본적으로 다운로드할 수 있다."
+      },
+      {
+        "title": "악성 파일 다운로드 차단 명령과 적용 대상",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-configure",
+        "checkedFor": "SharePoint 관리자는 DisallowInfectedFileDownload 설정으로 사용자와 관리자의 악성 파일 다운로드를 차단할 수 있다."
+      },
+      {
+        "title": "수신자 직접 해제 금지 범주와 해제 요청",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/quarantine-about",
+        "checkedFor": "악성코드·Safe Attachments 피싱·높은 신뢰도 피싱은 수신자가 직접 격리 해제할 수 없고 정책이 허용하면 해제를 요청한다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 해당 기능·적용 조건과 본문을 대조했습니다. 실제 고객 테넌트·기기에서 명령이나 정책을 실행하지 않았으며, 작성자 사례·일정·효과·평가 점수는 독립 인증하지 않았습니다."
+    "notChecked": "위 범위의 문장을 공식 문서와 대조했습니다. 다른 기술 문장의 최신 개별 대조와 실제 테넌트의 정책 실행·차단 시험은 완료하지 않았습니다."
   },
   "/knowledge/security/defender-xdr": {
     "file": "docs/security/defender-xdr.md",
@@ -4369,9 +4434,9 @@
   },
   "/knowledge/security/security-architecture": {
     "file": "docs/security/security-architecture.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Security Domains, Identity Security, Microsoft Entra ID, Microsoft Intune, Microsoft Defender for Endpoint, Security Objectives, Microsoft Defender for Office 365, Security Features, Microsoft Purview, Sensitivity Labels, Encryption, DLP, Insider Risk, Security Principle, MFA, Use Cases, Integration, Microsoft Defender XDR, Microsoft Sentinel, Deliverables. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 대조: 협업 파일 Safe Attachments 검사가 모든 파일을 포함하지 않으며 기본 다운로드가 허용되는 점.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4438,10 +4503,15 @@
         "title": "emergency",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
         "checkedFor": "차단 CA 제외와 별도 피싱 방지 인증·로그인 감시·정기 접속 시험을 대조했다."
+      },
+      {
+        "title": "전체 파일 검사로 볼 수 없으며 다운로드 차단은 별도 설정",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about",
+        "checkedFor": "전체 파일 검사로 볼 수 없으며 다운로드 차단은 별도 설정"
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "위 범위의 문장을 공식 문서와 대조했습니다. 다른 기술 문장의 최신 개별 대조와 실제 테넌트의 정책 실행·차단 시험은 완료하지 않았습니다."
   },
   "/knowledge/security/zero-trust-framework": {
     "file": "docs/security/zero-trust-framework.md",
