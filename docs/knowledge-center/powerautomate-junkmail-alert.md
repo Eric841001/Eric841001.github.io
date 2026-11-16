@@ -139,6 +139,12 @@ This is a notification pattern, not a guaranteed security-event pipeline. The V3
 
 ---
 
+### Connection and attachment settings
+
+For a shared mailbox, use **When a new email arrives in a shared mailbox (V2)** and verify the connection account's mailbox access. For user-to-user mailbox sharing, the connector requires full mailbox access; permission to send mail alone is insufficient.
+
+For a metadata-only alert, set **Include Attachments** to **No**. Downloading every attachment in the trigger can cause a timeout when many messages arrive together. If a separate approved process needs an attachment, retrieve it with **Get Attachment (V2)** after filtering the message. The connector also limits each connection to **300 API calls per 60 seconds**; mailbox-side Exchange limits apply separately. These are connector limits, not a guarantee that every message will produce an alert. See [Outlook connector limits and attachment handling](https://learn.microsoft.com/en-us/connectors/office365/#known-issues-and-limitations-with-triggers).
+
 ## Notification Content
 
 Recommended fields:

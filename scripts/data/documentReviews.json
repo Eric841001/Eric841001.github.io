@@ -1695,9 +1695,9 @@
   },
   "/knowledge/knowledge-center/gsa-whitelist-design": {
     "file": "docs/knowledge-center/gsa-whitelist-design.md",
-    "checkedOn": "2026-10-28",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: UTR의 구성 테넌트 제외와 소비자 계정 정책·익명 접근 제한",
+    "scope": "이번 대조 범위: UTR과 GSA 트래픽 Conditional Access의 클라이언트·원격 네트워크 차이, Microsoft 프로필 Tunnel과 활성화 역할",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1734,6 +1734,16 @@
         "title": "tenant-restrictions-v2",
         "url": "https://learn.microsoft.com/en-us/entra/external-id/tenant-restrictions-v2",
         "checkedFor": "UTR의 구성 테넌트 제외와 소비자 계정 정책·익명 접근 제한"
+      },
+      {
+        "title": "UTR prerequisites",
+        "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-universal-tenant-restrictions",
+        "checkedFor": "UTR client/remote acquisition; Microsoft profile Entra endpoints Tunnel; default/partner policies; GSA and Security Administrator roles."
+      },
+      {
+        "title": "GSA remote-network limitations",
+        "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+        "checkedFor": "Microsoft and Internet traffic CA requires client; remote IPsec alone does not enforce GSA traffic CA."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2139,9 +2149,9 @@
   },
   "/knowledge/knowledge-center/powerautomate-junkmail-alert": {
     "file": "docs/knowledge-center/powerautomate-junkmail-alert.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: Outlook V3 폴더·메타데이터, 이동·보호·크기 제한과 최대 한 시간 지연, 격리 메일 구분",
+    "scope": "이번 대조 범위: V3·공유 사서함 V2 트리거, 접근 권한, 크기·지연·이동 제한, 첨부 다운로드 시간 초과와 연결별 호출 한도",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2153,6 +2163,11 @@
         "title": "quarantine",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/quarantine-about",
         "checkedFor": "격리 보관과 Junk Email 폴더 배달은 구분되는 정책 동작이다."
+      },
+      {
+        "title": "Outlook connector reference",
+        "url": "https://learn.microsoft.com/en-us/connectors/office365/",
+        "checkedFor": "Shared V2 user-to-user requires full access; V3 attachments may time out; separate Get Attachment V2; 300calls/60sec per connection and separate mailbox throttling."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -3766,9 +3781,9 @@
   },
   "/knowledge/security/compliance-manager": {
     "file": "docs/security/compliance-manager.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "평가·개선 작업·담당자 배정·증거 보관 기능과 점수의 의미를 대조했습니다. 운영 주기와 산업별 표는 작성자의 계획 예시입니다.",
+    "scope": "이번 대조 범위: 평가·개선 작업·담당자·증거 저장과 점수의 비인증 성격",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3780,6 +3795,21 @@
         "title": "Compliance Manager scoring",
         "url": "https://learn.microsoft.com/en-us/purview/compliance-manager-scoring",
         "checkedFor": "점수는 개선 작업의 진행 정도이며 규정 준수 보증이 아니다."
+      },
+      {
+        "title": "compliance-manager sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+        "checkedFor": "Assessment, improvement action workflow and evidence storage confirmed."
+      },
+      {
+        "title": "compliance-manager sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager-improvement-actions",
+        "checkedFor": "Owner assignment and evidence tab supported."
+      },
+      {
+        "title": "compliance-manager sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager-scoring",
+        "checkedFor": "Score is not a guarantee of compliance."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3987,9 +4017,9 @@
   },
   "/knowledge/security/defender": {
     "file": "docs/security/defender.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "E5를 가장 넓은 구성으로 단정한 문장을 E5·E7의 고급 XDR 기능과 E7의 추가 ID·에이전트 관리 구분으로 고쳤습니다.",
+    "scope": "이번 대조 범위: 보호 영역·인시던트 상관 분석과 E5·E7 포함 기능",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4011,6 +4041,26 @@
         "title": "Compare Microsoft 365 E3, E5 and E7",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
         "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
+        "title": "defender sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+        "checkedFor": "Listed protection domains and cross-product correlation supported subject to licensed/provisioned products."
+      },
+      {
+        "title": "defender sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+        "checkedFor": "Correlates alerts, entities and context into incidents."
+      },
+      {
+        "title": "defender sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/copilot/plan/compare-copilot-e3-e5-e7",
+        "checkedFor": "Comparison table confirms E5 capabilities included in E7."
+      },
+      {
+        "title": "defender sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/copilot/plan/compare-copilot-e3-e5-e7",
+        "checkedFor": "E7 includes Entra Suite and Agent365; comparison recommendation is author advice."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -4125,15 +4175,25 @@
   },
   "/knowledge/security/insider-risk": {
     "file": "docs/security/insider-risk.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "위험 신호·정책 조건·경고 분류·사례 조사, 가명 처리·역할별 접근·감사 기록과 대응 절차를 공식 개요에 대조했습니다. 산업별 표와 운영 절차는 작성자의 설계 예시입니다.",
+    "scope": "이번 대조 범위: 잠재적 악의·실수에 따른 내부 위험의 탐지·조사 기능",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Insider Risk Management",
         "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
         "checkedFor": "Insider Risk는 정책·신호·분석·조사와 개인정보 보호/RBAC를 함께 설계해야 합니다."
+      },
+      {
+        "title": "insider-risk sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "checkedFor": "Potential malicious and inadvertent risk indicators, not determination of guilt."
+      },
+      {
+        "title": "insider-risk sentence evidence",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "checkedFor": "Detection and investigation of insider risk supported."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

@@ -263,6 +263,12 @@ Restricted
 
 For Microsoft traffic, verify the [Microsoft traffic profile prerequisites](https://learn.microsoft.com/en-us/entra/global-secure-access/tutorial-microsoft-traffic-introduction), user assignment, supported client/forwarding path and Universal Tenant Restrictions configuration. Microsoft services traffic capabilities are included in Entra ID P1/P2; full Internet Access and Private Access have separate licensing. Test tenant restrictions and bypass paths against the [current known limitations](https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations).
 
+### Client and remote-network enforcement
+
+UTR can apply tenant restrictions to traffic acquired through either the GSA client or a configured remote network. However, Conditional Access for GSA **Microsoft and Internet traffic** requires the GSA client. An IPsec remote-network tunnel alone does not supply that enforcement. This limitation concerns GSA traffic policies; evaluate the application's own Conditional Access policy separately. See [remote-network and access-control limitations](https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations#remote-network-limitations).
+
+For UTR, enable the Microsoft traffic profile and set the Entra ID service FQDNs and IP addresses to **Tunnel**. Configure the default and partner TRv2 policies before enabling UTR. The enforcement switch requires both **Global Secure Access Administrator** and **Security Administrator** roles. See [UTR prerequisites and activation](https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-universal-tenant-restrictions).
+
 The matrix is an author-proposed control design. Compliant-device access and user/sign-in risk are separate Conditional Access concepts; see the [official Conditional Access overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview).
 
 | Policy | Recommendation |
