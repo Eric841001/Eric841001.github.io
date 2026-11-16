@@ -7,7 +7,7 @@ sidebar_label: OneDrive 웹 전용 Read Only
 
 # SharePoint·OneDrive Limited Access로 웹 전용 읽기 액세스 구현
 
-이 문서는 비관리 디바이스에서 SharePoint Online 또는 OneDrive에 접근할 때 데스크톱 앱 접속과 로컬 다운로드·인쇄·동기화를 차단하고, 브라우저에서만 읽기 전용으로 열람하도록 구성하는 방법을 설명합니다.
+이 문서는 비관리 디바이스에서 SharePoint Online 또는 OneDrive에 접근할 때 데스크톱 앱 접속과 로컬 다운로드·인쇄·동기화를 차단하고, 브라우저에서 Office 파일을 읽기 전용으로 열람하도록 구성하는 방법을 설명합니다.
 
 > 여기서는 브라우저와 앱을 함께 테스트하지만 실제 적용 범위는 Microsoft Entra 조건부 액세스의 사용자, 디바이스 상태, 위치, 클라이언트 앱 조건으로 유연하게 설계할 수 있습니다.
 
@@ -16,7 +16,7 @@ sidebar_label: OneDrive 웹 전용 Read Only
 | 경로 | 기대 동작 |
 |---|---|
 | 브라우저 | 파일 미리보기 및 읽기 허용 |
-| 브라우저 편집 | `ReadOnlyForUnmanagedDevices` 또는 `AllowEditing` 설정에 따라 차단 |
+| Office 파일의 브라우저 편집 | `AllowEditing $false`로 차단 |
 | 다운로드·인쇄·동기화 | 차단 |
 | Office 데스크톱 앱 | 액세스 거부 |
 
@@ -53,22 +53,22 @@ Get-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' |
 | 매개 변수 | 권장 값 | 효과 |
 |---|---:|---|
 | `AllowEditing` | `$false` | 브라우저에서 Office 파일 편집 차단 |
-| `ReadOnlyForUnmanagedDevices` | `$true` | 정책 대상 디바이스에서 사이트 전체를 읽기 전용으로 제공 |
 | `LimitedAccessFileType` | `OfficeOnlineFilesOnly` | Office Online 파일만 브라우저 미리보기 허용 |
 
 ```powershell
 Set-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' `
   -ConditionalAccessPolicy AllowLimitedAccess `
   -AllowEditing $false `
-  -ReadOnlyForUnmanagedDevices $true `
   -LimitedAccessFileType OfficeOnlineFilesOnly
 ```
+
+이 OneDrive 예제는 Office 파일의 브라우저 편집을 제한합니다. 사이트의 모든 작업을 읽기 전용으로 바꾼다는 뜻은 아닙니다. `ReadOnlyForUnmanagedDevices`는 [일반 사이트 제한 안내](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices#what-are-the-advanced-configurations-for-limiting-access)에 있으나, [Set-SPOSite의 OneDrive 매개 변수 목록](https://learn.microsoft.com/en-us/powershell/module/microsoft.online.sharepoint.powershell/set-sposite?view=sharepoint-ps#description)에는 없어 이 예제에서 사용하지 않습니다.
 
 설정 후에는 대상 사이트를 다시 조회해 각 값과 실제 파일 동작을 확인합니다.
 
 ```powershell
 Get-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' |
-  Select-Object Url, ConditionalAccessPolicy, AllowEditing, ReadOnlyForUnmanagedDevices, LimitedAccessFileType
+  Select-Object Url, ConditionalAccessPolicy, AllowEditing, LimitedAccessFileType
 ```
 
 ### LimitedAccessFileType 비교
