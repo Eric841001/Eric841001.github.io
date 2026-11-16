@@ -1864,9 +1864,9 @@
   },
   "/knowledge/knowledge-center/intune-macos-usb-control": {
     "file": "docs/knowledge-center/intune-macos-usb-control.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "macOS 장치 제어의 감사 기록과 실제 차단 시험을 구분했습니다.",
+    "scope": "정책 검증 명령·v2 상태 필드·알려진 전송 제한을 재대조하고, DLP 디스크 접근 권한과 활성화, Intune 구성 프로필의 Device channel 조건을 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1887,7 +1887,7 @@
       {
         "title": "macOS Device Control configuration",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure",
-        "checkedFor": "현재 정책 JSON 검증과 Intune/Jamf 배포, v2 상태·센서 연결·Full Disk Access 확인 필드, 수동 적용의 사전 시험 환경 한정을 대조했습니다."
+        "checkedFor": "JSON 검증 명령과 v2 상태 필드, Intune의 deviceControl/policy 문자열 및 Device channel, 수동 시험 환경 조건을 대조했습니다."
       },
       {
         "title": "microsoft-defender-endpoint-mac-prerequisites",
@@ -1897,7 +1897,7 @@
       {
         "title": "macOS 27 Bluetooth 권한 철회와 MDM 표시 제한, Android PTP 외 연결 모드·Xcode 전송 예외",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-overview",
-        "checkedFor": "감사는 관찰한 접근을 기록합니다. 읽기·쓰기·실행 차단은 deny 규칙과 지원 앱을 확인해 별도로 시험해야 합니다."
+        "checkedFor": "Plan 1 기능과 온보딩 전제, DLP 데몬 Full Disk Access 및 DC_in_dlp 활성화, 감사·차단 구분과 Bluetooth·Android 전송 제한을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1905,20 +1905,20 @@
   },
   "/knowledge/knowledge-center/intune-usb-whitelist": {
     "file": "docs/knowledge-center/intune-usb-whitelist.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: Audit 동작과 기본 적용, 규칙 순서 및 허용 장치 제외 조건",
+    "scope": "감사·기본 적용·규칙 순서의 기존 설명을 대조하고, BitLocker 쓰기 제한과 암호화 상태 규칙의 Preview 구분, 복합 USB 장치의 인터페이스별 허용 조건을 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "windows-dc",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-configure",
-        "checkedFor": "Intuneseparate;DeviceControlunsupportedWindowsServerMDEmanaged; auditinheritsdefault;policyorderunpreserved;explicitexclusions;GUIcannotchangedefault."
+        "checkedFor": "Intune의 별도 권한, 서버 관리 제한, 감사 규칙의 기본 적용 상속과 정책 순서 비보장, 명시적 장치 제외 조건을 대조했습니다."
       },
       {
         "title": "dc-overview",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/device-control-overview",
-        "checkedFor": "Granular removable device read/write/execute/approveddevice/BitLocker restrictions;differentWindowsmac controls."
+        "checkedFor": "Windows의 읽기·쓰기·실행 제어, 일련번호 지원과 BitLocker 암호화 조건, 복합 USB 인터페이스의 개별 허용 필요성을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",

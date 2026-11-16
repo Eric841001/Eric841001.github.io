@@ -65,6 +65,16 @@ mdatp health --details device_control
 
 정책 JSON을 검증한 뒤 Intune 또는 Jamf로 소수 기기에 배포하고, 허용·차단·감사 대상 USB 작업을 실제로 시험하세요. v2 적용 결과를 확인한 후 관리 도구에서 이전 v1 구성을 정리합니다. MDM이 정책을 관리하는 운영 기기에 로컬 시험 정책을 덮어쓰지 마세요. [현재 구성·검증 절차](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure)는 수동 적용을 사전 시험 환경으로 한정합니다.
 
+## 정책 배포 전 필수 설정 {/* #device-control-prerequisites */}
+
+대상 Mac에는 Defender가 설치되어 조직에 등록되어 있어야 하며, Defender for Endpoint Plan 1 기능을 포함하는 구독이 필요합니다. Intune 구독과 정책 배포 권한도 별도로 확인하세요.
+
+- `com.microsoft.dlp.daemon`에 **Full Disk Access**를 부여합니다.
+- Defender 설정에서 `DC_in_dlp`를 `enabled`로 설정합니다.
+- Intune으로 배포할 때는 검증한 JSON을 Apple 구성 프로필의 `deviceControl` → `policy` 문자열에 넣고, 사용자 지정 macOS 프로필의 **Device channel**로 배포합니다.
+
+JSON 구조 검증만으로 이 설정들이 적용되지는 않습니다. 배포 후에는 앞 절의 상태 조회와 실제 USB 작업을 함께 확인하세요. 근거: [장치 준비 조건](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-overview#prepare-your-endpoints), [Intune 구성 프로필 배포](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure#deploy-the-policy-by-using-microsoft-intune).
+
 ## Control Options
 
 macOS uses a Defender Device Control JSON policy rather than the Windows Device Control profile. Validate the JSON against Microsoft's schema, then run `mdatp device-control policy validate --path <policy-file>` on a test Mac before Intune or Jamf deployment. See the [macOS policy deployment procedure](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-configure).

@@ -73,7 +73,7 @@ Typical requirements:
 
 ## Supported Controls
 
-This guide covers supported removable-media access controls, not disabling every USB bus device such as keyboards or cameras. Match the Device Control policy type, Windows version, Defender build, onboarding and license prerequisites to the [current Intune deployment procedure](https://learn.microsoft.com/en-us/defender-endpoint/device-control-deploy-manage-intune). Intune is a separate entitlement; the Device Control profile is not supported for Windows Server devices managed through Defender security settings management.
+This guide covers supported removable-media access controls, not disabling every USB bus device such as keyboards or cameras. Match the Device Control policy type, Windows version, Defender build, onboarding and license prerequisites to the [current Intune deployment procedure](https://learn.microsoft.com/en-us/defender-endpoint/device-control-configure). Intune is a separate entitlement; the Device Control profile is not supported for Windows Server devices managed through Defender security settings management.
 
 | Control | Supported |
 |----------|----------|
@@ -85,6 +85,12 @@ This guide covers supported removable-media access controls, not disabling every
 | Device Serial Number | Yes |
 
 ---
+
+### Encrypted and composite USB devices
+
+An approved serial number identifies a device; it does not establish that the drive is encrypted. For the encrypted-media requirement, distinguish Windows BitLocker write restrictions from Defender Device Control rules that match BitLocker encryption state, which Microsoft currently labels **Preview**.
+
+A physical USB device can expose both removable-media and Windows Portable Device entries. Include every required entry when testing an approved device; allowing only one interface can leave other operations blocked. See [USB access and BitLocker controls](https://learn.microsoft.com/en-us/defender-endpoint/device-control-overview).
 
 ### Audit rules and default enforcement
 
