@@ -79,7 +79,15 @@ Entra ID > Enterprise apps > New application
 
 [Microsoft의 앱 구성 절차](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-configure-app#configure-api-driven-inbound-provisioning-to-on-premises-ad)에서 관리자 역할, 알림 이메일과 시작 조건을 확인할 수 있습니다.
 
-기본 UI 기반 Entra ID → AD 구성은 그룹 객체 시나리오와 혼동하기 쉽습니다. 사용자 객체를 외부 로직에서 공급하려면 이 API 기반 애플리케이션과 SCIM 호출 단계가 필요합니다.
+**Restart provisioning은 재시도 버튼이 아닙니다.** 실행하면 아직 처리하지 않은 요청 데이터가 삭제됩니다. 재시작 전에 대기 요청을 다시 전송할 수 있는지 확인하세요. 이 API 기반 앱에서는 **Provision on demand**를 지원하지 않으므로 API 전송 결과와 프로비저닝 로그로 처리 상태를 확인합니다.
+
+### Cloud Sync 사용자 프로비저닝과의 차이
+
+Cloud Sync에는 **Entra ID → AD 사용자 프로비저닝 미리 보기**도 있습니다. 클라우드에서 생성한 사용자, 관리 원본(SOA)을 클라우드로 전환한 사용자, 범위에 포함한 B2B 게스트를 대상으로 합니다. 반면 AD가 관리 원본인 동기화 사용자는 이 방향으로 프로비저닝하지 않습니다. 따라서 Forest A에서 동기화한 사용자를 그대로 Forest B에 보내는 API 설계와 같은 기능으로 보면 안 됩니다. [공식 처리 규칙과 SOA별 지원 범위](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-provisioning-to-active-directory-works#user-soa-scenarios)를 먼저 확인하세요.
+
+이 Cloud Sync 방식의 클라우드 관리 사용자에게는 AD 암호와 암호 쓰기 저장을 제공하지 않습니다. Kerberos 기반 앱의 암호 없는 인증을 전제로 하며, LDAP 암호 인증을 대신할 수 없습니다. 사용자 프로비저닝은 미리 보기이고 그룹 프로비저닝은 정식 제공입니다. [기능 개요와 제한 사항](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/overview-provision-entra-id-to-active-directory)을 확인해 대상 사용자의 관리 원본과 앱 인증 방식을 기준으로 선택하세요.
+
+외부 시스템이 사용자 데이터를 직접 공급하는 API 방식에서는 이 문서의 애플리케이션 구성과 SCIM 호출 단계가 필요합니다.
 
 ## 3. API 호출용 App Registration
 

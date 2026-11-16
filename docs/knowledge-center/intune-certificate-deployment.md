@@ -39,6 +39,8 @@ Trusted Root CA certificates must be deployed before PKCS, SCEP, or imported cer
 
 This guide explains the deployment process using Intune Trusted Certificate Profiles.
 
+A trusted certificate profile supports root and intermediate CA certificates only. It does not issue a client authentication certificate; use the appropriate SCEP, PKCS, or imported certificate profile for that purpose. Create a separate trusted certificate profile for each platform and assign it to the same groups as the certificate profiles that depend on it. See [Microsoft's trusted certificate profile requirements](https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles).
+
 ---
 
 ## 한국어 요약

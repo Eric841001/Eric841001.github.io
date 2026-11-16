@@ -1485,9 +1485,9 @@
   },
   "/knowledge/knowledge-center/entra-api-driven-ad-provisioning": {
     "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 앱 관리자·하이브리드 관리자 역할, 엔터프라이즈 앱 경로, 필수 알림 메일과 작업 시작 조건",
+    "scope": "이번 대조 범위: API 앱의 재시작·요청 시 프로비저닝 제한, SCIM 요청·권한·비동기 응답·호출 한도, Cloud Sync 사용자 미리 보기의 SOA 조건·인증 제한",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1498,7 +1498,7 @@
       {
         "title": "api-config",
         "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-configure-app",
-        "checkedFor": "App Administrator plus Hybrid Identity Administrator; domain and OU selection, connection test, mandatory notification email; Start provisioning starts listening."
+        "checkedFor": "App Administrator plus Hybrid Identity Administrator; domain and OU selection, connection test, mandatory notification email; Start provisioning starts listening. Restart provisioning purges pending payloads; Provision on demand is not supported for API-driven apps."
       },
       {
         "title": "api-bulk",
@@ -1509,6 +1509,16 @@
         "title": "cloud-agent",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-to-prerequisites",
         "checkedFor": "Domain joined server, Hybrid Identity Administrator, gMSA domain authority, multiple agents HA, outbound443 and CRL80."
+      },
+      {
+        "title": "Cloud Sync provisioning behavior",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-provisioning-to-active-directory-works",
+        "checkedFor": "Cloud-native, cloud-SOA and B2B users eligible; AD-authoritative synced users not provisioned Entra-to-AD; cloud-managed user password writeback unavailable."
+      },
+      {
+        "title": "Cloud Sync user provisioning preview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/overview-provision-entra-id-to-active-directory",
+        "checkedFor": "User provisioning preview versus group GA; cloud-managed users have no AD password, Kerberos passwordless rather than LDAP password authentication."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1762,15 +1772,15 @@
   },
   "/knowledge/knowledge-center/intune-certificate-deployment": {
     "file": "docs/knowledge-center/intune-certificate-deployment.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 루트·중간 인증서 체인 조건과 신뢰 인증서 프로필 생성 경로",
+    "scope": "이번 대조 범위: 신뢰 인증서의 루트·중간 CA 전용 제한, DER 공개 인증서 형식, 플랫폼별 프로필과 SCEP·PKCS 배포 대상, Windows 지원 저장소",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "cert-profile",
         "url": "https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles",
-        "checkedFor": "DER 공개 .cer를 사용하며 개인키 .pfx는 사용하지 않는다. Windows Root·Intermediate 기기 저장소 및 User Intermediate를 지원한다. SCEP·PKCS 대상과 신뢰 체인 배포 대상을 맞춘다."
+        "checkedFor": "DER 공개 .cer를 사용하며 개인키 .pfx는 사용하지 않는다. Windows Root·Intermediate 기기 저장소 및 User Intermediate를 지원한다. SCEP·PKCS 대상과 신뢰 체인 배포 대상을 맞춘다. 루트·중간 CA 전용이며 플랫폼별 프로필을 생성한다. 클라이언트 인증서 발급 기능과 구분한다."
       },
       {
         "title": "cert-provider",
