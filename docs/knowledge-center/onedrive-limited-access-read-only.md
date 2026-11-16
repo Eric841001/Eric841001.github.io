@@ -25,8 +25,10 @@ sidebar_label: OneDrive 웹 전용 Read Only
 최신 SharePoint Online Management Shell을 설치하고 SharePoint Administrator 권한으로 테넌트에 연결합니다. 연결 방법은 [공식 사전 준비 절차](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices#how-do-i-limit-access-using-powershell)를 따르세요. 이어서 개인 사이트가 포함된 사이트 목록과 대상 OneDrive URL을 확인합니다.
 
 ```powershell
-Get-SPOSite -IncludePersonalSite $true
+Get-SPOSite -IncludePersonalSite $true -Limit All | Select-Object Url
 ```
+
+`Get-SPOSite`의 기본 반환 한도는 200개입니다. 위 명령은 개인 사이트를 포함한 전체 목록에서 URL을 찾는 용도입니다. `-Limit` 또는 `-Filter`를 지정하면 `ConditionalAccessPolicy`·`AllowEditing` 등의 속성이 채워지지 않거나 기본값으로 표시될 수 있으므로, 정책 확인에는 아래의 `-Identity` 단건 조회를 사용하세요. [Get-SPOSite 매개 변수와 조회 제한](https://learn.microsoft.com/en-us/powershell/module/microsoft.online.sharepoint.powershell/get-sposite?view=sharepoint-ps)을 참고하세요.
 
 대상 사이트에 Limited Access 모드를 적용합니다.
 
@@ -60,6 +62,13 @@ Set-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' `
   -AllowEditing $false `
   -ReadOnlyForUnmanagedDevices $true `
   -LimitedAccessFileType OfficeOnlineFilesOnly
+```
+
+설정 후에는 대상 사이트를 다시 조회해 각 값과 실제 파일 동작을 확인합니다.
+
+```powershell
+Get-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' |
+  Select-Object Url, ConditionalAccessPolicy, AllowEditing, ReadOnlyForUnmanagedDevices, LimitedAccessFileType
 ```
 
 ### LimitedAccessFileType 비교
