@@ -1619,9 +1619,9 @@
   },
   "/knowledge/knowledge-center/exchange-online-omev2-remove": {
     "file": "docs/knowledge-center/exchange-online-omev2-remove.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: OME 제거 규칙은 지원하는 보호 형식에 한정되며 혼합 수신자 결과를 별도 시험해야 함을 테스트 표와 그림에 반영했습니다.",
+    "scope": "2026-11-16 개별 대조: Exchange Online 연결, New/Set-TransportRule의 RemoveOMEv2·RemoveRMSAttachmentEncryption 및 의존 조건, SentTo 디렉터리 수신자 조건, 조직이 적용한 보호의 해제 범위, 규칙 일치 보고서의 조건·지연. 승인 절차·시험표·위험 평가 표는 작성자의 운영 예시입니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1643,10 +1643,30 @@
         "title": "conditions-and-exceptions",
         "url": "https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions",
         "checkedFor": "SentTo의 디렉터리 수신자 조건과 OMEv2 제거 매개변수"
+      },
+      {
+        "title": "encryption-removal-scope",
+        "url": "https://learn.microsoft.com/en-us/purview/define-mail-flow-rules-to-encrypt-email",
+        "checkedFor": "2026-11-16: 조직이 적용한 암호화와 그 암호화 메일의 회신에 대한 해제 범위를 확인했습니다."
+      },
+      {
+        "title": "exo-connect",
+        "url": "https://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell",
+        "checkedFor": "2026-11-16: 모듈 설치·Import-Module·Connect-ExchangeOnline 구문과 연결 후 RBAC 권한 조건을 확인했습니다."
+      },
+      {
+        "title": "rule-report",
+        "url": "https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules",
+        "checkedFor": "2026-11-16: Not audit이면 보고서 제외, 대부분 24시간·최대 5일 지연과 규칙 일치 건수 보고를 확인했습니다."
+      },
+      {
+        "title": "set-transport-rule",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-transportrule",
+        "checkedFor": "2026-11-16: RemoveRMSAttachmentEncryption은 사전 암호화 첨부 파일을 대상으로 하며 RemoveOMEv2=true가 필요합니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서의 제품 설명과 작성자의 설계 권고·예시를 구분했습니다. 실제 고객 테넌트의 정책 적용·라이선스 할당·명령 실행 결과와 비공개 사례 성과는 검증하지 않았습니다."
+    "notChecked": "위 기술 설명과 명령 구문을 공식 참조와 대조했습니다. 실제 테넌트에서 명령을 실행하거나 혼합 수신자·첨부 파일별 암호화 해제 결과를 시험하지 않았습니다. 운영 예시의 효과와 법적 적합성을 보증하지 않습니다."
   },
   "/knowledge/knowledge-center/gsa-whitelist-design": {
     "file": "docs/knowledge-center/gsa-whitelist-design.md",
@@ -3963,9 +3983,9 @@
   },
   "/knowledge/security/dlp": {
     "file": "docs/security/dlp.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Architecture, Implementation, FTP·SFTP 전송과 네트워크 보호, 외부 조직과의 Teams 대화, macOS 27 권한과 운영 시 주의할 점, Licensing, Should DLP start in block mode?, How does DLP relate to Copilot?. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "2026-11-16 개별 대조: FTP·SFTP Windows 설정, 네트워크 라이선스·종량제·B2B 제외·검사 크기 제한, Teams 대화 종류 및 정책 대상별 범위, macOS 27 권한·보호 모드, Windows와 Mac의 앱 제어 차이, Exchange 필수 레이블 정책 팁, Endpoint DLP의 사용자·기기 범위와 미저장 파일 제한.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3986,12 +4006,12 @@
       {
         "title": "purview-network",
         "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
-        "checkedFor": "GSA content policies and Purview DLP are separate configuration; E7 or PurviewE5+InternetAccess; noB2Bguest;HTTPHTTPS and supported size/activity scope."
+        "checkedFor": "2026-11-16: GSA는 E7 또는 Purview E5 상당+Entra Internet Access 상당 조합이며 종량제 설정 불필요. 타사 연동은 종량제 필요. B2B 제외, 인라인 텍스트 4MB·파일 3MB, 인코딩·동적 접속 주소의 적용 공백을 대조했습니다."
       },
       {
         "title": "dlp-teams",
         "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
-        "checkedFor": "공유채널은 발신자 소속정책, 외부채팅은 시작한 호스트의 자기사용자만 검사하며 파일보호는SPO/OD위치도 필요하다."
+        "checkedFor": "2026-11-16: 공유 채널은 발신자 소속 정책, 외부 채팅은 시작한 호스트 소속 사용자만 평가. 개별 사용자 지정은 채널에 적용되지 않으며 지원 그룹 지정이 필요합니다. 공유 파일은 SharePoint·OneDrive 정책을 확인합니다."
       },
       {
         "title": "dlp-mac27",
@@ -4001,7 +4021,7 @@
       {
         "title": "dlp-endpoint",
         "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
-        "checkedFor": "제한앱외앱접근제어는Windows만 지원하며USB·인쇄·복사·업로드등 기능은OS별지원표로 구분한다."
+        "checkedFor": "2026-11-16: 사용자와 기기가 모두 정책 범위에 포함되어야 합니다. 로컬에 저장하지 않은 데이터는 파일 검사·분류 대상이 아니며 USB 직접 저장 제한을 확인했습니다. 제한 앱 밖의 앱 접근 제어는 Windows 지원·macOS 미지원입니다."
       },
       {
         "title": "dlp-label-tips",
@@ -4015,7 +4035,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "위 범위의 문장을 공식 자료와 대조했습니다. 나머지 문장의 오늘 기준 재검증은 진행 중이며 실제 테넌트·기기의 정책 실행과 차단 결과는 시험하지 않았습니다."
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",
@@ -4117,9 +4137,9 @@
   },
   "/knowledge/security/purview-information-protection": {
     "file": "docs/security/purview-information-protection.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 규제 대상 협업의 분리 요구를 일괄 단정하지 않고 확인된 업무·규제 요구에 따라 Information Barriers 범위를 설계하도록 수정.",
+    "scope": "2026-11-16 개별 대조: Copilot 명칭·사서함 요구 조건, 레이블 게시와 암호화 권한 분리, 자동 레이블의 Exchange 송수신 범위·파일 형식·PDF 활성화·첨부 파일 처리·일일 상한, 시뮬레이션과 재분류·예약 활성화의 차이, Box·Google Workspace 미리 보기 제한.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4130,7 +4150,7 @@
       {
         "title": "copilot-requirements",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
-        "checkedFor": "Microsoft Copilot 명칭·copilot.cloud.microsoft 변경, 적격 기본 구독·추가 라이선스 조건을 확인했다."
+        "checkedFor": "2026-11-16: Microsoft Copilot 명칭 변경 및 copilot.cloud.microsoft, 적격 구독·Entra 계정·앱·네트워크 요구 조건을 확인했습니다. 사서함 데이터를 사용하는 기능에 Exchange Online 사서함이 필요합니다."
       },
       {
         "title": "ib-sharepoint",
@@ -4155,12 +4175,12 @@
       {
         "title": "auto-label",
         "url": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically",
-        "checkedFor": "자동 레이블의 테넌트 전체 일일 처리 상한과 보장 처리량의 차이"
+        "checkedFor": "2026-11-16: Exchange는 송수신 메일이며 사서함의 기존 메일은 제외합니다. SharePoint·OneDrive는 docx/xlsx/pptx/PDF를 지원하며 열린 파일·목록 첨부 파일은 제외합니다. PDF 활성화 전에는 검사하지 않으며 Exchange 첨부 조건 일치 시 메일에 레이블을 적용합니다. 하루 50만 개는 테넌트 전체 상한으로 보장 처리량이 아닙니다."
       },
       {
         "title": "auto-simulation",
         "url": "https://learn.microsoft.com/en-us/purview/auto-label-simulation-results",
-        "checkedFor": "레이블미변경,일치수≠성공수,SIT변경후재시뮬레이션≠재분류,결과보관과예약활성화취소조건을확인했다."
+        "checkedFor": "2026-11-16: 시뮬레이션은 레이블 미변경, 일치 건수는 적용 성공 건수가 아닙니다. SIT 변경 후 재시뮬레이션은 재분류가 아니며 결과를 내보내야 합니다. 예약 활성화는 검토 완료를 기다리지 않습니다."
       },
       {
         "title": "connected-labels",
@@ -4191,10 +4211,15 @@
         "title": "Information Barriers overview",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers",
         "checkedFor": "사용자·그룹 간 협업 제한은 해당 조직의 분리 요구에 맞춰 설계해야 하며 모든 규제 대상 조직에 일괄 적용되는 전제는 아닙니다."
+      },
+      {
+        "title": "label-publishing",
+        "url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+        "checkedFor": "2026-11-16: 메일 주소 없는 보안 그룹은 레이블 게시 대상에 사용할 수 있지만 Azure Rights Management 암호화 접근 권한과 별개입니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "위 항목의 공식 설명을 개별 대조했습니다. 문서 전체 기술 문장의 최신 근거 대조는 진행 중이며, 실제 고객 테넌트의 정책 실행·차단 결과는 시험하지 않았습니다."
+    "notChecked": "위 범위의 문장을 공식 자료와 대조했습니다. 나머지 문장의 오늘 기준 재검증은 진행 중이며 실제 테넌트·기기의 정책 실행과 차단 결과는 시험하지 않았습니다."
   },
   "/knowledge/security/purview": {
     "file": "docs/security/purview.md",

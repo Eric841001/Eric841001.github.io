@@ -201,7 +201,7 @@ Examples:
 
 레이블을 배포할 대상과 암호화된 파일을 열 수 있는 대상은 따로 설정합니다. 최신 안내에서는 메일 주소가 없는 보안 그룹도 레이블 게시 대상에 사용할 수 있지만, 이 설정으로 Azure Rights Management의 파일 접근 권한까지 부여되지는 않습니다. 레이블을 받았다는 이유만으로 보호된 파일을 열 수 있다고 판단하지 마세요. 게시 대상과 암호화 권한을 각각 확인하고, 실제 사용자 계정으로 파일 열기를 시험하세요.
 
-출처: [민감도 레이블의 암호화와 사용자·그룹 지정](https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels).
+출처: [레이블 게시 대상 지정](https://learn.microsoft.com/en-us/purview/create-sensitivity-labels), [민감도 레이블의 암호화와 사용자·그룹 지정](https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels).
 
 ### Encryption
 
@@ -227,6 +227,8 @@ Automatically classify content based on:
 - Custom Keywords
 
 Microsoft 365의 자동 레이블 정책은 먼저 **시뮬레이션**으로 검사하고, 일치 항목과 적용 위치를 검토한 뒤 켭니다. 시뮬레이션은 레이블을 바꾸지 않으며, 일치 건수가 실제 적용 성공 건수를 뜻하지도 않습니다. SharePoint·OneDrive의 기존 파일은 저장된 분류 결과를 사용하므로 민감한 정보 유형(SIT)을 수정한 뒤 시뮬레이션만 다시 시작해도 파일이 새로 분류되지는 않습니다. 재실행 전에 필요한 결과를 내보내 보관하세요. 예약 활성화는 검토가 끝날 때까지 기다리지 않으므로 시간이 더 필요하면 예약을 취소합니다. [시뮬레이션 결과와 적용 전 확인 사항](https://learn.microsoft.com/en-us/purview/auto-label-simulation-results)을 참고하세요.
+
+서비스 측 자동 레이블은 SharePoint·OneDrive에 저장된 파일과 Exchange Online에서 송수신하는 메일을 대상으로 합니다. **사서함에 이미 저장된 메일을 소급 검사하는 기능은 아닙니다.** SharePoint·OneDrive에서는 `.docx`, `.xlsx`, `.pptx`와 PDF를 지원하지만, 열려 있는 파일과 목록 항목의 첨부 파일은 자동 레이블 대상이 아닙니다. PDF는 테넌트에서 PDF 레이블 기능을 먼저 활성화해야 하며, 활성화하지 않으면 검사도 건너뜁니다. Exchange가 첨부 파일에서 조건을 찾으면 레이블은 첨부 파일이 아닌 메일에 붙습니다. 암호화 상속은 별도 조건을 따릅니다. [적용 위치와 파일 형식별 조건](https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically)을 확인하세요.
 
 SharePoint·OneDrive 파일의 자동 레이블 처리 상한은 **테넌트 전체 정책을 합쳐 하루 50만 개**입니다. 보장 처리량이 아니므로 실제 속도는 더 낮을 수 있습니다. 대량 파일의 완료일을 이 상한만으로 계산하지 말고 처리 현황을 확인하세요. [자동 레이블 처리 한도](https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically)
 

@@ -84,9 +84,13 @@ Microsoft는 2026년 10월 Endpoint DLP의 FTP·SFTP 전송 보호를 일반 공
 
 네트워크 DLP와 Endpoint DLP는 적용 경로가 다릅니다. Entra Global Secure Access 연동에는 Microsoft 365 E7 또는 Purview E5 상당의 사용권과 Entra Internet Access 상당의 사용권 조합이 필요합니다. 다른 SASE·보안 브라우저 연동에는 Purview E5 상당의 사용권과 Purview 종량제 설정이 필요하며, B2B 게스트는 네트워크 보호 정책 대상에서 제외됩니다. [연동별 라이선스와 제한](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)을 확인하고 실제 전송 경로를 시험하세요.
 
+Entra Global Secure Access 연동에는 Purview 종량제 설정이 필요하지 않습니다. 네트워크의 인라인 검사는 텍스트 최대 4MB, 파일 최대 3MB까지 지원합니다. 같은 앱이라도 전송 내용이 인코딩되거나 접속 주소가 동적으로 바뀌면 정책 적용에 공백이 생길 수 있으므로, 실제 사용하는 앱과 전송 방식으로 시험하세요. [네트워크 검사 한도](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)를 참고하세요.
+
 ## 외부 조직과의 Teams 대화
 
 Teams의 **공유 채널**과 **외부 액세스 채팅**은 DLP 적용 방식이 다릅니다. 공유 채널에서는 각 발신자의 소속 테넌트 정책으로 메시지를 평가합니다. 외부 액세스 채팅에서는 대화를 시작한 테넌트가 호스트이며, 그 호스트에 소속된 사용자의 메시지에 호스트 정책을 적용합니다. 다른 테넌트 사용자의 메시지까지 호스트 정책으로 검사하거나, 사용자 소속 테넌트의 정책이 외부 호스트 대화에도 자동으로 따라간다고 가정하지 마세요.
+
+정책 범위에 **개별 사용자 계정만 지정하면 일반·비공개·공유 채널 메시지는 보호되지 않습니다**. 채널까지 보호하려면 보안 그룹, 배포 그룹 또는 Microsoft 365 그룹을 대상으로 지정하세요. 메일 주소가 없는 보안 그룹도 지원됩니다.
 
 시험할 때는 채팅을 시작하는 조직을 바꾸고 양쪽 사용자가 보낸 메시지의 처리 결과를 확인하세요. 공유 파일은 저장된 SharePoint·OneDrive 위치에 적용되는 정책도 따로 점검합니다. [Teams 대화별 DLP 적용 범위](https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams)를 참고하세요.
 
@@ -98,6 +102,10 @@ Microsoft는 macOS 27의 Endpoint DLP 권한 변경을 미리 보기로 안내�
 
 - **Windows와 macOS의 앱 제어 차이:** 제한된 앱 목록이나 규칙에 추가한 제한된 앱 그룹에 속하지 않는 앱의 접근 제어는 Windows에서 지원하지만 macOS에서는 지원하지 않습니다. 같은 규칙을 배포해도 보호 범위가 같다고 가정하지 마세요. [운영체제별 지원 표](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about)를 확인하세요.
 - **Exchange의 필수 레이블 지정:** 민감도 레이블 조건과 정책 팁을 사용하는 DLP 정책에서 필수 레이블 지정 창으로 레이블을 선택하면 정책 팁을 다시 평가하지 않습니다. 팁이 표시되지 않아도 설정한 DLP 동작은 적용됩니다. 경고 표시와 실제 전송 결과를 나누어 시험하세요. [레이블 조건과 정책 팁](https://learn.microsoft.com/en-us/purview/dlp-sensitivity-label-as-condition)을 참고하세요.
+
+## Endpoint DLP 적용 범위
+
+`Devices` 위치의 정책은 **사용자와 기기가 모두 대상에 포함되어야** 적용됩니다. 기기 온보딩만 완료하고 사용자 범위를 빠뜨리지 않았는지 확인하세요. 로컬 기기에 한 번도 저장하지 않은 데이터는 Endpoint DLP가 파일로 검사·분류할 수 없습니다. 예를 들어 Word에서 만든 문서를 로컬 저장 없이 USB에 바로 저장하는 동작은 이 방식으로 검사하거나 차단하지 못합니다. [사용자·기기 범위와 저장하지 않은 파일의 제한](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about)을 참고하세요.
 
 ## Licensing
 

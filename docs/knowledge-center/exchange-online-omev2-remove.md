@@ -107,7 +107,9 @@ This should only be used with:
 
 `RemoveOMEv2` removes Purview Message Encryption from the message and its attachments. `RemoveRMSAttachmentEncryption` also handles attachments encrypted before they were added, and requires `RemoveOMEv2 $true`. These settings are not a general decryptor for every protection format. Use the [parameter definitions](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-transportrule?view=exchange-ps#-removermsattachmentencryption) and validate the actual message and file protection types before approving an exception.
 
-Connect to Exchange Online.
+This removal applies to protection applied by your organization, including supported replies to messages your organization encrypted. It does not authorize decryption of protection owned by another organization. See [mail flow encryption and removal scope](https://learn.microsoft.com/en-us/purview/define-mail-flow-rules-to-encrypt-email).
+
+Install the ExchangeOnlineManagement module before running the connection commands. The signed-in account needs the Exchange RBAC permissions for the rule commands and parameters. See [Exchange Online PowerShell connection requirements](https://learn.microsoft.com/en-us/powershell/exchange/connect-to-exchange-online-powershell).
 
 ```powershell
 Import-Module ExchangeOnlineManagement
@@ -143,9 +145,11 @@ Validate with test messages:
 | Approved recipient | Verify removal for the supported protection type and successful recipient access |
 | Non-approved recipient | Verify protection remains intact, including messages with both approved and unapproved recipients |
 | Internal recipient | Rule behavior follows defined condition |
-| Audit review | Rule execution can be reviewed |
+| Audit review | Review rule matches and independently confirm the received message and attachment protection |
 
 ---
+
+EAC의 Exchange Transport Rule 보고서에서 규칙 일치 건수를 확인할 수 있습니다. 규칙의 Severity가 `Not audit`이면 보고서에 포함되지 않습니다. 대부분의 기록은 24시간 안에 나타나지만 최대 5일이 걸릴 수 있습니다. 규칙이 일치했다는 기록만으로 첨부 파일의 암호화 해제까지 성공했다고 판단하지 말고, 시험 수신자가 받은 메일과 파일을 직접 확인하세요. [규칙 사용 현황 확인](https://learn.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#monitor-rule-usage)
 
 ## Governance Requirements
 
@@ -183,10 +187,9 @@ Validate with test messages:
 
 ## References
 
-- Exchange Online Transport Rules
-- Office Message Encryption
-- Microsoft Purview Information Protection
-- RMS Attachment Encryption
+- [New-TransportRule](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/new-transportrule)
+- [Set-TransportRule](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-transportrule)
+- [Microsoft Purview Message Encryption rules](https://learn.microsoft.com/en-us/purview/define-mail-flow-rules-to-encrypt-email)
 
 ---
 
