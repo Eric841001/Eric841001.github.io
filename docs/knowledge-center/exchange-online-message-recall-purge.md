@@ -120,6 +120,10 @@ This example connects; it does not run a search or purge. App-only authenticatio
 
 ---
 
+### 삭제 대상에서 빠지는 항목
+
+`New-ComplianceSearchAction -Purge`는 **인덱싱되지 않은 항목과 Teams 메시지를 삭제하지 않습니다**. 검색 결과에 포함됐다는 사실만으로 삭제 대상이라고 판단하지 마세요. Litigation Hold가 걸린 사서함은 이 검색·삭제 절차의 지원 대상이 아니며, 사용자 화면에서 10개 항목이 사라져도 영구 삭제된 것은 아닙니다. 보류와 보존 조건을 먼저 확인하고, 삭제 한도를 넘기려고 명령을 계속 반복하지 마세요. [삭제 지원 범위와 제한](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data)을 참고하세요.
+
 ## Step 1. Define Search Criteria
 
 Search criteria may include:

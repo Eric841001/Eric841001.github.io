@@ -1588,9 +1588,9 @@
   },
   "/knowledge/knowledge-center/exchange-online-message-recall-purge": {
     "file": "docs/knowledge-center/exchange-online-message-recall-purge.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "비프리미엄 삭제 검색에서 ID·MessageID·레이블·SIT 조건의 제한, 검색 대상 5만 사서함 한도, 포털 검색과 PowerShell 재실행 결과 대조 및 삭제 전 내보내기를 확인했습니다.",
+    "scope": "2026-11-16 개별 대조: 검색·삭제 권한 분리, 대화형 연결 3.9.0 이상과 EnableSearchOnlySession, eDiscovery 앱 전용 인증 미지원, 방법별 10/100개 제한, 50,000개 사서함 범위, 지원 검색 조건·포털 검색 재실행, HardDelete와 보존·보류, 미인덱싱 항목·Teams 메시지 제외 및 Litigation Hold 제한.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1612,10 +1612,15 @@
         "title": "edisc-search-mailboxes",
         "url": "https://learn.microsoft.com/en-us/purview/edisc-search-mailboxes",
         "checkedFor": "비프리미엄 삭제 검색에서 ID·MessageID·레이블·SIT 조건의 제한, 검색 대상 5만 사서함 한도, 포털 검색과 PowerShell 재실행 결과 대조 및 삭제 전 내보내기를 확인했습니다."
+      },
+      {
+        "title": "purge-boundaries-20261116",
+        "url": "https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data",
+        "checkedFor": "2026-11-16: 미인덱싱 항목과 Teams 메시지는 New-ComplianceSearchAction -Purge로 삭제되지 않습니다. Litigation Hold 사서함의 미지원과 사용자 화면 제거·영구 삭제 차이, 한도 우회 반복 실행 비권장을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "본문의 제품 기능·지원 조건을 공식 자료와 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 명령을 실행하지 않았으며, 작성자가 제안한 일정·성과·평가 점수는 제품 보장이나 독립 인증으로 보지 않습니다."
+    "notChecked": "위 제품 조건과 예제 명령을 공식 문서와 대조했습니다. 승인·동료 검토·사고 기록은 운영 예시이며, 실제 테넌트에서 검색이나 삭제를 실행하지 않았습니다."
   },
   "/knowledge/knowledge-center/exchange-online-omev2-remove": {
     "file": "docs/knowledge-center/exchange-online-omev2-remove.md",
