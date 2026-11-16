@@ -398,6 +398,8 @@ Identity Mapping requires a mailbox in the source tenant and a MailUser without 
 
 ### Limitations
 
+For the native orchestrator's Teams chats and meetings, source content remains, potentially with changed participant lists or duplicate threads in either tenant. After migration, users should work with their target identity. Access to out-of-scope source content still requires a licensed source user, so do not remove source access merely because mailbox migration has finished. See [Teams chat and meeting scope](https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide#teams-chat-and-meeting-scope).
+
 Review:
 
 - Chat History

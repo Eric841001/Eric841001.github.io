@@ -57,7 +57,7 @@ Common scenarios:
 - Separation of production, non-production and shared services
 - Preparing Azure foundations for AI, data or application modernization
 
-For a manufacturing modernization scenario, a landing zone helped separate shared connectivity, workload subscriptions and security operations. This made later workload migration easier because routing, policy and monitoring standards were already defined.
+For a manufacturing modernization plan, separate shared connectivity, workload subscriptions and security operations. Define routing, policy and monitoring standards before the workload pilot, then use the pilot results to decide whether the design supports the migration.
 
 ## Architecture
 

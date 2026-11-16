@@ -170,6 +170,12 @@ Cross-tenant synchronization provisions B2B collaboration users and supported se
 
 For same-cloud user synchronization, each synchronized user needs Entra ID P1 in the source tenant. Group synchronization and cross-cloud synchronization require Entra ID Governance or Entra Suite. Target-tenant features can have their own licenses. Devices and contacts are not supported sync objects. See [the current license and object table](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
+Only internal member users in the source tenant can be synchronized; source external users and internal guests are excluded. Synchronization can match an existing target B2B user, but it cannot merge that identity with a target internal account. See [source user types and existing-user matching](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#existing-b2b-users).
+
+Group synchronization creates **static security groups** in the target, including when the source is a Microsoft 365 group or dynamic security group. It does not recreate a Microsoft 365 group's mailbox or Team, and nested groups are unsupported. Use **Sync only assigned users and groups**, not **Sync all users**, for group synchronization.
+
+A target-only sign-in block can be undone when a later source-user change is synchronized. Do not rely on that block as a durable cross-tenant access restriction. Review the source account, synchronization scope and cross-tenant access policy together; removing a user from sync scope soft-deletes the target user. See [target changes and synchronization scope](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#attributes).
+
 Users remain in their original tenant.
 
 Workload content remains in its original tenant; selected identity attributes are provisioned into the target tenant.

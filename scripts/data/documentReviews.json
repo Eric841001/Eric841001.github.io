@@ -326,15 +326,20 @@
   },
   "/knowledge/azure/landing-zone": {
     "file": "docs/azure/landing-zone.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 플랫폼·워크로드 랜딩 존의 역할과 파일럿·운영 절차 구분",
+    "scope": "이번 대조 범위: 플랫폼·워크로드 운영 책임, 아키텍처와 구현의 구분. 근거 없는 제조업 과거 성과 표현을 설계 예시로 수정",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "azure-landing",
         "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/",
         "checkedFor": "플랫폼 랜딩 존과 워크로드 랜딩 존을 구분하며 관리그룹·구독·연결·정책·보안·운영 리소스를 포함한다."
+      },
+      {
+        "title": "landing-zone current guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/",
+        "checkedFor": "플랫폼은 공통 거버넌스·보안·자원, 워크로드는 해당 경계 안의 운영 환경. 제조업 문장은 검증된 고객 성과가 아닌 설계 제안으로 변경."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -368,15 +373,20 @@
   },
   "/knowledge/azure/virtual-machines": {
     "file": "docs/azure/virtual-machines.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: VM 배포 전제 조건과 RPO/RTO 시험에서 실제 기록할 항목 구분",
+    "scope": "이번 대조 범위: VM 운영 책임과 크기·네트워크 설계, 신규 VNet 프라이빗 서브넷 기본값·API 버전·기존 VNet 영향 제외",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "azure-vm",
         "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
         "checkedFor": "VM은 OS 제어를 제공하며 기기 설정·패치·소프트웨어 관리가 필요하다. 네트워크·디스크 등 관련 리소스와 크기·지역·비용을 별도로 고려한다."
+      },
+      {
+        "title": "virtual-machines current guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "checkedFor": "2026-03-31 이후 API의 새 VNet 프라이빗 서브넷 기본값, Portal 기본값, 이전 API와 기존 VNet 유지, 명시적 송신 경로 필요."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2696,9 +2706,9 @@
   },
   "/knowledge/migration/cross-tenant-sync-vs-migration": {
     "file": "docs/migration/cross-tenant-sync-vs-migration.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: 역할 할당 가능 그룹 동기화의 환경별 제공·생성 시 매핑·역할 할당 미복제 조건.",
+    "scope": "이번 대조 범위: 동기화 원본 사용자 유형, 기존 B2B·내부 계정 일치, 그룹 변환·범위 제한, 원본 변경 시 대상 로그인 차단 재활성화와 범위 제외 시 삭제",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2710,6 +2720,11 @@
         "title": "copilot-requirements",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
         "checkedFor": "Microsoft Copilot 명칭·copilot.cloud.microsoft 변경, 적격 기본 구독·추가 라이선스 조건을 확인했다."
+      },
+      {
+        "title": "Cross-tenant synchronization overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+        "checkedFor": "Internal members only; cannot match target internal accounts. Target groups static security, no nesting, assigned scope required. Source changes can reenable target blocked users; out-of-scope users soft deleted."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2861,9 +2876,9 @@
   },
   "/knowledge/migration/tenant-to-tenant": {
     "file": "docs/migration/tenant-to-tenant.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-16",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Migration Methods, Data Protection. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 대조 범위: Orchestrator 워크로드·Identity Mapping·일정·OneDrive 델타 제한·보류 사서함·Teams 원본 잔존과 사용자 전환",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2875,6 +2890,11 @@
         "title": "cross-mailbox",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration",
         "checkedFor": "보류 사서함 이전 차단, 성공 시 원본 사서함 삭제 및 MailUser 전환, 단일 테넌트 도메인 연결 조건을 확인했다."
+      },
+      {
+        "title": "Migration orchestrator overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide",
+        "checkedFor": "Four content workloads; mailbox/MailUser mapping required; no OneDrive delta; holds block mailbox move; Teams source content remains, duplicate threads possible, target identity after migration, licensed source user for remaining content."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

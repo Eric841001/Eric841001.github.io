@@ -83,6 +83,12 @@ Azure Virtual Machines로 업무 시스템을 운영할 때 확인할 설계 항
 5. Enable backup, monitoring and update management.
 6. Validate performance and cost after deployment.
 
+## 신규 가상 네트워크의 송신 연결
+
+2026년 3월 31일 이후 릴리스된 API를 사용하는 새 가상 네트워크는 기본적으로 프라이빗 서브넷을 사용합니다. 이 서브넷의 VM이 인터넷이나 Microsoft의 공용 엔드포인트에 연결하려면 NAT Gateway 등 명시적인 송신 경로가 필요합니다. Azure Portal도 프라이빗 서브넷을 기본값으로 사용하며, 이전 API 버전은 기존 기본 동작을 유지합니다.
+
+이 변경이 기존 가상 네트워크의 송신 연결을 일괄 차단하는 것은 아닙니다. 배포 템플릿의 API 버전과 서브넷의 `defaultOutboundAccess`, 실제 송신 경로를 함께 확인하세요. OS 업데이트와 외부 패키지 다운로드도 시범 VM에서 시험합니다. [기본 송신 연결 변경 범위](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access#retirement-of-default-outbound-access-scope-and-impact)를 참고하세요.
+
 ## Security
 
 - Avoid public RDP or SSH exposure.
