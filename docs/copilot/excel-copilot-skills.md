@@ -202,7 +202,7 @@ Use both views during review: follow response links to inspect the affected work
 
 ### Workbook Rules
 
-Apply workbook-specific standards.
+Put workbook-specific instructions in **column A** of a visible worksheet named **`.Rules`**. Copilot does not use a hidden `.Rules` sheet. The rules travel with the workbook when it is shared. If a rule uses a formula, Copilot reads the recalculated result on the next prompt. See [workbook rule requirements](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-rules).
 
 ### Personalization
 
@@ -261,6 +261,10 @@ Use the current [official custom skills procedure](https://support.microsoft.com
 Each custom skill has its own folder containing `SKILL.md`, with required `name` and `description` frontmatter and instructions in the body. The folder name must match the `name` value; Copilot skips folders that do not match. After adding or renaming a skill in OneDrive, select **Refresh** in the Custom skills dialog. Review its data access, instructions and outputs before enabling it. Skill-builder is rolling out; the manual folder procedure is a distinct option.
 
 ---
+
+### Skill permissions and execution
+
+A skill can supply scripts and other resources, but it does not grant extra tool permissions or add a separate code-execution mechanism. Execution uses the tools already available to Copilot in Excel within approved environments. Review the [Excel skills security explanation](https://support.microsoft.com/en-us/excel/copilot/frequently-asked-questions-about-copilot-in-excel) when evaluating an organization's custom skills.
 
 ## Example Enterprise Skills
 

@@ -77,6 +77,10 @@ This framework provides a standardized assessment model to evaluate enterprise r
 
 ---
 
+## 링크가 열리지 않을 때 확인할 설정
+
+Copilot Chat이나 Copilot Studio 에이전트의 응답 링크를 눌렀을 때 **Unable to verify link**가 나타나면 브라우저의 타사 쿠키 정책을 확인하세요. Safe Links 검사에 필요한 `[*.]safelinks.protection.outlook.com`의 쿠키가 차단되면 링크가 열리지 않을 수 있습니다. Edge·Chrome에서는 `CookiesAllowedForUrls` 정책의 해당 사이트 예외를 검토합니다. [Copilot 브라우저 요구사항](https://learn.microsoft.com/en-us/copilot/plan/microsoft-copilot-requirements#operating-system-requirements)을 참고하세요.
+
 ## Current Model Readiness Addendum {/* #gpt-56-readiness-addendum */}
 
 Evaluate each available reasoning model with representative tasks before rollout. Compare accuracy, completeness and review effort using content that the intended users are allowed to access. Model availability alone does not demonstrate better results for your workload.

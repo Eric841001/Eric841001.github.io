@@ -117,7 +117,7 @@ Requirements depend on the selected experience. Use the [current Copilot require
 | Exchange Online mailbox for mailbox-grounded experiences | Required when using mailbox data. Supported experiences can use permitted archive, shared and delegate content; group mailboxes are unsupported. |
 | Microsoft 365 Apps | Deploy supported apps, review connected-experience privacy controls, and allow the Office Feature Updates task to run. |
 | OneDrive | Provision OneDrive where the selected Copilot scenarios depend on OneDrive-backed features. |
-| Browser | Enable third-party cookies when Word, Excel, or PowerPoint for the web requires them for Copilot. |
+| Browser | Enable the cookies required by Copilot in Word, Excel and PowerPoint for the web. For response links, allow third-party cookies for `[*.]safelinks.protection.outlook.com`; blocking them can cause an **Unable to verify link** error. |
 | Network | Allow Microsoft 365 endpoints and full WebSocket connectivity to `*.cloud.microsoft` and `*.office.com`; review TLS inspection, proxy timeout, and perimeter controls. |
 
 Do not treat a client-side eligibility flag or an acquired license state as proof that the Exchange Online mailbox, OneDrive, network, and application dependencies have finished provisioning. Record both entitlement and workload provisioning evidence before pilot acceptance.
