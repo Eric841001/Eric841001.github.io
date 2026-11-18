@@ -812,7 +812,7 @@
     "file": "docs/copilot/microsoft-scout.md",
     "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "2026-11-18 추가 대조: Autopilot의 자격 고객 대상 Frontier 배포 시작, Copilot 라이선스·사용량 기반 과금·필수 관리·보안 조건. Scheduled tasks 전환 조건은 기존 대조를 유지했습니다.",
+    "scope": "2026-11-18 대조: 11월 17일 Autopilot Frontier 배포 시작과 사용 조건을 영문 본문·한국어 요약에 일치시켰습니다. 새 예약 작업의 지원 앱, 활성 10개·전체 50개 한도, 기존 Power Platform 예약 프롬프트의 12월 31일 종료와 정책 차이를 다시 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -823,7 +823,7 @@
       {
         "title": "scheduled-prompts",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts",
-        "checkedFor": "Eligible license/connected experiences; Work IQ tab; new prompts not Power Automate flows; legacy prompts continue until expiry; disabling connected experiences hides management but existing schedules continue."
+        "checkedFor": "이전 예약 프롬프트 안내는 현재 관리 문서로 이동됩니다. Work IQ 탭과 Office 연결된 환경 정책 설명은 새 Task Hub 예약 작업의 지원·관리 조건으로 해석하지 않습니다."
       },
       {
         "title": "studio-overview",
@@ -857,7 +857,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 대조는 Autopilot 배포 조건과 예약 작업에 한정합니다. 제안한 업무 시나리오·통합 구성의 동작, 실제 테넌트 권한·과금·실행 결과와 문서의 나머지 기술 문장은 이번 기록으로 검증 완료 처리하지 않습니다."
   },
   "/knowledge/copilot/multi-agent-framework": {
     "file": "docs/copilot/multi-agent-framework.md",

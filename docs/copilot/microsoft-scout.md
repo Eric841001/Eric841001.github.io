@@ -323,7 +323,7 @@ These directions do not establish general availability or support for a specific
 
 ## 한국어 요약
 
-Microsoft는 2026년 9월 25일 Scout의 새 이름을 Autopilot으로 발표했습니다. 당시 제공 단계는 비공개 미리 보기이므로 아래 업무 예시를 모든 테넌트에서 사용할 수 있는 기능으로 보아서는 안 됩니다.
+Microsoft는 Scout의 이름을 Autopilot으로 바꾸고, 2026년 11월 17일부터 자격을 갖춘 Frontier 고객에게 순차 배포하기 시작했습니다. 일반 공급 단계는 아닙니다. Frontier 등록, Copilot 라이선스, 사용량 기반 과금과 필수 관리·보안 기능이 필요합니다. [11월 17일 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/autopilot-meet-your-trusted-personal-teammate/4572611)를 확인하고, 문서의 업무 예시는 실제로 사용할 수 있는 도구와 권한 범위 안에서 시험하세요.
 
 시범 도입 자격과 비용을 확인하고, 에이전트가 읽을 자료와 실행할 작업, 담당자 승인과 기록 보관 방법을 정합니다.
 
