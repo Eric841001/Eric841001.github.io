@@ -15,11 +15,22 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 Microsoft는 2026년 10월 21일 고객 응대를 위한 **customer conversation harness의 public preview**를 발표했습니다. 채팅과 음성을 하나의 대화 경험으로 구성하고, 업무별 전문 에이전트·지식·도구를 활용하고 필요하면 상담원에게 대화를 넘기는 실행 방식입니다.
 
-- **현재와 계획 구분:** 공개 미리 보기이며 일부 기능은 향후 수 주에 걸쳐 배포됩니다. 전문 에이전트별 모델 선택은 발표에서 GA 시점의 계획으로 설명했으므로 현재 제공된다고 가정하지 않습니다. Teams 채팅으로의 직접 이관도 향후 기능으로 구분합니다.
-- **관리와 비용:** 에이전트 생성 시 Agent 365에서 소유자·채널·ID·권한·도구와 사용 현황을 관리하는 방향이며, Copilot Credits 사용량 과금이 적용됩니다. 실제 지역·테넌트 메뉴, 연결 권한과 예산을 파일럿에서 확인하세요.
+- **발표 당시의 계획:** 10월 21일 발표는 공개 미리 보기이며, 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관은 당시 향후 계획으로 설명됐습니다. 11월 18일 확인한 변경 목록도 이 출시를 Preview로 분류합니다. 개별 Learn 문서 제목에서 preview 표기가 빠졌다는 이유만으로 정식 출시로 판단하지 않습니다.
+- **관리와 비용:** 10월 발표는 Agent 365를 통한 소유자·ID·권한과 활동 관리를 설명합니다. Copilot Credits는 고객의 사용뿐 아니라 에이전트 제작·테스트·평가 과정에서도 소비될 수 있습니다. 실제 지역·테넌트 메뉴, 연결 권한과 예산을 파일럿에서 확인하세요.
 - **도입 판단:** 고객 채널, 인증, 생성형 판단과 고정 절차의 경계, 사람 이관, 녹음·보존 및 실패 복구를 먼저 설계하세요. Microsoft Contact Center Intelligence 통합이 필요한 경우 기존 전화·라우팅 환경과 지원 조건을 별도로 검토합니다.
 
 출처: [Microsoft 공식 발표 — Customer conversation harness](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954).
+
+## 채널별 배포 조건
+
+웹 채팅과 음성 채널은 인증과 배포 조건이 다릅니다. **Speech 채널은 최종 사용자 로그인을 지원하지 않으므로, 사용자 자격 증명이 필요한 지식 원본은 Chat에서만 사용할 수 있습니다.** 음성에서도 같은 자료를 조회할 수 있다고 가정하지 마세요.
+
+- **웹 사이트:** 자동 생성되는 데모 사이트는 내부 시험용입니다. 고객에게 데모 URL을 배포하지 말고 Web chat의 스크립트를 실제 사이트에 넣어 사용합니다.
+- **Teams Phone:** Copilot Studio 테넌트·사용자 라이선스와 시나리오에 맞는 Teams Phone 라이선스가 필요합니다. 제작자가 채널을 활성화한 뒤 Teams 관리자가 리소스 계정에 전화번호와 라이선스를 설정합니다.
+- **Dynamics 365 Contact Center:** 웹 채팅 연결은 작업 스트림을 자동으로 만들지만, 음성의 `Connected` 표시는 설정 완료를 뜻하지 않습니다. 관리자가 음성 작업 스트림을 만들고 Teams 리소스 계정 연결·동기화와 번호 할당을 끝내야 합니다.
+- **환경 이동:** 일부 컨택 센터 연결에는 Dynamics 365 앱을 사용할 수 있는 환경이 필요합니다. 환경 선택만 바꿔서는 에이전트가 옮겨지지 않으므로 내보내기·가져오기를 사용합니다.
+
+출처: [Customer Conversation 개요와 인증·과금 조건](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview-customer-conversation), [채널별 배포 절차](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/publication-deploy-customer-conversation), [Copilot Studio 변경 목록](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new).
 
 ## 확장 가능한 에이전트 설계
 

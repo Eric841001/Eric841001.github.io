@@ -255,7 +255,7 @@ Microsoft는 **2026년 11월부터** Frontier에 새 Outlook for Windows, OneDri
 
 ## 10월 21일 고객 대화형 Harness 공개 미리 보기 {/* #customer-conversation-harness */}
 
-음성·채팅, 전문 에이전트 처리와 상담원 연결을 지원하는 **public preview**입니다. 일부 기능은 순차 배포이며 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관 같은 계획을 현재 기능으로 간주하지 마세요. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
+음성·채팅, 전문 에이전트 처리와 상담원 연결을 지원하는 **public preview**입니다. 10월 발표 당시 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관은 향후 계획이었습니다. 현재 배포 조건은 상세 가이드에서 확인하세요. 웹 채팅과 Teams Phone은 별도 설정이 필요하며, Speech에서는 사용자 자격 증명이 필요한 지식 원본을 사용할 수 없습니다. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
 
 [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954) · [상세 설계·파일럿 가이드](./customer-conversation-harness.md)
 
