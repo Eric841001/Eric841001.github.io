@@ -120,11 +120,15 @@ The announcement describes a cloud-hosted agent with its own identity, memory, c
 | Area | Copilot experiences | Autopilot preview |
 |---|---|---|
 | Starting work | Interactive chat, delegated tasks or configured schedules, depending on the experience | User-defined role, goal and boundaries for persistent work |
-| Scheduled work | [Scheduled prompts](https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts) support recurring Copilot interactions | Recurring work is included in the announcement’s examples |
+| Scheduled work | [Scheduled tasks](https://learn.microsoft.com/en-us/copilot/manage/scheduled-prompts) support recurring Copilot interactions | Recurring work is included in the announcement’s examples |
 | Persistence | Depends on Chat, Cowork and other capabilities | Own identity, memory, computer and workspace described in the announcement |
 | Availability and cost | License, feature rollout and usage terms vary | Confirm preview eligibility and usage-based billing before a pilot |
 
-Scheduled prompts require an eligible Copilot license and connected experiences. They are created and managed in the Work IQ tab. Current scheduled prompts no longer rely on Power Automate flows; legacy preview prompts can continue there until expiry. Disabling connected experiences hides prompt management but does not immediately stop existing schedules.
+**Scheduled tasks and legacy prompts have different controls.** New scheduled tasks require a Microsoft Copilot license, support up to 10 active and 50 total schedules per user, and keep task data within the Microsoft 365 compliance boundary. They do not use Power Platform and are not controlled by the Office connected-experiences policy. [Current administrator guidance](https://learn.microsoft.com/en-us/copilot/manage/scheduled-prompts).
+
+The [current user guide](https://support.microsoft.com/en-us/microsoft-365-copilot/schedule-your-most-used-copilot-prompts) places management in **Task Hub → Scheduled** and limits the initial release to Copilot on the web and desktop; Teams, Outlook and mobile are not included. Home is still rolling out, so the visible interface can differ. Older Work IQ-tab instructions should not be used as the navigation for the new Task Hub experience.
+
+**Legacy Power Platform scheduled prompts retire on December 31, 2026.** Recreate schedules that must continue as new scheduled tasks before that date. Earlier responses remain in chat history. The connected-experiences setting still applies to legacy prompts until retirement: disabling it hides their management UI but does not immediately stop existing schedules. It does not disable new scheduled tasks.
 
 ---
 

@@ -800,9 +800,9 @@
   },
   "/knowledge/copilot/microsoft-scout": {
     "file": "docs/copilot/microsoft-scout.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "9월 private preview 발표 이후 10월 30일 공지된 11월 Frontier 확대 계획을 반영하고 GA와 구분했습니다.",
+    "scope": "2026-11-18 추가 대조: Copilot Scheduled tasks와 기존 예약 프롬프트의 정책 차이, Task Hub·초기 지원 앱, 예약 한도와 2026-12-31 전환 기한. 기존 Autopilot 근거와 배포 계획은 별도 발표 시점의 기록입니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -829,6 +829,16 @@
         "title": "Microsoft Copilot October monthly update",
         "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
         "checkedFor": "브라우저로 원문을 읽고 10월 배포, 11월 Frontier·전 세계 배포, Workspaces Office 편집의 1월 계획을 구분했습니다."
+      },
+      {
+        "title": "새 예약 작업과 기존 프롬프트의 관리 조건",
+        "url": "https://learn.microsoft.com/en-us/copilot/manage/scheduled-prompts",
+        "checkedFor": "새 예약 작업은 Office 연결된 환경 정책의 영향을 받지 않으며 활성 10개·전체 50개를 지원합니다. 기존 Power Platform 예약 프롬프트는 2026-12-31 종료되므로 다시 만들어야 합니다."
+      },
+      {
+        "title": "Task Hub와 초기 지원 앱",
+        "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/schedule-your-most-used-copilot-prompts",
+        "checkedFor": "새 Scheduled tasks는 Task Hub에서 관리하며 초기에는 웹·데스크톱만 지원합니다. Teams·Outlook·모바일을 포함하지 않고 Home 배포에 따라 화면이 달라질 수 있습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3568,9 +3578,9 @@
   },
   "/knowledge/security/data-lifecycle": {
     "file": "docs/security/data-lifecycle.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 문장별 대조: 보존 정책·레이블과 기록 관리의 역할, 비활성 사서함 지연 보류, Priority Cleanup 영구 삭제의 미리 보기·승인·검토 집합·기록물 제외 조건.",
+    "scope": "2026-11-18 추가 대조: SharePoint·OneDrive Priority Cleanup의 영구 삭제·시뮬레이션·두 관리자 검토와 eDiscovery 보류 시 추가 승인. 나머지 근거는 기존 검토 기록이며 이번 날짜의 전체 문장 재검증을 뜻하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3617,6 +3627,11 @@
         "title": "기록물과 규제 기록물은 Priority Cleanup에서 제외",
         "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-onedrive-sharepoint",
         "checkedFor": "기록물과 규제 기록물은 Priority Cleanup에서 제외"
+      },
+      {
+        "title": "SharePoint·OneDrive의 승인 역할과 Exchange 차이",
+        "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-onedrive-sharepoint#policy-approvers",
+        "checkedFor": "파일 정리에는 다른 Priority Cleanup 관리자의 검토가 필요하며 eDiscovery 보류가 있으면 지정된 eDiscovery 관리자가 추가 승인합니다. 보존 관리자 별도 승인은 요구하지 않습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -3864,9 +3879,9 @@
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 조직 모드·그룹 지원·다중 세그먼트 조건, Teams 기존 일대일 채팅, SharePoint·OneDrive 모드별 접근, 보존된 검색·Copilot 결과와 직접 접근 차이",
+    "scope": "2026-11-18 추가 대조: 개별 정책의 방향, Legacy·SingleSegment·MultiSegment 차이, SharePoint·OneDrive 활성화 순서, Open 모드 메일 사용 보안 그룹 예외와 검색·Copilot 노출 조건. 실제 테넌트 적용 시험은 하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3908,6 +3923,16 @@
         "title": "IB in Teams",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-teams",
         "checkedFor": "새 차단 정책 적용 후 기존 일대일 채팅은 읽기 전용이며 이후 통신은 차단된다."
+      },
+      {
+        "title": "IB 정책 방향과 적용",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers-policies#scenario-1-block-communications-between-segments",
+        "checkedFor": "정책 하나는 한 방향을 설정하며 상호 차단·허용에는 양쪽 방향의 정책을 각각 정의합니다. 활성 상태와 적용 작업이 필요합니다."
+      },
+      {
+        "title": "SharePoint Open 모드 그룹 공유 예외",
+        "url": "https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint#allow-sharing-of-open-mode-sites-with-mail-enabled-security-groups",
+        "checkedFor": "Block 정책만 사용하는 조직에서 SharePoint IB 활성화와 옵트인 후 Open 사이트를 메일 사용 보안 그룹에 공유할 수 있습니다. 다른 모드의 일반 지원으로 해석하지 않습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

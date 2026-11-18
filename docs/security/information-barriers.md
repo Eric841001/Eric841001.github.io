@@ -111,7 +111,7 @@ IB should not be treated as a simple user blocking feature. It should be designe
 | Principle | Guidance |
 |---|---|
 | Matrix First | 정책을 만들기 전에 부서/사용자 간 허용·차단 표를 먼저 확정합니다. |
-| Symmetric Policy | IB는 양방향 제한만 지원합니다. A→B와 B→A가 같은 제한이 되도록 정책을 구성하고 확인합니다. 한 방향만 허용하는 설계는 지원하지 않습니다. |
+| Symmetric Policy | 각 정책은 지정한 세그먼트에서 대상 세그먼트로 향하는 한 방향을 설정합니다. 두 세그먼트 사이를 서로 차단하거나 서로만 허용하려면 A→B와 B→A 정책을 각각 구성하고 적용 결과를 확인합니다. |
 | Exception by Segment | 예외 사용자가 필요하면 개별 예외 사용자를 별도 세그먼트로 분리합니다. |
 | Workload Validation | Teams, SharePoint, OneDrive는 정책 적용 방식과 검증 항목이 다릅니다. |
 | Evidence Ready | 정책 설정, 테스트 결과, 오류 화면, 로그를 감사 대응 패키지로 보관합니다. |
@@ -144,7 +144,7 @@ IB 정책을 구성하고 활성화한 뒤에는 SharePoint·OneDrive에 전파�
 
 MultiSegment 모드는 사용자당 최대 10개 세그먼트를 지원하며, 이 모드의 정책은 허용 목록으로 정의합니다. 사용자가 공통 세그먼트에 속하는지가 호환성 판단 기준입니다. 기존 단일 세그먼트의 차단 정책을 그대로 복제하지 말고 [다중 세그먼트 구성 조건](https://learn.microsoft.com/en-us/purview/information-barriers-multi-segment)에 맞춰 설계하세요.
 
-IB가 지원하는 그룹은 Microsoft 365 그룹입니다. 배포 목록과 보안 그룹은 비IB 그룹으로 취급하므로 모든 그룹 유형에 같은 차단 결과를 기대하면 안 됩니다. [그룹 유형별 지원 범위](https://learn.microsoft.com/en-us/purview/information-barriers-policies#configuration-concepts)를 확인하세요.
+IB가 지원하는 그룹은 Microsoft 365 그룹입니다. 배포 목록과 보안 그룹은 비IB 그룹으로 취급하므로 모든 그룹 유형에 같은 차단 결과를 기대하면 안 됩니다. [그룹 유형별 지원 범위](https://learn.microsoft.com/en-us/purview/information-barriers-policies#configuration-concepts)를 확인하세요. 다만 SharePoint **Open 모드 사이트**에는 메일 사용 보안 그룹으로 공유할 수 있는 별도 옵트인 설정이 있습니다. 조직이 Block 정책만 사용하고 SharePoint IB를 활성화한 경우에 지원하며, 그룹 구성원의 IB 준수 여부도 확인해야 합니다. [Open 모드의 그룹 공유 조건](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint#allow-sharing-of-open-mode-sites-with-mail-enabled-security-groups)을 다른 사이트 모드에 확대 적용하지 마세요.
 
 ## Segment Design
 
