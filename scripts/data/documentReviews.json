@@ -570,9 +570,9 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "11월 9일 추가 대조: 11월 7일 Microsoft 평가 발표의 호출 수·캐시 효율·비용 가중 토큰·평가 통과율 수치와 도구 실패 후 작업 지속 비율. 지속 비율을 성공률로 표현한 문장을 수정했습니다.",
+    "scope": "11월 9일 추가 대조: 11월 7일 Microsoft 평가 발표의 호출 수·캐시 효율·비용 가중 토큰·평가 통과율 수치와 도구 실패 후 작업 지속 비율. 지속 비율을 성공률로 표현한 문장을 수정했습니다. 추가 대조: 선불 부족 진단, 환경·정책 우선순위, 제작 단계 소비, 에이전트 한도와 지연, 보고서 범위.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -619,10 +619,25 @@
         "title": "Microsoft Copilot harness 정량 평가 논문 소개",
         "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157",
         "checkedFor": "11월 9일 발표 요약 대조: 약 2배 호출, 평균 +40%p 캐시 효율, 비용 가중 토큰 15–21% 감소, 모델별 +10.8/+22.1%p 평가 통과율. 84–91%는 도구 실패 후 작업 지속 비율이며 최종 성공률이 아닙니다."
+      },
+      {
+        "title": "Copilot Studio capacity",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/manage-copilot-studio-copilot-credits-capacity",
+        "checkedFor": "선불 할당과 테넌트 풀 사용, 월 한도·Hard stop의 지연, 흐름 별도 검사와 사용량 보고서 범위를 대조했습니다."
+      },
+      {
+        "title": "Govern credit consumption",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/govern-credit-consumption",
+        "checkedFor": "Microsoft Copilot harness 제작·미리 보기·평가 과금, Azure 예산 알림의 비차단 성격, 새 에이전트 기본 한도의 부재를 대조했습니다."
+      },
+      {
+        "title": "Studio resource policies",
+        "url": "https://learn.microsoft.com/en-us/copilot/implement/usage-based-billing-manage-copilot-studio-costs",
+        "checkedFor": "리소스 정책의 PPAC 설정 우선순위, 적용 최대 12분, AI Builder 제외와 정책 삭제 시 기존 설정 복귀를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 날짜에는 11월 7일 공식 발표의 요약 수치와 해당 문장을 대조했습니다. 첨부 논문의 전체 실험 설계·원시 데이터, 문서의 다른 기술 문장과 실제 테넌트 성능은 재검증하지 않았습니다."
+    "notChecked": "이번 날짜에는 11월 7일 공식 발표의 요약 수치와 해당 문장을 대조했습니다. 첨부 논문의 전체 실험 설계·원시 데이터, 문서의 다른 기술 문장과 실제 테넌트 성능은 재검증하지 않았습니다. 고객 테넌트 오류 원인이나 해결 여부는 확인하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",

@@ -307,6 +307,39 @@ Microsoft 365 관리 센터에서 환경·에이전트용 지출 정책을 만�
 
 출처: [Copilot Studio 비용 관리 전환과 적용 제한](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs).
 
+## 크레딧 관리 팁: 잔액이 있는데도 실행되지 않을 때 {/* #studio-credit-troubleshooting */}
+
+크레딧 부족 알림만 보고 종량제를 켜기 전에 **문제가 난 환경과 현재 적용되는 비용 정책**부터 확인하세요. 구매한 총량과 그 환경에서 사용할 수 있는 양은 다릅니다.
+
+### 먼저 확인할 다섯 가지
+
+1. **환경을 맞춥니다.** Studio에서 선택한 환경과 관리 센터에서 용량을 할당한 환경을 ID로 대조합니다. 개발·시험·운영 환경의 담당자와 비용 책임자도 기록하세요.
+2. **관리 위치를 확인합니다.** Power Platform 관리 센터(PPAC)의 용량·에이전트 관리 화면에 Microsoft 365 리소스 지출 정책 적용 안내가 있는지 봅니다. 해당 정책이 적용 중이면 기존 PPAC 할당·청구 계획보다 우선합니다. PPAC 청구 계획 목록이 비어 있다는 사실만으로 과금 방식을 단정하지 마세요.
+3. **할당량과 사용량을 나눠 봅니다.** PPAC에서 관리하는 환경은 `Licensing > Copilot Studio`의 선불 잔여량, 환경 할당량·소비량, 테넌트 미할당 용량 사용 설정을 확인합니다. 종량제 없이 선불 용량만 사용하는 구성도 가능합니다.
+4. **중단 조건을 찾습니다.** 적용 중인 정책의 범위·한도·청구 방법과 에이전트 한도·중지 상태를 확인합니다. Microsoft 365 리소스 정책을 방금 연결했다면 적용에 최대 12분이 걸릴 수 있습니다. 사용자 정책만 만들고 환경에도 적용됐다고 가정하지 마세요.
+5. **작업 종류를 구분합니다.** Microsoft Copilot harness는 제작·미리 보기·평가에서도 크레딧을 소비합니다. 미게시 에이전트도 비용이 생길 수 있습니다. 앱 제작, 에이전트 실행, agent flow 중 어디에서 실패했는지와 오류 시각을 기록하세요.
+
+설정이 맞는데도 재현되면 환경·에이전트 ID, 오류 문구, 발생 시각, 적용 정책과 사용량 보고서를 모아 지원 요청을 준비하세요. 원인을 확인하기 전 추가 구매나 종량제 전환을 해결책으로 확정하지 않습니다.
+
+출처: [용량·사용량 관리](https://learn.microsoft.com/en-us/power-platform/admin/manage-copilot-studio-copilot-credits-capacity), [Microsoft 365 비용 정책의 우선순위](https://learn.microsoft.com/en-us/copilot/implement/usage-based-billing-manage-copilot-studio-costs), [Microsoft Copilot harness의 개발 단계 비용 관리](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/govern-credit-consumption).
+
+### 알림과 실제 중단을 따로 설정하세요
+
+이강표 님의 「Copilot Studio Credit 사용 제한 설정 가이드」 4쪽은 환경 할당량과 초과 사용 설정을 함께 확인하도록 안내합니다.
+
+> “2·3번 모두 해제 시: 할당량만 사용, 소진 후 크레딧이 필요한 기능은 중단될 수 있음”
+
+여기서 2번은 테넌트의 미할당 용량 사용, 3번은 종량제 청구 설정입니다. 같은 자료 5~6쪽은 에이전트별 월 한도와 사용량 중지·알림 설정을 설명합니다. 아래 절차는 이 구분을 바탕으로 최신 Microsoft 문서의 적용 범위와 제한을 보완했습니다.
+
+
+PPAC에서 관리하는 개발 환경의 선불 사용량을 제한하려면 정해진 용량을 할당하고, `Draw from the available capacity in my tenant`를 끄며, 종량제 연결도 확인합니다. 같은 환경의 다른 에이전트·흐름·프롬프트에도 영향을 주므로 먼저 사용 목록을 확인하세요. 운영 환경은 중단 위험까지 고려해 예산과 추가 사용 승인 절차를 정합니다.
+
+에이전트별로는 PPAC의 `Manage Agents`에서 월 한도와 알림, `Hard stop`을 확인하세요. **Azure 예산 알림은 소비를 중단하지 않습니다.** 에이전트 한도도 즉시 적용되지 않아 초과가 발생할 수 있고, 호출한 agent flow의 사용량은 별도로 검사됩니다. 새 에이전트에 조직의 기본 한도가 자동 적용되는 기능은 없으므로 정기 점검에 포함하세요.
+
+사용량 급증은 환경 보고서에서 시작해 에이전트·기능·모델별로 좁혀 봅니다. 유료·비과금 크레딧을 구분하고 실제 Azure 청구 금액은 Azure Cost Management에서 확인하세요. PPAC 보고서는 대화별 토큰 원장을 제공하지 않으므로 모든 크레딧을 하나의 토큰 비율로 환산하면 안 됩니다.
+
+출처: [환경·에이전트별 통제와 예산 알림의 차이](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/govern-credit-consumption), [에이전트 한도·중단 지연·보고서 범위](https://learn.microsoft.com/en-us/power-platform/admin/manage-copilot-studio-copilot-credits-capacity).
+
 ## Release Gate Model
 
 <div aria-label="Copilot Studio release gate model" className="kc-maturity-ladder">
