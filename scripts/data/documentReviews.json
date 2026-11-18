@@ -3896,13 +3896,13 @@
     "file": "docs/security/information-barriers.md",
     "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "2026-11-18 추가 대조: 개별 정책의 방향, Legacy·SingleSegment·MultiSegment 차이, SharePoint·OneDrive 활성화 순서, Open 모드 메일 사용 보안 그룹 예외와 검색·Copilot 노출 조건. 실제 테넌트 적용 시험은 하지 않았습니다.",
+    "scope": "조직 모드별 세그먼트 수, 양방향 정책, 서비스별 활성화, Teams 기존 채팅, SharePoint·OneDrive 모드와 보고서 명령을 대조했습니다. 2022-03-15 이전 활성화 테넌트의 Implicit 모드 예외와 비대칭 통신 미지원 조건을 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "ib-overview",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers",
-        "checkedFor": "Teams·SharePoint·OneDrive의 양방향 협업 제한이며 메일 통신 제한은 별도 규칙이다."
+        "checkedFor": "Information Barriers는 양방향 제한만 지원하며 한 방향만 허용하는 비대칭 통신은 지원하지 않습니다. 메일은 별도 메일 흐름 규칙으로 제어합니다."
       },
       {
         "title": "ib-policies",
@@ -3912,7 +3912,7 @@
       {
         "title": "ib-sharepoint",
         "url": "https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint",
-        "checkedFor": "모드별 공유·접근 조건, 활성화 전 정책 전파 24시간과 활성화 후 약 1시간, 검색·Copilot 잔존 결과와 실제 접근 차이."
+        "checkedFor": "2022년 3월 15일 전 활성화한 테넌트의 Implicit 모드는 세그먼트 기반일 수 있으며 그룹 구성원 기반 전환과 Multi-Geo의 지역별 적용 조건을 확인했습니다."
       },
       {
         "title": "ib-report",
@@ -3951,7 +3951,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "기록된 제품 조건과 명령 설명을 공식 문서와 대조했습니다. 고객 테넌트에서 정책·접근·명령을 실행하지 않았고, 블로그 전체 문장 검증 완료를 뜻하지 않습니다."
   },
   "/knowledge/security/insider-risk": {
     "file": "docs/security/insider-risk.md",

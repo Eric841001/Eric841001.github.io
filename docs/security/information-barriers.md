@@ -111,7 +111,7 @@ IB should not be treated as a simple user blocking feature. It should be designe
 | Principle | Guidance |
 |---|---|
 | Matrix First | 정책을 만들기 전에 부서/사용자 간 허용·차단 표를 먼저 확정합니다. |
-| Symmetric Policy | 각 정책은 지정한 세그먼트에서 대상 세그먼트로 향하는 한 방향을 설정합니다. 두 세그먼트 사이를 서로 차단하거나 서로만 허용하려면 A→B와 B→A 정책을 각각 구성하고 적용 결과를 확인합니다. |
+| Symmetric Policy | 각 정책은 지정한 세그먼트에서 대상 세그먼트로 향하는 한 방향을 설정합니다. 두 세그먼트 사이를 서로 차단하거나 서로만 허용하려면 A→B와 B→A 정책을 각각 구성하고 적용 결과를 확인합니다. 한쪽만 허용하고 반대쪽은 차단하는 비대칭 통신은 지원하지 않습니다. |
 | Exception by Segment | 예외 사용자가 필요하면 개별 예외 사용자를 별도 세그먼트로 분리합니다. |
 | Workload Validation | Teams, SharePoint, OneDrive는 정책 적용 방식과 검증 항목이 다릅니다. |
 | Evidence Ready | 정책 설정, 테스트 결과, 오류 화면, 로그를 감사 대응 패키지로 보관합니다. |
@@ -226,6 +226,8 @@ Teams는 IB 정책 적용 후 사용자가 가장 먼저 체감하는 업무 시
 | 사이트 소유자 권한 | Explicit 등 선택한 모드의 제한과 Owner Moderated의 소유자 역할을 구분해 확인 |
 
 OneDrive에는 SharePoint의 Implicit 모드 대신 **Mixed** 모드가 있습니다. Mixed에서는 세그먼트가 일치하는 사용자뿐 아니라 테넌트의 비세그먼트 사용자에게도 공유할 수 있습니다. 세그먼트 사용자는 세그먼트 일치와 파일 공유 조건을 모두 충족해야 하며, 비세그먼트 사용자에게도 접근 권한이 필요합니다. Explicit의 차단 결과를 Mixed에 그대로 적용하지 마세요.
+
+2022년 3월 15일 전에 SharePoint IB를 활성화한 테넌트는 Teams 연결 사이트의 Implicit 모드가 기존 세그먼트 기준으로 동작할 수 있습니다. 그룹 구성원 기준 접근·공유로 전환하려면 `Set-SPOTenant -IBImplicitGroupBased $true` 설정을 검토해야 합니다. Multi-Geo 환경은 각 지역에서 적용 여부를 확인하세요. [기존 테넌트의 Implicit 모드 전환 조건](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint#enable-sharepoint-and-onedrive-information-barriers-in-your-organization)을 확인한 뒤 위 표의 기대 결과를 정합니다.
 
 ## Exchange 고려사항
 
