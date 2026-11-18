@@ -7,6 +7,7 @@ export const modelUpdate = {
   path: `${updateGuide}#claude-fable-5-2`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft Defender XDR', title: '지원 대상 보안 데이터의 보존 기간 확대', description: 'ISOC 자격을 갖춘 Defender Suite·E5·E7 고객의 최대 90일 보존과 대상 데이터·적용 조건을 추가했습니다.', date: '2026-11-18', status: '11월 15일부터 적용 · 데이터별 조건 확인', path: '/knowledge/security/defender-xdr#hunting-starter-pack'},
   {category: 'Microsoft Copilot', title: 'Work IQ 사람·조직 맥락의 제공 상태', description: 'GA 분석·조직 데이터와 Frontier 조직 맥락을 구분하고 데이터 역할·라이선스·검증 기준을 정리했습니다.', date: '2026-11-17', status: '12월까지 순차 배포 · 기능별 조건 확인', path: `${updateGuide}#work-iq-people-org-context`},
   {category: 'Microsoft Copilot', title: 'Plugin Catalog 공개', description: '공개 카탈로그의 플러그인 목록·검색을 확인했습니다. 조직 내 설치·사용은 관리자 정책과 플러그인별 조건을 확인하세요.', date: '2026-11-18', status: '카탈로그 공개 · 조직별 사용 조건 확인', path: `${updateGuide}#plugin-catalog-ignite-2026`},
   {category: 'Microsoft Copilot', title: 'Claude Fable 5.2 단계적 배포', description: 'Cowork·Copilot Studio의 eligible users 대상 롤아웃과 지역·하위처리자·데이터 보존 설정을 구분했습니다.', date: '2026-11-12', status: '순차 배포 · 조직별 자격·조건 확인', path: `${updateGuide}#claude-fable-5-2`},
@@ -17,7 +18,7 @@ export const updateHighlights = [
   {category: 'Microsoft 365 Copilot', title: 'Copilot Chat fair-use와 과금 일정 변경', description: '무라이선스 사용자의 제한 확대와 Copilot Business CSP 과금 기본 활성화의 2027년 1~3월 연기를 구분했습니다.', date: '2026-11-09', status: '11월 9일 적용 시작 · 일정 정정', path: `${updateGuide}#copilot-chat-fair-use-november-9`},
   {category: 'Copilot Studio', title: '에이전트 반복 실행의 설계·정량 평가', description: '도구 계약과 재시도 한도에 더해 완료율, 캐시 효율, 실패 복구와 총 토큰 비용을 함께 측정하는 근거를 추가했습니다.', date: '2026-11-07', status: '설계 지침 · Microsoft 정량 평가', path: `${updateGuide}#reliable-agentic-loops`},
   {category: 'Microsoft 365 Copilot', title: '11월 4일 앱·에이전트 운영 기능', description: '에이전트 사용량 보고서, 권위 콘텐츠, Cowork의 로컬 Edge 사용과 앱별 변경을 정리했습니다.', date: '2026-11-05', status: 'Current Channel · 안전 배포 확인', path: `${updateGuide}#app-updates-november-4`},
-  {category: 'SharePoint · OneDrive', title: '에이전트 생성 방식 전환 준비', description: '11월 중순 전환 예정과 기존 .agent 파일의 2027년 3월 말 지원 종료, 공유 권한 재확인 사항을 정리했습니다.', date: '2026-11-05', status: '전환 예정 · 이전 준비', path: '/knowledge/microsoft365/sharepoint#agent-upgrade-2026'},
+  {category: 'SharePoint · OneDrive', title: '에이전트 생성 방식 전환 준비', description: '11월 중순부터 순차 배포하는 전환 기능과 기존 .agent 파일의 2027년 3월 말 지원 종료, 공유 권한 재확인 사항을 정리했습니다.', date: '2026-11-18', status: '순차 배포 · 테넌트 적용 확인', path: '/knowledge/microsoft365/sharepoint#agent-upgrade-2026'},
   {category: 'Microsoft Entra ID', title: 'MemberOf Next 전환 조건', description: '기존 memberOf 종료 안내에 후속 기능의 라이선스·Standard 우선순위와 하루 두 번 갱신되는 조건을 추가했습니다.', date: '2026-11-18', status: '공개 미리 보기', path: '/knowledge/azure/identity#memberof-retirement-2026'},
   {category: 'Copilot Studio', title: '환경·에이전트 비용 관리 전환 조건', description: 'Microsoft 365 지출 정책의 우선순위, 적용 지연과 AI Builder 제외 조건을 정리했습니다.', date: '2026-10-31', status: '선택 적용 · 지원 범위 확인', path: '/knowledge/copilot/copilot-studio-2026-platform-update#studio-cost-management-transition'},
   {category: 'Microsoft Intune', title: 'Intune 2610의 Apple·Windows 관리 변경', description: 'Apple 업데이트 정책 전환, Windows 연결 주소, STIG 감사와 관리자 권한 적용 조건을 추가했습니다.', date: '2026-10-31', status: '문서 보완 · 서비스 순차 배포', path: '/knowledge/playbooks/intune-deployment-playbook#intune-2610-changes'},

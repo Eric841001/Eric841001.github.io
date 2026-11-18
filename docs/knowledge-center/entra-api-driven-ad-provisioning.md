@@ -218,11 +218,14 @@ Invoke-RestMethod `
 - 입력 스키마와 필수 속성 검증
 - 50개 이하 배치 분할
 - HTTP `202 Accepted`는 접수 성공으로 기록하고 계정 생성 완료와 구분
-- 프로비저닝 로그 조회용 `ProvisioningLog.Read.All` 권한과 로그 API로 사용자별 처리·실패 결과 확인
+- 프로비저닝 로그 API에서 사용자별 처리·실패 결과 확인. 로그 조회 권한은 아래의 API별 안내를 함께 확인합니다.
 - 429 및 일시적 오류에 대한 지수 백오프 재시도
 - 동일 사용자의 중복 생성 방지를 위한 안정적인 `externalId`
 - 실패 배치 재처리 및 감사 가능한 상관관계 ID
+
 - 비밀 마스킹과 최소 권한 실행 계정
+
+로그 권한은 공식 문서의 표기가 다릅니다. [API 기반 프로비저닝 권한 가이드](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-grant-access)는 `ProvisioningLog.Read.All`을 안내하지만, [GET /auditLogs/provisioning 참조](https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0)의 권한 표에는 `AuditLog.Read.All`과 `Directory.Read.All`이 함께 기재되어 있습니다. 선택한 인증 방식과 실제 호출에서 필요한 권한을 확인하고, 오류가 난다는 이유만으로 더 넓은 권한을 일괄 부여하지 마세요. 문서 표기만으로 두 권한 구성이 같은 범위라고 단정할 수 없습니다.
 
 ## 7. 검증 절차
 

@@ -103,7 +103,7 @@ Safe Links, Safe Attachments and impersonation protection are Plan 1 capabilitie
 
 ### Protection boundaries by workload
 
-Safe Links checks URLs at click time in supported email clients, Teams and Office apps. If email URL rewriting is disabled, click-time checks depend on a client that supports the Safe Links API. RTF messages and S/MIME-signed messages have protection limitations; test the actual client and message format. See [Safe Links coverage](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about).
+Safe Links checks URLs at click time in supported email clients, Teams and Office apps. If email URL rewriting is disabled, click-time checks depend on a client that supports the Safe Links API. Safe Links does not protect URLs in RTF/TNEF email and ignores S/MIME-signed messages. Test the actual client and message format before relying on click-time protection. See [Safe Links coverage](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about).
 
 Email Safe Attachments policies and Safe Attachments for SharePoint, OneDrive and Teams use separate settings. Collaboration files are scanned asynchronously using activity and threat signals; **not every file is scanned**. A file marked as malicious can still be downloaded by default. To block those downloads for users and admins, a SharePoint administrator can configure `Set-SPOTenant -DisallowInfectedFileDownload $true` after reviewing the impact. See [file scanning coverage](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about) and [download blocking configuration](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-configure).
 
@@ -176,6 +176,12 @@ For email, Dynamic Delivery provides the message body with attachment placeholde
 </div>
 
 Recipients cannot release messages quarantined as malware by anti-malware policies, as malware or phishing by Safe Attachments, or as high-confidence phishing by anti-spam policies. A quarantine policy can allow a release request for these categories, but an administrator must release the message. See [quarantine release restrictions](https://learn.microsoft.com/en-us/defender-office-365/quarantine-about).
+
+### Password-protected attachments
+
+A separate Safe Attachments **Block** setting can quarantine messages whose password-protected attachments cannot be scanned. This is different from a malware verdict and from Purview Message Encryption or S/MIME encryption. If the assigned quarantine policy permits self-release, recipients can enter the attachment password in the Defender portal to trigger another scan; release occurs only when the scan finds the attachment safe. Administrators can release the message without a password.
+
+Only one password submission is currently supported per quarantined message. Multiple attachments must use the same password; messages or archives requiring different passwords do not use this self-release flow. See [password-protected attachment handling](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-about#encrypted-password-protected-attachments-in-safe-attachments-policies).
 
 ## Decision Checklist
 

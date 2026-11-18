@@ -202,6 +202,10 @@ SOC 담당자가 경고를 분류하고 원인을 조사한 뒤 격리·복구·
   </div>
 </div>
 
+### Incident cases (preview)
+
+The [incident overview](https://learn.microsoft.com/en-us/defender-xdr/incidents-overview) identifies incident cases as the recommended preview experience; the legacy experience remains available. Case management supports ownership, tasks, comments and investigation records. Closing a case does **not** automatically resolve its related alerts, so the SOC closure checklist must check those alerts separately. Agentic sessions require access to Project Perception; ordinary case access does not grant it. See [incident case management](https://learn.microsoft.com/en-us/defender-xdr/manage-incident-cases).
+
 ## Automation and Guardrails
 
 Automation is valuable only when the response boundary is clear. Defender XDR programs should define which actions can run automatically, which actions require analyst approval, and which actions require business owner confirmation.
@@ -216,7 +220,11 @@ Automation is valuable only when the response boundary is clear. Defender XDR pr
 
 ## Hunting Starter Pack
 
-Advanced hunting exposes up to **30 days of raw Defender XDR data**. Querying Sentinel data requires connecting its workspace to the Defender portal; analytics-tier retention then follows that workspace configuration. Table access also depends on assigned permissions. A Defender XDR license or portal access alone does not populate all Sentinel tables or extend Defender raw-data retention. See [the current hunting prerequisites](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview).
+Advanced hunting normally provides **30 days of native Defender data**. Since November 15, 2026, eligible Microsoft Defender Suite, Microsoft 365 E5 and E7 customers can receive **up to 90 days for supported data through ISOC**. The benefit must be enabled for the tenant, and the actual query range depends on retained data; it does not create missing historical records. See [hunting retention and prerequisites](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview).
+
+The included workload tables are listed in [ISOC retention and billing](https://learn.microsoft.com/en-us/defender-xdr/integrated-security-operations-data-billing-retention). For Defender for Cloud data in the current rollout, Microsoft expects a full 90-day history by January 3, 2027. Supported Defender retention can be extended to 180 days with additional charges; this extension applies to new data after enablement and does not backfill earlier data.
+
+Querying Sentinel data requires connecting its workspace to the Defender portal; analytics-tier retention follows the workspace configuration. Table access depends on assigned permissions. Portal access alone does not populate Sentinel tables. See [Sentinel data in advanced hunting](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender).
 
 Advanced hunting should not be treated as a random query library. It should be mapped to the enterprise’s current risk themes.
 

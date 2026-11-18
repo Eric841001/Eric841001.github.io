@@ -1215,9 +1215,9 @@
   },
   "/knowledge/knowledge-center/entra-api-driven-ad-provisioning": {
     "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: API 앱의 재시작·요청 시 프로비저닝 제한, SCIM 요청·권한·비동기 응답·호출 한도, Cloud Sync 사용자 미리 보기의 SOA 조건·인증 제한",
+    "scope": "이번 대조: bulkUpload 한 요청당 50개 작업, 개요의 5초당 40회와 Graph 참조의 초당 40회 차이, 일일 호출 한도 및 프로비저닝 로그 조회 권한 표기의 차이. 상충하는 표기를 단일 확정 조건으로 처리하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1249,10 +1249,15 @@
         "title": "Cloud Sync user provisioning preview",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/overview-provision-entra-id-to-active-directory",
         "checkedFor": "User provisioning preview versus group GA; cloud-managed users have no AD password, Kerberos passwordless rather than LDAP password authentication."
+      },
+      {
+        "title": "Provisioning log API permissions",
+        "url": "https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0",
+        "checkedFor": "GET 로그 API 표는 AuditLog.Read.All과 Directory.Read.All을 안내하며 프로비저닝 권한 가이드의 ProvisioningLog.Read.All과 표기가 다르다. 실제 권한 동등성은 확정하지 않았다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "공식 문서 간 호출 속도와 로그 조회 권한 표기가 다릅니다. 실제 테넌트에서 부하·권한 테스트를 실행하지 않아 적용되는 단일 한도와 권한 조합은 확정하지 않았습니다."
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
@@ -2344,16 +2349,11 @@
   },
   "/knowledge/microsoft365/sharepoint": {
     "file": "docs/microsoft365/sharepoint.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "11월 9일 추가 대조: 공식 사이트 지정의 관리 센터 경로와 기존 PowerShell·CSOM 안내, Global Reader 변경 권한에 관한 공식 문서 간 불일치를 확인했습니다.",
+    "scope": "이번 대조: 허브 연결과 접근 권한, 에이전트 생성·업그레이드의 11월 중순 순차 배포 일정, .agent 종료 일정, 공유 권한·Teams 재추가·사용 이력·웹 파트의 제공 상태.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
-      {
-        "title": "spo-hubs",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/planning-hub-sites",
-        "checkedFor": "허브는 탐색·브랜딩·검색을 연결하지만 연결 사이트의 권한을 자동으로 통합하지 않는다."
-      },
       {
         "title": "spo-permissions",
         "url": "https://learn.microsoft.com/en-us/sharepoint/understanding-permission-levels",
@@ -2390,16 +2390,6 @@
         "checkedFor": "11월 9일 원문 대조: PowerShell·CSOM, 개인 사이트 제외, 최대 100개·72시간. 관리 센터 추가 안내는 11월 4일 별도 릴리스 노트와 구분했습니다."
       },
       {
-        "title": "SharePoint·OneDrive 에이전트 업그레이드",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/upgrade-sharepoint-agents",
-        "checkedFor": "11월 중순 전환 도구 제공 예정, 2027년 3월 이후 기존 형식 종료, 공유 권한·지식 원본 별도 확인, Teams 재추가와 사용 이력 미이전을 대조했습니다."
-      },
-      {
-        "title": "SharePoint agents transition preparation",
-        "url": "https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/sharepoint-agents-are-changing-what-customers-need-to-know-for-preparation/4568460",
-        "checkedFor": "11월 4일 개정된 안내에서 4월 초부터 중순까지 단계적 사용 중지 계획을 확인했습니다. 테넌트별 종료 시각을 보장하지 않습니다."
-      },
-      {
         "title": "Microsoft 365 Copilot November 4 release notes",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026",
         "checkedFor": "관리 센터 경로, 최대 100개 사이트와 순차 배포를 확인했습니다. Global Reader 변경 허용 설명은 Entra 역할 정의와 충돌하므로 변경 가능하다고 단정하지 않았습니다."
@@ -2408,16 +2398,31 @@
         "title": "Microsoft Entra Global Reader",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader",
         "checkedFor": "Global Reader는 읽기 전용이며 변경할 수 없다는 역할 정의를 확인했습니다. 실제 서비스의 역할별 동작은 시험하지 않았습니다."
+      },
+      {
+        "title": "Agent upgrade",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/upgrade-sharepoint-agents",
+        "checkedFor": "11월 중순 순차 배포, 2027년 3월 말까지 기존 파일 지원, 전환 후 비공개 기본값의 예외와 Teams 재추가·기존 이력 미이전·웹 파트 제공 예정 조건을 확인했다."
+      },
+      {
+        "title": "Transition preparation",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftmissioncriticalblog/sharepoint-agents-are-changing-what-customers-need-to-know-for-preparation/4568460",
+        "checkedFor": "기존 파일은 3월 말까지 지원하고 사용 중지는 4월 초부터 중순까지 진행할 계획이라는 일정 차이를 확인했다."
+      },
+      {
+        "title": "Hub planning",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/planning-hub-sites",
+        "checkedFor": "허브 연결 자체로 사이트 접근 권한이 바뀌지 않으며 검색·모음 콘텐츠는 기존 권한을 따른다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 날짜의 개별 대조 범위는 scope에 적은 항목입니다. 기존 출처의 다른 내용과 문서 전체를 이날 다시 검증한 것은 아니며, 실제 테넌트의 화면·역할별 변경 작업은 시험하지 않았습니다."
+    "notChecked": "위에 명시한 제품 조건과 일정만 이번에 대조했습니다. 실제 테넌트의 배포 완료, 권한 적용과 마이그레이션 결과는 시험하지 않았으며 다른 절의 이전 검토를 오늘의 재검증으로 처리하지 않았습니다."
   },
   "/knowledge/microsoft365/teams": {
     "file": "docs/microsoft365/teams.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: Teams Events 임시 시간대·Auto Attendant 수동 설정·Shifts 조사 상태.",
+    "scope": "이번 대조: 표준·비공개·공유 채널의 저장소, 그룹 만료와 개별 게스트 접근 종료의 차이, 공유 채널 B2B direct connect와 게스트 접근 설정의 선행 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2431,21 +2436,6 @@
         "checkedFor": "Teams·SharePoint·OneDrive의 양방향 협업 제한이며 메일 통신 제한은 별도 규칙이다."
       },
       {
-        "title": "teams-sites",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/teams-connected-sites",
-        "checkedFor": "표준채널은부모사이트,비공개·공유채널은별도사이트및구성원경계다."
-      },
-      {
-        "title": "group-expiry",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-lifecycle",
-        "checkedFor": "그룹만료와갱신·삭제의정책이며개별게스트계정만료와구분한다."
-      },
-      {
-        "title": "shared-channels",
-        "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
-        "checkedFor": "B2Bdirectconnect사용,기존게스트추가불가,양쪽교차테넌트설정과Teams설정을확인했다."
-      },
-      {
         "title": "canada-timezone",
         "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/canada-2026-time-zone-changes",
         "checkedFor": "Teams Events 임시 시간대·Auto Attendant 수동 설정·Shifts 조사 상태"
@@ -2454,10 +2444,25 @@
         "title": "External user entitlement lifecycle",
         "url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-external-users",
         "checkedFor": "접근 패키지 할당 만료와 외부 사용자 생명주기 설정을 그룹 만료와 구분했습니다."
+      },
+      {
+        "title": "Shared channels",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "checkedFor": "공유 채널은 B2B direct connect를 사용하고 양쪽 조직의 교차 테넌트 설정과 Teams 게스트 접근 활성화가 필요하다. 게스트 계정은 채널에 직접 추가할 수 없다."
+      },
+      {
+        "title": "Teams-connected sites",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/teams-connected-sites",
+        "checkedFor": "표준 채널은 부모 사이트의 폴더를 사용하고 비공개·공유 채널에는 별도 사이트가 생성된다."
+      },
+      {
+        "title": "Group expiration",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-lifecycle",
+        "checkedFor": "그룹 만료는 그룹 갱신·삭제 절차이며 개별 게스트 계정의 만료일 설정이 아니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번에는 기존 검토 이후 공식 자료의 변경 사항과 해당 문장을 대조했습니다. 전체 기술 문장을 새로 개별 검증하거나 실제 테넌트에서 기능을 시험한 것은 아닙니다."
+    "notChecked": "위에 명시한 제품 조건과 일정만 이번에 대조했습니다. 실제 테넌트의 배포 완료, 권한 적용과 마이그레이션 결과는 시험하지 않았으며 다른 절의 이전 검토를 오늘의 재검증으로 처리하지 않았습니다."
   },
   "/knowledge/migration/cross-tenant-sync-vs-migration": {
     "file": "docs/migration/cross-tenant-sync-vs-migration.md",
@@ -2489,7 +2494,7 @@
     "file": "docs/migration/file-server.md",
     "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "SPMT의 원본·대상 범위와 classic SMB Azure Files 이전 문서를 대조했습니다. ADS 미저장 및 LastAccessTime의 제한을 추가했습니다.",
+    "scope": "이번 대조: SPMT의 원본·대상 범위, Azure Files의 ADS 미지원과 File Sync의 온프레미스 보존, LastAccessTime의 읽기 미갱신 조건. ADS 설명의 근거 링크를 FAQ로 바로 연결했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2501,10 +2506,15 @@
         "title": "SharePoint Migration Tool",
         "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool",
         "checkedFor": "온프레미스 SharePoint·파일 공유 원본에서 Microsoft 365 대상으로 이전하는 도구임을 확인했습니다."
+      },
+      {
+        "title": "Azure Files FAQ",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-faq",
+        "checkedFor": "Azure Files는 ADS를 지원하지 않으며 Azure File Sync 사용 시 ADS는 온프레미스에 보존된다는 설명을 대조했다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 문서의 지원 범위와 제한을 대조했습니다. 실제 데이터 이전, 권한 재현, 업무 영향 및 고객 사례 성과는 시험하지 않았습니다."
+    "notChecked": "공식 파일·메타데이터 지원 범위를 대조했습니다. 실제 고객 파일의 복사·ACL 보존·ADS 의존 업무와 성능은 시험하지 않았습니다."
   },
   "/knowledge/migration/global-tenant-consolidation-framework": {
     "file": "docs/migration/global-tenant-consolidation-framework.md",
@@ -3700,75 +3710,80 @@
   },
   "/knowledge/security/defender-for-office365": {
     "file": "docs/security/defender-for-office365.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: Plan 1·2 기능, Safe Links 클라이언트 조건, 메일·협업 파일 검사 차이, 다운로드 허용 기본값, Dynamic Delivery와 격리 해제 제한.",
+    "scope": "이번 대조: Plan 1·2 기능 구분, Safe Links 지원 형식, 협업 파일 검사·다운로드 제한, Dynamic Delivery 예외, 격리 해제 권한과 암호로 보호된 첨부파일의 재검사 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "Defender for Office 365 overview",
+        "title": "Defender for Office 365 plans",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
-        "checkedFor": "MDO Plan 1·2 기능 차이와 검역 사용자 작업 범위"
+        "checkedFor": "Safe Links·Safe Attachments는 Plan 1, Attack simulation·Threat Explorer·Campaigns·AIR는 Plan 2 기능이다."
       },
       {
-        "title": "Plan 1·2 기능 구분",
-        "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-about",
-        "checkedFor": "Plan 1은 Safe Links·Safe Attachments·사칭 보호, Plan 2는 훈련·Explorer·Campaigns·자동 조사 대응을 제공한다."
-      },
-      {
-        "title": "지원 클라이언트, API 검사와 메시지 형식 제한",
+        "title": "Safe Links",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-links-about",
-        "checkedFor": "Safe Links는 지원 앱에서 클릭 시 검사하며 URL 재작성 해제 시 API 지원 클라이언트가 필요하고 RTF·S/MIME 서명에 제한이 있다."
+        "checkedFor": "RTF/TNEF URL은 보호하지 않고 S/MIME 서명 메일은 무시한다. URL 재작성 없이 클릭 시 검사하려면 지원 클라이언트가 필요하다."
       },
       {
-        "title": "메일 검사와 Dynamic Delivery 제한",
-        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-about",
-        "checkedFor": "Dynamic Delivery는 Exchange Online 사서함의 첨부파일 자리에 표시자를 두며 S/MIME 암호화·일부 폴더 이동에 제한이 있다."
-      },
-      {
-        "title": "비동기·선별 파일 검사와 기본 다운로드 허용",
+        "title": "Collaboration file scanning",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-about",
-        "checkedFor": "SharePoint·OneDrive·Teams의 모든 파일을 검사하지 않고 비동기 선별 검사를 하며 악성으로 표시된 파일도 기본적으로 다운로드할 수 있다."
+        "checkedFor": "협업 파일은 비동기로 선별 검사하며 모든 파일을 검사하지 않는다. 차단된 파일도 기본 설정에서는 다운로드할 수 있다."
       },
       {
-        "title": "악성 파일 다운로드 차단 명령과 적용 대상",
-        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-for-spo-odfb-teams-configure",
-        "checkedFor": "SharePoint 관리자는 DisallowInfectedFileDownload 설정으로 사용자와 관리자의 악성 파일 다운로드를 차단할 수 있다."
+        "title": "Safe Attachments",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-about",
+        "checkedFor": "Dynamic Delivery는 Exchange Online 전용이며 이동·S/MIME 예외가 있다. 암호 첨부파일의 사용자 해제는 정책 허용과 재검사 통과가 필요하고 암호 제출은 한 번이다."
       },
       {
-        "title": "수신자 직접 해제 금지 범주와 해제 요청",
+        "title": "Quarantine",
         "url": "https://learn.microsoft.com/en-us/defender-office-365/quarantine-about",
-        "checkedFor": "악성코드·Safe Attachments 피싱·높은 신뢰도 피싱은 수신자가 직접 격리 해제할 수 없고 정책이 허용하면 해제를 요청한다."
+        "checkedFor": "악성코드·고신뢰 피싱과 암호를 확인하지 못한 첨부파일의 격리 사유 및 사용자 해제 권한을 구분했다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "위 범위의 문장을 공식 문서와 대조했습니다. 다른 기술 문장의 최신 개별 대조와 실제 테넌트의 정책 실행·차단 시험은 완료하지 않았습니다."
+    "notChecked": "위 기능 조건을 공식 문서와 대조했습니다. 고객 테넌트의 정책 배포, 실제 악성 파일 검사, 격리 해제와 메일 전달은 실행하지 않았으며 설계 권고를 제품 자동화 기능으로 검증한 것은 아닙니다."
   },
   "/knowledge/security/defender-xdr": {
     "file": "docs/security/defender-xdr.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: From security alerts to one connected attack story, Executive Summary, 한국어 요약, Reference Architecture View, Core Capability Map, SOC Operating Model, Phishing to identity compromise, Hunting Starter Pack. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 대조: Defender 신호의 상관 분석, Advanced hunting 기본 30일과 ISOC 대상 최대 90일 보존, 유료 180일 연장, Sentinel 연결·권한, 미리 보기 incident case의 종료와 에이전트 세션 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "xdr-overview",
+        "title": "Defender XDR overview",
         "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
-        "checkedFor": "라이선스를 확보하고 프로비저닝한 endpoint·identity·email·app 서비스 신호를 통합해 탐지·조사·대응한다."
+        "checkedFor": "라이선스와 프로비저닝이 완료된 서비스의 신호를 연결하며 엔드포인트·계정·메일·앱 위협에 대응한다."
       },
       {
-        "title": "xdr-incidents",
-        "url": "https://learn.microsoft.com/en-us/defender-xdr/incidents-overview",
-        "checkedFor": "관련 경고를 사고로 상관 분석한다. Incident cases는 현재 preview이며 기존 경험도 제공된다."
-      },
-      {
-        "title": "hunting",
+        "title": "Advanced hunting",
         "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
-        "checkedFor": "Defender 원시 데이터 최대30일, Sentinel 작업영역 연결 및 별도 보존설정·테이블 권한을 구분했다."
+        "checkedFor": "기본 30일과 ISOC 대상 최대 90일을 구분했다. 자격·테넌트 활성화·실제 보존 데이터와 테이블 권한을 확인해야 한다."
+      },
+      {
+        "title": "ISOC retention",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/integrated-security-operations-data-billing-retention",
+        "checkedFor": "11월 15일 시작, Defender Suite·E5·E7 자격, Defender for Cloud 이력 누적 일정, 유료 최대 180일 연장과 소급 미적용을 대조했다."
+      },
+      {
+        "title": "Sentinel hunting",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "checkedFor": "Sentinel 워크스페이스 연결과 analytics 계층 보존 기간 및 권한에 따라 조회 범위가 달라진다."
+      },
+      {
+        "title": "Incident overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/incidents-overview",
+        "checkedFor": "관련 경고가 사건으로 묶이며 incident cases는 미리 보기로 안내되고 기존 화면도 유지된다."
+      },
+      {
+        "title": "Case management",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/manage-incident-cases",
+        "checkedFor": "사건을 닫아도 관련 경고가 자동 해결되지 않으며 에이전트 세션은 Project Perception 접근 권한이 필요하다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 기능·보존 기간·라이선스 조건을 대조했습니다. 실제 테넌트의 ISOC 활성화, 과거 데이터 존재, 쿼리 실행·과금과 사건 종료 동작은 시험하지 않았습니다."
   },
   "/knowledge/security/defender": {
     "file": "docs/security/defender.md",

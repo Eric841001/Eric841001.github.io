@@ -321,8 +321,6 @@ Microsoft 365 group expiration renews or deletes the group; it is not an expiry 
 
 ---
 
-A Microsoft 365 group expiration policy expires the group; it is not an individual guest-account expiration control. Choose the appropriate guest access review or lifecycle process separately, and confirm its license and workload scope. See [group expiration](https://learn.microsoft.com/en-us/entra/identity/users/groups-lifecycle).
-
 ### High-Sensitivity Teams
 
 Examples:
@@ -405,7 +403,7 @@ Recommended for:
 
 ### Shared Channels
 
-Cross-team collaboration. External participation uses **Microsoft Entra B2B direct connect**, not a guest object in the host tenant. Both organizations must configure the required cross-tenant access and Teams settings. Existing guests cannot simply be added to a shared channel. See [shared channel prerequisites and limitations](https://learn.microsoft.com/en-us/microsoftteams/shared-channels).
+Cross-team collaboration. External participation uses **Microsoft Entra B2B direct connect**, not a guest object in the host tenant. Both organizations must configure the required cross-tenant access and Teams settings. Teams guest access must also be enabled to invite external participants, even though the channel does not use guest accounts. Existing guests cannot simply be added to a shared channel. See [shared channel prerequisites and limitations](https://learn.microsoft.com/en-us/microsoftteams/shared-channels).
 
 Recommended for:
 
