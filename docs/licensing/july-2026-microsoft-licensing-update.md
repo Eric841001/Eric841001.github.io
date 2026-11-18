@@ -120,7 +120,7 @@ Microsoft는 Microsoft 365 Copilot 라이선스가 없는 상용 테넌트 사�
 
 - **구매 조건:** 12월 1일부터 적격 기본 구독을 먼저 구매하지 않아도 주문할 수 있는 새 Copilot·Copilot Business 상품이 제공될 예정입니다. 이것이 모든 Office 앱·서비스의 사용 권한을 포함한다는 뜻은 아닙니다.
 - **기존 구독:** 현재 적격 기본 구독을 요구하는 상품에는 `(add-on)`이 붙습니다. 기존 구독은 계속 갱신·수량 조정할 수 있으며 새 상품이 나온다는 이유로 사용자 라이선스를 재할당할 필요는 없습니다. 자동화는 상품명보다 제품·SKU ID를 기준으로 확인하세요.
-- **CSP 과금:** 신규 Copilot Business 상품의 사용량 과금 기본 활성화는 12월 1일이 아니라 **Microsoft FY27 Q3(2027년 1~3월)**에 시작될 예정입니다. 신규 구매가 있는 테넌트의 기존 Copilot Business 구독에도 기본 활성화되며, 한국을 포함한 모든 시장이 대상입니다. 사용자당 월 4,000 Copilot Credits는 무료 제공량이 아닌 조정 가능한 기본 지출 한도이며, 실제 사용량이 청구됩니다.
+- **CSP 과금:** 신규 Copilot Business 상품의 사용량 과금 기본 활성화는 12월 1일이 아니라 <strong>Microsoft FY27 Q3(2027년 1~3월)</strong>에 시작될 예정입니다. 신규 구매가 있는 테넌트의 기존 Copilot Business 구독에도 기본 활성화되며, 한국을 포함한 모든 시장이 대상입니다. 사용자당 월 4,000 Copilot Credits는 무료 제공량이 아닌 조정 가능한 기본 지출 한도이며, 실제 사용량이 청구됩니다.
 - **샌드박스:** Partner Center 샌드박스의 기존 11월 2일 제공 일정은 연기됐습니다. 새 날짜는 아직 발표되지 않았으므로 후속 준비 안내를 확인하세요.
 
 출처: [Partner Center 10월 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates), [Partner Center 11월 정정](https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments). 구매 전 현재 가격 목록·SKU·지역 조건을 다시 확인하세요.
@@ -159,7 +159,7 @@ Use this pattern when a customer says they have "E3".
 
 | Question | Why It Matters |
 |---|---|
-| Is it Office 365 E3 or Microsoft 365 E3? | Microsoft 365 E3 includes additional identity, endpoint and security capabilities compared with Office 365 productivity-only positioning. |
+| Is it Office 365 E3 or Microsoft 365 E3? | Microsoft 365 E3 adds identity, device management and endpoint security capabilities. Office 365 E3 also includes email security, including Defender for Office 365 Plan 1 under the 2026 commercial packaging update. |
 | Which service plans are enabled? | A purchased license does not guarantee every service plan is enabled for every user. |
 | Is Defender for Office 365 Plan 1 included or separately licensed? | Email security architecture changes if Safe Links, Safe Attachments and impersonation protection are available. |
 | Is Microsoft Defender for Endpoint Plan 1 included? | Endpoint protection baseline changes if MDE P1 capability is available. |

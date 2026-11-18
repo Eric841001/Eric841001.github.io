@@ -120,7 +120,7 @@ Copilot Studio 에이전트의 통제는 한 포털에서 끝나지 않습니다
 
 ### 2026년 11월 17일 Ignite 제공 상태 {/* #ignite-2026-cowork-status */}
 
-11월 17일 발표에서 Cowork의 앱 구축과 Copilot Managed Runtime, Planner·Viva Engage 플러그인은 **일반 공급(GA)**으로 확인됐습니다. Brand Kit은 순차 배포 중이며, Microsoft-Decision-1.1 기반 노력 수준 조정·병렬 하위 에이전트, Work IQ 기반 작업 추천과 Agent 365 Business Analytics는 **Frontier**입니다.
+11월 17일 발표에서 Cowork의 앱 구축과 Copilot Managed Runtime, Planner·Viva Engage 플러그인은 <strong>일반 공급(GA)</strong>으로 확인됐습니다. Brand Kit은 순차 배포 중이며, Microsoft-Decision-1.1 기반 노력 수준 조정·병렬 하위 에이전트, Work IQ 기반 작업 추천과 Agent 365 Business Analytics는 **Frontier**입니다.
 
 - **GA와 Frontier 분리:** GA 기능도 안전 배포로 사용자별 표시 시점이 다를 수 있습니다. Frontier의 Auto·추천·분석 결과를 전사 표준 기능이나 보장된 절감 효과로 간주하지 않습니다.
 - **비용과 모델 통제:** Auto는 단계별 모델과 추론 노력을 선택하고 복잡한 작업을 하위 에이전트로 나눌 수 있습니다. 같은 과제로 모델·하위 에이전트 수, 지연, 성공률, Copilot Credits와 재시도 비용을 함께 측정합니다.

@@ -1996,9 +1996,9 @@
   },
   "/knowledge/licensing/e3-vs-e5": {
     "file": "docs/licensing/e3-vs-e5.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 수정 범위: 10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다. 10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다.; 10월 27일 시작 E3 CSP 프로모션의 기간·300석·기존 좌석 비율·2026년 갱신 제외·파트너 순가격 조건 대조; 미국 공식 E3 실제 제품 화면과 E5/E7 제품 자료의 Teams 포함·미포함 연간 약정·연간 결제 가격 6개 재대조, 반복된 도입 문장 정리 추가 대조: 라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다. ",
+    "scope": "이번 대조·수정: 연결 안내의 Copilot 구매 조건 변경(2026-12-01)과 CSP 신규 Copilot Business 사용량 과금 기본 활성화(2027년 1~3월)를 분리했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2032,34 +2032,39 @@
         "checkedFor": "Copilot 구독이 필요한 Cowork·Code 등 사용량 과금 서비스와 사전 구매·종량제·용량 방식의 서비스별 차이를 확인했습니다."
       },
       {
-        "title": "Partner Center October 2026 Copilot announcements",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "10월 14일 공지의 12월 1일 구매 상품 변경과 별도 CSP 신규 Copilot Business 과금 기본 활성화를 구분했습니다. 한국 초기 제외와 월 4000 Credits가 무료 제공량이 아닌 지출 한도임을 확인했습니다."
-      },
-      {
         "title": "Current Microsoft Copilot license options",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options",
         "checkedFor": "10월 19일 현재 문서는 E7 포함 또는 적격 구독 추가 구매를 설명하므로 12월 1일 예정된 주문 조건과 현재 사용 권한을 구분했습니다."
       },
       {
-        "title": "Partner Center — E3 CSP promotional offer",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
-        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
-      },
-      {
         "title": "microsoft-copilot-requirements",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements",
         "checkedFor": "라이선스 비교의 기존 Microsoft 365 Copilot 명칭과 새 Microsoft Copilot 명칭을 연결하고 접속 주소 변경을 안내했습니다."
+      },
+      {
+        "title": "Copilot offers and name updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates",
+        "checkedFor": "2026년 12월 1일부터 적격 기본 구독 없이 구매 가능한 새 상품이 제공되며, 기존 추가 기능 상품의 갱신·수량 조정은 유지됩니다."
+      },
+      {
+        "title": "November correction to Copilot Business billing rollout",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments",
+        "checkedFor": "사용량 과금 기본 활성화는 FY27 Q3(2027년 1~3월)로 연기됐고 한국을 포함한 전체 시장에 적용됩니다. 월 4,000 크레딧은 무료량이 아닌 기본 지출 한도입니다."
+      },
+      {
+        "title": "Partner Center — E3 CSP promotional offer",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#introducing-a-30-promotional-offer-on-microsoft-365-e3",
+        "checkedFor": "10월 26일 공지: 2026-10-27~2027-06-30, CSP 신규 300석 이상, 연간 약정, Office 365 E3 50% 미만·Microsoft 365 5% 미만, 2026년 Office 365 갱신 고객 제외, Teams 양 상품 및 파트너 순가격 30% 기준을 대조. 실제 고객 자격·최종 견적은 확인하지 않음."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서와 정책 정의·게시 예제를 대조했습니다. 실제 고객 테넌트·기기에서 정책이나 API를 실행하지 않았으며 계약별 사용 권한·한국 견적·실제 과금·운영 효과를 확인하지 않았습니다."
+    "notChecked": "이번 검토는 기록한 구매·과금 일정과 적용 조건에 한정합니다. 문서의 다른 기술 문장 전체를 이번에 대조한 것은 아니며, 고객별 계약·가격·사용량·테넌트 설정은 확인하지 않았습니다."
   },
   "/knowledge/licensing/july-2026-microsoft-licensing-update": {
     "file": "docs/licensing/july-2026-microsoft-licensing-update.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "11월 9일 추가 대조: 무라이선스 Copilot Chat fair-use 제한과 Copilot Business CSP 사용량 과금 기본 활성화의 FY27 Q3 연기, 한국을 포함한 전체 시장 적용을 확인했습니다.",
+    "scope": "이번 대조·수정: Copilot 기본 구독 구매 조건 변경(2026-12-01)과 CSP 신규 Copilot Business 사용량 과금 기본 활성화(2027년 1~3월)의 서로 다른 일정. Office 365 E3를 생산성 전용으로 보는 표현은 2026년 메일 보안 포함 조건에 맞춰 수정했습니다. 추가로 상용 패키지의 메일·기기 관리 기능, Copilot Chat 제한, AI Builder 크레딧 계약 조건과 Defender for Office 365 Plan 1·2 기능을 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2081,11 +2086,6 @@
         "title": "credits",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
         "checkedFor": "Cowork·Code 등 사용량 서비스와 서비스별 P3·종량제·용량 조합을 구분했다."
-      },
-      {
-        "title": "partner-oct",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "E3 할인 자격·일정, Copilot 12월 변경·한국 제외·4000 지출 한도, E7 행사와 AI Builder 판매 종료 조건을 대조했다."
       },
       {
         "title": "mdo-plans",
@@ -2143,13 +2143,23 @@
         "checkedFor": "기존 활성 계약의 크레딧은 계약 종료까지 사용할 수 있습니다. Premium 포함 크레딧의 신규 제공 종료와 Copilot Credits의 별도 준비를 구분했습니다."
       },
       {
-        "title": "Microsoft Partner Center November 2026 announcements",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november",
-        "checkedFor": "Copilot Chat fair-use 제한의 대상·시작일·알림 동작과 Copilot Business CSP 과금 기본 활성화의 FY27 Q3 연기, 전체 시장 적용, 샌드박스 일정 연기를 확인했습니다."
+        "title": "Copilot offers and name updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates",
+        "checkedFor": "2026년 12월 1일부터 적격 기본 구독 없이 구매 가능한 새 상품이 제공되며, 기존 추가 기능 상품의 갱신·수량 조정은 유지됩니다."
+      },
+      {
+        "title": "November correction to Copilot Business billing rollout",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments",
+        "checkedFor": "사용량 과금 기본 활성화는 FY27 Q3(2027년 1~3월)로 연기됐고 한국을 포함한 전체 시장에 적용됩니다. 월 4,000 크레딧은 무료량이 아닌 기본 지출 한도입니다."
+      },
+      {
+        "title": "Copilot Chat fair-use limits",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#copilot-chat-limits-for-users-without-a-microsoft-365-copilot-license",
+        "checkedFor": "무라이선스 사용자의 적용 시작일·2,000석 기준·변동 한도·진행 중 응답 유지와 Message center 식별자를 대조했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명을 개별 대조했습니다. 문서 전체 기술 문장의 최신 근거 대조는 진행 중이며, 실제 고객 테넌트의 라이선스 할당·정책 실행·차단 결과는 시험하지 않았습니다."
+    "notChecked": "기록된 문장과 표의 제품 조건을 공식 문서와 대조했습니다. 문서 전체 또는 블로그 전체 문장의 검증 완료를 뜻하지 않으며, 고객별 계약·견적·라이선스 활성화·실제 과금·테넌트 실행은 확인하지 않았습니다."
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
@@ -2179,9 +2189,9 @@
   },
   "/knowledge/microsoft365/e3-vs-e5": {
     "file": "docs/microsoft365/e3-vs-e5.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: E3·E5·E7 구성·명칭·미국 가격과 2026년 상용 Intune 추가 기능, 별도 구독의 중복 여부",
+    "scope": "이번 대조·수정: 연결 안내의 Copilot 구매 조건 변경(2026-12-01)과 CSP 신규 Copilot Business 사용량 과금 기본 활성화(2027년 1~3월)를 분리했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2223,10 +2233,20 @@
         "title": "credits",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
         "checkedFor": "Cowork·Code 등 사용량 서비스와 서비스별 P3·종량제·용량 조합을 구분했다."
+      },
+      {
+        "title": "Copilot offers and name updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates",
+        "checkedFor": "2026년 12월 1일부터 적격 기본 구독 없이 구매 가능한 새 상품이 제공되며, 기존 추가 기능 상품의 갱신·수량 조정은 유지됩니다."
+      },
+      {
+        "title": "November correction to Copilot Business billing rollout",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments",
+        "checkedFor": "사용량 과금 기본 활성화는 FY27 Q3(2027년 1~3월)로 연기됐고 한국을 포함한 전체 시장에 적용됩니다. 월 4,000 크레딧은 무료량이 아닌 기본 지출 한도입니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "이번 검토는 기록한 구매·과금 일정과 적용 조건에 한정합니다. 문서의 다른 기술 문장 전체를 이번에 대조한 것은 아니며, 고객별 계약·가격·사용량·테넌트 설정은 확인하지 않았습니다."
   },
   "/knowledge/microsoft365/exchange-online": {
     "file": "docs/microsoft365/exchange-online.md",
@@ -2286,9 +2306,9 @@
   },
   "/knowledge/microsoft365/licensing": {
     "file": "docs/microsoft365/licensing.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: E7과 추가 구독 비교. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 대조·수정: 연결 안내의 Copilot 구매 조건 변경(2026-12-01)과 CSP 신규 Copilot Business 사용량 과금 기본 활성화(2027년 1~3월)를 분리했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2302,13 +2322,18 @@
         "checkedFor": "Cowork·Code 등 사용량 서비스와 서비스별 P3·종량제·용량 조합을 구분했다."
       },
       {
-        "title": "partner-oct",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "E3 할인 자격·일정, Copilot 12월 변경·한국 제외·4000 지출 한도, E7 행사와 AI Builder 판매 종료 조건을 대조했다."
+        "title": "Copilot offers and name updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates",
+        "checkedFor": "2026년 12월 1일부터 적격 기본 구독 없이 구매 가능한 새 상품이 제공되며, 기존 추가 기능 상품의 갱신·수량 조정은 유지됩니다."
+      },
+      {
+        "title": "November correction to Copilot Business billing rollout",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments",
+        "checkedFor": "사용량 과금 기본 활성화는 FY27 Q3(2027년 1~3월)로 연기됐고 한국을 포함한 전체 시장에 적용됩니다. 월 4,000 크레딧은 무료량이 아닌 기본 지출 한도입니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 검토는 기록한 구매·과금 일정과 적용 조건에 한정합니다. 문서의 다른 기술 문장 전체를 이번에 대조한 것은 아니며, 고객별 계약·가격·사용량·테넌트 설정은 확인하지 않았습니다."
   },
   "/knowledge/microsoft365/onedrive": {
     "file": "docs/microsoft365/onedrive.md",
@@ -4273,9 +4298,9 @@
   },
   "/knowledge/toolkit/license-advisor": {
     "file": "docs/toolkit/license-advisor.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "설계·실행 프레임워크",
-    "scope": "개별 대조한 항목: Microsoft 365 License Overview, Business Basic, Business Standard, Business Premium, Microsoft 365 E3, Identity, Security, Compliance, Analytics, Microsoft 365 E7, Scenario 1, Scenario 4, Copilot Readiness. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "이번 대조·수정: 연결 안내의 Copilot 구매 조건 변경(2026-12-01)과 CSP 신규 Copilot Business 사용량 과금 기본 활성화(2027년 1~3월)를 분리했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -4294,13 +4319,18 @@
         "checkedFor": "P1/P2 포함 플랜 및 Entra Suite의 다섯 제품과 P1 전제 조건을 대조했다."
       },
       {
-        "title": "partner-oct",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "E3 할인 자격·일정, Copilot 12월 변경·한국 제외·4000 지출 한도, E7 행사와 AI Builder 판매 종료 조건을 대조했다."
+        "title": "Copilot offers and name updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october#copilot-offers-and-name-updates",
+        "checkedFor": "2026년 12월 1일부터 적격 기본 구독 없이 구매 가능한 새 상품이 제공되며, 기존 추가 기능 상품의 갱신·수량 조정은 유지됩니다."
+      },
+      {
+        "title": "November correction to Copilot Business billing rollout",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments",
+        "checkedFor": "사용량 과금 기본 활성화는 FY27 Q3(2027년 1~3월)로 연기됐고 한국을 포함한 전체 시장에 적용됩니다. 월 4,000 크레딧은 무료량이 아닌 기본 지출 한도입니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "이번 검토는 기록한 구매·과금 일정과 적용 조건에 한정합니다. 문서의 다른 기술 문장 전체를 이번에 대조한 것은 아니며, 고객별 계약·가격·사용량·테넌트 설정은 확인하지 않았습니다."
   },
   "/knowledge/toolkit/migration-checklist": {
     "file": "docs/toolkit/migration-checklist.md",

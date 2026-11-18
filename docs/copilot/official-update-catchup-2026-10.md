@@ -138,7 +138,7 @@ Microsoft는 Moody's·LSEG·FactSet 같은 **전문 금융 데이터 제공자�
 
 ## 11월 9일 Copilot 커넥터 쓰기 작업 GA {/* #connector-write-actions-ga */}
 
-Microsoft는 **Copilot 커넥터의 생성·수정·삭제 작업을 Copilot Chat과 Cowork에서 일반 공급(GA)**한다고 발표했습니다. 커넥터가 해당 도구를 제공할 때 회의 기록을 CRM 활동이나 작업으로 만들고, Jira 티켓이나 Notion 문서를 갱신하는 것처럼 대화의 문맥을 연결 시스템의 작업으로 이어갈 수 있습니다. Office 앱의 Copilot 지원은 향후 제공 항목이므로 현재 GA 범위로 단정하지 마세요.
+Microsoft는 <strong>Copilot 커넥터의 생성·수정·삭제 작업을 Copilot Chat과 Cowork에서 일반 공급(GA)</strong>한다고 발표했습니다. 커넥터가 해당 도구를 제공할 때 회의 기록을 CRM 활동이나 작업으로 만들고, Jira 티켓이나 Notion 문서를 갱신하는 것처럼 대화의 문맥을 연결 시스템의 작업으로 이어갈 수 있습니다. Office 앱의 Copilot 지원은 향후 제공 항목이므로 현재 GA 범위로 단정하지 마세요.
 
 | 확인 영역 | 현재 동작과 운영 기준 |
 |---|---|

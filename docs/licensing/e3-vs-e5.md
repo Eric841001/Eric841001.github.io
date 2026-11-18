@@ -30,7 +30,7 @@ Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot
 <span id="architecture" />
 <span id="business-scenario" />
 
-12월 1일 예정된 Copilot 구매 조건과 CSP 신규 Copilot Business 과금 변경은 [시행 전 확인사항](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에 정리했습니다. 현재 구독·사용 권한과 시행 예정 조건을 구분하세요.
+Copilot의 기본 구독 구매 조건 변경은 **2026년 12월 1일**, CSP 신규 Copilot Business의 사용량 과금 기본 활성화는 **2027년 1~3월**에 시작될 예정입니다. 서로 다른 일정이므로 [구매·과금 변경 안내](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에서 대상 상품과 적용 조건을 확인하세요.
 
 **E3 CSP 프로모션:** 10월 27일 시작된 신규 구독 300석 이상 대상 프로모션은 고객 자격 제한이 있으며, 할인 기준도 공개 정가가 아닌 파트너 순가격입니다. [적용 기간과 자격 조건](../licensing/july-2026-microsoft-licensing-update#e3-csp-promotion-2026)을 확인하고 E5·E7 견적과 비교하세요.
 
