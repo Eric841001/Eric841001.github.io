@@ -78,6 +78,8 @@ Assess copy fidelity and service interruption alongside unmanaged folders, stale
 
 SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files provides managed SMB/NFS file shares and has a different access, backup and data-protection model. SPMT migrates supported file shares to Microsoft 365; it is not an Azure Files migration tool. For classic SMB shares, choose the [Azure Files migration path](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview) for that target, and validate protocol, identity, ACL and metadata support. Do not assume SharePoint retention, container labels or Copilot indexing apply to an Azure file share simply because the files were moved to Azure.
 
+Azure Files로 옮길 때 파일 내용과 메타데이터를 나누어 검사하세요. 위의 classic SMB 이전 안내에서 대체 데이터 스트림(ADS)은 Azure 파일 공유에 저장되지 않으며, Azure File Sync를 사용할 때 온프레미스에 남습니다. 또한 대상의 `LastAccessTime`은 읽기 작업으로 갱신되지 않고 `CreationTime`과 같습니다. ADS나 최종 접근 시각을 사용하는 업무는 파일 수만 맞는지 확인해서는 이전 성공을 판단할 수 없습니다. [Azure Files 메타데이터 지원 범위](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview#supported-metadata)를 기준으로 시험하세요.
+
 ## Implementation
 
 1. Inventory shares, size, file types and owners.

@@ -90,6 +90,10 @@ Use Exchange Online's documented Google Workspace mailbox migration for mail, ca
 
 The Exchange migration path excludes room bookings and shared calendars; migrated rules remain disabled until users review and enable them. Identify these exceptions before the pilot. See [Google Workspace mailbox migration limitations](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration#migration-limitations).
 
+메일 이전 전에 대상 사용자를 **메일 사용 가능 사용자(mail-enabled user)**로 준비하고, 배치마다 이전할 사용자 목록을 지정해야 합니다. 이 Exchange 이전 경로는 GCC High·DoD에서 제공되지 않습니다. 일정 색상과 부재중·자동 회신 설정은 이전되지 않으며, 연락처당 이메일 주소는 최대 3개까지만 이전됩니다. [메일 이전의 준비 사항과 제한](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration)을 시험 목록에 반영하세요.
+
+Drive의 파일별 권한과 이전 버전은 별도 이전 설정을 확인해야 합니다. 계정 매핑이 끝났다는 이유만으로 파일 권한과 모든 버전이 함께 복사된다고 판단하지 마세요. [Migration Manager 준비 사항](https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview#get-started)에 따라 대상 경로·권한·버전 설정을 각각 확인합니다.
+
 ## Security
 
 - Review third-party app access before migration.

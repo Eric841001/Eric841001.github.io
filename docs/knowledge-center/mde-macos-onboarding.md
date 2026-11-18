@@ -203,6 +203,8 @@ Defender onboarding does not by itself establish Intune compliance or configure 
 
 ---
 
+사용자 없이 등록한 macOS 기기는 Intune 준수 평가를 지원하지 않습니다. 공용·무인 기기에 위 절차를 그대로 적용하지 말고 등록 방식과 접근 정책을 먼저 확인하세요. 또한 준수 정책에서 암호를 필수로 지정하면 LAPS·Platform SSO 계정을 포함한 기존 계정 암호가 만료될 수 있습니다. Microsoft는 암호 관리를 설정 카탈로그 정책으로 구성하고 `Change At Next Auth`를 `False`로 지정하도록 권고합니다. [macOS 준수 설정의 적용 범위와 암호 주의 사항](https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-macos-settings)을 확인한 뒤 시험 기기에 먼저 적용하세요.
+
 ## Acceptance Criteria
 
 | Area | Acceptance Criteria |

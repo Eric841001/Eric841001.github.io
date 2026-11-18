@@ -49,7 +49,7 @@ Support depends on the **distribution, exact version, architecture and Defender 
 
 ## 10~11월 지원 변경과 업데이트 {/* #october-2026-support */}
 
-- **Amazon Linux 2 ARM64:** Defender의 공식 지원 종료일은 **2026년 10월 31일**입니다. 마지막 지원 버전 `101.25122.0004`도 같은 날 만료됐습니다. 해당 서버의 이전 완료 여부를 확인하고, 남은 서버는 지원되는 배포판으로 전환하세요. 이 공지를 Amazon Linux 2의 모든 아키텍처가 같은 날 종료된다는 뜻으로 해석하지 마세요.
+- **Amazon Linux 2 ARM64:** Defender의 공식 지원 종료일은 **2026년 10월 31일**입니다. 해당 서버의 이전 완료 여부를 확인하고, 남은 서버는 지원되는 배포판으로 전환하세요. 이 공지를 Amazon Linux 2의 모든 아키텍처가 같은 날 종료된다는 뜻으로 해석하지 마세요.
 - **Linux 데스크톱:** 지원 범위가 **Public Preview**로 확대됐습니다. 서버 지원 배포판을 기준으로 배포판·커널·아키텍처 조건을 확인하세요. 데스크톱에는 Defender for Endpoint P2 권한이 필요하고, 서버에는 Defender for Servers 등의 서버용 라이선스가 필요합니다. Microsoft 365 E5·E7의 사용자 권한만으로 서버 라이선스를 충족한다고 판단하지 마세요.
 - **11월 Linux 빌드:** `101.26101.0000`은 OpenSSL을 3.6.4로 올리고, Defender 포털에 CentOS의 세부 버전이 빠지던 문제와 패키지 검사 중 메모리 사용을 개선했습니다. [최신 릴리스 기록](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases)과 배포 저장소의 버전을 대조하세요.
 
@@ -115,6 +115,8 @@ Before onboarding, confirm whether the server is internet-connected, proxy-route
 
 ## Installation Workflow
 
+This section describes manual installation. Microsoft now recommends the [Defender deployment tool](https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites#installation-methods-and-tools); choose the method that fits your deployment process.
+
 Use the [official distribution-specific installation procedure](https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually). Repository configuration and package signing-key registration differ across Debian/Ubuntu, RHEL-family and SUSE; one generic command sequence is not portable.
 
 Before installing:
@@ -136,6 +138,14 @@ command -v python3
 For Debian/Ubuntu the final package-install command is `sudo apt-get install mdatp`, **after** repository/key configuration and metadata refresh. RHEL/SUSE use their respective package-manager instructions. Follow the official repository instructions instead of inventing a download URL or reusing a different distribution's configuration.
 
 ---
+
+## 패키지 설치·업그레이드 전 확인 {/* #linux-package-dependencies */}
+
+`101.26091.0003`부터 Linux 패키지에 `iptables`가 필요하며, RPM 패키지에는 `libacl`도 필요합니다. 설치 스크립트와 Defender 배포 도구는 이 의존성을 자동 설치합니다. `rpm`이나 `dpkg`로 직접 설치할 때는 의존 패키지를 먼저 설치해야 합니다. 누락되면 설치나 업그레이드가 실패할 수 있습니다.
+
+배포판의 주요 버전을 업그레이드하거나 Defender 업데이트 채널을 바꿀 때는 기존 Defender를 제거한 뒤 다시 설치하는 절차도 준비하세요.
+
+근거: [11월 12일 패키지 의존성 공지](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases#linux--november-12-2026--update-for-version-101260910003-new-package-dependencies), [수동 설치의 OS·채널 변경 조건](https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually).
 
 ## Onboarding
 
@@ -173,6 +183,12 @@ Enable real-time protection only after checking compatibility with existing secu
 
 ```bash
 sudo mdatp config real-time-protection --value enabled
+```
+
+Linux 에이전트 버전은 출시 후 9개월이 지나면 만료됩니다. 만료 뒤에도 보안 인텔리전스 업데이트는 제공되지만, 제품 수정 사항과 개선 사항을 받으려면 에이전트도 업데이트해야 합니다. OS 지원 종료일과 설치된 에이전트의 만료일을 같은 날짜로 간주하지 마세요. [Linux 릴리스 정책](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases#linux-releases)에 따라 기기에서 만료일을 조회합니다.
+
+```bash
+mdatp health --field product_expiration
 ```
 
 ## Operational Acceptance Criteria

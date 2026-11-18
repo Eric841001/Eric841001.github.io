@@ -1,6 +1,6 @@
 // Shared by home highlights and document update notices.
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
-export const verifiedOn = '2026-11-17';
+export const verifiedOn = '2026-11-18';
 export const modelUpdate = {
   title: 'Claude Fable 5.2 · 단계적 배포',
   date: '2026-11-12',
@@ -8,7 +8,7 @@ export const modelUpdate = {
 };
 export const updateHighlights = [
   {category: 'Microsoft Copilot', title: 'Work IQ 사람·조직 맥락의 제공 상태', description: 'GA 분석·조직 데이터와 Frontier 조직 맥락을 구분하고 데이터 역할·라이선스·검증 기준을 정리했습니다.', date: '2026-11-17', status: '12월까지 순차 배포 · 기능별 조건 확인', path: `${updateGuide}#work-iq-people-org-context`},
-  {category: 'Microsoft Copilot', title: 'Plugin Catalog 공개 준비', description: '11월 17일 공개 예정 카탈로그와 Copilot Home 탐색 변경을 제품 제공 상태·관리자 통제와 구분했습니다.', date: '2026-11-13', status: '11월 17일 공개 예정 · 실제 제공 확인', path: `${updateGuide}#plugin-catalog-ignite-2026`},
+  {category: 'Microsoft Copilot', title: 'Plugin Catalog 공개', description: '공개 카탈로그의 플러그인 목록·검색을 확인했습니다. 조직 내 설치·사용은 관리자 정책과 플러그인별 조건을 확인하세요.', date: '2026-11-18', status: '카탈로그 공개 · 조직별 사용 조건 확인', path: `${updateGuide}#plugin-catalog-ignite-2026`},
   {category: 'Microsoft Copilot', title: 'Claude Fable 5.2 단계적 배포', description: 'Cowork·Copilot Studio의 eligible users 대상 롤아웃과 지역·하위처리자·데이터 보존 설정을 구분했습니다.', date: '2026-11-12', status: '순차 배포 · 조직별 자격·조건 확인', path: `${updateGuide}#claude-fable-5-2`},
   {category: 'Microsoft 365 Copilot', title: '커넥터 카탈로그·운영 기능 확대', description: '통합 카탈로그, source filter, 장기 작업, 연결 편집·진단과 원본 권한 검증 기준을 정리했습니다.', date: '2026-11-12', status: '공식 월간 업데이트 · 커넥터별 확인', path: `${updateGuide}#connectors-october-2026`},
   {category: 'Copilot Studio', title: '에이전트 거버넌스 책임 분리', description: 'Power Platform·Entra·Purview·Agent 365·Defender의 역할과 에이전트 ID별 통제 범위를 정리했습니다.', date: '2026-11-12', status: '공식 운영 지침 · 지원 범위 확인', path: `${updateGuide}#agent-governance-roles`},

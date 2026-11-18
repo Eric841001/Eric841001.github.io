@@ -164,11 +164,13 @@ Microsoft는 11월 17일 Ignite 개막에 맞춰 공개 Plugin Catalog를 시작
 
 ## Work IQ 사람·조직 맥락 파일럿 {/* #work-iq-people-org-context */}
 
-Work IQ의 사람·조직 맥락은 Cowork가 권위 있는 조직 데이터와 회사별 용어를 바탕으로 인원수·비율·평균·분포를 분석하도록 돕습니다. 2026년 11월 16일 발표 기준으로 분석 추론, 조직 스킬 인사이트, 표준·사용자 지정 사람 데이터는 GA이며, 회사 정의와 가이드라인을 반영하는 조직 맥락은 Frontier입니다. 기능은 12월까지 순차 배포되므로 같은 테넌트에서도 대상 사용자별 화면을 확인하세요.
+Work IQ의 사람·조직 맥락은 Cowork가 조직의 공식 데이터와 회사별 용어를 바탕으로 인원수·비율·평균·분포를 분석하도록 돕습니다. 2026년 11월 16일 발표 기준으로 분석 추론, 조직 스킬 인사이트, 표준·사용자 지정 사람 데이터는 GA이며, 회사 정의와 가이드라인을 반영하는 조직 맥락은 Frontier입니다. 기능은 12월까지 순차 배포되므로 같은 테넌트에서도 대상 사용자별 화면을 확인하세요.
 
 - **자격과 데이터:** Workforce Insights Agent의 조직 맥락 구성은 유료 Microsoft 365 Copilot 라이선스와 Frontier 등록이 필요합니다. People Skills는 별도 활성화·라이선스 조건이 있으며, Microsoft 365 Organizational Data Service의 앱별 배포와 특성 접근 정책을 먼저 확인합니다.
 - **역할 분리:** `Organizational Data Source Administrator`는 조직 데이터·특성 설명·조직 맥락을, `AI Administrator`는 Copilot과 에이전트 배포를 담당합니다. Global Administrator는 다른 역할로 처리할 수 없는 초기 작업에만 제한합니다.
 - **검증과 보호:** 대표 조직 질문의 기준일, 분모, 제외 조건과 원본 HR 보고서를 대조합니다. 사용자 지정·기밀 특성은 시험 그룹과 최소 범위 정책으로 검증하고, 결과를 직원 감시·성과 평가·고용 의사결정의 단독 근거로 사용하지 않습니다.
+
+설정별 적용 범위는 다릅니다. Workforce Insights Agent 구성 문서는 특성 설명과 접근 정책을 에이전트·Copilot 조직 질의에 적용하지만, **조직 맥락의 Microsoft 365 Copilot 적용은 예정 사항**으로 구분합니다. 발표의 12월까지 순차 배포 안내와 함께 읽고, 에이전트에서 저장한 회사 용어·규칙이 모든 Copilot 답변에 즉시 적용된다고 가정하지 마세요.
 
 출처: [사람·조직 맥락 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-that-understands-your-organization-introducing-people-and-org-context-in/4573356), [Workforce Insights Agent 구성](https://learn.microsoft.com/en-us/copilot/manage/configure-workforce-insights-agent).
 

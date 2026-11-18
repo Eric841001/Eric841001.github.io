@@ -544,84 +544,29 @@
   },
   "/knowledge/copilot/copilot-cowork-cost-governance": {
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조·수정한 항목: Cowork의 로컬 Microsoft Edge 사용 범위, 로컬 세션·기존 정책·승인 지점과 단계적 배포 확인.",
+    "scope": "이번 대조는 Work IQ 사람·조직 맥락의 발표와 Workforce Insights 구성 문서에 한정했습니다. 기능별 GA/Frontier·12월까지 배포, 라이선스·관리 역할, 특성 설명·접근 정책과 조직 맥락의 앱별 적용 범위를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "copilot-models",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
-        "checkedFor": "GPT-6.1 Sol and Sonnet 5.5 start UBB Cowork/Studio rollout September 30; Office and Chat USL next week, limits and region/license variation."
+        "title": "Work IQ people and organization context",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-that-understands-your-organization-introducing-people-and-org-context-in/4573356",
+        "checkedFor": "분석·조직 스킬·사람 데이터의 GA, 조직 맥락과 구성·Cowork 플러그인의 Frontier 및 12월까지 순차 배포를 확인했습니다."
       },
       {
-        "title": "cowork-ga",
-        "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
-        "checkedFor": "Worldwide GA announced; USL required, usage credits based on models, retrieval, tools and runtime. Historical announcement."
+        "title": "Workforce Insights Agent configuration",
+        "url": "https://learn.microsoft.com/en-us/copilot/manage/configure-workforce-insights-agent",
+        "checkedFor": "유료 Copilot·Frontier·People Skills 조건, 관리자 역할과 앱별 설정 범위를 확인했습니다. 조직 맥락의 Copilot 적용은 예정 사항으로 구분됩니다."
       },
       {
-        "title": "cowork-plugins",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft365copilotblog/the-workflow-is-the-product-copilot-cowork-plugins-change-what-ai-can-do-for-bus/4531933",
-        "checkedFor": "Skills and connectors can be packaged as Marketplace plugins; article distinguishes available from upcoming partners. DLP coming-soon text is historical."
-      },
-      {
-        "title": "cowork-purview",
-        "url": "https://learn.microsoft.com/en-us/purview/ai-copilot-cowork",
-        "checkedFor": "Current matrix lists data loss prevention as supported, unlike June announcement. Label inheritance for new Word, PowerPoint and Outlook content; audit, retention and eDiscovery documented."
-      },
-      {
-        "title": "power-admin-announcement",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-power-platform-admin-plugin-in-cowork-agentic-governance-with-na/4567557",
-        "checkedFor": "Natural-language tenant inventory and governance analysis; admin validates findings and executes authorized changes separately."
-      },
-      {
-        "title": "power-admin-cowork",
-        "url": "https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork",
-        "checkedFor": "Preview read-only insights. Install via Agents Tools Registry; data connection needs GA/Power Platform/Dynamics365 admin. Installation grants neither data nor Cowork access."
-      },
-      {
-        "title": "power-admin-governance",
-        "url": "https://learn.microsoft.com/en-us/power-platform/guidance/adoption/agentic-governance",
-        "checkedFor": "Questions consume credits, Managed Environments not required; plugin read-only while Cowork can prepare followup work. Validate AI-generated findings."
-      },
-      {
-        "title": "partner-oct",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "E3 할인 자격·일정, Copilot 12월 변경·한국 제외·4000 지출 한도, E7 행사와 AI Builder 판매 종료 조건을 대조했다."
-      },
-      {
-        "title": "cowork-billing",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
-        "checkedFor": "Default auto-apply future services, separate Studio billing, credits-only API, scope and budget controls; supported service list expands over time."
-      },
-      {
-        "title": "cowork-admin",
-        "url": "https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance",
-        "checkedFor": "Cowork access requires spending-policy scope; tiny credit limit still grants access. Agent registry no longer controls access; disabling Anthropic leaves allowed GPT models."
-      },
-      {
-        "title": "Microsoft Copilot October monthly update",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
-        "checkedFor": "브라우저로 원문을 읽고 10월 배포, 11월 Frontier·전 세계 배포, Workspaces Office 편집의 1월 계획을 구분했습니다."
-      },
-      {
-        "title": "Copilot memory administration",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory",
-        "checkedFor": "기존 Learn은 메모리 전용 보존 규칙이 없다고 명시하므로 월간 발표의 보존 기능 안내와 차이를 밝혔습니다."
-      },
-      {
-        "title": "Microsoft 365 Copilot release notes — November 4, 2026",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026",
-        "checkedFor": "Cowork uses a separate local Edge tab and the signed-in user's access; credentials, cookies and session tokens remain on device; existing identity, Conditional Access and data protection policies continue to apply."
-      },
-      {
-        "title": "Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
-        "checkedFor": "Copilot Studio 환경·에이전트의 리소스 지출 정책 선택 적용과 Power Platform 기존 설정의 범위별 유지를 최신 공식 문서와 대조했습니다."
+        "title": "Organizational Data Service",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/org-data-service/organizational-data",
+        "checkedFor": "조직 데이터 수집·품질 관리·앱 배포 기능과 접근 제어 범위를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 개정의 대조 범위는 scope와 sources의 checkedFor에 기록했습니다. 문서 전체 기술 문장의 오늘 기준 재검증 완료를 뜻하지 않으며, 실제 테넌트·기기에서 정책을 실행하지 않았습니다."
+    "notChecked": "오늘은 이 문서의 Work IQ 부분을 대조했습니다. 나머지 기능의 이전 기록은 전체 문장 재검증 완료를 뜻하지 않습니다. 실제 테넌트 배포·라이선스·특성 접근과 답변 결과는 시험하지 않았습니다."
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
@@ -937,284 +882,34 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "11월 9일 추가 대조: 무라이선스 Copilot Chat fair-use 제한의 조직 규모별 시작일과 알림 동작, Copilot Business CSP 사용량 과금 기본 활성화의 FY27 Q3 연기·전체 시장 확대를 확인했습니다.",
+    "scope": "이번 대조는 Work IQ 사람·조직 맥락의 발표와 Workforce Insights 구성 문서에 한정했습니다. 기능별 GA/Frontier·12월까지 배포, 라이선스·관리 역할, 특성 설명·접근 정책과 조직 맥락의 앱별 적용 범위를 대조했습니다. Plugin Catalog의 공개 목록·검색·분류 화면을 확인하고 예정 표기를 수정했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "copilot-release",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
-        "checkedFor": "November 4 release: Excel change links; agents usage report; up to 100 authoritative SharePoint sites; List agent; Edge new tab; Cowork local Edge; HubSpot Researcher; Outlook account selector; PowerPoint style reference; Teams AI Workflows. Current Channel with safe staged rollout."
+        "title": "Work IQ people and organization context",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-that-understands-your-organization-introducing-people-and-org-context-in/4573356",
+        "checkedFor": "분석·조직 스킬·사람 데이터의 GA, 조직 맥락과 구성·Cowork 플러그인의 Frontier 및 12월까지 순차 배포를 확인했습니다."
       },
       {
-        "title": "frontier-expand",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/frontier-expands-to-more-microsoft-365-public-previews/4567243",
-        "checkedFor": "Optional Frontier enrollment separate from GA release preferences; eligible product licenses, existing enrollment and no automatic Targeted release enrollment."
+        "title": "Workforce Insights Agent configuration",
+        "url": "https://learn.microsoft.com/en-us/copilot/manage/configure-workforce-insights-agent",
+        "checkedFor": "유료 Copilot·Frontier·People Skills 조건, 관리자 역할과 앱별 설정 범위를 확인했습니다. 조직 맥락의 Copilot 적용은 예정 사항으로 구분됩니다."
       },
       {
-        "title": "manifest19",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/declarative-agent-manifest-1.9",
-        "checkedFor": "agent_skills and Fabric; instructions remains required in root table, conflict with changelog optional statement."
+        "title": "Organizational Data Service",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/org-data-service/organizational-data",
+        "checkedFor": "조직 데이터 수집·품질 관리·앱 배포 기능과 접근 제어 범위를 확인했습니다."
       },
       {
-        "title": "power-admin-announcement",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-power-platform-admin-plugin-in-cowork-agentic-governance-with-na/4567557",
-        "checkedFor": "Natural-language tenant inventory and governance analysis; admin validates findings and executes authorized changes separately."
-      },
-      {
-        "title": "agent-programs",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/from-pilots-to-programs-a-structured-approach-to-scaling-ai-and-agents-for-real-/4566921",
-        "checkedFor": "Microsoft adoption framework: assist/execute/transform six patterns, maturity, CoE, risk-based oversight and separate capacity versus financial savings."
-      },
-      {
-        "title": "insights-launch",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/explore-user-feedback-with-microsoft-365-insights-agent/4565981",
-        "checkedFor": "October 22 V2 Frontier feedback separate from existing usage analytics; ownership and sharing setting required."
-      },
-      {
-        "title": "customer-harness",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954",
-        "checkedFor": "Public preview, chat/voice and specialist tools; per-agent model choice planned at GA and direct Teams chat transfer upcoming. Agent365 inventory and credit billing."
-      },
-      {
-        "title": "cowork-october",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-cowork-expanded-plugins-and-role-based-skills/4566221",
-        "checkedFor": "Power Platform connectors staged; federated MCP source-user permissions; Sales/Service/Education/Legal role skills."
-      },
-      {
-        "title": "cost-api",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/cost-management/overview",
-        "checkedFor": "Credit-denominated spending/group/service management, notify-only alerts; no prices/invoices; beta production unsupported."
-      },
-      {
-        "title": "daily-api",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetailbydate",
-        "checkedFor": "Reports.Read.All delegated/application, Global only; selected date within refresh date minus seven days through refresh date."
-      },
-      {
-        "title": "power-admin-cowork",
-        "url": "https://learn.microsoft.com/en-us/power-platform/admin/power-platform-admin-cowork",
-        "checkedFor": "Preview read-only insights. Install via Agents Tools Registry; data connection needs GA/Power Platform/Dynamics365 admin. Installation grants neither data nor Cowork access."
-      },
-      {
-        "title": "agent-scale",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/are-bigger-agents-better-how-to-design-agents-that-scale/4559073",
-        "checkedFor": "Use distinct tool metadata, on-demand tool search/skills, workflows for fixed sequences and specialist agents for meaningful boundaries; evaluate latency, cost and quality."
-      },
-      {
-        "title": "agent-governance-loop",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/governance-is-becoming-agentic-too-how-enterprises-can-operate-ai-at-scale/4556820",
-        "checkedFor": "Observe, assess, act and escalate is a proposed risk-aligned operating approach, not automatic enablement of every control."
-      },
-      {
-        "title": "autopilot-announcement",
-        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
-        "checkedFor": "September 25 renamed Scout Autopilot, expanded private preview; cloud-hosted identity, memory, computer, workspace and bounded recurring work; not GA integration entitlement."
-      },
-      {
-        "title": "copilot-models",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
-        "checkedFor": "GPT-6.1 Sol and Sonnet 5.5 start UBB Cowork/Studio rollout September 30; Office and Chat USL next week, limits and region/license variation."
-      },
-      {
-        "title": "openai-subprocessor",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/openai-subprocessor",
-        "checkedFor": "Setting affects OpenAI-operated models only, not Microsoft Azure OpenAI; eligible commercial users can be scoped."
-      },
-      {
-        "title": "anthropic-subprocessor",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
-        "checkedFor": "Anthropic availability depends on region and admin controls; data-retention models have separate opt-in terms."
-      },
-      {
-        "title": "plugin-registry",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682",
-        "checkedFor": "11월 9일 원문 대조: Agents > Tools의 Agent 365 관리, 허용·차단·사용자/그룹 할당과 새 버전 검토. Studio·GitHub Copilot·Foundry 지원은 발표 당시 향후 계획입니다."
-      },
-      {
-        "title": "copilot-september",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--september-2026/4559107",
-        "checkedFor": "September UI, inline agents/skills, scanned PDF, Android editing, Record, 100 authoritative sites and aggregate Pulse; Edge October planned."
-      },
-      {
-        "title": "office-copilot",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230",
-        "checkedFor": "October 9 Frontier Chat/Cowork Office editing and coauthoring, OneDrive file storage and existing file permissions/versioning."
-      },
-      {
-        "title": "notebooks-october",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105",
-        "checkedFor": "New UX, delegation, model choice, Office and interactive reports in Frontier; creation and automation upcoming; expanded references and suggested artifacts GA."
-      },
-      {
-        "title": "trust-aware",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/building-trust-aware-controls-for-ai-differentiated-handling-of-untrusted-conten/4562160",
-        "checkedFor": "Quarantined constrained transformation of untrusted external content; provenance, rollout varies; Outlook sender setting and CVE-2026-55145 configuration."
-      },
-      {
-        "title": "external-outlook",
-        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-externalinoutlook?view=exchange-ps",
-        "checkedFor": "Enabled true plus allow-list controls; 24-48 hour display propagation and avoid duplicated transport-rule labels."
-      },
-      {
-        "title": "copilot-dlp",
-        "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about#block-external-email-from-being-processed-preview",
-        "checkedFor": "External sender metadata against accepted domains, not body inspection; external-email grounding exclusion preview."
-      },
-      {
-        "title": "partner-oct",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
-        "checkedFor": "E3 할인 자격·일정, Copilot 12월 변경·한국 제외·4000 지출 한도, E7 행사와 AI Builder 판매 종료 조건을 대조했다."
-      },
-      {
-        "title": "legal-launch",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246",
-        "checkedFor": "October 15 GA legal skills and partner plugins beginning rollout; Word tracked edits and authorized source content, human legal review."
-      },
-      {
-        "title": "legal-support",
-        "url": "https://support.microsoft.com/en-us/word/get-started-with-copilot-for-legal",
-        "checkedFor": "Commercial Copilot required, desktop Word default legal plugin toggle, Cowork Roles & Industry installation."
-      },
-      {
-        "title": "interactive-launch",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/transform-your-storytelling-with-interactive-slides-in-powerpoint/4564287",
-        "checkedFor": "October 19 rollout announcement; Windows/Mac Current and Monthly Enterprise plus web expected complete end October."
-      },
-      {
-        "title": "interactive-support",
-        "url": "https://support.microsoft.com/en-us/powerpoint/copilot/create-interactive-slides-with-copilot-in-powerpoint",
-        "checkedFor": "Copilot editing only; no extra license; sharing viewing without Copilot; mobile/PDF static, Mac presenter and synchronized Teams interactions unsupported."
-      },
-      {
-        "title": "onedrive-ai-launch",
-        "url": "https://techcommunity.microsoft.com/blog/onedriveblog/onedrive-just-got-a-major-upgrade-new-copilot-capabilities-simpler-sharing-and-s/4565995",
-        "checkedFor": "Multi-file analysis, organization, HTML reports and Markdown skills announced; agent file collaboration and access diagnosis remain roadmap."
-      },
-      {
-        "title": "sharepoint-ai-billing",
-        "url": "https://techcommunity.microsoft.com/blog/spblog/sharepoint-ai-innovations-hit-ga-powering-new-copilot-app-and-agents/4555724",
-        "checkedFor": "September 30 SharePoint/OneDrive GA; routine content work included, large scale and advanced work consume credits governed by spending policies."
-      },
-      {
-        "title": "insights-overview",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/insights-agent-overview",
-        "checkedFor": "Aggregate usage/window ratio not cohort retention; owner+sharing required for feedback, no submitter/conversation content; in-product included, Work IQ credit-metered."
-      },
-      {
-        "title": "code-launch",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-code-make-the-power-of-coding-accessible-to-everyone/4562358",
-        "checkedFor": "Code rollout through Frontier, local/cloud natural-language development and optional GitHub integration."
-      },
-      {
-        "title": "code-overview",
-        "url": "https://learn.microsoft.com/en-us/copilot/code/overview",
-        "checkedFor": "Selected project read/write, explicit external-folder/network/terminal/MCP approval, persistent Always allow; GitHub optional draft PR and runtime publishing."
-      },
-      {
-        "title": "code-requirements",
-        "url": "https://learn.microsoft.com/en-us/copilot/code/code-requirements",
-        "checkedFor": "Work account Copilot license and organization-enabled Code; Frontier preview and platform conditions."
-      },
-      {
-        "title": "code-admin",
-        "url": "https://learn.microsoft.com/en-us/copilot/code/code-admin",
-        "checkedFor": "Organization feature controls, spend limits, execution isolation, GitHub and organizational data defaults."
-      },
-      {
-        "title": "cowork-plugin-admin",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins",
-        "checkedFor": "User/group not country scoping; no single sharing-off toggle; org publication approval; IB embedded knowledge blocked; source consent per user."
-      },
-      {
-        "title": "studio-harness",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/more-powerful-agents-and-workflows-for-autonomous-business-processes-introducing/4542969",
-        "checkedFor": "Copilot harness 공식 명칭 변경; 기존 출시 시점과 과금 조건 유지"
-      },
-      {
-        "title": "studio-new",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
-        "checkedFor": "A2A, computer use, agent IDs, skills, memory, agent inventory의 발표 시점과 미리 보기 구분을 확인했다."
-      },
-      {
-        "title": "studio-copilot-node",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/workflows-experience/microsoft-365-copilot-node-workflow",
-        "checkedFor": "Connected-user Chat/Cowork, Researcher/Analyst/Agent Builder invocation and output to next steps."
-      },
-      {
-        "title": "studio-attachments",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/attachments-overview",
-        "checkedFor": "Per-conversation input, not persistent maker source; Office files/Purview labels, 28 days after last activity."
-      },
-      {
-        "title": "studio-billing",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-overview",
-        "checkedFor": "GitHub harness tokens/tools/harness billed from building/testing/evaluation; environment allocation in Power Platform."
-      },
-      {
-        "title": "studio-url-control",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/image-render-embedded-url",
-        "checkedFor": "Environment/group block all or contextually untrusted image/URL output."
-      },
-      {
-        "title": "studio-sql",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/knowledge-add-azure-sql-tables",
-        "checkedFor": "SQL tables via maker connection/database read permissions and Power Platform network reachability."
-      },
-      {
-        "title": "iq-accelerator",
-        "url": "https://github.com/microsoft/microsoft-iq-solution-accelerator",
-        "checkedFor": "Fabric IQ, Foundry IQ and Work IQ supply-chain reference implementation includes preview integrations and is for evaluation and demonstration."
-      },
-      {
-        "title": "studio-regions",
-        "url": "https://learn.microsoft.com/ko-kr/power-platform/released-versions/copilotstudio",
-        "checkedFor": "Korea Platform/UX columns are present; table last July 1 and cannot prove current tenant rollout."
-      },
-      {
-        "title": "work-iq",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq",
-        "checkedFor": "Work IQ는 GitHub Copilot harness의 GA 기능이다. 기본 전체 워크로드 선택과 쓰기 활성화, 개별 리소스 선택 불가, 사용량 과금을 확인했다."
-      },
-      {
-        "title": "Microsoft Copilot October monthly update",
-        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
-        "checkedFor": "브라우저로 원문을 읽고 10월 배포, 11월 Frontier·전 세계 배포, Workspaces Office 편집의 1월 계획을 구분했습니다."
-      },
-      {
-        "title": "Copilot memory administration",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory",
-        "checkedFor": "기존 Learn은 메모리 전용 보존 규칙이 없다고 명시하므로 월간 발표의 보존 기능 안내와 차이를 밝혔습니다."
-      },
-      {
-        "title": "10월 30일 Copilot Studio 비용 관리 전환의 선택 적용",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
-        "checkedFor": "10월 30일 Copilot Studio 비용 관리 전환의 선택 적용과 AI Builder 제외 조건를 최신 공식 문서와 대조했습니다."
-      },
-      {
-        "title": "Microsoft Copilot harness 정량 평가 논문 소개",
-        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157",
-        "checkedFor": "동일 과제·모델 비교의 약 2배 호출, 평균 40%p 높은 캐시 효율, 15~21% 낮은 비용 가중 토큰, 모델별 평가 통과율 차이와 도구 실패 후 복구 비율을 확인했습니다."
-      },
-      {
-        "title": "Microsoft 365 Copilot November 4 release notes",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-4-2026",
-        "checkedFor": "관리 센터 경로, 최대 100개 사이트와 순차 배포를 확인했습니다. Global Reader 변경 허용 설명은 Entra 역할 정의와 충돌하므로 변경 가능하다고 단정하지 않았습니다."
-      },
-      {
-        "title": "Microsoft Entra Global Reader",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#global-reader",
-        "checkedFor": "Global Reader는 읽기 전용이며 변경할 수 없다는 역할 정의를 확인했습니다. 실제 서비스의 역할별 동작은 시험하지 않았습니다."
-      },
-      {
-        "title": "Microsoft Partner Center November 2026 announcements",
-        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november",
-        "checkedFor": "무라이선스 Copilot Chat fair-use 제한의 11월 2일·9일 시작 조건, 제품 알림과 진행 중 응답 처리, Copilot Business CSP 과금 기본 활성화의 FY27 Q3 연기·전체 시장 확대·샌드박스 일정 연기를 확인했습니다."
+        "title": "Public Plugin Catalog",
+        "url": "https://www.microsoft.com/en-us/copilot/features/plugins/explore",
+        "checkedFor": "11월 18일 공개 페이지에서 플러그인 카드, 검색과 분류 화면을 확인했습니다. 테넌트 설치·실행 권한을 검증한 것은 아닙니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 날짜의 개별 대조 범위는 scope에 적은 항목입니다. 기존 출처의 다른 내용과 문서 전체를 이날 다시 검증한 것은 아니며, 실제 테넌트의 화면·역할별 변경 작업은 시험하지 않았습니다."
+    "notChecked": "오늘은 이 문서의 Work IQ 부분을 대조했습니다. 나머지 기능의 이전 기록은 전체 문장 재검증 완료를 뜻하지 않습니다. 실제 테넌트 배포·라이선스·특성 접근과 답변 결과는 시험하지 않았습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -1947,9 +1642,9 @@
   },
   "/knowledge/knowledge-center/mde-atomic-red-team": {
     "file": "docs/knowledge-center/mde-atomic-red-team.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 선택한 ATT&CK 기법 시험이 전체 공격 탐지 범위를 입증하지 않는다는 점을 명시했습니다.",
+    "scope": "Atomic 프로젝트의 ATT&CK 매핑 목적과 v19 전술 분리 이력, T1685 명칭, v20 현재 버전과 v20.1 변경 기록을 대조했습니다. 현재 버전과 과거 분류 변경 이력을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1971,6 +1666,11 @@
         "title": "updates-april-2026",
         "url": "https://attack.mitre.org/resources/updates/updates-april-2026/",
         "checkedFor": "Atomic 테스트의 격리·사전 조건과 현행 ATT&CK 기술 명칭·T1685 분류"
+      },
+      {
+        "title": "Current MITRE ATT&CK updates",
+        "url": "https://attack.mitre.org/resources/updates/",
+        "checkedFor": "v20의 2026년 10월 13일 공개와 현재 버전 표시, v20.1 변경 기록 제공 여부를 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -1978,9 +1678,9 @@
   },
   "/knowledge/knowledge-center/mde-linux-onboarding": {
     "file": "docs/knowledge-center/mde-linux-onboarding.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "지원·라이선스·프록시 조건, Python 온보딩과 상태·조직 ID·연결·RTP 명령, 감사/수동 모드 차이를 대조했습니다. 다른 Fanotify 보안 제품과의 공존 조건과 Python 선택 안내를 보강했습니다.",
+    "scope": "Linux 지원·라이선스·프록시·공존 조건, 수동 설치·Python·연결 확인 명령, 감사 모드, 10·11월 빌드를 다시 대조했습니다. 11월 12일 의존 패키지 공지와 OS·채널 변경 시 재설치를 추가하고, AL2 지원 종료일과 개별 에이전트 만료일을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1991,7 +1691,7 @@
       {
         "title": "linux-install",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-install-manually",
-        "checkedFor": "Python/Python3 선택, 테넌트 패키지, sudo 온보딩, healthy/org_id와 RTP 명령 조건을 대조했습니다."
+        "checkedFor": "수동 배포의 저장소·서명 키·Python 선택, 테넌트 온보딩 명령, OS 주요 버전 및 업데이트 채널 변경 시 제거·재설치 요구 사항을 확인했습니다."
       },
       {
         "title": "linux-network",
@@ -2006,12 +1706,17 @@
       {
         "title": "linux-release",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-releases",
-        "checkedFor": "Linux 11월 101.26101.0000의 OpenSSL·CentOS·메모리 개선"
+        "checkedFor": "11월 12일 추가된 iptables·RPM libacl 의존성, 도구 자동 설치와 rpm/dpkg 직접 설치 조건, 9개월 만료·보안 인텔리전스 유지와 product_expiration 명령, 10·11월 변경을 대조했습니다."
       },
       {
         "title": "Linux antivirus enforcement",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences",
         "checkedFor": "audit와 passive의 실시간 탐지 차이, 자동 조치 제외 및 antivirus_enforcement_level 조회 명령을 확인했습니다."
+      },
+      {
+        "title": "Defender feature availability",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
+        "checkedFor": "Linux 감사 모드의 정식 제공과 최소 빌드, Linux 데스크톱 지원의 미리 보기 상태를 대조했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2019,15 +1724,15 @@
   },
   "/knowledge/knowledge-center/mde-macos-onboarding": {
     "file": "docs/knowledge-center/mde-macos-onboarding.md",
-    "checkedOn": "2026-11-09",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "OS·CPU·관리/수동 배포 요구 사항, 10·11월 빌드 변경 및 macOS 준수 평가 범위를 대조했습니다. 런타임 보호 설정의 빌드 귀속과 P1/P2 기능 구분을 수정했습니다.",
+    "scope": "지원 OS·아키텍처, 배포 요구 사항과 10·11월 빌드, P1/P2 기능 및 macOS 준수 설정을 대조했습니다. 사용자 없는 기기의 준수 평가 미지원과 암호 요구 시 기존 계정에 미치는 영향을 보강했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "mac-prereq",
         "url": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac-prerequisites",
-        "checkedFor": "SupportedmacOS15,26,27notbeta; Intelx64/AppleARM64; subscriptionsMDMpermissions required."
+        "checkedFor": "macOS 15·26·27 정식 버전과 Intel x64·Apple ARM64, 관리 배포의 앱·프로필·확장 권한 요구 사항을 대조했습니다."
       },
       {
         "title": "mac-release",
@@ -2037,7 +1742,7 @@
       {
         "title": "mac-compliance",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-macos-settings",
-        "checkedFor": "OS·SIP·암호화·방화벽 등 macOS 설정을 Windows Defender 기기 위험도 절차와 구분했다."
+        "checkedFor": "macOS OS·SIP·암호화 설정, 사용자 없는 기기의 준수 평가 미지원, 암호 필수 설정의 기존 계정 영향과 설정 카탈로그 권고를 확인했습니다."
       },
       {
         "title": "windows-defender-ca",
@@ -2782,29 +2487,24 @@
   },
   "/knowledge/migration/file-server": {
     "file": "docs/migration/file-server.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Executive Summary, Target-specific boundaries. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "SPMT의 원본·대상 범위와 classic SMB Azure Files 이전 문서를 대조했습니다. ADS 미저장 및 LastAccessTime의 제한을 추가했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "spmt",
-        "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool",
-        "checkedFor": "SPMT는 온프레미스 SharePoint와 파일 공유를 Microsoft 365의 SharePoint·OneDrive·Teams 대상으로 이전한다."
-      },
-      {
-        "title": "azure-file-migration",
+        "title": "Azure Files migration",
         "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview",
-        "checkedFor": "연결된 이전 지침은 클래식 SMB 파일 공유 대상이다. ACL·메타데이터·도구별 보존 조건을 확인하고 NFS까지 같은 절차로 확대하지 않는다."
+        "checkedFor": "classic SMB 적용 범위, ADS의 클라우드 미저장·File Sync 온프레미스 보존과 LastAccessTime 제한을 확인했습니다."
       },
       {
-        "title": "azure-files-overview",
-        "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
-        "checkedFor": "Azure Files provides managed SMB and NFS shares; NFS clients and migration paths differ from SMB and File Sync."
+        "title": "SharePoint Migration Tool",
+        "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool",
+        "checkedFor": "온프레미스 SharePoint·파일 공유 원본에서 Microsoft 365 대상으로 이전하는 도구임을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 지원 범위와 제한을 대조했습니다. 실제 데이터 이전, 권한 재현, 업무 영향 및 고객 사례 성과는 시험하지 않았습니다."
   },
   "/knowledge/migration/global-tenant-consolidation-framework": {
     "file": "docs/migration/global-tenant-consolidation-framework.md",
@@ -2874,29 +2574,29 @@
   },
   "/knowledge/migration/google-workspace": {
     "file": "docs/migration/google-workspace.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조한 항목: Supported migration paths. 제품 조건과 작성자의 설계 권고·예시를 구분했습니다.",
+    "scope": "Exchange와 Drive 이전 도구를 구분하고 원본·대상과 제외 항목을 대조했습니다. 메일 사용 가능 사용자 준비, GCC High·DoD 미지원, 연락처·일정 제한 및 파일별 권한·버전 설정을 보강했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "google-mail",
+        "title": "Google Workspace mailbox migration",
         "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration",
-        "checkedFor": "메일·일정·연락처 지원과 회의실 예약·공유 일정 제외, 이전된 규칙의 기본 비활성 상태를 확인했다."
+        "checkedFor": "메일·일정·연락처, 사용자 사전 준비, GCC High·DoD 제외, 회의실·공유 일정·색상·자동 회신·연락처 제한과 규칙 비활성 이전을 확인했습니다."
       },
       {
-        "title": "google-drive",
+        "title": "Migration Manager Google Workspace",
         "url": "https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview",
-        "checkedFor": "Drive 파일 이전과 사용자 매핑·파일 권한 설정을 구분하고 파일 버전·권한의 별도 설정을 확인했다."
+        "checkedFor": "파일·메타데이터·권한 이전과 별도의 파일별 권한 및 과거 버전 설정 필요성을 확인했습니다."
       },
       {
-        "title": "spmt",
+        "title": "SharePoint Migration Tool",
         "url": "https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool",
-        "checkedFor": "SPMT는 온프레미스 SharePoint와 파일 공유를 Microsoft 365의 SharePoint·OneDrive·Teams 대상으로 이전한다."
+        "checkedFor": "SPMT는 Google Drive 원본 이전 경로가 아니며 온프레미스 SharePoint와 파일 공유를 지원함을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+    "notChecked": "공식 문서의 지원 범위와 제한을 대조했습니다. 실제 데이터 이전, 권한 재현, 업무 영향 및 고객 사례 성과는 시험하지 않았습니다."
   },
   "/knowledge/migration/overview": {
     "file": "docs/migration/overview.md",

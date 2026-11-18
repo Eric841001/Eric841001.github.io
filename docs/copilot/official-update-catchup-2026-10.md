@@ -7,12 +7,12 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 16일까지의 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 18일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
 - [11월 16일 Work IQ 사람·조직 맥락](#work-iq-people-org-context) · GA 분석 기능과 Frontier 조직 맥락, 데이터·역할 조건 구분
-- [11월 12일 Ignite 플러그인 안내](#plugin-catalog-ignite-2026) · 11월 17일 공개 예정 카탈로그와 기존 관리 통제 구분
+- [11월 12일 Ignite 플러그인 안내](#plugin-catalog-ignite-2026) · 공개 카탈로그와 테넌트 설치·관리 조건 구분
 - [11월 11일 Claude Fable 5.2 배포](#claude-fable-5-2) · Cowork·Copilot Studio의 조직별 자격·지역·데이터 조건
 - [11월 11일 Copilot 커넥터 월간 업데이트](#connectors-october-2026) · 통합 카탈로그·장기 작업·운영 개선
 - [11월 11일 에이전트 거버넌스 책임 분리](#agent-governance-roles) · Power Platform·Entra·Purview·Agent 365·Defender 역할
@@ -33,11 +33,11 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 11월 16일 Work IQ 사람·조직 맥락과 Workforce Insights {/* #work-iq-people-org-context */}
 
-Microsoft는 Work IQ의 사람·조직 맥락이 Microsoft 365 Copilot과 Cowork에서 권위 있는 조직 데이터, 분석 추론, People Skills와 조직별 용어를 결합한다고 발표했습니다. 다만 발표의 기능은 상태가 서로 다르며 **12월까지 순차 배포**됩니다.
+Microsoft는 Work IQ의 사람·조직 맥락이 Microsoft 365 Copilot과 Cowork에서 조직의 공식 데이터, 분석 추론, People Skills와 조직별 용어를 결합한다고 발표했습니다. 다만 발표의 기능은 상태가 서로 다르며 **12월까지 순차 배포**됩니다.
 
 | 기능 | 공식 제공 상태 | 적용 전 확인 |
 |---|---|---|
-| 권위 있는 사람·조직 데이터 | GA | Microsoft 365 Organizational Data Service에 표준·사용자 지정 특성을 적재하고 앱별 배포 범위와 데이터 품질을 확인합니다. |
+| 조직이 관리하는 인사·조직 데이터 | GA | Microsoft 365 Organizational Data Service에 표준·사용자 지정 특성을 적재하고 앱별 배포 범위와 데이터 품질을 확인합니다. |
 | 분석 추론 | GA | 인원수·비율·평균·순위 같은 계산을 지원하지만 원본 HR 지표 정의와 기준일을 결과에 함께 기록하고 표본 질문으로 검산합니다. |
 | 조직 스킬 인사이트 | GA | People Skills를 별도로 활성화하고 해당 라이선스와 데이터 품질 조건을 충족해야 합니다. |
 | 조직 맥락 | Frontier | 회사 용어·특성 설명·가이드라인을 답변에 반영하는 기능입니다. 유료 Microsoft 365 Copilot 라이선스와 Frontier 등록, 대상 사용자 배포를 확인합니다. |
@@ -46,11 +46,13 @@ Workforce Insights Agent는 조직 맥락을 구성하고 답변을 검증하는
 
 이 기능은 직원 성과 감시나 고용 의사결정을 위한 도구가 아닙니다. 기존 Copilot 권한과 데이터 접근 설정이 적용되지만, 관리자는 조직별 법률·노사 협의·개인정보 기준을 검토하고 대표 질문의 계산식·누락값·권한 경계를 검증해야 합니다. 발표의 향후 제한 데이터 지원 계획은 현재 제공 기능으로 보지 않습니다.
 
+설정별 적용 범위는 다릅니다. Workforce Insights Agent 구성 문서는 특성 설명과 접근 정책을 에이전트·Copilot 조직 질의에 적용하지만, **조직 맥락의 Microsoft 365 Copilot 적용은 예정 사항**으로 구분합니다. 발표의 12월까지 순차 배포 안내와 함께 읽고, 에이전트에서 저장한 회사 용어·규칙이 모든 Copilot 답변에 즉시 적용된다고 가정하지 마세요.
+
 출처: [Microsoft 공식 발표 — Copilot that understands your organization](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/copilot-that-understands-your-organization-introducing-people-and-org-context-in/4573356), [Workforce Insights Agent 구성](https://learn.microsoft.com/en-us/copilot/manage/configure-workforce-insights-agent), [Microsoft 365 Organizational Data Service](https://learn.microsoft.com/en-us/microsoft-365-apps/org-data-service/organizational-data).
 
-## 11월 12일 Ignite 플러그인 안내와 공개 카탈로그 준비 {/* #plugin-catalog-ignite-2026 */}
+## 11월 12일 Ignite 플러그인 안내와 공개 카탈로그 {/* #plugin-catalog-ignite-2026 */}
 
-Microsoft는 플러그인을 **스킬, 도구(커넥터 포함), 에이전트를 한 패키지로 묶을 수 있는 확장 단위**로 설명하고, 11월 17일 Ignite 개막에 맞춰 microsoft.com의 공개 Plugin Catalog를 시작할 예정이라고 발표했습니다. 이 카탈로그는 생태계 탐색용 출발점이며, 조직 테넌트에서 즉시 설치·사용할 수 있다는 GA 근거는 아닙니다.
+Microsoft는 플러그인을 **스킬, 도구(커넥터 포함), 에이전트를 한 패키지로 묶을 수 있는 확장 단위**로 설명하고, 11월 17일 Ignite 개막에 맞춰 microsoft.com의 공개 Plugin Catalog를 시작할 예정이라고 발표했습니다. 11월 18일 현재 [공개 Plugin Catalog](https://www.microsoft.com/en-us/copilot/features/plugins/explore)에서 플러그인 목록과 검색·분류를 제공하고 있습니다. 카탈로그에 등재돼 있어도 조직에서의 설치·사용 가능 여부는 관리자 정책과 개별 플러그인 조건을 따로 확인해야 합니다.
 
 | 확인 영역 | 운영 기준 |
 |---|---|

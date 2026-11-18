@@ -114,6 +114,8 @@ Organizations require:
 
 ATT&CK v19 split the former Defense Evasion tactic into Stealth and Defense Impairment. Older Atomic tests can retain T1562-era IDs, so record the test library revision and map the exact test to the current technique instead of treating T1562 as a current umbrella technique. See [the official ATT&CK update](https://attack.mitre.org/resources/updates/updates-april-2026/). These are technique names, not the broader ATT&CK tactics. Use the [MITRE ATT&CK enterprise technique catalog](https://attack.mitre.org/techniques/enterprise/) to select the exact sub-technique and expected behavior.
 
+현재 ATT&CK 버전 계열은 **v20**이며, 2026년 10월 13일 공개됐습니다. [현재 변경 기록](https://attack.mitre.org/resources/updates/)에는 v20.1 수정 내역도 있습니다. 위의 v19 설명은 기법 분류가 바뀐 이력입니다. 새 시험 계획에는 현재 기법·하위 기법 ID와 사용한 Atomic 테스트의 커밋을 함께 기록하세요.
+
 ## Recommended Testing Process
 
 <div className="kc-factory-panel">
