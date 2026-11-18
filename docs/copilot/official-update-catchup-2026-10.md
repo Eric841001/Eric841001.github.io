@@ -11,6 +11,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 17일 Ignite·릴리스 업데이트](#ignite-home-cowork-office-november-17) · Home·Office·Projects·Automations GA와 Frontier 기능, 관리자 변경 구분
 - [11월 16일 Work IQ 사람·조직 맥락](#work-iq-people-org-context) · GA 분석 기능과 Frontier 조직 맥락, 데이터·역할 조건 구분
 - [11월 12일 Ignite 플러그인 안내](#plugin-catalog-ignite-2026) · 공개 카탈로그와 테넌트 설치·관리 조건 구분
 - [11월 11일 Claude Fable 5.2 배포](#claude-fable-5-2) · Cowork·Copilot Studio의 조직별 자격·지역·데이터 조건
@@ -30,6 +31,21 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 17일 Ignite·릴리스 업데이트 {/* #ignite-home-cowork-office-november-17 */}
+
+Microsoft는 Ignite 발표와 11월 17일 릴리스 노트에서 Copilot 앱의 작업 진입점, Cowork, Office 편집과 관리자 기능을 함께 갱신했습니다. 같은 발표 안에서도 **일반 공급(GA), Frontier 공개·비공개 미리 보기, 순차 배포**가 섞여 있으므로 상태를 기능별로 구분해야 합니다.
+
+| 기능 | 11월 17일 공식 상태 | 적용 전 확인 |
+|---|---|---|
+| Copilot Home·Office·Projects·Automations | Chat과 Cowork 통합 Home, Chat에서 Cowork로 전환하는 추천, Copilot 앱 안의 Word·Excel·PowerPoint 편집, Projects와 예약·진행 작업 관리 화면은 GA로 발표됐습니다. | 파일은 OneDrive에 저장됩니다. 대상 사용자의 Copilot 라이선스, 저장 위치, 공유·레이블·보존 정책과 실제 화면 배포를 확인합니다. |
+| Cowork 앱·플러그인 | 앱 구축과 Copilot Managed Runtime, Planner·Viva Engage 플러그인은 GA입니다. Brand Kit은 순차 배포 중입니다. | 앱·플러그인의 게시자, 데이터 연결, 대상 사용자, 사용량 비용과 관리자 승인 범위를 분리해 검토합니다. |
+| Cowork Auto·추천·분석 | Microsoft-Decision-1.1 기반 노력 수준 조정, 병렬 하위 에이전트, Work IQ 기반 작업 추천과 Agent 365 Business Analytics는 Frontier입니다. | 모델·하위 에이전트별 결과, 지연, 비용과 승인 지점을 같은 평가 과제로 비교합니다. 가치 추정치는 실제 절감 시간이나 회계 수익으로 간주하지 않습니다. |
+| Today·Workspaces·Autopilot | Workspaces는 Frontier, Today는 Frontier private preview, Autopilot은 자격 고객 대상 Frontier 순차 배포입니다. | Autopilot은 Copilot 라이선스, Frontier 등록, 사용량 기반 과금과 필수 관리·보안 기능이 필요합니다. Today의 화면은 변경될 수 있습니다. |
+
+같은 날 릴리스 노트에는 관리·확장 기능도 추가됐습니다. Organizational Data Service의 사용자 지정 조직 특성 공유는 기본 꺼짐이며, 활성화한 특성은 **테넌트의 모든 사용자와 게스트에게 표시될 수 있으므로** 개인정보·노사·공개 범위를 먼저 승인해야 합니다. Confluence Cloud connector는 공간 포함·제외와 CQL 필터를 지원하고, Tableau connector와 Outlook의 custom engine agent 접근이 추가됐습니다. Copilot Studio workflow의 agent node는 한 단계에서 데이터 추론·도구 호출·응답을 수행합니다. 각 항목은 안전 배포 방식으로 순차 적용되며, 커넥터·원본 시스템 권한과 대상 테넌트 제공 상태를 확인하세요.
+
+출처: [Microsoft 365 Copilot 11월 17일 릴리스 노트](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes#november-17-2026), [Copilot Cowork at Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242), [Copilot Home](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/home-your-starting-place-for-work-in-the-microsoft-copilot-app/4573945), [Office at Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/office-at-ignite-2026-from-apps-to-agentic-system-of-work/4572226), [Autopilot](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/autopilot-meet-your-trusted-personal-teammate/4572611).
 
 ## 11월 16일 Work IQ 사람·조직 맥락과 Workforce Insights {/* #work-iq-people-org-context */}
 
@@ -193,8 +209,8 @@ Microsoft의 10월 월간 업데이트는 이미 발표된 기능을 앱별 실�
 
 | 범위 | 공식 상태와 운영 확인 |
 |---|---|
-| Copilot Home·Projects | Chat과 Cowork를 합친 Home은 10월 Frontier 배포 후 11월 전 세계 순차 배포입니다. Projects는 Cowork에 10월 배포됐고 Copilot Chat에는 11월 순차 배포입니다. 기존 대화·작업·파일을 새 프로젝트 문맥으로 가져올 때 권한과 공유 범위를 다시 확인합니다. |
-| Autopilot·Skills | Autopilot은 11월 Frontier 배포 예정이며 GA가 아닙니다. Copilot Chat에서 만드는 사용자 스킬도 11월 순차 배포입니다. 지속 실행 작업에는 승인·접근 제어·비용·Agent 365 관리를 파일럿 기준으로 둡니다. |
+| Copilot Home·Projects | 10월 발표 당시 Home은 Frontier, Projects는 앱별 순차 배포였습니다. 11월 17일 발표에서 Home의 Chat·Cowork 통합과 Projects가 GA로 확인됐습니다. 기존 대화·작업·파일을 새 프로젝트 문맥으로 가져올 때 권한과 공유 범위를 다시 확인합니다. |
+| Autopilot·Skills | 10월에는 Autopilot의 11월 Frontier 배포가 예고됐고, 11월 17일부터 자격 고객 대상 순차 배포가 시작됐습니다. GA가 아니며 Copilot 라이선스, Frontier, 사용량 기반 과금과 필수 관리·보안 조건이 적용됩니다. |
 | Cowork·Workspaces | 역할별 플러그인·작업 카탈로그·이전 대화 참조는 10월 배포됐습니다. OneNote·Planner 기능은 10월 Frontier 후 11월 전 세계 순차 배포입니다. Workspaces의 Office 파일 편집은 10월 Frontier 후 2027년 1월 전 세계 배포 예정이며, 오디오 개요의 새 자료 형식과 레이블 상속은 11월 순차 배포입니다. |
 | Excel·PowerPoint·Word | Excel 정리 스킬, PowerPoint의 Sonnet 5.5·Brand Kit·대화형 슬라이드·스킬, Word의 법률 플러그인·문서별 디자인·Markdown 지원은 10월 배포로 안내됐습니다. Excel 회계 스킬은 10월 Frontier 후 11월 전 세계, 대화형 캔버스는 10월 Insiders 후 11월 전 세계 순차 배포입니다. 생성 결과와 재무·법률 판단은 담당자가 원문·수치·서식을 검토합니다. |
 | Teams·GCC | 회의 대화록을 저장하지 않는 Teams 지능형 회의 요약은 5월 public preview 후 10월 전 세계 배포로 안내됐습니다. GCC의 Word·Excel·PowerPoint 편집도 10월 배포입니다. 회의 녹음·요약 정책, 사용자 Copilot 라이선스와 정부 클라우드별 실제 제공 상태를 확인합니다. |
@@ -307,7 +323,7 @@ Microsoft가 9월 월간 업데이트와 별도 공식 발표로 실제 배포 �
 
 ## 10월 9일 Copilot 앱·Notebooks 업데이트
 
-- **Office in Copilot:** Copilot 앱의 Chat 또는 Cowork에서 시작한 Word 문서, Excel 통합 문서, PowerPoint 프레젠테이션을 대화와 나란히 열어 직접 편집하고 공동 작성할 수 있습니다. 파일은 OneDrive에 저장되어 서식, 공유 권한, 버전 기록, 민감도 레이블과 규정 준수 정책을 이어갑니다. Microsoft는 10월 9일 게시 시점에 Frontier 고객 대상 배포로 안내했으므로, 일반 공급으로 간주하지 말고 대상 사용자에게 Chat·Cowork 진입점과 공동 편집이 실제 표시되는지 확인하세요. [Office in Copilot 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230)
+- **Office in Copilot:** Copilot 앱의 Chat 또는 Cowork에서 시작한 Word 문서, Excel 통합 문서, PowerPoint 프레젠테이션을 대화와 나란히 열어 직접 편집하고 공동 작성할 수 있습니다. 파일은 OneDrive에 저장되어 서식, 공유 권한, 버전 기록, 민감도 레이블과 규정 준수 정책을 이어갑니다. 10월 9일에는 Frontier 배포였으나 Microsoft는 11월 17일 **일반 공급**을 발표했습니다. 안전 배포가 적용될 수 있으므로 대상 사용자에게 Chat·Cowork 진입점과 공동 편집이 실제 표시되는지 확인하세요. [10월 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230) · [11월 GA 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/office-at-ignite-2026-from-apps-to-agentic-system-of-work/4572226)
 - **Copilot Notebooks:** 에이전트형 채팅으로 간단한 작업을 위임하고, Copilot Canvas에서 협업하며, Notebook 안에서 Word·Excel·PowerPoint 파일을 실시간 편집하거나 대화 근거로 대화형 보고서를 만드는 기능이 발표됐습니다. 10월 9일 발표에서 새 화면·작업 위임·모델 선택·Office 편집·대화형 보고서는 Frontier, 참조 파일 형식 확대와 생성물 추천은 일반 공급으로 구분했습니다. 노트북 자동 생성과 예약 작업은 이후 수 주 내 제공 예정이었습니다. 기능별 표시 여부와 라이선스·저장소를 확인하세요. 이후 10월 30일에는 Workspaces로의 전환과 Office 편집의 2027년 1월 전 세계 배포 계획이 발표됐습니다. [월간 배포 정리](#october-30-monthly-update)를 함께 확인하세요. [Copilot Notebooks 10월 공식 업데이트](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-notebooks--october-2026/4559105)
 
 두 업데이트 모두 기존 Office 파일의 권한과 공동 작업 경계를 그대로 사용하므로, 파일럿에서는 새 파일 생성뿐 아니라 기존 파일 열기, 외부 공유, 민감도 레이블, 버전 복원까지 함께 점검하세요.

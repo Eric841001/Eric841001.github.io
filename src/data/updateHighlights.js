@@ -2,11 +2,12 @@
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
 export const verifiedOn = '2026-11-18';
 export const modelUpdate = {
-  title: 'Claude Fable 5.2 · 단계적 배포',
-  date: '2026-11-12',
-  path: `${updateGuide}#claude-fable-5-2`,
+  title: 'GPT-6.2 Astra·Sol · Frontier',
+  date: '2026-11-18',
+  path: `${updateGuide}#ignite-home-cowork-office-november-17`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft Copilot', title: 'Home·Office·Cowork의 Ignite 제공 상태', description: 'Home·Office·Projects·Automations와 Cowork 앱 GA를 Today·Workspaces·Autopilot·Auto의 Frontier 범위와 구분했습니다.', date: '2026-11-18', status: '기능별 GA·Frontier · 순차 배포 확인', path: `${updateGuide}#ignite-home-cowork-office-november-17`},
   {category: 'Microsoft Defender XDR', title: '지원 대상 보안 데이터의 보존 기간 확대', description: 'ISOC 자격을 갖춘 Defender Suite·E5·E7 고객의 최대 90일 보존과 대상 데이터·적용 조건을 추가했습니다.', date: '2026-11-18', status: '11월 15일부터 적용 · 데이터별 조건 확인', path: '/knowledge/security/defender-xdr#hunting-starter-pack'},
   {category: 'Microsoft Copilot', title: 'Work IQ 사람·조직 맥락의 제공 상태', description: 'GA 분석·조직 데이터와 Frontier 조직 맥락을 구분하고 데이터 역할·라이선스·검증 기준을 정리했습니다.', date: '2026-11-17', status: '12월까지 순차 배포 · 기능별 조건 확인', path: `${updateGuide}#work-iq-people-org-context`},
   {category: 'Microsoft Copilot', title: 'Plugin Catalog 공개', description: '공개 카탈로그의 플러그인 목록·검색을 확인했습니다. 조직 내 설치·사용은 관리자 정책과 플러그인별 조건을 확인하세요.', date: '2026-11-18', status: '카탈로그 공개 · 조직별 사용 조건 확인', path: `${updateGuide}#plugin-catalog-ignite-2026`},

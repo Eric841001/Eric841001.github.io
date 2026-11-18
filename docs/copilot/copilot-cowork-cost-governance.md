@@ -118,6 +118,17 @@ Copilot Studio 에이전트의 통제는 한 포털에서 끝나지 않습니다
 
 출처: [What’s New in Microsoft Copilot | October 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528), [Microsoft Purview DLP for Microsoft 365 Copilot and Cowork](https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-personalization-memory), [Copilot·AI 앱 상호작용 보존](https://learn.microsoft.com/en-us/purview/retention-policies-copilot).
 
+### 2026년 11월 17일 Ignite 제공 상태 {/* #ignite-2026-cowork-status */}
+
+11월 17일 발표에서 Cowork의 앱 구축과 Copilot Managed Runtime, Planner·Viva Engage 플러그인은 **일반 공급(GA)**으로 확인됐습니다. Brand Kit은 순차 배포 중이며, Microsoft-Decision-1.1 기반 노력 수준 조정·병렬 하위 에이전트, Work IQ 기반 작업 추천과 Agent 365 Business Analytics는 **Frontier**입니다.
+
+- **GA와 Frontier 분리:** GA 기능도 안전 배포로 사용자별 표시 시점이 다를 수 있습니다. Frontier의 Auto·추천·분석 결과를 전사 표준 기능이나 보장된 절감 효과로 간주하지 않습니다.
+- **비용과 모델 통제:** Auto는 단계별 모델과 추론 노력을 선택하고 복잡한 작업을 하위 에이전트로 나눌 수 있습니다. 같은 과제로 모델·하위 에이전트 수, 지연, 성공률, Copilot Credits와 재시도 비용을 함께 측정합니다.
+- **가치 지표 해석:** Business Analytics의 assisted hours와 금액 환산은 추정치입니다. 실제 업무 시간 표본, 품질 재작업과 승인 비용을 별도로 대조하고 재무 성과로 직접 전환하지 않습니다.
+- **공공 부문:** GCC용 Cowork는 11월 순차 배포로 발표됐습니다. 상용 클라우드 제공 상태나 일반 GA를 GCC·소버린 환경에 그대로 적용하지 않습니다.
+
+출처: [What’s new in Copilot Cowork at Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242), [Copilot Home](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/home-your-starting-place-for-work-in-the-microsoft-copilot-app/4573945).
+
 ### 로컬 Microsoft Edge 사용 점검 {/* #local-edge-browser-use */}
 
 11월 4일 릴리스 노트는 Cowork가 사용자 기기의 Microsoft Edge를 사용해 웹 기반 작업 단계를 수행하는 기능을 Current Channel 변경으로 안내했습니다. Cowork는 별도 Edge 탭에서 진행되며, 사용자는 대화에서 진행 상황을 보고 입력·승인하거나 직접 제어권을 가져올 수 있습니다.
@@ -153,11 +164,11 @@ Copilot Studio 에이전트의 통제는 한 포털에서 끝나지 않습니다
 
 ## Plugin Catalog 준비와 패키지 검토 {/* #plugin-catalog-ignite-2026 */}
 
-Microsoft는 11월 17일 Ignite 개막에 맞춰 공개 Plugin Catalog를 시작할 예정이며, Copilot Home의 탐색 메뉴에도 플러그인이 표시되기 시작한다고 안내했습니다. 공개 카탈로그는 생태계 탐색용이므로 조직에서 즉시 사용할 수 있다는 의미로 해석하지 마세요.
+Microsoft는 11월 17일 Ignite 개막에 맞춰 공개 Plugin Catalog를 시작했고, 11월 18일 현재 [공개 카탈로그](https://www.microsoft.com/en-us/copilot/features/plugins/explore)에서 목록·검색·분류를 확인할 수 있습니다. Copilot Home의 탐색 메뉴에도 플러그인이 표시되기 시작합니다. 공개 카탈로그는 생태계 탐색용이므로 조직에서 즉시 사용할 수 있다는 의미로 해석하지 마세요.
 
 - 플러그인은 스킬, 도구(커넥터 포함), 에이전트를 함께 포함할 수 있습니다. 패키지 이름만 보지 말고 포함된 구성 요소와 각각의 권한을 검토합니다.
 - 탐색 메뉴 변경에도 기존 Microsoft 365 관리 센터 통제는 유지됩니다. 게시자 범주, 대상 사용자·그룹, 설치·차단, 사용자 요청 승인 상태를 확인합니다.
-- 공개 Catalog 노출, Microsoft 365 Store 제공, 조직 레지스트리 설치 가능 여부는 서로 다른 상태입니다. 11월 17일 이후 실제 테넌트와 한국 지역 제공 상태를 다시 확인합니다.
+- 공개 Catalog 노출, Microsoft 365 Store 제공, 조직 레지스트리 설치 가능 여부는 서로 다른 상태입니다. 실제 테넌트와 한국 지역 제공 상태를 따로 확인합니다.
 - MCP 서버나 커넥터가 포함되면 쓰기·삭제·결제 도구를 별도로 식별하고, 지원되는 경우 도구별 차단과 최소 권한 동의를 적용합니다.
 
 공식 근거는 [Plugins at Microsoft Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/plugins-at-microsoft-ignite-2026/4569951)와 [플러그인·스킬·MCP 서버 관리](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-plugins-skills-mcp-servers)에서 확인할 수 있습니다. Ignite 세션 안내는 향후 기능을 포함할 수 있으므로 현재 제공 상태와 구분합니다.
