@@ -132,6 +132,8 @@ Connect Sync also has an authentication migration deadline: upgrade to **2.6.84.
 
 Microsoft Entra Connect installation and Sync are .NET applications. Microsoft documents the machine-level `.NET Framework` `machine.config` proxy setting for these components. Back up the file, validate its XML, restart the relevant service in a controlled window, and recheck the setting after change management.
 
+For Connect Sync, set the proxy connection idle timeout to **at least 6 minutes**. Microsoft Entra ID can take up to 5 minutes to answer a directory-synchronization request. A shorter proxy timeout can interrupt that request even when the destination is allowed; check this separately from firewall denies. See [Connect connectivity prerequisites](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites#connectivity).
+
 The PTA agent runs as a Windows service and can require its own service configuration when WPAD is not available. Do not assume that a user-level browser proxy or WinHTTP setting automatically covers the PTA service context.
 
 For an authenticated Connect Sync proxy, the service account must be a domain account configured through custom installation. The installation wizard normally uses the signed-in user's credentials, while the Configure page and sync engine use the service account. A successful browser test therefore does not establish that synchronization can authenticate to the proxy. See [Connect proxy authentication requirements](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites#connectivity).

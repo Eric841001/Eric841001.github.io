@@ -1301,9 +1301,9 @@
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "PTA 현재·구버전 포트와 WPAD, Connect 프록시 인증 계정, 에이전트별 로그인 처리 확인, PHS 자동 장애 조치 미지원 조건을 대조했습니다.",
+    "scope": "개별 대조: PTA 포트·목적지·TLS 검사 제한, 서비스별 프록시 설정, 인증 계정, AgentId 대조와 PHS 전환 조건. Connect Sync의 프록시 유휴 연결 제한을 6분 이상으로 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1319,11 +1319,11 @@
       {
         "title": "connect-prereq",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites",
-        "checkedFor": "2.6.84.0 plus app-based authentication by2027-04-07; Sync machine.config proxy including credential context and service restart. 인증 프록시는 도메인 서비스 계정이 필요하며 설치 마법사와 Configure·동기화의 자격 증명이 다르다."
+        "checkedFor": "Connect Sync의 2.6.84.0 이상·앱 기반 인증 전환 조건과 인증 프록시 계정, machine.config 및 서비스 재시작을 대조했습니다. 응답은 최대 5분 걸릴 수 있어 프록시 유휴 연결 제한은 6분 이상이어야 합니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명과 원문을 대조했습니다. 실제 고객 테넌트·기기에서 실행하지 않았고 고객 성과·비용 절감·규정 충족을 독립 인증하지 않았습니다. 전체 블로그의 문장별 대조는 별도 비공개 기록에서 진행 중입니다."
+    "notChecked": "문서에 인용한 제품 조건을 공식 자료와 대조했습니다. 실제 테넌트의 로그인·동기화·프록시 통신과 장애 전환을 시험하지 않았습니다. 작성자의 시험 절차와 운영 권고는 실측 결과가 아닙니다."
   },
   "/knowledge/knowledge-center/exchange-online-download-restriction": {
     "file": "docs/knowledge-center/exchange-online-download-restriction.md",
