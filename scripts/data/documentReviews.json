@@ -2808,84 +2808,24 @@
   },
   "/knowledge/playbooks/tenant-to-tenant-migration-playbook": {
     "file": "docs/playbooks/tenant-to-tenant-migration-playbook.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-18",
     "kind": "설계·실행 프레임워크",
-    "scope": "SharePoint·OneDrive의 비관리 기기 접근 제한 조건과 중복 예시 표를 대조했습니다.",
+    "scope": "이번 대조: 기본 제공 SharePoint 테넌트 간 이전의 증분·델타 미지원과 원본 Read/Write 필수 조건을 확인했습니다. 메일 이전의 보류 제한·원본 삭제 설명은 접기 버튼에서 본문으로 옮겼습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
-        "title": "cross-mailbox",
+        "title": "Cross-tenant SharePoint migration",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-sharepoint-migration?view=o365-worldwide",
+        "checkedFor": "원본 사이트가 Read-only면 이전이 실패하고 Read/Write여야 하며, 일회성 이동으로 증분·델타 이전을 지원하지 않는다는 조건을 확인했습니다."
+      },
+      {
+        "title": "Cross-tenant mailbox migration",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration",
-        "checkedFor": "보류 사서함 이전 차단, 성공 시 원본 사서함 삭제 및 MailUser 전환, 단일 테넌트 도메인 연결 조건을 확인했다."
-      },
-      {
-        "title": "domain-verify",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/users/domains-manage",
-        "checkedFor": "A custom domain cannot be verified in multiple tenants; removal requires clearing object references and using an administrator on another domain."
-      },
-      {
-        "title": "accepted-domains",
-        "url": "https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains",
-        "checkedFor": "Accepted domain 유형별 수신자 처리와 내부 릴레이 커넥터 필요 조건을 확인했다."
-      },
-      {
-        "title": "cross-sharepoint",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-sharepoint-migration",
-        "checkedFor": "사용자 지정 권한 레이블의 이전 제약, 대상 앱·자동화 재구성, 별도 SharePoint 이전 범위를 확인했다."
-      },
-      {
-        "title": "label-encryption",
-        "url": "https://learn.microsoft.com/en-us/purview/encryption-sensitivity-labels",
-        "checkedFor": "암호화설정으로열기·인쇄·복사·메일전달권한등을제어하며권한이있는사용자만복호화한다."
-      },
-      {
-        "title": "ca-overview",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
-        "checkedFor": "User,device,app,risk,location inputs; compliant grant separatefromOS; user/signinriskP2; sessioncontrols integration."
-      },
-      {
-        "title": "intune-enroll",
-        "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/windows/guide",
-        "checkedFor": "Automatic MDM, GPO hybrid join, Autopilot, BYOD and co-management have separate identity, license, ownership and configuration requirements."
-      },
-      {
-        "title": "dlp-overview",
-        "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
-        "checkedFor": "지원 위치별 조건을 구분하며 simulation mode에서는 정책의 조치를 적용하지 않고 결과를 검토한다."
-      },
-      {
-        "title": "labels-overview",
-        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
-        "checkedFor": "분류·암호화·콘텐츠 표시·게시 범위를 설정하며 적용 기능은 워크로드별로 다르다."
-      },
-      {
-        "title": "admin-units",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
-        "checkedFor": "관리 단위는 지원 관리 권한의 범위이며 디렉터리 열람 격리 또는 Intune 관리 위임이 아니다."
-      },
-      {
-        "title": "spo-unmanaged",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices",
-        "checkedFor": "비관리 기기의 제한된 웹 접근은 정책 구성이 필요합니다. 지역 소속이나 관리자 권한만으로 다운로드 예외가 생기지 않습니다."
-      },
-      {
-        "title": "spo-app-restrict",
-        "url": "https://learn.microsoft.com/en-us/sharepoint/app-enforced-restrictions",
-        "checkedFor": "SharePointresource,allclientsselected,sessionUseappenforcedrestrictions."
-      },
-      {
-        "title": "cross-sync",
-        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
-        "checkedFor": "동기화는 원본 인증을 유지하는 단방향 B2B 프로비저닝이다. 지원 그룹·사용자와 라이선스 조건을 대조했으며 콘텐츠 이전 기능은 아니다."
-      },
-      {
-        "title": "orchestrator",
-        "url": "https://learn.microsoft.com/en-us/microsoft-365/migration/migration-orchestrator-1-overview?view=o365-worldwide",
-        "checkedFor": "메일·OneDrive·Teams채팅·회의의콘텐츠이전,ID사전구성,회의의채팅+메일종속성과사용자추가권한을확인했다."
+        "checkedFor": "모든 종류의 보류가 기본 제공 사서함 이동을 막으며 성공 후 원본 사서함이 삭제되어 원본 검색을 할 수 없다는 조건을 대조했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "위 항목의 공식 설명을 개별 대조했습니다. 문서 전체 기술 문장의 최신 근거 대조는 진행 중이며, 실제 고객 테넌트의 라이선스 할당·정책 실행·차단 결과는 시험하지 않았습니다."
+    "notChecked": "이번 기록은 SharePoint 원본 상태와 이전 방식 조건, 메일 이전 설명의 배치만 확인한 결과입니다. 전체 기술 문장의 검증 완료나 실제 이전 시험을 뜻하지 않습니다."
   },
   "/knowledge/projects/case-study-enterprise-ai-agent-factory": {
     "file": "docs/projects/case-study-enterprise-ai-agent-factory.md",

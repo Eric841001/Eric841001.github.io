@@ -556,9 +556,9 @@ Add actions when a scenario requires a system change, and test permissions, conf
 
 ## MCP Integration
 
-MCP capabilities vary by harness. In the [standard-harness procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent), server resources must be exposed as tool outputs to be used by the agent. Review enabled tools and connector data policies; the protocol itself does not grant access or enforce business approvals.
-
 </ReadingSummary>
+
+MCP capabilities vary by harness. In the [standard-harness procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent), server resources must be exposed as tool outputs to be used by the agent. Review enabled tools and connector data policies; the protocol itself does not grant access or enforce business approvals.
 
 
 Model Context Protocol expands agent extensibility.

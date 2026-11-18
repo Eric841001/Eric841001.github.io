@@ -18,9 +18,9 @@ toc_max_heading_level: 2
 
 ## Executive Summary
 
-The layers below are a proposed architecture. Each platform needs its own configuration, permissions and supported integration path. [Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/agents-sdk-overview) handles agent hosting and channel interactions; choose the model and orchestration separately. [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Power Automate](https://learn.microsoft.com/en-us/power-automate/getting-started) serve different development and workflow needs.
-
 </ReadingSummary>
+
+The layers below are a proposed architecture. Each platform needs its own configuration, permissions and supported integration path. [Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/agents-sdk-overview) handles agent hosting and channel interactions; choose the model and orchestration separately. [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Power Automate](https://learn.microsoft.com/en-us/power-automate/getting-started) serve different development and workflow needs.
 
 
 Agentic AI represents the shift from prompt-based assistance to goal-oriented, context-aware and action-capable AI systems.
@@ -959,9 +959,9 @@ An Agent Factory provides repeatable delivery.
 
 ## Maturity Model
 
-The levels, weights and thresholds in this guide are author-proposed planning aids. They do not represent Microsoft certification, a product prerequisite or a guarantee of readiness.
-
 </ReadingSummary>
+
+The levels, weights and thresholds in this guide are author-proposed planning aids. They do not represent Microsoft certification, a product prerequisite or a guarantee of readiness.
 
 
 | Level | Description |

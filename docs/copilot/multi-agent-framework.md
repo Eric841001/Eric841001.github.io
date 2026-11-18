@@ -792,9 +792,9 @@ Example:
 
 ## Agent Memory Architecture
 
-These are conceptual storage categories. They are not three built-in Copilot Studio memory tiers. Configure retention, access, user isolation and deletion for each actual store; per-user agent memory does not automatically become shared organizational knowledge.
-
 </ReadingSummary>
+
+These are conceptual storage categories. They are not three built-in Copilot Studio memory tiers. Configure retention, access, user isolation and deletion for each actual store; per-user agent memory does not automatically become shared organizational knowledge.
 
 
 ### Short-Term Memory

@@ -453,9 +453,9 @@ Typical tenant-to-tenant migration scope includes:
 
 ## Exchange Online Migration
 
-For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration), any hold blocks the move. A successful move deletes the source mailbox; it is no longer discoverable there. Prepare preservation requirements and a method-specific recovery plan before cutover. Do not assume the migration leaves a reversible source copy.
-
 </ReadingSummary>
+
+For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration), any hold blocks the move. A successful move deletes the source mailbox; it is no longer discoverable there. Prepare preservation requirements and a method-specific recovery plan before cutover. Do not assume the migration leaves a reversible source copy.
 
 
 ### Scope Items
@@ -666,7 +666,7 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ### Cutover Activities
 
-This is a planning sequence, not a universal migration procedure. Native [cross-tenant SharePoint moves](https://learn.microsoft.com/en-us/microsoft-365/enterprise/cross-tenant-sharepoint-migration) are a one-time move and do not support incremental or delta passes. Define the freeze and final-transfer procedure separately for each workload and tool.
+This is a planning sequence, not a universal migration procedure. Native [cross-tenant SharePoint moves](https://learn.microsoft.com/en-us/microsoft-365/enterprise/cross-tenant-sharepoint-migration) are a one-time move and do not support incremental or delta passes. Define the freeze and final-transfer procedure separately for each workload and tool. For this native SharePoint move, keep the source site in **Read/Write** mode; setting it to Read-only causes migration failure. Plan how to stop user edits without changing the source to Read-only.
 
 | Step | Activity |
 |---|---|
