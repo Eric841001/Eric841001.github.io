@@ -117,6 +117,14 @@ Defender 포털의 소프트웨어 목록에서 앱을 열고 **Software evidenc
 
 For device-based access control, connect Defender for Endpoint to Intune, onboard the devices and assign an Intune compliance policy with a machine-risk threshold. Conditional Access then requires the device to be marked as compliant; onboarding alone does not create that access policy. This documented risk-based compliance workflow supports Windows, Android and iOS/iPadOS. Do not assume that macOS or Linux onboarding provides the same compliance integration. See [integration and supported platforms](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration#create-and-assign-compliance-policy-to-set-device-risk-level).
 
+### ASR 적용 전 확인할 조건 {/* #asr-enforcement-prerequisites */}
+
+ASR 규칙을 적용할 Windows 기기에서는 Microsoft Defender Antivirus가 **활성 모드**로 실행되어야 합니다. 수동 모드에 EDR 차단 모드를 더해도 이 조건을 대신하지 못합니다. 규칙별 클라우드 보호 요구 사항과 백신 구성 요소 버전도 확인하세요.
+
+Warn 모드의 **Unblock**은 영구 예외가 아닌 24시간 임시 해제입니다. 플랫폼 `4.18.26060`부터는 해제에 관리자 승인이 필요합니다. 모든 규칙과 관리 도구가 Warn 모드를 지원하는 것은 아니므로, 파일럿에서 해당 규칙의 지원 여부와 승인 절차를 함께 시험하세요. 지속적인 예외가 필요하면 규칙별 제외 설정을 검토합니다.
+
+근거: [ASR 요구 사항과 모드별 동작](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-overview).
+
 ## Deployment Journey
 
 Audit behavior depends on the control. For example, [web content filtering](https://learn.microsoft.com/en-us/defender-endpoint/web-content-filtering) can collect category activity with no categories selected for blocking; its Network Protection prerequisites still apply. This is different from turning every web-protection component to audit mode.

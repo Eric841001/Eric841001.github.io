@@ -3619,9 +3619,9 @@
   },
   "/knowledge/security/defender-for-endpoint": {
     "file": "docs/security/defender-for-endpoint.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-18",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: Defender 기기 위험을 Intune 준수 정책과 조건부 액세스에 연결하는 절차 및 지원 플랫폼.",
+    "scope": "개별 대조: P2의 EDR·자동 조사, 서버 별도 라이선스, Linux·macOS 지원 변경, Store 앱 취약점 범위, 기기 위험 기반 준수 통합, 웹 필터 감사, 로컬 AI 검색 조건. ASR 활성 백신 요구 사항과 Warn 임시 해제의 관리자 승인 조건을 보완했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3673,10 +3673,15 @@
         "title": "서비스 연결, 온보딩, 준수 정책, 별도 조건부 액세스와 Windows·Android·iOS/iPadOS 지원 범위",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration",
         "checkedFor": "서비스 연결, 온보딩, 준수 정책, 별도 조건부 액세스와 Windows·Android·iOS/iPadOS 지원 범위"
+      },
+      {
+        "title": "ASR rules overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-overview",
+        "checkedFor": "Windows의 활성 백신 요구 사항과 수동 모드·EDR 차단 모드의 차이, Warn의 24시간 해제와 4.18.26060부터 적용되는 관리자 승인, 규칙별 지원 차이를 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "위 범위의 문장을 공식 문서와 대조했습니다. 다른 기술 문장의 최신 개별 대조와 실제 테넌트의 정책 실행·차단 시험은 완료하지 않았습니다."
+    "notChecked": "기재한 제품 조건을 공식 문서와 대조했습니다. 실제 기기의 ASR 경고·관리자 승인·차단, 테넌트의 준수·조건부 액세스·보안 신호 수집은 시험하지 않았습니다. 운영 담당자·단계·지표는 작성자의 권고입니다."
   },
   "/knowledge/security/defender-for-office365": {
     "file": "docs/security/defender-for-office365.md",
