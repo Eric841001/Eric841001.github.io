@@ -216,9 +216,9 @@ Always authenticate and authorize.
 
 Minimize permissions.
 
-### Assume Breach
+### Assume Compromise {/* #assume-breach */}
 
-Design assuming compromise will occur.
+Design for the possibility that part of the environment is compromised: limit its impact and prepare detection, response and recovery. Microsoft’s [current Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview#zero-trust-principles) calls this principle **Assume compromise**, previously **Assume breach**.
 
 ---
 

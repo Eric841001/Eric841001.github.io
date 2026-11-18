@@ -241,7 +241,7 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
   <a href="/knowledge/security/zero-trust-framework">
     <small>Zero Trust</small>
     <strong>Zero Trust Framework</strong>
-    <span>Verify explicitly, least privilege and assume breach operating model.</span>
+    <span>Verify explicitly, least privilege and assume compromise operating model.</span>
   </a>
   <a href="/knowledge/projects/case-study-retail-m365-security-policy">
     <small>Reference</small>

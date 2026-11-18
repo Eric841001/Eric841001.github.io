@@ -70,9 +70,11 @@ For Microsoft cloud environments, Zero Trust should be designed across Microsoft
 |---|---|
 | Verify Explicitly | Always authenticate and authorize based on available signals |
 | Use Least Privilege | Limit user and administrator access to the minimum required |
-| Assume Breach | Design detection, response and containment capabilities |
+| Assume Compromise (formerly Assume Breach) | Design detection, response, containment and recovery capabilities |
 
 ---
+
+Microsoft’s [current Zero Trust principles](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview#zero-trust-principles) use **Assume compromise**, previously called **Assume breach**. The principle includes limiting impact and preparing detection, response and recovery.
 
 ## Reference Architecture
 
@@ -350,7 +352,7 @@ No. Zero Trust is an operating model. It should be implemented in phases across 
 
 ### How does Zero Trust support Copilot and AI adoption?
 
-Copilot and AI agents rely on Microsoft 365 access boundaries. Zero Trust reduces the risk of compromised identities, unmanaged devices and overshared data being used in AI-assisted work.
+Microsoft 365 Copilot respects the current user’s permissions when accessing organizational data. Individual agents also require review of their authentication, connected resources and permissions; they do not all inherit the same Microsoft 365 access boundary. Copilot Studio supports unauthenticated agents as well as authenticated configurations. See [Copilot data access](https://learn.microsoft.com/en-us/copilot/plan/microsoft-365-copilot-privacy) and [agent authentication options](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication).
 
 ### What should executives approve?
 
