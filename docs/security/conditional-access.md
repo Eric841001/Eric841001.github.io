@@ -54,7 +54,7 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 
 ## memberOf 그룹을 정책 대상으로 사용하는 경우 {/* #memberof-policy-targeting */}
 
-`memberOf` 규칙을 사용하는 동적 그룹은 **2026년 11월 3일 이후 구성원이 갱신되지 않습니다**. 이 그룹을 조건부 액세스 정책의 포함·제외 대상으로 사용한다면, 구성원 변경이 정책 대상에 반영되지 않을 수 있습니다. [ID 설계 문서의 전환 안내](../azure/identity#memberof-retirement-2026)에 따라 그룹 규칙을 바꾸고, 전환 전후 대상 사용자와 로그인 결과를 비교하세요. 긴급 접근 계정의 제외 설정도 함께 확인합니다.
+종료된 기존 `memberOf` 미리 보기 방식의 그룹은 2026년 11월 3일 이후 구성원이 갱신되지 않습니다. 후속 **MemberOf Next**로 전환하려면 Entra ID Governance와 Standard 우선순위가 필요합니다. 전환 후에도 하루 두 번 갱신되므로, 즉시 접근을 차단해야 하는 용도로 의존하지 마세요. [ID 설계 문서의 전환 안내](../azure/identity#memberof-retirement-2026)에 따라 처리 상태와 정책의 포함·제외 대상, 실제 로그인 결과를 확인합니다. 긴급 접근 계정의 제외 설정도 함께 확인하세요.
 
 
 ## License and rollout verification — 2026-10-25

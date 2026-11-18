@@ -44,13 +44,15 @@ Azure 리소스에 접근하는 사용자와 애플리케이션의 권한을 정
 
 Entra ID, Azure RBAC, PIM, Conditional Access, 관리 ID와 서비스 주체의 용도를 구분하고 필요한 권한만 부여합니다.
 
-## memberOf 규칙 종료 안내 {/* #memberof-retirement-2026 */}
+## 기존 memberOf 종료와 MemberOf Next 전환 {/* #memberof-retirement-2026 */}
 
-Microsoft Entra ID의 동적 멤버십 규칙에 쓰는 `memberOf` 미리 보기는 2026년 11월 3일 종료됐습니다. **2026년 11월 3일 이후** 이 연산자를 사용하는 동적 그룹, 동적 관리 단위, 권한 관리 자동 할당 정책은 더 이상 갱신되지 않고 마지막 상태로 남습니다. 그룹이 자동으로 삭제되거나 기존 접근 권한이 모두 회수되는 것은 아닙니다.
+기존 `memberOf` 미리 보기는 2026년 11월 3일 종료됐습니다. 이전 방식에 남아 있는 동적 그룹·동적 관리 단위·권한 관리 자동 할당 정책은 갱신이 중단된 상태입니다. 그룹 자체가 삭제되거나 기존 권한이 자동 회수되는 것은 아닙니다.
 
-관리자는 `memberOf`를 사용하는 구성을 찾아 지원되는 속성 기반 규칙이나 직접 할당 방식으로 전환하세요. 변경 후에는 실제 구성원, 관리 범위와 접근 패키지 할당을 확인합니다. 조건부 액세스 대상, Teams·SharePoint 접근, 그룹 기반 라이선스도 이전 구성원을 계속 참조하지 않는지 점검하세요. 모든 동적 그룹이 종료되는 것은 아니며, 여기서는 `memberOf` 연산자를 사용하는 구성만 다룹니다.
+후속 기능인 **MemberOf Next는 공개 미리 보기**입니다. Microsoft Entra ID Governance 라이선스를 갖추고 기존 그룹의 우선순위를 **Standard**로 바꾸면 같은 규칙을 유지해 전환할 수 있습니다. 먼저 원본 그룹이 존재하는지, 할당된 멤버십을 사용하는지 확인하세요. 원본의 직접 구성원만 포함하며 중첩 그룹의 구성원은 포함하지 않습니다.
 
-출처: [Microsoft Learn — memberOf 미리 보기 종료와 전환 절차](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of#migrate-before-the-preview-ends).
+Standard 그룹은 **하루 두 번** 갱신됩니다. 즉시 접근을 허용하거나 회수해야 하는 정책의 대상 그룹으로 의존해서는 안 됩니다. 전환 후 구성원과 처리 상태, 조건부 액세스·앱·라이선스 할당 결과를 확인하세요. 현재 미리 보기는 퍼블릭 클라우드에서만 제공됩니다.
+
+출처: [기존 memberOf 종료](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of), [MemberOf Next 요구 사항과 전환 절차](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-advanced#move-existing-memberof-groups-to-memberof-next).
 
 ## Business Scenario
 
