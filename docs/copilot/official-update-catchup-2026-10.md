@@ -2,15 +2,16 @@
 id: official-update-catchup-2026-10
 title: Copilot 기능·배포 변경 — 2026년 10~11월
 sidebar_label: 2026년 10~11월 기능 변경
-description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, Work IQ 사람·조직 맥락과 11월 Copilot Chat 사용 제한.
+description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, Work IQ 메모리·조직 맥락과 11월 Copilot Chat 사용 제한.
 ---
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 18일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 19일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 18일 Work IQ 메모리 확대](#work-iq-memory-personalization) · 메모리 인용 GA와 앱·이메일·MCP 순차 배포, 현재 관리 문서의 Preview·보존 제한 구분
 - [11월 17일 Ignite·릴리스 업데이트](#ignite-home-cowork-office-november-17) · Home·Office·Projects·Automations GA와 Frontier 기능, 관리자 변경 구분
 - [11월 16일 Work IQ 사람·조직 맥락](#work-iq-people-org-context) · GA 분석 기능과 Frontier 조직 맥락, 데이터·역할 조건 구분
 - [11월 12일 Ignite 플러그인 안내](#plugin-catalog-ignite-2026) · 공개 카탈로그와 테넌트 설치·관리 조건 구분
@@ -31,6 +32,23 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 18일 Work IQ 메모리·개인화 확대 {/* #work-iq-memory-personalization */}
+
+Microsoft는 Work IQ 메모리가 Copilot의 사용자 선호를 여러 경험에 이어 주는 기능을 확대한다고 발표했습니다. 발표의 제공 상태와 현재 관리 문서의 상태가 다르므로 **메모리 인용의 GA, GA 순차 배포 기능, 개인화·메모리 관리 문서의 Preview 표기**를 구분해야 합니다.
+
+| 기능 | 11월 18일 발표 상태 | 적용 전 확인 |
+|---|---|---|
+| 메모리 인용 | GA | Copilot Chat 응답의 `Sources > Personalization`에서 실제로 사용된 사용자 지정 지침, 저장된 메모리, 대화에서 학습한 메모리와 과거 채팅을 확인합니다. 메모리가 응답에 의미 있게 영향을 준 경우에만 표시됩니다. |
+| Microsoft 365 앱 간 메모리 | GA 순차 배포 | Word·Excel·PowerPoint·Workspaces·Pages·Outlook·Teams에서 문체·형식·작업 방식을 학습한다고 발표했습니다. 앱별 표시와 결과를 대표 사용자로 확인하고, 선호 추론을 조직 표준이나 승인된 사실로 취급하지 않습니다. |
+| 이메일 문체 | GA 순차 배포 | 대상 사용자에게 기능이 표시되는지 확인하고, 수신자·상황별 문체가 적절한지 사용자가 발송 전에 검토하게 합니다. |
+| Work IQ MCP 메모리 | GA 순차 배포 | 권한이 있는 에이전트·앱이 사용자 지정 지침, 저장된 메모리와 Copilot Chat 기록에서 파생된 메모리를 읽을 수 있습니다. 연결 앱, 사용자 동의·권한, 사용 목적과 출력 노출 범위를 별도로 검토합니다. |
+
+현재 Learn 관리 문서는 Copilot 개인화·메모리 전체를 여전히 **Preview**로 표시하고, 기본 메모리는 Microsoft Copilot 라이선스가 없는 Copilot Chat 사용자에게도 제공된다고 설명합니다. 새 발표만으로 모든 앱·테넌트·지역에 배포가 끝났다고 보지 말고 대상 사용자의 `Settings > Personalization`과 실제 앱에서 확인하세요. 관리자의 `Enhanced personalization`은 기본 켜짐이며 테넌트 전체 또는 Microsoft Entra 그룹 범위로 끌 수 있습니다.
+
+메모리 데이터는 사용자의 Exchange 사서함 숨김 폴더에 저장되지만, 현재 문서상 Purview 보존 정책·레이블은 메모리 자체에 적용되지 않고 메모리 전용 관리자 보존 규칙도 없습니다. 개인화 작업은 Purview 감사 로그를 생성하지 않으며, 관리자가 저장할 정보 유형을 제한할 수도 없습니다. 따라서 파일럿 전에 사용자 안내, 민감정보 입력 금지, 그룹 범위 비활성화, eDiscovery·삭제 절차와 퇴사자 처리를 별도 운영 기준으로 정하세요.
+
+출처: [Microsoft 공식 발표 — The End of Starting Over](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/copilot/manage/copilot-personalization-memory).
 
 ## 11월 17일 Ignite·릴리스 업데이트 {/* #ignite-home-cowork-office-november-17 */}
 

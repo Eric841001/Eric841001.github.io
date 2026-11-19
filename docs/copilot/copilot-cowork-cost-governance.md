@@ -129,6 +129,17 @@ Copilot Studio 에이전트의 통제는 한 포털에서 끝나지 않습니다
 
 출처: [What’s new in Copilot Cowork at Ignite 2026](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/whats-new-in-copilot-cowork-at-ignite-2026/4572242), [Copilot Home](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/home-your-starting-place-for-work-in-the-microsoft-copilot-app/4573945).
 
+### Work IQ 메모리·개인화 운영 점검 {/* #work-iq-memory-personalization */}
+
+11월 18일 Microsoft는 메모리 인용을 GA로, Microsoft 365 앱 간 메모리·이메일 문체·Work IQ MCP의 메모리 읽기를 GA 순차 배포로 발표했습니다. 다만 현재 Learn 관리 문서는 개인화·메모리 전체를 Preview로 표시합니다. 발표 상태만으로 모든 사용자에게 기능이 있다고 가정하지 말고 대상 사용자의 Copilot Chat과 연결 앱에서 실제 제공 상태를 확인하세요.
+
+- **사용자 확인:** 메모리가 응답에 영향을 준 경우 `Sources > Personalization`에서 사용자 지정 지침, 저장된 메모리, 대화에서 학습한 메모리와 과거 채팅을 확인할 수 있습니다. 사용자는 `Settings > Personalization`에서 항목을 검토·수정·삭제합니다.
+- **관리 범위:** `Enhanced personalization`은 기본 켜짐이며 테넌트 전체 또는 Microsoft Entra 그룹 범위로 끌 수 있습니다. 기본 메모리는 Microsoft Copilot 라이선스가 없는 Copilot Chat 사용자에게도 제공될 수 있으므로 유료 라이선스 그룹만 점검해서는 안 됩니다.
+- **에이전트·앱 연결:** Work IQ MCP를 사용하는 권한 있는 에이전트와 앱은 사용자 지정 지침, 저장된 메모리와 Copilot Chat 기록에서 파생된 메모리를 읽을 수 있습니다. 연결 주체, 사용자 권한, 목적, 출력 노출 범위를 에이전트별로 기록합니다.
+- **보존·감사 한계:** 메모리는 Exchange 사서함 숨김 폴더에 저장되지만 Purview 보존 정책·레이블이 메모리 자체에 적용되지 않고 메모리 전용 관리자 보존 규칙도 없습니다. 개인화 작업은 Purview 감사 로그를 만들지 않으며 관리자가 저장할 정보 유형을 제한할 수도 없습니다. 파일럿 전에 민감정보 입력 지침, eDiscovery·삭제와 퇴사자 처리 절차를 정하세요.
+
+출처: [Work IQ 메모리 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/copilot/manage/copilot-personalization-memory).
+
 ### 로컬 Microsoft Edge 사용 점검 {/* #local-edge-browser-use */}
 
 11월 4일 릴리스 노트는 Cowork가 사용자 기기의 Microsoft Edge를 사용해 웹 기반 작업 단계를 수행하는 기능을 Current Channel 변경으로 안내했습니다. Cowork는 별도 Edge 탭에서 진행되며, 사용자는 대화에서 진행 상황을 보고 입력·승인하거나 직접 제어권을 가져올 수 있습니다.
