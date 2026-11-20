@@ -1,12 +1,13 @@
 // Shared by home highlights and document update notices.
 export const updateGuide = '/knowledge/copilot/official-update-catchup-2026-10';
-export const verifiedOn = '2026-11-19';
+export const verifiedOn = '2026-11-20';
 export const modelUpdate = {
   title: 'GPT-6.2 Astra·Sol · Frontier',
   date: '2026-11-18',
   path: `${updateGuide}#ignite-home-cowork-office-november-17`,
 };
 export const updateHighlights = [
+  {category: 'Copilot Studio', title: '모델 변경 전 회귀 평가 Preview', description: 'Copilot Agent Kit의 두 테스트 엔진, 비운영 복사본·게시 동작과 실행당 약 150 Copilot Credits 조건을 정리했습니다.', date: '2026-11-20', status: 'Preview · 운영 전 비용·게시 영향 확인', path: `${updateGuide}#copilot-agent-kit-model-assessment`},
   {category: 'Microsoft Copilot', title: 'Work IQ 메모리·개인화 확대', description: '메모리 인용 GA와 앱·이메일·MCP의 GA 순차 배포를 현재 Preview 관리 문서와 구분하고 보존·감사 제한을 정리했습니다.', date: '2026-11-19', status: '기능별 GA·순차 배포 · 관리 문서 Preview', path: `${updateGuide}#work-iq-memory-personalization`},
   {category: 'Microsoft Copilot', title: 'Home·Office·Cowork의 Ignite 제공 상태', description: 'Home·Office·Projects·Automations와 Cowork 앱 GA를 Today·Workspaces·Autopilot·Auto의 Frontier 범위와 구분했습니다.', date: '2026-11-18', status: '기능별 GA·Frontier · 순차 배포 확인', path: `${updateGuide}#ignite-home-cowork-office-november-17`},
   {category: 'Microsoft Defender XDR', title: '지원 대상 보안 데이터의 보존 기간 확대', description: 'ISOC 자격을 갖춘 Defender Suite·E5·E7 고객의 최대 90일 보존과 대상 데이터·적용 조건을 추가했습니다.', date: '2026-11-18', status: '11월 15일부터 적용 · 데이터별 조건 확인', path: '/knowledge/security/defender-xdr#hunting-starter-pack'},

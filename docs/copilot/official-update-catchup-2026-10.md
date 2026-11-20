@@ -7,11 +7,12 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 19일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 20일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
 - [11월 18일 Work IQ 메모리 확대](#work-iq-memory-personalization) · 메모리 인용 GA와 앱·이메일·MCP 순차 배포, 현재 관리 문서의 Preview·보존 제한 구분
+- [11월 17일 모델 변경 평가](#copilot-agent-kit-model-assessment) · Copilot Agent Kit Preview의 테스트 엔진·게시 동작·크레딧 조건
 - [11월 17일 Ignite·릴리스 업데이트](#ignite-home-cowork-office-november-17) · Home·Office·Projects·Automations GA와 Frontier 기능, 관리자 변경 구분
 - [11월 16일 Work IQ 사람·조직 맥락](#work-iq-people-org-context) · GA 분석 기능과 Frontier 조직 맥락, 데이터·역할 조건 구분
 - [11월 12일 Ignite 플러그인 안내](#plugin-catalog-ignite-2026) · 공개 카탈로그와 테넌트 설치·관리 조건 구분
@@ -49,6 +50,22 @@ Microsoft는 Work IQ 메모리가 Copilot의 사용자 선호를 여러 경험�
 메모리 데이터는 사용자의 Exchange 사서함 숨김 폴더에 저장되지만, 현재 문서상 Purview 보존 정책·레이블은 메모리 자체에 적용되지 않고 메모리 전용 관리자 보존 규칙도 없습니다. 개인화 작업은 Purview 감사 로그를 생성하지 않으며, 관리자가 저장할 정보 유형을 제한할 수도 없습니다. 따라서 파일럿 전에 사용자 안내, 민감정보 입력 금지, 그룹 범위 비활성화, eDiscovery·삭제 절차와 퇴사자 처리를 별도 운영 기준으로 정하세요.
 
 출처: [Microsoft 공식 발표 — The End of Starting Over](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169), [Copilot 개인화·메모리 관리](https://learn.microsoft.com/en-us/copilot/manage/copilot-personalization-memory).
+
+## 11월 17일 Copilot Agent Kit 모델 변경 평가 {/* #copilot-agent-kit-model-assessment */}
+
+Copilot Studio 가이던스 허브에 **Model Assessment Preview**가 추가됐습니다. Copilot Agent Kit에서 현재 모델의 기준선을 저장하고 모델 변경 뒤 같은 테스트를 다시 실행해 개선, 회귀와 지속 실패를 비교하는 운영 기능입니다. 모델의 GA 발표나 자동 승인 기능은 아닙니다.
+
+| 항목 | 적용 조건과 주의점 |
+|---|---|
+| Copilot Studio evaluations | 활성 테스트 세트 이름에 `MODELCHECK`가 있어야 합니다. Microsoft Copilot harness와 Standard harness에서 각 harness가 지원하는 평가 방식을 사용하며, 에이전트를 게시할 필요는 없습니다. |
+| Copilot Agent Kit tests | Standard harness만 지원합니다. Pipeline Enabled Agent Configuration과 Kit 테스트 세트가 필요하며, 평가는 게시된 에이전트를 대상으로 실행됩니다. |
+| 비교와 판정 | 같은 테스트 엔진의 완료 실행만 비교할 수 있고 최대 3개 실행을 나란히 볼 수 있습니다. AI 권고와 신뢰도는 승인 근거의 일부일 뿐이며, 개별 실패·지연·안전·지역 처리 조건을 별도로 검토해야 합니다. |
+| 구성 변경 위험 | 비운영 복사본에서 평가하세요. Model Assessment에서 모델을 선택하면 에이전트 구성이 바뀌고 Kit 테스트는 에이전트를 게시합니다. |
+| 비용 | 공식 문서는 실행당 약 150 Copilot Credits를 안내합니다. Kit 테스트의 크레딧은 화면에 보고되지 않으며 AI 요약·권고도 별도 용량을 사용할 수 있으므로 표시값만으로 총비용을 판단하지 않습니다. |
+
+모델 교체 전 승인 기준을 먼저 정하고 현재 모델의 기준선을 보존하세요. 같은 지침·도구·지식·테스트 데이터로 후보 모델을 비교하고, 답변 품질뿐 아니라 도구 선택, 확인 절차, 다중 턴, 공격적 입력, 지연과 소비량을 검증합니다. 평가 결과의 보존 기간과 롤백용 이전 솔루션 버전도 운영 절차에 포함하세요.
+
+출처: [Assess model changes with Copilot Agent Kit (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-model-assessment), [Run and validate an AI model migration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/manage-agent-model-migration), [Copilot Studio guidance hub — November 2026](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026). 세 문서는 2026년 11월 17일 기준으로 대조했습니다.
 
 ## 11월 17일 Ignite·릴리스 업데이트 {/* #ignite-home-cowork-office-november-17 */}
 

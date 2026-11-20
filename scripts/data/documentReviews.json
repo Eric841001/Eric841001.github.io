@@ -580,9 +580,9 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-20",
     "kind": "기술·운영 가이드",
-    "scope": "11월 9일 추가 대조: 11월 7일 Microsoft 평가 발표의 호출 수·캐시 효율·비용 가중 토큰·평가 통과율 수치와 도구 실패 후 작업 지속 비율. 지속 비율을 성공률로 표현한 문장을 수정했습니다. 추가 대조: 선불 부족 진단, 환경·정책 우선순위, 제작 단계 소비, 에이전트 한도와 지연, 보고서 범위.",
+    "scope": "이번 대조: 11월 17일 Copilot Agent Kit Model Assessment Preview의 테스트 엔진별 harness·게시 조건, 구성 변경, 비교 범위와 실행당 예상 크레딧을 모델 마이그레이션 절차와 함께 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -644,10 +644,20 @@
         "title": "Studio resource policies",
         "url": "https://learn.microsoft.com/en-us/copilot/implement/usage-based-billing-manage-copilot-studio-costs",
         "checkedFor": "리소스 정책의 PPAC 설정 우선순위, 적용 최대 12분, AI Builder 제외와 정책 삭제 시 기존 설정 복귀를 대조했습니다."
+      },
+      {
+        "title": "Copilot Agent Kit model assessment",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-model-assessment",
+        "checkedFor": "Preview 표기, MODELCHECK·pipeline 조건, harness별 테스트 엔진, 비운영 복사본, 모델 변경·게시 동작, 동일 엔진 비교와 실행당 약 150 Copilot Credits를 확인했습니다."
+      },
+      {
+        "title": "Copilot Studio model migration",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/manage-agent-model-migration",
+        "checkedFor": "사전 승인 기준, 동일 구성 비교, 지연·소비량 별도 측정, 비운영 평가, 이전 솔루션 재배포 방식의 롤백과 사후 모니터링 절차를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "이번 날짜에는 11월 7일 공식 발표의 요약 수치와 해당 문장을 대조했습니다. 첨부 논문의 전체 실험 설계·원시 데이터, 문서의 다른 기술 문장과 실제 테넌트 성능은 재검증하지 않았습니다. 고객 테넌트 오류 원인이나 해결 여부는 확인하지 않았습니다."
+    "notChecked": "실제 테넌트에서 Agent Kit 설치·역할·연결 참조, 모델 변경·게시, 평가 실행과 실제 크레딧 차감은 시험하지 않았습니다. 문서의 다른 기술 문장과 고객 테넌트 성능을 재검증한 기록은 아닙니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
@@ -937,9 +947,9 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-20",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 11월 18일 Work IQ 메모리 발표의 기능별 GA·순차 배포 상태를 현재 개인화·메모리 관리 문서의 Preview 표기, 라이선스·관리·보존·감사 조건과 구분했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
+    "scope": "이번 대조: 11월 17일 Copilot Agent Kit Model Assessment Preview의 테스트 엔진별 harness·게시 조건, 구성 변경, 비교 범위와 실행당 예상 크레딧을 모델 마이그레이션 절차와 함께 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1016,10 +1026,20 @@
         "title": "Copilot Studio changes",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
         "checkedFor": "10월 고객 응대용 Harness 출시는 현재 변경 목록에서도 Preview로 표시됩니다. 개요 제목의 preview 표기 삭제만으로 GA를 추정하지 않았습니다."
+      },
+      {
+        "title": "Copilot Agent Kit model assessment",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-model-assessment",
+        "checkedFor": "Preview 표기, MODELCHECK·pipeline 조건, harness별 테스트 엔진, 비운영 복사본, 모델 변경·게시 동작, 동일 엔진 비교와 실행당 약 150 Copilot Credits를 확인했습니다."
+      },
+      {
+        "title": "Copilot Studio model migration",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/manage-agent-model-migration",
+        "checkedFor": "사전 승인 기준, 동일 구성 비교, 지연·소비량 별도 측정, 비운영 평가, 이전 솔루션 재배포 방식의 롤백과 사후 모니터링 절차를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트의 사용자별 메모리 인용·앱·이메일·Work IQ MCP 배포, 데이터 검색·삭제, 감사와 퇴사자 처리 결과는 시험하지 않았습니다. 이 기록은 전체 기술 문장의 개별 근거 대조 완료를 뜻하지 않습니다."
+    "notChecked": "실제 테넌트에서 Agent Kit 설치·역할·연결 참조, 모델 변경·게시, 평가 실행과 실제 크레딧 차감은 시험하지 않았습니다. 이 기록은 전체 기술 문장의 개별 근거 대조 완료를 뜻하지 않습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",

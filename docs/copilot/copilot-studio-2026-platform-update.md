@@ -162,6 +162,21 @@ Microsoft's November 7 evaluation adds quantitative context. On the same tasks a
 
 Source: [Design reliable agentic loops](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agentic-loops-in-practice), updated November 6, 2026; [Copilot Studio guidance hub update](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/whats-new#november-2026); [Microsoft Copilot harness evaluation paper announcement](https://techcommunity.microsoft.com/blog/copilot-studio-blog/paper-how-utilizing-the-microsoft-copilot-harness-in-copilot-studio-enabled-comp/4571157), November 7, 2026.
 
+## Model Change Assessment — November 2026 Preview {/* #model-change-assessment */}
+
+Copilot Agent Kit's **Model Assessment** is a preview workflow for comparing an agent before and after a model change. It records a baseline, reruns the same tests, identifies regressions and persistent failures, and can compare up to three completed runs from the same test engine. Treat its AI recommendation and confidence as supporting evidence, not the release decision.
+
+| Test engine | Scope and requirement |
+|---|---|
+| Copilot Studio evaluations | Supported for Microsoft Copilot and Standard harness agents using the evaluation methods available to each harness. The active test-set name must contain `MODELCHECK`; publication isn't required. |
+| Copilot Agent Kit tests | Standard harness only. Requires a pipeline-enabled Agent Configuration and a Kit test set, and runs against the published agent. |
+
+Use a nonproduction copy. Selecting a model in Model Assessment changes the agent configuration, and Kit tests also publish the agent. Microsoft estimates about **150 Copilot Credits per assessment run**; Kit tests don't report credits in Model Assessment, and AI summaries and recommendations can consume capacity even when a total isn't displayed.
+
+Before comparing models, define pass rates, blocking failures, latency and reliability tolerance, safety and regional-processing approval, cost limits and accountable signoff. Keep instructions, tools, knowledge, identities and test data equivalent. Measure latency and consumption separately, preserve exported evidence, and retain the previously validated solution version because rollback is a redeployment rather than a configuration toggle.
+
+Source: [Assess model changes with Copilot Agent Kit (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-model-assessment), updated November 17, 2026; [Run and validate an AI model migration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/manage-agent-model-migration), updated November 17, 2026.
+
 ## Platform Migration Checkpoints
 
 <div aria-label="Copilot Studio migration checkpoints" className="kc-maturity-ladder">
