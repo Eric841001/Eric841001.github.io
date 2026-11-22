@@ -2849,15 +2849,15 @@
   },
   "/knowledge/migration/google-workspace": {
     "file": "docs/migration/google-workspace.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "Exchange와 Drive 이전 도구를 구분하고 원본·대상과 제외 항목을 대조했습니다. 메일 사용 가능 사용자 준비, GCC High·DoD 미지원, 연락처·일정 제한 및 파일별 권한·버전 설정을 보강했습니다.",
+    "scope": "Exchange와 Drive 이전 도구를 구분하고 원본·대상과 제외 항목을 대조했습니다. 메일 사용 가능 사용자 준비, GCC High·DoD 미지원, 연락처·일정 제한 및 파일별 권한·버전 설정을 보강했습니다. Exchange 배치 이전에서 회의실 예약·공유 일정·규칙의 처리 범위를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "Google Workspace mailbox migration",
         "url": "https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration",
-        "checkedFor": "메일·일정·연락처, 사용자 사전 준비, GCC High·DoD 제외, 회의실·공유 일정·색상·자동 회신·연락처 제한과 규칙 비활성 이전을 확인했습니다."
+        "checkedFor": "회의실 예약과 공유 캘린더는 제외됩니다. 이전된 규칙은 기본적으로 꺼져 있습니다. 자동 회신과 일정 색상, 연락처당 이메일 주소 제한도 확인했습니다."
       },
       {
         "title": "Migration Manager Google Workspace",

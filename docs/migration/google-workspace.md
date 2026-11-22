@@ -88,7 +88,15 @@ Google Workspace의 메일·일정·연락처와 Drive 자료를 Microsoft 365�
 
 Use Exchange Online's documented Google Workspace mailbox migration for mail, calendar and contacts. For Google Drive files, use **Migration Manager for Google Workspace**, not SharePoint Migration Tool (SPMT): SPMT supports on-premises SharePoint and file shares as sources. Review Google Drive identity mapping and permission settings separately; mapping a user alone does not enable file-level permission migration. See [Migration Manager's current workflow](https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview).
 
-The Exchange migration path excludes room bookings and shared calendars; migrated rules remain disabled until users review and enable them. Identify these exceptions before the pilot. See [Google Workspace mailbox migration limitations](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration#migration-limitations).
+### 이전한 일정과 회의실 예약 확인
+
+Exchange의 Google Workspace 배치 이전은 개인 일정과 회의실 예약을 별개로 처리합니다. 회의실 예약과 공유 캘린더는 이전 대상에서 빠집니다. [Microsoft의 이전 항목과 제한](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration#migration-limitations)
+
+1. 시험 이전 전에 회의실을 예약한 일정 하나와 반복 일정 하나를 고릅니다. 주최자, 회의실, 날짜와 시간을 기록합니다.
+2. 이전 후 주최자의 Outlook 일정과 대상 회의실 캘린더를 각각 엽니다. 참석자 추적 화면에 수락으로 표시돼도 회의실 캘린더에서 같은 시간에 예약을 찾을 수 있는지 확인합니다. 반복 일정은 다음 회차도 확인합니다.
+3. 예약이 빠졌다면 기존 예약과 겹치는지 확인한 뒤 주최자가 대상 회의실로 요청을 보냅니다. 회의실 캘린더에 예약이 생기면 점검을 마칩니다.
+
+메일 규칙은 이전 후 기본적으로 꺼져 있습니다. 사용자가 Outlook에서 규칙의 조건과 이동 대상 폴더를 확인한 뒤 필요한 규칙만 켜세요.
 
 메일 이전 전에 대상 사용자를 <strong>메일 사용 가능 사용자(mail-enabled user)</strong>로 준비하고, 배치마다 이전할 사용자 목록을 지정해야 합니다. 이 Exchange 이전 경로는 GCC High·DoD에서 제공되지 않습니다. 일정 색상과 부재중·자동 회신 설정은 이전되지 않으며, 연락처당 이메일 주소는 최대 3개까지만 이전됩니다. [메일 이전의 준비 사항과 제한](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration)을 시험 목록에 반영하세요.
 
