@@ -489,6 +489,16 @@ Recommended knowledge sources:
 | Fabric | Analytical and enterprise data |
 | External Systems | CRM, ERP, ITSM, HR systems |
 
+### SharePoint 문서가 제작자에게만 검색될 때
+
+교육용 에이전트에 SharePoint 사이트를 연결했다면, 게시한 채널에서 교육생 계정으로도 같은 문서를 찾아보세요. 에이전트를 공유해도 SharePoint 권한이 추가되지는 않습니다.
+
+1. 교육생이 원본 사이트나 목록을 직접 열 수 있는지 확인합니다. SharePoint를 지식 원본으로 쓰려면 해당 사용자에게 읽기 권한이 있어야 합니다.
+2. 수업용 문서에만 있는 내용을 질문하고, 답변이 인용한 원본을 열어 봅니다. 읽기 권한이 없는 다른 시험 계정으로도 같은 질문을 해 보고, 그 문서의 내용이 답변이나 인용에 나타나는지 확인합니다.
+3. 등록한 문서에 링크만 걸어 둔 자료는 에이전트가 따라가서 읽지 않습니다. 답변에 필요한 자료라면 대상 문서도 지식 원본에 등록한 뒤 다시 시험하세요.
+
+[Microsoft의 SharePoint 지식 원본 설정과 제한](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint)
+
 ---
 
 

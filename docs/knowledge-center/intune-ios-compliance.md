@@ -44,7 +44,16 @@ The following is a pilot design example, not a universal Microsoft security base
 | Require the device to be at or under the Device Threat Level | Only with a configured mobile threat defense service; choose Secured/Low/Medium/High after testing signal delivery and remediation |
 | Require the device to be at or under the machine risk score | Separate Microsoft Defender for Endpoint risk evaluation; requires the Defender–Intune integration and applicable entitlement |
 
-The settings reference lists **iOS 17.0 and later** for jailbreak detection, Device Threat Level, OS version/build limits and several password settings. This setting-level minimum does not establish support for the current Company Portal or Defender app; check their current requirements separately.
+### 어떤 OS 버전을 기준으로 점검할까
+
+- **사용자 계정과 연결해 등록한 기기** — Intune의 기기 관리 지원 기준은 iOS/iPadOS 18 이상입니다. 일부 준수 설정 설명에 나오는 17.0은 해당 설정의 버전 기준입니다.
+- **사용자 계정과 연결하지 않은 공용 기기** — ADE 또는 Apple Configurator로 등록한 경우 18 이상은 지원 버전, 16·17은 등록이 허용되는 버전입니다. 허용 버전에서는 기능이 예상대로 동작한다는 보장이 없습니다.
+
+회사 포털이나 Defender를 사용한다면 기기의 등록 방식과 함께 해당 앱의 설치 요건도 확인하세요. [Intune의 등록 방식별 OS 지원표](https://learn.microsoft.com/en-us/intune/fundamentals/ref-supported-platforms)
+
+### 준수 기기에서 업무 파일을 다른 앱으로 열 수 없을 때
+
+Intune에 기기가 준수 상태로 표시돼도 앱 보호 정책이 파일 전송을 제한할 수 있습니다. 업무 계정으로 원본 앱에서 같은 파일을 열고, 정책으로 관리하는 앱과 개인 앱에 각각 공유해 보세요. 결과가 다르면 원본 앱에 적용된 **Send org data to other apps**와 대상 앱의 관리 상태를 확인하세요. 공유 메뉴에 앱 이름이 보이더라도 그 앱이 암호화된 파일을 읽을 수 있는지는 별도로 확인해야 합니다. [iOS 앱 간 데이터 전송 설정](https://learn.microsoft.com/en-us/intune/app-management/protection/ref-settings-ios)
 
 ### Threat integration prerequisites
 

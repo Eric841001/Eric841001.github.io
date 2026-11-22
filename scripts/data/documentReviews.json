@@ -726,9 +726,9 @@
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-23",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 지식 원본과 인증의 지원표, 별도 Fabric·외부 시스템 연결, 데모 사이트의 시험 용도를 구분했습니다.",
+    "scope": "이번 개별 대조·수정: 지식 원본과 인증의 지원표, 별도 Fabric·외부 시스템 연결, 데모 사이트의 시험 용도를 구분했습니다. SharePoint 지식 원본의 사용자 읽기 권한과 문서 안 링크의 검색 범위를 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -785,6 +785,11 @@
         "title": "Publish channels",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels",
         "checkedFor": "데모는 시험용이며 실제 채널별 게시와 인증·관리 제한을 확인해야 함을 대조했습니다."
+      },
+      {
+        "title": "Add SharePoint as a knowledge source",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
+        "checkedFor": "SharePoint 지식 원본의 사용자 읽기 권한과 문서 안 링크의 검색 범위를 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -1757,15 +1762,15 @@
   },
   "/knowledge/knowledge-center/intune-certificate-deployment": {
     "file": "docs/knowledge-center/intune-certificate-deployment.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-23",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 신뢰 인증서의 루트·중간 CA 전용 제한, DER 공개 인증서 형식, 플랫폼별 프로필과 SCEP·PKCS 배포 대상, Windows 지원 저장소",
+    "scope": "이번 대조 범위: 신뢰 인증서의 루트·중간 CA 전용 제한, DER 공개 인증서 형식, 플랫폼별 프로필과 SCEP·PKCS 배포 대상, Windows 지원 저장소 SCEP 직접 참조와 PKCS의 CA 서버 참조, 신뢰 체인 배포 및 Windows 대상 저장소를 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
         "title": "cert-profile",
         "url": "https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles",
-        "checkedFor": "DER 공개 .cer를 사용하며 개인키 .pfx는 사용하지 않는다. Windows Root·Intermediate 기기 저장소 및 User Intermediate를 지원한다. SCEP·PKCS 대상과 신뢰 체인 배포 대상을 맞춘다. 루트·중간 CA 전용이며 플랫폼별 프로필을 생성한다. 클라이언트 인증서 발급 기능과 구분한다."
+        "checkedFor": "DER 공개 .cer를 사용하며 개인키 .pfx는 사용하지 않는다. Windows Root·Intermediate 기기 저장소 및 User Intermediate를 지원한다. SCEP·PKCS 대상과 신뢰 체인 배포 대상을 맞춘다. 루트·중간 CA 전용이며 플랫폼별 프로필을 생성한다. 클라이언트 인증서 발급 기능과 구분한다. SCEP 직접 참조와 PKCS의 CA 서버 참조, 신뢰 체인 배포 및 Windows 대상 저장소를 구분했습니다."
       },
       {
         "title": "cert-provider",
@@ -1778,9 +1783,9 @@
   },
   "/knowledge/knowledge-center/intune-ios-compliance": {
     "file": "docs/knowledge-center/intune-ios-compliance.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-23",
     "kind": "기술·운영 가이드",
-    "scope": "이번에 대조한 항목: 탈옥·위협 수준·OS 버전·일부 암호 설정의 iOS 17.0 최소 조건과 개별 앱 지원 조건의 구분.",
+    "scope": "이번에 대조한 항목: 탈옥·위협 수준·OS 버전·일부 암호 설정의 iOS 17.0 최소 조건과 개별 앱 지원 조건의 구분. 사용자 연결 유무별 iOS/iPadOS 지원 버전과 허용 버전을 대조했습니다. 관리 앱 간 전송과 Open-in을 통한 암호화된 파일의 읽기 제한을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1797,6 +1802,16 @@
         "title": "mde-intune",
         "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
         "checkedFor": "서비스 연결·기기 온보딩·위험 수준 규정 준수 정책·별도 조건부 액세스를 구성한다."
+      },
+      {
+        "title": "Supported platforms",
+        "url": "https://learn.microsoft.com/en-us/intune/fundamentals/ref-supported-platforms",
+        "checkedFor": "사용자 연결 유무별 iOS/iPadOS 지원 버전과 허용 버전을 대조했습니다."
+      },
+      {
+        "title": "iOS app protection settings",
+        "url": "https://learn.microsoft.com/en-us/intune/app-management/protection/ref-settings-ios",
+        "checkedFor": "관리 앱 간 전송과 Open-in을 통한 암호화된 파일의 읽기 제한을 확인했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",

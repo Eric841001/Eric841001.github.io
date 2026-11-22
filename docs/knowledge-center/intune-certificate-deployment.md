@@ -39,7 +39,7 @@ Trusted Root CA certificates must be deployed before PKCS, SCEP, or imported cer
 
 This guide explains the deployment process using Intune Trusted Certificate Profiles.
 
-A trusted certificate profile supports root and intermediate CA certificates only. It does not issue a client authentication certificate; use the appropriate SCEP, PKCS, or imported certificate profile for that purpose. Create a separate trusted certificate profile for each platform and assign it to the same groups as the certificate profiles that depend on it. See [Microsoft's trusted certificate profile requirements](https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles).
+A trusted certificate profile supports root and intermediate CA certificates only. SCEP and PKCS profiles request a certificate for the user or device. An imported PKCS profile distributes an existing certificate. The trusted certificate profile distributes the CA public certificate used to establish trust. Create a separate trusted certificate profile for each platform and assign it to the same groups as the certificate profiles that depend on it. See [Microsoft's trusted certificate profile requirements](https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles).
 
 ---
 
@@ -47,7 +47,13 @@ A trusted certificate profile supports root and intermediate CA certificates onl
 
 Intune의 신뢰 인증서 프로필은 Wi-Fi, VPN과 업무 앱에서 인증서를 신뢰하도록 루트·중간 인증서를 배포하는 데 사용합니다.
 
-인증서 파일 형식, 배포 대상과 저장소를 확인하고 실제 기기에서 인증서 체인과 연결 동작을 점검하세요.
+먼저 발급 기관의 공개 인증서를 DER 형식의 `.cer` 파일로 내보내세요. 개인 키가 든 `.pfx` 파일은 이 프로필에 올리지 않습니다.
+
+- **SCEP** — SCEP 프로필에서 신뢰 인증서 프로필을 직접 선택합니다.
+- **PKCS** — PKCS 프로필에는 발급 기관 서버를 지정합니다. 신뢰 인증서 프로필은 같은 대상 그룹에 따로 할당합니다.
+- **가져온 PKCS 인증서** — 이미 발급된 인증서를 배포합니다. 기기가 발급 기관을 신뢰하는지 확인하고 신뢰 인증서 프로필도 같은 그룹에 할당합니다.
+
+[Microsoft의 프로필별 신뢰 관계 설명](https://learn.microsoft.com/en-us/intune/device-configuration/certificates/trusted-root-profiles)
 
 ---
 
@@ -160,6 +166,8 @@ Read-only PowerShell checks:
 ```powershell
 Get-ChildItem Cert:\LocalMachine\Root | Select-Object Subject, Thumbprint, NotAfter
 Get-ChildItem Cert:\LocalMachine\CA | Select-Object Subject, Thumbprint, NotAfter
+# Run as the target user when the profile uses User Intermediate.
+Get-ChildItem Cert:\CurrentUser\CA | Select-Object Subject, Thumbprint, NotAfter
 ```
 
 Compare the expected thumbprint, chain and expiration, then test the dependent Wi-Fi/VPN/application scenario. Merely finding a certificate in the current user's store does not prove a Computer Root deployment succeeded.
