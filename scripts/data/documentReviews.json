@@ -2527,9 +2527,9 @@
   },
   "/knowledge/microsoft365/onedrive": {
     "file": "docs/microsoft365/onedrive.md",
-    "checkedOn": "2026-10-31",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 민감도 레이블·DLP·보존·감사 통제는 대상 작업별 구성과 시험이 필요함을 명시했습니다.",
+    "scope": "이번 개별 대조·수정: 민감도 레이블·DLP·보존·감사 통제는 대상 작업별 구성과 시험이 필요함을 명시했습니다. Windows용 OneDrive의 조직 허용 목록, 차단 목록 우선순위, 개인 계정 동기화 제한과 기존 로컬 파일 보존을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2556,6 +2556,11 @@
         "title": "미라이선스 계정 일정표의 275일 eDiscovery 제공 중단",
         "url": "https://learn.microsoft.com/en-us/sharepoint/unlicensed-onedrive-accounts",
         "checkedFor": "미라이선스 계정 일정표의 275일 eDiscovery 제공 중단과 365일 삭제 위험 구분를 최신 공식 문서와 대조했습니다."
+      },
+      {
+        "title": "Use OneDrive policies to control sync settings",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/use-group-policy",
+        "checkedFor": "Windows용 OneDrive의 조직 허용 목록, 차단 목록 우선순위, 개인 계정 동기화 제한과 기존 로컬 파일 보존을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

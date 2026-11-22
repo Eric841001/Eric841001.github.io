@@ -85,6 +85,15 @@ OneDrive의 동기화, 외부 공유, 데이터 보존과 퇴사자 파일 처�
 5. Pilot with representative user groups.
 6. Monitor sync health and support issues.
 
+### Windows에서 회사 계정만 동기화하려면
+
+회사에서 허용한 테넌트의 계정만 연결하고 개인용 OneDrive 동기화도 막으려면 두 정책을 각각 설정합니다. 둘 다 Windows용 OneDrive 동기화 앱에 적용됩니다.
+
+- **다른 조직의 회사·학교 계정** — 컴퓨터 정책 `AllowTenantList`에 허용할 테넌트 ID를 입력합니다. 목록에 없는 조직의 계정은 새로 연결할 수 없고, 이미 연결된 계정도 동기화가 멈춥니다. Microsoft는 조직 차단 목록(`BlockTenantList`)과 함께 사용하지 않도록 안내합니다.
+- **개인 Microsoft 계정** — 사용자 정책 `DisablePersonalSync`를 켭니다. 기존 개인 계정의 동기화는 멈추지만 PC에 이미 내려받은 파일은 그대로 남습니다.
+
+배포 전 시험용 PC에서 허용된 회사 계정의 변경 사항이 동기화되는지 확인하세요. 그다음 다른 조직의 계정과 개인 계정을 각각 추가해 차단되는지 확인합니다. 파일이 PC에 남아 있다는 사실만으로 동기화가 계속된다고 판단하지 않도록 앱의 계정 상태도 함께 확인하세요. [Microsoft의 OneDrive 동기화 정책](https://learn.microsoft.com/en-us/sharepoint/use-group-policy)
+
 ## Security
 
 - Restrict sync to managed devices if required.
