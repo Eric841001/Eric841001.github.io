@@ -78,6 +78,16 @@ Microsoft의 6월 16일 발표에 따르면 Copilot Cowork는 일반 공급(GA)�
 
 플러그인을 켜기 전에 제공자, 요청하는 자료와 권한, 실행할 작업을 확인하세요. 파일 변경이나 외부 시스템 작업에는 승인 절차를 정하고, 프롬프트·응답·생성 파일에 적용되는 Microsoft 365와 Purview 보호 기능을 확인합니다. 6월 발표에서는 DLP를 출시 예정으로 안내했지만, 현재 Purview 지원표에는 Cowork의 지원 기능으로 표시되어 있습니다. 적용할 정책과 자료 유형을 확인하고 실제 차단 동작을 시험하세요. 플러그인의 제공 여부는 해당 제공자의 현재 안내를 따릅니다. 관련 공식 발표는 아래 References에서 확인할 수 있습니다.
 
+### GPT-6.2 Sol·Astra 모델 점검 {/* #gpt-6-2-sol-astra */}
+
+11월 20일 Microsoft는 GPT-6.2 Sol과 GPT-6.2 Astra의 전 세계 순차 배포를 발표했습니다. **Sol은 eligible users의 Copilot Cowork와 Copilot Studio를 포함한 대상 앱에 배포되며, Astra는 Cowork·Studio에는 eligible users, Chat·Excel·PowerPoint·Word에는 Frontier 사용자로 제공됩니다.** 조직·지역별 실제 표시 시점은 다를 수 있습니다.
+
+- Cowork와 Studio의 모델 선택 화면, 조직 자격, 라이선스와 Copilot Credits 조건을 각각 확인합니다. Frontier 사용 결과를 일반 공급이나 전사 배포 완료로 간주하지 않습니다.
+- Work IQ는 기존 사용자 권한 안의 업무 문맥을 제공하지만 모델 결과의 정확성이나 작업 승인을 대신하지 않습니다. 같은 대표 과제로 품질, 근거, 도구 선택, 확인 절차, 지연과 소비량을 기존 모델과 비교합니다.
+- OpenAI 운영 모델에는 Microsoft 365 관리 센터의 OpenAI 하위처리자 설정이 적용되고, Copilot Studio·Power Platform에는 추가 외부 LLM 설정이 있습니다. 정부·소버린 클라우드 제한과 국가 내 처리 약정 제외 조건을 법무·보안 검토에 포함합니다. Microsoft 운영 Azure OpenAI 모델은 이 설정의 영향을 받지 않습니다.
+
+출처: [Microsoft GPT-6.2 Copilot 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229), [OpenAI 하위처리자 관리와 지역 조건](https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor).
+
 ### Claude Fable 5.2 모델 점검 {/* #claude-fable-5-2 */}
 
 11월 11일 Microsoft는 Claude Fable 5.2를 Copilot Cowork와 Copilot Studio의 eligible users에게 순차 배포한다고 발표했습니다. 전면 GA나 모든 지역 제공으로 해석하지 말고 모델 선택 화면, 조직 자격과 관리자 설정을 함께 확인하세요.

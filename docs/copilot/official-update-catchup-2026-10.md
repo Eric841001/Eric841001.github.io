@@ -7,10 +7,11 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 
 # Copilot 기능·배포 변경 — 2026년 10~11월
 
-2026년 10월부터 11월 20일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
+2026년 10월부터 11월 22일까지 확인한 공식 발표와 시행 예정 변경을 정리했습니다. 모든 테넌트에서 즉시 사용할 수 있다는 의미는 아닙니다. 대상 앱·플랫폼, 라이선스, 지역, 단계적 배포 여부는 연결된 원문과 실제 테넌트에서 확인하세요.
 
 ## 주요 변경 사항 {/* #이번-확인의-핵심-변경 */}
 
+- [11월 20일 GPT-6.2 Sol·Astra 배포](#gpt-6-2-sol-astra) · 앱별 eligible users와 Frontier 범위, OpenAI 하위처리자·지역 조건 구분
 - [11월 18일 Work IQ 메모리 확대](#work-iq-memory-personalization) · 메모리 인용 GA와 앱·이메일·MCP 순차 배포, 현재 관리 문서의 Preview·보존 제한 구분
 - [11월 17일 모델 변경 평가](#copilot-agent-kit-model-assessment) · Copilot Agent Kit Preview의 테스트 엔진·게시 동작·크레딧 조건
 - [11월 17일 Ignite·릴리스 업데이트](#ignite-home-cowork-office-november-17) · Home·Office·Projects·Automations GA와 Frontier 기능, 관리자 변경 구분
@@ -33,6 +34,21 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
 - [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
+
+## 11월 20일 GPT-6.2 Sol·Astra 배포 {/* #gpt-6-2-sol-astra */}
+
+Microsoft는 GPT-6.2 Sol과 GPT-6.2 Astra를 Microsoft Copilot에 전 세계 순차 배포한다고 발표했습니다. 발표는 두 모델을 모두 모든 앱의 GA로 분류하지 않으며, **모델·앱별 eligible users와 Frontier 범위가 다릅니다**.
+
+| 모델 | 발표된 대상 | 적용 전 확인 |
+|---|---|---|
+| GPT-6.2 Sol | eligible users의 Copilot Chat, Copilot Cowork, Copilot Studio, Excel, PowerPoint, Word | 조직·지역별 순차 배포이므로 대상 사용자의 모델 선택 화면을 확인합니다. 일반 채팅과 장기 실행·에이전트 작업의 라이선스·Copilot Credits 조건은 각각의 제품 안내를 따릅니다. |
+| GPT-6.2 Astra | eligible users의 Copilot Cowork·Copilot Studio. Copilot Chat·Excel·PowerPoint·Word는 Frontier 사용자 | Frontier 등록을 전사 GA로 해석하지 않습니다. 앱별 표시, 조직 자격과 관리자 설정을 대표 사용자로 검증합니다. |
+
+두 모델은 Work IQ를 통해 사용자가 이미 접근할 수 있는 파일·회의·채팅·업무 데이터에 근거를 둘 수 있지만, 이 설명이 새 권한을 부여하거나 결과 정확성을 보장하는 것은 아닙니다. OpenAI가 운영하는 모델이 사용되는 경우 Microsoft 365 관리 센터의 OpenAI 하위처리자 설정이 적용되며, Copilot Studio·Power Platform에는 추가 외부 LLM 설정이 있습니다. OpenAI 운영 모델은 현재 정부·소버린 클라우드에서 사용할 수 없고, 해당되는 경우 국가 내 처리 약정에서 제외됩니다. Microsoft 운영 Azure OpenAI 모델은 이 하위처리자 설정의 영향을 받지 않으므로 실제 선택 모델의 운영 주체와 데이터 조건을 확인하세요.
+
+새 모델은 대표 업무의 품질, 근거, 도구 호출, 확인 절차, 지연과 비용을 기존 모델과 같은 평가 세트로 비교한 뒤 확대합니다. OpenAI의 벤치마크·API 가격은 모델 특성 참고 자료이며 Microsoft Copilot의 라이선스나 Copilot Credits 요율로 대체해 사용하지 않습니다.
+
+출처: [Microsoft 공식 발표 — GPT-6.2 Sol and GPT-6.2 Astra in Microsoft Copilot](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229), [OpenAI 하위처리자 관리와 지역 조건](https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor), [OpenAI GPT-6.2 모델 발표](https://openai.com/index/introducing-gpt-6-2-astra-sol/). 2026년 11월 22일 공식 원문을 대조했습니다.
 
 ## 11월 18일 Work IQ 메모리·개인화 확대 {/* #work-iq-memory-personalization */}
 

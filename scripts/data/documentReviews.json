@@ -534,11 +534,21 @@
   },
   "/knowledge/copilot/copilot-cowork-cost-governance": {
     "file": "docs/copilot/copilot-cowork-cost-governance.md",
-    "checkedOn": "2026-11-19",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "2026-11-19 대조: Work IQ 메모리 인용 GA와 앱·이메일·MCP의 GA 순차 배포를 현재 관리 문서의 Preview 표기, 기본 활성화, 데이터 위치와 보존·감사 한계에 대조했습니다.",
+    "scope": "2026-11-22 대조: GPT-6.2 Sol·Astra의 Cowork·Copilot Studio 대상, eligible users·Frontier 범위, OpenAI 하위처리자·지역 조건과 모델 전환 검증 기준을 확인했습니다. 기존 다른 절의 전체 재검증을 뜻하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
+      {
+        "title": "GPT-6.2 Sol and Astra in Microsoft Copilot",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
+        "checkedFor": "Sol·Astra의 Cowork·Copilot Studio 대상, 앱별 eligible users·Frontier 범위, 전 세계 순차 배포와 조직·지역 차이를 확인했습니다."
+      },
+      {
+        "title": "OpenAI as a subprocessor in Microsoft Online Services",
+        "url": "https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor",
+        "checkedFor": "관리자 역할·사용자 그룹 제어, Power Platform 추가 설정, 정부·소버린 클라우드 제한과 국가 내 처리 약정 제외를 확인했습니다."
+      },
       {
         "title": "Work IQ memory and context announcement",
         "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169",
@@ -580,11 +590,26 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-11-20",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 11월 17일 Copilot Agent Kit Model Assessment Preview의 테스트 엔진별 harness·게시 조건, 구성 변경, 비교 범위와 실행당 예상 크레딧을 모델 마이그레이션 절차와 함께 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
+    "scope": "이번 대조: GPT-6.2 Sol·Astra의 Copilot Studio eligible users 대상 순차 배포, OpenAI 하위처리자·지역 조건과 비운영 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
+      {
+        "title": "GPT-6.2 Sol and Astra in Microsoft Copilot",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
+        "checkedFor": "Copilot Studio eligible users 대상 Sol·Astra 순차 배포와 앱별 대상 차이를 확인했습니다."
+      },
+      {
+        "title": "OpenAI as a subprocessor in Microsoft Online Services",
+        "url": "https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor",
+        "checkedFor": "OpenAI 운영 모델의 관리자 제어, Power Platform 추가 설정, 데이터 처리·클라우드 제한을 확인했습니다."
+      },
+      {
+        "title": "Introducing GPT-6.2 Astra and Sol",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "checkedFor": "모델 특성과 OpenAI API 가격·벤치마크를 확인하고 Copilot Credits 조건과 분리했습니다."
+      },
       {
         "title": "copilot-models",
         "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
@@ -947,11 +972,26 @@
   },
   "/knowledge/copilot/official-update-catchup-2026-10": {
     "file": "docs/copilot/official-update-catchup-2026-10.md",
-    "checkedOn": "2026-11-20",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 11월 17일 Copilot Agent Kit Model Assessment Preview의 테스트 엔진별 harness·게시 조건, 구성 변경, 비교 범위와 실행당 예상 크레딧을 모델 마이그레이션 절차와 함께 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
+    "scope": "이번 대조: GPT-6.2 Sol·Astra의 앱별 eligible users·Frontier 범위, 전 세계 순차 배포, OpenAI 하위처리자·지역 조건과 모델 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
+      {
+        "title": "GPT-6.2 Sol and Astra in Microsoft Copilot",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
+        "checkedFor": "Sol과 Astra의 앱별 eligible users·Frontier 범위, 전 세계 순차 배포와 Work IQ 권한 설명을 확인했습니다."
+      },
+      {
+        "title": "OpenAI as a subprocessor in Microsoft Online Services",
+        "url": "https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor",
+        "checkedFor": "OpenAI 운영 모델의 관리자 제어, Power Platform 추가 설정, 지역·클라우드·데이터 처리 조건을 확인했습니다."
+      },
+      {
+        "title": "Introducing GPT-6.2 Astra and Sol",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "checkedFor": "모델 특성과 OpenAI API 가격·벤치마크를 확인하고 Microsoft Copilot 라이선스·Copilot Credits와 분리했습니다."
+      },
       {
         "title": "Work IQ memory and context announcement",
         "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/the-end-of-starting-over-how-work-iq-helps-copilot-understand-you-and-your-work/4571169",

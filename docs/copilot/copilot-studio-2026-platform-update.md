@@ -70,6 +70,16 @@ The design shift is simple but important: an agent is no longer just a conversat
 
 Copilot, Copilot Studio, M365 Agents와 Copilot Cowork는 맡길 업무에 맞춰 선택합니다. 모델의 추론 성능과 함께 자료 접근 권한, 작업 승인 절차, 비용과 결과 평가 기준을 확인하세요.
 
+## GPT-6.2 Sol·Astra 배포 점검 {/* #gpt-6-2-sol-astra */}
+
+Microsoft는 11월 20일부터 GPT-6.2 Sol과 GPT-6.2 Astra를 전 세계에 순차 배포한다고 발표했습니다. Copilot Studio에서는 두 모델 모두 eligible users 대상이지만, 모든 조직·지역의 즉시 GA를 뜻하지 않습니다. 제작자와 실행 사용자의 모델 선택 화면, 조직 자격, 라이선스와 Copilot Credits 조건을 확인하세요.
+
+- Microsoft 365 관리 센터에서 OpenAI 운영 모델의 하위처리자 접근 사용자·그룹을 확인합니다. Copilot Studio·Power Platform의 외부 LLM 설정도 별도로 적용됩니다.
+- OpenAI 운영 모델은 현재 정부·소버린 클라우드에서 사용할 수 없고, 해당되는 경우 국가 내 처리 약정에서 제외됩니다. Microsoft 운영 Azure OpenAI 모델은 하위처리자 설정과 별개이므로 실제 모델의 운영 주체와 데이터 조건을 구분합니다.
+- 프로덕션 에이전트를 바로 전환하지 말고 비운영 복사본에서 같은 지침·도구·지식·테스트 세트로 품질, 근거, 도구 호출, 확인 절차, 지연, 실패 복구와 소비량을 비교합니다. OpenAI의 API 가격·벤치마크를 Copilot Studio의 크레딧 요율이나 보장 성능으로 사용하지 않습니다.
+
+출처: [Microsoft GPT-6.2 Copilot 공식 발표](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229), [OpenAI 하위처리자 관리와 지역 조건](https://learn.microsoft.com/en-us/copilot/implement/openai-subprocessor), [OpenAI GPT-6.2 모델 발표](https://openai.com/index/introducing-gpt-6-2-astra-sol/).
+
 ## 2026 Capability Map
 
 The map combines released features and previews. Agent readiness remains preview; the current Work IQ guide identifies Work IQ as GA, while Business apps remains preview. Review each linked feature’s harness, permissions and availability before implementation. [Work IQ configuration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq) takes precedence over older monthly preview labels.
