@@ -96,7 +96,11 @@ Standard 그룹은 **하루 두 번** 갱신됩니다. 즉시 접근을 허용�
 
 ## 긴급 접근 계정과 PIM 적용 범위
 
-일반 관리자 계정은 필요한 시간에만 권한을 활성화하도록 설계합니다. 긴급 접근 계정은 예외입니다. 클라우드 전용 계정을 두 개 이상 준비하고, Global Administrator 역할을 **영구 활성** 상태로 유지합니다. 로그인을 막거나 제한하는 조건부 액세스 정책에서는 제외하되, FIDO2 패스키나 인증서 기반 인증으로 필수 MFA 요건을 충족해야 합니다. 보고 전용 정책은 로그인을 차단하지 않으므로 제외할 필요가 없습니다. 계정 사용 시 알림이 발생하는지 확인하고 최소 90일마다 복구 접근을 시험하세요. [긴급 접근 계정 공식 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)
+- **계정 준비** — 클라우드 전용 긴급 접근 계정을 두 개 이상 만드세요. 각 계정에는 Global Administrator 역할을 영구 활성 상태로 할당합니다.
+- **로그인 정책** — FIDO2 패스키나 인증서 기반 인증을 등록해 필수 MFA 요건을 충족하세요. 로그인을 차단하거나 제한하는 조건부 액세스 정책에서 긴급 계정을 제외합니다. 보고 전용 정책에는 제외 설정이 필요 없습니다.
+- **90일 점검** — 점검 간격이 90일을 넘지 않도록 하세요. 담당자가 각 계정으로 로그인해 관리 작업을 수행하고, 보안 담당자는 사용 알림이 도착했는지 확인합니다. IT 담당자나 Entra 구독이 바뀌었을 때도 점검하세요.
+
+[Microsoft의 긴급 접근 계정 운영 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)
 
 ### 앱 역할의 PIM 미리 보기
 

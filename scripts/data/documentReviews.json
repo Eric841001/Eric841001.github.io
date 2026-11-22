@@ -313,7 +313,7 @@
       {
         "title": "Emergency access accounts",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
-        "checkedFor": "긴급 계정의 영구 활성 Global Administrator, 피싱 방지 인증, 차단·제한 정책 제외와 보고 전용 예외 불필요, 최소 90일 검증을 확인했습니다."
+        "checkedFor": "긴급 계정 수와 영구 활성 역할, 피싱 방지 인증 및 정책 제외 범위, 90일 이내 로그인·관리 작업·알림 시험과 담당자·구독 변경 시 점검 조건을 확인했습니다."
       },
       {
         "title": "PIM overview",
@@ -3760,7 +3760,7 @@
       {
         "title": "Emergency access accounts",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
-        "checkedFor": "긴급 계정의 영구 활성 Global Administrator, 피싱 방지 인증, 차단·제한 정책 제외와 보고 전용 예외 불필요, 최소 90일 검증을 확인했습니다."
+        "checkedFor": "긴급 계정 수와 영구 활성 역할, 피싱 방지 인증 및 정책 제외 범위, 90일 이내 로그인·관리 작업·알림 시험과 담당자·구독 변경 시 점검 조건을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
