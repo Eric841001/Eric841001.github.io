@@ -129,9 +129,9 @@ The map combines released features and previews. Agent readiness remains preview
 
 Work IQ가 추가된 새 에이전트는 기본적으로 사용 가능한 모든 워크로드를 선택하며 쓰기 작업도 활성화됩니다. 필요한 워크로드만 남기고 실제 계정 권한을 확인하세요. 이 선택은 서비스 단위이며 개별 사이트·사서함을 지정하는 접근 제한이 아닙니다. 별도로 추가한 도구도 따로 점검해야 합니다. [Work IQ 설정과 기본 동작](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-work-iq)을 참고하세요.
 
-## Customer Conversation Harness — October 2026 Preview
+## Customer Conversation Harness — November 2026 GA {/* #customer-conversation-harness--october-2026-preview */}
 
-10월 21일 발표된 고객 응대용 **public preview**입니다. 음성·채팅, 전문 에이전트 처리와 상담원 연결을 지원하며, 모든 기능이 GA인 것은 아닙니다. [현재 제공 상태, 비용과 파일럿 검증](./customer-conversation-harness.md)을 확인하세요.
+10월 21일 공개 미리 보기로 발표된 고객 응대용 Harness는 [11월 18일 공식 발표](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/)에서 **일반 공급(GA)**으로 안내됐습니다. 음성·채팅과 상담원 연결을 지원하지만, 채널별 인증·라이선스 조건은 따로 확인해야 합니다. [현재 제공 상태, 비용과 파일럿 검증](./customer-conversation-harness.md)을 확인하세요.
 
 ## GitHub Copilot Harness — August 2026 GA
 

@@ -82,9 +82,13 @@ DLP should be designed as a business control, not only a security rule. The stro
 
 Microsoft는 2026년 10월 Endpoint DLP의 FTP·SFTP 전송 보호를 일반 공급으로 안내했습니다. Purview에 온보딩한 Windows 기기에서 `Devices` 위치의 정책에 `FTP and SFTP transfers` 활동을 추가합니다. 소수 사용자를 `Audit only`로 먼저 운영하고 Activity explorer의 전송 기록을 확인한 뒤 차단 여부를 정하세요. [설정 절차와 권한](https://learn.microsoft.com/en-us/purview/endpoint-dlp-ftp-sftp-short)을 확인합니다.
 
-네트워크 DLP와 Endpoint DLP는 적용 경로가 다릅니다. Entra Global Secure Access 연동에는 Microsoft 365 E7 또는 Purview E5 상당의 사용권과 Entra Internet Access 상당의 사용권 조합이 필요합니다. 다른 SASE·보안 브라우저 연동에는 Purview E5 상당의 사용권과 Purview 종량제 설정이 필요하며, B2B 게스트는 네트워크 보호 정책 대상에서 제외됩니다. [연동별 라이선스와 제한](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)을 확인하고 실제 전송 경로를 시험하세요.
+네트워크 DLP와 Endpoint DLP는 적용 경로가 다릅니다. Entra Global Secure Access 연동은 **Microsoft 365 E7** 또는 **Purview E5 상당의 사용권 + Entra Internet Access 상당의 사용권** 중 하나의 조합이 필요합니다. 다른 SASE·보안 브라우저 연동에는 Purview E5 상당의 사용권과 Purview 종량제 설정이 필요하며, B2B 게스트는 네트워크 보호 정책 대상에서 제외됩니다. [연동별 라이선스와 제한](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)을 확인하고 실제 전송 경로를 시험하세요.
 
 Entra Global Secure Access 연동에는 Purview 종량제 설정이 필요하지 않습니다. 네트워크의 인라인 검사는 텍스트 최대 4MB, 파일 최대 3MB까지 지원합니다. 같은 앱이라도 전송 내용이 인코딩되거나 접속 주소가 동적으로 바뀌면 정책 적용에 공백이 생길 수 있으므로, 실제 사용하는 앱과 전송 방식으로 시험하세요. [네트워크 검사 한도](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)를 참고하세요.
+
+인라인 웹 트래픽의 **암호화된 파일은 본문을 추출해 검사하지 못합니다**. 민감도 레이블·파일 크기·확장자 같은 메타데이터 조건과, 민감한 정보 유형·학습 가능한 분류자처럼 본문 검사가 필요한 조건을 구분하세요. 사용자 지정 정책 팁도 지원하지 않습니다. [인라인 웹 트래픽의 레이블 조건과 제한](https://learn.microsoft.com/en-us/purview/dlp-sensitivity-label-as-condition)을 참고하세요.
+
+네트워크 보호의 관리되지 않는 클라우드 앱 기능에서 Microsoft Copilot은 **소비자용 버전**이 대상입니다. 기업용 Copilot 보호까지 같은 정책으로 처리된다고 가정하지 마세요. 초기 연동과 정책 배포에는 최대 24시간, 연동 완료 후 요청 기록이 감사 로그·Activity explorer에 나타나기까지는 최대 30분이 걸릴 수 있습니다. 차단 시험 직후 기록이 없다는 이유만으로 보호 실패로 판단하지 말고 [지원 범위와 기록 지연](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn)을 함께 확인하세요.
 
 ## 외부 조직과의 Teams 대화
 

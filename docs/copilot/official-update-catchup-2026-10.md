@@ -32,7 +32,7 @@ description: Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이�
 - [10월 Power Platform Admin 플러그인](#power-platform-admin-cowork) · Preview
 - [10월 23일 에이전트 도입·운영 지침](#agent-operating-framework) · 도입·거버넌스 지침
 - [10월 22일 Insights Agent V2](#insights-agent-v2) · Frontier preview
-- [10월 21일 고객 대화형 harness](#customer-conversation-harness) · Public preview
+- [고객 대화형 Harness](#customer-conversation-harness) · 10월 Preview → 11월 18일 GA
 - [10월 21일 Cowork 플러그인](#cowork-role-skills) · 기능별 순차 배포
 
 ## 11월 20일 GPT-6.2 Sol·Astra 배포 {/* #gpt-6-2-sol-astra */}
@@ -304,9 +304,9 @@ Microsoft는 **2026년 11월부터** Frontier에 새 Outlook for Windows, OneDri
 
 출처: [Microsoft 공식 발표 — Frontier expands to more Microsoft 365 public previews](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/frontier-expands-to-more-microsoft-365-public-previews/4567243). 발표일은 10월 26일이며 확대 적용 시작 시점은 11월입니다. 개별 기능이 즉시 모든 등록 사용자에게 표시된다는 의미는 아닙니다.
 
-## 10월 21일 고객 대화형 Harness 공개 미리 보기 {/* #customer-conversation-harness */}
+## 고객 대화형 Harness — 11월 18일 정식 출시 {/* #customer-conversation-harness */}
 
-음성·채팅, 전문 에이전트 처리와 상담원 연결을 지원하는 **public preview**입니다. 10월 발표 당시 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관은 향후 계획이었습니다. 현재 배포 조건은 상세 가이드에서 확인하세요. 웹 채팅과 Teams Phone은 별도 설정이 필요하며, Speech에서는 사용자 자격 증명이 필요한 지식 원본을 사용할 수 없습니다. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
+음성·채팅과 상담원 연결을 위한 Customer Conversation Harness는 [11월 18일 발표](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/)에서 **GA**로 안내됐습니다. 10월 발표 당시 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관은 향후 계획이었습니다. 현재 배포 조건은 상세 가이드에서 확인하세요. 웹 채팅과 Teams Phone은 별도 설정이 필요하며, Speech에서는 사용자 자격 증명이 필요한 지식 원본을 사용할 수 없습니다. Copilot Credits 비용과 Agent 365 관리 범위도 파일럿에서 확인합니다.
 
 [공식 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954) · [상세 설계·파일럿 가이드](./customer-conversation-harness.md)
 

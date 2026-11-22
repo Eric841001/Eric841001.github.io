@@ -1,13 +1,13 @@
 ---
 id: entra-api-driven-ad-provisioning
 title: Entra ID에서 온프레미스 AD로 API 기반 사용자 프로비저닝
-description: "Forest A에서 Entra ID 테넌트를 거쳐 Forest B로 사용자를 프로비저닝하기 위한 Microsoft Entra API-driven inbound provisioning, SCIM Bulk API 및 Provisioning Agent 구성 가이드"
+description: "Forest A에서 Entra ID 테넌트를 거쳐 Forest B로 사용자를 프로비저닝하기 위한 Microsoft Entra API-driven inbound provisioning, Graph bulkUpload의 SCIM 데이터 형식 및 Provisioning Agent 구성 가이드"
 sidebar_label: Entra → AD API 프로비저닝
 ---
 
 # Entra ID에서 온프레미스 AD로 API 기반 사용자 프로비저닝
 
-Forest A에서 Microsoft Entra ID로 동기화된 계정을 별도의 Forest B로 프로비저닝하는 방안을 정리합니다. Entra ID가 프로비저닝 허브 역할을 하며, 대상 Forest B에는 Microsoft Entra Provisioning Agent를 설치하고 SCIM 2.0 Bulk API로 사용자 데이터를 전달합니다.
+Forest A에서 Microsoft Entra ID로 동기화된 계정을 별도의 Forest B로 프로비저닝하는 방안을 정리합니다. Entra ID가 프로비저닝 허브 역할을 하며, 대상 Forest B에는 Microsoft Entra Provisioning Agent를 설치하고 SCIM 스키마로 구성한 사용자 데이터를 Microsoft Graph의 `/bulkUpload` API에 전달합니다.
 
 > Microsoft 관리 화면에서는 이 기능을 **API-driven inbound provisioning to on-premises Active Directory**라고 부릅니다. 여기서 `inbound`는 API가 데이터를 Entra 프로비저닝 서비스로 수신한다는 관점입니다. 실제 계정 생성 방향은 **Entra 프로비저닝 서비스 → 대상 온프레미스 AD**입니다.
 
@@ -79,7 +79,7 @@ Entra ID > Enterprise apps > New application
 
 [Microsoft의 앱 구성 절차](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-configure-app#configure-api-driven-inbound-provisioning-to-on-premises-ad)에서 관리자 역할, 알림 이메일과 시작 조건을 확인할 수 있습니다.
 
-**Restart provisioning은 재시도 버튼이 아닙니다.** 실행하면 아직 처리하지 않은 요청 데이터가 삭제됩니다. 재시작 전에 대기 요청을 다시 전송할 수 있는지 확인하세요. 이 API 기반 앱에서는 **Provision on demand**를 지원하지 않으므로 API 전송 결과와 프로비저닝 로그로 처리 상태를 확인합니다.
+**Restart provisioning은 재시도 버튼이 아닙니다.** 앱 구성 가이드는 처리 대기 요청을 지운다고 설명합니다. [공식 FAQ](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-faqs#how-does-restart-provisioning-work)는 실행 중인 주기는 중단하지 않고, 작업이 실행 중이 아닐 때 재시작하면 이전에 올린 데이터를 삭제한다고 구분합니다. 진행 중인 처리를 즉시 취소하거나 실패 요청만 다시 실행하는 기능으로 사용하지 마세요. 재시작 전에 작업 상태와 요청 재전송 가능 여부를 확인하세요. 이 API 기반 앱에서는 **Provision on demand**를 지원하지 않으므로 API 전송 결과와 프로비저닝 로그로 처리 상태를 확인합니다.
 
 ### Cloud Sync 사용자 프로비저닝과의 차이
 
@@ -116,6 +116,8 @@ Enterprise Application의 프로비저닝 개요에서 API 엔드포인트를 �
 ```text
 https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
 ```
+
+**이 엔드포인트는 표준 SCIM 서버가 아닙니다.** SCIM 스키마를 요청 본문에 사용하지만 HTTP `POST`만 받으며 `GET`·`PUT`·`PATCH`는 지원하지 않습니다. 사용자 수정도 `POST`로 보내고, 프로비저닝 서비스가 매핑과 일치 규칙에 따라 생성·수정·활성화·비활성화를 결정합니다. [API 동작과 표준 SCIM의 차이](https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-faqs#is-the-inbound-provisioning-bulkupload-api-a-standard-scim-endpoint)를 참고하세요.
 
 요청 헤더는 OAuth 2.0 Client Credentials로 받은 Microsoft Graph 액세스 토큰과 SCIM 콘텐츠 형식을 사용합니다.
 
@@ -178,7 +180,7 @@ SCIM Bulk 요청의 각 작업은 `/Users` 경로로 전송합니다. 표준 Ent
 
 ## 6. PowerShell 호출 구조
 
-아래 코드는 핵심 호출 흐름을 보여주는 축약 예시입니다. 비밀 값은 환경변수 또는 비밀 저장소에서 가져오는 방식으로 구현합니다.
+아래 코드는 핵심 호출 흐름을 보여주는 축약 예시입니다. `$scimPayload`에는 앞 절의 SCIM 구조를 PowerShell 객체로 준비하고, 비밀 값은 환경변수 또는 비밀 저장소에서 가져옵니다. 한글 이름과 부서명이 전송 중 바뀌지 않도록 요청의 `charset=utf-8`을 명시합니다. [Invoke-RestMethod의 ContentType과 인코딩](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-5.1#-contenttype)을 참고하세요.
 
 ```powershell
 $tenantId = '<Tenant ID>'
@@ -203,13 +205,13 @@ $token = Invoke-RestMethod `
 
 $headers = @{
     Authorization = "Bearer $($token.access_token)"
-    'Content-Type' = 'application/scim+json'
 }
 
 Invoke-RestMethod `
     -Uri $endpoint `
     -Method Post `
     -Headers $headers `
+    -ContentType 'application/scim+json; charset=utf-8' `
     -Body ($scimPayload | ConvertTo-Json -Depth 10)
 ```
 

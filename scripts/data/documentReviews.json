@@ -592,7 +592,7 @@
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
     "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: GPT-6.2 Sol·Astra의 Copilot Studio eligible users 대상 순차 배포, OpenAI 하위처리자·지역 조건과 비운영 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
+    "scope": "이번 대조: GPT-6.2 Sol·Astra의 Copilot Studio eligible users 대상 순차 배포, OpenAI 하위처리자·지역 조건과 비운영 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다. 이번 대조: 11월 18일 Microsoft 공식 발표의 Customer Conversation Harness 일반 공급 안내와 10월 Preview 기록을 구분했습니다. 기존 채널별 제약은 유지하며 GA를 모든 개별 기능의 제공으로 확대하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -621,9 +621,9 @@
         "checkedFor": "Work IQ는 GitHub Copilot harness의 GA 기능이다. 기본 전체 워크로드 선택과 쓰기 활성화, 개별 리소스 선택 불가, 사용량 과금을 확인했다."
       },
       {
-        "title": "studio-new",
+        "title": "사용자 정의 분석 지표와 MCP 연결",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
-        "checkedFor": "A2A, computer use, agent IDs, skills, memory, agent inventory의 발표 시점과 미리 보기 구분을 확인했다."
+        "checkedFor": "11월 4일 개정 사용자 정의 지표의 분류·수치 기준과 MCP 마법사 메뉴"
       },
       {
         "title": "customer-harness",
@@ -644,11 +644,6 @@
         "title": "리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
         "checkedFor": "리소스 지출 정책 전환, 최대 12분 적용 지연, 환경·앱·워크플로 범위, AI Builder 제외, 정책 우선순위·복원·역할 분리를 최신 공식 문서와 대조했습니다."
-      },
-      {
-        "title": "사용자 정의 분석 지표와 MCP 연결",
-        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
-        "checkedFor": "11월 4일 개정 사용자 정의 지표의 분류·수치 기준과 MCP 마법사 메뉴"
       },
       {
         "title": "Microsoft Copilot harness 정량 평가 논문 소개",
@@ -679,10 +674,20 @@
         "title": "Copilot Studio model migration",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/manage-agent-model-migration",
         "checkedFor": "사전 승인 기준, 동일 구성 비교, 지연·소비량 별도 측정, 비운영 평가, 이전 솔루션 재배포 방식의 롤백과 사후 모니터링 절차를 확인했습니다."
+      },
+      {
+        "title": "Copilot Studio Ignite announcement",
+        "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+        "checkedFor": "11월 18일 제품 책임자 발표는 Customer Conversation Harness를 now generally available로 명시합니다. 10월 변경 목록의 Preview는 과거 출시 기록으로 구분했습니다."
+      },
+      {
+        "title": "studio-new",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+        "checkedFor": "A2A, computer use, agent IDs, skills, memory, agent inventory의 발표 시점과 미리 보기 구분을 확인했다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트에서 Agent Kit 설치·역할·연결 참조, 모델 변경·게시, 평가 실행과 실제 크레딧 차감은 시험하지 않았습니다. 문서의 다른 기술 문장과 고객 테넌트 성능을 재검증한 기록은 아닙니다."
+    "notChecked": "실제 테넌트에서 Agent Kit 설치·역할·연결 참조, 모델 변경·게시, 평가 실행과 실제 크레딧 차감은 시험하지 않았습니다. 문서의 다른 기술 문장과 고객 테넌트 성능을 재검증한 기록은 아닙니다. 이번 범위는 고객 응대용 Harness의 출시 상태입니다. 다른 모든 기술 문장의 오늘 기준 개별 대조나 실제 고객 테넌트에서의 채널 연결 시험을 의미하지 않습니다."
   },
   "/knowledge/copilot/copilot-studio": {
     "file": "docs/copilot/copilot-studio.md",
@@ -752,9 +757,9 @@
   },
   "/knowledge/copilot/customer-conversation-harness": {
     "file": "docs/copilot/customer-conversation-harness.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 고객 응대용 Harness의 10월 Preview 발표와 현재 변경 목록, Speech 지식 인증 제한, 제작·시험·평가 비용, 웹·Teams Phone·Dynamics 365 채널 배포 조건을 구분했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
+    "scope": "이번 대조: 11월 18일 Microsoft 공식 발표의 Customer Conversation Harness 일반 공급 안내와 10월 Preview 기록을 구분했습니다. 기존 채널별 제약은 유지하며 GA를 모든 개별 기능의 제공으로 확대하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -790,11 +795,16 @@
       {
         "title": "Copilot Studio changes",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
-        "checkedFor": "10월 고객 응대용 Harness 출시는 현재 변경 목록에서도 Preview로 표시됩니다. 개요 제목의 preview 표기 삭제만으로 GA를 추정하지 않았습니다."
+        "checkedFor": "10월 출시 기록은 Preview로 남아 있습니다. 현재 출시 상태는 11월 18일 제품 발표의 GA 안내를 따르며 과거 변경 목록을 현재 상태로 읽지 않습니다."
+      },
+      {
+        "title": "Copilot Studio Ignite announcement",
+        "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+        "checkedFor": "11월 18일 제품 책임자 발표는 Customer Conversation Harness를 now generally available로 명시합니다. 10월 변경 목록의 Preview는 과거 출시 기록으로 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "고객 테넌트의 채널 연결, 라이선스 할당, 전화번호와 실제 통화·과금 결과는 시험하지 않았습니다. 이 기록은 전체 기술 문장의 개별 근거 대조 완료를 뜻하지 않습니다."
+    "notChecked": "이번 범위는 고객 응대용 Harness의 출시 상태입니다. 다른 모든 기술 문장의 오늘 기준 개별 대조나 실제 고객 테넌트에서의 채널 연결 시험을 의미하지 않습니다."
   },
   "/knowledge/copilot/excel-copilot-skills": {
     "file": "docs/copilot/excel-copilot-skills.md",
@@ -974,7 +984,7 @@
     "file": "docs/copilot/official-update-catchup-2026-10.md",
     "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: GPT-6.2 Sol·Astra의 앱별 eligible users·Frontier 범위, 전 세계 순차 배포, OpenAI 하위처리자·지역 조건과 모델 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다.",
+    "scope": "이번 대조: GPT-6.2 Sol·Astra의 앱별 eligible users·Frontier 범위, 전 세계 순차 배포, OpenAI 하위처리자·지역 조건과 모델 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다. 이번 대조: 11월 18일 Microsoft 공식 발표의 Customer Conversation Harness 일반 공급 안내와 10월 Preview 기록을 구분했습니다. 기존 채널별 제약은 유지하며 GA를 모든 개별 기능의 제공으로 확대하지 않았습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1018,9 +1028,9 @@
         "checkedFor": "조직 데이터 수집·품질 관리·앱 배포 기능과 접근 제어 범위를 확인했습니다."
       },
       {
-        "title": "Public Plugin Catalog",
+        "title": "Copilot Plugin Catalog",
         "url": "https://www.microsoft.com/en-us/copilot/features/plugins/explore",
-        "checkedFor": "11월 18일 공개 페이지에서 플러그인 카드, 검색과 분류 화면을 확인했습니다. 테넌트 설치·실행 권한을 검증한 것은 아닙니다."
+        "checkedFor": "공개 URL의 HTTP 200 응답과 Copilot Plugin Catalog 제목을 확인했습니다. 개별 조직의 설치·사용 가능 여부를 확인한 것은 아닙니다."
       },
       {
         "title": "Microsoft 365 Copilot release notes — November 17",
@@ -1048,11 +1058,6 @@
         "checkedFor": "eligible Frontier 고객 배포와 Copilot 라이선스·사용량 기반 과금·관리·보안 자격 조건을 확인했습니다."
       },
       {
-        "title": "Copilot Plugin Catalog",
-        "url": "https://www.microsoft.com/en-us/copilot/features/plugins/explore",
-        "checkedFor": "공개 URL의 HTTP 200 응답과 Copilot Plugin Catalog 제목을 확인했습니다. 개별 조직의 설치·사용 가능 여부를 확인한 것은 아닙니다."
-      },
-      {
         "title": "Customer Conversation overview",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview-customer-conversation",
         "checkedFor": "Speech는 최종 사용자 로그인을 지원하지 않으며 사용자 자격 증명이 필요한 지식은 Chat에서만 사용합니다. 제작·시험·평가도 크레딧을 소비할 수 있습니다."
@@ -1065,7 +1070,7 @@
       {
         "title": "Copilot Studio changes",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
-        "checkedFor": "10월 고객 응대용 Harness 출시는 현재 변경 목록에서도 Preview로 표시됩니다. 개요 제목의 preview 표기 삭제만으로 GA를 추정하지 않았습니다."
+        "checkedFor": "10월 출시 기록은 Preview로 남아 있습니다. 현재 출시 상태는 11월 18일 제품 발표의 GA 안내를 따르며 과거 변경 목록을 현재 상태로 읽지 않습니다."
       },
       {
         "title": "Copilot Agent Kit model assessment",
@@ -1076,10 +1081,15 @@
         "title": "Copilot Studio model migration",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/manage-agent-model-migration",
         "checkedFor": "사전 승인 기준, 동일 구성 비교, 지연·소비량 별도 측정, 비운영 평가, 이전 솔루션 재배포 방식의 롤백과 사후 모니터링 절차를 확인했습니다."
+      },
+      {
+        "title": "Copilot Studio Ignite announcement",
+        "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/",
+        "checkedFor": "11월 18일 제품 책임자 발표는 Customer Conversation Harness를 now generally available로 명시합니다. 10월 변경 목록의 Preview는 과거 출시 기록으로 구분했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "실제 테넌트에서 Agent Kit 설치·역할·연결 참조, 모델 변경·게시, 평가 실행과 실제 크레딧 차감은 시험하지 않았습니다. 이 기록은 전체 기술 문장의 개별 근거 대조 완료를 뜻하지 않습니다."
+    "notChecked": "실제 테넌트에서 Agent Kit 설치·역할·연결 참조, 모델 변경·게시, 평가 실행과 실제 크레딧 차감은 시험하지 않았습니다. 이 기록은 전체 기술 문장의 개별 근거 대조 완료를 뜻하지 않습니다. 이번 범위는 고객 응대용 Harness의 출시 상태입니다. 다른 모든 기술 문장의 오늘 기준 개별 대조나 실제 고객 테넌트에서의 채널 연결 시험을 의미하지 않습니다."
   },
   "/knowledge/copilot/overview": {
     "file": "docs/copilot/overview.md",
@@ -1385,9 +1395,9 @@
   },
   "/knowledge/knowledge-center/entra-api-driven-ad-provisioning": {
     "file": "docs/knowledge-center/entra-api-driven-ad-provisioning.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: bulkUpload 한 요청당 50개 작업, 개요의 5초당 40회와 Graph 참조의 초당 40회 차이, 일일 호출 한도 및 프로비저닝 로그 조회 권한 표기의 차이. 상충하는 표기를 단일 확정 조건으로 처리하지 않았습니다.",
+    "scope": "2026-11-22: Graph bulkUpload와 표준 SCIM의 차이, POST 기반 처리, Restart의 실행 상태별 설명, PowerShell 요청 문자 인코딩을 대조했습니다. 호출 속도·로그 권한의 기존 공식 문서 불일치는 남아 있습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1424,10 +1434,20 @@
         "title": "Provisioning log API permissions",
         "url": "https://learn.microsoft.com/en-us/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0",
         "checkedFor": "GET 로그 API 표는 AuditLog.Read.All과 Directory.Read.All을 안내하며 프로비저닝 권한 가이드의 ProvisioningLog.Read.All과 표기가 다르다. 실제 권한 동등성은 확정하지 않았다."
+      },
+      {
+        "title": "API-driven provisioning FAQ",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/inbound-provisioning-api-faqs",
+        "checkedFor": "bulkUpload는 표준 SCIM 엔드포인트가 아니며 POST만 지원합니다. Restart는 실행 중인 주기를 중단하지 않으며 작업이 실행 중이 아니면 기존 업로드 데이터를 지운다고 설명합니다."
+      },
+      {
+        "title": "PowerShell request encoding",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-5.1",
+        "checkedFor": "ContentType의 charset을 지정하면 요청 본문을 해당 문자 인코딩으로 전송합니다. 한글 입력을 위해 예제에 UTF-8을 명시했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
-    "notChecked": "공식 문서 간 호출 속도와 로그 조회 권한 표기가 다릅니다. 실제 테넌트에서 부하·권한 테스트를 실행하지 않아 적용되는 단일 한도와 권한 조합은 확정하지 않았습니다."
+    "notChecked": "위에 명시한 문장과 조건을 대조했습니다. 전체 문서의 모든 기술 문장을 오늘 기준으로 재검증한 것은 아니며, 실제 고객 테넌트의 API 호출·정책 차단·과금 결과는 시험하지 않았습니다."
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
@@ -3968,9 +3988,9 @@
   },
   "/knowledge/security/dlp": {
     "file": "docs/security/dlp.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "2026-11-16 개별 대조: FTP·SFTP Windows 설정, 네트워크 라이선스·종량제·B2B 제외·검사 크기 제한, Teams 대화 종류 및 정책 대상별 범위, macOS 27 권한·보호 모드, Windows와 Mac의 앱 제어 차이, Exchange 필수 레이블 정책 팁, Endpoint DLP의 사용자·기기 범위와 미저장 파일 제한.",
+    "scope": "2026-11-22: 네트워크 DLP 라이선스 조합, 암호화 파일의 메타데이터·본문 검사 차이, 사용자 지정 정책 팁 미지원, 소비자용 Copilot 범위와 초기 배포·로그 지연을 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3989,11 +4009,6 @@
         "checkedFor": "Windows 온보딩·Devices위치·FTP/SFTP활동·Audit only 시험과 Activity explorer를 확인했다."
       },
       {
-        "title": "purview-network",
-        "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
-        "checkedFor": "2026-11-16: GSA는 E7 또는 Purview E5 상당+Entra Internet Access 상당 조합이며 종량제 설정 불필요. 타사 연동은 종량제 필요. B2B 제외, 인라인 텍스트 4MB·파일 3MB, 인코딩·동적 접속 주소의 적용 공백을 대조했습니다."
-      },
-      {
         "title": "dlp-teams",
         "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
         "checkedFor": "2026-11-16: 공유 채널은 발신자 소속 정책, 외부 채팅은 시작한 호스트 소속 사용자만 평가. 개별 사용자 지정은 채널에 적용되지 않으며 지원 그룹 지정이 필요합니다. 공유 파일은 SharePoint·OneDrive 정책을 확인합니다."
@@ -4009,18 +4024,23 @@
         "checkedFor": "2026-11-16: 사용자와 기기가 모두 정책 범위에 포함되어야 합니다. 로컬에 저장하지 않은 데이터는 파일 검사·분류 대상이 아니며 USB 직접 저장 제한을 확인했습니다. 제한 앱 밖의 앱 접근 제어는 Windows 지원·macOS 미지원입니다."
       },
       {
-        "title": "dlp-label-tips",
-        "url": "https://learn.microsoft.com/en-us/purview/dlp-sensitivity-label-as-condition",
-        "checkedFor": "Exchange필수레이블창은정책팁재평가를호출하지않아팁이없어도DLP조치는적용된다."
-      },
-      {
         "title": "copilot-grounding",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-overview",
         "checkedFor": "업무 자료 참조는 사용자 권한과 라이선스에 따르며 Work IQ를 끄면 Graph·Work IQ grounding이 꺼진다. 첨부 자료·열린 문서·에이전트는 별도 경로다."
+      },
+      {
+        "title": "purview-network",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+        "checkedFor": "GSA는 E7 또는 E5 상당+Internet Access 상당 조합입니다. 관리되지 않는 앱 기능에서 Copilot은 소비자용만 대상입니다. 초기 배포 최대 24시간, 연동 후 기록 최대 30분을 확인했습니다."
+      },
+      {
+        "title": "dlp-label-tips",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-sensitivity-label-as-condition",
+        "checkedFor": "인라인 웹 트래픽은 암호화 파일 본문을 추출하지 못하며 메타데이터 조건만 평가합니다. 사용자 지정 정책 팁은 미지원이며 Exchange 필수 레이블 선택 후 팁 재평가 제한도 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "위 범위의 문장을 공식 자료와 대조했습니다. 나머지 문장의 오늘 기준 재검증은 진행 중이며 실제 테넌트·기기의 정책 실행과 차단 결과는 시험하지 않았습니다."
+    "notChecked": "위에 명시한 문장과 조건을 대조했습니다. 전체 문서의 모든 기술 문장을 오늘 기준으로 재검증한 것은 아니며, 실제 고객 테넌트의 API 호출·정책 차단·과금 결과는 시험하지 않았습니다."
   },
   "/knowledge/security/information-barriers": {
     "file": "docs/security/information-barriers.md",

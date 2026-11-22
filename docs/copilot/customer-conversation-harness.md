@@ -1,8 +1,8 @@
 ---
 id: customer-conversation-harness
-title: Copilot Studio 고객 대화형 Harness — Public Preview
-sidebar_label: Customer Conversation Preview
-description: 2026년 10월 고객 대화형 harness 공개 미리 보기와 전문 에이전트 설계와 운영 중 점검·대응.
+title: Copilot Studio 고객 대화형 Harness — GA
+sidebar_label: Customer Conversation
+description: 2026년 11월 고객 응대용 Harness 정식 출시와 채널별 배포·인증·과금 조건, 전문 에이전트 설계.
 ---
 
 # 고객 대화형 Harness와 운영 설계
@@ -11,15 +11,15 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 <UpdateBrief />
 
-## 고객 응대용 Harness — Public Preview
+## 고객 응대용 Harness — 정식 출시 {/* #고객-응대용-harness--public-preview */}
 
-Microsoft는 2026년 10월 21일 고객 응대를 위한 **customer conversation harness의 public preview**를 발표했습니다. 채팅과 음성을 하나의 대화 경험으로 구성하고, 업무별 전문 에이전트·지식·도구를 활용하고 필요하면 상담원에게 대화를 넘기는 실행 방식입니다.
+Microsoft는 2026년 10월 21일 공개 미리 보기로 소개한 Customer Conversation Harness를 11월 18일 발표에서 일반 공급(GA)으로 안내했습니다. 채팅과 음성을 하나의 대화 경험으로 구성하고, 업무별 전문 에이전트·지식·도구를 활용하고 필요하면 상담원에게 대화를 넘기는 실행 방식입니다.
 
-- **발표 당시의 계획:** 10월 21일 발표는 공개 미리 보기이며, 전문 에이전트별 모델 선택과 Teams 채팅 직접 이관은 당시 향후 계획으로 설명됐습니다. 11월 18일 확인한 변경 목록도 이 출시를 Preview로 분류합니다. 개별 Learn 문서 제목에서 preview 표기가 빠졌다는 이유만으로 정식 출시로 판단하지 않습니다.
+- **출시 상태와 기능별 조건:** 10월 변경 목록의 Preview는 당시 출시 기록입니다. 현재 상태는 11월 GA 발표를 기준으로 읽으세요. 다만 Harness의 정식 출시가 모든 모델·채널·향후 기능의 제공을 뜻하지는 않습니다. 전문 에이전트별 모델 선택이나 Teams 채팅 직접 이관은 해당 기능의 현재 문서와 실제 설정에서 확인하세요.
 - **관리와 비용:** 10월 발표는 Agent 365를 통한 소유자·ID·권한과 활동 관리를 설명합니다. Copilot Credits는 고객의 사용뿐 아니라 에이전트 제작·테스트·평가 과정에서도 소비될 수 있습니다. 실제 지역·테넌트 메뉴, 연결 권한과 예산을 파일럿에서 확인하세요.
 - **도입 판단:** 고객 채널, 인증, 생성형 판단과 고정 절차의 경계, 사람 이관, 녹음·보존 및 실패 복구를 먼저 설계하세요. Microsoft Contact Center Intelligence 통합이 필요한 경우 기존 전화·라우팅 환경과 지원 조건을 별도로 검토합니다.
 
-출처: [Microsoft 공식 발표 — Customer conversation harness](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954).
+출처: [11월 18일 정식 출시 발표](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/), [10월 공개 미리 보기 발표](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954).
 
 ## 채널별 배포 조건
 
@@ -50,7 +50,7 @@ Microsoft의 9월 22일 운영 지침은 **관찰 → 평가 → 실행 → 사�
 
 ## 파일럿 검증 체크리스트
 
-- [ ] 대상 채널·언어·지역에서 미리 보기 메뉴와 연결 조건을 확인합니다.
+- [ ] 대상 채널·언어·지역의 제공 여부와 연결 조건을 확인합니다.
 - [ ] 전문 에이전트별 담당자와 자료·도구 접근 범위를 기록합니다.
 - [ ] 정해진 처리 절차와 AI가 판단할 부분을 구분하고, 상담원 연결과 실패 시 복구를 시험합니다.
 - [ ] 승인·동의·보존·감사와 크레딧 지출 기준을 검토합니다.
@@ -58,7 +58,7 @@ Microsoft의 9월 22일 운영 지침은 **관찰 → 평가 → 실행 → 사�
 
 ## 검색 키워드
 
-Copilot Studio, customer conversation harness, 고객 응대 에이전트, 음성·채팅, public preview, Agent 365, 에이전트 운영.
+Copilot Studio, customer conversation harness, 고객 응대 에이전트, 음성·채팅, GA, Agent 365, 에이전트 운영.
 
 ## Contact / Asset Request
 
