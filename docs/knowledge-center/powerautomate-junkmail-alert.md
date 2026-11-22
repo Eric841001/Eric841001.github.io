@@ -131,7 +131,7 @@ Organizations require:
 
 ## Trigger Design
 
-## Exchange Online Trigger
+### Exchange Online Trigger
 
 Use the **Office 365 Outlook** connector's **When a new email arrives (V3)** trigger, selecting the intended mailbox's **Junk Email** folder. Validate the connection account and use the appropriate shared-mailbox trigger when relevant. The [connector reference](https://learn.microsoft.com/en-us/connectors/office365/) documents permissions, limits and trigger behavior.
 
@@ -144,6 +144,14 @@ This is a notification pattern, not a guaranteed security-event pipeline. The V3
 For a shared mailbox, use **When a new email arrives in a shared mailbox (V2)** and verify the connection account's mailbox access. For user-to-user mailbox sharing, the connector requires full mailbox access; permission to send mail alone is insufficient.
 
 For a metadata-only alert, set **Include Attachments** to **No**. Downloading every attachment in the trigger can cause a timeout when many messages arrive together. If a separate approved process needs an attachment, retrieve it with **Get Attachment (V2)** after filtering the message. The connector also limits each connection to **300 API calls per 60 seconds**; mailbox-side Exchange limits apply separately. These are connector limits, not a guarantee that every message will produce an alert. See [Outlook connector limits and attachment handling](https://learn.microsoft.com/en-us/connectors/office365/#known-issues-and-limitations-with-triggers).
+
+### 시험 메일은 도착했는데 알림이 없을 때
+
+1. **먼저 실행 기록을 확인합니다.** 흐름을 저장하고 테스트를 시작한 뒤 지정한 사서함의 정크 메일 폴더로 새 시험 메일이 직접 배달되도록 합니다. 기존 메일을 다른 폴더에서 옮기는 시험은 따로 진행하세요.
+2. **실행 기록이 없으면** 흐름이 켜져 있는지, 연결 계정과 폴더가 맞는지, 시험 메일이 트리거 조건에 맞는지 확인합니다.
+3. **실행 기록이 있으면** 해당 실행을 열고 Teams나 메일 발송 단계의 상태를 확인합니다. 실패한 단계의 입력과 오류 메시지를 보고 연결이나 수신 대상을 수정한 뒤 새 시험 메일로 다시 확인하세요.
+
+알림에 첨부파일 내용이 필요 없다면 **Include Attachments**를 **No**로 둡니다. 이 설정에서도 첨부파일 이름과 ID 같은 정보는 트리거 결과에 남습니다. 알림에 표시할 필드는 따로 선택하세요. [흐름 실행 오류 확인](https://learn.microsoft.com/en-us/power-automate/troubleshoot-flow-errors) · [Outlook 커넥터의 첨부파일 처리](https://learn.microsoft.com/en-us/connectors/office365/#working-with-attachments)
 
 ## Notification Content
 

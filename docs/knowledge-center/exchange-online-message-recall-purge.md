@@ -112,7 +112,7 @@ This example connects; it does not run a search or purge. App-only authenticatio
 | Case and method | Current documented limit and boundary |
 |---|---|
 | Non-premium eDiscovery / PowerShell | Up to **10 items per mailbox/location** in a purge action; intended for incident response, not bulk mailbox cleanup |
-| Premium-enabled case / Microsoft Graph | Up to **100 items per location**; verify case creation method and supported item types in the official procedure |
+| Premium-enabled case / Microsoft Graph | Up to **100 items per location**. Premium cases configured in Graph or the Purview portal require Graph for purge |
 | Mixed methods | Do not combine PowerShell and Graph purge methods for the same process; follow the method supported by the case |
 
 [Find and delete email in eDiscovery](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data) explains the case and method restrictions. A single completed action does not prove every matching item was removed. Review counts, scope, action results, unindexed items and remaining matches. Holds, retention and Recoverable Items affect final removal; HardDelete is not a promise of immediate physical erasure.
@@ -145,11 +145,20 @@ Example structure:
 ```powershell
 New-ComplianceSearch `
   -Name "Search-Message-Removal" `
-  -ExchangeLocation All `
+  -ExchangeLocation '<target-mailbox-address>' `
   -ContentMatchQuery 'subject:"<subject>" AND from:"<sender>" AND sent:<YYYY-MM-DD>'
 ```
 
-Use the supported KeyQL property `from`, even though the condition builder labels the field Sender. Replace the date placeholder with an ISO date. `subject` matches a phrase within a subject, not only an exact full subject, so review every result before purge. See [searchable mailbox properties](https://learn.microsoft.com/en-us/purview/edisc-search-mailboxes). Adjust the query and mailbox scope to the actual incident. For the non-premium search-and-purge workflow, do not use identifier/message-ID, sensitivity-label or sensitive-information-type conditions; Microsoft warns that these conditions are unsupported for deletion and can cause unexpected data loss. Export a report and inspect every matched item before purging. A purge search can cover at most 50,000 mailboxes, including mailboxes with no matches, so replace `-ExchangeLocation All` with a bounded scope when necessary. If results were validated in the portal, rerun the search in PowerShell and reconcile its completed results before the purge. See the [current purge restrictions](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data).
+**검색식과 사서함 범위**
+
+- 보낸 사람은 `from`, 보낸 날짜는 `sent`로 지정합니다. 예제의 날짜를 실제 날짜로 바꾸세요. `subject`는 제목 전체가 정확히 같은 메일만 찾는 조건이 아닙니다. [검색 가능한 메일 속성](https://learn.microsoft.com/en-us/purview/edisc-search-mailboxes)
+- 삭제 작업에 사용할 검색은 최대 50,000개 사서함까지 포함할 수 있습니다. 일치하는 메일이 없는 사서함도 이 수에 들어갑니다. 예제의 사서함 자리를 실제 대상 주소로 바꾸세요.
+- 프리미엄 기능이 꺼진 사례에서는 메시지 ID 등 식별자, 민감도 레이블, 중요한 정보 유형을 삭제 조건으로 사용하지 마세요. Microsoft는 이러한 조건을 사용하면 의도하지 않은 메일까지 삭제될 수 있다고 안내합니다.
+
+**삭제 전 확인**
+
+1. Purview에서 검색 결과를 보고서로 내보내 각 항목의 발신자, 제목, 날짜와 사서함을 확인합니다.
+2. 포털에서 검토한 검색도 PowerShell에서 다시 실행합니다. 검색이 끝나면 건수와 대상이 보고서와 일치하는지 확인한 뒤 삭제를 승인합니다. [Microsoft의 검색·삭제 절차](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data)
 
 ---
 
