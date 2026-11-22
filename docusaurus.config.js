@@ -117,6 +117,7 @@ const diagramScriptVersion = createHash('sha256')
   ],
 
   themeConfig: {
+    colorMode: {respectPrefersColorScheme: true},
     mermaid: {
       theme: {light: 'base', dark: 'base'},
       options: {
