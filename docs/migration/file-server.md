@@ -80,6 +80,14 @@ SharePoint and OneDrive provide Microsoft 365 content collaboration. Azure Files
 
 Azure Files로 옮길 때 파일 내용과 메타데이터를 나누어 검사하세요. [Azure Files FAQ](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-faq)에 따르면 대체 데이터 스트림(ADS)은 Azure 파일 공유에 저장되지 않으며, Azure File Sync를 사용할 때 온프레미스에 남습니다. 또한 대상의 `LastAccessTime`은 읽기 작업으로 갱신되지 않고 `CreationTime`과 같습니다. ADS나 최종 접근 시각을 사용하는 업무는 파일 수만 맞는지 확인해서는 이전 성공을 판단할 수 없습니다. [Azure Files 메타데이터 지원 범위](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview#supported-metadata)를 기준으로 시험하세요.
 
+## SharePoint로 옮기기 전에 확인할 파일
+
+- **파일 크기** — SharePoint 문서 라이브러리의 업로드 한도는 파일 하나당 250GB입니다. 먼저 한도를 넘는 파일을 찾아 별도 보관할지 결정하세요.
+- **대상 경로** — 대상 폴더 경로와 파일 이름을 합쳐 400자 이내인지 확인하세요. Microsoft의 서비스 설명은 URL을 디코딩한 경로를 기준으로 합니다. 브라우저 주소창에서 복사한 URL 전체 길이로 판정하면 결과가 달라질 수 있습니다.
+- **사용자 PC** — 가장 깊은 폴더의 파일을 시험 이관한 뒤, 실제 사용자 PC에서 동기화하고 열기와 이름 변경을 시험하세요. 로컬 동기화 폴더 이름까지 더해지므로 웹에서 열린 파일도 탐색기에서는 경로가 너무 길 수 있습니다.
+
+[SharePoint 파일 크기·경로 제한](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) · [플랫폼별 경로 제한과 문제 해결](https://support.microsoft.com/en-us/onedrive/what-are-file-path-length-limits)
+
 ## Implementation
 
 1. Inventory shares, size, file types and owners.

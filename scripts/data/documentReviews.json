@@ -2737,11 +2737,13 @@
   },
   "/knowledge/migration/file-server": {
     "file": "docs/migration/file-server.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: SPMT의 원본·대상 범위, Azure Files의 ADS 미지원과 File Sync의 온프레미스 보존, LastAccessTime의 읽기 미갱신 조건. ADS 설명의 근거 링크를 FAQ로 바로 연결했습니다.",
+    "scope": "이번 대조는 SharePoint 문서 라이브러리의 파일당 업로드 한도와 경로 길이, 로컬 동기화 경로에 적용되는 제한입니다. 이전 검토 범위: 이번 대조: SPMT의 원본·대상 범위, Azure Files의 ADS 미지원과 File Sync의 온프레미스 보존, LastAccessTime의 읽기 미갱신 조건. ADS 설명의 근거 링크를 FAQ로 바로 연결했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
+      {"title": "SharePoint service limits", "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits", "checkedFor": "문서 라이브러리의 파일당 250GB 업로드 한도와 디코딩한 폴더 경로·파일명 합계 400자 조건을 확인했습니다."},
+      {"title": "Platform path length limits", "url": "https://support.microsoft.com/en-us/onedrive/what-are-file-path-length-limits", "checkedFor": "클라우드 경로와 로컬 동기화 루트를 포함한 경로가 다르며 탐색기의 이름 변경에도 별도 제한이 있다는 사례를 확인했습니다."},
       {
         "title": "Azure Files migration",
         "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview",
