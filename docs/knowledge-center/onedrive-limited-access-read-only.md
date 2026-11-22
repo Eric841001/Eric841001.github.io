@@ -73,18 +73,13 @@ Get-SPOSite -Identity 'https://<tenant>-my.sharepoint.com/personal/<user>' |
 
 ### LimitedAccessFileType 비교
 
-| 기능 | `OfficeOnlineFilesOnly` | `WebPreviewableFiles` | `OtherFiles` |
-|---|:---:|:---:|:---:|
-| Office 파일 웹 미리보기 | ✅ | ✅ | ✅ |
-| PDF·이미지 미리보기 | ❌ | 조건부 지원¹ | 조건부 지원¹ |
-| ZIP·EXE 등 비미리보기 파일 접근 | ❌ | ❌ | ✅ |
-| Office 파일 다운로드 | ❌ | ❌ | ❌ |
-| PDF·이미지 다운로드 | ❌ | ❌ | ❌ |
-| ZIP·EXE 다운로드 | ❌ | ❌ | ✅ |
-| Office 데스크톱 앱 접근 | ❌ | ❌ | ❌ |
-| 상대적 보안 수준 | 높음 | 중간 | 낮음 |
+먼저 업무에 필요한 파일 형식을 확인한 뒤 다음 세 모드 중 하나를 선택하세요.
 
-`OtherFiles`는 미리보기가 불가능한 파일의 다운로드를 허용하므로 웹 전용 Read Only 목표에는 적합하지 않습니다. `WebPreviewableFiles`에서도 일부 PDF·이미지는 표시 과정에서 다운로드가 필요해 접근 거부가 발생할 수 있습니다. ¹ PDF·이미지 미리보기는 다운로드가 필요한 파일에서 실패할 수 있습니다. 위 표는 모드별 기본 동작이며 실제 파일로 시험해야 합니다.
+- **Office 파일만 열람** — `OfficeOnlineFilesOnly`를 선택합니다. Office 파일은 브라우저에서 미리 볼 수 있고, PDF·이미지·ZIP은 이 모드의 미리보기 대상에서 빠집니다.
+- **PDF·이미지도 열람** — 기본값은 `WebPreviewableFiles`입니다. 브라우저가 표시하기 위해 파일을 먼저 내려받아야 하는 PDF나 이미지는 접근이 거부될 수 있습니다. 실제 업무 파일로 시험하세요.
+- **미리 볼 수 없는 파일도 다운로드** — `OtherFiles`에서는 ZIP 같은 파일을 내려받을 수 있습니다. 다운로드를 막아야 하는 사이트에서는 앞의 두 모드 중에서 선택하세요.
+
+파일 형식을 선택한 뒤 Office 문서를 편집할 수 있는지도 별도로 확인하세요. 브라우저 편집은 `AllowEditing`이 결정합니다. [Microsoft의 파일 형식별 제한](https://learn.microsoft.com/en-us/sharepoint/control-access-from-unmanaged-devices#what-are-the-advanced-configurations-for-limiting-access)
 
 ## 조건부 액세스 정책
 
@@ -106,12 +101,16 @@ Microsoft Entra 관리 센터에서 다음과 같이 파일럿 정책을 만듭�
 - Office 데스크톱 앱에서 같은 파일을 열 때 액세스가 거부되는지 확인합니다.
 - PDF, 이미지, ZIP 등 파일 형식별 동작이 선택한 `LimitedAccessFileType`과 일치하는지 확인합니다.
 
+### 같은 PC에서 브라우저마다 결과가 다를 때
+
+같은 사용자로 같은 파일을 열고, 두 브라우저의 로그인 기록에서 기기 ID와 준수 상태, 적용된 조건부 액세스 정책을 비교하세요. Windows의 Edge에서는 브라우저 프로필에도 회사 계정으로 로그인해야 기기 ID가 전달됩니다. 비공개 창이거나 쿠키를 차단한 브라우저에서는 기기 확인에 실패합니다. 관리 기기와 비관리 기기를 비교할 때는 먼저 일반 창에서 시험하세요. [브라우저별 기기 인증 조건](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-conditions#supported-browsers)
+
 ## 운영 시 주의사항
 
 - 위 예시는 특정 사이트에만 적용합니다. 조직 전체 변경이 필요한 경우에만 `Set-SPOTenant`를 검토하세요. 사이트 정책은 테넌트 정책보다 느슨하게 설정할 수 없습니다.
 - 익명 `Anyone` 링크는 이 조건부 액세스 제한의 대상이 아닙니다. 해당 사이트에서 익명 링크를 차단하고 기존 공유 링크도 점검하세요.
 - 서비스에서 app-only로 실행되는 앱도 예외가 있으므로 앱 권한과 데이터 접근을 따로 확인합니다.
-- 조건부 액세스의 긴급 액세스 계정은 정책 대상에서 제외합니다.
+- 로그인을 차단하거나 제한하는 조건부 액세스 정책에서는 긴급 접근 계정을 제외하세요. 보고 전용 정책은 로그인을 막지 않으므로 제외가 필요 없습니다. [Microsoft 긴급 접근 계정 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)
 - 브라우저 읽기 전용은 화면 캡처나 수기 전재까지 방지하는 완전한 데이터 유출 통제가 아닙니다.
 - 민감 데이터에는 Purview DLP, 민감도 레이블, 엔드포인트 통제를 함께 검토합니다.
 

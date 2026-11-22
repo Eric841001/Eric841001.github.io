@@ -1512,9 +1512,9 @@
   },
   "/knowledge/knowledge-center/exchange-online-download-restriction": {
     "file": "docs/knowledge-center/exchange-online-download-restriction.md",
-    "checkedOn": "2026-10-29",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조 범위: 비준수 기기 OWA의 ReadOnly 범위, 정책 할당·보고 전용과 최대 60분 반영 시간",
+    "scope": "이번 대조 범위: 비준수 기기 OWA의 ReadOnly 범위, 정책 할당·보고 전용과 최대 60분 반영 시간 비준수 기기에서 ReadOnly와 ReadOnlyPlusAttachmentsBlocked의 다운로드·미리보기 범위와 인라인 이미지 예외를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1551,6 +1551,11 @@
         "title": "get-cas",
         "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-casmailbox?view=exchange-ps",
         "checkedFor": "Identity로 사서함 클라이언트 접근 설정을 조회한다. Exchange Online에서는 Get-EXOCASMailbox가 권장된다."
+      },
+      {
+        "title": "Set-OwaMailboxPolicy",
+        "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-owamailboxpolicy?view=exchange-ps#-conditionalaccesspolicy",
+        "checkedFor": "비준수 기기에서 ReadOnly와 ReadOnlyPlusAttachmentsBlocked의 다운로드·미리보기 범위와 인라인 이미지 예외를 대조했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
@@ -2052,9 +2057,9 @@
   },
   "/knowledge/knowledge-center/onedrive-limited-access-read-only": {
     "file": "docs/knowledge-center/onedrive-limited-access-read-only.md",
-    "checkedOn": "2026-11-16",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "공식 문서의 OneDrive 매개 변수 목록과 일반 사이트 제한 설명의 차이를 대조했습니다. OneDrive 예제에서 ReadOnlyForUnmanagedDevices를 제외하고 AllowEditing의 Office 파일 편집 제한으로 범위를 바로잡았습니다.",
+    "scope": "공식 문서의 OneDrive 매개 변수 목록과 일반 사이트 제한 설명의 차이를 대조했습니다. OneDrive 예제에서 ReadOnlyForUnmanagedDevices를 제외하고 AllowEditing의 Office 파일 편집 제한으로 범위를 바로잡았습니다. 파일 형식별 제한과 별도로 브라우저 기기 ID 전달 조건을 확인했습니다. 긴급 계정 제외는 로그인 차단·제한 정책에 적용하며 보고 전용은 제외할 필요가 없습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2091,6 +2096,16 @@
         "title": "Set-SPOSite OneDrive parameters",
         "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.online.sharepoint.powershell/set-sposite?view=sharepoint-ps",
         "checkedFor": "OneDrive 허용 목록에 AllowEditing·ConditionalAccessPolicy·LimitedAccessFileType은 있지만 ReadOnlyForUnmanagedDevices는 빠져 있음을 확인했습니다. 예제는 공통으로 명시된 매개 변수만 사용합니다."
+      },
+      {
+        "title": "Conditional Access conditions",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-conditions",
+        "checkedFor": "파일 형식별 제한과 별도로 브라우저 기기 ID 전달 조건을 확인했습니다."
+      },
+      {
+        "title": "Emergency access accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checkedFor": "긴급 계정 제외는 로그인 차단·제한 정책에 적용하며 보고 전용은 제외할 필요가 없습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
