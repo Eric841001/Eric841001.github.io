@@ -138,7 +138,7 @@ The PTA agent runs as a Windows service and can require its own service configur
 
 For an authenticated Connect Sync proxy, the service account must be a domain account configured through custom installation. The installation wizard normally uses the signed-in user's credentials, while the Configure page and sync engine use the service account. A successful browser test therefore does not establish that synchronization can authenticate to the proxy. See [Connect proxy authentication requirements](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites#connectivity).
 
-The XML below follows the [PTA service proxy example](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq#can-the-pass-through-authentication-agents-communicate-over-an-outbound-web-proxy-server). Apply it to the documented agent service configuration; do not assume that editing the Connect Sync machine.config also configures PTA. Use placeholders in operational documentation:
+The XML below follows the [PTA service proxy example](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq#can-the-pass-through-authentication-agents-communicate-over-an-outbound-web-proxy-server-). Apply it to the documented agent service configuration; do not assume that editing the Connect Sync machine.config also configures PTA. Use placeholders in operational documentation:
 
 ```xml
 <system.net>
@@ -169,7 +169,7 @@ Never publish real proxy addresses, internal hostnames, tenant domains or creden
 
 ### Identify the agent that processed the sign-in
 
-Multiple PTA agents provide availability, not deterministic load balancing. Another agent can process a request while the agent under test is blocked. In an isolated test environment, correlate the sign-in log's **Authentication Method Detail** PTA AgentId with the installed agent's ID before deciding whether the blocked endpoint is unnecessary. The [PTA FAQ](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq#how-do-i-capture-the-pta-agent-id-from-microsoft-entra-sign-in-logs-and-the-pta-server-to-validate-which-pta-server-was-used-for-a-sign-in-event) documents this comparison.
+Multiple PTA agents provide availability, not deterministic load balancing. Another agent can process a request while the agent under test is blocked. In an isolated test environment, correlate the sign-in log's **Authentication Method Detail** PTA AgentId with the installed agent's ID before deciding whether the blocked endpoint is unnecessary. The [PTA FAQ](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq#how-do-i-capture-the-pta-agent-id-from-microsoft-entra-sign-in-logs-and-the-pta-server-to-validate-which-pta-server-was-used-for-a-sign-in-event-) documents this comparison.
 
 Do not disconnect all production agents to run a negative test. Password hash synchronization does not automatically take over when PTA becomes unavailable. Keep the test environment and production authentication path separate.
 

@@ -1486,9 +1486,9 @@
   },
   "/knowledge/knowledge-center/entra-connect-pta-egress-validation": {
     "file": "docs/knowledge-center/entra-connect-pta-egress-validation.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "개별 대조: PTA 포트·목적지·TLS 검사 제한, 서비스별 프록시 설정, 인증 계정, AgentId 대조와 PHS 전환 조건. Connect Sync의 프록시 유휴 연결 제한을 6분 이상으로 보완했습니다.",
+    "scope": "개별 대조: PTA 포트·목적지·TLS 검사 제한, 서비스별 프록시 설정, 인증 계정, AgentId 대조와 PHS 전환 조건. Connect Sync의 프록시 유휴 연결 제한을 6분 이상으로 보완했습니다. 프록시 설정 및 로그인에 사용된 PTA AgentId 확인 절의 현재 위치와 설명을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1499,7 +1499,7 @@
       {
         "title": "pta-faq",
         "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-pta-faq",
-        "checkedFor": "Older versions additional5671,8080,9090,9091,9350,9352,10100-10120; WPAD or agent service config. 다중 에이전트는 결정적 부하 분산을 제공하지 않으며 AgentId 대조가 필요하다. PHS 자동 장애 조치는 없다."
+        "checkedFor": "Older versions additional5671,8080,9090,9091,9350,9352,10100-10120; WPAD or agent service config. 다중 에이전트는 결정적 부하 분산을 제공하지 않으며 AgentId 대조가 필요하다. PHS 자동 장애 조치는 없다. 프록시 설정 및 로그인에 사용된 PTA AgentId 확인 절의 현재 위치와 설명을 확인했습니다."
       },
       {
         "title": "connect-prereq",
@@ -1706,9 +1706,9 @@
   },
   "/knowledge/knowledge-center/intune-0x80180031": {
     "file": "docs/knowledge-center/intune-0x80180031.md",
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "확인한 항목: MDM 미구성 의미·자동 등록 범위·MDM URL 해석·그룹 정책 자동 등록 이벤트 75/76과 작업 완료 102의 차이·별도 오류의 등록 해제 복구 조건",
+    "scope": "확인한 항목: MDM 미구성 의미·자동 등록 범위·MDM URL 해석·그룹 정책 자동 등록 이벤트 75/76과 작업 완료 102의 차이·별도 오류의 등록 해제 복구 조건 MDM 등록 로그의 75·76과 작업 스케줄러 107·102가 기록하는 서로 다른 단계를 대조했습니다. 새 기기의 초기 Not evaluated 상태와 동기화 이후 준수 확인을 구분했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -1740,6 +1740,16 @@
         "title": "Separate error 0x80180002b and stale tenant recovery",
         "url": "https://learn.microsoft.com/en-us/troubleshoot/mem/intune/device-enrollment/windows10-enroll-error-80180002b",
         "checkedFor": "이전 테넌트 정보가 남은 별도 오류의 복구 절차에 dsregcmd /leave가 포함됩니다. 이 사례를 0x80180031의 원인이나 공통 해결책으로 확대하지 않았습니다."
+      },
+      {
+        "title": "Troubleshoot Windows Group Policy auto-enrollment",
+        "url": "https://learn.microsoft.com/en-us/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-auto-enrollment",
+        "checkedFor": "MDM 등록 로그의 75·76과 작업 스케줄러 107·102가 기록하는 서로 다른 단계를 대조했습니다."
+      },
+      {
+        "title": "Monitor device compliance",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/compliance-policy-monitor",
+        "checkedFor": "새 기기의 초기 Not evaluated 상태와 동기화 이후 준수 확인을 구분했습니다."
       }
     ],
     "reviewLevel": "설정·적용 조건 확인",
