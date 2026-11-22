@@ -311,7 +311,7 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   </div>
 </div>
 
-긴급 접근 계정을 조건부 액세스에서 제외하더라도 Microsoft의 필수 MFA 요구사항이 면제되지는 않습니다. Microsoft는 클라우드 전용 긴급 계정을 두 개 이상 준비하고 FIDO2 패스키나 인증서 기반 인증 등 피싱 방지 인증 수단을 등록하도록 안내합니다. 실제 로그인과 복구 절차를 정기적으로 시험하세요. [긴급 접근 계정 구성](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)을 기준으로 확인합니다.
+긴급 접근 계정을 조건부 액세스에서 제외하더라도 Microsoft의 필수 MFA 요구사항이 면제되지는 않습니다. Microsoft는 클라우드 전용 긴급 계정을 두 개 이상 준비하고 FIDO2 패스키나 인증서 기반 인증 등 피싱 방지 인증 수단을 등록하도록 안내합니다. 로그인을 막거나 제한하는 정책에서 제외하며, 보고 전용 정책은 제외할 필요가 없습니다. 긴급 계정의 Global Administrator 역할은 자격만 부여하는 방식이 아니라 영구 활성 상태로 유지합니다. 사용 알림을 확인하고 최소 90일마다 실제 로그인과 복구 절차를 시험하세요. [긴급 접근 계정 구성](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)을 기준으로 확인합니다.
 
 ## Copilot Access Control
 
