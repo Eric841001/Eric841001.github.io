@@ -106,7 +106,10 @@ Standard 그룹은 **하루 두 번** 갱신됩니다. 즉시 접근을 허용�
 
 PIM for app roles는 애플리케이션이 정의한 역할에도 활성화 절차를 적용하는 미리 보기 기능입니다. 그룹에 자격을 부여해도 구성원 각자가 활성화해야 하며, 한 사람의 활성화가 그룹 전체에 적용되지는 않습니다. 활성화 후에는 새 토큰을 받아야 역할이 반영됩니다. 역할을 비활성화하거나 기간이 만료되어도 이미 발급된 토큰이나 앱 세션이 즉시 무효화되지는 않습니다. [앱 역할의 활성화와 세션 동작](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-app-roles)
 
-사용권 설명은 공식 문서 간에 차이가 있습니다. [PIM 개요](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure)는 앱 역할 미리 보기에 Entra ID Governance가 필요하고 P2만으로는 부족하다고 설명하지만, [앱 역할 할당 문서](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/app-roles-assign)는 E7을 요구합니다. 일반 PIM의 사용권을 앱 역할에 그대로 적용하거나 Governance 단독으로 이용할 수 있다고 확정하지 말고, 도입 전에 Microsoft에 해당 테넌트의 미리 보기 자격과 계약 조건을 확인하세요.
+- **사용자가 앱 역할을 활성화할 때** [활성화 절차의 사전 요건](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/app-roles-activate)에는 Microsoft Entra ID Governance 라이선스가 명시돼 있습니다. 활성화할 앱 역할의 자격도 있어야 합니다. [PIM 개요](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure)에 따르면 P2만으로는 이 미리 보기를 사용할 수 없습니다.
+- **관리자가 앱 역할 자격을 할당할 때** [할당 절차](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/app-roles-assign)는 미리 보기 기능에 E7이 필요하다고 설명합니다. 에이전트 또는 에이전트 ID에 자격을 부여할 때는 대상마다 E7이 필요합니다.
+
+할당 문서에는 E7 요건이 관리자 개인에게만 적용된다는 설명이 없습니다. Governance만 보유한 조직은 구매 전에 대상이 사용자인지 에이전트인지 밝히고, 해당 계약으로 앱 역할의 할당과 활성화를 모두 사용할 수 있는지 Microsoft에 확인하세요.
 
 ## Security
 

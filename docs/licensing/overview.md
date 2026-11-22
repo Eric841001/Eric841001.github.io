@@ -82,6 +82,12 @@ Licensing guidance should connect cost to architecture, security controls, adopt
 - The US page is not a Korean quotation. Confirm currency, taxes, commitment, region and renewal terms for the actual offer.
 
 
+### 해외 지사의 데이터를 별도 지역에 보관하려면
+
+Microsoft 365 Multi-Geo는 하나의 테넌트에서 대상 서비스의 데이터를 여러 지역에 보관하는 사용자별 추가 라이선스입니다. 먼저 계약에서 Multi-Geo 구매 자격이 있는 사용자 수를 확인하고, 위성 지역에 데이터를 보관할 사용자를 셉니다. 최소 구매량은 구매 자격이 있는 사용자의 5%이며, 위성 지역에 배치할 사용자마다 라이선스가 필요합니다.
+
+예를 들어 구매 자격이 있는 사용자가 2,000명이면 최소 구매량은 100개입니다. 위성 지역에 배치할 사용자가 150명이면 150개가 필요합니다. 공유 사서함이나 SharePoint 사이트에는 별도의 Multi-Geo 라이선스를 구매하지 않습니다. 배치할 때는 서비스별 지원 범위와 대상 지역 코드를 확인하세요. [Microsoft 365 Multi-Geo 구매 및 배치 요건](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide)
+
 ## Visual License Decision Map
 
 <div aria-label="Visual license decision map" className="kc-journey-map">

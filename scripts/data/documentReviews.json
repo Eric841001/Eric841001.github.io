@@ -297,7 +297,7 @@
     "file": "docs/azure/identity.md",
     "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 긴급 접근 계정의 PIM 역할 상태, 조건부 액세스 제외 대상, 인증·알림·90일 시험 조건을 확인했습니다. 일반 PIM·RBAC·관리 ID의 역할과 기존 MemberOf Next 전환 조건도 재대조했습니다. 앱 역할 미리 보기의 토큰·그룹 활성화 동작과 공식 문서 간 사용권 설명 차이를 추가했습니다.",
+    "scope": "이번 대조: 긴급 접근 계정의 PIM 역할 상태, 조건부 액세스 제외 대상, 인증·알림·90일 시험 조건을 확인했습니다. 일반 PIM·RBAC·관리 ID의 역할과 기존 MemberOf Next 전환 조건도 재대조했습니다. 앱 역할 미리 보기의 토큰·그룹 활성화 동작과 공식 문서 간 사용권 설명 차이를 추가했습니다. 앱 역할 활성화 사전 요건은 Governance, 할당 문서는 미리 보기에 E7을 명시합니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -339,6 +339,11 @@
         "title": "Managed identities overview",
         "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview",
         "checkedFor": "관리 ID와 서비스 주체가 워크로드 ID에 속하며 서비스 접근 권한을 별도로 부여해야 한다는 설명과 운영 검토 권고를 대조했습니다."
+      },
+      {
+        "title": "Activate app roles in PIM",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/app-roles-activate",
+        "checkedFor": "앱 역할 활성화 사전 요건은 Governance, 할당 문서는 미리 보기에 E7을 명시합니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2343,9 +2348,9 @@
   },
   "/knowledge/licensing/overview": {
     "file": "docs/licensing/overview.md",
-    "checkedOn": "2026-10-26",
+    "checkedOn": "2026-11-22",
     "kind": "기술·운영 가이드",
-    "scope": "목록·혼합 구성·구매 조건·검색어에 E7을 반영하고 오래된 날짜형 공개 검증 제목을 일반 구성 안내로 바꿨습니다.",
+    "scope": "목록·혼합 구성·구매 조건·검색어에 E7을 반영하고 오래된 날짜형 공개 검증 제목을 일반 구성 안내로 바꿨습니다. Multi-Geo 최소 구매량과 위성 지역 사용자별 구매, 공유 리소스 처리 기준을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -2362,6 +2367,11 @@
         "title": "Compare Microsoft 365 E3, E5 and E7",
         "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/compare-copilot-e3-e5-e7",
         "checkedFor": "E7이 E5 기능에 Microsoft 365 Copilot·Entra Suite·Agent 365를 더하며, E3·E5의 업무용 Copilot은 추가 구독이라는 차이를 대조했습니다."
+      },
+      {
+        "title": "Microsoft 365 Multi-Geo",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide",
+        "checkedFor": "Multi-Geo 최소 구매량과 위성 지역 사용자별 구매, 공유 리소스 처리 기준을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
@@ -2742,8 +2752,16 @@
     "scope": "이번 대조는 SharePoint 문서 라이브러리의 파일당 업로드 한도와 경로 길이, 로컬 동기화 경로에 적용되는 제한입니다. 이전 검토 범위: 이번 대조: SPMT의 원본·대상 범위, Azure Files의 ADS 미지원과 File Sync의 온프레미스 보존, LastAccessTime의 읽기 미갱신 조건. ADS 설명의 근거 링크를 FAQ로 바로 연결했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
-      {"title": "SharePoint service limits", "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits", "checkedFor": "문서 라이브러리의 파일당 250GB 업로드 한도와 디코딩한 폴더 경로·파일명 합계 400자 조건을 확인했습니다."},
-      {"title": "Platform path length limits", "url": "https://support.microsoft.com/en-us/onedrive/what-are-file-path-length-limits", "checkedFor": "클라우드 경로와 로컬 동기화 루트를 포함한 경로가 다르며 탐색기의 이름 변경에도 별도 제한이 있다는 사례를 확인했습니다."},
+      {
+        "title": "SharePoint service limits",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits",
+        "checkedFor": "문서 라이브러리의 파일당 250GB 업로드 한도와 디코딩한 폴더 경로·파일명 합계 400자 조건을 확인했습니다."
+      },
+      {
+        "title": "Platform path length limits",
+        "url": "https://support.microsoft.com/en-us/onedrive/what-are-file-path-length-limits",
+        "checkedFor": "클라우드 경로와 로컬 동기화 루트를 포함한 경로가 다르며 탐색기의 이름 변경에도 별도 제한이 있다는 사례를 확인했습니다."
+      },
       {
         "title": "Azure Files migration",
         "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview",
