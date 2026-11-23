@@ -17,6 +17,7 @@ description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Mi
       <span>Seoul, South Korea</span>
       <span>Enterprise Architecture</span>
       <span>Microsoft 365 / Security / Copilot / AI Agents</span>
+      <span><a href="#microsoft-certifications">Microsoft 자격증 6개</a></span>
     </div>
     <div aria-label="About page actions" className="kc-topic-hero__actions">
       <a href="/knowledge/contact" className="kc-topic-button kc-topic-button--primary">Contact / Asset Request</a>
@@ -65,6 +66,12 @@ description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Mi
     <span>Convert requirements into designs, templates, risk decisions and handover-ready assets.</span>
   </div>
 </div>
+
+## Microsoft 자격증 {/* #microsoft-certifications */}
+
+Microsoft가 발급한 공식 자격증입니다. Azure, 보안·규정 준수·ID, Microsoft 365 Copilot과 에이전트 관리, 데이터, AI, Power Platform의 기초 영역을 다룹니다.
+
+<Certifications />
 
 ## Professional Profile
 
