@@ -1,7 +1,6 @@
 import React from 'react';
 import OriginalHeading from '@theme-original/Heading';
 import {useLocation} from '@docusaurus/router';
-import './topic-scenes.css';
 
 const materials = {
   studio: ['paper back', 'paper', 'fragment', 'reply'],
@@ -73,15 +72,9 @@ function ArticleScene() {
     };
   }, [pathname, hash]);
   if (!pathname.includes('/knowledge/')) return null;
-  const scene = sceneFor(pathname);
-  return (
-    <span aria-hidden="true" className={'topic-scene scene-' + scene} data-scene={scene}>
-      <span className="art">
-        <i className="floor" />
-        {materials[scene].map(part => <i key={part} className={part}>{part === 'shield' ? '✓' : null}</i>)}
-      </span>
-    </span>
-  );
+  // C안: 장식 그림 대신 주제 색 띠를 둔다(문서 안에서는 주제 색을 여기에만 쓴다).
+  const section = pathname.split('/knowledge/')[1].split('/')[0];
+  return <span aria-hidden="true" className="c-topicbar" data-topic={section} data-scene={sceneFor(pathname)} />;
 }
 
 export default function Heading(props) {

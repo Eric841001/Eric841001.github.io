@@ -9,26 +9,9 @@ description: "Architecture Center - The Architecture Center organizes Microsoft 
 
 ## 영역별 설계도 {/* #visual-architecture-map */}
 
-궁금한 영역을 선택하면 해당 설계 문서의 설명으로 이동합니다.
+궁금한 영역을 선택하면 해당 설계 문서의 구성도로 이동합니다. 이 지도는 주제를 분류하고, 각 문서의 구성도는 실제 연결을 보여 줍니다.
 
-<nav className="design-atlas atlas-gallery" aria-label="영역별 아키텍처 설계도">
-  <strong className="atlas-caption">Microsoft 클라우드 아키텍처</strong>
-  <div className="atlas-layer">
-    <strong>업무 환경</strong>
-    <a href="/knowledge/architecture/m365-reference-architecture#collaboration-architecture"><img src="/img/atlas/collaboration.webp" width="512" height="512" alt="" loading="lazy" /><span>Microsoft 365 협업</span></a>
-    <a href="/knowledge/architecture/copilot-architecture#copilot-architecture-overview"><img src="/img/atlas/copilot.webp" width="512" height="512" alt="" loading="lazy" /><span>Copilot 구성 요소</span></a>
-  </div>
-  <div className="atlas-layer">
-    <strong>기반과 보호</strong>
-    <a href="/knowledge/architecture/azure-landing-zone-architecture#network-architecture"><img src="/img/atlas/azure.webp" width="512" height="512" alt="" loading="lazy" /><span>Azure 네트워크</span></a>
-    <a href="/knowledge/architecture/security-reference-architecture#security-architecture-overview"><img src="/img/atlas/security.webp" width="512" height="512" alt="" loading="lazy" /><span>보안 영역</span></a>
-  </div>
-  <div className="atlas-layer">
-    <strong>전환과 운영</strong>
-    <a href="/knowledge/architecture/migration-architecture#migration-domains"><img src="/img/atlas/migration.webp" width="512" height="512" alt="" loading="lazy" /><span>마이그레이션 범위</span></a>
-    <a href="/knowledge/architecture/governance-architecture#operating-model"><img src="/img/atlas/governance.webp" width="512" height="512" alt="" loading="lazy" /><span>거버넌스 운영 체계</span></a>
-  </div>
-</nav>
+<AtlasMap />
 
 ## 한국어 요약
 

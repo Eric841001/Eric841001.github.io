@@ -4,4 +4,5 @@ import ResponsiveTable from '../../components/ResponsiveTable';
 import {ReadingSection, ReadingSummary} from '../../components/ReadingSection';
 import ReadingControls from '../../components/ReadingControls';
 import ScenarioLinks from '../../components/ScenarioLinks';
-export default {...MDXComponents, ArchitectureFigure, ScenarioLinks, table: ResponsiveTable, ReadingSection, ReadingSummary, ReadingControls};
+import AtlasMap from '../../components/AtlasMap';
+export default {...MDXComponents, ArchitectureFigure, ScenarioLinks, table: ResponsiveTable, ReadingSection, ReadingSummary, ReadingControls, AtlasMap};

@@ -1,11 +1,7 @@
 import React from 'react';
 import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
-import HeroSection from '../home/HeroSection';
-import LatestArticles from '../home/LatestArticles';
-import KnowledgeGrid from '../home/KnowledgeGrid';
-import SignatureEntryPoints from '../home/SignatureEntryPoints';
-import ExecutiveDashboard from '../home/ExecutiveDashboard';
+import CHome from '../home/CHome';
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -68,7 +64,7 @@ const structuredData = {
 
 export default function Home() {
   return (
-    <Layout title="Enterprise Microsoft Knowledge Center">
+    <Layout title="Microsoft 365·Azure·보안·Copilot 실무 문서">
       <Head>
         <meta
           name="description"
@@ -83,13 +79,7 @@ export default function Home() {
         </script>
       </Head>
 
-      <main className="site-home">
-        <HeroSection />
-        <SignatureEntryPoints />
-        <LatestArticles />
-        <KnowledgeGrid />
-        <ExecutiveDashboard />
-      </main>
+      <CHome />
     </Layout>
   );
 }

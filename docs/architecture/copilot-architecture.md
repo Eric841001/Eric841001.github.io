@@ -89,6 +89,7 @@ Typical Copilot initiatives include:
 <ArchitectureFigure
   id="copilot-architecture-overview"
   title="Microsoft 365 Copilot"
+  edges={[["business-users", "security-boundary", "요청"], ["security-boundary", "microsoft-graph", "권한 범위 안의 자료"], ["security-boundary", "agents", "도구 실행"], ["business-users", "adoption-value", "사용 기록"]]}
   nodes={[
     ["business-users","업무 사용자","회의 정리, 문서 작성, 메일 처리, 자료 분석 중 어떤 업무에 Copilot을 쓸지 정합니다."],
     ["microsoft-graph","Microsoft Graph","Exchange, Teams, SharePoint, OneDrive, Planner 등에서 사용자가 접근할 수 있는 업무 자료를 연결합니다."],

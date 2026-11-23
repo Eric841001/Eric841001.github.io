@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "node scripts/build-c-data.js && docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -14,7 +14,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "sync:licensing": "node scripts/sync-licensing-guide.js",
-    "prebuild": "node scripts/sync-licensing-guide.js --check && node scripts/verify-source-reviews.js",
+    "prebuild": "node scripts/sync-licensing-guide.js --check && node scripts/verify-source-reviews.js && node scripts/build-c-data.js",
     "verify:reviews": "node scripts/verify-source-reviews.js",
     "verify:search": "node scripts/verify-search-index.js"
   },

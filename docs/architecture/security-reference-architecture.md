@@ -88,6 +88,7 @@ Typical security initiatives include:
 <ArchitectureFigure
   id="security-architecture-overview"
   title="보안 참조 아키텍처"
+  edges={[["users-and-workloads", "identity-and-access", "로그인"], ["identity-and-access", "endpoint-and-collaboration", "기기 신호"], ["endpoint-and-collaboration", "data-and-operations", "경보"], ["governance", "identity-and-access", "정책"], ["governance", "data-and-operations", "예외 검토"]]}
   nodes={[
     ["users-and-workloads","사용자와 워크로드","접근을 요청하는 주체가 직원, 게스트, 기기, 애플리케이션, 클라우드 워크로드 중 어디에 해당하는지 구분합니다."],
     ["identity-and-access","ID와 접근 권한","Entra ID와 조건부 액세스에서 로그인 조건을 평가하고, PIM에서 관리자 역할의 활성화를 관리합니다."],

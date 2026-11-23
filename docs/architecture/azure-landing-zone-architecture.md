@@ -91,6 +91,7 @@ Typical Azure initiatives include:
 <ArchitectureFigure
   id="azure-landing-zone-architecture-overview"
   title="Azure 랜딩 존"
+  edges={[["tenant-root", "platform", "관리 그룹"], ["tenant-root", "landing-zones", "관리 그룹"], ["controls", "landing-zones", "정책 상속"], ["landing-zones", "workloads", "배치"]]}
   nodes={[
     ["tenant-root","테넌트 루트","테넌트 루트는 관리 그룹 계층의 최상위입니다. 루트에 직접 할당하는 정책은 최소화하고, 공통 정책은 해당 구독을 묶는 관리 그룹에 할당하세요."],
     ["platform","공유 플랫폼","ID, 네트워크 연결, 관리용 구독에서 여러 팀이 함께 쓰는 서비스를 운영합니다."],
@@ -120,6 +121,7 @@ Management groups organize policy inheritance. Avoid duplicating the organizatio
 <ArchitectureFigure
   id="azure-landing-zone-network-architecture"
   title="Azure 네트워크"
+  edges={[["on-premises", "gateway", "전용 회선·VPN"], ["gateway", "hub-vnet", "라우팅"], ["hub-vnet", "spokes", "피어링·검사"], ["operations", "hub-vnet", "흐름 로그"], ["operations", "spokes", "보안 경보"]]}
   nodes={[
     ["on-premises","온프레미스","데이터센터와 지사에서 연결할 시스템을 파악하고 ID, DNS, 기존 업무 시스템의 통신 요구 사항을 정리합니다."],
     ["gateway","게이트웨이","ExpressRoute나 VPN을 선택하고 라우팅과 회선 장애 시 연결 경로를 설계합니다."],

@@ -1,0 +1,134 @@
+/*
+ * C안 · 답변 우선 벤토 테마.
+ * custom.css 뒤에 불러와 덮어쓴다. 주제 색은 6개(+운영·설계)로 고정하고, 문서 본문 안에서는 강조색 하나만 쓴다.
+ */
+:root{
+  --c-sans:"Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --c-mono:"DM Mono","SFMono-Regular",Menlo,Consolas,"Noto Sans KR",monospace;
+  --c-bg:#EEF0F3;--c-tile:#FFFFFF;--c-tile2:#F5F6F8;--c-ink:#0E0F12;--c-ink2:#30343B;--c-muted:#5F6570;--c-line:#E1E4E9;--c-line2:#C9CED6;
+  --c-accent:#5B4BFF;--c-accent-ink:#FFFFFF;--c-accent-soft:rgba(91,75,255,.1);
+  --c-t-copilot:#6A55FF;--c-t-azure:#0A7CFF;--c-t-security:#0D9F62;--c-t-licensing:#F0601F;--c-t-m365:#D9357F;--c-t-migration:#00A09D;--c-t-ops:#3D4656;--c-t-arch:#16181D;
+  --c-r:26px;
+  --ifm-font-family-base:var(--c-sans);
+  --ifm-heading-font-family:var(--c-sans);
+  --ifm-font-family-monospace:var(--c-mono);
+  --ifm-background-color:var(--c-bg);
+  --ifm-background-surface-color:var(--c-tile);
+  --ifm-font-color-base:var(--c-ink2);
+  --ifm-heading-color:var(--c-ink);
+  --ifm-color-primary:#5B4BFF;--ifm-color-primary-dark:#4A39F5;--ifm-color-primary-darker:#4130EE;--ifm-color-primary-darkest:#3424D4;
+  --ifm-color-primary-light:#7062FF;--ifm-color-primary-lighter:#7B6EFF;--ifm-color-primary-lightest:#998FFF;
+  --ifm-link-color:var(--c-accent);
+  --ifm-global-radius:16px;
+  --ifm-code-border-radius:6px;
+  --ifm-toc-border-color:var(--c-line);
+  --ifm-navbar-height:64px;
+  --ifm-navbar-background-color:transparent;
+  --ifm-footer-background-color:var(--c-bg);
+}
+[data-theme='dark']{
+  --c-bg:#08090B;--c-tile:#15171C;--c-tile2:#1C1F25;--c-ink:#F2F3F5;--c-ink2:#CFD3DA;--c-muted:#979EA9;--c-line:#262A31;--c-line2:#353A43;
+  --c-accent:#968AFF;--c-accent-ink:#0B0B10;--c-accent-soft:rgba(150,138,255,.14);
+  --c-t-copilot:#5A46F0;--c-t-azure:#0A6FE0;--c-t-security:#0C8E57;--c-t-licensing:#D9561B;--c-t-m365:#C22D71;--c-t-migration:#008A87;--c-t-ops:#2C3340;--c-t-arch:#1E2128;
+  --ifm-color-primary:#968AFF;--ifm-color-primary-dark:#8172FF;--ifm-color-primary-darker:#7766FF;--ifm-color-primary-darkest:#5A46F0;
+  --ifm-color-primary-light:#ABA1FF;--ifm-color-primary-lighter:#B6ADFF;--ifm-color-primary-lightest:#D3CEFF;
+  --ifm-background-color:var(--c-bg);--ifm-background-surface-color:var(--c-tile);
+}
+html{background:var(--c-bg)}
+body{background:var(--c-bg);word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:3px solid var(--c-accent);outline-offset:3px;border-radius:8px}
+
+/* ── 떠 있는 상단 막대 ── */
+.navbar{top:10px;margin:10px auto 0;width:min(1280px,calc(100% - 24px));border-radius:999px;padding:6px 8px 6px 18px;height:auto;min-height:60px;
+  background:color-mix(in srgb,var(--c-tile) 80%,transparent)!important;backdrop-filter:blur(18px) saturate(1.6);-webkit-backdrop-filter:blur(18px) saturate(1.6);
+  border:1px solid color-mix(in srgb,var(--c-line) 85%,transparent);box-shadow:0 8px 30px -14px rgba(0,0,0,.22)}
+.navbar__title{font:800 16px var(--c-sans);letter-spacing:-.03em;color:var(--c-ink)}
+.navbar__logo{height:28px}
+.navbar__link{font:600 14.5px var(--c-sans);color:var(--c-ink2);border-radius:999px;padding:8px 14px}
+.navbar__link:hover{background:var(--c-tile2);color:var(--c-ink)}
+.navbar__link--active{background:var(--c-ink);color:var(--c-bg)!important}
+.navbar__toggle{border-radius:999px}
+.navbar-sidebar{border-radius:0 24px 24px 0}
+.navbar .DocSearch-Button,.navbar [class*="searchBar"] input,.navbar .navbar__search-input{border-radius:999px}
+
+/* ── 문서 ── */
+main[class*="docMainContainer"]{padding-top:8px}
+.theme-doc-markdown{font-size:16.5px;line-height:1.85;color:var(--c-ink2);counter-reset:csec}
+.theme-doc-markdown h1{font:900 clamp(34px,4.4vw,60px)/1.06 var(--c-sans);letter-spacing:-.055em;color:var(--c-ink);margin-bottom:.35em}
+.c-topicbar{display:block;width:72px;height:6px;border-radius:6px;margin:0 0 24px;background:var(--c-t-arch)}
+.c-topicbar[data-topic=copilot]{background:var(--c-t-copilot)}.c-topicbar[data-topic=azure]{background:var(--c-t-azure)}.c-topicbar[data-topic=security],.c-topicbar[data-topic=knowledge-center]{background:var(--c-t-security)}
+.c-topicbar[data-topic=licensing]{background:var(--c-t-licensing)}.c-topicbar[data-topic=microsoft365]{background:var(--c-t-m365)}.c-topicbar[data-topic=migration]{background:var(--c-t-migration)}
+.c-topicbar[data-topic=knowledge-center]{background:var(--c-t-ops)}
+.theme-doc-markdown > h2,.theme-doc-markdown details.kc-reading-section > summary h2{counter-increment:csec;font:900 clamp(21px,2.2vw,27px)/1.3 var(--c-sans)!important;letter-spacing:-.04em;color:var(--c-ink);display:flex!important;gap:12px;align-items:baseline}
+.theme-doc-markdown > h2::before,.theme-doc-markdown details.kc-reading-section > summary h2::before{content:"§" counter(csec)!important;display:inline-block!important;flex:none;font:800 12.5px var(--c-sans);letter-spacing:0;color:var(--c-accent);background:var(--c-accent-soft);border-radius:10px;padding:4px 8px;position:relative;top:-3px}
+.theme-doc-markdown > h2{margin-top:2.2em;padding-top:1.1em;border-top:1px solid var(--c-line)}
+.theme-doc-markdown > h3,.theme-doc-markdown details > h3{font:800 19px/1.45 var(--c-sans);letter-spacing:-.025em;color:var(--c-ink);background:var(--c-tile2);border-radius:14px;padding:10px 14px;margin:1.8em 0 .7em}
+.theme-doc-markdown h4{font:800 16px var(--c-sans);color:var(--c-ink)}
+.theme-doc-markdown a{color:var(--c-accent);font-weight:600;text-underline-offset:3px}
+.theme-doc-markdown li::marker{color:var(--c-accent);font-weight:700}
+.theme-doc-markdown blockquote{border-left:0;background:var(--c-accent-soft);border-radius:16px;padding:14px 18px;color:var(--c-ink)}
+.theme-doc-markdown hr{border-color:var(--c-line)}
+.theme-doc-markdown code{font-family:var(--c-mono);background:var(--c-tile2);border:1px solid var(--c-line);border-radius:6px}
+.theme-doc-markdown div[class*="codeBlockContainer"]{border-radius:18px;overflow:hidden;box-shadow:none}
+/* 접히는 장(ReadingSection)을 카드로 */
+.theme-doc-markdown details.kc-reading-section{background:var(--c-tile)!important;border:0!important;border-radius:22px!important;margin:0 0 10px!important;padding:0 22px!important;box-shadow:none!important}
+.theme-doc-markdown details.kc-reading-section > summary{list-style:none;cursor:pointer;padding:16px 0!important;display:flex;align-items:center;justify-content:space-between;gap:12px;background:none!important;border:0!important}
+.theme-doc-markdown details.kc-reading-section > summary::-webkit-details-marker{display:none}
+.theme-doc-markdown details.kc-reading-section > summary::after{content:"+";flex:none;width:36px;height:36px;border-radius:99px;background:var(--c-tile2);display:grid;place-items:center;font:700 20px/36px var(--c-sans);text-align:center;color:var(--c-ink);transition:transform .35s cubic-bezier(.22,1,.36,1),background .3s}
+.theme-doc-markdown details.kc-reading-section[open] > summary{border-bottom:0!important;margin-bottom:0!important}
+.theme-doc-markdown details.kc-reading-section[open] > summary::after{transform:rotate(45deg);background:var(--c-ink);color:var(--c-bg)}
+.theme-doc-markdown details.kc-reading-section > summary h2{margin:0!important;padding:0!important;border:0!important}
+.theme-doc-markdown details.kc-reading-section[open]{padding-bottom:18px!important}
+.kc-reading-controls{background:var(--c-tile)!important;border:0!important;border-radius:20px!important;padding:12px 16px!important}
+.kc-reading-controls button{border-radius:999px!important;min-height:40px}
+/* 표 */
+.theme-doc-markdown .kc-table-viewport table,.theme-doc-markdown table{border-collapse:separate;border-spacing:0;background:var(--c-tile);border-radius:16px;overflow:hidden;border:1px solid var(--c-line);font-size:14.5px}
+.theme-doc-markdown table th{background:var(--c-tile2);font:700 12.5px var(--c-sans);color:var(--c-muted);border:0;border-bottom:1px solid var(--c-line)}
+.theme-doc-markdown table td{border:0;border-top:1px solid var(--c-line)}
+.theme-doc-markdown table tr{background:none!important;border:0}
+.theme-doc-markdown table tr:first-child td{border-top:0}
+.theme-doc-markdown table td:first-child{font-weight:700;color:var(--c-ink)}
+/* 원문의 kc-* 구성 블록을 C안 카드로 */
+.theme-doc-markdown :is(.kc-journey-node,.kc-factory-card,.kc-platform-fit__card,.kc-entry-hub>a,.kc-operating-stage,.kc-maturity-step,.kc-pathway-step,.kc-context-panel__grid>a,.kc-outcome-card,.kc-signal-card){background:var(--c-tile2)!important;border:0!important;border-radius:16px!important;box-shadow:none!important;color:var(--c-ink2)}
+.theme-doc-markdown :is(.kc-topic-hero,.kc-factory-panel,.kc-journey-map,.kc-context-panel,.kc-platform-fit,.kc-operating-model,.kc-maturity-ladder){background:var(--c-tile)!important;border:0!important;border-radius:22px!important;box-shadow:none!important;color:var(--c-ink2)}
+.theme-doc-markdown .kc-topic-hero h2,.theme-doc-markdown .kc-topic-hero strong,.theme-doc-markdown [class*="kc-"] strong{color:var(--c-ink)!important}
+.theme-doc-markdown [class*="kc-"] small{color:var(--c-accent)!important}
+.theme-doc-markdown .kc-topic-button{border-radius:999px!important;background:var(--c-tile2)!important;color:var(--c-ink)!important;border:0!important}
+.theme-doc-markdown .kc-topic-button--primary{background:var(--c-ink)!important;color:var(--c-bg)!important}
+.theme-doc-markdown :is(.kc-guardrail-panel,.kc-update-brief){background:var(--c-accent-soft)!important;border:0!important;border-radius:16px!important;color:var(--c-ink)}
+/* 사이드바·목차·이전/다음 */
+.menu{font-size:14px}
+.menu__link{border-radius:12px;color:var(--c-ink2)}
+.theme-doc-sidebar-container .menu__link.menu__link--active:not(.menu__link--sublist),[data-theme='dark'] .theme-doc-sidebar-container .menu__link.menu__link--active:not(.menu__link--sublist){background:var(--c-ink)!important;color:var(--c-bg)!important;box-shadow:none!important;border-left-color:transparent!important;font-weight:700}
+.theme-doc-sidebar-container .menu__link--sublist.menu__link--active{color:var(--c-ink)!important;background:none!important;box-shadow:none!important}
+.table-of-contents__link--active{color:var(--c-accent);font-weight:700}
+.pagination-nav__link{border:0;background:var(--c-tile);border-radius:22px}
+.breadcrumbs__link{border-radius:999px}
+.breadcrumbs__item--active .breadcrumbs__link{background:var(--c-tile);color:var(--c-ink)}
+.theme-doc-sidebar-container{border-right:0!important}
+/* 바닥글 */
+.footer{background:var(--c-bg)!important;border-top:1px solid var(--c-line);color:var(--c-muted)}
+.footer__title{color:var(--c-ink)}
+.footer__link-item{color:var(--c-muted)}
+.footer__link-item:hover{color:var(--c-ink)}
+.footer__copyright{color:var(--c-muted)}
+/* 모바일 하단 독 */
+.c-dock{display:none}
+@media (max-width:996px){
+  .c-dock{display:flex;position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:200;gap:4px;padding:6px;border-radius:999px;background:color-mix(in srgb,var(--c-ink) 92%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 16px 40px -10px rgba(0,0,0,.45)}
+  .c-dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:64px;min-height:52px;border-radius:999px;color:color-mix(in srgb,var(--c-bg) 72%,transparent)!important;font:600 11.5px var(--c-sans);text-decoration:none!important;gap:1px}
+  .c-dock svg{width:20px;height:20px}
+  .c-dock a[aria-current=page]{background:var(--c-bg);color:var(--c-ink)!important}
+  .c-dock .c-dock__q{background:var(--c-accent);color:var(--c-accent-ink)!important}
+  .footer{padding-bottom:96px}
+  .navbar{top:8px;width:calc(100% - 16px)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
+
+/* 기존 문서 머리(어두운 배경 + 회전 그림)를 C안 머리로 바꾼다 */
+.theme-doc-markdown > header:has(> h1),html[class*="docusaurus-search-local"] .main-wrapper h1,.plugin-native main .hero__title{
+  min-height:0!important;padding:0!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:var(--c-ink)!important;display:block!important;overflow:visible!important;margin:0 0 .4rem!important}
+.theme-doc-markdown > header:has(> h1)::before,.theme-doc-markdown > header:has(> h1)::after,html[class*="docusaurus-search-local"] .main-wrapper h1::after,.plugin-native main .hero__title::after{content:none!important;display:none!important}
+.theme-doc-markdown > header > h1{color:var(--c-ink)!important;font:900 clamp(34px,4.4vw,60px)/1.06 var(--c-sans)!important;letter-spacing:-.055em!important}
+.theme-doc-markdown > header{border-top:0!important;padding-top:0!important}
+@media (max-width:640px){.theme-doc-markdown > header > h1{font-size:clamp(28px,8vw,36px)!important}}

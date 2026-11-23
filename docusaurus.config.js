@@ -36,6 +36,14 @@ const diagramScriptVersion = createHash('sha256')
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  stylesheets: [
+    {href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=DM+Mono:wght@500&display=swap'},
+  ],
+  headTags: [
+    {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.googleapis.com'}},
+    {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'}},
+  ],
+
   scripts: [
     {
       src: `/js/mermaid-zoom.js?v=${diagramScriptVersion}`,
@@ -58,7 +66,7 @@ const diagramScriptVersion = createHash('sha256')
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/c-theme.css')],
         },
       },
     ],
@@ -173,14 +181,14 @@ const diagramScriptVersion = createHash('sha256')
         src: 'img/youngsun-logo.svg',
       },
       items: [
-        {to: '/knowledge/intro', label: 'Knowledge', position: 'left'},
-        {to: '/knowledge/microsoft365/e3-vs-e5', label: 'Microsoft 365', position: 'left'},
-        {to: '/knowledge/architecture/overview', label: 'Architecture', position: 'left'},
-        {to: '/knowledge/projects/overview', label: 'Projects', position: 'left'},
-        {to: '/knowledge/proposal/overview', label: 'Proposal Center', position: 'left'},
+        {to: '/knowledge/intro', label: '지식센터', position: 'left'},
+        {to: '/knowledge/copilot/overview', label: 'Copilot', position: 'left'},
+        {to: '/knowledge/microsoft365/e3-vs-e5', label: '라이선스', position: 'left'},
+        {to: '/knowledge/architecture/overview', label: '설계도', position: 'left'},
+        {to: '/knowledge/downloads/overview', label: '자료실', position: 'left'},
         {type: 'search', position: 'right'},
-        {to: '/knowledge/about', label: 'About', position: 'right'},
-        {to: '/knowledge/contact', label: 'Contact', position: 'right'},
+        {to: '/knowledge/about', label: '소개', position: 'right'},
+        {to: '/knowledge/contact', label: '문의', position: 'right'},
         {href: 'https://github.com/Eric841001', label: 'GitHub', position: 'right'},
       ],
     },
