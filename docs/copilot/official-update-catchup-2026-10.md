@@ -391,7 +391,7 @@ Microsoft는 외부 메일처럼 신뢰되지 않은 콘텐츠를 기본 모델�
 
 ## Copilot 구매·과금 변경 예고 {/* #copilot-december-2026-purchase-changes */}
 
-12월 1일 시행 예정인 구매 조건과 CSP 과금 변경은 [라이선스 변경 안내](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes)에서 확인하세요. 한국의 초기 제외 조건은 CSP 신규 Copilot Business의 과금 기본 활성화에 관한 내용입니다. 현재 모든 구독에 과금이 자동 적용됐다는 뜻은 아닙니다.
+Copilot의 기본 구독 구매 조건은 2026년 12월 1일 변경될 예정입니다. CSP에서 Microsoft 365 Copilot Business를 새로 구매할 때 사용량 과금이 기본으로 켜지는 시점은 2027년 1~3월로 연기됐습니다. 한국도 대상이며, 새로 구매한 테넌트에서는 기존 Copilot Business 라이선스에도 적용됩니다. [구매 조건 안내](../licensing/july-2026-microsoft-licensing-update#copilot-december-2026-purchase-changes) · [Microsoft의 11월 정정 공지](https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments)
 
 ## 10월 15일 Copilot for legal GA
 
