@@ -270,6 +270,7 @@ module.exports = {
       },
       items: [
         'downloads/overview',
+        'downloads/m365-security-project-portal',
         'downloads/discovery-questionnaire',
         'downloads/m365-assessment-workbook',
         'downloads/downloads-sow-template',

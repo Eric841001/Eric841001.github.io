@@ -55,8 +55,8 @@ sidebar_label: Downloads Center
       </a>
     </div>
     <div className="kc-guardrail-panel">
-      <strong>Actual files are not openly published</strong>
-      <span>DOCX, XLSX and PPTX versions can be shared after the business scenario, intended audience and confidentiality boundary are clear.</span>
+      <strong>Editable templates are shared on request</strong>
+      <span>The generalized project portal is downloadable directly. DOCX, XLSX and PPTX versions can be shared after the business scenario, intended audience and confidentiality boundary are clear.</span>
     </div>
   </div>
 </section>
@@ -64,6 +64,11 @@ sidebar_label: Downloads Center
 ## Requestable Asset Catalog
 
 <div aria-label="Requestable consulting asset catalog" className="kc-entry-hub kc-asset-catalog">
+  <a href="/knowledge/downloads/m365-security-project-portal">
+    <small>바로 내려받기</small>
+    <strong>M365 보안 프로젝트 포털 (공개용)</strong>
+    <span>환경 조사, 요구사항, 정책 설계, WBS, 보고서를 HTML 파일 하나로 관리합니다. 상태 파일(JSON)·PPT·Excel로 내보냅니다.</span>
+  </a>
   <a href="/knowledge/downloads/discovery-questionnaire">
     <small>Discovery</small>
     <strong>Discovery Questionnaire</strong>

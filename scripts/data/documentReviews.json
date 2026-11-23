@@ -4669,5 +4669,26 @@
     ],
     "reviewLevel": "작성자 예시·참고자료",
     "notChecked": "본문의 기술 사실은 기록된 공식 자료와 개별 대조했습니다. 실제 테넌트·기기에서 명령이나 정책을 실행하지 않았습니다. 작성자의 사례·일정·성과는 독립 검증된 고객 실적으로 보지 않습니다."
+  },
+  "/knowledge/downloads/m365-security-project-portal": {
+    "file": "docs/downloads/m365-security-project-portal.md",
+    "checkedOn": "2026-11-23",
+    "kind": "템플릿·실무 예시",
+    "scope": "확인한 항목: 공개용 포털 파일의 고객 식별 정보 제거 여부, 상태 파일 저장과 PPT·Excel·Word 내보내기 동작",
+    "note": "적용 전 최신 공식 자료와 라이선스·계약 조건을 확인하고, 상태 파일은 프로젝트 관계자끼리만 주고받으세요.",
+    "sources": [
+      {
+        "title": "Microsoft 365 service descriptions",
+        "url": "https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library",
+        "checkedFor": "플랜별 보안 기능 비교의 출발점이며 실제 사용자 서비스 플랜·계약 조건 확인이 필요합니다."
+      },
+      {
+        "title": "Data, Privacy, and Security for Microsoft 365 Copilot",
+        "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+        "checkedFor": "Copilot 도입 판단표의 데이터 처리 조건은 이 문서와 계약 조건으로 다시 확인해야 합니다."
+      }
+    ],
+    "reviewLevel": "작성자 예시·참고자료",
+    "notChecked": "포털의 판단표와 정책 초안은 작성자의 정리이며 특정 고객 환경에서의 적합성이나 기능 제공 상태를 보증하지 않습니다."
   }
 }

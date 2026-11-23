@@ -85,6 +85,8 @@ const diagramScriptVersion = createHash('sha256')
               const source = path.join(dir, entry.name);
 
               if (entry.isDirectory()) {
+                // Downloadable files keep their .html name only.
+                if (path.relative(outDir, source) === 'files') continue;
                 copyExtensionless(source);
                 continue;
               }
