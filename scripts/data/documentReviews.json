@@ -728,7 +728,7 @@
     "file": "docs/copilot/copilot-studio.md",
     "checkedOn": "2026-11-23",
     "kind": "기술·운영 가이드",
-    "scope": "이번 개별 대조·수정: 지식 원본과 인증의 지원표, 별도 Fabric·외부 시스템 연결, 데모 사이트의 시험 용도를 구분했습니다. SharePoint 지식 원본의 사용자 읽기 권한과 문서 안 링크의 검색 범위를 확인했습니다.",
+    "scope": "이번 개별 대조·수정: 지식 원본과 인증의 지원표, 별도 Fabric·외부 시스템 연결, 데모 사이트의 시험 용도를 구분했습니다. SharePoint 지식 원본의 사용자 읽기 권한과 문서 안 링크의 검색 범위를 확인했습니다. 환경 용량과 에이전트 월 한도, 흐름 예외, 리소스 지출 정책의 적용 범위를 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -790,6 +790,16 @@
         "title": "Add SharePoint as a knowledge source",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint",
         "checkedFor": "SharePoint 지식 원본의 사용자 읽기 권한과 문서 안 링크의 검색 범위를 확인했습니다."
+      },
+      {
+        "title": "Manage Copilot Credits and capacity",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/manage-copilot-studio-copilot-credits-capacity",
+        "checkedFor": "미할당 용량·종량제 선택, 에이전트 중지 지연, 흐름의 별도 검사를 확인했습니다."
+      },
+      {
+        "title": "Manage Copilot Studio costs",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
+        "checkedFor": "리소스 기반 지출 정책이 적용되면 관리 범위가 바뀝니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

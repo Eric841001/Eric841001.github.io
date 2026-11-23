@@ -924,6 +924,17 @@ Consider:
 - Azure consumption
 - Third-party system licensing
 
+### 환경과 에이전트의 크레딧 한도 설정 {/* #credit-limits */}
+
+먼저 해당 환경의 크레딧을 어느 관리 센터에서 관리하는지 확인하세요. Microsoft 365 관리 센터에서 리소스 기반 지출 정책을 적용한 리소스는 그 정책을 따릅니다. 아래 절차는 Power Platform 관리 센터에서 용량을 관리하는 환경에 적용됩니다. [Microsoft 365 지출 정책 적용 범위](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs)
+
+1. **환경에서 쓸 수 있는 크레딧을 정합니다.** Power Platform 관리 센터의 **라이선싱 → Copilot Studio → Copilot 크레딧 관리**에서 환경을 선택하고 선불 크레딧을 할당하세요. 배정한 수량까지만 사용하려면 테넌트의 미할당 용량 사용과 종량제 청구를 모두 해제하세요. 사용 가능한 크레딧이 떨어지면 크레딧이 필요한 기능이 중단될 수 있습니다.
+2. **에이전트 하나의 월 사용량을 제한합니다.** **에이전트 관리 → 대상 에이전트 → 한도 설정**에서 월 한도와 알림 기준을 입력하세요. 한도에 도달했을 때 에이전트를 끄려면 사용 중지 옵션도 켜세요. 중지가 반영되기까지 시간이 걸릴 수 있으므로 알림은 한도에 닿기 전에 받도록 설정하세요.
+3. **에이전트가 호출한 흐름도 확인합니다.** 에이전트의 월 한도에 도달해도 호출된 흐름에는 별도의 용량 검사가 적용됩니다. 흐름 사용량은 환경별로 확인하세요. [Microsoft의 크레딧 할당 및 에이전트 한도 안내](https://learn.microsoft.com/en-us/power-platform/admin/manage-copilot-studio-copilot-credits-capacity)
+
+환경 할당과 에이전트 한도를 설정하는 순서는 이강표의 《Copilot Studio Credit 사용 제한 설정 가이드》 2–6쪽을 참고했습니다.
+
+
 ---
 
 
