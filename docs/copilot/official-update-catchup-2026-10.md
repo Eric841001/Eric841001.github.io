@@ -75,7 +75,7 @@ Copilot Studio 가이던스 허브에 **Model Assessment Preview**가 추가됐�
 |---|---|
 | Copilot Studio evaluations | 활성 테스트 세트 이름에 `MODELCHECK`가 있어야 합니다. Microsoft Copilot harness와 Standard harness에서 각 harness가 지원하는 평가 방식을 사용하며, 에이전트를 게시할 필요는 없습니다. |
 | Copilot Agent Kit tests | Standard harness만 지원합니다. Pipeline Enabled Agent Configuration과 Kit 테스트 세트가 필요하며, 평가는 게시된 에이전트를 대상으로 실행됩니다. |
-| 비교와 판정 | 같은 테스트 엔진의 완료 실행만 비교할 수 있고 최대 3개 실행을 나란히 볼 수 있습니다. AI 권고와 신뢰도는 승인 근거의 일부일 뿐이며, 개별 실패·지연·안전·지역 처리 조건을 별도로 검토해야 합니다. |
+| 비교와 판정 | 같은 테스트 엔진의 완료 실행만 비교할 수 있고 최대 3개 실행을 나란히 볼 수 있습니다. 모델 추천 카드는 같은 엔진의 실행 결과를 정확히 두 개 선택했을 때 표시됩니다. 최종 결정 전에는 개별 실패·지연·안전·지역 처리 조건을 별도로 검토해야 합니다. |
 | 구성 변경 위험 | 비운영 복사본에서 평가하세요. Model Assessment에서 모델을 선택하면 에이전트 구성이 바뀌고 Kit 테스트는 에이전트를 게시합니다. |
 | 비용 | 공식 문서는 실행당 약 150 Copilot Credits를 안내합니다. Kit 테스트의 크레딧은 화면에 보고되지 않으며 AI 요약·권고도 별도 용량을 사용할 수 있으므로 표시값만으로 총비용을 판단하지 않습니다. |
 
@@ -209,7 +209,7 @@ Microsoft의 11월 Partner Center 공지는 Microsoft 365 Copilot 라이선스�
 | 변경 | 대상·시점 | 운영 확인 |
 |---|---|---|
 | Copilot Chat fair-use 제한 확대 | Microsoft 365 Copilot 라이선스가 없는 상용 테넌트 사용자. 2,000석 이하 조직은 11월 2일, 2,000석 초과 조직은 11월 9일부터 시작 | Web·데스크톱·모바일에서 일부 추가 기능과 기능 범위에 제한이 적용될 수 있습니다. 제한에 도달하면 제품에 다시 사용할 수 있는 시점이 표시되며, 이미 진행 중인 응답은 중단되지 않습니다. 정확한 고정 할당량으로 환산하지 말고 Message center의 `MC1536158`, `MC1536163`과 실제 사용자 알림을 확인하세요. |
-| Copilot Business 사용량 과금 기본 활성화 | CSP에서 FY27 Q3(2027년 1~3월)에 신규 구매하는 Microsoft 365 Copilot Business. 새 구매가 있는 테넌트의 기존 Copilot Business 구독에도 기본 활성화 | 이전의 12월 1일 일정을 사용하지 마세요. 기본 지출 한도는 사용자당 월 4,000 Copilot Credits이지만 무료 제공량이 아니며 실제 사용량이 청구됩니다. 관리 센터 또는 Partner Center에서 한도를 조정하고 Cowork·Work IQ API·Microsoft Copilot harness 사용량을 확인하세요. |
+| Copilot Business 사용량 과금 기본 활성화 | CSP에서 FY27 Q3(2027년 1~3월)에 신규 구매하는 Microsoft 365 Copilot Business. 새 구매가 있는 테넌트의 기존 Copilot Business 구독에도 기본 활성화 | 이전의 12월 1일 일정을 사용하지 마세요. 기본 지출 한도는 사용자당 월 4,000 Copilot Credits이지만 무료 제공량이 아니며 실제 사용량이 청구됩니다. 관리 센터 또는 Partner Center에서 한도를 조정할 수 있습니다. 11월 3일 과금 공지는 종량제 적용 예로 Copilot Cowork, Work IQ API, GitHub Copilot Harness를 듭니다. |
 | 지역·샌드박스 일정 | 과금 기본 활성화는 한국을 포함한 모든 시장으로 안내. Partner Center 샌드박스의 기존 11월 2일 일정은 연기됐고 새 날짜는 미정 | 한국을 초기 제외 지역으로 가정하지 마세요. 샌드박스 준비 일정은 Microsoft의 후속 공지를 기다리고 실제 가격 목록·SKU·테넌트 설정을 다시 확인하세요. |
 
 fair-use 제한은 Copilot Chat이 Microsoft 365 구독에서 제외된다는 의미가 아니며, 별도의 관리자 작업도 요구하지 않습니다. Microsoft 365 Copilot 라이선스 보유자는 추가 기능과 사용 범위를 이용할 수 있으므로, 지원 부서는 제한 알림을 서비스 장애로 오인하지 않도록 사용자 유형과 라이선스 할당을 함께 확인해야 합니다.

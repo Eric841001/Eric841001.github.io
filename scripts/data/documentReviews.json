@@ -1125,7 +1125,7 @@
       {
         "title": "Copilot Agent Kit model assessment",
         "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-model-assessment",
-        "checkedFor": "Preview 표기, MODELCHECK·pipeline 조건, harness별 테스트 엔진, 비운영 복사본, 모델 변경·게시 동작, 동일 엔진 비교와 실행당 약 150 Copilot Credits를 확인했습니다."
+        "checkedFor": "Preview 표기, MODELCHECK·pipeline 조건, harness별 테스트 엔진, 비운영 복사본, 모델 변경·게시 동작, 동일 엔진 비교와 실행당 약 150 Copilot Credits를 확인했습니다. 완료 실행 최대 3개 비교와 정확히 2개 선택 시 추천 표시 조건을 구분했습니다."
       },
       {
         "title": "Copilot Studio model migration",
@@ -1140,7 +1140,7 @@
       {
         "title": "Partner Center November 2026 announcements",
         "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-november#availability-update-updates-to-usage-based-billing-for-new-microsoft-365-copilot-business-licenses-and-partner-center-sandbox-environments",
-        "checkedFor": "사용량 과금 기본 적용 시점과 한국 포함 여부, 신규 구매 시 기존 라이선스 적용 범위를 확인했습니다."
+        "checkedFor": "사용량 과금 기본 적용 시점과 한국 포함 여부, 신규 구매 시 기존 라이선스 적용 범위를 확인했습니다. 이 공지에서 예로 든 세 서비스의 명칭도 대조했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
