@@ -12,15 +12,16 @@ description: "Architecture Center - The Architecture Center organizes Microsoft 
 궁금한 영역을 선택하면 해당 설계 문서의 설명으로 이동합니다.
 
 <nav className="design-atlas" aria-label="영역별 아키텍처 설계도">
+  <strong className="atlas-caption">Microsoft 클라우드 아키텍처</strong>
   <div className="atlas-layer">
     <strong>업무 환경</strong>
     <a href="/knowledge/architecture/m365-reference-architecture#collaboration-architecture">Microsoft 365 협업</a>
-    <a href="/knowledge/architecture/copilot-architecture#core-components">Copilot 구성 요소</a>
+    <a href="/knowledge/architecture/copilot-architecture#copilot-architecture-overview">Copilot 구성 요소</a>
   </div>
   <div className="atlas-layer">
     <strong>기반과 보호</strong>
     <a href="/knowledge/architecture/azure-landing-zone-architecture#network-architecture">Azure 네트워크</a>
-    <a href="/knowledge/architecture/security-reference-architecture#security-domains">보안 영역</a>
+    <a href="/knowledge/architecture/security-reference-architecture#security-architecture-overview">보안 영역</a>
   </div>
   <div className="atlas-layer">
     <strong>전환과 운영</strong>

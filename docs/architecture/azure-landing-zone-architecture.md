@@ -88,39 +88,17 @@ Typical Azure initiatives include:
 
 ## Landing Zone Architecture Overview
 
-<div aria-label="Azure landing zone architecture overview" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Landing Zone Architecture Overview</span>
-    <strong>Tenant hierarchy to governed workload subscriptions</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Tenant root</strong>
-      <span>Tenant root defines the top of the hierarchy; keep root-scope policy assignments limited and place shared guardrails at the appropriate intermediate management group.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Platform</strong>
-      <span>Identity, connectivity and management subscriptions provide shared services.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Landing zones</strong>
-      <span>Production, non-production and sandbox subscriptions separate ownership and risk.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Controls</strong>
-      <span>Configure Azure Policy, RBAC, tags, budgets and security monitoring at the intended scopes; test coverage and exceptions.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Workloads</strong>
-      <span>Applications, data, AI and integration workloads onboard into a governed foundation.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="azure-landing-zone-architecture-overview"
+  title="Azure 랜딩 존"
+  nodes={[
+    ["tenant-root","테넌트 루트","테넌트 루트는 관리 그룹 계층의 최상위입니다. 루트에 직접 할당하는 정책은 최소화하고, 공통 정책은 해당 구독을 묶는 관리 그룹에 할당하세요."],
+    ["platform","공유 플랫폼","ID, 네트워크 연결, 관리용 구독에서 여러 팀이 함께 쓰는 서비스를 운영합니다."],
+    ["landing-zones","랜딩 존","운영·비운영·샌드박스 환경을 구독으로 나누고 각 구독의 책임자를 정합니다."],
+    ["controls","정책과 권한","Azure Policy, RBAC, 태그, 예산과 보안 모니터링의 적용 범위를 정하고 예외가 의도대로 작동하는지 시험합니다."],
+    ["workloads","워크로드","준비한 환경에 애플리케이션, 데이터, AI와 통합 워크로드를 배치합니다."],
+  ]}
+/>
 
 ## Core Components
 
@@ -139,39 +117,17 @@ Management groups organize policy inheritance. Avoid duplicating the organizatio
 
 ## Network Architecture
 
-<div aria-label="Azure landing zone network architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Network Architecture</span>
-    <strong>Hybrid connectivity, inspection and workload segmentation</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>On-premises</strong>
-      <span>Datacenter, branch, identity, DNS and legacy workload connectivity requirements.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Gateway</strong>
-      <span>ExpressRoute, VPN, routing and connectivity resilience pattern.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Hub VNet</strong>
-      <span>Shared services, DNS, firewall, private access and inspection point.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Spokes</strong>
-      <span>Application, data, AI and integration workloads are segmented by environment.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Operations</strong>
-      <span>Flow logs, monitoring, security alerts and network change governance.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="azure-landing-zone-network-architecture"
+  title="Azure 네트워크"
+  nodes={[
+    ["on-premises","온프레미스","데이터센터와 지사에서 연결할 시스템을 파악하고 ID, DNS, 기존 업무 시스템의 통신 요구 사항을 정리합니다."],
+    ["gateway","게이트웨이","ExpressRoute나 VPN을 선택하고 라우팅과 회선 장애 시 연결 경로를 설계합니다."],
+    ["hub-vnet","허브 가상 네트워크","허브에 공유 서비스, DNS, 방화벽과 트래픽 검사 지점을 두고 프라이빗 연결 경로를 정합니다."],
+    ["spokes","스포크","환경별 스포크를 나누어 애플리케이션, 데이터, AI와 통합 워크로드를 배치합니다."],
+    ["operations","운영","흐름 로그와 보안 경보를 살펴보고 네트워크 변경을 검토할 담당자를 정합니다."],
+  ]}
+/>
 
 For new network logging, use **virtual network flow logs**. NSG flow logs no longer allow new creation and retire on **September 30, 2027**. Plan migration of existing logs and Traffic Analytics instead of copying a legacy NSG logging deployment. See [the retirement and migration notice](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview).
 

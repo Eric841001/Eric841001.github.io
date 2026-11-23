@@ -102,44 +102,18 @@ The readiness question is no longer only "Can we enable Copilot?" It is "Can we 
 
 ## Readiness Architecture
 
-<div aria-label="Copilot readiness architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Readiness Architecture</span>
-    <strong>Business objective to controlled rollout</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Business Objectives</strong>
-      <span>Target roles, scenarios, value hypothesis and pilot scope.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Identity &amp; Security</strong>
-      <span>Entra ID, Conditional Access, Defender and device controls.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Data Governance</strong>
-      <span>SharePoint permissions, Purview labels, DLP and content quality.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Adoption &amp; Support</strong>
-      <span>Training, champions, help desk, VOC and communications.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>05</small>
-      <strong>Pilot Insights</strong>
-      <span>Usage, risk, quality, satisfaction and improvement backlog.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>06</small>
-      <strong>Enterprise Rollout</strong>
-      <span>Scaled adoption with governance, measurement and support cadence.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="copilot-readiness-architecture"
+  title="Copilot 도입 준비"
+  nodes={[
+    ["business-objectives","업무 목표","사용 대상과 업무 사례를 고르고 기대 효과와 시험 운영 범위를 정합니다."],
+    ["identity-security","ID와 보안","Entra ID, 조건부 액세스, Defender와 기기 정책을 점검합니다."],
+    ["data-governance","데이터 거버넌스","SharePoint 권한, Purview 레이블, DLP와 자료의 품질을 확인합니다."],
+    ["adoption-support","사용자 지원","교육과 현업 지원, 헬프데스크, 사용자 의견 수집과 공지 절차를 준비합니다."],
+    ["pilot-insights","시험 운영 결과","사용량, 위험, 품질과 만족도를 살펴보고 개선할 일을 정리합니다."],
+    ["enterprise-rollout","전사 배포","운영 책임과 성과 측정, 지원 주기를 정한 뒤 도입 범위를 넓힙니다."],
+  ]}
+/>
 
 ---
 

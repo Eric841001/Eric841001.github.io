@@ -86,39 +86,17 @@ Typical Copilot initiatives include:
 
 ## Copilot Architecture Overview
 
-<div aria-label="Copilot architecture overview" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Copilot Architecture Overview</span>
-    <strong>Graph-grounded AI with identity, data and adoption controls</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Business users</strong>
-      <span>Users apply Copilot to meetings, documents, email, analysis and decision support.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Microsoft Graph</strong>
-      <span>Exchange, Teams, SharePoint, OneDrive, Planner and Microsoft 365 context.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Security boundary</strong>
-      <span>Entra ID, Conditional Access, permissions, Purview, DLP, labels and audit.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Agents</strong>
-      <span>Copilot Studio and AI agents extend scenarios with tools, workflows and governance.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Adoption value</strong>
-      <span>Training, champions, KPI, telemetry and business outcome measurement.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="copilot-architecture-overview"
+  title="Microsoft 365 Copilot"
+  nodes={[
+    ["business-users","업무 사용자","회의 정리, 문서 작성, 메일 처리, 자료 분석 중 어떤 업무에 Copilot을 쓸지 정합니다."],
+    ["microsoft-graph","Microsoft Graph","Exchange, Teams, SharePoint, OneDrive, Planner 등에서 사용자가 접근할 수 있는 업무 자료를 연결합니다."],
+    ["security-boundary","접근 권한과 데이터 보호","Entra ID와 조건부 액세스, 원본 자료의 권한을 점검합니다. Purview 레이블, DLP와 감사 기록도 함께 검토합니다."],
+    ["agents","에이전트","Copilot Studio의 에이전트에 업무에 필요한 도구와 워크플로를 연결하고 운영 책임자를 정합니다."],
+    ["adoption-value","도입 효과","교육과 현업 담당자의 지원이 실제로 도움이 됐는지 사용 기록과 업무 성과를 함께 살펴봅니다."],
+  ]}
+/>
 
 ## Core Components
 

@@ -72,39 +72,17 @@ SOC 담당자가 경고를 분류하고 원인을 조사한 뒤 격리·복구·
 
 ## Reference Architecture View
 
-<div className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Microsoft Defender XDR Reference Flow</span>
-    <strong>Security signal to executive evidence</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node">
-      <small>01</small>
-      <strong>Signal collection</strong>
-      <span>Endpoint, identity, email, cloud app and data signals are licensed, provisioned and healthy.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Incident correlation</strong>
-      <span>Related alerts are grouped into incidents that show attack scope, impacted assets and evidence.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Analyst triage</strong>
-      <span>SOC roles decide severity, ownership, escalation route and containment priority.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>04</small>
-      <strong>Response action</strong>
-      <span>Automated investigation, attack disruption, device isolation, email purge and identity actions are governed.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>05</small>
-      <strong>Improvement loop</strong>
-      <span>Hunting queries, detection tuning, KPI review and executive reports improve the security baseline.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="signal-collection"
+  title="Defender XDR 대응 과정"
+  nodes={[
+    ["signal-collection","신호 수집","엔드포인트, ID, 메일, 클라우드 앱과 데이터 신호에 필요한 라이선스와 설정, 수집 상태를 확인합니다."],
+    ["incident-correlation","인시던트 연결","연관된 경보를 인시던트로 묶어 영향 범위, 관련 자산과 증거를 살펴봅니다."],
+    ["analyst-triage","분석가 검토","관제팀이 심각도와 담당자, 보고 경로와 확산 방지 작업의 우선순위를 정합니다."],
+    ["response-action","대응 조치","자동 조사와 공격 중단, 기기 격리, 메일 제거 및 ID 관련 조치의 승인과 실행 범위를 관리합니다."],
+    ["improvement-loop","개선","헌팅 쿼리와 탐지 규칙을 조정하고 지표와 보고서를 검토해 보안 기준을 개선합니다."],
+  ]}
+/>
 
 ## Core Capability Map
 

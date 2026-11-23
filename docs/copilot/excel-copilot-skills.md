@@ -146,39 +146,17 @@ These are pilot evaluation goals, not guaranteed outcomes from enabling a skill.
 
 ## Frontier Finance Architecture
 
-<div aria-label="Frontier finance architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Frontier Finance Architecture</span>
-    <strong>Excel Copilot, skills, data and models into business output</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Excel Copilot</strong>
-      <span>Finance users work inside the spreadsheet interface they already use.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Skills</strong>
-      <span>Task-specific skills provide reusable instructions; check that each output follows the intended financial method.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Enterprise data</strong>
-      <span>Trusted workbook, connector and business data provide controlled grounding.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Finance models</strong>
-      <span>DCF, forecast, variance, portfolio and close models create decision logic.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Business output</strong>
-      <span>Validated analysis, management reporting and finance decision support.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="frontier-finance-architecture"
+  title="Excel 재무 분석"
+  nodes={[
+    ["excel-copilot","Excel Copilot","재무 담당자가 익숙한 Excel 스프레드시트에서 분석을 시작합니다."],
+    ["skills","스킬","반복할 업무의 지시를 스킬로 저장하고, 결과가 의도한 재무 분석 방법을 따르는지 확인합니다."],
+    ["enterprise-data","기업 데이터","검토한 통합 문서와 커넥터, 업무 데이터를 분석의 근거로 사용합니다."],
+    ["finance-models","재무 모델","현금흐름할인, 예측, 차이 분석, 포트폴리오와 결산 모델에 맞춰 판단 기준을 정합니다."],
+    ["business-output","분석 결과","검증한 분석 결과를 경영 보고와 재무 의사결정에 사용합니다."],
+  ]}
+/>
 
 ---
 

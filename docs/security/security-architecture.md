@@ -86,44 +86,18 @@ Organizations must achieve:
 
 ## Security Reference Architecture
 
-<div aria-label="Enterprise security reference architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Reference Architecture</span>
-    <strong>User access to detection and response</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>User</strong>
-      <span>Workforce, admin, guest, partner and service identities.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Entra ID</strong>
-      <span>Authentication, Conditional Access, identity governance and risk signals.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Intune</strong>
-      <span>Device compliance, configuration, app protection and platform baselines.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Defender &amp; Purview</strong>
-      <span>Endpoint, email, data protection, DLP, audit and insider risk controls.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>05</small>
-      <strong>Copilot Security</strong>
-      <span>Permission boundary, data protection, prompt behavior and AI governance.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>06</small>
-      <strong>SOC</strong>
-      <span>Defender XDR, Sentinel, triage, incident response and evidence.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="enterprise-security-reference-architecture"
+  title="기업 보안 구성"
+  nodes={[
+    ["user","사용자","직원, 관리자, 게스트, 협력사와 서비스 ID를 구분합니다."],
+    ["entra-id","Entra ID","인증, 조건부 액세스, ID 거버넌스와 위험 신호를 점검합니다."],
+    ["intune","Intune","기기 준수, 구성 정책, 앱 보호와 플랫폼별 보안 기준을 관리합니다."],
+    ["defender-purview","Defender와 Purview","엔드포인트와 메일, 데이터 보호를 함께 살펴보고 DLP, 감사와 내부자 위험 통제를 적용합니다."],
+    ["copilot-security","Copilot 보안","Copilot의 권한 범위, 데이터 보호, 프롬프트 동작과 AI 운영 기준을 검토합니다."],
+    ["soc","보안 관제","Defender XDR과 Sentinel에서 경보를 분류하고 인시던트 대응과 증거 검토를 진행합니다."],
+  ]}
+/>
 
 ---
 

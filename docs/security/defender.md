@@ -51,23 +51,16 @@ For enterprise architecture, the goal is not to enable every feature at once. Th
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>Defender signal architecture</span>
   <strong>Workloads to response</strong>
-</div><div aria-label="Defender XDR architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>Signals</small>
-  <strong>MDO, MDE, MDI, MDCA</strong>
-  <span>Email, endpoint, identity and cloud app detections are onboarded with clear ownership.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>XDR</small>
-  <strong>Incident correlation</strong>
-  <span>Alerts are grouped into incidents with severity, entity context and recommended actions.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>Operate</small>
-  <strong>SOC triage model</strong>
-  <span>Analysts follow escalation, containment, evidence and exception handling runbooks.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>Report</small>
-  <strong>Executive metrics</strong>
-  <span>Risk trend, response time, policy gaps and improvement backlog are reported in business language.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="defender-xdr-architecture"
+  title="Defender XDR 구성"
+  nodes={[
+    ["mdo-mde-mdi-mdca","보안 신호","메일, 엔드포인트, ID와 클라우드 앱의 탐지 신호를 연결하고 담당자를 지정합니다."],
+    ["incident-correlation","인시던트 연결","경보를 인시던트 단위로 모아 심각도, 관련 대상과 권장 조치를 확인합니다."],
+    ["soc-triage-model","관제팀 분류","분석 담당자가 보고, 확산 방지, 증거 보존과 예외 처리 절차에 따라 대응합니다."],
+    ["executive-metrics","경영진 지표","위험 추세, 대응 시간, 정책의 빈틈과 개선 과제를 업무 영향 중심으로 보고합니다."],
+  ]}
+/></div>
 
 ## Implementation
 

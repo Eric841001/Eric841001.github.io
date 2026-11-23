@@ -76,23 +76,16 @@ Standard 그룹은 **하루 두 번** 갱신됩니다. 즉시 접근을 허용�
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>Identity control model</span>
   <strong>Least privilege by design</strong>
-</div><div aria-label="Azure identity architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Entra ID baseline</strong>
-  <span>Tenant, groups, administrator model, break-glass and sign-in risk controls.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>RBAC and PIM</strong>
-  <span>Group-based assignments, eligible roles, approval, justification and activation logs.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Workload identity</strong>
-  <span>Managed identities, service principals, app permissions and secret lifecycle review.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Access evidence</strong>
-  <span>Reviews, exception records, privileged access reporting and audit-ready ownership.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="azure-identity-architecture"
+  title="Azure ID와 접근 권한"
+  nodes={[
+    ["entra-id-baseline","Entra ID","테넌트와 그룹, 관리자 역할을 설계하고 긴급 접근 계정과 로그인 위험 정책을 준비합니다."],
+    ["rbac-and-pim","RBAC와 PIM","그룹 단위 역할 할당과 활성화 자격, 승인 절차, 사유 입력, 활성화 기록을 검토합니다."],
+    ["workload-identity","워크로드 ID","관리 ID와 서비스 주체가 쓰는 앱 권한을 확인하고 비밀 값의 교체 시점을 관리합니다."],
+    ["access-evidence","접근 기록","권한 검토 결과와 예외 승인 기록, 관리자 권한 사용 내역과 책임자를 확인합니다."],
+  ]}
+/></div>
 
 ## Implementation
 

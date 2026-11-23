@@ -56,23 +56,16 @@ Azure Virtual Machines로 업무 시스템을 운영할 때 확인할 설계 항
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>Azure VM architecture</span>
   <strong>Compute with governance controls</strong>
-</div><div aria-label="Azure virtual machine architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Azure VM</strong>
-  <span>Define workload purpose, operating system, sizing, image and ownership.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Network and storage</strong>
-  <span>Place VM in VNet, subnet, NSG, managed disk and private access design.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Backup and monitoring</strong>
-  <span>Enable backup, patching, monitoring, logging and incident ownership.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Security baseline</strong>
-  <span>Apply Defender for Cloud, vulnerability management, access review and cost controls.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="azure-virtual-machine-architecture"
+  title="Azure 가상 머신"
+  nodes={[
+    ["azure-vm","가상 머신","업무 목적과 담당자를 정한 뒤 운영체제, 이미지와 가상 머신 크기를 선택합니다."],
+    ["network-and-storage","네트워크와 스토리지","VNet, 서브넷, 네트워크 보안 그룹, 관리 디스크와 프라이빗 연결 경로를 설계합니다."],
+    ["backup-and-monitoring","백업과 모니터링","백업, 패치, 모니터링과 로그를 설정하고 장애가 발생했을 때 대응할 담당자를 정합니다."],
+    ["security-baseline","보안 기준","Defender for Cloud, 취약점 관리, 접근 권한 검토와 비용 통제를 적용합니다."],
+  ]}
+/></div>
 
 ## Implementation
 

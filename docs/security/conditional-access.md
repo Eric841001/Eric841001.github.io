@@ -140,38 +140,18 @@ Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계�
 
 ## Zero Trust Evaluation Flow
 
-<div aria-label="Conditional Access Zero Trust evaluation flow" className="kc-journey-map kc-ai-journey">
-  <div className="kc-journey-node kc-journey-node--demand">
-    <small>01</small>
-    <strong>User</strong>
-    <span>User, group, role, guest status and privileged access context.</span>
-  </div>
-  <div className="kc-journey-node">
-    <small>02</small>
-    <strong>Device</strong>
-    <span>Registered, hybrid joined, Entra joined, Intune compliant or unmanaged.</span>
-  </div>
-  <div className="kc-journey-node">
-    <small>03</small>
-    <strong>Context</strong>
-    <span>Location, application, platform, client app, risk and session state.</span>
-  </div>
-  <div className="kc-journey-node kc-journey-node--control">
-    <small>04</small>
-    <strong>Policy</strong>
-    <span>Conditional Access evaluates conditions, exclusions and grant controls.</span>
-  </div>
-  <div className="kc-journey-node">
-    <small>05</small>
-    <strong>Control</strong>
-    <span>Require MFA, compliant device, app protection, session control or block access.</span>
-  </div>
-  <div className="kc-journey-node kc-journey-node--outcome">
-    <small>06</small>
-    <strong>Access</strong>
-    <span>Access is granted, limited, monitored or blocked with audit evidence.</span>
-  </div>
-</div>
+<ArchitectureFigure
+  id="conditional-access-zero-trust-evaluation-flow"
+  title="조건부 액세스 평가"
+  nodes={[
+    ["user","사용자","사용자와 그룹, 역할, 게스트 여부와 관리자 권한을 확인합니다."],
+    ["device","기기","기기의 등록·조인 상태, Intune 준수 여부와 관리 여부를 확인합니다."],
+    ["context","로그인 조건","위치, 애플리케이션, 플랫폼, 클라이언트 앱, 위험도와 세션 상태를 살펴봅니다."],
+    ["policy","정책","조건부 액세스 정책의 조건과 제외 대상, 권한 부여 제어를 평가합니다."],
+    ["control","접근 제어","MFA, 준수 기기, 앱 보호, 세션 제어 또는 접근 차단 중 정책에 지정한 조치를 적용합니다."],
+    ["access","접근 결과","접근이 허용·제한·차단됐는지, 모니터링 대상으로 기록됐는지 확인합니다."],
+  ]}
+/>
 
 ## Mobile policy control change — 2026-10-25
 

@@ -102,39 +102,17 @@ The five levels below are an author-proposed planning model, rather than a Micro
 
 ## Enterprise Prompt Architecture
 
-<div className="kc-journey-map" aria-label="Enterprise prompt architecture">
-  <div className="kc-journey-map__header">
-    <span>Enterprise Prompt Architecture</span>
-    <strong>User intent to validated business action</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>User intent</strong>
-      <span>Business user defines the decision, document, analysis or action required.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Prompt structure</strong>
-      <span>Role, task, context, output and constraints shape the request.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Copilot response</strong>
-      <span>Available context depends on the selected experience, license, Work IQ settings and user permissions; review the generated response.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Validation</strong>
-      <span>Human reviewer checks accuracy, sensitivity, assumptions and completeness.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Business action</strong>
-      <span>Approved output becomes a decision, proposal, design, playbook or agent candidate.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="enterprise-prompt-architecture"
+  title="업무용 프롬프트 구성"
+  nodes={[
+    ["user-intent","사용자 의도","사용자가 필요한 결정, 문서, 분석 또는 수행할 작업을 정합니다."],
+    ["prompt-structure","프롬프트 구성","역할, 할 일, 맥락, 결과 형식과 제약 조건을 요청에 담습니다."],
+    ["copilot-response","Copilot 응답","사용 환경과 라이선스, Work IQ 설정, 사용자의 권한에 따라 참조할 자료가 달라집니다. 생성된 답변을 검토하세요."],
+    ["validation","검토","담당자가 정확성, 민감 정보, 전제 조건과 빠진 내용을 확인합니다."],
+    ["business-action","후속 작업","승인한 결과를 의사결정, 제안서, 설계안, 운영 절차 또는 에이전트 후보 업무에 활용합니다."],
+  ]}
+/>
 
 ---
 

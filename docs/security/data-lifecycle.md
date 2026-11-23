@@ -66,23 +66,16 @@ Microsoft 365 자료의 보관 기간, 삭제와 처분 검토 절차를 정리�
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>Data lifecycle architecture</span>
   <strong>Create, retain, review, dispose</strong>
-</div><div aria-label="Data lifecycle management architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Create and classify</strong>
-  <span>Define how owners classify new content and assign labels; configure automatic labeling separately where supported.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Retain and protect</strong>
-  <span>Retention, records, DLP and access controls apply based on policy.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Review</strong>
-  <span>Owners and compliance teams review stale, sensitive, regulated or obsolete content.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Dispose or evidence</strong>
-  <span>Dispose content when allowed, preserve evidence when legal or audit requirements apply.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="data-lifecycle-management-architecture"
+  title="데이터 수명 주기"
+  nodes={[
+    ["create-and-classify","생성과 분류","자료 소유자가 새 콘텐츠를 분류하고 레이블을 붙일 기준을 정합니다. 자동 레이블 지정은 지원 범위를 확인해 별도로 설정합니다."],
+    ["retain-and-protect","보존과 보호","정책에 따라 보존, 레코드 관리, DLP와 접근 제어를 적용합니다."],
+    ["review","검토","소유자와 규정 준수 담당자가 오래되거나 민감한 자료, 규제 대상이거나 더 이상 쓰지 않는 자료를 검토합니다."],
+    ["dispose-or-evidence","폐기와 증빙","폐기가 허용된 자료를 처리하고 법적 의무나 감사 요건이 있는 경우 증빙을 보존합니다."],
+  ]}
+/></div>
 
 ## Core Design Areas
 

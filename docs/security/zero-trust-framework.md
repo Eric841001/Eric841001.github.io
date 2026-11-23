@@ -87,39 +87,17 @@ Microsoft’s [current Zero Trust principles](https://learn.microsoft.com/en-us/
 
 ## Reference Architecture
 
-<div className="kc-journey-map" aria-label="Zero Trust reference architecture">
-  <div className="kc-journey-map__header">
-    <span>Reference Architecture</span>
-    <strong>Identity, device, data and operations as one control loop</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Users and apps</strong>
-      <span>Employees, guests, administrators, applications and workloads request access.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Entra and Intune</strong>
-      <span>Identity, risk, MFA, privileged access and device compliance create trust signals.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Conditional Access</strong>
-      <span>Policies evaluate user, device, location, application, risk and session context.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Data protection</strong>
-      <span>Purview labels, DLP, retention, audit and sharing controls protect information.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Security operations</strong>
-      <span>Defender XDR and Sentinel support detection, response, tuning and evidence review.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="zero-trust-reference-architecture"
+  title="제로 트러스트 구성"
+  nodes={[
+    ["users-and-apps","사용자와 앱","직원, 게스트, 관리자, 애플리케이션과 워크로드가 접근을 요청합니다."],
+    ["entra-and-intune","Entra와 Intune","ID 위험, MFA, 관리자 권한과 기기 준수 상태를 접근 판단에 활용합니다."],
+    ["conditional-access","조건부 액세스","정책에서 사용자, 기기, 위치, 애플리케이션, 위험도와 세션 조건을 평가합니다."],
+    ["data-protection","데이터 보호","Purview 레이블과 DLP, 보존, 감사 및 공유 제어로 자료를 보호합니다."],
+    ["security-operations","보안 운영","Defender XDR과 Sentinel에서 탐지와 대응을 수행하고 규칙과 조사 기록을 검토합니다."],
+  ]}
+/>
 
 ---
 

@@ -219,38 +219,18 @@ Source: [Assess model changes with Copilot Agent Kit (preview)](https://learn.mi
 
 ## Updated Agent Architecture
 
-<div aria-label="Copilot Studio agent architecture model" className="kc-journey-map">
-  <div className="kc-journey-node kc-journey-node--demand">
-    <small>01</small>
-    <strong>User or trigger</strong>
-    <span>Human request, workflow trigger, business event or scheduled task.</span>
-  </div>
-  <div className="kc-journey-node">
-    <small>02</small>
-    <strong>Agent boundary</strong>
-    <span>Copilot Studio agent, instructions, context, knowledge, tools and channel.</span>
-  </div>
-  <div className="kc-journey-node">
-    <small>03</small>
-    <strong>Orchestration</strong>
-    <span>Reasoning, routing, reusable skills, memory and workflow selection.</span>
-  </div>
-  <div className="kc-journey-node">
-    <small>04</small>
-    <strong>Execution</strong>
-    <span>Agent flow, workflow, connector, API, computer use or agent-to-agent call.</span>
-  </div>
-  <div className="kc-journey-node kc-journey-node--control">
-    <small>05</small>
-    <strong>Control plane</strong>
-    <span>Inventory, Entra Agent ID, DLP, credit forecast, analytics and evaluations.</span>
-  </div>
-  <div className="kc-journey-node kc-journey-node--outcome">
-    <small>06</small>
-    <strong>Outcome</strong>
-    <span>Task completion, decision support, operational insight and measured value.</span>
-  </div>
-</div>
+<ArchitectureFigure
+  id="copilot-studio-agent-architecture-model"
+  title="에이전트 실행 구조"
+  nodes={[
+    ["user-or-trigger","사용자와 트리거","사용자의 요청, 워크플로 트리거, 업무 이벤트나 예약 작업이 실행의 출발점입니다."],
+    ["agent-boundary","에이전트의 범위","에이전트가 맡을 업무에 맞춰 지침, 지식 원본, 도구와 배포 채널을 정합니다."],
+    ["orchestration","오케스트레이션","요청을 해석하고 어느 단계로 보낼지 정합니다. 필요하면 재사용할 스킬, 메모리와 워크플로를 고릅니다."],
+    ["execution","작업 실행","에이전트 흐름, 커넥터, API, 컴퓨터 사용 또는 다른 에이전트 호출로 작업을 수행합니다."],
+    ["control-plane","운영 제어","에이전트 목록과 Entra Agent ID, DLP, 예상 크레딧 사용량, 분석 및 평가 결과를 관리합니다."],
+    ["outcome","결과","작업 완료 여부와 의사결정에 도움이 된 점을 실제 업무 결과로 확인합니다."],
+  ]}
+/>
 
 ## Governance Control Plane
 

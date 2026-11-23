@@ -85,39 +85,17 @@ Typical security initiatives include:
 
 ## Security Architecture Overview
 
-<div aria-label="Security architecture overview" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Security Architecture Overview</span>
-    <strong>Verify access, protect data and operate response</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Users and workloads</strong>
-      <span>Employees, guests, devices, applications and cloud workloads request access.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Identity and access</strong>
-      <span>Entra ID and Conditional Access evaluate access signals; PIM controls privileged role activation.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Endpoint and collaboration</strong>
-      <span>Use device and threat signals to configure access and data controls; validate enforcement in each workload.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Data and operations</strong>
-      <span>Purview, DLP, labels, Defender XDR, Sentinel and incident process.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Governance</strong>
-      <span>Policy, exceptions, evidence, review cadence and continuous improvement.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="security-architecture-overview"
+  title="보안 참조 아키텍처"
+  nodes={[
+    ["users-and-workloads","사용자와 워크로드","접근을 요청하는 주체가 직원, 게스트, 기기, 애플리케이션, 클라우드 워크로드 중 어디에 해당하는지 구분합니다."],
+    ["identity-and-access","ID와 접근 권한","Entra ID와 조건부 액세스에서 로그인 조건을 평가하고, PIM에서 관리자 역할의 활성화를 관리합니다."],
+    ["endpoint-and-collaboration","기기와 협업 환경","기기 상태와 위협 신호를 반영해 접근 및 데이터 정책을 정한 뒤 각 서비스에서 적용 결과를 확인합니다."],
+    ["data-and-operations","데이터 보호와 대응","Purview의 레이블과 DLP로 자료를 보호하고, Defender XDR과 Sentinel에서 인시던트를 조사하고 대응합니다."],
+    ["governance","거버넌스","정책과 예외의 책임자를 정하고, 정기 검토 때 살펴볼 기록과 개선 과제를 남깁니다."],
+  ]}
+/>
 
 ## Security Domains
 

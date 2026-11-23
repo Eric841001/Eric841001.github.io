@@ -64,23 +64,16 @@ For a manufacturing modernization plan, separate shared connectivity, workload s
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>Landing zone architecture</span>
   <strong>Platform controls to workload landing</strong>
-</div><div aria-label="Azure landing zone architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Tenant and hierarchy</strong>
-  <span>Entra tenant, management groups, subscriptions, environment separation and ownership.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Policy and network</strong>
-  <span>Azure Policy baseline, hub network, DNS, firewall, private access and connectivity.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Security and cost</strong>
-  <span>Defender, logging, monitoring, backup, budget, tagging and chargeback controls.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Workload subscription</strong>
-  <span>Validated landing space for migration, application modernization, data and AI services.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="azure-landing-zone-architecture"
+  title="랜딩 존 구성"
+  nodes={[
+    ["tenant-and-hierarchy","테넌트와 계층 구조","Entra 테넌트, 관리 그룹, 구독의 관계를 정리하고 환경별 소유자를 정합니다."],
+    ["policy-and-network","정책과 네트워크","Azure Policy 기본 정책과 허브 네트워크, DNS, 방화벽 및 프라이빗 연결을 설계합니다."],
+    ["security-and-cost","보안과 비용","Defender, 로그, 모니터링과 백업을 점검하고 예산과 태그를 기준으로 비용을 배분합니다."],
+    ["workload-subscription","워크로드 구독","이전할 시스템과 새 애플리케이션, 데이터·AI 서비스가 사용할 구독을 준비하고 배치 조건을 시험합니다."],
+  ]}
+/></div>
 
 Core design areas:
 

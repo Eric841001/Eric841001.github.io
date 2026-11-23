@@ -283,39 +283,17 @@ It supports:
 </ReadingSummary>
 
 
-<div aria-label="Copilot Studio core architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Core Architecture</span>
-    <strong>Channel, agent, knowledge, tools and automation in one platform</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Channels</strong>
-      <span>Teams, Microsoft 365 Copilot, website, demo site or custom app.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Agent</strong>
-      <span>Copilot Studio agent handles intent, orchestration, topics and user experience.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Knowledge</strong>
-      <span>SharePoint, files, websites, Dataverse, Microsoft Graph and enterprise sources.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Tools</strong>
-      <span>Connectors, prompts, REST APIs, MCP servers, computer use and agent flows.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Automation</strong>
-      <span>Power Automate and business systems complete the action loop.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="copilot-studio-core-architecture"
+  title="Copilot Studio 구성"
+  nodes={[
+    ["channels","배포 채널","사용자가 접근할 곳에 맞춰 Teams, Microsoft 365 Copilot, 웹사이트, 데모 사이트 또는 자체 앱을 선택합니다."],
+    ["agent","에이전트","에이전트가 요청의 의도를 파악하고 토픽과 작업 순서를 조정합니다."],
+    ["knowledge","지식 원본","SharePoint, 파일, 웹사이트, Dataverse, Microsoft Graph 등 답변의 근거가 될 자료를 연결합니다."],
+    ["tools","도구","커넥터, 프롬프트, REST API, MCP 서버, 컴퓨터 사용 또는 에이전트 흐름을 연결합니다."],
+    ["automation","자동화","Power Automate와 업무 시스템을 연결해 에이전트가 요청받은 작업을 마치도록 구성합니다."],
+  ]}
+/>
 
 ---
 
@@ -523,39 +501,17 @@ Recommended knowledge sources:
 
 Add actions when a scenario requires a system change, and test permissions, confirmation and recovery before release.
 
-<div aria-label="Copilot Studio tool and action architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Tool and Action Architecture</span>
-    <strong>Design and test the action path</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Intent</strong>
-      <span>User request or trigger identifies a business action.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Tool selection</strong>
-      <span>Agent chooses flow, connector, API, MCP server or prompt tool.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Execution</strong>
-      <span>Business process, enterprise system or external service is invoked.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Control</strong>
-      <span>Configure and test authentication, data policies, approvals, logging and error handling for each action.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Result</strong>
-      <span>User receives confirmation, output, escalation or next-step guidance.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="copilot-studio-tool-and-action-architecture"
+  title="도구 실행 과정"
+  nodes={[
+    ["intent","사용자 의도","사용자 요청이나 트리거에서 수행할 업무를 식별합니다."],
+    ["tool-selection","도구 선택","작업에 맞는 흐름, 커넥터, API, MCP 서버 또는 프롬프트 도구를 선택합니다."],
+    ["execution","작업 실행","업무 프로세스나 사내 시스템, 외부 서비스를 호출합니다."],
+    ["control","권한과 제어","각 작업의 인증, 데이터 정책, 승인, 기록과 오류 처리를 설정하고 시험합니다."],
+    ["result","결과","사용자에게 완료 여부와 결과를 알려줍니다. 필요한 경우 담당자 연결이나 다음 단계를 안내합니다."],
+  ]}
+/>
 
 | Tool Type | Example |
 |---|---|

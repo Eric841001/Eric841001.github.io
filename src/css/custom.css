@@ -4111,67 +4111,104 @@ html[class*="docusaurus-search-local"] .main-wrapper h1::after,
   }
 }
 
-/* The vertical rail joins the three layers of the architecture index. */
+
+/* Architecture plates share a material palette with the article mastheads. */
 .design-atlas {
-  --atlas-surface: #f6f4ec;
-  --atlas-node: #fffefa;
-  --atlas-line: #b9b2a0;
-  --atlas-ink: #29463e;
+  --atlas-brass: #927a4e;
+  --atlas-rule: #c9c0ab;
+  --atlas-edge: #d4cbbb;
+  --atlas-ink: #273d35;
+  --atlas-paper: #fffdf7;
+  position: relative;
+  isolation: isolate;
   display: grid;
   gap: 0;
-  margin: 1rem 0 2rem;
-  padding: clamp(12px, 2vw, 24px);
-  border: 1px solid var(--atlas-line);
-  border-radius: 8px;
-  background: var(--atlas-surface);
+  margin: 1rem 0 1.5rem;
+  padding: clamp(18px, 3vw, 38px);
+  border: 1px solid var(--atlas-edge);
+  border-radius: 10px;
   color: var(--atlas-ink);
+  background: radial-gradient(ellipse at 100% 0%, #e6e5d8, transparent 58%), linear-gradient(125deg,#fcfaf3,#f1efe5);
+  box-shadow: inset 0 0 0 5px #ffffff42, 0 12px 30px -27px #454035;
 }
 [data-theme='dark'] .design-atlas {
-  --atlas-surface: #1c2926;
-  --atlas-node: #273630;
-  --atlas-line: #657366;
-  --atlas-ink: #eaece2;
+  --atlas-ink: #f2efe4;
+  --atlas-paper: #253731;
+  --atlas-brass: #bca67b;
+  --atlas-edge: #536057;
+  --atlas-rule: #626856;
+  background: radial-gradient(ellipse at 100% 0%, #304940, transparent 60%), linear-gradient(125deg,#152420,#21322d);
+  box-shadow: inset 0 0 0 5px #ffffff05;
 }
-.atlas-layer {
+.atlas-caption {
+  display: block;
+  color: var(--atlas-ink);
+  font-family: Georgia, 'Malgun Gothic', serif;
+  font-weight: 500;
+  font-size: clamp(1.25rem,2.4vw,1.7rem);
+  letter-spacing: -.035em;
+  margin: 0 0 18px;
+}
+.atlas-caption::before {
+  content: ''; display: inline-block; width: 26px; height: 2px;
+  margin-right: 12px; vertical-align: middle; background: var(--atlas-brass);
+}
+.atlas-layer, .atlas-components {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(7em,.75fr) repeat(2,minmax(0,1fr));
-  align-items: center;
+  grid-template-columns: minmax(6.5em,.7fr) repeat(2,minmax(0,1fr));
+  align-items: stretch;
   gap: 12px;
-  padding: 10px 0 10px 16px;
-  border-inline-start: 1px solid var(--atlas-line);
+  padding: 12px 0 12px 18px;
+  border-inline-start: 1px solid var(--atlas-rule);
 }
-.atlas-layer::before {
+.atlas-layer > strong {align-self:center;}
+.atlas-layer::before, .atlas-components::before {
+  content: ''; position:absolute; top:50%; left:-4px; width:7px; height:7px;
+  background:var(--atlas-brass); transform:rotate(45deg);
+}
+.atlas-components {grid-template-columns:repeat(3,minmax(0,1fr));}
+.theme-doc-markdown .design-atlas a {
+  display:flex;align-items:center;justify-content:space-between;gap:.5rem;
+  min-height:52px;padding:10px 14px;border:1px solid var(--atlas-edge);
+  border-radius:4px;background:var(--atlas-paper);color:var(--atlas-ink);
+  font-weight:600;text-decoration:none;word-break:keep-all;overflow-wrap:anywhere;
+}
+.design-atlas a::after {content:'↗';color:var(--atlas-brass);}
+.atlas-components a::after {content:'↓';}
+.design-atlas a:is(:hover,:focus-visible) {outline:2px solid var(--atlas-brass);outline-offset:2px;}
+.atlas-legend {margin:0 0 2rem;}
+.atlas-legend > div {display:grid;grid-template-columns:minmax(8em, .7fr) minmax(0,2fr);gap:16px;padding:14px 8px;border-bottom:1px solid var(--kc-border);scroll-margin-top:calc(var(--ifm-navbar-height) + 1rem);}
+.atlas-legend dt,.atlas-legend dd {margin:0;}
+.atlas-legend dt {font-weight:650;}
+.atlas-legend > div:target {box-shadow:inset 3px 0 #9f885b;background:rgba(158,141,99,.09);padding-inline-start:14px;}
+@media(max-width:700px){
+  .atlas-layer,.atlas-components {grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px 0 10px 12px;}
+  .atlas-layer > strong {grid-column:1/-1;}
+  .atlas-layer::before {top:20px;}
+  .theme-doc-markdown .design-atlas a {padding:9px;font-size:.92rem;}
+  .atlas-legend > div {grid-template-columns:1fr;gap:4px;}
+}
+
+/* Fine contour lines and a brass spine link the index to each component plate. */
+.design-atlas::after {
   content: '';
   position: absolute;
-  inset-inline-start: -4px;
-  top: 50%;
-  width: 7px;
-  height: 7px;
-  background: var(--atlas-ink);
-  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  inset: 1px;
+  border-radius: inherit;
+  opacity: .13;
+  background: repeating-radial-gradient(ellipse at 105% -40%, transparent 0 17px, var(--atlas-brass) 18px, transparent 19px 30px);
+  mask-image: linear-gradient(112deg, transparent 40%, black);
 }
-.theme-doc-markdown .design-atlas a {
-  align-self: stretch;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: .5rem;
-  min-height: 48px;
-  padding: 8px 14px;
-  border: 1px solid var(--atlas-line);
-  border-radius: 5px;
-  color: var(--atlas-ink);
-  background: var(--atlas-node);
-  text-decoration: none;
-  font-weight: 600;
-  word-break: keep-all;
+.atlas-components a { position: relative; }
+.atlas-components a::before {
+  content: '';
+  flex: 0 0 5px;
+  width: 5px;
+  height: 5px;
+  background: var(--atlas-brass);
+  transform: rotate(45deg);
 }
-.design-atlas a::after { content: '↗'; }
-.design-atlas a:is(:hover,:focus-visible) { outline: 2px solid currentColor; outline-offset: 2px; }
-@media (max-width: 700px) {
-  .atlas-layer { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 8px; padding-block: 8px; }
-  .atlas-layer > strong { grid-column: 1/-1; }
-  .atlas-layer::before { top: 19px; }
-  .theme-doc-markdown .design-atlas a { padding: 8px; font-size: .9rem; }
-}
+.atlas-components a::after { margin-inline-start: auto; }

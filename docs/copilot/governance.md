@@ -50,23 +50,16 @@ Copilot should not be launched as a license assignment project. It should be lau
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>Governance architecture</span>
   <strong>Controls around Copilot usage</strong>
-</div><div aria-label="Copilot governance architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Data governance</strong>
-  <span>Review SharePoint, Teams, OneDrive, sensitivity, DLP and oversharing risk.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Identity and security</strong>
-  <span>Use Entra ID, Conditional Access, Defender, audit and admin role controls.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Adoption and agents</strong>
-  <span>Govern prompt guidance, Copilot Studio, agent lifecycle and business champion feedback.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Copilot operation</strong>
-  <span>Measure usage, value, incidents, policy exceptions and continuous improvement.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="copilot-governance-architecture"
+  title="Copilot 운영 구조"
+  nodes={[
+    ["data-governance","데이터 거버넌스","SharePoint, Teams, OneDrive의 공유 범위와 민감도 레이블, DLP를 검토합니다."],
+    ["identity-and-security","ID와 보안","Entra ID, 조건부 액세스, Defender, 감사 기록과 관리자 역할을 점검합니다."],
+    ["adoption-and-agents","사용자와 에이전트","프롬프트 사용 지침과 Copilot Studio 에이전트의 수명 주기를 관리하고 현업 담당자의 의견을 받습니다."],
+    ["copilot-operation","서비스 운영","사용량과 업무 효과, 인시던트와 정책 예외를 살펴보고 개선할 사항을 정합니다."],
+  ]}
+/></div>
 
 ## Implementation
 

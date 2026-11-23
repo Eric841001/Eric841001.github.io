@@ -72,39 +72,17 @@ IB should not be treated as a simple user blocking feature. It should be designe
 
 ## 구현 아키텍처
 
-<div className="kc-journey-map" aria-label="Information Barriers implementation architecture">
-  <div className="kc-journey-map__header">
-    <span>구현 아키텍처</span>
-    <strong>Restriction matrix to audit-ready evidence package</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Matrix</strong>
-      <span>Define who can collaborate, who must be blocked and who approves exceptions.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Segment</strong>
-      <span>Create IB segments based on business boundaries, attributes and exception model.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Policy</strong>
-      <span>Configure policy direction, activation state and application process.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>04</small>
-      <strong>Workloads</strong>
-      <span>Validate Teams, SharePoint, OneDrive and Exchange-specific behavior.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>05</small>
-      <strong>Evidence</strong>
-      <span>Package allowed and blocked tests, status, exceptions, rollback and owner approval.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="information-barriers-implementation-architecture"
+  title="정보 장벽 적용"
+  nodes={[
+    ["matrix","협업 허용 범위","서로 협업할 수 있는 대상과 차단할 대상, 예외를 승인할 사람을 정합니다."],
+    ["segment","세그먼트","업무 경계와 사용자 특성, 예외 기준에 따라 정보 장벽 세그먼트를 만듭니다."],
+    ["policy","정책","정책 방향과 활성화 상태를 설정하고 적용 절차를 정합니다."],
+    ["workloads","적용 서비스","Teams, SharePoint, OneDrive와 Exchange에서 정책이 어떻게 작동하는지 각각 시험합니다."],
+    ["evidence","확인 기록","허용·차단 시험 결과, 적용 상태, 예외, 복구 절차와 담당자 승인 기록을 모읍니다."],
+  ]}
+/>
 
 ## 설계 원칙
 

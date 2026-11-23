@@ -170,44 +170,18 @@ See the [official agent design guidance](https://techcommunity.microsoft.com/blo
 </ReadingSummary>
 
 
-<div aria-label="Multi-agent core architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Core Architecture</span>
-    <strong>User request to governed response</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>User Request</strong>
-      <span>Business question, workflow request or executive task.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>02</small>
-      <strong>Coordinator</strong>
-      <span>Plans work, assigns specialists and owns final orchestration.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>03</small>
-      <strong>Specialists</strong>
-      <span>Knowledge, task, review, compliance and reporting agents.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>04</small>
-      <strong>Human Review</strong>
-      <span>Approves sensitive actions, exceptions and external-facing outputs.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>05</small>
-      <strong>Control Plane</strong>
-      <span>Identity, DLP, audit, telemetry, cost and evaluation signals.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>06</small>
-      <strong>Final Response</strong>
-      <span>Consolidated answer, action result, report or decision support.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="multi-agent-core-architecture"
+  title="다중 에이전트 구성"
+  nodes={[
+    ["user-request","사용자 요청","업무 질문, 워크플로 요청 또는 경영진 과제로 시작합니다."],
+    ["coordinator","조정 에이전트","조정 에이전트가 일을 나누고 전문 에이전트를 배정해 최종 결과를 취합합니다."],
+    ["specialists","전문 에이전트","지식 검색, 작업 실행, 검토, 규정 준수와 보고를 맡을 에이전트를 구분합니다."],
+    ["human-review","담당자 검토","민감한 작업, 예외 처리와 외부에 전달할 결과는 담당자가 승인합니다."],
+    ["control-plane","운영 제어","ID, DLP, 감사 기록, 실행 정보, 비용과 평가 결과를 점검합니다."],
+    ["final-response","최종 응답","답변, 작업 결과나 보고서를 모아 요청자에게 전달합니다."],
+  ]}
+/>
 
 <div aria-label="Multi-agent responsibility model" className="kc-context-panel">
   <div className="kc-context-panel__lead">
@@ -846,34 +820,16 @@ Examples:
 </ReadingSummary>
 
 
-<div aria-label="Human in the loop architecture" className="kc-journey-map">
-  <div className="kc-journey-map__header">
-    <span>Human-in-the-Loop</span>
-    <strong>Sensitive actions stay reviewable and auditable</strong>
-  </div>
-  <div className="kc-journey-track">
-    <div className="kc-journey-node kc-journey-node--demand">
-      <small>01</small>
-      <strong>Agent proposal</strong>
-      <span>The agent prepares a recommendation, draft, action or exception request.</span>
-    </div>
-    <div className="kc-journey-node">
-      <small>02</small>
-      <strong>Policy review</strong>
-      <span>Rules, confidence, data sensitivity and business risk are checked.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--control">
-      <small>03</small>
-      <strong>Human approval</strong>
-      <span>Named owner approves, rejects or requests changes.</span>
-    </div>
-    <div className="kc-journey-node kc-journey-node--outcome">
-      <small>04</small>
-      <strong>Execute</strong>
-      <span>The approved action runs with audit trail and rollback path.</span>
-    </div>
-  </div>
-</div>
+<ArchitectureFigure
+  id="human-in-the-loop-architecture"
+  title="사람이 승인하는 실행 과정"
+  nodes={[
+    ["agent-proposal","에이전트 제안","에이전트가 권고안, 초안, 수행할 작업이나 예외 요청을 준비합니다."],
+    ["policy-review","정책 검토","규칙, 결과의 신뢰도, 데이터 민감도와 업무 위험을 확인합니다."],
+    ["human-approval","담당자 승인","지정된 담당자가 승인하거나 반려하고, 필요하면 수정을 요청합니다."],
+    ["execute","작업 실행","승인한 작업을 실행하고 감사 기록과 복구 경로를 남깁니다."],
+  ]}
+/>
 
 Critical actions should remain reviewable.
 

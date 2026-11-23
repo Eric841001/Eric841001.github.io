@@ -60,23 +60,16 @@ DLP should be designed as a business control, not only a security rule. The stro
 <div className="kc-factory-panel"><div className="kc-panel-header">
   <span>DLP adoption loop</span>
   <strong>Audit before enforcement</strong>
-</div><div aria-label="DLP policy architecture" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Classify data</strong>
-  <span>Map sensitive information types, trainable classifiers and business-owned data categories.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Design policy</strong>
-  <span>Separate workload scope, conditions, user groups, unmanaged device rules and policy tips.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Tune impact</strong>
-  <span>Start in simulation mode, review false positives and tune thresholds before enforcement.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Operate exceptions</strong>
-  <span>Use named reviewers, time-bound exceptions, alert evidence and Copilot data protection reporting.</span>
-</div></div></div>
+</div><ArchitectureFigure
+  id="dlp-policy-architecture"
+  title="DLP 정책 설계"
+  nodes={[
+    ["classify-data","데이터 분류","민감한 정보 유형과 학습 가능한 분류자를 업무 부서의 데이터 분류 기준에 맞춥니다."],
+    ["design-policy","정책 설계","적용 서비스와 조건, 사용자 그룹, 비관리 기기 규칙과 정책 알림을 구분해 설정합니다."],
+    ["tune-impact","영향 조정","시뮬레이션 모드에서 오탐을 확인하고 기준값을 조정한 뒤 정책을 적용합니다."],
+    ["operate-exceptions","예외 관리","검토 담당자와 예외 기한을 지정하고 경보 기록과 Copilot 데이터 보호 보고서를 확인합니다."],
+  ]}
+/></div>
 
 ## Implementation
 
