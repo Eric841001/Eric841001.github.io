@@ -54,8 +54,8 @@ export default function HeroSection() {
 
         <div className={styles.heroPanel}>
           <div className={styles.panelHeader}>
-            <span>도구별 안내</span>
-            <strong>제품별 시작점</strong>
+            <span>제품별 안내</span>
+
           </div>
 
           <div className={styles.capabilityGrid}>

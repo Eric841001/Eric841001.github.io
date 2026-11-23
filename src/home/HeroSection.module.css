@@ -30,3 +30,35 @@
 .eyebrow {display:flex;align-items:center;gap:10px;}
 .eyebrow::before {content:'';width:24px;height:3px;background:var(--kc-brand);flex-shrink:0;}
 .panelHeader {border-bottom:2px solid var(--kc-brand);}
+
+/* Offset paper edges give the product index depth while links stay level. */
+.heroPanel {
+  position: relative;
+  isolation: isolate;
+  margin: 0 12px 12px 0;
+  padding: 18px 22px 8px;
+  background: var(--kc-surface);
+  border: 1px solid var(--kc-border-strong);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--kc-surface-blue),
+    5px 5px 0 var(--kc-border-strong),
+    9px 9px 0 var(--kc-surface-muted),
+    10px 10px 0 var(--kc-border-strong),
+    12px 18px 30px -20px var(--kc-muted);
+}
+.panelHeader {
+  color: var(--kc-ink);
+  font-weight: 650;
+  font-size: 14px;
+}
+.capability:last-child { border-bottom-color: transparent; }
+@media (max-width: 640px) {
+  .heroPanel { padding: 14px 14px 5px; }
+  .capabilityGrid { column-gap: 14px; }
+  .capability { gap: 2px 5px; }
+  .capability:nth-last-child(2) { border-bottom-color: transparent; }
+}
+@media (max-width: 380px) {
+  .capabilityGrid { grid-template-columns: 1fr; }
+  .capability:nth-last-child(2) { border-bottom-color: var(--kc-border); }
+}
