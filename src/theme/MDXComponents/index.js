@@ -5,4 +5,5 @@ import {ReadingSection, ReadingSummary} from '../../components/ReadingSection';
 import ReadingControls from '../../components/ReadingControls';
 import ScenarioLinks from '../../components/ScenarioLinks';
 import AtlasMap from '../../components/AtlasMap';
-export default {...MDXComponents, ArchitectureFigure, ScenarioLinks, table: ResponsiveTable, ReadingSection, ReadingSummary, ReadingControls, AtlasMap};
+import HubHeader from '../../components/HubHeader';
+export default {...MDXComponents, ArchitectureFigure, ScenarioLinks, table: ResponsiveTable, ReadingSection, ReadingSummary, ReadingControls, AtlasMap, HubHeader};

@@ -3,9 +3,21 @@ id: overview
 title: Downloads Center
 description: "Downloads Center - Requestable Microsoft 365, Security, Copilot, AI Agent, migration, SOW, WBS and delivery assets."
 sidebar_label: Downloads Center
+hide_title: true
 ---
 
-# Downloads Center
+<HubHeader
+  topic="downloads"
+  crumb="지식센터 › 자료실"
+  title="자료실"
+  lead="현황 조사, 진단, 제안과 프로젝트 관리에 쓰는 양식을 모았습니다. 공개 페이지에서 구성과 작성 방법을 확인하고, 편집용 파일은 요청해 받으세요. 일반화한 보안 프로젝트 포털은 바로 내려받을 수 있습니다."
+  start={[
+    ["보안 프로젝트 포털 내려받기","/knowledge/downloads/m365-security-project-portal","HTML 파일 하나로 조사·설계·보고서 작성"],
+    ["현황 조사 질문","/knowledge/downloads/discovery-questionnaire","워크로드·ID·보안·AI 범위 질문"],
+    ["Microsoft 365 진단표","/knowledge/downloads/m365-assessment-workbook","준비도·위험·범위 점검"],
+  ]}
+  feature={{kicker: "바로 내려받기", title: "M365 보안 프로젝트 포털 (공개용)", text: "환경 조사부터 정책 설계, WBS, PPT 보고서까지 브라우저에서 작성하고 상태 파일(JSON)로 이어서 작업합니다.", to: "/knowledge/downloads/m365-security-project-portal", go: "내려받기 페이지"}}
+/>
 
 <ScenarioLinks
   summary="현황 조사와 프로젝트 계획에 쓸 양식의 구성과 작성 방법을 살펴보세요."
@@ -15,51 +27,6 @@ sidebar_label: Downloads Center
     ["프로젝트 위험 기록하기","/knowledge/downloads/risk-register-template"],
   ]}
 />
-
-<section aria-label="Downloads Center asset request landing" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Consulting Asset Gateway</span>
-    <h2>Review the asset structure publicly, then request the right editable version privately</h2>
-    <p>The Downloads Center organizes reusable consulting assets for presales, assessment, architecture, delivery and operational handover. Public pages explain purpose and structure. Editable templates are shared only after scenario and confidentiality review.</p>
-    <div aria-label="Downloads Center actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/contact" className="kc-topic-button kc-topic-button--primary">Request an Asset</a>
-      <a href="/knowledge/downloads/m365-assessment-workbook" className="kc-topic-button">M365 Workbook</a>
-      <a href="/knowledge/downloads/downloads-sow-template" className="kc-topic-button">SOW Template</a>
-    </div>
-  </div>
-  <div aria-label="Public to private asset sharing model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Sharing Model</span>
-      <strong>Context first</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="/knowledge/downloads/overview#requestable-asset-catalog" className="kc-factory-card">
-        <small>01</small>
-        <strong>Preview</strong>
-        <span>Review public-safe purpose, structure and consulting use case.</span>
-      </a>
-      <a href="/knowledge/contact" className="kc-factory-card">
-        <small>02</small>
-        <strong>Request</strong>
-        <span>Share industry, workload, project phase and preferred output format.</span>
-      </a>
-      <a href="/knowledge/contact#confidentiality-boundary" className="kc-factory-card">
-        <small>03</small>
-        <strong>Sanitize</strong>
-        <span>Remove customer names, tenant identifiers, commercial terms and internal project details.</span>
-      </a>
-      <a href="/knowledge/downloads/overview#quality-standard" className="kc-factory-card">
-        <small>04</small>
-        <strong>Tailor</strong>
-        <span>Adapt scope, assumptions, owners, controls and acceptance criteria.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Editable templates are shared on request</strong>
-      <span>The generalized project portal is downloadable directly. DOCX, XLSX and PPTX versions can be shared after the business scenario, intended audience and confidentiality boundary are clear.</span>
-    </div>
-  </div>
-</section>
 
 ## Requestable Asset Catalog
 

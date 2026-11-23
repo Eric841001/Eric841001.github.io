@@ -185,7 +185,7 @@ const diagramScriptVersion = createHash('sha256')
       items: [
         {to: '/knowledge/intro', label: '지식센터', position: 'left'},
         {to: '/knowledge/copilot/overview', label: 'Copilot', position: 'left'},
-        {to: '/knowledge/microsoft365/e3-vs-e5', label: '라이선스', position: 'left'},
+        {to: '/knowledge/licensing/overview', label: '라이선스', position: 'left'},
         {to: '/knowledge/architecture/overview', label: '설계도', position: 'left'},
         {to: '/knowledge/downloads/overview', label: '자료실', position: 'left'},
         {type: 'search', position: 'right'},

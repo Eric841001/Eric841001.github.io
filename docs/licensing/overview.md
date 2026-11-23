@@ -3,9 +3,26 @@ sidebar_position: 1
 title: Licensing
 description: "Licensing - This Licensing section helps compare Microsoft 365, Security, Compliance, Entra, Intune, Defender, Purview and Copilot licensing decisions..."
 toc_max_heading_level: 2
+hide_title: true
 ---
 
-# Licensing
+<HubHeader
+  topic="licensing"
+  crumb="지식센터 › 라이선스"
+  title="라이선스"
+  lead="E3·E5·E7과 Business Premium, Copilot·보안 추가 기능의 포함 범위를 비교합니다. 구독을 바꾸기 전에 사용자에게 필요한 기능과 계약 조건을 먼저 확인하세요."
+  start={[
+    ["E3·E5·E7 포함 기능 비교","/knowledge/microsoft365/e3-vs-e5","플랜별 보안·Copilot·에이전트 관리 범위"],
+    ["Business Premium 검토","/knowledge/licensing/business-premium","300명 이하 조직의 보안 기본 구성"],
+    ["라이선스 변경 일정","/knowledge/licensing/july-2026-microsoft-licensing-update","가격·포함 기능 변경 사항"],
+  ]}
+  feature="licensing"
+  extraDocs={[
+    ["Microsoft 365 라이선스 구성","/knowledge/microsoft365/licensing","Microsoft 365 플랜 구성과 할당 기준"],
+    ["License Advisor","/knowledge/toolkit/license-advisor","필요 기능으로 플랜 후보 좁히기"],
+  ]}
+  updatesMatch="licens|라이선스|E7|fair-use|과금"
+/>
 
 <ScenarioLinks
   summary="기존 구독을 바꾸거나 새로 구매하기 전에 사용자에게 필요한 기능과 계약 조건을 비교해 보세요."
@@ -16,52 +33,9 @@ toc_max_heading_level: 2
   ]}
 />
 
-<section aria-label="Microsoft licensing overview hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Microsoft Licensing Architecture</span>
-    <h2>Connect license decisions to security, AI readiness and operating value</h2>
-    <p>Licensing decisions should start from personas, required controls, adoption readiness, service plan validation and cost governance rather than SKU names alone.</p>
-    <div aria-label="Licensing overview signals" className="kc-hero-signal-row">
-      <span>Persona</span>
-      <span>Control</span>
-      <span>Adoption</span>
-      <span>Cost</span>
-    </div>
-  </div>
-  <div aria-label="Microsoft licensing decision model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Decision Model</span>
-      <strong>Capability-led</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="#licensing-feature-watch" className="kc-factory-card">
-        <small>01</small>
-        <strong>Feature Watch</strong>
-        <span>Included service plans, enabled features and roadmap changes.</span>
-      </a>
-      <a href="#executive-decision-model" className="kc-factory-card">
-        <small>02</small>
-        <strong>Executive Model</strong>
-        <span>Business driver, control requirement, segmentation and adoption plan.</span>
-      </a>
-      <a href="#decision-areas" className="kc-factory-card">
-        <small>03</small>
-        <strong>Decision Areas</strong>
-        <span>E3·E5·E7, Business Premium과 보안·Copilot 추가 구독을 비교합니다.</span>
-      </a>
-      <a href="../toolkit/license-advisor" className="kc-factory-card">
-        <small>04</small>
-        <strong>Advisor</strong>
-        <span>Map personas and capabilities to license options.</span>
-      </a>
-    </div>
-  </div>
-</section>
-
 This Licensing section helps compare Microsoft 365, Security, Compliance, Entra, Intune, Defender, Purview and Copilot licensing decisions from a consulting and business value perspective.
 
 Licensing guidance should connect cost to architecture, security controls, adoption readiness and operational value. A license decision is weak if it only compares product names.
-
 
 <div aria-label="licensing overview licensing decision cards" className="kc-outcome-grid">
   <div className="kc-outcome-card">
@@ -89,7 +63,6 @@ Licensing guidance should connect cost to architecture, security controls, adopt
 - 웹 기반 Copilot Chat과 회사 자료를 참조하는 Microsoft 365 Copilot을 구분합니다. E3·E5에서는 업무용 Copilot 추가 구독을, E7에서는 포함된 구독과 별도 사용량 요금을 확인합니다.
 - Conditional Access generally requires Entra ID P1; user/sign-in risk policies require P2. Agent policies have separate licensing and preview conditions. See the [Conditional Access guide](../security/conditional-access).
 - The US page is not a Korean quotation. Confirm currency, taxes, commitment, region and renewal terms for the actual offer.
-
 
 ### 해외 지사의 데이터를 별도 지역에 보관하려면
 

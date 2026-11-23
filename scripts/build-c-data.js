@@ -68,7 +68,7 @@ for (const file of walk(docsDir)) {
     anchors[anchor] = {title: text, text: para};
   });
   const koSection = Object.values(anchors).find(a => /^(한국어|한글) 요약$/.test(a.title));
-  docs[route] = {route, title: fm.title || id, label: fm.sidebar_label || '', description: fm.description || '', summary, links, anchors, ko: koSection ? koSection.text : '', section: dir === '.' ? id : dir.split('/')[0]};
+  docs[route] = {route, pos: Number(fm.sidebar_position) || 99, title: fm.title || id, label: fm.sidebar_label || '', description: fm.description || '', summary, links, anchors, ko: koSection ? koSection.text : '', section: dir === '.' ? id : dir.split('/')[0]};
 }
 
 function preview(to, from) {
@@ -103,5 +103,14 @@ const licensing = table.map(r => ({feature: r[0], E3: r[1], E5: r[2], E7: r[3]})
 const counts = {};
 Object.values(docs).forEach(d => { counts[d.section] = (counts[d.section] || 0) + 1; });
 
-fs.writeFileSync(out, JSON.stringify({generated: 'build', total: Object.keys(docs).length, counts, previews, answers, licensing}, null, 1));
+// 주제 허브의 문서 목록. 소개 문장은 한국어 요약을 우선한다.
+const cut = t => (t.length > 96 ? t.slice(0, 95).replace(/\s+\S*$/, '') + '…' : t);
+const sections = {};
+Object.values(docs).forEach(d => {
+  if (/\/overview$/.test(d.route)) return;
+  (sections[d.section] = sections[d.section] || []).push({to: d.route, title: d.label || d.title, text: cut(d.summary || d.ko || d.description.replace(/^[^-]{2,60} - /, '')), pos: d.pos});
+});
+Object.values(sections).forEach(l => { l.sort((a, b) => a.pos - b.pos || a.title.localeCompare(b.title, 'ko')); l.forEach(x => delete x.pos); });
+
+fs.writeFileSync(out, JSON.stringify({generated: 'build', total: Object.keys(docs).length, counts, previews, answers, licensing, sections}, null, 1));
 console.log(`cData: docs ${Object.keys(docs).length}, answers ${answers.length}, licensing rows ${licensing.length}`);

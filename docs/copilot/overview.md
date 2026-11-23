@@ -2,9 +2,22 @@
 sidebar_position: 1
 title: Copilot
 description: Microsoft 365 Copilot readiness, model availability, Copilot Studio, AI Agent, Copilot Cowork, governance and ROI guide for enterprise programs.
+hide_title: true
 ---
 
-# Copilot
+<HubHeader
+  topic="copilot"
+  crumb="지식센터 › Copilot"
+  title="Copilot"
+  lead="Microsoft 365 Copilot 도입 준비, Copilot Studio 에이전트 설계와 비용·거버넌스 운영을 정리했습니다. 처음이라면 준비도 점검부터, 운영 중이라면 최근 변경부터 확인하세요."
+  start={[
+    ["Copilot 도입 준비도 점검","/knowledge/copilot/readiness","시범 사용자·데이터·권한 준비"],
+    ["Copilot Studio로 에이전트 만들기","/knowledge/copilot/copilot-studio","주제·도구·게시와 크레딧 관리"],
+    ["Copilot 거버넌스","/knowledge/copilot/governance","정책, 책임자, 검토 주기"],
+  ]}
+  feature={{kicker: "운영 비용 · Copilot Studio", title: "에이전트가 쓸 크레딧 제한하기", text: "환경에 선불 크레딧을 할당하고, 에이전트별 월 한도와 알림을 설정하는 순서입니다.", to: "/knowledge/copilot/copilot-studio#credit-limits", go: "설정 방법 보기"}}
+  updatesMatch="Copilot"
+/>
 
 <ScenarioLinks
   summary="Copilot 도입을 준비한다면 먼저 시범 사용자와 업무를 정하세요. 이미 사용 중이라면 최근 변경 사항을 확인하거나 Copilot Studio로 업무용 에이전트를 만드는 방법을 살펴보세요."
@@ -22,51 +35,6 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 ## 제품명과 접속 주소
 
 Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot**, **Microsoft 365 Copilot Chat을 Microsoft Copilot Chat**으로 안내합니다. 기존 명칭은 과거 자료와의 연결을 위해 함께 사용합니다. 앱의 기본 접속 주소도 `copilot.cloud.microsoft`로 변경되므로 네트워크 허용 목록을 확인하세요. [현재 제품명과 접속 요구사항](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements)을 참고합니다.
-
-<section aria-label="Copilot enterprise AI adoption landing" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Enterprise AI Adoption</span>
-    <h2>Start with Copilot, then scale into governed agents and real business outcomes</h2>
-    <p>Microsoft 365 Copilot adoption is not just license activation. It is a business change program that connects data readiness, security, role-based scenarios, Copilot Studio, M365 Agents, Copilot Cowork, cost control and measurable value.</p>
-    <div aria-label="Copilot overview entry actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/search/copilot-adoption" className="kc-topic-button kc-topic-button--primary">Adoption Path</a>
-      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" className="kc-topic-button">Copilot Studio Update</a>
-      <a href="/knowledge/copilot/copilot-cowork-cost-governance" className="kc-topic-button">Cowork Governance</a>
-    </div>
-  </div>
-  <div aria-label="Copilot to agent journey" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>AI Adoption Journey</span>
-      <strong>Governed scale</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="/knowledge/copilot/readiness" className="kc-factory-card">
-        <small>01</small>
-        <strong>Copilot</strong>
-        <span>Daily knowledge work: meetings, documents, analysis, email and response.</span>
-      </a>
-      <a href="/knowledge/copilot/copilot-studio-2026-platform-update" className="kc-factory-card">
-        <small>02</small>
-        <strong>Copilot Studio</strong>
-        <span>Governed business agents, skills, memory, workflow and orchestration.</span>
-      </a>
-      <a href="/knowledge/search/ai-agent-factory" className="kc-factory-card">
-        <small>03</small>
-        <strong>M365 Agents</strong>
-        <span>Contextual task assistance inside Microsoft 365 work patterns.</span>
-      </a>
-      <a href="/knowledge/copilot/copilot-cowork-cost-governance" className="kc-factory-card">
-        <small>04</small>
-        <strong>Copilot Cowork</strong>
-        <span>Long-running work with approval, ownership, cost and monitoring controls.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Change management turns AI usage into adoption</strong>
-      <span>Champions, manager routines, training, VOC, KPI and value storytelling are what turn a feature rollout into a business capability.</span>
-    </div>
-  </div>
-</section>
 
 ## Visual Adoption Journey
 
@@ -374,7 +342,6 @@ Copilot Studio와 M365 Agents를 배포할 때는 에이전트 목록과 담당�
 ## Contact / Asset Request
 
 For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
-
 
 ## Official Update Review
 

@@ -3,9 +3,22 @@ sidebar_position: 1
 title: Enterprise Microsoft Knowledge Center
 description: "Enterprise Microsoft Knowledge Center - This site is a practical Microsoft Enterprise Knowledge Center for architecture, presales, delivery and..."
 toc_max_heading_level: 2
+hide_title: true
 ---
 
-# Enterprise Microsoft Knowledge Center
+<HubHeader
+  topic="intro"
+  mode="topics"
+  crumb="지식센터"
+  title="지식센터"
+  lead="Microsoft 365, Azure, 보안, Copilot의 도입·설계·운영 문서를 주제별로 모았습니다. 지금 맡은 업무에 가까운 주제부터 고르거나, 처음 읽을 문서에서 시작하세요."
+  start={[
+    ["도입 절차부터 보기","/knowledge/playbooks/overview","새로 도입하는 서비스의 단계별 진행 순서"],
+    ["운영 중 문제 해결하기","/knowledge/knowledge-center/overview","Intune·Defender·Exchange 오류와 설정"],
+    ["영역별 설계도 보기","/knowledge/architecture/overview","Microsoft 365·Azure·보안·Copilot 구성도"],
+  ]}
+  updatesMatch="."
+/>
 
 <ScenarioLinks
   summary="처음 방문했다면 지금 맡은 업무에서 출발하세요. 도입을 준비하는 분과 운영 중 문제를 해결하는 분을 위한 문서를 따로 모았습니다."
@@ -15,61 +28,6 @@ toc_max_heading_level: 2
     ["진단표와 작업 양식 찾기","/knowledge/downloads/overview"],
   ]}
 />
-
-This site is a practical Microsoft Enterprise Knowledge Center for architecture, presales, delivery and governance work.
-
-It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migration scenarios where enterprise customers need more than product documentation. The goal is to connect field-tested consulting patterns with reusable assets that support assessment, architecture, proposal, implementation and operational handover.
-
-<section aria-label="Enterprise Microsoft Knowledge Center landing" className="kc-topic-hero kc-topic-hero--agent">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Enterprise Microsoft Platform</span>
-    <h2>Turn Microsoft cloud strategy into architecture, adoption and delivery assets</h2>
-    <p>This Knowledge Center starts from real enterprise work: secure Microsoft 365 operations, Copilot adoption, agentic AI, Zero Trust, migration, proposals and reusable consulting assets.</p>
-    <div aria-label="Knowledge Center platform signals" className="kc-hero-signal-row">
-      <span>AI adoption</span>
-      <span>Security</span>
-      <span>Architecture</span>
-      <span>Delivery</span>
-    </div>
-    <div aria-label="Knowledge Center start actions" className="kc-topic-hero__actions">
-      <a href="./copilot/overview" className="kc-topic-button kc-topic-button--primary">Explore AI Adoption</a>
-      <a href="./security/overview" className="kc-topic-button">Security Foundation</a>
-      <a href="./proposal/overview" className="kc-topic-button">Proposal Center</a>
-    </div>
-  </div>
-  <div aria-label="Enterprise AI adoption story" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>AI Adoption Story</span>
-      <strong>From Copilot usage to governed agent operations</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="./copilot/overview" className="kc-factory-card">
-        <small>01</small>
-        <strong>Copilot</strong>
-        <span>Improve meetings, documents, email, analysis and everyday knowledge work.</span>
-      </a>
-      <a href="./copilot/copilot-studio" className="kc-factory-card">
-        <small>02</small>
-        <strong>Copilot Studio</strong>
-        <span>Build governed business agents, tools, workflows and channels.</span>
-      </a>
-      <a href="./copilot/agentic-ai-architecture" className="kc-factory-card">
-        <small>03</small>
-        <strong>M365 Agents</strong>
-        <span>Extend Microsoft 365 with contextual task assistance and multi-agent patterns.</span>
-      </a>
-      <a href="./copilot/adoption-program" className="kc-factory-card">
-        <small>04</small>
-        <strong>Adoption</strong>
-        <span>Scale behavior change through champions, training, VOC, KPI and governance.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Operating principle</strong>
-      <span>The starting point is not a model or license. It is real work, measurable outcomes and a governed path from usage to adoption.</span>
-    </div>
-  </div>
-</section>
 
 <div aria-label="Enterprise knowledge center start points" className="kc-signal-grid">
   <a href="./copilot/overview" className="kc-signal-card">
