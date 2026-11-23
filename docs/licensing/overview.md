@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Licensing
 
+<ScenarioLinks
+  summary="기존 구독을 바꾸거나 새로 구매하기 전에 사용자에게 필요한 기능과 계약 조건을 비교해 보세요."
+  links={[
+    ["E3·E5·E7의 포함 기능 비교하기","/knowledge/licensing/e3-vs-e5"],
+    ["Business Premium 검토하기","/knowledge/licensing/business-premium"],
+    ["라이선스 변경 일정 확인하기","/knowledge/licensing/july-2026-microsoft-licensing-update"],
+  ]}
+/>
+
 <section aria-label="Microsoft licensing overview hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft Licensing Architecture</span>

@@ -1,0 +1,11 @@
+.panel { margin: 0 0 24px; }
+.panel > p { margin: 0 0 18px; line-height: 1.7; word-break: keep-all; }
+.panel nav { border-top: 3px solid #278c81; background: #f0f7f5; padding: 14px 18px 5px; border-radius: 0 0 8px 8px; }
+.panel strong { display: block; color: #173d39; margin-bottom: 4px; }
+.panel nav a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 46px; border-top: 1px solid #c9dcd7; color: #0d514c; font-weight: 600; line-height: 1.45; padding: 8px 0; word-break: keep-all; }
+.panel nav a:first-of-type { border-top: 0; }
+.panel nav a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+:global([data-theme='dark']) .panel nav { background: #162e32; }
+:global([data-theme='dark']) .panel strong { color: #f0f9f7; }
+:global([data-theme='dark']) .panel nav a { color: #99ded2; border-color: #385554; }
+@media (max-width: 480px) { .panel nav { padding: 12px 14px 4px; } .panel > p { font-size: 15px; line-height: 1.6; } }

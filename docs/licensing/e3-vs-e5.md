@@ -13,7 +13,14 @@ toc_max_heading_level: 2
 
 ## 먼저 비교할 세 가지 구성 {/* #executive-summary */}
 
-**E3는 협업과 기본 관리, E5는 고급 보안·규정 준수, E7은 E5에 업무용 Copilot과 에이전트 관리를 함께 도입할 때 검토하는 구성입니다.**
+<ScenarioLinks
+  summary="E3는 협업과 기본 관리, E5는 고급 보안과 규정 준수, E7은 업무용 Copilot과 에이전트 관리까지 필요할 때 검토하세요."
+  links={[
+    ["E3·E5·E7 기능 비교표 보기","#executive-decision-summary"],
+    ["E5에 Copilot을 추가할 때와 E7 비교하기","#e3--add-on-strategy"],
+    ["구독료와 사용량을 합쳐 총비용 비교하기","#business-value-comparison"],
+  ]}
+/>
 
 E7에는 **Microsoft 365 E5 + Microsoft 365 Copilot + Microsoft Entra Suite + Microsoft Agent 365**가 포함됩니다. E5에 Copilot만 추가하는 경우와는 구성과 비용이 다릅니다. 필요한 기능과 사용할 사람을 정한 뒤 기존 구독·추가 기능과 비교하세요.
 

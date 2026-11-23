@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Toolkit
 
+<ScenarioLinks
+  summary="설계나 이전을 앞두고 빠뜨린 항목을 확인하거나 업무에 쓸 예시를 찾아보세요."
+  links={[
+    ["환경 진단 항목 확인하기","/knowledge/toolkit/assessment-checklist"],
+    ["이전 준비 사항 점검하기","/knowledge/toolkit/migration-checklist"],
+    ["업무용 프롬프트 예시 찾기","/knowledge/toolkit/prompt-library"],
+  ]}
+/>
+
 <section aria-label="Toolkit overview hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Consulting Toolkit</span>

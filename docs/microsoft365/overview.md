@@ -6,6 +6,15 @@ description: Microsoft 365 architecture, tenant governance, security, migration 
 
 # Microsoft 365 Overview
 
+<ScenarioLinks
+  summary="메일, 팀 협업, 공유 문서 중 운영하려는 서비스에서 시작하세요."
+  links={[
+    ["Exchange Online 메일 운영하기","/knowledge/microsoft365/exchange-online"],
+    ["Teams 협업 환경 구성하기","/knowledge/microsoft365/teams"],
+    ["SharePoint 문서 공유 설계하기","/knowledge/microsoft365/sharepoint"],
+  ]}
+/>
+
 <section aria-label="Microsoft 365 enterprise platform landing" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Enterprise Operating Platform</span>

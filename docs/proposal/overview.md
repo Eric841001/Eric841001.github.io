@@ -5,6 +5,15 @@ description: Reusable proposal, SOW, WBS, risk register, assessment and governan
 
 # Proposal Center
 
+<ScenarioLinks
+  summary="제안서에 담을 작업 범위와 일정, 위험 요소를 정리할 때 참고할 양식입니다."
+  links={[
+    ["작업 범위 명세서 작성하기","/knowledge/proposal/sow-template"],
+    ["작업을 나누고 담당자 정하기","/knowledge/proposal/wbs-template"],
+    ["위험 요소와 대응 방안 정리하기","/knowledge/proposal/risk-register"],
+  ]}
+/>
+
 <section aria-label="Proposal Center landing" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Presales and Delivery Asset System</span>

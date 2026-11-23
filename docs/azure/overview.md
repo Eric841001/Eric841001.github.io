@@ -7,6 +7,15 @@ description: "Azure - This Azure section focuses on enterprise cloud architectur
 
 # Azure
 
+<ScenarioLinks
+  summary="Azure 환경을 처음 설계하거나 기존 구성을 점검할 때 필요한 문서를 모았습니다."
+  links={[
+    ["랜딩 존 설계하기","/knowledge/azure/landing-zone"],
+    ["사용자와 관리자 권한 설계하기","/knowledge/azure/identity"],
+    ["가상 머신 구성 검토하기","/knowledge/azure/virtual-machines"],
+  ]}
+/>
+
 <section aria-label="Azure enterprise foundation" className="kc-azure-hero">
   <div className="kc-azure-hero__content">
     <span className="kc-topic-hero__eyebrow">Azure Enterprise Foundation</span>

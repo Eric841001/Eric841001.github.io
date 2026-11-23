@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Playbooks
 
+<ScenarioLinks
+  summary="도입 작업을 어떤 순서로 진행할지 정할 때 참고할 절차를 모았습니다."
+  links={[
+    ["Copilot 시범 도입 준비하기","/knowledge/playbooks/copilot-readiness-playbook"],
+    ["Intune 배포 계획 세우기","/knowledge/playbooks/intune-deployment-playbook"],
+    ["테넌트 이전 순서 확인하기","/knowledge/playbooks/tenant-to-tenant-migration-playbook"],
+  ]}
+/>
+
 The Playbooks section provides repeatable delivery guidance for Microsoft 365 assessment, Copilot readiness, Intune deployment, security modernization, tenant-to-tenant migration and change management.
 
 Playbooks are designed to bridge consulting strategy and real execution. They define workstreams, checkpoints, deliverables, risks and handover expectations.

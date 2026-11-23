@@ -7,6 +7,15 @@ description: "Architecture Center - The Architecture Center organizes Microsoft 
 
 # Architecture Center
 
+<ScenarioLinks
+  summary="설계 검토에 참고할 구성도를 찾고 있다면, 다루는 환경에 맞는 문서부터 살펴보세요."
+  links={[
+    ["Microsoft 365 참조 설계 보기","/knowledge/architecture/m365-reference-architecture"],
+    ["Azure 랜딩 존 구조 살펴보기","/knowledge/architecture/azure-landing-zone-architecture"],
+    ["Copilot 아키텍처 검토하기","/knowledge/architecture/copilot-architecture"],
+  ]}
+/>
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">ENTERPRISE ARCHITECTURE CENTER</span>

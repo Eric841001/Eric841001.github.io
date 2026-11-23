@@ -8,15 +8,24 @@ toc_max_heading_level: 2
 
 # Microsoft Copilot Studio
 
-<ReadingControls />
+<ScenarioLinks
+  summary="Copilot Studio로 사내 문서를 찾거나 업무를 처리하는 에이전트를 만들 수 있습니다. 배포 전에는 사용자가 볼 수 있는 자료와 에이전트가 실행할 작업, 크레딧 한도를 정하세요."
+  links={[
+    ["에이전트의 월 크레딧 한도 설정하기","#credit-limits"],
+    ["SharePoint 문서가 제작자에게만 보일 때","#sharepoint-문서가-제작자에게만-검색될-때"],
+    ["에이전트를 배포할 채널 고르기","#deployment-channels"],
+  ]}
+/>
+
+<ReadingControls separateSummary />
 
 
 
 
-<ReadingSection open>
+<ReadingSection>
 <ReadingSummary>
 
-## Executive Summary
+## 플랫폼 개요 {/* #executive-summary */}
 
 </ReadingSummary>
 

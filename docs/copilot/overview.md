@@ -6,6 +6,15 @@ description: Microsoft 365 Copilot readiness, model availability, Copilot Studio
 
 # Copilot
 
+<ScenarioLinks
+  summary="Copilot 도입을 준비한다면 먼저 시범 사용자와 업무를 정하세요. 이미 사용 중이라면 최근 변경 사항을 확인하거나 Copilot Studio로 업무용 에이전트를 만드는 방법을 살펴보세요."
+  links={[
+    ["Copilot 도입 준비도 점검하기","/knowledge/playbooks/copilot-readiness-playbook"],
+    ["최근 모델과 기능 변경 확인하기","/knowledge/copilot/official-update-catchup-2026-10"],
+    ["업무용 에이전트 만들기","/knowledge/copilot/copilot-studio"],
+  ]}
+/>
+
 import UpdateBrief from '@site/src/components/UpdateBrief';
 
 <UpdateBrief />

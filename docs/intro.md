@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Enterprise Microsoft Knowledge Center
 
+<ScenarioLinks
+  summary="처음 방문했다면 지금 맡은 업무에서 출발하세요. 도입을 준비하는 분과 운영 중 문제를 해결하는 분을 위한 문서를 따로 모았습니다."
+  links={[
+    ["도입 절차 찾아보기","/knowledge/playbooks/overview"],
+    ["운영 문제 해결하기","/knowledge/knowledge-center/overview"],
+    ["진단표와 작업 양식 찾기","/knowledge/downloads/overview"],
+  ]}
+/>
+
 This site is a practical Microsoft Enterprise Knowledge Center for architecture, presales, delivery and governance work.
 
 It is designed for Microsoft 365, Security, Copilot, Azure, AI agent and migration scenarios where enterprise customers need more than product documentation. The goal is to connect field-tested consulting patterns with reusable assets that support assessment, architecture, proposal, implementation and operational handover.

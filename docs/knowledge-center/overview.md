@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Knowledge Center
 
+<ScenarioLinks
+  summary="관리 중에 마주친 증상에서 시작해 점검 절차를 찾을 수 있습니다."
+  links={[
+    ["Intune 등록 오류 0x80180031 점검하기","/knowledge/knowledge-center/intune-0x80180031"],
+    ["OneDrive 읽기 전용 접근 점검하기","/knowledge/knowledge-center/onedrive-limited-access-read-only"],
+    ["Exchange Online 다운로드 제한 확인하기","/knowledge/knowledge-center/exchange-online-download-restriction"],
+  ]}
+/>
+
 Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 
 고객 제안, 설계, 구축과 운영 인수인계에 필요한 문서를 주제별로 찾을 수 있습니다.

@@ -7,6 +7,15 @@ description: Microsoft Security architecture guide covering Zero Trust, Conditio
 
 # Security
 
+<ScenarioLinks
+  summary="로그인 제어, 위협 조사, 민감한 자료 보호 중 지금 점검할 업무를 선택하세요."
+  links={[
+    ["조건부 액세스 정책 설계하기","/knowledge/security/conditional-access"],
+    ["Defender XDR로 위협 조사하기","/knowledge/security/defender-xdr"],
+    ["민감한 자료의 유출 방지하기","/knowledge/security/dlp"],
+  ]}
+/>
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">MICROSOFT SECURITY OPERATING MODEL</span>

@@ -7,6 +7,15 @@ sidebar_label: Downloads Center
 
 # Downloads Center
 
+<ScenarioLinks
+  summary="현황 조사와 프로젝트 계획에 쓸 양식의 구성과 작성 방법을 살펴보세요."
+  links={[
+    ["현황 조사 질문 고르기","/knowledge/downloads/discovery-questionnaire"],
+    ["Microsoft 365 진단표 살펴보기","/knowledge/downloads/m365-assessment-workbook"],
+    ["프로젝트 위험 기록하기","/knowledge/downloads/risk-register-template"],
+  ]}
+/>
+
 <section aria-label="Downloads Center asset request landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Consulting Asset Gateway</span>

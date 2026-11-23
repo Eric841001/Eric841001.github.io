@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Projects Library
 
+<ScenarioLinks
+  summary="비슷한 환경의 사례에서 설계할 때 고려한 점과 운영 방식을 찾아보세요."
+  links={[
+    ["제조업의 Copilot 도입 사례 보기","/knowledge/projects/case-study-manufacturing-copilot-adoption"],
+    ["물류 기업의 메일 환경 개편 사례 보기","/knowledge/projects/case-study-logistics-exchange-modernization"],
+    ["여러 테넌트의 운영 전략 살펴보기","/knowledge/projects/multi-tenant-governance-strategy"],
+  ]}
+/>
+
 <section aria-label="Projects Library landing hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Anonymized Customer Success Portfolio</span>

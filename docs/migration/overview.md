@@ -7,6 +7,15 @@ toc_max_heading_level: 2
 
 # Migration
 
+<ScenarioLinks
+  summary="무엇을 어디로 옮기는지에 따라 이전 계획과 점검 항목이 달라집니다. 출발 환경에 맞는 문서부터 읽어보세요."
+  links={[
+    ["테넌트 사이에서 Microsoft 365 이전하기","/knowledge/migration/tenant-to-tenant"],
+    ["Google Workspace에서 이전하기","/knowledge/migration/google-workspace"],
+    ["파일 서버의 자료 이전하기","/knowledge/migration/file-server"],
+  ]}
+/>
+
 This Migration section provides enterprise migration guidance for Microsoft 365, Exchange Online, Google Workspace, file server, SharePoint, Teams and tenant scenarios.
 
 Migration is treated as a business continuity program, not a file-copy activity. The key work is assessment, target design, batching, communication, security validation, cutover, rollback and hypercare.
