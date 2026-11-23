@@ -8,7 +8,7 @@ const diagramScriptVersion = createHash('sha256')
 ﻿module.exports = {
   title: 'Youngsun Kang | Microsoft 365, Security, Copilot & AI Architect',
   tagline: 'Enterprise Microsoft Architecture, Security, Copilot, AI Agent and Delivery Asset Knowledge Center',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/youngsun-logo.svg',
 
   url: 'https://eric841001.github.io',
   baseUrl: '/',
