@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './HeroSection.module.css';
 
 const capabilities = [
@@ -26,50 +27,55 @@ const capabilities = [
 ];
 
 export default function HeroSection() {
+  const video = useRef(null);
+  const [playing, setPlaying] = useState(false);
+  const poster = useBaseUrl('/img/home/copilot-flight.jpg');
+  const source = useBaseUrl('/img/home/copilot-flight.webm');
+
+  useEffect(() => {
+    const player = video.current;
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function applyPreference() {
+      if (preference.matches) player.pause();
+      else player.play().catch(() => setPlaying(false));
+    }
+    applyPreference();
+    preference.addEventListener('change', applyPreference);
+    return () => preference.removeEventListener('change', applyPreference);
+  }, []);
+
+  function togglePlayback() {
+    if (video.current.paused) video.current.play().catch(() => setPlaying(false));
+    else video.current.pause();
+  }
+
   return (
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <div className={styles.heroContent}>
           <p className={styles.eyebrow}>Microsoft AI 도입과 운영</p>
-
-          <h1>
-            Copilot 도입부터 AI 에이전트 운영까지
-          </h1>
-
-          <p className={styles.subtitle}>
-            Microsoft 365, 보안, Copilot과 AI 에이전트의 설계·도입·운영 지침을 한곳에서 확인하세요.
-          </p>
-
-          <p className={styles.byline}>
-            Youngsun Kang · Enterprise Microsoft Architect
-          </p>
-
+          <h1>Copilot 도입부터<br />AI 에이전트 운영까지</h1>
+          <p className={styles.byline}>Youngsun Kang · Enterprise Microsoft Architect</p>
           <div className={styles.heroActions}>
             <a className={styles.primaryButton} href="#start-reading">처음 읽을 문서</a>
-
-            <a className={styles.secondaryButton} href="#latest-updates">최근 업데이트 보기</a>
+            <a className={styles.secondaryButton} href="#latest-updates">최근 업데이트</a>
           </div>
-
         </div>
-
-        <div className={styles.heroPanel}>
-          <div className={styles.panelHeader}>
-            <span>제품별 안내</span>
-
-          </div>
-
-          <div className={styles.capabilityGrid}>
-            {capabilities.map((item) => (
-              <Link key={item.label} className={styles.capability} to={item.path}>
-                <small>{item.label}</small>
-                <strong>{item.value}</strong>
-                <span aria-hidden="true">→</span>
-              </Link>
-            ))}
-          </div>
-
-        </div>
+        <figure className={styles.figure}>
+          <video ref={video} src={source} poster={poster} width="960" height="706"
+            muted playsInline loop preload="metadata" aria-label="권한을 확인한 뒤 문서를 찾아 출처가 있는 답변을 만드는 과정"
+            onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} />
+          <figcaption className={styles.caption}>
+            <span>질문 → 권한 확인 → 문서 검색 → 출처가 있는 답변</span>
+            <button type="button" onClick={togglePlayback}>{playing ? '일시 정지' : '재생'}</button>
+          </figcaption>
+        </figure>
       </div>
+      <nav aria-label="제품별 안내" className={styles.products}>
+        {capabilities.map(item => (
+          <Link key={item.label} to={item.path}>{item.label}<span>{item.value}</span></Link>
+        ))}
+      </nav>
     </section>
   );
 }
