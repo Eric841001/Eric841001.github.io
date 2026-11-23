@@ -14,3 +14,5 @@
 .card:focus-visible {outline:3px solid var(--ifm-color-primary);outline-offset:3px;}
 @media(max-width:640px){.knowledgeGrid{padding:32px 20px;}.header{margin-bottom:20px;}.header h2{font-size:26px;}.header span{font-size:14px;}.grid{grid-template-columns:1fr;}.card{padding:22px 0;grid-template-columns:24px minmax(0,1fr) 20px;column-gap:12px;}.card h3{font-size:21px;}.arrow{font-size:20px;}}
 @media(prefers-reduced-motion:reduce){.card{transition:none;}}
+
+.atlasLink { display: inline-flex; align-items: center; min-height: 44px; color: var(--kc-brand); text-underline-offset: .24em; }

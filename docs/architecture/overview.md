@@ -7,44 +7,44 @@ description: "Architecture Center - The Architecture Center organizes Microsoft 
 
 # Architecture Center
 
-<ScenarioLinks
-  summary="설계 검토에 참고할 구성도를 찾고 있다면, 다루는 환경에 맞는 문서부터 살펴보세요."
-  links={[
-    ["Microsoft 365 참조 설계 보기","/knowledge/architecture/m365-reference-architecture"],
-    ["Azure 랜딩 존 구조 살펴보기","/knowledge/architecture/azure-landing-zone-architecture"],
-    ["Copilot 아키텍처 검토하기","/knowledge/architecture/copilot-architecture"],
-  ]}
-/>
+## 영역별 설계도 {/* #visual-architecture-map */}
 
-<section className="kc-topic-hero kc-topic-hero--compact">
-  <div>
-    <span className="kc-eyebrow">ENTERPRISE ARCHITECTURE CENTER</span>
-    <h2>Turn business pressure into architecture decisions and delivery assets</h2>
-    <p>This center connects Microsoft 365, Security, Copilot, Azure, Migration and Governance into a practical consulting architecture flow.</p>
+궁금한 영역을 선택하면 해당 설계 문서의 설명으로 이동합니다.
+
+<nav className="design-atlas" aria-label="영역별 아키텍처 설계도">
+  <div className="atlas-layer">
+    <strong>업무 환경</strong>
+    <a href="/knowledge/architecture/m365-reference-architecture#collaboration-architecture">Microsoft 365 협업</a>
+    <a href="/knowledge/architecture/copilot-architecture#core-components">Copilot 구성 요소</a>
   </div>
-  <div aria-label="Architecture center focus" className="kc-hero-metrics">
-    <div>
-      <strong>01</strong>
-      <span>Driver</span>
-    </div>
-    <div>
-      <strong>02</strong>
-      <span>Design</span>
-    </div>
-    <div>
-      <strong>03</strong>
-      <span>Assets</span>
-    </div>
-    <div>
-      <strong>04</strong>
-      <span>Operate</span>
-    </div>
+  <div className="atlas-layer">
+    <strong>기반과 보호</strong>
+    <a href="/knowledge/architecture/azure-landing-zone-architecture#network-architecture">Azure 네트워크</a>
+    <a href="/knowledge/architecture/security-reference-architecture#security-domains">보안 영역</a>
   </div>
-</section>
+  <div className="atlas-layer">
+    <strong>전환과 운영</strong>
+    <a href="/knowledge/architecture/migration-architecture#migration-domains">마이그레이션 범위</a>
+    <a href="/knowledge/architecture/governance-architecture#operating-model">거버넌스 운영 체계</a>
+  </div>
+</nav>
 
-The Architecture Center organizes Microsoft cloud reference architectures, design patterns and decision frameworks for enterprise consulting work.
+## 한국어 요약
 
-Architecture content here is intended to be practical. Each topic connects business requirements, Microsoft capabilities, governance decisions and delivery outputs.
+Microsoft 365, Azure, 보안과 Copilot의 설계 문서를 모았습니다. 도입 목적에 맞는 구성을 정하고 관련 제품의 적용 조건을 확인할 때 참고하세요.
+
+구성도와 함께 설계 이유, 결정할 사항, 운영 담당자와 인수할 자료를 정리하면 고객과 작업 범위를 합의하기 쉽습니다.
+
+## Focus Areas
+
+| Area | Architecture Questions |
+|---|---|
+| Microsoft 365 | How should tenant, collaboration, identity and governance be designed? |
+| Security | How do identity, endpoint, data, messaging and network controls work together? |
+| Copilot | What readiness, data protection and adoption architecture is required? |
+| Azure | What landing zone, network, identity and workload patterns are needed? |
+| Migration | What target state and transition architecture should guide migration? |
+| Governance | What decisions, policies, owners and operating rhythms are required? |
 
 <div aria-label="Architecture lifecycle pathway" className="kc-pathway">
   <a href="./executive-architecture-blueprint" className="kc-pathway-step">
@@ -73,46 +73,6 @@ Architecture content here is intended to be practical. Each topic connects busin
     <span>Assign owners, cadence, exception handling, KPI and continuous improvement rhythm.</span>
   </a>
 </div>
-
-## Visual Architecture Map
-
-<div className="kc-factory-panel"><div className="kc-panel-header">
-  <span>Architecture consulting flow</span>
-  <strong>Decision to operating model</strong>
-</div><div aria-label="Architecture consulting map" className="kc-journey-map"><div className="kc-journey-node is-source">
-  <small>01</small>
-  <strong>Business driver</strong>
-  <span>Risk, growth, productivity, compliance, migration or AI adoption pressure.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>02</small>
-  <strong>Architecture decisions</strong>
-  <span>Identity, data, network, workload, tenant, security and governance choices.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node">
-  <small>03</small>
-  <strong>Target blueprint</strong>
-  <span>Microsoft 365, Security, Copilot, Azure, Migration and Governance reference design.</span>
-</div><div aria-hidden="true" className="kc-journey-arrow"/><div className="kc-journey-node is-target">
-  <small>04</small>
-  <strong>Delivery assets</strong>
-  <span>SOW, WBS, risk register, runbook, decision log and operating cadence.</span>
-</div></div></div>
-
-## 한국어 요약
-
-Microsoft 365, Azure, 보안과 Copilot의 설계 문서를 모았습니다. 도입 목적에 맞는 구성을 정하고 관련 제품의 적용 조건을 확인할 때 참고하세요.
-
-구성도와 함께 설계 이유, 결정할 사항, 운영 담당자와 인수할 자료를 정리하면 고객과 작업 범위를 합의하기 쉽습니다.
-
-## Focus Areas
-
-| Area | Architecture Questions |
-|---|---|
-| Microsoft 365 | How should tenant, collaboration, identity and governance be designed? |
-| Security | How do identity, endpoint, data, messaging and network controls work together? |
-| Copilot | What readiness, data protection and adoption architecture is required? |
-| Azure | What landing zone, network, identity and workload patterns are needed? |
-| Migration | What target state and transition architecture should guide migration? |
-| Governance | What decisions, policies, owners and operating rhythms are required? |
 
 ## Architecture Deliverables
 

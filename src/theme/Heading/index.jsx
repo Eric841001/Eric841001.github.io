@@ -44,7 +44,34 @@ function sceneFor(path) {
 }
 
 function ArticleScene() {
-  const {pathname} = useLocation();
+  const {pathname, hash} = useLocation();
+  // Restore deep links after the mobile document layout has hydrated.
+  React.useEffect(() => {
+    if (!pathname.startsWith('/knowledge/architecture/') || !hash) return;
+    let frame;
+    const align = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        frame = requestAnimationFrame(() => {
+          if (window.location.hash !== hash) return;
+          let id;
+          try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+          const target = document.getElementById(id);
+          if (!target) return;
+          const bounds = target.getBoundingClientRect();
+          if (bounds.top < 0 || bounds.bottom > window.innerHeight) {
+            target.scrollIntoView({block: 'start', behavior: 'instant'});
+          }
+        });
+      });
+    };
+    align();
+    window.addEventListener('load', align, {once: true});
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('load', align);
+    };
+  }, [pathname, hash]);
   if (!pathname.includes('/knowledge/')) return null;
   const scene = sceneFor(pathname);
   return (

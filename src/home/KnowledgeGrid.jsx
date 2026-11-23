@@ -47,9 +47,7 @@ export default function KnowledgeGrid() {
       <div className={styles.header}>
         <p>주제별 문서</p>
         <h2 id="browse-topics-title">기술별 가이드</h2>
-        <span>
-          필요한 기술을 선택해 설계와 운영 지침을 찾아보세요.
-        </span>
+        <Link className={styles.atlasLink} to="/knowledge/architecture/overview#visual-architecture-map">전체 설계도에서 영역 선택하기 →</Link>
       </div>
 
       <div className={styles.grid}>
