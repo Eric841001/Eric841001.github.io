@@ -7,6 +7,15 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 
 # Conditional Access
 
+<ScenarioLinks
+  summary="조건부 액세스 정책을 켜기 전에 누구의 어떤 로그인이 영향을 받는지 확인하세요. 긴급 접근 계정의 로그인 경로와 위험 사용자의 복구 절차도 함께 점검할 수 있습니다."
+  links={[
+    ["새 정책을 단계적으로 적용할 때","#deployment-journey"],
+    ["관리자 계정 잠김을 예방할 때","#exception-and-lockout-control"],
+    ["위험 사용자에게 복구를 요구할 때","#managed-risk-remediation"],
+  ]}
+/>
+
 <section aria-label="Conditional Access design landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Identity and Access Control</span>
@@ -90,7 +99,7 @@ This document provides an enterprise design methodology for Microsoft 365, Azure
 
 Conditional Access는 사용자, 접속 기기·위치·앱과 위험 신호를 확인해 접근 조건을 적용하는 Entra ID 기능입니다.
 
-보고 전용 모드와 소수 사용자를 대상으로 먼저 시험하고, 긴급 접근 계정과 예외 대상을 정합니다. 로그인 기록으로 정책 적용 결과를 확인한 뒤 범위를 넓히세요.
+먼저 보고 전용 모드에서 로그인 기록을 살펴보세요. 사용자 작업(User actions)을 대상으로 하는 정책은 이 모드로 평가할 수 없습니다. 기기 준수 여부를 검사하면 macOS·iOS·Android에서는 인증서 선택 창이 뜰 수 있습니다. [Microsoft의 보고 전용 모드 안내](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only) 로그인 기록으로 정책 적용 결과를 확인한 뒤 범위를 넓히세요.
 
 Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계정과 기기, 세션과 데이터 보호 정책을 함께 검토하세요.
 
@@ -176,7 +185,7 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   <div className="kc-maturity-step">
     <small>Layer 1</small>
     <strong>Baseline MFA</strong>
-    <span>Require MFA for users, exclude emergency access accounts and validate user impact.</span>
+    <span>Require MFA for routine users. Before enforcement, check emergency access exclusions and review sign-in results.</span>
   </div>
   <div className="kc-maturity-step">
     <small>Layer 2</small>
@@ -213,7 +222,7 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   <a href="/knowledge/security/zero-trust-framework">
     <small>MFA</small>
     <strong>Require MFA for all users</strong>
-    <span>Scope all users, exclude emergency access accounts and monitor report-only impact first.</span>
+    <span>Evaluate sign-ins in report-only mode. Before enforcing a policy that restricts sign-in, exclude emergency access accounts.</span>
   </a>
   <a href="/knowledge/microsoft365/exchange-online">
     <small>Legacy</small>
@@ -311,8 +320,8 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
   </div>
 </div>
 
-- **계정 준비** — 클라우드 전용 긴급 접근 계정을 두 개 이상 만드세요. 각 계정에는 Global Administrator 역할을 영구 활성 상태로 할당합니다.
-- **로그인 정책** — FIDO2 패스키나 인증서 기반 인증을 등록해 필수 MFA 요건을 충족하세요. 로그인을 차단하거나 제한하는 조건부 액세스 정책에서 긴급 계정을 제외합니다. 보고 전용 정책에는 제외 설정이 필요 없습니다.
+- **계정 준비** — 테넌트의 `*.onmicrosoft.com` 도메인에 클라우드 전용 긴급 접근 계정을 두 개 이상 만드세요. 각 계정에는 Global Administrator 역할을 영구 활성 상태로 할당합니다.
+- **로그인 정책** — Microsoft가 권장하는 FIDO2 패스키를 등록하세요. 이미 공개 키 인프라(PKI)를 운영한다면 인증서 기반 인증도 사용할 수 있습니다. 로그인을 차단하거나 제한하는 조건부 액세스 정책에서 긴급 계정을 제외합니다. 보고 전용 정책에는 제외 설정이 필요 없습니다.
 - **90일 점검** — 점검 간격이 90일을 넘지 않도록 하세요. 담당자가 각 계정으로 로그인해 관리 작업을 수행하고, 보안 담당자는 사용 알림이 도착했는지 확인합니다. IT 담당자나 Entra 구독이 바뀌었을 때도 점검하세요.
 
 [Microsoft의 긴급 접근 계정 운영 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)

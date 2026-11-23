@@ -5,6 +5,15 @@ description: Microsoft Purview Insider Risk Management guide for insider risk si
 
 # Insider Risk Management
 
+<ScenarioLinks
+  summary="내부자 위험을 조사할 때 어떤 신호를 살펴보고 누가 사례를 검토할지 정하는 문서입니다. 정책을 만들기 전에 조사 범위와 담당자의 권한부터 확인하세요."
+  links={[
+    ["조사 절차를 설계할 때","#insider-risk-architecture"],
+    ["정책을 승인하기 전에","#decision-checklist"],
+    ["운영 인계 자료를 준비할 때","#delivery-artifacts"],
+  ]}
+/>
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">PURVIEW INSIDER RISK</span>

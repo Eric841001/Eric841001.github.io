@@ -6,6 +6,15 @@ description: Microsoft Purview Data Loss Prevention guide for policy design, sen
 
 # Data Loss Prevention
 
+<ScenarioLinks
+  summary="중요한 자료가 어느 기기에서 어떤 경로로 나가는지에 따라 데이터 손실 방지(DLP) 정책의 적용 범위가 달라집니다. 점검할 전송 경로를 선택하세요."
+  links={[
+    ["FTP·SFTP 전송을 관리할 때","#ftp-sftp-전송과-네트워크-보호"],
+    ["외부 조직과 Teams로 대화할 때","#외부-조직과의-teams-대화"],
+    ["Mac의 권한 설정을 확인할 때","#macos-27-permissions"],
+  ]}
+/>
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">PURVIEW DLP CONTROL MODEL</span>

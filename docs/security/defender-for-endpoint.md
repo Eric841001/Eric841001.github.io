@@ -5,6 +5,15 @@ description: Microsoft Defender for Endpoint deployment, device risk, ASR rollou
 
 # Defender for Endpoint
 
+<ScenarioLinks
+  summary="Defender for Endpoint를 기기에 배포하고 운영하는 절차를 정리했습니다. 배포 순서를 잡거나 특정 운영체제와 앱의 점검 범위를 알아볼 때 참고하세요."
+  links={[
+    ["기기 배포 순서 정하기","#deployment-journey"],
+    ["Microsoft Store 앱 점검하기","#microsoft-store-vulnerability-assessment"],
+    ["Linux·macOS 변경 사항 확인하기","#october-2026-platform-updates"],
+  ]}
+/>
+
 <section className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">ENDPOINT SECURITY OPERATIONS</span>

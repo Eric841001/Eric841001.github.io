@@ -6,6 +6,15 @@ description: Azure identity architecture guide for Microsoft Entra ID, RBAC, PIM
 
 # Azure Identity
 
+<ScenarioLinks
+  summary="관리자 권한을 평소에 어떻게 쓰고, 로그인이 막히면 어떻게 복구할지 정할 때 참고하세요. 그룹을 조건부 액세스에 쓰는 경우에는 구성원 변경이 반영되는 시간도 확인해야 합니다."
+  links={[
+    ["긴급 접근 계정 준비하기","#긴급-접근-계정과-pim-적용-범위"],
+    ["기존 memberOf 그룹 전환하기","#memberof-retirement-2026"],
+    ["역할 할당 전 확인할 사항","#decision-checklist"],
+  ]}
+/>
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">AZURE IDENTITY CONTROL PLANE</span>
@@ -96,8 +105,8 @@ Standard 그룹은 **하루 두 번** 갱신됩니다. 즉시 접근을 허용�
 
 ## 긴급 접근 계정과 PIM 적용 범위
 
-- **계정 준비** — 클라우드 전용 긴급 접근 계정을 두 개 이상 만드세요. 각 계정에는 Global Administrator 역할을 영구 활성 상태로 할당합니다.
-- **로그인 정책** — FIDO2 패스키나 인증서 기반 인증을 등록해 필수 MFA 요건을 충족하세요. 로그인을 차단하거나 제한하는 조건부 액세스 정책에서 긴급 계정을 제외합니다. 보고 전용 정책에는 제외 설정이 필요 없습니다.
+- **계정 준비** — 테넌트의 `*.onmicrosoft.com` 도메인에 클라우드 전용 긴급 접근 계정을 두 개 이상 만드세요. 각 계정에는 Global Administrator 역할을 영구 활성 상태로 할당합니다.
+- **로그인 정책** — Microsoft가 권장하는 FIDO2 패스키를 등록하세요. 이미 공개 키 인프라(PKI)를 운영한다면 인증서 기반 인증도 사용할 수 있습니다. 로그인을 차단하거나 제한하는 조건부 액세스 정책에서 긴급 계정을 제외합니다. 보고 전용 정책에는 제외 설정이 필요 없습니다.
 - **90일 점검** — 점검 간격이 90일을 넘지 않도록 하세요. 담당자가 각 계정으로 로그인해 관리 작업을 수행하고, 보안 담당자는 사용 알림이 도착했는지 확인합니다. IT 담당자나 Entra 구독이 바뀌었을 때도 점검하세요.
 
 [Microsoft의 긴급 접근 계정 운영 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)

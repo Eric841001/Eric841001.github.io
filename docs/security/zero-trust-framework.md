@@ -8,6 +8,15 @@ toc_max_heading_level: 2
 
 # Zero Trust Reference Architecture
 
+<ScenarioLinks
+  summary="제로 트러스트 설계를 처음 시작한다면 접근을 허용할 근거, 필요한 권한, 침해가 발생했을 때 피해를 줄일 방법부터 정하세요. 계정과 기기별 점검 항목을 보고 도입 순서를 잡을 수 있습니다."
+  links={[
+    ["관리자와 사용자 계정 점검하기","#identity-security"],
+    ["기기 상태를 접근 판단에 반영하기","#device-trust"],
+    ["도입 순서 정하기","#implementation-roadmap"],
+  ]}
+/>
+
 ## Executive Summary
 
 Zero Trust is not a single product implementation.

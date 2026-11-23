@@ -295,9 +295,9 @@
   },
   "/knowledge/azure/identity": {
     "file": "docs/azure/identity.md",
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 긴급 접근 계정의 PIM 역할 상태, 조건부 액세스 제외 대상, 인증·알림·90일 시험 조건을 확인했습니다. 일반 PIM·RBAC·관리 ID의 역할과 기존 MemberOf Next 전환 조건도 재대조했습니다. 앱 역할 미리 보기의 토큰·그룹 활성화 동작과 공식 문서 간 사용권 설명 차이를 추가했습니다. 앱 역할 활성화 사전 요건은 Governance, 할당 문서는 미리 보기에 E7을 명시합니다.",
+    "scope": "긴급 접근 계정의 도메인, 인증 방법과 정책 제외 조건을 Microsoft 지침과 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3827,9 +3827,9 @@
   },
   "/knowledge/security/conditional-access": {
     "file": "docs/security/conditional-access.md",
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: 긴급 접근 계정의 PIM 역할 상태, 조건부 액세스 제외 대상, 인증·알림·90일 시험 조건을 확인했습니다.",
+    "scope": "긴급 접근 계정의 도메인, 인증 방법과 정책 제외 조건을 Microsoft 지침과 대조했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
       {
@@ -3846,6 +3846,11 @@
         "title": "Emergency access accounts",
         "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
         "checkedFor": "긴급 계정 수와 영구 활성 역할, 피싱 방지 인증 및 정책 제외 범위, 90일 이내 로그인·관리 작업·알림 시험과 담당자·구독 변경 시 점검 조건을 확인했습니다."
+      },
+      {
+        "title": "Conditional Access report-only mode",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only",
+        "checkedFor": "사용자 작업 제외와 기기 준수 정책의 인증서 선택 창 조건을 확인했습니다."
       }
     ],
     "reviewLevel": "설계 참고사항 확인",

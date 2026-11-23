@@ -5,6 +5,15 @@ description: Microsoft Purview guide for sensitivity labels, DLP, retention, aud
 
 # Purview
 
+<ScenarioLinks
+  summary="Microsoft Purview에서 문서를 분류하고 외부 유출을 막거나 조사에 필요한 기록을 찾을 때 참고하세요. 지금 맡은 업무에서 필요한 설정부터 살펴볼 수 있습니다."
+  links={[
+    ["문서에 민감도 레이블을 붙일 때","#classification-and-labels"],
+    ["외부로 나가는 자료를 관리할 때","#dlp-and-risk-control"],
+    ["보존 자료와 감사 기록을 찾을 때","#audit-retention-and-ediscovery"],
+  ]}
+/>
+
 <section aria-label="Microsoft Purview hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
     <span className="kc-topic-hero__eyebrow">Microsoft Purview Data Security and Governance</span>

@@ -5,6 +5,15 @@ description: Microsoft Purview data lifecycle management guide for retention, de
 
 # Data Lifecycle Management
 
+<ScenarioLinks
+  summary="문서를 얼마 동안 보관하고 언제 삭제할지 정할 때 쓰는 가이드입니다. 삭제 요청이 들어오면 먼저 해당 자료에 적용된 보존 설정을 살펴보세요."
+  links={[
+    ["삭제 요청이 들어왔을 때","#삭제-전에-확인할-보존-설정"],
+    ["보존 체계를 설계할 때","#lifecycle-architecture"],
+    ["정책 확정 전 검토할 사항","#decision-checklist"],
+  ]}
+/>
+
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
     <span className="kc-eyebrow">PURVIEW DATA LIFECYCLE</span>
