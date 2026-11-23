@@ -105,6 +105,7 @@ The five levels below are an author-proposed planning model, rather than a Micro
 <ArchitectureFigure
   id="enterprise-prompt-architecture"
   title="업무용 프롬프트 구성"
+  edges={[["user-intent", "prompt-structure", ""], ["prompt-structure", "copilot-response", ""], ["copilot-response", "validation", "검토"], ["validation", "business-action", "승인한 결과"]]}
   nodes={[
     ["user-intent","사용자 의도","사용자가 필요한 결정, 문서, 분석 또는 수행할 작업을 정합니다."],
     ["prompt-structure","프롬프트 구성","역할, 할 일, 맥락, 결과 형식과 제약 조건을 요청에 담습니다."],

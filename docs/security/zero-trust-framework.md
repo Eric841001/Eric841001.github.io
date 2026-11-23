@@ -90,6 +90,7 @@ Microsoft’s [current Zero Trust principles](https://learn.microsoft.com/en-us/
 <ArchitectureFigure
   id="zero-trust-reference-architecture"
   title="제로 트러스트 구성"
+  edges={[["users-and-apps", "conditional-access", "접근 요청"], ["entra-and-intune", "conditional-access", "ID 위험·기기 준수"], ["conditional-access", "data-protection", "허용된 접근"], ["data-protection", "security-operations", "감사·경보"]]}
   nodes={[
     ["users-and-apps","사용자와 앱","직원, 게스트, 관리자, 애플리케이션과 워크로드가 접근을 요청합니다."],
     ["entra-and-intune","Entra와 Intune","ID 위험, MFA, 관리자 권한과 기기 준수 상태를 접근 판단에 활용합니다."],

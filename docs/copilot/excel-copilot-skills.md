@@ -149,6 +149,7 @@ These are pilot evaluation goals, not guaranteed outcomes from enabling a skill.
 <ArchitectureFigure
   id="frontier-finance-architecture"
   title="Excel 재무 분석"
+  edges={[["enterprise-data", "excel-copilot", "근거 자료"], ["skills", "excel-copilot", "저장한 지시"], ["finance-models", "excel-copilot", "판단 기준"], ["excel-copilot", "business-output", "검증 후 보고"]]}
   nodes={[
     ["excel-copilot","Excel Copilot","재무 담당자가 익숙한 Excel 스프레드시트에서 분석을 시작합니다."],
     ["skills","스킬","반복할 업무의 지시를 스킬로 저장하고, 결과가 의도한 재무 분석 방법을 따르는지 확인합니다."],

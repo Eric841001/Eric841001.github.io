@@ -89,6 +89,7 @@ Organizations must achieve:
 <ArchitectureFigure
   id="enterprise-security-reference-architecture"
   title="기업 보안 구성"
+  edges={[["user", "entra-id", "인증"], ["intune", "entra-id", "기기 준수"], ["defender-purview", "copilot-security", "데이터 보호"], ["defender-purview", "soc", "경보"], ["entra-id", "soc", "위험 신호"]]}
   nodes={[
     ["user","사용자","직원, 관리자, 게스트, 협력사와 서비스 ID를 구분합니다."],
     ["entra-id","Entra ID","인증, 조건부 액세스, ID 거버넌스와 위험 신호를 점검합니다."],

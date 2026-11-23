@@ -53,6 +53,7 @@ Copilot should not be launched as a license assignment project. It should be lau
 </div><ArchitectureFigure
   id="copilot-governance-architecture"
   title="Copilot 운영 구조"
+  edges={[["data-governance", "copilot-operation", "정책 예외"], ["identity-and-security", "copilot-operation", "인시던트"], ["adoption-and-agents", "copilot-operation", "사용량·의견"]]}
   nodes={[
     ["data-governance","데이터 거버넌스","SharePoint, Teams, OneDrive의 공유 범위와 민감도 레이블, DLP를 검토합니다."],
     ["identity-and-security","ID와 보안","Entra ID, 조건부 액세스, Defender, 감사 기록과 관리자 역할을 점검합니다."],

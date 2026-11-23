@@ -69,6 +69,7 @@ Microsoft 365 자료의 보관 기간, 삭제와 처분 검토 절차를 정리�
 </div><ArchitectureFigure
   id="data-lifecycle-management-architecture"
   title="데이터 수명 주기"
+  edges={[["create-and-classify", "retain-and-protect", "레이블"], ["retain-and-protect", "review", ""], ["review", "dispose-or-evidence", "폐기·보존 결정"]]}
   nodes={[
     ["create-and-classify","생성과 분류","자료 소유자가 새 콘텐츠를 분류하고 레이블을 붙일 기준을 정합니다. 자동 레이블 지정은 지원 범위를 확인해 별도로 설정합니다."],
     ["retain-and-protect","보존과 보호","정책에 따라 보존, 레코드 관리, DLP와 접근 제어를 적용합니다."],

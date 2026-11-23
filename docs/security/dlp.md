@@ -63,6 +63,7 @@ DLP should be designed as a business control, not only a security rule. The stro
 </div><ArchitectureFigure
   id="dlp-policy-architecture"
   title="DLP 정책 설계"
+  edges={[["classify-data", "design-policy", "분류 기준"], ["design-policy", "tune-impact", "시뮬레이션"], ["tune-impact", "operate-exceptions", "적용 후 운영"]]}
   nodes={[
     ["classify-data","데이터 분류","민감한 정보 유형과 학습 가능한 분류자를 업무 부서의 데이터 분류 기준에 맞춥니다."],
     ["design-policy","정책 설계","적용 서비스와 조건, 사용자 그룹, 비관리 기기 규칙과 정책 알림을 구분해 설정합니다."],

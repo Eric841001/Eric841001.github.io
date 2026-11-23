@@ -79,6 +79,7 @@ Standard 그룹은 **하루 두 번** 갱신됩니다. 즉시 접근을 허용�
 </div><ArchitectureFigure
   id="azure-identity-architecture"
   title="Azure ID와 접근 권한"
+  edges={[["entra-id-baseline", "rbac-and-pim", "그룹·역할"], ["rbac-and-pim", "access-evidence", "활성화 기록"], ["workload-identity", "access-evidence", "앱 권한 검토"]]}
   nodes={[
     ["entra-id-baseline","Entra ID","테넌트와 그룹, 관리자 역할을 설계하고 긴급 접근 계정과 로그인 위험 정책을 준비합니다."],
     ["rbac-and-pim","RBAC와 PIM","그룹 단위 역할 할당과 활성화 자격, 승인 절차, 사유 입력, 활성화 기록을 검토합니다."],

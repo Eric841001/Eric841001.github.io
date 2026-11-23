@@ -54,6 +54,7 @@ For enterprise architecture, the goal is not to enable every feature at once. Th
 </div><ArchitectureFigure
   id="defender-xdr-architecture"
   title="Defender XDR 구성"
+  edges={[["mdo-mde-mdi-mdca", "incident-correlation", "경보"], ["incident-correlation", "soc-triage-model", ""], ["soc-triage-model", "executive-metrics", "보고"]]}
   nodes={[
     ["mdo-mde-mdi-mdca","보안 신호","메일, 엔드포인트, ID와 클라우드 앱의 탐지 신호를 연결하고 담당자를 지정합니다."],
     ["incident-correlation","인시던트 연결","경보를 인시던트 단위로 모아 심각도, 관련 대상과 권장 조치를 확인합니다."],

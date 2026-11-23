@@ -67,6 +67,7 @@ For a manufacturing modernization plan, separate shared connectivity, workload s
 </div><ArchitectureFigure
   id="azure-landing-zone-architecture"
   title="랜딩 존 구성"
+  edges={[["tenant-and-hierarchy", "policy-and-network", "관리 그룹"], ["policy-and-network", "workload-subscription", "정책·연결"], ["security-and-cost", "workload-subscription", "모니터링·예산"]]}
   nodes={[
     ["tenant-and-hierarchy","테넌트와 계층 구조","Entra 테넌트, 관리 그룹, 구독의 관계를 정리하고 환경별 소유자를 정합니다."],
     ["policy-and-network","정책과 네트워크","Azure Policy 기본 정책과 허브 네트워크, DNS, 방화벽 및 프라이빗 연결을 설계합니다."],

@@ -75,6 +75,7 @@ SOC 담당자가 경고를 분류하고 원인을 조사한 뒤 격리·복구·
 <ArchitectureFigure
   id="signal-collection"
   title="Defender XDR 대응 과정"
+  edges={[["signal-collection", "incident-correlation", "경보"], ["incident-correlation", "analyst-triage", ""], ["analyst-triage", "response-action", "우선순위"], ["response-action", "improvement-loop", ""], ["improvement-loop", "incident-correlation", "탐지 규칙"]]}
   nodes={[
     ["signal-collection","신호 수집","엔드포인트, ID, 메일, 클라우드 앱과 데이터 신호에 필요한 라이선스와 설정, 수집 상태를 확인합니다."],
     ["incident-correlation","인시던트 연결","연관된 경보를 인시던트로 묶어 영향 범위, 관련 자산과 증거를 살펴봅니다."],

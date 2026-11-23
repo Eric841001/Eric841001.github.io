@@ -222,6 +222,7 @@ Source: [Assess model changes with Copilot Agent Kit (preview)](https://learn.mi
 <ArchitectureFigure
   id="copilot-studio-agent-architecture-model"
   title="에이전트 실행 구조"
+  edges={[["user-or-trigger", "orchestration", "요청·트리거"], ["agent-boundary", "orchestration", "지침·지식·도구"], ["orchestration", "execution", ""], ["control-plane", "execution", "ID·DLP·크레딧"], ["execution", "outcome", ""]]}
   nodes={[
     ["user-or-trigger","사용자와 트리거","사용자의 요청, 워크플로 트리거, 업무 이벤트나 예약 작업이 실행의 출발점입니다."],
     ["agent-boundary","에이전트의 범위","에이전트가 맡을 업무에 맞춰 지침, 지식 원본, 도구와 배포 채널을 정합니다."],

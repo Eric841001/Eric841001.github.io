@@ -75,6 +75,7 @@ IB should not be treated as a simple user blocking feature. It should be designe
 <ArchitectureFigure
   id="information-barriers-implementation-architecture"
   title="정보 장벽 적용"
+  edges={[["matrix", "segment", "경계 기준"], ["segment", "policy", ""], ["policy", "workloads", "적용"], ["workloads", "evidence", "시험 결과"]]}
   nodes={[
     ["matrix","협업 허용 범위","서로 협업할 수 있는 대상과 차단할 대상, 예외를 승인할 사람을 정합니다."],
     ["segment","세그먼트","업무 경계와 사용자 특성, 예외 기준에 따라 정보 장벽 세그먼트를 만듭니다."],

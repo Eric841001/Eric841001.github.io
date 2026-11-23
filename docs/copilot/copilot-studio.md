@@ -286,6 +286,7 @@ It supports:
 <ArchitectureFigure
   id="copilot-studio-core-architecture"
   title="Copilot Studio 구성"
+  edges={[["channels", "agent", "요청"], ["agent", "knowledge", "근거 검색"], ["agent", "tools", "도구 호출"], ["tools", "automation", "흐름 실행"]]}
   nodes={[
     ["channels","배포 채널","사용자가 접근할 곳에 맞춰 Teams, Microsoft 365 Copilot, 웹사이트, 데모 사이트 또는 자체 앱을 선택합니다."],
     ["agent","에이전트","에이전트가 요청의 의도를 파악하고 토픽과 작업 순서를 조정합니다."],
@@ -504,6 +505,7 @@ Add actions when a scenario requires a system change, and test permissions, conf
 <ArchitectureFigure
   id="copilot-studio-tool-and-action-architecture"
   title="도구 실행 과정"
+  edges={[["intent", "tool-selection", ""], ["tool-selection", "execution", ""], ["control", "execution", "인증·승인"], ["execution", "result", ""]]}
   nodes={[
     ["intent","사용자 의도","사용자 요청이나 트리거에서 수행할 업무를 식별합니다."],
     ["tool-selection","도구 선택","작업에 맞는 흐름, 커넥터, API, MCP 서버 또는 프롬프트 도구를 선택합니다."],

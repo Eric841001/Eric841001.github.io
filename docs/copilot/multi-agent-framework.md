@@ -173,6 +173,7 @@ See the [official agent design guidance](https://techcommunity.microsoft.com/blo
 <ArchitectureFigure
   id="multi-agent-core-architecture"
   title="다중 에이전트 구성"
+  edges={[["user-request", "coordinator", "요청"], ["coordinator", "specialists", "작업 배정"], ["specialists", "human-review", "민감 작업"], ["control-plane", "specialists", "감사·비용"], ["human-review", "final-response", "승인"], ["coordinator", "final-response", "결과 취합"]]}
   nodes={[
     ["user-request","사용자 요청","업무 질문, 워크플로 요청 또는 경영진 과제로 시작합니다."],
     ["coordinator","조정 에이전트","조정 에이전트가 일을 나누고 전문 에이전트를 배정해 최종 결과를 취합합니다."],
@@ -823,6 +824,7 @@ Examples:
 <ArchitectureFigure
   id="human-in-the-loop-architecture"
   title="사람이 승인하는 실행 과정"
+  edges={[["agent-proposal", "policy-review", ""], ["policy-review", "human-approval", ""], ["human-approval", "execute", "승인"], ["human-approval", "agent-proposal", "수정 요청"]]}
   nodes={[
     ["agent-proposal","에이전트 제안","에이전트가 권고안, 초안, 수행할 작업이나 예외 요청을 준비합니다."],
     ["policy-review","정책 검토","규칙, 결과의 신뢰도, 데이터 민감도와 업무 위험을 확인합니다."],

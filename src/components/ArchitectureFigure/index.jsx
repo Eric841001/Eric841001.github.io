@@ -10,15 +10,21 @@ import styles from './styles.module.css';
 function layout(nodes, edges, vertical) {
   const rank = {};
   nodes.forEach(([k]) => { rank[k] = 0; });
-  for (let i = 0; i < nodes.length; i++) edges.forEach(([a, b]) => { if (rank[b] < rank[a] + 1) rank[b] = rank[a] + 1; });
+  // 순환을 만드는 연결(수정 요청, 규칙 조정 등)만 찾아 배치 순위에서 빼고 곡선으로 따로 그린다
+  const back = new Set(), state = {};
+  const visit = k => { state[k] = 1; edges.forEach((e, i) => { if (e[0] !== k) return; if (state[e[1]] === 1) back.add(i); else if (!state[e[1]]) visit(e[1]); }); state[k] = 2; };
+  nodes.forEach(([k]) => { if (!state[k]) visit(k); });
+  const forward = edges.filter((e, i) => !back.has(i));
+  const idx = {}; edges.forEach((e, i) => { if (back.has(i)) idx[e[0] + '>' + e[1]] = true; });
+  for (let i = 0; i < nodes.length; i++) forward.forEach(([a, b]) => { if (rank[b] < rank[a] + 1) rank[b] = rank[a] + 1; });
   const cols = Math.max(...Object.values(rank)) + 1;
   const per = {};
   const pos = {};
   nodes.forEach(([k]) => { const c = rank[k]; per[c] = per[c] || 0; pos[k] = {c, r: per[c]++}; });
   const rows = Math.max(...Object.values(per));
-  const nw = vertical ? 260 : 200, nh = vertical ? 64 : 76, cw = vertical ? 360 : 250, rh = vertical ? 104 : 118;
-  const W = vertical ? Math.max(360, rows * (nw + 20) + 20) : cols * cw + 20;
-  const H = vertical ? cols * rh + 20 : rows * rh + 24;
+  const nw = vertical ? 260 : 190, nh = vertical ? 64 : 76, cw = vertical ? 360 : 290, rh = vertical ? 104 : 118;
+  const W = vertical ? 360 : cols * cw + 20;
+  let H = vertical ? cols * rh + 20 : rows * rh + 24;
   const xy = {};
   Object.entries(pos).forEach(([k, p]) => {
     const span = per[p.c];
@@ -30,29 +36,40 @@ function layout(nodes, edges, vertical) {
       xy[k] = {x: 10 + p.c * cw + cw / 2, y: top + p.r * rh + rh / 2};
     }
   });
-  return {W, H, xy, nw: vertical ? Math.min(nw, W / Math.max(...Object.values(per)) - 16) : nw, nh};
+  const arcs = edges.some((e, i) => back.has(i) || (xy[e[0]] && xy[e[1]] && (vertical ? Math.abs(xy[e[0]].x - xy[e[1]].x) < 1 && Math.abs(xy[e[1]].y - xy[e[0]].y) > 160 : Math.abs(xy[e[0]].y - xy[e[1]].y) < 1 && Math.abs(xy[e[1]].x - xy[e[0]].x) > 400)));
+  if (arcs && !vertical) H += 56;
+  return {W: W + (arcs && vertical ? 70 : 0), H, xy, idx, nw: vertical ? Math.min(nw, (W - 8) / rows - 14) : nw, nh};
 }
 
 function Diagram({id, nodes, edges, soft, sel, near, onPick, vertical}) {
-  const {W, H, xy, nw, nh} = useMemo(() => layout(nodes, edges, vertical), [nodes, edges, vertical]);
+  const {W, H, xy, idx, nw, nh} = useMemo(() => layout(nodes, edges, vertical), [nodes, edges, vertical]);
+  const labels = [];
+  const tw = s => [...s].reduce((n, ch) => n + (ch.charCodeAt(0) > 0x3000 ? 12.5 : 7.2), 0) + 14;
   return (
     <svg className={vertical ? styles.tall : styles.wide} viewBox={`0 0 ${W} ${H}`} role="group" aria-label="구성 요소">
       {edges.map(([a, b, label], i) => {
         const A = xy[a], B = xy[b];
         if (!A || !B) return null;
         const on = sel && (a === sel || b === sel);
-        let d;
-        if (vertical) {
+        let d, lx = (A.x + B.x) / 2 + (vertical ? 10 : 0), ly = (A.y + B.y) / 2 - (vertical ? 0 : 10);
+        const skip = vertical ? Math.abs(A.x - B.x) < 1 && Math.abs(B.y - A.y) > 160 : Math.abs(A.y - B.y) < 1 && Math.abs(B.x - A.x) > 400;
+        if (idx[a + '>' + b] || skip) {
+          // 되돌아가는 연결
+          if (vertical) { const x = Math.max(A.x, B.x) + nw / 2 + 36; d = `M${A.x + nw / 2} ${A.y}C${x} ${A.y} ${x} ${B.y} ${B.x + nw / 2} ${B.y}`; lx = x + 4; ly = (A.y + B.y) / 2; }
+          else { const y = Math.max(A.y, B.y) + nh / 2 + 48; d = `M${A.x} ${A.y + nh / 2}C${A.x} ${y} ${B.x} ${y} ${B.x} ${B.y + nh / 2}`; lx = (A.x + B.x) / 2; ly = y - 4; }
+        } else if (vertical) {
           const y1 = A.y + nh / 2, y2 = B.y - nh / 2, my = (y1 + y2) / 2;
+          // 세로 배치에서는 이름표를 출발 요소 바로 아래에 둔다(여러 연결이 한곳에 모일 때 겹치지 않게)
+          lx = A.x + (B.x - A.x) * 0.25 + (A.x === B.x ? 10 : 0); ly = y1 + 16;
           d = A.y === B.y ? `M${A.x + nw / 2} ${A.y}L${B.x - nw / 2} ${B.y}` : `M${A.x} ${y1}C${A.x} ${my} ${B.x} ${my} ${B.x} ${y2}`;
         } else {
           const x1 = A.x + nw / 2, x2 = B.x - nw / 2, mx = (x1 + x2) / 2;
           d = A.x === B.x ? `M${A.x} ${A.y + nh / 2}L${B.x} ${B.y - nh / 2}` : `M${x1} ${A.y}C${mx} ${A.y} ${mx} ${B.y} ${x2} ${B.y}`;
         }
+        labels.push({i, label, lx, ly, start: vertical && !idx[a + '>' + b] && !skip, cls: `${styles.elabel} ${on ? styles.on : ''} ${sel && !on ? styles.dim : ''}`});
         return (
           <g key={i} className={`${styles.edge} ${soft ? styles.soft : ''} ${on ? styles.on : ''} ${sel && !on ? styles.dim : ''}`}>
             <path d={d} />
-            {label && <text x={(A.x + B.x) / 2 + (vertical ? 10 : 0)} y={(A.y + B.y) / 2 - (vertical ? 0 : 10)} textAnchor={vertical ? 'start' : 'middle'}>{label}</text>}
           </g>
         );
       })}
@@ -75,6 +92,15 @@ function Diagram({id, nodes, edges, soft, sel, near, onPick, vertical}) {
             data-key={key}>
             <rect x={p.x - nw / 2} y={p.y - nh / 2} width={nw} height={nh} rx={nh / 2.8} />
             <text x={p.x} y={p.y + 6} textAnchor="middle">{label}</text>
+          </g>
+        );
+      })}
+      {labels.filter(l => l.label).map(l => {
+        const w = tw(l.label), x = l.start ? l.lx - 4 : l.lx - w / 2;
+        return (
+          <g key={'l' + l.i} className={l.cls} aria-hidden="true">
+            <rect x={x} y={l.ly - 15} width={w} height={22} rx={11} />
+            <text x={l.start ? l.lx + 3 : l.lx} y={l.ly + 1} textAnchor={l.start ? 'start' : 'middle'}>{l.label}</text>
           </g>
         );
       })}

@@ -105,6 +105,7 @@ The readiness question is no longer only "Can we enable Copilot?" It is "Can we 
 <ArchitectureFigure
   id="copilot-readiness-architecture"
   title="Copilot 도입 준비"
+  edges={[["business-objectives", "identity-security", "시험 범위"], ["business-objectives", "data-governance", "시험 범위"], ["business-objectives", "adoption-support", "사용 대상"], ["identity-security", "pilot-insights", ""], ["data-governance", "pilot-insights", ""], ["adoption-support", "pilot-insights", ""], ["pilot-insights", "enterprise-rollout", "개선 후 확대"]]}
   nodes={[
     ["business-objectives","업무 목표","사용 대상과 업무 사례를 고르고 기대 효과와 시험 운영 범위를 정합니다."],
     ["identity-security","ID와 보안","Entra ID, 조건부 액세스, Defender와 기기 정책을 점검합니다."],

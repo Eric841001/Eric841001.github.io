@@ -143,6 +143,7 @@ Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계�
 <ArchitectureFigure
   id="conditional-access-zero-trust-evaluation-flow"
   title="조건부 액세스 평가"
+  edges={[["user", "policy", "사용자 조건"], ["device", "policy", "기기 조건"], ["context", "policy", "로그인 조건"], ["policy", "control", "권한 부여 제어"], ["control", "access", ""]]}
   nodes={[
     ["user","사용자","사용자와 그룹, 역할, 게스트 여부와 관리자 권한을 확인합니다."],
     ["device","기기","기기의 등록·조인 상태, Intune 준수 여부와 관리 여부를 확인합니다."],

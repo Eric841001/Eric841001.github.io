@@ -59,6 +59,7 @@ Azure Virtual Machines로 업무 시스템을 운영할 때 확인할 설계 항
 </div><ArchitectureFigure
   id="azure-virtual-machine-architecture"
   title="Azure 가상 머신"
+  edges={[["azure-vm", "network-and-storage", "연결·디스크"], ["backup-and-monitoring", "azure-vm", "백업·패치"], ["security-baseline", "azure-vm", "보안 기준"]]}
   nodes={[
     ["azure-vm","가상 머신","업무 목적과 담당자를 정한 뒤 운영체제, 이미지와 가상 머신 크기를 선택합니다."],
     ["network-and-storage","네트워크와 스토리지","VNet, 서브넷, 네트워크 보안 그룹, 관리 디스크와 프라이빗 연결 경로를 설계합니다."],
