@@ -4021,3 +4021,92 @@ body.kc-diagram-modal-open {
 
 /* Keep the search prompt readable on its light input surface in both themes. */
 .navbar .navbar__search-input::placeholder {color:#526174;opacity:1;}
+
+/* A shared title treatment for articles, search and the fallback page. */
+.theme-doc-markdown > header:has(> h1),
+html[class*="docusaurus-search-local"] .main-wrapper h1,
+.plugin-native main .hero__title {
+  --weave-size: clamp(126px, 21vw, 244px);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: clamp(124px, 12vw, 180px);
+  margin: 0 0 1.5rem;
+  padding: clamp(20px, 3vw, 42px);
+  padding-inline-end: calc(var(--weave-size) + 12px);
+  border: 1px solid #30516f;
+  border-radius: 18px;
+  color: #f1fbff;
+  background:
+    radial-gradient(ellipse at 95% 80%, #174e54 0, transparent 48%),
+    radial-gradient(ellipse at 78% -60%, #483983 0, transparent 68%),
+    #0b192e;
+  box-shadow: 0 10px 26px -20px #123f59;
+}
+.theme-doc-markdown > header > h1 {
+  position: relative;
+  color: #f1fbff;
+  margin: 0;
+  font-size: clamp(1.65rem, 3.4vw, 2.85rem);
+  letter-spacing: -.035em;
+  line-height: 1.18;
+}
+.theme-doc-markdown > header:has(> h1)::after,
+html[class*="docusaurus-search-local"] .main-wrapper h1::after,
+.plugin-native main .hero__title::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inline-size: var(--weave-size);
+  aspect-ratio: 8/5;
+  inset-inline-end: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url('/img/home/knowledge-weave.webp') 50% 0 / 100% 4800% no-repeat;
+}
+.theme-doc-markdown > header:has(> h1)::before {
+  content: "";
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(#9bdde766 .8px, transparent 1px);
+  background-size: 16px 16px;
+  mask-image: linear-gradient(96deg,transparent 16%,#000 100%);
+}
+@media (max-width: 640px) {
+  .theme-doc-markdown > header:has(> h1), html[class*="docusaurus-search-local"] .main-wrapper h1, .plugin-native main .hero__title {
+    --weave-size: clamp(72px, 22vw, 118px);
+    padding: 18px calc(var(--weave-size) + 3px) 18px 16px;
+    min-height: 94px; margin-bottom: 1rem; border-radius: 12px;
+  }
+  .theme-doc-markdown > header > h1 { font-size: clamp(1.375rem,5.6vw,1.75rem); }
+}
+@keyframes knowledge-weave-turn { to { background-position-y: 100%; } }
+@media (prefers-reduced-motion: no-preference) {
+  .theme-doc-markdown > header:has(> h1)::after,
+  html[class*="docusaurus-search-local"] .main-wrapper h1::after,
+  .plugin-native main .hero__title::after { animation: knowledge-weave-turn 3s steps(47,end) both; }
+  .theme-doc-markdown :is(nav a,.kc-topic-button), .pagination-nav__link,
+  .menu__link, .navbar__item.navbar__link { transition: background-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+  @media (hover:hover) {
+    .theme-doc-markdown :is(nav a,.kc-topic-button):hover, .pagination-nav__link:hover {
+      transform: translateY(-2px);
+      box-shadow: inset 3px 0 #25aaae;
+    }
+  }
+  .theme-doc-markdown :is(nav a,.kc-topic-button):active, .pagination-nav__link:active, .menu__link:active {
+    transform: scale(.985);
+  }
+}
+
+@keyframes knowledge-anchor-arrival {
+  from { background-color: rgba(65,186,176,.23); }
+  to { background-color: transparent; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .theme-doc-markdown :is(h2,h3,h4):target {
+    animation: knowledge-anchor-arrival 1.2s ease-out;
+  }
+}

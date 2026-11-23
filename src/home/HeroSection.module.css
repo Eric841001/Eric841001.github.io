@@ -40,3 +40,18 @@
   .caption span { display: block; font-size: 14px; line-height: 1.6; color: var(--hero-muted); word-break: keep-all; }
   .products { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Widen the film across the opening scene while keeping its playback control in reach. */
+@media (min-width: 851px) {
+  .heroInner { position: relative; isolation: isolate; overflow: hidden; min-height: clamp(400px, 43vw, 575px); grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+  .heroContent { position: relative; z-index: 1; }
+  .figure { position: absolute; inset: 0 0 0 32%; }
+  .figure video { width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 0; mask-image: linear-gradient(90deg, transparent, #000 22%); }
+  .caption { position: absolute; right: clamp(20px,4vw,64px); bottom: 12px; }
+  .caption button { background: #f8f7f5; color: #075e57; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .heroActions a,.products a { transition: transform .18s ease, box-shadow .18s ease; }
+  .heroActions a:active,.products a:active { transform: scale(.975); }
+  @media (hover:hover) { .products a:hover { transform: translateY(-3px); box-shadow: inset 0 2px var(--hero-accent); } }
+}
