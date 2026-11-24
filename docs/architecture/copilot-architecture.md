@@ -1,13 +1,12 @@
 ---
 id: copilot-architecture
-title: Microsoft Copilot Architecture
-sidebar_label: Copilot Architecture
+title: "Microsoft Copilot 아키텍처"
+sidebar_label: "Copilot 아키텍처"
 description: Microsoft 365 Copilot architecture guide for Graph, permissions, Purview, DLP, Copilot Studio, AI Agents and adoption governance.
 toc_max_heading_level: 2
 ---
 
-# Microsoft Copilot Architecture
-
+# Microsoft Copilot 아키텍처
 
 <section aria-label="Copilot architecture hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
@@ -173,13 +172,12 @@ Typical Copilot initiatives include:
 
 ## References
 
-
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - [Copilot Studio current updates](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new)
 - [Copilot Overview](../copilot/overview)
 - [Copilot Governance](../copilot/governance)
 - [Agent Factory Operating Model](../copilot/agent-factory-operating-model)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

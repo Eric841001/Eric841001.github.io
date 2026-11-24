@@ -1,12 +1,12 @@
 ---
 id: migration-checklist
-title: Migration Checklist
+title: "마이그레이션 점검표"
 description: "Enterprise Migration Checklist - This checklist provides a standardized migration validation framework for Microsoft 365 transformation, tenant to..."
-sidebar_label: Migration Checklist
+sidebar_label: "마이그레이션 점검표"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Migration Checklist
+# 마이그레이션 점검표
 
 <section aria-label="Enterprise Migration Checklist hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -374,6 +374,6 @@ Migration projects should produce:
 - Microsoft 365 마이그레이션 체크리스트
 - Exchange Online 전환 계획
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For migration pre-assessment checklists, cutover runbooks, rollback plans, wave planning sheets or hypercare trackers, use [Contact and Asset Request](../contact).
+<BriefingCTA />

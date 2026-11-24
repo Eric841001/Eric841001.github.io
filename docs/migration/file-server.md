@@ -1,9 +1,10 @@
 ---
-title: File Server Migration
+title: "파일 서버 마이그레이션"
 description: File server to Microsoft 365 migration guide for SharePoint, OneDrive, Azure Files, permission cleanup, ownership, governance and Copilot readiness.
+sidebar_label: "파일 서버"
 ---
 
-# File Server Migration
+# 파일 서버 마이그레이션
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -168,6 +169,6 @@ Include information architecture in migration planning. Agree folder cleanup and
 - [OneDrive](../microsoft365/onedrive)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For a file server migration inventory workbook, permission mapping template or cutover runbook, use [Contact and Asset Request](../contact).
+<BriefingCTA />

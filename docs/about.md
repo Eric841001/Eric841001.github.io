@@ -1,69 +1,50 @@
 ---
 sidebar_position: 99
-title: About Youngsun Kang
-description: "About Youngsun Kang - Enterprise Microsoft Architect focused on Microsoft 365, Security, Copilot, AI Agents, Azure, migration, governance and consulting assets."
+title: "Youngsun Kang 소개"
+description: "Microsoft 365, 보안, Copilot, AI 에이전트, Azure, 마이그레이션과 거버넌스를 설계하는 엔터프라이즈 Microsoft 아키텍트 Youngsun Kang 소개입니다."
+sidebar_label: "소개"
 ---
 
-# About Youngsun Kang
+# Youngsun Kang 소개
 
-<section aria-label="About Youngsun Kang" className="kc-about-hero">
+<section aria-label="Youngsun Kang 소개" className="kc-about-hero">
   <div className="kc-about-hero__content">
-    <span className="kc-topic-hero__eyebrow">Who is Youngsun Kang?</span>
+    <span className="kc-topic-hero__eyebrow">Microsoft 엔터프라이즈 아키텍트</span>
     <h2>Youngsun Kang</h2>
-    <p className="kc-about-hero__statement">Enterprise Microsoft Architect specializing in Microsoft 365, Security, Copilot, AI Agents, Azure, migration, governance and consulting delivery assets.</p>
-    <p className="kc-about-hero__statement kc-about-hero__statement--sub">I help organizations turn Microsoft technology decisions into secure architecture, adoption roadmaps, proposal structures, implementation plans and reusable operating models.</p>
-    <div aria-label="Profile highlights" className="kc-about-hero__meta">
+    <p className="kc-about-hero__statement">Microsoft 365, 보안, Copilot, AI 에이전트, Azure와 마이그레이션을 설계하고, 그 결정을 실행 가능한 아키텍처와 운영 체계로 바꾸는 일을 합니다.</p>
+    <p className="kc-about-hero__statement kc-about-hero__statement--sub">기술 선택을 보안 기준, 도입 로드맵, 제안 구조, 구축 계획과 재사용 가능한 운영 모델로 정리해 조직이 스스로 이어 갈 수 있게 돕습니다.</p>
+    <div aria-label="프로필 요약" className="kc-about-hero__meta">
       <span>MegazoneCloud</span>
-      <span>Seoul, South Korea</span>
-      <span>Enterprise Architecture</span>
-      <span>Microsoft 365 / Security / Copilot / AI Agents</span>
+      <span>서울</span>
+      <span>엔터프라이즈 아키텍처</span>
+      <span>Microsoft 365 · 보안 · Copilot · AI 에이전트</span>
       <span><a href="#microsoft-certifications">Microsoft 자격증 6개</a></span>
     </div>
-    <div aria-label="About page actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/contact" className="kc-topic-button kc-topic-button--primary">Contact / Asset Request</a>
-      <a href="/knowledge/projects/customer-success-reference-patterns" className="kc-topic-button">Reference Patterns</a>
-      <a href="/knowledge/architecture/executive-architecture-blueprint" className="kc-topic-button">Architecture Blueprint</a>
+    <div aria-label="소개 페이지 바로가기" className="kc-topic-hero__actions">
+      <a href="https://www.linkedin.com/in/young-sun-kang-a51b26356" className="kc-topic-button kc-topic-button--primary">브리핑 요청</a>
+      <a href="/knowledge/projects/customer-success-reference-patterns" className="kc-topic-button">고객 성공 참조 패턴</a>
+      <a href="/knowledge/architecture/executive-architecture-blueprint" className="kc-topic-button">경영진용 청사진</a>
     </div>
   </div>
-  <aside aria-label="Youngsun Kang profile snapshot" className="kc-about-card">
-    <div className="kc-about-card__visual">
-      <span>Enterprise Microsoft Knowledge Center</span>
-      <strong>Youngsun Kang</strong>
-      <em>Microsoft 365 | Security | Copilot | Azure | AI Agents</em>
-      <p>Architecture references, governance frameworks, migration playbooks, proposal assets and customer success patterns.</p>
-      <b>eric841001.github.io</b>
-    </div>
-    <div className="kc-about-card__body">
-      <small>Profile Snapshot</small>
-      <strong>Microsoft field architecture, made reusable.</strong>
-      <span>Public-safe knowledge built from enterprise architecture, presales and delivery experience.</span>
-      <div aria-label="Profile facts" className="kc-about-card__facts">
-        <span>Enterprise Architect</span>
-        <span>Microsoft 365</span>
-        <span>Security</span>
-        <span>Copilot &amp; AI Agents</span>
-      </div>
-    </div>
-  </aside>
 </section>
 
-## At A Glance
+## 한눈에 보기 {/* #at-a-glance */}
 
-<div aria-label="Youngsun Kang at a glance" className="kc-profile-strip">
+<div aria-label="한눈에 보기" className="kc-profile-strip">
   <div>
-    <small>Role</small>
-    <strong>Enterprise Microsoft Architect</strong>
-    <span>Architecture, presales, delivery governance and implementation planning.</span>
+    <small>역할</small>
+    <strong>엔터프라이즈 Microsoft 아키텍트</strong>
+    <span>아키텍처 설계, 사전 기술 검토, 수행 거버넌스와 구축 계획</span>
   </div>
   <div>
-    <small>Core Platforms</small>
-    <strong>Microsoft 365, Security, Copilot, Azure</strong>
-    <span>From tenant and security baseline to AI adoption and migration roadmap.</span>
+    <small>핵심 플랫폼</small>
+    <strong>Microsoft 365 · 보안 · Copilot · Azure</strong>
+    <span>테넌트와 보안 기준부터 AI 도입, 전환 로드맵까지</span>
   </div>
   <div>
-    <small>Working Style</small>
-    <strong>Business outcome to operating model</strong>
-    <span>Convert requirements into designs, templates, risk decisions and handover-ready assets.</span>
+    <small>일하는 방식</small>
+    <strong>업무 목표에서 운영 모델까지</strong>
+    <span>요구사항을 설계, 양식, 위험 판단과 인수인계 가능한 산출물로 바꿉니다</span>
   </div>
 </div>
 
@@ -73,212 +54,212 @@ Microsoft가 발급한 공식 자격증입니다. Azure, 보안·규정 준수·
 
 <Certifications />
 
-## Professional Profile
+## 전문 분야 {/* #professional-profile */}
 
-I am an enterprise Microsoft architect focused on helping organizations move from technology questions to executable architecture, secure operating models and measurable adoption.
+조직이 "어떤 기술을 쓸까"라는 질문에서 출발해 실행 가능한 아키텍처, 안전한 운영 모델, 측정 가능한 도입 성과에 이르도록 돕는 엔터프라이즈 Microsoft 아키텍트입니다.
 
-My work sits at the intersection of Microsoft 365, Security, Copilot, AI Agents, Azure, migration, presales and delivery governance. In practice, that means connecting executive intent, business requirements, technical controls, implementation plans and operational handover into one coherent path.
+Microsoft 365, 보안, Copilot, AI 에이전트, Azure, 마이그레이션, 사전 기술 검토와 수행 거버넌스가 만나는 지점에서 일합니다. 경영진의 의도, 업무 요구사항, 기술 통제, 구축 계획, 운영 인수인계를 하나의 흐름으로 잇는 것이 핵심입니다.
 
-In practical consulting terms, my role is to connect Microsoft technology with real business work, security requirements, change management, proposal assets and delivery outputs so that customers can make decisions and operate with confidence.
+컨설팅 현장에서는 Microsoft 기술을 실제 업무, 보안 요구사항, 변화 관리, 제안 자료, 수행 산출물과 연결해 고객이 근거를 갖고 결정하고 자신 있게 운영하도록 만드는 역할을 맡습니다.
 
-## What I Work On
+## 주로 하는 일 {/* #what-i-work-on */}
 
-<div aria-label="Youngsun Kang professional focus" className="kc-about-focus">
+<div aria-label="주로 하는 일" className="kc-about-focus">
   <a href="/knowledge/microsoft365/overview">
     <small>01</small>
-    <strong>Microsoft 365 Architecture</strong>
-    <span>Tenant, Exchange Online, Teams, SharePoint, OneDrive, governance and operating model.</span>
+    <strong>Microsoft 365 아키텍처</strong>
+    <span>테넌트, Exchange Online, Teams, SharePoint, OneDrive, 거버넌스와 운영 모델</span>
   </a>
   <a href="/knowledge/search/microsoft-365-security">
     <small>02</small>
-    <strong>Security and Governance</strong>
-    <span>Zero Trust, Conditional Access, Entra ID, Defender, Purview, DLP, audit and evidence-ready controls.</span>
+    <strong>보안과 거버넌스</strong>
+    <span>Zero Trust, 조건부 액세스, Entra ID, Defender, Purview, DLP, 감사와 증빙 가능한 통제</span>
   </a>
   <a href="/knowledge/search/copilot-adoption">
     <small>03</small>
-    <strong>Copilot Adoption</strong>
-    <span>Readiness, use case design, data protection, change management, value tracking and governance.</span>
+    <strong>Copilot 도입</strong>
+    <span>준비도 점검, 활용 사례 설계, 데이터 보호, 변화 관리, 효과 측정과 거버넌스</span>
   </a>
   <a href="/knowledge/search/ai-agent-factory">
     <small>04</small>
-    <strong>AI Agent Factory</strong>
-    <span>Copilot Studio, Microsoft 365 Agents, agent lifecycle, owner model, approval, telemetry and cost control.</span>
+    <strong>AI 에이전트 운영 체계</strong>
+    <span>Copilot Studio, Microsoft 365 에이전트, 수명 주기, 책임자, 승인, 사용 기록과 비용 통제</span>
   </a>
   <a href="/knowledge/azure/overview">
     <small>05</small>
-    <strong>Azure and Cloud Foundation</strong>
-    <span>Landing zone, identity, network, security baseline and workload architecture foundation.</span>
+    <strong>Azure 클라우드 기반</strong>
+    <span>랜딩 존, ID, 네트워크, 보안 기준과 업무 시스템 아키텍처의 기반</span>
   </a>
   <a href="/knowledge/proposal/overview">
     <small>06</small>
-    <strong>Presales and Delivery Assets</strong>
-    <span>Executive summary, SOW, WBS, risk register, assessment workbook, timeline and handover model.</span>
+    <strong>제안·수행 산출물</strong>
+    <span>경영진 요약, SOW, WBS, 위험 관리 대장, 진단표, 일정과 인수인계 모델</span>
   </a>
 </div>
 
-## How I Work
+## 일하는 원칙 {/* #how-i-work */}
 
-Enterprise Microsoft projects succeed when architecture, security, adoption and delivery governance move together. My consulting approach is built around four principles:
+엔터프라이즈 Microsoft 프로젝트는 아키텍처, 보안, 도입, 수행 거버넌스가 함께 움직일 때 성공합니다. 다음 네 가지 원칙으로 일합니다.
 
-<div aria-label="Youngsun Kang consulting principles" className="kc-operating-model">
+<div aria-label="일하는 원칙" className="kc-operating-model">
   <div className="kc-operating-stage">
-    <small>Clarity</small>
-    <strong>Make architecture readable</strong>
-    <span>Translate technical decisions into language that executives, security teams, IT operations and business owners can act on.</span>
+    <small>명료함</small>
+    <strong>읽히는 아키텍처</strong>
+    <span>기술 결정을 경영진, 보안 조직, IT 운영, 업무 책임자가 바로 실행할 수 있는 말로 바꿉니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Security</small>
-    <strong>Design with control evidence</strong>
-    <span>Connect identity, data, device, access, audit and approval controls to business risk and operating ownership.</span>
+    <small>보안</small>
+    <strong>증빙이 남는 설계</strong>
+    <span>ID, 데이터, 기기, 접근, 감사, 승인 통제를 업무 위험과 운영 책임에 연결합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Adoption</small>
-    <strong>Move from pilot to behavior</strong>
-    <span>Design Copilot and AI adoption around real work scenarios, champions, training, feedback and value measurement.</span>
+    <small>도입</small>
+    <strong>시범에서 일하는 방식으로</strong>
+    <span>실제 업무 장면, 챔피언, 교육, 피드백, 효과 측정을 중심으로 Copilot과 AI 도입을 설계합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Delivery</small>
-    <strong>Turn work into reusable assets</strong>
-    <span>Convert project experience into templates, checklists, playbooks and reference patterns that improve future delivery quality.</span>
+    <small>수행</small>
+    <strong>경험을 자산으로</strong>
+    <span>프로젝트 경험을 양식, 점검표, 플레이북, 참조 패턴으로 남겨 다음 수행의 품질을 높입니다.</span>
   </div>
 </div>
 
-## Representative Experience
+## 대표 경험 {/* #representative-experience */}
 
-Customer names, project identifiers, tenant details and commercial information are intentionally excluded from this public site. The references below are anonymized patterns that describe reusable consulting experience by industry or scenario.
+공개 사이트에는 고객사 이름, 프로젝트 식별자, 테넌트 정보, 계약 정보를 싣지 않습니다. 아래는 업종과 상황별로 익명화한 진행 패턴입니다.
 
-<div aria-label="Representative anonymized experience patterns" className="kc-entry-hub">
+<div aria-label="대표 경험" className="kc-entry-hub">
   <a href="/knowledge/projects/case-study-retail-m365-security-policy">
-    <small>Retail</small>
-    <strong>Microsoft 365 security policy consulting</strong>
-    <span>Security and policy design pattern for Microsoft 365, Exchange Online, SharePoint, Teams, OneDrive and governance controls.</span>
+    <small>유통</small>
+    <strong>Microsoft 365 보안 정책 컨설팅</strong>
+    <span>Microsoft 365, Exchange Online, SharePoint, Teams, OneDrive의 보안·정책 설계와 거버넌스 통제</span>
   </a>
   <a href="/knowledge/projects/case-study-manufacturing-copilot-adoption">
-    <small>Manufacturing</small>
-    <strong>Copilot adoption and governance</strong>
-    <span>Microsoft 365 rollout, Copilot operating model, change management and governance.</span>
+    <small>제조</small>
+    <strong>Copilot 도입과 거버넌스</strong>
+    <span>Microsoft 365 확산, Copilot 운영 모델, 변화 관리와 거버넌스</span>
   </a>
   <a href="/knowledge/projects/case-study-financial-saas-security">
-    <small>Financial Services</small>
-    <strong>SaaS security readiness</strong>
-    <span>Network-separated work environment, Zero Trust and compliance review.</span>
+    <small>금융</small>
+    <strong>SaaS 보안 준비</strong>
+    <span>망 분리 업무 환경, Zero Trust와 규정 준수 검토</span>
   </a>
   <a href="/knowledge/projects/case-study-logistics-exchange-modernization">
-    <small>Logistics</small>
-    <strong>Exchange modernization</strong>
-    <span>Exchange Online migration planning, security review, admin handover and operational transition.</span>
+    <small>물류</small>
+    <strong>Exchange 현대화</strong>
+    <span>Exchange Online 전환 계획, 보안 검토, 관리자 인수인계와 운영 전환</span>
   </a>
   <a href="/knowledge/projects/case-study-enterprise-group-governance">
-    <small>Enterprise Group</small>
-    <strong>Tenant and endpoint governance</strong>
-    <span>Entra ID, Intune, Microsoft 365 governance, device compliance and operating model.</span>
+    <small>그룹사</small>
+    <strong>테넌트·기기 거버넌스</strong>
+    <span>Entra ID, Intune, Microsoft 365 거버넌스, 기기 규정 준수와 운영 모델</span>
   </a>
   <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory">
-    <small>Enterprise AI</small>
-    <strong>AI Agent Factory operating model</strong>
-    <span>Copilot Studio workshops, AI Agent portfolio discovery and governed agent lifecycle.</span>
+    <small>기업 AI</small>
+    <strong>AI 에이전트 운영 모델</strong>
+    <span>Copilot Studio 워크숍, 에이전트 후보 발굴과 통제된 수명 주기</span>
   </a>
 </div>
 
-## Why This Knowledge Center Exists
+## 이 지식센터를 만든 이유 {/* #why-this-knowledge-center-exists */}
 
-This site is a public-safe Microsoft enterprise knowledge platform. It is designed for customers, partners, consultants and technical communities who need practical guidance beyond product documentation.
+고객사, 파트너, 컨설턴트, 기술 커뮤니티가 제품 문서만으로는 얻기 어려운 실무 판단 기준을 찾을 수 있도록, 공개해도 안전한 범위에서 현장 경험을 정리한 곳입니다.
 
-<div aria-label="Knowledge Center purpose" className="kc-context-panel">
+<div aria-label="지식센터의 목적" className="kc-context-panel">
   <div className="kc-context-panel__lead">
-    <small>Purpose</small>
-    <strong>Make enterprise Microsoft architecture easier to reuse.</strong>
-    <span>The goal is to convert field experience into structured guidance while protecting customer confidentiality.</span>
+    <small>목적</small>
+    <strong>엔터프라이즈 Microsoft 설계를 다시 쓸 수 있게</strong>
+    <span>고객 기밀을 지키면서 현장 경험을 구조화된 안내로 바꾸는 것이 목표입니다.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="/knowledge/intro">
-      <small>Knowledge</small>
-      <strong>Architecture references</strong>
-      <span>Reusable Microsoft 365, Security, Copilot, Azure, Migration and Governance notes.</span>
+      <small>지식</small>
+      <strong>설계 참고 문서</strong>
+      <span>Microsoft 365, 보안, Copilot, Azure, 마이그레이션, 거버넌스 설계 노트</span>
     </a>
     <a href="/knowledge/projects/customer-success-reference-patterns">
-      <small>Field Lessons</small>
-      <strong>Anonymized success patterns</strong>
-      <span>Industry and scenario patterns without exposing customer names or sensitive details.</span>
+      <small>현장 교훈</small>
+      <strong>익명화한 성공 패턴</strong>
+      <span>고객 이름과 민감 정보 없이 정리한 업종·상황별 패턴</span>
     </a>
     <a href="/knowledge/downloads/overview">
-      <small>Assets</small>
-      <strong>Requestable consulting templates</strong>
-      <span>Proposal, SOW, WBS, assessment, risk register and delivery assets available through contact.</span>
+      <small>자료</small>
+      <strong>요청형 컨설팅 양식</strong>
+      <span>제안, SOW, WBS, 진단, 위험 관리 대장 등 문의로 받을 수 있는 산출물</span>
     </a>
     <a href="/knowledge/search/how-to-use-ai-in-enterprise">
-      <small>AI Adoption</small>
-      <strong>From Copilot to agents</strong>
-      <span>Practical path from Copilot usage to Copilot Studio, M365 Agents and governed enterprise AI operation.</span>
+      <small>AI 도입</small>
+      <strong>Copilot에서 에이전트까지</strong>
+      <span>Copilot 활용에서 Copilot Studio, Microsoft 365 에이전트, 통제된 기업 AI 운영으로 가는 길</span>
     </a>
   </div>
 </div>
 
-## Microsoft MVP Journey
+## Microsoft MVP를 향한 기여 {/* #microsoft-mvp-journey */}
 
-This Knowledge Center also supports a long-term Microsoft MVP journey. The focus is not title chasing. The focus is contribution quality: useful architecture references, public-safe lessons learned, practical templates and repeatable guidance that can help Microsoft customers and technical communities.
+이 지식센터는 장기적인 Microsoft MVP 활동의 기반이기도 합니다. 목표는 직함이 아니라 기여의 품질입니다. Microsoft 고객과 기술 커뮤니티에 도움이 되는 설계 참고 문서, 공개 가능한 교훈, 실무 양식, 반복해서 쓸 수 있는 안내를 꾸준히 쌓습니다.
 
-<div aria-label="Microsoft MVP journey contribution ladder" className="kc-maturity-ladder">
+<div aria-label="기여 단계" className="kc-maturity-ladder">
   <div className="kc-maturity-step">
-    <small>Knowledge</small>
-    <strong>Architecture notes</strong>
-    <span>Practical Microsoft 365, Security, Copilot, Azure and AI Agent references.</span>
+    <small>지식</small>
+    <strong>설계 노트</strong>
+    <span>Microsoft 365, 보안, Copilot, Azure, AI 에이전트 실무 참고 문서</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Patterns</small>
-    <strong>Field lessons</strong>
-    <span>Copilot readiness, security governance, migration and change management playbooks.</span>
+    <small>패턴</small>
+    <strong>현장 교훈</strong>
+    <span>Copilot 준비, 보안 거버넌스, 마이그레이션, 변화 관리 플레이북</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Assets</small>
-    <strong>Reusable consulting templates</strong>
-    <span>Proposal, SOW, WBS, risk register, assessment workbook and delivery templates.</span>
+    <small>자료</small>
+    <strong>재사용 컨설팅 양식</strong>
+    <span>제안, SOW, WBS, 위험 관리 대장, 진단표와 수행 양식</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Community</small>
-    <strong>Public contribution archive</strong>
-    <span>Anonymized customer success reference patterns and practical implementation guides.</span>
+    <small>커뮤니티</small>
+    <strong>공개 기여 기록</strong>
+    <span>익명화한 고객 성공 참조 패턴과 실무 구축 안내</span>
   </div>
 </div>
 
-## Signature Knowledge Assets
+## 대표 문서 {/* #signature-knowledge-assets */}
 
-<div aria-label="Signature knowledge assets" className="kc-entry-hub">
+<div aria-label="대표 문서" className="kc-entry-hub">
   <a href="/knowledge/architecture/executive-architecture-blueprint">
-    <small>Architecture</small>
-    <strong>Executive Architecture Blueprint</strong>
-    <span>Portfolio-level architecture story for executive and technical stakeholders.</span>
+    <small>설계도</small>
+    <strong>경영진용 아키텍처 청사진</strong>
+    <span>경영진과 기술 담당자가 함께 보는 전체 아키텍처 이야기</span>
   </a>
   <a href="/knowledge/search/ai-agent-factory">
-    <small>AI Agent</small>
-    <strong>AI Agent Factory</strong>
-    <span>Operating model for governed AI agent portfolios.</span>
+    <small>AI 에이전트</small>
+    <strong>AI 에이전트 팩토리</strong>
+    <span>통제된 에이전트 포트폴리오의 운영 모델</span>
   </a>
   <a href="/knowledge/copilot/governance">
     <small>Copilot</small>
-    <strong>Copilot Governance</strong>
-    <span>Readiness, data protection, adoption, value and control model.</span>
+    <strong>Copilot 거버넌스</strong>
+    <span>준비도, 데이터 보호, 도입, 효과와 통제 모델</span>
   </a>
   <a href="/knowledge/security/information-barriers">
-    <small>Security</small>
-    <strong>Purview Information Barriers</strong>
-    <span>Segment, policy, workload and validation approach for regulated collaboration boundaries.</span>
+    <small>보안</small>
+    <strong>Purview 정보 장벽</strong>
+    <span>규제 대상 협업 경계를 위한 세그먼트, 정책, 워크로드와 검증 방법</span>
   </a>
   <a href="/knowledge/projects/customer-success-reference-patterns">
-    <small>Reference</small>
-    <strong>Customer Success Reference Patterns</strong>
-    <span>Anonymized customer delivery patterns by industry and scenario.</span>
+    <small>사례</small>
+    <strong>고객 성공 참조 패턴</strong>
+    <span>업종과 상황별로 익명화한 수행 패턴</span>
   </a>
   <a href="/knowledge/proposal/overview">
-    <small>Proposal</small>
-    <strong>Proposal Center</strong>
-    <span>Executive summary, SOW, WBS, risk register and delivery planning assets.</span>
+    <small>제안</small>
+    <strong>제안 센터</strong>
+    <span>경영진 요약, SOW, WBS, 위험 관리 대장과 수행 계획 자료</span>
   </a>
 </div>
 
-## Connect
+## 연결 {/* #connect */}
 
 - GitHub: [https://github.com/Eric841001](https://github.com/Eric841001)
 - LinkedIn: [Youngsun Kang](https://www.linkedin.com/in/young-sun-kang-a51b26356)
-- Knowledge Center: [https://eric841001.github.io](https://eric841001.github.io)
-- Contact / Asset Request: [Contact](./contact)
+- 지식센터: [https://eric841001.github.io](https://eric841001.github.io)
+- 문의·브리핑 요청: [문의하기](./contact)

@@ -1,10 +1,10 @@
 ---
-title: MVP and Community Research Map
-sidebar_label: MVP / Community Research Map
+title: "MVP·커뮤니티 자료 지도"
+sidebar_label: "MVP·커뮤니티 자료"
 description: Research map for Microsoft MVP and community sources covering Microsoft 365, Copilot, Purview, Security, Zero Trust and Azure architecture.
 ---
 
-# MVP and Community Research Map
+# MVP·커뮤니티 자료 지도
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>

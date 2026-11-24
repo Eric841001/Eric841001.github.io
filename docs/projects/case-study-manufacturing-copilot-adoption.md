@@ -1,13 +1,13 @@
 ---
 id: case-study-manufacturing-copilot-adoption
-title: Manufacturing Copilot Adoption Case Study
-sidebar_label: Manufacturing Copilot Adoption
+title: "제조 기업 Copilot 도입 사례"
+sidebar_label: "제조 Copilot 도입 사례"
 sidebar_position: 7
 description: Anonymized manufacturing Copilot adoption case study covering readiness, governance, pilot planning, WBS, adoption metrics and value tracking.
 toc_max_heading_level: 2
 ---
 
-# Manufacturing Copilot Adoption Case Study
+# 제조 기업 Copilot 도입 사례
 
 <section aria-label="Manufacturing Copilot adoption case study hero" className="kc-topic-hero kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
@@ -196,6 +196,6 @@ Plan Copilot adoption with named owners, pilot tasks and measurable acceptance c
 - [Copilot ROI Framework](../copilot/roi-framework)
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For sanitized manufacturing Copilot adoption narratives, adoption WBS templates, readiness checklists or executive value tracking structures, use [Contact and Asset Request](../contact).
+<BriefingCTA />

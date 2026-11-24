@@ -1,7 +1,7 @@
 ---
 id: enterprise-microsoft-architecture-keywords
-title: Microsoft Enterprise Architecture Search Guide
-sidebar_label: Search Guide
+title: "Microsoft 기업 아키텍처 검색 안내"
+sidebar_label: "검색 안내"
 description: Search guide for Microsoft 365 architecture, Microsoft Security, Copilot adoption, AI agents, Azure landing zone, migration, SOW and WBS consulting assets by Youngsun Kang.
 keywords:
   - Youngsun Kang
@@ -18,7 +18,7 @@ keywords:
   - AI Agent 거버넌스
 ---
 
-# Microsoft Enterprise Architecture Search Guide
+# Microsoft 기업 아키텍처 검색 안내
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 

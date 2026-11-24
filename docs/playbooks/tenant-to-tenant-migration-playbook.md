@@ -1,17 +1,14 @@
 ---
 id: tenant-to-tenant-migration-playbook
-title: Tenant-to-Tenant Migration Playbook
+title: "테넌트 간 마이그레이션 플레이북"
 description: "Tenant to Tenant Migration Playbook - Tenant to tenant migration is not a simple data transfer project."
-sidebar_label: Tenant Migration
+sidebar_label: "테넌트 이전"
 toc_max_heading_level: 2
 ---
 
-# Tenant-to-Tenant Migration Playbook
+# 테넌트 간 마이그레이션 플레이북
 
 <ReadingControls />
-
-
-
 
 <ReadingSection open>
 <ReadingSummary>
@@ -19,7 +16,6 @@ toc_max_heading_level: 2
 ## Executive Summary
 
 </ReadingSummary>
-
 
 Tenant-to-tenant migration is not a simple data transfer project.
 
@@ -70,7 +66,6 @@ This playbook provides a structured delivery model for Microsoft 365 tenant migr
 </div>
 
 ---
-
 
 </ReadingSection>
 
@@ -134,14 +129,12 @@ This playbook provides a structured delivery model for Microsoft 365 tenant migr
 
 </ReadingSection>
 
-
 <ReadingSection>
 <ReadingSummary>
 
 ## Migration Scope
 
 </ReadingSummary>
-
 
 Typical tenant-to-tenant migration scope includes:
 
@@ -159,7 +152,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -168,7 +160,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Migration Architecture
 
 </ReadingSummary>
-
 
 <div className="kc-factory-panel">
   <div className="kc-panel-header">
@@ -204,7 +195,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -213,7 +203,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Migration Lifecycle
 
 </ReadingSummary>
-
 
 <div aria-label="Tenant migration lifecycle" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -256,7 +245,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -265,7 +253,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Phase 1. Discovery
 
 </ReadingSummary>
-
 
 ### Objectives
 
@@ -291,7 +278,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -300,7 +286,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Phase 2. Assessment
 
 </ReadingSummary>
-
 
 ### Assessment Checklist
 
@@ -317,7 +302,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -326,7 +310,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Phase 3. Migration Design
 
 </ReadingSummary>
-
 
 ### Design Components
 
@@ -354,7 +337,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -363,7 +345,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Identity Migration
 
 </ReadingSummary>
-
 
 ### Key Considerations
 
@@ -388,7 +369,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -397,7 +377,6 @@ Typical tenant-to-tenant migration scope includes:
 ## Domain Migration
 
 </ReadingSummary>
-
 
 ### Key Considerations
 
@@ -445,7 +424,6 @@ Typical tenant-to-tenant migration scope includes:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -456,7 +434,6 @@ Typical tenant-to-tenant migration scope includes:
 </ReadingSummary>
 
 For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/microsoft-365/migration/cross-tenant-mailbox-migration), any hold blocks the move. A successful move deletes the source mailbox; it is no longer discoverable there. Prepare preservation requirements and a method-specific recovery plan before cutover. Do not assume the migration leaves a reversible source copy.
-
 
 ### Scope Items
 
@@ -483,7 +460,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -492,7 +468,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 ## Teams Migration
 
 </ReadingSummary>
-
 
 ### Scope Items
 
@@ -516,7 +491,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -525,7 +499,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 ## SharePoint Migration
 
 </ReadingSummary>
-
 
 ### Scope Items
 
@@ -551,7 +524,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -560,7 +532,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 ## OneDrive Migration
 
 </ReadingSummary>
-
 
 ### Scope Items
 
@@ -583,7 +554,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -592,7 +562,6 @@ For [native cross-tenant mailbox moves](https://learn.microsoft.com/en-us/micros
 ## Security and Compliance Migration
 
 </ReadingSummary>
-
 
 ### Assessment Areas
 
@@ -613,7 +582,6 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -622,7 +590,6 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 ## Pilot Migration
 
 </ReadingSummary>
-
 
 ### Pilot Objectives
 
@@ -643,7 +610,6 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -652,7 +618,6 @@ They should be reviewed, rationalized and redesigned for the target tenant opera
 ## Production Cutover
 
 </ReadingSummary>
-
 
 ### Cutover Preparation
 
@@ -681,7 +646,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -690,7 +654,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 ## Hypercare
 
 </ReadingSummary>
-
 
 ### Hypercare Scope
 
@@ -715,7 +678,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -724,7 +686,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 ## Risk Register
 
 </ReadingSummary>
-
 
 | ID | Risk | Impact | Mitigation |
 |---|---|---|---|
@@ -737,7 +698,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -746,7 +706,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 ## Communication Plan
 
 </ReadingSummary>
-
 
 ### Communication Audiences
 
@@ -770,7 +729,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -779,7 +737,6 @@ This is a planning sequence, not a universal migration procedure. Native [cross-
 ## Deliverables
 
 </ReadingSummary>
-
 
 Tenant migration projects should produce:
 
@@ -796,7 +753,6 @@ Tenant migration projects should produce:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -805,7 +761,6 @@ Tenant migration projects should produce:
 ## Success Criteria
 
 </ReadingSummary>
-
 
 The migration is considered successful when:
 
@@ -819,7 +774,6 @@ The migration is considered successful when:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -828,7 +782,6 @@ The migration is considered successful when:
 ## Advanced Tenant Consolidation Considerations
 
 </ReadingSummary>
-
 
 ### Mail Coexistence with Legacy Mail Systems
 
@@ -987,10 +940,6 @@ Before executing tenant consolidation, validate:
 - User communication plan
 - Hypercare support model
 
-
-
-
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1000,13 +949,11 @@ Before executing tenant consolidation, validate:
 
 </ReadingSummary>
 
-
 - Microsoft Learn
 - Microsoft Exchange Online Migration Guidance
 - Microsoft SharePoint Migration Guidance
 - Microsoft Teams Migration Considerations
 - Microsoft Entra Documentation
-
 
 </ReadingSection>
 
@@ -1016,7 +963,6 @@ Before executing tenant consolidation, validate:
 ## Global Tenant Consolidation Considerations
 
 </ReadingSummary>
-
 
 ### Mail Coexistence Strategy
 
@@ -1180,7 +1126,6 @@ Before Migration
 - Data Migration Validation
 - User Communication Plan
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1190,7 +1135,6 @@ Before Migration
 
 </ReadingSummary>
 
-
 - Microsoft 365 playbook
 - Copilot readiness playbook
 - security modernization playbook
@@ -1199,17 +1143,15 @@ Before Migration
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
 
-
 </ReadingSection>
 
 <ReadingSection>
 <ReadingSummary>
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
 </ReadingSummary>
 
-
-For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 </ReadingSection>

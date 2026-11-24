@@ -1,12 +1,12 @@
 ---
 id: azure-landing-zone-architecture
-title: Azure Landing Zone Architecture
-sidebar_label: Azure Landing Zone
+title: "Azure 랜딩 존 아키텍처"
+sidebar_label: "Azure 랜딩 존"
 description: Azure Landing Zone architecture for management groups, subscriptions, identity, networking, security, monitoring, governance and FinOps.
 toc_max_heading_level: 2
 ---
 
-# Azure Landing Zone Architecture
+# Azure 랜딩 존 아키텍처
 
 <section aria-label="Azure landing zone architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -197,13 +197,12 @@ For new network logging, use **virtual network flow logs**. NSG flow logs no lon
 
 ## References
 
-
 - [Azure landing zones](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
 - [Governance Architecture](./governance-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Migration Architecture](./migration-architecture)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

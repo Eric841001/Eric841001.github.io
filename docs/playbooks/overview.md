@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Playbooks
+title: "도입 절차"
 description: "Playbooks - The Playbooks section provides repeatable delivery guidance for Microsoft 365 assessment, Copilot readiness, Intune deployment, security..."
 toc_max_heading_level: 2
+sidebar_label: "도입 절차 개요"
 ---
 
-# Playbooks
+# 도입 절차
 
 <ScenarioLinks
   summary="도입 작업을 어떤 순서로 진행할지 정할 때 참고할 절차를 모았습니다."
@@ -167,9 +168,9 @@ Playbooks are designed to bridge consulting strategy and real execution. They de
 
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
 - [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable playbook workbooks, workshop agendas, delivery checklists or handover templates, use [Contact and Asset Request](../contact). Share the intended scenario, industry, Microsoft workload and preferred output format.
+<BriefingCTA />
 
 ## 검색 키워드
 

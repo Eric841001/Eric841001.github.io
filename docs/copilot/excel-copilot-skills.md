@@ -1,12 +1,12 @@
 ---
 id: excel-copilot-skills
-title: Excel Copilot Skills and Frontier Finance
+title: "Excel Copilot 스킬과 Frontier Finance"
 description: "Excel Copilot Skills and Frontier Finance - Microsoft has introduced Skills for Excel Copilot, enabling reusable task specific capabilities that extend..."
-sidebar_label: Excel Copilot Skills
+sidebar_label: "Excel Copilot 스킬"
 toc_max_heading_level: 2
 ---
 
-# Excel Copilot Skills and Frontier Finance
+# Excel Copilot 스킬과 Frontier Finance
 
 ## Executive Summary
 
@@ -333,6 +333,6 @@ Excel Skills로 반복하는 분석·보고 작업의 지시와 출력 형식을
 - Excel Copilot 활용
 - 재무 분석 Copilot
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Excel Copilot scenario maps, workbook governance checklists, finance reporting prompt libraries or adoption training examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

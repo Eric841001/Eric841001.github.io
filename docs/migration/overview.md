@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Migration
+title: "마이그레이션"
 description: "Migration - This Migration section provides enterprise migration guidance for Microsoft 365, Exchange Online, Google Workspace, file server,..."
 toc_max_heading_level: 2
+sidebar_label: "마이그레이션 개요"
 ---
 
-# Migration
+# 마이그레이션
 
 <ScenarioLinks
   summary="무엇을 어디로 옮기는지에 따라 이전 계획과 점검 항목이 달라집니다. 출발 환경에 맞는 문서부터 읽어보세요."
@@ -173,9 +174,9 @@ Exchange Online, Google Workspace, 파일 서버와 테넌트 간 이전 자료�
 
 - [Microsoft 365 tenant-to-tenant migrations](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations)
 - [SharePoint Migration Tool](https://learn.microsoft.com/en-us/sharepointmigration/introducing-the-sharepoint-migration-tool)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For migration pre-assessment workbooks, cutover runbooks, rollback checklists, communication templates or executive migration status packs, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 ## 검색 키워드
 

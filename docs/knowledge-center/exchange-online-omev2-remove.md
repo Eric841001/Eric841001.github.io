@@ -1,11 +1,11 @@
 ---
 id: exchange-online-omev2-remove
-title: Exchange Online OMEv2 and RMS Attachment Decryption Rule
+title: "Exchange Online OMEv2·RMS 첨부파일 암호 해제 규칙"
 description: "Exchange Online OMEv2 and RMS Attachment Decryption Rule - Exchange Online OMEv2 and RMS Attachment Decryption Rule"
-sidebar_label: EXO OMEv2 Remove Rule
+sidebar_label: "OMEv2 암호 해제 규칙"
 ---
 
-# Exchange Online OMEv2 and RMS Attachment Decryption Rule
+# Exchange Online OMEv2·RMS 첨부파일 암호 해제 규칙
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -230,6 +230,6 @@ Exchange Online 메일 흐름 규칙으로 승인된 예외 메일과 첨부파�
 - OMEv2 예외 정책
 - RMS 첨부파일 암호화 해제
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-암호화 예외 요청서, 메일 흐름 규칙 설계서, 승인 증거 자료 양식이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+<BriefingCTA />

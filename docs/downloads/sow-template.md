@@ -1,12 +1,12 @@
 ---
 id: downloads-sow-template
-title: SOW Template
+title: "작업 범위 기술서(SOW) 양식"
 description: "Statement of Work (SOW) - Item Description Customer Project Name Project Sponsor Project Manager Start Date End Date Duration"
-sidebar_label: SOW Template
+sidebar_label: "SOW 양식"
 toc_max_heading_level: 2
 ---
 
-# Statement of Work (SOW)
+# 작업 범위 기술서(SOW) 양식
 
 <section class="kc-topic-hero" aria-label="Download SOW template hero">
   <div class="kc-topic-hero__content">

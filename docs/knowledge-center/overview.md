@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Knowledge Center
+title: "운영 문제 해결"
 description: Microsoft 365, Azure, Security, Copilot, Migration and Licensing knowledge hub for enterprise consulting.
 toc_max_heading_level: 2
+sidebar_label: "운영 문제 해결 개요"
 ---
 
-# Knowledge Center
+# 운영 문제 해결
 
 <ScenarioLinks
   summary="관리 중에 마주친 증상에서 시작해 점검 절차를 찾을 수 있습니다."
@@ -276,6 +277,6 @@ This Knowledge Center is designed for the following search intents:
 
 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-Public pages explain the methodology and reusable structure. For editable workbooks, proposal templates, security checklists, migration runbooks or customer-ready samples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

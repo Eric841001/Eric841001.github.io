@@ -1,11 +1,11 @@
 ---
 id: roi-framework
-title: Copilot ROI Framework
-sidebar_label: ROI Framework
+title: "Copilot 투자 효과(ROI) 프레임워크"
+sidebar_label: "투자 효과(ROI)"
 description: Microsoft 365 Copilot ROI framework for measuring productivity, quality, adoption, governance, operational efficiency and executive value realization.
 ---
 
-# Copilot ROI Framework
+# Copilot 투자 효과(ROI) 프레임워크
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -181,12 +181,11 @@ Examples include executive meeting follow-up, proposal drafting support, report 
 
 ## References
 
-
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
 - Microsoft 365 Copilot adoption guidance
 - Microsoft Viva and adoption measurement practices
 - Microsoft Purview and responsible AI governance guidance
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />

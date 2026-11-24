@@ -1,7 +1,7 @@
 ---
 id: microsoft-365-consulting
-title: Microsoft 365 Consulting
-sidebar_label: Microsoft 365 Consulting
+title: "Microsoft 365 컨설팅"
+sidebar_label: "M365 컨설팅"
 description: Microsoft 365 consulting landing page for architecture, security, migration, governance, SOW, WBS and delivery asset requests.
 keywords:
   - Microsoft 365 consulting
@@ -12,7 +12,7 @@ keywords:
   - Microsoft 365 WBS
 ---
 
-# Microsoft 365 Consulting
+# Microsoft 365 컨설팅
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 

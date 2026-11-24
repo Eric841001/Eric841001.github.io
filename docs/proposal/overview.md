@@ -1,9 +1,10 @@
 ---
-title: Proposal Center
+title: "제안 센터"
 description: Reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security, Copilot and AI Agent engagements.
+sidebar_label: "제안 센터 개요"
 ---
 
-# Proposal Center
+# 제안 센터
 
 <ScenarioLinks
   summary="제안서에 담을 작업 범위와 일정, 위험 요소를 정리할 때 참고할 양식입니다."

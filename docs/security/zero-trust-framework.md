@@ -1,12 +1,12 @@
 ---
 id: zero-trust-framework
-title: Zero Trust Reference Architecture
+title: "Zero Trust 참조 아키텍처"
 description: "Zero Trust Reference Architecture - It is an enterprise security architecture based on continuous verification, least privilege access, device trust,..."
-sidebar_label: Zero Trust Framework
+sidebar_label: "Zero Trust"
 toc_max_heading_level: 2
 ---
 
-# Zero Trust Reference Architecture
+# Zero Trust 참조 아키텍처
 
 <ScenarioLinks
   summary="제로 트러스트 설계를 처음 시작한다면 접근을 허용할 근거, 필요한 권한, 침해가 발생했을 때 피해를 줄일 방법부터 정하세요. 계정과 기기별 점검 항목을 보고 도입 순서를 잡을 수 있습니다."
@@ -363,7 +363,6 @@ Executives should approve target maturity, risk tolerance, device scope, externa
 
 ## References
 
-
 - [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
 - [Microsoft Entra Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview)
 - Microsoft Zero Trust Guidance
@@ -381,6 +380,6 @@ Executives should approve target maturity, risk tolerance, device scope, externa
 - Microsoft 365 보안
 - 보안 아키텍처
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

@@ -1,12 +1,12 @@
 ---
 id: architecture-builder
-title: Architecture Builder
+title: "아키텍처 빌더"
 description: "Enterprise Architecture Builder - This architecture builder provides a standardized framework for designing Microsoft 365, Azure, Security and Copilot..."
-sidebar_label: Architecture Builder
+sidebar_label: "아키텍처 빌더"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Architecture Builder
+# 아키텍처 빌더
 
 ## Executive Summary
 
@@ -385,6 +385,6 @@ Architecture outputs should include:
 - Microsoft 아키텍처 설계
 - Microsoft 365 아키텍처 템플릿
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture workshop templates, decision logs, target architecture workbooks or executive architecture summary structures, use [Contact and Asset Request](../contact).
+<BriefingCTA />

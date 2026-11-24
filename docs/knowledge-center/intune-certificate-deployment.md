@@ -1,11 +1,11 @@
 ---
 id: intune-certificate-deployment
-title: Intune Trusted Certificate Deployment
+title: "Intune 신뢰 인증서 배포"
 description: "Intune Trusted Certificate Deployment - Trusted Root CA certificates must be deployed before PKCS, SCEP, or imported certificate profiles can be used..."
-sidebar_label: Certificate Deployment
+sidebar_label: "인증서 배포"
 ---
 
-# Intune Trusted Certificate Deployment
+# Intune 신뢰 인증서 배포
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>

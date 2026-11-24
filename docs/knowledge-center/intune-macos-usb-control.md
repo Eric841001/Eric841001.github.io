@@ -1,11 +1,11 @@
 ---
 id: intune-macos-usb-control
-title: Intune macOS USB Device Control
-sidebar_label: Intune macOS USB Control
+title: "Intune macOS USB 장치 제어"
+sidebar_label: "macOS USB 제어"
 description: Intune and Microsoft Defender for Endpoint macOS USB device control guide for removable media governance, audit mode and enforcement rollout.
 ---
 
-# Intune macOS USB Device Control
+# Intune macOS USB 장치 제어
 
 ## Executive Summary
 
@@ -23,7 +23,6 @@ Android 기기는 **PTP 모드에서만** Device Control의 제한을 받습니�
 
 출처: [macOS Device Control의 알려진 제한](https://learn.microsoft.com/en-us/defender-endpoint/mac-device-control-overview#known-issues).
 
-
 ## 한국어 요약
 
 macOS에서 USB 저장장치의 사용을 제한할 때 확인할 Defender for Endpoint와 Intune 설정을 정리했습니다.
@@ -40,7 +39,6 @@ macOS에서 USB 저장장치의 사용을 제한할 때 확인할 Defender for E
 | macOS 15 Sequoia, 26 Tahoe, or 27 Golden Gate | Supported major releases in the current Defender prerequisites; beta OS versions are excluded |
 | Apple Silicon | Yes |
 | Intel Mac | Yes |
-
 
 [Defender 배포 요구 사항](https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-mac-prerequisites)은 최근 세 가지 정식 macOS 버전인 15·26·27을 지원 대상으로 명시합니다. 릴리스 기록에는 여전히 14 이상이라는 문구가 남아 있으므로, 이 안내만으로 Sonoma 14를 지원 대상으로 판단하지 마세요. 신규 배포는 요구 사항에 명시된 버전을 기준으로 준비합니다. Intune 관리 지원 OS는 [Intune 지원 플랫폼](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/supported-devices-browsers)에서 별도로 확인하세요. 두 제품을 함께 사용할 때에는 양쪽 조건을 모두 만족해야 하며, CPU 아키텍처 지원이 모든 OS 버전 지원을 뜻하지는 않습니다.
 
@@ -180,6 +178,6 @@ Audit events do not prove that enforcement succeeded. Test the intended read, wr
 - [Microsoft Defender Validation with Atomic Red Team](./mde-atomic-red-team)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For a macOS removable media policy matrix, audit-mode workbook or exception approval template, use [Contact and Asset Request](../contact).
+<BriefingCTA />

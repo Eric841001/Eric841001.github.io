@@ -1,10 +1,11 @@
 ---
 sidebar_position: 1
-title: Microsoft 365 Overview
+title: "Microsoft 365"
 description: Microsoft 365 architecture, tenant governance, security, migration and Copilot readiness guide for enterprise consulting.
+sidebar_label: "Microsoft 365 개요"
 ---
 
-# Microsoft 365 Overview
+# Microsoft 365
 
 <ScenarioLinks
   summary="메일, 팀 협업, 공유 문서 중 운영하려는 서비스에서 시작하세요."
@@ -405,7 +406,6 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 
 ## References
 
-
 - [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 - Microsoft 365 admin center
 - Microsoft Entra admin center
@@ -414,6 +414,6 @@ Microsoft 365 licensing should be reviewed based on business requirements, not o
 - Microsoft Defender portal
 - Microsoft Cloud Adoption Framework
 - Microsoft Zero Trust guidance
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Microsoft 365 assessment workbooks, security baseline checklists, migration planning templates or executive architecture materials, use [Contact and Asset Request](/knowledge/contact).
+<BriefingCTA />

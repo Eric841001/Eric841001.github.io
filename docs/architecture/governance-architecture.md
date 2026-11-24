@@ -1,13 +1,12 @@
 ---
 id: governance-architecture
-title: Governance Architecture
-sidebar_label: Governance Architecture
+title: "거버넌스 아키텍처"
+sidebar_label: "거버넌스 아키텍처"
 description: Enterprise governance architecture for Microsoft 365, Azure, Security, Copilot, lifecycle management, policy ownership and operating model.
 toc_max_heading_level: 2
 ---
 
-# Governance Architecture
-
+# 거버넌스 아키텍처
 
 <section aria-label="Governance architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -191,13 +190,12 @@ Typical governance initiatives include:
 
 ## References
 
-
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
 - [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 - [Microsoft 365 Reference Architecture](./m365-reference-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Copilot Architecture](./copilot-architecture)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

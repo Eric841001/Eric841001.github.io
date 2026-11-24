@@ -1,12 +1,12 @@
 ---
 id: intune-deployment-playbook
-title: Intune Deployment Playbook
+title: "Microsoft Intune 배포 플레이북"
 description: "Microsoft Intune Deployment Playbook - Microsoft Intune provides a cloud native endpoint management platform for securing and managing corporate devices."
-sidebar_label: Intune Deployment
+sidebar_label: "Intune 배포"
 toc_max_heading_level: 2
 ---
 
-# Microsoft Intune Deployment Playbook
+# Microsoft Intune 배포 플레이북
 
 <section aria-label="Intune deployment playbook hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -68,7 +68,6 @@ toc_max_heading_level: 2
 - **Windows Remote Help:** 10월 12일 주간에 5.2.1210.0 버전이 나왔습니다. 이 기능을 사용하는 조직은 사용 권한과 배포 정책을 확인하고 연결·지원 동작을 시험한 뒤 업데이트하세요.
 
 Intune 서비스 변경은 순차 배포됩니다. 발표 날짜만으로 모든 테넌트에 기능이 적용됐다고 판단하지 말고 실제 관리 화면과 시험 기기에서 확인하세요.
-
 
 ## Intune 2610 배포 전 확인할 변경 {/* #intune-2610-changes */}
 
@@ -502,6 +501,6 @@ Deliverables:
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

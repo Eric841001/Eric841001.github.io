@@ -1,12 +1,12 @@
 ---
 id: discovery-questionnaire
-title: Discovery Questionnaire
+title: "현황 조사 질문지"
 description: "Discovery Questionnaire - This questionnaire is used during discovery workshops for Microsoft 365, Azure, Security, Copilot and migration engagements."
-sidebar_label: Discovery Questionnaire
+sidebar_label: "현황 조사 질문지"
 toc_max_heading_level: 2
 ---
 
-# Discovery Questionnaire
+# 현황 조사 질문지
 
 <section aria-label="Discovery Questionnaire asset hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -258,6 +258,6 @@ The questionnaire should support creation of:
 - Microsoft 365 산출물
 - 컨설팅 템플릿
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable DOCX, XLSX or PPTX versions of this asset, use [Contact and Asset Request](../contact) and include the intended scenario, workload and audience.
+<BriefingCTA />

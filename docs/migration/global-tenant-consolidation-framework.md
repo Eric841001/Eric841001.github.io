@@ -1,12 +1,12 @@
 ---
 id: global-tenant-consolidation-framework
-title: Global Tenant Consolidation Framework
+title: "글로벌 테넌트 통합 프레임워크"
 description: "Global Tenant Consolidation Framework - Global tenant consolidation is not only a migration project."
-sidebar_label: Global Tenant Consolidation
+sidebar_label: "글로벌 테넌트 통합"
 toc_max_heading_level: 2
 ---
 
-# Global Tenant Consolidation Framework
+# 글로벌 테넌트 통합 프레임워크
 
 <section aria-label="Global tenant consolidation hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -511,6 +511,6 @@ Only after this decision should the technical migration approach be finalized.
 - Microsoft 365 마이그레이션
 - 마이그레이션 체크리스트
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For migration assessment workbooks, wave planning sheets, cutover runbooks, rollback plans or hypercare trackers, use [Contact and Asset Request](../contact).
+<BriefingCTA />

@@ -1,9 +1,10 @@
 ---
 sidebar_position: 1
-title: Licensing
+title: "라이선스"
 description: "Licensing - This Licensing section helps compare Microsoft 365, Security, Compliance, Entra, Intune, Defender, Purview and Copilot licensing decisions..."
 toc_max_heading_level: 2
 hide_title: true
+sidebar_label: "라이선스 개요"
 ---
 
 <HubHeader
@@ -198,6 +199,6 @@ Use this model when preparing an executive licensing discussion:
 - Copilot 라이선스 관리
 - Microsoft 365 비용 최적화
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).
+<BriefingCTA />

@@ -1,7 +1,8 @@
 ---
-title: Microsoft Defender
+title: "Microsoft Defender"
 toc_max_heading_level: 2
 description: Microsoft Defender architecture guide for Defender XDR, endpoint, email, identity, cloud app signals, SOC operations and executive security reporting.
+sidebar_label: "Microsoft Defender"
 ---
 
 # Microsoft Defender
@@ -144,6 +145,6 @@ Defender projects work best when framed as an operating model. Tool enablement i
 - [Defender for Office 365](./defender-for-office365)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Defender XDR operating model templates, SOC triage matrices, alert tuning checklists or executive security reporting structures, use [Contact and Asset Request](../contact).
+<BriefingCTA />

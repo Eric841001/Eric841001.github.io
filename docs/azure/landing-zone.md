@@ -1,10 +1,11 @@
 ---
-title: Landing Zone
+title: "랜딩 존"
 toc_max_heading_level: 2
 description: Azure Landing Zone architecture guide for enterprise subscription governance, security baseline, networking, policy and cost control.
+sidebar_label: "랜딩 존"
 ---
 
-# Landing Zone
+# 랜딩 존
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>

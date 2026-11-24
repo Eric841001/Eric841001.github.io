@@ -1,13 +1,13 @@
 ---
 id: case-study-logistics-exchange-modernization
-title: Logistics Exchange Online Modernization Case Study
-sidebar_label: Logistics Exchange Modernization
+title: "물류 기업 Exchange Online 현대화 사례"
+sidebar_label: "물류 Exchange 현대화 사례"
 sidebar_position: 9
 description: Anonymized logistics Exchange Online modernization case study covering migration readiness, mail flow, security review, cutover, rollback and operations handover.
 toc_max_heading_level: 2
 ---
 
-# Logistics Exchange Online Modernization Case Study
+# 물류 기업 Exchange Online 현대화 사례
 
 <section aria-label="Logistics Exchange Online modernization case study hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

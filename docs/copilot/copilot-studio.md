@@ -1,8 +1,8 @@
 ---
 id: copilot-studio
-title: Microsoft Copilot Studio
+title: "Microsoft Copilot Studio"
 description: "Microsoft Copilot Studio - Microsoft Copilot Studio is the enterprise platform for building, extending, deploying and governing AI agents."
-sidebar_label: Copilot Studio
+sidebar_label: "Copilot Studio"
 toc_max_heading_level: 2
 ---
 
@@ -19,16 +19,12 @@ toc_max_heading_level: 2
 
 <ReadingControls separateSummary />
 
-
-
-
 <ReadingSection>
 <ReadingSummary>
 
 ## 플랫폼 개요 {/* #executive-summary */}
 
 </ReadingSummary>
-
 
 Microsoft Copilot Studio is the enterprise platform for building, extending, deploying and governing AI agents.
 
@@ -78,7 +74,6 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 </div>
 
 ---
-
 
 </ReadingSection>
 
@@ -142,7 +137,6 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 
 </ReadingSection>
 
-
 <ReadingSection>
 <ReadingSummary>
 
@@ -150,13 +144,11 @@ Copilot Studio should not be positioned only as a chatbot builder. It is a core 
 
 </ReadingSummary>
 
-
 Copilot Studio has changed materially in 2026. The platform now needs to be discussed in terms of new agent experience, Work IQ, reusable skills, memory, computer use, agent inventory, Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
 
 For the current architecture and governance implications, start here: [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
 
 ---
-
 
 </ReadingSection>
 
@@ -166,7 +158,6 @@ For the current architecture and governance implications, start here: [Copilot S
 ## Business Context
 
 </ReadingSummary>
-
 
 Many organizations want to introduce "one agent per user" or department-level AI agents, but they face practical challenges.
 
@@ -186,7 +177,6 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -195,7 +185,6 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 ## Microsoft Agent Build Spectrum
 
 </ReadingSummary>
-
 
 <div aria-label="Microsoft agent build spectrum" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -243,7 +232,6 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -252,7 +240,6 @@ Copilot Studio addresses this gap by enabling low-code agent creation while stil
 ## What Copilot Studio Is
 
 </ReadingSummary>
-
 
 Copilot Studio is a graphical low-code tool for creating agents and agent flows.
 
@@ -272,7 +259,6 @@ It supports:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -281,7 +267,6 @@ It supports:
 ## Core Architecture
 
 </ReadingSummary>
-
 
 <ArchitectureFigure
   id="copilot-studio-core-architecture"
@@ -298,7 +283,6 @@ It supports:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -307,7 +291,6 @@ It supports:
 ## Copilot Studio Building Blocks
 
 </ReadingSummary>
-
 
 | Component | Description |
 |---|---|
@@ -323,7 +306,6 @@ It supports:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -332,7 +314,6 @@ It supports:
 ## Agent Types
 
 </ReadingSummary>
-
 
 ### 1. Knowledge Agent
 
@@ -392,7 +373,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -401,7 +381,6 @@ Examples:
 ## Agent Lifecycle
 
 </ReadingSummary>
-
 
 <div className="kc-journey-map" aria-label="Copilot Studio agent lifecycle">
   <div className="kc-journey-map__header">
@@ -450,7 +429,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -459,7 +437,6 @@ Examples:
 ## Knowledge Architecture
 
 </ReadingSummary>
-
 
 Test whether the selected knowledge sources produce accurate, relevant answers for the intended users.
 
@@ -489,7 +466,6 @@ Recommended knowledge sources:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -498,7 +474,6 @@ Recommended knowledge sources:
 ## Tool and Action Architecture
 
 </ReadingSummary>
-
 
 Add actions when a scenario requires a system change, and test permissions, confirmation and recovery before release.
 
@@ -525,7 +500,6 @@ Add actions when a scenario requires a system change, and test permissions, conf
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -536,7 +510,6 @@ Add actions when a scenario requires a system change, and test permissions, conf
 </ReadingSummary>
 
 MCP capabilities vary by harness. In the [standard-harness procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent), server resources must be exposed as tool outputs to be used by the agent. Review enabled tools and connector data policies; the protocol itself does not grant access or enforce business approvals.
-
 
 Model Context Protocol expands agent extensibility.
 
@@ -561,7 +534,6 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -570,7 +542,6 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 ## No-Code, Low-Code and Pro-Code Positioning
 
 </ReadingSummary>
-
 
 | Approach | Target User | Recommended Platform |
 |---|---|---|
@@ -584,7 +555,6 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -593,7 +563,6 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 ## Enterprise Agent Platform View
 
 </ReadingSummary>
-
 
 <div aria-label="Enterprise agent platform view" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -631,7 +600,6 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -640,7 +608,6 @@ MCP enables agents to connect to external tools and resources in a reusable way.
 ## Security and Governance
 
 </ReadingSummary>
-
 
 Copilot Studio must be governed as part of the enterprise AI control plane.
 
@@ -658,7 +625,6 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -667,7 +633,6 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 ## Agent Governance Model
 
 </ReadingSummary>
-
 
 <div aria-label="Copilot Studio agent governance model" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -705,7 +670,6 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -714,7 +678,6 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 ## Security Review Checklist
 
 </ReadingSummary>
-
 
 | Area | Review Question |
 |---|---|
@@ -729,7 +692,6 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -738,7 +700,6 @@ Copilot Studio must be governed as part of the enterprise AI control plane.
 ## Deployment Channels
 
 </ReadingSummary>
-
 
 Copilot Studio agents can be deployed through several channels.
 
@@ -753,7 +714,6 @@ Copilot Studio agents can be deployed through several channels.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -762,7 +722,6 @@ Copilot Studio agents can be deployed through several channels.
 ## Analytics and Operations
 
 </ReadingSummary>
-
 
 Agent operations should continuously track performance.
 
@@ -781,7 +740,6 @@ Agent operations should continuously track performance.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -791,9 +749,7 @@ Agent operations should continuously track performance.
 
 </ReadingSummary>
 
-
 ### IT Helpdesk Agent
-
 
 Separate guidance from state-changing actions.
 
@@ -845,7 +801,6 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -854,7 +809,6 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 ## Recommended Delivery Approach
 
 </ReadingSummary>
-
 
 | Phase | Key Activities | Deliverables |
 |---|---|---|
@@ -867,7 +821,6 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -876,7 +829,6 @@ Microsoft sources: [tool user authentication](https://learn.microsoft.com/en-us/
 ## Licensing and Capacity Considerations
 
 </ReadingSummary>
-
 
 Licensing should be reviewed before production rollout.
 
@@ -901,9 +853,7 @@ Consider:
 
 환경 할당과 에이전트 한도를 설정하는 순서는 이강표의 《Copilot Studio Credit 사용 제한 설정 가이드》 2–6쪽을 참고했습니다.
 
-
 ---
-
 
 </ReadingSection>
 
@@ -913,7 +863,6 @@ Consider:
 ## Decision Framework
 
 </ReadingSummary>
-
 
 <div aria-label="Copilot Studio decision framework" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -951,7 +900,6 @@ Consider:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -960,7 +908,6 @@ Consider:
 ## Best Practices
 
 </ReadingSummary>
-
 
 1. Start with high-value, low-risk scenarios.
 2. Define the business owner before building.
@@ -975,7 +922,6 @@ Consider:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -984,7 +930,6 @@ Consider:
 ## Common Risks
 
 </ReadingSummary>
-
 
 | Risk | Impact | Mitigation |
 |---|---|---|
@@ -997,7 +942,6 @@ Consider:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1006,7 +950,6 @@ Consider:
 ## Executive Positioning
 
 </ReadingSummary>
-
 
 Copilot Studio should be positioned as an enterprise agent platform.
 
@@ -1021,7 +964,6 @@ Evaluate the platform against agreed pilot targets:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1030,7 +972,6 @@ Evaluate the platform against agreed pilot targets:
 ## Deliverables
 
 </ReadingSummary>
-
 
 A Copilot Studio engagement should produce:
 
@@ -1047,7 +988,6 @@ A Copilot Studio engagement should produce:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1056,7 +996,6 @@ A Copilot Studio engagement should produce:
 ## References
 
 </ReadingSummary>
-
 
 - Microsoft Copilot Studio Documentation
 - [Copilot Studio 2026 Platform Update](./copilot-studio-2026-platform-update)
@@ -1076,7 +1015,6 @@ A Copilot Studio engagement should produce:
 
 </ReadingSummary>
 
-
 - Microsoft 365 Copilot
 - Copilot Studio
 - AI Agent governance
@@ -1085,17 +1023,15 @@ A Copilot Studio engagement should produce:
 - Copilot 도입
 - AI 에이전트 운영 모델
 
-
 </ReadingSection>
 
 <ReadingSection>
 <ReadingSummary>
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
 </ReadingSummary>
 
-
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 </ReadingSection>

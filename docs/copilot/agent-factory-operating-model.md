@@ -1,11 +1,11 @@
 ---
 id: agent-factory-operating-model
-title: Agent Factory and AI Operating Model
+title: "에이전트 팩토리와 AI 운영 모델"
 description: Agent Factory operating model for governed enterprise AI agents, Copilot Studio, Microsoft 365 Agents, portfolio governance, release gates, adoption and value measurement.
-sidebar_label: Agent Factory
+sidebar_label: "에이전트 팩토리"
 ---
 
-# Agent Factory and AI Operating Model
+# 에이전트 팩토리와 AI 운영 모델
 
 <section aria-label="Agent Factory operating model hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">

@@ -1,6 +1,7 @@
 ---
-title: Business Premium
+title: "Microsoft 365 Business Premium"
 description: "Microsoft 365 Business Premium - Microsoft 365 Business Premium is a strong option for small and mid sized organizations that need productivity,..."
+sidebar_label: "Business Premium"
 ---
 
 # Microsoft 365 Business Premium
@@ -182,6 +183,6 @@ Business Premium can deliver strong value when implemented as a full security an
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 - [Microsoft 365 Reference Architecture](../architecture/m365-reference-architecture)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).
+<BriefingCTA />

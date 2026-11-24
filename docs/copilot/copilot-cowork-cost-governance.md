@@ -1,17 +1,15 @@
 ---
 id: copilot-cowork-cost-governance
-title: Copilot Cowork Cost and Governance Guide
+title: "Copilot Cowork 비용과 거버넌스"
 description: Microsoft 365 Copilot Cowork governance guide for long-running work, Copilot Credits, access control, cost management, approval and value measurement.
-sidebar_label: Copilot Cowork Cost Governance
+sidebar_label: "Cowork 비용·거버넌스"
 ---
 
-# Copilot Cowork Cost and Governance Guide
+# Copilot Cowork 비용과 거버넌스
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 
 <UpdateBrief />
-
-
 
 <section aria-label="Copilot Cowork governance landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -514,6 +512,6 @@ Once these answers are available, the organization can move from technical enabl
 - AI 에이전트 운영 모델
 - 장기 실행 AI 업무
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, Cowork governance checklists, cost models or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
+<BriefingCTA />

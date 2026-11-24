@@ -1,12 +1,12 @@
 ---
 id: gsa-whitelist-design
-title: Global Secure Access Whitelist Design
+title: "Global Secure Access 허용 목록 설계"
 description: "Global Secure Access Whitelist Design - This document describes how Microsoft Global Secure Access (GSA) can be used to enforce tenant restrictions,..."
-sidebar_label: GSA Whitelist Design
+sidebar_label: "GSA 허용 목록"
 toc_max_heading_level: 2
 ---
 
-# Global Secure Access Whitelist Design
+# Global Secure Access 허용 목록 설계
 
 <section aria-label="Global Secure Access whitelist hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

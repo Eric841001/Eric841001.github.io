@@ -1,12 +1,12 @@
 ---
 id: sharepoint
-title: SharePoint Information Architecture Framework
+title: "SharePoint 정보 구조 설계"
 description: "SharePoint Information Architecture Framework - SharePoint Online should not be positioned as a simple file server replacement."
-sidebar_label: SharePoint
+sidebar_label: "SharePoint"
 toc_max_heading_level: 2
 ---
 
-# SharePoint Information Architecture Framework
+# SharePoint 정보 구조 설계
 
 <section aria-label="SharePoint information architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -619,6 +619,6 @@ Authoritative designation identifies organization-managed sources in supported C
 - Microsoft 365 컨설팅
 - Microsoft 365 운영 모델
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

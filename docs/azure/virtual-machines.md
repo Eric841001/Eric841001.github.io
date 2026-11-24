@@ -1,9 +1,10 @@
 ---
-title: Virtual Machines
+title: "Azure 가상 머신"
 description: Azure Virtual Machines architecture guide for workload placement, networking, backup, monitoring, patching, cost control and security baseline.
+sidebar_label: "가상 머신"
 ---
 
-# Azure Virtual Machines
+# Azure 가상 머신
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -152,6 +153,6 @@ VM migration is often a bridge to modernization. Document which workloads should
 - [Azure Landing Zone Architecture](../architecture/azure-landing-zone-architecture)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For an Azure VM assessment workbook, backup validation checklist or IaaS security baseline, use [Contact and Asset Request](../contact).
+<BriefingCTA />

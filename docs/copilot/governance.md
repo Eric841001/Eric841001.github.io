@@ -1,9 +1,10 @@
 ---
-title: Copilot Governance
+title: "Copilot 거버넌스"
 description: Microsoft 365 Copilot governance guide for data access, oversharing review, Purview, DLP, agents, audit and adoption operations.
+sidebar_label: "Copilot 거버넌스"
 ---
 
-# Copilot Governance
+# Copilot 거버넌스
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>

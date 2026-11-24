@@ -1,12 +1,12 @@
 ---
 id: change-management-playbook
-title: Change Management Playbook
+title: "변화 관리 플레이북"
 description: "Enterprise Change Management Playbook - Technology deployment does not guarantee business adoption."
-sidebar_label: Change Management
+sidebar_label: "변화 관리"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Change Management Playbook
+# 변화 관리 플레이북
 
 ## Executive Summary
 
@@ -440,7 +440,6 @@ Track:
 
 ## References
 
-
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - Microsoft Copilot Adoption Framework
 - Prosci Change Management Methodology
@@ -454,6 +453,6 @@ Track:
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

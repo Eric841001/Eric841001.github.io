@@ -1,12 +1,12 @@
 ---
 id: prompt-library
-title: Prompt Library
+title: "프롬프트 모음"
 description: "Enterprise Prompt Library - This library contains reusable enterprise prompts designed for Microsoft consulting, architecture design, proposal..."
-sidebar_label: Prompt Library
+sidebar_label: "프롬프트 모음"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Prompt Library
+# 프롬프트 모음
 
 ## Executive Summary
 
@@ -461,6 +461,6 @@ Explain the review criteria and evidence gaps. If a score is requested, label it
 - Microsoft 컨설팅
 - 엔터프라이즈 아키텍처
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable templates, assessment workbooks, architecture summaries or delivery-ready consulting assets, use [Contact and Asset Request](../contact).
+<BriefingCTA />

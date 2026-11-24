@@ -1,12 +1,12 @@
 ---
 sidebar_position: 9
-title: Microsoft Purview Information Barriers
-sidebar_label: Purview Information Barriers
+title: "Microsoft Purview 정보 장벽"
+sidebar_label: "정보 장벽"
 description: Microsoft Purview Information Barriers implementation guide for segment design, policy activation, Teams validation, SharePoint and OneDrive controls, rollback and audit evidence.
 toc_max_heading_level: 2
 ---
 
-# Microsoft Purview Information Barriers
+# Microsoft Purview 정보 장벽
 
 Microsoft Purview Information Barriers (IB) is used to restrict communication and collaboration between users or groups when the organization has conflict-of-interest, segregation-of-duty, internal control or regulated collaboration requirements.
 
@@ -334,6 +334,6 @@ Prepare segment matrix, policy list, policy application status, allowed/blocked 
 - [Microsoft Learn: Use information barriers with SharePoint](https://learn.microsoft.com/en-us/purview/information-barriers-sharepoint)
 - [Microsoft Learn: Use information barriers with OneDrive](https://learn.microsoft.com/en-us/purview/information-barriers-onedrive)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

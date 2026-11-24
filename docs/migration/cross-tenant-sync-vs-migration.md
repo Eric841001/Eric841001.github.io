@@ -1,12 +1,12 @@
 ---
 id: cross-tenant-sync-vs-migration
-title: Cross-Tenant Synchronization vs Full Tenant Migration
+title: "테넌트 간 동기화와 전체 테넌트 이전 비교"
 description: Compare cross-tenant identity provisioning with Microsoft 365 content migration, including authentication dependencies, workload scope, access controls and operating responsibilities.
-sidebar_label: Cross-Tenant Sync vs Migration
+sidebar_label: "동기화 vs 테넌트 이전"
 toc_max_heading_level: 2
 ---
 
-# Cross-Tenant Synchronization vs Full Tenant Migration
+# 테넌트 간 동기화와 전체 테넌트 이전 비교
 
 <section aria-label="Cross-tenant strategy hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -695,6 +695,6 @@ Activities:
 - Entra ID 테넌트 동기화
 - Microsoft 365 Copilot tenant readiness
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For migration assessment workbooks, wave planning sheets, cutover runbooks, rollback plans or hypercare trackers, use [Contact and Asset Request](../contact).
+<BriefingCTA />

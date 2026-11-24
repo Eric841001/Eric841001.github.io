@@ -79,3 +79,24 @@ a.t:hover{transform:translateY(-3px);box-shadow:0 24px 50px -28px rgba(0,0,0,.35
 @media (max-width:1100px){.hero,.answers{grid-column:span 12}.lic,.upd,.az,.cr,.ops{grid-column:span 6}.upd,.az{grid-row:auto}.grid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.bento{gap:10px}.lic,.upd,.az,.cr,.ops{grid-column:span 12}.hero{grid-row:auto}.hero h1{font-size:clamp(32px,8.6vw,40px)}.answers{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.t{padding:18px;border-radius:22px}}
 @media (prefers-reduced-motion:reduce){.t,.chip,.card{transition:none}.mini .f{animation:none}}
+
+/* 에디토리얼: 명조 머리글, 가는 선 타일 */
+.t{border:1px solid var(--c-line)}
+.c{border-color:transparent}
+.hero{border-top:3px solid var(--c-ink)}
+.hero h1{font:700 clamp(42px,5.2vw,80px)/1.08 var(--c-serif);letter-spacing:-.035em}
+.hero h1 em{background:none;-webkit-background-clip:initial;background-clip:initial;color:var(--c-accent);font-style:normal}
+.k{font-family:var(--c-sans);font-weight:600;letter-spacing:0}
+.ask{border:1px solid var(--c-line2);border-radius:10px;background:var(--c-bg)}
+.ask button{border-radius:7px}
+.cr strong,.card b,.ans b,.ans2 b,.upd b{font-family:var(--c-serif);font-weight:700;letter-spacing:-.015em}
+.sh h2{font:700 clamp(28px,3.2vw,42px)/1.15 var(--c-serif);letter-spacing:-.03em}
+.big{font-family:var(--c-serif);font-weight:700}
+.card{border:1px solid var(--c-line);border-radius:var(--c-r)}
+.chip{border:1px solid var(--c-line);background:var(--c-tile)}
+.chip i{font-family:var(--c-mono);font-weight:500}
+.qs button{border-radius:999px}
+.lic{background:#17191E}
+:global([data-theme=dark]) .lic{background:#22252B}
+.seg button[aria-pressed=true]{color:#17191E}
+.upd time,.qv b{font-family:var(--c-mono)}

@@ -1,12 +1,12 @@
 ---
 id: assessment-checklist
-title: Assessment Checklist
+title: "진단 점검표"
 description: "Assessment Checklist - This checklist provides a standardized assessment structure for Microsoft 365, Azure, Security, Copilot and migration projects."
-sidebar_label: Assessment Checklist
+sidebar_label: "진단 점검표"
 toc_max_heading_level: 2
 ---
 
-# Assessment Checklist
+# 진단 점검표
 
 <section aria-label="Assessment Checklist hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -274,6 +274,6 @@ Microsoft 365의 사용자·기기·협업·보안과 운영 현황을 조사할
 - 보안 진단 체크리스트
 - Microsoft 365 컨설팅 현황 진단
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-실제 워크숍에서 사용할 편집 가능한 현황 진단표, 위험 등록부와 경영진 요약 양식이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+<BriefingCTA />

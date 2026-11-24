@@ -1,12 +1,12 @@
 ---
 id: purview-information-protection
-title: Microsoft Purview Information Protection and Data Governance Guide
+title: "Microsoft Purview 정보 보호와 데이터 거버넌스"
 description: "Microsoft Purview Information Protection and Data Governance Guide - Microsoft Purview Information Protection and Data Governance Guide"
-sidebar_label: Purview Information Protection
+sidebar_label: "Purview 정보 보호"
 toc_max_heading_level: 2
 ---
 
-# Microsoft Purview Information Protection and Data Governance Guide
+# Microsoft Purview 정보 보호와 데이터 거버넌스
 
 ## Executive Summary
 
@@ -560,7 +560,6 @@ Purview should integrate with:
 
 ## References
 
-
 - [Sensitivity labels](https://learn.microsoft.com/en-us/purview/sensitivity-labels)
 - Microsoft Purview Documentation
 - [Microsoft Purview Information Barriers](./information-barriers)
@@ -578,6 +577,6 @@ Purview should integrate with:
 - Microsoft 365 보안
 - 보안 아키텍처
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

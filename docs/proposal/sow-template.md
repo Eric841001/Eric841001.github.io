@@ -1,10 +1,11 @@
 ---
-title: SOW Template
+title: "작업 범위 기술서 양식"
 description: Statement of Work template guidance for Microsoft 365, Security, Copilot, Azure and migration proposals covering scope, deliverables, assumptions and acceptance criteria.
 toc_max_heading_level: 2
+sidebar_label: "SOW 양식"
 ---
 
-# Statement of Work Template
+# 작업 범위 기술서 양식
 
 <section aria-label="Statement of Work template hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -190,6 +191,6 @@ The public page explains the SOW structure only. Editable SOW files and customer
 - 제안서 SOW 템플릿
 - Microsoft 365 제안서 범위
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

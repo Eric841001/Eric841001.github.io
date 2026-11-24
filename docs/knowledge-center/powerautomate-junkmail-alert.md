@@ -1,11 +1,11 @@
 ---
 id: powerautomate-junkmail-alert
-title: Power Automate Junk Mail Alert
+title: "Power Automate 정크 메일 알림"
 description: "Power Automate Junk Mail Alert - This guide describes how Power Automate can monitor Exchange Online Junk Email folders and generate automated..."
-sidebar_label: Junk Mail Alert
+sidebar_label: "정크 메일 알림"
 ---
 
-# Power Automate Junk Mail Alert
+# Power Automate 정크 메일 알림
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -275,6 +275,6 @@ Exchange Online의 정크 메일 폴더를 확인하고 Teams나 메일로 알�
 - Exchange Online 정크 메일 모니터링
 - Microsoft 365 보안 자동화
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-실제 고객 환경에 적용할 때는 테넌트 정책, 사서함 범위, Defender 경고와 Teams 채널 운영 기준을 함께 검토해야 합니다. Power Automate 흐름 예시나 운영 알림 템플릿이 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+<BriefingCTA />

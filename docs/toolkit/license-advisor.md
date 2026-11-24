@@ -1,12 +1,12 @@
 ---
 id: license-advisor
-title: License Advisor
+title: "라이선스 어드바이저"
 description: "Microsoft License Advisor - Microsoft licensing decisions should be aligned with business requirements, security objectives, compliance obligations and..."
-sidebar_label: License Advisor
+sidebar_label: "라이선스 어드바이저"
 toc_max_heading_level: 2
 ---
 
-# Microsoft License Advisor
+# 라이선스 어드바이저
 
 ## Executive Summary
 
@@ -424,6 +424,6 @@ Official sources: [Microsoft Product Terms](https://www.microsoft.com/licensing/
 - Microsoft 365 라이선스 비교
 - Copilot 라이선스 검토
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For license comparison workbooks, user persona matrices, capability maps or Copilot license readiness review templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

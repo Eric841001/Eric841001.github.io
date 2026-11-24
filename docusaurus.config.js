@@ -6,8 +6,8 @@ const diagramScriptVersion = createHash('sha256')
   .digest('hex').slice(0, 12);
 
 ﻿module.exports = {
-  title: 'Youngsun Kang | Microsoft 365, Security, Copilot & AI Architect',
-  tagline: 'Enterprise Microsoft Architecture, Security, Copilot, AI Agent and Delivery Asset Knowledge Center',
+  title: 'Youngsun Kang 기술 지식센터',
+  tagline: 'Microsoft 365·Azure·보안·Copilot 실무 문서와 설계도',
   favicon: 'img/youngsun-logo.svg',
 
   url: 'https://eric841001.github.io',
@@ -37,7 +37,7 @@ const diagramScriptVersion = createHash('sha256')
   themes: ['@docusaurus/theme-mermaid'],
 
   stylesheets: [
-    {href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=DM+Mono:wght@500&display=swap'},
+    {href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&family=Noto+Sans+KR:wght@400;600;700&family=DM+Mono:wght@500&display=swap'},
   ],
   headTags: [
     {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.googleapis.com'}},
@@ -52,8 +52,8 @@ const diagramScriptVersion = createHash('sha256')
   ],
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ko',
+    locales: ['ko'],
   },
 
   presets: [
@@ -109,6 +109,20 @@ const diagramScriptVersion = createHash('sha256')
           };
 
           copyExtensionless(outDir);
+
+          // 사이트맵에 문서별 검토일을 수정일로 넣는다.
+          // 사이트맵 플러그인과 동시에 실행되므로 파일이 생길 때까지 잠시 기다린다.
+          const sitemapPath = path.join(outDir, 'sitemap.xml');
+          for (let i = 0; i < 100 && !fs.existsSync(sitemapPath); i++) await new Promise(r => setTimeout(r, 100));
+          await new Promise(r => setTimeout(r, 200));
+          if (fs.existsSync(sitemapPath)) {
+            const reviews = require('./scripts/data/documentReviews.json');
+            const xml = fs.readFileSync(sitemapPath, 'utf8').replace(/<loc>([^<]+)<\/loc>/g, (m, loc) => {
+              const r = reviews[new URL(loc).pathname.replace(/\/$/, '')];
+              return r ? `${m}<lastmod>${r.checkedOn}</lastmod>` : m;
+            });
+            fs.writeFileSync(sitemapPath, xml);
+          }
         },
       };
     },
@@ -120,6 +134,32 @@ const diagramScriptVersion = createHash('sha256')
         indexBlog: false,
         docsRouteBasePath: 'knowledge',
         language: ['en', 'ko'],
+        // 다른 문서를 가리키는 바로가기·목록과 키워드 나열은 색인에서 빼서 검색 파일을 줄인다.
+        ignoreCssSelectors: [
+          'nav[aria-label="상황별 바로가기"]',
+          '.kc-entry-hub', '.kc-asset-catalog', '.kc-pathway', '.kc-factory-grid', '.kc-signal-grid', '.kc-journey-track',
+          'nav[aria-label="영역별 설계도"]',
+          '#hub-list', '[aria-labelledby="hub-start"]', '[aria-labelledby="hub-upd"]',
+          'h2[id="검색-키워드"] + p', 'h2[id="검색-키워드"] + ul',
+        ],
+        searchBarShortcutHint: false,
+        // 주제별로 검색 파일을 나눠, 문서 페이지에서는 그 주제의 색인만 내려받는다.
+        searchContextByPaths: [
+          {label: 'Microsoft 365', path: 'knowledge/microsoft365'},
+          {label: 'Azure', path: 'knowledge/azure'},
+          {label: '보안', path: 'knowledge/security'},
+          {label: 'Copilot', path: 'knowledge/copilot'},
+          {label: '마이그레이션', path: 'knowledge/migration'},
+          {label: '라이선스', path: 'knowledge/licensing'},
+          {label: '설계도', path: 'knowledge/architecture'},
+          {label: '운영 문제 해결', path: 'knowledge/knowledge-center'},
+          {label: '도입 절차', path: 'knowledge/playbooks'},
+          {label: '제안 센터', path: 'knowledge/proposal'},
+          {label: '도구 모음', path: 'knowledge/toolkit'},
+          {label: '프로젝트 사례', path: 'knowledge/projects'},
+          {label: '자료실', path: 'knowledge/downloads'},
+        ],
+        useAllContextsWithNoSearchContext: true,
       },
     ],
   ],
@@ -196,31 +236,31 @@ const diagramScriptVersion = createHash('sha256')
       style: 'dark',
       links: [
         {
-          title: 'Knowledge',
+          title: '지식센터',
           items: [
-            {label: 'Microsoft 365', to: '/knowledge/microsoft365/e3-vs-e5'},
-            {label: 'Architecture', to: '/knowledge/architecture/overview'},
-            {label: 'Projects', to: '/knowledge/projects/overview'},
+            {label: 'Microsoft 365', to: '/knowledge/microsoft365/overview'},
+            {label: '설계도', to: '/knowledge/architecture/overview'},
+            {label: '프로젝트 사례', to: '/knowledge/projects/overview'},
           ],
         },
         {
-          title: 'Consulting Assets',
+          title: '컨설팅 자료',
           items: [
-            {label: 'Proposal Center', to: '/knowledge/proposal/overview'},
-            {label: 'Downloads Center', to: '/knowledge/downloads/overview'},
-            {label: 'Contact / Request Assets', to: '/knowledge/contact'},
-            {label: 'About', to: '/knowledge/about'},
+            {label: '제안 센터', to: '/knowledge/proposal/overview'},
+            {label: '자료실', to: '/knowledge/downloads/overview'},
+            {label: '문의·브리핑 요청', to: '/knowledge/contact'},
+            {label: '소개', to: '/knowledge/about'},
           ],
         },
         {
-          title: 'Connect',
+          title: '연결',
           items: [
             {label: 'GitHub', href: 'https://github.com/Eric841001'},
             {label: 'LinkedIn', href: 'https://www.linkedin.com/in/young-sun-kang-a51b26356'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Youngsun Kang. Enterprise Microsoft Platform.`,
+      copyright: `© ${new Date().getFullYear()} Youngsun Kang · Microsoft 기술 지식센터`,
     },
   },
 };

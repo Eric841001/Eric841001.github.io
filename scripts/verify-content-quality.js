@@ -59,7 +59,7 @@ for (const file of files) {
   const words = body.match(/[A-Za-z0-9가-힣]+/g) || [];
   const hasMojibake = /[ìêëí�]/.test(source);
   const hasSearch = /검색 키워드|한국어 검색 키워드|Search Keywords/.test(source);
-  const hasContact = /Contact \/ Asset Request|Contact and Asset Request|Requestable Assets/.test(source);
+  const hasContact = /Contact \/ Asset Request|Contact and Asset Request|Requestable Assets|<BriefingCTA \/>/.test(source);
   const isHighValue =
     words.length > 430 &&
     /docs\/(projects|security|toolkit|downloads|migration|playbooks|copilot|microsoft365)\//.test(rel);

@@ -1,7 +1,7 @@
 ---
 id: customer-conversation-harness
 title: Copilot Studio 고객 대화형 Harness — GA
-sidebar_label: Customer Conversation
+sidebar_label: "고객 대화형 Harness"
 description: 2026년 11월 고객 응대용 Harness 정식 출시와 채널별 배포·인증·과금 조건, 전문 에이전트 설계.
 ---
 
@@ -60,6 +60,6 @@ Microsoft의 9월 22일 운영 지침은 **관찰 → 평가 → 실행 → 사�
 
 Copilot Studio, customer conversation harness, 고객 응대 에이전트, 음성·채팅, GA, Agent 365, 에이전트 운영.
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-파일럿과 운영 모델 검토는 [Contact and Asset Request](/knowledge/contact)에서 문의할 수 있습니다.
+<BriefingCTA />

@@ -1,13 +1,13 @@
 ---
 id: enterprise-ai-adoption-program
-title: Enterprise AI Adoption Program
+title: "기업 AI 도입 프로그램"
 description: "Enterprise AI Adoption Program - The Enterprise AI Adoption Program turns Copilot, Copilot Studio and AI agent initiatives into a governed business..."
-sidebar_label: Enterprise AI Adoption Program
+sidebar_label: "AI 도입 프로그램"
 sidebar_position: 5
 toc_max_heading_level: 2
 ---
 
-# Enterprise AI Adoption Program
+# 기업 AI 도입 프로그램
 
 <section aria-label="Enterprise AI Adoption Program hero" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
@@ -217,6 +217,6 @@ For anonymized customer-facing references, position Enterprise AI adoption as a 
 - [Agent Factory Operating Model](../copilot/agent-factory-operating-model)
 - [Enterprise AI Agent Factory Case Study](./case-study-enterprise-ai-agent-factory)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For AI adoption roadmaps, champion program templates, KPI models or executive AI adoption narratives, use [Contact and Asset Request](../contact).
+<BriefingCTA />

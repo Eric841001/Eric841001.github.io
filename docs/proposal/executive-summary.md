@@ -1,10 +1,11 @@
 ---
-title: Executive Summary
+title: "경영진 요약 양식"
 description: Executive summary template guidance for Microsoft 365, Security, Copilot, Azure and migration proposals focused on business outcome, risk reduction and investment decision.
 toc_max_heading_level: 2
+sidebar_label: "경영진 요약"
 ---
 
-# Executive Summary Template
+# 경영진 요약 양식
 
 <section aria-label="Executive Summary template hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -194,6 +195,6 @@ Customer-ready executive summary samples are not published directly. To request 
 - 제안서 Executive Summary
 - 임원 보고 제안서
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

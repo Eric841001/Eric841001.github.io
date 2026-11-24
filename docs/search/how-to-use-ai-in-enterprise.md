@@ -1,7 +1,7 @@
 ---
 id: how-to-use-ai-in-enterprise
-title: How to Use AI in Enterprise
-sidebar_label: How to Use AI
+title: "기업에서 AI를 활용하는 방법"
+sidebar_label: "기업 AI 활용"
 description: Enterprise AI usage landing page connecting Microsoft 365 Copilot, available reasoning models, Copilot Studio, Microsoft 365 Agents, Copilot Cowork and change management.
 keywords:
   - AI 활용 방법
@@ -13,7 +13,7 @@ keywords:
   - Enterprise AI adoption
 ---
 
-# How to Use AI in Enterprise
+# 기업에서 AI를 활용하는 방법
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 

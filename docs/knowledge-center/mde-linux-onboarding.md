@@ -1,11 +1,11 @@
 ---
 id: mde-linux-onboarding
-title: Microsoft Defender for Endpoint Linux Onboarding
+title: "Defender for Endpoint Linux 온보딩"
 description: "Microsoft Defender for Endpoint Linux Onboarding - This guide describes Linux onboarding procedures for Microsoft Defender for Endpoint."
-sidebar_label: Linux Onboarding
+sidebar_label: "Linux 온보딩"
 ---
 
-# Microsoft Defender for Endpoint Linux Onboarding
+# Defender for Endpoint Linux 온보딩
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -261,6 +261,6 @@ Linux 서버에 Defender for Endpoint를 설치하고 조직에 등록하는 절
 - MDE Linux 온보딩
 - Linux 서버 보안 모니터링
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-Linux 서버 대량 온보딩, 프록시 환경, 격리된 네트워크, SOC 인수인계 기준이 필요한 경우 [Contact and Asset Request](../contact)를 통해 체크리스트와 검증 보고서 양식을 요청할 수 있습니다.
+<BriefingCTA />

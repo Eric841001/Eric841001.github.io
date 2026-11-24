@@ -1,11 +1,11 @@
 ---
 id: case-study-retail-m365-security-policy
-title: Retail Microsoft 365 Security Policy Modernization Case Study
-sidebar_label: Retail M365 Security Policy
+title: "유통 기업 Microsoft 365 보안 정책 현대화 사례"
+sidebar_label: "유통 M365 보안 정책 사례"
 description: Anonymized retail Microsoft 365 security policy modernization case study covering Entra ID, Conditional Access, Intune, Defender, Purview, Power Platform and collaboration governance.
 ---
 
-# Retail Microsoft 365 Security Policy Modernization Case Study
+# 유통 기업 Microsoft 365 보안 정책 현대화 사례
 
 <section aria-label="Retail Microsoft 365 security policy case study landing" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

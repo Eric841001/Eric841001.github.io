@@ -45,3 +45,6 @@
 @media (prefers-reduced-motion:reduce){.on path,.card{animation:none}}
 
 .tall .node text{font-size:15px}
+/* 에디토리얼 */
+.card{border-radius:var(--c-r)}
+.card h3{font-family:var(--c-serif)!important;font-weight:700!important}

@@ -1,12 +1,12 @@
 ---
 id: risk-register
-title: Risk Register
+title: "위험 관리 대장"
 description: "Risk Register - A Risk Register is used to identify, assess, track and mitigate risks throughout a Microsoft cloud consulting engagement."
-sidebar_label: Risk Register
+sidebar_label: "위험 관리 대장"
 toc_max_heading_level: 2
 ---
 
-# Risk Register
+# 위험 관리 대장
 
 <section aria-label="Proposal Risk Register hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -201,6 +201,6 @@ Status:
 - risk mitigation
 - 리스크 관리표
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

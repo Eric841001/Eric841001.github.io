@@ -1,12 +1,12 @@
 ---
 id: assessment
-title: Assessment Framework
+title: "진단 프레임워크"
 description: "Assessment Framework - The Assessment Framework is used to evaluate the current state of a customer environment before defining a Microsoft 365, Azure,..."
-sidebar_label: Assessment Framework
+sidebar_label: "진단 프레임워크"
 toc_max_heading_level: 2
 ---
 
-# Assessment Framework
+# 진단 프레임워크
 
 <section aria-label="Assessment Framework hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -266,6 +266,6 @@ Typical assessment deliverables include:
 
 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

@@ -1,7 +1,7 @@
 ---
 id: copilot-adoption
-title: Copilot Adoption
-sidebar_label: Copilot Adoption
+title: "Copilot 도입"
+sidebar_label: "Copilot 도입"
 description: Microsoft 365 Copilot adoption landing page for readiness, available reasoning models, governance, pilot planning, ROI, change management, Copilot Studio and rollout strategy.
 keywords:
   - Microsoft Copilot adoption
@@ -13,7 +13,7 @@ keywords:
   - available reasoning models Microsoft 365 Copilot
 ---
 
-# Copilot Adoption
+# Copilot 도입
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 

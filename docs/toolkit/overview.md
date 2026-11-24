@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Toolkit
+title: "도구 모음"
 description: "Toolkit - The Toolkit section contains practical assets for assessment, architecture, migration, licensing, prompt design and delivery planning."
 toc_max_heading_level: 2
+sidebar_label: "도구 모음 개요"
 ---
 
-# Toolkit
+# 도구 모음
 
 <ScenarioLinks
   summary="설계나 이전을 앞두고 빠뜨린 항목을 확인하거나 업무에 쓸 예시를 찾아보세요."
@@ -209,6 +210,6 @@ This toolkit is informed by recurring enterprise delivery patterns:
 - security baseline checklist
 - proposal asset library
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable assessment checklists, architecture workbooks, license advisor sheets, migration checklists or prompt library templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

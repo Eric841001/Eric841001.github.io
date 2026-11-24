@@ -1,10 +1,11 @@
 ---
-title: Governance Model
+title: "거버넌스 모델"
 description: Proposal governance model for Microsoft 365, Security, Copilot, Azure and migration projects covering steering committee, RACI, cadence and decision control.
 toc_max_heading_level: 2
+sidebar_label: "거버넌스 모델"
 ---
 
-# Governance Model
+# 거버넌스 모델
 
 <section aria-label="Governance Model hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -170,6 +171,6 @@ Editable governance templates are not published directly. To request a customer-
 - 제안서 거버넌스 모델
 - 프로젝트 RACI
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

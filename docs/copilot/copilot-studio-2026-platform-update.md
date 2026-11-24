@@ -1,11 +1,11 @@
 ---
 id: copilot-studio-2026-platform-update
-title: Copilot Studio 2026 Platform Update
+title: "Copilot Studio 2026 플랫폼 변경"
 description: Copilot Studio 2026 update guide covering new agent experience, Microsoft IQ, skills, memory, computer use, A2A, agent inventory, Entra agent identities and Copilot Credits.
-sidebar_label: 2026 Platform Update
+sidebar_label: "2026 플랫폼 변경"
 ---
 
-# Copilot Studio 2026 Platform Update
+# Copilot Studio 2026 플랫폼 변경
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 
@@ -337,7 +337,6 @@ Microsoft 365 관리 센터에서 환경·에이전트용 지출 정책을 만�
 
 여기서 2번은 테넌트의 미할당 용량 사용, 3번은 종량제 청구 설정입니다. 같은 자료 5~6쪽은 에이전트별 월 한도와 사용량 중지·알림 설정을 설명합니다. 아래 절차는 이 구분을 바탕으로 최신 Microsoft 문서의 적용 범위와 제한을 보완했습니다.
 
-
 PPAC에서 관리하는 개발 환경의 선불 사용량을 제한하려면 정해진 용량을 할당하고, `Draw from the available capacity in my tenant`를 끄며, 종량제 연결도 확인합니다. 같은 환경의 다른 에이전트·흐름·프롬프트에도 영향을 주므로 먼저 사용 목록을 확인하세요. 운영 환경은 중단 위험까지 고려해 예산과 추가 사용 승인 절차를 정합니다.
 
 에이전트별로는 PPAC의 `Manage Agents`에서 월 한도와 알림, `Hard stop`을 확인하세요. **Azure 예산 알림은 소비를 중단하지 않습니다.** 에이전트 한도도 즉시 적용되지 않아 초과가 발생할 수 있고, 호출한 agent flow의 사용량은 별도로 검사됩니다. 새 에이전트에 조직의 기본 한도가 자동 적용되는 기능은 없으므로 정기 점검에 포함하세요.
@@ -511,6 +510,6 @@ MCP 연결 마법사는 `Add a tool > New tool > Create new > Model Context Prot
 - Entra Agent ID
 - Copilot Credit estimator
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
+<BriefingCTA />

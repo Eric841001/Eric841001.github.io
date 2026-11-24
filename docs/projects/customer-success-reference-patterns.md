@@ -1,13 +1,13 @@
 ---
 id: customer-success-reference-patterns
-title: Customer Success Reference Patterns
-sidebar_label: Customer Success Reference Patterns
+title: "고객 성공 참조 패턴"
+sidebar_label: "고객 성공 참조 패턴"
 sidebar_position: 2
 description: Anonymized customer success reference patterns for Microsoft 365, Security, Copilot, Azure, migration and governance projects.
 toc_max_heading_level: 2
 ---
 
-# Customer Success Reference Patterns
+# 고객 성공 참조 패턴
 
 <section aria-label="Customer success reference patterns hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -67,8 +67,6 @@ This page summarizes anonymized customer success patterns derived from enterpris
 고객 프로젝트 경험에서 공개할 수 있는 작업 방식과 문서 구성을 정리했습니다. 고객명, 프로젝트명과 계약 정보는 제외했습니다.
 
 제조·금융·물류·유통 등 업종별 과제와 Microsoft 365, 보안, Copilot과 이전 작업의 접근 방법을 참고하세요.
-
-
 
 ## Reference Pattern Map
 
@@ -409,6 +407,6 @@ When publishing these references externally:
   </div>
 </div>
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For proposal-ready reference narratives, sanitized case study structures or reusable customer success presentation pages, use [Contact and Asset Request](../contact).
+<BriefingCTA />

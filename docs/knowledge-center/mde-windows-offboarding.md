@@ -1,11 +1,11 @@
 ---
 id: mde-windows-offboarding
-title: Microsoft Defender for Endpoint Windows Offboarding
-sidebar_label: Windows Offboarding
+title: "Defender for Endpoint Windows 오프보딩"
+sidebar_label: "Windows 오프보딩"
 description: Microsoft Defender for Endpoint Windows offboarding guide using Intune deployment, validation, audit record and device lifecycle governance.
 ---
 
-# Microsoft Defender for Endpoint Windows Offboarding
+# Defender for Endpoint Windows 오프보딩
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -146,7 +146,6 @@ Source: [Microsoft Intune offboarding procedure](https://learn.microsoft.com/en-
 
 Offboarding and uninstalling are different operations. Microsoft documents that status changes to **inactive after seven days**; historical data remains until its retention period expires, and the device profile can remain in inventory for **up to 180 days**. A remaining inventory entry is therefore not, by itself, an offboarding failure. See [Offboard devices](https://learn.microsoft.com/en-us/defender-endpoint/offboard-machines). Confirm the offboarding package validity, local state, last-seen behavior and replacement protection before closing the change.
 
-
 Verify:
 
 - New detection, vulnerability and security data stop arriving after successful offboarding
@@ -214,6 +213,6 @@ Verify:
 - [Security Modernization Program](../projects/security-modernization-program)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For a Defender offboarding runbook, validation report or asset handover checklist, use [Contact and Asset Request](../contact).
+<BriefingCTA />

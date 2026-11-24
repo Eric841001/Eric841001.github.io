@@ -1,7 +1,7 @@
 ---
 id: microsoft-365-security
-title: Microsoft 365 Security
-sidebar_label: Microsoft 365 Security
+title: "Microsoft 365 보안"
+sidebar_label: "M365 보안"
 description: Microsoft 365 Security landing page for Zero Trust, Entra ID, Conditional Access, Defender, Purview, Intune, DLP, Information Barriers and Copilot data protection.
 keywords:
   - Microsoft 365 보안
@@ -14,7 +14,7 @@ keywords:
   - Copilot data protection
 ---
 
-# Microsoft 365 Security
+# Microsoft 365 보안
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 

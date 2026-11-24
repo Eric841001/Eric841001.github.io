@@ -40,6 +40,12 @@ function Dock() {
 export default function Root({children}) {
   const {pathname, hash} = useLocation();
   useEffect(() => { revealHash(); }, [pathname, hash]);
+  // 검색 페이지의 주제 선택 상자에 이름을 붙인다(검색 플러그인이 레이블을 넣지 않음).
+  useEffect(() => {
+    if (!pathname.startsWith('/search')) return;
+    const t = setTimeout(() => { const el = document.getElementById('context-selector'); if (el && !el.getAttribute('aria-label')) el.setAttribute('aria-label', '검색할 주제'); }, 300);
+    return () => clearTimeout(t);
+  }, [pathname]);
   useEffect(() => {
     const onClick = e => {
       const a = e.target.closest?.('a[href*="#"]');

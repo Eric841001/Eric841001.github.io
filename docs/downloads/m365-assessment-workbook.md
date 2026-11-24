@@ -1,12 +1,12 @@
 ---
 id: m365-assessment-workbook
-title: M365 Assessment Workbook
+title: "Microsoft 365 진단표"
 description: "Microsoft 365 Assessment Workbook - This workbook provides a structured framework for assessing Microsoft 365 environments across identity,..."
-sidebar_label: Assessment Workbook
+sidebar_label: "M365 진단표"
 toc_max_heading_level: 2
 ---
 
-# Microsoft 365 Assessment Workbook
+# Microsoft 365 진단표
 
 ## Executive Summary
 
@@ -516,6 +516,6 @@ Assessment output should include:
 - Microsoft 365 산출물
 - 컨설팅 템플릿
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable DOCX, XLSX or PPTX versions of this asset, use [Contact and Asset Request](../contact) and include the intended scenario, workload and audience.
+<BriefingCTA />

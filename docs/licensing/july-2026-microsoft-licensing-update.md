@@ -1,12 +1,12 @@
 ---
 id: july-2026-microsoft-licensing-update
-title: Microsoft Licensing Feature Update
+title: "Microsoft 라이선스 기능 변경"
 description: Microsoft licensing feature update guide for Microsoft 365, Office 365 E3, Microsoft 365 E3, Defender, Purview, Copilot Studio and service plan validation.
-sidebar_label: Licensing Feature Update
+sidebar_label: "라이선스 변경 사항"
 toc_max_heading_level: 2
 ---
 
-# Microsoft Licensing Feature Update
+# Microsoft 라이선스 기능 변경
 
 <section aria-label="Microsoft licensing feature update hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -283,6 +283,6 @@ The platform itself has also changed. New agent experience, Work IQ, reusable sk
 - M365 license feature update
 - Microsoft 라이선스 변경
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For license-to-capability maps, persona matrices, feature comparison workbooks or executive license decision packs, use [Contact and Asset Request](../contact).
+<BriefingCTA />

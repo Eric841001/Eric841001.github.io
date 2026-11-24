@@ -1,12 +1,12 @@
 ---
 id: downloads-wbs-template
-title: WBS Template
+title: "작업 분류 체계(WBS) 양식"
 description: "Work Breakdown Structure (WBS) Template - Item Description Customer Project Name Project Manager Start Date End Date Duration"
-sidebar_label: WBS Template
+sidebar_label: "WBS 양식"
 toc_max_heading_level: 2
 ---
 
-# Work Breakdown Structure (WBS) Template
+# 작업 분류 체계(WBS) 양식
 
 <section class="kc-topic-hero" aria-label="Download WBS template hero">
   <div class="kc-topic-hero__content">
@@ -246,6 +246,6 @@ toc_max_heading_level: 2
 - Microsoft 365 산출물
 - 컨설팅 템플릿
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable DOCX, XLSX or PPTX versions of this asset, use [Contact and Asset Request](../contact) and include the intended scenario, workload and audience.
+<BriefingCTA />

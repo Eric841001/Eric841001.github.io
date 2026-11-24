@@ -1,13 +1,13 @@
 ---
 id: m365-optimization-program
-title: Microsoft 365 Optimization Program
-sidebar_label: Microsoft 365 Optimization Program
+title: "Microsoft 365 최적화 프로그램"
+sidebar_label: "M365 최적화 프로그램"
 sidebar_position: 3
 description: Microsoft 365 optimization engagement model for tenant governance, identity, device, collaboration, messaging, security and operations improvement.
 toc_max_heading_level: 2
 ---
 
-# Microsoft 365 Optimization Program
+# Microsoft 365 최적화 프로그램
 
 <section aria-label="Microsoft 365 Optimization Program hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -208,6 +208,6 @@ Define service ownership, a recurring review schedule and a prioritized roadmap 
 - [M365 Assessment Playbook](../playbooks/m365-assessment-playbook)
 - [M365 Assessment Workbook](../downloads/m365-assessment-workbook)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Microsoft 365 optimization assessment workbooks, license-to-capability maps or tenant governance backlog templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

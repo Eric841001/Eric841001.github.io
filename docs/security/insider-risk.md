@@ -1,9 +1,10 @@
 ---
-title: Insider Risk Management
+title: "내부자 위험 관리"
 description: Microsoft Purview Insider Risk Management guide for insider risk signals, policy design, privacy, investigation workflow and governance.
+sidebar_label: "내부자 위험 관리"
 ---
 
-# Insider Risk Management
+# 내부자 위험 관리
 
 <ScenarioLinks
   summary="내부자 위험을 조사할 때 어떤 신호를 살펴보고 누가 사례를 검토할지 정하는 문서입니다. 정책을 만들기 전에 조사 범위와 담당자의 권한부터 확인하세요."
@@ -150,6 +151,6 @@ Purview Insider Risk Management는 조직 내부의 위험 행위를 탐지하�
 - [Compliance Manager](./compliance-manager)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For insider risk policy design notes, investigation workflow templates, evidence handling procedures or executive risk reporting structures, use [Contact and Asset Request](../contact).
+<BriefingCTA />

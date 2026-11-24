@@ -1,9 +1,10 @@
 ---
-title: Google Workspace Migration
+title: "Google Workspace 마이그레이션"
 description: Google Workspace to Microsoft 365 migration guide for Gmail, Calendar, Drive, identity mapping, coexistence, security and user adoption.
+sidebar_label: "Google Workspace"
 ---
 
-# Google Workspace Migration
+# Google Workspace 마이그레이션
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -146,9 +147,9 @@ Assess Drive ownership and shared drives alongside mailbox migration. Use the in
 
 - [Migrate Google Workspace mailboxes](https://learn.microsoft.com/en-us/exchange/mailbox-migration/perform-g-suite-migration)
 - [Migration Manager for Google Workspace](https://learn.microsoft.com/en-us/sharepointmigration/mm-google-overview)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Google Workspace assessment templates, user mapping workbooks, shared drive inventory models, cutover plans or adoption communication samples, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 ## 검색 키워드
 

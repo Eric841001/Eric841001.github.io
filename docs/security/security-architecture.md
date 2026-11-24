@@ -1,12 +1,12 @@
 ---
 id: security-architecture
-title: Enterprise Security Architecture
+title: "기업 보안 아키텍처"
 description: "Enterprise Security Architecture - Modern enterprise security requires an integrated platform approach rather than isolated security products."
-sidebar_label: Security Architecture
+sidebar_label: "보안 아키텍처"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Security Architecture
+# 기업 보안 아키텍처
 
 <section aria-label="Enterprise security architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -608,6 +608,6 @@ The five levels below are an author-proposed planning model, not Microsoft's off
 - Microsoft 365 보안
 - 보안 아키텍처
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

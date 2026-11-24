@@ -1,13 +1,13 @@
 ---
 id: security-modernization-program
-title: Security Modernization Program
-sidebar_label: Security Modernization Program
+title: "보안 현대화 프로그램"
+sidebar_label: "보안 현대화 프로그램"
 sidebar_position: 4
 description: Microsoft Security modernization program for Zero Trust, Conditional Access, Defender, Purview, Intune, SaaS access and evidence-ready governance.
 toc_max_heading_level: 2
 ---
 
-# Security Modernization Program
+# 보안 현대화 프로그램
 
 <section aria-label="Security Modernization Program hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

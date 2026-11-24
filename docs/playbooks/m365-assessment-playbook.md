@@ -1,11 +1,11 @@
 ---
 id: m365-assessment-playbook
-title: Microsoft 365 Assessment Playbook
+title: "Microsoft 365 진단 플레이북"
 description: "Microsoft 365 Assessment Playbook - The Microsoft 365 Assessment Playbook provides a structured methodology for evaluating tenant configuration,..."
-sidebar_label: M365 Assessment
+sidebar_label: "M365 진단"
 ---
 
-# Microsoft 365 Assessment Playbook
+# Microsoft 365 진단 플레이북
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -326,6 +326,6 @@ Official sources: [Microsoft security adoption model](https://learn.microsoft.co
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

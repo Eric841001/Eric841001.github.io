@@ -1,7 +1,7 @@
 ---
 id: ai-agent-factory
-title: AI Agent Factory
-sidebar_label: AI Agent Factory
+title: "AI 에이전트 팩토리"
+sidebar_label: "AI 에이전트 팩토리"
 description: AI Agent Factory landing page for Copilot Studio, Agentic AI architecture, multi-agent framework, agent governance and enterprise AI operating model.
 keywords:
   - AI Agent Factory
@@ -12,7 +12,7 @@ keywords:
   - AI Agent 운영 모델
 ---
 
-# AI Agent Factory
+# AI 에이전트 팩토리
 
 <section aria-label="AI Agent Factory landing hero" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">

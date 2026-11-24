@@ -1,6 +1,7 @@
 ---
-title: Defender for Office 365
+title: "Defender for Office 365"
 description: Microsoft Defender for Office 365 architecture guide for phishing protection, Safe Links, Safe Attachments, quarantine, alert triage and user awareness.
+sidebar_label: "Defender for Office 365"
 ---
 
 # Defender for Office 365
@@ -261,6 +262,6 @@ Only one password submission is currently supported per quarantined message. Mul
 - [Safe Links in Defender for Office 365](https://learn.microsoft.com/en-us/defender-office-365/safe-links-about)
 - [Safe Attachments in Defender for Office 365](https://learn.microsoft.com/en-us/defender-office-365/safe-attachments-about)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For email security baseline checklists, anti-phishing policy reviews, quarantine governance guides or incident triage runbooks, use [Contact and Asset Request](../contact).
+<BriefingCTA />

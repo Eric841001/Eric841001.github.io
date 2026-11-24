@@ -1,9 +1,10 @@
 ---
-title: Data Lifecycle Management
+title: "데이터 수명 주기 관리"
 description: Microsoft Purview data lifecycle management guide for retention, deletion, records management, ownership, audit evidence and compliance operations.
+sidebar_label: "데이터 수명 주기"
 ---
 
-# Data Lifecycle Management
+# 데이터 수명 주기 관리
 
 <ScenarioLinks
   summary="문서를 얼마 동안 보관하고 언제 삭제할지 정할 때 쓰는 가이드입니다. 삭제 요청이 들어오면 먼저 해당 자료에 적용된 보존 설정을 살펴보세요."
@@ -152,6 +153,6 @@ SharePoint·OneDrive의 **Priority Cleanup 영구 삭제 옵션은 공개 미리
 - [Compliance Manager](./compliance-manager)
 - [Copilot Architecture](../architecture/copilot-architecture)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For retention policy matrices, data lifecycle assessment sheets, records management checklists or Copilot data cleanup planning templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

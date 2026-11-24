@@ -1,6 +1,7 @@
 ---
-title: Purview
+title: "Purview"
 description: Microsoft Purview guide for sensitivity labels, DLP, retention, audit, eDiscovery, Insider Risk and Copilot data protection readiness.
+sidebar_label: "Purview"
 ---
 
 # Purview

@@ -1,13 +1,13 @@
 ---
 id: case-study-enterprise-ai-agent-factory
-title: Enterprise AI Agent Factory Case Study
-sidebar_label: Enterprise AI Agent Factory
+title: "기업 AI 에이전트 팩토리 사례"
+sidebar_label: "AI 에이전트 팩토리 사례"
 sidebar_position: 8
 description: An anonymized customer success pattern for Copilot Studio, AI Agent prototyping, Agent Factory governance and enterprise AI adoption.
 toc_max_heading_level: 2
 ---
 
-# Enterprise AI Agent Factory Case Study
+# 기업 AI 에이전트 팩토리 사례
 
 <section aria-label="Enterprise AI Agent Factory case study hero" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
   <div className="kc-topic-hero__content">
@@ -228,6 +228,6 @@ Copilot Studio로 업무 자동화 후보를 검토하고 에이전트의 승인
 - [Multi-Agent Framework](../copilot/multi-agent-framework)
 - [Customer Success Reference Patterns](./customer-success-reference-patterns)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For sanitized AI Agent Factory reference narratives, agent portfolio templates or operating model workbooks, use [Contact and Asset Request](../contact).
+<BriefingCTA />

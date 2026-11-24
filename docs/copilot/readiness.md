@@ -1,18 +1,16 @@
 ---
 id: readiness
-title: Copilot Readiness Assessment Framework
+title: "Copilot 도입 준비도 평가"
 description: "Copilot Readiness Assessment Framework - Microsoft 365 Copilot adoption should not begin with license assignment."
-sidebar_label: Copilot Readiness
+sidebar_label: "도입 준비도 평가"
 toc_max_heading_level: 2
 ---
 
-# Copilot Readiness Assessment Framework
+# Copilot 도입 준비도 평가
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 
 <UpdateBrief />
-
-
 
 <section aria-label="Copilot readiness assessment hero" className="kc-topic-hero kc-topic-hero--agent">
   <div className="kc-topic-hero__content">
@@ -497,7 +495,6 @@ Before Copilot rollout, leadership should confirm:
 
 ## References
 
-
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
 - Microsoft 365 Copilot Documentation
@@ -514,6 +511,6 @@ Before Copilot rollout, leadership should confirm:
 - Copilot 도입
 - AI 에이전트 운영 모델
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />

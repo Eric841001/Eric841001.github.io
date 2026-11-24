@@ -9,3 +9,7 @@
 .p{font-size:13.5px;line-height:1.6;color:var(--c-muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .go{margin-top:auto;font:700 13.5px var(--c-sans);color:var(--c-accent)}
 @media (prefers-reduced-motion:reduce){.tile{transition:none}}
+/* 에디토리얼 */
+.tag{font:600 12px var(--c-sans);background:none;border:1px solid var(--c-line2);color:var(--c-muted)}
+.tile{border-radius:var(--c-r)}
+.tile strong,.tile b{font-family:var(--c-serif);font-weight:700;letter-spacing:-.015em}

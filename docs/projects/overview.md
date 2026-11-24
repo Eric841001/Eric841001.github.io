@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Projects Library
+title: "프로젝트 사례"
 description: Anonymized Microsoft 365, Security, Copilot, Azure, migration and governance project patterns with reusable consulting assets and customer success references.
 toc_max_heading_level: 2
+sidebar_label: "프로젝트 사례 개요"
 ---
 
-# Projects Library
+# 프로젝트 사례
 
 <ScenarioLinks
   summary="비슷한 환경의 사례에서 설계할 때 고려한 점과 운영 방식을 찾아보세요."
@@ -240,6 +241,6 @@ Each project will be documented with:
 - Copilot 도입 사례
 - Microsoft 365 제안 산출물
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For sanitized reference narratives, proposal-ready customer success patterns or reusable project artifact structures, use [Contact and Asset Request](../contact). Customer names and confidential project details are not needed for the first discussion.
+<BriefingCTA />

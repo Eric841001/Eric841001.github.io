@@ -1,23 +1,18 @@
 ---
 id: adoption-program
-title: Enterprise Copilot Adoption Program Framework
+title: "기업용 Copilot 도입 프로그램"
 description: "Enterprise Copilot Adoption Program Framework - Microsoft 365 Copilot adoption is not a one time training program."
-sidebar_label: Copilot Adoption Program
+sidebar_label: "Copilot 도입 프로그램"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Copilot Adoption Program Framework
+# 기업용 Copilot 도입 프로그램
 
 <ReadingControls />
-
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 
 <UpdateBrief />
-
-
-
-
 
 <ReadingSection open>
 <ReadingSummary>
@@ -26,7 +21,6 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 </ReadingSummary>
 
-
 Microsoft 365 Copilot adoption is not a one-time training program.
 
 This proposed operating model combines education, champions, user support, feedback, governance and measurement. Adjust staffing and review cadence to the rollout scope.
@@ -34,7 +28,6 @@ This proposed operating model combines education, champions, user support, feedb
 This framework provides a reusable operating model for planning, scaling and sustaining Copilot adoption across large enterprise organizations.
 
 > **Executive lens:** Copilot adoption should be managed as a repeatable change system: business scenarios, champions, governance, support, measurement and continuous improvement must move together.
-
 
 </ReadingSection>
 
@@ -98,14 +91,12 @@ This framework provides a reusable operating model for planning, scaling and sus
 
 </ReadingSection>
 
-
 <ReadingSection>
 <ReadingSummary>
 
 ## Current Model Adoption Signal {/* #gpt-56-adoption-signal */}
 
 </ReadingSummary>
-
 
 available reasoning models change the adoption conversation from "Can users prompt Copilot?" to "Can users apply stronger reasoning to real work with the right model, data boundary and review behavior?"
 
@@ -163,7 +154,6 @@ The best message for users is simple: start with everyday work, use the right mo
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -172,7 +162,6 @@ The best message for users is simple: start with everyday work, use the right mo
 ## Why Copilot Adoption Fails
 
 </ReadingSummary>
-
 
 Review these potential adoption risks during planning:
 
@@ -189,7 +178,6 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -198,7 +186,6 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 ## Adoption Operating System
 
 </ReadingSummary>
-
 
 <div aria-label="Copilot adoption operating system" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -236,7 +223,6 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -245,7 +231,6 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 ## Operating Model Components
 
 </ReadingSummary>
-
 
 | Component | Purpose |
 |---|---|
@@ -258,7 +243,6 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -267,7 +251,6 @@ Copilot adoption should be managed as an operating system, not as a temporary pr
 ## PMO and Orchestration Model
 
 </ReadingSummary>
-
 
 A dedicated PMO should operate as the control tower for the adoption program.
 
@@ -282,7 +265,6 @@ The PMO should connect leadership, business units, IT, security, Microsoft stake
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -291,7 +273,6 @@ The PMO should connect leadership, business units, IT, security, Microsoft stake
 ## Capability-Based Resource Model
 
 </ReadingSummary>
-
 
 The adoption team should be structured by capability, not only by headcount.
 
@@ -306,7 +287,6 @@ The adoption team should be structured by capability, not only by headcount.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -315,7 +295,6 @@ The adoption team should be structured by capability, not only by headcount.
 ## Champion Program Framework
 
 </ReadingSummary>
-
 
 Adoption requires both top-down sponsorship and bottom-up engagement.
 
@@ -359,7 +338,6 @@ Adoption requires both top-down sponsorship and bottom-up engagement.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -368,7 +346,6 @@ Adoption requires both top-down sponsorship and bottom-up engagement.
 ## Champion Responsibilities
 
 </ReadingSummary>
-
 
 Champions should:
 
@@ -382,7 +359,6 @@ Champions should:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -391,7 +367,6 @@ Champions should:
 ## Education Framework
 
 </ReadingSummary>
-
 
 Copilot education should be customized by role, maturity and scenario.
 
@@ -405,7 +380,6 @@ Copilot education should be customized by role, maturity and scenario.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -414,7 +388,6 @@ Copilot education should be customized by role, maturity and scenario.
 ## Customized Learning Model
 
 </ReadingSummary>
-
 
 Training should be based on real business scenarios.
 
@@ -462,7 +435,6 @@ Training should be based on real business scenarios.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -471,7 +443,6 @@ Training should be based on real business scenarios.
 ## Training Delivery Model
 
 </ReadingSummary>
-
 
 | Dimension | Options |
 |---|---|
@@ -482,7 +453,6 @@ Training should be based on real business scenarios.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -491,7 +461,6 @@ Training should be based on real business scenarios.
 ## Community Engagement Model
 
 </ReadingSummary>
-
 
 A Copilot community should be operated as an always-on adoption hub.
 
@@ -541,7 +510,6 @@ A Copilot community should be operated as an always-on adoption hub.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -550,7 +518,6 @@ A Copilot community should be operated as an always-on adoption hub.
 ## Promptathon and Agentathon Program
 
 </ReadingSummary>
-
 
 Test workshop outputs in real tasks and measure their effect before expanding them.
 
@@ -601,7 +568,6 @@ Test workshop outputs in real tasks and measure their effect before expanding th
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -610,7 +576,6 @@ Test workshop outputs in real tasks and measure their effect before expanding th
 ## Managed Service Framework
 
 </ReadingSummary>
-
 
 Managed service should not be limited to ticket processing.
 
@@ -660,7 +625,6 @@ It should operate as an adoption enablement function.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -669,7 +633,6 @@ It should operate as an adoption enablement function.
 ## Engagement and Support Channels
 
 </ReadingSummary>
-
 
 Recommended user support channels include:
 
@@ -683,7 +646,6 @@ Recommended user support channels include:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -692,7 +654,6 @@ Recommended user support channels include:
 ## VOC and Feedback Management
 
 </ReadingSummary>
-
 
 VOC should be treated as an adoption improvement engine.
 
@@ -745,7 +706,6 @@ VOC should be treated as an adoption improvement engine.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -754,7 +714,6 @@ VOC should be treated as an adoption improvement engine.
 ## Adoption Analytics and KPI Framework
 
 </ReadingSummary>
-
 
 Adoption must be measurable.
 
@@ -781,7 +740,6 @@ Adoption must be measurable.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -790,7 +748,6 @@ Adoption must be measurable.
 ## 12-Month Adoption Roadmap
 
 </ReadingSummary>
-
 
 <div aria-label="12-month Copilot adoption roadmap" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -823,7 +780,6 @@ Adoption must be measurable.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -832,7 +788,6 @@ Adoption must be measurable.
 ## Governance and Operating Cadence
 
 </ReadingSummary>
-
 
 | Cadence | Participants | Agenda |
 |---|---|---|
@@ -843,7 +798,6 @@ Adoption must be measurable.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -852,7 +806,6 @@ Adoption must be measurable.
 ## Communication Governance
 
 </ReadingSummary>
-
 
 | Layer | Stakeholder | Responsibility |
 |---|---|---|
@@ -863,7 +816,6 @@ Adoption must be measurable.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -872,7 +824,6 @@ Adoption must be measurable.
 ## Recommended Curriculum
 
 </ReadingSummary>
-
 
 ### 1. Copilot Fundamentals
 
@@ -926,7 +877,6 @@ Adoption must be measurable.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -935,7 +885,6 @@ Adoption must be measurable.
 ## Deliverables
 
 </ReadingSummary>
-
 
 An enterprise Copilot adoption program should produce:
 
@@ -952,7 +901,6 @@ An enterprise Copilot adoption program should produce:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -961,7 +909,6 @@ An enterprise Copilot adoption program should produce:
 ## Success Factors
 
 </ReadingSummary>
-
 
 Include these responsibilities in the adoption plan:
 
@@ -976,7 +923,6 @@ Include these responsibilities in the adoption plan:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -984,15 +930,10 @@ Include these responsibilities in the adoption plan:
 
 ## References
 
-
-
 </ReadingSummary>
 
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
-
-
-
 
 </ReadingSection>
 
@@ -1003,7 +944,6 @@ Include these responsibilities in the adoption plan:
 
 </ReadingSummary>
 
-
 - Microsoft 365 Copilot
 - Copilot Studio
 - AI Agent governance
@@ -1012,17 +952,15 @@ Include these responsibilities in the adoption plan:
 - Copilot 도입
 - AI 에이전트 운영 모델
 
-
 </ReadingSection>
 
 <ReadingSection>
 <ReadingSummary>
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
 </ReadingSummary>
 
-
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 </ReadingSection>

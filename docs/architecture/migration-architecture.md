@@ -1,13 +1,12 @@
 ---
 id: migration-architecture
-title: Migration Architecture
-sidebar_label: Migration Architecture
+title: "마이그레이션 아키텍처"
+sidebar_label: "마이그레이션 아키텍처"
 description: Microsoft 365 migration architecture for tenant-to-tenant, Google Workspace, Exchange, Teams, SharePoint, OneDrive and file server modernization.
 toc_max_heading_level: 2
 ---
 
-# Migration Architecture
-
+# 마이그레이션 아키텍처
 
 <section aria-label="Migration architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -188,13 +187,12 @@ Typical migration scenarios include:
 
 ## References
 
-
 - [Microsoft 365 tenant-to-tenant migrations](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-tenant-to-tenant-migrations)
 - [Cross-tenant synchronization](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview)
 - [Microsoft 365 Reference Architecture](./m365-reference-architecture)
 - [Security Reference Architecture](./security-reference-architecture)
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

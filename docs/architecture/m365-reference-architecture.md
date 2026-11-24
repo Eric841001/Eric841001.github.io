@@ -1,12 +1,12 @@
 ---
 id: m365-reference-architecture
-title: Microsoft 365 Reference Architecture
-sidebar_label: M365 Reference Architecture
+title: "Microsoft 365 참조 아키텍처"
+sidebar_label: "M365 참조 아키텍처"
 description: Microsoft 365 reference architecture for Entra ID, Exchange, Teams, SharePoint, OneDrive, Security, Purview, Copilot readiness and governance.
 toc_max_heading_level: 2
 ---
 
-# Microsoft 365 Reference Architecture
+# Microsoft 365 참조 아키텍처
 
 <section aria-label="Microsoft 365 reference architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -476,7 +476,6 @@ Recommended phased approach:
 
 ## References
 
-
 - [Azure Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)
 - [Microsoft 365 service descriptions](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 - [Security Reference Architecture](./security-reference-architecture)
@@ -484,6 +483,6 @@ Recommended phased approach:
 - [Governance Architecture](./governance-architecture)
 - [Migration Architecture](./migration-architecture)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

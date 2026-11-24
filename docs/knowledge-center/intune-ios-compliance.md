@@ -1,11 +1,11 @@
 ---
 id: intune-ios-compliance
-title: Intune iOS Compliance Policy
-sidebar_label: iOS Compliance Policy
+title: "Intune iOS 규정 준수 정책"
+sidebar_label: "iOS 규정 준수"
 description: Intune iOS compliance policy guide for passcode, OS version, jailbreak detection, encryption, Conditional Access and mobile governance.
 ---
 
-# Intune iOS Compliance Policy
+# Intune iOS 규정 준수 정책
 
 ## Executive Summary
 
@@ -155,6 +155,6 @@ If no threat service is integrated, leave its dependent compliance setting **Not
 - [Intune USB Whitelist](./intune-usb-whitelist)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For an editable iOS compliance policy matrix, pilot validation checklist or Conditional Access evidence template, use [Contact and Asset Request](../contact).
+<BriefingCTA />

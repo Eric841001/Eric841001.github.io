@@ -1,11 +1,11 @@
 ---
 id: conditional-access
-title: Conditional Access
-sidebar_label: Conditional Access
+title: "조건부 액세스"
+sidebar_label: "조건부 액세스"
 description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA, compliant devices, risk policies and Copilot access control.
 ---
 
-# Conditional Access
+# 조건부 액세스
 
 <ScenarioLinks
   summary="조건부 액세스 정책을 켜기 전에 누구의 어떤 로그인이 영향을 받는지 확인하세요. 긴급 접근 계정의 로그인 경로와 위험 사용자의 복구 절차도 함께 점검할 수 있습니다."
@@ -65,13 +65,11 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 
 종료된 기존 `memberOf` 미리 보기 방식의 그룹은 2026년 11월 3일 이후 구성원이 갱신되지 않습니다. 후속 **MemberOf Next**로 전환하려면 Entra ID Governance와 Standard 우선순위가 필요합니다. 전환 후에도 하루 두 번 갱신되므로, 즉시 접근을 차단해야 하는 용도로 의존하지 마세요. [ID 설계 문서의 전환 안내](../azure/identity#memberof-retirement-2026)에 따라 처리 상태와 정책의 포함·제외 대상, 실제 로그인 결과를 확인합니다. 긴급 접근 계정의 제외 설정도 함께 확인하세요.
 
-
 ## License and rollout verification — 2026-10-25
 
 [Microsoft's overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) requires **Entra ID P1** for Conditional Access; Business Premium also includes access. **User/sign-in risk policies require P2**, as described in [Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing).
 
 Agent policies have separate licensing and identity targeting rules. The current [agent policy documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id) lists **Microsoft 365 E7**, or **Microsoft Agent 365 paired with at least Entra P1 or Microsoft 365 E3**, as licensing options. The general overview still marks agent targeting as preview; verify the specific policy's release status in the linked scenario documentation and your tenant rather than declaring all agent controls GA or preview together. A policy targeting an agent identity does not automatically cover delegated user access or an agent user account. Validate the token subject, policy target and report-only results before enforcement.
-
 
 ## Microsoft 관리형 정책과 위험 해결 {/* #managed-risk-remediation */}
 
@@ -87,7 +85,6 @@ Microsoft가 만든 정책도 직접 만든 정책과 함께 점검해야 합니
 보고 전용 결과와 로그인 기록을 검토한 뒤 적용 범위를 정하세요. 활성화 일정은 테넌트마다 다를 수 있습니다.
 
 출처: [Microsoft 관리형 정책](https://learn.microsoft.com/en-us/entra/identity/conditional-access/managed-policies), [위험 해결과 사용자 차단 해제](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock).
-
 
 ## Executive Summary
 
@@ -393,6 +390,6 @@ Copilot access control should not be designed as a standalone AI policy. It shou
 - Entra ID 보안 정책
 - Conditional Access 컨설팅
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Conditional Access policy matrices, report-only rollout checklists, exception registers or Copilot access-control templates, use [Contact and Asset Request](/knowledge/contact).
+<BriefingCTA />

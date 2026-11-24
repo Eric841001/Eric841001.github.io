@@ -1,12 +1,12 @@
 ---
 id: timeline-template
-title: Timeline Template
+title: "일정표 양식"
 description: "Timeline Template - The Timeline Template provides a standard project schedule structure for Microsoft 365, Azure, Security, Copilot and migration..."
-sidebar_label: Timeline Template
+sidebar_label: "일정표 양식"
 toc_max_heading_level: 2
 ---
 
-# Timeline Template
+# 일정표 양식
 
 <section aria-label="Timeline Template hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -233,6 +233,6 @@ This timeline is typically used for:
 - migration timeline
 - 프로젝트 일정표
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

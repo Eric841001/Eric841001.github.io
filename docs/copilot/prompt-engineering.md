@@ -1,12 +1,12 @@
 ---
 id: prompt-engineering
-title: Enterprise Prompt Engineering Framework
+title: "기업용 프롬프트 설계 프레임워크"
 description: "Enterprise Prompt Engineering Framework - This guide covers prompt design, reuse and review as part of a Microsoft Copilot adoption program."
-sidebar_label: Prompt Engineering
+sidebar_label: "프롬프트 설계"
 toc_max_heading_level: 2
 ---
 
-# Enterprise Prompt Engineering Framework
+# 기업용 프롬프트 설계 프레임워크
 
 ## Executive Summary
 
@@ -565,7 +565,6 @@ Enterprise AI Operating System
 
 ## References
 
-
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
 - Microsoft Copilot Adoption Framework
@@ -580,6 +579,6 @@ Enterprise AI Operating System
 - Copilot 도입
 - AI 에이전트 운영 모델
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />

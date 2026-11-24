@@ -1,11 +1,11 @@
 ---
 id: mde-atomic-red-team
-title: Microsoft Defender Validation with Atomic Red Team
+title: "Atomic Red Team으로 Defender 탐지 검증"
 description: "Microsoft Defender Validation with Atomic Red Team - Atomic Red Team provides ATT&CK-mapped adversary simulation tests used to validate Microsoft Defender..."
-sidebar_label: Atomic Red Team
+sidebar_label: "Atomic Red Team 검증"
 ---
 
-# Microsoft Defender Validation with Atomic Red Team
+# Atomic Red Team으로 Defender 탐지 검증
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -227,6 +227,6 @@ Atomic Red Team으로 Defender for Endpoint와 Defender XDR의 탐지·기록·�
 - Atomic Red Team 보안 테스트
 - Defender XDR Incident 검증
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-고객 환경에서 Atomic Red Team 기반 검증 계획, MITRE 기법 연결표와 SOC 인수인계 점검표가 필요하면 [Contact and Asset Request](../contact)를 통해 공개 가능한 양식을 요청할 수 있습니다.
+<BriefingCTA />

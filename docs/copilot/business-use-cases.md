@@ -1,12 +1,12 @@
 ---
 id: business-use-cases
-title: Copilot Business Use Cases
+title: "Copilot 업무 활용 사례"
 description: "Copilot Business Use Cases - Evaluate Microsoft 365 Copilot against specific business tasks, baseline effort and reviewed output quality."
-sidebar_label: Business Use Cases
+sidebar_label: "업무 활용 사례"
 toc_max_heading_level: 2
 ---
 
-# Copilot Business Use Cases
+# Copilot 업무 활용 사례
 
 ## Executive Summary
 
@@ -440,7 +440,6 @@ Organizations should prioritize:
 
 ## References
 
-
 - [Microsoft Copilot adoption and onboarding](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-enablement-resources)
 - [Microsoft Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes)
 - Microsoft Work Trend Index
@@ -456,6 +455,6 @@ Organizations should prioritize:
 
 [E3·E5·E7 비교](../microsoft365/e3-vs-e5)에서 포함 기능과 추가 구독, Teams 구성과 비용을 확인할 수 있습니다.
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />

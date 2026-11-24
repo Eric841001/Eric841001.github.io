@@ -1,12 +1,12 @@
 ---
 id: teams
-title: Microsoft Teams Governance Framework
+title: "Microsoft Teams 거버넌스"
 description: "Microsoft Teams Governance Framework - Microsoft Teams is the primary collaboration platform within Microsoft 365."
-sidebar_label: Teams Governance
+sidebar_label: "Teams 거버넌스"
 toc_max_heading_level: 2
 ---
 
-# Microsoft Teams Governance Framework
+# Microsoft Teams 거버넌스
 
 ## Executive Summary
 
@@ -590,7 +590,6 @@ The following targets are planning examples to agree with the organization, not 
 
 ## References
 
-
 - [Microsoft Teams administration](https://learn.microsoft.com/en-us/microsoftteams/teams-overview)
 - Microsoft Teams Governance Guidance
 - Microsoft Purview Documentation
@@ -607,6 +606,6 @@ The following targets are planning examples to agree with the organization, not 
 - Microsoft 365 컨설팅
 - Microsoft 365 운영 모델
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

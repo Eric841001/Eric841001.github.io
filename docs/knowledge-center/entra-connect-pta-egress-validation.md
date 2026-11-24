@@ -1,12 +1,12 @@
 ---
 id: entra-connect-pta-egress-validation
-title: Microsoft Entra Connect and PTA Egress Validation
+title: "Entra Connect·PTA 외부 통신 검증"
 description: "A validation-led method for designing restricted egress rules for Microsoft Entra Connect Sync and Pass-through Authentication without treating every proxy deny as a required endpoint."
-sidebar_label: Entra Connect & PTA Egress
+sidebar_label: "Entra Connect·PTA 통신"
 toc_max_heading_level: 3
 ---
 
-# Microsoft Entra Connect and PTA Egress Validation
+# Entra Connect·PTA 외부 통신 검증
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>

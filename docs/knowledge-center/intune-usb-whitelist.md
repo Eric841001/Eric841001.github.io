@@ -1,11 +1,11 @@
 ---
 id: intune-usb-whitelist
-title: Intune USB Device Whitelist Control
-sidebar_label: Intune USB Whitelist
+title: "Intune USB 장치 허용 목록 제어"
+sidebar_label: "USB 허용 목록"
 description: Intune USB whitelist control guide for Defender Device Control, approved removable media, audit mode, enforcement rollout and operational governance.
 ---
 
-# Intune USB Device Whitelist Control
+# Intune USB 장치 허용 목록 제어
 
 ## Executive Summary
 

@@ -1,13 +1,13 @@
 ---
 id: case-study-enterprise-group-governance
-title: Enterprise Group Governance Case Study
-sidebar_label: Enterprise Group Governance
+title: "그룹사 거버넌스 사례"
+sidebar_label: "그룹사 거버넌스 사례"
 sidebar_position: 10
 description: Anonymized enterprise group governance case study for Entra ID, Intune, Microsoft 365, multi-tenant operating model and policy workbook design.
 toc_max_heading_level: 2
 ---
 
-# Enterprise Group Governance Case Study
+# 그룹사 거버넌스 사례
 
 <section aria-label="Enterprise group governance case study hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

@@ -506,6 +506,6 @@ Work IQ는 Copilot Studio에서 정식 제공되며, **Microsoft Copilot harness
 
 Copilot 공식 업데이트, Microsoft 365 Agents, Copilot Studio harness, Work IQ, Copilot 변경 관리.
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-실제 조직의 도입·검증 계획은 [Contact and Asset Request](/knowledge/contact)에서 문의할 수 있습니다.
+<BriefingCTA />

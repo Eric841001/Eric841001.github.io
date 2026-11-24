@@ -1,12 +1,12 @@
 ---
 id: tenant-to-tenant
-title: Microsoft 365 Tenant-to-Tenant Migration Playbook
+title: "Microsoft 365 테넌트 간 마이그레이션"
 description: "Microsoft 365 Tenant to Tenant Migration Playbook - Tenant to Tenant Migration is the process of moving users, identities, mailboxes, files,..."
-sidebar_label: Tenant-to-Tenant Migration
+sidebar_label: "테넌트 간 마이그레이션"
 toc_max_heading_level: 2
 ---
 
-# Microsoft 365 Tenant-to-Tenant Migration Playbook
+# Microsoft 365 테넌트 간 마이그레이션
 
 ## Executive Summary
 
@@ -679,6 +679,6 @@ Define acceptance per workload and reconcile every skipped or failed item. The p
 - Microsoft 365 마이그레이션
 - 마이그레이션 체크리스트
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For migration assessment workbooks, wave planning sheets, cutover runbooks, rollback plans or hypercare trackers, use [Contact and Asset Request](../contact).
+<BriefingCTA />

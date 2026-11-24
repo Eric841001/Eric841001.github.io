@@ -3,18 +3,18 @@ module.exports = {
     {
       type: 'doc',
       id: 'intro',
-      label: 'Youngsun Kang Enterprise Platform',
+      label: 'Microsoft 기술 지식센터',
     },
 
     {
       type: 'category',
-      label: 'Knowledge Center',
+      label: '운영 문제 해결',
       collapsed: true,
       items: [
         'knowledge-center/overview',
         {
           type: 'category',
-          label: 'Search & Topic Landing',
+          label: '주제별 검색',
           collapsed: true,
           items: [
             'search/enterprise-microsoft-architecture-keywords',
@@ -28,7 +28,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Microsoft 365 Operations',
+          label: 'Microsoft 365 운영',
           collapsed: true,
           items: [
             'knowledge-center/m365-cloud-only-save-as',
@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Security & Access Controls',
+          label: '보안·접근 제어',
           collapsed: true,
           items: [
             'knowledge-center/onedrive-limited-access-read-only',
@@ -51,7 +51,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Intune Endpoint Management',
+          label: 'Intune 장치 관리',
           collapsed: true,
           items: [
             'knowledge-center/intune-0x80180031',
@@ -63,7 +63,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Defender Endpoint Operations',
+          label: 'Defender 엔드포인트 운영',
           collapsed: true,
           items: [
             'knowledge-center/mde-macos-onboarding',
@@ -74,7 +74,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Research & Community',
+          label: '자료·커뮤니티',
           collapsed: true,
           items: ['knowledge-center/mvp-community-research-map'],
         },
@@ -110,7 +110,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Security',
+      label: '보안',
       collapsed: true,
       items: [
         'security/overview',
@@ -158,7 +158,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Migration',
+      label: '마이그레이션',
       collapsed: true,
       items: [
         'migration/overview',
@@ -172,7 +172,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Licensing',
+      label: '라이선스',
       collapsed: true,
       items: [
         'licensing/overview',
@@ -184,7 +184,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Architecture',
+      label: '설계도',
       collapsed: true,
       items: [
         'architecture/overview',
@@ -200,7 +200,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Playbooks',
+      label: '도입 절차',
       collapsed: true,
       items: [
         {
@@ -212,7 +212,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Proposal Center',
+      label: '제안 센터',
       collapsed: true,
       items: [
         'proposal/overview',
@@ -228,7 +228,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Toolkit',
+      label: '도구 모음',
       collapsed: true,
       items: [
         'toolkit/overview',
@@ -242,7 +242,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Projects',
+      label: '프로젝트 사례',
       collapsed: true,
       items: [
         'projects/overview',
@@ -262,7 +262,7 @@ module.exports = {
 
     {
       type: 'category',
-      label: 'Downloads',
+      label: '자료실',
       collapsed: true,
       link: {
         type: 'doc',

@@ -1,12 +1,12 @@
 ---
 id: risk-register-template
-title: Risk Register Template
+title: "위험 관리 대장 양식"
 description: "Risk Register Template - This Risk Register provides a structured framework for identifying, assessing, tracking and mitigating project risks."
-sidebar_label: Risk Register
+sidebar_label: "위험 관리 대장"
 toc_max_heading_level: 2
 ---
 
-# Risk Register Template
+# 위험 관리 대장 양식
 
 <section aria-label="Risk Register asset hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

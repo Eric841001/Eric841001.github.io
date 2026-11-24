@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Security
+title: "보안"
 toc_max_heading_level: 2
 description: Microsoft Security architecture guide covering Zero Trust, Conditional Access, Defender, Purview, DLP and Copilot data protection.
+sidebar_label: "보안 개요"
 ---
 
-# Security
+# 보안
 
 <ScenarioLinks
   summary="로그인 제어, 위협 조사, 민감한 자료 보호 중 지금 점검할 업무를 선택하세요."
@@ -172,6 +173,6 @@ Microsoft 365의 계정·기기·메일 보안과 데이터 보호 문서를 모
 - Copilot 도입 전 데이터 보안 검토
 - 금융·제조·SaaS 환경의 감사 대응을 위한 보안 설계
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

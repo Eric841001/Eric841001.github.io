@@ -1,13 +1,12 @@
 ---
 id: security-reference-architecture
-title: Security Reference Architecture
-sidebar_label: Security Architecture
+title: "보안 참조 아키텍처"
+sidebar_label: "보안 아키텍처"
 description: Microsoft Security reference architecture for Zero Trust, Entra ID, Conditional Access, Defender, Purview, DLP and security operations.
 toc_max_heading_level: 2
 ---
 
-# Security Reference Architecture
-
+# 보안 참조 아키텍처
 
 <section aria-label="Security reference architecture hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -174,13 +173,12 @@ E7에는 E5의 보호 기능과 Copilot·Entra Suite·Agent 365가 포함됩니�
 
 ## References
 
-
 - [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
 - [Microsoft Defender XDR overview](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender)
 - [Security Overview](../security/overview)
 - [Conditional Access](../security/conditional-access)
 - [Purview](../security/purview)
 - [Executive Architecture Blueprint](./executive-architecture-blueprint)
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

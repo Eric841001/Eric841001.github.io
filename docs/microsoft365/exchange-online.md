@@ -1,12 +1,12 @@
 ---
 id: exchange-online
-title: Exchange Online Architecture and Migration Guide
+title: "Exchange Online 아키텍처와 마이그레이션"
 description: "Exchange Online Architecture and Migration Guide - Exchange Online is Microsoft's enterprise cloud messaging platform and serves as the foundation for..."
-sidebar_label: Exchange Online
+sidebar_label: "Exchange Online"
 toc_max_heading_level: 2
 ---
 
-# Exchange Online Architecture and Migration Guide
+# Exchange Online 아키텍처와 마이그레이션
 
 ## Executive Summary
 
@@ -571,6 +571,6 @@ Validate:
 - Microsoft 365 컨설팅
 - Microsoft 365 운영 모델
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

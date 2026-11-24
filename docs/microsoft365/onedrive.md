@@ -1,6 +1,7 @@
 ---
-title: OneDrive
+title: "OneDrive"
 description: OneDrive enterprise architecture guide for personal work files, sync governance, sharing control, retention, DLP, migration and Copilot readiness.
+sidebar_label: "OneDrive"
 ---
 
 # OneDrive
@@ -187,6 +188,6 @@ Explain which files belong in OneDrive and which belong in shared Teams or Share
 - [Copilot Readiness](../copilot/readiness)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For a OneDrive governance matrix, Known Folder Move rollout checklist or Copilot data readiness workbook, use [Contact and Asset Request](../contact).
+<BriefingCTA />

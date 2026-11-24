@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
-title: Copilot
+title: "Copilot"
 description: Microsoft 365 Copilot readiness, model availability, Copilot Studio, AI Agent, Copilot Cowork, governance and ROI guide for enterprise programs.
 hide_title: true
+sidebar_label: "Copilot 개요"
 ---
 
 <HubHeader
@@ -339,9 +340,9 @@ Copilot Studio와 M365 Agents를 배포할 때는 에이전트 목록과 담당�
 - Copilot 사용량과 라이선스 비용 대비 효과 측정
 - 데이터 유출 위험을 줄이기 위한 Purview / DLP 연계 설계
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](/knowledge/contact).
+<BriefingCTA />
 
 ## Official Update Review
 

@@ -15,3 +15,6 @@
 @media (max-width:1000px){.atlas{grid-template-columns:1fr}.layer{display:grid;grid-template-columns:1fr 1fr}.lname{grid-column:1/-1}.area{min-height:190px}}
 @media (max-width:520px){.layer{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.area{transition:none}}
+/* 에디토리얼 */
+.lname b,.area strong{font-family:var(--c-serif);font-weight:700;letter-spacing:-.02em}
+.k{font-family:var(--c-sans);font-weight:600;letter-spacing:0}

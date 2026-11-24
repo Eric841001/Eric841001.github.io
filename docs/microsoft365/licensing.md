@@ -1,9 +1,10 @@
 ---
-title: Licensing
+title: "Microsoft 365 라이선스 구성"
 description: Microsoft 365 licensing architecture guide for Business Premium, E3, E5, E7, add-ons, Copilot readiness, security controls and CFO review.
+sidebar_label: "라이선스 구성"
 ---
 
-# Microsoft 365 Licensing
+# Microsoft 365 라이선스 구성
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -143,6 +144,6 @@ Explain required capabilities, expected costs, deployment responsibilities and t
 - Microsoft 365 license optimization
 - Microsoft 365 라이선스
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Microsoft 365 assessment workbooks, governance matrices, rollout plans or executive roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

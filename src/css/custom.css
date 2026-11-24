@@ -4065,7 +4065,7 @@ html[class*="docusaurus-search-local"] .main-wrapper h1::after,
   inset-inline-end: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url('/img/home/knowledge-weave.webp') 50% 0 / 100% 4800% no-repeat;
+  background: none;
 }
 .theme-doc-markdown > header:has(> h1)::before {
   content: "";
@@ -4087,7 +4087,7 @@ html[class*="docusaurus-search-local"] .main-wrapper h1::after,
 @media (prefers-reduced-motion: no-preference) {
   .theme-doc-markdown > header:has(> h1)::after,
   html[class*="docusaurus-search-local"] .main-wrapper h1::after,
-  .plugin-native main .hero__title::after { animation: knowledge-weave-turn 3s steps(47,end) both; }
+  .plugin-native main .hero__title::after { animation: none; }
   .theme-doc-markdown :is(nav a,.kc-topic-button), .pagination-nav__link,
   .menu__link, .navbar__item.navbar__link { transition: background-color .18s ease, box-shadow .18s ease, transform .18s ease; }
   @media (hover:hover) {

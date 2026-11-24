@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-title: Architecture Center
+title: "설계도"
 toc_max_heading_level: 2
 description: "Architecture Center - The Architecture Center organizes Microsoft cloud reference architectures, design patterns and decision frameworks for enterprise..."
+sidebar_label: "설계도 개요"
 ---
 
-# Architecture Center
+# 설계도
 
 ## 영역별 설계도 {/* #visual-architecture-map */}
 
@@ -117,6 +118,6 @@ Good architecture is not only a diagram. It must explain why a design is needed,
 - Copilot 거버넌스
 - Zero Trust architecture
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For an executive architecture blueprint, reference architecture diagram, decision log or architecture review checklist, use [Contact and Asset Request](../contact).
+<BriefingCTA />

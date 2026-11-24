@@ -1,11 +1,11 @@
 ---
-title: Executive Architecture Blueprint
-sidebar_label: Executive Blueprint
+title: "경영진용 아키텍처 청사진"
+sidebar_label: "경영진용 청사진"
 description: Executive-level Microsoft enterprise architecture blueprint connecting Microsoft 365, Security, Copilot, Azure, Migration, Governance and delivery assets.
 toc_max_heading_level: 2
 ---
 
-# Executive Architecture Blueprint
+# 경영진용 아키텍처 청사진
 
 This blueprint explains how the major areas of this Knowledge Center connect into one enterprise Microsoft platform architecture.
 
@@ -225,6 +225,6 @@ For customer workshops, use this sequence:
 - [Proposal Center](../proposal/overview)
 - [Customer Success Reference Patterns](../projects/customer-success-reference-patterns)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For architecture decision records, reference diagrams, executive summaries, review checklists or roadmap templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

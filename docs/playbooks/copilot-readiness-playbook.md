@@ -1,11 +1,11 @@
 ---
 id: copilot-readiness-playbook
-title: Copilot Readiness Playbook
+title: "Microsoft 365 Copilot 도입 준비 플레이북"
 description: "Microsoft 365 Copilot Readiness Playbook - Microsoft 365 Copilot readiness is not a technical deployment activity."
-sidebar_label: Copilot Readiness
+sidebar_label: "Copilot 도입 준비"
 ---
 
-# Microsoft 365 Copilot Readiness Playbook
+# Microsoft 365 Copilot 도입 준비 플레이북
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -424,7 +424,6 @@ Treat this as a case observation; current mailbox requirements vary by experienc
 
 ## References
 
-
 - [Minimum requirements to deploy Microsoft 365 Copilot in your organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements)
 - [Microsoft 365 app and network requirements for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-requirements)
 - [Learn about retention for Copilot and AI apps](https://learn.microsoft.com/en-us/purview/retention-policies-copilot)
@@ -433,7 +432,6 @@ Treat this as a case observation; current mailbox requirements vary by experienc
 The troubleshooting pattern above was generalized from an anonymized field investigation. Microsoft Learn is authoritative for supported requirements and retention behavior; packet-level interpretations remain case-specific technical observations.
 
 ## 검색 키워드
-
 
 - Microsoft 365 playbook
 - Copilot readiness playbook
@@ -447,6 +445,6 @@ The troubleshooting pattern above was generalized from an anonymized field inves
 - Copilot 조직 정책 파일 오류
 - Copilot retention eDiscovery
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

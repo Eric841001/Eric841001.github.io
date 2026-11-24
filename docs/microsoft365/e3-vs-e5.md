@@ -207,6 +207,6 @@ E5·Copilot·Entra Suite·Agent 365를 함께 사용할 대상과 운영 계획�
 - E7 Teams 포함 미포함
 - Microsoft 365 라이선스 비용 비교
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-사용자별 기능 비교표와 라이선스 산정 양식이 필요하면 [Contact and Asset Request](../contact)에서 문의하세요.
+<BriefingCTA />

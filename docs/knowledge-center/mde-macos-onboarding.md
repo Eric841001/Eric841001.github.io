@@ -1,11 +1,11 @@
 ---
 id: mde-macos-onboarding
-title: Microsoft Defender for Endpoint macOS Onboarding
+title: "Defender for Endpoint macOS 온보딩"
 description: "Microsoft Defender for Endpoint macOS Onboarding - This guide describes the onboarding process for macOS devices into Microsoft Defender for Endpoint..."
-sidebar_label: macOS Onboarding
+sidebar_label: "macOS 온보딩"
 ---
 
-# Microsoft Defender for Endpoint macOS Onboarding
+# Defender for Endpoint macOS 온보딩
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>

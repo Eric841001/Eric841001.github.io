@@ -1,13 +1,13 @@
 ---
 id: case-study-financial-saas-security
-title: Financial SaaS Security Case Study
-sidebar_label: Financial SaaS Security
+title: "금융 SaaS 보안 사례"
+sidebar_label: "금융 SaaS 보안 사례"
 sidebar_position: 8
 description: Anonymized financial services SaaS security case study for Microsoft 365, Conditional Access, Defender, Purview, Intune, Global Secure Access and evidence-ready governance.
 toc_max_heading_level: 2
 ---
 
-# Financial SaaS Security Case Study
+# 금융 SaaS 보안 사례
 
 <section aria-label="Financial SaaS security case study hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

@@ -1,7 +1,7 @@
 ---
 id: search-index-url-hub
-title: Search Index URL Hub
-sidebar_label: Search Index URL Hub
+title: "검색용 주소 모음"
+sidebar_label: "검색용 주소 모음"
 description: Search index URL hub for Google Search Console, Naver Search Advisor and core Microsoft 365, Security, Copilot, AI Agent and customer success landing pages.
 keywords:
   - Google Search Console
@@ -12,7 +12,7 @@ keywords:
   - sitemap
 ---
 
-# Search Index URL Hub
+# 검색용 주소 모음
 
 import UpdateBrief from '@site/src/components/UpdateBrief';
 

@@ -1,9 +1,10 @@
 ---
 sidebar_position: 1
-title: Enterprise Microsoft Knowledge Center
+title: "지식센터"
 description: "Enterprise Microsoft Knowledge Center - This site is a practical Microsoft Enterprise Knowledge Center for architecture, presales, delivery and..."
 toc_max_heading_level: 2
 hide_title: true
+sidebar_label: "지식센터 안내"
 ---
 
 <HubHeader

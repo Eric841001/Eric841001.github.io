@@ -1,10 +1,11 @@
 ---
-title: Azure Identity
+title: "Azure ID 관리"
 toc_max_heading_level: 2
 description: Azure identity architecture guide for Microsoft Entra ID, RBAC, PIM, Conditional Access, managed identities and privileged access governance.
+sidebar_label: "ID 관리"
 ---
 
-# Azure Identity
+# Azure ID 관리
 
 <ScenarioLinks
   summary="관리자 권한을 평소에 어떻게 쓰고, 로그인이 막히면 어떻게 복구할지 정할 때 참고하세요. 그룹을 조건부 액세스에 쓰는 경우에는 구성원 변경이 반영되는 시간도 확인해야 합니다."
@@ -181,6 +182,6 @@ Identity cleanup should happen before broad Azure expansion. Review RBAC and pri
 - [Conditional Access](../security/conditional-access)
 - [Contact and Asset Request](../contact)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For an Azure RBAC/PIM role matrix, privileged access checklist or managed identity review template, use [Contact and Asset Request](../contact).
+<BriefingCTA />

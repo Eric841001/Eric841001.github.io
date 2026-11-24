@@ -1,19 +1,18 @@
 ---
 id: microsoft-scout
-title: Microsoft Autopilot (formerly Scout)
+title: "Microsoft Autopilot (구 Scout)"
 description: Microsoft Autopilot (formerly Scout), preview rollout and proactive personal-agent architecture with identity, permissions and governance boundaries.
-sidebar_label: Autopilot / Scout
+sidebar_label: "Autopilot (구 Scout)"
 toc_max_heading_level: 2
 ---
 
-# Microsoft Autopilot (formerly Scout)
+# Microsoft Autopilot (구 Scout)
 
 ## Current name and availability — 2026-11-18 {/* #current-name-and-availability--2026-10-25 */}
 
 Microsoft announced **Autopilot, previously called Scout**, on 2026-09-25 as an expanded private preview. The [October 30 monthly update](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528) announced a November Frontier rollout, and the [November 17 update](https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/autopilot-meet-your-trusted-personal-teammate/4572611) confirmed that rollout had started for eligible Frontier customers. This is not general availability or a guarantee that it is enabled in your tenant. Eligibility requires Frontier enrollment, a Copilot license, usage-based billing, and the required management and security capabilities. Existing Scout URLs and section anchors are retained for older links. The guide uses the current name while retaining earlier Scout URLs. Architectural patterns below are not a promise that every listed action is available in a production tenant.
 
 For a pilot, confirm eligibility, identity, permissions, approval boundaries, audit visibility and the current commercial/consumption terms. A proposed coordinator/specialist integration remains a design example until its actual connectors and runtime are validated.
-
 
 ## Executive Summary
 
@@ -359,6 +358,6 @@ Microsoft는 Scout의 이름을 Autopilot으로 바꾸고, 2026년 11월 17일�
 - Microsoft 365 AI Agent
 - Copilot 개인 비서
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-Copilot Studio, Microsoft 365 Agents와 Copilot Cowork로 개인 비서형 에이전트를 검토할 때 쓸 워크숍 진행안이나 운영 점검표가 필요하면 [Contact and Asset Request](../contact)를 통해 요청할 수 있습니다.
+<BriefingCTA />

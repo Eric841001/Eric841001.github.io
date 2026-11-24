@@ -1,17 +1,14 @@
 ---
 id: multi-agent-framework
-title: Multi-Agent Framework
+title: "다중 에이전트 프레임워크"
 description: "Multi-agent design patterns, component selection, orchestration costs and operating responsibilities."
-sidebar_label: Multi-Agent Framework
+sidebar_label: "다중 에이전트"
 toc_max_heading_level: 2
 ---
 
-# Multi-Agent Framework
+# 다중 에이전트 프레임워크
 
 <ReadingControls />
-
-
-
 
 <ReadingSection open>
 <ReadingSummary>
@@ -20,12 +17,9 @@ toc_max_heading_level: 2
 
 </ReadingSummary>
 
-
 Microsoft announced **Autopilot, previously called Scout**, on 2026-09-25 and described expansion to **private preview**, not general availability. See [the official announcement](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/). Existing Scout URLs and section anchors are retained for older links. The guide uses the current name while retaining earlier Scout URLs. Architectural patterns below are not a promise that every listed action is available in a production tenant.
 
 For a pilot, confirm eligibility, identity, permissions, approval boundaries, audit visibility and the current commercial/consumption terms. A proposed coordinator/specialist integration remains a design example until its actual connectors and runtime are validated.
-
-
 
 </ReadingSection>
 
@@ -89,14 +83,12 @@ For a pilot, confirm eligibility, identity, permissions, approval boundaries, au
 
 </ReadingSection>
 
-
 <ReadingSection>
 <ReadingSummary>
 
 ## Executive Summary
 
 </ReadingSummary>
-
 
 Multi-agent orchestration is one design option for work that crosses distinct domains or control boundaries.
 
@@ -108,7 +100,6 @@ This guide proposes a design framework; it is not a product or a guarantee of sc
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -117,7 +108,6 @@ This guide proposes a design framework; it is not a product or a guarantee of sc
 ## Why Multi-Agent?
 
 </ReadingSummary>
-
 
 Review whether a single agent can handle the required context and tools within the performance budget.
 
@@ -136,7 +126,6 @@ A multi-agent architecture distributes responsibilities across specialized agent
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -145,7 +134,6 @@ A multi-agent architecture distributes responsibilities across specialized agent
 ## Single Agent vs Multi-Agent
 
 </ReadingSummary>
-
 
 | Decision area | Single agent | Multi-agent design |
 |---|---|---|
@@ -159,7 +147,6 @@ See the [official agent design guidance](https://techcommunity.microsoft.com/blo
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -168,7 +155,6 @@ See the [official agent design guidance](https://techcommunity.microsoft.com/blo
 ## Core Architecture
 
 </ReadingSummary>
-
 
 <ArchitectureFigure
   id="multi-agent-core-architecture"
@@ -226,7 +212,6 @@ See the [official agent design guidance](https://techcommunity.microsoft.com/blo
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -235,7 +220,6 @@ See the [official agent design guidance](https://techcommunity.microsoft.com/blo
 ## Coordinator Agent
 
 </ReadingSummary>
-
 
 The Coordinator Agent is the brain of the system.
 
@@ -252,7 +236,6 @@ Choose explicit coordination or handoff rules and test failure recovery between 
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -261,7 +244,6 @@ Choose explicit coordination or handoff rules and test failure recovery between 
 ## Knowledge Agent
 
 </ReadingSummary>
-
 
 Purpose:
 
@@ -287,7 +269,6 @@ Retrieve and summarize enterprise knowledge.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -296,7 +277,6 @@ Retrieve and summarize enterprise knowledge.
 ## Task Agent
 
 </ReadingSummary>
-
 
 Purpose:
 
@@ -322,7 +302,6 @@ Execute business actions.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -331,7 +310,6 @@ Execute business actions.
 ## Review Agent
 
 </ReadingSummary>
-
 
 Purpose:
 
@@ -359,7 +337,6 @@ Review Agent verifies:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -368,7 +345,6 @@ Review Agent verifies:
 ## Compliance Agent
 
 </ReadingSummary>
-
 
 Purpose:
 
@@ -393,7 +369,6 @@ Before sharing a document:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -402,7 +377,6 @@ Before sharing a document:
 ## Reporting Agent
 
 </ReadingSummary>
-
 
 Purpose:
 
@@ -426,7 +400,6 @@ Generate:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -435,7 +408,6 @@ Generate:
 ## Enterprise Agent Taxonomy
 
 </ReadingSummary>
-
 
 <div aria-label="Enterprise agent taxonomy" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -473,7 +445,6 @@ Generate:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -482,7 +453,6 @@ Generate:
 ## Microsoft Agent Platform Mapping
 
 </ReadingSummary>
-
 
 | Agent Type | Microsoft Technology |
 |------------|---------------------|
@@ -496,7 +466,6 @@ Generate:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -505,7 +474,6 @@ Generate:
 ## Microsoft Autopilot Integration {/* #microsoft-scout-integration */}
 
 </ReadingSummary>
-
 
 Microsoft Autopilot introduces the concept of an always-on personal agent. Microsoft’s September 25, 2026 announcement describes a private preview. The coordinator/specialist connections below are proposed designs, not a generally available integration contract. Confirm preview access, tools and permissions using the [Autopilot availability guide](./microsoft-scout).
 
@@ -557,7 +525,6 @@ In this proposed design, Autopilot would act as the user's personal orchestratio
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -566,7 +533,6 @@ In this proposed design, Autopilot would act as the user's personal orchestratio
 ## Agent Communication Patterns
 
 </ReadingSummary>
-
 
 ### Pattern 1
 
@@ -701,7 +667,6 @@ Used for enterprise orchestration.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -710,7 +675,6 @@ Used for enterprise orchestration.
 ## MCP in Multi-Agent Systems
 
 </ReadingSummary>
-
 
 Model Context Protocol enables agents to share tools.
 
@@ -759,7 +723,6 @@ Example:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -770,7 +733,6 @@ Example:
 </ReadingSummary>
 
 These are conceptual storage categories. They are not three built-in Copilot Studio memory tiers. Configure retention, access, user isolation and deletion for each actual store; per-user agent memory does not automatically become shared organizational knowledge.
-
 
 ### Short-Term Memory
 
@@ -810,7 +772,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -819,7 +780,6 @@ Examples:
 ## Human-in-the-Loop Architecture
 
 </ReadingSummary>
-
 
 <ArchitectureFigure
   id="human-in-the-loop-architecture"
@@ -844,7 +804,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -853,7 +812,6 @@ Examples:
 ## Multi-Agent Governance
 
 </ReadingSummary>
-
 
 ### Governance Layers
 
@@ -868,7 +826,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -877,7 +834,6 @@ Examples:
 ## Agent Ownership Model
 
 </ReadingSummary>
-
 
 Every agent must have:
 
@@ -907,7 +863,6 @@ Responsible for:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -916,7 +871,6 @@ Responsible for:
 ## Enterprise Operating Model
 
 </ReadingSummary>
-
 
 <div aria-label="Multi-agent enterprise operating model" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -954,7 +908,6 @@ Responsible for:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -963,7 +916,6 @@ Responsible for:
 ## Multi-Agent Use Cases
 
 </ReadingSummary>
-
 
 ### Proposal Factory
 
@@ -1027,7 +979,6 @@ Customer Engagement Package
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1036,7 +987,6 @@ Customer Engagement Package
 ## KPI Framework
 
 </ReadingSummary>
-
 
 | KPI | Description |
 |------|-------------|
@@ -1051,7 +1001,6 @@ Customer Engagement Package
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1060,7 +1009,6 @@ Customer Engagement Package
 ## Maturity Model
 
 </ReadingSummary>
-
 
 ### Level 1
 
@@ -1092,7 +1040,6 @@ Enterprise AI Operating System
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1101,7 +1048,6 @@ Enterprise AI Operating System
 ## Recommended Microsoft Stack
 
 </ReadingSummary>
-
 
 | Layer | Technology |
 |---------|-----------|
@@ -1120,7 +1066,6 @@ Enterprise AI Operating System
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1130,11 +1075,9 @@ Enterprise AI Operating System
 
 </ReadingSummary>
 
-
 Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명확히 하고, 고정 절차는 워크플로로, 전문 판단은 필요한 스킬·도구·전문 에이전트로 분리할지 평가하세요. 권한과 도구가 바뀔 때는 위험을 재평가하고 정책으로 처리할 수 없는 예외를 사람에게 이관합니다.
 
 [공식 출처와 운영 시 확인할 점](./customer-conversation-harness.md#확장-가능한-에이전트-설계)
-
 
 </ReadingSection>
 
@@ -1144,7 +1087,6 @@ Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명�
 ## Executive Recommendations
 
 </ReadingSummary>
-
 
 1. Start with business outcomes.
 2. Start with the simplest design that meets the tested requirements; add specialists when boundaries justify them.
@@ -1157,7 +1099,6 @@ Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명�
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1166,7 +1107,6 @@ Microsoft의 10월 설계 지침을 참고해 한 에이전트의 책임을 명�
 ## Deliverables
 
 </ReadingSummary>
-
 
 A Multi-Agent engagement should produce:
 
@@ -1185,8 +1125,6 @@ A Multi-Agent engagement should produce:
 <p><strong>Agent Builder knowledge update (Current Channel, July 29, 2026):</strong> A team agent can use one SharePoint list with up to 20,000 items as a knowledge source alongside other source types. List attachments and lookup columns are not supported in this release, so validate the list schema before selecting this pattern. See the <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" target="_blank" rel="noopener noreferrer" className="">Microsoft 365 Copilot release notes</a>.</p>
 </blockquote>
 
-
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1196,7 +1134,6 @@ A Multi-Agent engagement should produce:
 
 </ReadingSummary>
 
-
 - Microsoft 365 Copilot
 - Copilot Studio
 - AI Agent governance
@@ -1205,17 +1142,15 @@ A Multi-Agent engagement should produce:
 - Copilot 도입
 - AI 에이전트 운영 모델
 
-
 </ReadingSection>
 
 <ReadingSection>
 <ReadingSummary>
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
 </ReadingSummary>
 
-
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 </ReadingSection>

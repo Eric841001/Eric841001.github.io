@@ -16,3 +16,8 @@
 .meta span{font-family:var(--c-mono)}
 .src{margin:10px 2px 0;font-size:13.5px;color:var(--c-muted)}
 @media (max-width:640px){.sum b{font-size:44px}.card{border-radius:18px}}
+/* 에디토리얼 */
+.sum{border-radius:var(--c-r)}
+.sum b,.card strong{font-family:var(--c-serif);font-weight:700}
+.card{border:1px solid var(--c-line);border-top:2px solid var(--tc);border-radius:var(--c-r)}
+.top code{border-radius:4px;font-weight:500!important}

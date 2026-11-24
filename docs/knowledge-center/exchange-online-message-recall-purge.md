@@ -1,11 +1,11 @@
 ---
 id: exchange-online-message-recall-purge
-title: Exchange Online Message Search and Purge
+title: "Exchange Online 메일 검색과 삭제"
 description: "Exchange Online Message Search and Purge - This guide describes how to search and purge incorrectly sent or risky email messages from Exchange Online..."
-sidebar_label: EXO Message Search and Purge
+sidebar_label: "메일 검색·삭제"
 ---
 
-# Exchange Online Message Search and Purge
+# Exchange Online 메일 검색과 삭제
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -116,7 +116,6 @@ This example connects; it does not run a search or purge. App-only authenticatio
 | Mixed methods | Do not combine PowerShell and Graph purge methods for the same process; follow the method supported by the case |
 
 [Find and delete email in eDiscovery](https://learn.microsoft.com/en-us/purview/edisc-search-mailbox-data) explains the case and method restrictions. A single completed action does not prove every matching item was removed. Review counts, scope, action results, unindexed items and remaining matches. Holds, retention and Recoverable Items affect final removal; HardDelete is not a promise of immediate physical erasure.
-
 
 ---
 
@@ -260,6 +259,6 @@ Exchange Online에서 잘못 발송했거나 보안 사고와 관련된 메일�
 - Exchange Online 메일 삭제
 - Purview 콘텐츠 검색
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For message purge approval templates, compliance search evidence logs, incident response runbooks or validation checklists, use [Contact and Asset Request](../contact).
+<BriefingCTA />

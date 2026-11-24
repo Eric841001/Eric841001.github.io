@@ -1,11 +1,11 @@
 ---
 id: defender-xdr
-title: Microsoft Defender XDR Architecture and SOC Operations Guide
+title: "Microsoft Defender XDR 아키텍처와 보안 관제 운영"
 description: Microsoft Defender XDR architecture, incident correlation, SOC operating model, hunting, response and executive security reporting guide.
-sidebar_label: Defender XDR
+sidebar_label: "Defender XDR"
 ---
 
-# Microsoft Defender XDR Architecture and SOC Operations Guide
+# Microsoft Defender XDR 아키텍처와 보안 관제 운영
 
 <section className="kc-topic-hero">
   <div>
@@ -324,6 +324,6 @@ Advanced hunting should not be treated as a random query library. It should be m
 - [Incidents and alerts in the Microsoft Defender portal](https://learn.microsoft.com/en-us/defender-xdr/incidents-overview)
 - [Advanced hunting overview in Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Defender XDR assessment workbooks, SOC triage matrices, alert tuning checklists, KQL starter packs, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

@@ -1,10 +1,11 @@
 ---
-title: Data Loss Prevention
+title: "데이터 손실 방지(DLP)"
 toc_max_heading_level: 2
 description: Microsoft Purview Data Loss Prevention guide for policy design, sensitive information types, endpoint DLP, user coaching, exceptions and Copilot data protection.
+sidebar_label: "데이터 손실 방지"
 ---
 
-# Data Loss Prevention
+# 데이터 손실 방지(DLP)
 
 <ScenarioLinks
   summary="중요한 자료가 어느 기기에서 어떤 경로로 나가는지에 따라 데이터 손실 방지(DLP) 정책의 적용 범위가 달라집니다. 점검할 전송 경로를 선택하세요."
@@ -214,6 +215,6 @@ Explain the protected data and expected user actions before enforcing a policy. 
 - [Data Lifecycle Management](./data-lifecycle)
 - [Copilot Architecture](../architecture/copilot-architecture)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For security baseline workbooks, control matrices, exception registers, executive security reports or operations handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

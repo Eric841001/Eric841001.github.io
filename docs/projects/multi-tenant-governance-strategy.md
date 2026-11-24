@@ -1,13 +1,13 @@
 ---
 id: multi-tenant-governance-strategy
-title: Multi-Tenant Governance Strategy
+title: "다중 테넌트 거버넌스 전략"
 description: "Multi Tenant Governance Strategy - Multi tenant governance is required when an enterprise group, holding company or acquisition driven organization..."
-sidebar_label: Multi-Tenant Governance Strategy
+sidebar_label: "다중 테넌트 거버넌스"
 sidebar_position: 6
 toc_max_heading_level: 2
 ---
 
-# Multi-Tenant Governance Strategy
+# 다중 테넌트 거버넌스 전략
 
 <section aria-label="Multi-Tenant Governance Strategy hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">

@@ -1,10 +1,11 @@
 ---
-title: "Work Breakdown Structure"
+title: "작업 분류 체계(WBS)"
 description: "Work Breakdown Structure - The WBS is the delivery control layer that connects proposal scope, technical work, acceptance criteria and project governance."
 toc_max_heading_level: 2
+sidebar_label: "WBS"
 ---
 
-# Work Breakdown Structure
+# 작업 분류 체계(WBS)
 
 <section aria-label="Work Breakdown Structure hero" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
@@ -51,7 +52,6 @@ toc_max_heading_level: 2
 The WBS is the delivery control layer that connects proposal scope, technical work, acceptance criteria and project governance.
 
 For Microsoft 365, Security, Copilot and migration engagements, the WBS should not be a simple task list. It should show how discovery findings become architecture decisions, how implementation tasks are validated, and how customer acceptance is collected.
-
 
 <div aria-label="WBS editable asset request" className="kc-request-panel">
   <small>REQUESTABLE ASSET</small>
@@ -168,6 +168,6 @@ For a regulated financial SaaS environment, the WBS included explicit evidence t
 - delivery planning
 - WBS 템플릿
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable proposal assets, SOW/WBS structures, risk registers, timeline templates or executive-ready examples, use [Contact and Asset Request](../contact).
+<BriefingCTA />

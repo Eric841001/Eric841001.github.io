@@ -1,6 +1,7 @@
 ---
-title: Defender for Endpoint
+title: "Defender for Endpoint"
 description: Microsoft Defender for Endpoint deployment, device risk, ASR rollout, vulnerability management and SOC operations guide.
+sidebar_label: "Defender for Endpoint"
 ---
 
 # Defender for Endpoint
@@ -303,6 +304,6 @@ P2로 목록과 Advanced Hunting을 조회할 수 있지만, 위험 수준·위�
 - [Onboard devices to Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/defender-endpoint/onboarding)
 - [Attack surface reduction rules overview](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For Defender for Endpoint deployment plans, ASR rollout rings, exception matrices, pilot validation reports or operations handover checklists, use [Contact and Asset Request](../contact).
+<BriefingCTA />

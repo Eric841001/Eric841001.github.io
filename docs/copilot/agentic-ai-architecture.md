@@ -1,17 +1,14 @@
 ---
 id: agentic-ai-architecture
-title: Agentic AI Architecture
+title: "에이전트형 AI 아키텍처"
 description: "Agentic AI Architecture - Agentic AI represents the shift from prompt based assistance to goal oriented, context aware and action capable AI systems."
-sidebar_label: Agentic AI Architecture
+sidebar_label: "에이전트형 AI 아키텍처"
 toc_max_heading_level: 2
 ---
 
-# Agentic AI Architecture
+# 에이전트형 AI 아키텍처
 
 <ReadingControls />
-
-
-
 
 <ReadingSection open>
 <ReadingSummary>
@@ -21,7 +18,6 @@ toc_max_heading_level: 2
 </ReadingSummary>
 
 The layers below are a proposed architecture. Each platform needs its own configuration, permissions and supported integration path. [Microsoft 365 Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/agents-sdk-overview) handles agent hosting and channel interactions; choose the model and orchestration separately. [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry), [Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview) and [Power Automate](https://learn.microsoft.com/en-us/power-automate/getting-started) serve different development and workflow needs.
-
 
 Agentic AI represents the shift from prompt-based assistance to goal-oriented, context-aware and action-capable AI systems.
 
@@ -72,7 +68,6 @@ The objective is not simply to create many agents. The objective is to establish
 </div>
 
 ---
-
 
 </ReadingSection>
 
@@ -136,14 +131,12 @@ The objective is not simply to create many agents. The objective is to establish
 
 </ReadingSection>
 
-
 <ReadingSection>
 <ReadingSummary>
 
 ## From Copilot to Agentic AI
 
 </ReadingSummary>
-
 
 Traditional Copilot usage is primarily user-initiated.
 
@@ -190,7 +183,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -199,7 +191,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 ## Core Architecture
 
 </ReadingSummary>
-
 
 <div aria-label="Agentic AI core architecture layers" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
@@ -236,7 +227,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -245,7 +235,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 ## Architecture Layers
 
 </ReadingSummary>
-
 
 | Layer | Purpose | Microsoft Capabilities |
 |---|---|---|
@@ -259,7 +248,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -268,7 +256,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 ## Agentic AI Design Principles
 
 </ReadingSummary>
-
 
 | Principle | Description |
 |---|---|
@@ -283,7 +270,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -292,7 +278,6 @@ Agentic AI introduces agents that can understand goals, maintain context, use en
 ## Agent Types
 
 </ReadingSummary>
-
 
 ### Personal Agent
 
@@ -364,7 +349,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -373,7 +357,6 @@ Examples:
 ## Agent Build Spectrum
 
 </ReadingSummary>
-
 
 <div aria-label="Agent build spectrum" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -426,7 +409,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -435,7 +417,6 @@ Examples:
 ## Work IQ and Context
 
 </ReadingSummary>
-
 
 Agentic AI depends on context.
 
@@ -486,7 +467,6 @@ Work IQ provides organizational and work context such as:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -496,11 +476,9 @@ Work IQ provides organizational and work context such as:
 
 </ReadingSummary>
 
-
 The [official Microsoft reference implementation](https://github.com/microsoft/microsoft-iq-solution-accelerator) combines Fabric IQ business data, Foundry IQ enterprise knowledge and Work IQ work context. Its supply-chain scenario links disruption signals, risk assessment and coordinated response through agents and workflows.
 
 Some platform features and MCP integrations remain preview. Use the implementation for evaluation and demonstrations; validate production support separately. Adapt data models, contract and policy sources, workflow approvals, identity permissions and consumption budgets before using operational data.
-
 
 </ReadingSection>
 
@@ -510,7 +488,6 @@ Some platform features and MCP integrations remain preview. Use the implementati
 ## Knowledge Grounding
 
 </ReadingSummary>
-
 
 Agents must be grounded in trusted knowledge.
 
@@ -528,7 +505,6 @@ Recommended grounding sources:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -537,7 +513,6 @@ Recommended grounding sources:
 ## Tool Use and Action Execution
 
 </ReadingSummary>
-
 
 Use tools when a scenario requires a system action; keep information-only agents read-only.
 
@@ -588,7 +563,6 @@ Examples:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -597,7 +571,6 @@ Examples:
 ## MCP in Agentic AI
 
 </ReadingSummary>
-
 
 Model Context Protocol provides a way to connect agents to external tools and resources. MCP defines the exchange protocol; it does not automatically enforce the DLP, approval and audit controls in this reference design. Configure those controls in the host, server, connector and underlying business system, and test each permission boundary. See the [MCP architecture scope](https://modelcontextprotocol.io/docs/learn/architecture).
 
@@ -645,7 +618,6 @@ MCP is important because it can help organizations:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -654,7 +626,6 @@ MCP is important because it can help organizations:
 ## Multi-Agent Reference Model
 
 </ReadingSummary>
-
 
 <div aria-label="Multi-agent reference model" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -703,7 +674,6 @@ MCP is important because it can help organizations:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -712,7 +682,6 @@ MCP is important because it can help organizations:
 ## Security Control Plane
 
 </ReadingSummary>
-
 
 Agentic AI requires stronger governance than simple chat experiences.
 
@@ -752,7 +721,6 @@ Agentic AI requires stronger governance than simple chat experiences.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -761,7 +729,6 @@ Agentic AI requires stronger governance than simple chat experiences.
 ## Governance Requirements
 
 </ReadingSummary>
-
 
 | Area | Requirement |
 |---|---|
@@ -776,7 +743,6 @@ Agentic AI requires stronger governance than simple chat experiences.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -785,7 +751,6 @@ Agentic AI requires stronger governance than simple chat experiences.
 ## Human-in-the-Loop Model
 
 </ReadingSummary>
-
 
 Not every action should be autonomous. The following approval tiers are a proposed design; the responsible owners must adapt them to the process and applicable obligations.
 
@@ -799,7 +764,6 @@ Not every action should be autonomous. The following approval tiers are a propos
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -808,7 +772,6 @@ Not every action should be autonomous. The following approval tiers are a propos
 ## Enterprise Use Cases
 
 </ReadingSummary>
-
 
 ### Executive Assistant Agent
 
@@ -854,7 +817,6 @@ Not every action should be autonomous. The following approval tiers are a propos
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -863,7 +825,6 @@ Not every action should be autonomous. The following approval tiers are a propos
 ## Adoption and Operating Model
 
 </ReadingSummary>
-
 
 Agentic AI adoption requires operating discipline.
 
@@ -879,7 +840,6 @@ Agentic AI adoption requires operating discipline.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -888,7 +848,6 @@ Agentic AI adoption requires operating discipline.
 ## Agentic AI Roadmap
 
 </ReadingSummary>
-
 
 <div aria-label="Agentic AI enterprise roadmap" className="kc-journey-map">
   <div className="kc-journey-map__header">
@@ -926,7 +885,6 @@ Agentic AI adoption requires operating discipline.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -935,7 +893,6 @@ Agentic AI adoption requires operating discipline.
 ## Agent Factory Model
 
 </ReadingSummary>
-
 
 An Agent Factory provides repeatable delivery.
 
@@ -951,7 +908,6 @@ An Agent Factory provides repeatable delivery.
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -963,7 +919,6 @@ An Agent Factory provides repeatable delivery.
 
 The levels, weights and thresholds in this guide are author-proposed planning aids. They do not represent Microsoft certification, a product prerequisite or a guarantee of readiness.
 
-
 | Level | Description |
 |---|---|
 | Level 1 | Individual Copilot usage |
@@ -974,7 +929,6 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -983,7 +937,6 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 ## KPI Framework
 
 </ReadingSummary>
-
 
 | KPI | Purpose |
 |---|---|
@@ -998,7 +951,6 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1007,7 +959,6 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 ## Risk Register
 
 </ReadingSummary>
-
 
 | Risk | Impact | Mitigation |
 |---|---|---|
@@ -1020,7 +971,6 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1029,7 +979,6 @@ The levels, weights and thresholds in this guide are author-proposed planning ai
 ## Executive Decision Points
 
 </ReadingSummary>
-
 
 Leadership should confirm:
 
@@ -1043,7 +992,6 @@ Leadership should confirm:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1052,7 +1000,6 @@ Leadership should confirm:
 ## Deliverables
 
 </ReadingSummary>
-
 
 An Agentic AI architecture engagement should produce:
 
@@ -1068,7 +1015,6 @@ An Agentic AI architecture engagement should produce:
 
 ---
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1077,7 +1023,6 @@ An Agentic AI architecture engagement should produce:
 ## References
 
 </ReadingSummary>
-
 
 - Microsoft Copilot Studio
 - Microsoft 365 Copilot
@@ -1088,7 +1033,6 @@ An Agentic AI architecture engagement should produce:
 - Microsoft Defender
 - Microsoft Power Platform
 
-
 </ReadingSection>
 
 <ReadingSection>
@@ -1098,7 +1042,6 @@ An Agentic AI architecture engagement should produce:
 
 </ReadingSummary>
 
-
 - Microsoft 365 Copilot
 - Copilot Studio
 - AI Agent governance
@@ -1107,17 +1050,15 @@ An Agentic AI architecture engagement should produce:
 - Copilot 도입
 - AI 에이전트 운영 모델
 
-
 </ReadingSection>
 
 <ReadingSection>
 <ReadingSummary>
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
 </ReadingSummary>
 
-
-For Copilot readiness workbooks, adoption roadmaps, agent governance templates, prompt libraries or executive AI value materials, use [Contact and Asset Request](../contact).
+<BriefingCTA />
 
 </ReadingSection>

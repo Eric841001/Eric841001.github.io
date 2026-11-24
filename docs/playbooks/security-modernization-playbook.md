@@ -1,11 +1,11 @@
 ---
 id: security-modernization-playbook
-title: Security Modernization Playbook
+title: "보안 현대화 플레이북"
 description: "Security Modernization Playbook - Security modernization is not a product deployment initiative."
-sidebar_label: Security Modernization
+sidebar_label: "보안 현대화"
 ---
 
-# Security Modernization Playbook
+# 보안 현대화 플레이북
 
 <section className="kc-topic-hero kc-topic-hero--compact">
   <div>
@@ -274,7 +274,6 @@ Design for the possibility that part of the environment is compromised: limit it
 
 ## References
 
-
 - [Microsoft Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/)
 - [Microsoft Defender XDR overview](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender)
 - Microsoft Zero Trust Framework
@@ -291,6 +290,6 @@ Design for the possibility that part of the environment is compromised: limit it
 - Microsoft 365 구축 방법론
 - Copilot 도입 방법론
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For editable playbooks, delivery checklists, workshop agendas, risk registers or handover templates, use [Contact and Asset Request](../contact).
+<BriefingCTA />

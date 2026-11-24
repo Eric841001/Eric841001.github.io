@@ -1,8 +1,8 @@
 ---
 id: overview
-title: Downloads Center
+title: "자료실"
 description: "Downloads Center - Requestable Microsoft 365, Security, Copilot, AI Agent, migration, SOW, WBS and delivery assets."
-sidebar_label: Downloads Center
+sidebar_label: "자료실 개요"
 hide_title: true
 ---
 

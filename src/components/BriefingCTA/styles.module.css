@@ -1,0 +1,10 @@
+.cta{display:flex;gap:24px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin:1rem 0 2rem;padding:26px 28px;border:1px solid var(--c-line);border-left:3px solid var(--c-ink);border-radius:0 var(--c-r) var(--c-r) 0;background:var(--c-tile)}
+.cta > div:first-child{flex:1 1 420px}
+.k{margin:0 0 6px;font:600 13px var(--c-sans);color:var(--c-muted)}
+.t{margin:0 0 8px;font:700 21px/1.4 var(--c-serif);letter-spacing:-.02em;color:var(--c-ink)}
+.d{margin:0;font-size:15px;line-height:1.75;color:var(--c-ink2)}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.primary,.ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;font:700 14.5px var(--c-sans);text-decoration:none!important}
+.primary{background:var(--c-ink);color:var(--c-bg)!important}
+.ghost{border:1px solid var(--c-line2);color:var(--c-ink)!important}
+.primary:hover{opacity:.9}.ghost:hover{border-color:var(--c-ink)}

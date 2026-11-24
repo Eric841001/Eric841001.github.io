@@ -1,6 +1,7 @@
 ---
-title: Compliance Manager
+title: "Compliance Manager"
 description: Microsoft Purview Compliance Manager guide for compliance posture, improvement actions, audit evidence, risk ownership and executive reporting.
+sidebar_label: "Compliance Manager"
 ---
 
 # Compliance Manager
@@ -141,6 +142,6 @@ Compliance Manager에서 평가 항목과 개선 작업, 담당자와 증거 자
 - [Insider Risk Management](./insider-risk)
 - [Security Reference Architecture](../architecture/security-reference-architecture)
 
-## Contact / Asset Request
+## 문의·브리핑 요청 {/* #contact--asset-request */}
 
-For compliance evidence workbooks, improvement action trackers, audit readiness templates or executive compliance dashboards, use [Contact and Asset Request](../contact).
+<BriefingCTA />
