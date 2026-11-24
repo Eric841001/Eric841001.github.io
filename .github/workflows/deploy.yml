@@ -48,4 +48,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           publish_branch: gh-pages
-          commit_message: 'Deploy website - based on ${{ github.sha }}'
+          # commit_message는 끝에 커밋 SHA를 한 번 더 붙이므로, 문구 전체를 그대로 쓰는 full_commit_message를 쓴다.
+          full_commit_message: 'Deploy website - based on ${{ github.sha }}'
