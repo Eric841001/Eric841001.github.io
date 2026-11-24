@@ -21,3 +21,11 @@
 .cta .t{color:#F6F2EA!important}
 .cta .d{color:rgba(246,242,234,.84)!important}
 .cta .k{color:rgba(246,242,234,.72)!important}
+/* C안 */
+.cta{border-radius:0;background:#051C2C}
+.k::before{background:#8FA8FF}
+.cta .k{color:#8FA8FF!important}
+.t{font:700 23px/1.4 var(--c-sans)!important;letter-spacing:-.035em}
+.primary,.ghost{border-radius:0;min-height:48px}
+.primary{background:#2251FF;color:#fff!important}
+.primary:hover{background:#fff;color:#051C2C!important;opacity:1}

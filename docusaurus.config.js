@@ -37,12 +37,10 @@ const diagramScriptVersion = createHash('sha256')
   themes: ['@docusaurus/theme-mermaid'],
 
   stylesheets: [
-    {href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&family=Noto+Sans+KR:wght@400;600;700&family=DM+Mono:wght@500&display=swap'},
+    {href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css'},
   ],
   headTags: [
-    {tagName: 'script', attributes: {}, innerHTML: "document.documentElement.dataset.home=location.pathname==='/'?'true':'false'"},
-    {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.googleapis.com'}},
-    {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous'}},
+    {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: 'anonymous'}},
   ],
 
   scripts: [

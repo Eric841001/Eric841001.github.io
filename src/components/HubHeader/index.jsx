@@ -4,6 +4,7 @@ import {useHistory} from '@docusaurus/router';
 import data from '@site/src/data/cData.json';
 import {updateHighlights} from '@site/src/data/updateHighlights';
 import styles from './styles.module.css';
+import CoverArt from '@site/src/components/CoverArt';
 
 // 주제 허브 첫 화면. 홈과 같은 벤토 구성으로 "이 주제의 문서 · 처음 읽을 문서 · 최근 변경"을 먼저 보여 준다.
 // 문서 목록과 소개 문장은 cData.json(문서 원문 발췌)에서 온다.
@@ -60,6 +61,7 @@ export default function HubHeader({topic, crumb, title, lead, start = [], featur
   return (
     <div className={styles.hub} data-topic={topic}>
       <section className={`${styles.t} ${styles.hero}`} aria-labelledby="hub-title">
+        <div className={styles.heroText}>
           <span className={styles.k}><span>{crumb}</span><span>문서 {count}편</span></span>
           <h1 id="hub-title">{title}</h1>
           <p>{lead}</p>
@@ -68,6 +70,8 @@ export default function HubHeader({topic, crumb, title, lead, start = [], featur
             <input type="search" value={q} onChange={e => setQ(e.target.value)} placeholder={mode === 'topics' ? '주제 이름으로 찾기' : '이 주제의 문서에서 찾기'} aria-label={mode === 'topics' ? '주제 찾기' : '이 주제의 문서 찾기'} aria-controls="hub-list" />
             <button type="submit">찾기</button>
           </form>
+        </div>
+        <CoverArt topic={topic} className={styles.art} ratio="4 / 5" />
         </section>
       <div className={styles.bento}>
         {start.length > 0 && (

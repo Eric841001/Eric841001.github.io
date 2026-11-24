@@ -27,3 +27,10 @@
 .glyph circle{fill:rgba(246,242,234,.06);stroke:#F6F2EA}
 .go{border-bottom:1px solid var(--c-gold);align-self:flex-start;padding-bottom:2px}
 .area strong{color:#F6F2EA!important}
+/* C안 */
+.area{border-radius:0;background:#051C2C}
+.lname{border-top:4px solid var(--c-ink)}
+.lname b,.area strong{font-family:var(--c-sans);font-weight:700;letter-spacing:-.035em}
+.glyph path{stroke:#2251FF}
+.go{border-bottom:2px solid #8FA8FF}
+.k{color:#8FA8FF}

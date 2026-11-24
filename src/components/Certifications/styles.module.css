@@ -32,3 +32,11 @@
 .top code{background:transparent!important;color:var(--c-ink)!important;border:1px solid var(--c-gold)!important;border-radius:2px}
 .card strong{font:600 18px/1.4 var(--c-serif)}
 .meta span{color:var(--c-muted)}
+/* C안 */
+.sum{border-top:4px solid var(--c-ink)}
+.sum b{font:300 72px/1 var(--c-sans);letter-spacing:-.05em}
+.sum span{font:700 21px/1.35 var(--c-sans);letter-spacing:-.03em}
+.top{color:var(--c-accent)}
+.top code{border-color:var(--c-ink)!important;border-radius:0;font-family:var(--c-sans)!important;font-weight:700!important}
+.card strong{font:700 18px/1.4 var(--c-sans);letter-spacing:-.03em}
+.meta span{font-family:var(--c-sans)}
