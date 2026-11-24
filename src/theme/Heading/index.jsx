@@ -1,9 +1,7 @@
 import React from 'react';
 import OriginalHeading from '@theme-original/Heading';
 import {useLocation} from '@docusaurus/router';
-import Head from '@docusaurus/Head';
 import useBrokenLinks from '@docusaurus/useBrokenLinks';
-import reviewMeta from '@site/src/data/reviewMeta.json';
 import {InSummary} from '@site/src/components/ReadingSection';
 
 const materials = {
@@ -81,32 +79,6 @@ function ArticleScene() {
   return <span aria-hidden="true" className="c-topicbar" data-topic={section} data-scene={sceneFor(pathname)} />;
 }
 
-const fmtDate = d => { const [y, m, day] = d.split('-'); return `${y}년 ${Number(m)}월 ${Number(day)}일`; };
-
-// 문서 머리의 검토 기록 한 줄과 기술 문서 구조화 데이터.
-function DocMeta({title}) {
-  const {pathname} = useLocation();
-  const meta = reviewMeta[pathname.replace(/\/$/, '')];
-  if (!meta) return null;
-  const [date, level, n] = meta;
-  const ld = {
-    '@context': 'https://schema.org', '@type': 'TechArticle', headline: typeof title === 'string' ? title : undefined,
-    inLanguage: 'ko', dateModified: date, url: 'https://eric841001.github.io' + pathname,
-    author: {'@type': 'Person', name: 'Youngsun Kang', url: 'https://eric841001.github.io/knowledge/about'},
-    publisher: {'@type': 'Person', name: 'Youngsun Kang'},
-  };
-  return (
-    <>
-      <Head><script type="application/ld+json">{JSON.stringify(ld)}</script></Head>
-      <p className="c-docmeta">
-        <span><time dateTime={date}>{fmtDate(date)}</time> 확인</span>
-        {n > 0 && <span>공식 자료 {n}건 대조</span>}
-        <span>{level}</span>
-      </p>
-    </>
-  );
-}
-
 export default function Heading(props) {
   const inSummary = React.useContext(InSummary);
   const brokenLinks = useBrokenLinks();
@@ -115,5 +87,5 @@ export default function Heading(props) {
     if (id) brokenLinks.collectAnchor(id);
     return <As id={id} className={['anchor', 'c-summary-heading', className].filter(Boolean).join(' ')}>{children}</As>;
   }
-  return <><OriginalHeading {...props} />{props.as === 'h1' && <><ArticleScene /><DocMeta title={props.children} /></>}</>;
+  return <><OriginalHeading {...props} />{props.as === 'h1' && <ArticleScene />}</>;
 }

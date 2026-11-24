@@ -113,9 +113,4 @@ Object.values(docs).forEach(d => {
 Object.values(sections).forEach(l => { l.sort((a, b) => a.pos - b.pos || a.title.localeCompare(b.title, 'ko')); l.forEach(x => delete x.pos); });
 
 fs.writeFileSync(out, JSON.stringify({generated: 'build', total: Object.keys(docs).length, counts, previews, answers, licensing, sections}, null, 1));
-// 문서별 검토 기록(확인일·검토 수준·대조한 공식 자료 수). 문서 머리와 사이트맵 수정일에 쓴다.
-const reviews = require('./data/documentReviews.json');
-const reviewMeta = {};
-for (const [route, r] of Object.entries(reviews)) reviewMeta[route] = [r.checkedOn, r.reviewLevel, (r.sources || []).length];
-fs.writeFileSync(path.join(root, 'src', 'data', 'reviewMeta.json'), JSON.stringify(reviewMeta));
 console.log(`cData: docs ${Object.keys(docs).length}, answers ${answers.length}, licensing rows ${licensing.length}`);
