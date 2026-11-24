@@ -52,7 +52,8 @@ export default function HubHeader({topic, crumb, title, lead, start = [], featur
     : docs;
   const qq = q.trim().toLowerCase();
   const shown = qq ? list.filter(d => (d.title + ' ' + d.text).toLowerCase().includes(qq)) : list;
-  const visible = all || qq ? shown : shown.slice(0, 9);
+  const limit = mode === 'topics' ? 12 : 9;
+  const visible = all || qq ? shown : shown.slice(0, limit);
   const re = updatesMatch ? new RegExp(updatesMatch) : null;
   const updates = re ? updateHighlights.filter(u => re.test(u.path + ' ' + u.category)).slice(0, 4) : [];
   const count = mode === 'topics' ? data.total : list.length + 1;
@@ -110,8 +111,8 @@ export default function HubHeader({topic, crumb, title, lead, start = [], featur
         ))}
         {!shown.length && <li className={styles.none}>일치하는 문서가 없습니다. <Link to={'/search?q=' + encodeURIComponent(q)}>전체 검색에서 ‘{q}’ 찾기</Link></li>}
       </ul>
-      {!qq && shown.length > 9 && (
-        <button type="button" className={styles.more} aria-expanded={all} aria-controls="hub-list" onClick={() => setAll(!all)}>{all ? '접기' : `${shown.length - 9}개 더 보기`}</button>
+      {!qq && shown.length > limit && (
+        <button type="button" className={styles.more} aria-expanded={all} aria-controls="hub-list" onClick={() => setAll(!all)}>{all ? '접기' : `${shown.length - limit}개 더 보기`}</button>
       )}
     </div>
   );

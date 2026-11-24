@@ -4,9 +4,21 @@ title: "보안"
 toc_max_heading_level: 2
 description: Microsoft Security architecture guide covering Zero Trust, Conditional Access, Defender, Purview, DLP and Copilot data protection.
 sidebar_label: "보안 개요"
+hide_title: true
 ---
 
-# 보안
+<HubHeader
+  topic="security"
+  crumb="지식센터 › 보안"
+  title="보안"
+  lead="Zero Trust, 조건부 액세스, Defender, Purview와 데이터 보호를 다룹니다. 로그인 제어, 위협 대응, 민감한 자료 보호 중 지금 점검할 업무에서 시작하세요."
+  start={[
+    ["조건부 액세스","/knowledge/security/conditional-access","로그인 조건과 정책 설계"],
+    ["Zero Trust 참조 아키텍처","/knowledge/security/zero-trust-framework","ID·기기·데이터·네트워크 통제"],
+    ["Microsoft Defender XDR","/knowledge/security/defender-xdr","탐지·조사·대응 운영"],
+  ]}
+  updatesMatch="Defender|Purview|Entra|보안|Security"
+/>
 
 <ScenarioLinks
   summary="로그인 제어, 위협 조사, 민감한 자료 보호 중 지금 점검할 업무를 선택하세요."
@@ -16,36 +28,6 @@ sidebar_label: "보안 개요"
     ["민감한 자료의 유출 방지하기","/knowledge/security/dlp"],
   ]}
 />
-
-<section className="kc-topic-hero kc-topic-hero--compact">
-  <div>
-    <span className="kc-eyebrow">MICROSOFT SECURITY OPERATING MODEL</span>
-    <h2>From identity control to data-aware security operations</h2>
-    <p>Security architecture becomes practical when Entra ID, Conditional Access, Intune, Defender, Purview, DLP and audit evidence operate as one measurable control system.</p>
-  </div>
-  <div aria-label="Security operating model focus" className="kc-hero-metrics">
-    <div>
-      <strong>01</strong>
-      <span>Access</span>
-    </div>
-    <div>
-      <strong>02</strong>
-      <span>Device</span>
-    </div>
-    <div>
-      <strong>03</strong>
-      <span>Data</span>
-    </div>
-    <div>
-      <strong>04</strong>
-      <span>Evidence</span>
-    </div>
-  </div>
-</section>
-
-This Security section organizes Microsoft security architecture, Zero Trust controls and compliance-ready delivery patterns for enterprise Microsoft environments.
-
-The guidance is shaped around field scenarios such as regulated SaaS access, Microsoft 365 security review, Exchange Online protection, endpoint onboarding, Purview readiness, DLP design and Copilot data protection.
 
 <div aria-label="Security architecture entry points" className="kc-signal-grid">
   <a href="./conditional-access" className="kc-signal-card">

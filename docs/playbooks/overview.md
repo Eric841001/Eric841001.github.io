@@ -4,9 +4,21 @@ title: "도입 절차"
 description: "Playbooks - The Playbooks section provides repeatable delivery guidance for Microsoft 365 assessment, Copilot readiness, Intune deployment, security..."
 toc_max_heading_level: 2
 sidebar_label: "도입 절차 개요"
+hide_title: true
 ---
 
-# 도입 절차
+<HubHeader
+  topic="playbooks"
+  crumb="지식센터 › 도입 절차"
+  title="도입 절차"
+  lead="진단부터 Copilot 준비, Intune 배포, 보안 현대화까지 도입 작업의 순서를 단계별로 정리했습니다."
+  start={[
+    ["Microsoft 365 진단 플레이북","/knowledge/playbooks/m365-assessment-playbook","현황 조사와 개선 로드맵"],
+    ["Copilot 도입 준비 플레이북","/knowledge/playbooks/copilot-readiness-playbook","시범 운영부터 확산까지"],
+    ["Intune 배포 플레이북","/knowledge/playbooks/intune-deployment-playbook","등록, 규정 준수, 앱 배포"],
+  ]}
+  updatesMatch="Intune|Copilot|playbooks"
+/>
 
 <ScenarioLinks
   summary="도입 작업을 어떤 순서로 진행할지 정할 때 참고할 절차를 모았습니다."
@@ -20,52 +32,6 @@ sidebar_label: "도입 절차 개요"
 The Playbooks section provides repeatable delivery guidance for Microsoft 365 assessment, Copilot readiness, Intune deployment, security modernization, tenant-to-tenant migration and change management.
 
 Playbooks are designed to bridge consulting strategy and real execution. They define workstreams, checkpoints, deliverables, risks and handover expectations.
-
-<section aria-label="Playbooks program hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Enterprise Delivery Playbooks</span>
-    <h2>Convert consulting strategy into repeatable delivery</h2>
-    <div className="kc-topic-hero__lede">Each playbook turns a customer scenario into phases, workstreams, checkpoints, acceptance evidence, risks, handover outputs and reusable delivery patterns.</div>
-    <div aria-label="Playbook delivery signals" className="kc-hero-signal-row">
-      <span>Assess</span>
-      <span>Design</span>
-      <span>Execute</span>
-      <span>Handover</span>
-    </div>
-  </div>
-  <div aria-label="Playbook operating model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Delivery Operating System</span>
-      <strong>Scenario to evidence-backed handover</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="#playbook-categories" className="kc-factory-card">
-        <small>01</small>
-        <strong>Select</strong>
-        <span>Match the customer scenario to the right Microsoft 365, Copilot, Security or Migration playbook.</span>
-      </a>
-      <a href="#how-to-use" className="kc-factory-card">
-        <small>02</small>
-        <strong>Structure</strong>
-        <span>Turn strategy into workstreams, owners, checkpoints, acceptance criteria and WBS activities.</span>
-      </a>
-      <a href="#playbook-operating-model" className="kc-factory-card">
-        <small>03</small>
-        <strong>Run</strong>
-        <span>Operate delivery rhythm with risks, decisions, evidence, status and issue review.</span>
-      </a>
-      <a href="#field-informed-patterns" className="kc-factory-card">
-        <small>04</small>
-        <strong>Reuse</strong>
-        <span>Capture lessons learned into templates, proposal assets, checklists and executive packs.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Playbook rule</strong>
-      <span>A playbook is complete only when scope, owner, evidence, risk, handover and reuse path are clear.</span>
-    </div>
-  </div>
-</section>
 
 ## Visual Playbook System
 

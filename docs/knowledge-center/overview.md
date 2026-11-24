@@ -4,9 +4,21 @@ title: "운영 문제 해결"
 description: Microsoft 365, Azure, Security, Copilot, Migration and Licensing knowledge hub for enterprise consulting.
 toc_max_heading_level: 2
 sidebar_label: "운영 문제 해결 개요"
+hide_title: true
 ---
 
-# 운영 문제 해결
+<HubHeader
+  topic="knowledge-center"
+  crumb="지식센터 › 운영 문제 해결"
+  title="운영 문제 해결"
+  lead="Intune 등록 오류, Defender 온보딩, Exchange Online 설정처럼 운영 중 마주친 증상에서 시작해 점검 절차를 찾을 수 있습니다."
+  start={[
+    ["Intune 등록 오류 0x80180031","/knowledge/knowledge-center/intune-0x80180031","원인과 점검 순서"],
+    ["Exchange Online 메일 검색과 삭제","/knowledge/knowledge-center/exchange-online-message-recall-purge","잘못 보낸 메일 회수"],
+    ["Defender for Endpoint Linux 온보딩","/knowledge/knowledge-center/mde-linux-onboarding","설치, 연결 확인, 감사 모드"],
+  ]}
+  updatesMatch="knowledge-center|Intune|Defender for Endpoint|Exchange"
+/>
 
 <ScenarioLinks
   summary="관리 중에 마주친 증상에서 시작해 점검 절차를 찾을 수 있습니다."
@@ -20,52 +32,6 @@ sidebar_label: "운영 문제 해결 개요"
 Microsoft 제품의 설계·구축·운영 자료를 모았습니다.
 
 고객 제안, 설계, 구축과 운영 인수인계에 필요한 문서를 주제별로 찾을 수 있습니다.
-
-<section aria-label="Knowledge Center overview hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Enterprise Knowledge Center</span>
-    <h2>Use Microsoft cloud knowledge as a reusable consulting system</h2>
-    <div className="kc-topic-hero__lede">This hub connects Microsoft 365, Security, Copilot, Azure, Migration, Licensing and Proposal assets into a public-safe reference platform for presales, architecture and delivery.</div>
-    <div aria-label="Knowledge Center signals" className="kc-hero-signal-row">
-      <span>AI</span>
-      <span>Security</span>
-      <span>Delivery</span>
-      <span>Assets</span>
-    </div>
-  </div>
-  <div aria-label="Knowledge Center operating model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Knowledge Operating Model</span>
-      <strong>Field experience to reusable public-safe guidance</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="../copilot/overview" className="kc-factory-card">
-        <small>01</small>
-        <strong>AI adoption</strong>
-        <span>Start with Copilot, Copilot Studio, M365 Agents, AI Agent Factory and Cowork governance.</span>
-      </a>
-      <a href="../security/overview" className="kc-factory-card">
-        <small>02</small>
-        <strong>Security</strong>
-        <span>Use Entra ID, Conditional Access, Defender, Purview, DLP and Information Barriers together.</span>
-      </a>
-      <a href="../proposal/overview" className="kc-factory-card">
-        <small>03</small>
-        <strong>Proposal</strong>
-        <span>Translate knowledge into executive summary, SOW, WBS, risk and timeline assets.</span>
-      </a>
-      <a href="../downloads/overview" className="kc-factory-card">
-        <small>04</small>
-        <strong>Assets</strong>
-        <span>Request editable workbooks, templates, checklists and customer-ready examples.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Publishing rule</strong>
-      <span>Public pages explain reusable methods. Customer names, tenant IDs, commercial terms and internal files stay excluded.</span>
-    </div>
-  </div>
-</section>
 
 ## Knowledge Operating Model
 

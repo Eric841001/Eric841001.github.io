@@ -11,6 +11,7 @@ const kinds = {
   microsoft365: 'waves', migration: 'diagonal', security: 'rings', playbooks: 'rings',
   copilot: 'nodes', azure: 'grid', architecture: 'grid', downloads: 'stack',
   licensing: 'bars', 'knowledge-center': 'bars', intro: 'nodes', about: 'rings', contact: 'waves',
+  toolkit: 'grid', projects: 'bars', proposal: 'stack',
 };
 
 function Waves() {

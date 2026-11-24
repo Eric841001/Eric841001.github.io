@@ -3,9 +3,21 @@ sidebar_position: 1
 title: "Microsoft 365"
 description: Microsoft 365 architecture, tenant governance, security, migration and Copilot readiness guide for enterprise consulting.
 sidebar_label: "Microsoft 365 개요"
+hide_title: true
 ---
 
-# Microsoft 365
+<HubHeader
+  topic="microsoft365"
+  crumb="지식센터 › Microsoft 365"
+  title="Microsoft 365"
+  lead="Exchange Online, Teams, SharePoint, OneDrive의 설계와 운영, 라이선스 구성을 정리했습니다. 운영하려는 서비스에서 시작하세요."
+  start={[
+    ["Exchange Online 아키텍처와 마이그레이션","/knowledge/microsoft365/exchange-online","메일 흐름, 보안, 전환 계획"],
+    ["SharePoint 정보 구조 설계","/knowledge/microsoft365/sharepoint","사이트 구조, 권한, 에이전트 전환"],
+    ["Microsoft Teams 거버넌스","/knowledge/microsoft365/teams","팀 생성 정책, 외부 협업, 수명 주기"],
+  ]}
+  updatesMatch="Microsoft 365|Exchange|SharePoint|Teams|OneDrive"
+/>
 
 <ScenarioLinks
   summary="메일, 팀 협업, 공유 문서 중 운영하려는 서비스에서 시작하세요."
@@ -15,51 +27,6 @@ sidebar_label: "Microsoft 365 개요"
     ["SharePoint 문서 공유 설계하기","/knowledge/microsoft365/sharepoint"],
   ]}
 />
-
-<section aria-label="Microsoft 365 enterprise platform landing" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Enterprise Operating Platform</span>
-    <h2>Design Microsoft 365 as the foundation for secure collaboration and Copilot-ready work</h2>
-    <p>Microsoft 365 should not be treated as a collection of productivity apps. In enterprise consulting, it is an operating platform that connects identity, device, collaboration, information protection, compliance, security operations and AI readiness.</p>
-    <div aria-label="Microsoft 365 overview actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/search/microsoft-365-consulting" className="kc-topic-button kc-topic-button--primary">Consulting Path</a>
-      <a href="/knowledge/search/microsoft-365-security" className="kc-topic-button">Security Baseline</a>
-      <a href="/knowledge/copilot/readiness" className="kc-topic-button">Copilot Readiness</a>
-    </div>
-  </div>
-  <div aria-label="Microsoft 365 platform map" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Platform Map</span>
-      <strong>Copilot-ready</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="/knowledge/security/conditional-access" className="kc-factory-card">
-        <small>01</small>
-        <strong>Identity</strong>
-        <span>Entra ID, MFA, Conditional Access, role control and guest access.</span>
-      </a>
-      <a href="/knowledge/knowledge-center/intune-usb-whitelist" className="kc-factory-card">
-        <small>02</small>
-        <strong>Endpoint</strong>
-        <span>Intune, compliance, app protection, Windows, macOS and mobile devices.</span>
-      </a>
-      <a href="/knowledge/microsoft365/teams" className="kc-factory-card">
-        <small>03</small>
-        <strong>Collaboration</strong>
-        <span>Exchange, Teams, SharePoint, OneDrive, lifecycle and sharing governance.</span>
-      </a>
-      <a href="/knowledge/security/purview" className="kc-factory-card">
-        <small>04</small>
-        <strong>Data Protection</strong>
-        <span>Purview, sensitivity labels, DLP, retention, audit and eDiscovery.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Copilot readiness starts before license assignment</strong>
-      <span>Permission hygiene, information architecture, DLP, sensitivity labels, support model and adoption scenarios should be reviewed before large-scale Copilot enablement.</span>
-    </div>
-  </div>
-</section>
 
 ## Executive Summary
 

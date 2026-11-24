@@ -4,9 +4,20 @@ title: "도구 모음"
 description: "Toolkit - The Toolkit section contains practical assets for assessment, architecture, migration, licensing, prompt design and delivery planning."
 toc_max_heading_level: 2
 sidebar_label: "도구 모음 개요"
+hide_title: true
 ---
 
-# 도구 모음
+<HubHeader
+  topic="toolkit"
+  crumb="지식센터 › 도구 모음"
+  title="도구 모음"
+  lead="설계나 이전을 앞두고 빠뜨린 항목을 확인하는 점검표와, 업무에 바로 쓸 수 있는 예시를 모았습니다."
+  start={[
+    ["라이선스 어드바이저","/knowledge/toolkit/license-advisor","필요 기능으로 플랜 후보 좁히기"],
+    ["진단 점검표","/knowledge/toolkit/assessment-checklist","영역별 현황 점검 항목"],
+    ["마이그레이션 점검표","/knowledge/toolkit/migration-checklist","전환 전후 확인 항목"],
+  ]}
+/>
 
 <ScenarioLinks
   summary="설계나 이전을 앞두고 빠뜨린 항목을 확인하거나 업무에 쓸 예시를 찾아보세요."
@@ -16,48 +27,6 @@ sidebar_label: "도구 모음 개요"
     ["업무용 프롬프트 예시 찾기","/knowledge/toolkit/prompt-library"],
   ]}
 />
-
-<section aria-label="Toolkit overview hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Consulting Toolkit</span>
-    <h2>Move from discovery to architecture, proposal and delivery assets</h2>
-    <p>The Toolkit connects assessment, architecture, licensing, migration, prompt design and delivery planning into a reusable consulting operating system.</p>
-    <div aria-label="Toolkit signals" className="kc-hero-signal-row">
-      <span>Assess</span>
-      <span>Design</span>
-      <span>Plan</span>
-      <span>Deliver</span>
-    </div>
-  </div>
-  <div aria-label="Toolkit operating model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Asset Flow</span>
-      <strong>Reusable</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="./assessment-checklist" className="kc-factory-card">
-        <small>01</small>
-        <strong>Assess</strong>
-        <span>Tenant, identity, security, endpoint, migration and governance readiness.</span>
-      </a>
-      <a href="./architecture-builder" className="kc-factory-card">
-        <small>02</small>
-        <strong>Design</strong>
-        <span>Business requirements to target architecture and decisions.</span>
-      </a>
-      <a href="./license-advisor" className="kc-factory-card">
-        <small>03</small>
-        <strong>Validate</strong>
-        <span>Capabilities, risk, licensing and Copilot readiness fit.</span>
-      </a>
-      <a href="../proposal/overview" className="kc-factory-card">
-        <small>04</small>
-        <strong>Plan</strong>
-        <span>SOW, WBS, risk register, timeline and governance structure.</span>
-      </a>
-    </div>
-  </div>
-</section>
 
 The Toolkit section contains practical assets for assessment, architecture, migration, licensing, prompt design and delivery planning.
 

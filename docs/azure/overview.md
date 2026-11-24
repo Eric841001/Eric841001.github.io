@@ -4,9 +4,21 @@ title: "Azure"
 toc_max_heading_level: 2
 description: "Azure - This Azure section focuses on enterprise cloud architecture patterns that commonly support Microsoft 365, Security, Copilot and migration programs."
 sidebar_label: "Azure 개요"
+hide_title: true
 ---
 
-# Azure
+<HubHeader
+  topic="azure"
+  crumb="지식센터 › Azure"
+  title="Azure"
+  lead="랜딩 존, ID와 접근 권한, 가상 머신 운영을 정리했습니다. Azure 환경을 처음 설계하거나 기존 구성을 점검할 때 참고하세요."
+  start={[
+    ["랜딩 존","/knowledge/azure/landing-zone","관리 그룹, 구독, 정책, 네트워크 기반"],
+    ["Azure ID 관리","/knowledge/azure/identity","Entra ID, RBAC와 PIM"],
+    ["Azure 가상 머신","/knowledge/azure/virtual-machines","배치, 백업, 패치와 비용"],
+  ]}
+  updatesMatch="Azure|Entra"
+/>
 
 <ScenarioLinks
   summary="Azure 환경을 처음 설계하거나 기존 구성을 점검할 때 필요한 문서를 모았습니다."
@@ -16,57 +28,6 @@ sidebar_label: "Azure 개요"
     ["가상 머신 구성 검토하기","/knowledge/azure/virtual-machines"],
   ]}
 />
-
-<section aria-label="Azure enterprise foundation" className="kc-azure-hero">
-  <div className="kc-azure-hero__content">
-    <span className="kc-topic-hero__eyebrow">Azure Enterprise Foundation</span>
-    <h2>Build the cloud foundation before workloads scale</h2>
-    <p>Azure architecture should connect landing zone, identity, network, security, operations and cost ownership before migration, AI or modernization programs expand.</p>
-    <div aria-label="Azure overview actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/azure/landing-zone" className="kc-topic-button kc-topic-button--primary">Landing Zone</a>
-      <a href="/knowledge/azure/identity" className="kc-topic-button">Identity</a>
-      <a href="/knowledge/architecture/azure-landing-zone-architecture" className="kc-topic-button">Reference Architecture</a>
-    </div>
-  </div>
-  <div aria-label="Azure foundation layers" className="kc-azure-foundation-card">
-    <div className="kc-azure-foundation-card__header">
-      <span>Foundation Map</span>
-      <strong>Governed workload landing</strong>
-    </div>
-    <div className="kc-azure-foundation-grid">
-      <a href="/knowledge/azure/landing-zone">
-        <small>01</small>
-        <strong>Landing Zone</strong>
-        <span>Management groups, subscriptions, policy, naming, tagging and ownership.</span>
-      </a>
-      <a href="/knowledge/azure/identity">
-        <small>02</small>
-        <strong>Identity</strong>
-        <span>Entra ID, RBAC, PIM, break-glass accounts and privileged access model.</span>
-      </a>
-      <a href="/knowledge/architecture/azure-landing-zone-architecture">
-        <small>03</small>
-        <strong>Network</strong>
-        <span>Hub-spoke, DNS, firewall, private endpoint and hybrid connectivity design.</span>
-      </a>
-      <a href="/knowledge/search/microsoft-365-security">
-        <small>04</small>
-        <strong>Security</strong>
-        <span>Defender for Cloud, logging, policy evidence and compliance-ready controls.</span>
-      </a>
-      <a href="/knowledge/toolkit/assessment-checklist">
-        <small>05</small>
-        <strong>Operations</strong>
-        <span>Monitoring, backup, patching, incident process and handover ownership.</span>
-      </a>
-      <a href="/knowledge/toolkit/license-advisor">
-        <small>06</small>
-        <strong>FinOps</strong>
-        <span>Budget, tagging, right-sizing, reservation and showback accountability.</span>
-      </a>
-    </div>
-  </div>
-</section>
 
 This Azure section focuses on enterprise cloud architecture patterns that commonly support Microsoft 365, Security, Copilot and migration programs.
 

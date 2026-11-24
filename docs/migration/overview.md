@@ -4,9 +4,21 @@ title: "마이그레이션"
 description: "Migration - This Migration section provides enterprise migration guidance for Microsoft 365, Exchange Online, Google Workspace, file server,..."
 toc_max_heading_level: 2
 sidebar_label: "마이그레이션 개요"
+hide_title: true
 ---
 
-# 마이그레이션
+<HubHeader
+  topic="migration"
+  crumb="지식센터 › 마이그레이션"
+  title="마이그레이션"
+  lead="테넌트, 메일, 파일과 협업 환경을 옮길 때의 계획과 점검 항목입니다. 무엇을 어디로 옮기는지에 맞는 문서부터 읽어 보세요."
+  start={[
+    ["Microsoft 365 테넌트 간 마이그레이션","/knowledge/migration/tenant-to-tenant","범위, 순서, 전환 당일 점검"],
+    ["Google Workspace 마이그레이션","/knowledge/migration/google-workspace","메일·드라이브·캘린더 이전"],
+    ["파일 서버 마이그레이션","/knowledge/migration/file-server","SharePoint·OneDrive·Azure Files 선택"],
+  ]}
+  updatesMatch="migration|마이그레이션|테넌트"
+/>
 
 <ScenarioLinks
   summary="무엇을 어디로 옮기는지에 따라 이전 계획과 점검 항목이 달라집니다. 출발 환경에 맞는 문서부터 읽어보세요."
@@ -20,52 +32,6 @@ sidebar_label: "마이그레이션 개요"
 This Migration section provides enterprise migration guidance for Microsoft 365, Exchange Online, Google Workspace, file server, SharePoint, Teams and tenant scenarios.
 
 Migration is treated as a business continuity program, not a file-copy activity. The key work is assessment, target design, batching, communication, security validation, cutover, rollback and hypercare.
-
-<section aria-label="Migration program hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Microsoft 365 Migration Program</span>
-    <h2>Move workloads without losing business continuity</h2>
-    <div className="kc-topic-hero__lede">A strong migration program coordinates source discovery, target architecture, security validation, wave planning, cutover, rollback, user communication and operations handover.</div>
-    <div aria-label="Migration success signals" className="kc-hero-signal-row">
-      <span>Discover</span>
-      <span>Design</span>
-      <span>Cutover</span>
-      <span>Stabilize</span>
-    </div>
-  </div>
-  <div aria-label="Migration operating model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Migration Control Tower</span>
-      <strong>Source environment to stable Microsoft 365 operations</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="#migration-scenarios" className="kc-factory-card">
-        <small>01</small>
-        <strong>Scope</strong>
-        <span>Clarify workloads, users, data locations, domains and coexistence requirements.</span>
-      </a>
-      <a href="#delivery-workstreams" className="kc-factory-card">
-        <small>02</small>
-        <strong>Plan</strong>
-        <span>Define assessment, target design, pilot, wave, communication and support streams.</span>
-      </a>
-      <a href="#migration-decision-checklist" className="kc-factory-card">
-        <small>03</small>
-        <strong>Decide</strong>
-        <span>Set go/no-go criteria, security gates, rollback conditions and owner model.</span>
-      </a>
-      <a href="#wave-planning-model" className="kc-factory-card">
-        <small>04</small>
-        <strong>Execute</strong>
-        <span>Run controlled waves with validation, hypercare and operational handover.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Migration rule</strong>
-      <span>Do not start cutover before source ownership, permissions, rollback, communication and support paths are validated.</span>
-    </div>
-  </div>
-</section>
 
 ## Visual Migration Control Flow
 

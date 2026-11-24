@@ -4,9 +4,20 @@ title: "프로젝트 사례"
 description: Anonymized Microsoft 365, Security, Copilot, Azure, migration and governance project patterns with reusable consulting assets and customer success references.
 toc_max_heading_level: 2
 sidebar_label: "프로젝트 사례 개요"
+hide_title: true
 ---
 
-# 프로젝트 사례
+<HubHeader
+  topic="projects"
+  crumb="지식센터 › 프로젝트 사례"
+  title="프로젝트 사례"
+  lead="업종과 상황별로 익명화한 프로젝트 사례입니다. 비슷한 환경에서 설계할 때 고려한 점과 운영 방식을 찾아보세요."
+  start={[
+    ["고객 성공 참조 패턴","/knowledge/projects/customer-success-reference-patterns","업종·상황별 진행 방식"],
+    ["제조 기업 Copilot 도입 사례","/knowledge/projects/case-study-manufacturing-copilot-adoption","확산, 운영 모델, 변화 관리"],
+    ["금융 SaaS 보안 사례","/knowledge/projects/case-study-financial-saas-security","망 분리 환경과 Zero Trust"],
+  ]}
+/>
 
 <ScenarioLinks
   summary="비슷한 환경의 사례에서 설계할 때 고려한 점과 운영 방식을 찾아보세요."
@@ -16,57 +27,6 @@ sidebar_label: "프로젝트 사례 개요"
     ["여러 테넌트의 운영 전략 살펴보기","/knowledge/projects/multi-tenant-governance-strategy"],
   ]}
 />
-
-<section aria-label="Projects Library landing hero" className="kc-topic-hero">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Anonymized Customer Success Portfolio</span>
-    <h2>Turn delivery experience into public-safe reference stories</h2>
-    <p>Projects Library organizes Microsoft 365, Security, Copilot, AI Agent, Azure, Migration and Governance experience into reusable customer success patterns without exposing customer names, project names or commercial details.</p>
-    <div aria-label="Project library signals" className="kc-hero-signal-row">
-      <span>Industry</span>
-      <span>Challenge</span>
-      <span>Delivery</span>
-      <span>Assets</span>
-    </div>
-    <div aria-label="Projects Library entry actions" className="kc-topic-hero__actions">
-      <a href="./customer-success-reference-patterns" className="kc-topic-button kc-topic-button--primary">Reference Patterns</a>
-      <a href="./case-study-enterprise-ai-agent-factory" className="kc-topic-button">AI Agent Factory</a>
-      <a href="../contact" className="kc-topic-button">Request Private Asset</a>
-    </div>
-  </div>
-  <div aria-label="Projects Library operating model" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Reference Flow</span>
-      <strong>Public-safe</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="#project-pattern-map" className="kc-factory-card">
-        <small>01</small>
-        <strong>Capture</strong>
-        <span>Industry, business challenge, workload scope and delivery context.</span>
-      </a>
-      <a href="#reference-themes" className="kc-factory-card">
-        <small>02</small>
-        <strong>Normalize</strong>
-        <span>Convert lessons into repeatable architecture and governance patterns.</span>
-      </a>
-      <a href="#reference-quality-model" className="kc-factory-card">
-        <small>03</small>
-        <strong>Package</strong>
-        <span>Map patterns to SOW, WBS, workbook, risk register and roadmap assets.</span>
-      </a>
-      <a href="#contact--asset-request" className="kc-factory-card">
-        <small>04</small>
-        <strong>Share</strong>
-        <span>Explain public method first; share detailed documents only by request.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Confidentiality boundary</strong>
-      <span>Customer names, account identifiers, contract details and internal file names stay out of public reference pages.</span>
-    </div>
-  </div>
-</section>
 
 This section captures anonymized enterprise project experience and reusable delivery patterns from Microsoft cloud consulting work. Customer names are intentionally omitted. References are grouped by industry, workload and delivery pattern so they can be reused safely for architecture, presales and governance discussions.
 

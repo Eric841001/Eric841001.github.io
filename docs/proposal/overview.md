@@ -2,9 +2,20 @@
 title: "제안 센터"
 description: Reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security, Copilot and AI Agent engagements.
 sidebar_label: "제안 센터 개요"
+hide_title: true
 ---
 
-# 제안 센터
+<HubHeader
+  topic="proposal"
+  crumb="지식센터 › 제안 센터"
+  title="제안 센터"
+  lead="제안서에 담을 작업 범위, 일정, 위험 요소와 거버넌스를 정리할 때 참고할 양식입니다. 편집용 파일은 문의로 요청해 주세요."
+  start={[
+    ["작업 범위 기술서 양식","/knowledge/proposal/sow-template","범위, 산출물, 검수 기준"],
+    ["작업 분류 체계(WBS)","/knowledge/proposal/wbs-template","작업 구조와 마일스톤"],
+    ["위험 관리 대장","/knowledge/proposal/risk-register","위험 식별과 대응 계획"],
+  ]}
+/>
 
 <ScenarioLinks
   summary="제안서에 담을 작업 범위와 일정, 위험 요소를 정리할 때 참고할 양식입니다."
@@ -14,51 +25,6 @@ sidebar_label: "제안 센터 개요"
     ["위험 요소와 대응 방안 정리하기","/knowledge/proposal/risk-register"],
   ]}
 />
-
-<section aria-label="Proposal Center landing" className="kc-topic-hero kc-topic-hero--agent kc-topic-hero--compact-agent">
-  <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Presales and Delivery Asset System</span>
-    <h2>Turn discovery into a decision-ready proposal and a delivery-ready operating model</h2>
-    <p>The Proposal Center organizes reusable proposal, SOW, WBS, risk register, assessment and governance assets for Microsoft 365, Azure, Security, Copilot, AI Agent and migration engagements.</p>
-    <div aria-label="Proposal Center actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/proposal/executive-summary" className="kc-topic-button kc-topic-button--primary">Executive Summary</a>
-      <a href="/knowledge/proposal/sow-template" className="kc-topic-button">SOW Template</a>
-      <a href="/knowledge/downloads/overview" className="kc-topic-button">Request Editable Assets</a>
-    </div>
-  </div>
-  <div aria-label="Proposal Center asset pathway" className="kc-factory-panel">
-    <div className="kc-factory-panel__header">
-      <span>Proposal Pathway</span>
-      <strong>Decision-ready</strong>
-    </div>
-    <div className="kc-factory-grid">
-      <a href="/knowledge/proposal/executive-summary" className="kc-factory-card">
-        <small>01</small>
-        <strong>Executive story</strong>
-        <span>Clarify why the project matters, target outcome and decision request.</span>
-      </a>
-      <a href="/knowledge/proposal/assessment" className="kc-factory-card">
-        <small>02</small>
-        <strong>Assessment</strong>
-        <span>Convert current state, gap, risk and dependency into recommendation path.</span>
-      </a>
-      <a href="/knowledge/proposal/sow-template" className="kc-factory-card">
-        <small>03</small>
-        <strong>SOW</strong>
-        <span>Define scope, deliverables, assumptions, exclusions and acceptance criteria.</span>
-      </a>
-      <a href="/knowledge/proposal/wbs-template" className="kc-factory-card">
-        <small>04</small>
-        <strong>WBS</strong>
-        <span>Convert scope into delivery phases, workstreams, activities and owners.</span>
-      </a>
-    </div>
-    <div className="kc-guardrail-panel">
-      <strong>Proposal work is decision design</strong>
-      <span>A strong proposal makes the business case, delivery model, technical risk and customer responsibilities visible before the project starts.</span>
-    </div>
-  </div>
-</section>
 
 ## 한국어 요약
 

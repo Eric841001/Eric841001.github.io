@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: "지식센터"
-description: "Enterprise Microsoft Knowledge Center - This site is a practical Microsoft Enterprise Knowledge Center for architecture, presales, delivery and..."
+description: "Microsoft 365, Azure, 보안, Copilot의 도입·설계·운영 문서를 주제별로 모은 지식센터입니다."
 toc_max_heading_level: 2
 hide_title: true
 sidebar_label: "지식센터 안내"
@@ -30,157 +30,139 @@ sidebar_label: "지식센터 안내"
   ]}
 />
 
-<div aria-label="Enterprise knowledge center start points" className="kc-signal-grid">
-  <a href="./copilot/overview" className="kc-signal-card">
-    <small>AI FIRST</small>
-    <strong>How to Use AI in Enterprise Work</strong>
-    <span>Start with Copilot, Copilot Studio, M365 Agents and Copilot Cowork adoption scenarios.</span>
-  </a>
-  <a href="./security/overview" className="kc-signal-card">
-    <small>SECURE</small>
-    <strong>Build the Security Foundation</strong>
-    <span>Connect identity, endpoint, data protection, Defender, Purview and audit evidence.</span>
-  </a>
-  <a href="./proposal/overview" className="kc-signal-card">
-    <small>DELIVER</small>
-    <strong>Turn Strategy into Delivery Assets</strong>
-    <span>Use proposal, SOW, WBS, risk register, governance and downloadable asset patterns.</span>
-  </a>
-</div>
+## 지식센터 구성 {/* #platform-map */}
 
-## Platform Map
+문서를 주제별로 쌓아 두기만 하지 않고, 실제 프로젝트가 진행되는 순서에 맞춰 찾을 수 있게 엮었습니다.
 
-The Knowledge Center is organized as a consulting platform, not a flat document archive.
-
-<div aria-label="Knowledge Center platform map" className="kc-journey-map">
+<div aria-label="지식센터 구성" className="kc-journey-map">
   <div className="kc-journey-map__header">
-    <span>Platform Map</span>
-    <strong>Discover, assess, architect, deliver and operate</strong>
+    <span>진행 순서</span>
+    <strong>파악, 진단, 설계, 수행, 운영</strong>
   </div>
   <div className="kc-journey-track">
     <div className="kc-journey-node kc-journey-node--demand">
       <small>01</small>
-      <strong>Discover</strong>
-      <span>Business need, industry context, scenario, risk and stakeholder priority.</span>
+      <strong>파악</strong>
+      <span>업무 요구, 업종 상황, 시나리오, 위험과 이해관계자의 우선순위</span>
     </div>
     <div className="kc-journey-node">
       <small>02</small>
-      <strong>Assess</strong>
-      <span>Readiness, license, data, security, migration and operational constraints.</span>
+      <strong>진단</strong>
+      <span>준비도, 라이선스, 데이터, 보안, 전환과 운영상의 제약</span>
     </div>
     <div className="kc-journey-node">
       <small>03</small>
-      <strong>Architect</strong>
-      <span>Microsoft 365, Security, Copilot, Azure and AI agent design decisions.</span>
+      <strong>설계</strong>
+      <span>Microsoft 365, 보안, Copilot, Azure, AI 에이전트의 설계 결정</span>
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>04</small>
-      <strong>Deliver</strong>
-      <span>SOW, WBS, governance, migration, adoption and implementation assets.</span>
+      <strong>수행</strong>
+      <span>SOW, WBS, 거버넌스, 전환, 도입과 구축 산출물</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>05</small>
-      <strong>Operate</strong>
-      <span>Handover, controls, KPI, improvement backlog and repeatable reference patterns.</span>
+      <strong>운영</strong>
+      <span>인수인계, 통제, 성과 지표, 개선 과제와 재사용 가능한 참조 패턴</span>
     </div>
   </div>
 </div>
 
-## Who This Is For
+## 이런 분께 맞습니다 {/* #who-this-is-for */}
 
-- Enterprise architects designing Microsoft cloud platforms
-- Microsoft 365 and security consultants preparing assessments or proposals
-- Presales teams building SOW, WBS, risk and executive materials
-- Delivery teams planning migration, adoption and governance workstreams
-- Leaders evaluating Copilot, AI agents and secure modern work adoption
+- Microsoft 클라우드 플랫폼을 설계하는 엔터프라이즈 아키텍트
+- 진단이나 제안을 준비하는 Microsoft 365·보안 컨설턴트
+- SOW, WBS, 위험 관리 대장, 경영진 보고 자료를 만드는 사전 영업 조직
+- 전환, 도입, 거버넌스 작업을 계획하는 수행 조직
+- Copilot, AI 에이전트, 안전한 업무 환경 도입을 검토하는 책임자
 
-## Knowledge Areas
+## 다루는 주제 {/* #knowledge-areas */}
 
-| Area | What It Covers |
+| 주제 | 다루는 내용 |
 |---|---|
-| Microsoft 365 | tenant, Exchange Online, Teams, SharePoint, OneDrive and collaboration governance |
-| Security | Zero Trust, Conditional Access, Defender, Purview, DLP and compliance readiness |
-| Copilot | readiness, adoption, use cases, AI governance, cost control and value tracking |
-| Azure | landing zone, identity, network, workload and cost architecture |
-| Migration | Google Workspace, Exchange, file server, tenant and collaboration migration |
-| Proposal Center | executive summary, SOW, WBS, risk register and timeline structure |
-| Toolkit | assessment checklist, architecture builder, migration checklist and prompt assets |
-| Projects | anonymized customer success patterns and reusable field lessons |
+| Microsoft 365 | 테넌트, Exchange Online, Teams, SharePoint, OneDrive와 협업 거버넌스 |
+| 보안 | Zero Trust, 조건부 액세스, Defender, Purview, DLP와 규정 준수 준비 |
+| Copilot | 준비도, 도입, 활용 사례, AI 거버넌스, 비용 통제와 효과 측정 |
+| Azure | 랜딩 존, ID, 네트워크, 업무 시스템과 비용 구조 |
+| 마이그레이션 | Google Workspace, Exchange, 파일 서버, 테넌트와 협업 환경 전환 |
+| 제안 센터 | 경영진 요약, SOW, WBS, 위험 관리 대장과 일정 구성 |
+| 도구 모음 | 진단 점검표, 아키텍처 빌더, 마이그레이션 점검표와 프롬프트 예시 |
+| 프로젝트 사례 | 익명화한 고객 성공 패턴과 재사용 가능한 현장 교훈 |
 
-## Recommended Paths
+## 역할별 추천 경로 {/* #recommended-paths */}
 
-<div aria-label="Knowledge Center recommended paths" className="kc-journey-map">
+<div aria-label="역할별 추천 경로" className="kc-journey-map">
   <div className="kc-journey-map__header">
-    <span>Recommended Paths</span>
-    <strong>Start from the visitor's role and decision context</strong>
+    <span>추천 경로</span>
+    <strong>맡은 역할과 결정할 일에서 시작하세요</strong>
   </div>
   <div className="kc-journey-track">
     <div className="kc-journey-node kc-journey-node--demand">
       <small>CIO</small>
-      <strong>Executive</strong>
-      <span>Start with Executive Architecture Blueprint and roadmap decisions.</span>
+      <strong>경영진</strong>
+      <span>경영진용 아키텍처 청사진과 로드맵 결정부터</span>
     </div>
     <div className="kc-journey-node">
       <small>CISO</small>
-      <strong>Security</strong>
-      <span>Start with Zero Trust, Defender, Purview and Conditional Access.</span>
+      <strong>보안 책임자</strong>
+      <span>Zero Trust, Defender, Purview, 조건부 액세스부터</span>
     </div>
     <div className="kc-journey-node">
       <small>IT</small>
-      <strong>Platform owner</strong>
-      <span>Start with Microsoft 365 tenant, collaboration and operations guidance.</span>
+      <strong>플랫폼 책임자</strong>
+      <span>Microsoft 365 테넌트, 협업, 운영 안내부터</span>
     </div>
     <div className="kc-journey-node kc-journey-node--control">
       <small>AI</small>
-      <strong>Copilot owner</strong>
-      <span>Start with Copilot readiness, adoption and agent architecture.</span>
+      <strong>Copilot 책임자</strong>
+      <span>Copilot 준비도, 도입, 에이전트 아키텍처부터</span>
     </div>
     <div className="kc-journey-node kc-journey-node--outcome">
       <small>PMO</small>
-      <strong>Delivery</strong>
-      <span>Start with Proposal Center, Playbooks, Toolkit and requestable assets.</span>
+      <strong>수행 조직</strong>
+      <span>제안 센터, 도입 절차, 도구 모음, 요청형 자료부터</span>
     </div>
   </div>
 </div>
 
-### Start Here By Role
+### 역할별 첫 문서 {/* #start-here-by-role */}
 
-| Visitor | Best First Page | Why |
+| 역할 | 먼저 읽을 문서 | 이유 |
 |---|---|---|
-| CIO / Executive Sponsor | [Executive Architecture Blueprint](./architecture/executive-architecture-blueprint) | connects Microsoft cloud architecture to business value, risk and roadmap decisions |
-| CISO / Security Leader | [Security](./security/overview) | starts with Zero Trust, Defender, Purview, Conditional Access and risk governance |
-| IT Director / Platform Owner | [Microsoft 365](./microsoft365/overview) | reviews tenant, collaboration, endpoint, identity and operations decisions |
-| Copilot / AI Program Owner | [Copilot](./copilot/overview) | connects Copilot readiness, adoption, governance, ROI and AI Agent architecture |
-| Presales / PMO | [Proposal Center](./proposal/overview) | organizes executive summary, SOW, WBS, risk, timeline and governance materials |
-| Delivery Consultant | [Playbooks](./playbooks/overview) | provides repeatable execution patterns for assessment, migration, security and adoption |
+| CIO·경영진 후원자 | [경영진용 아키텍처 청사진](./architecture/executive-architecture-blueprint) | Microsoft 클라우드 아키텍처를 사업 가치, 위험, 로드맵 결정과 연결합니다 |
+| CISO·보안 책임자 | [보안](./security/overview) | Zero Trust, Defender, Purview, 조건부 액세스와 위험 거버넌스에서 시작합니다 |
+| IT 부서장·플랫폼 책임자 | [Microsoft 365](./microsoft365/overview) | 테넌트, 협업, 기기, ID, 운영 결정을 검토합니다 |
+| Copilot·AI 프로그램 책임자 | [Copilot](./copilot/overview) | 준비도, 도입, 거버넌스, 투자 효과, AI 에이전트 아키텍처를 연결합니다 |
+| 사전 영업·PMO | [제안 센터](./proposal/overview) | 경영진 요약, SOW, WBS, 위험, 일정, 거버넌스 자료를 정리합니다 |
+| 수행 컨설턴트 | [도입 절차](./playbooks/overview) | 진단, 전환, 보안, 도입의 반복 가능한 수행 방식을 제공합니다 |
 
-### For Architecture Review
+### 아키텍처 검토라면 {/* #for-architecture-review */}
 
-Start with [Architecture](./architecture/overview), then review [Security](./security/overview), [Microsoft 365](./microsoft365/overview) and [Azure](./azure/overview).
+[설계도](./architecture/overview)에서 시작해 [보안](./security/overview), [Microsoft 365](./microsoft365/overview), [Azure](./azure/overview) 순서로 살펴보세요.
 
-### For Copilot or AI Adoption
+### Copilot·AI 도입이라면 {/* #for-copilot-or-ai-adoption */}
 
-Start with [Copilot](./copilot/overview), then review [Copilot Readiness](./copilot/readiness), [Copilot Governance](./copilot/governance), [AI Agent Architecture](./copilot/agentic-ai-architecture) and [Customer Success Reference Patterns](./projects/customer-success-reference-patterns).
+[Copilot](./copilot/overview)에서 시작해 [도입 준비도 평가](./copilot/readiness), [Copilot 거버넌스](./copilot/governance), [에이전트형 AI 아키텍처](./copilot/agentic-ai-architecture), [고객 성공 참조 패턴](./projects/customer-success-reference-patterns)을 이어서 보세요.
 
-### For Presales and Delivery
+### 제안·수행이라면 {/* #for-presales-and-delivery */}
 
-Start with [Proposal Center](./proposal/overview), then use [Toolkit](./toolkit/overview), [Downloads](./downloads/overview) and [Playbooks](./playbooks/overview).
+[제안 센터](./proposal/overview)에서 시작해 [도구 모음](./toolkit/overview), [자료실](./downloads/overview), [도입 절차](./playbooks/overview)를 활용하세요.
 
-### For Migration Planning
+### 전환 계획이라면 {/* #for-migration-planning */}
 
-Start with [Migration](./migration/overview), then review Google Workspace, tenant-to-tenant, file server and cross-tenant planning guidance.
+[마이그레이션](./migration/overview)에서 시작해 Google Workspace, 테넌트 간 전환, 파일 서버, 테넌트 간 동기화 안내를 살펴보세요.
 
-## Operating Principle
+## 문서를 쓰는 원칙 {/* #operating-principle */}
 
-Every section is intended to answer four questions:
+모든 문서는 네 가지 질문에 답하도록 씁니다.
 
-1. What business problem does this solve?
-2. What Microsoft capabilities are involved?
-3. What architecture or governance decisions are required?
-4. What reusable assets can help deliver the work?
+1. 어떤 업무 문제를 푸는가?
+2. 어떤 Microsoft 기능이 관련되는가?
+3. 어떤 설계·거버넌스 결정이 필요한가?
+4. 수행에 도움이 되는 재사용 자료는 무엇인가?
 
-## Public-Safe Knowledge Principle
+## 공개 범위 원칙 {/* #public-safe-knowledge-principle */}
 
-The Knowledge Center is designed to be publicly shareable. Customer names, tenant IDs, project code names, commercial terms and customer-specific architecture details are not published.
+이 지식센터는 공개해도 안전한 범위에서 씁니다. 고객사 이름, 테넌트 ID, 프로젝트 코드명, 계약 조건, 고객 고유의 설계 정보는 싣지 않습니다.
 
-Customer success examples are intentionally anonymized by industry, scenario and delivery pattern. Editable templates and customer-ready deliverables can be requested through [Contact and Asset Request](./contact) after confirming the use case and confidentiality boundary.
+고객 성공 사례는 업종, 상황, 수행 방식 기준으로 익명화했습니다. 편집 가능한 양식과 고객 보고용 산출물은 사용 목적과 공유 범위를 확인한 뒤 [문의하기](./contact)를 통해 안내합니다.
