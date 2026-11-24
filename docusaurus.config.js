@@ -37,7 +37,7 @@ const diagramScriptVersion = createHash('sha256')
   themes: ['@docusaurus/theme-mermaid'],
 
   stylesheets: [
-    {href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;600;700&family=DM+Mono:wght@500&display=swap'},
+    {href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap'},
   ],
   headTags: [
     {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.googleapis.com'}},
@@ -66,7 +66,7 @@ const diagramScriptVersion = createHash('sha256')
         },
         blog: false,
         theme: {
-          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/c-theme.css')],
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/c-theme.css'), require.resolve('./src/css/editorial.css')],
         },
       },
     ],
