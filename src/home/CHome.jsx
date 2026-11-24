@@ -68,7 +68,7 @@ export default function CHome() {
           <div><dt>실무 문서</dt><dd>{data.total}<small>편</small></dd></div>
           <div><dt>설계 구성도</dt><dd>{data.figures}<small>점</small></dd></div>
           <div><dt>구성 요소 설명</dt><dd>{data.elements}<small>개</small></dd></div>
-          <div><dt>공식 원문 확인</dt><dd className={styles.date}>{verifiedOn.replace(/-/g, '.')}</dd></div>
+          <div><dt>최근 갱신</dt><dd className={styles.date}>{verifiedOn.replace(/-/g, '.')}</dd></div>
         </dl>
       </section>
 
