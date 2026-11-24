@@ -37,7 +37,7 @@ const diagramScriptVersion = createHash('sha256')
   themes: ['@docusaurus/theme-mermaid'],
 
   stylesheets: [
-    {href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&family=Noto+Sans+KR:wght@400;600;700&family=DM+Mono:wght@500&display=swap'},
+    {href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;600;700&family=DM+Mono:wght@500&display=swap'},
   ],
   headTags: [
     {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://fonts.googleapis.com'}},
@@ -219,6 +219,7 @@ const diagramScriptVersion = createHash('sha256')
       logo: {
         alt: 'Youngsun Kang Knowledge Center',
         src: 'img/youngsun-logo.svg',
+        srcDark: 'img/youngsun-logo-dark.svg',
       },
       items: [
         {to: '/knowledge/intro', label: '지식센터', position: 'left'},

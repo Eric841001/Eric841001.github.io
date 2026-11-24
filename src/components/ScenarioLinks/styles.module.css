@@ -13,3 +13,17 @@
 .tag{font:600 12px var(--c-sans);background:none;border:1px solid var(--c-line2);color:var(--c-muted)}
 .tile{border-radius:var(--c-r)}
 .tile strong,.tile b{font-family:var(--c-serif);font-weight:700;letter-spacing:-.015em}
+/* 프리미엄: 카드 대신 가는 선 단 */
+.panel{margin:0 0 2.4rem}
+.lede{font-size:clamp(16.5px,1.35vw,18.5px);line-height:1.85;color:var(--c-ink2)}
+.tag{border:0;padding:0;margin-right:12px;color:var(--c-gold-ink);font:600 13px var(--c-sans);border-radius:0}
+.grid{gap:0;border-top:1px solid var(--c-ink);border-bottom:1px solid var(--c-line)}
+.tile{border:0;border-left:1px solid var(--c-line);border-radius:0;background:transparent;padding:20px 22px;min-height:0}
+.tile:first-child{border-left:0;padding-left:0}
+.tile:hover{transform:none;box-shadow:none}
+.tile:hover .q{text-decoration:underline;text-decoration-color:var(--c-gold);text-underline-offset:4px}
+.n{font:500 12.5px var(--c-mono);color:var(--c-gold-ink)}
+.q{font:600 17px/1.45 var(--c-serif);letter-spacing:-.015em}
+.go{color:var(--c-ink);font-weight:600;border-bottom:1px solid var(--c-gold);align-self:flex-start;padding-bottom:2px}
+@media (max-width:760px){.tile{border-left:0;border-top:1px solid var(--c-line);padding:18px 0}.tile:first-child{border-top:0}}
+.tile,.tile .p{font-weight:400}

@@ -18,3 +18,12 @@
 /* 에디토리얼 */
 .lname b,.area strong{font-family:var(--c-serif);font-weight:700;letter-spacing:-.02em}
 .k{font-family:var(--c-sans);font-weight:600;letter-spacing:0}
+/* 프리미엄: 색 타일 대신 네이비 면과 가는 선 */
+.area{border-radius:2px;background:var(--c-panel);min-height:210px}
+.area:hover{transform:none;box-shadow:none}
+.area:hover strong{text-decoration:underline;text-decoration-color:var(--c-gold);text-underline-offset:5px;text-decoration-thickness:1px}
+.lname{border-top:1.5px solid var(--c-ink);padding:14px 0 4px}
+.glyph path{stroke:var(--c-gold)}
+.glyph circle{fill:rgba(246,242,234,.06);stroke:#F6F2EA}
+.go{border-bottom:1px solid var(--c-gold);align-self:flex-start;padding-bottom:2px}
+.area strong{color:#F6F2EA!important}

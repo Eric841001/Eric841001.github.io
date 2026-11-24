@@ -206,3 +206,113 @@ main[class*="docMainContainer"]{padding-top:8px}
 .c-docmeta span+span::before{content:"";display:inline-block;width:3px;height:3px;border-radius:50%;background:var(--c-line2);margin:0 12px 3px -9px}
 .c-docmeta time{font-family:var(--c-mono);font-size:13px;color:var(--c-ink2)}
 .c-summary-heading{scroll-margin-top:calc(var(--ifm-navbar-height) + 1rem)}
+
+/* ══════════════════════════════════════════════════════════
+ * 프리미엄 컨설팅 층 (최종). 잉크 네이비·차콜 + 따뜻한 아이보리, 샴페인 골드는 가는 선과 숫자에만.
+ * 둥근 타일·그림자·그라데이션을 쓰지 않고, 가는 선과 여백으로 위계를 만든다.
+ * ══════════════════════════════════════════════════════════ */
+:root{
+  --c-bg:#F6F2EA;--c-tile:#FBF9F4;--c-tile2:#EFEAE0;--c-ink:#14213D;--c-ink2:#2A3040;--c-muted:#6A6457;--c-line:#E3DCCD;--c-line2:#CFC6B3;
+  --c-gold:#B8975A;--c-gold-ink:#7A5C24;--c-panel:#14213D;
+  --c-accent:#14213D;--c-accent-ink:#F6F2EA;--c-accent-soft:rgba(184,151,90,.12);
+  --c-t-copilot:#14213D;--c-t-azure:#14213D;--c-t-security:#14213D;--c-t-licensing:#14213D;--c-t-m365:#14213D;--c-t-migration:#14213D;--c-t-ops:#14213D;--c-t-arch:#14213D;
+  --c-r:2px;--c-shadow:none;
+  --ifm-color-primary:#14213D;--ifm-color-primary-dark:#121E37;--ifm-color-primary-darker:#111C34;--ifm-color-primary-darkest:#0E172B;
+  --ifm-color-primary-light:#162443;--ifm-color-primary-lighter:#172646;--ifm-color-primary-lightest:#1B2C51;
+  --ifm-global-radius:2px;--ifm-code-border-radius:2px;
+}
+[data-theme='dark']{
+  --c-bg:#0F1524;--c-tile:#151C2D;--c-tile2:#1B2336;--c-ink:#EFE9DC;--c-ink2:#D6D0C3;--c-muted:#A39C8C;--c-line:#262E42;--c-line2:#363F57;
+  --c-gold:#C9A96A;--c-gold-ink:#C9A96A;--c-panel:#1B2540;
+  --c-accent:#EFE9DC;--c-accent-ink:#0F1524;--c-accent-soft:rgba(201,169,106,.12);
+  --c-t-copilot:#1B2540;--c-t-azure:#1B2540;--c-t-security:#1B2540;--c-t-licensing:#1B2540;--c-t-m365:#1B2540;--c-t-migration:#1B2540;--c-t-ops:#1B2540;--c-t-arch:#1B2540;
+  --ifm-color-primary:#E4D5B3;--ifm-color-primary-dark:#DCC99E;--ifm-color-primary-darker:#D8C394;--ifm-color-primary-darkest:#CCB073;
+  --ifm-color-primary-light:#ECE1C8;--ifm-color-primary-lighter:#F0E7D2;--ifm-color-primary-lightest:#F8F3E8;
+}
+::selection{background:rgba(184,151,90,.28)}
+/* 상단 막대 */
+.navbar{min-height:68px;background:color-mix(in srgb,var(--c-bg) 92%,transparent)!important}
+.navbar__title{font:600 18px var(--c-serif);letter-spacing:-.01em;color:var(--c-ink)}
+.navbar__link{font:500 14.5px var(--c-sans);color:var(--c-ink2);padding:23px 13px}
+.navbar__link--active{box-shadow:inset 0 -2px 0 var(--c-gold)!important;color:var(--c-ink)!important}
+.navbar [class*="searchBar"] input,.navbar .navbar__search-input{border-radius:2px!important;background-color:transparent!important;border:1px solid var(--c-line2)!important}
+/* 본문 */
+.theme-doc-markdown{color:var(--c-ink2)}
+.theme-doc-markdown > header > h1,.theme-doc-markdown h1{font:600 clamp(34px,4vw,52px)/1.25 var(--c-serif)!important;letter-spacing:-.03em!important;color:var(--c-ink)!important}
+.c-topicbar{width:48px;height:2px;border-radius:0;background:var(--c-gold)!important;margin:0 0 18px}
+.theme-doc-markdown > h2,.theme-doc-markdown details.kc-reading-section > summary h2{font:600 clamp(23px,2.2vw,28px)/1.4 var(--c-serif)!important;color:var(--c-ink)}
+.theme-doc-markdown > h2::before,.theme-doc-markdown details.kc-reading-section > summary h2::before{color:var(--c-gold-ink)!important}
+.theme-doc-markdown > h2{border-top:1px solid var(--c-line)}
+.theme-doc-markdown a{color:var(--c-ink);text-decoration-color:var(--c-gold)}
+.theme-doc-markdown a:hover{color:var(--c-gold-ink)}
+.theme-doc-markdown li::marker{color:var(--c-gold-ink)}
+.theme-doc-markdown blockquote{border-left-color:var(--c-gold)}
+/* 접히는 장: 상자 대신 가는 선 행 */
+.theme-doc-markdown details.kc-reading-section{background:transparent!important;border:0!important;border-top:1px solid var(--c-line)!important;border-radius:0!important;padding:0 2px!important;margin:0!important}
+.theme-doc-markdown details.kc-reading-section:last-of-type{border-bottom:1px solid var(--c-line)!important}
+.theme-doc-markdown details.kc-reading-section > summary{padding:22px 0!important}
+.theme-doc-markdown details.kc-reading-section > summary::after{border-radius:0;border:0;width:28px;height:28px;font:300 26px/28px var(--c-sans);color:var(--c-gold-ink);background:none!important}
+.theme-doc-markdown details.kc-reading-section[open] > summary::after{color:var(--c-ink)}
+.kc-reading-controls{background:transparent!important;border:0!important;border-top:1px solid var(--c-line)!important;border-bottom:1px solid var(--c-line)!important;border-radius:0!important;padding:14px 0!important}
+.kc-reading-controls button{border-radius:2px!important;border:1px solid var(--c-line2)!important;background:transparent!important;color:var(--c-ink)!important}
+/* 표 */
+.theme-doc-markdown .kc-table-viewport table,.theme-doc-markdown table{background:transparent;border:0;border-top:1.5px solid var(--c-ink);border-bottom:1px solid var(--c-line);border-radius:0}
+.theme-doc-markdown table th{background:transparent;color:var(--c-ink);font-weight:600;border-bottom:1px solid var(--c-line2)}
+/* kc 블록: 카드 더미 대신 가는 선 단 */
+.theme-doc-markdown :is(.kc-journey-node,.kc-factory-card,.kc-platform-fit__card,.kc-entry-hub>a,.kc-operating-stage,.kc-maturity-step,.kc-pathway-step,.kc-context-panel__grid>a,.kc-outcome-card,.kc-signal-card,.kc-about-focus>a,.kc-contact-brief>div,.kc-profile-strip>div){background:transparent!important;border:0!important;border-top:1px solid var(--c-line)!important;border-radius:0!important;padding:18px 4px 18px 0!important}
+.theme-doc-markdown [class*="kc-"] small{color:var(--c-gold-ink)!important;font-weight:600}
+.theme-doc-markdown [class*="kc-"] strong{font-family:var(--c-serif);font-weight:600}
+.theme-doc-markdown .kc-topic-button{border-radius:2px!important}
+.theme-doc-markdown .kc-topic-button--primary{background:var(--c-ink)!important;color:var(--c-bg)!important;border-color:var(--c-ink)!important}
+.theme-doc-markdown :is(.kc-guardrail-panel,.kc-update-brief){border-left-color:var(--c-gold)!important;border-radius:0!important}
+.theme-doc-markdown .kc-about-hero,.theme-doc-markdown .kc-contact-hero{background:transparent!important;border:0!important;border-top:1.5px solid var(--c-ink)!important;border-radius:0!important;box-shadow:none!important;padding:28px 0 0!important;color:var(--c-ink2)!important}
+.theme-doc-markdown .kc-about-hero h2{font:600 clamp(30px,3.4vw,44px)/1.2 var(--c-serif)!important;color:var(--c-ink)!important;border:0!important;padding:0!important}
+.theme-doc-markdown .kc-about-hero h2::before{display:none!important}
+.theme-doc-markdown .kc-about-hero p{color:var(--c-ink2)!important}
+.theme-doc-markdown .kc-about-hero__meta span{background:transparent!important;border:1px solid var(--c-line2)!important;border-radius:2px!important;color:var(--c-ink2)!important}
+.theme-doc-markdown .kc-topic-hero__eyebrow{background:none!important;border:0!important;padding:0!important;color:var(--c-gold-ink)!important;font:600 13px var(--c-sans)!important;letter-spacing:.02em!important;text-transform:none!important}
+/* 사이드바·목차 */
+.theme-doc-sidebar-container{background:transparent!important;border-right:1px solid var(--c-line)!important}
+.theme-doc-sidebar-container .menu__link.menu__link--active:not(.menu__link--sublist),[data-theme='dark'] .theme-doc-sidebar-container .menu__link.menu__link--active:not(.menu__link--sublist){box-shadow:inset 2px 0 0 var(--c-gold)!important}
+.table-of-contents{border-left:1px solid var(--c-line)!important;background:transparent!important}
+.table-of-contents__link--active{color:var(--c-ink)!important}
+.theme-doc-toc-desktop{background:transparent!important}
+.pagination-nav__link{border-radius:0;background:transparent;border:0;border-top:1px solid var(--c-ink)}
+/* 문서 머리 검토 줄 */
+.c-docmeta time{color:var(--c-gold-ink)}
+/* 바닥글 */
+.footer{border-top:1px solid var(--c-ink)!important}
+/* 모바일 하단 막대: 떠 있는 알약 대신 전폭 막대 */
+@media (max-width:996px){
+  .c-dock{left:0;right:0;bottom:0;transform:none;border-radius:0;justify-content:space-around;padding:6px 8px calc(6px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--c-bg) 96%,transparent);border:0;border-top:1px solid var(--c-line2);box-shadow:none}
+  .c-dock a{border-radius:2px;min-width:72px;color:var(--c-muted)!important}
+  .c-dock a[aria-current=page]{background:none;color:var(--c-ink)!important;box-shadow:inset 0 2px 0 var(--c-gold)}
+  .c-dock .c-dock__q{background:none;color:var(--c-ink)!important}
+  .navbar{min-height:60px}
+}
+/* 사이드바 글자 무게를 낮춰 차분하게 */
+.theme-doc-sidebar-container .menu__link{font-weight:500;color:var(--c-ink2)}
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link,.theme-doc-sidebar-container .menu__caret{font-weight:600;color:var(--c-ink)}
+.theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist){font-weight:600!important}
+[class*="tableOfContents"],.theme-doc-toc-desktop > *{background:transparent!important}
+.c-docmeta time{font-family:var(--c-sans)!important;font-weight:600}
+.theme-doc-markdown .kc-about-hero::before,.theme-doc-markdown .kc-about-hero::after,.theme-doc-markdown .kc-contact-hero::before,.theme-doc-markdown .kc-contact-hero::after{display:none!important;content:none!important}
+.theme-doc-markdown .kc-about-hero__meta span,.theme-doc-markdown .kc-about-hero__meta a{box-shadow:none!important}
+.theme-doc-markdown .kc-about-hero__meta a{color:var(--c-ink)!important;text-decoration:underline;text-decoration-color:var(--c-gold)}
+[data-theme='dark'] .navbar .navbar__search-input{background-color:transparent!important;color:var(--c-ink)!important;caret-color:var(--c-ink)!important}
+[data-theme='dark'] .navbar .navbar__search-input::placeholder{color:var(--c-muted)!important}
+.navbar .navbar__search-input::placeholder{color:var(--c-muted)}
+.table-of-contents__link{color:var(--c-muted)!important}
+.table-of-contents__link:hover,.table-of-contents__link--active{color:var(--c-ink)!important}
+[data-theme='dark'] .table-of-contents__link{color:var(--c-muted)!important}
+[data-theme='dark'] .table-of-contents__link--active{color:var(--c-ink)!important}
+/* 문서 안의 옛 머리 블록(kc-topic-hero 등)을 같은 결로 */
+.theme-doc-markdown :is(.kc-topic-hero,.kc-factory-panel,.kc-journey-map,.kc-context-panel,.kc-platform-fit,.kc-operating-model,.kc-maturity-ladder,.kc-signal-grid,.kc-entry-hub,.kc-pathway)::before,
+.theme-doc-markdown :is(.kc-topic-hero,.kc-factory-panel,.kc-journey-map,.kc-context-panel,.kc-platform-fit,.kc-operating-model,.kc-maturity-ladder,.kc-signal-grid,.kc-entry-hub,.kc-pathway)::after{display:none!important;content:none!important}
+.theme-doc-markdown .kc-topic-hero{border-top:1.5px solid var(--c-ink)!important;padding-top:24px!important}
+.theme-doc-markdown .kc-topic-hero h2{font:600 clamp(22px,2.2vw,28px)/1.35 var(--c-serif)!important;color:var(--c-ink)!important;border:0!important;padding:0!important;margin-top:8px!important}
+.theme-doc-markdown .kc-topic-hero h2::before{display:none!important}
+.theme-doc-markdown :is(.kc-hero-signal-row span,.kc-topic-button,.kc-factory-panel__header span){box-shadow:none!important;background:transparent!important;border:1px solid var(--c-line2)!important;border-radius:2px!important;color:var(--c-ink2)!important}
+.theme-doc-markdown .kc-topic-button--primary{background:var(--c-ink)!important;color:var(--c-bg)!important;border-color:var(--c-ink)!important}
+.theme-doc-markdown [class*="kc-"]{box-shadow:none!important}
+.theme-doc-markdown [class*="kc-"] :is(h3,strong){color:var(--c-ink)!important}

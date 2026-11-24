@@ -8,3 +8,16 @@
 .primary{background:var(--c-ink);color:var(--c-bg)!important}
 .ghost{border:1px solid var(--c-line2);color:var(--c-ink)!important}
 .primary:hover{opacity:.9}.ghost:hover{border-color:var(--c-ink)}
+/* 프리미엄: 잉크 네이비 면 */
+.cta{background:var(--c-panel);border:0;border-radius:2px;padding:clamp(28px,3.6vw,44px)}
+.k{color:rgba(246,242,234,.7)}
+.k::before{content:"";display:inline-block;width:22px;height:1px;background:var(--c-gold);margin-right:10px;vertical-align:4px}
+.t{font-weight:600;color:#F6F2EA}
+.d{color:rgba(246,242,234,.82)}
+.primary,.ghost{border-radius:2px}
+.primary{background:#F6F2EA;color:#14213D!important}
+.ghost{border:1px solid rgba(246,242,234,.4);color:#F6F2EA!important}
+.ghost:hover{border-color:#F6F2EA}
+.cta .t{color:#F6F2EA!important}
+.cta .d{color:rgba(246,242,234,.84)!important}
+.cta .k{color:rgba(246,242,234,.72)!important}

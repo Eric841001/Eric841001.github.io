@@ -21,3 +21,14 @@
 .sum b,.card strong{font-family:var(--c-serif);font-weight:700}
 .card{border:1px solid var(--c-line);border-top:2px solid var(--tc);border-radius:var(--c-r)}
 .top code{border-radius:4px;font-weight:500!important}
+/* 프리미엄: 자격 목록을 가는 선 표처럼 */
+.sum{background:transparent;color:var(--c-ink);border:0;border-top:1.5px solid var(--c-ink);border-bottom:1px solid var(--c-line);border-radius:0;padding:20px 0;margin-bottom:0}
+.sum b{font:600 64px/1 var(--c-serif);color:var(--c-ink)}
+.sum span{font:600 20px/1.35 var(--c-serif);color:var(--c-ink)}
+.sum small{color:var(--c-muted)!important;opacity:1;font-family:var(--c-sans)}
+.grid{gap:0;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:transparent;border:0;border-bottom:1px solid var(--c-line);border-radius:0;padding:22px 24px 22px 0}
+.top{color:var(--c-gold-ink)}
+.top code{background:transparent!important;color:var(--c-ink)!important;border:1px solid var(--c-gold)!important;border-radius:2px}
+.card strong{font:600 18px/1.4 var(--c-serif)}
+.meta span{color:var(--c-muted)}
