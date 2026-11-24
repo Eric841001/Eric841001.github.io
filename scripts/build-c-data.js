@@ -112,5 +112,14 @@ Object.values(docs).forEach(d => {
 });
 Object.values(sections).forEach(l => { l.sort((a, b) => a.pos - b.pos || a.title.localeCompare(b.title, 'ko')); l.forEach(x => delete x.pos); });
 
-fs.writeFileSync(out, JSON.stringify({generated: 'build', total: Object.keys(docs).length, counts, previews, answers, licensing, sections}, null, 1));
+// 구성도 수와 요소 수(홈 표지의 숫자).
+let figures = 0, elements = 0;
+for (const file of walk(docsDir)) {
+  const src = fs.readFileSync(file, 'utf8');
+  for (const m of src.matchAll(/<ArchitectureFigure[\s\S]*?nodes=\{\[([\s\S]*?)\]\}/g)) {
+    figures++;
+    elements += (m[1].match(/^\s*\["/gm) || []).length;
+  }
+}
+fs.writeFileSync(out, JSON.stringify({generated: 'build', total: Object.keys(docs).length, figures, elements, counts, previews, answers, licensing, sections}, null, 1));
 console.log(`cData: docs ${Object.keys(docs).length}, answers ${answers.length}, licensing rows ${licensing.length}`);

@@ -40,6 +40,8 @@ function Dock() {
 export default function Root({children}) {
   const {pathname, hash} = useLocation();
   useEffect(() => { revealHash(); }, [pathname, hash]);
+  // 홈에서는 상단 막대를 표지와 같은 잉크 네이비로 맞춘다.
+  useEffect(() => { document.documentElement.dataset.home = pathname === '/' ? 'true' : 'false'; }, [pathname]);
   // 검색 페이지의 주제 선택 상자에 이름을 붙인다(검색 플러그인이 레이블을 넣지 않음).
   useEffect(() => {
     if (!pathname.startsWith('/search')) return;

@@ -1,6 +1,8 @@
 {
  "generated": "build",
  "total": 132,
+ "figures": 24,
+ "elements": 117,
  "counts": {
   "about": 1,
   "architecture": 8,

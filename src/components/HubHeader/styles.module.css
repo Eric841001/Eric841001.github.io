@@ -12,7 +12,7 @@
 .hero .k span:first-child{display:flex;align-items:center;gap:10px}
 .hero .k span:first-child::before{content:"";width:36px;height:2px;background:var(--c-gold)}
 .hero .k span:last-child{font:500 13px var(--c-mono);color:var(--c-muted)}
-.theme-doc-markdown .hero h1,.hero h1{font:600 clamp(42px,5.2vw,72px)/1.12 var(--c-serif)!important;letter-spacing:-.035em!important;color:var(--c-ink)!important;margin:clamp(18px,2.4vw,28px) 0 clamp(14px,1.8vw,22px)!important;padding:0!important;border:0!important}
+.theme-doc-markdown .hero h1,.hero h1{font:500 clamp(42px,5.2vw,72px)/1.12 var(--c-serif)!important;letter-spacing:-.035em!important;color:var(--c-ink)!important;margin:clamp(18px,2.4vw,28px) 0 clamp(14px,1.8vw,22px)!important;padding:0!important;border:0!important}
 .hero h1::before,.hero h1::after{display:none!important;content:none!important}
 .hero p{margin:0 0 clamp(24px,3vw,34px);font-size:clamp(16.5px,1.3vw,18.5px);line-height:1.85;color:var(--c-ink2);max-width:38em}
 .ask{display:flex;align-items:center;gap:10px;max-width:560px;border-bottom:1.5px solid var(--c-ink);padding:0}

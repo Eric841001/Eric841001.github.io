@@ -311,3 +311,28 @@ main[class*="docMainContainer"]{padding-top:8px}
 .theme-doc-markdown .kc-topic-button--primary{background:var(--c-ink)!important;color:var(--c-bg)!important;border-color:var(--c-ink)!important}
 .theme-doc-markdown [class*="kc-"]{box-shadow:none!important}
 .theme-doc-markdown [class*="kc-"] :is(h3,strong){color:var(--c-ink)!important}
+/* 3차: 큰 제목은 한 단계 가벼운 명조로 */
+.theme-doc-markdown > header > h1,.theme-doc-markdown h1{font-weight:500!important;letter-spacing:-.035em!important}
+/* 홈 상단 막대: 표지와 이어지는 잉크 네이비 */
+html[data-home='true'] .navbar{background:#0F1A30!important;border-bottom-color:rgba(246,242,234,.14)}
+html[data-home='true'] .navbar :is(.navbar__title,.navbar__link,.navbar__item,.clean-btn){color:#F6F2EA!important}
+html[data-home='true'] .navbar__link{color:rgba(246,242,234,.78)!important}
+html[data-home='true'] .navbar__link:hover{color:#F6F2EA!important}
+html[data-home='true'] .navbar .navbar__search-input{border-color:rgba(246,242,234,.28)!important;color:#F6F2EA!important;background-color:transparent!important}
+html[data-home='true'] .navbar .navbar__search-input::placeholder{color:rgba(246,242,234,.6)!important}
+html[data-home='true'] .navbar__toggle{color:#F6F2EA}
+html[data-home='true'] .navbar__logo img{content:url('/img/youngsun-logo-dark.svg')}
+/* 바닥글: 잉크 네이비로 마감 */
+.footer{background:#0F1A30!important;border-top:0!important;color:rgba(246,242,234,.7);padding-top:56px;padding-bottom:48px}
+.footer__title{color:#F6F2EA!important;font:500 16px var(--c-serif)}
+.footer__link-item{color:rgba(246,242,234,.72)!important}
+.footer__link-item:hover{color:#C9A96A!important;text-decoration:none}
+.footer__copyright{color:rgba(246,242,234,.55)!important;font-size:13px;border-top:1px solid rgba(246,242,234,.14);padding-top:24px;margin-top:16px}
+[data-theme='dark'] .footer{background:#0A1020!important}
+.footer{border-top:1px solid rgba(246,242,234,.1)!important}
+@media (max-width:996px){
+  html[data-home='true'] .c-dock{background:rgba(15,26,48,.97);border-top-color:rgba(246,242,234,.16)}
+  html[data-home='true'] .c-dock a{color:rgba(246,242,234,.66)!important}
+  html[data-home='true'] .c-dock a[aria-current=page],html[data-home='true'] .c-dock .c-dock__q{color:#F6F2EA!important}
+}
+.theme-doc-markdown .kc-guardrail-panel :is(span,p){color:var(--c-ink2)!important}
