@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: "Copilot"
-description: Microsoft 365 Copilot readiness, model availability, Copilot Studio, AI Agent, Copilot Cowork, governance and ROI guide for enterprise programs.
+description: "기업 도입을 위한 Microsoft 365 Copilot 가이드. 도입 준비, 모델 제공 상태, Copilot Studio, AI 에이전트, Copilot Cowork, 거버넌스와 투자 효과를 다룹니다."
 hide_title: true
 sidebar_label: "Copilot 개요"
 ---
@@ -37,268 +37,268 @@ import UpdateBrief from '@site/src/components/UpdateBrief';
 
 Microsoft의 현재 문서에서는 **Microsoft 365 Copilot을 Microsoft Copilot**, **Microsoft 365 Copilot Chat을 Microsoft Copilot Chat**으로 안내합니다. 기존 명칭은 과거 자료와의 연결을 위해 함께 사용합니다. 앱의 기본 접속 주소도 `copilot.cloud.microsoft`로 변경되므로 네트워크 허용 목록을 확인하세요. [현재 제품명과 접속 요구사항](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-copilot-requirements)을 참고합니다.
 
-## Visual Adoption Journey
+## 도입 여정 한눈에 보기 {/* #visual-adoption-journey */}
 
-<div aria-label="Copilot adoption journey from real work to governed scale" className="kc-journey-map kc-ai-journey">
+<div aria-label="실제 업무에서 관리되는 확산까지의 Copilot 도입 여정" className="kc-journey-map kc-ai-journey">
   <div className="kc-journey-node kc-journey-node--demand">
     <small>01</small>
-    <strong>Real work</strong>
-    <span>Meetings, documents, analysis, decisions, follow-up and response work.</span>
+    <strong>실제 업무</strong>
+    <span>회의, 문서, 분석, 의사 결정, 후속 조치와 응대 업무입니다.</span>
   </div>
   <div className="kc-journey-node">
     <small>02</small>
     <strong>Copilot</strong>
-    <span>Personal productivity and everyday Microsoft 365 knowledge work.</span>
+    <span>개인 생산성과 일상적인 Microsoft 365 지식 업무를 돕습니다.</span>
   </div>
   <div className="kc-journey-node">
     <small>03</small>
     <strong>Copilot Studio</strong>
-    <span>Repeatable business scenarios become governed agents and workflows.</span>
+    <span>반복되는 업무 시나리오를 관리되는 에이전트와 워크플로로 만듭니다.</span>
   </div>
   <div className="kc-journey-node">
     <small>04</small>
     <strong>M365 Agents</strong>
-    <span>Contextual task assistance and in-flow automation inside work patterns.</span>
+    <span>업무 흐름 안에서 맥락에 맞게 작업을 돕고 자동화합니다.</span>
   </div>
   <div className="kc-journey-node">
     <small>05</small>
     <strong>Cowork</strong>
-    <span>Long-running work with owners, approvals, cost and quality telemetry.</span>
+    <span>담당자, 승인, 비용과 품질 측정을 갖춘 장기 실행 업무입니다.</span>
   </div>
   <div className="kc-journey-node kc-journey-node--outcome">
     <small>06</small>
-    <strong>Business value</strong>
-    <span>Measure task time, output quality, access incidents and review time against the pilot baseline.</span>
+    <strong>업무 성과</strong>
+    <span>작업 시간, 결과물 품질, 접근 사고, 검토 시간을 시범 기준선과 비교해 측정합니다.</span>
   </div>
 </div>
 
-<div aria-label="Copilot governance and adoption spine" className="kc-context-panel">
+<div aria-label="Copilot 거버넌스와 도입의 기본 축" className="kc-context-panel">
   <div className="kc-context-panel__lead">
-    <small>Operating Principle</small>
-    <strong>Governance and adoption must move together.</strong>
-    <span>Copilot becomes valuable when users change behavior and the organization controls identity, data boundary, DLP, owner model, cost and telemetry at the same time.</span>
+    <small>운영 원칙</small>
+    <strong>거버넌스와 도입은 함께 움직여야 합니다.</strong>
+    <span>사용자의 업무 방식이 바뀌고, 조직이 ID, 데이터 경계, DLP, 담당자 체계, 비용, 측정을 함께 관리할 때 Copilot의 가치가 생깁니다.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="/knowledge/copilot/governance">
-      <small>Governance</small>
-      <strong>Data and policy boundary</strong>
-      <span>Permission cleanup, DLP, Purview, Defender signals, owner model and approval path.</span>
+      <small>거버넌스</small>
+      <strong>데이터와 정책 경계</strong>
+      <span>권한 정리, DLP, Purview, Defender 신호, 담당자 체계와 승인 경로입니다.</span>
     </a>
     <a href="/knowledge/copilot/adoption-program">
-      <small>Adoption</small>
-      <strong>Behavior change</strong>
-      <span>Role-based scenarios, champions, manager routines, training and value storytelling.</span>
+      <small>도입</small>
+      <strong>업무 방식 변화</strong>
+      <span>역할별 시나리오, 챔피언, 관리자 루틴, 교육, 성과 공유입니다.</span>
     </a>
     <a href="/knowledge/downloads/overview">
-      <small>Assets</small>
-      <strong>Reusable templates</strong>
-      <span>Readiness checklist, adoption WBS, executive review pack and agent governance checklist.</span>
+      <small>자료</small>
+      <strong>재사용 양식</strong>
+      <span>준비도 점검표, 도입 WBS, 임원 보고 자료, 에이전트 거버넌스 점검표입니다.</span>
     </a>
   </div>
 </div>
 
-## July 2026 Model Update — Historical Context {/* #gpt-56-update-for-microsoft-365-copilot */}
+## 2026년 7월 모델 업데이트 — 과거 기록 {/* #gpt-56-update-for-microsoft-365-copilot */}
 
-Microsoft announced GPT-5.6 for Microsoft 365 Copilot on July 9, 2026, describing it as a frontier reasoning model for agentic, end-to-end work. The rollout spans Copilot Chat, Word, Excel, PowerPoint and Copilot Cowork, and this historical announcement records the adoption and governance implications at that time. For current selection, use the latest model availability notice above.
+Microsoft는 2026년 7월 9일 Microsoft 365 Copilot에 GPT-5.6을 발표하며, 에이전트형 처리와 처음부터 끝까지 이어지는 업무를 위한 최신 추론 모델이라고 설명했습니다. 배포 범위는 Copilot Chat, Word, Excel, PowerPoint, Copilot Cowork였습니다. 이 절은 당시 발표가 도입과 거버넌스에 준 의미를 기록으로 남긴 것입니다. 현재 모델을 고를 때는 위의 최신 모델 제공 안내를 따르세요.
 
-<div aria-label="GPT-5.6 planning implications" className="kc-platform-fit">
+<div aria-label="GPT-5.6 발표 당시의 계획 시사점" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
-    <small>User Experience</small>
-    <strong>Stronger reasoning scenarios</strong>
-    <span>Users should be guided toward drafting, analysis, presentation refinement, comparison, decision support and follow-up work.</span>
+    <small>사용자 경험</small>
+    <strong>더 깊은 추론이 필요한 시나리오</strong>
+    <span>초안 작성, 분석, 발표 자료 다듬기, 비교, 의사 결정 지원, 후속 업무로 사용자를 안내합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Model Selection</small>
-    <strong>Clear model guidance</strong>
-    <span>Where available, model selection guidance should explain when to use GPT-5.6 for deeper reasoning tasks.</span>
+    <small>모델 선택</small>
+    <strong>분명한 모델 안내</strong>
+    <span>모델 선택이 가능한 곳에서는 더 깊은 추론 작업에 언제 GPT-5.6을 쓸지 설명합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Adoption</small>
-    <strong>Scenario-based training</strong>
-    <span>Training should move from feature explanation to outcome scenarios such as draft, analyze, decide and follow up.</span>
+    <small>도입</small>
+    <strong>시나리오 중심 교육</strong>
+    <span>교육은 기능 설명에서 초안, 분석, 결정, 후속 조치 같은 결과 중심 시나리오로 옮겨 갑니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Governance</small>
-    <strong>Enterprise boundary</strong>
-    <span>Security, compliance, privacy, data protection and tenant controls remain part of the Microsoft 365 enterprise boundary.</span>
+    <small>거버넌스</small>
+    <strong>기업 경계</strong>
+    <span>보안, 규정 준수, 개인정보, 데이터 보호, 테넌트 제어는 계속 Microsoft 365 기업 경계 안에 있습니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Rollout</small>
-    <strong>Phased availability</strong>
-    <span>Availability can depend on region, tenant configuration, service rollout and model selection experience.</span>
+    <small>배포</small>
+    <strong>단계적 제공</strong>
+    <span>제공 여부는 지역, 테넌트 구성, 서비스 배포 일정, 모델 선택 화면에 따라 달라질 수 있습니다.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Cowork</small>
-    <strong>Long-running work controls</strong>
-    <span>Copilot Cowork scenarios need owner, approval, cost and monitoring rules before scale-out.</span>
+    <strong>장기 실행 업무 통제</strong>
+    <span>Copilot Cowork 시나리오는 확대하기 전에 담당자, 승인, 비용, 모니터링 규칙이 필요합니다.</span>
   </div>
 </div>
 
-For adoption programs, this update should be reflected in champion training, executive demos, prompt patterns, model selection guidance and post-launch value measurement.
+당시 도입 프로그램에서는 이 업데이트를 챔피언 교육, 임원 시연, 프롬프트 유형, 모델 선택 안내, 출시 후 성과 측정에 반영하도록 권했습니다.
 
-**Official source (checked July 12, 2026, Asia/Seoul):** [Available today: OpenAI’s GPT-5.6 in Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152)
+**공식 출처(2026년 7월 12일 한국 시간 기준 확인):** [Available today: OpenAI’s GPT-5.6 in Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openai%E2%80%99s-gpt-5-6-in-microsoft-365-copilot/4533152)
 
-## 2026 Copilot Studio Update
+## 2026 Copilot Studio 업데이트 {/* #2026-copilot-studio-update */}
 
-Copilot Studio should be treated as an enterprise agent platform, not only a chatbot builder. Modern planning should include the new agent experience, Work IQ, skills, memory, computer use, agent inventory, Microsoft Entra agent identities, agent-to-agent connectivity and Copilot Credit forecasting.
+Copilot Studio는 챗봇 제작 도구가 아니라 기업용 에이전트 플랫폼으로 다뤄야 합니다. 계획에는 새 에이전트 환경, Work IQ, 스킬, 메모리, 컴퓨터 사용, 에이전트 목록, Microsoft Entra 에이전트 ID, 에이전트 간 연결, Copilot Credit 예측을 포함하세요.
 
-<div aria-label="Copilot Studio planning model" className="kc-operating-model">
+<div aria-label="Copilot Studio 계획 모델" className="kc-operating-model">
   <div className="kc-operating-stage">
-    <small>Discover</small>
-    <strong>Agent portfolio intake</strong>
-    <span>Collect agent ideas, business owners, data sources, expected value and risk level.</span>
+    <small>발굴</small>
+    <strong>에이전트 포트폴리오 접수</strong>
+    <span>에이전트 아이디어, 업무 담당자, 데이터 원본, 기대 효과, 위험 수준을 모읍니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Design</small>
-    <strong>Skills and workflow</strong>
-    <span>Define reusable skills, memory boundary, connectors, tools, workflow and escalation path.</span>
+    <small>설계</small>
+    <strong>스킬과 워크플로</strong>
+    <span>재사용할 스킬, 메모리 경계, 커넥터, 도구, 워크플로, 에스컬레이션 경로를 정합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Govern</small>
-    <strong>Identity and policy</strong>
-    <span>Review Entra agent identities, access, DLP, environment strategy, approval and audit needs.</span>
+    <small>관리</small>
+    <strong>ID와 정책</strong>
+    <span>Entra 에이전트 ID, 접근 권한, DLP, 환경 전략, 승인과 감사 요구를 검토합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Operate</small>
-    <strong>Cost and telemetry</strong>
-    <span>Track usage, Copilot Credit forecasting, quality, owner review and retirement criteria.</span>
+    <small>운영</small>
+    <strong>비용과 측정</strong>
+    <span>사용량, Copilot Credit 예측, 품질, 담당자 검토, 폐기 기준을 추적합니다.</span>
   </div>
 </div>
 
-Start with [Copilot Studio 2026 Platform Update](/knowledge/copilot/copilot-studio-2026-platform-update) before designing a large-scale agent program.
+대규모 에이전트 프로그램을 설계하기 전에 [Copilot Studio 2026 플랫폼 변경](/knowledge/copilot/copilot-studio-2026-platform-update)부터 읽으세요.
 
-## Copilot Adoption Model
+## Copilot 도입 모델 {/* #copilot-adoption-model */}
 
-<div aria-label="Copilot adoption model" className="kc-maturity-ladder">
+<div aria-label="Copilot 도입 모델" className="kc-maturity-ladder">
   <div className="kc-maturity-step">
-    <small>Readiness</small>
-    <strong>Tenant, data and security baseline</strong>
-    <span>Produce readiness report, risk log, oversharing review and pilot criteria.</span>
+    <small>준비</small>
+    <strong>테넌트·데이터·보안 기준</strong>
+    <span>준비도 보고서, 위험 기록, 과도한 공유 검토, 시범 기준을 만듭니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Use Case</small>
-    <strong>Role and business scenario design</strong>
-    <span>Build use case backlog, persona map, value hypothesis and prompt patterns.</span>
+    <small>활용 사례</small>
+    <strong>역할과 업무 시나리오 설계</strong>
+    <span>활용 사례 목록, 사용자 유형 지도, 가치 가설, 프롬프트 유형을 만듭니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Pilot</small>
-    <strong>Validate value and support needs</strong>
-    <span>Run pilot plan, training assets, feedback dashboard and issue triage rhythm.</span>
+    <small>시범 적용</small>
+    <strong>가치와 지원 요구 검증</strong>
+    <span>시범 계획, 교육 자료, 의견 대시보드, 문제 분류 주기를 운영합니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Governance</small>
-    <strong>Control data, prompts, agents and licenses</strong>
-    <span>Create governance charter, policy model, owner model and cost tracking approach.</span>
+    <small>거버넌스</small>
+    <strong>데이터·프롬프트·에이전트·라이선스 관리</strong>
+    <span>거버넌스 헌장, 정책 모델, 담당자 체계, 비용 추적 방법을 만듭니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Scale</small>
-    <strong>Expand without losing control</strong>
-    <span>Use rollout roadmap, KPI model, operating rhythm and executive value reporting.</span>
+    <small>확산</small>
+    <strong>통제를 잃지 않고 확대</strong>
+    <span>배포 로드맵, KPI 모델, 운영 주기, 임원 성과 보고를 사용합니다.</span>
   </div>
 </div>
 
-## Topics Covered
+## 다루는 주제 {/* #topics-covered */}
 
-<div aria-label="Copilot topics covered" className="kc-entry-hub">
+<div aria-label="Copilot 문서가 다루는 주제" className="kc-entry-hub">
   <a href="/knowledge/copilot/readiness">
-    <small>Readiness</small>
-    <strong>Microsoft 365 Copilot readiness</strong>
-    <span>Tenant, data, permission, security and pilot readiness review.</span>
+    <small>준비</small>
+    <strong>Microsoft 365 Copilot 도입 준비</strong>
+    <span>테넌트, 데이터, 권한, 보안, 시범 준비 상태를 검토합니다.</span>
   </a>
   <a href="/knowledge/copilot/adoption-program">
-    <small>Adoption</small>
-    <strong>Adoption program design</strong>
-    <span>Use case mapping, champion model, manager routines and value measurement.</span>
+    <small>도입</small>
+    <strong>도입 프로그램 설계</strong>
+    <span>활용 사례 정리, 챔피언 모델, 관리자 루틴, 성과 측정입니다.</span>
   </a>
   <a href="/knowledge/copilot/governance">
-    <small>Governance</small>
-    <strong>Copilot governance</strong>
-    <span>Data protection, policy, owner model, prompt guidance and control rhythm.</span>
+    <small>거버넌스</small>
+    <strong>Copilot 거버넌스</strong>
+    <span>데이터 보호, 정책, 담당자 체계, 프롬프트 안내, 점검 주기입니다.</span>
   </a>
   <a href="/knowledge/copilot/copilot-studio-2026-platform-update">
     <small>Studio</small>
-    <strong>Copilot Studio platform update</strong>
-    <span>Agent platform planning, skills, memory, inventory, identities and cost forecasting.</span>
+    <strong>Copilot Studio 플랫폼 변경</strong>
+    <span>에이전트 플랫폼 계획, 스킬, 메모리, 목록, ID, 비용 예측입니다.</span>
   </a>
   <a href="/knowledge/search/ai-agent-factory">
-    <small>Agent</small>
-    <strong>AI Agent operating model</strong>
-    <span>Agent Factory, lifecycle, portfolio governance and multi-agent framework.</span>
+    <small>에이전트</small>
+    <strong>AI 에이전트 운영 모델</strong>
+    <span>Agent Factory, 수명 주기, 포트폴리오 거버넌스, 다중 에이전트 구조입니다.</span>
   </a>
   <a href="/knowledge/copilot/copilot-cowork-cost-governance">
     <small>Cowork</small>
-    <strong>Cowork cost governance</strong>
-    <span>Long-running work, approval, owner, cost and telemetry controls.</span>
+    <strong>Cowork 비용 거버넌스</strong>
+    <span>장기 실행 업무, 승인, 담당자, 비용, 측정 통제입니다.</span>
   </a>
 </div>
 
-## Recommended Reading
+## 추천 문서 {/* #recommended-reading */}
 
-<div aria-label="Copilot recommended reading" className="kc-entry-hub">
+<div aria-label="Copilot 추천 문서" className="kc-entry-hub">
   <a href="/knowledge/copilot/readiness">
-    <small>Start</small>
-    <strong>Copilot Readiness</strong>
-    <span>Prepare tenant, security, data and pilot criteria.</span>
+    <small>시작</small>
+    <strong>Copilot 도입 준비</strong>
+    <span>테넌트, 보안, 데이터, 시범 기준을 준비합니다.</span>
   </a>
   <a href="/knowledge/copilot/business-use-cases">
-    <small>Use Cases</small>
-    <strong>Business Use Cases</strong>
-    <span>Translate features into business scenarios and adoption stories.</span>
+    <small>활용 사례</small>
+    <strong>업무 활용 사례</strong>
+    <span>기능을 업무 시나리오와 도입 사례로 바꿉니다.</span>
   </a>
   <a href="/knowledge/copilot/agent-factory-operating-model">
-    <small>Agents</small>
-    <strong>Agent Factory Operating Model</strong>
-    <span>Build a governed agent portfolio instead of disconnected experiments.</span>
+    <small>에이전트</small>
+    <strong>에이전트 팩토리 운영 모델</strong>
+    <span>흩어진 실험 대신 관리되는 에이전트 포트폴리오를 만듭니다.</span>
   </a>
   <a href="/knowledge/projects/case-study-enterprise-ai-agent-factory">
-    <small>Reference</small>
-    <strong>Enterprise AI Agent Factory Case Study</strong>
-    <span>Anonymized delivery pattern for enterprise agent programs.</span>
+    <small>참고 사례</small>
+    <strong>기업 AI 에이전트 팩토리 사례</strong>
+    <span>기업 에이전트 프로그램의 익명화한 수행 방식입니다.</span>
   </a>
   <a href="/knowledge/projects/enterprise-ai-adoption-program">
-    <small>Program</small>
-    <strong>Enterprise AI Adoption Program</strong>
-    <span>Connect strategy, change management and measurable outcomes.</span>
+    <small>프로그램</small>
+    <strong>기업 AI 도입 프로그램</strong>
+    <span>전략, 변화 관리, 측정 가능한 성과를 연결합니다.</span>
   </a>
   <a href="/knowledge/contact">
-    <small>Request</small>
-    <strong>Contact and Asset Request</strong>
-    <span>Request readiness workbooks, adoption roadmaps or executive AI value materials.</span>
+    <small>요청</small>
+    <strong>문의와 자료 요청</strong>
+    <span>준비도 워크북, 도입 로드맵, 임원용 AI 가치 자료를 요청할 수 있습니다.</span>
   </a>
 </div>
 
-## Delivery Assets
+## 수행 자료 {/* #delivery-assets */}
 
-<div aria-label="Copilot delivery assets" className="kc-platform-fit">
+<div aria-label="Copilot 수행 자료" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
-    <small>Readiness</small>
-    <strong>Copilot readiness checklist</strong>
-    <span>Tenant, data, permission, security, pilot group and risk review.</span>
+    <small>준비</small>
+    <strong>Copilot 준비도 점검표</strong>
+    <span>테넌트, 데이터, 권한, 보안, 시범 그룹, 위험을 검토합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Adoption</small>
-    <strong>Adoption WBS and milestone plan</strong>
-    <span>Workstreams, schedule, training, champions, communication and value tracking.</span>
+    <small>도입</small>
+    <strong>도입 WBS와 일정 계획</strong>
+    <span>작업 흐름, 일정, 교육, 챔피언, 커뮤니케이션, 성과 추적입니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Model availability</small>
-    <strong>Model selection guide</strong>
-    <span>Check current model availability, app rollout, licensing and tenant policy before preparing user guidance.</span>
+    <small>모델 제공 상태</small>
+    <strong>모델 선택 안내</strong>
+    <span>사용자 안내를 만들기 전에 현재 모델 제공 상태, 앱별 배포, 라이선스, 테넌트 정책을 확인합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Governance</small>
-    <strong>Data protection checklist</strong>
-    <span>Oversharing, Purview, DLP, Defender signals, owner and approval controls.</span>
+    <small>거버넌스</small>
+    <strong>데이터 보호 점검표</strong>
+    <span>과도한 공유, Purview, DLP, Defender 신호, 담당자와 승인 통제입니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Agent</small>
-    <strong>Agent governance checklist</strong>
-    <span>Agent intake, owner, lifecycle, environment, connector, cost and monitoring controls.</span>
+    <small>에이전트</small>
+    <strong>에이전트 거버넌스 점검표</strong>
+    <span>에이전트 접수, 담당자, 수명 주기, 환경, 커넥터, 비용, 모니터링 통제입니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Value</small>
-    <strong>ROI and value tracking model</strong>
-    <span>Time saved, quality, usage, confidence, business outcome and risk reduction measures.</span>
+    <small>가치</small>
+    <strong>투자 효과와 성과 추적 모델</strong>
+    <span>절약한 시간, 품질, 사용량, 신뢰도, 업무 성과, 위험 감소를 측정합니다.</span>
   </div>
 </div>
 
@@ -344,6 +344,6 @@ Copilot Studio와 M365 Agents를 배포할 때는 에이전트 목록과 담당�
 
 <BriefingCTA />
 
-## Official Update Review
+## 공식 업데이트 검토 {/* #official-update-review */}
 
-[October 2026 official update review](./official-update-catchup-2026-10.md) covers the July–October release batches and links to the detailed workload guides.
+[2026년 10월 공식 업데이트 검토](./official-update-catchup-2026-10.md)는 7월부터 10월까지의 발표 묶음을 정리하고, 업무별 상세 가이드로 연결합니다.

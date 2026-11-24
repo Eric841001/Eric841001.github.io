@@ -2,7 +2,7 @@
 id: conditional-access
 title: "조건부 액세스"
 sidebar_label: "조건부 액세스"
-description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA, compliant devices, risk policies and Copilot access control.
+description: "Microsoft Entra 조건부 액세스 설계 가이드. Zero Trust, MFA, 준수 기기, 위험 정책과 Copilot 접근 제어를 다룹니다."
 ---
 
 # 조건부 액세스
@@ -16,47 +16,47 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
   ]}
 />
 
-<section aria-label="Conditional Access design landing" className="kc-topic-hero">
+<section aria-label="조건부 액세스 설계 개요" className="kc-topic-hero">
   <div className="kc-topic-hero__content">
-    <span className="kc-topic-hero__eyebrow">Identity and Access Control</span>
-    <h2>Design Conditional Access as the policy engine for Zero Trust and Copilot-ready Microsoft 365</h2>
-    <p>Conditional Access decides who can access what, from where, on which device and under which risk. A good design protects users and data without locking out business-critical work.</p>
-    <div aria-label="Conditional Access actions" className="kc-topic-hero__actions">
-      <a href="/knowledge/search/microsoft-365-security" className="kc-topic-button kc-topic-button--primary">Security Landing</a>
+    <span className="kc-topic-hero__eyebrow">ID와 접근 제어</span>
+    <h2>조건부 액세스를 Zero Trust와 Copilot 도입을 위한 Microsoft 365 정책 엔진으로 설계하기</h2>
+    <p>조건부 액세스는 누가, 어디에서, 어떤 기기로, 어떤 위험 수준에서 무엇에 접근할 수 있는지 정합니다. 잘 설계한 정책은 핵심 업무를 막지 않으면서 사용자와 데이터를 보호합니다.</p>
+    <div aria-label="조건부 액세스 관련 이동" className="kc-topic-hero__actions">
+      <a href="/knowledge/search/microsoft-365-security" className="kc-topic-button kc-topic-button--primary">보안 문서 모음</a>
       <a href="/knowledge/security/zero-trust-framework" className="kc-topic-button">Zero Trust</a>
-      <a href="/knowledge/contact" className="kc-topic-button">Request CA Matrix</a>
+      <a href="/knowledge/contact" className="kc-topic-button">정책 매트릭스 요청</a>
     </div>
   </div>
-  <div aria-label="Conditional Access design model" className="kc-factory-panel">
+  <div aria-label="조건부 액세스 설계 모델" className="kc-factory-panel">
     <div className="kc-factory-panel__header">
-      <span>Design Model</span>
-      <strong>Report-only first</strong>
+      <span>설계 모델</span>
+      <strong>보고 전용 모드부터</strong>
     </div>
     <div className="kc-factory-grid">
       <a href="#policy-layer-model" className="kc-factory-card">
         <small>01</small>
-        <strong>Layer</strong>
-        <span>Separate baseline MFA, admin protection, device, app and risk policies.</span>
+        <strong>계층 나누기</strong>
+        <span>기본 MFA, 관리자 보호, 기기·앱, 위험 정책을 서로 나눕니다.</span>
       </a>
       <a href="#deployment-journey" className="kc-factory-card">
         <small>02</small>
-        <strong>Deploy</strong>
-        <span>Use report-only, pilot scope, exclusions, sign-in logs and staged enforcement.</span>
+        <strong>배포</strong>
+        <span>보고 전용 모드, 시범 범위, 제외 대상, 로그인 기록을 거쳐 단계적으로 적용합니다.</span>
       </a>
       <a href="#exception-and-lockout-control" className="kc-factory-card">
         <small>03</small>
-        <strong>Protect</strong>
-        <span>Keep emergency access, exception ownership and expiry under governance.</span>
+        <strong>보호</strong>
+        <span>긴급 접근 계정과 예외의 담당자·만료일을 관리 대상으로 둡니다.</span>
       </a>
       <a href="#copilot-access-control" className="kc-factory-card">
         <small>04</small>
         <strong>Copilot</strong>
-        <span>Align Copilot access with identity, device, session and data protection policy.</span>
+        <span>Copilot 접근을 ID, 기기, 세션, 데이터 보호 정책과 맞춥니다.</span>
       </a>
     </div>
     <div className="kc-guardrail-panel">
-      <strong>Policy is the new perimeter</strong>
-      <span>Conditional Access evaluates applicable policies after first-factor authentication. Continuous Access Evaluation supports near-real-time enforcement only for supported resources and events.</span>
+      <strong>정책이 새로운 보안 경계입니다</strong>
+      <span>조건부 액세스는 1단계 인증이 끝난 뒤 해당 정책을 평가합니다. 연속 액세스 평가(CAE)는 지원되는 리소스와 이벤트에 한해서만 거의 실시간으로 적용됩니다.</span>
     </div>
   </div>
 </section>
@@ -65,11 +65,11 @@ description: Microsoft Entra Conditional Access design guide for Zero Trust, MFA
 
 종료된 기존 `memberOf` 미리 보기 방식의 그룹은 2026년 11월 3일 이후 구성원이 갱신되지 않습니다. 후속 **MemberOf Next**로 전환하려면 Entra ID Governance와 Standard 우선순위가 필요합니다. 전환 후에도 하루 두 번 갱신되므로, 즉시 접근을 차단해야 하는 용도로 의존하지 마세요. [ID 설계 문서의 전환 안내](../azure/identity#memberof-retirement-2026)에 따라 처리 상태와 정책의 포함·제외 대상, 실제 로그인 결과를 확인합니다. 긴급 접근 계정의 제외 설정도 함께 확인하세요.
 
-## License and rollout verification — 2026-10-25
+## 라이선스와 제공 상태 확인 — 2026-10-25 {/* #license-and-rollout-verification--2026-10-25 */}
 
-[Microsoft's overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) requires **Entra ID P1** for Conditional Access; Business Premium also includes access. **User/sign-in risk policies require P2**, as described in [Entra licensing](https://learn.microsoft.com/en-us/entra/fundamentals/licensing).
+[Microsoft 개요 문서](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview)에 따르면 조건부 액세스에는 **Entra ID P1**이 필요하며, Business Premium에도 포함됩니다. [Entra 라이선스 안내](https://learn.microsoft.com/en-us/entra/fundamentals/licensing)대로 **사용자 위험·로그인 위험 정책에는 P2가 필요합니다**.
 
-Agent policies have separate licensing and identity targeting rules. The current [agent policy documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id) lists **Microsoft 365 E7**, or **Microsoft Agent 365 paired with at least Entra P1 or Microsoft 365 E3**, as licensing options. The general overview still marks agent targeting as preview; verify the specific policy's release status in the linked scenario documentation and your tenant rather than declaring all agent controls GA or preview together. A policy targeting an agent identity does not automatically cover delegated user access or an agent user account. Validate the token subject, policy target and report-only results before enforcement.
+에이전트 정책은 라이선스와 ID 대상 지정 규칙이 따로 있습니다. 현재 [에이전트 정책 문서](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id)는 라이선스 선택지로 **Microsoft 365 E7**, 또는 **Microsoft Agent 365와 최소 Entra P1 또는 Microsoft 365 E3의 조합**을 안내합니다. 일반 개요 문서는 에이전트 대상 지정을 아직 미리 보기로 표시합니다. 에이전트 제어 전체를 한꺼번에 GA나 미리 보기로 단정하지 말고, 연결된 시나리오 문서와 테넌트에서 정책별 제공 상태를 확인하세요. 에이전트 ID를 대상으로 하는 정책은 위임된 사용자 접근이나 에이전트 사용자 계정까지 자동으로 포함하지 않습니다. 적용하기 전에 토큰 주체, 정책 대상, 보고 전용 결과를 확인하세요.
 
 ## Microsoft 관리형 정책과 위험 해결 {/* #managed-risk-remediation */}
 
@@ -86,11 +86,11 @@ Microsoft가 만든 정책도 직접 만든 정책과 함께 점검해야 합니
 
 출처: [Microsoft 관리형 정책](https://learn.microsoft.com/en-us/entra/identity/conditional-access/managed-policies), [위험 해결과 사용자 차단 해제](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock).
 
-## Executive Summary
+## 핵심 요약 {/* #executive-summary */}
 
-Microsoft Entra Conditional Access is the policy enforcement engine of Microsoft's Zero Trust architecture. It evaluates user identity, device posture, location, application, risk signals and session context before granting access to corporate resources.
+Microsoft Entra 조건부 액세스는 Microsoft Zero Trust 아키텍처에서 정책을 집행하는 엔진입니다. 회사 리소스에 대한 접근을 허용하기 전에 사용자 ID, 기기 상태, 위치, 애플리케이션, 위험 신호, 세션 맥락을 평가합니다.
 
-This document provides an enterprise design methodology for Microsoft 365, Azure, Security and Copilot deployments.
+이 문서는 Microsoft 365, Azure, 보안, Copilot 도입에 쓰는 기업용 설계 방법을 정리합니다.
 
 ## 한국어 요약
 
@@ -100,42 +100,42 @@ Conditional Access는 사용자, 접속 기기·위치·앱과 위험 신호를 
 
 Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계정과 기기, 세션과 데이터 보호 정책을 함께 검토하세요.
 
-## Why Conditional Access Matters
+## 조건부 액세스가 필요한 이유 {/* #why-conditional-access-matters */}
 
-<div aria-label="Why Conditional Access matters" className="kc-platform-fit">
+<div aria-label="조건부 액세스가 막는 위험" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
-    <small>Credential</small>
-    <strong>Credential theft</strong>
-    <span>Require MFA, sign-in risk controls and strong authentication for risky access.</span>
+    <small>자격 증명</small>
+    <strong>자격 증명 탈취</strong>
+    <span>위험한 접근에는 MFA, 로그인 위험 제어, 강력한 인증을 요구합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Session</small>
-    <strong>Session hijacking and token replay</strong>
-    <span>Use risk signals, session controls and device conditions where appropriate.</span>
+    <small>세션</small>
+    <strong>세션 탈취와 토큰 재사용</strong>
+    <span>상황에 맞게 위험 신호, 세션 제어, 기기 조건을 사용합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Legacy</small>
-    <strong>Legacy authentication abuse</strong>
-    <span>Identify clients that use legacy authentication, migrate supported clients to modern authentication, and block legacy sign-ins.</span>
+    <small>레거시</small>
+    <strong>레거시 인증 악용</strong>
+    <span>레거시 인증을 쓰는 클라이언트를 찾아 지원되는 클라이언트는 최신 인증으로 옮기고, 레거시 로그인은 차단합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Device</small>
-    <strong>Unmanaged device access</strong>
-    <span>Require compliant or managed devices for sensitive workloads and admin access.</span>
+    <small>기기</small>
+    <strong>관리되지 않는 기기의 접근</strong>
+    <span>민감한 업무와 관리자 접근에는 준수 기기나 관리 기기를 요구합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Location</small>
-    <strong>Unexpected location or network</strong>
-    <span>Use named locations, country rules and trusted network logic carefully.</span>
+    <small>위치</small>
+    <strong>예상하지 못한 위치나 네트워크</strong>
+    <span>명명된 위치, 국가 규칙, 신뢰할 수 있는 네트워크 조건은 신중하게 사용합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>AI</small>
-    <strong>Copilot data exposure risk</strong>
-    <span>Align Copilot readiness with permission hygiene, device posture and session controls.</span>
+    <strong>Copilot을 통한 데이터 노출 위험</strong>
+    <span>Copilot 준비를 권한 정리, 기기 상태, 세션 제어와 함께 진행합니다.</span>
   </div>
 </div>
 
-## Zero Trust Evaluation Flow
+## Zero Trust 평가 흐름 {/* #zero-trust-evaluation-flow */}
 
 <ArchitectureFigure
   id="conditional-access-zero-trust-evaluation-flow"
@@ -151,149 +151,149 @@ Copilot은 사용자의 Microsoft 365 자료 접근 권한을 따릅니다. 계�
   ]}
 />
 
-## Mobile policy control change — 2026-10-25
+## 모바일 정책 제어 변경 — 2026-10-25 {/* #mobile-policy-control-change--2026-10-25 */}
 
-The **Require approved client app** grant control moved to a read-only state on **2026-06-30**. Existing enabled policies can continue to enforce, but administrators cannot create or edit policies using that control. For new policies, use **Require app protection policy** and verify application support, enrollment model and user impact in report-only mode. See [Microsoft's migration guidance](https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app/).
+**Require approved client app** 권한 부여 제어는 **2026-06-30**부터 읽기 전용 상태가 되었습니다. 이미 켜져 있는 정책은 계속 적용될 수 있지만, 관리자는 이 제어를 쓰는 정책을 새로 만들거나 고칠 수 없습니다. 새 정책에는 **Require app protection policy**를 사용하고, 보고 전용 모드에서 앱 지원 여부, 등록 방식, 사용자 영향을 확인하세요. [Microsoft 전환 안내](https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app/)를 참고하세요.
 
-Blocking legacy authentication and disabling a mail protocol are separate decisions. A protocol that uses OAuth is not Basic authentication merely because it is POP, IMAP or SMTP AUTH. Document the protocol requirement and authentication flow before choosing the policy scope.
+레거시 인증 차단과 메일 프로토콜 비활성화는 별개의 결정입니다. POP, IMAP, SMTP AUTH라는 이유만으로 OAuth를 쓰는 프로토콜이 기본 인증이 되지는 않습니다. 정책 범위를 정하기 전에 프로토콜 요구 사항과 인증 흐름을 문서로 남기세요.
 
-## Policy Layer Model
+## 정책 계층 모델 {/* #policy-layer-model */}
 
-<div aria-label="Conditional Access policy layer model" className="kc-maturity-ladder">
+<div aria-label="조건부 액세스 정책 계층" className="kc-maturity-ladder">
   <div className="kc-maturity-step">
-    <small>Layer 1</small>
-    <strong>Baseline MFA</strong>
-    <span>Require MFA for routine users. Before enforcement, check emergency access exclusions and review sign-in results.</span>
+    <small>1계층</small>
+    <strong>기본 MFA</strong>
+    <span>일반 사용자에게 MFA를 요구합니다. 적용하기 전에 긴급 접근 계정의 제외 설정과 로그인 결과를 확인합니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Layer 2</small>
-    <strong>Admin protection</strong>
-    <span>Apply stricter controls to privileged roles, admin portals and management workloads.</span>
+    <small>2계층</small>
+    <strong>관리자 보호</strong>
+    <span>권한 있는 역할, 관리 포털, 관리 작업에는 더 엄격한 제어를 적용합니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Layer 3</small>
-    <strong>Legacy authentication block</strong>
-    <span>Block legacy authentication using the relevant client-app conditions. POP, IMAP and SMTP AUTH can also use OAuth; protocol names alone do not identify Basic authentication.</span>
+    <small>3계층</small>
+    <strong>레거시 인증 차단</strong>
+    <span>해당 클라이언트 앱 조건으로 레거시 인증을 차단합니다. POP, IMAP, SMTP AUTH도 OAuth를 쓸 수 있으므로 프로토콜 이름만으로 기본 인증이라고 판단할 수 없습니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Layer 4</small>
-    <strong>Device and app control</strong>
-    <span>Require compliant devices or app protection for sensitive workloads. For new mobile policies, use Require app protection policy rather than the retired approved-client-app control.</span>
+    <small>4계층</small>
+    <strong>기기와 앱 제어</strong>
+    <span>민감한 업무에는 준수 기기나 앱 보호를 요구합니다. 새 모바일 정책에는 종료된 승인된 클라이언트 앱 제어 대신 Require app protection policy를 사용합니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Layer 5</small>
-    <strong>Risk and session control</strong>
-    <span>Use user and sign-in risk conditions, Intune compliance informed by Defender device risk, and supported session controls.</span>
+    <small>5계층</small>
+    <strong>위험과 세션 제어</strong>
+    <span>사용자 위험·로그인 위험 조건, Defender 기기 위험을 반영한 Intune 준수 상태, 지원되는 세션 제어를 사용합니다.</span>
   </div>
   <div className="kc-maturity-step">
-    <small>Layer 6</small>
-    <strong>Workload-specific policies</strong>
-    <span>Apply tailored controls for Exchange, SharePoint, Teams, OneDrive, Azure and Copilot scenarios.</span>
+    <small>6계층</small>
+    <strong>업무별 정책</strong>
+    <span>Exchange, SharePoint, Teams, OneDrive, Azure, Copilot 시나리오에 맞춘 제어를 적용합니다.</span>
   </div>
 </div>
 
 기기 위험 점수는 사용자 위험·로그인 위험과 적용 경로가 다릅니다. Defender for Endpoint와 Intune을 연결하고, Intune 준수 정책에 기기 위험 수준의 허용 기준을 설정한 뒤 조건부 액세스에서 **준수 상태의 기기 요구**를 적용합니다. 기기를 Defender에 등록하는 것만으로 이 접근 정책이 생기지는 않습니다. [기기 위험을 이용한 준수·조건부 액세스 구성](https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/configure-integration)을 참고하세요.
 
-## Recommended Enterprise Policies
+## 권장 기업 정책 {/* #recommended-enterprise-policies */}
 
-<div aria-label="Recommended Conditional Access policies" className="kc-entry-hub">
+<div aria-label="권장 조건부 액세스 정책" className="kc-entry-hub">
   <a href="/knowledge/security/zero-trust-framework">
     <small>MFA</small>
-    <strong>Require MFA for all users</strong>
-    <span>Evaluate sign-ins in report-only mode. Before enforcing a policy that restricts sign-in, exclude emergency access accounts.</span>
+    <strong>모든 사용자에게 MFA 요구</strong>
+    <span>보고 전용 모드에서 로그인을 평가합니다. 로그인을 제한하는 정책을 적용하기 전에 긴급 접근 계정을 제외합니다.</span>
   </a>
   <a href="/knowledge/microsoft365/exchange-online">
-    <small>Legacy</small>
-    <strong>Block legacy authentication</strong>
-    <span>Block legacy authentication after reviewing sign-in logs and client dependencies. Assess OAuth-based protocol use separately.</span>
+    <small>레거시</small>
+    <strong>레거시 인증 차단</strong>
+    <span>로그인 기록과 클라이언트 의존성을 검토한 뒤 레거시 인증을 차단합니다. OAuth 기반 프로토콜 사용은 따로 평가합니다.</span>
   </a>
   <a href="/knowledge/knowledge-center/intune-ios-compliance">
-    <small>Device</small>
-    <strong>Require compliant device</strong>
-    <span>Apply to Exchange, SharePoint, Teams and OneDrive after device readiness is validated.</span>
+    <small>기기</small>
+    <strong>준수 기기 요구</strong>
+    <span>기기 준비 상태를 확인한 뒤 Exchange, SharePoint, Teams, OneDrive에 적용합니다.</span>
   </a>
   <a href="/knowledge/security/security-architecture">
-    <small>Admin</small>
-    <strong>Protect administrative accounts</strong>
-    <span>Require MFA, compliant device, trusted location and stronger session controls for privileged roles.</span>
+    <small>관리자</small>
+    <strong>관리자 계정 보호</strong>
+    <span>권한 있는 역할에는 MFA, 준수 기기, 신뢰할 수 있는 위치, 더 강한 세션 제어를 요구합니다.</span>
   </a>
   <a href="/knowledge/security/purview">
-    <small>Data</small>
-    <strong>Restrict unmanaged device downloads</strong>
-    <span>Use app-enforced restrictions and session controls for sensitive SharePoint and OneDrive access.</span>
+    <small>데이터</small>
+    <strong>관리되지 않는 기기의 다운로드 제한</strong>
+    <span>민감한 SharePoint·OneDrive 접근에는 앱 적용 제한과 세션 제어를 사용합니다.</span>
   </a>
   <a href="/knowledge/copilot/readiness">
     <small>Copilot</small>
-    <strong>Control Copilot access</strong>
-    <span>Align Copilot pilot groups, device posture, data permission and session policies.</span>
+    <strong>Copilot 접근 제어</strong>
+    <span>Copilot 시범 그룹, 기기 상태, 데이터 권한, 세션 정책을 함께 맞춥니다.</span>
   </a>
 </div>
 
-## Deployment Journey
+## 배포 단계 {/* #deployment-journey */}
 
-<div aria-label="Conditional Access deployment journey" className="kc-operating-model">
+<div aria-label="조건부 액세스 배포 단계" className="kc-operating-model">
   <div className="kc-operating-stage">
-    <small>Design</small>
-    <strong>Policy matrix</strong>
-    <span>Define user scope, application, condition, control, exclusion, owner and validation method.</span>
+    <small>설계</small>
+    <strong>정책 매트릭스</strong>
+    <span>사용자 범위, 애플리케이션, 조건, 제어, 제외 대상, 담당자, 검증 방법을 정합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Simulate</small>
-    <strong>Report-only mode</strong>
-    <span>Run policy in report-only mode and review sign-in logs before enforcement.</span>
+    <small>모의 적용</small>
+    <strong>보고 전용 모드</strong>
+    <span>정책을 보고 전용 모드로 실행하고, 적용 전에 로그인 기록을 검토합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Pilot</small>
-    <strong>Controlled pilot group</strong>
-    <span>Apply to pilot users, admin roles or selected workloads with support readiness.</span>
+    <small>시범 적용</small>
+    <strong>통제된 시범 그룹</strong>
+    <span>지원 준비를 갖춘 뒤 시범 사용자, 관리자 역할, 선택한 업무에 적용합니다.</span>
   </div>
   <div className="kc-operating-stage">
-    <small>Enforce</small>
-    <strong>Staged rollout</strong>
-    <span>Expand by group, workload or risk level, then monitor support tickets and sign-in failures.</span>
+    <small>전면 적용</small>
+    <strong>단계적 확대</strong>
+    <span>그룹, 업무, 위험 수준별로 넓히고 지원 요청과 로그인 실패를 모니터링합니다.</span>
   </div>
 </div>
 
 보고 전용 모드도 사용자에게 아무 영향이 없는 것은 아닙니다. 준수 기기를 요구하는 정책은 macOS·iOS·Android에서 기기 인증서 선택 창을 띄울 수 있습니다. `User Actions` 범위는 보고 전용 평가 대상에서 제외되므로, 해당 정책은 별도 시험 계획이 필요합니다. [보고 전용 모드의 적용 범위와 제한](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-report-only)을 확인하세요.
 
-## Exception and Lockout Control
+## 예외와 잠금 관리 {/* #exception-and-lockout-control */}
 
-<div aria-label="Conditional Access exception and lockout control" className="kc-context-panel">
+<div aria-label="조건부 액세스 예외와 잠금 관리" className="kc-context-panel">
   <div className="kc-context-panel__lead">
-    <small>Lockout Prevention</small>
-    <strong>Every Conditional Access program needs emergency access and exception governance.</strong>
-    <span>Security posture improves only if the policy can be operated. Maintain emergency accounts and review exclusions, owners and expiry dates; test recovery access instead of assuming these measures eliminate lockouts.</span>
+    <small>잠금 예방</small>
+    <strong>모든 조건부 액세스 운영에는 긴급 접근과 예외 관리가 필요합니다.</strong>
+    <span>정책을 실제로 운영할 수 있어야 보안 수준이 올라갑니다. 긴급 계정을 유지하고 제외 대상, 담당자, 만료일을 검토하세요. 이런 조치만으로 잠김이 없어진다고 가정하지 말고 복구 접근을 직접 시험하세요.</span>
   </div>
   <div className="kc-context-panel__grid">
     <a href="/knowledge/security/security-architecture">
-      <small>Break-glass</small>
-      <strong>Emergency access accounts</strong>
-      <span>Exclude emergency accounts, monitor them and test access periodically.</span>
+      <small>긴급 접근</small>
+      <strong>긴급 접근 계정</strong>
+      <span>긴급 계정을 정책에서 제외하고, 모니터링하며, 주기적으로 접근을 시험합니다.</span>
     </a>
     <a href="/knowledge/downloads/risk-register-template">
-      <small>Exception</small>
-      <strong>Exception register</strong>
-      <span>Track reason, owner, expiry, compensating control and review cadence.</span>
+      <small>예외</small>
+      <strong>예외 대장</strong>
+      <span>사유, 담당자, 만료일, 보완 통제, 검토 주기를 기록합니다.</span>
     </a>
     <a href="/knowledge/security/defender-xdr">
-      <small>Monitoring</small>
-      <strong>Sign-in and incident review</strong>
-      <span>Review sign-in logs, failure patterns, risky users and Defender signals.</span>
+      <small>모니터링</small>
+      <strong>로그인과 사고 검토</strong>
+      <span>로그인 기록, 실패 유형, 위험 사용자, Defender 신호를 검토합니다.</span>
     </a>
     <a href="/knowledge/contact">
-      <small>Support</small>
-      <strong>Support readiness</strong>
-      <span>Prepare user communication, help desk scripts and rollback path before enforcement.</span>
+      <small>지원</small>
+      <strong>지원 준비</strong>
+      <span>적용 전에 사용자 안내문, 헬프데스크 응대 문구, 되돌리기 절차를 준비합니다.</span>
     </a>
     <a href="/knowledge/proposal/governance-model">
-      <small>Governance</small>
-      <strong>Approval model</strong>
-      <span>Define who approves policy, exceptions, changes and emergency rollback.</span>
+      <small>거버넌스</small>
+      <strong>승인 체계</strong>
+      <span>정책, 예외, 변경, 긴급 되돌리기를 누가 승인하는지 정합니다.</span>
     </a>
     <a href="/knowledge/downloads/overview">
-      <small>Asset</small>
-      <strong>Request policy matrix</strong>
-      <span>Request a Conditional Access matrix, rollout checklist or exception register template.</span>
+      <small>자료</small>
+      <strong>정책 매트릭스 요청</strong>
+      <span>조건부 액세스 매트릭스, 배포 점검표, 예외 대장 양식을 요청할 수 있습니다.</span>
     </a>
   </div>
 </div>
@@ -304,79 +304,79 @@ Blocking legacy authentication and disabling a mail protocol are separate decisi
 
 [Microsoft의 긴급 접근 계정 운영 지침](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)
 
-## Copilot Access Control
+## Copilot 접근 제어 {/* #copilot-access-control */}
 
-Copilot access control should not be designed as a standalone AI policy. It should inherit the Microsoft 365 access baseline while adding AI-specific readiness checks.
+Copilot 접근 제어를 별도의 AI 정책으로 설계하지 마세요. Microsoft 365 접근 기준을 그대로 이어받고, AI에 필요한 준비 점검만 더합니다.
 
-<div aria-label="Copilot Conditional Access considerations" className="kc-platform-fit">
+<div aria-label="Copilot 조건부 액세스 검토 사항" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
-    <small>Identity</small>
-    <strong>Pilot group and role scope</strong>
-    <span>Start with selected Copilot users, privileged roles and business scenarios.</span>
+    <small>ID</small>
+    <strong>시범 그룹과 역할 범위</strong>
+    <span>선정한 Copilot 사용자, 권한 있는 역할, 업무 시나리오부터 시작합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Device</small>
-    <strong>Compliant or managed device</strong>
-    <span>Review whether Copilot access should require managed devices for sensitive roles.</span>
+    <small>기기</small>
+    <strong>준수 기기 또는 관리 기기</strong>
+    <span>민감한 역할의 Copilot 접근에 관리 기기를 요구할지 검토합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Session</small>
-    <strong>Session and download restrictions</strong>
-    <span>Align SharePoint, OneDrive and Teams access restrictions with Copilot data exposure risk.</span>
+    <small>세션</small>
+    <strong>세션과 다운로드 제한</strong>
+    <span>SharePoint, OneDrive, Teams 접근 제한을 Copilot 데이터 노출 위험에 맞춥니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Data</small>
-    <strong>Permission hygiene</strong>
-    <span>Conditional Access does not fix oversharing. Review data permissions and information architecture.</span>
+    <small>데이터</small>
+    <strong>권한 정리</strong>
+    <span>조건부 액세스로 과도한 공유가 해결되지는 않습니다. 데이터 권한과 정보 구조를 검토하세요.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Risk</small>
-    <strong>Risk-based controls</strong>
-    <span>Use user risk, sign-in risk and device risk signals for sensitive access paths.</span>
+    <small>위험</small>
+    <strong>위험 기반 제어</strong>
+    <span>민감한 접근 경로에는 사용자 위험, 로그인 위험, 기기 위험 신호를 사용합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Adoption</small>
-    <strong>User guidance</strong>
-    <span>Explain why access controls exist so adoption does not become a support problem.</span>
+    <small>도입</small>
+    <strong>사용자 안내</strong>
+    <span>접근 제어가 왜 필요한지 설명해 도입이 지원 부담으로 바뀌지 않게 합니다.</span>
   </div>
 </div>
 
-## Common Mistakes
+## 자주 하는 실수 {/* #common-mistakes */}
 
-<div aria-label="Conditional Access common mistakes" className="kc-platform-fit">
+<div aria-label="조건부 액세스에서 자주 하는 실수" className="kc-platform-fit">
   <div className="kc-platform-fit__card">
-    <small>Scope</small>
-    <strong>Applying broad policies too quickly</strong>
-    <span>Use report-only and pilot scope before organization-wide enforcement.</span>
+    <small>범위</small>
+    <strong>넓은 정책을 너무 빨리 적용</strong>
+    <span>조직 전체에 적용하기 전에 보고 전용 모드와 시범 범위를 거칩니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Exclusions</small>
-    <strong>Permanent broad exclusions</strong>
-    <span>Every exclusion should have owner, reason, expiry and compensating control.</span>
+    <small>제외</small>
+    <strong>넓은 제외 대상을 영구히 유지</strong>
+    <span>모든 제외에는 담당자, 사유, 만료일, 보완 통제가 있어야 합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Admin</small>
-    <strong>Not separating admin policies</strong>
-    <span>Privileged roles need stronger controls and different monitoring than standard users.</span>
+    <small>관리자</small>
+    <strong>관리자 정책을 따로 두지 않음</strong>
+    <span>권한 있는 역할에는 일반 사용자보다 강한 제어와 다른 모니터링이 필요합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Device</small>
-    <strong>Requiring compliance before readiness</strong>
-    <span>Confirm Intune enrollment, device inventory and support path before enforcing device controls.</span>
+    <small>기기</small>
+    <strong>준비 전에 준수 상태를 요구</strong>
+    <span>기기 제어를 적용하기 전에 Intune 등록, 기기 목록, 지원 경로를 확인합니다.</span>
   </div>
   <div className="kc-platform-fit__card">
-    <small>Communication</small>
-    <strong>No user communication</strong>
-    <span>Restrictive policies without explanation create support load and user resistance.</span>
+    <small>소통</small>
+    <strong>사용자 안내 없음</strong>
+    <span>설명 없이 제한 정책을 적용하면 지원 부담과 사용자 반발이 커집니다.</span>
   </div>
   <div className="kc-platform-fit__card">
     <small>Copilot</small>
-    <strong>Treating Copilot as only a license issue</strong>
-    <span>Copilot readiness also needs identity, device, data and session control alignment.</span>
+    <strong>Copilot을 라이선스 문제로만 보기</strong>
+    <span>Copilot 준비에는 ID, 기기, 데이터, 세션 제어를 함께 맞추는 일도 필요합니다.</span>
   </div>
 </div>
 
-## Search Keywords
+## 검색 키워드 {/* #search-keywords */}
 
 - Microsoft Entra Conditional Access
 - Conditional Access design
