@@ -34,3 +34,6 @@
 .q{font:700 18px/1.4 var(--c-sans);letter-spacing:-.035em}
 .tile:hover .q{text-decoration:none;color:var(--c-accent)}
 .go{border-bottom:2px solid var(--c-accent);font-weight:600}
+
+/* 미리 보기 문장은 잘린 채(…) 보이면 읽기 흐름을 끊으므로 싣지 않는다. 질문과 이동 표시만 남긴다. */
+.tile .p{display:none}
