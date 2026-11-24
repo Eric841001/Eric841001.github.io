@@ -10,13 +10,13 @@ hide_title: true
   topic="downloads"
   crumb="지식센터 › 자료실"
   title="자료실"
-  lead="현황 조사, 진단, 제안과 프로젝트 관리에 쓰는 양식을 모았습니다. 공개 페이지에서 구성과 작성 방법을 확인하고, 편집용 파일은 요청해 받으세요. 일반화한 보안 프로젝트 포털은 바로 내려받을 수 있습니다."
+  lead="현황 조사, 진단, 제안과 프로젝트 관리에 쓰는 양식을 모았습니다. 공개 페이지에서 구성과 작성 방법을 확인하고, 편집용 파일과 설계 브리핑은 문의로 요청해 주세요."
   start={[
-    ["보안 프로젝트 포털 내려받기","/knowledge/downloads/m365-security-project-portal","HTML 파일 하나로 조사·설계·보고서 작성"],
+    ["보안 프로젝트 포털 브리핑","/knowledge/downloads/m365-security-project-portal","조사·설계·보고서를 한 흐름으로 관리"],
     ["현황 조사 질문","/knowledge/downloads/discovery-questionnaire","워크로드·ID·보안·AI 범위 질문"],
     ["Microsoft 365 진단표","/knowledge/downloads/m365-assessment-workbook","준비도·위험·범위 점검"],
   ]}
-  feature={{kicker: "바로 내려받기", title: "M365 보안 프로젝트 포털 (공개용)", text: "환경 조사부터 정책 설계, WBS, PPT 보고서까지 브라우저에서 작성하고 상태 파일(JSON)로 이어서 작업합니다.", to: "/knowledge/downloads/m365-security-project-portal", go: "내려받기 페이지"}}
+  feature={{kicker: "설계 브리핑", title: "M365 보안 프로젝트 포털", text: "환경 조사부터 정책 설계, WBS, 경영진 보고서까지 한 흐름으로 관리하는 작업 도구입니다. 설계 내용과 적용 방법을 브리핑으로 안내합니다.", to: "/knowledge/downloads/m365-security-project-portal", go: "브리핑 요청"}}
 />
 
 <ScenarioLinks
@@ -32,9 +32,9 @@ hide_title: true
 
 <div aria-label="Requestable consulting asset catalog" className="kc-entry-hub kc-asset-catalog">
   <a href="/knowledge/downloads/m365-security-project-portal">
-    <small>바로 내려받기</small>
-    <strong>M365 보안 프로젝트 포털 (공개용)</strong>
-    <span>환경 조사, 요구사항, 정책 설계, WBS, 보고서를 HTML 파일 하나로 관리합니다. 상태 파일(JSON)·PPT·Excel로 내보냅니다.</span>
+    <small>설계 브리핑</small>
+    <strong>M365 보안 프로젝트 포털</strong>
+    <span>환경 조사부터 보고서까지 한 흐름으로 관리하는 포털입니다. 설계 내용은 브리핑으로 안내합니다.</span>
   </a>
   <a href="/knowledge/downloads/discovery-questionnaire">
     <small>Discovery</small>

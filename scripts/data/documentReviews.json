@@ -4672,10 +4672,10 @@
   },
   "/knowledge/downloads/m365-security-project-portal": {
     "file": "docs/downloads/m365-security-project-portal.md",
-    "checkedOn": "2026-11-23",
+    "checkedOn": "2026-11-24",
     "kind": "템플릿·실무 예시",
-    "scope": "확인한 항목: 공개용 포털 파일의 고객 식별 정보 제거 여부, 상태 파일 저장과 PPT·Excel·Word 내보내기 동작",
-    "note": "적용 전 최신 공식 자료와 라이선스·계약 조건을 확인하고, 상태 파일은 프로젝트 관계자끼리만 주고받으세요.",
+    "scope": "확인한 항목: 포털이 다루는 프로젝트 범위와 브리핑 안내 내용, 공개 다운로드 제공 중단",
+    "note": "적용 전 최신 공식 자료와 라이선스·계약 조건을 확인하세요. 포털과 설계서 원본은 브리핑으로만 안내합니다.",
     "sources": [
       {
         "title": "Microsoft 365 service descriptions",

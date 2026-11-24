@@ -33,9 +33,9 @@
   "/knowledge/playbooks/copilot-readiness-playbook": "Microsoft 365 Copilot Readiness Playbook - Microsoft 365 Copilot readiness is not a technical deployment activity.",
   "/knowledge/copilot/official-update-catchup-2026-10": "Copilot·Copilot Studio의 기능별 제공 상태와 앱·라이선스 조건, Work IQ 메모리·조직 맥락과 11월 Copilot Chat 사용 제한.",
   "/knowledge/copilot/copilot-studio": "Copilot Studio로 사내 문서를 찾거나 업무를 처리하는 에이전트를 만들 수 있습니다. 배포 전에는 사용자가 볼 수 있는 자료와 에이전트가 실행할 작업, 크레딧 한도를 정하세요.",
-  "/knowledge/downloads/m365-security-project-portal#내려받기": "파일 이름: M365_보안_프로젝트_포털_공개용.html",
-  "/knowledge/downloads/m365-security-project-portal#상태-파일로-이어서-작업하기": "포털은 입력한 내용을 브라우저 안에만 보관합니다. 다른 PC나 다른 사람과 이어서 작업하려면 상태 파일 저장으로 JSON 파일을 받고, 상대방이 같은 포털에서 그 파일을 불러오면 됩니다.",
-  "/knowledge/downloads/m365-security-project-portal#공개용에서-빠진-내용": "이 파일은 실제 프로젝트에서 쓰던 포털을 일반화한 버전입니다.",
+  "/knowledge/downloads/m365-security-project-portal#포털이-다루는-범위": "실제 Microsoft 365 보안 프로젝트를 진행하며 만든 작업 도구입니다. 조사에서 보고까지 흩어지기 쉬운 산출물을 한 화면에서 이어 갑니다.",
+  "/knowledge/downloads/m365-security-project-portal#브리핑에서-다루는-내용": "금융권·대기업 환경에서 보안 요구사항을 정책과 공정표로 바꾸는 순서",
+  "/knowledge/downloads/m365-security-project-portal#브리핑-요청하기": "아래 내용을 함께 보내 주시면 브리핑 범위를 빠르게 정할 수 있습니다. 첫 연락에는 고객사 이름이나 내부 정보를 넣지 않아도 됩니다.",
   "/knowledge/downloads/discovery-questionnaire": "Discovery Questionnaire - This questionnaire is used during discovery workshops for Microsoft 365, Azure, Security, Copilot and migration engagements.",
   "/knowledge/downloads/m365-assessment-workbook": "Microsoft 365 Assessment Workbook - This workbook provides a structured framework for assessing Microsoft 365 environments across identity,...",
   "/knowledge/downloads/risk-register-template": "Risk Register Template - This Risk Register provides a structured framework for identifying, assessing, tracking and mitigating project risks.",
@@ -182,25 +182,25 @@
    "text": "Copilot Studio로 사내 문서를 찾거나 업무를 처리하는 에이전트를 만들 수 있습니다. 배포 전에는 사용자가 볼 수 있는 자료와 에이전트가 실행할 작업, 크레딧 한도를 정하세요."
   },
   {
-   "q": "포털 내려받기",
-   "to": "/knowledge/downloads/m365-security-project-portal#내려받기",
+   "q": "포털이 다루는 범위 보기",
+   "to": "/knowledge/downloads/m365-security-project-portal#포털이-다루는-범위",
    "from": "/knowledge/downloads/m365-security-project-portal",
    "fromTitle": "보안 프로젝트 포털",
-   "text": "파일 이름: M365_보안_프로젝트_포털_공개용.html"
+   "text": "실제 Microsoft 365 보안 프로젝트를 진행하며 만든 작업 도구입니다. 조사에서 보고까지 흩어지기 쉬운 산출물을 한 화면에서 이어 갑니다."
   },
   {
-   "q": "진행 상황을 다른 사람과 이어서 작업하기",
-   "to": "/knowledge/downloads/m365-security-project-portal#상태-파일로-이어서-작업하기",
+   "q": "브리핑에서 다루는 내용 보기",
+   "to": "/knowledge/downloads/m365-security-project-portal#브리핑에서-다루는-내용",
    "from": "/knowledge/downloads/m365-security-project-portal",
    "fromTitle": "보안 프로젝트 포털",
-   "text": "포털은 입력한 내용을 브라우저 안에만 보관합니다. 다른 PC나 다른 사람과 이어서 작업하려면 상태 파일 저장으로 JSON 파일을 받고, 상대방이 같은 포털에서 그 파일을 불러오면 됩니다."
+   "text": "금융권·대기업 환경에서 보안 요구사항을 정책과 공정표로 바꾸는 순서"
   },
   {
-   "q": "공개용에서 빠진 내용 확인하기",
-   "to": "/knowledge/downloads/m365-security-project-portal#공개용에서-빠진-내용",
+   "q": "브리핑 요청하기",
+   "to": "/knowledge/downloads/m365-security-project-portal#브리핑-요청하기",
    "from": "/knowledge/downloads/m365-security-project-portal",
    "fromTitle": "보안 프로젝트 포털",
-   "text": "이 파일은 실제 프로젝트에서 쓰던 포털을 일반화한 버전입니다."
+   "text": "아래 내용을 함께 보내 주시면 브리핑 범위를 빠르게 정할 수 있습니다. 첫 연락에는 고객사 이름이나 내부 정보를 넣지 않아도 됩니다."
   },
   {
    "q": "현황 조사 질문 고르기",
@@ -828,7 +828,7 @@
    {
     "to": "/knowledge/downloads/m365-security-project-portal",
     "title": "보안 프로젝트 포털",
-    "text": "파일 하나를 내려받아 브라우저에서 열면 됩니다. 설치나 서버가 필요 없고, 입력한 내용은 내 PC 밖으로 나가지 않습니다."
+    "text": "Microsoft 365 보안 프로젝트를 처음부터 보고서까지 한 흐름으로 관리하는 포털입니다. 파일은 공개하지 않으며, 설계 내용과 적용 방법은 브리핑으로 안내합니다."
    },
    {
     "to": "/knowledge/downloads/m365-assessment-workbook",
