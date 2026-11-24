@@ -221,3 +221,48 @@ main[class*="docMainContainer"]{padding-top:clamp(24px,3vw,44px)}
 /* 어두운 화면에서도 구성 블록에 면 색을 깔지 않는다(custom.css의 어두운 화면 규칙보다 우선) */
 [data-theme='dark'] .theme-doc-markdown :is(.kc-topic-hero,.kc-factory-panel,.kc-journey-map,.kc-context-panel,.kc-platform-fit,.kc-operating-model,.kc-maturity-ladder,.kc-signal-grid,.kc-entry-hub,.kc-pathway,.kc-factory-grid,.kc-context-panel__grid,.kc-guardrail-panel,.kc-update-brief,.kc-context-panel__lead,.kc-journey-node,.kc-factory-card,.kc-platform-fit__card,.kc-operating-stage,.kc-maturity-step,.kc-pathway-step,.kc-outcome-card,.kc-signal-card,.kc-about-hero,.kc-contact-hero){background:transparent!important;box-shadow:none!important}
 [data-theme='dark'] .theme-doc-markdown :is(.kc-topic-hero__lede,.kc-context-panel__lead,.kc-topic-hero p){color:var(--c-ink2)!important}
+
+/* ══════════════════════════════════════════════════════════
+ * 컨설팅 보고서 언어
+ * 1) 표지 판: 홈 첫 화면, 주제 허브 머리, 문서 제목·요약을 잉크 네이비 판에 올린다.
+ *    판 안에서는 색 기준값만 뒤집어(아이보리 글자·금색 번호) 기존 구성 요소를 그대로 쓴다.
+ * 2) 도표 번호: 본문의 표와 구성도에 '표 1', '그림 1' 번호를 붙인다.
+ * ══════════════════════════════════════════════════════════ */
+:root{--e-panel:#13203A}
+[data-theme='dark']{--e-panel:#18243F}
+main[class*="wrap_"] > section[class*="cover_"],
+[class*="hub_"] > section[class*="hero_"],
+.theme-doc-markdown > header:has(> h1),
+.theme-doc-markdown > header + section[class*="panel_"]{
+  --c-ink:#F3EEE2;--c-ink2:#DAD4C6;--c-muted:#AEB3C0;
+  --c-line:rgba(243,238,226,.16);--c-line2:rgba(243,238,226,.34);
+  --c-gold:#C9A96A;--c-gold-ink:#D8BC82;--c-bg:#13203A;
+  background:var(--e-panel)!important;color:var(--c-ink2)}
+/* 문서 표지 판: 제목(header)과 바로 뒤의 요약(section)이 이어진 한 장으로 보이게 */
+.theme-doc-markdown > header:has(> h1){padding:clamp(34px,4.4vw,60px) clamp(24px,3.6vw,52px) 0!important;margin:0!important}
+.theme-doc-markdown > header:has(> h1):not(:has(+ section[class*="panel_"])){padding-bottom:clamp(30px,3.6vw,48px)!important;margin-bottom:clamp(36px,4vw,56px)!important}
+.theme-doc-markdown > header .c-topicbar{margin:clamp(18px,2vw,26px) 0 0!important}
+.theme-doc-markdown > header:not(:has(+ section[class*="panel_"])) .c-topicbar{margin-bottom:0!important}
+.theme-doc-markdown > header + section[class*="panel_"]{padding:clamp(24px,2.8vw,34px) clamp(24px,3.6vw,52px) clamp(30px,3.6vw,48px)!important;margin:0 0 clamp(40px,5vw,64px)!important}
+.theme-doc-markdown > header + section[class*="panel_"] nav{border-bottom:0!important}
+/* 주제 허브 표지 판 */
+[class*="hub_"] > section[class*="hero_"]{padding:clamp(34px,4.4vw,60px) clamp(24px,3.6vw,52px) clamp(36px,4.4vw,56px)!important;border-bottom:0!important}
+/* 표·그림 번호 */
+.theme-doc-markdown{counter-reset:csec exh fig}
+.theme-doc-markdown .kc-table-region{counter-increment:exh;margin:2em 0}
+.theme-doc-markdown .kc-table-region::before{content:"표 " counter(exh);display:block;margin:0 0 10px;font:600 12px/1 var(--c-sans);letter-spacing:.08em;color:var(--c-gold-ink)}
+.theme-doc-markdown figure[class*="stage_"]{counter-increment:fig}
+.theme-doc-markdown figure[class*="stage_"]::before{content:"그림 " counter(fig);display:block;margin:0 0 10px;font:600 12px/1 var(--c-sans);letter-spacing:.08em;color:var(--c-gold-ink)}
+/* 대표 설명 + 세 칸 묶음(kc-context-panel): 좁은 네 칸 대신 위 설명, 아래 세 칸 */
+.theme-doc-markdown .kc-context-panel{display:block!important}
+.theme-doc-markdown .kc-context-panel__lead{max-width:var(--e-measure);margin:0 0 8px!important}
+.theme-doc-markdown .kc-context-panel__grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media (max-width:996px){
+  .theme-doc-markdown > header:has(> h1),.theme-doc-markdown > header + section[class*="panel_"],[class*="hub_"] > section[class*="hero_"]{margin-left:calc(-1 * var(--ifm-spacing-horizontal))!important;margin-right:calc(-1 * var(--ifm-spacing-horizontal))!important;padding-left:20px!important;padding-right:20px!important}
+  .theme-doc-markdown > header:has(> h1){padding-top:32px!important}
+}
+@media (max-width:760px){.theme-doc-markdown .kc-context-panel__grid{grid-template-columns:1fr!important}}
+/* 도입 여정(kc-journey-map): 번호 순서가 드러나는 3열 2행. 화살표 장식 대신 번호와 위 선으로 순서를 보인다. */
+.theme-doc-markdown .kc-journey-map{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:clamp(24px,3vw,44px)!important;row-gap:0!important}
+.theme-doc-markdown .kc-journey-node::after,.theme-doc-markdown .kc-journey-node::before{display:none!important;content:none!important}
+@media (max-width:760px){.theme-doc-markdown .kc-journey-map{grid-template-columns:1fr!important}}
