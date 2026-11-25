@@ -7,6 +7,8 @@ export const modelUpdate = {
   path: `${updateGuide}#gpt-6-2-sol-astra`,
 };
 export const updateHighlights = [
+  {category: 'Microsoft 365', title: 'To Do 앱 2027년 6월 30일 종료', description: '회사·개인 계정의 앱 종료, Planner My tasks 전환, 기존 작업 비이전과 아직 발표되지 않은 내보내기·API 일정을 정리했습니다.', date: '2026-11-18', status: '종료 예정 · 내보내기 방법 발표 대기', path: '/knowledge/microsoft365/overview#to-do-retirement-2027'},
+  {category: 'Microsoft Intune', title: 'Intune 2611 관리 변경', description: 'macOS 체크인 주기 단축, Windows 업데이트 유지 관리 기간, 준수 스크립트 평가 주기와 Windows Server Insider 미리 보기 조건을 추가했습니다.', date: '2026-11-17', status: '서비스 릴리스 2611 · 순차 배포', path: '/knowledge/playbooks/intune-deployment-playbook#intune-2611-changes'},
   {category: 'Copilot Studio', title: '제작·운영 비용 관리 반복 체계', description: 'Preview·Evaluate 추정값을 Monitor 확정값과 대조하고 PPAC·Microsoft 365 정책 범위와 역할을 분리합니다.', date: '2026-11-24', status: '공식 운영 지침 · 리소스·환경 정책 Preview', path: '/knowledge/copilot/copilot-studio-2026-platform-update#studio-cost-management-cycle'},
   {category: 'Microsoft Copilot', title: 'GPT-6.2 Sol·Astra 순차 배포', description: 'Sol과 Astra의 앱별 eligible users·Frontier 범위, OpenAI 하위처리자와 지역 조건을 구분했습니다.', date: '2026-11-22', status: '전 세계 순차 배포 · 앱·조직별 조건 확인', path: `${updateGuide}#gpt-6-2-sol-astra`},
   {category: 'Copilot Studio', title: '모델 변경 전 회귀 평가 Preview', description: 'Copilot Agent Kit의 두 테스트 엔진, 비운영 복사본·게시 동작과 실행당 약 150 Copilot Credits 조건을 정리했습니다.', date: '2026-11-20', status: 'Preview · 운영 전 비용·게시 영향 확인', path: `${updateGuide}#copilot-agent-kit-model-assessment`},

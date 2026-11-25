@@ -59,6 +59,31 @@ toc_max_heading_level: 2
   </div>
 </section>
 
+## Intune 2611 배포 전 확인할 변경 {/* #intune-2611-changes */}
+
+11월 16일 주간의 서비스 릴리스 2611에 다음 변경이 추가됐습니다. [공식 변경 목록](https://learn.microsoft.com/en-us/intune/whats-new/#week-of-november-16-2026-service-release-2611)에서 사용하는 기능부터 확인하세요. 순차 배포되므로 관리 화면에 아직 보이지 않을 수 있습니다.
+
+- **macOS 체크인 주기:** 새로 등록한 macOS 기기의 Intune 관리 에이전트는 등록 직후 15분 동안 3분마다, 이후 2시간 동안 15분마다 서비스에 확인합니다. 등록이 끝난 뒤의 정기 체크인 주기는 약 8시간에서 1시간으로 줄어듭니다. 앱·스크립트 배포에 걸리는 시간을 안내하는 운영 문서와 지원 응대 문구를 함께 고치세요.
+- **Windows 업데이트 유지 관리 기간:** `Devices > Manage devices > Maintenance windows > Create profile`에서 OS·드라이버 업데이트 작업을 실행할 기간과 시작일, 시간, 길이, 반복 일정을 정합니다. 기존 업데이트 링이나 Autopatch 일정과 겹치지 않는지 확인하세요.
+- **사용자 지정 준수 스크립트 평가 주기:** Windows·macOS에서 15분, 30분, 1~8시간 중에서 고를 수 있습니다. 주기를 짧게 하면 준수 상태가 빨리 반영되지만 기기 자원을 더 씁니다.
+- **PowerShell 스크립트 할당:** Windows PowerShell 스크립트도 그룹 제외와 기본 제공 All Users·All Devices 그룹 할당을 지원합니다. 넓게 할당한 뒤 제외로 범위를 좁힌다면 제외 그룹을 관리할 담당자를 정하세요.
+- **Remote Help 진단 공유:** 사용자가 참석하는 Windows 세션에서 사용자가 동의하면 헬프데스크 담당자가 시스템 정보와 자원 사용량을 볼 수 있습니다. 사용자는 공유 내용을 보고 언제든 중단할 수 있고, 거절해도 지원 세션은 계속됩니다. 이 기능은 순차 배포 중입니다.
+- **Edge for Business 다운로드 위치:** Windows 앱 보호 정책에서 `Send org data to`를 `Selected apps`로 정하고 OneDrive for Business를 허용 대상으로 고르면, Edge 업무 프로필에서 내려받은 파일이 로컬 디스크 대신 OneDrive for Business에 저장됩니다. Microsoft Edge 158 이상이 필요합니다.
+- **macOS 설정 카탈로그:** EWS 종료 알림 설정(macOS 27.2 이상), Copilot 브라우징과 Cowork 동작 허용을 포함한 Edge 설정, Defender for Endpoint의 `AI Agent Protection`·`AI Agent Network Inspection` 설정이 추가됐습니다.
+- **Windows 설정 카탈로그:** Edge(154~157)와 Chrome(153.0.8010.53) 관리 템플릿이 갱신됐고, Cloud PC 재설정 설정 `AllowAuthenticatedUserReset`·`AllowAnyUserReset`이 추가됐습니다.
+- **Android Enterprise:** 완전 관리·전용 기기에서 재시작, Managed Home Screen 로그인·로그아웃, 전원 연결 변화, 예약 시간에 맞춰 이벤트당 최대 5개의 로컬 작업을 실행할 수 있습니다. Google Workspace 계정 인증 요구는 Android Management API로 관리하는 개인 소유 업무 프로필 기기까지 넓어졌습니다. 이 정책은 기기에 연결된 Microsoft Entra 계정을 바꾸지 않습니다.
+- **CIS 감사(공개 미리 보기):** Windows 11 기기를 CIS Microsoft Intune for Windows 11 Benchmark와 비교해 설정별 결과를 보고합니다. 설정을 바꾸거나 고치지 않으며 Intune Advanced Analytics가 필요합니다.
+- **Windows Server 관리(Insider 미리 보기):** Windows Server Insider 미리 보기 빌드만 등록할 수 있고, 비운영 환경의 시험·평가 용도입니다. 운영 환경 사용은 지원되지 않습니다. 서버 등록은 기본으로 차단되므로 등록 제한 프로필에서 허용해야 합니다. 기존 Windows 정책·앱 할당이 서버에 적용되지 않도록 전용 시범 그룹과 할당 필터를 쓰세요.
+
+### 2611 무렵 예정된 변경
+
+아래는 [개발 중 기능 목록](https://learn.microsoft.com/en-us/intune/whats-new/in-development)에 있는 계획입니다. 실제 적용 여부는 변경 기록과 테넌트에서 다시 확인하세요.
+
+- **iOS/iPadOS JIT 등록 자동 활성화:** Microsoft Authenticator를 필수 앱으로 배포했고 기기 SSO 확장 정책이 있지만 JIT 등록 구성이 없는 적격 테넌트에서, 2611 릴리스와 함께 자동으로 켜질 예정입니다. Intune이 기존 정책에 필요한 구성을 추가하므로 관리자 작업은 필요 없다고 안내합니다. 기존 SSO 확장 정책이 바뀌는 변경이므로 정책 담당자에게 미리 알리세요.
+- **macOS 최소 지원 버전:** Apple이 macOS 27을 출시한 뒤 Intune, 회사 포털, 관리 에이전트는 macOS 15 이상을 지원합니다. 이미 등록된 macOS 14 이하 기기는 등록이 유지되지만 새로 등록할 수는 없습니다.
+
+근거: [Intune 11월 16일 주간 변경(2611)](https://learn.microsoft.com/en-us/intune/whats-new/#week-of-november-16-2026-service-release-2611), [macOS 정책 갱신 주기](https://learn.microsoft.com/en-us/intune/device-configuration/troubleshoot-device-profiles#policy-refresh-intervals), [PowerShell 스크립트 할당](https://learn.microsoft.com/en-us/intune/device-management/tools/run-powershell-scripts-windows), [Windows 서버 등록 차단 해제](https://learn.microsoft.com/en-us/intune/device-enrollment/restrictions#blocking-server-devices), [CIS 감사 기준](https://learn.microsoft.com/en-us/intune/device-security/security-baselines/cis-audit-baseline), [개발 중 기능 — JIT 등록](https://learn.microsoft.com/en-us/intune/whats-new/in-development#just-in-time-registration-automatically-enabled-for-eligible-iosipados-tenants-), [개발 중 기능 — macOS 최소 버전](https://learn.microsoft.com/en-us/intune/whats-new/in-development#updated-minimum-supported-version-for-macos).
+
 ## 2026년 10월 변경 사항
 
 10월에는 보안 기준, Apple 앱 할당, Windows 원격 지원과 Android eSIM 관리에 변경이 있습니다. [Intune 공식 변경 기록](https://learn.microsoft.com/en-us/intune/whats-new/)에서 사용하는 기능의 적용 조건을 확인하고 배포 계획에 반영하세요.

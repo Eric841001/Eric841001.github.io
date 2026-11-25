@@ -42,6 +42,20 @@ Microsoft 365의 협업 서비스, 사용자·기기 관리와 데이터 보호�
 
 특히 Microsoft 365 Copilot을 도입하려는 조직은 라이선스를 배정하기 전에 데이터 접근 권한, 외부 공유, 민감도 레이블, DLP, 사용자 교육과 지원 절차를 먼저 정리해야 합니다.
 
+## Microsoft To Do 앱 종료 일정 {/* #to-do-retirement-2027 */}
+
+Microsoft는 2026년 11월 18일 To Do 앱 종료를 발표했습니다. **To Do 앱은 2027년 6월 30일에 종료**되며 웹, Windows, Mac, iOS, Android 앱이 모두 포함됩니다. 회사·학교 계정과 개인 Microsoft 계정(Microsoft 365 Personal·Family 포함)에 모두 해당합니다.
+
+- **회사·학교 계정:** 개인 업무 작업은 Microsoft Planner에서 관리하게 됩니다. Planner의 새 My tasks 화면은 2026년 12월부터 순차 배포됩니다.
+- **기존 작업:** To Do의 작업과 목록은 Planner로 자동 이전되지 않습니다. 기존 To Do 작업은 2027년 6월 30일까지 Planner에서 볼 수 있지만, 그 뒤에는 Planner에서 보거나 관리할 수 없습니다. 앱 종료 자체가 기존 작업 데이터의 삭제 일정을 뜻하지는 않습니다.
+- **개인 계정:** 개인 계정에서는 Planner를 쓸 수 없으므로 다른 앱을 정해야 합니다.
+- **내보내기:** Microsoft는 앱 종료 전에 내보내기 방법을 제공하겠다고 안내했지만 방법과 지원 범위는 아직 발표되지 않았습니다. 내보낸 데이터를 Planner로 가져올 수 있다는 뜻은 아닙니다.
+- **연동과 API:** To Do 서비스·API·동기화 지원은 앱보다 늦은 별도 일정으로 종료되며 날짜는 따로 안내됩니다. 다른 앱이 To Do 작업에 접근하는 연결은 2027년 6월 30일 이후에도 유지됩니다.
+
+관리자는 To Do를 쓰는 부서와 공유 목록을 파악하세요. 보존·규정 준수 요구가 있다면 사용자가 작업을 지우거나 옮기기 전에 기준을 정해 두어야 합니다. To Do 데스크톱 앱을 대신할 Planner의 Windows·Mac 전용 앱은 계획돼 있지 않고, 웹·Teams 화면은 같은 수준의 데스크톱 오프라인 기능을 제공하지 않습니다. 공유 목록의 구성원·할당·권한도 옮겨지지 않습니다. 이 차이를 사용자 안내에 넣으세요.
+
+출처: [To Do에서 Planner로 이동 안내](https://support.microsoft.com/en-us/planner/to-do-to-planner), [Planner 공식 발표(2026년 11월 18일)](https://techcommunity.microsoft.com/blog/plannerblog/introducing-unified-tasks-and-plans-for-copilot-and-microsoft-365/4573958).
+
 ## Platform Architecture
 
 <div aria-label="Microsoft 365 platform architecture journey" className="kc-journey-map kc-ai-journey">
