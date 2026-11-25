@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import Link from '@docusaurus/Link';
 import book from '@site/src/data/book';
+import {track} from '@site/src/lib/track';
 import styles from './styles.module.css';
 
 const ARR = <span aria-hidden="true">→</span>;
@@ -37,13 +38,13 @@ function Cover({className}) {
   );
 }
 
-function Stores({compact}) {
+function Stores({compact, where}) {
   const open = book.stores.filter(s => s.url);
   const soon = book.stores.filter(s => !s.url);
   return (
     <div className={styles.stores}>
       {open.map((s, i) => (
-        <a key={s.name} className={i === 0 ? styles.buy : styles.buy2} href={s.url} target="_blank" rel="noopener noreferrer">
+        <a key={s.name} className={i === 0 ? styles.buy : styles.buy2} href={s.url} target="_blank" rel="noopener noreferrer" onClick={() => track('book_purchase_click', {store: s.name, placement: where})}>
           {s.name}에서 구매하기 {ARR}
         </a>
       ))}
@@ -65,7 +66,7 @@ export default function BookFeature({variant = 'band'}) {
           <Cover className={styles.tocCover} />
           <span className={styles.tocT}>{book.title}</span>
         </Link>
-        {store && <a className={styles.tocBuy} href={store.url} target="_blank" rel="noopener noreferrer">{store.name}에서 구매 {ARR}</a>}
+        {store && <a className={styles.tocBuy} href={store.url} target="_blank" rel="noopener noreferrer" onClick={() => track('book_purchase_click', {store: store.name, placement: 'toc'})}>{store.name}에서 구매 {ARR}</a>}
       </aside>
     );
   }
@@ -80,7 +81,7 @@ export default function BookFeature({variant = 'band'}) {
           <p className={styles.inlineD}>{book.subtitle}</p>
         </div>
         <div className={styles.inlineActs}>
-          <Stores compact />
+          <Stores compact where="doc_end" />
           <Link className={styles.more} to="/knowledge/book">책 소개</Link>
         </div>
       </aside>
@@ -104,7 +105,7 @@ export default function BookFeature({variant = 'band'}) {
           </ol>
           <p className={styles.meta}>{book.author} 지음 · {book.publisher} · {book.published} · {book.pages}</p>
           <div className={styles.acts}>
-            <Stores />
+            <Stores where={isPage ? 'book_page' : 'home'} />
             {!isPage && <Link className={styles.more} to="/knowledge/book">책 소개 자세히 {ARR}</Link>}
           </div>
         </div>

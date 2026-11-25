@@ -5,7 +5,10 @@ const diagramScriptVersion = createHash('sha256')
   .update(readFileSync(path.join(__dirname, 'static/js/mermaid-zoom.js')))
   .digest('hex').slice(0, 12);
 
-﻿module.exports = {
+// Google Analytics 4 측정 ID(G-로 시작). 비워 두면 분석 코드를 싣지 않는다.
+const GA_MEASUREMENT_ID = 'G-T8KQ0HY744';
+
+module.exports = {
   title: 'Youngsun Kang 기술 지식센터',
   tagline: 'Microsoft 365·Azure·보안·Copilot 실무 문서와 설계도',
   favicon: 'img/youngsun-logo.svg',
@@ -67,6 +70,7 @@ const diagramScriptVersion = createHash('sha256')
         theme: {
           customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/c-theme.css')],
         },
+        ...(GA_MEASUREMENT_ID ? {gtag: {trackingID: GA_MEASUREMENT_ID, anonymizeIP: true}} : {}),
       },
     ],
   ],
@@ -262,7 +266,7 @@ const diagramScriptVersion = createHash('sha256')
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Youngsun Kang · Microsoft 기술 지식센터`,
+      copyright: `© ${new Date().getFullYear()} Youngsun Kang · Microsoft 기술 지식센터${GA_MEASUREMENT_ID ? ' · 방문 통계를 위해 Google Analytics를 사용합니다' : ''}`,
     },
   },
 };

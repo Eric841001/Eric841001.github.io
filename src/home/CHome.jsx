@@ -6,6 +6,7 @@ import {updateHighlights, updateGuide} from '@site/src/data/updateHighlights';
 import styles from './CHome.module.css';
 import CoverArt from '@site/src/components/CoverArt';
 import BookFeature from '@site/src/components/BookFeature';
+import {track} from '@site/src/lib/track';
 
 // 홈: 프리미엄 컨설팅 브랜드의 에디토리얼 표지.
 // 왼쪽은 표제와 질문, 오른쪽은 최근 변경 목차. 그 아래는 세 단 편집 칼럼과 번호 붙은 주제 색인.
@@ -166,7 +167,7 @@ export default function CHome() {
             <p className={styles.briefT}>공개 문서로 방향을 잡으셨다면,<br />조직 환경에 맞춘 설계는 함께 검토합니다.</p>
           </div>
           <div className={styles.briefActs}>
-            <a href="https://www.linkedin.com/in/young-sun-kang-a51b26356">브리핑 요청 {ARR}</a>
+            <a href="https://www.linkedin.com/in/young-sun-kang-a51b26356" onClick={() => track('briefing_request_click', {placement: 'home'})}>브리핑 요청 {ARR}</a>
             <Link to="/knowledge/contact">문의 방법</Link>
           </div>
         </div>
