@@ -140,6 +140,19 @@ Source: [Microsoft Intune offboarding procedure](https://learn.microsoft.com/en-
   </div>
 </div>
 
+## 배포 도구의 내장 오프보딩(미리 보기) {/* #embedded-offboarding-preview */}
+
+2026년 11월 Microsoft는 Windows용 Defender 배포 도구(`DefenderDT.exe`)에 오프보딩 패키지를 넣어 실행하는 **내장 오프보딩**을 공개 미리 보기로 추가했습니다. 별도 오프보딩 파일 없이, 포털에서 만든 오프보딩 키와 만료일로 도구를 보호합니다. 위의 Intune 절차와는 다른 방법입니다.
+
+1. **미리 보기 기능 켜기:** `Settings > Endpoints > Optional features`의 Preview features 설정이 켜져 있어야 `Settings > Endpoints > Preview features` 페이지가 보입니다. 이 페이지에서 내장 오프보딩을 켭니다. 새 미리 보기 기능은 비공개 미리 보기에 참여한 테넌트가 아니면 기본으로 꺼져 있습니다.
+2. **도구 만들기:** `System > Settings > Endpoints > Offboarding`에서 Windows를 고르고 Defender deployment tool 아래 **Offboard**를 선택합니다. 이름과 조직을 확인하고 만료를 7일(기본), 30일, 사용자 지정(최대 1년) 중에서 고릅니다. 가능한 한 짧게 정하세요.
+3. **키 보관과 내려받기:** 생성 화면을 닫으면 오프보딩 키를 다시 볼 수 없고, 키는 같은 화면에서 내려받은 도구에서만 작동합니다. 도구는 `.exe` 또는 `.zip`으로 받습니다. 만든 패키지는 `System > Settings > Endpoints > Deployment packages`에서 종류·상태·만료일로 찾을 수 있습니다.
+4. **기기에서 실행:** 관리자 권한 명령 프롬프트에서 `DefenderDT.exe -Offboard -Key:<offboarding-key>`를 실행합니다. 대화 상자 없이 실행하려면 `-Quiet`를 붙입니다. 성공하면 `Microsoft Defender deployment tool completed, exit code: 0 [Success]`가 표시됩니다.
+
+배포 도구는 TLS 1.2 연결과 `definitionupdates.microsoft.com` 접근이 필요합니다. 프록시를 쓴다면 오프보딩할 때 `-proxy`로 지정해야 하며, Defender용 레지스트리 프록시 설정은 쓰지 않습니다. 미리 보기 기능이므로 소수 기기에서 먼저 시험하고, 키와 도구 파일의 보관·폐기 담당자를 정하세요.
+
+근거: [Defender for Endpoint 11월 변경 사항](https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint#november-2026), [배포 도구의 내장 오프보딩 절차](https://learn.microsoft.com/en-us/defender-endpoint/defender-deployment-tool-windows#offboard-by-using-embedded-offboarding-preview), [미리 보기 기능 개별 관리](https://learn.microsoft.com/en-us/defender-endpoint/manage-preview-features).
+
 ---
 
 ## Validation
