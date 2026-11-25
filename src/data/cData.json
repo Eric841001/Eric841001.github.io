@@ -1,12 +1,13 @@
 {
  "generated": "build",
- "total": 132,
+ "total": 133,
  "figures": 24,
  "elements": 117,
  "counts": {
   "about": 1,
   "architecture": 8,
   "azure": 4,
+  "book": 1,
   "contact": 1,
   "copilot": 17,
   "downloads": 8,
@@ -759,6 +760,13 @@
     "to": "/knowledge/azure/identity",
     "title": "ID 관리",
     "text": "관리자 권한을 평소에 어떻게 쓰고, 로그인이 막히면 어떻게 복구할지 정할 때 참고하세요. 그룹을 조건부 액세스에 쓰는 경우에는 구성원 변경이 반영되는 시간도 확인해야…"
+   }
+  ],
+  "book": [
+   {
+    "to": "/knowledge/book",
+    "title": "저자의 책",
+    "text": "강영선의 책 『AI 도입의 승부는 변화관리다』 소개와 구매처 안내입니다. 생성형 AI를 들여온 뒤 일하는 방식을 바꿔 성과로 만드는 방법을 다룹니다."
    }
   ],
   "contact": [

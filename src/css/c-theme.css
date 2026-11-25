@@ -427,3 +427,6 @@ body{font-family:var(--c-sans);letter-spacing:-.01em}
 .theme-doc-markdown .kc-factory-panel .kc-factory-panel__header strong{background:none!important;border:0!important;border-radius:0!important;padding:0!important;color:var(--c-ink)!important;font:700 15px var(--c-sans)!important}
 /* 상단 막대는 완전히 불투명하게: 스크롤한 본문 글자가 막대 뒤로 비치지 않게 */
 .navbar{background:var(--c-bg)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+/* 오른쪽 목차 + 저자의 책: 함께 고정 */
+.c-toc-wrap{position:sticky;top:calc(var(--ifm-navbar-height) + 1rem);max-height:calc(100vh - var(--ifm-navbar-height) - 2rem);overflow-y:auto;padding-bottom:1rem}
+.c-toc-wrap > div:first-child{position:static;max-height:none;overflow:visible;top:auto}

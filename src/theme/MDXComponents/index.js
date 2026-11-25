@@ -7,5 +7,6 @@ import ScenarioLinks from '../../components/ScenarioLinks';
 import AtlasMap from '../../components/AtlasMap';
 import HubHeader from '../../components/HubHeader';
 import Certifications from '../../components/Certifications';
+import BookFeature from '../../components/BookFeature';
 import BriefingCTA from '../../components/BriefingCTA';
-export default {...MDXComponents, ArchitectureFigure, ScenarioLinks, table: ResponsiveTable, ReadingSection, ReadingSummary, ReadingControls, AtlasMap, HubHeader, Certifications, BriefingCTA};
+export default {...MDXComponents, ArchitectureFigure, ScenarioLinks, table: ResponsiveTable, ReadingSection, ReadingSummary, ReadingControls, AtlasMap, HubHeader, Certifications, BriefingCTA, BookFeature};

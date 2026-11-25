@@ -48,6 +48,12 @@ sidebar_label: "소개"
   </div>
 </div>
 
+## 저서 {/* #book */}
+
+생성형 AI 도입 이후 일하는 방식을 바꾸는 과정을 정리한 책을 펴냈습니다.
+
+<BookFeature variant="page" />
+
 ## Microsoft 자격증 {/* #microsoft-certifications */}
 
 Microsoft가 발급한 공식 자격증입니다. Azure, 보안·규정 준수·ID, Microsoft 365 Copilot과 에이전트 관리, 데이터, AI, Power Platform의 기초 영역을 다룹니다.

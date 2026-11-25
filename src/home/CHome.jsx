@@ -5,6 +5,7 @@ import data from '@site/src/data/cData.json';
 import {updateHighlights, updateGuide} from '@site/src/data/updateHighlights';
 import styles from './CHome.module.css';
 import CoverArt from '@site/src/components/CoverArt';
+import BookFeature from '@site/src/components/BookFeature';
 
 // 홈: 프리미엄 컨설팅 브랜드의 에디토리얼 표지.
 // 왼쪽은 표제와 질문, 오른쪽은 최근 변경 목차. 그 아래는 세 단 편집 칼럼과 번호 붙은 주제 색인.
@@ -98,6 +99,8 @@ export default function CHome() {
         <div><dd>{data.elements}</dd><dt>구성 요소 설명</dt></div>
         <div><dd>{topics.length}</dd><dt>주제</dt></div>
       </dl>
+
+      <BookFeature />
 
       {/* 주요 인사이트 */}
       <section className={styles.sec} aria-labelledby="c-feat">

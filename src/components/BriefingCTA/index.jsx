@@ -1,10 +1,12 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import BookFeature from '../BookFeature';
 import styles from './styles.module.css';
 
 // 문서 끝의 문의·브리핑 안내. 모든 문서에서 같은 문구와 모양을 쓴다.
 export default function BriefingCTA() {
   return (
+    <>
     <aside className={styles.cta} aria-label="문의와 브리핑 요청">
       <div>
         <p className={styles.k}>설계 브리핑 · 작업 양식</p>
@@ -16,5 +18,7 @@ export default function BriefingCTA() {
         <Link className={styles.ghost} to="/knowledge/contact">문의 방법</Link>
       </div>
     </aside>
+    <BookFeature variant="inline" />
+    </>
   );
 }

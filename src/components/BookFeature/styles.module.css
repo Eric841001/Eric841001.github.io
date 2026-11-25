@@ -1,0 +1,117 @@
+/* 저자의 책 — C안(흰 바탕·딥네이비·일렉트릭 블루) */
+.band{background:#051C2C;color:#fff;margin:clamp(56px,7vw,96px) 0}
+:global([data-theme=dark]) .band{background:#0B2536;border-top:1px solid #22384A;border-bottom:1px solid #22384A}
+.inner{max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,4.4vw,64px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px);align-items:center}
+.coverWrap{display:flex;justify-content:center;position:relative}
+.coverWrap::before{content:"";position:absolute;inset:8% 4% -6% 14%;background:#2251FF;opacity:.9}
+.cover,.coverWrap .fallback{position:relative;width:min(340px,78%);height:auto;aspect-ratio:811/1200;object-fit:cover;box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08)}
+.cover{background:#0B2536}
+.coverWrap .fallback{font-size:clamp(20px,2.2vw,30px)}
+.body{min-width:0}
+.k{margin:0 0 18px;font:600 14px var(--c-sans);color:#8FA8FF;display:flex;align-items:center;gap:12px}
+.k::before{content:"";width:28px;height:2px;background:#8FA8FF}
+.title{margin:0!important;font:700 clamp(30px,3.6vw,50px)/1.18 var(--c-sans)!important;letter-spacing:-.045em;color:#fff!important;word-break:keep-all}
+.sub{margin:14px 0 0;font:500 clamp(17px,1.5vw,20px)/1.5 var(--c-sans);color:rgba(255,255,255,.78);word-break:keep-all}
+.pitch{margin:26px 0 0;font:400 16px/1.85 var(--c-sans);color:rgba(255,255,255,.86);max-width:44em;word-break:keep-all}
+.parts{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.18)}
+.parts li{display:flex;gap:14px;padding:14px 16px 14px 0;border-bottom:1px solid rgba(255,255,255,.18);font:500 15px/1.5 var(--c-sans);color:rgba(255,255,255,.9);margin:0}
+.parts b{flex:none;color:#8FA8FF;font-weight:700}
+.meta{margin:22px 0 0;font:500 14px var(--c-sans);color:rgba(255,255,255,.66)}
+.acts{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px}
+.stores{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.buy,.buy2{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;font:700 16px var(--c-sans);text-decoration:none!important;transition:background .15s,color .15s}
+.buy{background:#2251FF;color:#fff!important}
+.buy:hover{background:#fff;color:#051C2C!important}
+.buy2{border:1px solid rgba(255,255,255,.5);color:#fff!important}
+.buy2:hover{border-color:#fff}
+.soon{flex-basis:100%;margin:2px 0 0;font:400 13.5px var(--c-sans);color:rgba(255,255,255,.62)}
+.more{font:600 15px var(--c-sans);color:#fff!important;text-decoration:none!important;padding-bottom:4px;border-bottom:2px solid #8FA8FF}
+.more:hover{border-bottom-color:#fff}
+.fallback{display:flex;flex-direction:column;justify-content:space-between;padding:12%;background:#fff;color:#051C2C;font:700 22px/1.3 var(--c-sans);letter-spacing:-.04em;word-break:keep-all}
+.fallback small{font:600 13px var(--c-sans);color:#2251FF}
+
+/* 책 소개 문서 안 */
+.onPage{margin:8px 0 40px}
+.onPage .inner{padding:clamp(32px,4vw,56px);grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,4vw,56px)}
+.onPage .parts{grid-template-columns:1fr}
+
+/* 문서 끝 작은 안내 */
+.inline{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:20px;align-items:center;margin:0 0 2rem;padding:18px 22px;border:1px solid var(--c-line);border-top:4px solid #051C2C;background:var(--c-bg)}
+:global([data-theme=dark]) .inline{border-top-color:#8FA8FF}
+.inlineCover{width:72px;height:auto;aspect-ratio:811/1200;object-fit:cover;box-shadow:0 8px 18px -8px rgba(5,28,44,.5)}
+.inline .fallback{width:72px;aspect-ratio:811/1200;padding:8px;font-size:10px;border:1px solid var(--c-line)}
+.inline .fallback small{font-size:8px}
+.inlineText{min-width:0}
+.inline .k{margin:0 0 4px;color:#2251FF;font-size:13px}
+.inline .k::before{display:none}
+:global([data-theme=dark]) .inline .k{color:#8FA8FF}
+.inlineT{margin:0;font:700 18px/1.35 var(--c-sans);letter-spacing:-.03em;color:var(--c-ink)}
+.inlineD{margin:4px 0 0;font:400 14px/1.5 var(--c-sans);color:var(--c-ink2)}
+.inlineActs{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:flex-end}
+.inline .buy{min-height:44px;padding:0 18px;font-size:14.5px}
+.inline .buy:hover{background:#051C2C;color:#fff!important}
+.inline .more{color:var(--c-ink)!important;border-bottom-color:#2251FF;font-size:14px}
+
+@media (max-width:996px){
+  .inner,.onPage .inner{grid-template-columns:minmax(0,1fr)}
+  .cover,.coverWrap .fallback{width:min(260px,64%)}
+  .parts{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .inline{grid-template-columns:56px minmax(0,1fr);gap:14px}
+  .inlineCover,.inline .fallback{width:56px}
+  .inlineActs{grid-column:1 / -1;justify-content:flex-start}
+}
+@media (prefers-reduced-motion:reduce){.buy,.buy2{transition:none}}
+
+/* 오른쪽 목차 아래 */
+.toc{margin:28px 0 0;padding:18px 0 0 1rem;border-top:1px solid var(--c-line)}
+.toc .k{margin:0 0 12px;font-size:12.5px;color:#2251FF}
+.toc .k::before{display:none}
+:global([data-theme=dark]) .toc .k{color:#8FA8FF}
+.tocLink{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:center;text-decoration:none!important}
+.tocCover,.toc .fallback{width:64px;height:auto;aspect-ratio:811/1200;object-fit:cover;box-shadow:0 8px 16px -8px rgba(5,28,44,.55)}
+.toc .fallback{padding:6px;font-size:9px;border:1px solid var(--c-line)}
+.toc .fallback small{font-size:7px}
+.tocT{font:700 15px/1.4 var(--c-sans);letter-spacing:-.03em;color:var(--c-ink);word-break:keep-all}
+.tocLink:hover .tocT{color:#2251FF}
+.tocBuy{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;min-height:40px;background:#051C2C;color:#fff!important;font:700 14px var(--c-sans);text-decoration:none!important}
+.tocBuy:hover{background:#2251FF}
+:global([data-theme=dark]) .tocBuy{background:#2251FF}
+/* 문서 본문 글자색 규칙보다 우선 */
+.band .sub{color:rgba(255,255,255,.8)!important}
+.band .pitch{color:rgba(255,255,255,.88)!important}
+.band .meta{color:rgba(255,255,255,.7)!important}
+.band .soon{color:rgba(255,255,255,.66)!important}
+.band .parts li{color:rgba(255,255,255,.92)!important}
+.band .k{color:#8FA8FF!important}
+.onPage .sub{margin-top:0;font-size:clamp(19px,1.7vw,23px);font-weight:600;color:#fff!important}
+.inline .inlineT{color:var(--c-ink)!important}
+.inline .inlineD{color:var(--c-ink2)!important}
+
+/* 흰 바탕 층: 사이트 바탕과 같은 톤. 위 4px 네이비 선, 표지 뒤 옅은 회색 면 */
+.band{background:var(--c-bg);color:var(--c-ink);border-top:4px solid #051C2C;border-bottom:1px solid var(--c-line);max-width:1280px;margin-left:auto;margin-right:auto}
+:global([data-theme=dark]) .band{background:var(--c-bg);border-top:4px solid #8FA8FF;border-bottom:1px solid var(--c-line)}
+.band .inner{max-width:none;padding-left:clamp(0px,2vw,24px);padding-right:clamp(0px,2vw,24px)}
+.coverWrap::before{background:#F4F6F8;opacity:1;inset:6% -2% -6% 10%}
+:global([data-theme=dark]) .coverWrap::before{background:#0B2536}
+.cover{box-shadow:0 30px 50px -24px rgba(5,28,44,.45),0 0 0 1px rgba(5,28,44,.08)}
+.band .k{color:#2251FF!important}
+.band .k::before{background:#2251FF}
+.band .title{color:var(--c-ink)!important}
+.band .sub,.band .pitch{color:var(--c-ink2)!important}
+.band .parts{border-top-color:var(--c-line)}
+.band .parts li{color:var(--c-ink)!important;border-bottom-color:var(--c-line)}
+.band .parts b{color:#2251FF}
+.band .meta,.band .soon{color:var(--c-muted)!important}
+.band .more{color:var(--c-ink)!important;border-bottom-color:#2251FF}
+.band .buy:hover{background:#051C2C;color:#fff!important}
+.band .buy2{border-color:var(--c-line);color:var(--c-ink)!important}
+.band .fallback{border:1px solid var(--c-line)}
+:global([data-theme=dark]) .band .k,:global([data-theme=dark]) .band .parts b{color:#8FA8FF!important}
+:global([data-theme=dark]) .band .k::before{background:#8FA8FF}
+:global([data-theme=dark]) .band .buy:hover{background:#fff;color:#051C2C!important}
+.onPage .sub{color:var(--c-ink)!important}
+.band:not(.onPage){margin-left:clamp(20px,4.4vw,64px);margin-right:clamp(20px,4.4vw,64px)}
+@media (min-width:1408px){.band:not(.onPage){margin-left:auto;margin-right:auto}}
+.band .acts{flex-direction:column;align-items:flex-start;gap:18px}
