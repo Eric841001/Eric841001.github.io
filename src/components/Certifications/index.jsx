@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-// Microsoft 자격증. 원본: LinkedIn 프로필의 자격증/수료증 항목(2026-11-23 확인). 취득일 최신순.
+// Microsoft 자격증. 원본: LinkedIn 프로필의 자격증/수료증 항목(2026-11-23 확인). AB-900 시험 번호는 사용자 제공(2026-11-25). 취득일 최신순.
 const LINKEDIN = 'https://www.linkedin.com/in/young-sun-kang-a51b26356/details/certifications/';
 const certs = [
   {name: 'Power Platform Fundamentals', code: 'PL-900', area: 'Power Platform', tone: 'm365', date: '2026-11-07', id: 'w9VaH-H9EC'},
   {name: 'Azure Fundamentals', code: 'AZ-900', area: 'Azure', tone: 'azure', date: '2026-11-07', id: 's9WS-XMSn'},
-  {name: 'Copilot and Agent Administration Fundamentals', area: 'Microsoft 365 · Copilot', tone: 'copilot', date: '2026-10-03', m365: true},
+  {name: 'Copilot and Agent Administration Fundamentals', code: 'AB-900', area: 'Microsoft 365 · Copilot', tone: 'copilot', date: '2026-10-03', m365: true},
   {name: 'Azure Data Fundamentals', code: 'DP-900', area: 'Azure 데이터', tone: 'azure', date: '2026-10-03'},
   {name: 'Security, Compliance, and Identity Fundamentals', code: 'SC-900', area: '보안·규정 준수·ID', tone: 'security', date: '2026-09-05'},
   {name: 'Azure AI Fundamentals', code: 'AI-900', area: 'Azure AI', tone: 'migration', date: '2026-09-05'},
