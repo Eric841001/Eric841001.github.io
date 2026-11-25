@@ -58,7 +58,7 @@ function Stores({compact, where}) {
 // variant: 'band'(홈), 'page'(책 소개 문서), 'inline'(문서 끝 작은 안내)
 export default function BookFeature({variant = 'band'}) {
   if (variant === 'toc') {
-    const store = book.stores.find(s => s.url);
+    const open = book.stores.filter(s => s.url);
     return (
       <aside className={styles.toc} aria-label="저자의 책">
         <p className={styles.k}>저자의 책</p>
@@ -66,7 +66,11 @@ export default function BookFeature({variant = 'band'}) {
           <Cover className={styles.tocCover} />
           <span className={styles.tocT}>{book.title}</span>
         </Link>
-        {store && <a className={styles.tocBuy} href={store.url} target="_blank" rel="noopener noreferrer" onClick={() => track('book_purchase_click', {store: store.name, placement: 'toc'})}>{store.name}에서 구매 {ARR}</a>}
+        <div className={styles.tocStores}>
+          {open.map(s => (
+            <a key={s.name} className={styles.tocBuy} href={s.url} target="_blank" rel="noopener noreferrer" onClick={() => track('book_purchase_click', {store: s.name, placement: 'toc'})}>{s.name} {ARR}</a>
+          ))}
+        </div>
       </aside>
     );
   }

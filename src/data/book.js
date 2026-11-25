@@ -24,8 +24,8 @@ const book = {
     ['팀장·실무 리더', '팀의 검토·승인 흐름을 바꿔 AI가 실제로 일을 줄이게 하고 싶을 때'],
   ],
   stores: [
+    {name: '교보문고', url: 'https://product.kyobobook.co.kr/detail/S000222076291'},
     {name: '예스24', url: 'https://www.yes24.com/product/goods/202593415'},
-    {name: '교보문고', url: ''},
     {name: '영풍문고', url: ''},
   ],
 };

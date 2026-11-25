@@ -53,4 +53,4 @@ description: "강영선의 책 『AI 도입의 승부는 변화관리다』 소�
 | 펴낸 날 | 2026년 11월 1일 |
 | 쪽수 | 216쪽 |
 | ISBN | 9791193430163 |
-| 판매처 | [예스24](https://www.yes24.com/product/goods/202593415) · 교보문고와 영풍문고는 판매가 열리는 대로 추가합니다 |
+| 판매처 | [교보문고](https://product.kyobobook.co.kr/detail/S000222076291) · [예스24](https://www.yes24.com/product/goods/202593415) · 영풍문고는 판매가 열리는 대로 추가합니다 |
