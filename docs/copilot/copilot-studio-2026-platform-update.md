@@ -313,6 +313,19 @@ Microsoft 365 관리 센터에서 환경·에이전트용 지출 정책을 만�
 
 출처: [Copilot Studio 비용 관리 전환과 적용 제한](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs).
 
+### 제작자 추정값과 관리자 확정값을 연결하세요 {/* #studio-cost-management-cycle */}
+
+11월 24일 Microsoft 공식 지침은 비용 관리를 한 번의 예산 설정이 아니라 **제작자의 설계 측정과 관리자의 정책 운영을 연결하는 반복 과정**으로 설명합니다. 같은 대표 작업을 설계 변경 전후로 실행하고 완료율·품질·재시도와 함께 크레딧을 비교하세요.
+
+1. **제작자는 Preview·Evaluate에서 추정합니다.** 이 값은 거의 실시간인 설계용 근사치입니다. 평가의 응답 생성 비용과 채점 비용을 분리하고, 실패·재시도까지 포함한 완료 작업당 크레딧으로 낮음·예상·높음 수요를 예측합니다.
+2. **Monitor에서 확정 사용량을 대조합니다.** 처리 지연이 있으므로 Preview·Evaluate 수치를 청구 원장처럼 사용하지 않습니다. 최종 처리된 Monitor 사용량으로 실제 절감 여부를 확인합니다.
+3. **PPAC와 Microsoft 365 관리 센터의 범위를 구분합니다.** PPAC는 환경 할당, 환경·에이전트·사용자 보고서와 에이전트별 한도를 관리합니다. Microsoft 365 관리 센터의 리소스 지출 정책은 선택한 에이전트·환경의 한도, 청구 방법, 경고를 통합하며 해당 범위에서 PPAC 설정보다 우선합니다.
+4. **역할과 대응 책임을 먼저 정합니다.** Power Platform·Dynamics 365 관리자가 지출 정책을 만들려면 Microsoft 365 관리 센터의 **AI Administrator** 역할이 별도로 필요하고, 환경 관리자는 **AI Reader**로 사용량을 볼 수 있습니다. 한도 경고의 수신자·승인자·서비스 연속성 대응자를 정책과 함께 기록하세요.
+
+리소스·환경 정책은 현재 공개 미리 보기이며, 사용자·그룹을 따르는 Copilot Studio용 identity 정책은 공식 발표에서 **coming soon**으로 안내됩니다. 실제 테넌트에 보이는 정책 유형과 서비스 범위를 확인한 뒤 단계적으로 적용하세요.
+
+출처: [Copilot Studio 에이전트 비용 관리 공식 지침](https://techcommunity.microsoft.com/blog/copilot-studio-blog/how-to-manage-costs-for-copilot-studio-agents/4576413), [추정 크레딧과 최종 사용량의 차이](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-understand-display), [Microsoft 365 관리 센터의 역할·정책 범위](https://learn.microsoft.com/en-us/copilot/implement/usage-based-billing-manage-copilot-studio-costs).
+
 ## 크레딧 관리 팁: 잔액이 있는데도 실행되지 않을 때 {/* #studio-credit-troubleshooting */}
 
 크레딧 부족 알림만 보고 종량제를 켜기 전에 **문제가 난 환경과 현재 적용되는 비용 정책**부터 확인하세요. 구매한 총량과 그 환경에서 사용할 수 있는 양은 다릅니다.

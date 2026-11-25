@@ -26,7 +26,7 @@ const clean = s => s
 
 const docs = {};
 for (const file of walk(docsDir)) {
-  let src = fs.readFileSync(file, 'utf8').replace(/^﻿/, '');
+  let src = fs.readFileSync(file, 'utf8').replace(/^﻿/, '').replace(/\r\n?/g, '\n');
   const rel = path.relative(docsDir, file).replace(/\\/g, '/').replace(/\.mdx?$/, '');
   const fm = {};
   const m = src.match(/^---\n([\s\S]*?)\n---\n/);
@@ -89,7 +89,7 @@ Object.values(docs).forEach(d => d.links.forEach(([label, to]) => {
 }));
 
 // 라이선스 핵심 비교표(원본: docs/microsoft365/e3-vs-e5.md)
-const lic = fs.readFileSync(path.join(docsDir, 'microsoft365', 'e3-vs-e5.md'), 'utf8');
+const lic = fs.readFileSync(path.join(docsDir, 'microsoft365', 'e3-vs-e5.md'), 'utf8').replace(/\r\n?/g, '\n');
 const start = lic.indexOf('## E3·E5·E7 핵심 비교');
 const after = lic.slice(start).split('\n');
 const first = after.findIndex(l => l.startsWith('|'));

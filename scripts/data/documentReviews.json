@@ -630,11 +630,21 @@
   },
   "/knowledge/copilot/copilot-studio-2026-platform-update": {
     "file": "docs/copilot/copilot-studio-2026-platform-update.md",
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-25",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: GPT-6.2 Sol·Astra의 Copilot Studio eligible users 대상 순차 배포, OpenAI 하위처리자·지역 조건과 비운영 평가 기준을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다. 이번 대조: 11월 18일 Microsoft 공식 발표의 Customer Conversation Harness 일반 공급 안내와 10월 Preview 기록을 구분했습니다. 기존 채널별 제약은 유지하며 GA를 모든 개별 기능의 제공으로 확대하지 않았습니다.",
+    "scope": "이번 대조: 11월 24일 공식 비용 관리 지침의 Preview·Evaluate 추정값과 Monitor 확정값, PPAC·Microsoft 365 관리 센터 정책 범위, 관리자 역할과 리소스·환경 정책 Preview 상태를 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다. 이전 대조: GPT-6.2 Sol·Astra의 Copilot Studio 순차 배포와 Customer Conversation Harness 일반 공급을 확인했습니다.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
+      {
+        "title": "How to manage costs for Copilot Studio agents",
+        "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/how-to-manage-costs-for-copilot-studio-agents/4576413",
+        "checkedFor": "제작자의 대표 작업 측정·예측과 관리자의 계획·통제·최적화 반복 과정, PPAC와 Microsoft 365 관리 센터의 역할 분담, 리소스·환경 정책 Preview와 identity 정책 향후 제공 상태를 확인했습니다."
+      },
+      {
+        "title": "Understand estimated credit usage",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-understand-display",
+        "checkedFor": "Preview·Evaluate의 거의 실시간 추정값과 처리 지연 후 Monitor에 반영되는 최종 크레딧 사용량의 차이를 확인했습니다."
+      },
       {
         "title": "GPT-6.2 Sol and Astra in Microsoft Copilot",
         "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
