@@ -7,6 +7,7 @@ export const modelUpdate = {
   path: `${updateGuide}#gpt-6-2-sol-astra`,
 };
 export const updateHighlights = [
+  {category: 'Defender for Endpoint', title: '기기 인벤토리 도메인 필터·평가 API 서버 측 필터', description: 'AD 도메인 필터의 정식 제공과 평가 내보내기 API의 $filter 미리 보기(Plan 2·JSON 응답 한정, 접근 통제 아님)를 정리했습니다.', date: '2026-11-26', status: '도메인 필터 GA · API 필터 Preview', path: '/knowledge/security/defender-for-endpoint#november-2026-updates'},
   {category: 'Defender for Endpoint', title: '배포 도구의 내장 오프보딩 미리 보기', description: '오프보딩 키·만료일로 보호하는 DefenderDT 오프보딩과 Preview features 페이지에서 켜는 조건, 프록시·TLS 요구를 정리했습니다.', date: '2026-11-17', status: '공개 미리 보기 · 기능별 활성화', path: '/knowledge/knowledge-center/mde-windows-offboarding#embedded-offboarding-preview'},
   {category: 'Microsoft 365', title: 'To Do 앱 2027년 6월 30일 종료', description: '회사·개인 계정의 앱 종료, Planner My tasks 전환, 기존 작업 비이전과 아직 발표되지 않은 내보내기·API 일정을 정리했습니다.', date: '2026-11-18', status: '종료 예정 · 내보내기 방법 발표 대기', path: '/knowledge/microsoft365/overview#to-do-retirement-2027'},
   {category: 'Microsoft Intune', title: 'Intune 2611 관리 변경', description: 'macOS 체크인 주기 단축, Windows 업데이트 유지 관리 기간, 준수 스크립트 평가 주기와 Windows Server Insider 미리 보기 조건을 추가했습니다.', date: '2026-11-17', status: '서비스 릴리스 2611 · 순차 배포', path: '/knowledge/playbooks/intune-deployment-playbook#intune-2611-changes'},

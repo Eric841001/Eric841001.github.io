@@ -74,6 +74,16 @@ Defender for Endpoint로 기기의 위협과 취약점을 확인하고 대응하
 
 Defender XDR, Intune과 Conditional Access를 연결할 때는 기기별 지원 기능과 위험 신호, 정책 적용 결과를 확인하세요.
 
+## 11월 운영 변경 {/* #november-2026-updates */}
+
+2026년 11월 Defender for Endpoint 변경 목록에 다음 항목이 추가됐습니다. 기능마다 제공 상태가 다르므로 운영 절차에 넣기 전에 확인하세요.
+
+- **기기 인벤토리의 도메인 필터(정식 제공):** 기기 인벤토리에서 Active Directory 도메인으로 기기를 걸러 볼 수 있습니다. 도메인 값은 기기가 가입한 AD 도메인이며, 도메인에 가입하지 않은 기기나 검색으로만 발견된 기기는 비어 있습니다. 조사 범위를 도메인 단위로 나눌 때 쓰세요.
+- **평가 내보내기 API의 서버 측 필터(미리 보기):** 소프트웨어 취약점, 소프트웨어 인벤토리, 보안 구성, 보안 기준 등 JSON으로 응답하는 평가 내보내기 API에 `$filter`를 붙여 필요한 레코드만 받을 수 있습니다. 파일 내보내기 API는 지원하지 않고, 정렬·집계·결합은 받은 뒤 직접 처리해야 합니다. Defender for Endpoint Plan 2 또는 Defender Vulnerability Management가 필요하며 Plan 1만으로는 쓸 수 없습니다. 필터는 접근 통제가 아니므로 권한과 기기 그룹 범위로 데이터 접근을 제한하세요.
+- **미리 보기 기능 개별 관리와 내장 오프보딩(미리 보기):** 공개 미리 보기 기능을 하나씩 켜고 끌 수 있는 페이지와, 배포 도구에 오프보딩 패키지를 넣는 방식이 추가됐습니다. 절차는 [Windows 오프보딩 가이드](../knowledge-center/mde-windows-offboarding#embedded-offboarding-preview)에 정리했습니다.
+
+근거: [Defender for Endpoint 11월 변경 사항](https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint#november-2026), [기기 인벤토리 필드와 필터](https://learn.microsoft.com/en-us/defender-endpoint/device-inventory-field-reference#filters-reference), [평가 내보내기 API의 서버 측 필터](https://learn.microsoft.com/en-us/defender-endpoint/api/export-assessment-server-side-filtering).
+
 ## Linux·macOS의 10월 운영 변경 {/* #october-2026-platform-updates */}
 
 Amazon Linux 2 **ARM64**의 Defender 지원은 2026년 10월 31일 종료됐습니다. Linux 데스크톱 지원은 Public Preview이며, 데스크톱용 P2 권한과 서버용 라이선스를 구분해야 합니다. [Linux 온보딩 가이드](../knowledge-center/mde-linux-onboarding#october-2026-support)에서 종료 대상과 10월 빌드의 순차 적용 조건을 확인하세요.
