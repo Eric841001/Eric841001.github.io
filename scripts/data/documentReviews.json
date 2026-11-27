@@ -4086,11 +4086,16 @@
   },
   "/knowledge/security/defender-xdr": {
     "file": "docs/security/defender-xdr.md",
-    "checkedOn": "2026-11-18",
+    "checkedOn": "2026-11-27",
     "kind": "기술·운영 가이드",
-    "scope": "이번 대조: Defender 신호의 상관 분석, Advanced hunting 기본 30일과 ISOC 대상 최대 90일 보존, 유료 180일 연장, Sentinel 연결·권한, 미리 보기 incident case의 종료와 에이전트 세션 조건.",
+    "scope": "이번 대조: Hunting Starter Pack에 Teams 통화·회의 조사용 CallActivityEvents 테이블 문단을 추가하며 기록 항목(시작·예약자, 통화 유형·예약 방식, 계정 유형·소속 테넌트·클라이언트)과 Defender for Office 365 배포 전제 조건을 확인했습니다. 기존 다른 절의 전체 문장 재검증을 뜻하지 않습니다. 이전 대조: 이번 대조: Defender 신호의 상관 분석, Advanced hunting 기본 30일과 ISOC 대상 최대 90일 보존, 유료 180일 연장, Sentinel 연결·권한, 미리 보기 incident case의 종료와 에이전트 세션 조건.",
     "note": "적용 전 최신 공식 자료와 라이선스, 지원 기기와 배포 상태를 확인하고 소수 사용자를 대상으로 먼저 시험하세요.",
     "sources": [
+      {
+        "title": "CallActivityEvents table in the advanced hunting schema",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-callactivityevents-table",
+        "checkedFor": "Teams 통화 활동 기록 테이블의 열 정의(ActivityInitiatorAccountType·ActivityInitiatorTenantDisplayName·CallType·CallSchedulingType·OriginatorUpn 등)와 Defender for Office 365 미배포 시 결과가 없다는 조건을 확인했습니다."
+      },
       {
         "title": "Defender XDR overview",
         "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
@@ -4123,7 +4128,7 @@
       }
     ],
     "reviewLevel": "설계 참고사항 확인",
-    "notChecked": "공식 기능·보존 기간·라이선스 조건을 대조했습니다. 실제 테넌트의 ISOC 활성화, 과거 데이터 존재, 쿼리 실행·과금과 사건 종료 동작은 시험하지 않았습니다."
+    "notChecked": "공식 기능·보존 기간·라이선스 조건을 대조했습니다. 실제 테넌트의 ISOC 활성화, 과거 데이터 존재, 쿼리 실행·과금과 사건 종료 동작은 시험하지 않았습니다. CallActivityEvents 문단은 공식 스키마 문서로 확인했으며 실제 테넌트에서 쿼리를 실행하지 않았습니다."
   },
   "/knowledge/security/defender": {
     "file": "docs/security/defender.md",

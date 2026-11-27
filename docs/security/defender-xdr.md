@@ -207,6 +207,8 @@ Querying Sentinel data requires connecting its workspace to the Defender portal;
 
 Advanced hunting should not be treated as a random query library. It should be mapped to the enterprise’s current risk themes.
 
+Teams 통화·회의를 이용한 사회공학 공격을 조사할 때는 `CallActivityEvents` 테이블을 쓸 수 있습니다. 통화를 시작하거나 예약한 사람, 통화 유형(1:1·회의)과 예약 방식, 활동을 한 계정의 유형(Entra·소비자 계정·전화망·인증되지 않은 참가자 등)과 소속 테넌트, 클라이언트 종류가 기록됩니다. 외부 테넌트에서 헬프데스크를 사칭해 건 통화처럼 "누가, 어느 조직에서, 어떤 경로로 시작했는지"를 확인하는 데 맞습니다. 이 테이블은 Defender for Office 365 데이터로 채워지므로, 해당 서비스를 배포하지 않은 조직에서는 쿼리 결과가 나오지 않습니다. [CallActivityEvents 테이블 설명](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-callactivityevents-table)
+
 <div className="kc-entry-hub">
   <a href="/knowledge/knowledge-center/exchange-online-message-recall-purge">
     <small>Email threat</small>
